@@ -1,0 +1,248 @@
+---
+title: Migrera tillgångar
+titleSuffix: Microsoft Cloud Adoption Framework for Azure
+description: Migrera tillgångar
+author: matticusau
+ms.author: mlavery
+ms.date: 08/08/2019
+ms.topic: conceptual
+ms.service: cloud-adoption-framework
+ms.subservice: migrate
+ms.custom: fasttrack-new, AQC
+ms.localizationpriority: high
+ms.openlocfilehash: ce8338fbcd0e21cf0875a207633ce7c9ddf2ff9e
+ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70818769"
+---
+# <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrera tillgångar (infrastruktur, appar och data)
+
+I den här fasen av resan använder du resultatet av utvärderingsfasen för att inleda migreringen av miljön. Den här guiden hjälper dig att identifiera lämpliga verktyg för att nå ”färdigt tillstånd”, däribland inbyggda verktyg, verktyg från tredje part samt verktyg för projekthantering.
+
+# <a name="native-migration-toolstabtools"></a>[Inbyggda migreringsverktyg](#tab/Tools)
+
+I följande avsnitt beskrivs de inbyggda Azure-verktyg som är tillgängliga för att utföra eller underlätta migreringen. Information om hur du väljer rätt verktyg för migreringen finns i [guiden för beslut om migreringsverktyg för Cloud Adoption Framework](../../decision-guides/migrate-decision-guide/index.md).
+
+## <a name="azure-migrate"></a>Azure Migrate
+
+Azure Migrate levererar en enhetlig och utökningsbar migreringsupplevelse. Azure Migrate ger en samlad, dedikerad upplevelse där du kan spåra migreringsresan genom faserna för utvärdering och migrering till Azure. Du kan använda valfria verktyg för att spåra migreringsförloppet.
+
+Azure Migrate innehåller följande funktioner:
+
+1. Förbättrade funktioner för utvärdering och migrering:
+    - Utvärderingar av Hyper-V.
+    - Förbättrad utvärdering av VMware.
+    - Agentlös migrering av virtuella VMware-datorer till Azure.
+1. Enhetlig utvärdering, migrering och förloppsspårning.
+1. Utökningsbar metod med ISV-integrering (till exempel Cloudamize).
+
+Följ dessa steg om du vill utföra en migrering med Azure Migrate:
+
+1. Sök efter Azure Migrate under **Alla tjänster**. Välj **Azure Migrate** för att fortsätta.
+1. Välj **Lägg till ett verktyg** för att starta migreringsprojektet.
+1. Välj den prenumeration, resursgrupp och geografi som ska vara värd för migreringen.
+1. Välj **Välj utvärderingsverktyg** > **Azure Migrate: Serverutvärdering** >  **Nästa**.
+1. Välj **Granska + lägg till verktyg** och verifiera konfigurationen. Klicka på **Lägg till verktyg** för att starta jobbet med att skapa migreringsprojektet och registrera de valda lösningarna.
+
+<!-- TODO: TBA -->
+
+### <a name="read-more"></a>Läs mer
+
+- [Azure Migrate-självstudier – Migrera fysiska eller virtualiserade servrar till Azure](/azure/migrate/tutorial-migrate-physical-virtual-machines)
+
+## <a name="azure-site-recovery"></a>Azure Site Recovery
+
+Azure Site Recovery-tjänsten kan hantera migreringen av lokala resurser till Azure. Den kan även hantera och samordna haveriberedskap för lokala datorer och virtuella Azure-datorer i BCDR-syfte (affärskontinuitet och haveriberedskap).
+
+Följande steg beskriver processen med att använda Site Recovery för att migrera:
+
+> [!TIP]
+> Beroende på ditt scenario kan de här stegen skilja sig något. Mer information finns i artikeln [Migrera lokala datorer till Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure).
+
+### <a name="prepare-azure-site-recovery-service"></a>Förbereda Azure Site Recovery-tjänsten
+
+1. I Azure-portalen väljer du **+Skapa en resurs > Hanteringsverktyg > Säkerhetskopiering och webbplatsåterställning**.
+1. Om du ännu inte har skapat ett återställningsvalv slutför du guiden för att skapa en resurs för **Recovery Services-valv**.
+1. I menyn **Resurs** väljer du **Site Recovery > Förbered infrastruktur > Skyddsmål**.
+1. I **Skyddsmål** väljer du vad du vill migrera.
+    1. **VMware:** Välj **Till Azure > Ja, med VMware vSphere Hypervisor**.
+    1. **Fysisk dator:** Välj **Till Azure > Inte virtualiserad/övrigt**.
+    1. **Hyper-V:** Välj **Till Azure > Ja, med Hyper-V**. Om de virtuella Hyper-V-datorerna hanteras av VMM väljer du **Ja**.
+
+### <a name="configure-migration-settings"></a>Konfigurera migreringsinställningar
+
+1. Konfigurera källmiljön enligt vad som är lämpligt.
+1. Konfigurera målmiljön.
+    1. Klicka på **Förbered infrastruktur > Mål** och välj den Azure-prenumeration som du vill använda.
+    1. Ange Resource Manager-distributionsmodellen.
+    1. Site Recovery kontrollerar att du har ett eller flera kompatibla Azure-lagringskonton och Azure-nätverk.
+1. Konfigurera en replikeringsprincip.
+1. Aktivera replikering.
+1. Kör en testmigrering (testa redundansväxling).
+
+### <a name="migrate-to-azure-using-failover"></a>Migrera till Azure med hjälp av redundansväxling
+
+1. I **Inställningar > Replikerade objekt** väljer du datorn > **Redundans**.
+1. I **Redundans** väljer du en **återställningspunkt** att redundansväxla till. Välj den senaste återställningspunkten.
+1. Konfigurera eventuella inställningar för krypteringsnycklar efter behov.
+1. Välj **Stäng datorn innan du påbörjar redundans**. Site Recovery försöker att stänga av virtuella datorer innan redundansen utlöses. Redundansväxlingen fortsätter även om avstängningen misslyckas. Du kan följa redundansförloppet på sidan Jobb.
+1. Kontrollera att den virtuella Azure-datorn visas i Azure som förväntat.
+1. I **Replikerade objekt** högerklickar du på den virtuella datorn och väljer **Slutför migrering**.
+1. Utför eventuella steg efter migreringen efter behov (se relevant information i den här guiden).
+
+::: zone target="chromeless"
+
+::: form action="Create[#create/Microsoft.RecoveryServices]" submitText="Create a Recovery Services vault" :::
+
+::: zone-end
+
+::: zone target="docs"
+
+Mer information finns i:
+
+- [Migrera lokala datorer till Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure)
+
+::: zone-end
+
+## <a name="azure-database-migration-service"></a>Azure Database Migration Service
+
+Azure Database Migration Service är en fullständigt hanterad tjänst som möjliggör sömlösa migreringar från flera databaskällor till Azure-dataplattformar med minimal avbrottstid (onlinemigreringar). Azure Database Migration Service utför alla nödvändiga steg. Du kan inleda migreringsjobb med tryggheten att processen utförs med den bästa praxis som rekommenderas av Microsoft.
+
+### <a name="create-an-azure-database-migration-service-instance"></a>Skapa en Azure Database Migration Service-instans
+
+Om det här är första gången du använder Azure Database Migration Service behöver du registrera resursprovidern för din Azure-prenumeration:
+
+1. Välj **Alla tjänster** följt av **Prenumerationer** och välj sedan målprenumerationen.
+1. Välj **Resursprovidrar**.
+1. Sök efter `migration`. Till höger om **Microsoft.DataMigration** väljer du sedan **Registrera**.
+
+::: zone target="chromeless"
+
+::: form action="OpenBlade[#blade/Microsoft_Azure_Billing/SubscriptionsBlade]" submitText="Go to Subscriptions" :::
+
+::: zone-end
+
+När du har registrerat resursprovidern kan du skapa en instans av Azure Database Migration Service.
+
+1. Välj **+Skapa en resurs** och sök på marknadsplatsen efter **Azure Database Migration Service**.
+1. Slutför guiden **Skapa migreringstjänst** och välj **Skapa**.
+
+Tjänsten är nu redo att migrera de källdatabaser som stöds (till exempel SQL Server, MySQL, PostgreSQL eller MongoDB).
+
+::: zone target="chromeless"
+
+::: form action="Create[#create/Microsoft.AzureDMS]" submitText="Create an Azure Database Migration Service instance" :::
+
+::: zone-end
+
+::: zone target="docs"
+
+Mer information finns i:
+
+- [Översikt över Azure Database Migration Service](/azure/dms/dms-overview)
+- [Skapa en instans av Azure Database Migration Service](/azure/dms/quickstart-create-data-migration-service-portal)
+- [Azure Migrate i Azure-portalen](https://portal.azure.com/#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade)
+- [Azure-portalen: Skapa ett migreringsprojekt](https://portal.azure.com/#create/Microsoft.AzureMigrate)
+
+::: zone-end
+
+## <a name="data-migration-assistant"></a>Data Migration Assistant
+
+Med Data Migration Assistant (DMA) kan du uppgradera till en modern dataplattform genom att identifiera kompatibilitetsproblem som kan påverka databasfunktionalitet i din nya version av SQL Server eller Azure SQL Database. DMA rekommenderar prestanda- och tillförlitlighetsförbättringar för din målmiljö och gör att du kan flytta schema, data och beroende objekt från källservern till målservern.
+
+> [!NOTE]
+> För stora migreringar (vad gäller antal och storlek på databaser) rekommenderar vi att du använder Azure Database Migration Service, som kan migrera databaser i stor skala.
+>
+
+Följ dessa steg för att komma igång med Data Migration Assistant.
+
+1. Ladda ned och installera Data Migration Assistant från [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53595).
+1. Skapa en utvärdering genom att klicka på ikonen **Ny ( +)** och välja projekttypen **Utvärdering**.
+1. Ange typ av källserver och målserver. Klicka på **Skapa**.
+1. Konfigurera utvärderingsalternativen efter behov (standardvärden för alla rekommenderas).
+1. Lägg till de databaser som ska utvärderas.
+1. Klicka på **Nästa** för att starta utvärderingen.
+1. Visa resultat i Data Migration Assistant-verktygsuppsättningen.
+
+För företag rekommenderar vi att du följer den metod som beskrivs i [Utvärdera ett företag och konsolidera utvärderingsrapporter med DMA](/sql/dma/dma-consolidatereports) för att utvärdera flera servrar, kombinerar rapporterna och sedan använder de tillhandahållna Power BI-rapporterna för att analysera resultatet.
+
+Mer information, däribland detaljerade användningssteg, finns i följande avsnitt:
+
+- [Översikt av Data Migration Assistant](/sql/dma/dma-overview)
+- [Utvärdera ett företag och konsolidera utvärderingsrapporter med DMA](/sql/dma/dma-consolidatereports)
+- [Analysera konsoliderade utvärderingsrapporter som skapats av Data Migration Assistant med Power BI](/sql/dma/dma-powerbiassesreport)
+
+## <a name="sql-server-migration-assistant"></a>SQL Server Migration Assistant
+
+Microsoft SQL Server Migration Assistant (SSMA) är ett verktyg som utformats för att automatisera databasmigrering till SQL Server från Microsoft Access, DB2, MySQL, Oracle och SAP ASE. Det allmänna konceptet är att samla in, utvärdera och granska med dessa verktyg, men på grund av varianser i processen för varje källsystem rekommenderar vi att du läser den detaljerade [dokumentationen för SQL Server Migration Assistant](/sql/ssma/sql-server-migration-assistant).
+
+Mer information finns i:
+
+- [Översikt av SQL Server Migration Assistant](/sql/ssma/sql-server-migration-assistant)
+
+## <a name="database-experimentation-assistant"></a>Database Experimentation Assistant
+
+Database Experimentation Assistant (DEA) är en ny A/B-testlösning för SQL Server-uppgraderingar. Den hjälper till att utvärdera en målversion av SQL för en viss arbetsbelastning. Kunder som uppgraderar från tidigare SQL Server-versioner (SQL Server 2005 och senare) till en ny version av SQL Server kan använda dessa analysmått.
+
+Database Experimentation Assistant innehåller följande arbetsflödesaktiviteter:
+
+- **Capture:** Det första steget i A/B-testning för SQL Server är att registrera en spårning på källservern. Källservern är vanligtvis produktionsservern.
+- **Replay:** Det andra steget i A/B-testning för SQL Server är att på nytt spela upp den spårningsfil som registrerades till målservrarna. Samla sedan in omfattande spårningar från återuppspelningarna för analys.
+- **Analysis:** Det sista steget är att generera en analysrapport med hjälp av återuppspelningsspårningarna. Analysrapporten kan hjälpa dig att få insikt om prestandakonsekvenserna för den föreslagna ändringen.
+
+Mer information finns i:
+
+- [Översikt av Database Experimentation Assistant](/sql/dea/database-experimentation-assistant-overview)
+
+# <a name="third-party-migration-toolstabthird-party-tools"></a>[Migreringsverktyg från tredje part](#tab/third-party-tools)
+
+Det finns flera migreringsverktyg från tredje part och ISV-tjänster som kan hjälpa till med migreringsprocessen. De har alla olika fördelar och styrkor. Dessa verktyg innefattar:
+
+## <a name="cloudamize"></a>Cloudamize
+
+Cloudamize är en ISV-tjänst som omfattar alla faser av migrationsstrategin.
+
+[Läs mer](https://www.cloudamize.com)
+
+## <a name="zerto"></a>Zerto
+
+Zerto tillhandahåller virtuell replikering som hanterar miljöer för både Microsoft Hyper-V-och VMware vSphere.
+
+[Läs mer](https://www.zerto.com/solutions/use-cases/data-center-migration-software)
+
+## <a name="carbonite"></a>Carbonite
+
+Carbonite tillhandahåller lösningar för server- och datamigrering för att migrera arbetsbelastningar till, från eller mellan fysiska, virtuella eller molnbaserade miljöer.
+
+[Läs mer](https://www.carbonite.com/data-protection/data-migration-software)
+
+## <a name="movere"></a>Movere
+
+Movere är en identifieringslösning som tillhandahåller de data och insikter som krävs för att planera migrering av molnet och kontinuerligt optimera, övervaka och analysera IT-miljöer med förtroende.
+
+[Läs mer](https://www.movere.io)
+
+Besök [Azure Migration Center](https://azure.microsoft.com/migration/support) för att identifiera organisationer som erbjuder färdiga partnertekniklösningar som passar dina migreringsscenarier och få mer information om ytterligare migreringsverktyg från tredje part samt supporttjänster.
+
+# <a name="project-management-toolstabproject-management-tools"></a>[Verktyg för projekthantering](#tab/project-management-tools)
+
+Projekt som inte spåras och hanteras löper större risk att stöta på problem. För att säkerställa ett lyckat resultat anser vi att du bör använda ett verktyg för projekthantering. Det finns många olika tillgängliga verktyg, och kanske har projektledarna i din organisation redan en favorit. Microsoft erbjuder följande verktyg för projekthantering, som kan fungera tillsammans för att tillhandahålla bredare funktioner:
+
+- [Microsoft Planner](https://tasks.office.com): Ett enkelt, visuellt sätt att organisera arbete i team.
+- [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software): Projekt- och portföljhantering, hantering av resurskapacitet, ekonomihantering samt hantering av tidrapporter och scheman.
+- [Microsoft Teams](https://products.office.com/microsoft-teams): Verktyg för samarbete och kommunikation i team. Teams integrerar även Planner och andra verktyg för att förbättra samarbetet.
+- [Azure DevOps](https://dev.azure.com): Med hjälp av Azure DevOps kan du hantera din infrastruktur som kod eller använda arbetsuppgifter och tavlor för att utföra projekthantering. När dina kunskaper växer kan din organisation dra nytta av CI/CD-funktionerna.
+
+Det finns även fler verktyg utöver dessa. Många andra verktyg från tredje part används ofta inom projekthantering.
+
+## <a name="set-up-for-devops"></a>Förbereda inför DevOps
+
+När du migrerar till molntekniker ger detta en bra möjlighet att förbereda organisationen för DevOps och CI/CD. Även om din organisation endast hanterar infrastrukturen kan du, när du börjar hantera infrastrukturen som kod samt använder branschmönstren och -metoderna för DevOps, börja öka agiliteten med hjälp av CI/CD-pipelines. Därmed kan du snabbare anpassa dig till scenarier för ändring, tillväxt, lanseringar och även återställning.
+
+[Azure DevOps](https://dev.azure.com) tillhandahåller alla nödvändiga funktioner och integrering med Azure, lokalt eller till och med andra moln. Mer information finns [här](https://azure.microsoft.com/services/devops). Vägledd utbildning finns i [CI och CD med Azure DevOps – snabbstart](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html).
+
+# <a name="cost-managementtabmanagecost"></a>[Kostnadshantering](#tab/ManageCost)
+
+När du migrerar resurser till din molnmiljö är det viktigt att utföra regelbunden kostnadsanalys. Detta hjälper dig att undvika oväntade användningsavgifter eftersom migreringsprocessen kan ålägga dina tjänster ytterligare användningskrav. Du kan även ändra storlek på resurser efter behov för att balansera kostnader och arbetsbelastningar (detta beskrivs mer detaljerat i avsnittet **[Optimera och transformera](optimize-and-transform.md)** ).
