@@ -1,0 +1,73 @@
+---
+title: Första moln införande projekt
+titleSuffix: Microsoft Cloud Adoption Framework for Azure
+description: Lär dig mer om hur du implementerar ditt första moln införande projekt.
+author: BrianBlanchard
+ms.author: brblanch
+ms.date: 5/19/2019
+ms.topic: article
+ms.service: cloud-adoption-framework
+ms.subservice: strategy
+ms.openlocfilehash: 6f3e1ad47b329e39addd9fff087568e4124f8859
+ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70825086"
+---
+<!-- markdownlint-disable MD026 -->
+
+# <a name="first-cloud-adoption-project"></a>Första moln införande projekt
+
+Det finns en inlärnings kurva och ett tids åtagande som är kopplat till moln implementerings planeringen. Även för erfarna grupper tar det tid att planera tid: tid för att anpassa intressenter, tid för att samla in och analysera data, tid för att verifiera långsiktiga beslut och tid för att justera personer, processer och teknik. I de flesta effektiva implementerings ansträngningar ökar planeringen parallellt med införande, vilket förbättrar med varje version och med varje migrering till molnet. Det är viktigt att förstå skillnaden mellan en moln implementerings plan och en moln införande strategi. Du behöver en väldefinierad strategi för att under lätta och vägleda implementeringen av en moln implementerings plan.
+
+Moln implementerings ramverket för Azure beskriver processerna för moln införande och driften av arbets belastningar som finns i molnet. Var och en av processerna i stegen definiera strategi, plan, redo, antagande och drift kräver små expansioner av teknik-, verksamhets-och drifts kunskaper. En del av dessa kunskaper kan komma från riktad utbildning. Men många av dem har faktiskt erhållits genom praktisk erfarenhet.
+
+Att starta en första införande-process parallellt med utvecklingen av planen ger vissa fördelar:
+
+- Upprätta en tillväxt tänkesätt för att uppmuntra inlärning och utforskning
+- Ge teamet möjlighet att utveckla nödvändiga kunskaper
+- Skapa situationer som främjar nya metoder för samarbete
+- Identifiera kunskaps luckor och potentiella partnerskaps behov
+- Tillhandahålla konkreta indata till planen
+
+## <a name="first-project-criteria"></a>Första projekt kriterier
+
+Ditt första införande projekt bör anpassas efter dina [motivation](./motivations-why-are-we-moving-to-the-cloud.md) för moln införande. När det är möjligt bör det första projektet även Visa framsteg mot ett definierat [affärs resultat](./business-outcomes/how-to-use-the-business-outcome-template.md).
+
+## <a name="first-project-expectations"></a>Första förväntningar för projektet
+
+Ditt teams första antagande projekt kommer förmodligen att leda till en produktions distribution av något slag. Men det är inte alltid fallet. Fastställ rätt förväntningar tidigt. Här är några saker som du kan ställa in:
+
+- Det här projektet är en källa för inlärning.
+- Det här projektet kan resultera i produktions distributioner, men det kräver förmodligen ytterligare arbete först.
+- Resultatet av det här projektet är en uppsättning tydliga krav för att tillhandahålla en längre produktions lösning.
+
+## <a name="first-project-examples"></a>Första projekt exempel
+
+Den här listan innehåller ett exempel på ett första projekt för varje motivations kategori för att stödja föregående villkor:
+
+- **Kritiska affärs händelser:** När en viktig affärs händelse är den främsta motivation, kan implementeringen av ett verktyg som [Azure Site Recovery](../migrate/azure-migration-guide/migrate.md?tabs=Tools#azure-site-recovery) vara ett lämpligt första projekt. Under migreringen kan du använda det här verktyget för att snabbt migrera data Center till gångar. Men under det första projektet kan du använda det rent som ett haveri beredskaps verktyg för att minska beroendet av Disaster Recovery-tillgångar i data centret.
+
+- **Motivation i migreringen:** När migrering är den främsta motivationen är det klokt att börja med migreringen av en icke-kritisk arbets belastning. [Azure readiness guide](../ready/azure-readiness-guide/index.md) och [Azure migration guide](../migrate/azure-migration-guide/index.md) kan ge vägledning om migreringen av din första arbets belastning.
+
+- **Nyskapande motivation:** När innovation är den främsta motivation kan skapandet av en riktad dev/test-miljö vara ett fantastiskt första projekt.
+
+Ytterligare exempel på första antagande projekt är:
+
+- **Haveri beredskap och affärs kontinuitet (DRBC):** Utöver Azure Site Recovery kan du implementera flera DRBC-strategier som ett första projekt.
+- **Icke** Distribuera en inproduktion instans av en arbets belastning.
+- **Arkivattributet** Kall lagring kan belasta Data Center resurser. Att flytta data till molnet är en solid Quick Win.
+- **Slut på support (EOS):** Att migrera till gångar som har nått slutet av support är en annan snabb chans som bygger tekniska kunskaper. Det kan också vara ett kostnads fritt sätt att undvika dyra support avtal eller licens kostnader.
+- **VDI (Virtual Desktop Interface):** Att skapa virtuella skriv bord för fjärran slutna anställda kan ge en snabb chans. I vissa fall kan det här första tillämpnings projektet också minska beroendet av kostsamma privata nätverk för att ge en offentlig Internet anslutning.
+- **Utveckling/testning:** Ta bort dev/test från lokala miljöer för att ge utvecklare kontroll, flexibilitet och självbetjänings kapacitet.
+- **Enkla appar (mindre än fem):** Modernisera och migrera en enkel app för att snabbt få utvecklare och drifts upplevelser.
+- **Prestanda labb:** När du behöver storskalig prestanda i en labb inställning använder du molnet för att snabbt och kostnads effektivt tillhandahålla dessa labb under en kort tid.
+- **Data plattform:** Skapa en data Lake med skalbar beräkning för analys, rapportering eller Machine Learning-arbetsbelastningar.
+
+## <a name="next-steps"></a>Nästa steg
+
+När det första projektet för att införa moln har påbörjats kan moln strategi teamet förvandla sin uppmärksamhet till den långsiktiga [moln implementerings planen](../plan/index.md).
+
+> [!div class="nextstepaction"]
+> [Bygg din moln införande plan](../plan/index.md)
