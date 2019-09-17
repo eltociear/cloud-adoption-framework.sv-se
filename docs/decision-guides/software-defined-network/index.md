@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ac8d65ab897ddeac94305c9d2c365281808b36c3
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: bbe9815b12226c193073bff3c2298d4124034935
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817969"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023734"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Beslutsguide för programvarudefinierade nätverk
 
@@ -22,9 +22,9 @@ Programvarudefinierade nätverk (SDN) är en nätverksarkitektur som utformats f
 
 ## <a name="networking-decision-guide"></a>Beslutsguide för nätverk
 
-![Nätverksalternativ ordnade från minst till mest komplext, inriktat med direktlänkar nedan](../../_images/discovery-guides/discovery-guide-sdn.png)
+![Nätverksalternativ ordnade från minst till mest komplext, inriktat med direktlänkar nedan](../../_images/decision-guides/decision-guide-software-defined-network.png)
 
-Hoppa till: [Endast PaaS](paas-only.md) | [Molnbaserat](cloud-native.md) | [Moln-DMZ](cloud-dmz.md) [Hybrid](hybrid.md) | [Nav och eker-modell](hub-spoke.md) | [Läs mer](#learn-more)
+Hoppa till: [Endast PaaS](./paas-only.md) | [Molnbaserat](./cloud-native.md) | [Moln-DMZ](./cloud-dmz.md) [Hybrid](./hybrid.md) | [Nav och eker-modell](./hub-spoke.md) | [Läs mer](#learn-more)
 
 SDN har flera alternativ med olika typer av prissättning och komplexitet. Ovanstående upptäcktsguide innehåller en referens för att snabbt anpassa dessa alternativ så att de bäst passar specifika företag och teknikstrategier.
 
@@ -53,18 +53,18 @@ När du planerar vilken arkitektur för virtuella nätverk eller kombination av 
 
 Lär dig mer om de primära programvarudefinierade nätverksarkitekturerna:
 
-- **[Endast PaaS](paas-only.md):** De flesta PaaS-produkter (plattform som en tjänst) stödjer en begränsad uppsättning inbyggda nätverksfunktioner och kräver kanske inte ett uttryckligt definierat programvarudefinierat nätverk för att stödja arbetsbelastningskrav.
-- **[Molnbaserat](cloud-native.md):** En molnbaserad arkitektur stöder molnbaserade arbetsbelastningar med hjälp av virtuella nätverk som bygger på molnplattformens standardmässiga programvarudefinierade nätverksfunktioner utan beroende av lokala eller andra externa resurser.
-- **[Moln-DMZ](cloud-dmz.md):** Stöder begränsad anslutning mellan dina lokala nätverk och molnbaserade nätverk. Skyddas genom implementeringen av en demilitariserad zon som strikt kontrollerar trafik mellan de två miljöerna.
-- **[Hybrid](hybrid.md):** Nätverksarkitekturen för hybridmoln gör att virtuella nätverk i betrodda molnmiljöer kan komma åt dina lokala resurser och vice versa.
-- **[Nav och ekrar](hub-spoke.md):** Med nav och ekrar-arkitekturen kan du centralt hantera externa anslutningar och delade tjänster, isolera enskilda arbetsbelastningar och lösa potentiella prenumerationsbegränsningar.
+- **[Endast PaaS](./paas-only.md):** De flesta PaaS-produkter (plattform som en tjänst) stödjer en begränsad uppsättning inbyggda nätverksfunktioner och kräver kanske inte ett uttryckligt definierat programvarudefinierat nätverk för att stödja arbetsbelastningskrav.
+- **[Molnbaserat](./cloud-native.md):** En molnbaserad arkitektur stöder molnbaserade arbetsbelastningar med hjälp av virtuella nätverk som bygger på molnplattformens standardmässiga programvarudefinierade nätverksfunktioner utan beroende av lokala eller andra externa resurser.
+- **[Moln-DMZ](./cloud-dmz.md):** Stöder begränsad anslutning mellan dina lokala nätverk och molnbaserade nätverk. Skyddas genom implementeringen av en demilitariserad zon som strikt kontrollerar trafik mellan de två miljöerna.
+- **[Hybrid](./hybrid.md):** Nätverksarkitekturen för hybridmoln gör att virtuella nätverk i betrodda molnmiljöer kan komma åt dina lokala resurser och vice versa.
+- **[Nav och ekrar](./hub-spoke.md):** Med nav och ekrar-arkitekturen kan du centralt hantera externa anslutningar och delade tjänster, isolera enskilda arbetsbelastningar och lösa potentiella prenumerationsbegränsningar.
 
 ## <a name="learn-more"></a>Läs mer
 
 Mer information om programvarudefinierade nätverk i Azure finns här:
 
-- [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview). I Azure tillhandahålls den grundläggande SDN-funktionen av Azure Virtual Network, som fungerar som en molnbaserad motsvarighet till fysiska lokala nätverk. Virtuella nätverk kan även fungera som en standardmässig isoleringsgräns mellan resurser på plattformen.
-- [Metodtips för nätverkssäkerhet med Azure](/azure/security/azure-security-network-security-best-practices). Rekommendationer från Azure Security-teamet om hur du konfigurerar virtuella nätverk för att minimera säkerhetsrisker.
+- [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview). I Azure tillhandahålls den grundläggande SDN-funktionen av Azure Virtual Network, som fungerar som en molnbaserad motsvarighet till fysiska lokala nätverk. Virtuella nätverk kan även fungera som en standardmässig isoleringsgräns mellan resurser på plattformen.
+- [Metodtips för nätverkssäkerhet med Azure](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices). Rekommendationer från Azure Security-teamet om hur du konfigurerar virtuella nätverk för att minimera säkerhetsrisker.
 
 ## <a name="next-steps"></a>Nästa steg
 

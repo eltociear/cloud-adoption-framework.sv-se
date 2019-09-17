@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f1d4423e230d2eeff524a864f163e0cb13dc065b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 275342d452c3f9c47c004014d6e2831c88aa91df
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818275"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022240"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Metodtips för Azure-beredskap
 
@@ -24,7 +24,7 @@ En stor del av molnberedskapen handlar om att förse personalen med de tekniska 
 Använd följande riktlinjer när du ordnar och distribuerar dina tillgångar i Azure-miljön:
 
 - [Grundläggande koncept för Azure](../considerations/fundamental-concepts.md). Läs om grundläggande koncept och termer som används i Azure. Lär dig också hur dessa koncept är relaterade till varandra.
-- [Rekommenderade regler för namngivning och etiketter](../considerations/name-and-tag.md). Läs detaljerade rekommendationer för att namnge och märka upp dina resurser. De här rekommendationerna är lämpliga när företag flyttar till molnet.
+- [Rekommenderade regler för namngivning och etiketter](../considerations/naming-and-tagging.md). Läs detaljerade rekommendationer för att namnge och märka upp dina resurser. De här rekommendationerna är lämpliga när företag flyttar till molnet.
 - [Skalning med flera Azure-prenumerationer](../considerations/scaling-subscriptions.md). Förstå strategier för skalning med flera Azure-prenumerationer.
 - [Organisera dina resurser i Azure-hanteringsgrupper](https://docs.microsoft.com/azure/governance/management-groups/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json). Lär dig hur Azure-hanteringsgrupper kan hantera resurser, roller, principer och distribution över flera prenumerationer.
 - [Skapa konsekventa hybridmoln](../../infrastructure/misc/hybrid-consistency.md). Skapa hybridmolnlösningar som tillhandahåller fördelarna med molnskapande samtidigt som många av fördelarna med lokal hantering bibehålls.

@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 2e1ba47201285559be784fafe6b39bdbde0c35ed
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: ceb9fb6ff6be481f665a0bb70e3afcc2eddb6e92
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817085"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023877"
 ---
 # <a name="identity-decision-guide"></a>Beslutsguide för identitet
 
 I alla miljöer, såväl lokala som hybridbaserade eller molnexklusiva, behöver IT-avdelningen kontrollera vilka administratörer, användare och grupper som har åtkomst till resurser. Med IAM-tjänster (identitets- och åtkomsthantering) kan du hantera åtkomstkontroll i molnet.
 
-![Identitetsalternativ ordnade från minst till mest komplext, inriktat med direktlänkar nedan](../../_images/discovery-guides/discovery-guide-identity.png)
+![Identitetsalternativ ordnade från minst till mest komplext, inriktat med direktlänkar nedan](../../_images/decision-guides/decision-guide-identity.png)
 
 Hoppa till: [Fastställa krav för identitetsintegrering](#determine-identity-integration-requirements) | [Molnbaslinje](#cloud-baseline) | [Katalogsynkronisering](#directory-synchronization) | [Molnhanterade domäntjänster](#cloud-hosted-domain-services) | [Active Directory Federation Services](#active-directory-federation-services) | [Läs mer](#learn-more)
 
@@ -61,7 +61,7 @@ Azure AD är det inbyggda IAM-systemet (identitets- och åtkomsthantering) för 
 
 För organisationer med befintlig lokal Active Directory-infrastruktur är katalogsynkronisering ofta den bästa lösningen för att bevara befintlig användar- och åtkomsthantering och samtidigt få de IAM-funktioner som krävs för hantering av molnresurser. Den här processen replikerar kontinuerligt kataloginformation mellan Azure AD och lokala katalogtjänster, vilket möjliggör gemensamma autentiseringsuppgifter för användare och ett konsekvent system för identiteter, roller och behörigheter i hela organisationen.
 
-Obs! Organisationer som har implementerat Office 365 kan redan ha implementerat [katalogsynkronisering](/office365/enterprise/set-up-directory-synchronization) mellan sin lokala Active Directory-infrastruktur och Azure Active Directory.
+Obs! Organisationer som har implementerat Office 365 kan redan ha implementerat [katalogsynkronisering](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) mellan sin lokala Active Directory-infrastruktur och Azure Active Directory.
 
 **Antaganden gällande katalogsynkronisering:** Användning av en lösning för synkroniserad identitet förutsätter följande:
 
@@ -91,16 +91,16 @@ Det är troligt att dina befintliga kataloger och domäntjänster fortsätter at
 
 Identitetsfederation upprättar förtroenderelationer mellan flera identitetshanteringssystem för att möjliggöra gemensamma funktioner för autentisering och auktorisering. Sedan kan du stödja funktioner för enkel inloggning över flera domäner i din organisation eller identitetssystem som hanteras av dina kunder eller affärspartner.
 
-Azure AD stöder federation av lokala Active Directory-domäner med hjälp av [Active Directory Federation Services](/azure/active-directory/hybrid/how-to-connect-fed-whatis) (AD FS). I referensarkitekturen [Utöka AD FS till Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs) beskrivs hur detta kan implementeras i Azure.
+Azure AD stöder federation av lokala Active Directory-domäner med hjälp av [Active Directory Federation Services](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-whatis) (AD FS). I referensarkitekturen [Utöka AD FS till Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs) beskrivs hur detta kan implementeras i Azure.
 
 ## <a name="learn-more"></a>Läs mer
 
 Mer information om identitetstjänster i Azure finns här:
 
 - [Azure AD](https://azure.microsoft.com/services/active-directory). Azure AD tillhandahåller molnbaserade identitetstjänster. Det gör att du kan hantera åtkomst till dina Azure-resurser och kontrollera identitetshantering, enhetsregistrering, användaretablering, åtkomstkontroll för program samt dataskydd.
-- [Azure AD Connect](/azure/active-directory/hybrid/whatis-hybrid-identity). Med verktyget Azure AD Connect kan du ansluta Azure AD-instanser till dina befintliga lösningar för identitetshantering så att din befintliga katalog i molnet kan synkroniseras.
-- [Rollbaserad åtkomstkontroll](/azure/role-based-access-control/overview) (RBAC). Azure AD tillhandahåller RBAC för att effektivt och säkert hantera åtkomst till resurser i hanteringsplanet. Jobb och ansvarsområden organiseras i roller, och användare tilldelas de rollerna. Med RBAC kan du kontrollera vem som har åtkomst till en resurs samt vilka åtgärder användare kan utföra på den resursen.
-- [Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) (PIM). PIM sänker exponeringstiden för behörigheter för resursåtkomst och ökar din insyn i användningen av dem via rapporter och aviseringar. Det begränsar användarna till att få behörigheter ”just-in-time” (JIT) eller genom att tilldela behörigheter under en kortare tidsperiod, varefter behörigheterna automatiskt återkallas.
+- [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity). Med verktyget Azure AD Connect kan du ansluta Azure AD-instanser till dina befintliga lösningar för identitetshantering så att din befintliga katalog i molnet kan synkroniseras.
+- [Rollbaserad åtkomstkontroll](https://docs.microsoft.com/azure/role-based-access-control/overview) (RBAC). Azure AD tillhandahåller RBAC för att effektivt och säkert hantera åtkomst till resurser i hanteringsplanet. Jobb och ansvarsområden organiseras i roller, och användare tilldelas de rollerna. Med RBAC kan du kontrollera vem som har åtkomst till en resurs samt vilka åtgärder användare kan utföra på den resursen.
+- [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) (PIM). PIM sänker exponeringstiden för behörigheter för resursåtkomst och ökar din insyn i användningen av dem via rapporter och aviseringar. Det begränsar användarna till att få behörigheter ”just-in-time” (JIT) eller genom att tilldela behörigheter under en kortare tidsperiod, varefter behörigheterna automatiskt återkallas.
 - [Integrera lokala Active Directory-domäner med Azure Active Directory](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad). Denna referensarkitektur innehåller ett exempel på katalogsynkronisering mellan lokala Active Directory-domäner och Azure AD.
 - [Utöka Active Directory Domain Services (AD DS) till Azure.](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain) Denna referensarkitektur innehåller ett exempel på distribution av AD DS-servrar för att utöka domäntjänster till molnbaserade resurser.
 - [Utöka Active Directory Federation Services (AD FS) till Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs). Denna referensarkitektur konfigurerar Active Directory Federation Services (AD FS) till att utföra sammansluten autentisering och auktorisering med din Azure AD-katalog.

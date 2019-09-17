@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d370f8e868be1186aad17b89915f52ad0413d04d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 9b77b8fbbe6479b716d9b9f91d6e0154db8c0db7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816439"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022815"
 ---
 ::: zone target="chromeless"
 
@@ -67,7 +67,7 @@ Den här guiden ger svar på dessa frågor. Där finns förslag på uppgifter oc
 
 ::: zone target="docs"
 
-I [Styrning i Azure](/azure/security/governance-in-azure) kan du lära dig mer om att organisera och strukturera prenumerationer, hantera distribuerade resurser och uppfylla företagets policykrav.
+I [Styrning i Azure](https://docs.microsoft.com/azure/security/governance-in-azure) kan du lära dig mer om att organisera och strukturera prenumerationer, hantera distribuerade resurser och uppfylla företagets policykrav.
 
 ::: zone-end
 
@@ -112,8 +112,8 @@ Dessa metoder är inte ömsesidigt uteslutande – till exempel använder din f�
 
 ::: zone target="docs"
 
-Dessa metoder är inte ömsesidigt uteslutande – till exempel använder din första migrering kanske en **värdbytesmodell**, men då kan du välja att implementera **refaktorisering** eller **arkitekturomarbetning** som en del av fasen för optimering efter migrering. Detta beskrivs närmare i avsnittet [Optimera och transformera](optimize-and-transform.md) i den här guiden.
+Dessa metoder är inte ömsesidigt uteslutande – till exempel använder din första migrering kanske en **värdbytesmodell**, men då kan du välja att implementera **refaktorisering** eller **arkitekturomarbetning** som en del av fasen för optimering efter migrering. Detta beskrivs närmare i avsnittet [Optimera och transformera](./optimize-and-transform.md) i den här guiden.
 
 ::: zone-end
 
-![Infografik med migreringsalternativen](../../_images/migration/migration-options.png)
+![Infografik med migreringsalternativen](../../_images/migrate/migration-options.png)

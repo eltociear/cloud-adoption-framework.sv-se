@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 0997698660f19ff47a2eebe6dcdccb122e7f20b5
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 209de4c03474a956edf629c9c24f6b29f492284b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906104"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023640"
 ---
 # <a name="subscription-decision-guide"></a>Beslutsguide för prenumerationer
 
@@ -37,7 +37,8 @@ Eftersom alla organisationer är olika, så är Azure-hanteringsgrupperna utform
 
 Innan du slutför din prenumerationsdesign kan du även överväga hur överväganden om [resurskonsekvens](../resource-consistency/index.md) kan påverka dina designval.
 
-> ![OBS] Med Azure Enterprise-avtal (EA) kan du definiera en annan organisationshierarki i faktureringssyfte. Den här hierarkin skiljer sig från din hanteringsgruppshierarki, vilken fokuserar på att tillhandahålla en arvsmodell för att underlätta tillämpning av lämpliga principer och åtkomstkontroller på dina resurser.
+> [!NOTE]
+> Med Azure Enterprise-avtal (EA) kan du definiera en annan organisationshierarki i faktureringssyfte. Den här hierarkin skiljer sig från din hanteringsgruppshierarki, vilken fokuserar på att tillhandahålla en arvsmodell för att underlätta tillämpning av lämpliga principer och åtkomstkontroller på dina resurser.
 
 Följande prenumerationsalternativ avspeglar en initial förbättring av prenumerationsdesignen, följt av flera mer avancerade hierarkier som kan anpassas till din organisation:
 
@@ -94,9 +95,9 @@ Hanteringsgruppshierarkier kan ha ett djup på upp till sex nivåer. Detta ger d
 
 ## <a name="related-resources"></a>Relaterade resurser
 
-- [Åtkomsthantering av resurser i Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Flera styrningsnivåer i stora företag](/azure/architecture/cloud-adoption/governance/journeys/large-enterprise/multiple-layers-of-governance)
-- [Flera geografiska områden](/azure/architecture/cloud-adoption/migrate/expanded-scope/multiple-regions)
+- [Åtkomsthantering av resurser i Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Flera styrningsnivåer i stora företag](../../govern/guides/complex/multiple-layers-of-governance.md)
+- [Flera geografiska områden](../../migrate/expanded-scope/multiple-regions.md)
 
 ## <a name="next-steps"></a>Nästa steg
 

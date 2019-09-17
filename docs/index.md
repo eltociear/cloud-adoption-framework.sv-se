@@ -8,18 +8,18 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 07/04/2019
-ms.openlocfilehash: 888d45eacf15150586eda0e6ace771b1802ac673
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: f7928418f583528cd08a0eeb5d7c77c724abe675
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816677"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024426"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Microsoft Cloud Adoption Framework för Azure
 
 Cloud Adoption Framework är Microsofts metod för molnimplementering i Azure, som bygger på bästa praxis från Microsofts anställda, partner och kunder. Det här ramverket förser företagskunder med verktyg, vägledning och berättelser som bidrar till att forma strategier för teknik, företag och människor för att uppnå önskade affärsresultat under implementeringen. Den här vägledningen ger riktlinjer för olika faser och iterationer för en normal livscykel för molnimplementering, och garanterar enkel åtkomst till rätt vägledning vid rätt tidpunkt.
 
-![Översikt över Cloud Adoption Framework](./_images/cloud-adoption-framework-overview.png)
+![Översikt över Cloud Adoption Framework](./_images/caf-overview.png)
 
 ## <a name="getting-started-executive-summaries"></a>Komma igång: Sammanfattningar
 
@@ -35,7 +35,7 @@ Varje Cloud Adoption Framework-avsnitt är länkat till översiktsdiagrammet ova
 
 <ul class="panelContent cardsF">
     <li style="display: flex; flex-direction: column;">
-        <a href="./business-strategy/index.md">
+        <a href="./strategy/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -111,7 +111,7 @@ Migrera och modernisera befintliga arbetsbelastningar.
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./governance/index.md">
+        <a href="./govern/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -130,7 +130,7 @@ Reglera miljö och arbetsbelastningar.
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./organization/index.md">
+        <a href="./organize/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -154,12 +154,12 @@ Anpassa personer om du vill aktivera molnimplementering och åtgärder.
 
 Cloud Adoption Framework erbjuds för närvarande som en offentlig förhandsversion. Ramverket får allmän tillgänglighet (GA) när avsikten nedan har uppnåtts till fullo. I den här förhandsversionen är de viktigaste områdena:
 
-- [Molnimplementeringsstrategi](./business-strategy/index.md)
+- [Molnimplementeringsstrategi](./strategy/index.md)
 - [Molnimplementeringsplanering](./plan/index.md)
 - [Molnmigrering](./migrate/index.md)
-- [Molnstyrning](./governance/journeys/index.md)
+- [Molnstyrning](./govern/guides/index.md)
 
-Cloud Adoption Framework kommer att expanderas ofta under den tid då det närmar sig allmän tillgänglighet. Detta kommer att tillföra djup till avsnitten samt nya innehållsavsnitt. Mer information finns i [översikten för Cloud Adoption Framework](./appendix/roadmap.md).
+Cloud Adoption Framework kommer att expanderas ofta under den tid då det närmar sig allmän tillgänglighet. Detta kommer att tillföra djup till avsnitten samt nya innehållsavsnitt. Mer information finns i [översikten för Cloud Adoption Framework](./reference/roadmap.md).
 
 ## <a name="intent"></a>Avsikt
 
@@ -181,7 +181,7 @@ Avsnitt av Cloud Adoption Framework representerar olika specialiseringar eller v
 
 Om Azure är nytt för ditt företag kan du börja med att läsa avsnittet [Kom igång med Cloud Adoption Framework](./getting-started/migrate.md). Den här översikten ger riktlinjer för ditt företags digitala omvandling med vägledning genom varje steg i processen.
 
-Om ditt företag har erfarenhet av Azure och söker mer detaljerad vägledning och metodtips för specifika områden kan du läsa [styrningsöversikten](./governance/index.md) och [beslutsguiderna för arkitekturer](./decision-guides/index.md). Vi kommer att lägga till fler avsnitt under tiden fram till allmän tillgänglighet.
+Om ditt företag har erfarenhet av Azure och söker mer detaljerad vägledning och metodtips för specifika områden kan du läsa [styrningsöversikten](./govern/index.md) och [beslutsguiderna för arkitekturer](./decision-guides/index.md). Vi kommer att lägga till fler avsnitt under tiden fram till allmän tillgänglighet.
 
 > [!div class="nextstepaction"]
 > [Kom igång](./getting-started/migrate.md)

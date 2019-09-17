@@ -8,12 +8,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 082db3cb266c428d371687ebb32a4d7d52c4663a
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 9a5b7c3eb1a831b9bf15540550d1c2005114a820
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817850"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023470"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -44,10 +44,10 @@ En analys av den digitala egendomen driver aktiviteter för molnimplementering. 
 
 Slutför analysen av den digitala egendomen genom att göra följande:
 
-1. [Fastställa analysmetod](approach.md).
-1. [Samla in aktuell tillståndsinventering](inventory.md).
-1. [Rationalisera tillgångarna i den digitala egendomen](rationalize.md).
-1. [Rikta in tillgångar ned molnerbjudanden för att beräkna prissättning](calculate.md).
+1. [Fastställa analysmetod](./approach.md).
+1. [Samla in aktuell tillståndsinventering](./inventory.md).
+1. [Rationalisera tillgångarna i den digitala egendomen](./rationalize.md).
+1. [Rikta in tillgångar ned molnerbjudanden för att beräkna prissättning](./calculate.md).
 
 Ekonomiska modeller och uppgiftslistor för migrering kan ändras så att de speglar den rationaliserade och prissatta egendomen.
 
@@ -56,4 +56,4 @@ Ekonomiska modeller och uppgiftslistor för migrering kan ändras så att de spe
 Innan du kan börja planera din digitala egendom måste du avgöra vilken metod som ska användas.
 
 > [!div class="nextstepaction"]
-> [Metoder för planering av digital egendom](approach.md)
+> [Metoder för planering av digital egendom](./approach.md)

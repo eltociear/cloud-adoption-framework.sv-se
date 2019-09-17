@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 96ab62dc2adf17890989160c0af4fb80636b31b9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 7ec216152adb4ed55b2a1eab03a8a98cd2ce8332
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818173"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022621"
 ---
 # <a name="prerequisites-for-migration"></a>Förutsättningar för migrering
 
@@ -25,10 +25,10 @@ Säkerställa affärsmässig, kulturell och teknisk beredskap innan en iterativ 
 
 ## <a name="review-business-drivers"></a>Granska affärsdrivande faktorer
 
-Innan du påbörjar molnmigrering bör du läsa vägledningen för [Planera](../../../business-strategy/index.md) och [Redo](../../../ready/index.md) i Cloud Adoption Framework så att organisationen är förberedd inför processerna för molnimplementering och migrering. I synnerhet bör du granska de affärskrav och förväntade resultat som driver migreringen:
+Innan du påbörjar molnmigrering bör du läsa vägledningen för [Planera](../../../strategy/index.md) och [Redo](../../../ready/index.md) i Cloud Adoption Framework så att organisationen är förberedd inför processerna för molnimplementering och migrering. I synnerhet bör du granska de affärskrav och förväntade resultat som driver migreringen:
 
 - [Komma igång: Migrera](../../../getting-started/migrate.md)
-- [Varför går vi över till molnet?](../../../business-strategy/motivations-why-are-we-moving-to-the-cloud.md)
+- [Varför går vi över till molnet?](../../../strategy/motivations.md)
 
 ## <a name="definition-of-done"></a>Definitionen av *klar*
 
@@ -56,7 +56,7 @@ En enskild medlem från varje grupp ska identifieras som ansvarig för var och e
 
 Utöver det övergripande ansvaret finns det åtgärder som en person eller en grupp måste vara direkt ansvarig för. Här följer några sådana ansvarsområden som påverkar dessa aktiviteter:
 
-- **Affärsprioritering.** Fatta affärsbeslut om de arbetsbelastningar som ska migreras samt allmänna begränsningar vad gäller tidsschemat. Mer information finns i avsnittet om [affärsmotiveringar gällande molnmigrering](../../../business-strategy/motivations-why-are-we-moving-to-the-cloud.md).
+- **Affärsprioritering.** Fatta affärsbeslut om de arbetsbelastningar som ska migreras samt allmänna begränsningar vad gäller tidsschemat. Mer information finns i avsnittet om [affärsmotiveringar gällande molnmigrering](../../../strategy/motivations.md).
 - **Beredskap för ändringshantering.** Upprätta och förmedla planen för att spåra tekniska ändringar under migrering. Mer information om det här ämnet blir tillgängligt under det tredje kvartalet 2019.
 - **Inriktning av företagsanvändare.** Upprätta en plan för att förbereda den bredare gruppen med företagsanvändare för genomförandet av migrering. Mer information om det här ämnet blir tillgängligt under det tredje kvartalet 2019.
 - **Inventering och analys av digital egendom.** Körning av de verktyg som krävs för att inventera och analysera den digitala egendomen. Mer information finns i Cloud Adoption Framework-genomgången av [digital egendom](../../../digital-estate/index.md).

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: 39254fdf2dd5638978899308c4fe79cd40cf249f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 17f462802a9ff5b44dfd734b299057649bbd797b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816966"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023816"
 ---
 # <a name="migration-tools-decision-guide"></a>Beslutsguide för migreringsverktyg
 
@@ -21,7 +21,7 @@ Den strategi och de verktyg som du använder för att migrera ett program till A
 
 Valet att migrera med hjälp av tekniker för PaaS (plattform som en tjänst) eller IaaS (infrastruktur som en tjänst) drivs av balansen mellan kostnad, tid, befintlig teknisk skuld och långsiktiga resultat. IaaS är ofta den snabbaste vägen till molnet med ett minimum av nödvändiga ändringar av arbetsbelastningen. PaaS kan kräva ändringar i datastrukturer eller källkoden, men ger betydande långsiktiga fördelar i form av minskade driftskostnader och större teknisk flexibilitet. I följande diagram används termen _modernisera_ för att återspegla ett beslut att modernisera en tillgång under migrering och att migrera den moderniserade tillgången till en PaaS-plattform.
 
-![Exempel på beslutsträd för migreringsverktyg.](../../_images/migration/migration-tools-decision-tree.png)
+![Exempel på beslutsträd för migreringsverktyg.](../../_images/migrate/migration-tools-decision-tree.png)
 
 ## <a name="key-questions"></a>Viktiga frågor
 
@@ -40,7 +40,7 @@ I linje med Cloud Adoption Frameworks betoning på arbete med [inkrementell migr
 
 ## <a name="learn-more"></a>Läs mer
 
-- **[Grunderna för molnet: Översikt över databearbetningsalternativ i Azure](/azure/architecture/guide/technology-choices/compute-overview)** . Innehåller information om funktionerna i Azure IaaS- och PaaS-beräkningsalternativ.
-- **[Grunderna för molnet: Välja rätt datalager](/azure/architecture/guide/technology-choices/data-store-overview)** . Beskriver PaaS-lagringsalternativ som finns tillgängliga på Azure-plattformen.
+- **[Grunderna för molnet: Översikt över databearbetningsalternativ i Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview)** . Innehåller information om funktionerna i Azure IaaS- och PaaS-beräkningsalternativ.
+- **[Grunderna för molnet: Välja rätt datalager](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)** . Beskriver PaaS-lagringsalternativ som finns tillgängliga på Azure-plattformen.
 - **[Migrering med utökat omfång: Lagringskraven överskrider nätverkskapaciteten under ett migreringsprojekt](../../migrate/expanded-scope/network-capacity-exceeded.md)** . Beskriver alternativa mekanismer för datamigrering för scenarier där datamigrering hindras av tillgänglig nätverksbandbredd.
-- **[SQL Database: Välja rätt alternativ för SQL Server i Azure](/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines)** . Beskrivning av alternativen affärsmotiveringarna för valet att värdhantera dina SQL Server-arbetsbelastningar i en miljö med värdhanterad infrastruktur (IaaS) eller en värdhanterad tjänst (PaaS).
+- **[SQL Database: Välja rätt alternativ för SQL Server i Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines)** . Beskrivning av alternativen affärsmotiveringarna för valet att värdhantera dina SQL Server-arbetsbelastningar i en miljö med värdhanterad infrastruktur (IaaS) eller en värdhanterad tjänst (PaaS).

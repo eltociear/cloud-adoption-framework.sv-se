@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 14bd697a3332466fb97043d3420d80b1dca50679
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 652637905f9de09972eed199f85245e99fb60e29
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818139"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022573"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>Säkra övervaknings- och hanteringsverktyg
 
@@ -26,7 +26,7 @@ När en migrering är klar ska migrerade tillgångar hanteras av kontrollerade I
 - **Kärnövervakning.** Kärnövervakning ger grundläggande nödvändig övervakning för alla Azure-resurser. Dessa tjänster kräver minimal konfiguration och samlar in kärntelemetri som premiumövervakningstjänsterna använder.
 - **Djupgående övervakning av program och infrastruktur.** Azure-tjänster innehåller omfattande funktioner för att samla in och analysera övervakningsdata på en djupare nivå. Dessa tjänster bygger på kärnövervakning och drar nytta av vanliga funktioner i Azure. De tillhandahåller kraftfull analys med insamlade data, vilket ger dig unika insikter om dina program och om infrastrukturen.
 
-Läs mer om [Azure Monitor](/azure/azure-monitor/overview) för övervakning av migrerade tillgångar.
+Läs mer om [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) för övervakning av migrerade tillgångar.
 
 ## <a name="security-monitoring"></a>Säkerhetsövervakning
 
@@ -39,7 +39,7 @@ Förlita dig på Azure Security Center för enhetlig säkerhetsövervakning och 
 - **Rangordnade aviseringar och incidenter.** Fokusera på de mest kritiska hoten först med prioriterade säkerhetsaviseringar och incidenter.
 - **Integrerade säkerhetslösningar.** Samla in, sök efter och analysera säkerhetsdata från flera olika källor såsom anslutna partnerlösningar.
 
-Läs mer om [Azure Security Center](/azure/security-center) för att skydda migrerade tillgångar.
+Läs mer om [Azure Security Center](https://docs.microsoft.com/azure/security-center) för att skydda migrerade tillgångar.
 
 ## <a name="protect-assets-and-data"></a>Skydda tillgångar och data
 
@@ -50,4 +50,4 @@ Azure Backup ger dig möjlighet att skydda virtuella datorer, filer och data. Az
 - Säkerhetskopiera SQL Server-databaser.
 - Återställa skyddade tillgångar.
 
-Läs mer om [Azure Backup](/azure/backup) för att skydda migrerade tillgångar.
+Läs mer om [Azure Backup](https://docs.microsoft.com/azure/backup) för att skydda migrerade tillgångar.

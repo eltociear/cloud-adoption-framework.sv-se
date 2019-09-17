@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: acee0d171be547910a0fd7892c794400ae2ee101
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: f8a5b1bc61fd44752bae7989ff19779f8ad61882
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817306"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024689"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>Cloud Adoption Framework-migreringsmodellen
 
@@ -23,7 +23,7 @@ I det här Cloud Adoption Framework-avsnittet beskrivs principerna bakom dess mi
 
 Molnmigrering handlar om portföljhantering förklädd som en teknisk implementering. Under migreringsprocessen väljer du att flytta vissa tillgångar, investera i andra sådana och ta förlegade eller oanvända tillgångar ur bruk. Vissa tillgångar optimeras, refaktoriseras eller byts ut helt som en del av den här processen. Vart och ett av de här besluten bör överensstämma med motiveringen till molnmigrering. De mest framgångsrika migreringarna går även ett steg längre och riktar in dessa beslut med önskade affärsresultat.
 
-Cloud Adoption Framework-migreringsmodellen är beroende av att din organisation har slutfört en process för affärsberedskap för molnimplementering. Se till att du har granskat vägledningen [Planera](../../business-strategy/index.md) och [Redo](../../ready/index.md) i Cloud Adoption Framework för att avgöra affärsdrivande faktorer eller annan motivering för molnmigrering samt eventuell organisationsplanering eller utbildning som krävs innan en migreringsprocess genomförs i stor skala.
+Cloud Adoption Framework-migreringsmodellen är beroende av att din organisation har slutfört en process för affärsberedskap för molnimplementering. Se till att du har granskat vägledningen [Planera](../../strategy/index.md) och [Redo](../../ready/index.md) i Cloud Adoption Framework för att avgöra affärsdrivande faktorer eller annan motivering för molnmigrering samt eventuell organisationsplanering eller utbildning som krävs innan en migreringsprocess genomförs i stor skala.
 
 > [!NOTE]
 > Affärsplanering är viktigt, men det är lika viktigt att ha ett tankesätt som fokuserar på tillväxt. Parallellt med bredare affärsplaneringsarbete som utförs av molnstrategiteamet kan molnimplementeringsteamet med fördel börja migrera en enskild arbetsbelastning som förberedelse inför migreringsarbete i större skala. Den här inledande migreringen gör att teamet får praktisk erfarenhet av de affärsmässiga och tekniska frågor som migrering medför.
@@ -32,7 +32,7 @@ Cloud Adoption Framework-migreringsmodellen är beroende av att din organisation
 
 Det är viktigt att upprätta en ungefärlig vision om sluttillståndet innan du påbörjar migreringsarbetet. Diagrammet nedan visar en lokal startpunkt med infrastruktur, program och data som definierar din *digital egendom*. Under migreringsprocessen överförs dessa tillgångar via någon av de fem migreringsstrategier som beskrivs i [de fem R:en för rationalisering](../../digital-estate/5-rs-of-rationalization.md).
 
-![Infografik med migreringsalternativen](../../_images/migration/migration-options.png)
+![Infografik med migreringsalternativen](../../_images/migrate/migration-options.png)
 
 Migrering och modernisering av arbetsbelastningar omfattar allt från enkla *värdbytesmigreringar* (”lift and shift”) med hjälp av IaaS-funktioner (infrastruktur som en tjänst), som inte kräver kod- eller appändringar, till *refaktorisering* med minimala ändringar eller *arkitekturomarbetning* för att ändra och utöka funktionerna i kod och app till att utnyttja molntekniker.
 
@@ -47,7 +47,7 @@ Molnbaserade strategier och PaaS-strategier (plattform som en tjänst) *återska
 
 Cloud Adoption Framework-migreringsmodellen baseras på en inkrementell molnomvandlingsprocess. Den förutsätter att organisationen börjar med ett enskilt molnmigreringsprojekt med begränsat omfång som vi ofta kallar den första arbetsbelastningen. Det här projektet utökas iterativt till att omfatta fler arbetsbelastningar allt eftersom ditt driftsteam förfinar och förbättrar migreringsprocesserna.
 
-Molnmigreringsverktyg som [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) kan migrera hela datacenter som består av tiotusentals virtuella datorer. Dock kan verksamheten och befintliga IT-åtgärder sällan hantera förändring i en sådan snabb takt. Därför delar många organisationer upp migreringsprojekt i flera iterationer där en arbetsbelastning (eller samling med arbetsbelastningar) flyttas per iteration.
+Molnmigreringsverktyg som [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) kan migrera hela datacenter som består av tiotusentals virtuella datorer. Dock kan verksamheten och befintliga IT-åtgärder sällan hantera förändring i en sådan snabb takt. Därför delar många organisationer upp migreringsprojekt i flera iterationer där en arbetsbelastning (eller samling med arbetsbelastningar) flyttas per iteration.
 
 Principerna bakom den här inkrementella modellen baseras på genomförandet av processer och förutsättningar som refereras till i följande infografik.
 

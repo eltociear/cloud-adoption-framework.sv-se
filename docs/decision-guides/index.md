@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a1522713ccc96bdaf713d9a72b49dc4815823eb2
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2ca59288d74b8a7578a91a160f3c3960ac3cedda
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817986"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023847"
 ---
 # <a name="architectural-decision-guides"></a>Beslutsguider för arkitektur
 
@@ -42,11 +42,11 @@ Var och en av följande kategorier representerar en grundläggande teknik för a
 
 [Kryptering](./encryption/index.md): Skydda känsliga data med hjälp av kryptering för att uppfylla organisationens krav på efterlevnad och säkerhetsprinciper.
 
-[Loggar och rapportering](./log-and-report/index.md): Övervaka loggdata som genereras av molnbaserade resurser. Analys av data ger hälsorelaterade insikter om åtgärder, underhåll och efterlevnadsstatus för arbetsbelastningar.
+[Loggar och rapportering](./logging-and-reporting/index.md): Övervaka loggdata som genereras av molnbaserade resurser. Analys av data ger hälsorelaterade insikter om åtgärder, underhåll och efterlevnadsstatus för arbetsbelastningar.
 
 ## <a name="next-steps"></a>Nästa steg
 
 Lär dig hur prenumerationer och konton fungerar som grund för en molndistribution.
 
 > [!div class="nextstepaction"]
-> [Prenumerationsdesign](subscriptions/index.md)
+> [Prenumerationsdesign](./subscriptions/index.md)
