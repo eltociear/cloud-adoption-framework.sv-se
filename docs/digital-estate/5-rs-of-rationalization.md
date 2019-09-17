@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 12373dea4bffaaa1b4894e4a34f291d190caab7e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 40962b8c658c40e4a27e3c025bc42b3aa5acd0f3
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829376"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023624"
 ---
 # <a name="cloud-rationalization"></a>Cloud rationalisering
 
-Cloud rationalisering är en process för att utvärdera till gångar för att fastställa det bästa sättet att migrera eller modernisera varje till gång i molnet. Mer information om processen för rationalisering finns i [Vad är en digital egendom?](index.md).
+Cloud rationalisering är en process för att utvärdera till gångar för att fastställa det bästa sättet att migrera eller modernisera varje till gång i molnet. Mer information om processen för rationalisering finns i [Vad är en digital egendom?](./index.md).
 
 ## <a name="rationalization-context"></a>Rationalisering-kontext
 
@@ -161,4 +161,4 @@ Kvalitativa analys faktorer:
 Du kan samla in dessa fem RS-rationalisering till en digital fastighet som hjälper dig att fatta rationalisering beslut om det framtida läget för varje program.
 
 > [!div class="nextstepaction"]
-> [Vad är en digital egendom?](index.md)
+> [Vad är en digital egendom?](./index.md)

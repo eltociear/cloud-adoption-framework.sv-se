@@ -8,16 +8,16 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 4b181faf89d8196c3bbecd153e92e6f44d076166
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: e026ac8c46fd8c39d2c6ff36c3612fed2bed7e82
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906155"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022167"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Spåra kostnader för affärsenheter, miljöer och projekt
 
-[Att skapa en kostnadsmedveten organisation](../../organization/cost-conscious-organization.md) kräver insyn och korrekt definierad åtkomst (eller omfång) till kostnadsrelaterad information. Dessa metodtips beskriver beslutsvägar och implementeringssätt för att skapa spårningsmekanismer.
+[Att skapa en kostnadsmedveten organisation](../../organize/cost-conscious-organization.md) kräver insyn och korrekt definierad åtkomst (eller omfång) till kostnadsrelaterad information. Dessa metodtips beskriver beslutsvägar och implementeringssätt för att skapa spårningsmekanismer.
 
 ![Översikt över en kostnadsmedveten process](../../_images/ready/cost-optimization-process.png)
 
@@ -35,16 +35,16 @@ Taggning är ett grundläggande sätt att förstå data i alla kostnadsrapporter
 
 Det första steget i att noggrant spåra kostnadsinformation mellan affärsenheter, miljöer och projekt är att definiera en taggningsstandard. Nästa steg är att se till att taggningsstandarden används konsekvent. Följande artiklar kan hjälpa dig med dessa steg:
 
-- [Utveckla standarder för namngivning och taggning](../considerations/name-and-tag.md)
-- [Upprätta ett styrnings-MVP för att tillämpa taggningsstandarder](../../governance/journeys/complex-enterprise/index.md)
+- [Utveckla standarder för namngivning och taggning](../considerations/naming-and-tagging.md)
+- [Upprätta ett styrnings-MVP för att tillämpa taggningsstandarder](../../govern/guides/complex/index.md)
 
 ### <a name="resource-organization"></a>Resursorganisering
 
-Det finns flera metoder för att organisera tillgångar. Det här avsnittet beskriver bästa praxis baserat på behoven hos ett stort företag med kostnadsstrukturer som är uppdelade i olika affärsenheter, geografiska områden och IT-organisationer. Ett liknande metodtips för en mindre, mindre komplex organisation finns i [Styrningsresa för små till medelstora företag](../../governance/journeys/standard-enterprise/index.md).
+Det finns flera metoder för att organisera tillgångar. Det här avsnittet beskriver bästa praxis baserat på behoven hos ett stort företag med kostnadsstrukturer som är uppdelade i olika affärsenheter, geografiska områden och IT-organisationer. Ett liknande metodtips för en mindre, mindre komplex organisation finns i [Styrningsresa för små till medelstora företag](../../govern/guides/standard/index.md).
 
 För ett stort företag skapar följande modell en hierarki för hanteringsgrupper, prenumerationer och resursgrupper som gör det möjligt för varje team att ha rätt insynsnivå för att utföra sina uppgifter. När företaget behöver kostnadskontroller för att förhindra budgetöverskridningar kan det använda styrningsverktyg som Azure-skisser eller Azure Policy för att snabbt förhindra framtida kostnadsfel.
 
-![Diagram över resursorganisering för stort företag](../../_images/governance/large-enterprise-resource-organization.png)
+![Diagram över resursorganisering för stort företag](../../_images/govern/large-enterprise-resource-organization.png)
 
 I det föregående diagrammet innehåller roten i hanteringsgruppshierarki en nod för varje affärsenhet. I det här exemplet behöver det multinationella företaget insyn i de regionala affärsenheterna. Därför skapar de en geografinod under varje affärsenhet i hierarkin.
 
@@ -60,7 +60,7 @@ Diagrammet visar metodtips men omfattar inte följande alternativ:
 Resten av den här artikeln förutsätter att du använder metodtipsen i föregående diagram. Följande artiklar kan dock hjälpa dig att tillämpa metoden på en resursorganisation som passar ditt företag bäst:
 
 - [Skalning med flera Azure-prenumerationer](../considerations/scaling-subscriptions.md)
-- [Distribuera en styrningsMVP för att styra standarder för välhanterad miljö](../../governance/journeys/complex-enterprise/index.md)
+- [Distribuera en styrningsMVP för att styra standarder för välhanterad miljö](../../govern/guides/complex/index.md)
 
 ## <a name="provide-the-right-level-of-cost-access"></a>Ange rätt nivå för kostnadsåtkomst
 
@@ -75,39 +75,39 @@ Som tumregel föreslår vi en modell med lägsta möjliga behörighet när du ti
 
 Azure Cost Management stöder följande inbyggda roller för varje omfång:
 
-- [Ägare](/azure/role-based-access-control/built-in-roles#owner). Kan visa kostnader och hantera allt, inklusive kostnadskonfiguration.
-- [Deltagare](/azure/role-based-access-control/built-in-roles#contributor). Kan visa kostnader och hantera allt, inklusive kostnadskonfiguration men inte åtkomst kontroll.
-- [Läsare](/azure/role-based-access-control/built-in-roles#reader). Kan visa allt, inklusive kostnadsdata och konfiguration, men kan inte göra ändringar.
-- [Cost Management-deltagare](/azure/role-based-access-control/built-in-roles#cost-management-contributor). Kan visa kostnader och hantera kostnadskonfiguration.
-- [Cost Management-läsare](/azure/role-based-access-control/built-in-roles#cost-management-reader) Kan visa kostnadsdata och konfiguration.
+- [Ägare](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner). Kan visa kostnader och hantera allt, inklusive kostnadskonfiguration.
+- [Deltagare](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor). Kan visa kostnader och hantera allt, inklusive kostnadskonfiguration men inte åtkomst kontroll.
+- [Läsare](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#reader). Kan visa allt, inklusive kostnadsdata och konfiguration, men kan inte göra ändringar.
+- [Cost Management-deltagare](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor). Kan visa kostnader och hantera kostnadskonfiguration.
+- [Cost Management-läsare](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-reader) Kan visa kostnadsdata och konfiguration.
 
-Som en allmän rekommendation bör medlemmar i alla team tilldelas rollen Cost Management-deltagare. Den här rollen beviljar åtkomst till att skapa och hantera budgetar och exporter för att övervaka och rapportera kostnader mer effektivt. Medlemmar i [molnstrategiteamet](../../organization/cloud-strategy.md) bör dock endast vara tilldelas rollen Cost Management-läsare. Det beror på att de inte deltar i att bestämma budgetar i Azure Cost Management-verktyget.
+Som en allmän rekommendation bör medlemmar i alla team tilldelas rollen Cost Management-deltagare. Den här rollen beviljar åtkomst till att skapa och hantera budgetar och exporter för att övervaka och rapportera kostnader mer effektivt. Medlemmar i [molnstrategiteamet](../../organize/cloud-strategy.md) bör dock endast vara tilldelas rollen Cost Management-läsare. Det beror på att de inte deltar i att bestämma budgetar i Azure Cost Management-verktyget.
 
 ### <a name="scope"></a>Omfång
 
 Följande omfång- och rollinställningar kommer att skapa den insyn som krävs för kostnadshantering. Denna rekommenderade metod kan kräva mindre ändringar för att passa tillgångsorganisationens beslut.
 
-- [Teamet för molnimplementering](../../organization/cloud-adoption.md). Ansvaret för pågående optimeringsändringar innebär att Cost Management-deltagare måste ha åtkomst på resursgruppnivå.
+- [Teamet för molnimplementering](../../organize/cloud-adoption.md). Ansvaret för pågående optimeringsändringar innebär att Cost Management-deltagare måste ha åtkomst på resursgruppnivå.
 
-  - **Arbetsmiljö**. Som minst bör molnimplementeringsteamet redan ha [deltagaråtkomst](/azure/role-based-access-control/built-in-roles#contributor) till alla berörda resursgrupper, eller minst de grupper som är relaterade till utveckling/testning eller pågående distributionsaktiviteter. Ingen ytterligare omfångsinställning krävs.
-  - **Produktionsmiljöer**. När en korrekt ansvarsfördelning har etablerats behöver molnimplementeringsteamet antagligen inte fortsätta ha åtkomst till resursgrupperna som är relaterade till projekten. Resursgrupperna som ger stöd för produktionsinstanserna i sina arbetsbelastningar behöver ett större omfång så att teamet kan se hur deras beslut inverkar på kostnaderna. Genom att ge produktionsresursgrupperna för teamet omfånget [Cost Management-deltagare](/azure/role-based-access-control/built-in-roles#cost-management-contributor) kan teamet övervaka kostnader och bestämma budgeten baserat på användning och kontinuerlig investering i de arbetsbelastningar som stöds.
+  - **Arbetsmiljö**. Som minst bör molnimplementeringsteamet redan ha [deltagaråtkomst](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) till alla berörda resursgrupper, eller minst de grupper som är relaterade till utveckling/testning eller pågående distributionsaktiviteter. Ingen ytterligare omfångsinställning krävs.
+  - **Produktionsmiljöer**. När en korrekt ansvarsfördelning har etablerats behöver molnimplementeringsteamet antagligen inte fortsätta ha åtkomst till resursgrupperna som är relaterade till projekten. Resursgrupperna som ger stöd för produktionsinstanserna i sina arbetsbelastningar behöver ett större omfång så att teamet kan se hur deras beslut inverkar på kostnaderna. Genom att ge produktionsresursgrupperna för teamet omfånget [Cost Management-deltagare](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) kan teamet övervaka kostnader och bestämma budgeten baserat på användning och kontinuerlig investering i de arbetsbelastningar som stöds.
 
-- [Teamet för molnstrategi](../../organization/cloud-strategy.md). Ansvar för att spåra kostnader över flera projekt och affärsenheter kräver Cost Management-läsaråtkomst på hanteringsgruppshierarkins rotnivå.
+- [Teamet för molnstrategi](../../organize/cloud-strategy.md). Ansvar för att spåra kostnader över flera projekt och affärsenheter kräver Cost Management-läsaråtkomst på hanteringsgruppshierarkins rotnivå.
 
-  - Tilldela [Cost Management läsaråtkomst](/azure/role-based-access-control/built-in-roles#cost-management-reader) till det här teamet i hanteringsgruppen. Detta säkerställer kontinuerlig insyn i alla distributioner som är associerade med prenumerationer som styrs av den här hanteringsgruppens hierarki.
+  - Tilldela [Cost Management läsaråtkomst](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-reader) till det här teamet i hanteringsgruppen. Detta säkerställer kontinuerlig insyn i alla distributioner som är associerade med prenumerationer som styrs av den här hanteringsgruppens hierarki.
 
-- [Team för molnstyrning](../../organization/cloud-governance.md). Ansvar för att hantera kostnader, anpassa budgeten och rapportera för alla implementeringar kräver Cost Management-deltagaråtkomst på hanteringsgrupphierarkins rotnivå.
+- [Team för molnstyrning](../../organize/cloud-governance.md). Ansvar för att hantera kostnader, anpassa budgeten och rapportera för alla implementeringar kräver Cost Management-deltagaråtkomst på hanteringsgrupphierarkins rotnivå.
 
-  - I en välhanterad miljö har molnstyrningsteamet förmodligen redan en högre åtkomstnivå, vilket gör ytterligare omfångstilldelning för [Cost Management-deltagare](/azure/role-based-access-control/built-in-roles#cost-management-contributor) överflödigt.
+  - I en välhanterad miljö har molnstyrningsteamet förmodligen redan en högre åtkomstnivå, vilket gör ytterligare omfångstilldelning för [Cost Management-deltagare](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) överflödigt.
 
-- [Molncenter för utmärkthet](../../organization/cloud-center-excellence.md). Ansvaret för att hantera kostnader som rör delade tjänster kräver Cost Management-deltagaråtkomst på prenumerationsnivå. Dessutom kan detta team behöva Cost Management-deltagaråtkomst till resursgrupper eller prenumerationer som innehåller tillgångar som distribuerats av CCoE-automatiseringar för att förstå hur dessa automatiseringar påverkar kostnaderna.
+- [Molncenter för utmärkthet](../../organize/cloud-center-of-excellence.md). Ansvaret för att hantera kostnader som rör delade tjänster kräver Cost Management-deltagaråtkomst på prenumerationsnivå. Dessutom kan detta team behöva Cost Management-deltagaråtkomst till resursgrupper eller prenumerationer som innehåller tillgångar som distribuerats av CCoE-automatiseringar för att förstå hur dessa automatiseringar påverkar kostnaderna.
 
-  - **Delade tjänster**. När ett molncenter för utmärkthet används rekommenderar vi att tillgångar som hanteras av CCoE stöds från en centraliserad delad tjänstprenumeration inom en hubb-/ekermodell. I det här scenariot har CCoE troligen deltagar- eller ägaråtkomst till den prenumerationen, vilket gör ytterligare omfångstilldelningar för [Cost Management-deltagare](/azure/role-based-access-control/built-in-roles#cost-management-contributor) onödigt.
-  - **CCoE-automatisering/kontroller**. CCoE innehåller ofta kontroller och automatiserade distributionsskript för molnimplementeringsteamen. CCoE har ansvar för att förstå hur dessa acceleratorer påverkar kostnader. Teamet behöver [Cost Management-deltagaråtkomst](/azure/role-based-access-control/built-in-roles#cost-management-contributor) till alla resursgrupper eller prenumerationer som kör dessa acceleratorer för att få insyn.
+  - **Delade tjänster**. När ett molncenter för utmärkthet används rekommenderar vi att tillgångar som hanteras av CCoE stöds från en centraliserad delad tjänstprenumeration inom en hubb-/ekermodell. I det här scenariot har CCoE troligen deltagar- eller ägaråtkomst till den prenumerationen, vilket gör ytterligare omfångstilldelningar för [Cost Management-deltagare](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) onödigt.
+  - **CCoE-automatisering/kontroller**. CCoE innehåller ofta kontroller och automatiserade distributionsskript för molnimplementeringsteamen. CCoE har ansvar för att förstå hur dessa acceleratorer påverkar kostnader. Teamet behöver [Cost Management-deltagaråtkomst](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) till alla resursgrupper eller prenumerationer som kör dessa acceleratorer för att få insyn.
 
 - **Molndriftsteam**. Ansvaret för att hantera löpande kostnader för produktionsmiljöer kräver Cost Management-deltagaråtkomst till alla produktionsprenumerationer.
 
-  - Den allmänna rekommendationen placerar produktions-och produktions resurser i separata prenumerationer som styrs av noder i hierarkin för hanterings grupper som är kopplade till produktions miljöer. I en välhanterad miljö har medlemmarna i driftsteamet förmodligen ägar- eller deltagaråtkomst till produktionsprenumerationer, vilket gör rollen [Cost Management-deltagare](/azure/role-based-access-control/built-in-roles#cost-management-contributor) överflödig.
+  - Den allmänna rekommendationen placerar produktions-och produktions resurser i separata prenumerationer som styrs av noder i hierarkin för hanterings grupper som är kopplade till produktions miljöer. I en välhanterad miljö har medlemmarna i driftsteamet förmodligen ägar- eller deltagaråtkomst till produktionsprenumerationer, vilket gör rollen [Cost Management-deltagare](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) överflödig.
 
 ## <a name="additional-cost-management-resources"></a>Ytterligare resurser för kostnadshantering
 
@@ -119,17 +119,17 @@ Mer information om att komma igång med Azure Cost Management finns i [Optimera 
 
 ### <a name="use-azure-cost-management"></a>Använd Azure Cost Management
 
-- [Skapa och hantera budgetar](/azure/cost-management/tutorial-acm-create-budgets)
-- [Exportera kostnadsdata](/azure/cost-management/tutorial-export-acm-data)
-- [Optimera kostnader baserat på rekommendationer](/azure/cost-management/tutorial-acm-opt-recommendations)
-- [Övervaka användning och utgifter med hjälp av kostnadsaviseringar](/azure/cost-management/cost-mgt-alerts-monitor-usage-spending)
+- [Skapa och hantera budgetar](https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets)
+- [Exportera kostnadsdata](https://docs.microsoft.com/azure/cost-management/tutorial-export-acm-data)
+- [Optimera kostnader baserat på rekommendationer](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations)
+- [Övervaka användning och utgifter med hjälp av kostnadsaviseringar](https://docs.microsoft.com/azure/cost-management/cost-mgt-alerts-monitor-usage-spending)
 
 ### <a name="use-azure-cost-management-to-govern-aws-costs"></a>Använd Azure Cost Management för att styra AWS-kostnader
 
-- [Integrering av kostnads- och användningsrapporter från AWS](/azure/cost-management/aws-integration-set-up-configure)
-- [Hantera AWS-kostnader](/azure/cost-management/aws-integration-manage)
+- [Integrering av kostnads- och användningsrapporter från AWS](https://docs.microsoft.com/azure/cost-management/aws-integration-set-up-configure)
+- [Hantera AWS-kostnader](https://docs.microsoft.com/azure/cost-management/aws-integration-manage)
 
 ### <a name="establish-access-roles-and-scope"></a>Etablera åtkomst, roller och omfång
 
-- [Förstå omfång för kostnadshantering](/azure/cost-management/understand-work-scopes)
-- [Ange omfång för en resursgrupp](/azure/role-based-access-control/quickstart-assign-role-user-portal)
+- [Förstå omfång för kostnadshantering](https://docs.microsoft.com/azure/cost-management/understand-work-scopes)
+- [Ange omfång för en resursgrupp](https://docs.microsoft.com/azure/role-based-access-control/quickstart-assign-role-user-portal)

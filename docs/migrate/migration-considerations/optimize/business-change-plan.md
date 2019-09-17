@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 44296faa9b5be56988babe9e0a847564d51148c3
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3bfb26e97d35bc3ace4b150045633ac2773d647f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833406"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025452"
 ---
 # <a name="business-change-plan"></a>Plan för verksamhetsändring
 
@@ -25,7 +25,7 @@ Planer för att introducera ny teknik för användare fokuserar på hur använda
 
 Även om arbetssätten varierar finns det allmänna ämnen som ingår i de flesta planer för användarinförande. Dessa teman baseras vanligtvis på ett arbetssätt som bygger på riskstyrning och på att underlätta införandet vid stegvisa förbättringar. Eason-matrisen, som visas i bilden nedan, representerar drivkrafterna bakom dessa ämnen för olika införandetyper.
 
-![Eason-matris för fokus vid användarinförande](../../../_images/eason-matrix.jpg)
+![Eason-matris för fokus vid användarinförande](../../../_images/migrate/eason-matrix.jpg)
 
 *Eason-matris för typer av användarinförande.*
 
@@ -37,8 +37,8 @@ En plan för verksamhetsändring ser längre än till den tekniska förändringe
 
 **Bakåtriktade frågor.** Bakåtriktade frågor ser på påverkan eller ändringar som kommer före användarinförandet:
 
-- Har ett förväntat [affärsresultat](../../../business-strategy/business-outcomes/index.md) kvantifierats?
-- Kan verksamhetspåverkan överföras till definierade [inlärningsmått](../../../business-strategy/learning-metrics.md)?
+- Har ett förväntat [affärsresultat](../../../strategy/business-outcomes/index.md) kvantifierats?
+- Kan verksamhetspåverkan överföras till definierade [inlärningsmått](../../../strategy/learning-metrics.md)?
 - Vilka affärsprocesser och team drar fördel av denna tekniska lösning?
 - Vem inom företaget kan bäst välja rätt avancerade användare för testning och feedback?
 - Har de verksamhetsledare som påverkas varit inblandade i prioriterings- och migreringsplaneringen?

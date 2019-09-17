@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 39b52cc79041a5d4df445c416ae7bf8cb8c14879
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 47460a4099011cd96a75af9e8f99e3a6cccabb0c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906319"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024414"
 ---
 # <a name="mainframe-application-migration"></a>Migrering av stordator program
 
@@ -51,7 +51,7 @@ I molnbaserade batch-miljöer används parallell beräkning och snabba nätverk 
 
 ### <a name="data-ingestion-systems"></a>Data inmatnings system
 
-Stordatorer inhämtar stora batchar av data från detalj handel, finansiella tjänster, tillverkning och andra lösningar för bearbetning. Med Azure kan du använda enkla kommando rads verktyg som [AzCopy](/azure/storage/common/storage-use-azcopy) för att kopiera data till och från lagrings platsen. Du kan också använda [Azure Data Factory](/azure/data-factory/introduction) tjänsten, så att du kan mata in data från olika data lager för att skapa och schemalägga data drivna arbets flöden.
+Stordatorer inhämtar stora batchar av data från detalj handel, finansiella tjänster, tillverkning och andra lösningar för bearbetning. Med Azure kan du använda enkla kommando rads verktyg som [AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) för att kopiera data till och från lagrings platsen. Du kan också använda [Azure Data Factory](https://docs.microsoft.com/azure/data-factory/introduction) tjänsten, så att du kan mata in data från olika data lager för att skapa och schemalägga data drivna arbets flöden.
 
 Förutom emuleringsenheter tillhandahåller Azure plattform som en tjänst (PaaS) och analys tjänster som kan förbättra befintliga stordator miljöer.
 
@@ -63,7 +63,7 @@ TP-övervakare är tillgängliga från olika leverantörer och körs på virtuel
 
 !["Lyft och Shift" migrering av en stordator miljö till Azure med hjälp av emulering](../../_images/mainframe-migration/mainframe-vs-azure.png)
 
-I Azure används emuleringsklienter för att köra TP Manager och de batch-jobb som använder JCL. I data skiktet ersätts DB2 av [Azure SQL Database](/azure/sql-database/sql-database-technical-overview), även om Microsoft SQL Server, DB2 LUW eller Oracle Database också kan användas. En emulator stöder IMS, VSAM och SEQ. Stordator system hanterings verktyg ersätts av Azure-tjänster och program vara från andra leverantörer som körs i virtuella datorer.
+I Azure används emuleringsklienter för att köra TP Manager och de batch-jobb som använder JCL. I data skiktet ersätts DB2 av [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview), även om Microsoft SQL Server, DB2 LUW eller Oracle Database också kan användas. En emulator stöder IMS, VSAM och SEQ. Stordator system hanterings verktyg ersätts av Azure-tjänster och program vara från andra leverantörer som körs i virtuella datorer.
 
 Funktionerna för skärm hantering och formulär inmatning implementeras ofta med hjälp av webb servrar, som kan kombineras med databas-API: er, till exempel ADO, ODBC och JDBC för data åtkomst och transaktioner. Exakt vilken rad med Azure IaaS-komponenter som ska användas beror på vilket operativ system du föredrar. Exempel:
 
@@ -75,7 +75,7 @@ Funktionerna för skärm hantering och formulär inmatning implementeras ofta me
 
 Batch-åtgärder i Azure skiljer sig från den typiska batch-miljön i stordatorer. Stordator jobb är vanligt vis seriella och är beroende av IOPS från stordator stamnät för prestanda. I molnbaserade batch-miljöer används parallell data behandling och höghastighets nätverk för prestanda.
 
-Du kan optimera batch-prestanda med hjälp av Azure genom att tänka på [beräknings](/azure/virtual-machines/windows/overview)-, [lagrings](/azure/storage/blobs/storage-blobs-introduction)-, [nätverks](https://azure.microsoft.com/blog/maximize-your-vm-s-performance-with-accelerated-networking-now-generally-available-for-both-windows-and-linux)-och [övervaknings](/azure/azure-monitor/overview) alternativen enligt följande.
+Du kan optimera batch-prestanda med hjälp av Azure genom att tänka på [beräknings](https://docs.microsoft.com/azure/virtual-machines/windows/overview)-, [lagrings](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction)-, [nätverks](https://azure.microsoft.com/blog/maximize-your-vm-s-performance-with-accelerated-networking-now-generally-available-for-both-windows-and-linux)-och [övervaknings](https://docs.microsoft.com/azure/azure-monitor/overview) alternativen enligt följande.
 
 ### <a name="compute"></a>Compute
 
@@ -93,7 +93,7 @@ Använd
 
 Använd
 
-- [Azure Premium SSD](/azure/virtual-machines/windows/premium-storage) eller [Azure Ultra SSD](/azure/virtual-machines/windows/disks-ultra-ssd) för maximal tillgänglig IOPS.
+- [Azure Premium SSD](https://docs.microsoft.com/azure/virtual-machines/windows/premium-storage) eller [Azure Ultra SSD](https://docs.microsoft.com/azure/virtual-machines/windows/disks-ultra-ssd) för maximal tillgänglig IOPS.
 
 - Stripning med flera diskar för fler IOPS per lagrings storlek.
 
@@ -101,11 +101,11 @@ Använd
 
 ### <a name="networking"></a>Nätverk
 
-- Använd [Azure-accelererat nätverk](/azure/virtual-network/create-vm-accelerated-networking-powershell) för att minimera svars tiden.
+- Använd [Azure-accelererat nätverk](https://docs.microsoft.com/azure/virtual-network/create-vm-accelerated-networking-powershell) för att minimera svars tiden.
 
 ### <a name="monitoring"></a>Övervakning
 
-- Använd övervaknings verktyg, [Azure Monitor](/azure/azure-monitor/overview), [Azure Application insikter](/azure/application-insights/app-insights-overview)och Azure-loggar gör det möjligt för administratörer att övervaka alla över prestanda för batch-körningar och bidra till att eliminera Flask halsar.
+- Använd övervaknings verktyg, [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview), [Azure Application insikter](https://docs.microsoft.com/azure/application-insights/app-insights-overview)och Azure-loggar gör det möjligt för administratörer att övervaka alla över prestanda för batch-körningar och bidra till att eliminera Flask halsar.
 
 ## <a name="migrate-development-environments"></a>Migrera utvecklings miljöer
 
@@ -125,7 +125,7 @@ Molnets distribuerade arkitekturer förlitar sig på en annan uppsättning utvec
 
 ## <a name="migrate-databases-and-data"></a>Migrera databaser och data
 
-Programmigreringen innebär vanligt vis att vara värd för data nivån. Du kan migrera SQL Server, öppen källkod och andra Relations databaser till fullständigt hanterade lösningar i Azure, till exempel [Azure SQL Database Hanterad instans](/azure/sql-database/sql-database-managed-instance), [Azure Database Service för postgresql](/azure/postgresql/overview)och [Azure Database for MySQL](/azure/mysql/overview) med [ Azure Database Migration Service](/azure/dms/dms-overview).
+Programmigreringen innebär vanligt vis att vara värd för data nivån. Du kan migrera SQL Server, öppen källkod och andra Relations databaser till fullständigt hanterade lösningar i Azure, till exempel [Azure SQL Database Hanterad instans](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance), [Azure Database Service för postgresql](https://docs.microsoft.com/azure/postgresql/overview)och [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) med [ Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
 
 Du kan till exempel migrera om data nivån stordator använder:
 
@@ -159,7 +159,7 @@ Dessutom kan varje nivå även tillhandahålla lämpliga haveri beredskaps tjän
 
 Följande bild visar en möjlig Azure-distribution med hjälp av en primär och en sekundär plats. På den primära platsen distribueras produktion, mellanlagring och testning av virtuella datorer med hög tillgänglighet. Den sekundära platsen är för säkerhets kopiering och haveri beredskap.
 
-![En möjlig Azure-distribution med hjälp av en primär och en sekundär plats](../../_images/mainframe-migration/migration-backup-DR.png)
+![En möjlig Azure-distribution med hjälp av en primär och en sekundär plats](../../_images/mainframe-migration/migration-backup-dr.png)
 
 ## <a name="perform-a-staged-mainframe-to-azure"></a>Utföra en mellanlagrad stordator till Azure
 
@@ -167,7 +167,7 @@ Att flytta lösningar från en stordator till Azure kan omfatta en *mellanlagrad
 
 Ett vanligt scenario är att flytta ett program till Azure samtidigt som du behåller data som används av programmet på stordatoren. En speciell program vara används för att aktivera program på Azure för att komma åt data från stordatoren. Lyckligt vis erbjuder en mängd olika lösningar integrering mellan Azure och befintliga stordator miljöer, stöd för Hybrid scenarier och migrering över tid. Microsoft-partner, oberoende program varu leverantörer och system integrerare kan hjälpa dig på resan.
 
-Ett alternativ är [Microsoft Host Integration Server](/host-integration-server), en lösning som tillhandahåller den distribuerade Relations databas arkitekturen (DRDA) som krävs för att program i Azure ska kunna komma åt data i DB2 som finns kvar i stordatoren. Andra alternativ för stordator-till-Azure-integrering innehåller lösningar från IBM, Attunity, Codit, andra leverantörer och alternativ för öppen källkod.
+Ett alternativ är [Microsoft Host Integration Server](https://docs.microsoft.com/host-integration-server), en lösning som tillhandahåller den distribuerade Relations databas arkitekturen (DRDA) som krävs för att program i Azure ska kunna komma åt data i DB2 som finns kvar i stordatoren. Andra alternativ för stordator-till-Azure-integrering innehåller lösningar från IBM, Attunity, Codit, andra leverantörer och alternativ för öppen källkod.
 
 ## <a name="partner-solutions"></a>Partnerlösningar
 
@@ -179,8 +179,8 @@ Azure tillhandahåller en beprövad, hög tillgänglig och skalbar infrastruktur
 
 Mer information finns i följande resurser:
 
-- [Kom igång med Azure](/azure)
+- [Kom igång med Azure](https://docs.microsoft.com/azure)
 
 - [Distribuera IBM DB2 pureScale på Azure](https://azure.microsoft.com/resources/deploy-ibm-db2-purescale-on-azure)
 
-- [Dokumentation om Host Integration Server](/host-integration-server)
+- [Dokumentation om Host Integration Server](https://docs.microsoft.com/host-integration-server)

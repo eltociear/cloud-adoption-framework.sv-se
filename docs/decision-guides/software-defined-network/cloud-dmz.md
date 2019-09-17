@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 6dfee69d20afac27c735f2ff77abbadc2816ca26
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 10cb7b2f0396c3236039486977389b2eb001f206
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70828349"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023604"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>Program varu definitions nätverk: DMZ i molnet
 
@@ -37,7 +37,7 @@ Att distribuera en moln DMZ omfattar följande antaganden:
 
 Dina moln implementerings team bör tänka på följande när man tittar på implementering av en DMZ för virtuella nätverk i molnet:
 
-- Att ansluta lokala nätverk med moln nätverk ökar komplexiteten i dina säkerhets krav. Även om anslutningar mellan moln nätverk och den lokala miljön är säkra måste du ändå se till att moln resurserna är säkra. Alla offentliga IP-adresser som skapats för att komma åt molnbaserade arbets belastningar måste vara korrekt skyddade med hjälp av en [offentlig DMZ](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz) eller [Azure-brandvägg](/azure/firewall).
+- Att ansluta lokala nätverk med moln nätverk ökar komplexiteten i dina säkerhets krav. Även om anslutningar mellan moln nätverk och den lokala miljön är säkra måste du ändå se till att moln resurserna är säkra. Alla offentliga IP-adresser som skapats för att komma åt molnbaserade arbets belastningar måste vara korrekt skyddade med hjälp av en [offentlig DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz) eller [Azure-brandvägg](https://docs.microsoft.com/azure/firewall).
 - Cloud DMZ-arkitekturen används ofta som en stege-sten när anslutningen är ytterligare skyddad och säkerhets principer som är justerade mellan lokala och molnbaserade nätverk, vilket ger ett bredare införande av en hybrid nätverks arkitektur med fullständig skalning. Det kan dock även gälla isolerade distributioner med vissa krav på säkerhet, identitet och anslutning som DMZ-metoden för molnet uppfyller.
 
 ## <a name="learn-more"></a>Lär dig mer

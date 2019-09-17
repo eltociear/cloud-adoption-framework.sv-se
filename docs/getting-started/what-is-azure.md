@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 6aabf9545aa6774b63d3dbd201373273c3f8f1ab
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 0b561415d8038c41e1ea36624529a765bfa1105a
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829155"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023320"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -36,7 +36,7 @@ I varje rack eller kluster är de flesta servrar avsedda att köra dessa virtual
 
 Varje instans av infrastruktur styrenheten är ansluten till en annan uppsättning servrar som kör program vara för moln dirigering, vanligt vis kallat **klient**del. Klient delen är värd för webb tjänster, RESTful-API: er och interna Azure-databaser som används för alla funktioner som molnet utför.
 
-Klient delen är till exempel värd för de tjänster som hanterar kund förfrågningar om att allokera Azure-resurser, till exempel [virtuella datorer](/azure/virtual-machines)och tjänster som [Cosmos DB](/azure/cosmos-db/introduction). Först verifierar klient delen användaren och verifierar att användaren har behörighet att allokera de begärda resurserna. I så fall kontrollerar klient delen en databas för att hitta ett Server rack med tillräckligt med kapacitet och instruerar sedan infrastruktur hanteraren på racket att allokera resursen.
+Klient delen är till exempel värd för de tjänster som hanterar kund förfrågningar om att allokera Azure-resurser, till exempel [virtuella datorer](https://docs.microsoft.com/azure/virtual-machines)och tjänster som [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction). Först verifierar klient delen användaren och verifierar att användaren har behörighet att allokera de begärda resurserna. I så fall kontrollerar klient delen en databas för att hitta ett Server rack med tillräckligt med kapacitet och instruerar sedan infrastruktur hanteraren på racket att allokera resursen.
 
 Azure är alltså en enorm samling av servrar och nätverks maskin vara som kör en komplex uppsättning distribuerade program för att dirigera konfigurationen och driften av den virtualiserade maskin varan och program varan på dessa servrar. Det är den här dirigeringen som gör Azure så&mdash;att kraftfulla användare inte längre ansvarar för att underhålla och uppgradera maskin vara eftersom Azure gör allt detta bakom kulisserna.
 
@@ -45,8 +45,4 @@ Azure är alltså en enorm samling av servrar och nätverks maskin vara som kör
 Nu när du förstår Azure Internals, lär dig mer om moln resurs styrning.
 
 > [!div class="nextstepaction"]
-> [Lär dig mer om resurs styrning](../governance/resource-consistency/what-is-governance.md)
-
-<!-- links -->
-
-[docs-add-users-to-aad]: /azure/active-directory/add-users-azure-active-directory?toc=/azure/architecture/cloud-adoption-guide/toc.json
+> [Lär dig mer om resurs styrning](../govern/resource-consistency/what-is-governance.md)

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: a2798f3d3abe9c301ea35b7b8dd6b4b16cd0056b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: c94ad845571c5007f14773268d383764cdc89a6c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70820783"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025037"
 ---
 # <a name="refactor-an-on-premises-app-to-an-azure-app-service-web-app-and-azure-sql-database"></a>Omstrukturera en lokal app till en Azure App Service-webbapp och Azure SQL-databas
 
@@ -61,7 +61,7 @@ Efter att ha fastställt målen och kraven kan Contoso utforma och granska en di
 
 ### <a name="proposed-solution"></a>Föreslagen lösning
 
-- Contoso jämförde Azure SQL Database med SQL Server med hjälp av [den här artikeln](/azure/sql-database/sql-database-features) för appens databasnivå. Contoso beslutade att satsa på Azure SQL Database av flera skäl:
+- Contoso jämförde Azure SQL Database med SQL Server med hjälp av [den här artikeln](https://docs.microsoft.com/azure/sql-database/sql-database-features) för appens databasnivå. Contoso beslutade att satsa på Azure SQL Database av flera skäl:
   - Azure SQL Database är en hanterad relationsdatabastjänst. Den ger förutsägbar prestanda på flera servicenivåer med nästan obefintlig administration. Fördelarna är dynamisk skalbarhet utan driftavbrott, inbyggd, intelligent optimering och global skalbarhet och tillgänglighet.
   - Contoso kan använda förenklad Data Migration Assistant (DMA) för att utvärdera och migrera den lokala databasen till Azure SQL.
   - Med Software Assurance kan Contoso byta ut befintliga licenser till rabatterade priser på en SQL-databas med hjälp av Azure Hybrid-förmånen för SQL Server. Det kan ge besparingar på upp till 30 %.
@@ -99,8 +99,8 @@ Contoso utvärderar den föreslagna designen genom att sätta samman en lista me
 --- | --- | ---
 [Data Migration Assistant (DMA)](/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso kommer att använda DMA för att utvärdera och identifiera kompatibilitetsproblem som kan påverka deras databasfunktioner i Azure. DMA utvärderar funktionsparitet mellan SQL-källor och -mål och rekommenderar förbättringar av prestanda och tillförlitlighet. | Det här verktyget kan laddas ned utan kostnad.
 [Azure SQL Database](https://azure.microsoft.com/services/sql-database) | En intelligent, fullständigt hanterad och molnbaserad relationsdatabastjänst. | Kostnaden baseras på funktioner, dataflöde och storlek. [Läs mer](https://azure.microsoft.com/pricing/details/sql-database/managed).
-[Azure App Service](/azure/app-service/overview) | Skapa kraftfulla molnappar med en fullständigt hanterad plattform | Kostnaden baseras på storlek, plats och användningstid. [Läs mer](https://azure.microsoft.com/pricing/details/app-service/windows).
-[Azure DevOps](/azure/azure-portal/tutorial-azureportal-devops) | Tillhandahåller en pipeline för kontinuerlig integrering och distribution (CI/CD) för utveckling av appar. Pipelinen börjar med en Git-lagringsplats för hantering av app-kod, ett build-system för att skapa paket och andra build-artefakter och ett versionshanteringssystem för att distribuera ändringar i utvecklings-, test- och produktionsmiljöer.
+[Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | Skapa kraftfulla molnappar med en fullständigt hanterad plattform | Kostnaden baseras på storlek, plats och användningstid. [Läs mer](https://azure.microsoft.com/pricing/details/app-service/windows).
+[Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | Tillhandahåller en pipeline för kontinuerlig integrering och distribution (CI/CD) för utveckling av appar. Pipelinen börjar med en Git-lagringsplats för hantering av app-kod, ett build-system för att skapa paket och andra build-artefakter och ett versionshanteringssystem för att distribuera ändringar i utvecklings-, test- och produktionsmiljöer.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -111,7 +111,7 @@ Här måste Contoso måste köra följande scenario:
 **Krav** | **Detaljer**
 --- | ---
 **Azure-prenumeration** | Contoso skapade prenumerationer i en tidigare artikel. Om du inte har någon Azure-prenumeration kan du skapa ett [kostnadsfritt konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Om du skapar ett kostnadsfritt konto är du administratör för din prenumeration och kan utföra alla åtgärder.<br/><br/> Om du använder en befintlig prenumeration och inte är administratör måste du be administratören att ge dig ägar- eller deltagarbehörighet.
-**Azure-infrastruktur** | [Läs om hur](contoso-migration-infrastructure.md) Contoso konfigurerar en Azure-infrastruktur.
+**Azure-infrastruktur** | [Läs om hur](./contoso-migration-infrastructure.md) Contoso konfigurerar en Azure-infrastruktur.
 
 <!--markdownlint-enable MD033 -->
 
@@ -157,8 +157,8 @@ Contoso genomför migreringen på följande sätt:
 
 **Behöver du mer hjälp?**
 
-- [Få hjälp](/azure/sql-database/sql-database-get-started-portal) med att etablera en SQL-databas.
-- [Läs mer](/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools) om resursgränser för virtuell kärna.
+- [Få hjälp](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal) med att etablera en SQL-databas.
+- [Läs mer](https://docs.microsoft.com/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools) om resursgränser för virtuell kärna.
 
 ## <a name="step-2-migrate-the-database-with-dma"></a>Steg 2: Migrera databasen med DMA
 
@@ -382,21 +382,21 @@ Med de migrerade resurserna i Azure måste Contoso fullständigt operationaliser
 
 ### <a name="security"></a>Säkerhet
 
-- Contoso måste se till att deras nya databas för **SmartHotel-registrering** är säker. [Läs mer](/azure/sql-database/sql-database-security-overview).
+- Contoso måste se till att deras nya databas för **SmartHotel-registrering** är säker. [Läs mer](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview).
 - Framför allt bör Contoso uppdatera webbapparna så att de använder SSL med certifikat.
 
 ### <a name="backups"></a>Säkerhetskopior
 
-- Contoso måste granska kraven för säkerhetskopiering för Azure SQL-databasen. [Läs mer](/azure/sql-database/sql-database-automated-backups).
-- Contoso behöver också lära mer om hur de hanterar säkerhetskopiering och återställning av SQL-databaser. [Läs mer](/azure/sql-database/sql-database-automated-backups) om automatisk säkerhetskopiering.
-- Contoso bör överväga att implementera redundansgrupper för att tillhandahålla regional redundans för databasen. [Läs mer](/azure/sql-database/sql-database-geo-replication-overview).
+- Contoso måste granska kraven för säkerhetskopiering för Azure SQL-databasen. [Läs mer](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups).
+- Contoso behöver också lära mer om hur de hanterar säkerhetskopiering och återställning av SQL-databaser. [Läs mer](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) om automatisk säkerhetskopiering.
+- Contoso bör överväga att implementera redundansgrupper för att tillhandahålla regional redundans för databasen. [Läs mer](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview).
 - Contoso måste överväga att distribuera webbappen i huvudregionen USA, östra 2 och Centrala USA för återhämtning. Contoso skulle kunna konfigurera Traffic Manager för att säkerställa redundansväxling i händelse av regionala avbrott.
 
 ### <a name="licensing-and-cost-optimization"></a>Licensierings- och kostnadsoptimering
 
-- När alla resurser har distribuerats bör Contoso tilldela Azure-taggar baserat på deras [infrastrukturplanering](contoso-migration-infrastructure.md#set-up-tagging).
+- När alla resurser har distribuerats bör Contoso tilldela Azure-taggar baserat på deras [infrastrukturplanering](./contoso-migration-infrastructure.md#set-up-tagging).
 - All licensiering är inbyggd i kostnaden för de PaaS-tjänster som Contoso använder. Detta kommer att dras av från Enterprise-avtalet.
-- Contoso aktiverar Azure Cost Management som licensieras av Cloudyn, ett Microsoft-dotterbolag. Det är en kostnadshanteringslösning med flera moln som hjälper dig att använda och hantera Azure och andra molnresurser. [Läs mer](/azure/cost-management/overview) om Azure Cost Management.
+- Contoso aktiverar Azure Cost Management som licensieras av Cloudyn, ett Microsoft-dotterbolag. Det är en kostnadshanteringslösning med flera moln som hjälper dig att använda och hantera Azure och andra molnresurser. [Läs mer](https://docs.microsoft.com/azure/cost-management/overview) om Azure Cost Management.
 
 ## <a name="conclusion"></a>Sammanfattning
 

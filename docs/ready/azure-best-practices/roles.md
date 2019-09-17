@@ -11,59 +11,59 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 897b6f3f5d3c506cc79050dd3453e30b677382b1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 10f1ae3bc7d1f7a298a020d2079c0f7e486810f7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833705"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025304"
 ---
 # <a name="role-based-access-control"></a>Rollbaserad åtkomstkontroll
 
-Gruppbaserade åtkomsträttigheter och -behörigheter är en bra idé. Att hantera grupper i stället för enskilda användare förenklar underhållet av åtkomstprinciper, ger konsekvent åtkomsthantering för team och minskar eventuella konfigurationsfel. Genom att tilldela användare till och ta bort användare från lämpliga grupper förblir varje användares behörigheter alltid aktuella. Azures [rollbaserade åtkomstkontroll (RBAC)](/azure/role-based-access-control/overview) erbjuder detaljerad åtkomsthantering för resurser som har organiserats efter användarroller.
+Gruppbaserade åtkomsträttigheter och -behörigheter är en bra idé. Att hantera grupper i stället för enskilda användare förenklar underhållet av åtkomstprinciper, ger konsekvent åtkomsthantering för team och minskar eventuella konfigurationsfel. Genom att tilldela användare till och ta bort användare från lämpliga grupper förblir varje användares behörigheter alltid aktuella. Azures [rollbaserade åtkomstkontroll (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview) erbjuder detaljerad åtkomsthantering för resurser som har organiserats efter användarroller.
 
-En översikt över rekommenderade RBAC-rutiner som en del av en identitets-och säkerhetsstrategin finns i [Metodtips för Azure-identitetshantering och åtkomstkontroll](/azure/security/azure-security-identity-management-best-practices#use-role-based-access-control).
+En översikt över rekommenderade RBAC-rutiner som en del av en identitets-och säkerhetsstrategin finns i [Metodtips för Azure-identitetshantering och åtkomstkontroll](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices#use-role-based-access-control).
 
 ## <a name="overview-of-role-based-access-control"></a>Översikt över rollbaserad åtkomstkontroll
 
-Genom att använda [rollbaserad åtkomstkontroll](/azure/role-based-access-control/overview)kan du separera uppgifter i ditt team och endast bevilja tillräcklig åtkomst för särskilda Azure Active Directory (Azure AD)-användare, grupper, tjänsthuvudnamn eller hanterade identiteter så att de kan utföra sina uppgifter. I stället för att ge alla obegränsad behörighet i din Azure-prenumeration eller dina resurser kan du begränsa åtkomsten för varje uppsättning resurser.
+Genom att använda [rollbaserad åtkomstkontroll](https://docs.microsoft.com/azure/role-based-access-control/overview)kan du separera uppgifter i ditt team och endast bevilja tillräcklig åtkomst för särskilda Azure Active Directory (Azure AD)-användare, grupper, tjänsthuvudnamn eller hanterade identiteter så att de kan utföra sina uppgifter. I stället för att ge alla obegränsad behörighet i din Azure-prenumeration eller dina resurser kan du begränsa åtkomsten för varje uppsättning resurser.
 
-[Rolldefinitioner för RBAC-roller](/azure/role-based-access-control/role-definitions) är en lista med åtgärder som tillåts eller inte tillåts för användare eller grupper som har tilldelats rollen. En rolls [omfång](/azure/role-based-access-control/overview#scope) anger vilka resurser som dessa definierade behörigheter gäller för. Omfånget kan anges på flera nivåer: hanteringsgrupp, prenumeration, resursgrupp och resurs. Omfång är strukturerade i en överordnad/underordnad relation.
+[Rolldefinitioner för RBAC-roller](https://docs.microsoft.com/azure/role-based-access-control/role-definitions) är en lista med åtgärder som tillåts eller inte tillåts för användare eller grupper som har tilldelats rollen. En rolls [omfång](https://docs.microsoft.com/azure/role-based-access-control/index.md#scope) anger vilka resurser som dessa definierade behörigheter gäller för. Omfånget kan anges på flera nivåer: hanteringsgrupp, prenumeration, resursgrupp och resurs. Omfång är strukturerade i en överordnad/underordnad relation.
 
-![Hierarki för RBAC-omfång](./images/rbac-scope.png)
+![Hierarki för RBAC-omfång](../../_images/azure-best-practices/rbac-scope.png)
 
-Detaljerade anvisningar för hur du tilldelar användare och grupper till särskilda roller och tilldelar roller till omfång finns i [Hantera åtkomst till Azure-resurser med rollbaserad åtkomstkontroll](/azure/role-based-access-control/role-assignments-portal).
+Detaljerade anvisningar för hur du tilldelar användare och grupper till särskilda roller och tilldelar roller till omfång finns i [Hantera åtkomst till Azure-resurser med rollbaserad åtkomstkontroll](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).
 
 När du planerar din strategi för åtkomstkontroll ska du använda en modell för minsta möjliga behörighet som endast ger användare de behörigheter som krävs för att de ska kunna utföra sina uppgifter. I följande diagram visas ett föreslaget mönster för att använda rollbaserad åtkomstkontroll med den här metoden.
 
-![Förslag på mönster för rollbaserad åtkomstkontroll](./images/rbac-least-privilege.png)
+![Förslag på mönster för rollbaserad åtkomstkontroll](../../_images/azure-best-practices/rbac-least-privilege.png)
 
 > [!NOTE]
-> Ju mer specifika och detaljerade behörigheter du definierar desto mer sannolikt är det att din åtkomstkontroll blir komplex och svår att hantera. Detta gäller särskilt efter hand som din molnegendom blir större. Undvik resursspecifika behörigheter. Använd istället [hanteringsgrupper](/azure/governance/management-groups) för åtkomstkontroll för hela företaget och [resursgrupper](/azure/azure-resource-manager/resource-group-overview#resource-groups) för åtkomstkontroll inom prenumerationer. Undvik användarspecifika behörigheter. Tilldela istället åtkomst till [grupper i Azure AD](/azure/active-directory/fundamentals/active-directory-manage-groups).
+> Ju mer specifika och detaljerade behörigheter du definierar desto mer sannolikt är det att din åtkomstkontroll blir komplex och svår att hantera. Detta gäller särskilt efter hand som din molnegendom blir större. Undvik resursspecifika behörigheter. Använd istället [hanteringsgrupper](https://docs.microsoft.com/azure/governance/management-groups) för åtkomstkontroll för hela företaget och [resursgrupper](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) för åtkomstkontroll inom prenumerationer. Undvik användarspecifika behörigheter. Tilldela istället åtkomst till [grupper i Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups).
 
 ## <a name="using-built-in-rbac-roles"></a>Använda inbyggda RBAC-roller
 
 Azure tillhandahåller en mängd inbyggda rolldefinitioner, med tre huvudsakliga åtkomstroller:
 
-- Rollen [Ägare](/azure/role-based-access-control/built-in-roles#owner) låter dig hantera allt, inklusive åtkomst till resurser.
-- Rollen [Deltagare](/azure/role-based-access-control/built-in-roles#contributor) låter dig hantera allt, utom åtkomst till resurser.
-- Rollen [Läsare](/azure/role-based-access-control/built-in-roles#reader) låter dig visa allting, men låter dig inte göra några ändringar.
+- Rollen [Ägare](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner) låter dig hantera allt, inklusive åtkomst till resurser.
+- Rollen [Deltagare](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) låter dig hantera allt, utom åtkomst till resurser.
+- Rollen [Läsare](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#reader) låter dig visa allting, men låter dig inte göra några ändringar.
 
 Med dessa kärnåtkomstroller som utgångspunkt kan ytterligare inbyggda roller ge mer detaljerad kontroll för åtkomst till specifika resurstyper eller Azure-funktioner. Du kan till exempel hantera åtkomst till virtuella datorer med hjälp av följande inbyggda roller:
 
-- Rollen [inloggning som virtuell datoradministratör](/azure/role-based-access-control/built-in-roles#virtual-machine-administrator-login) kan visa virtuella datorer i portalen och logga in som _administratör_.
-- Rollen [Virtuell datordeltagare](/azure/role-based-access-control/built-in-roles#virtual-machine-contributor) kan hantera, men inte bevilja åtkomst till, virtuella datorer och kan heller inte hantera virtuella nätverks- eller lagringskonton som de är anslutna till.
-- Rollen [inloggning som virtuell datoranvändare](/azure/role-based-access-control/built-in-roles#virtual-machine-user-login) kan visa virtuella datorer i portalen och logga in som vanlig användare.
+- Rollen [inloggning som virtuell datoradministratör](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-administrator-login) kan visa virtuella datorer i portalen och logga in som _administratör_.
+- Rollen [Virtuell datordeltagare](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-contributor) kan hantera, men inte bevilja åtkomst till, virtuella datorer och kan heller inte hantera virtuella nätverks- eller lagringskonton som de är anslutna till.
+- Rollen [inloggning som virtuell datoranvändare](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-user-login) kan visa virtuella datorer i portalen och logga in som vanlig användare.
 
 Ett annat exempel på hur du använder inbyggda roller för att hantera specifika funktioner finns i diskussionen om att kontrollera åtkomsten till kostnadsspårningsfunktioner i [Spåra kostnader mellan affärsenheter, miljöer eller projekt](./track-costs.md#provide-the-right-level-of-cost-access).
 
-En lista med alla inbyggda roller finns i [Inbyggda roller för Azure-resurser](/azure/role-based-access-control/built-in-roles).
+En lista med alla inbyggda roller finns i [Inbyggda roller för Azure-resurser](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles).
 
 ## <a name="using-custom-roles"></a>Använda anpassade roller
 
 Även om rollerna som är inbyggda i Azure har stöd för ett brett utbud av åtkomstkontrollscenarier, kanske de inte uppfyller alla krav för din organisation eller ditt team. Om du till exempel har en enda grupp med användare som ansvarar för att hantera virtuella datorer och Azure SQL Database-resurser kan du skapa en anpassad roll för att optimera hanteringen av de nödvändiga åtkomstkontrollerna.
 
-Azure RBAC-dokumentationen innehåller instruktioner om hur du [skapar anpassade roller](/azure/role-based-access-control/custom-roles), tillsammans med information om [hur rolldefinitioner fungerar](/azure/role-based-access-control/role-definitions).
+Azure RBAC-dokumentationen innehåller instruktioner om hur du [skapar anpassade roller](https://docs.microsoft.com/azure/role-based-access-control/custom-roles), tillsammans med information om [hur rolldefinitioner fungerar](https://docs.microsoft.com/azure/role-based-access-control/role-definitions).
 
 ## <a name="separation-of-responsibilities-and-roles-for-large-organizations"></a>Separering av ansvarsområden och roller för stora organisationer
 

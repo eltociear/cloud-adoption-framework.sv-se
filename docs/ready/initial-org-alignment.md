@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: governance
-ms.openlocfilehash: a3e819cdd726e3df6edb4cbe0c20a7d652fde152
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5e425a61f6b9da7fed044d06ac9323306d728261
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819171"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71021943"
 ---
 # <a name="initial-organization-alignment"></a>Inledande organisatorisk anpassning
 
@@ -43,7 +43,7 @@ Ett team för molnstrategi kan till exempel ledas av IT-chefen och bestå av med
 
 Det är också viktigt att skapa två andra övergripande team: ett styrningsteam och ett säkerhetsteam. Dessa team ansvarar för att utforma, implementera samt löpande utvärdera företagets styrnings- och säkerhetsprinciper. Styrningsteamets team måste ha medlemmar som arbetat med tillgångsskydd, kostnadshantering, grupprinciper och relaterade ämnen. Säkerhetsteamet måste ha medlemmar som har stor erfarenhet av gällande säkerhetsstandarder samt företagets säkerhetsbehov.
 
-![Team för molnstrategi med styrnings- och säkerhetsteam](../_images/getting-started-overview-1.png)
+![Team för molnstrategi med styrnings- och säkerhetsteam](../_images/ready/getting-started-overview-1.png)
 
 Styrningsteamet ansvarar för design och implementering av företagets styrningsmodell i molnet, samt för att införa och underhålla de delade infrastrukturtillgångar som är en del av den digitala omvandlingen. Dessa tillgångar omfattar maskinvara, programvara och nödvändiga molnresurser för att ansluta det lokala nätverket till det virtuella nätverket i molnet.
 
@@ -53,9 +53,9 @@ Säkerhetsteamet ansvarar för design och implementering av företagets säkerhe
 
 Nästa steg i företagets digitala omvandling är att medlemmarna i teamet för molnstrategi lär sig hur molnteknik kommer att förändra hur företaget arbetar. Detta är förberedelser och planering för de ändringar som kommer att påverka verksamheten, personalen och tekniken. Det är viktigt att medlemmarna i teamet för molnstrategi förstår vad som är nytt och annorlunda i molnet jämfört med i lokala installationer.
 
-![Teamen för molnstrategi, styrning och säkerhet lär sig metodtips för att använda molnet.](../_images/getting-started-overview-2.png)
+![Teamen för molnstrategi, styrning och säkerhet lär sig metodtips för att använda molnet.](../_images/ready/getting-started-overview-2.png)
 
-Startpunkten för att förstå molnet är att lära sig [hur Azure fungerar](../getting-started/what-is-azure.md) övergripande. Sedan behöver de lära sig grunderna för [styrning i Azure](../governance/resource-consistency/what-is-governance.md) för att lägga grunden för att [förstå åtkomsthantering för resurser](../governance/resource-consistency/azure-resource-access.md).
+Startpunkten för att förstå molnet är att lära sig [hur Azure fungerar](../getting-started/what-is-azure.md) övergripande. Sedan behöver de lära sig grunderna för [styrning i Azure](../govern/resource-consistency/what-is-governance.md) för att lägga grunden för att [förstå åtkomsthantering för resurser](../govern/resource-consistency/resource-access-management.md).
 
 För avancerad information ska styrningsteamet gå igenom guiderna för koncept och design i styrningsavsnittet i innehållsförteckningen. Avsnitten om infrastruktur och arbetsbelastning är användbara för att lära sig om typiska arkitekturer och arbetsbelastningar i molnet.
 
@@ -93,7 +93,7 @@ När nu målen för den digitala omvandlingen listats och ordnats i prioritering
 
 Teamen tar listorna och arbetar sig igenom varje övergripande lösning för att utforma varje specifik lösning. Designprocessen inkluderar specificering av ny infrastruktur och nya arbetsbelastningar. Det kan även ske förändringar i rollerna för personer och de processer de följer. Det är också viktigt att i detta läge inkludera både styrningsteamet och säkerhetsteamet för granskning av varje design. Varje design måste ligga inom de principer och procedurer som definierats av styrningsteamet och säkerhetsteamet och dessa team måste vara inkluderade i det slutliga godkännandet för varje design.
 
-![Team för molnstrategi levererar övergripande lösningar till design- och implementeringsteam.](../_images/getting-started-overview-3.png)
+![Team för molnstrategi levererar övergripande lösningar till design- och implementeringsteam.](../_images/ready/getting-started-overview-3.png)
 
 Utformningen av varje lösning är inte en enkel uppgift. Allteftersom lösningar utformas måste de utvärderas i sammanhang med andra lösningar som utformas av andra team. Om flera av lösningarna till exempel innebär en migrering av befintliga lokalt installerade program och tjänster till molnet så kan det vara effektivare att samla dessa och utforma en övergripande migreringsstrategi. Ett annat exempel är om det inte är möjligt att migrera vissa befintliga lokalt installerade program och tjänster och lösningen är att ersätta dem med nyutvecklade lösningar eller externa tjänster. I detta fall kan det vara effektivare att samla dessa och utvärdera eventuella överlappningar för att avgöra om en extern tjänst kan användas för mer än en lösning.
 

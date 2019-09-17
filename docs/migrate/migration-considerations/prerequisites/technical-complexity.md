@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7895094ea0297f725ae4f0451989055cb1afab93
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: ba799c8634fc6eeda70507ae85464506103e44ff
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825359"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025372"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Förbered dig för teknisk komplexitet: smidig förändringsledning
 
@@ -46,7 +46,7 @@ Migreringsuppgifterna låter dig spåra din portfölj med arbetsbelastningar som
 
 Inledningsvis är det osannolikt att de migreringsuppgifterna uppfyller INVEST-kriterierna som beskrivs i föregående avsnitt. De fungerar istället som en logisk gruppering av tillgångar från en preliminär inventering och som platshållare för framtida arbete. Platshållarna är kanske inte tekniskt korrekta men de fungerar för att samordna med verksamheten.
 
-![Relationen mellan loggarna för migrerings-, lanserings- och iterationsuppgifter som används under migreringsprocessen](../../../_images/migration/migrate-release-iteration-backlog-relationship.png)
+![Relationen mellan loggarna för migrerings-, lanserings- och iterationsuppgifter som används under migreringsprocessen](../../../_images/migrate/backlog-relationships.png)
 
 *Loggarna för migrering-, lanserings- och iterationsuppgifter spårar olika aktivitetsnivåer under migreringsprocessen.*
 

@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c3d25b0a4e421b2fa8ea5e88f6385a91721713ca
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 8fbdd20c435d4aed8a284174d813abc8d391171b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819600"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022856"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Bästa praxis för att konfigurera nätverk för arbetsbelastningar migreras till Azure
 
@@ -48,9 +48,9 @@ När du skapar virtuella nätverk som en del av migreringen är det viktigt att 
 
 **Lära sig mer:**
 
-- [Få en översikt](/azure/virtual-network/virtual-networks-overview) av virtuella Azure-nätverk.
-- [Läs](/azure/virtual-network/virtual-networks-faq) nätverk vanliga frågor och svar.
-- [Lär dig](/azure/azure-subscription-service-limits?toc=%2fazure%2fvirtual-network%2ftoc.json#networking-limits) mer om nätverksbegränsningar.
+- [Få en översikt](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) av virtuella Azure-nätverk.
+- [Läs](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq) nätverk vanliga frågor och svar.
+- [Lär dig](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=%2fazure%2fvirtual-network%2ftoc.json#networking-limits) mer om nätverksbegränsningar.
 
 ## <a name="best-practice-implement-a-hub-and-spoke-network-topology"></a>Metodtips: Implementera en hubb- och eker-nätverkstopologi
 
@@ -72,9 +72,9 @@ Tänk också på följande:
 
 **Lära sig mer:**
 
-- [Läs mer om](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke) en topologi med nav och ekrar.
-- Få nätverksrekommendationer för att köra Azure [Windows](/azure/architecture/reference-architectures/n-tier/windows-vm) och [Linux](/azure/architecture/reference-architectures/n-tier/linux-vm) virtuella datorer.
-- [Läs mer om](/azure/virtual-network/virtual-network-peering-overview) VNet-peering (virtuella nätverk).
+- [Läs mer om](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke) en topologi med nav och ekrar.
+- Få nätverksrekommendationer för att köra Azure [Windows](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/windows-vm) och [Linux](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/linux-vm) virtuella datorer.
+- [Läs mer om](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) VNet-peering (virtuella nätverk).
 
 ## <a name="best-practice-design-subnets"></a>Metodtips: Utforma undernät
 
@@ -99,8 +99,8 @@ DEV-DB-EUS2 | 10.245.24.0/23 | 507 | Virtuella
 
 **Lära sig mer:**
 
-- [Lär dig](/azure/virtual-network/virtual-network-vnet-plan-design-arm#segmentation) mer om att utforma undernät.
-- [Läs](/azure/migrate/contoso-migration-infrastructure) hur ett fiktivt företag (Contoso) förberedde sin nätverksinfrastruktur för migrering.
+- [Lär dig](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm#segmentation) mer om att utforma undernät.
+- [Läs](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure) hur ett fiktivt företag (Contoso) förberedde sin nätverksinfrastruktur för migrering.
 
 ## <a name="best-practice-set-up-a-dns-server"></a>Metodtips: Konfigurera en DNS-server
 
@@ -119,8 +119,8 @@ Azure lägger till en DNS-server som standard när du distribuerar ett virtuellt
 
 **Lära sig mer:**
 
-- [Lär dig mer om](/azure/migrate/contoso-migration-infrastructure) namnmatchning när du använder en egen DNS-server.
-- [Läs mer om](/azure/architecture/best-practices/naming-conventions?toc=%2fazure%2fvirtual-network%2ftoc.json#naming-subscriptions) namngivningsregler och begränsningar för DNS.
+- [Lär dig mer om](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure) namnmatchning när du använder en egen DNS-server.
+- [Läs mer om](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions?toc=%2fazure%2fvirtual-network%2ftoc.json#naming-subscriptions) namngivningsregler och begränsningar för DNS.
 
 ## <a name="best-practice-set-up-availability-zones"></a>Metodtips: Konfigurera tillgänglighetszoner
 
@@ -143,7 +143,7 @@ Tillgänglighetszoner ökar hög tillgänglighet för att skydda dina appar och 
 
 **Lära sig mer:**
 
-- [Få en översikt](/azure/availability-zones/az-overview) av tillgänglighetszoner.
+- [Få en översikt](https://docs.microsoft.com/azure/availability-zones/az-overview) av tillgänglighetszoner.
 
 ## <a name="design-hybrid-cloud-networking"></a>Design hybridmolnet nätverk
 
@@ -154,7 +154,7 @@ Det är viktigt att ansluta lokala företagets nätverk till Azure för en lycka
 
 **Lära sig mer:**
 
-- [Lär dig](/azure/architecture/reference-architectures/hybrid-networking/vpn) mer om nätverk med hybridmoln.
+- [Lär dig](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn) mer om nätverk med hybridmoln.
 
 ## <a name="best-practice-implement-a-highly-available-site-to-site-vpn"></a>Metodtips: Implementera en plats-till-plats-VPN med hög tillgänglighet
 
@@ -186,13 +186,13 @@ När du konfigurerar ett plats-till-plats-VPN gör du följande:
 
 **Lära sig mer:**
 
-- [Granska](/azure/vpn-gateway/vpn-gateway-about-vpn-devices) kompatibla lokala VPN-enheter.
-- [Få en översikt](/azure/vpn-gateway/vpn-gateway-about-vpngateways) VPN-gatewayer.
-- [Lär dig mer om](/azure/vpn-gateway/vpn-gateway-highlyavailable) VPN-anslutningar med hög tillgänglighet.
-- [Lär dig mer om](/azure/vpn-gateway/vpn-gateway-plan-design) planerar och utformar en VPN-gateway.
-- [Granska](/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsku) VPN gateway-inställningar.
-- [Granska](/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku) gateway SKU: er.
-- [Läs om](/azure/vpn-gateway/vpn-gateway-bgp-overview) hur du konfigurerar BGP med Azure VPN-gatewayer.
+- [Granska](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) kompatibla lokala VPN-enheter.
+- [Få en översikt](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) VPN-gatewayer.
+- [Lär dig mer om](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable) VPN-anslutningar med hög tillgänglighet.
+- [Lär dig mer om](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-plan-design) planerar och utformar en VPN-gateway.
+- [Granska](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsku) VPN gateway-inställningar.
+- [Granska](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku) gateway SKU: er.
+- [Läs om](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-bgp-overview) hur du konfigurerar BGP med Azure VPN-gatewayer.
 
 ### <a name="best-practice-configure-a-gateway-for-vpn-gateways"></a>Metodtips: Konfigurera en gateway för VPN-gatewayer
 
@@ -216,7 +216,7 @@ För flera VPN-anslutningar är Azure Virtual WAN en nätverkstjänst som tillha
 - Azure WAN inbyggda instrumentpanelen innehåller omedelbara felsökning insikter som sparar tid och ger ett enkelt sätt att spåra storskaliga plats-till-plats-anslutning.
 
 **Läs mer:** 
-[Läs mer om](/azure/virtual-wan/virtual-wan-about) Azure Virtual WAN.
+[Läs mer om](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) Azure Virtual WAN.
 
 ### <a name="best-practice-implement-expressroute-for-mission-critical-connections"></a>Metodtips: Implementera ExpressRoute för verksamhetskritiska anslutningar
 
@@ -232,8 +232,8 @@ Att distribuera ExpressRoute-anslutningar innebär vanligtvis att man registrera
 
 **Läs mer:**
 
-- [Läs en översikt](/azure/expressroute/expressroute-introduction) över ExpressRoute.
-- [Lär dig mer](/azure/expressroute/expressroute-erdirect-about) om ExpressRoute Direct.
+- [Läs en översikt](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) över ExpressRoute.
+- [Lär dig mer](https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about) om ExpressRoute Direct.
 
 ### <a name="best-practice-optimize-expressroute-routing-with-bgp-communities"></a>Metodtips: Optimera ExpressRoute-routning med BGP-communityer
 
@@ -276,7 +276,7 @@ För att optimera routningen för båda kontoren måste du veta vilket prefix so
 
 **Läs mer:**
 
-- [Lär dig](/azure/expressroute/expressroute-optimize-routing) mer om att optimera routning.
+- [Lär dig](https://docs.microsoft.com/azure/expressroute/expressroute-optimize-routing) mer om att optimera routning.
 
 ## <a name="securing-vnets"></a>Skydda virtuella nätverk
 
@@ -284,8 +284,8 @@ Ansvaret för att skydda virtuella nätverk delas mellan Microsoft och dig. Micr
 
 **Läs mer:**
 
-- [Få en översikt](/azure/security/azure-security-network-security-best-practices) bra metoder för nätverkssäkerhet.
-- [Lär dig](/azure/virtual-network/virtual-network-vnet-plan-design-arm#security) utforma säkra nätverk.
+- [Få en översikt](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices) bra metoder för nätverkssäkerhet.
+- [Lär dig](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm#security) utforma säkra nätverk.
 
 ## <a name="best-practice-implement-an-azure-perimeter-network"></a>Metodtips: Implementera ett Azure-perimeternätverk
 
@@ -306,7 +306,7 @@ Följande bild visar ett exempel på ett enda undernät perimeternätverk i ett 
 
 **Lära sig mer:**
 
-- [Lär dig](/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) mer om att distribuera ett perimeternätverk mellan Azure och ditt lokala datacenter.
+- [Lär dig](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) mer om att distribuera ett perimeternätverk mellan Azure och ditt lokala datacenter.
 
 ## <a name="best-practice-filter-vnet-traffic-with-nsgs"></a>Metodtips: Filtrera virtuell nätverkstrafik med NSG:er
 
@@ -346,8 +346,8 @@ Tjänsttaggar Ta manuellt arbete från tilldelning av en regel till grupper i Az
 
 **Lära sig mer:**
 
-- [Läs mer om](/azure/virtual-network/security-overview) NSG: er.
-- [Granska](/azure/virtual-network/security-overview#service-tags) tjänsttaggarna som är tillgängliga för nätverkssäkerhetsgrupper.
+- [Läs mer om](https://docs.microsoft.com/azure/virtual-network/security-overview) NSG: er.
+- [Granska](https://docs.microsoft.com/azure/virtual-network/security-overview#service-tags) tjänsttaggarna som är tillgängliga för nätverkssäkerhetsgrupper.
 
 ## <a name="best-practice-use-application-security-groups"></a>Metodtips: Använd programsäkerhetsgrupper
 
@@ -386,7 +386,7 @@ Allow-Database-BusinessLogic | Tillåt trafik från programsäkerhetsgruppen Asg
 
 **Lära sig mer:**
 
-- [Lär dig mer om](/azure/virtual-network/security-overview#application-security-groups) programsäkerhetsgrupper.
+- [Lär dig mer om](https://docs.microsoft.com/azure/virtual-network/security-overview#application-security-groups) programsäkerhetsgrupper.
 
 ### <a name="best-practice-secure-access-to-paas-using-vnet-service-endpoints"></a>Metodtips: Säker åtkomst till PaaS med hjälp av tjänstslutpunkter för virtuella nätverk
 
@@ -401,7 +401,7 @@ Med tjänstslutpunkter för Virtual Network får du ett utökat privat adressutr
 
 **Lära sig mer:**
 
-- [Läs mer om](/azure/virtual-network/virtual-network-service-endpoints-overview) tjänstslutpunkter för virtuella nätverk.
+- [Läs mer om](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) tjänstslutpunkter för virtuella nätverk.
 
 ## <a name="best-practice-control-public-ip-addresses"></a>Metodtips: Statiska offentliga IP-adresser
 
@@ -417,8 +417,8 @@ Offentliga IP-adresser i Azure kan associeras med virtuella datorer, belastnings
 
 **Lära sig mer:**
 
-- [Lär dig mer om](/azure/virtual-network/virtual-network-ip-addresses-overview-arm#public-ip-addresses) offentliga IP-adresser i Azure.
-- [Läs mer om](/azure/security-center/security-center-just-in-time) Azure Security Center – Åtkomst till virtuella Just-in-Time-datorer.
+- [Lär dig mer om](https://docs.microsoft.com/azure/virtual-network/virtual-network-ip-addresses-overview-arm#public-ip-addresses) offentliga IP-adresser i Azure.
+- [Läs mer om](https://docs.microsoft.com/azure/security-center/security-center-just-in-time) Azure Security Center – Åtkomst till virtuella Just-in-Time-datorer.
 
 ## <a name="take-advantage-of-azure-security-features-for-networking"></a>Dra nytta av Azures säkerhetsfunktioner för nätverk
 
@@ -441,8 +441,8 @@ Azure Firewall är en hanterad molnbaserad nätverkssäkerhetstjänst som skydda
 
 **Lära sig mer:**
 
-- [Få en översikt](/azure/firewall/overview) för Azure-brandväggen.
-- [Lär dig](/azure/firewall/fqdn-tags) mer om FQDN-taggar.
+- [Få en översikt](https://docs.microsoft.com/azure/firewall/overview) för Azure-brandväggen.
+- [Lär dig](https://docs.microsoft.com/azure/firewall/fqdn-tags) mer om FQDN-taggar.
 
 ## <a name="best-practice-deploy-a-web-application-firewall-waf"></a>Metodtips: Distribuera en brandvägg för webbaserade program (WAF)
 
@@ -459,8 +459,8 @@ Brandväggen för webbaserade program (WAF) är en funktion i Azure Application 
 
 **Lära sig mer:**
 
-- [Lär dig mer om](/azure/application-gateway/waf-overview) WAF.
-- [Granska](/azure/application-gateway/application-gateway-waf-configuration) begränsningar och undantag för brandväggen för webbaserade program.
+- [Lär dig mer om](https://docs.microsoft.com/azure/application-gateway/waf-overview) WAF.
+- [Granska](https://docs.microsoft.com/azure/application-gateway/application-gateway-waf-configuration) begränsningar och undantag för brandväggen för webbaserade program.
 
 ## <a name="best-practice-implement-azure-network-watcher"></a>Metodtips: Implementera Azure Network Watcher
 
@@ -478,8 +478,8 @@ Azure Network Watcher innehåller verktyg för att övervaka resurser och kommun
 
 **Lära sig mer:**
 
-- [Få en översikt](/azure/network-watcher) i Network Watcher.
-- [Läs mer](/azure/network-watcher/network-watcher-nsg-flow-logging-overview) om NSG flow loggar.
+- [Få en översikt](https://docs.microsoft.com/azure/network-watcher) i Network Watcher.
+- [Läs mer](https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-overview) om NSG flow loggar.
 
 ## <a name="use-partner-tools-in-the-azure-marketplace"></a>Använda partner-verktygen i Azure Marketplace
 
@@ -510,11 +510,11 @@ Vi rekommenderar att du använder en uppsättning Azure brandväggar (eller nva:
 
 **Lära sig mer:**
 
-- [Lär dig mer om](/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) med nva: er i ett virtuellt Azure nätverk.
+- [Lär dig mer om](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) med nva: er i ett virtuellt Azure nätverk.
 
 ## <a name="next-steps"></a>Nästa steg
 
 Granska andra metodtips:
 
-- [Bästa praxis](migrate-best-practices-security-management.md) för säkerhet och hantering efter migreringen.
-- [Bästa praxis](migrate-best-practices-costs.md) för kostnadshantering efter migreringen.
+- [Bästa praxis](./migrate-best-practices-security-management.md) för säkerhet och hantering efter migreringen.
+- [Bästa praxis](./migrate-best-practices-costs.md) för kostnadshantering efter migreringen.

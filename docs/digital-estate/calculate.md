@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: c1fb4224c7a8865785b795ad8f28bfa04779ce89
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e46c045d51bd4961f1cf355352cb84b110a81d81
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829363"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023525"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>Anpassa kostnads modeller med den digitala fastigheten till prognos moln kostnader
 
@@ -22,9 +22,9 @@ När du har rationellt en digital egendom kan du justera den till motsvarande ko
 
 Med pris verktygen för Azure kan du hantera moln utgifter med genomskinlighet och exakthet, så att du kan få ut mesta möjliga av Azure och andra moln. Att tillhandahålla verktyg för att övervaka, allokera och optimera moln kostnader, gör det möjligt för kunder att påskynda framtida investeringar med förtroende.
 
-- [Azure Migrate](/azure/migrate/migrate-overview): Azure Migrate är kanske det mest kostnads effektiva sättet att justera kostnads modellen. Med det här verktyget kan du använda digitala fastighets [lager](inventory.md), [begränsade rationalisering](rationalize.md)och kostnads beräkningar i ett verktyg.
+- [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview): Azure Migrate är kanske det mest kostnads effektiva sättet att justera kostnads modellen. Med det här verktyget kan du använda digitala fastighets [lager](./inventory.md), [begränsade rationalisering](./rationalize.md)och kostnads beräkningar i ett verktyg.
 
-- [Kalkylator för total ägande kostnad (TCO)](https://azure.com/tco): Sänk den totala ägande kostnaden för din lokala infrastruktur med Azure Cloud Platform. Använd Azures TCO-kalkylator för att beräkna de kostnads besparingar du kan inse genom att migrera dina program arbets belastningar till Azure. Ge en kort beskrivning av din lokala miljö för att få en snabb rapport.
+- [Kalkylator för total ägande kostnad (TCO)](https://azure.microsoft.com/pricing/tco/calculator/): Sänk den totala ägande kostnaden för din lokala infrastruktur med Azure Cloud Platform. Använd Azures TCO-kalkylator för att beräkna de kostnads besparingar du kan inse genom att migrera dina program arbets belastningar till Azure. Ge en kort beskrivning av din lokala miljö för att få en snabb rapport.
 
 - [Pris kalkylator för Azure](https://azure.microsoft.com/pricing): Beräkna din förväntade månads faktura med hjälp av vår pris kalkylator. Spåra din faktiska konto användning och faktura när som helst med hjälp av fakturerings portalen. Konfigurera automatiska fakturerings aviseringar för e-post för att meddela dig om dina utgifter går över en mängd som du konfigurerar.
 

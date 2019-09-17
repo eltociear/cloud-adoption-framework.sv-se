@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: eb6a5adeac25293539edd5d97c816fad2865345c
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 9b1078cbb6b7ca40b7a38ea56ae803fd61e67449
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825749"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024754"
 ---
 # <a name="storage-requirements-exceed-network-capacity-during-a-migration-effort"></a>Lagringskraven överskrider nätverkskapaciteten under ett migreringsprojekt
 
@@ -29,11 +29,11 @@ Det mesta av arbetet som krävs för denna utökning sker under förutsättnings
 
 **Offline-överföring av oberoende datalager:** I diagrammet nedan visas exempel på dataöverföring online och offline med Azure Data Box. Dessa metoder kan användas för att överföra stora datavolymer till molnet innan migreringen av arbetsbelastningen. Vid en offline-dataöverföring kopieras källdata till Azure Data Box, som sedan skickas fysiskt till Microsoft för överföring till ett Azure storage-konto som en fil eller blob. Denna process kan användas för att överföra data som inte hör direkt till en viss arbetsbelastning innan migreringen sker. Det minskar mängden data som behöver överföras över nätverket för att kunna genomföra migreringen med de tillgängliga nätverksresurserna.
 
-Denna metod kan användas för att överfara data-HDFS, säkerhetskopior, arkiv, filservrar, program osv. Befintlig teknisk vägledning förklarar hur du använder denna metod för att överföra data från [ett HDFS-lager](/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) eller från diskar med [SMB](/azure/databox/data-box-deploy-copy-data), [NFS](/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](/azure/databox/data-box-deploy-copy-data-via-rest) eller en [datakopieringstjänst](/azure/databox/data-box-deploy-copy-data-via-copy-service) till Data Box.
+Denna metod kan användas för att överfara data-HDFS, säkerhetskopior, arkiv, filservrar, program osv. Befintlig teknisk vägledning förklarar hur du använder denna metod för att överföra data från [ett HDFS-lager](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) eller från diskar med [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) eller en [datakopieringstjänst](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) till Data Box.
 
 Det finns även [lösningar från tredje part](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box) som använder Azure Data Box för en typ av migrering där stora datavolymer överförs offline och sedan synkroniseras över nätverket.
 
-![Dataöverföring offline och online med Azure Data Box](../../_images/migration/databox.png)
+![Dataöverföring offline och online med Azure Data Box](../../_images/migrate/databox.png)
 
 ## <a name="assess-process-changes"></a>Utvärdera ändringar i processen
 
@@ -58,13 +58,13 @@ Vid användning av överföring offline krävs oftast inte [replikeringsprocesse
 
 ### <a name="suggested-action-during-the-migrate-process"></a>Föreslagna åtgärder under migreringsprocessen
 
-**Kopiera lagring:** Denna metod kan användas för att överfara data-HDFS, säkerhetskopior, arkiv, filservrar, program osv. Befintlig teknisk vägledning förklarar hur du använder denna metod för att överföra data från [ett HDFS-lager](/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) eller från diskar med [SMB](/azure/databox/data-box-deploy-copy-data), [NFS](/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](/azure/databox/data-box-deploy-copy-data-via-rest) eller en [datakopieringstjänst](/azure/databox/data-box-deploy-copy-data-via-copy-service) till Data Box.
+**Kopiera lagring:** Denna metod kan användas för att överfara data-HDFS, säkerhetskopior, arkiv, filservrar, program osv. Befintlig teknisk vägledning förklarar hur du använder denna metod för att överföra data från [ett HDFS-lager](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) eller från diskar med [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) eller en [datakopieringstjänst](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) till Data Box.
 
 Det finns även [lösningar från tredje part](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box) som använder Azure Data Box för en typ av migrering där stora datavolymer överförs offline och sedan synkroniseras över nätverket.
 
-**Transportera enheten:** När data kopierats kan enheten [levereras till Microsoft](/azure/databox/data-box-deploy-picked-up). När det tagits emot och importerats är data tillgängliga i ett Azure storage-konto.
+**Transportera enheten:** När data kopierats kan enheten [levereras till Microsoft](https://docs.microsoft.com/azure/databox/data-box-deploy-picked-up). När det tagits emot och importerats är data tillgängliga i ett Azure storage-konto.
 
-**Återställa tillgången:** [Kontrollera att data](/azure/databox/data-box-deploy-picked-up#verify-data-upload-to-azure) är tillgängliga i lagringskontot. När det kontrollerats kan data användas som en blob eller i Azure Files. Om data är i en VHD/VHDX-fil kan filen omvandlas till hanterade diskar. Dessa hanterade diskar kan sedan användas för att skapa en instans av en virtuell dator vilket skapar en kopia av den ursprungliga lokalt installerade tillgången.
+**Återställa tillgången:** [Kontrollera att data](https://docs.microsoft.com/azure/databox/data-box-deploy-picked-up#verify-data-upload-to-azure) är tillgängliga i lagringskontot. När det kontrollerats kan data användas som en blob eller i Azure Files. Om data är i en VHD/VHDX-fil kan filen omvandlas till hanterade diskar. Dessa hanterade diskar kan sedan användas för att skapa en instans av en virtuell dator vilket skapar en kopia av den ursprungliga lokalt installerade tillgången.
 
 **Synkronisering:** Om synkronisering av avvikelser krävs för en migrerad tillgång kan en av [lösningarna från tredje part](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box) användas för att synkronisera filerna tills tillgången återställs.
 

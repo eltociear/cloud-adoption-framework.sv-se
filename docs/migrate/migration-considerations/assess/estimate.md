@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 09492fea252ac9b07372c2def75d61df62e727ec
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2bbafffd50cba58fc5304489f31521e6da8a8345
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819496"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025442"
 ---
 # <a name="estimate-cloud-costs"></a>Beräkna molnkostnader
 
@@ -23,7 +23,7 @@ Under migreringen finns det flera faktorer som kan påverka beslut och körning.
 
 Storleken på din digitala egendom har en direkt påverkan på migreringsbesluten. En migrering av 250 virtuella datorer är enklare att beräkna än en migrering av 10 000 virtuella datorer. Vi rekommenderar starkt att du väljer en mindre arbetsbelastning vid din första migrering. Det ger ditt team en chans att lära sig att beräkna kostnaderna för en enkel migrering innan de försöker beräkna större och mer komplicerade arbetsbelastningsmigreringar.
 
-Men tänk på att en migrering av en mindre arbetsbelastning ändå kan innehålla ett varierande antal stödjande tillgångar. Om migreringen omfattar maximalt 1 000 virtuella datorer räcker det förmodligen med ett verktyg som [Azure Migrate](/azure/migrate/migrate-overview) vid insamlingen av data om lager och beräknade kostnader. Fler alternativ på verktyg för att beräkna kostnader beskrivs i artikeln om [kostnadsberäkningar för digital egendom](../../../digital-estate/calculate.md).
+Men tänk på att en migrering av en mindre arbetsbelastning ändå kan innehålla ett varierande antal stödjande tillgångar. Om migreringen omfattar maximalt 1 000 virtuella datorer räcker det förmodligen med ett verktyg som [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) vid insamlingen av data om lager och beräknade kostnader. Fler alternativ på verktyg för att beräkna kostnader beskrivs i artikeln om [kostnadsberäkningar för digital egendom](../../../digital-estate/calculate.md).
 
 När antalet digitala egendomar är mer än 1 000 enheter är det fortfarande möjligt att dela upp beräkningen i fyra eller fem iterationer, vilket gör beräkningsprocessen mer hanterbar. Vid större egendomar eller när en högre grad av precision krävs i beräkningen, är en mer heltäckande metod (t.ex. den som beskrivs i avsnittet ”[Digital egendom](../../../digital-estate/index.md)” i Cloud Adoption Framework) troligtvis nödvändig.
 

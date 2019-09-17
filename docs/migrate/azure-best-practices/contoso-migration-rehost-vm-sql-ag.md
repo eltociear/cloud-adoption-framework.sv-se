@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 32a24f51a44c088331ea47a65a5d71e3d02cedf4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: fbcb06b671b13b48fe5063e5efd8ba72c3071667
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70820341"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024338"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-group"></a>Byta värd för en lokal app på virtuella Azure-datorer och SQL Server AlwaysOn-tillgänglighetsgrupp
 
@@ -97,7 +97,7 @@ Contoso utvärderar den föreslagna designen genom att sätta samman en lista me
 **Tjänst** | **Beskrivning** | **Kostnad**
 --- | --- | ---
 [Data Migration Assistant](/sql/dma/dma-overview?view=ssdt-18vs2017) | DMA körs lokalt från den lokala SQL Server-datorn och migrerar databasen över ett plats-till-plats-VPN till Azure. | DMA är ett kostnadsfritt nedladdningsbart verktyg.
-[Azure Site Recovery](/azure/site-recovery) | Site Recovery orkestrerar och hanterar migrering och haveriberedskap för virtuella Azure-datorer, lokala virtuella datorer och fysiska servrar. | Under replikeringen till Azure debiteras Azure Storage-avgifter. Virtuella Azure-datorer skapas och medför kostnader i samband med en redundansväxling. [Läs mer](https://azure.microsoft.com/pricing/details/site-recovery) om avgifter och priser.
+[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | Site Recovery orkestrerar och hanterar migrering och haveriberedskap för virtuella Azure-datorer, lokala virtuella datorer och fysiska servrar. | Under replikeringen till Azure debiteras Azure Storage-avgifter. Virtuella Azure-datorer skapas och medför kostnader i samband med en redundansväxling. [Läs mer](https://azure.microsoft.com/pricing/details/site-recovery) om avgifter och priser.
 
 ## <a name="migration-process"></a>Migreringsprocess
 
@@ -122,9 +122,9 @@ Det här är vad Contoso behöver göra i det här scenariot.
 
 **Krav** | **Detaljer**
 --- | ---
-**Azure-prenumeration** | Contoso har redan skapat en prenumeration i en tidigare artikel i den här serien. Om du inte har någon Azure-prenumeration kan du skapa ett [kostnadsfritt konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Om du skapar ett kostnadsfritt konto är du administratör för din prenumeration och kan utföra alla åtgärder.<br/><br/> Om du använder en befintlig prenumeration och inte är administratör måste du be administratören att ge dig ägar- eller deltagarbehörighet.<br/><br/> Om du behöver mer detaljerade behörigheter läser du [den här artikeln](/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Azure-infrastruktur** | [Läs om](contoso-migration-infrastructure.md) hur Contoso konfigurerade en Azure-infrastruktur.<br/><br/> Läs mer om specifika [nätverks-](/azure/site-recovery/vmware-physical-azure-support-matrix#network) och [lagringskrav](/azure/site-recovery/vmware-physical-azure-support-matrix#storage) för Site Recovery.
-**Site Recovery (lokalt)** | Den lokala vCenter-servern bör köra version 5.5, 6.0 eller 6.5<br/><br/> En ESXi-värd som kör version 5.5, 6.0 eller 6.5<br/><br/> En eller flera virtuella VMware-datorer som körs på ESXi-värden.<br/><br/> De virtuella datorerna måste uppfylla [kraven för Azure](/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).<br/><br/> Konfiguration av [nätverk](/azure/site-recovery/vmware-physical-azure-support-matrix#network) och [lagring](/azure/site-recovery/vmware-physical-azure-support-matrix#storage) som stöds.<br/><br/> De virtuella datorerna som du vill replikera måste uppfylla [kraven för Azure](/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).
+**Azure-prenumeration** | Contoso har redan skapat en prenumeration i en tidigare artikel i den här serien. Om du inte har någon Azure-prenumeration kan du skapa ett [kostnadsfritt konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Om du skapar ett kostnadsfritt konto är du administratör för din prenumeration och kan utföra alla åtgärder.<br/><br/> Om du använder en befintlig prenumeration och inte är administratör måste du be administratören att ge dig ägar- eller deltagarbehörighet.<br/><br/> Om du behöver mer detaljerade behörigheter läser du [den här artikeln](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
+**Azure-infrastruktur** | [Läs om](./contoso-migration-infrastructure.md) hur Contoso konfigurerade en Azure-infrastruktur.<br/><br/> Läs mer om specifika [nätverks-](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network) och [lagringskrav](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage) för Site Recovery.
+**Site Recovery (lokalt)** | Den lokala vCenter-servern bör köra version 5.5, 6.0 eller 6.5<br/><br/> En ESXi-värd som kör version 5.5, 6.0 eller 6.5<br/><br/> En eller flera virtuella VMware-datorer som körs på ESXi-värden.<br/><br/> De virtuella datorerna måste uppfylla [kraven för Azure](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).<br/><br/> Konfiguration av [nätverk](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network) och [lagring](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage) som stöds.<br/><br/> De virtuella datorerna som du vill replikera måste uppfylla [kraven för Azure](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).
 
 <!-- markdownlint-enable MD033 -->
 
@@ -175,8 +175,8 @@ Contosos administratörer konfigurerar klustret så här:
 
 **Behöver du mer hjälp?**
 
-- [Få hjälp](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision#1-configure-basic-settings) med att etablera en SQL Server VM.
-- [Läs mer](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-prereq#create-sql-server-vms) om att konfigurera virtuella datorer för olika SQL Server-SKU:er.
+- [Få hjälp](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision#1-configure-basic-settings) med att etablera en SQL Server VM.
+- [Läs mer](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-prereq#create-sql-server-vms) om att konfigurera virtuella datorer för olika SQL Server-SKU:er.
 
 ## <a name="step-2-deploy-and-set-up-the-cluster"></a>Steg 2: Distribuera och konfigurera klustret
 
@@ -246,8 +246,8 @@ Med AlwaysOn aktiverat kan Contoso konfigurera den AlwaysOn-tillgänglighetsgrup
 
 **Behöver du mer hjälp?**
 
-- [Läs mer](/windows-server/failover-clustering/deploy-cloud-witness) om molnvittne och att konfigurera ett lagringskonto för det.
-- [Få instruktioner](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial) om att konfigurera ett kluster och skapa en tillgänglighetsgrupp.
+- [Läs mer](https://docs.microsoft.com/windows-server/failover-clustering/deploy-cloud-witness) om molnvittne och att konfigurera ett lagringskonto för det.
+- [Få instruktioner](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial) om att konfigurera ett kluster och skapa en tillgänglighetsgrupp.
 
 ## <a name="step-3-deploy-the-azure-load-balancer"></a>Steg 3: Distribuera Azure Load Balancer
 
@@ -305,8 +305,8 @@ De skapar regeln enligt följande:
 
 **Behöver du mer hjälp?**
 
-- [Få en översikt](/azure/load-balancer/load-balancer-overview) över Azure Load Balancer.
-- [Läs mer](/azure/load-balancer/tutorial-load-balancer-basic-internal-portal) om att skapa en lastbalanserare.
+- [Få en översikt](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview) över Azure Load Balancer.
+- [Läs mer](https://docs.microsoft.com/azure/load-balancer/tutorial-load-balancer-basic-internal-portal) om att skapa en lastbalanserare.
 
 ## <a name="step-4-prepare-azure-for-the-site-recovery-service"></a>Steg 4: Förbereda Azure för Site Recovery-tjänsten
 
@@ -318,7 +318,7 @@ Här är de Azure-komponenter som Contoso behöver för att distribuera Site Rec
 
 Contosos administratörer konfigurerar dessa så här:
 
-1. Contoso har redan skapat ett nätverk/undernät som de kan använda för Site Recovery när de [distribuerade Azure-infrastrukturen](contoso-migration-rehost-vm-sql-ag.md).
+1. Contoso har redan skapat ett nätverk/undernät som de kan använda för Site Recovery när de [distribuerade Azure-infrastrukturen](./contoso-migration-rehost-vm-sql-ag.md).
 
     - SmartHotel360-appen är en produktionsapp och WEBVM migreras till Azure-produktionsnätverket (VNET-PROD-EUS2) i den primära regionen USA, östra 2.
     - WEBVM placeras i resursgruppen ContosoRG, som används för produktionsresurser, och i produktionsundernätet (PROD-FE-EUS2).
@@ -336,7 +336,7 @@ Contosos administratörer konfigurerar dessa så här:
 
 **Behöver du mer hjälp?**
 
-[Lär dig](/azure/site-recovery/tutorial-prepare-azure) hur du konfigurerar Azure för Site Recovery.
+[Lär dig](https://docs.microsoft.com/azure/site-recovery/tutorial-prepare-azure) hur du konfigurerar Azure för Site Recovery.
 
 ## <a name="step-5-prepare-on-premises-vmware-for-site-recovery"></a>Steg 5: Förbereda lokala VMware för Site Recovery
 
@@ -390,8 +390,8 @@ Dessutom måste de kontrollera följande när de kör en redundansväxling:
 
 **Behöver du mer hjälp?**
 
-- [Lär dig](/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery) hur du skapar och tilldelar en roll för automatisk identifiering.
-- [Lär dig](/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation) hur du skapar ett konto för push-installation av mobilitetstjänsten.
+- [Lär dig](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery) hur du skapar och tilldelar en roll för automatisk identifiering.
+- [Lär dig](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation) hur du skapar ett konto för push-installation av mobilitetstjänsten.
 
 ## <a name="step-6-replicate-the-on-premises-vms-to-azure-with-site-recovery"></a>Steg 6: Replikera de lokala virtuella datorerna till Azure med Site Recovery
 
@@ -497,9 +497,9 @@ Contosos administratörer kan nu börja replikera WebVM.
 
 **Behöver du mer hjälp?**
 
-- En fullständig genomgång av de här stegen finns i [Konfigurera haveriberedskap för lokala virtuella VMware-datorer](/azure/site-recovery/vmware-azure-tutorial).
-- Detaljerade instruktioner finns tillgängliga som hjälper dig att [konfigurera källmiljön](/azure/site-recovery/vmware-azure-set-up-source), [distribuera konfigurationsservern](/azure/site-recovery/vmware-azure-deploy-configuration-server) och [konfigurera replikeringsinställningar](/azure/site-recovery/vmware-azure-set-up-replication).
-- Du kan läsa mer om hur du [aktiverar replikering](/azure/site-recovery/vmware-azure-enable-replication).
+- En fullständig genomgång av de här stegen finns i [Konfigurera haveriberedskap för lokala virtuella VMware-datorer](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial).
+- Detaljerade instruktioner finns tillgängliga som hjälper dig att [konfigurera källmiljön](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-source), [distribuera konfigurationsservern](https://docs.microsoft.com/azure/site-recovery/vmware-azure-deploy-configuration-server) och [konfigurera replikeringsinställningar](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-replication).
+- Du kan läsa mer om hur du [aktiverar replikering](https://docs.microsoft.com/azure/site-recovery/vmware-azure-enable-replication).
 
 ## <a name="step-7-install-the-data-migration-assistant-dma"></a>Steg 7: Installera Data Migration Assistant (DMA)
 
@@ -577,9 +577,9 @@ När allt är konfigurerat har Contoso nu en fungerande tillgänglighetsgrupp i 
 
 **Behöver du mer hjälp?**
 
-- Läs mer om att skapa en [tillgänglighetsgrupp](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#create-the-availability-group) och [lyssnare](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#configure-listener).
-- [Konfigurera manuellt klustret att använda lastbalanserarens IP-adress](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener#configure-the-cluster-to-use-the-load-balancer-ip-address).
-- [Läs mer](/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2) om att skapa och använda SAS.
+- Läs mer om att skapa en [tillgänglighetsgrupp](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#create-the-availability-group) och [lyssnare](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#configure-listener).
+- [Konfigurera manuellt klustret att använda lastbalanserarens IP-adress](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener#configure-the-cluster-to-use-the-load-balancer-ip-address).
+- [Läs mer](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2) om att skapa och använda SAS.
 
 ## <a name="step-8-migrate-the-vm-with-site-recovery"></a>Steg 8: Migrera den virtuella datorn med Site Recovery
 
@@ -631,9 +631,9 @@ Som sista steg i migreringsprocessen uppdaterar Contosos administratörer progra
 
 **Behöver du mer hjälp?**
 
-- [Lär dig](/azure/site-recovery/tutorial-dr-drill-azure) hur du kör ett redundanstest.
-- [Lär dig](/azure/site-recovery/site-recovery-create-recovery-plans) hur du skapar en återställningsplan.
-- [Lär dig](/azure/site-recovery/site-recovery-failover) hur du redundansväxlar till Azure.
+- [Lär dig](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure) hur du kör ett redundanstest.
+- [Lär dig](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans) hur du skapar en återställningsplan.
+- [Lär dig](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover) hur du redundansväxlar till Azure.
 
 ## <a name="clean-up-after-migration"></a>Rensa efter migreringen
 
@@ -659,20 +659,20 @@ Contosos säkerhetsteam granskar de virtuella Azure-datorerna WEBVM, SQLAOG1 och
 - Teamet överväger att skydda data på disken med Azure Disk Encryption och Key Vault.
 - Teamet bör utvärdera transparent datakryptering (TDE) och sedan aktivera det på SmartHotel360-databasen som körs på den nya SQL-AOG. [Läs mer](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017).
 
-[Läs mer](/azure/security/azure-security-best-practices-vms) om säkerhetsrutiner för virtuella datorer.
+[Läs mer](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) om säkerhetsrutiner för virtuella datorer.
 
 ## <a name="bcdr"></a>BCDR
 
  För affärskontinuitet och haveriberedskap (BCDR) vidtar Contoso följande åtgärder:
 
-- Skydda data: Contoso säkerhetskopierar data på de virtuella datorerna WEBVM, SQLAOG1 och SQLAOG2 med hjälp av Azure Backup-tjänsten. [Läs mer](/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
-- Contoso får också lära sig hur de använder Azure Storage för att säkerhetskopiera SQL Server direkt till bloblagring. [Läs mer](/azure/virtual-machines/windows/sql/virtual-machines-windows-use-storage-sql-server-backup-restore).
-- Undvika avbrott i apparna: Contoso replikerar appens virtuella datorer i Azure till en sekundär region med hjälp av Site Recovery. [Läs mer](/azure/site-recovery/azure-to-azure-quickstart).
+- Skydda data: Contoso säkerhetskopierar data på de virtuella datorerna WEBVM, SQLAOG1 och SQLAOG2 med hjälp av Azure Backup-tjänsten. [Läs mer](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
+- Contoso får också lära sig hur de använder Azure Storage för att säkerhetskopiera SQL Server direkt till bloblagring. [Läs mer](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-use-storage-sql-server-backup-restore).
+- Undvika avbrott i apparna: Contoso replikerar appens virtuella datorer i Azure till en sekundär region med hjälp av Site Recovery. [Läs mer](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 
 ### <a name="licensing-and-cost-optimization"></a>Licensierings- och kostnadsoptimering
 
 1. Contoso har befintlig licensiering för sin WEBVM och drar nytta av Azure Hybrid-förmånen. Contoso konverterar befintliga virtuella Azure-datorer för att dra nytta av denna prissättning.
-2. Contoso aktiverar Azure Cost Management som licensieras av Cloudyn, ett Microsoft-dotterbolag. Det är en kostnadshanteringslösning med flera moln som hjälper dig att använda och hantera Azure och andra molnresurser. [Läs mer](/azure/cost-management/overview) om Azure Cost Management.
+2. Contoso aktiverar Azure Cost Management som licensieras av Cloudyn, ett Microsoft-dotterbolag. Det är en kostnadshanteringslösning med flera moln som hjälper dig att använda och hantera Azure och andra molnresurser. [Läs mer](https://docs.microsoft.com/azure/cost-management/overview) om Azure Cost Management.
 
 ## <a name="conclusion"></a>Sammanfattning
 

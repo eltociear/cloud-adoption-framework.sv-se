@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 30f50a6f4d965834de1de354b3149c559f071f72
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d98d8ea586d76c583ab22670ac310a9f5bf36fc1
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833562"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024729"
 ---
 # <a name="skills-readiness-path-during-the-migrate-phase-of-a-migration-journey"></a>Vägen för kunskapsberedskap under fasen ”migrera” för en migreringsresa
 
@@ -23,16 +23,16 @@ Det finns fyra distinkta processer som slutförs iterativt under fasen ”migrer
 
 ## <a name="prerequisites-skilling-resources"></a>Resurser för kunskapsförutsättningar
 
-Implementering av ”migrera-processer” kommer att bygga på de kunskaper som förvärvats under faserna ”[Planera](../../business-strategy/suggested-skills.md)” och ”[Redo](../../organization/suggested-skills.md)” för migreringsresan.
+Implementering av ”migrera-processer” kommer att bygga på de kunskaper som förvärvats under faserna ”[Planera](../../strategy/suggested-skills.md)” och ”[Redo](../../organize/suggested-skills.md)” för migreringsresan.
 
 ## <a name="assess-skilling-resources"></a>Utvärdera kunskapsresurser
 
 Följande verktyg kan hjälpa teamet vid utförandet av utvärderingsaktiviteter:
 
 - [Balansera portföljen](./balance-the-portfolio.md): Säkerställ balans och rätt investeringsallokeringar i en programportfölj.
-- [Skapa en affärsmotivering](../../business-strategy/cloud-migration-business-case.md): Skapa och förstå den affärsmotivering som driver arbetet med molnmigrering.
+- [Skapa en affärsmotivering](../../strategy/cloud-migration-business-case.md): Skapa och förstå den affärsmotivering som driver arbetet med molnmigrering.
 - [Rationalisera den digitala egendomen](../../digital-estate/rationalize.md): Rationalisera tillgångar i den digitala egendomen.
-- [Utvärdering av programportföljen](/learn/modules/app-and-infra-migration-and-modernization): Kriterier för beslutsfattande om migrerings- eller innovationsalternativ i programportföljen.
+- [Utvärdering av programportföljen](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization): Kriterier för beslutsfattande om migrerings- eller innovationsalternativ i programportföljen.
 - [Utvärdera och planera Microsoft Azure-migrering](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning): PluralSights-kurs som underlättar utvärdering av lokala arbetsbelastningar
 
 Vid utvärderingsprocesser får arkitekter uppdraget att konstruera lösningar för varje arbetsbelastning. Följande kunskapsresurser kan förbereda arkitekter för dessa uppgifter:
@@ -45,7 +45,7 @@ Vid utvärderingsprocesser får arkitekter uppdraget att konstruera lösningar f
 
 Följande självstudie kan förbereda teamet för migreringsaktiviteter:
 
-- [Migrera till Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure): Använda Azure Site Recovery för att migrera virtuella datorer till Azure.
+- [Migrera till Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure): Använda Azure Site Recovery för att migrera virtuella datorer till Azure.
 - [Byta värd för arbetsbelastningar till Azure](https://aka.ms/rehostcourse): PluralSight-kurs som lär deltagarna hur det går till att byta värd för arbetsbelastningar till Azure
 - [Migrera fysiska och virtuella servrar till Azure](https://app.pluralsight.com/library/courses/microsoft-azure-migrating-physical-virtual-servers/table-of-contents): PluralSights-kurs för migrering av servrar till Azure
 - [Importera och exportera data till Azure](https://app.pluralsight.com/library/courses/microsoft-azure-import-export-data/table-of-contents): PluralSight-kurs om dataflytt till och från Azure

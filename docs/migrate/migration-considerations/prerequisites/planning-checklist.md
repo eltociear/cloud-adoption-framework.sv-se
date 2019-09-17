@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8d216d65685c7e58fc622a5d7f820f0c23097fa4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d2366e4b5fad3344f324f9ff6f1b7dda0cc0b8c6
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833302"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022601"
 ---
 # <a name="migration-environment-planning-checklist---validate-environmental-readiness-prior-to-migration"></a>Planeringschecklista för migreringsmiljön – Verifiera att miljön är redo inför migreringen
 
@@ -33,7 +33,7 @@ Det första och viktigaste beslutet om en migreringsklar miljö är valet av sty
 
 Oavsett om du väljer att använda en mer omfattande molnstyrningsstrategi för din första migrering måste du se till att molndistributionsmiljön har konfigurerats för att stödja dina arbetsbelastningar.
 
-Om du planerar att anpassa migreringen till en molnstyrningsstrategi från början måste du tillämpa de [fem disciplinerna för molnstyrningn](../../../governance/governance-disciplines.md) för att fatta rätt beslut om principer, verktygskedjor och verkställande mekanismer som anpassar din molnmiljö med företagets övergripande krav. Mer information om hur du implementerar den här modellen med hjälp av Azure-tjänster finns i [design guiderna för styrning](../../../governance/journeys/index.md) i Ramverk för molnimplementering.
+Om du planerar att anpassa migreringen till en molnstyrningsstrategi från början måste du tillämpa de [fem disciplinerna för molnstyrningn](../../../govern/governance-disciplines.md) för att fatta rätt beslut om principer, verktygskedjor och verkställande mekanismer som anpassar din molnmiljö med företagets övergripande krav. Mer information om hur du implementerar den här modellen med hjälp av Azure-tjänster finns i [design guiderna för styrning](../../../govern/guides/index.md) i Ramverk för molnimplementering.
 
 Om din ursprungliga migrering inte är noggrant anpassad till en bredare strategi för molnstyrning måste den allmänna organisations-, åtkomst- och infrastruktur planeringen fortfarande hanteras. Se [guiden för Azure-beredskap](../../../ready/azure-readiness-guide/index.md) för hjälp med dessa beslut om molnberedskap.
 
@@ -64,7 +64,7 @@ Molnbaserade identitetstjänster är ett krav för att erbjuda identitets- och �
 
 ## <a name="next-steps"></a>Nästa steg
 
-Om miljön uppfyller minimikraven kan den betraktas som godkänd inför migreringen. [Kulturell komplexitet och förändringsledning](./culture-complexity.md) bidrar till att anpassa roller och ansvarsområden så att rätt förväntningar råder under genomförandet av planen.
+Om miljön uppfyller minimikraven kan den betraktas som godkänd inför migreringen. [Kulturell komplexitet och förändringsledning](./cultural-complexity.md) bidrar till att anpassa roller och ansvarsområden så att rätt förväntningar råder under genomförandet av planen.
 
 > [!div class="nextstepaction"]
-> [Kulturell komplexitet och förändringsledning](./culture-complexity.md)
+> [Kulturell komplexitet och förändringsledning](./cultural-complexity.md)

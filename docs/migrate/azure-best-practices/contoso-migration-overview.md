@@ -8,12 +8,12 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a6af51f1fa6526e2ea7cf13a824c7834d631aa59
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: cc6ce12f425354cbf907474431f2ec0f45735fea
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70820588"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024954"
 ---
 # <a name="application-migration-patterns-and-examples"></a>Programmigrering – mönster och exempel
 
@@ -59,49 +59,49 @@ Artiklarna i serien sammanfattas nedan.
 
 **Artikel** | **Detaljer**
 --- | ---
-[Utvärdera lokala resurser för migrering till Azure](contoso-migration-assessment.md) | Den här artikeln visar hur du kör en utvärdering av en lokal app som körs på VMware. I exemplet utvärderar en exempelorganisation virtuella appdatorer med hjälp av Azure Migrate-tjänsten och SQL Server-appdatabasen med hjälp av Data Migration Assistant.
+[Utvärdera lokala resurser för migrering till Azure](./contoso-migration-assessment.md) | Den här artikeln visar hur du kör en utvärdering av en lokal app som körs på VMware. I exemplet utvärderar en exempelorganisation virtuella appdatorer med hjälp av Azure Migrate-tjänsten och SQL Server-appdatabasen med hjälp av Data Migration Assistant.
 
 ### <a name="infrastructure"></a>Infrastruktur
 
 **Artikel** | **Detaljer**
 --- | ---
-[Distribuera Azure-infrastruktur](contoso-migration-infrastructure.md) | Den här artikeln visar hur en organisation kan förbereda sin lokala infrastruktur och Azure-infrastruktur för migrering. Det infrastrukturexempel som upprättats i den här artikeln hänvisas till i de andra exempel som ges i det här avsnittet.
+[Distribuera Azure-infrastruktur](./contoso-migration-infrastructure.md) | Den här artikeln visar hur en organisation kan förbereda sin lokala infrastruktur och Azure-infrastruktur för migrering. Det infrastrukturexempel som upprättats i den här artikeln hänvisas till i de andra exempel som ges i det här avsnittet.
 
 ### <a name="windows-server-workloads"></a>Windows Server-arbetsbelastningar
 
 **Artikel** | **Detaljer**
 --- | ---
-[Byta värd för en app på virtuella Azure-datorer](contoso-migration-rehost-vm.md) | Den här artikeln innehåller ett exempel på migrering av lokala virtuella appdatorer till virtuella Azure-datorer med hjälp av Site Recovery-tjänsten.
-[Utföra arkitekturomarbetning för en app i Azure-containrar och Azure SQL Database](contoso-migration-rearchitect-container-sql.md) | Den här artikeln innehåller ett exempel på migrering av en app samtidigt som arkitekturomarbetning utförs för appwebblagret som en Windows-container som körs i Azure Service Fabric samt databasen med Azure SQL Database.
+[Byta värd för en app på virtuella Azure-datorer](./contoso-migration-rehost-vm.md) | Den här artikeln innehåller ett exempel på migrering av lokala virtuella appdatorer till virtuella Azure-datorer med hjälp av Site Recovery-tjänsten.
+[Utföra arkitekturomarbetning för en app i Azure-containrar och Azure SQL Database](./contoso-migration-rearchitect-container-sql.md) | Den här artikeln innehåller ett exempel på migrering av en app samtidigt som arkitekturomarbetning utförs för appwebblagret som en Windows-container som körs i Azure Service Fabric samt databasen med Azure SQL Database.
 
 ### <a name="linux-workloads"></a>Linux-arbetsbelastningar
 
 **Artikel** | **Detaljer**
 --- | ---
-[Byta värd för en Linux-app på virtuella Azure-datorer och Azure Database for MySQL](contoso-migration-rehost-linux-vm-mysql.md) | Den här artikeln innehåller ett exempel på migrering av en Linux-värdbaserad app till virtuella Azure-datorer med hjälp av Site Recovery. Den migrerar appdatabasen till Azure Database for MySQL med hjälp av MySQL Workbench.
-[Byta värd för en Linux-app på virtuella Azure-datorer](contoso-migration-rehost-linux-vm.md) | Det här exemplet visar hur du utför en lift-and-shift-migrering av en Linux-baserad app till virtuella Azure-datorer med hjälp av Site Recovery-tjänsten.
+[Byta värd för en Linux-app på virtuella Azure-datorer och Azure Database for MySQL](./contoso-migration-rehost-linux-vm-mysql.md) | Den här artikeln innehåller ett exempel på migrering av en Linux-värdbaserad app till virtuella Azure-datorer med hjälp av Site Recovery. Den migrerar appdatabasen till Azure Database for MySQL med hjälp av MySQL Workbench.
+[Byta värd för en Linux-app på virtuella Azure-datorer](./contoso-migration-rehost-linux-vm.md) | Det här exemplet visar hur du utför en lift-and-shift-migrering av en Linux-baserad app till virtuella Azure-datorer med hjälp av Site Recovery-tjänsten.
 
 ### <a name="sql-server-workloads"></a>SQL Server-arbetsbelastningar
 
 **Artikel** | **Detaljer**
 --- | ---
-[Byta värd för en app på en virtuell Azure-dator och hanterad SQL Database-instans](contoso-migration-rehost-vm-sql-managed-instance.md) | Den här artikeln innehåller ett exempel på en lift-and-shift-migrering till Azure för en lokal app. Detta inbegriper migrering av appens virtuella klientdatorn med hjälp av [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) och appdatabasen till en hanterad Azure SQL Database-instans med hjälp av [Azure Database Migration Service](/azure/dms/dms-overview).
-[Byta värd för en app på virtuella Azure-datorer och i en SQL Server AlwaysOn-tillgänglighetsgrupp](contoso-migration-rehost-vm-sql-ag.md) | Det här exemplet visar hur du migrerar en app och data med hjälp av Azure-värdhanterade virtuella SQL Server-datorer. Det använder Site Recovery för att migrera de virtuella appdatorerna och Azure Database Migration Service för att migrera appdatabasen till ett SQL Server-kluster som skyddas av en AlwaysOn-tillgänglighetsgrupp.
+[Byta värd för en app på en virtuell Azure-dator och hanterad SQL Database-instans](./contoso-migration-rehost-vm-sql-managed-instance.md) | Den här artikeln innehåller ett exempel på en lift-and-shift-migrering till Azure för en lokal app. Detta inbegriper migrering av appens virtuella klientdatorn med hjälp av [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) och appdatabasen till en hanterad Azure SQL Database-instans med hjälp av [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
+[Byta värd för en app på virtuella Azure-datorer och i en SQL Server AlwaysOn-tillgänglighetsgrupp](./contoso-migration-rehost-vm-sql-ag.md) | Det här exemplet visar hur du migrerar en app och data med hjälp av Azure-värdhanterade virtuella SQL Server-datorer. Det använder Site Recovery för att migrera de virtuella appdatorerna och Azure Database Migration Service för att migrera appdatabasen till ett SQL Server-kluster som skyddas av en AlwaysOn-tillgänglighetsgrupp.
 
 ### <a name="aspnet--php--java-apps"></a>ASP.NET-/PHP-/Java-appar
 
 **Artikel** | **Detaljer**
 --- | ---
-[Refaktorisera en app i en Azure-webapp och Azure SQL Database](contoso-migration-refactor-web-app-sql.md) | Det här exemplet visar hur du migrerar en lokal Windows-baserad app till en Azure-webbapp och migrerar appdatabasen till en Azure SQL Server-instans med Data Migration Assistant.
-[Refaktorisera en Linux-app till flera regioner med hjälp av Azure App Service, Azure Traffic Manager och Azure Database for MySQL](contoso-migration-refactor-linux-app-service-mysql.md) | Det här exemplet visar hur du migrerar en lokal Linux-baserad app till en Azure-webbapp i flera Azure-regioner med hjälp av Azure Traffic Manager, integrerat med GitHub för kontinuerlig leverans. Appdatabasen migreras till en Azure Database for MySQL-instans.
-[Återskapa en app i Azure](contoso-migration-rebuild.md) | Den här artikeln innehåller ett exempel på återskapande av en lokal app med hjälp av en rad Azure-funktioner och hanterade tjänster, däribland Azure App Service, Azure Kubernetes Service (AKS), Azure Functions, Azure Cognitive Services och Azure Cosmos DB.
-[Refaktorisera Team Foundation Server på Azure DevOps Services](contoso-migration-tfs-vsts.md) | Den här artikeln visar ett exempel på migrering av en lokal Team Foundation Server-distribution till Azure DevOps Services i Azure.
+[Refaktorisera en app i en Azure-webapp och Azure SQL Database](./contoso-migration-refactor-web-app-sql.md) | Det här exemplet visar hur du migrerar en lokal Windows-baserad app till en Azure-webbapp och migrerar appdatabasen till en Azure SQL Server-instans med Data Migration Assistant.
+[Refaktorisera en Linux-app till flera regioner med hjälp av Azure App Service, Azure Traffic Manager och Azure Database for MySQL](./contoso-migration-refactor-linux-app-service-mysql.md) | Det här exemplet visar hur du migrerar en lokal Linux-baserad app till en Azure-webbapp i flera Azure-regioner med hjälp av Azure Traffic Manager, integrerat med GitHub för kontinuerlig leverans. Appdatabasen migreras till en Azure Database for MySQL-instans.
+[Återskapa en app i Azure](./contoso-migration-rebuild.md) | Den här artikeln innehåller ett exempel på återskapande av en lokal app med hjälp av en rad Azure-funktioner och hanterade tjänster, däribland Azure App Service, Azure Kubernetes Service (AKS), Azure Functions, Azure Cognitive Services och Azure Cosmos DB.
+[Refaktorisera Team Foundation Server på Azure DevOps Services](./contoso-migration-tfs-vsts.md) | Den här artikeln visar ett exempel på migrering av en lokal Team Foundation Server-distribution till Azure DevOps Services i Azure.
 
 ### <a name="migration-scaling"></a>Skalning av migrering
 
 **Artikel** | **Detaljer**
 --- | ---
-[Skala en migrering till Azure](contoso-migration-scale.md) | Den här artikeln visar hur en exempelorganisation förbereder att skala till en fullständig migrering till Azure.
+[Skala en migrering till Azure](./contoso-migration-scale.md) | Den här artikeln visar hur en exempelorganisation förbereder att skala till en fullständig migrering till Azure.
 
 ### <a name="demo-apps"></a>Demoappar
 

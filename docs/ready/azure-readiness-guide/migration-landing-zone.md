@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: 8fccc60eb9944aca6801deb79310ebf07e10b109
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 9b6c526f407a50327aad8dd2fb2639cb7172cb8d
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819470"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025209"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Distribuera en landningszon för migrering
 
@@ -33,7 +33,7 @@ Följande bild visar Ramverk för molnimplementering-skissen för migrering av l
 ![Anpassa skissen](../../_images/ready/blueprint-overview.png)
 
 - Bokstaven A placeras inuti en böjd linje som markerar den här skissens omfång. Det här omfånget är avsett att ge den här skissen en begränsat komplex arkitektur men den har utformats enligt relativt genomsnittliga efterlevnadskrav.
-- Kunder som har en hög grad av komplexitet och stränga krav på efterlevnad bör kanske använda en utökad skiss från en partner eller en av de [standardbaserade skissexemplen](/azure/governance/blueprints/samples/).
+- Kunder som har en hög grad av komplexitet och stränga krav på efterlevnad bör kanske använda en utökad skiss från en partner eller en av de [standardbaserade skissexemplen](https://docs.microsoft.com/azure/governance/blueprints/samples/).
 - De flesta kunders behov hamnar någonstans mellan dessa två extremer. Bokstaven B representerar den process som beskrivs i artiklarna [Landningszon – att tänka på](../considerations/index.md). Kunder i det här utrymmet kan använda beslutsguiderna som finns i dessa artiklar för att identifiera noder som ska läggas till i Ramverk för molnimplementering-skissen för migrering av landningszoner. Med den här metoden kan du anpassa skissen efter dina behov.
 
 ## <a name="use-this-blueprint"></a>Använd den här skissen
@@ -67,7 +67,7 @@ Följande beslut speglas i skissen för landningszonen.
 |Resursgrupper|Saknas – utformad för en enda produktionsprenumeration.|[Skalanpassa prenumerationer](../considerations/scaling-subscriptions.md)         |
 |Data|Gäller inte|[Välj rätt SQL Server-alternativ i Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
 |Storage|Gäller inte|[Riktlinjer för Azure Storage](../considerations/storage-guidance.md)         |
-|Standarder för namngivning och taggning|Gäller inte|[Metodtips för namngivning och taggning](../considerations/name-and-tag.md)         |
+|Standarder för namngivning och taggning|Gäller inte|[Metodtips för namngivning och taggning](../considerations/naming-and-tagging.md)         |
 |Kostnadshantering|Gäller inte|[Spåra kostnader](../azure-best-practices/track-costs.md)|
 |Compute|Gäller inte|[Compute-alternativ](../considerations/compute-decisions.md)|
 

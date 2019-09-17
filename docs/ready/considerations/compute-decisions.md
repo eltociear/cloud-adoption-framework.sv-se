@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: bd31f07a24a17a50953eff54856118e9b22d054e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 0569dd472e3dd85c13bb3872a351d6eec4868e39
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819392"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025180"
 ---
 # <a name="compute-design-decisions"></a>Beslut om processordesign
 
@@ -28,7 +28,7 @@ För varje program eller tjänst som du distribuerar till din landningszonmiljö
 ![Beslutsträd för Azure-processortjänster](../../_images/ready/compute-decision-tree.png)
 
 > [!NOTE]
-> Läs mer om hur du kan utvärdera processoralternativ för var och ett av dina program eller [tjänster i Azures](/azure/architecture/guide/technology-choices/compute-overview) programarkitekturguide.
+> Läs mer om hur du kan utvärdera processoralternativ för var och ett av dina program eller [tjänster i Azures](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview) programarkitekturguide.
 
 ### <a name="key-questions"></a>Viktiga frågor
 
@@ -36,11 +36,11 @@ Besvara följande frågor om dina arbetsbelastningar för att skapa ett beslutsu
 
 - **Skapar du helt nya program och tjänster eller migrerar du från befintliga lokala arbetsbelastningar?** Genom att utveckla nya program som en del av din molnimplementering kan du dra full nytta av modern molnbaserad värdteknik redan från utvecklingsfasen.
 - **Om du migrerar befintliga arbetsbelastningar, kan de använda modern molnteknik?** Migrering av lokala arbetsbelastningar kräver analys: Kan du enkelt optimera befintliga program och tjänster för att dra nytta av modern molnteknik eller kommer en *lift and shift*-metod fungera bättre för dina arbetsbelastningar?
-- **Kan dina program eller tjänster använda behållare?** Om dina program är bra kandidater för behållarvärdtjänster kan du utnyttja resurseffektiviteten, skalbarheten och samordningskapaciteten hos [Azure Container Services](https://azure.microsoft.com/product-categories/containers). Både [Azure Disk Storage](/azure/virtual-machines/windows/managed-disks-overview) och[Azure Files](/azure/storage/files/storage-files-introduction) kan användas för beständig lagring för program i behållare.
-- **Är dina program webbaserade eller API-baserade och använder de PHP, ASP.NET, Node. js eller liknande teknik?** Webbappar kan distribueras till hanterade [Azure App Service](/azure/app-service/overview)-instanser så att du inte behöver underhålla virtuella datorer som servrar.
-- **Behöver du fullständig kontroll över operativsystemet och värdmiljön för din arbetsbelastning?** Om du behöver kontrollera värd miljön, inklusive operativsystemet, diskar, lokal programvara och andra konfigurationer kan du använda [virtuella Azure-datorer](https://azure.microsoft.com/services/virtual-machines) som värd för dina program och tjänster. Utöver valet av storlek på de virtuella datorerna och prestandanivåer påverkar dina beslut om virtuellt diskutrymme prestanda och serviceavtal för dina IaaS-baserade (infrastruktur som en tjänst) arbetsbelastningar. Mer information finns i [dokumentationen om Azure-disklagring](/azure/virtual-machines/windows/managed-disks-overview).
-- **Kommer arbetsbelastningen att omfatta HPC-funktioner (databehandling med hög prestanda)?** Med [Azure Batch](/azure/batch/batch-technical-overview) får du jobbschemaläggning och autoskalning av databearbetningsresurser som en plattformstjänst, vilket gör det enkelt att köra storskaliga program och HPC-program parallellt i molnet.
-- **Kommer dina program att använda en mikrotjänstarkitektur?** Program som använder en mikrotjänstbaserad arkitektur kan använda flera optimerade processortekniker. Fristående och händelsedrivna arbetsbelastningar kan använda [Azure Functions](/azure/azure-functions/functions-overview) för att bygga skalbara serverlösa program som inte behöver någon infrastruktur. För program som kräver mer kontroll över miljön där mikrotjänsterna körs kan du använda behållartjänster som [Azure Container-instances](/azure/container-instances/container-instances-overview), [Azure Kubernetes Service](/azure/aks/intro-kubernetes) och [Azure Service Fabric](/azure/service-fabric/service-fabric-overview).
+- **Kan dina program eller tjänster använda behållare?** Om dina program är bra kandidater för behållarvärdtjänster kan du utnyttja resurseffektiviteten, skalbarheten och samordningskapaciteten hos [Azure Container Services](https://azure.microsoft.com/product-categories/containers). Både [Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) och[Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) kan användas för beständig lagring för program i behållare.
+- **Är dina program webbaserade eller API-baserade och använder de PHP, ASP.NET, Node. js eller liknande teknik?** Webbappar kan distribueras till hanterade [Azure App Service](https://docs.microsoft.com/azure/app-service/overview)-instanser så att du inte behöver underhålla virtuella datorer som servrar.
+- **Behöver du fullständig kontroll över operativsystemet och värdmiljön för din arbetsbelastning?** Om du behöver kontrollera värd miljön, inklusive operativsystemet, diskar, lokal programvara och andra konfigurationer kan du använda [virtuella Azure-datorer](https://azure.microsoft.com/services/virtual-machines) som värd för dina program och tjänster. Utöver valet av storlek på de virtuella datorerna och prestandanivåer påverkar dina beslut om virtuellt diskutrymme prestanda och serviceavtal för dina IaaS-baserade (infrastruktur som en tjänst) arbetsbelastningar. Mer information finns i [dokumentationen om Azure-disklagring](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview).
+- **Kommer arbetsbelastningen att omfatta HPC-funktioner (databehandling med hög prestanda)?** Med [Azure Batch](https://docs.microsoft.com/azure/batch/batch-technical-overview) får du jobbschemaläggning och autoskalning av databearbetningsresurser som en plattformstjänst, vilket gör det enkelt att köra storskaliga program och HPC-program parallellt i molnet.
+- **Kommer dina program att använda en mikrotjänstarkitektur?** Program som använder en mikrotjänstbaserad arkitektur kan använda flera optimerade processortekniker. Fristående och händelsedrivna arbetsbelastningar kan använda [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) för att bygga skalbara serverlösa program som inte behöver någon infrastruktur. För program som kräver mer kontroll över miljön där mikrotjänsterna körs kan du använda behållartjänster som [Azure Container-instances](https://docs.microsoft.com/azure/container-instances/container-instances-overview), [Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/intro-kubernetes) och [Azure Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview).
 
 > [!NOTE]
 > De flesta Azure-processortjänster används tillsammans Azure Storage. Se riktlinjerna för [beslut om lagringsutrymme](./storage-guidance.md) för relaterade lagringsbeslut.
@@ -79,7 +79,7 @@ En del av ert efterlevnadsarbete kan omfatta att kontrollera var era processorre
 
 När du förbereder din landningszonmiljö kan du upprätta kontroller som begränsar vilka resurser som varje användare kan distribuera. Kontrollerna kan hjälpa dig att hantera kostnader och begränsa säkerhetsriskerna, samtidigt som utvecklare och IT-team kan distribuera och konfigurera de resurser som behövs för att stödja dina arbetsbelastningar.
 
-När du har identifierat och dokumenterat kraven för landningszonen kan du använda [Azure Policy](/azure/governance/policy/overview) för att kontrollera vilka beräkningsresurser som användarna kan skapa. Kontroller kan antingen [tillåta eller neka att vissa typer av processorresurser skapas](/azure/governance/policy/samples/allowed-resource-types). Du kan till exempel begränsa användarna till att endast kunna skapa Azure App Service eller Azure Functions. Du kan också använda principer för att kontrollera de alternativ som tillåts när en resurs skapas, t.ex. [genom att begränsa vilka SKU:er för virtuella datorer som kan tillhandahållas](https://docs.microsoft.com/azure/governance/policy/samples/allowed-skus-storage) eller [bara vissa avbildningar av virtuella datorer](https://docs.microsoft.com/azure/governance/policy/samples/allowed-custom-images).
+När du har identifierat och dokumenterat kraven för landningszonen kan du använda [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) för att kontrollera vilka beräkningsresurser som användarna kan skapa. Kontroller kan antingen [tillåta eller neka att vissa typer av processorresurser skapas](https://docs.microsoft.com/azure/governance/policy/samples/allowed-resource-types). Du kan till exempel begränsa användarna till att endast kunna skapa Azure App Service eller Azure Functions. Du kan också använda principer för att kontrollera de alternativ som tillåts när en resurs skapas, t.ex. [genom att begränsa vilka SKU:er för virtuella datorer som kan tillhandahållas](https://docs.microsoft.com/azure/governance/policy/samples/allowed-skus-storage) eller [bara vissa avbildningar av virtuella datorer](https://docs.microsoft.com/azure/governance/policy/samples/allowed-custom-images).
 
-Principer kan begränsas till resurser, resursgrupper, prenumerationer och hanteringsgrupper. Du kan inkludera principerna i definitionerna för [Azure Blueprint](/azure/governance/blueprints/overview) och tillämpa dem flera gånger i din molnegendom.
+Principer kan begränsas till resurser, resursgrupper, prenumerationer och hanteringsgrupper. Du kan inkludera principerna i definitionerna för [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) och tillämpa dem flera gånger i din molnegendom.
 

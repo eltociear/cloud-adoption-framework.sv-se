@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 9264a6c44ecd134dc8e25d68d35015d02d845cca
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4b9f6bcb8ce2732cda094e83b832c0e4c920c665
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829883"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024181"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Ange en ny värd för en lokal app på en virtuell Azure-dator och SQL Database Managed Instance
 
@@ -111,9 +111,9 @@ Contoso migrerar webb- och datanivåerna för sin SmartHotel360-app till Azure g
 
 Tjänsten | Beskrivning | Kostnad
 --- | --- | ---
-[Azure Database Migration Service](/azure/dms/dms-overview) | Med Azure Database Migration Service kan du migrera sömlöst från flera databaskällor till Azure-dataplattformar med minsta möjliga stilleståndstid. | Lär dig mer om [regioner som stöds](/azure/dms/dms-overview#regional-availability) och [Database Migration Service- prissättning](https://azure.microsoft.com/pricing/details/database-migration).
-[Azure SQL Database Managed Instance](/azure/sql-database/sql-database-managed-instance) | Managed Instance är en hanterad databastjänst som representerar en fullständigt hanterad SQL Server-instans i Azure-molnet. Den använder samma kod som den senaste versionen av SQL Server Database Engine och innehåller de senaste funktionerna, prestandaförbättringar och säkerhetskorrigeringar. | Om du använder en SQL Database Managed Instance som körs i Azure, debiteras avgifter baserat på kapacitet. Läs mer om [prissättning av Managed Instance](https://azure.microsoft.com/pricing/details/sql-database/managed).
-[Azure Site Recovery](/azure/site-recovery) | Site Recovery-tjänsten dirigerar samt hanterar migrering och haveriberedskap för virtuella Azure-datorer, lokala virtuella datorer och fysiska servrar. | Vid replikering till Azure debiteras Azure Storage-avgifter. Virtuella Azure-datorer skapas och debiteras när redundans sker. Läs mer om [debitering och prissättning för Site Recovery](https://azure.microsoft.com/pricing/details/site-recovery).
+[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Med Azure Database Migration Service kan du migrera sömlöst från flera databaskällor till Azure-dataplattformar med minsta möjliga stilleståndstid. | Lär dig mer om [regioner som stöds](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) och [Database Migration Service- prissättning](https://azure.microsoft.com/pricing/details/database-migration).
+[Azure SQL Database Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | Managed Instance är en hanterad databastjänst som representerar en fullständigt hanterad SQL Server-instans i Azure-molnet. Den använder samma kod som den senaste versionen av SQL Server Database Engine och innehåller de senaste funktionerna, prestandaförbättringar och säkerhetskorrigeringar. | Om du använder en SQL Database Managed Instance som körs i Azure, debiteras avgifter baserat på kapacitet. Läs mer om [prissättning av Managed Instance](https://azure.microsoft.com/pricing/details/sql-database/managed).
+[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | Site Recovery-tjänsten dirigerar samt hanterar migrering och haveriberedskap för virtuella Azure-datorer, lokala virtuella datorer och fysiska servrar. | Vid replikering till Azure debiteras Azure Storage-avgifter. Virtuella Azure-datorer skapas och debiteras när redundans sker. Läs mer om [debitering och prissättning för Site Recovery](https://azure.microsoft.com/pricing/details/site-recovery).
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -124,10 +124,10 @@ Contoso och andra användare måste uppfylla följande krav för det här scenar
 Krav | Information
 --- | ---
 **Registrera dig för förhandsversionen av Managed Instance** | Du måste vara registrerad för den begränsade offentliga förhandsversionen av SQL Database Managed Instance. Du måste ha en Azure-prenumeration för att kunna [registrera dig](https://portal.azure.com#create/Microsoft.SQLManagedInstance). Det kan ta några dagar att slutföra registreringen, så glöm inte att registrera dig innan du börjar distribuera det här scenariot.
-**Azure-prenumeration** | Du bör redan ha skapat en prenumeration när du gjorde utvärderingen i den första artikeln i den här serien. Om du inte har någon Azure-prenumeration kan du skapa ett [kostnadsfritt konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Om du skapar ett kostnadsfritt konto är du administratör för din prenumeration och kan utföra alla åtgärder.<br/><br/> Om du använder en befintlig prenumeration och du inte är administratör av prenumerationen, måste du be administratören tilldela dig ägar- eller deltagarbehörighet.<br/><br/> Om du behöver mer detaljerad behörighet kan du läsa mer i [Använda rollbaserad åtkomstkontroll till att hantera Site Recovery-åtkomst](/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Azure-infrastruktur** | Contoso konfigurerar Azure-infrastrukturen enligt beskrivningen i [Azure-infrastruktur för migrering.](contoso-migration-infrastructure.md)
-**Site Recovery (lokalt)** | Din lokala vCenter Server-instans måste köra version 5.5, 6.0 eller 6.5<br/><br/> En ESXi-värd som kör version 5.5, 6.0 eller 6.5<br/><br/> En eller flera virtuella VMware-datorer som körs på ESXi-värden.<br/><br/> De virtuella datorerna måste uppfylla [kraven för Azure](/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).<br/><br/> Konfiguration av [nätverk](/azure/site-recovery/vmware-physical-azure-support-matrix#network) och [lagring](/azure/site-recovery/vmware-physical-azure-support-matrix#storage) som stöds.
-**Database Migration Service** | För Azure Database Migration Service behöver du en [kompatibel lokal VPN-enhet](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).<br/><br/> Du måste kunna konfigurera den lokala VPN-enheten. Den måste ha en extern offentlig IPv4-adress. IP-adressen får inte finnas bakom en NAT-enhet.<br/><br/> Kontrollera att du har åtkomst till din lokala SQL Server-databas.<br/><br/> Windows-brandväggen måste ha åtkomst till källdatabasmotorn. Läs om att [konfigurera Windows-brandväggen för databasmotoråtkomst](/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access).<br/><br/> Om det finns en brandvägg framför din databasdator lägger du till regler som tillåter åtkomst till databasen och filerna via SMB-port 445.<br/><br/> De autentiseringsuppgifter som används för att ansluta till källans SQL Server-instans och som Managed Instance riktar sig mot måste vara medlemmar i serverrollen sysadmin.<br/><br/> Du behöver en nätverksresurs i din lokala databas som Azure Database Migration Service kan använda när källdatabasen säkerhetskopieras.<br/><br/> Kontrollera att tjänstkontot som kör SQL Server-källinstansen har skrivbehörighet till nätverksresursen.<br/><br/> Skriv ned en Windows-användare och ett lösenord som har fullständig kontrollbehörighet till nätverksresursen. Azure Database Migration Service personifierar användarens autentiseringsuppgifter till att ladda upp de säkerhetskopierade filerna till Azure Storage-containern.<br/><br/> Installationsprocessen för SQL Server Express anger TCP/IP-protokollet som **Inaktiverat** som standard. Kontrollera att det är aktiverat.
+**Azure-prenumeration** | Du bör redan ha skapat en prenumeration när du gjorde utvärderingen i den första artikeln i den här serien. Om du inte har någon Azure-prenumeration kan du skapa ett [kostnadsfritt konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Om du skapar ett kostnadsfritt konto är du administratör för din prenumeration och kan utföra alla åtgärder.<br/><br/> Om du använder en befintlig prenumeration och du inte är administratör av prenumerationen, måste du be administratören tilldela dig ägar- eller deltagarbehörighet.<br/><br/> Om du behöver mer detaljerad behörighet kan du läsa mer i [Använda rollbaserad åtkomstkontroll till att hantera Site Recovery-åtkomst](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
+**Azure-infrastruktur** | Contoso konfigurerar Azure-infrastrukturen enligt beskrivningen i [Azure-infrastruktur för migrering.](./contoso-migration-infrastructure.md)
+**Site Recovery (lokalt)** | Din lokala vCenter Server-instans måste köra version 5.5, 6.0 eller 6.5<br/><br/> En ESXi-värd som kör version 5.5, 6.0 eller 6.5<br/><br/> En eller flera virtuella VMware-datorer som körs på ESXi-värden.<br/><br/> De virtuella datorerna måste uppfylla [kraven för Azure](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).<br/><br/> Konfiguration av [nätverk](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network) och [lagring](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage) som stöds.
+**Database Migration Service** | För Azure Database Migration Service behöver du en [kompatibel lokal VPN-enhet](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).<br/><br/> Du måste kunna konfigurera den lokala VPN-enheten. Den måste ha en extern offentlig IPv4-adress. IP-adressen får inte finnas bakom en NAT-enhet.<br/><br/> Kontrollera att du har åtkomst till din lokala SQL Server-databas.<br/><br/> Windows-brandväggen måste ha åtkomst till källdatabasmotorn. Läs om att [konfigurera Windows-brandväggen för databasmotoråtkomst](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access).<br/><br/> Om det finns en brandvägg framför din databasdator lägger du till regler som tillåter åtkomst till databasen och filerna via SMB-port 445.<br/><br/> De autentiseringsuppgifter som används för att ansluta till källans SQL Server-instans och som Managed Instance riktar sig mot måste vara medlemmar i serverrollen sysadmin.<br/><br/> Du behöver en nätverksresurs i din lokala databas som Azure Database Migration Service kan använda när källdatabasen säkerhetskopieras.<br/><br/> Kontrollera att tjänstkontot som kör SQL Server-källinstansen har skrivbehörighet till nätverksresursen.<br/><br/> Skriv ned en Windows-användare och ett lösenord som har fullständig kontrollbehörighet till nätverksresursen. Azure Database Migration Service personifierar användarens autentiseringsuppgifter till att ladda upp de säkerhetskopierade filerna till Azure Storage-containern.<br/><br/> Installationsprocessen för SQL Server Express anger TCP/IP-protokollet som **Inaktiverat** som standard. Kontrollera att det är aktiverat.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -153,10 +153,10 @@ För att kunna konfigurera en Azure SQL Database Managed Instance måste Contoso
 - När den hanterade instansen har skapats, får Contoso inte lägga till resurser i undernätet.
 - Undernätet får inte ha någon associerad nätverkssäkerhetsgrupp.
 - Undernätet måste ha en användardefinierad routningstabell. Den enda tilldelade vägen ska vara 0.0.0.0/0 som nästa hopp till Internet.
-- Valfri anpassad DNS: Om en anpassad DNS anges i det virtuella Azure-nätverket måste Azures rekursiva matchning för IP-adressen (till exempel 168.63.129.16) läggas till i listan. Lär dig att [konfigurera anpassad DNS för en hanterad instans](/azure/sql-database/sql-database-managed-instance-custom-dns).
+- Valfri anpassad DNS: Om en anpassad DNS anges i det virtuella Azure-nätverket måste Azures rekursiva matchning för IP-adressen (till exempel 168.63.129.16) läggas till i listan. Lär dig att [konfigurera anpassad DNS för en hanterad instans](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
 - Undernätet får inte ha någon associerad tjänstslutpunkt (lagring eller SQL). Tjänstens slutpunkter ska vara inaktiverade i det virtuella nätverket.
-- Undernätet måste ha minst 16 IP-adresser. Lär dig att [ändra storlek på undernätet för den hanterade instansen](/azure/sql-database/sql-database-managed-instance-vnet-configuration).
-- I Contosos hybridmiljö krävs anpassade DNS-inställningar. Contoso konfigurerar DNS-inställningarna till att använda en eller flera av företagets Azure DNS-servrar. Läs mer om [DNS-anpassning](/azure/sql-database/sql-database-managed-instance-custom-dns).
+- Undernätet måste ha minst 16 IP-adresser. Lär dig att [ändra storlek på undernätet för den hanterade instansen](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-vnet-configuration).
+- I Contosos hybridmiljö krävs anpassade DNS-inställningar. Contoso konfigurerar DNS-inställningarna till att använda en eller flera av företagets Azure DNS-servrar. Läs mer om [DNS-anpassning](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
 
 ### <a name="set-up-a-virtual-network-for-the-managed-instance"></a>Konfigurera ett virtuellt nätverk för den hanterade instansen
 
@@ -188,10 +188,10 @@ Contosos administratörer konfigurerar det virtuella nätverket på följande s�
 
 **Behöver du mer hjälp?**
 
-- Få en översikt över [SQL Database Managed Instance](/azure/sql-database/sql-database-managed-instance).
-- Lär dig att [skapa ett virtuellt nätverk för en SQL Database Managed Instance](/azure/sql-database/sql-database-managed-instance-vnet-configuration).
-- Lär dig att [konfigurera peering](/azure/virtual-network/virtual-network-manage-peering).
-- Lär dig att [uppdatera Azure Active Directorys DNS-inställningar](/azure/active-directory-domain-services/active-directory-ds-getting-started-dns).
+- Få en översikt över [SQL Database Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance).
+- Lär dig att [skapa ett virtuellt nätverk för en SQL Database Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-vnet-configuration).
+- Lär dig att [konfigurera peering](https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-peering).
+- Lär dig att [uppdatera Azure Active Directorys DNS-inställningar](https://docs.microsoft.com/azure/active-directory-domain-services/active-directory-ds-getting-started-dns).
 
 ### <a name="set-up-routing"></a>Konfigurera routning
 
@@ -220,7 +220,7 @@ Contoso överväger följande faktorer:
 
 **Behöver du mer hjälp?**
 
-Lär dig att [konfigurera vägar för en hanterad instans](/azure/sql-database/sql-database-managed-instance-create-tutorial-portal).
+Lär dig att [konfigurera vägar för en hanterad instans](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-create-tutorial-portal).
 
 ### <a name="create-a-managed-instance"></a>Skapa en hanterad instans
 
@@ -240,7 +240,7 @@ Nu kan Contosos administratörer etablera en SQL Database Managed Instance:
 
 **Behöver du mer hjälp?**
 
-Lär dig att [etablera en hanterad instans](/azure/sql-database/sql-database-managed-instance-create-tutorial-portal).
+Lär dig att [etablera en hanterad instans](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-create-tutorial-portal).
 
 ## <a name="step-2-prepare-the-azure-database-migration-service"></a>Steg 2: Förbered Azure Database Migration Service
 
@@ -271,8 +271,8 @@ Sedan utför de följande steg:
 
 **Behöver du mer hjälp?**
 
-- Lär dig att [konfigurera Azure Database Migration Service](/azure/dms/quickstart-create-data-migration-service-portal).
-- Lär dig att [skapa och använda SAS](/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2).
+- Lär dig att [konfigurera Azure Database Migration Service](https://docs.microsoft.com/azure/dms/quickstart-create-data-migration-service-portal).
+- Lär dig att [skapa och använda SAS](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2).
 
 ## <a name="step-3-prepare-azure-for-the-site-recovery-service"></a>Steg 3: Förbered Azure för Site Recovery-tjänsten
 
@@ -284,7 +284,7 @@ Flera Azure-element krävs för att Contoso ska kunna konfigurera Site Recovery 
 
 Contosos administratörer konfigurerar Site Recovery enligt följande:
 
-1. Eftersom den virtuella datorn är en webbklientdel till SmartHotel360-appen växlar Contoso över den virtuella datorn till det befintliga produktionsnätverket (**VNET-PROD-EUS2**) och undernätet **(PROD-FE-EUS2**). Nätverket och undernätet finns i den primära regionen USA, östra 2. Contoso konfigurerade nätverket när [Azure-infrastrukturen distribuerades](contoso-migration-infrastructure.md).
+1. Eftersom den virtuella datorn är en webbklientdel till SmartHotel360-appen växlar Contoso över den virtuella datorn till det befintliga produktionsnätverket (**VNET-PROD-EUS2**) och undernätet **(PROD-FE-EUS2**). Nätverket och undernätet finns i den primära regionen USA, östra 2. Contoso konfigurerade nätverket när [Azure-infrastrukturen distribuerades](./contoso-migration-infrastructure.md).
 2. De skapar ett lagringskonto (**contosovmsacc20180528**). Contoso använder ett konto för generell användning. Contoso väljer standardlagring och lokalt redundant lagringsreplikering.
 
     ![Site Recovery – Skapa ett lagringskonto](media/contoso-migration-rehost-vm-sql-managed-instance/asr-storage.png)
@@ -295,7 +295,7 @@ Contosos administratörer konfigurerar Site Recovery enligt följande:
 
 **Behöver du mer hjälp?**
 
-Lär dig att [konfigurera Azure för Site Recovery](/azure/site-recovery/tutorial-prepare-azure).
+Lär dig att [konfigurera Azure för Site Recovery](https://docs.microsoft.com/azure/site-recovery/tutorial-prepare-azure).
 
 ## <a name="step-4-prepare-on-premises-vmware-for-site-recovery"></a>Steg 4: Förbered lokal VMware för Site Recovery
 
@@ -319,7 +319,7 @@ Contosos administratörer konfigurerar kontot genom att utföra följande uppgif
 
 **Behöver du mer hjälp?**
 
-Lär dig att [skapa och tilldela en roll för automatisk identifiering](/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery).
+Lär dig att [skapa och tilldela en roll för automatisk identifiering](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery).
 
 ### <a name="prepare-an-account-for-mobility-service-installation"></a>Förbereda ett konto för installation av Mobility Service
 
@@ -332,7 +332,7 @@ Mobility Service måste installeras på den virtuella dator som Contoso vill rep
 
 **Behöver du mer hjälp?**
 
-Läs om att [skapa ett konto för push-installation av Mobility Service](/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation).
+Läs om att [skapa ett konto för push-installation av Mobility Service](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation).
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>Förbereda för att ansluta till virtuella Azure-datorer efter en redundansväxling
 
@@ -432,8 +432,8 @@ När källan och målet har konfigurerats skapar Contosos administratörer en re
 
 **Behöver du mer hjälp?**
 
-- Du kan läsa en fullständig genomgång av de här stegen i [Konfigurera haveriberedskap för lokala virtuella VMware-datorer](/azure/site-recovery/vmware-azure-tutorial).
-- Där finns detaljerade anvisningar som hjälper dig att [konfigurera källmiljön](/azure/site-recovery/vmware-azure-set-up-source), [distribuera konfigurationsservern](/azure/site-recovery/vmware-azure-deploy-configuration-server) och [konfigurera replikeringsinställningar](/azure/site-recovery/vmware-azure-set-up-replication).
+- Du kan läsa en fullständig genomgång av de här stegen i [Konfigurera haveriberedskap för lokala virtuella VMware-datorer](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial).
+- Där finns detaljerade anvisningar som hjälper dig att [konfigurera källmiljön](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-source), [distribuera konfigurationsservern](https://docs.microsoft.com/azure/site-recovery/vmware-azure-deploy-configuration-server) och [konfigurera replikeringsinställningar](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-replication).
 
 ### <a name="enable-replication"></a>Aktivera replikering
 
@@ -460,7 +460,7 @@ Contosos administratörer kan nu börja replikera WebVM.
 
 **Behöver du mer hjälp?**
 
-En fullständig genomgång av de här stegen finns i [Aktivera replikering](/azure/site-recovery/vmware-azure-enable-replication).
+En fullständig genomgång av de här stegen finns i [Aktivera replikering](https://docs.microsoft.com/azure/site-recovery/vmware-azure-enable-replication).
 
 ## <a name="step-6-migrate-the-database"></a>Steg 6: Migrera databasen
 
@@ -557,9 +557,9 @@ Som det sista steget i migreringsprocessen uppdaterar Contosos administratörer 
 
 **Behöver du mer hjälp?**
 
-- Lär dig att [köra ett redundanstest](/azure/site-recovery/tutorial-dr-drill-azure).
-- Lär dig att [skapa en återställningsplan](/azure/site-recovery/site-recovery-create-recovery-plans).
-- Lär dig att [redundansväxla till Azure](/azure/site-recovery/site-recovery-failover).
+- Lär dig att [köra ett redundanstest](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure).
+- Lär dig att [skapa en återställningsplan](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans).
+- Lär dig att [redundansväxla till Azure](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover).
 
 ## <a name="clean-up-after-migration"></a>Rensa efter migrering
 
@@ -584,24 +584,24 @@ Contosos säkerhetsteam granskar de virtuella Azure-datorerna och SQL Database M
 
 - Teamet granskar de nätverkssäkerhetsgrupper som används till att styra åtkomsten för den virtuella datorn. Nätverkssäkerhetsgrupperna säkerställer att endast tillåten trafik kan skickas till appen.
 - Contosos säkerhetsteam överväger också att skydda datan på disken med hjälp av Azure Disk Encryption och Azure Key Vault.
-- Teamet aktiverar hotidentifiering på den hanterade instansen. Hotidentifieringen skickar en avisering till Contosos säkerhetsteam/support om att öppna ett supportärende ifall ett hot har upptäckts. Läs mer om [hotidentifiering för Managed Instance](/azure/sql-database/sql-database-managed-instance-threat-detection).
+- Teamet aktiverar hotidentifiering på den hanterade instansen. Hotidentifieringen skickar en avisering till Contosos säkerhetsteam/support om att öppna ett supportärende ifall ett hot har upptäckts. Läs mer om [hotidentifiering för Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-threat-detection).
 
      ![Managed Instance-säkerhet – Hotidentifiering](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-security.png)
 
-Mer information om säkerhet för virtuella datorer finns i [Säkerhetsmetodtips för IaaS-arbetsbelastningar i Azure](/azure/security/azure-security-best-practices-vms).
+Mer information om säkerhet för virtuella datorer finns i [Säkerhetsmetodtips för IaaS-arbetsbelastningar i Azure](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms).
 
 ### <a name="bcdr"></a>Affärskontinuitet och haveriberedskap
 
 För affärskontinuitet och haveriberedskap (BCDR) vidtar Contoso följande åtgärder:
 
-- Skydda data: Contoso säkerhetskopierar data på de virtuella datorerna med hjälp av Azure Backup-tjänsten. [Läs mer](/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
-- Undvika avbrott i apparna: Contoso replikerar appens virtuella datorer i Azure till en sekundär region med hjälp av Site Recovery. [Läs mer](/azure/site-recovery/azure-to-azure-quickstart).
-- Contoso lär sig mer om att hantera SQL Managed Instance, inklusive [säkerhetskopiering av databaser](/azure/sql-database/sql-database-automated-backups).
+- Skydda data: Contoso säkerhetskopierar data på de virtuella datorerna med hjälp av Azure Backup-tjänsten. [Läs mer](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
+- Undvika avbrott i apparna: Contoso replikerar appens virtuella datorer i Azure till en sekundär region med hjälp av Site Recovery. [Läs mer](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
+- Contoso lär sig mer om att hantera SQL Managed Instance, inklusive [säkerhetskopiering av databaser](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups).
 
 ### <a name="licensing-and-cost-optimization"></a>Licensierings- och kostnadsoptimering
 
 - Contoso har redan en licens för WEBVM. För att kunna utnyttja Azure Hybrid-förmånen konverterar Contoso den befintliga virtuella Azure-datorn.
-- Contoso aktiverar Azure Cost Management som licensieras av Cloudyn, ett dotterbolag till Microsoft. Cost Management är en kostnadshanteringslösning för flera moln som hjälper Contoso att använda och hantera Azure och andra molnresurser på ett bättre sätt. Läs mer om [Azure Cost Management](/azure/cost-management/overview).
+- Contoso aktiverar Azure Cost Management som licensieras av Cloudyn, ett dotterbolag till Microsoft. Cost Management är en kostnadshanteringslösning för flera moln som hjälper Contoso att använda och hantera Azure och andra molnresurser på ett bättre sätt. Läs mer om [Azure Cost Management](https://docs.microsoft.com/azure/cost-management/overview).
 
 ## <a name="conclusion"></a>Sammanfattning
 

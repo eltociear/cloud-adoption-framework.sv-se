@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 021dccdbabc7d2c51b26e98b7bc6380f3a2aa8d3
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5e6d77a86d1e3d928913e47c5781411f1973b3cc
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70821082"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025026"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Utvärdera lokala arbetsbelastningar för migrering till Azure
 
@@ -24,7 +24,7 @@ Den här artikeln visar hur det fiktiva företaget Contoso utvärderar en lokal 
 
 När Contoso överväger att migrera till Azure behöver företaget en teknisk och ekonomisk utvärdering för att avgöra om dess lokala arbetsbelastningar är lämpliga kandidater för migrering till molnet. Contoso-teamet vill särskilt bedöma dator- och databaskompatibiliteten för migrering. De vill uppskatta kapaciteten och kostnaderna för att köra Contosos resurser i Azure.
 
-För att komma igång och bättre förstå tekniken som ska användas utvärderar Contoso två av sina lokala appar, som sammanfattas i följande tabell. Företaget utför utvärderingen för migreringsscenarier som byter värd och omstrukturerar apparna. Läs mer om hur du byter värd och omstrukturerar i [översikten för migreringsexempel](contoso-migration-overview.md).
+För att komma igång och bättre förstå tekniken som ska användas utvärderar Contoso två av sina lokala appar, som sammanfattas i följande tabell. Företaget utför utvärderingen för migreringsscenarier som byter värd och omstrukturerar apparna. Läs mer om hur du byter värd och omstrukturerar i [översikten för migreringsexempel](./contoso-migration-overview.md).
 
 <!-- markdownlint-disable MD033 -->
 
@@ -74,8 +74,8 @@ Contoso använder Microsoft-verktyg för sin migreringsutvärdering. Verktygen �
 Teknik | Beskrivning | Kostnad
 --- | --- | ---
 [Data Migration Assistant](/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso kommer att använda Data Migration Assistant för att utvärdera och identifiera kompatibilitetsproblem som kan påverka deras databasfunktioner i Azure. Data Migration Assistant utvärderar funktionspariteten mellan SQL-källor och -mål. Det rekommenderar förbättringar för prestanda och tillförlitlighet. | Data Migration Assistant är ett kostnadsfritt nedladdningsbart verktyg.
-[Azure Migrate](/azure/migrate/migrate-overview) | Contoso använder tjänsten Azure Migrate för att utvärdera sina virtuella VMware-datorer. Azure Migrate bedömer datorernas lämplighet för migrering. Den ger storleks- och kostnadsuppskattningar för körning i Azure. | Från och med maj 2018 är Azure Migrate en kostnadsfri tjänst.
-[Tjänstkarta](/azure/operations-management-suite/operations-management-suite-service-map) | Azure Migrate använder Tjänstkarta för att visa beroenden mellan datorer som ska migreras. | Tjänstkarta är en del av Azure Monitor-loggarna. Contoso kan för närvarande använda Tjänstkarta i 180 dagar utan att debiteras.
+[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Contoso använder tjänsten Azure Migrate för att utvärdera sina virtuella VMware-datorer. Azure Migrate bedömer datorernas lämplighet för migrering. Den ger storleks- och kostnadsuppskattningar för körning i Azure. | Från och med maj 2018 är Azure Migrate en kostnadsfri tjänst.
+[Tjänstkarta](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Azure Migrate använder Tjänstkarta för att visa beroenden mellan datorer som ska migreras. | Tjänstkarta är en del av Azure Monitor-loggarna. Contoso kan för närvarande använda Tjänstkarta i 180 dagar utan att debiteras.
 
 I det här scenariot laddar Contoso ned och kör Data Migration Assistant för att utvärdera den lokala SQL Server-databasen för sin reseapp. Contoso använder Azure Migrate med beroendemappning för att utvärdera de virtuella datorerna för appen innan de migrerar dem till Azure.
 
@@ -110,8 +110,8 @@ Contoso och andra användare måste uppfylla följande krav för utvärderingen:
 - Minst två lokala virtuella VMware-datorer, varav en kör en SQL Server-databas.
 - Behörighet att installera Azure Migrate-agenter på varje virtuell dator.
 - De virtuella datorerna ska ha direkt Internetanslutning.
-  - Du kan begränsa Internetåtkomsten till [de URL:er som krävs](/azure/migrate/concepts-collector).
-  - Om de virtuella datorerna inte har någon Internetanslutning måste Azure [Log Analytics Gateway](/azure/azure-monitor/platform/gateway) installeras på dem och agenttrafiken dirigeras genom den.
+  - Du kan begränsa Internetåtkomsten till [de URL:er som krävs](https://docs.microsoft.com/azure/migrate/concepts-collector).
+  - Om de virtuella datorerna inte har någon Internetanslutning måste Azure [Log Analytics Gateway](https://docs.microsoft.com/azure/azure-monitor/platform/gateway) installeras på dem och agenttrafiken dirigeras genom den.
 - FQDN för den virtuella datorn som kör SQL Server-instansen (för utvärdering av databasen).
 - Windows-brandväggen som körs på den virtuella SQL Server-datorn ska tillåta externa anslutningar på TCP-port 1433 (standard). Med den här konfigurationen kan Data Migration Assistant ansluta.
 
@@ -218,7 +218,7 @@ Contoso kontrollerar att de har behörighet att skapa en virtuell dator genom at
 
 ### <a name="verify-ports"></a>Kontrollera portar
 
-Contoso-utvärderingen använder beroendemappning. Beroendemappning kräver att en agent installeras på de virtuella datorer som ska utvärderas. Agenten måste kunna ansluta till Azure från TCP-port 443 på varje virtuell dator. Läs mer om [anslutningskraven](/azure/log-analytics/log-analytics-concept-hybrid).
+Contoso-utvärderingen använder beroendemappning. Beroendemappning kräver att en agent installeras på de virtuella datorer som ska utvärderas. Agenten måste kunna ansluta till Azure från TCP-port 443 på varje virtuell dator. Läs mer om [anslutningskraven](https://docs.microsoft.com/azure/log-analytics/log-analytics-concept-hybrid).
 
 ## <a name="step-4-discover-vms"></a>Steg 4: Identifiera virtuella datorer
 
@@ -280,7 +280,7 @@ Innan de distribuerar den virtuella datorn kontrollerar Contoso att den OVA-file
     **Exempel:**
 
     ```C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256```
-3. Den genererade hashen ska matcha de hash-värden som anges i avsnittet [Verifiera säkerhet](/azure/migrate/tutorial-assess-vmware#verify-security) i självstudiekursen [Utvärdera VMware-datorer för migrering](/azure/migrate/tutorial-assess-vmware).
+3. Den genererade hashen ska matcha de hash-värden som anges i avsnittet [Verifiera säkerhet](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security) i självstudiekursen [Utvärdera VMware-datorer för migrering](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware).
 
 ### <a name="create-the-collector-appliance"></a>Skapa insamlingsprogrammet
 
@@ -450,7 +450,7 @@ Contoso kan nu kontrollera datorberoenden och skapa en grupp. Sedan körs utvär
 
 2. För att visa utvärderingen väljer **Contoso Hantera** > **Utvärderingar**.
 
-Contoso har använt standardutvärderingsinställningarna, men du kan [anpassa inställningarna](/azure/migrate/how-to-modify-assessment).
+Contoso har använt standardutvärderingsinställningarna, men du kan [anpassa inställningarna](https://docs.microsoft.com/azure/migrate/how-to-modify-assessment).
 
 ### <a name="analyze-the-vm-assessment"></a>Analysera VM-utvärderingen
 
@@ -520,4 +520,4 @@ I det här scenariot utvärderar Contoso sin SmartHotel360 app-databas med hjäl
 
 ## <a name="next-steps"></a>Nästa steg
 
-När Contoso bedömer att arbetsbelastningen är en lämplig kandidat för migrering kan de börja förbereda den lokala infrastrukturen och Azure-infrastrukturen för migrering. Se artikeln [Distribuera Azure-infrastruktur](contoso-migration-infrastructure.md) i avsnittet om metodtips i Ramverk för molnimplementering för ett exempel på hur Contoso utför dessa processer.
+När Contoso bedömer att arbetsbelastningen är en lämplig kandidat för migrering kan de börja förbereda den lokala infrastrukturen och Azure-infrastrukturen för migrering. Se artikeln [Distribuera Azure-infrastruktur](./contoso-migration-infrastructure.md) i avsnittet om metodtips i Ramverk för molnimplementering för ett exempel på hur Contoso utför dessa processer.

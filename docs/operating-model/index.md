@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 276718f4a0fba49949db1b29f4ecfeee1238ad9c
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: db21fb74e09e57f542a7a90f546afe01c68f7a81
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817255"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025377"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Upprätta en driftsmodell för molnet
 
@@ -26,13 +26,13 @@ Befintliga driftsmodeller kan skalas och anpassas till molnimplementeringen. En 
 
 Det här avsnittet om Cloud Adoption Framework beskriver en praktiskt tillämpbar driftsmodell som underlättar icke-tekniska beslut. Den här driftsmodellen består av tre metoder som hjälper dig att skapa en egen driftsmodell för molnet:
 
-- [Styra](../governance/index.md): Garantera konsekvens för alla implementeringsåtgärder. Anpassa till styrnings- eller efterlevnadskrav för att upprätthålla en välhanterad molnöverskridande miljö.
-- [Organisera](../organization/index.md): Anpassa organisationen så att du säkerställer framgång för driftsmodellen och olika molnimplementeringsåtgärder.
-- [Hantera](../operations/index.md): Anpassa pågående processer för den operativa hanteringen av teknik för att maximera värdet och minimera störningar.
+- [Styra](../govern/index.md): Garantera konsekvens för alla implementeringsåtgärder. Anpassa till styrnings- eller efterlevnadskrav för att upprätthålla en välhanterad molnöverskridande miljö.
+- [Organisera](../organize/index.md): Anpassa organisationen så att du säkerställer framgång för driftsmodellen och olika molnimplementeringsåtgärder.
+- [Hantera](../manage/index.md): Anpassa pågående processer för den operativa hanteringen av teknik för att maximera värdet och minimera störningar.
 
 ## <a name="next-steps"></a>Nästa steg
 
 Styrning är det första steget när du skapar en driftsmodell för molnet.
 
 > [!div class="nextstepaction"]
-> [Lär dig mer om molnstyrning](../governance/index.md)
+> [Lär dig mer om molnstyrning](../govern/index.md)

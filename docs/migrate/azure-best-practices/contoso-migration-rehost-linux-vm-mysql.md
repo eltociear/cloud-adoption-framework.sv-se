@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d4681f372038b5c78d4b0793aac1a2b47e9f2c91
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: c96ad14ab98dd5a6da1b81eb2f4add6281732da7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70820328"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024196"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>Byta värd för en lokal Linux-app till virtuella Azure-datorer och Azure Database for MySQL
 
@@ -79,8 +79,8 @@ Migrering av databasen:
 
 **Tjänst** | **Beskrivning** | **Kostnad**
 --- | --- | ---
-[Azure Site Recovery](/azure/site-recovery) | Tjänsten orkestrerar och hanterar migrering och haveriberedskap för virtuella Azure-datorer, lokala virtuella datorer och fysiska servrar. | Under replikeringen till Azure debiteras Azure Storage-avgifter. Virtuella Azure-datorer skapas och medför kostnader i samband med en redundansväxling. [Läs mer](https://azure.microsoft.com/pricing/details/site-recovery) om avgifter och priser.
-[Azure Database for MySQL](/azure/mysql) | Databasen baseras på MySQL-servermotorn med öppen källkod. Den innehåller en fullständigt hanterad, företagsklar community-version av en MySQL-databas som en apputvecklings- och appdistributionstjänst.
+[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | Tjänsten orkestrerar och hanterar migrering och haveriberedskap för virtuella Azure-datorer, lokala virtuella datorer och fysiska servrar. | Under replikeringen till Azure debiteras Azure Storage-avgifter. Virtuella Azure-datorer skapas och medför kostnader i samband med en redundansväxling. [Läs mer](https://azure.microsoft.com/pricing/details/site-recovery) om avgifter och priser.
+[Azure Database for MySQL](https://docs.microsoft.com/azure/mysql) | Databasen baseras på MySQL-servermotorn med öppen källkod. Den innehåller en fullständigt hanterad, företagsklar community-version av en MySQL-databas som en apputvecklings- och appdistributionstjänst.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -90,10 +90,10 @@ Det här är vad Contoso behöver i det här scenariot.
 
 **Krav** | **Detaljer**
 --- | ---
-**Azure-prenumeration** | Contoso skapade prenumerationer i en tidigare artikel. Om du inte har någon Azure-prenumeration kan du skapa ett [kostnadsfritt konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Om du skapar ett kostnadsfritt konto är du administratör för din prenumeration och kan utföra alla åtgärder.<br/><br/> Om du använder en befintlig prenumeration och inte är administratör måste du be administratören att ge dig ägar- eller deltagarbehörighet.<br/><br/> Om du behöver mer detaljerade behörigheter läser du [den här artikeln](/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Azure-infrastruktur** | Contoso konfigurerar Azure-infrastrukturen enligt beskrivningen i [Azure-infrastruktur för migrering.](contoso-migration-infrastructure.md)<br/><br/> Läs mer om specifika [nätverks-](/azure/site-recovery/vmware-physical-azure-support-matrix#network) och [lagringskrav](/azure/site-recovery/vmware-physical-azure-support-matrix#storage) för Site Recovery.
+**Azure-prenumeration** | Contoso skapade prenumerationer i en tidigare artikel. Om du inte har någon Azure-prenumeration kan du skapa ett [kostnadsfritt konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Om du skapar ett kostnadsfritt konto är du administratör för din prenumeration och kan utföra alla åtgärder.<br/><br/> Om du använder en befintlig prenumeration och inte är administratör måste du be administratören att ge dig ägar- eller deltagarbehörighet.<br/><br/> Om du behöver mer detaljerade behörigheter läser du [den här artikeln](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
+**Azure-infrastruktur** | Contoso konfigurerar Azure-infrastrukturen enligt beskrivningen i [Azure-infrastruktur för migrering.](./contoso-migration-infrastructure.md)<br/><br/> Läs mer om specifika [nätverks-](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network) och [lagringskrav](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage) för Site Recovery.
 **Lokala servrar** | Den lokala vCenter-servern bör köra version 5.5, 6.0 eller 6.5<br/><br/> En ESXi-värd som kör version 5.5, 6.0 eller 6.5<br/><br/> En eller flera virtuella VMware-datorer som körs på ESXi-värden.
-**Lokala virtuella datorer** | [Granska kraven för virtuella Linux-datorer](/azure/site-recovery/vmware-physical-azure-support-matrix#replicated-machines) som stöds för migrering med Site Recovery.<br/><br/> Kontrollera att [Linux-filsystemen och Linux-lagringssystemen stöds](/azure/site-recovery/vmware-physical-azure-support-matrix#linux-file-systemsguest-storage).<br/><br/> Virtuella datorer måste uppfylla [kraven för Azure](/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).
+**Lokala virtuella datorer** | [Granska kraven för virtuella Linux-datorer](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#replicated-machines) som stöds för migrering med Site Recovery.<br/><br/> Kontrollera att [Linux-filsystemen och Linux-lagringssystemen stöds](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#linux-file-systemsguest-storage).<br/><br/> Virtuella datorer måste uppfylla [kraven för Azure](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).
 
 <!-- markdownlint-enable MD033 -->
 
@@ -114,7 +114,7 @@ Contosos administratörer utför migreringen på följande sätt:
 
 Contoso behöver ett par Azure-komponenter för Site Recovery:
 
-- Ett virtuellt nätverk där resurser som växlats över finns. Contoso har redan skapat det virtuella nätverket under [distributionen av Azure-infrastrukturen](contoso-migration-infrastructure.md)
+- Ett virtuellt nätverk där resurser som växlats över finns. Contoso har redan skapat det virtuella nätverket under [distributionen av Azure-infrastrukturen](./contoso-migration-infrastructure.md)
 - Ett nytt Azure-lagringskonto för att lagra replikerade data.
 - Ett Recovery Services-valv i Azure.
 
@@ -133,7 +133,7 @@ Contosos administratörer skapar ett lagringskonto och valv enligt följande:
 
 **Behöver du mer hjälp?**
 
-[Lär dig hur du](/azure/site-recovery/tutorial-prepare-azure) konfigurerar Azure för Site Recovery.
+[Lär dig hur du](https://docs.microsoft.com/azure/site-recovery/tutorial-prepare-azure) konfigurerar Azure för Site Recovery.
 
 ## <a name="step-2-prepare-on-premises-vmware-for-site-recovery"></a>Steg 2: Förbereda lokala VMware för Site Recovery
 
@@ -174,8 +174,8 @@ Efter redundansväxlingen till Azure vill Contoso kunna ansluta till de virtuell
 
 **Behöver du mer hjälp?**
 
-- [Lär dig](/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery) hur du skapar och tilldelar en roll för automatisk identifiering.
-- [Lär dig](/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation) hur du skapar ett konto för push-installation av Mobility Service.
+- [Lär dig](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery) hur du skapar och tilldelar en roll för automatisk identifiering.
+- [Lär dig](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation) hur du skapar ett konto för push-installation av Mobility Service.
 
 ## <a name="step-3-provision-azure-database-for-mysql"></a>Steg 3: Etablera Azure Database for MySQL
 
@@ -287,9 +287,9 @@ Med käll- och målkonfigurationen är Contosos administratörer redo att skapa 
 
 **Behöver du mer hjälp?**
 
-- En fullständig genomgång av de här stegen finns i [Konfigurera haveriberedskap för lokala virtuella VMware-datorer](/azure/site-recovery/vmware-azure-tutorial).
-- Detaljerade instruktioner finns tillgängliga som hjälper dig att [konfigurera källmiljön](/azure/site-recovery/vmware-azure-set-up-source), [distribuera konfigurationsservern](/azure/site-recovery/vmware-azure-deploy-configuration-server) och [konfigurera replikeringsinställningar](/azure/site-recovery/vmware-azure-set-up-replication).
-- [Lär dig mer](/azure/virtual-machines/extensions/agent-linux) om Azures gästagent för Linux.
+- En fullständig genomgång av de här stegen finns i [Konfigurera haveriberedskap för lokala virtuella VMware-datorer](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial).
+- Detaljerade instruktioner finns tillgängliga som hjälper dig att [konfigurera källmiljön](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-source), [distribuera konfigurationsservern](https://docs.microsoft.com/azure/site-recovery/vmware-azure-deploy-configuration-server) och [konfigurera replikeringsinställningar](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-replication).
+- [Lär dig mer](https://docs.microsoft.com/azure/virtual-machines/extensions/agent-linux) om Azures gästagent för Linux.
 
 ### <a name="enable-replication-for-the-web-vm"></a>Aktivera replikering för den virtuella webbdatorn
 
@@ -317,7 +317,7 @@ Nu kan Contosos administratörer starta replikeringen av den virtuella datorn **
 
 **Behöver du mer hjälp?**
 
-En fullständig genomgång av de här stegen finns i [Aktivera replikering](/azure/site-recovery/vmware-azure-enable-replication).
+En fullständig genomgång av de här stegen finns i [Aktivera replikering](https://docs.microsoft.com/azure/site-recovery/vmware-azure-enable-replication).
 
 ## <a name="step-5-migrate-the-database"></a>Steg 5: Migrera databasen
 
@@ -388,9 +388,9 @@ För att migrera den virtuella datorn skapar Contosos administratörer en åters
 
 **Behöver du mer hjälp?**
 
-- [Lär dig](/azure/site-recovery/tutorial-dr-drill-azure) hur du kör ett redundanstest.
-- [Lär dig](/azure/site-recovery/site-recovery-create-recovery-plans) hur du skapar en återställningsplan.
-- [Lär dig](/azure/site-recovery/site-recovery-failover) hur du redundansväxlar till Azure.
+- [Lär dig](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure) hur du kör ett redundanstest.
+- [Lär dig](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans) hur du skapar en återställningsplan.
+- [Lär dig](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover) hur du redundansväxlar till Azure.
 
 ### <a name="connect-the-vm-to-the-database"></a>Ansluta den virtuella datorn till databasen
 
@@ -446,17 +446,17 @@ Contosos säkerhetsteam granskar den virtuella datorn och databasen för att fas
 - De kan skydda data på de virtuella datordiskarna med diskkryptering och Azure Key Vault.
 - Kommunikationen mellan den virtuella datorn och databasinstansen har inte konfigurerats för SSL. De måste göra detta för att säkerställa att databastrafiken inte kan hackas.
 
-[Läs mer](/azure/security/azure-security-best-practices-vms) om säkerhetsrutiner för virtuella datorer.
+[Läs mer](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) om säkerhetsrutiner för virtuella datorer.
 
 ### <a name="bcdr"></a>BCDR
 
 För affärskontinuitet och haveriberedskap vidtar Contoso följande åtgärder:
 
-- **Skydda data.** Contoso säkerhetskopierar dessa data på den virtuella datorn för appen med hjälp av Azure Backup-tjänsten. [Läs mer](/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json). De behöver inte konfigurera säkerhetskopiering för databasen. Azure Database for MySQL skapar och lagrar automatiskt serversäkerhetskopior. De valde att använda geo-redundans för databasen, så den är elastisk och produktionsklar.
-- **Undvika avbrott i apparna.** Contoso replikerar de virtuella datorerna för appen i Azure till en sekundär region med hjälp av Site Recovery. [Läs mer](/azure/site-recovery/azure-to-azure-quickstart).
+- **Skydda data.** Contoso säkerhetskopierar dessa data på den virtuella datorn för appen med hjälp av Azure Backup-tjänsten. [Läs mer](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json). De behöver inte konfigurera säkerhetskopiering för databasen. Azure Database for MySQL skapar och lagrar automatiskt serversäkerhetskopior. De valde att använda geo-redundans för databasen, så den är elastisk och produktionsklar.
+- **Undvika avbrott i apparna.** Contoso replikerar de virtuella datorerna för appen i Azure till en sekundär region med hjälp av Site Recovery. [Läs mer](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 
 ### <a name="licensing-and-cost-optimization"></a>Licensierings- och kostnadsoptimering
 
-- När de har distribuerat resurser tilldelar Contoso Azure-taggar, i enlighet med beslut som de fattade under [distributionen av Azure-infrastrukturen](contoso-migration-infrastructure.md#set-up-tagging).
+- När de har distribuerat resurser tilldelar Contoso Azure-taggar, i enlighet med beslut som de fattade under [distributionen av Azure-infrastrukturen](./contoso-migration-infrastructure.md#set-up-tagging).
 - Det finns inga licensproblem för Contoso Ubuntu-servrarna.
-- Contoso aktiverar Azure Cost Management som licensieras av Cloudyn, ett Microsoft-dotterbolag. Det är en kostnadshanteringslösning med flera moln som hjälper dig att använda och hantera Azure och andra molnresurser. [Läs mer](/azure/cost-management/overview) om Azure Cost Management.
+- Contoso aktiverar Azure Cost Management som licensieras av Cloudyn, ett Microsoft-dotterbolag. Det är en kostnadshanteringslösning med flera moln som hjälper dig att använda och hantera Azure och andra molnresurser. [Läs mer](https://docs.microsoft.com/azure/cost-management/overview) om Azure Cost Management.

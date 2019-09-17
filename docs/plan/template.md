@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 91c1433f300efc3950cb54852a00b5020a992e8f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: f7634f15735c68296a96d997d3bf8e915d03e6b7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833731"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022312"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Moln implementerings plan och Azure-DevOps
 
@@ -59,7 +59,7 @@ Den tydligaste vyn av moln implementerings planen kommer från vyn **Epics** eft
 
 ## <a name="align-the-cloud-adoption-plan"></a>Justera moln implementerings planen
 
-Översikts sidorna för strategi-och planerings faserna i moln implementerings livs cykeln varje referens för [strategin för moln införande ramverk och planering](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx). Mallen organiserar de beslut och data punkter som ska justera mallen för moln implementerings planen med dina egna planer. Om du inte redan har gjort det kanske du vill slutföra övningarna som är relaterade till [strategin](../business-strategy/index.md) och [Planera](../plan/index.md) innan du justerar det nya projektet.
+Översikts sidorna för strategi-och planerings faserna i moln implementerings livs cykeln varje referens för [strategin för moln införande ramverk och planering](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx). Mallen organiserar de beslut och data punkter som ska justera mallen för moln implementerings planen med dina egna planer. Om du inte redan har gjort det kanske du vill slutföra övningarna som är relaterade till [strategin](../strategy/index.md) och [Planera](../plan/index.md) innan du justerar det nya projektet.
 
 Följande artiklar stöder justering av moln implementerings planen:
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d1b07e5bc0dd578527e4e4c8c7271fad5fa967c9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4bc84ad8bd2d0a0521399c1762585db6f9a5a6ab
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825385"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025417"
 ---
 # <a name="decisions-that-affect-migrations"></a>Beslut som påverkar migreringen
 
@@ -49,7 +49,7 @@ I det här avsnittet i Ramverk för molnimplementering beskrivs en teori för at
 
 ## <a name="effort"></a>Projektet
 
-Migreringen kan variera beroende på de berörda arbetsbelastningarnas storlek och komplexitet. En mindre migrering av arbetsbelastningar som omfattar ett par hundra virtuella datorer är en taktisk process som kan genomföras med automatiserade verktyg såsom[Azure Migrate](/azure/migrate/migrate-overview). Å andra sidan kräver en storskalig företagsmigrering med tiotusentals arbetsbelastningar en mycket strategisk process som kan inbegripa omfattande omstrukturering, återuppbyggnad och ersättning av befintliga program för att integrera kapacitet för plattform som en tjänst (PaaS) och programvara som en tjänst (SaaS). [Det är viktigt att identifiera och balansera omfattningen](../../expanded-scope/balance-the-portfolio.md) av dina planerade migreringar.
+Migreringen kan variera beroende på de berörda arbetsbelastningarnas storlek och komplexitet. En mindre migrering av arbetsbelastningar som omfattar ett par hundra virtuella datorer är en taktisk process som kan genomföras med automatiserade verktyg såsom[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview). Å andra sidan kräver en storskalig företagsmigrering med tiotusentals arbetsbelastningar en mycket strategisk process som kan inbegripa omfattande omstrukturering, återuppbyggnad och ersättning av befintliga program för att integrera kapacitet för plattform som en tjänst (PaaS) och programvara som en tjänst (SaaS). [Det är viktigt att identifiera och balansera omfattningen](../../expanded-scope/balance-the-portfolio.md) av dina planerade migreringar.
 
 Innan du fattar beslut som kan ha en långsiktig inverkan på det aktuella migreringsprogrammet är det viktigt att du skapar samförstånd om följande beslut.
 

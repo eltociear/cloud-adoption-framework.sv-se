@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: f36e524fea15df572df8ef74c6b5c81f5fa08932
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5e1b1c24b076c56fdf6e42a8340589ee58bd69dc
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829246"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023449"
 ---
 # <a name="enable-success-across-any-cloud-adoption-journey"></a>Aktivera lyckad över alla moln införande transporter
 
@@ -22,12 +22,12 @@ Microsoft Cloud implementerings ramverk för Azure tillhandahålls som ett kostn
 
 I det här ramverket är aktivering ett kärn tema. Följande check lista innehåller en serie med ämnen som ska bäddas in i molnet för att säkerställa att resan är framgångs rik i ögonen både för IT och verksamheten:
 
-- **Projektplan** Upprättande av klara [affärs resultat](../business-strategy/business-outcomes/index.md), en definierad [plan för digital egendom](../digital-estate/index.md)och väl välförståde införda- [loggfiler](../migrate/migration-considerations/prerequisites/migration-backlog-review.md).
+- **Projektplan** Upprättande av klara [affärs resultat](../strategy/business-outcomes/index.md), en definierad [plan för digital egendom](../digital-estate/index.md)och väl välförståde införda- [loggfiler](../migrate/migration-considerations/prerequisites/migration-backlog-review.md).
 - **Redo** Se till att personalen har beredskap genom [kunskaper och utbildnings planer](../ready/technical-skills.md).
 - **Träd** Definiera en hanterbar drifts modell för att hantera aktiviteter under och länge efter införandet.
-  - **[Organisera](../organization/index.md):** Justera människor och team för att leverera rätt moln drift och införande.
-  - **Styras** Justera lämpliga [styrnings discipliner](../governance/index.md) för att konsekvent tillämpa kostnads hantering, risk minskning, efterlevnad och säkerhets bas linjer i alla moln införande.
-  - **Hantera:** Pågående [drift](../operations/index.md) av IT-portföljen för att minimera avbrott i affärs processer och säkerställa stabiliteten hos IT-portföljen.
+  - **[Organisera](../organize/index.md):** Justera människor och team för att leverera rätt moln drift och införande.
+  - **Styras** Justera lämpliga [styrnings discipliner](../govern/index.md) för att konsekvent tillämpa kostnads hantering, risk minskning, efterlevnad och säkerhets bas linjer i alla moln införande.
+  - **Hantera:** Kontinuerlig [drift hantering](../manage/index.md) av IT-portföljen för att minimera avbrott i affärs processer och säkerställa stabiliteten hos IT-portföljen.
   - **Hjälp** Justera lämpliga [alternativ för partnerskap och support](../migrate/migration-considerations/assess/partnership-options.md).
 
 ## <a name="additional-tools"></a>Ytterligare verktyg
@@ -38,7 +38,7 @@ Utöver moln implementerings ramverket täcker Microsoft ytterligare ämnen som 
 
 <ul class="panelContent cardsH">
 <li style="display: flex; flex-direction: column;">
-    <a href="../governance/journeys/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
+    <a href="../govern/guides/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
         <div class="cardSize" style="flex: 1 0 auto; display: flex;">
             <div class="cardPadding" style="display: flex;">
                 <div class="card">

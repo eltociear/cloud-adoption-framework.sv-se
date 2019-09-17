@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: fc992a4c00a1acd99481d6090563ecef38c5fedb
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 43e577eb429928efd0857549319e46a36c49a9e1
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70832314"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025098"
 ---
 # <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Omstrukturera en Team Foundation Server-distribution till Azure DevOps Services
 
@@ -47,7 +47,7 @@ Contosos molnteam har fastställt mål för migreringen till Azure DevOps Servic
 - TFS kommer att migreras till Azure DevOps Services.
 - Contoso har idag en TFS-samling med namnet `ContosoDev` som kommer att migreras till en Azure DevOps Services-organisation som heter `contosodevmigration.visualstudio.com`.
 - Projekt, arbetsobjekt, fel och itereringar från det senaste året kommer att migreras till Azure DevOps Services.
-- Contoso kommer att använda Azure Active Directory, som de konfigurerade när de [införde sin Azure-infrastruktur](contoso-migration-infrastructure.md) i början av sin migreringsplanering.
+- Contoso kommer att använda Azure Active Directory, som de konfigurerade när de [införde sin Azure-infrastruktur](./contoso-migration-infrastructure.md) i början av sin migreringsplanering.
 
 ![Scenariots arkitektur](./media/contoso-migration-tfs-vsts/architecture.png)
 
@@ -71,8 +71,8 @@ Det här behöver Contoso för att köra detta scenario.
 
 **Krav** | **Detaljer**
 --- | ---
-**Azure-prenumeration** | Contoso skapade prenumerationer i en tidigare artikel i den här serien. Om du inte har någon Azure-prenumeration kan du skapa ett [kostnadsfritt konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Om du skapar ett kostnadsfritt konto är du administratör för din prenumeration och kan utföra alla åtgärder.<br/><br/> Om du använder en befintlig prenumeration och inte är administratör måste du be administratören att ge dig ägar- eller deltagarbehörighet.<br/><br/> Om du behöver mer detaljerade behörigheter läser du [den här artikeln](/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Azure-infrastruktur** | Contoso konfigurerar Azure-infrastrukturen enligt beskrivningen i [Azure-infrastruktur för migrering.](contoso-migration-infrastructure.md)
+**Azure-prenumeration** | Contoso skapade prenumerationer i en tidigare artikel i den här serien. Om du inte har någon Azure-prenumeration kan du skapa ett [kostnadsfritt konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Om du skapar ett kostnadsfritt konto är du administratör för din prenumeration och kan utföra alla åtgärder.<br/><br/> Om du använder en befintlig prenumeration och inte är administratör måste du be administratören att ge dig ägar- eller deltagarbehörighet.<br/><br/> Om du behöver mer detaljerade behörigheter läser du [den här artikeln](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
+**Azure-infrastruktur** | Contoso konfigurerar Azure-infrastrukturen enligt beskrivningen i [Azure-infrastruktur för migrering.](./contoso-migration-infrastructure.md)
 **Lokal TFS-server** | Den lokala servern måste köra TFS 2018 uppgradering 2 eller uppdateras till detta som en del av denna process.
 
 ## <a name="scenario-steps"></a>Scenariosteg
@@ -95,15 +95,15 @@ Så här slutför Contoso migreringen:
 
 **Behöver du mer hjälp?**
 
-- [Introduktion till Azure Storage](/azure/storage/common/storage-introduction).
-- [Skapa ett lagringskonto](/azure/storage/common/storage-create-storage-account).
+- [Introduktion till Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction).
+- [Skapa ett lagringskonto](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account).
 
 ## <a name="step-2-upgrade-tfs"></a>Steg 2: Uppgradera TFS
 
 Contosos administratörer uppgraderar TFS-servern till TFS 2018 uppdatering 2. Innan de börjar:
 
 - De laddar ned [TFS 2018 uppdatering 2](https://visualstudio.microsoft.com/downloads)
-- De kontrollerar [maskinvarukraven](/tfs/server/requirements) och läser igenom [viktig information](/visualstudio/releasenotes/tfs2018-relnotes) och [potentiella uppgraderingsproblem](/tfs/server/upgrade/get-started#before-you-upgrade-to-tfs-2018).
+- De kontrollerar [maskinvarukraven](https://docs.microsoft.com/tfs/server/requirements) och läser igenom [viktig information](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes) och [potentiella uppgraderingsproblem](https://docs.microsoft.com/tfs/server/upgrade/get-started#before-you-upgrade-to-tfs-2018).
 
 De uppgraderar så här:
 
@@ -128,7 +128,7 @@ De uppgraderar så här:
      ![TFS](./media/contoso-migration-tfs-vsts/upgrade5.png)
 
 > [!NOTE]
-> Vissa TFS-uppgraderingar behöver köra konfigurationsguiden efter uppgraderingen. [Läs mer](/azure/devops/reference/configure-features-after-upgrade?utm_source=ms&utm_medium=guide&utm_campaign=vstsdataimportguide&view=vsts).
+> Vissa TFS-uppgraderingar behöver köra konfigurationsguiden efter uppgraderingen. [Läs mer](https://docs.microsoft.com/azure/devops/reference/configure-features-after-upgrade?utm_source=ms&utm_medium=guide&utm_campaign=vstsdataimportguide&view=vsts).
 
 **Behöver du mer hjälp?**
 
@@ -464,13 +464,13 @@ Nu när migreringen är klar vill Contoso övergå från källkodshantering i TF
 
 **Behöver du mer hjälp?**
 
-[Lär dig mer om att](/azure/devops/repos/git/import-from-TFVC?view=vsts) importera från TFVC.
+[Lär dig mer om att](https://docs.microsoft.com/azure/devops/repos/git/import-from-TFVC?view=vsts) importera från TFVC.
 
 ## <a name="clean-up-after-migration"></a>Rensa efter migrering
 
 När migreringen är klar måste Contoso göra följande:
 
-- Läsa artikeln [efter import](/azure/devops/articles/migration-post-import?view=vsts) för information om ytterligare importaktiviteter.
+- Läsa artikeln [efter import](https://docs.microsoft.com/azure/devops/articles/migration-post-import?view=vsts) för information om ytterligare importaktiviteter.
 - Ta bort TFVC-lagringsplatserna eller göra dem skrivskyddade. Kodbaserna får inte användas men kan användas som historikreferens.
 
 ## <a name="post-migration-training"></a>Utbildning efter migrering

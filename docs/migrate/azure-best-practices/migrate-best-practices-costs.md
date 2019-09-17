@@ -8,12 +8,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 99255722c28b9bb6c33f78e226cb8135e7c7be17
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: b358c4d07e4adb30c0420c9d1b3bc85c25e9ce95
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825996"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024944"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Metodtips för tar och storlek arbetsbelastningar migreras till Azure
 
@@ -55,9 +55,9 @@ Det finns flera verktyg som du kan använda för att beräkna din månadsfaktura
 **Läs mer:**
 
 - [Använd](https://azure.microsoft.com/pricing/calculator) Azures priskalkylator.
-- [Få en översikt](/azure/migrate/migrate-overview) av Azure Migrate.
-- [Läs om](/azure/migrate/concepts-assessment-calculation) Azure Migrate-utvärderingar.
-- [Läs mer](/azure/dms/dms-overview) om Azure Database Migration Service.
+- [Få en översikt](https://docs.microsoft.com/azure/migrate/migrate-overview) av Azure Migrate.
+- [Läs om](https://docs.microsoft.com/azure/migrate/concepts-assessment-calculation) Azure Migrate-utvärderingar.
+- [Läs mer](https://docs.microsoft.com/azure/dms/dms-overview) om Azure Database Migration Service.
 
 ## <a name="best-practice-right-size-vms"></a>Metodtips: Rätt storlek på virtuella datorer
 
@@ -78,9 +78,9 @@ Du kan välja olika alternativ när du distribuerar virtuella Azure-datorer för
 
 **Lära sig mer:**
 
-- [Läs mer](/azure/virtual-machines/windows/sizes) om VM-typer och storlek och kartan storlek till typer.
-- [Planera](/azure/cloud-services/cloud-services-sizes-specs) storlek på virtuell dator.
-- [Läs](/azure/migrate/contoso-migration-assessment) det här exemplet på en utvärdering för det påhittade företaget Contoso.
+- [Läs mer](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) om VM-typer och storlek och kartan storlek till typer.
+- [Planera](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs) storlek på virtuell dator.
+- [Läs](https://docs.microsoft.com/azure/migrate/contoso-migration-assessment) det här exemplet på en utvärdering för det påhittade företaget Contoso.
 
 ## <a name="best-practice-select-the-right-storage"></a>Metodtips: Välj rätt lagring
 
@@ -149,12 +149,12 @@ Storage-konton kan använda olika typer av redundans för ökad flexibilitet och
 **Lära sig mer:**
 
 - [Granska](https://azure.microsoft.com/pricing/details/storage) priser för Azure Storage.
-- [Lär dig mer om](/azure/storage/common/storage-import-export-service) Azure Import/Export för migrering stora mängder data till Azure-blobar och filer.
-- [Jämför](/azure/storage/common/storage-decide-blobs-files-disks?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) blobar, filer och datatyper för disk-lagring.
-- [Läs mer](/azure/storage/blobs/storage-blob-storage-tiers) om åtkomstnivåerna.
-- [Granska](/azure/storage/common/storage-account-overview?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) olika typer av lagringskonton.
-- Lär dig mer om [lagringsredundans](/azure/storage/common/storage-redundancy), [LRS](/azure/storage/common/storage-redundancy-lrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [ZRS](/azure/storage/common/storage-redundancy-zrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [GRS](/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), och [Read-access GRS](/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#read-access-geo-redundant-storage).
-- [Läs mer](/azure/storage/files/storage-files-introduction) om Azure Files.
+- [Lär dig mer om](https://docs.microsoft.com/azure/storage/common/storage-import-export-service) Azure Import/Export för migrering stora mängder data till Azure-blobar och filer.
+- [Jämför](https://docs.microsoft.com/azure/storage/common/storage-decide-blobs-files-disks?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) blobar, filer och datatyper för disk-lagring.
+- [Läs mer](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) om åtkomstnivåerna.
+- [Granska](https://docs.microsoft.com/azure/storage/common/storage-account-overview?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) olika typer av lagringskonton.
+- Lär dig mer om [lagringsredundans](https://docs.microsoft.com/azure/storage/common/storage-redundancy), [LRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-lrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [ZRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-zrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), och [Read-access GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#read-access-geo-redundant-storage).
+- [Läs mer](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) om Azure Files.
 
 ## <a name="best-practice-take-advantage-of-azure-hybrid-benefits"></a>Metodtips: Dra nytta av fördelarna med Azure Hybrid
 
@@ -166,7 +166,7 @@ En integrerad Microsoft på lokal/Azure produktportfölj genererar konkurrenskra
 
 - [Ta en titt på](https://azure.microsoft.com/pricing/hybrid-benefit) kalkylator för besparingar Hybrid-förmånen.
 - [Läs mer](https://azure.microsoft.com/pricing/hybrid-benefit) om Hybrid-förmånen för Windows Server.
-- Se [Prisvägledning för virtuella SQL Server Azure-datorer](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance).
+- Se [Prisvägledning för virtuella SQL Server Azure-datorer](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance).
 
 ## <a name="best-practice-use-reserved-vm-instances"></a>Metodtips: Reserverade instanser för virtuell dator
 
@@ -184,9 +184,9 @@ Med hjälp av Azure reserverade VM-instanser, du betalar i förskott för ett el
 
 **Lära sig mer:**
 
-- [Lär dig mer om](/azure/billing/billing-save-compute-costs-reservations) Azure reservationer.
+- [Lär dig mer om](https://docs.microsoft.com/azure/billing/billing-save-compute-costs-reservations) Azure reservationer.
 - [Läs](https://azure.microsoft.com/pricing/reserved-vm-instances/#faq) reserverade instanser vanliga frågor och svar.
-- [Hämta prisvägledning](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance) för virtuella SQL Server Azure-datorer.
+- [Hämta prisvägledning](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance) för virtuella SQL Server Azure-datorer.
 
 ## <a name="best-practice-aggregate-cloud-spend-across-subscriptions"></a>Metodtips: Aggregera molnutgifter över prenumerationer
 
@@ -196,9 +196,9 @@ Om du vill göra detta måste använda du Azure Cost Management API: er. Sedan e
 
 **Lära sig mer:**
 
-- [Få en översikt](/azure/billing/billing-consumption-api-overview) för API i Azure-förbrukning.
-- [Lär dig mer om](/power-bi/desktop-connect-azure-consumption-insights) ansluter till Azure Consumption Insights i Power BI Desktop.
-- [Lär dig hur du](/azure/billing/billing-manage-access) hantera åtkomst till faktureringsinformation för Azure med hjälp av rollbaserad åtkomstkontroll (RBAC).
+- [Få en översikt](https://docs.microsoft.com/azure/billing/billing-consumption-api-overview) för API i Azure-förbrukning.
+- [Lär dig mer om](https://docs.microsoft.com/power-bi/desktop-connect-azure-consumption-insights) ansluter till Azure Consumption Insights i Power BI Desktop.
+- [Lär dig hur du](https://docs.microsoft.com/azure/billing/billing-manage-access) hantera åtkomst till faktureringsinformation för Azure med hjälp av rollbaserad åtkomstkontroll (RBAC).
 
 ## <a name="after-migration"></a>Efter migrering
 
@@ -241,11 +241,11 @@ I Cost Management kan du:
 
 **Läs mer:**
 
-- [Få en översikt](/azure/cost-management/overview) av Azure Cost Management.
-- [Lär dig hur du](/azure/cost-management/cost-mgt-best-practices) optimera din molninvestering med Azure Cost Management.
-- [Lär dig hur du](/azure/cost-management/use-reports) Användarrapporter för Azure Cost Management.
-- [Hämta en självstudiekurs](/azure/cost-management/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json) om hur du optimerar kostnaderna från rekommendationer.
-- [Granska](/rest/api/consumption/budgets) Azure Consumption-API:et.
+- [Få en översikt](https://docs.microsoft.com/azure/cost-management/overview) av Azure Cost Management.
+- [Lär dig hur du](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices) optimera din molninvestering med Azure Cost Management.
+- [Lär dig hur du](https://docs.microsoft.com/azure/cost-management/use-reports) Användarrapporter för Azure Cost Management.
+- [Hämta en självstudiekurs](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json) om hur du optimerar kostnaderna från rekommendationer.
+- [Granska](https://docs.microsoft.com/rest/api/consumption/budgets) Azure Consumption-API:et.
 
 ## <a name="best-practice-monitor-resource-utilization"></a>Metodtips: Övervaka resursutnyttjande
 
@@ -259,9 +259,9 @@ I Azure betalar du för det du använder när resurser förbrukas och endast då
 
 **Lära sig mer:**
 
-- Få en översikt över [Azure Monitor](/azure/azure-monitor/overview) och [Azure Advisor](/azure/advisor/advisor-overview).
-- [Hämta](/azure/advisor/advisor-cost-recommendations) Advisor kostnad rekommendationer.
-- [Lär dig [optimera kostnader baserat på rekommendationer](/azure/cost-management/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json) och [undvika oväntade avgifter](/azure/billing/billing-getting-started).
+- Få en översikt över [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) och [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview).
+- [Hämta](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations) Advisor kostnad rekommendationer.
+- [Lär dig [optimera kostnader baserat på rekommendationer](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json) och [undvika oväntade avgifter](https://docs.microsoft.com/azure/billing/billing-getting-started).
 - Lär dig mer om [Azure Resource Optimization (ARO) Toolkit](https://github.com/Azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit).
 
 ## <a name="best-practice-implement-resource-group-budgets"></a>Metodtips: Implementera budgetar för resursgrupper
@@ -273,8 +273,8 @@ Resursgrupper används ofta för att representera kostnadsgränser. Tillsammans 
 
 **Lära sig mer:**
 
-- [Lär dig hur du](/azure/billing/billing-cost-management-budget-scenario) hantera kostnader med Azure-budget.
-- [Följ en självstudie](/azure/cost-management/tutorial-acm-create-budgets?toc=/azure/billing/TOC.json) för att skapa och hantera en budget med Azure.
+- [Lär dig hur du](https://docs.microsoft.com/azure/billing/billing-cost-management-budget-scenario) hantera kostnader med Azure-budget.
+- [Följ en självstudie](https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets?toc=/azure/billing/TOC.json) för att skapa och hantera en budget med Azure.
 
 ## <a name="best-practice-optimize-azure-monitor-retention"></a>Metodtips: Optimera Azure Monitor-kvarhållning
 
@@ -288,7 +288,7 @@ När du flyttar resurser till Azure och aktiverar diagnostisk loggning för dem 
 
 **Lära sig mer:**
 
-- [Lär dig](/azure/monitoring-and-diagnostics/monitoring-usage-and-estimated-costs) mer om användningsövervakning och beräknade kostnader.
+- [Lär dig](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-usage-and-estimated-costs) mer om användningsövervakning och beräknade kostnader.
 
 ## <a name="best-practice-optimize-storage"></a>Metodtips: Optimera lagring
 
@@ -301,8 +301,8 @@ Identifiera och flytta inaktuella data till billigare lagring kan ha en stor inv
 
 **Lära sig mer:**
 
-- [Läs mer](/azure/storage/blobs/storage-blob-storage-tiers) om åtkomstnivåerna.
-- [Få en översikt](/azure/azure-monitor/overview) över StorSimple och [StorSimple-prissättning](https://azure.microsoft.com/pricing/details/storsimple).
+- [Läs mer](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) om åtkomstnivåerna.
+- [Få en översikt](https://docs.microsoft.com/azure/azure-monitor/overview) över StorSimple och [StorSimple-prissättning](https://azure.microsoft.com/pricing/details/storsimple).
 
 ## <a name="best-practice-automate-vm-optimization"></a>Metodtips: Automatisera optimering av virtuella datorer
 
@@ -312,10 +312,10 @@ Du kan optimera en virtuell dator med Azure Automation, skaluppsättningar för 
 
 **Läs mer:**
 
-- [Lär dig hur du](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-vertical-scale-reprovision) Använd vertikal automatisk skalning.
+- [Lär dig hur du](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-vertical-scale-reprovision) Använd vertikal automatisk skalning.
 - [Schema](https://azure.microsoft.com/updates/azure-devtest-labs-schedule-vm-auto-start) autostart för en virtuell dator.
-- [Lär dig hur du](/azure/automation/automation-solution-vm-management) starta eller stoppa virtuella datorer utanför arbetstid i Azure Automation.
-- [Hämta mer information] om [Azure Advisor](/azure/advisor/advisor-overview) och [verktyget](https://github.com/Azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit)Azure Resource Optimization (ARO).
+- [Lär dig hur du](https://docs.microsoft.com/azure/automation/automation-solution-vm-management) starta eller stoppa virtuella datorer utanför arbetstid i Azure Automation.
+- [Hämta mer information] om [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) och [verktyget](https://github.com/Azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit)Azure Resource Optimization (ARO).
 
 ## <a name="best-practices-use-logic-apps-and-runbooks-with-budgets-api"></a>Metodtips: Använda Logic Apps och Runbooks med budget-API
 
@@ -329,8 +329,8 @@ Azure tillhandahåller ett REST API som har åtkomst till din kundfaktureringsin
 
 **Lära sig mer:**
 
-- [Läs mer](/rest/api/consumption/budgets) om budgetar API.
-- [Få insikter](/azure/billing/billing-usage-rate-card-overview) om Azure-användning med fakturerings-API:et.
+- [Läs mer](https://docs.microsoft.com/rest/api/consumption/budgets) om budgetar API.
+- [Få insikter](https://docs.microsoft.com/azure/billing/billing-usage-rate-card-overview) om Azure-användning med fakturerings-API:et.
 
 ## <a name="best-practice-implement-serverless-technologies"></a>Metodtips: Implementera serverlös teknik
 
@@ -347,5 +347,5 @@ Efter migreringen kan du efter en grundlig granskning av de här typerna av akti
 
 Granska andra metodtips:
 
-- [Bästa praxis](migrate-best-practices-security-management.md) för säkerhet och hantering efter migreringen.
-- [Bästa praxis](migrate-best-practices-networking.md) för nätverk efter migreringen.
+- [Bästa praxis](./migrate-best-practices-security-management.md) för säkerhet och hantering efter migreringen.
+- [Bästa praxis](./migrate-best-practices-networking.md) för nätverk efter migreringen.

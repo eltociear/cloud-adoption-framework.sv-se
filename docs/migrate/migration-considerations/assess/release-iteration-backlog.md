@@ -8,16 +8,16 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: dc567c80b6193d651c8bf3884476728a8d3daa7f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d2dddb4893a2781da38969949972fa516e32b46c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833484"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025406"
 ---
 # <a name="manage-change-in-an-incremental-migration-effort"></a>Hantera ändringar i en stegvis migreringsåtgärd
 
-I den här artikeln förutsätter vi att migreringsprocesserna är stegvisa till sin natur och körs parallellt [med styrningsprocessen](../../../governance/index.md). Samma riktlinjer kan dock användas för att fylla i inledande uppgifter i en uppdelad arbetsstruktur för traditionella vattenfallsmetoder för ändringshantering.
+I den här artikeln förutsätter vi att migreringsprocesserna är stegvisa till sin natur och körs parallellt [med styrningsprocessen](../../../govern/index.md). Samma riktlinjer kan dock användas för att fylla i inledande uppgifter i en uppdelad arbetsstruktur för traditionella vattenfallsmetoder för ändringshantering.
 
 ## <a name="release-backlog"></a>Versionseftersläpning
 

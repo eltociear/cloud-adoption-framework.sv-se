@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 7bb9eb697beb44aa5bf4e9eec736a5be4b575eb7
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5cee6318edd04e219b33bce6b72a78c7aa21ba4f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829259"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023423"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationalisera den digitala egendomen
 
-Cloud rationalisering är en process för att utvärdera till gångar för att fastställa den bästa metoden för att vara värd för dem i molnet. När du har fastställt en [metod](approach.md) och sammanställt en [inventering](inventory.md)kan moln rationalisering börja. [Cloud rationalisering](rationalize.md) diskuterar de vanligaste rationalisering-alternativen.
+Cloud rationalisering är en process för att utvärdera till gångar för att fastställa den bästa metoden för att vara värd för dem i molnet. När du har fastställt en [metod](./approach.md) och sammanställt en [inventering](./inventory.md)kan moln rationalisering börja. [Cloud rationalisering](./rationalize.md) diskuterar de vanligaste rationalisering-alternativen.
 
 ## <a name="traditional-view-of-rationalization"></a>Traditionell vy av rationalisering
 
@@ -30,7 +30,7 @@ Det är enkelt att förstå rationalisering när du visualiserar den traditionel
 
 **Kvalitativ analys:** Nästa uppsättning beslut kräver mänsklig intelligens i form av kvalitativ analys. Ofta är frågorna som finns här unika för lösningen och kan bara besvaras av affärs intressenter och privilegierade användare. Dessa beslut är vanligt vis försenade processen och saktar ned saker avsevärt. Den här analysen förbrukar vanligt vis 40 till 80 HELTIDs timmar per program.
 
-Information om hur du skapar en lista med kvalitativa analys frågor finns i avsnittet [metoder för planering av digital auktion](approach.md).
+Information om hur du skapar en lista med kvalitativa analys frågor finns i avsnittet [metoder för planering av digital auktion](./approach.md).
 
 **Rationalisering-beslut:** I ett erfaret rationalisering-team skapar de kvalitativa och kvantitativa data tydliga beslut. Tyvärr är team som har en hög grad av rationalisering-upplevelse dyra att anställa eller ta några månader att träna.
 
@@ -60,7 +60,7 @@ I en stegvis rationalisering-process kan en agent lös lösning användas för e
 
 ### <a name="quantitative-analysis-streamline-decisions"></a>Kvantitativ analys: Effektivisera beslut
 
-Oavsett vilken metod som används för inventerings identifieringen kan kvantitativ analys driva inledande beslut och antaganden. Detta gäller särskilt när du försöker identifiera den första arbets belastningen eller när målet för rationalisering är en kostnads jämförelse på hög nivå. I en stegvis rationalisering process begränsar moln strategi teamet och moln implementerings teamen [fem RS-rationalisering](5-rs-of-rationalization.md) till två kortfattade beslut och tillämpar bara dessa kvantitativa faktorer. Detta effektiviserar analysen och minskar mängden inledande data som krävs för att ändra på enheten.
+Oavsett vilken metod som används för inventerings identifieringen kan kvantitativ analys driva inledande beslut och antaganden. Detta gäller särskilt när du försöker identifiera den första arbets belastningen eller när målet för rationalisering är en kostnads jämförelse på hög nivå. I en stegvis rationalisering process begränsar moln strategi teamet och moln implementerings teamen [fem RS-rationalisering](./5-rs-of-rationalization.md) till två kortfattade beslut och tillämpar bara dessa kvantitativa faktorer. Detta effektiviserar analysen och minskar mängden inledande data som krävs för att ändra på enheten.
 
 Om en organisation till exempel är i pågående för en IaaS-migrering till molnet kan du anta att de flesta arbets belastningar antingen dras tillbaka eller reageras.
 
@@ -116,7 +116,7 @@ Den första arbets belastningen distribueras ofta i en experimentell miljö utan
 
 ### <a name="qualitative-analysis"></a>Kvalitativ analys
 
-Moln implementerings teamen och moln strategi teamet kan samar beta för att analysera den här lilla arbets belastningen. Det här samarbetet skapar en kontrollerad möjlighet att skapa och testa kvalitativa analys villkor. Den mindre populationen skapar en möjlighet att undersöka de berörda användarna och att slutföra en detaljerad kvalitativ analys på en vecka eller mindre. Vanliga kvalitativa analys faktorer finns i det specifika rationalisering-målet i [5 RS-rationalisering](5-rs-of-rationalization.md).
+Moln implementerings teamen och moln strategi teamet kan samar beta för att analysera den här lilla arbets belastningen. Det här samarbetet skapar en kontrollerad möjlighet att skapa och testa kvalitativa analys villkor. Den mindre populationen skapar en möjlighet att undersöka de berörda användarna och att slutföra en detaljerad kvalitativ analys på en vecka eller mindre. Vanliga kvalitativa analys faktorer finns i det specifika rationalisering-målet i [5 RS-rationalisering](./5-rs-of-rationalization.md).
 
 ### <a name="migration"></a>Migrering
 
@@ -161,4 +161,4 @@ I vissa fall kan den finansiella modellen vara för nära att fatta ett beslut u
 Resultatet av en rationalisering-ansträngning är en prioriterad efter släpning av alla till gångar som påverkas av den valda omvandlingen. Den här efter släpning är nu redo att användas som grund för kostnadsbaserade modeller av moln tjänster.
 
 > [!div class="nextstepaction"]
-> [Justera kostnads modeller med den digitala fastigheten](calculate.md)
+> [Justera kostnads modeller med den digitala fastigheten](./calculate.md)

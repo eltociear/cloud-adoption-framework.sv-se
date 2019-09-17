@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0f2bf93d8659804db3bdcd41caa832310fe2f46c
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: e795074526db2b5aec88052dc15aa9fa4140a91f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905360"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025150"
 ---
 # <a name="scaling-with-multiple-azure-subscriptions"></a>Skalning med flera Azure-prenumerationer
 
@@ -39,7 +39,7 @@ Andra situationer kan kräva ytterligare prenumerationer. Tänk på följande n�
 
 - Prenumerationer har olika gränser för olika resurstyper. Till exempel är antalet virtuella nätverk i en prenumeration begränsat. När en prenumeration närmar sig någon av dess gränser måste du skapa en annan prenumeration och lägga till nya resurser där.
 
-  Läs mer i [Azure-prenumeration och tjänstbegränsningar, kvoter och begränsningar](/azure/azure-subscription-service-limits).
+  Läs mer i [Azure-prenumeration och tjänstbegränsningar, kvoter och begränsningar](https://docs.microsoft.com/azure/azure-subscription-service-limits).
 
 - Varje prenumeration kan implementera egna principer för distributions bara resurs typer och regioner som stöds.
 
@@ -59,7 +59,7 @@ Andra situationer kan kräva ytterligare prenumerationer. Tänk på följande n�
 
 Du kan också välja att skapa ytterligare prenumerationer av andra affärsrelaterade eller tekniska skäl som är specifika för din organisation. Det kan finnas ytterligare kostnader för inkommande och utgående data mellan prenumerationer.
 
-Du kan flytta många typer av resurser från en prenumeration till en annan eller använda automatiserade distributioner för att migrera resurser till en annan prenumeration. Mer information finns i [Flytta Azure-resurser till en annan resursgrupp eller prenumeration](/azure/azure-resource-manager/resource-group-move-resources).
+Du kan flytta många typer av resurser från en prenumeration till en annan eller använda automatiserade distributioner för att migrera resurser till en annan prenumeration. Mer information finns i [Flytta Azure-resurser till en annan resursgrupp eller prenumeration](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources).
 
 ## <a name="managing-multiple-subscriptions"></a>Hantera flera prenumerationer
 
@@ -76,7 +76,7 @@ Azure har fyra hanteringsnivåer: hanteringsgrupper, prenumerationer, resursgrup
 
 Genom att förlita dig på den här arvsmodellen kan du ordna prenumerationerna i hierarkin så att varje prenumeration följer lämpliga principer och säkerhetskontroller.
 
-![De fyra omfångsnivåerna för att organisera dina Azure-resurser](/azure/architecture/cloud-adoption/ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
+![De fyra omfångsnivåerna för att organisera dina Azure-resurser](../../ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
 
 Alla tilldelningar av användaråtkomst eller principtilldelning för rothanteringsgruppen gäller för alla resurser inom katalogen. Tänk efter noga vilka objekt du definierar i det här omfånget. Inkludera endast de tilldelningar som du måste ha.
 
@@ -86,26 +86,26 @@ När du flyttar en prenumeration till en befintlig hanteringsgrupp ärver den pr
 
 ![Exempel på ett hierarkiträd för hanteringsgrupp](../../_images/ready/management-group-hierarchy.png)
 
-Mer information finns i [Organisera dina resurser med hanteringsgrupper i Azure](/azure/governance/management-groups).
+Mer information finns i [Organisera dina resurser med hanteringsgrupper i Azure](https://docs.microsoft.com/azure/governance/management-groups).
 
 ## <a name="tips-for-creating-new-subscriptions"></a>Tips för att skapa nya prenumerationer
 
 - Identifiera vem som ska ansvara för att skapa nya prenumerationer.
 - Bestäm vilka resurser som ska ingå i en prenumeration som standard.
 - Bestäm hur alla standardprenumerationer ska se ut. I överväganden ingår RBAC-åtkomst, principer, taggar och infrastrukturresurser.
-- Använd om möjligt ett [huvudnamn för tjänsten](/azure/azure-resource-manager/grant-access-to-create-subscription) för att skapa nya prenumerationer. Definiera en säkerhetsgrupp som kan begära nya prenumerationer via ett automatiserat arbetsflöde.
+- Använd om möjligt ett [huvudnamn för tjänsten](https://docs.microsoft.com/azure/azure-resource-manager/grant-access-to-create-subscription) för att skapa nya prenumerationer. Definiera en säkerhetsgrupp som kan begära nya prenumerationer via ett automatiserat arbetsflöde.
 - Om du är en Enterprise-avtalskund (EA) kan du be Azure-supporten att blockera skapandet av icke-EA-prenumerationer för din organisation.
 
 ## <a name="related-resources"></a>Relaterade resurser
 
 - [Grundläggande koncept för Azure](./fundamental-concepts.md).
-- [Organisera dina resurser i Azure-hanteringsgrupper](/azure/governance/management-groups).
-- [Utöka åtkomst för att hantera alla Azure-prenumerationer och hanteringsgrupper](/azure/role-based-access-control/elevate-access-global-admin).
-- [Flytta Azure-resurser till ny resursgrupp eller prenumeration](/azure/azure-resource-manager/resource-group-move-resources).
+- [Organisera dina resurser i Azure-hanteringsgrupper](https://docs.microsoft.com/azure/governance/management-groups).
+- [Utöka åtkomst för att hantera alla Azure-prenumerationer och hanteringsgrupper](https://docs.microsoft.com/azure/role-based-access-control/elevate-access-global-admin).
+- [Flytta Azure-resurser till ny resursgrupp eller prenumeration](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources).
 
 ## <a name="next-steps"></a>Nästa steg
 
-Granska [rekommenderade namngivnings- och taggningskonventioner](./name-and-tag.md) som du följer när du distribuerar dina Azure-resurser.
+Granska [rekommenderade namngivnings- och taggningskonventioner](./naming-and-tagging.md) som du följer när du distribuerar dina Azure-resurser.
 
 > [!div class="nextstepaction"]
-> [Rekommenderade regler för namngivning och taggar](./name-and-tag.md)
+> [Rekommenderade regler för namngivning och taggar](./naming-and-tagging.md)

@@ -9,25 +9,25 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: f47bf0256e00eafe37ebf71ed2da9b64f0b07484
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d2337ea5fdcd18fc2f56c60c64a35ee878710e65
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829545"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023573"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>Program varu definitions nätverk: Nav och ekrar
 
 NAV-och eker-nätverks modellen organiserar din Azure-baserade moln nätverks infrastruktur i flera anslutna virtuella nätverk. Med den här modellen kan du effektivt hantera vanliga kommunikations-eller säkerhets krav och hantera potentiella prenumerations begränsningar.
 
-I Hubbs-och eker-modellen är _hubben_ ett virtuellt nätverk som fungerar som en central plats för att hantera externa anslutningar och värd tjänster som används av flera arbets belastningar. _Ekrarna_ är virtuella nätverk som är värdar för arbets belastningar och ansluter till den centrala hubben via [peering av virtuella nätverk](/azure/virtual-network/virtual-network-peering-overview).
+I Hubbs-och eker-modellen är _hubben_ ett virtuellt nätverk som fungerar som en central plats för att hantera externa anslutningar och värd tjänster som används av flera arbets belastningar. _Ekrarna_ är virtuella nätverk som är värdar för arbets belastningar och ansluter till den centrala hubben via [peering av virtuella nätverk](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview).
 
 All trafik som passerar in i eller ut ur arbets belastnings ekerns nätverk dirigeras via hubb nätverket där det kan dirigeras, inspekteras eller hanteras på annat sätt av centralt hanterade IT-regler eller processer.
 
 Den här modellen syftar till att åtgärda följande problem:
 
 - **Kostnads besparingar och hanterings effektivitet.** Att centralisera tjänster som kan delas av flera arbets belastningar, till exempel virtuella nätverks installationer (NVA) och DNS-servrar, på en och samma plats gör det möjligt för IT att minimera redundanta resurser och hanterings ansträngning över flera arbets belastningar.
-- **Begränsningar för prenumerationer överkommer.** Stora molnbaserade arbets belastningar kan kräva användning av fler resurser än vad som tillåts inom en enda Azure-prenumeration (se [prenumerations gränser](/azure/azure-subscription-service-limits)). Med peer-anslutning av arbetsbelastningar i virtuella nätverk från olika prenumerationer till en central hubb löser du dessa problem.
+- **Begränsningar för prenumerationer överkommer.** Stora molnbaserade arbets belastningar kan kräva användning av fler resurser än vad som tillåts inom en enda Azure-prenumeration (se [prenumerations gränser](https://docs.microsoft.com/azure/azure-subscription-service-limits)). Med peer-anslutning av arbetsbelastningar i virtuella nätverk från olika prenumerationer till en central hubb löser du dessa problem.
 - **Separering av problem.** Möjlighet att distribuera enskilda arbets belastningar mellan centrala IT-team och arbets belastnings team.
 
 I följande diagram visas ett exempel på hubb och eker-arkitektur, inklusive centralt hanterade hybrid anslutningar.
@@ -47,7 +47,7 @@ Om du implementerar en hubb och eker-arkitektur för virtuella nätverk föruts�
 
 ## <a name="global-hub-and-spoke"></a>Global hubb och eker
 
-Hubbs-och eker-arkitekturer implementeras ofta med virtuella nätverk som distribueras till samma Azure-region för att minimera svars tiden mellan nätverk. Stora organisationer med global räckvidd kan dock behöva distribuera arbets belastningar i flera regioner för tillgänglighet, haveri beredskap eller myndighets krav. NAV-och eker-modellen kan använda Azures [globala virtuella nätverk som peering](/azure/virtual-network/virtual-network-peering-overview) för att utöka centraliserad hantering och delade tjänster mellan regioner och stödja arbets belastningar som distribueras över hela världen.
+Hubbs-och eker-arkitekturer implementeras ofta med virtuella nätverk som distribueras till samma Azure-region för att minimera svars tiden mellan nätverk. Stora organisationer med global räckvidd kan dock behöva distribuera arbets belastningar i flera regioner för tillgänglighet, haveri beredskap eller myndighets krav. NAV-och eker-modellen kan använda Azures [globala virtuella nätverk som peering](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) för att utöka centraliserad hantering och delade tjänster mellan regioner och stödja arbets belastningar som distribueras över hela världen.
 
 ## <a name="learn-more"></a>Lär dig mer
 

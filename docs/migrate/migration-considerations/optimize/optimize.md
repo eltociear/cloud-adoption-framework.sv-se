@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3709b37e1604ff966d043c142e86a1dbb78ecffb
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 13a18db6a074f73b962d29f4d5963571a49869d4
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825502"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022651"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>Benchmark-testa och ändra storlek på molntillgångar
 
@@ -36,7 +36,7 @@ Använd underbyggda gissningar och experimentera med storleksförändring under 
 
 ## <a name="benchmark-and-optimize-with-azure-cost-management"></a>Benchmark-testa och optimera med Azure Cost Management
 
-[Azure Cost Management](/azure/cost-management/overview) som licensierats av Cloudyn, ett dotterbolag till Microsoft, hanterar utgifter för molnet på ett transparent och korrekt sätt. Denna tjänst övervakar, benchmark-testar, tilldelar och optimerar molnkostnader.
+[Azure Cost Management](https://docs.microsoft.com/azure/cost-management/overview) som licensierats av Cloudyn, ett dotterbolag till Microsoft, hanterar utgifter för molnet på ett transparent och korrekt sätt. Denna tjänst övervakar, benchmark-testar, tilldelar och optimerar molnkostnader.
 
 Historiska data hjälper dig hantera kostnader genom att analysera användning och kostnader över tid för att identifiera trender som sedan används för att skapa prognoser för framtida utgifter. Cost Management innehåller även användbara rapporter för kostnadsprognoser. Kostnadsallokering hanterar kostnader genom att analysera kostnaderna baserat på taggningsprinciper. Använd kostnadsallokering för kostnadsrapporter/återbetalning för att visa resursanvändning och kopplade kostnader för att påverka förbrukningsbeteenden eller debitera klientkunder. Åtkomstkontroll hjälper till att hantera kostnader genom att se till att användare och team endast har åtkomst till de kostnadshanteringsdata som de behöver. Aviseringar kan hjälpa till att hantera kostnader genom automatiska meddelanden vid ovanliga utgifter eller för höga utgifter. Aviseringar kan även meddela andra intressenter automatiskt vid avvikelser i utgifter och risk för höga utgifter. Olika rapporter har stöd för aviseringar baserat på budget- och kostnadströsklar.
 

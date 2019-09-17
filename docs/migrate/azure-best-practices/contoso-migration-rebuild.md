@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d98d24e6b2645adf03a94a41b0391b89d5eb2852
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: cbe5de4242baedfa704bd90baa7fa3ca0f0aa026
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70821173"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025136"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Bygga om en lokal app i Azure
 
@@ -109,7 +109,7 @@ Det här är vad Contoso behöver i det här scenariot:
 **Krav** | **Detaljer**
 --- | ---
 **Azure-prenumeration** | Contoso skapade prenumerationer i en tidigare artikel. Om du inte har någon Azure-prenumeration kan du skapa ett [kostnadsfritt konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Om du skapar ett kostnadsfritt konto är du administratör för din prenumeration och kan utföra alla åtgärder.<br/><br/> Om du använder en befintlig prenumeration och inte är administratör måste du be administratören att ge dig ägar- eller deltagarbehörighet.
-**Azure-infrastruktur** | [Läs om](contoso-migration-infrastructure.md) hur Contoso konfigurerar en Azure-infrastruktur.
+**Azure-infrastruktur** | [Läs om](./contoso-migration-infrastructure.md) hur Contoso konfigurerar en Azure-infrastruktur.
 **Krav för utvecklare** | Contoso behöver följande verktyg på en arbetsstation för utvecklare:<br/><br/> - [Visual Studio 2017 Community Edition: Version 15.5](https://www.visualstudio.com)<br/><br/> .NET-arbetsbelastning aktiverad.<br/><br/> [Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> [Docker CE (Windows 10) eller Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) konfigurerat att använda Windows-containrar.
 
 <!-- markdownlint-enable MD033 -->
@@ -150,7 +150,7 @@ Contosos administratörer etablerar enligt följande:
     ![AKS](./media/contoso-migration-rebuild/aks2.png)
 4. De väljer **Visa** > **Integrerad terminal** för att öppna den integrerade terminalen i Visual Studio Code.
     ![AKS](./media/contoso-migration-rebuild/aks3.png)
-5. I den PowerShell-integrerade terminalen loggar de in i Azure med kommandot Connect-AzureRmAccount. [Lär dig mer](/powershell/azure/get-started-azureps) om hur du kommer igång med PowerShell.
+5. I den PowerShell-integrerade terminalen loggar de in i Azure med kommandot Connect-AzureRmAccount. [Lär dig mer](https://docs.microsoft.com/powershell/azure/get-started-azureps) om hur du kommer igång med PowerShell.
     ![AKS](./media/contoso-migration-rebuild/aks4.png)
 6. De autentiserar Azure CLI genom att först köra kommandot **az login** och sedan följa instruktionerna för att autentisera med hjälp av webbläsaren. [Lär dig mer](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) om hur du loggar in med Azure CLI.
     ![AKS](./media/contoso-migration-rebuild/aks5.png)
@@ -585,22 +585,22 @@ Med de migrerade resurserna i Azure måste Contoso fullständigt operationaliser
 
 ### <a name="security"></a>Säkerhet
 
-- Contoso måste se till att de nya databaserna är säkra. [Läs mer](/azure/sql-database/sql-database-security-overview).
+- Contoso måste se till att de nya databaserna är säkra. [Läs mer](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview).
 - Appen måste uppdateras för att kunna använda SSL med certifikat. Containerinstansen bör omdistribueras för att svara på 443.
-- Contoso bör överväga att använda Key Vault för att skydda hemligheter för deras Service Fabric-appar. [Läs mer](/azure/service-fabric/service-fabric-application-secret-management).
+- Contoso bör överväga att använda Key Vault för att skydda hemligheter för deras Service Fabric-appar. [Läs mer](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-secret-management).
 
 ### <a name="backups-and-disaster-recovery"></a>Säkerhetskopiering och haveriberedskap
 
-- Contoso måste granska kraven för säkerhetskopiering för Azure SQL-databasen. [Läs mer](/azure/sql-database/sql-database-automated-backups).
-- Contoso bör överväga att implementera SQL-redundansgrupper för att tillhandahålla regional redundans för databasen. [Läs mer](/azure/sql-database/sql-database-geo-replication-overview).
-- Contoso kan använda geo-replikering för ACR Premium SKU. [Läs mer](/azure/container-registry/container-registry-geo-replication).
-- Cosmos DB säkerhetskopieras automatiskt. Contoso kan [lära sig mer](/azure/cosmos-db/online-backup-and-restore) om den här processen.
+- Contoso måste granska kraven för säkerhetskopiering för Azure SQL-databasen. [Läs mer](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups).
+- Contoso bör överväga att implementera SQL-redundansgrupper för att tillhandahålla regional redundans för databasen. [Läs mer](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview).
+- Contoso kan använda geo-replikering för ACR Premium SKU. [Läs mer](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication).
+- Cosmos DB säkerhetskopieras automatiskt. Contoso kan [lära sig mer](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore) om den här processen.
 
 ### <a name="licensing-and-cost-optimization"></a>Licensierings- och kostnadsoptimering
 
-- När alla resurser har distribuerats bör Contoso tilldela Azure-taggar baserat på deras [infrastrukturplanering](contoso-migration-infrastructure.md#set-up-tagging).
+- När alla resurser har distribuerats bör Contoso tilldela Azure-taggar baserat på deras [infrastrukturplanering](./contoso-migration-infrastructure.md#set-up-tagging).
 - All licensiering är inbyggd i kostnaden för de PaaS-tjänster som Contoso använder. Detta kommer att dras av från Enterprise-avtalet.
-- Contoso aktiverar Azure Cost Management som licensieras av Cloudyn, ett Microsoft-dotterbolag. Det är en kostnadshanteringslösning med flera moln som hjälper dig att använda och hantera Azure och andra molnresurser. [Läs mer](/azure/cost-management/overview) om Azure Cost Management.
+- Contoso aktiverar Azure Cost Management som licensieras av Cloudyn, ett Microsoft-dotterbolag. Det är en kostnadshanteringslösning med flera moln som hjälper dig att använda och hantera Azure och andra molnresurser. [Läs mer](https://docs.microsoft.com/azure/cost-management/overview) om Azure Cost Management.
 
 ## <a name="conclusion"></a>Sammanfattning
 

@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2d5444b340dbb0252f3aaf70b9cfca88126234e4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3936307ec1062d36e890b65d8687ad0acbb5b129
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819158"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025120"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>Färdighetsberedskapsvägen under fasen Klar under en migreringsresa
 
@@ -24,7 +24,7 @@ Under fasen Klar av en migreringsresa är målet att förbereda sig för den kom
 Beroende på motivation och affärsresultat som associeras med en övergång till molnet kan ledare behövs för att etablera nya organisationsstrukturer eller virtuella team (V-team) för att underlätta olika funktioner. Följande artiklar hjälper dig att utveckla nödvändiga färdigheter för att strukturera dessa team i enlighet med önskade resultat:
 
 - [Inledande organisatorisk anpassning](./index.md): Översikt över organisationsanpassning och olika teamstrukturer som främjar specifika mål.
-- [Bryt ned silor och domäner](../organization/fiefdoms-silos.md): Förstå två vanliga organisatoriska antimönster och sätt att hjälpa teamet att samarbeta på ett produktivt sätt.
+- [Bryt ned silor och domäner](../organize/fiefdoms-silos.md): Förstå två vanliga organisatoriska antimönster och sätt att hjälpa teamet att samarbeta på ett produktivt sätt.
 
 ## <a name="environmental-technical-readiness-learning-paths"></a>Utbildningsvägar för teknisk beredskap
 

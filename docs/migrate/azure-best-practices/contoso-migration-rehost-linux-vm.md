@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: e0f83c51d3b335d4a4385fd39351d6ab6fa3a78d
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: a2186172248dcaf3006fc7fe0d55fa8174910c6a
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906399"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024995"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>Byta värd för en lokal Linux-app till virtuella Azure-datorer
 
@@ -69,8 +69,8 @@ Contoso utvärderar den föreslagna designen genom att skapa en lista med för- 
 
 **Övervägande** | **Detaljer**
 --- | ---
-**Fördelar** | Båda appens virtuella datorer flyttas till Azure utan ändringar, vilket gör migreringen enkel.<br/><br/> Eftersom Contoso använder ”lift and shift” för båda appens virtuella datorer, behövs ingen speciell konfiguration eller speciella migreringsverktyg för appdatabasen.<br/><br/> Contoso har fortfarande full kontroll över appens virtuella datorer i Azure. <br/><br/> Appens virtuella datorer kör Ubuntu 16.04-TLS, som är en godkänd Linux-distribution. [Läs mer](/azure/virtual-machines/linux/endorsed-distros).
-**Nackdelar** | Appens webb- och datanivå förblir en enskild felpunkt. <br/><br/> Contoso måste fortsätta att hantera appen som virtuella Azure-datorer i stället för att flytta till en hanterad tjänst, till exempel Azure App Service och Azure Database for MySQL.<br/><br/> Contoso vet att det är enkelt att göra en ”lift and shift”-migrering av virtuella datorer, men att de i så fall inte utnyttjar funktionerna i [Azure Database for MySQL](/azure/mysql/overview) fullt ut (inbyggd hög tillgänglighet, förutsägbara prestanda, enkel skalning, automatisk säkerhetskopiering och inbyggd säkerhet).
+**Fördelar** | Båda appens virtuella datorer flyttas till Azure utan ändringar, vilket gör migreringen enkel.<br/><br/> Eftersom Contoso använder ”lift and shift” för båda appens virtuella datorer, behövs ingen speciell konfiguration eller speciella migreringsverktyg för appdatabasen.<br/><br/> Contoso har fortfarande full kontroll över appens virtuella datorer i Azure. <br/><br/> Appens virtuella datorer kör Ubuntu 16.04-TLS, som är en godkänd Linux-distribution. [Läs mer](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros).
+**Nackdelar** | Appens webb- och datanivå förblir en enskild felpunkt. <br/><br/> Contoso måste fortsätta att hantera appen som virtuella Azure-datorer i stället för att flytta till en hanterad tjänst, till exempel Azure App Service och Azure Database for MySQL.<br/><br/> Contoso vet att det är enkelt att göra en ”lift and shift”-migrering av virtuella datorer, men att de i så fall inte utnyttjar funktionerna i [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) fullt ut (inbyggd hög tillgänglighet, förutsägbara prestanda, enkel skalning, automatisk säkerhetskopiering och inbyggd säkerhet).
 
 <!-- markdownlint-enable MD033 -->
 
@@ -79,16 +79,17 @@ Contoso utvärderar den föreslagna designen genom att skapa en lista med för- 
 Contoso migrerar på följande sätt:
 
 - Som ett första steg förbereder och konfigurerar Contoso Azure-komponenter för Azure Migrate-servermigreringen och den lokala VMware-infrastrukturen.
-- Contoso har redan [Azure-infrastrukturen](contoso-migration-infrastructure.md), så de behöver bara lägga till och konfigurera replikeringen av de virtuella datorerna med verktyget för Azure Migrate-servermigrering. 
+- Contoso har redan [Azure-infrastrukturen](./contoso-migration-infrastructure.md), så de behöver bara lägga till och konfigurera replikeringen av de virtuella datorerna med verktyget för Azure Migrate-servermigrering. 
 - När allt är förberett kan Contoso börja replikera de virtuella datorerna.
 - När replikeringen har aktiverats och fungerar migrerar Contoso den virtuella datorn genom att redundansväxla till Azure.
 
-![Migreringsprocessen](./media/contoso-migration-rehost-linux-vm/migraton-process-az-migrate.png)
+![Migreringsprocessen](./media/contoso-migration-rehost-linux-vm/migration-process-az-migrate.png)
+
 ### <a name="azure-services"></a>Azure-tjänster
 
 **Tjänst** | **Beskrivning** | **Kostnad**
 --- | --- | ---
-[Azure Migrate-servermigrering](/azure/migrate/contoso-migration-rehost-linux-vm) | Tjänsten samordnar och styr migreringen av dina lokala appar och arbetsbelastningar, samt virtuella AWS/GCP-datorinstanser. | Under replikeringen till Azure debiteras Azure Storage-avgifter. Virtuella Azure-datorer skapas och medför kostnader i samband med en redundansväxling. [Läs mer](https://azure.microsoft.com/pricing/details/azure-migrate/) om avgifter och priser.
+[Azure Migrate-servermigrering](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm) | Tjänsten samordnar och styr migreringen av dina lokala appar och arbetsbelastningar, samt virtuella AWS/GCP-datorinstanser. | Under replikeringen till Azure debiteras Azure Storage-avgifter. Virtuella Azure-datorer skapas och medför kostnader i samband med en redundansväxling. [Läs mer](https://azure.microsoft.com/pricing/details/azure-migrate/) om avgifter och priser.
 
 
 ## <a name="prerequisites"></a>Förutsättningar
@@ -99,10 +100,10 @@ Det här är vad Contoso behöver i det här scenariot.
 
 **Krav** | **Detaljer**
 --- | ---
-**Azure-prenumeration** | Contoso skapade prenumerationer i en tidigare artikel i den här serien. Om du inte har någon Azure-prenumeration kan du skapa ett [kostnadsfritt konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Om du skapar ett kostnadsfritt konto är du administratör för din prenumeration och kan utföra alla åtgärder.<br/><br/> Om du använder en befintlig prenumeration och inte är administratör måste du be administratören att ge dig ägar- eller deltagarbehörighet.<br/><br/> Om du behöver mer detaljerade behörigheter läser du [den här artikeln](/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Azure-infrastruktur** |  [Läs om](contoso-migration-infrastructure.md) hur Contoso konfigurerade en Azure-infrastruktur.<br/><br/> Läs mer om specifika [krav](/azure/migrate/contoso-migration-rehost-linux-vm#prerequisites) för Azure Migrate-servermigrering.
+**Azure-prenumeration** | Contoso skapade prenumerationer i en tidigare artikel i den här serien. Om du inte har någon Azure-prenumeration kan du skapa ett [kostnadsfritt konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Om du skapar ett kostnadsfritt konto är du administratör för din prenumeration och kan utföra alla åtgärder.<br/><br/> Om du använder en befintlig prenumeration och inte är administratör måste du be administratören att ge dig ägar- eller deltagarbehörighet.<br/><br/> Om du behöver mer detaljerade behörigheter läser du [den här artikeln](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
+**Azure-infrastruktur** |  [Läs om](./contoso-migration-infrastructure.md) hur Contoso konfigurerade en Azure-infrastruktur.<br/><br/> Läs mer om specifika [krav](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prerequisites) för Azure Migrate-servermigrering.
 **Lokala servrar** | Den lokala vCenter-servern bör köra version 5.5, 6.0 eller 6.5<br/><br/> En ESXi-värd som kör version 5.5, 6.0 eller 6.5<br/><br/> En eller flera virtuella VMware-datorer som körs på ESXi-värden.
-**Lokala virtuella datorer** | [Granska Linux-datorer](/azure/virtual-machines/linux/endorsed-distros) som ska köras i Azure.
+**Lokala virtuella datorer** | [Granska Linux-datorer](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros) som ska köras i Azure.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -126,7 +127,7 @@ Här är de Azure-komponenter som Contoso behöver för att migrera de virtuella
 
 De konfigureras så här:
 
-1. Konfigurera ett nätverk – Contoso konfigurerade ett nätverk som de kan använda till Azure Migrate-servermigreringen när de [distribuerade Azure-infrastrukturen](contoso-migration-infrastructure.md)
+1. Konfigurera ett nätverk – Contoso konfigurerade ett nätverk som de kan använda till Azure Migrate-servermigreringen när de [distribuerade Azure-infrastrukturen](./contoso-migration-infrastructure.md)
 
     - SmartHotel360-appen är en produktionsapp och de virtuella datorerna migreras till Azure-produktionsnätverket (VNET-PROD-EUS2) i den primära regionen USA, östra 2.
     - Båda de virtuella datorerna placeras i resursgruppen ContosoRG, som används för produktionsresurser.
@@ -140,7 +141,7 @@ De konfigureras så här:
 
 **Behöver du mer hjälp?**
 
-[Läs om att](/azure/migrate/) konfigurera Azure Migrate-servermigreringsverktyget. 
+[Läs om att](https://docs.microsoft.com/azure/migrate/) konfigurera Azure Migrate-servermigreringsverktyget. 
 
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>Förbereda för att ansluta till virtuella Azure-datorer efter en redundansväxling
@@ -153,7 +154,7 @@ Efter redundansväxlingen till Azure vill Contoso kunna ansluta till de repliker
 
 **Behöver du mer hjälp?**
 
-- [Läs om](/azure/migrate/contoso-migration-rehost-linux-vm#prepare-vms-for-migration) att förbereda virtuella datorer för migrering
+- [Läs om](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prepare-vms-for-migration) att förbereda virtuella datorer för migrering
 
 ## <a name="step-3-replicate-the-on-premises-vms"></a>Steg 3: Replikera lokala virtuella datorer
 
@@ -277,8 +278,8 @@ Som sista steg i migreringsprocessen uppdaterar Contosos administratörer progra
 
 **Behöver du mer hjälp?**
 
-- [Lär dig](/azure/migrate/tutorial-migrate-vmware#run-a-test-migration) hur du kör ett redundanstest.
-- [Läs mer](/azure/migrate/tutorial-migrate-vmware#migrate-vms) om migrering av virtuella datorer till Azure. 
+- [Lär dig](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration) hur du kör ett redundanstest.
+- [Läs mer](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms) om migrering av virtuella datorer till Azure. 
 
 ## <a name="clean-up-after-migration"></a>Rensa efter migreringen
 
@@ -303,17 +304,17 @@ Contosos säkerhetsteam granskar de virtuella datorerna OSTICKETWEB och OSTICKET
 - Teamet granskar nätverkssäkerhetsgrupperna (NSG:er) för de virtuella datorerna för åtkomstkontroll. Nätverkssäkerhetsgrupper används för att säkerställa att endast trafik som tillåts för programmet kan passera.
 - Teamet överväger också att skydda data på de virtuella datordiskarna med diskkryptering och Azure Key Vault.
 
-[Läs mer](/azure/security/azure-security-best-practices-vms) om säkerhetsrutiner för virtuella datorer.
+[Läs mer](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) om säkerhetsrutiner för virtuella datorer.
 
 ### <a name="bcdr"></a>BCDR
 
 För affärskontinuitet och haveriberedskap vidtar Contoso följande åtgärder:
 
-- **Skydda data.** Contoso säkerhetskopierar data på de virtuella datorerna med hjälp av tjänsten Azure Backup. [Läs mer](/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
-- **Undvik avbrott i apparna.** Contoso replikerar de virtuella datorerna för appen i Azure till en sekundär region med hjälp av Site Recovery. [Läs mer](/azure/site-recovery/azure-to-azure-quickstart).
+- **Skydda data.** Contoso säkerhetskopierar data på de virtuella datorerna med hjälp av tjänsten Azure Backup. [Läs mer](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
+- **Undvik avbrott i apparna.** Contoso replikerar de virtuella datorerna för appen i Azure till en sekundär region med hjälp av Site Recovery. [Läs mer](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 
 ### <a name="licensing-and-cost-optimization"></a>Licensierings- och kostnadsoptimering
 
-- När de har distribuerat resurser tilldelar Contoso Azure-taggar på det sätt som definierades när [Azure-infrastrukturen distribuerades](contoso-migration-infrastructure.md#set-up-tagging).
+- När de har distribuerat resurser tilldelar Contoso Azure-taggar på det sätt som definierades när [Azure-infrastrukturen distribuerades](./contoso-migration-infrastructure.md#set-up-tagging).
 - Contoso har inga licensproblem med Ubuntu-servrarna.
-- Contoso aktiverar Azure Cost Management som licensieras av Cloudyn, ett Microsoft-dotterbolag. Det är en kostnadshanteringslösning med flera moln som hjälper dig att använda och hantera Azure och andra molnresurser. [Läs mer](/azure/cost-management/overview) om Azure Cost Management.
+- Contoso aktiverar Azure Cost Management som licensieras av Cloudyn, ett Microsoft-dotterbolag. Det är en kostnadshanteringslösning med flera moln som hjälper dig att använda och hantera Azure och andra molnresurser. [Läs mer](https://docs.microsoft.com/azure/cost-management/overview) om Azure Cost Management.

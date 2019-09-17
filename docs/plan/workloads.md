@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: d77a17af60c8ed4540b2c40ddf8d75a4e4f6f306
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e7582df81e305ab602c8172b5e93531eb8112432
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833744"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022273"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Prioritera och definiera arbets belastningar för en moln implementerings plan
 
@@ -44,7 +44,7 @@ Om du bestämmer att en digital egendom rationalisering inte behövs, rekommende
 
 I föregående artikel, [Cloud adoption plan och Azure DevOps](./template.md)skapade du en moln implementerings plan i Azure DevOps.
 
-Du kan nu representera arbets belastningarna i den kraftfulla 10-listan i din moln implementerings plan. Det enklaste sättet att göra detta är via Mass redigering i Microsoft Excel. Om du vill förbereda din arbets station för Mass redigering, se [Mass Lägg till eller ändra arbets objekt med Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
+Du kan nu representera arbets belastningarna i den kraftfulla 10-listan i din moln implementerings plan. Det enklaste sättet att göra detta är via Mass redigering i Microsoft Excel. Om du vill förbereda din arbets station för Mass redigering, se [Mass Lägg till eller ändra arbets objekt med Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
 
 Steg 5 i artikeln visar att du kan väljaindatalistor. Välj i stället **fråge lista**. Välj sedan frågan **arbets belastnings mal len** i list rutan **Välj en fråga** . Den frågan läser in alla ansträngningar som rör migreringen av en enskild arbets belastning i kalkyl bladet.
 

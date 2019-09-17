@@ -8,12 +8,12 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 494bb830337540c79554905ef4e2e6f2c9c9ccd1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e504d4032fc019af43ec7cb1e8513504196559a2
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70820406"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024216"
 ---
 # <a name="refactor-a-linux-app-to-multiple-regions-using-azure-app-service-traffic-manager-and-azure-database-for-mysql"></a>Omstrukturera en Linux-app till flera regioner med Azure App Service, Traffic Manager och Azure Database for MySQL
 
@@ -87,7 +87,7 @@ Så här genomför Contoso migreringen:
 --- | --- | ---
 [Azure App Service](https://azure.microsoft.com/services/app-service) | Tjänsten kör och skalanpassar program med Azure PaaS-tjänsten för webbplatser. | Prissättningen baseras på instansernas storlek och de funktioner som krävs. [Läs mer](https://azure.microsoft.com/pricing/details/app-service/windows).
 [Traffic Manager](https://azure.microsoft.com/services/traffic-manager) | En belastningsutjämnare som använder DNS för att dirigera användare till Azure eller externa webbplatser och tjänster. | Priset baseras på antalet mottagna DNS-frågor och antalet övervakade slutpunkter. | [Läs mer](https://azure.microsoft.com/pricing/details/traffic-manager).
-[Azure Database for MySQL](/azure/mysql) | Databasen baseras på MySQL-servermotorn med öppen källkod. Den innehåller en fullständigt hanterad, företagsklar community-version av en MySQL-databas som en apputvecklings- och appdistributionstjänst. | Priset baseras på kraven på processorstyrka, lagring och säkerhetskopiering. [Läs mer](https://azure.microsoft.com/pricing/details/mysql).
+[Azure Database for MySQL](https://docs.microsoft.com/azure/mysql) | Databasen baseras på MySQL-servermotorn med öppen källkod. Den innehåller en fullständigt hanterad, företagsklar community-version av en MySQL-databas som en apputvecklings- och appdistributionstjänst. | Priset baseras på kraven på processorstyrka, lagring och säkerhetskopiering. [Läs mer](https://azure.microsoft.com/pricing/details/mysql).
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -98,7 +98,7 @@ Det här behöver Contoso för att köra detta scenario.
 **Krav** | **Detaljer**
 --- | ---
 **Azure-prenumeration** | Contoso skapade prenumerationer i en tidigare i den här artikelserien. Om du inte har någon Azure-prenumeration kan du skapa ett [kostnadsfritt konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Om du skapar ett kostnadsfritt konto är du administratör för din prenumeration och kan utföra alla åtgärder.<br/><br/> Om du använder en befintlig prenumeration och inte är administratör måste du be administratören att ge dig ägar- eller deltagarbehörighet.
-**Azure-infrastruktur** | Contoso konfigurerar Azure-infrastrukturen enligt beskrivningen i [Azure-infrastrukturen för migrering.](contoso-migration-infrastructure.md)
+**Azure-infrastruktur** | Contoso konfigurerar Azure-infrastrukturen enligt beskrivningen i [Azure-infrastrukturen för migrering.](./contoso-migration-infrastructure.md)
 
 <!-- markdownlint-enable MD033 -->
 
@@ -138,8 +138,8 @@ Contosos administratörer etablerar två webbappar (en i varje region) med hjäl
 
 **Behöver du mer hjälp?**
 
-- Lär mer om [webappar med Azure App Service](/azure/app-service/overview).
-- Läs om [Azure App Service](/azure/app-service/containers/app-service-linux-intro) i Linux.
+- Lär mer om [webappar med Azure App Service](https://docs.microsoft.com/azure/app-service/overview).
+- Läs om [Azure App Service](https://docs.microsoft.com/azure/app-service/containers/app-service-linux-intro) i Linux.
 
 ## <a name="step-2-set-up-traffic-manager"></a>Steg 2: Konfigurera Traffic Manager
 
@@ -159,8 +159,8 @@ Contosos administratörer konfigurerar Traffic Manager för att dirigera inkomma
 
 **Behöver du mer hjälp?**
 
-- Läs mer om [Traffic Manager](/azure/traffic-manager/traffic-manager-overview).
-- Läs mer om att [dirigera trafik till en prioriterad slutpunkt](/azure/traffic-manager/traffic-manager-configure-priority-routing-method).
+- Läs mer om [Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).
+- Läs mer om att [dirigera trafik till en prioriterad slutpunkt](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-configure-priority-routing-method).
 
 ## <a name="step-3-provision-azure-database-for-mysql"></a>Steg 3: Etablera Azure Database for MySQL
 
@@ -284,7 +284,7 @@ Som det sista steget i migreringsprocessen konfigurerar Contosos administratöre
     ![Konfigurera app](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app4.png)
 
 5. De upprepar stegen ovan för den sekundära webbappen (**osTicket-CUS**).
-6. När platsen har konfigurerats är den tillgänglig via Traffic Manager profilen. DNS-namnet är den nya platsen för osTicket-appen. [Läs mer](/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record).
+6. När platsen har konfigurerats är den tillgänglig via Traffic Manager profilen. DNS-namnet är den nya platsen för osTicket-appen. [Läs mer](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record).
 
     ![Konfigurera app](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app5.png)
 
@@ -327,14 +327,14 @@ Nu när appen körs måste Contoso operationalisera och säkra den nya infrastru
 
 ### <a name="security"></a>Säkerhet
 
-Contosos säkerhetsteam granskar appen för att fastställa eventuella säkerhetsproblem. De identifierade att kommunikationen mellan osTicket-appen och MySQL-databasinstansen inte har konfigurerats för SSL. De måste göra detta för att säkerställa att databastrafiken inte kan hackas. [Läs mer](/azure/mysql/howto-configure-ssl).
+Contosos säkerhetsteam granskar appen för att fastställa eventuella säkerhetsproblem. De identifierade att kommunikationen mellan osTicket-appen och MySQL-databasinstansen inte har konfigurerats för SSL. De måste göra detta för att säkerställa att databastrafiken inte kan hackas. [Läs mer](https://docs.microsoft.com/azure/mysql/howto-configure-ssl).
 
 ### <a name="backups"></a>Säkerhetskopior
 
 - OsTicket-webbappar innehåller inte tillståndsdata och behöver därför inte säkerhetskopieras.
-- De behöver inte konfigurera säkerhetskopiering för databasen. Azure Database for MySQL skapar och lagrar automatiskt serversäkerhetskopior. De valde att använda geo-redundans för databasen, så den är elastisk och produktionsklar. Säkerhetskopieringar kan användas för att återställa servern till en vald tidpunkt. [Läs mer](/azure/mysql/concepts-backup).
+- De behöver inte konfigurera säkerhetskopiering för databasen. Azure Database for MySQL skapar och lagrar automatiskt serversäkerhetskopior. De valde att använda geo-redundans för databasen, så den är elastisk och produktionsklar. Säkerhetskopieringar kan användas för att återställa servern till en vald tidpunkt. [Läs mer](https://docs.microsoft.com/azure/mysql/concepts-backup).
 
 ### <a name="licensing-and-cost-optimization"></a>Licensierings- och kostnadsoptimering
 
 - Det finns inga licensproblem för PaaS-distributionen.
-- Contoso aktiverar Azure Cost Management som licensieras av Cloudyn, ett Microsoft-dotterbolag. Det är en kostnadshanteringslösning med flera moln som hjälper dig att använda och hantera Azure och andra molnresurser. [Läs mer](/azure/cost-management/overview) om Azure Cost Management.
+- Contoso aktiverar Azure Cost Management som licensieras av Cloudyn, ett Microsoft-dotterbolag. Det är en kostnadshanteringslösning med flera moln som hjälper dig att använda och hantera Azure och andra molnresurser. [Läs mer](https://docs.microsoft.com/azure/cost-management/overview) om Azure Cost Management.

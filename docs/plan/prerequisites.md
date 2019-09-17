@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 19265b154a239fb4a01d8b4f468eab7e5e4f04cd
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e670391bd475445b195e73f996fe999d32953232
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70828687"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022325"
 ---
 # <a name="prerequisites-checklist-for-an-effective-cloud-adoption-plan"></a>Krav kontroll lista för en effektiv moln införande plan
 
@@ -21,7 +21,7 @@ En plan är bara lika effektiv som de data som ingår i den. För att en moln im
 
 ## <a name="strategic-inputs"></a>Strategiska indata
 
-Korrekta strategiska inmatningar säkerställer att det arbete som utförs bidrar till uppnående av affärs resultat. [Strategi avsnittet i moln implementerings ramverket](../business-strategy/index.md) innehåller en serie övningar för att utveckla en tydlig strategi. Utdata från de här övningarna matar in moln implementerings planen. Innan du utvecklar planen bör du se till att följande objekt är väl definierade som ett resultat av dessa övningar:
+Korrekta strategiska inmatningar säkerställer att det arbete som utförs bidrar till uppnående av affärs resultat. [Strategi avsnittet i moln implementerings ramverket](../strategy/index.md) innehåller en serie övningar för att utveckla en tydlig strategi. Utdata från de här övningarna matar in moln implementerings planen. Innan du utvecklar planen bör du se till att följande objekt är väl definierade som ett resultat av dessa övningar:
 
 - **Tydliga motivation**: Varför antar vi molnet?
 - **Definierade affärs resultat**: Vilka resultat förväntar vi oss på att införa molnet?

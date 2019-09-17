@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5a5becd757d1bca3f10b30297f4c502b49a659c4
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 6c1ac4000f5b79d6b177e8703f5e58b6dd9c9e56
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905603"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022739"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategi för styrning eller efterlevnad
 
@@ -27,11 +27,11 @@ Obligatoriska åtgärder påverkas mest när styrning eller efterlevnad krävs. 
 
 Konfigurationen av den grundläggande Azure-miljön kan ändras avsevärt vid integrering av styrnings- och efterlevnadskrav. För att förstå hur dessa förutsättningar ändras är det viktigt att förstå kravens beskaffenhet. Innan du påbörjar en migrering som kräver styrning eller efterlevnad bör du välja och implementera en metod i molnmiljön. De följande är ett avancerade metoder som ofta används vid migrering:
 
-**Gemensam styrningsmetod:** För de flesta organisationer är [styrningsmodellen molnimplementeringsramverk](../../governance/journeys/index.md) en tillräcklig metod som består av en implementering av en minsta användbar produkt (MVP), följt av riktade iterationer av styrningsmognad för att hantera konkreta risker som har identifierats i övergångsplanen. Den här metoder har minsta nödvändiga verktyg för att etablera en konsekvent styrning så att teamet kan förstå verktygen. Därefter utvecklas verktygen för att bemöta vanliga styrningsproblem.
+**Gemensam styrningsmetod:** För de flesta organisationer är [styrningsmodellen molnimplementeringsramverk](../../govern/guides/index.md) en tillräcklig metod som består av en implementering av en minsta användbar produkt (MVP), följt av riktade iterationer av styrningsmognad för att hantera konkreta risker som har identifierats i övergångsplanen. Den här metoder har minsta nödvändiga verktyg för att etablera en konsekvent styrning så att teamet kan förstå verktygen. Därefter utvecklas verktygen för att bemöta vanliga styrningsproblem.
 
-**ISO 27001-efterlevnadsskiss:** För kunder som måste följa ISO-standarder kan [exempelskissen för ISO 27001 delade tjänster](/azure/governance/blueprints/samples/iso27001-shared/index) fungera som en effektivare MVP för att ge bättre styrningsbegränsningar tidigare i den iterativa processen. [Exemplet ISO 27001 App Service Environment/SQL Database](/azure/governance/blueprints/samples/iso27001-ase-sql-workload) utvecklar skissen och kartlägger kontroller samt distribuerar en gemensam arkitektur för en programmiljö. Efter hand som ytterligare skisser publiceras kommer de att visas här också.
+**ISO 27001-efterlevnadsskiss:** För kunder som måste följa ISO-standarder kan [exempelskissen för ISO 27001 delade tjänster](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared/index) fungera som en effektivare MVP för att ge bättre styrningsbegränsningar tidigare i den iterativa processen. [Exemplet ISO 27001 App Service Environment/SQL Database](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload) utvecklar skissen och kartlägger kontroller samt distribuerar en gemensam arkitektur för en programmiljö. Efter hand som ytterligare skisser publiceras kommer de att visas här också.
 
-**Virtuellt datacenter:** En mer stabil startpunkt för styrningen kan krävas. I sådant fall bör du överväga [Azure Virtual Datacenter (VDC)](https://docs.microsoft.com/azure/architecture/vdc). Den här metoden rekommenderas ofta för implementeringar i företagsskala, särskilt för implementeringar som överstiger 10 000 tillgångar. Det är också det naturliga valet i komplexa styrningsscenarier när något av följande krävs: omfattande krav på efterlevnad med tredje part, djupgående domänexpertis eller paritet med mogna IT-styrningsprinciper och efterlevnadskrav.
+**Virtuellt datacenter:** En mer stabil startpunkt för styrningen kan krävas. I sådant fall bör du överväga [Azure Virtual Datacenter (VDC)](../../reference/vdc.md). Den här metoden rekommenderas ofta för implementeringar i företagsskala, särskilt för implementeringar som överstiger 10 000 tillgångar. Det är också det naturliga valet i komplexa styrningsscenarier när något av följande krävs: omfattande krav på efterlevnad med tredje part, djupgående domänexpertis eller paritet med mogna IT-styrningsprinciper och efterlevnadskrav.
 
 ### <a name="partnership-option-to-complete-prerequisites"></a>Partnerskapsalternativ för att uppfylla förhandskrav
 
@@ -49,19 +49,19 @@ Under utvärderingen krävs ytterligare beslut för att anpassa lösningen till 
 
 Kraven på styrning och bedömning av efterlevnad är för kundspecifika för att kunna ge allmänna riktlinjer för utvärderingsstegen. Det rekommenderas dock att processen omfattar uppgifter och tidstilldelningar för "justeringar i förhållande till efterlevnads-/styrningskrav”. För att förstå dessa krav bättre kan du följa följande länkar:
 
-För en djupare förståelse för styrningen, se [översikten Fem discipliner för molnstyrning](/azure/architecture/cloud-adoption/governance/governance-disciplines). Det här avsnittet av Ramverk för molnimplementering innehåller även mallar för att dokumentera principerna, vägledningen och kraven för var och en av de fem avsnitten:
+För en djupare förståelse för styrningen, se [översikten Fem discipliner för molnstyrning](../../govern/governance-disciplines.md). Det här avsnittet av Ramverk för molnimplementering innehåller även mallar för att dokumentera principerna, vägledningen och kraven för var och en av de fem avsnitten:
 
-- [Kostnadshantering](/azure/architecture/cloud-adoption/governance/cost-management/template)
-- [Säkerhetsbaslinje](/azure/architecture/cloud-adoption/governance/security-baseline/template)
-- [Resurskonsekvens](/azure/architecture/cloud-adoption/governance/resource-consistency/template)
-- [Identitetsbaslinje](/azure/architecture/cloud-adoption/governance/identity-baseline/template)
-- [Distributionsacceleration](/azure/architecture/cloud-adoption/governance/deployment-acceleration/template)
+- [Kostnadshantering](../../govern/cost-management/template.md)
+- [Säkerhetsbaslinje](../../govern/security-baseline/template.md)
+- [Resurs konsekvens].. /.. /govern/resource-consistency/template.md)
+- [Identitets bas linje].. /.. /govern/identity-baseline/template.md)
+- [Distributionsacceleration](../../govern/deployment-acceleration/template.md)
 
-Vägledning om hur du utvecklar styrningsriktlinjer baserade på styrningsmodellen för Ramverk för molnimplementering finns i [Implementera en strategi för molnstyrning](/azure/architecture/cloud-adoption/governance/corporate-policy).
+Vägledning om hur du utvecklar styrningsriktlinjer baserade på styrningsmodellen för Ramverk för molnimplementering finns i [Implementera en strategi för molnstyrning](../../govern/corporate-policy.md).
 
 ## <a name="optimize-and-promote-process-changes"></a>Optimera och höja upp processändringar
 
-Under optimerings- och uppflyttningsprocesserna rekommenderar vi att molnstyrningsteamet investerar tid i att testa och kontrollera överensstämmelse med styrnings- och efterlevnadskrav. Det här steget är också ett lämpligt tillfälle att mata in processer som molnstyrningsteamet kan omvandla till mallar som kan [accelerera distributionen](/azure/architecture/cloud-adoption/governance/deployment-acceleration) ytterligare för framtida projekt.
+Under optimerings- och uppflyttningsprocesserna rekommenderar vi att molnstyrningsteamet investerar tid i att testa och kontrollera överensstämmelse med styrnings- och efterlevnadskrav. Det här steget är också ett lämpligt tillfälle att mata in processer som molnstyrningsteamet kan omvandla till mallar som kan [accelerera distributionen](../../govern/deployment-acceleration/index.md) ytterligare för framtida projekt.
 
 ### <a name="suggested-action-during-the-optimize-and-promote-process"></a>Föreslagna åtgärder i samband med optimering och befordran
 

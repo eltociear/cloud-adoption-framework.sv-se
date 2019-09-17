@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8f1d622401eff58710e016b690292e81d9b7f1d7
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 47148153d63137e6281b37bcb2be28e63bc6586c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905291"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025159"
 ---
 # <a name="azure-fundamental-concepts"></a>Grundläggande koncept för Azure
 
@@ -69,7 +69,7 @@ När du skapar en Azure-prenumeration kan du associera den med en befintlig Azur
 
 Ett e-postkonto kan associeras med flera Azure-prenumerationer. Kontoadministratören kan överföra en prenumeration till ett annat konto.
 
-En detaljerad beskrivning av de roller som definieras i Azure finns i [Administratörsroller för klassiska prenumerationer, Azure RBAC-roller och administratörsroller för Azure AD](/azure/role-based-access-control/rbac-and-directory-admin-roles).
+En detaljerad beskrivning av de roller som definieras i Azure finns i [Administratörsroller för klassiska prenumerationer, Azure RBAC-roller och administratörsroller för Azure AD](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles).
 
 ## <a name="subscriptions-and-regions"></a>Prenumerationer och regioner
 
@@ -84,13 +84,13 @@ En prenumeration är inte knuten till någon specifik Azure-region. Varje Azure-
 
 Följande resurser innehåller detaljerad information om de begrepp som beskrivs i den här artikeln:
 
-- [Hur fungerar Azure?](/azure/architecture/cloud-adoption/getting-started/what-is-azure)
-- [Åtkomsthantering av resurser i Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Översikt över Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview)
-- [Rollbaserad åtkomstkontroll (RBAC) för Azure-resurser](/azure/role-based-access-control/overview)
-- [Vad är Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-whatis)
-- [Associera eller lägga till en Azure-prenumeration till Azure Active Directory-klienten](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
-- [Topologier för Azure AD Connect](/azure/active-directory/hybrid/plan-connect-topologies)
+- [Hur fungerar Azure?](../../getting-started/what-is-azure.md)
+- [Åtkomsthantering av resurser i Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Översikt över Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)
+- [Rollbaserad åtkomstkontroll (RBAC) för Azure-resurser](https://docs.microsoft.com/azure/role-based-access-control/overview)
+- [Vad är Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
+- [Associera eller lägga till en Azure-prenumeration till Azure Active Directory-klienten](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
+- [Topologier för Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)
 - [Prenumerationer, licenser, konton och klientorganisationer för Microsofts molnerbjudanden](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
 
 ## <a name="next-steps"></a>Nästa steg

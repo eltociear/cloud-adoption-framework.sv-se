@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b19353ebe22faf089ff56b5ee84289928a8eaca7
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 01d41b3b1486ea563ab1c0b100559e80ad3a03f6
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905631"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022689"
 ---
 # <a name="understand-partnership-options"></a>Förstå partnerskapsalternativ
 
@@ -34,10 +34,10 @@ Om en organisation planerar en Azure-migrering på egen hand, finns Microsoft al
 
 - **Verktyg för utvärdering och migrering.** Azure innehåller en mängd olika verktyg som kan användas i olika faser vid din molnomvandling, bland annat en utvärdering av din befintliga infrastruktur. Mer information finns i avsnittet ”Utvärdera” i kapitlet ”Migrering” nedan.
 - **[Microsoft Cloud Adoption Framework](../../index.md).** I det här ramverket finns en strukturerad metod för molnimplementering och migrering. Det baseras på beprövade metoder från Microsoft och är ordnade som en serie steg, från arkitektur och design till implementering. För varje steg finns det vägledning som hjälper dig med utformningen av programarkitekturen.
-- **[Designmönster för molnet](/azure/architecture/patterns).** Azure innehåller användbara molndesignmönster som kan användas till att skapa tillförlitliga, skalbara och säkra arbetsbelastningar i molnet. Varje mönster beskriver problemet som mönstret är avsett att hantera, överväganden när du ska tillämpa mönstret och ett exempel baserat på Azure. De flesta av mönstren innehåller kodexempel eller kodstycken som visar hur du implementerar mönstret i Azure. De avser dock alla typer av distribuerade system, oavsett om det är Azure eller någon annan molnplattform.
-- **[Grunderna för molnet](/azure/architecture/guide).** I grunderna kan du läsa mer om de grundläggande metoderna för implementering av viktiga begrepp. I guiden får teknisk personal hjälp att tänka ut lösningar som använder sig av mer än en enda Azure-tjänst.
-- **[Exempelscenarier](/azure/architecture/example-scenario).** Guiden innehåller referenser från verkliga kundimplementeringar och beskriver de verktyg, metoder och processer som tidigare kunder har följt för att uppnå specifika affärsmål.
-- **[Referensarkitekturer](/azure/architecture/reference-architectures).** Referensarkitekturerna ordnas efter scenario, där relaterade arkitekturer finns i samma grupp. Varje arkitektur innehåller rekommenderade metoder samt överväganden kring skalbarhet, tillgänglighet, hanterbarhet och säkerhet. De flesta innehåller även en distribuerbar lösning.
+- **[Designmönster för molnet](https://docs.microsoft.com/azure/architecture/patterns).** Azure innehåller användbara molndesignmönster som kan användas till att skapa tillförlitliga, skalbara och säkra arbetsbelastningar i molnet. Varje mönster beskriver problemet som mönstret är avsett att hantera, överväganden när du ska tillämpa mönstret och ett exempel baserat på Azure. De flesta av mönstren innehåller kodexempel eller kodstycken som visar hur du implementerar mönstret i Azure. De avser dock alla typer av distribuerade system, oavsett om det är Azure eller någon annan molnplattform.
+- **[Grunderna för molnet](https://docs.microsoft.com/azure/architecture/guide).** I grunderna kan du läsa mer om de grundläggande metoderna för implementering av viktiga begrepp. I guiden får teknisk personal hjälp att tänka ut lösningar som använder sig av mer än en enda Azure-tjänst.
+- **[Exempelscenarier](https://docs.microsoft.com/azure/architecture/example-scenario).** Guiden innehåller referenser från verkliga kundimplementeringar och beskriver de verktyg, metoder och processer som tidigare kunder har följt för att uppnå specifika affärsmål.
+- **[Referensarkitekturer](https://docs.microsoft.com/azure/architecture/reference-architectures).** Referensarkitekturerna ordnas efter scenario, där relaterade arkitekturer finns i samma grupp. Varje arkitektur innehåller rekommenderade metoder samt överväganden kring skalbarhet, tillgänglighet, hanterbarhet och säkerhet. De flesta innehåller även en distribuerbar lösning.
 
 ## <a name="fasttrack-for-azure"></a>FastTrack for Azure
 
@@ -76,7 +76,7 @@ Följande huvudfaser ingår i ett normalt FastTrack for Azure-engagemang:
 
 ## <a name="microsoft-services-offerings-aligned-to-cloud-adoption-framework-approaches"></a>Microsofts tjänsterbjudanden som är anpassade till Cloud Adoption Framework-metoder
 
-![Microsoft-tjänster – Cloud Adoption Framework-metod](../../../_images/mcs-program-approach.jpg)
+![Microsoft-tjänster – Cloud Adoption Framework-metod](../../../_images/migrate/mcs-program-approach.jpg)
 
 **Utvärdera:** Microsoft-tjänsterna använder sig av en [enhetlig, data- och verktygsstyrd metod](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) som består av arkitekturstudiegrupper, Azures realtidsinformation, säkerhets- och identitetshotmodeller och olika verktyg som ger insikter om utmaningar, risker, rekommendationer och problem i en befintlig Azure-miljö med viktiga resultat som t.ex. [moderniseringsöversikt på hög nivå](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf).
 

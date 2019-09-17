@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3296a471540c921d465859d0dfd800a91996f721
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 00b2ee80709c36658a58f23b2848fdf1b64d856d
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70831365"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024383"
 ---
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Gör växeln från stordatorer till Azure
 
@@ -48,7 +48,7 @@ Med hjälp av jämförelse erbjuder Azure Service nivå avtal (service avtal), d
 
 Azure ger ytterligare tillgänglighet genom att replikera data från flera lagrings enheter, antingen lokalt eller i andra geografiska regioner. I händelse av ett Azure-baserat haveri kan beräknings resurser komma åt replikerade data på antingen den lokala eller regionala nivån.
 
-När du använder Azures PaaS-resurser (Platform as a Service), till exempel [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) och [Azure Cosmos Database](/azure/cosmos-db/introduction), kan Azure automatiskt hantera redundans. När du använder Azure Infrastructure as a Service (IaaS) förlitar sig redundans på vissa systemfunktioner, till exempel SQL Server Always on-funktioner, redundanskluster och tillgänglighets grupper.
+När du använder Azures PaaS-resurser (Platform as a Service), till exempel [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) och [Azure Cosmos Database](https://docs.microsoft.com/azure/cosmos-db/introduction), kan Azure automatiskt hantera redundans. När du använder Azure Infrastructure as a Service (IaaS) förlitar sig redundans på vissa systemfunktioner, till exempel SQL Server Always on-funktioner, redundanskluster och tillgänglighets grupper.
 
 ## <a name="scalability"></a>Skalbarhet
 
@@ -60,7 +60,7 @@ En CF erbjuder också nära sammansatta beräkningar, medan de skalbara funktion
 
 Stordator kunder bevarar vanligt vis katastrof återställnings webbplatser eller använder eller en oberoende stordator leverantör för katastrof beredskap. Synkronisering med en haveri beredskaps plats sker vanligt vis genom offline-kopior av data. Båda alternativen innebär höga kostnader.
 
-Automatisk geo-redundans är också tillgängligt via stordator kopplings funktionen, med stor kostnad och är vanligt vis reserverad för verksamhets kritiska system. Azure har däremot enkla och kostnads effektiva alternativ för [säkerhets kopiering](/azure/backup/backup-introduction-to-azure-backup), [återställning](/azure/site-recovery/site-recovery-overview)och [redundans](/azure/storage/common/storage-redundancy) på lokala eller regionala nivåer eller via GEO-redundans.
+Automatisk geo-redundans är också tillgängligt via stordator kopplings funktionen, med stor kostnad och är vanligt vis reserverad för verksamhets kritiska system. Azure har däremot enkla och kostnads effektiva alternativ för [säkerhets kopiering](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup), [återställning](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)och [redundans](https://docs.microsoft.com/azure/storage/common/storage-redundancy) på lokala eller regionala nivåer eller via GEO-redundans.
 
 ## <a name="storage"></a>Storage
 
@@ -73,7 +73,7 @@ Typer av fysisk lagring för stordatorer omfattar:
 - **Central lagring:** Detta kallas även för processor eller Real lagring, som finns direkt på stordator processorn.
 - **Hjälp lagring:** Den här typen innehåller lagring på DASDs och finns separat från stordatoren och kallas även för växlings lagring.
 
-Molnet erbjuder ett antal flexibla, skalbara alternativ och du betalar bara för de alternativ som du behöver. [Azure Storage](/azure/storage/common/storage-introduction) erbjuder en massivt skalbar objekt lagring för data objekt, en fil system tjänst för molnet, ett Reliable Messaging Store och ett NoSQL-lager. För virtuella datorer, hanterade och ohanterade diskar finns beständiga, säkra disk lagring.
+Molnet erbjuder ett antal flexibla, skalbara alternativ och du betalar bara för de alternativ som du behöver. [Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction) erbjuder en massivt skalbar objekt lagring för data objekt, en fil system tjänst för molnet, ett Reliable Messaging Store och ett NoSQL-lager. För virtuella datorer, hanterade och ohanterade diskar finns beständiga, säkra disk lagring.
 
 ## <a name="mainframe-development-and-testing"></a>Utveckling och testning av stordatorer
 
@@ -88,4 +88,4 @@ När lösningar utvecklas och testas på Azure och är redo att distribueras til
 ## <a name="next-steps"></a>Nästa steg
 
 > [!div class="nextstepaction"]
-> [Migrering av stordator program](application-strategies.md)
+> [Migrering av stordator program](./application-strategies.md)

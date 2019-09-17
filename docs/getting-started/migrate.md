@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 83518d5b6bfdd0572161847e505569dc63da60a7
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 7c35d64e3106c2a34670d4dc05614de087f5d5c3
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906013"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023420"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>Komma igång med en moln migrerings resa
 
@@ -70,7 +70,7 @@ Migrering av moln betraktas ofta som ett enda projekt i ett bredare program för
 
 Moln strategi och planering är en metod som fokuserar på att justera affärs resultat, prioriteringar och begränsningar för att upprätta en klar strategi för migrering och planering. Resultat planen (eller efter släpning av migreringen) beskriver metoden för migrering och modernisering i IT-portföljen, som kan omfatta hela Data Center, flera arbets belastningar eller diverse olika samlingar av infrastruktur, program och data. En korrekt hantering av IT-portföljen i moln implementeringen hjälper till att driva önskade affärs resultat.
 
-![Översikt över Cloud Adoption Framework](../_images/cloud-adoption-framework-overview.png)
+![Översikt över Cloud Adoption Framework](../_images/caf-overview.png)
 
 **Komma igång:** I resten av den här artikeln förbereds läsaren för korrekt tillämpning av moln strategi och planerings metodik för moln införande. Det beskriver också ytterligare resurser och länkar som kan hjälpa läsaren att använda den här metoden för att vägleda moln implementerings ansträngningar.
 
@@ -80,14 +80,14 @@ Moln strategi-och planerings metodiken i molnet bygger på en stegvis metod för
 
 Som du ser i bilden ovan, justerar det här ramverket strategiska beslut till ett litet antal inneslutna processer, som körs inom en iterativ modell. Det beskrivs i ett linjärt dokument och var och en av följande processer förväntas vara mogna parallellt med iterationer av moln implementeringen. Länkarna för varje process har stöd för att definiera slut tillstånd och förfaller till önskat slut tillstånd:
 
-- **[Plan](../business-strategy/index.md):** När den tekniska implementeringen är justerad med tydliga affärs mål är det mycket enklare att mäta och justera framgång i flera moln implementerings ansträngningar, oavsett tekniska beslut.
+- **[Plan](../strategy/index.md):** När den tekniska implementeringen är justerad med tydliga affärs mål är det mycket enklare att mäta och justera framgång i flera moln implementerings ansträngningar, oavsett tekniska beslut.
 - **[Redo](../ready/index.md):** Att förbereda affärs-, kultur-, folk-och miljö för kommande ändringar leder till framgång i varje arbete och påskyndar implementeringen och ändrings projekt.
 - **Implementera:** Se till att du har rätt implementering av önskade ändringar, över IT-och affärs processer, för att uppnå affärs resultat.
   - **[Migrera](../migrate/index.md):** Iterativ körning av [moln implementerings metoden](#cloud-implementation) som följer den testade processen för att utvärdera, migrera, optimera och skydda & hantera för att skapa en upprepnings bar process för migrering av arbets belastningar.
 - **[Arbeta](../operating-model/index.md):** Definiera en hanterbar drifts modell för att hantera aktiviteter under och länge efter införandet.
-  - **[Organisera](../organization/index.md):** Justera människor och team för att leverera rätt moln drift och införande.
-  - **[Styrning](../governance/index.md):** Justera företags principen mot materiella risker, med hjälp av princip-, process-och molnbaserad styrnings verktyg.
-  - **[Hantera](../operations/index.md):** Utöka IT-driften för att säkerställa att molnbaserade lösningar kan köras genom säkra, kostnads effektiva processer med moderna, molnbaserade drift verktyg.
+  - **[Organisera](../organize/index.md):** Justera människor och team för att leverera rätt moln drift och införande.
+  - **[Styrning](../govern/index.md):** Justera företags principen mot materiella risker, med hjälp av princip-, process-och molnbaserad styrnings verktyg.
+  - **[Hantera](../manage/index.md):** Utöka IT-driften för att säkerställa att molnbaserade lösningar kan köras genom säkra, kostnads effektiva processer med moderna, molnbaserade drift verktyg.
 
 I den här versionen av migreringen används det här ramverket för att lösa tvetydigheter, hantera ändringar och vägleda arbets grupper med hjälp av affärs resultat.
 
@@ -140,6 +140,6 @@ Ramverket för moln införande är en livs cykel lösning. Den är utformad för
 >
 > [Migrera](../migrate/index.md)
 >
-> [Träd](../operations/index.md)
+> [Hantera](../manage/index.md)
 >
-> [Styras](../governance/index.md)
+> [Styras](../govern/index.md)

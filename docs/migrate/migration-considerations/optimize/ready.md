@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7d3e7f408e38634a9472ce75542d9e0ae1fdc38b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: b7f526cbf2b7efba981058d5614b4378adc8c6f6
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825489"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022630"
 ---
 # <a name="prepare-a-migrated-application-for-production-promotion"></a>Förbereda ett migrerat program för produktionsbefordran
 
@@ -21,7 +21,7 @@ När en arbetsbelastning befordras dirigeras produktionsanvändartrafiken till d
 
 ## <a name="validate-the-business-change-plan"></a>Validera planen för verksamhetsändring
 
-Omvandlingen sker när affärsanvändare eller kunder utnyttjar en teknisk lösning för att köra processer som driver verksamheten. Beredskap är en bra möjlighet att validera [planen för verksamhetsändringar](business-change-plan.md) och erbjuda en lämplig utbildning för de affärsteam och tekniska team som deltar. Se särskilt till att följande tekniska aspekter av ändringsplanen kommuniceras korrekt:
+Omvandlingen sker när affärsanvändare eller kunder utnyttjar en teknisk lösning för att köra processer som driver verksamheten. Beredskap är en bra möjlighet att validera [planen för verksamhetsändringar](./business-change-plan.md) och erbjuda en lämplig utbildning för de affärsteam och tekniska team som deltar. Se särskilt till att följande tekniska aspekter av ändringsplanen kommuniceras korrekt:
 
 - Utbildning av slutanvändare har slutförts (eller åtminstone planerats).
 - Alla avbrottsfönster har kommunicerats och godkänts.

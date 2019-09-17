@@ -8,12 +8,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b7d2ac8d624115c9d843ded8a045cd68f4050650
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: c5600fb06aefb40764117639b7d856f753c3372e
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825866"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024977"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Metodtips för att skydda och hantera arbetsbelastningar migreras till Azure
 
@@ -58,10 +58,10 @@ Förutom utvärderingar och rekommendationer innehåller Azure Security Center a
 
 **Lära sig mer:**
 
-- [Läs mer](/azure/security-center/security-center-intro) om Azure Security Center.
-- [Läs mer](/azure/security-center/security-center-just-in-time) om just-in-time-åtkomst till virtuell dator.
-- [Lär dig mer om](/azure/security-center/security-center-adaptive-application) tillämpa anpassningsbara programkontroller.
-- [Kom igång](/azure/security-center/security-center-file-integrity-monitoring) med övervakning av filintegritet.
+- [Läs mer](https://docs.microsoft.com/azure/security-center/security-center-intro) om Azure Security Center.
+- [Läs mer](https://docs.microsoft.com/azure/security-center/security-center-just-in-time) om just-in-time-åtkomst till virtuell dator.
+- [Lär dig mer om](https://docs.microsoft.com/azure/security-center/security-center-adaptive-application) tillämpa anpassningsbara programkontroller.
+- [Kom igång](https://docs.microsoft.com/azure/security-center/security-center-file-integrity-monitoring) med övervakning av filintegritet.
 
 ## <a name="best-practice-encrypt-data"></a>Metodtips: Kryptera data
 
@@ -92,12 +92,12 @@ Till skillnad från IaaS där du hanterar dina egna virtuella datorer och infras
 
 **Lära sig mer:**
 
-- [Lär dig mer om](/azure/security/azure-security-disk-encryption-overview) Azure Disk Encryption för virtuella IaaS-datorer.
-- [Aktivera](/azure/security/azure-security-disk-encryption-windows) kryptering för IaaS Windows-datorer.
-- [Lär dig mer om](/azure/storage/common/storage-service-encryption) Azure Storage Service Encryption för vilande data.
-- [Läs](/azure/sql-database/sql-database-always-encrypted-azure-key-vault) en översikt över Always Encrypted.
-- [Läs mer om](/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017) transparent Datakryptering för Azure SQL Database.
-- [Läs mer](/azure/sql-database/transparent-data-encryption-byok-azure-sql) om TDE med Bring Your Own Key.
+- [Lär dig mer om](https://docs.microsoft.com/azure/security/azure-security-disk-encryption-overview) Azure Disk Encryption för virtuella IaaS-datorer.
+- [Aktivera](https://docs.microsoft.com/azure/security/azure-security-disk-encryption-windows) kryptering för IaaS Windows-datorer.
+- [Lär dig mer om](https://docs.microsoft.com/azure/storage/common/storage-service-encryption) Azure Storage Service Encryption för vilande data.
+- [Läs](https://docs.microsoft.com/azure/sql-database/sql-database-always-encrypted-azure-key-vault) en översikt över Always Encrypted.
+- [Läs mer om](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017) transparent Datakryptering för Azure SQL Database.
+- [Läs mer](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-byok-azure-sql) om TDE med Bring Your Own Key.
 
 ## <a name="best-practice-protect-vms-with-antimalware"></a>Metodtips: Skydda virtuella datorer med program mot skadlig kod
 
@@ -112,7 +112,7 @@ I synnerhet kanske äldre Azure-migrerade virtuella datorer inte har rätt nivå
 
 **Lära sig mer:**
 
-- [Läs mer](/azure/security/azure-security-antimalware) om Microsoft Antimalware.
+- [Läs mer](https://docs.microsoft.com/azure/security/azure-security-antimalware) om Microsoft Antimalware.
 
 ## <a name="best-practice-secure-web-apps"></a>Metodtips: Skydda webbappar
 
@@ -141,11 +141,11 @@ Azure tillhandahåller ett par lösningar:
 
 **Läs mer:**
 
-- [Få en översikt](/azure/key-vault/key-vault-overview) över Azure Key Vault.
-- [Läs mer](/azure/application-gateway/waf-overview) om brandvägg för webbaserade program.
-- [Få en introduktion](/azure/app-service/environment/intro) till App Service-miljöer.
-- [Lär dig hur du](/azure/key-vault/tutorial-web-application-keyvault) konfigurerar en webbapp för att läsa hemligheter från Key Vault.
-- [Läs mer](/azure/application-gateway/waf-overview) om brandvägg för webbaserade program.
+- [Få en översikt](https://docs.microsoft.com/azure/key-vault/key-vault-overview) över Azure Key Vault.
+- [Läs mer](https://docs.microsoft.com/azure/application-gateway/waf-overview) om brandvägg för webbaserade program.
+- [Få en introduktion](https://docs.microsoft.com/azure/app-service/environment/intro) till App Service-miljöer.
+- [Lär dig hur du](https://docs.microsoft.com/azure/key-vault/tutorial-web-application-keyvault) konfigurerar en webbapp för att läsa hemligheter från Key Vault.
+- [Läs mer](https://docs.microsoft.com/azure/application-gateway/waf-overview) om brandvägg för webbaserade program.
 
 ## <a name="best-practice-review-subscriptions-and-resource-permissions"></a>Metodtips: Granska prenumerationer och resursbehörigheter
 
@@ -161,9 +161,9 @@ När du migrerar dina arbetsbelastningar och kör dem i Azure flyttas personal m
 
 **Lära sig mer:**
 
-- [Om](/azure/role-based-access-control/overview) RBAC.
-- [Lär dig](/azure/role-based-access-control/role-assignments-portal) att hantera åtkomst med RBAC och Azure-portalen.
-- [Läs mer](/azure/role-based-access-control/custom-roles) om anpassade roller.
+- [Om](https://docs.microsoft.com/azure/role-based-access-control/overview) RBAC.
+- [Lär dig](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal) att hantera åtkomst med RBAC och Azure-portalen.
+- [Läs mer](https://docs.microsoft.com/azure/role-based-access-control/custom-roles) om anpassade roller.
 
 ## <a name="best-practice-review-audit-and-security-logs"></a>Metodtips: Granska spårnings- och säkerhetsloggar
 
@@ -180,17 +180,17 @@ Azure Active Directory (Azure AD) tillhandahåller aktivitetsloggar som visas i 
 
 **Läs mer:**
 
-- [Lär dig mer om](/azure/active-directory/reports-monitoring/concept-activity-logs-azure-monitor) Azure AD-aktivitetsloggar i Azure Monitor.
-- [Lär dig hur du](/azure/active-directory/reports-monitoring/concept-audit-logs) granskar aktivitetsrapporter i Azure AD-portalen.
+- [Lär dig mer om](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-activity-logs-azure-monitor) Azure AD-aktivitetsloggar i Azure Monitor.
+- [Lär dig hur du](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-audit-logs) granskar aktivitetsrapporter i Azure AD-portalen.
 
 ## <a name="best-practice-evaluate-other-security-features"></a>Metodtips: Utvärdera andra säkerhetsfunktioner
 
 Azure innehåller andra säkerhetsfunktioner som tillhandahåller avancerade säkerhetsalternativ. Vissa av dessa metodtips kräver tilläggslicenser och premiumalternativ.
 
-- **Implementera administrativa Azure AD-enheter (AU).** Det kan vara svårt att delegera administrativa uppgifter till supportpersonal med bara grundläggande Azure-åtkomstkontroll. Att ge supportpersonal åtkomst att administrera alla grupper i Azure AD kanske inte är den idealiska metoden för organisationens säkerhet. Med hjälp av automatiska uppdateringar kan du särskilja Azure-resurser i behållare på ett liknande sätt till lokala organisationsenheter (OU). Om du vill använda Australien måste AU-administratören ha en Azure AD premium-licens. [Läs mer](/azure/active-directory/users-groups-roles/directory-administrative-units).
-- **Använd multifaktorautentisering.** Om du har en premium Azure AD-licens kan du aktivera och tillämpa multifaktorautentisering på dina administratörskonton. Nätfiske är det vanligaste sättet som kontons autentiseringsuppgifter komprometteras. När en obehörig har ett administratörskontos autentiseringsuppgifter finns det inget som hindrar dem från omfattande åtgärder, till exempel att ta bort alla resursgrupper. Du kan tillämpa multifaktorautentisering på flera olika sätt, bland annat med e-post, en autentiseringsapp och textmeddelanden. Som administratör kan du välja det minst störande alternativet. Multifaktorautentisering integreras med hotanalys och principer för villkorlig åtkomst för att slumpmässigt kräva ett svar på en multifaktorautentiseringsutmaning. Läs mer om [säkerhetsvägledning](/azure/active-directory/authentication/multi-factor-authentication-security-best-practices) och [hur du konfigurerar multifaktorautentisering](/azure/active-directory/authentication/multi-factor-authentication-security-best-practices).
-- **Implementera villkorlig åtkomst.** I de flesta små och medelstora organisationer finns Azure-administratörer och supportteamet förmodligen i en enda geografisk region. I det här fallet kommer de flesta inloggningar från samma områden. Om IP-adresserna för dessa platser är relativt statiska är det rimligt att du inte ser administratörsinloggningar utanför dessa områden. Även om en fjärransluten obehörig skulle kompromettera en administratörs autentiseringsuppgifter kan du implementera säkerhetsfunktioner, till exempel villkorlig åtkomst kombinerat med multifaktorautentisering, för att förhindra inloggning från fjärranslutna platser eller från falska platser från slumpmässiga IP-adresser. [Läs mer](/azure/active-directory/conditional-access/overview) om villkorlig åtkomst och [granska metodtips](/azure/active-directory/conditional-access/best-practices) för villkorlig åtkomst i Azure AD.
-- **Granska behörigheter för företagsprogram.** Över tid väljer administratörer Microsoft- och tredjepartslänkar utan att känna till deras inverkan på organisationen. Länkar kan öppna medgivandeskärmar som tilldelar behörigheter till Azure-appar, och kan tillåta åtkomst att läsa Azure AD-data eller till och med fullständig åtkomst att hantera hela Azure-prenumerationen. Du bör regelbundet granska apparna som administratörer och användare har gett åtkomst till Azure-resurser. Se till att dessa appar bara har de behörigheter som krävs. Varje kvartal eller halvår kan du dessutom skicka e-post till användare med en länk till appsidor så att de är medvetna om vilka appar de har gett åtkomst till sina organisationsdata. [Läs mer](/azure/active-directory/manage-apps/application-types) om programtyper, och [kontrollerar](/azure/active-directory/manage-apps/remove-user-or-group-access-portal) apptilldelningar i Azure AD.
+- **Implementera administrativa Azure AD-enheter (AU).** Det kan vara svårt att delegera administrativa uppgifter till supportpersonal med bara grundläggande Azure-åtkomstkontroll. Att ge supportpersonal åtkomst att administrera alla grupper i Azure AD kanske inte är den idealiska metoden för organisationens säkerhet. Med hjälp av automatiska uppdateringar kan du särskilja Azure-resurser i behållare på ett liknande sätt till lokala organisationsenheter (OU). Om du vill använda Australien måste AU-administratören ha en Azure AD premium-licens. [Läs mer](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-administrative-units).
+- **Använd multifaktorautentisering.** Om du har en premium Azure AD-licens kan du aktivera och tillämpa multifaktorautentisering på dina administratörskonton. Nätfiske är det vanligaste sättet som kontons autentiseringsuppgifter komprometteras. När en obehörig har ett administratörskontos autentiseringsuppgifter finns det inget som hindrar dem från omfattande åtgärder, till exempel att ta bort alla resursgrupper. Du kan tillämpa multifaktorautentisering på flera olika sätt, bland annat med e-post, en autentiseringsapp och textmeddelanden. Som administratör kan du välja det minst störande alternativet. Multifaktorautentisering integreras med hotanalys och principer för villkorlig åtkomst för att slumpmässigt kräva ett svar på en multifaktorautentiseringsutmaning. Läs mer om [säkerhetsvägledning](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices) och [hur du konfigurerar multifaktorautentisering](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices).
+- **Implementera villkorlig åtkomst.** I de flesta små och medelstora organisationer finns Azure-administratörer och supportteamet förmodligen i en enda geografisk region. I det här fallet kommer de flesta inloggningar från samma områden. Om IP-adresserna för dessa platser är relativt statiska är det rimligt att du inte ser administratörsinloggningar utanför dessa områden. Även om en fjärransluten obehörig skulle kompromettera en administratörs autentiseringsuppgifter kan du implementera säkerhetsfunktioner, till exempel villkorlig åtkomst kombinerat med multifaktorautentisering, för att förhindra inloggning från fjärranslutna platser eller från falska platser från slumpmässiga IP-adresser. [Läs mer](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) om villkorlig åtkomst och [granska metodtips](https://docs.microsoft.com/azure/active-directory/conditional-access/best-practices) för villkorlig åtkomst i Azure AD.
+- **Granska behörigheter för företagsprogram.** Över tid väljer administratörer Microsoft- och tredjepartslänkar utan att känna till deras inverkan på organisationen. Länkar kan öppna medgivandeskärmar som tilldelar behörigheter till Azure-appar, och kan tillåta åtkomst att läsa Azure AD-data eller till och med fullständig åtkomst att hantera hela Azure-prenumerationen. Du bör regelbundet granska apparna som administratörer och användare har gett åtkomst till Azure-resurser. Se till att dessa appar bara har de behörigheter som krävs. Varje kvartal eller halvår kan du dessutom skicka e-post till användare med en länk till appsidor så att de är medvetna om vilka appar de har gett åtkomst till sina organisationsdata. [Läs mer](https://docs.microsoft.com/azure/active-directory/manage-apps/application-types) om programtyper, och [kontrollerar](https://docs.microsoft.com/azure/active-directory/manage-apps/remove-user-or-group-access-portal) apptilldelningar i Azure AD.
 
 ## <a name="managed-migrated-workloads"></a>Hanterade migrerade arbetsbelastningar
 
@@ -219,7 +219,7 @@ Om resursgrupperna har beskrivande namn som administratörer och medlemmar i sup
 
 **Läs mer:**
 
-- [Läs mer](/azure/architecture/best-practices/naming-conventions) om namngivningskonventioner.
+- [Läs mer](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) om namngivningskonventioner.
 
 ## <a name="best-practice-implement-delete-locks-for-resource-groups"></a>Metodtips: Implementera borttagningslås för resursgrupper
 
@@ -231,7 +231,7 @@ Det sista du behöver är att en resursgrupp försvinner eftersom den tagits bor
 
 **Läs mer:**
 
-- [Läs mer](/azure/azure-resource-manager/resource-group-lock-resources) om att låsa resurser för att förhindra oväntade ändringar.
+- [Läs mer](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources) om att låsa resurser för att förhindra oväntade ändringar.
 
 ## <a name="best-practice-understand-resource-access-permissions"></a>Metodtips: Förstå resursåtkomstbehörigheter
 
@@ -260,8 +260,8 @@ Om du bara använder ett resursgruppsnamn som är relaterat till resurser får d
 
 **Lära sig mer:**
 
-- [Lär dig mer om](/azure/azure-resource-manager/resource-group-using-tags) taggning och tagga begränsningar.
-- [Granska](/azure/azure-resource-manager/resource-group-using-tags#powershell) PowerShell och CLI-exempel att ställa in taggar och för att lägga till taggar från en resursgrupp på dess resurser.
+- [Lär dig mer om](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags) taggning och tagga begränsningar.
+- [Granska](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags#powershell) PowerShell och CLI-exempel att ställa in taggar och för att lägga till taggar från en resursgrupp på dess resurser.
 - [Läs](https://www.azurefieldnotes.com/2016/07/18/azure-resource-tagging-best-practices) metodtips om Azure-taggning.
 
 ## <a name="best-practice-implement-blueprints"></a>Metodtips: Implementera skisser
@@ -273,7 +273,7 @@ Precis som en skiss tillåter tekniker och arkitekter att skissa designparametra
 
 **Lära sig mer:**
 
-- [Läs](/azure/governance/blueprints/overview) om skisser.
+- [Läs](https://docs.microsoft.com/azure/governance/blueprints/overview) om skisser.
 - [Granska](https://azure.microsoft.com/blog/customizing-azure-blueprints-to-accelerate-ai-in-healthcare) ett skissexempel som används för att påskynda AI inom hälsovård.
 
 ## <a name="best-practice-review-azure-reference-architectures"></a>Metodtips: Granska Azure-referensarkitekturer
@@ -285,8 +285,8 @@ Azure App Service-miljön tillhandahåller en fullständigt isolerad och dediker
 
 **Lära sig mer:**
 
-- [Lär dig mer om](/azure/architecture/reference-architectures) Azure-referensarkitekturer.
-- [Granska](/azure/architecture/example-scenario) Azures exempelscenarier.
+- [Lär dig mer om](https://docs.microsoft.com/azure/architecture/reference-architectures) Azure-referensarkitekturer.
+- [Granska](https://docs.microsoft.com/azure/architecture/example-scenario) Azures exempelscenarier.
 
 ## <a name="best-practice-manage-resources-with-azure-management-groups"></a>Metodtips: Hantera resurser med Azure-hanteringsgrupper
 
@@ -305,7 +305,7 @@ Följande diagram visar ett exempel på att skapa en hierarki för styrning med 
 
 **Lära sig mer:**
 
-- [Läs mer](/azure/governance/management-groups/index) om att organisera resurser i hanteringsgrupper.
+- [Läs mer](https://docs.microsoft.com/azure/governance/management-groups/index) om att organisera resurser i hanteringsgrupper.
 
 ## <a name="best-practice-deploy-azure-policy"></a>Metodtips: Distribuera Azure Policy
 
@@ -321,8 +321,8 @@ Azure Policy är en tjänst i Azure som används för att skapa, tilldela och ha
 
 **Lära sig mer:**
 
-- [Få en översikt](/azure/governance/policy/overview) över Azure Policy.
-- [Läs mer](/azure/governance/policy/tutorials/create-and-manage) om att skapa och hantera principer för att säkerställa efterlevnad.
+- [Få en översikt](https://docs.microsoft.com/azure/governance/policy/overview) över Azure Policy.
+- [Läs mer](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage) om att skapa och hantera principer för att säkerställa efterlevnad.
 
 ## <a name="best-practice-implement-a-bcdr-strategy"></a>Metodtips: Implementera en BCDR-strategi
 
@@ -359,15 +359,15 @@ Du kan använda Azure Backup för att säkerhetskopiera virtuella datorer på et
 - **Direkt säkerhetskopiering i ett Recovery Services-valv.** Du kan säkerhetskopiera virtuella IaaS-datorer genom att distribuera ett Azure Backup Recovery Services-valv. Det ger en enda plats för att spåra och hantera säkerhetskopior samt detaljerade alternativ för säkerhetskopiering och återställning. Säkerhetskopieringen sker upp till tre gånger per dag, på fil-/mappnivå. Den är inte appmedveten och Linux stöds inte. Installera MARS-agenten (Microsoft Azure Recovery Services) på varje virtuell dator som du vill säkerhetskopiera med den här metoden.
 - **Skydda den virtuella datorn med Azure Backup Server.** Azure Backup Server tillhandahålls utan kostnad med Azure Backup. Den virtuella datorn säkerhetskopieras till lokal Azure Backup Server-lagring. Sedan säkerhetskopierar du Azure Backup Server till Azure i ett valv. Säkerhetskopieringen är appmedveten, med fullständig kornighet för säkerhetskopieringsfrekvens och -kvarhållning. Du kan säkerhetskopiera på appnivå, till exempel genom att säkerhetskopiera SQL Server eller SharePoint.
 
-Av säkerhetsskäl krypterar Azure Backup rörliga data med AES 256 och skickar dem via HTTPS till Azure. Säkerhetskopierade vilande data i Azure krypteras med hjälp av [kryptering för lagringstjänst (SSE)](/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), och data för överföring och lagring.
+Av säkerhetsskäl krypterar Azure Backup rörliga data med AES 256 och skickar dem via HTTPS till Azure. Säkerhetskopierade vilande data i Azure krypteras med hjälp av [kryptering för lagringstjänst (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), och data för överföring och lagring.
 
 ![Azure Backup](./media/migrate-best-practices-security-management/iaas-backup.png)
 *Azure Backup*
 
 **Lära sig mer:**
 
-- [Lär dig mer om](/azure/backup/backup-introduction-to-azure-backup) olika typer av säkerhetskopior.
-- [Planera en infrastruktur för säkerhetskopiering](/azure/backup/backup-azure-vms-introduction) för virtuella Azure-datorer.
+- [Lär dig mer om](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) olika typer av säkerhetskopior.
+- [Planera en infrastruktur för säkerhetskopiering](https://docs.microsoft.com/azure/backup/backup-azure-vms-introduction) för virtuella Azure-datorer.
 
 #### <a name="storage-snapshots"></a>Ögonblicksbilder av lagring
 
@@ -380,11 +380,11 @@ Virtuella Azure-datorer lagras som sidblobar i Azure Storage.
 
 **Läs mer:**
 
-- [Lär dig mer om](/azure/storage/blobs/storage-blobs-introduction) Azure blob-lagring.
-- [Lär dig hur du](/azure/storage/blobs/storage-blob-snapshots) skapa en blobögonblicksbild.
+- [Lär dig mer om](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) Azure blob-lagring.
+- [Lär dig hur du](https://docs.microsoft.com/azure/storage/blobs/storage-blob-snapshots) skapa en blobögonblicksbild.
 - [Granska ett exempelscenario](https://azure.microsoft.com/blog/microsoft-azure-block-blob-storage-backup) för blob storage-säkerhetskopiering.
-- [Läs mer](/azure/storage/blobs/storage-blob-soft-delete) om mjuk borttagning.
-- [Haveriberedskap och forcerad redundans (förhandsversion) i Azure Storage](/azure/storage/common/storage-disaster-recovery-guidance?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)
+- [Läs mer](https://docs.microsoft.com/azure/storage/blobs/storage-blob-soft-delete) om mjuk borttagning.
+- [Haveriberedskap och forcerad redundans (förhandsversion) i Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-disaster-recovery-guidance?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)
 
 #### <a name="third-party-backup"></a>Säkerhetskopiering från tredje part
 
@@ -406,8 +406,8 @@ Site Recovery replikerar virtuella datorer från en primär till sekundär Azure
 
 **Läs mer:**
 
-- [Granska](/azure/virtual-machines/virtual-machines-disaster-recovery-guidance) scenarier för haveriberedskap för virtuella Azure-datorer.
-- [Lär dig hur du](/azure/site-recovery/azure-to-azure-replicate-after-migration) konfigurerar haveriberedskap för en virtuell Azure-dator efter migreringen.
+- [Granska](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-disaster-recovery-guidance) scenarier för haveriberedskap för virtuella Azure-datorer.
+- [Lär dig hur du](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-replicate-after-migration) konfigurerar haveriberedskap för en virtuell Azure-dator efter migreringen.
 
 ## <a name="best-practice-use-managed-disks-and-availability-sets"></a>Metodtips: Använd hanterade diskar och tillgänglighetsuppsättningar
 
@@ -425,9 +425,9 @@ Hanterade Azure-diskar förenklar diskhantering för virtuella Azure IaaS-datore
 
 **Läs mer:**
 
-- [Få en översikt](/azure/virtual-machines/windows/managed-disks-overview) av hanterade diskar.
-- [Lär dig mer om](/azure/virtual-machines/windows/convert-unmanaged-to-managed-disks) konvertera diskar som hanteras.
-- [Lär dig hur du](/azure/virtual-machines/windows/manage-availability) hanterar tillgängligheten för virtuella Windows-datorer i Azure.
+- [Få en översikt](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) av hanterade diskar.
+- [Lär dig mer om](https://docs.microsoft.com/azure/virtual-machines/windows/convert-unmanaged-to-managed-disks) konvertera diskar som hanteras.
+- [Lär dig hur du](https://docs.microsoft.com/azure/virtual-machines/windows/manage-availability) hanterar tillgängligheten för virtuella Windows-datorer i Azure.
 
 ## <a name="best-practice-monitor-resource-usage-and-performance"></a>Metodtips: Övervaka resursanvändning och prestanda
 
@@ -446,10 +446,10 @@ Båda fallen har olika lösningar, men båda du behöver du en överblick över 
 
 **Lära sig mer:**
 
-- [Lär dig mer om](/azure/azure-monitor/overview) Azure Monitor.
-- [Få metodtips](/azure/architecture/best-practices/monitoring) för övervakning och diagnostik.
-- [Lär dig mer om](/azure/architecture/best-practices/auto-scaling) automatisk skalning.
-- [Lär dig hur du](/azure/security-center/security-center-export-data-to-siem) dirigerar Azure-data till ett SIEM-verktyg.
+- [Lär dig mer om](https://docs.microsoft.com/azure/azure-monitor/overview) Azure Monitor.
+- [Få metodtips](https://docs.microsoft.com/azure/architecture/best-practices/monitoring) för övervakning och diagnostik.
+- [Lär dig mer om](https://docs.microsoft.com/azure/architecture/best-practices/auto-scaling) automatisk skalning.
+- [Lär dig hur du](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem) dirigerar Azure-data till ett SIEM-verktyg.
 
 ## <a name="best-practice-enable-diagnostic-logging"></a>Metodtips: Aktivera diagnostisk loggning
 
@@ -464,8 +464,8 @@ Azure-resurser genererar ett antal loggningsmått och telemetridata.
 
 **Lära sig mer:**
 
-- [Lär dig mer om](/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs) samla in och använda loggdata.
-- [Läs vad som stöds](/azure/monitoring-and-diagnostics/monitoring-diagnostic-logs-schema) för diagnostisk loggning.
+- [Lär dig mer om](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs) samla in och använda loggdata.
+- [Läs vad som stöds](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-diagnostic-logs-schema) för diagnostisk loggning.
 
 ## <a name="best-practice-set-up-alerts-and-playbooks"></a>Metodtips: Konfigurera aviseringar och spelböcker
 
@@ -481,8 +481,8 @@ Med diagnostisk loggning aktiverad för Azure-resurser kan du börja använda lo
 
 **Lära sig mer:**
 
-- [Lär dig mer om](/azure/monitoring-and-diagnostics/monitoring-overview-alerts) aviseringar.
-- [Läs mer](/azure/security-center/security-center-playbooks) om säkerhetsspelböcker som svarar på Security Center-aviseringar.
+- [Lär dig mer om](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-alerts) aviseringar.
+- [Läs mer](https://docs.microsoft.com/azure/security-center/security-center-playbooks) om säkerhetsspelböcker som svarar på Security Center-aviseringar.
 
 ## <a name="best-practice-use-the-azure-dashboard"></a>Metodtips: Använd Azure-instrumentpanelen
 
@@ -496,8 +496,8 @@ Azure-portalen är en webbaserad enhetlig konsol som du kan använda för att sk
 
 **Lära sig mer:**
 
-- [Lär dig hur du](/azure/azure-portal/azure-portal-dashboards) skapa en instrumentpanel.
-- [Läs mer](/azure/azure-portal/azure-portal-dashboards-structure) om instrumentpanelsstruktur.
+- [Lär dig hur du](https://docs.microsoft.com/azure/azure-portal/azure-portal-dashboards) skapa en instrumentpanel.
+- [Läs mer](https://docs.microsoft.com/azure/azure-portal/azure-portal-dashboards-structure) om instrumentpanelsstruktur.
 
 ## <a name="best-practice-understand-support-plans"></a>Metodtips: Förstå supportplaner
 
@@ -528,9 +528,9 @@ Det är en enorm uppgift att se till att virtuella Azure-datorer är uppdaterade
 
 **Lära sig mer:**
 
-- [Lär dig mer om](/azure/automation/automation-update-management) uppdateringshantering i Azure.
-- [Lär dig hur du](/azure/automation/oms-solution-updatemgmt-sccmintegration) integrera Configuration Manager med hantering av uppdateringar.
-- [Vanliga frågor och svar](/sccm/core/understand/configuration-manager-on-azure) om Configuration Manager i Azure.
+- [Lär dig mer om](https://docs.microsoft.com/azure/automation/automation-update-management) uppdateringshantering i Azure.
+- [Lär dig hur du](https://docs.microsoft.com/azure/automation/oms-solution-updatemgmt-sccmintegration) integrera Configuration Manager med hantering av uppdateringar.
+- [Vanliga frågor och svar](https://docs.microsoft.com/sccm/core/understand/configuration-manager-on-azure) om Configuration Manager i Azure.
 
 ## <a name="implement-a-change-management-process"></a>Implementera en ändringshanteringsprocess
 
@@ -552,12 +552,12 @@ Azure har en lösning för ändringsspårning i Azure Automation:
 
 **Lära sig mer:**
 
-- [Lär dig mer om](/azure/automation/automation-change-tracking) ändringsspårning.
-- [Lär dig mer om](/azure/automation/automation-intro) Azure Automation-funktioner.
+- [Lär dig mer om](https://docs.microsoft.com/azure/automation/automation-change-tracking) ändringsspårning.
+- [Lär dig mer om](https://docs.microsoft.com/azure/automation/automation-intro) Azure Automation-funktioner.
 
 ## <a name="next-steps"></a>Nästa steg
 
 Granska andra metodtips:
 
-- [Bästa praxis](migrate-best-practices-networking.md) för nätverk efter migreringen.
-- [Bästa praxis](migrate-best-practices-costs.md) för kostnadshantering efter migreringen.
+- [Bästa praxis](./migrate-best-practices-networking.md) för nätverk efter migreringen.
+- [Bästa praxis](./migrate-best-practices-costs.md) för kostnadshantering efter migreringen.

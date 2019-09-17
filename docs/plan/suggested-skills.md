@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9be3818dd12dff913aae6a2eef86587d869ce5a1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: fd046fadbc7be08aa1064427fbef5b9e38f55a8c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70828700"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025322"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Komma igång med en färdighets beredskaps väg
 
@@ -24,7 +24,7 @@ värd miljö*bild 1 – kart läggning av kunskaper till IT-roller i en miljö s
 
 Moln implementerings ramverket hjälper till att läsa igenom hela livs cykeln för införande. I det här ramverket ges läsarna möjlighet att bygga nödvändiga kunskaper. För att hjälpa dig att komma igång med den här resan ingår kunskaps beredskaps artiklar i följande disposition för enklare åtkomst. Var och en av följande länkar mappar till de kunskaper som krävs för att lyckas i varje införande fas.
 
-- **[Strategi](../business-strategy/suggested-skills.md):** Utveckla de kunskaper som krävs för att förbereda en åtgärds plan för migrering. Detta innefattar affärs motivering och andra nödvändiga kunskaper om affärs planering.
+- **[Strategi](../strategy/suggested-skills.md):** Utveckla de kunskaper som krävs för att förbereda en åtgärds plan för migrering. Detta innefattar affärs motivering och andra nödvändiga kunskaper om affärs planering.
 - **[Plan](./suggested-skills.md):** Utveckla de kunskaper som krävs för att förbereda en åtgärds plan för migrering. Detta innefattar affärs motivering och andra nödvändiga kunskaper om affärs planering.
 - **[Redo](../ready/suggested-skills.md):** Utveckla de kunskaper som krävs för att förbereda företaget, kulturen, människor och miljön för att komma till gång till ändringar.
 

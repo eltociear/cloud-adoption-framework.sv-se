@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8d3722028761adb70797fc9f654bfbdc7e697fb2
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 7433ddd9a1c3bb6bd62f9d065c79bbb0b1f52f1b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825528"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022707"
 ---
 # <a name="replication-options"></a>Replikeringsalternativ
 
@@ -23,13 +23,13 @@ Innehållet i ramverket för molnimplementering förutsätter att Azure Migrate 
 
 ## <a name="azure-site-recovery-also-known-as-azure-migrate"></a>Azure Site Recovery (kallas även Azure Migrate)
 
-[Azure Site Recovery](/azure/site-recovery/site-recovery-overview) orkestrerar och hanterar haveriberedskap för virtuella Azure-datorer, lokala virtuella datorer och fysiska servrar. Du kan även använda Site Recovery för att hantera migrering av lokala datorer och sådana som finns hos andra molnleverantörer till Azure. Replikera lokala datorer till Azure eller virtuella Azure-datorer till en sekundär region. Sedan redundansväxlar du den virtuella datorn från den primära platsen till den sekundära och slutför migreringsprocessen. Med Azure Site Recovery kan du genomföra olika scenarier för migrering:
+[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) orkestrerar och hanterar haveriberedskap för virtuella Azure-datorer, lokala virtuella datorer och fysiska servrar. Du kan även använda Site Recovery för att hantera migrering av lokala datorer och sådana som finns hos andra molnleverantörer till Azure. Replikera lokala datorer till Azure eller virtuella Azure-datorer till en sekundär region. Sedan redundansväxlar du den virtuella datorn från den primära platsen till den sekundära och slutför migreringsprocessen. Med Azure Site Recovery kan du genomföra olika scenarier för migrering:
 
 - **Migrera från lokal plats till Azure.** Migrera lokala virtuella VMware-datorer, virtuella Hyper-V-datorer samt fysiska servrar till Azure. Det gör du genom att utföra nästan samma steg som för fullständig haveriberedskap. Skillnaden är att du inte redundansväxlar datorer tillbaka från Azure till den lokala platsen.
 - **Migrera mellan Azure-regioner.** Migrera virtuella Azure-datorer från en Azure-region till en annan. När migreringen är klar konfigurerar du haveriberedskap för de virtuella Azure-datorerna nu i den sekundära region som du migrerade till.
 - **Migrera från ett annat moln till Azure.** Du kan migrera dina beräkningsinstanser som tillhandahålls hos andra molnleverantörer till virtuella Azure-datorer. Site Recovery behandlar de instanserna som fysiska servrar i migreringssyfte.
 
-![Azure Site Recovery](../../../_images/asr-replication-image.png)
+![Azure Site Recovery](../../../_images/migrate/asr-replication-image.png)
 *Azure Site Recovery flytta tillgångar till Azure eller andra moln*
 
 När du har utvärderat lokal och molnbaserad infrastruktur för migrering bidrar Azure Site Recovery till din migreringsstrategi genom att replikera lokala datorer. Med följande enkla steg kan du konfigurera migrering av lokala virtuella datorer, fysiska servrar och instanser av virtuella molndatorer till Azure:
@@ -44,7 +44,7 @@ När du har utvärderat lokal och molnbaserad infrastruktur för migrering bidra
 
 ## <a name="azure-database-migration-service"></a>Azure-databasmigreringstjänst
 
-Den här tjänsten förenklar molnmigreringen genom att använda en enda omfattande tjänst i stället för flera olika verktyg. [Azure Database Migration Service](/azure/dms/dms-overview) är utformad som en smidig och komplett lösning för att flytta lokala SQL Server-databaser till molnet. Det är en fullständigt hanterad tjänst som gör att du kan migrera sömlöst från flera databaskällor till Azure-dataplattformar med minsta möjliga avbrottstid. Den integrerar några av funktionerna från befintliga verktyg och tjänster, vilket ger kunderna en omfattande lösning med hög tillgänglighet.
+Den här tjänsten förenklar molnmigreringen genom att använda en enda omfattande tjänst i stället för flera olika verktyg. [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) är utformad som en smidig och komplett lösning för att flytta lokala SQL Server-databaser till molnet. Det är en fullständigt hanterad tjänst som gör att du kan migrera sömlöst från flera databaskällor till Azure-dataplattformar med minsta möjliga avbrottstid. Den integrerar några av funktionerna från befintliga verktyg och tjänster, vilket ger kunderna en omfattande lösning med hög tillgänglighet.
 
 Tjänsten använder Data Migration Assistant för att skapa utvärderingsrapporter som ger rekommendationer som vägleder dig genom de ändringar som krävs innan du utför en migrering. Det är upp till dig att utföra eventuellt nödvändig reparation. När du är redo att påbörja migreringsprocessen utför Azure Database Migration Service alla tillhörande steg. Du kan tryggt starta och sedan glömma dina migreringsprojekt i vetskap om att processen sker enligt Microsofts bästa praxis.
 
