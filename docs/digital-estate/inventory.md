@@ -8,16 +8,16 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 616bf15db1fac01966573cd5822717c59286434b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6b6bbfef4f9e404433119d412cd4bf625cd3b480
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829298"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023500"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>Samla in inventerings data för en digital egendom
 
-Det första steget i planeringen av [digital auktion](index.md)är att utveckla en inventering. I den här processen samlas en lista över IT-tillgångar som stöder specifika affärs funktioner för senare analys-och rationalisering. Den här artikeln förutsätter att en nedrullningsbar metod för analys är lämpligast för planering. Mer information finns i [metoder för planering av digital auktion](./approach.md).
+Det första steget i planeringen av [digital auktion](./index.md)är att utveckla en inventering. I den här processen samlas en lista över IT-tillgångar som stöder specifika affärs funktioner för senare analys-och rationalisering. Den här artikeln förutsätter att en nedrullningsbar metod för analys är lämpligast för planering. Mer information finns i [metoder för planering av digital auktion](./approach.md).
 
 ## <a name="take-inventory-of-a-digital-estate"></a>Ta förteckningen över en digital egendom
 
@@ -38,4 +38,4 @@ En inventering är sällan slutförd i den första iterationen. Vi rekommenderar
 När en inventering har kompilerats och verifierats kan det vara rationellt. Inventory rationalisering är nästa steg till planeringen av digital auktion.
 
 > [!div class="nextstepaction"]
-> [Rationalisera digital egendom](rationalize.md)
+> [Rationalisera digital egendom](./rationalize.md)
