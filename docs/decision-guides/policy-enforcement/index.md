@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3c519de24d6c7ac83240d1b1e14b0a21c67f67df
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 383f2d6a2443c70c8e082183f601b8186fc98870
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817663"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023701"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Beslutsguide för principframtvingande
 
 Att definiera en organisationsprincip gör ingen nytta såvida den inte kan framtvingas i organisationen. En viktig aspekt av att planera molnmigreringar är att avgöra det bästa sättet att kombinera verktyg som tillhandahålls av molnplattformen i dina befintliga IT-processer för att maximera principefterlevnad i hela molnegendomen.
 
-![Alternativ för principframtvingande ordnade från minst till mest komplext, inriktat med direktlänkar nedan](../../_images/discovery-guides/discovery-guide-policy-enforcement.png)
+![Alternativ för principframtvingande ordnade från minst till mest komplext, inriktat med direktlänkar nedan](../../_images/decision-guides/decision-guide-policy-enforcement.png)
 
 Hoppa till: [Rekommenderade baslinjemetoder](#baseline-recommended-practices) | [Övervakning av principefterlevnad](#policy-compliance-monitoring) | [Principframtvingande](#policy-enforcement) | [Organisationsövergripande princip](#cross-organization-policy) | [Automatiserat framtvingande](#automated-enforcement)
 
@@ -28,7 +28,7 @@ Allt eftersom din molnegendom växer ställs du inför ett motsvarande behov att
 
 Plattformstillhandahållna mekanismer för principframtvingande på resurs- eller prenumerationsnivå räcker oftast för mindre molnegendomar. Större distributioner motiverar en större omfattning av framtvingande och kan behöva utnyttja mer sofistikerade mekanismer för framtvingande som inbegriper distributionsstandarder, gruppering och organisering av resurser samt integrering av principframtvingande med dina loggnings- och rapporteringssystem.
 
-De huvudsakliga faktorerna för att fastställa omfattningen av dina processer för principframtvingande är organisationens [krav för molnstyrning](/azure/architecture/cloud-adoption/governance/overview), storleken och egenskaperna hos din molnegendom samt hur organisationen speglas i din [prenumerationsdesign](../subscriptions/index.md). Både en ökning av storleken på din egendom eller ett högre behov av att centralt hantera principframtvingande kan motivera en ökning av omfattning för framtvingande.
+De huvudsakliga faktorerna för att fastställa omfattningen av dina processer för principframtvingande är organisationens [krav för molnstyrning](../../govern/index.md), storleken och egenskaperna hos din molnegendom samt hur organisationen speglas i din [prenumerationsdesign](../subscriptions/index.md). Både en ökning av storleken på din egendom eller ett högre behov av att centralt hantera principframtvingande kan motivera en ökning av omfattning för framtvingande.
 
 ## <a name="baseline-recommended-practices"></a>Rekommenderade baslinjemetoder
 
@@ -43,15 +43,15 @@ Påbörja planeringen av framtvingande av molnprincip genom att undersöka hur t
 
 ## <a name="policy-compliance-monitoring"></a>Övervakning av principefterlevnad
 
-Ett första steg bortom att helt enkelt förlita sig på de mekanismen för principframtvingande som tillhandahålls av Azure-plattformen är att säkerställa förmågan att kontrollera huruvida molnbaserade program och tjänster efterlever organisationsprincipen. Detta omfattar implementering av meddelandefunktioner för avisering av ansvariga parter om en resurs slutar efterleva principen. Effektiv [loggning och rapportering](../log-and-report/index.md) av efterlevnadsstatus för dina molnarbetsbelastningar är en mycket viktig del av en företagsstrategi för principframtvingande.
+Ett första steg bortom att helt enkelt förlita sig på de mekanismen för principframtvingande som tillhandahålls av Azure-plattformen är att säkerställa förmågan att kontrollera huruvida molnbaserade program och tjänster efterlever organisationsprincipen. Detta omfattar implementering av meddelandefunktioner för avisering av ansvariga parter om en resurs slutar efterleva principen. Effektiv [loggning och rapportering](../logging-and-reporting/index.md) av efterlevnadsstatus för dina molnarbetsbelastningar är en mycket viktig del av en företagsstrategi för principframtvingande.
 
-Allt eftersom din molnegendom växer kan ytterligare verktyg såsom [Azure Security Center](/azure/security-center) ge integrerad säkerhet och hotidentifiering samt hjälpa till att tillämpa centraliserad principhantering och avisering för båda dina lokala och molnbaserade tillgångar.
+Allt eftersom din molnegendom växer kan ytterligare verktyg såsom [Azure Security Center](https://docs.microsoft.com/azure/security-center) ge integrerad säkerhet och hotidentifiering samt hjälpa till att tillämpa centraliserad principhantering och avisering för båda dina lokala och molnbaserade tillgångar.
 
 ## <a name="policy-enforcement"></a>Policyframtvingande
 
 I Azure kan du tillämpa konfigurationsinställningar och regler för resursskapande på nivå för hanteringsgrupp, prenumeration eller resursgrupp för att säkerställa principinriktning.
 
-[Azure Policy](/azure/governance/policy/overview) är en Azure-tjänst för att skapa, tilldela och hantera principer. De här principerna tillämpar olika regler och effekter på dina resurser så att resurserna efterlever dina företagsstandarder och serviceavtal. Azure Policy utvärderar dina resurser för bristande efterlevnad med tilldelade principer. Till exempel vill du kanske begränsa SKU-storleken för virtuella datorer i din miljö. När en motsvarande princip har implementerats skulle nya och befintliga resurser utvärderas för efterlevnad. Med rätt princip kan befintliga resurser bli kompatibla.
+[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) är en Azure-tjänst för att skapa, tilldela och hantera principer. De här principerna tillämpar olika regler och effekter på dina resurser så att resurserna efterlever dina företagsstandarder och serviceavtal. Azure Policy utvärderar dina resurser för bristande efterlevnad med tilldelade principer. Till exempel vill du kanske begränsa SKU-storleken för virtuella datorer i din miljö. När en motsvarande princip har implementerats skulle nya och befintliga resurser utvärderas för efterlevnad. Med rätt princip kan befintliga resurser bli kompatibla.
 
 ## <a name="cross-organization-policy"></a>Organisationsövergripande princip
 
@@ -61,7 +61,7 @@ Din [prenumerationsdesign](../subscriptions/index.md) behöver ta med principens
 
 ## <a name="automated-enforcement"></a>Automatiserat framtvingande
 
-Medan standardiserade distributionsmallar är effektiva i liten skala möjliggör [Azure Blueprints](/azure/governance/blueprints/overview) storskalig, standardiserad etablering och distributionsorkestrering av Azure-lösningar. Arbetsbelastningar över flera prenumerationer kan distribueras med konsekventa principinställningar för alla resurser som skapas.
+Medan standardiserade distributionsmallar är effektiva i liten skala möjliggör [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) storskalig, standardiserad etablering och distributionsorkestrering av Azure-lösningar. Arbetsbelastningar över flera prenumerationer kan distribueras med konsekventa principinställningar för alla resurser som skapas.
 
 För IT-miljöer där molnbaserade och lokala resurser integreras kan du behöva använda loggnings- och rapporteringssystem för att ge hybridövervakningsfunktioner. Dina driftsövervakningssystem från tredje part eller anpassade sådana har kanske ytterligare funktioner för principframtvingande. För större eller mognare molnegendomar bör du överväga vad som är bästa sätt att integrera dessa system med dina molntillgångar.
 
