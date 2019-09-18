@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c44bcd45783ee6ea61bbbe33b6b76ce7034eca2c
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e6c5f0aa120339ecd2c3a968503b5ee0be824307
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818905"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024732"
 ---
 # <a name="optimize-and-transform"></a>Optimera och transformera
 
@@ -60,13 +60,13 @@ Observera att ändring av storleken på virtuella datorer för produktion kan or
 
 ::: zone target="docs"
 
-- [Hantera reservationer för Azure-resurser](/azure/billing/billing-manage-reserved-vm-instance)
-- [Ändra storlek på en virtuell Windows-dator](/azure/virtual-machines/windows/resize-vm)
-- [Ändra storlek på en virtuell Linux-dator med Azure CLI](/azure/virtual-machines/linux/change-vm-size)
+- [Hantera reservationer för Azure-resurser](https://docs.microsoft.com/azure/billing/billing-manage-reserved-vm-instance)
+- [Ändra storlek på en virtuell Windows-dator](https://docs.microsoft.com/azure/virtual-machines/windows/resize-vm)
+- [Ändra storlek på en virtuell Linux-dator med Azure CLI](https://docs.microsoft.com/azure/virtual-machines/linux/change-vm-size)
 
 Partner kan använda Partner Center för att granska användningen.
 
-- [Storleksändring av virtuell Microsoft Azure-dator för maximal reservationsanvändning](/partner-center/azure-usage)
+- [Storleksändring av virtuell Microsoft Azure-dator för maximal reservationsanvändning](https://docs.microsoft.com/partner-center/azure-usage)
 
 ::: zone-end
 
@@ -126,8 +126,8 @@ Du kan också använda **Advisor** och välja fliken **Kostnader** för att iden
 
 ::: zone target="docs"
 
-- [Självstudier: Optimera kostnader utifrån rekommendationer](/azure/cost-management/tutorial-acm-opt-recommendations)
-- [Förhindra oväntade avgifter med Azure-fakturering och kostnadshantering](/azure/billing/billing-getting-started)
-- [Utforska och analysera kostnader med kostnadsanalys](/azure/cost-management/quick-acm-cost-analysis)
+- [Självstudier: Optimera kostnader utifrån rekommendationer](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations)
+- [Förhindra oväntade avgifter med Azure-fakturering och kostnadshantering](https://docs.microsoft.com/azure/billing/billing-getting-started)
+- [Utforska och analysera kostnader med kostnadsanalys](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)
 
 ::: zone-end

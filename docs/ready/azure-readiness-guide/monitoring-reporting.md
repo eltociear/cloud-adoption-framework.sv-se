@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9c3ae19f9d8115e7d07241d22074d26ae5592560
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: dc2df86dae7e820527d5f4b1d26fa69366b55b59
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818548"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022065"
 ---
 # <a name="monitoring-and-reporting-in-azure"></a>Övervakning och rapportering i Azure
 
@@ -35,10 +35,10 @@ Azure Monitor är en enhetlig hubb för alla övervaknings- och diagnostikdata i
 
  Börja övervaka dina:
 
-- [Program](/azure/application-insights/app-insights-overview)
-- [Containrar](/azure/monitoring/monitoring-container-overview)
-- [Virtuella datorer](/azure/monitoring/monitoring-service-map)
-- [Nätverk](/azure/networking/network-monitoring-overview)
+- [Program](https://docs.microsoft.com/azure/application-insights/app-insights-overview)
+- [Containrar](https://docs.microsoft.com/azure/monitoring/monitoring-container-overview)
+- [Virtuella datorer](https://docs.microsoft.com/azure/monitoring/monitoring-service-map)
+- [Nätverk](https://docs.microsoft.com/azure/networking/network-monitoring-overview)
 
 Du kan hitta fler lösningar för resursövervakning på Azure Marketplace.
 
@@ -46,7 +46,7 @@ Om du vill utforska Azure Monitor går du till [Azure Portal](https://portal.azu
 
 ## <a name="learn-more"></a>Läs mer
 
-Mer information finns i [dokumentationen om Azure Monitor](/azure/monitoring-and-diagnostics).
+Mer information finns i [dokumentationen om Azure Monitor](https://docs.microsoft.com/azure/monitoring-and-diagnostics).
 
 ::: zone-end
 
@@ -92,7 +92,7 @@ Om du vill ställa in en Service Health-avisering går du till [Azure-portalen](
 
 ## <a name="learn-more"></a>Läs mer
 
-Läs mer i [Azure Service Health-dokumentationen](/azure/service-health).
+Läs mer i [Azure Service Health-dokumentationen](https://docs.microsoft.com/azure/service-health).
 
 ::: zone-end
 
@@ -121,7 +121,7 @@ Om du vill utforska Azure Advisor går du till [Azure-portalen](https://portal.a
 
 ## <a name="learn-more"></a>Läs mer
 
-Mer information finns i [dokumentationen om Azure Advisor](/azure/advisor).
+Mer information finns i [dokumentationen om Azure Advisor](https://docs.microsoft.com/azure/advisor).
 
 ::: zone-end
 
@@ -151,6 +151,6 @@ Om du vill utforska Azure Security Center går du till [Azure-portalen](https://
 
 ## <a name="learn-more"></a>Läs mer
 
-Läs mer i [dokumentationen om Azure Security Center](/azure/security-center).
+Läs mer i [dokumentationen om Azure Security Center](https://docs.microsoft.com/azure/security-center).
 
 ::: zone-end

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7d742242f2639708914927aedbf45d1c59020c7d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d16af8b5b9c70dfdaf08f7bfe280dbd42ed4f8c7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818735"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022743"
 ---
 # <a name="secure-and-manage"></a>Skydda och hantera
 
@@ -41,7 +41,7 @@ Azure Monitor maximerar programmens tillgänglighet och prestanda genom att leve
 
 ## <a name="read-more"></a>Läs mer
 
-- [Översikt över Azure Monitor](/azure/azure-monitor/overview).
+- [Översikt över Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview).
 
 ::: zone-end
 
@@ -72,7 +72,7 @@ I kombination ger de här funktionerna en heltäckande vy över Azure-hälsotill
 
 ## <a name="read-more"></a>Läs mer
 
-Läs mer i [Azure Service Health-dokumentationen](/azure/service-health).
+Läs mer i [Azure Service Health-dokumentationen](https://docs.microsoft.com/azure/service-health).
 
 ::: zone-end
 
@@ -95,7 +95,7 @@ Azure Advisor är en anpassad molnkonsult som hjälper dig att följa bästa pra
 
 ## <a name="read-more"></a>Läs mer
 
-[Översikt](/azure/advisor/advisor-overview).
+[Översikt](https://docs.microsoft.com/azure/advisor/advisor-overview).
 
 ::: zone-end
 
@@ -118,7 +118,7 @@ Azure Security Center är ett enhetligt system för hantering av infrastrukturs�
 
 ## <a name="read-more"></a>Läs mer
 
-[Översikt](/azure/security-center/security-center-intro)
+[Översikt](https://docs.microsoft.com/azure/security-center/security-center-intro)
 
 ::: zone-end
 
@@ -144,7 +144,7 @@ Azure Backup är en Azure-baserad tjänst som du använder för att säkerhetsko
 
 ::: zone target="docs"
 
-[Översikt](/azure/backup/backup-introduction-to-azure-backup)
+[Översikt](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)
 
 ::: zone-end
 
@@ -194,7 +194,7 @@ När replikeringen har slutförts kan du kontrollera replikeringsstatus, kontrol
 
 ## <a name="learn-more"></a>Läs mer
 
-- [Översikt över Azure Site Recovery](/azure/site-recovery/site-recovery-overview)
-- [Replikera en virtuell Azure-dator till en annan region](/azure/site-recovery/azure-to-azure-quickstart)
+- [Översikt över Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)
+- [Replikera en virtuell Azure-dator till en annan region](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)
 
 ::: zone-end

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c95134909838f11377b16e90c5deb68850388938
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 19c3d6861ddb4ad87255233fae1a7f535538324b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818837"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022842"
 ---
 # <a name="assess-the-digital-estate"></a>Utvärdera den digitala egendomen
 
@@ -59,8 +59,8 @@ granskar du inställningarna och klickar på **Lägg till verktyg**
 
 ### <a name="read-more"></a>Läs mer
 
-- [Översikt över Azure Migrate](/azure/migrate/migrate-services-overview)
-- [Migrera fysiska eller virtualiserade servrar till Azure](/azure/migrate/tutorial-migrate-physical-virtual-machines)
+- [Översikt över Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview)
+- [Migrera fysiska eller virtualiserade servrar till Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
 - [Azure Migrate i Azure-portalen](https://portal.azure.com/#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview)
 
 ::: zone-end
@@ -69,22 +69,22 @@ granskar du inställningarna och klickar på **Lägg till verktyg**
 
 Tjänstkarta identifierar automatiskt programkomponenter i Windows- och Linux-system och mappar kommunikationen mellan olika tjänster. Med Tjänstkarta kan du se dina servrar på samma sätt som du tänker på dem, dvs. som sammankopplade system som levererar kritiska tjänster. Tjänstkarta visar anslutningar mellan servrar, processer, inkommande och utgående anslutningssvarstid, samt portar i valfri TCP-ansluten arkitektur, utan att det krävs någon konfiguration förutom installationen av en agent.
 
-Azure Migrate använder Tjänstkarta till att förbättra rapporteringsfunktioner och beroenden i miljön. Fullständig information om den här integreringen finns i [Visualisering av beroenden](/azure/migrate/concepts-dependency-visualization). Om du använder Azure Migration-tjänsten krävs det inte några ytterligare steg för att konfigurera och få fördelarna med Tjänstkarta. Följande anvisningar gäller om du vill använda Tjänstkarta för andra syften eller projekt.
+Azure Migrate använder Tjänstkarta till att förbättra rapporteringsfunktioner och beroenden i miljön. Fullständig information om den här integreringen finns i [Visualisering av beroenden](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization). Om du använder Azure Migration-tjänsten krävs det inte några ytterligare steg för att konfigurera och få fördelarna med Tjänstkarta. Följande anvisningar gäller om du vill använda Tjänstkarta för andra syften eller projekt.
 
 ### <a name="enable-dependency-visualization-using-service-map"></a>Aktivera visualisering av beroenden med Tjänstkarta
 
 Om du vill använda beroendevisualisering måste du ladda ned och installera agenter på varje lokal dator som du vill analysera.
 
-- [Microsoft Monitoring Agent (MMA)](/azure/log-analytics/log-analytics-agent-windows) måste vara installerad på varje dator.
-- [Beroendeagenten](/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) måste vara installerad på varje dator.
+- [Microsoft Monitoring Agent (MMA)](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) måste vara installerad på varje dator.
+- [Beroendeagenten](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) måste vara installerad på varje dator.
 - Om du har datorer utan Internetanslutning måste du dessutom ladda ned och installera Log Analytics-gatewayen på dem.
 
 <!-- markdownlint-disable MD024 -->
 
 ### <a name="read-more"></a>Läs mer
 
-- [Använda lösningen Tjänstkarta i Azure](/azure/azure-monitor/insights/service-map)
-- [Azure Migrate och Tjänstkarta: Visualisering av beroenden](/azure/migrate/concepts-dependency-visualization)
+- [Använda lösningen Tjänstkarta i Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
+- [Azure Migrate och Tjänstkarta: Visualisering av beroenden](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
 
 
 # <a name="scenarios-and-stakeholderstabscenarios"></a>[Scenarier och intressenter](#tab/Scenarios)

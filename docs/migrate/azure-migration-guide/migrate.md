@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ce8338fbcd0e21cf0875a207633ce7c9ddf2ff9e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4947f980bbcaa153e55af835c2e6892cf4e2dab3
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818769"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022788"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrera tillgångar (infrastruktur, appar och data)
 
@@ -50,7 +50,7 @@ Följ dessa steg om du vill utföra en migrering med Azure Migrate:
 
 ### <a name="read-more"></a>Läs mer
 
-- [Azure Migrate-självstudier – Migrera fysiska eller virtualiserade servrar till Azure](/azure/migrate/tutorial-migrate-physical-virtual-machines)
+- [Azure Migrate-självstudier – Migrera fysiska eller virtualiserade servrar till Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
 
 ## <a name="azure-site-recovery"></a>Azure Site Recovery
 
@@ -59,7 +59,7 @@ Azure Site Recovery-tjänsten kan hantera migreringen av lokala resurser till Az
 Följande steg beskriver processen med att använda Site Recovery för att migrera:
 
 > [!TIP]
-> Beroende på ditt scenario kan de här stegen skilja sig något. Mer information finns i artikeln [Migrera lokala datorer till Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure).
+> Beroende på ditt scenario kan de här stegen skilja sig något. Mer information finns i artikeln [Migrera lokala datorer till Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure).
 
 ### <a name="prepare-azure-site-recovery-service"></a>Förbereda Azure Site Recovery-tjänsten
 
@@ -102,7 +102,7 @@ Följande steg beskriver processen med att använda Site Recovery för att migre
 
 Mer information finns i:
 
-- [Migrera lokala datorer till Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure)
+- [Migrera lokala datorer till Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure)
 
 ::: zone-end
 
@@ -141,8 +141,8 @@ Tjänsten är nu redo att migrera de källdatabaser som stöds (till exempel SQL
 
 Mer information finns i:
 
-- [Översikt över Azure Database Migration Service](/azure/dms/dms-overview)
-- [Skapa en instans av Azure Database Migration Service](/azure/dms/quickstart-create-data-migration-service-portal)
+- [Översikt över Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview)
+- [Skapa en instans av Azure Database Migration Service](https://docs.microsoft.com/azure/dms/quickstart-create-data-migration-service-portal)
 - [Azure Migrate i Azure-portalen](https://portal.azure.com/#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade)
 - [Azure-portalen: Skapa ett migreringsprojekt](https://portal.azure.com/#create/Microsoft.AzureMigrate)
 
@@ -166,21 +166,21 @@ Följ dessa steg för att komma igång med Data Migration Assistant.
 1. Klicka på **Nästa** för att starta utvärderingen.
 1. Visa resultat i Data Migration Assistant-verktygsuppsättningen.
 
-För företag rekommenderar vi att du följer den metod som beskrivs i [Utvärdera ett företag och konsolidera utvärderingsrapporter med DMA](/sql/dma/dma-consolidatereports) för att utvärdera flera servrar, kombinerar rapporterna och sedan använder de tillhandahållna Power BI-rapporterna för att analysera resultatet.
+För företag rekommenderar vi att du följer den metod som beskrivs i [Utvärdera ett företag och konsolidera utvärderingsrapporter med DMA](https://docs.microsoft.com/sql/dma/dma-consolidatereports) för att utvärdera flera servrar, kombinerar rapporterna och sedan använder de tillhandahållna Power BI-rapporterna för att analysera resultatet.
 
 Mer information, däribland detaljerade användningssteg, finns i följande avsnitt:
 
-- [Översikt av Data Migration Assistant](/sql/dma/dma-overview)
-- [Utvärdera ett företag och konsolidera utvärderingsrapporter med DMA](/sql/dma/dma-consolidatereports)
-- [Analysera konsoliderade utvärderingsrapporter som skapats av Data Migration Assistant med Power BI](/sql/dma/dma-powerbiassesreport)
+- [Översikt av Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview)
+- [Utvärdera ett företag och konsolidera utvärderingsrapporter med DMA](https://docs.microsoft.com/sql/dma/dma-consolidatereports)
+- [Analysera konsoliderade utvärderingsrapporter som skapats av Data Migration Assistant med Power BI](https://docs.microsoft.com/sql/dma/dma-powerbiassesreport)
 
 ## <a name="sql-server-migration-assistant"></a>SQL Server Migration Assistant
 
-Microsoft SQL Server Migration Assistant (SSMA) är ett verktyg som utformats för att automatisera databasmigrering till SQL Server från Microsoft Access, DB2, MySQL, Oracle och SAP ASE. Det allmänna konceptet är att samla in, utvärdera och granska med dessa verktyg, men på grund av varianser i processen för varje källsystem rekommenderar vi att du läser den detaljerade [dokumentationen för SQL Server Migration Assistant](/sql/ssma/sql-server-migration-assistant).
+Microsoft SQL Server Migration Assistant (SSMA) är ett verktyg som utformats för att automatisera databasmigrering till SQL Server från Microsoft Access, DB2, MySQL, Oracle och SAP ASE. Det allmänna konceptet är att samla in, utvärdera och granska med dessa verktyg, men på grund av varianser i processen för varje källsystem rekommenderar vi att du läser den detaljerade [dokumentationen för SQL Server Migration Assistant](https://docs.microsoft.com/sql/ssma/sql-server-migration-assistant).
 
 Mer information finns i:
 
-- [Översikt av SQL Server Migration Assistant](/sql/ssma/sql-server-migration-assistant)
+- [Översikt av SQL Server Migration Assistant](https://docs.microsoft.com/sql/ssma/sql-server-migration-assistant)
 
 ## <a name="database-experimentation-assistant"></a>Database Experimentation Assistant
 
@@ -194,7 +194,7 @@ Database Experimentation Assistant innehåller följande arbetsflödesaktivitete
 
 Mer information finns i:
 
-- [Översikt av Database Experimentation Assistant](/sql/dea/database-experimentation-assistant-overview)
+- [Översikt av Database Experimentation Assistant](https://docs.microsoft.com/sql/dea/database-experimentation-assistant-overview)
 
 # <a name="third-party-migration-toolstabthird-party-tools"></a>[Migreringsverktyg från tredje part](#tab/third-party-tools)
 
@@ -245,4 +245,4 @@ När du migrerar till molntekniker ger detta en bra möjlighet att förbereda or
 
 # <a name="cost-managementtabmanagecost"></a>[Kostnadshantering](#tab/ManageCost)
 
-När du migrerar resurser till din molnmiljö är det viktigt att utföra regelbunden kostnadsanalys. Detta hjälper dig att undvika oväntade användningsavgifter eftersom migreringsprocessen kan ålägga dina tjänster ytterligare användningskrav. Du kan även ändra storlek på resurser efter behov för att balansera kostnader och arbetsbelastningar (detta beskrivs mer detaljerat i avsnittet **[Optimera och transformera](optimize-and-transform.md)** ).
+När du migrerar resurser till din molnmiljö är det viktigt att utföra regelbunden kostnadsanalys. Detta hjälper dig att undvika oväntade användningsavgifter eftersom migreringsprocessen kan ålägga dina tjänster ytterligare användningskrav. Du kan även ändra storlek på resurser efter behov för att balansera kostnader och arbetsbelastningar (detta beskrivs mer detaljerat i avsnittet **[Optimera och transformera](./optimize-and-transform.md)** ).

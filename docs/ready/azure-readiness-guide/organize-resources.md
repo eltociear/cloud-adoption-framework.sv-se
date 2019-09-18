@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2951c3049a22036199e2bc73a6d3f9283582e7e1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 8be46c21a009b7dca11cfc628476ae46315b23e5
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818514"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025236"
 ---
 # <a name="organize-your-azure-resources"></a>Organisera dina Azure-resurser
 
@@ -80,9 +80,9 @@ Du kan läsa mer här:
 
 - [Grunderna i Azure](../considerations/fundamental-concepts.md)
 - [Skalning med flera Azure-prenumerationer](../considerations/scaling-subscriptions.md)
-- [Förstå åtkomsthantering av resurser i Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Ordna resurser med hanteringsgrupper i Azure](/azure/azure-resource-manager/management-groups-overview)
-- [Tjänstbegränsningar för prenumerationer](/azure/azure-subscription-service-limits)
+- [Förstå åtkomsthantering av resurser i Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Ordna resurser med hanteringsgrupper i Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [Tjänstbegränsningar för prenumerationer](https://docs.microsoft.com/azure/azure-subscription-service-limits)
 
 ::: zone-end
 
@@ -130,7 +130,7 @@ Namngivningsreglerna hjälper dig att enkelt identifiera resurser i Azure Portal
 
 - Den operativa sidan bör se till att namnen innehåller den information som IT-teamen behöver. Använd informationen som identifierar arbetsbelastning, program, miljö, prioritet och annan information som är användbar för att hantera resurser.
 
-Olika resurstyper kan ha olika längdgränser och tillåtna tecken, många av dem som anges i Azure-metodtipsartikeln [namngivningskonventioner](/azure/architecture/best-practices/naming-conventions). Mer information och rekommendationer till hjälp för företags molnimplementeringsåtgärder, finns i [vägledning för namngivning och taggning](../considerations/name-and-tag.md) Ramverk för molnimplementering.
+Olika resurstyper kan ha olika längdgränser och tillåtna tecken, många av dem som anges i Azure-metodtipsartikeln [namngivningskonventioner](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). Mer information och rekommendationer till hjälp för företags molnimplementeringsåtgärder, finns i [vägledning för namngivning och taggning](../considerations/naming-and-tagging.md) Ramverk för molnimplementering.
 
 Följande tabell innehåller namngivningsmönster för några exempeltyper av Azure-resurser.
 
@@ -161,7 +161,7 @@ Du kan också använda taggar till mycket annat. Vanliga användningsområden ä
 
 Varje resurs eller resursgrupp kan innehålla upp till 15 taggnamn-/taggvärdepar. Den här begränsningen gäller dock bara taggar som läggs till direkt för resursgruppen eller resursen.
 
-Mer taggningsrekommendationer och exempel finns i [vägledningen om taggning](../considerations/name-and-tag.md) i Ramverk för molnimplementering.
+Mer taggningsrekommendationer och exempel finns i [vägledningen om taggning](../considerations/naming-and-tagging.md) i Ramverk för molnimplementering.
 
 ::: zone target="docs"
 
@@ -176,7 +176,7 @@ Så här lägger du till en tagg för en resursgrupp:
 
 ## <a name="learn-more"></a>Läs mer
 
-Du kan läsa mer i [Använda taggar till at organisera dina Azure-resurser](/azure/azure-resource-manager/resource-group-using-tags).
+Du kan läsa mer i [Använda taggar till at organisera dina Azure-resurser](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 
 ::: zone-end
 

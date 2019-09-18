@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 294a426aef047bb7acd418c19574a4fd7e0b2320
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: c6b195a69622a4934f257090650a8ba6ce884025
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905646"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024815"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mekanismer för migreringsfokuserad kostnadskontroll
 
@@ -70,8 +70,8 @@ Beräkningen som skapas och som visas nedan identifierar de månatliga kostnader
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-- [Ställa in och granska en utvärdering med Azure Migrate](/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
-- En mer omfattande plan om kostnadshantering över ett större antal tillgångar (infrastruktur, appar och data) finns i [styrningsmodellen i Ramverk för molnimplementering](../../governance/journeys/index.md). I synnerhet riktlinjerna för [Cost Management-disciplin](../../governance/cost-management/index.md) och [förbättringar av Cost Management i handboken för stora företag](../../governance/journeys/complex-enterprise/cost-management-evolution.md).
+- [Ställa in och granska en utvärdering med Azure Migrate](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
+- En mer omfattande plan om kostnadshantering över ett större antal tillgångar (infrastruktur, appar och data) finns i [styrningsmodellen i Ramverk för molnimplementering](../../govern/guides/index.md). I synnerhet riktlinjerna för [Cost Management-disciplin](../../govern/cost-management/index.md) och [förbättringar av Cost Management i handboken för stora företag](../../govern/guides/complex/cost-management-improvement.md).
 
 # <a name="estimate-and-optimize-vm-costs-during-and-after-migrationtabestimateoptimize"></a>[Beräkna och optimera kostnader för virtuella datorer under och efter migrering](#tab/EstimateOptimize)
 
@@ -91,7 +91,7 @@ Följande steg innehåller kostnadsrekommendationer för tillgångar (infrastruk
 
 Azure Cost Management kan ge en mer omfattande vy över utgiftsvanor, inklusive en detaljerad överblick över kostnader och utgiftstrender över tid. För stora eller komplexa migreringar kan den här vyn ge de insikter som krävs för att fatta generella beslut om kostnadshantering.
 
-Krav: Resten av den här fliken förutsätter att läsaren har slutfört installationen av Azure Cost Management i samband med genomförandet av guiden för Azure-beredskap. Mer information om hur du konfigurerar Azure Cost Management finns den här [artikeln i guiden för Azure-beredskap](/azure/architecture/cloud-adoption/ready/azure-readiness-guide/manage-costs). När data har fyllts följer du nästa steg för att uppskatta månadskostnaden baserat på de data som samlas in.
+Krav: Resten av den här fliken förutsätter att läsaren har slutfört installationen av Azure Cost Management i samband med genomförandet av guiden för Azure-beredskap. Mer information om hur du konfigurerar Azure Cost Management finns den här [artikeln i guiden för Azure-beredskap](../../ready/azure-readiness-guide/manage-costs.md). När data har fyllts följer du nästa steg för att uppskatta månadskostnaden baserat på de data som samlas in.
 
 Följande steg läser in kostnadsanalysdata för Azure Cost Management för dina prenumerationer:
 
@@ -104,9 +104,9 @@ Med den här analysen kan du granska totala kostnader, budget (om tillgängligt)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-- En mer omfattande plan om kostnadshantering över ett större antal tillgångar (infrastruktur, appar och data) finns i [styrningsmodellen i Ramverk för molnimplementering](../../governance/journeys/index.md). I synnerhet riktlinjerna för [Cost Management-disciplin](../../governance/cost-management/index.md) och [stegvisa förbättringar av Cost Management i handboken för stora företag](../../governance/journeys/complex-enterprise/cost-management-evolution.md).
-- Mer information om Azure Advisor finns i [Sänk tjänstekostnaderna med Azure Advisor](/azure/advisor/advisor-cost-recommendations).
-- Mer information om Azure Cost Management finns i [Förstå och arbeta med omfattningar](/azure/cost-management/understand-work-scopes) och [Utforska och analysera kostnader med kostnadsanalys](/azure/cost-management/quick-acm-cost-analysis).
+- En mer omfattande plan om kostnadshantering över ett större antal tillgångar (infrastruktur, appar och data) finns i [styrningsmodellen i Ramverk för molnimplementering](../../govern/guides/index.md). I synnerhet riktlinjerna för [Cost Management-disciplin](../../govern/cost-management/index.md) och [stegvisa förbättringar av Cost Management i handboken för stora företag](../../govern/guides/complex/cost-management-improvement.md).
+- Mer information om Azure Advisor finns i [Sänk tjänstekostnaderna med Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations).
+- Mer information om Azure Cost Management finns i [Förstå och arbeta med omfattningar](https://docs.microsoft.com/azure/cost-management/understand-work-scopes) och [Utforska och analysera kostnader med kostnadsanalys](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis).
 
 # <a name="tips-and-tricks-to-optimize-coststabtipstricks"></a>[Tips och knep för att optimera kostnader](#tab/TipsTricks)
 
@@ -130,7 +130,7 @@ Prata med din Microsoft-kontorepresentant för att förstå hur du kan dra nytta
 
 ## <a name="azure-reservations"></a>Azure-reservationer
 
-Med [Azure-reservationer](/azure/billing/billing-save-compute-costs-reservations) kan du förskottsbetala för ett till tre års virtuella datorer eller SQL-databasprocessorkapacitet. Förskottsbetalning gör att du kan få rabatt på de resurser du använder. Med Azure-reservationer kan du minska dina kostnader för virtuella datorer eller SQL-databasprocessorer avsevärt med upp till 72 procent jämfört med löpande kostnader med antingen ett eller tre års förskottsbetalning. Reservation ger en rabatt och påverkar inte de virtuella datorerna eller SQL-databasernas körningsstatus.
+Med [Azure-reservationer](https://docs.microsoft.com/azure/billing/billing-save-compute-costs-reservations) kan du förskottsbetala för ett till tre års virtuella datorer eller SQL-databasprocessorkapacitet. Förskottsbetalning gör att du kan få rabatt på de resurser du använder. Med Azure-reservationer kan du minska dina kostnader för virtuella datorer eller SQL-databasprocessorer avsevärt med upp till 72 procent jämfört med löpande kostnader med antingen ett eller tre års förskottsbetalning. Reservation ger en rabatt och påverkar inte de virtuella datorerna eller SQL-databasernas körningsstatus.
 
 ## <a name="use-azure-hybrid-benefit"></a>Använd Azure Hybrid Benefit
 
@@ -138,8 +138,8 @@ Om du redan har Windows Server- eller SQL Serverlicenser i dina lokala distribut
 
 ## <a name="low-priority-vms-with-batch"></a>Lågprioriterade virtuella datorer med Batch
 
-För bakgrundsprocesser med låg prioritet erbjuder Batch ett sätt att hantera de virtuella datorerna för bakgrundstjänsterna och sänka kostnaderna. Det är dock viktigt att förstå inverkan på prestandan för [Batch för virtuella datorer med låg prioritet](/azure/batch/batch-low-pri-vms) innan du väljer det rabatterade alternativet.
+För bakgrundsprocesser med låg prioritet erbjuder Batch ett sätt att hantera de virtuella datorerna för bakgrundstjänsterna och sänka kostnaderna. Det är dock viktigt att förstå inverkan på prestandan för [Batch för virtuella datorer med låg prioritet](https://docs.microsoft.com/azure/batch/batch-low-pri-vms) innan du väljer det rabatterade alternativet.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-En mer omfattande plan om kostnadshantering över ett större antal tillgångar (infrastruktur, appar och data) finns i [styrningsmodellen i Ramverk för molnimplementering](../../governance/journeys/index.md). I synnerhet riktlinjerna för [Cost Management-disciplin](../../governance/cost-management/index.md) och [stegvisa förbättringar av Cost Management i handboken för styrning av stora företag](../../governance/journeys/complex-enterprise/cost-management-evolution.md).
+En mer omfattande plan om kostnadshantering över ett större antal tillgångar (infrastruktur, appar och data) finns i [styrningsmodellen i Ramverk för molnimplementering](../../govern/guides/index.md). I synnerhet riktlinjerna för [Cost Management-disciplin](../../govern/cost-management/index.md) och [stegvisa förbättringar av Cost Management i handboken för styrning av stora företag](../../govern/guides/complex/cost-management-improvement.md).

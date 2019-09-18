@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 375631e516163dd1c0ea4832033c68bf17aad515
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d1b9d6d7e195661b19eb4dd5c2b3f4f2710682b8
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818497"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022019"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Håll dig uppdaterad med Microsoft Azure
 
@@ -25,7 +25,7 @@ Molnplattformar som Microsoft Azure ändras snabbare än vad många organisation
 
 Följande resurser kan hjälpa dig att hålla dig uppdaterad med Azure:
 
-- [Azure Service Health](/azure/service-health/service-health-overview)
+- [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview)
   - När du använder Service Health och aviseringar får du meddelanden om pågående tjänstproblem, planerat underhåll och hälsoråd i god tid. Den här resursen innehåller också information om funktioner som tas bort från Azure.
 - [Azure-uppdateringar](https://azure.microsoft.com/updates)
   - Prenumerera på Azure-uppdateringar så att du får meddelanden om produktuppdateringar. Korta sammanfattningar kopplas till mer ingående artiklar så att det är enkelt att följa uppdateringarna.

@@ -10,16 +10,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 94ab5fd4907d7c95ca0d1b0ca932aa25eea5be41
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e38512ef75a0bb60f07467fc6a73ca90e1392fca
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818650"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025249"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Styrning, säkerhet och efterlevnad i Azure
 
-När du skapar en företagsprincip och planerar dina styrningsstrategier kan du använda verktyg och tjänster som Azure Policy, Azure Blueprints och Azure Security Center för att genomföra och automatisera organisationens styrningsbeslut. Innan du börjar planera styrningen bör du använda [verktyget Governance Benchmark](http://aka.ms/caf/gov/assess) för att identifiera eventuella brister i din organisations metod för molnstyrning. Mer information om hur du utvecklar styrningsprocesser finns i [vägledningen Ramverk för molnimplementering för styrning i Azure](../../governance/index.md).
+När du skapar en företagsprincip och planerar dina styrningsstrategier kan du använda verktyg och tjänster som Azure Policy, Azure Blueprints och Azure Security Center för att genomföra och automatisera organisationens styrningsbeslut. Innan du börjar planera styrningen bör du använda [verktyget Governance Benchmark](http://aka.ms/caf/gov/assess) för att identifiera eventuella brister i din organisations metod för molnstyrning. Mer information om hur du utvecklar styrningsprocesser finns i [vägledningen Ramverk för molnimplementering för styrning i Azure](../../govern/index.md).
 
 # <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
 
@@ -90,9 +90,9 @@ Så här publicerar du skissartefakter till din prenumeration:
 
 Du kan läsa mer här:
 
-- [Azure Blueprint](/azure/governance/blueprints)
+- [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints)
 - [Ramverk för molnimplementering: Beslutsguide för resurskonsekvens](../../decision-guides/resource-consistency/index.md)
-- [Standardbaserade skissexempel](https://docs.microsoft.com/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
+- [Standardbaserade skissexempel](https://docs.microsoft.com/azure/governance/blueprints/samples/index.md#standards-based-blueprint-samples)
 
 ::: zone-end
 
@@ -130,7 +130,7 @@ Gör följande om du vill tillämpa en princip för en resursgrupp:
 
 Du kan läsa mer här:
 
-- [Azure Policy](/azure/azure-policy)
+- [Azure Policy](https://docs.microsoft.com/azure/azure-policy)
 - [Ramverk för molnimplementering: Beslutsguide för principframtvingande](../../decision-guides/policy-enforcement/index.md)
 
 ::: zone-end
@@ -157,10 +157,10 @@ Om du vill utforska Azure Security Center går du till [Azure-portalen](https://
 
 Du kan läsa mer här:
 
-- [Azure Security Center](/azure/security-center)
-- [Just-in-time-åtkomst till virtuella datorer](/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
+- [Azure Security Center](https://docs.microsoft.com/azure/security-center)
+- [Just-in-time-åtkomst till virtuella datorer](https://docs.microsoft.com/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
 - [Standard-nivån jämfört med den kostnadsfria nivån](https://azure.microsoft.com/pricing/details/security-center)
-- [Ramverk för molnimplementering: Översikt över området säkerhetsbaslinje](../../governance/security-baseline/index.md)
+- [Ramverk för molnimplementering: Översikt över området säkerhetsbaslinje](../../govern/security-baseline/index.md)
 
 ::: zone-end
 

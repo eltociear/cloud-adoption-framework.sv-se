@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: dbfc365f874b9ad6045454c53270275a5008935d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 19299c5855600524f3335b00272974790d83c8fa
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818752"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022759"
 ---
 # <a name="organize-your-azure-resources"></a>Organisera dina Azure-resurser
 
@@ -76,9 +76,9 @@ Skapa en resursgrupp där du kan lagra resurser som webbappar, databaser och lag
 
 Du kan läsa mer här:
 
-- [Förstå åtkomsthantering av resurser i Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Ordna resurser med hanteringsgrupper i Azure](/azure/azure-resource-manager/management-groups-overview)
-- [Tjänstbegränsningar för prenumerationer](/azure/azure-subscription-service-limits)
+- [Förstå åtkomsthantering av resurser i Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Ordna resurser med hanteringsgrupper i Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [Tjänstbegränsningar för prenumerationer](https://docs.microsoft.com/azure/azure-subscription-service-limits)
 
 ::: zone-end
 
@@ -124,7 +124,7 @@ Namngivningsreglerna hjälper dig att enkelt identifiera resurser i portalen, p�
 
 ::: zone target="docs"
 
-Vi rekommenderar att du läser igenom och använder [vägledningen om mönster och praxis](/azure/architecture/best-practices/naming-conventions).
+Vi rekommenderar att du läser igenom och använder [vägledningen om mönster och praxis](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions).
 
 >[!TIP]
 >Undvik specialtecken (`-` eller `_`) som det första eller sista tecknet i ett namn. De här tecknen orsakar de flesta valideringsfel.
@@ -151,7 +151,7 @@ Du kan också använda taggar till mycket annat. Vanliga användningsområden ä
 
 Varje resurs eller resursgrupp kan innehålla upp till 15 taggnamn-/taggvärdepar. Den här begränsningen gäller dock bara taggar som läggs till direkt för resursgruppen eller resursen.
 
-Mer information om taggar finns i [Azure Architecture Centers namngivningskonventioner för Azure-resurser](../../ready/considerations/name-and-tag.md#metadata-tags)
+Mer information om taggar finns i [Azure Architecture Centers namngivningskonventioner för Azure-resurser](../../ready/considerations/naming-and-tagging.md#metadata-tags)
 
 ::: zone target="docs"
 
@@ -166,7 +166,7 @@ Så här lägger du till en tagg för en resursgrupp:
 
 ## <a name="learn-more"></a>Läs mer
 
-Du kan läsa mer i [Använda taggar till at organisera dina Azure-resurser](/azure/azure-resource-manager/resource-group-using-tags).
+Du kan läsa mer i [Använda taggar till at organisera dina Azure-resurser](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 
 ::: zone-end
 
