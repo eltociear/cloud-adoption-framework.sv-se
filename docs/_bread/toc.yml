@@ -1,3 +1,38 @@
-- name: Docs
-  tocHref: /
-  topicHref: /
+- name: Azure
+  tocHref: /azure
+  topicHref: /azure
+  items:
+    - name: Cloud Adoption Framework
+      tocHref: /azure/cloud-adoption-framework/
+      topicHref: /azure/cloud-adoption-framework
+      items:
+        - name: Strategi
+          tocHref: /azure/cloud-adoption-framework/strategy/
+          topicHref: /azure/cloud-adoption-framework/strategy
+        - name: Planera
+          tocHref: /azure/cloud-adoption-framework/plan/
+          topicHref: /azure/cloud-adoption-framework/plan
+        - name: Redo
+          tocHref: /azure/cloud-adoption-framework/ready/
+          topicHref: /azure/cloud-adoption-framework/ready
+        - name: Implementera
+          items:
+            - name: Migrera
+              tocHref: /azure/cloud-adoption-framework/migrate/
+              topicHref: /azure/cloud-adoption-framework/migrate
+            - name: Förnya
+              tocHref: /azure/cloud-adoption-framework/innovate/
+              topicHref: /azure/cloud-adoption-framework/innovate
+        - name: Körning
+          tocHref: /azure/cloud-adoption-framework/operate/
+          topicHref: /azure/cloud-adoption-framework/operate
+          items:
+            - name: Styrning
+              tocHref: /azure/cloud-adoption-framework/govern/
+              topicHref: /azure/cloud-adoption-framework/govern
+            - name: Organisera
+              tocHref: /azure/cloud-adoption-framework/organize/
+              topicHref: /azure/cloud-adoption-framework/organize
+            - name: Hantera
+              tocHref: /azure/cloud-adoption-framework/manage/
+              topicHref: /azure/cloud-adoption-framework/manage

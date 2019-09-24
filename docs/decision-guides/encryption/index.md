@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: e4b0ab9c886ec8868cd1f630db6c193cadaff234
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 82ad7e2c4e7e7eac375e99daa0815c8482492e15
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023899"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223894"
 ---
 # <a name="encryption-decision-guide"></a>Beslutsguide för kryptering
 
@@ -123,7 +123,7 @@ Mer information om kryptering och nyckelhantering i Azure finns här:
 - [Översikt över Azure-kryptering](https://docs.microsoft.com/azure/security/security-azure-encryption-overview). En detaljerad beskrivning av hur Azure använder kryptering för att skydda både vilande data och data under överföring.
 - [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-overview). Key Vault är det primära nyckelhanteringssystemet för lagring och hantering av kryptografiska nycklar, hemligheter och certifikat i Azure.
 - [Bästa praxis för datasäkerhet och kryptering i Azure](https://docs.microsoft.com/azure/security/azure-security-data-encryption-best-practices). En diskussion om bästa praxis för datasäkerhet och kryptering i Azure.
-- [Konfidentiell databehandling i Azure](https://azure.microsoft.com/solutions/confidential-compute/). Azure-initiativet för konfidentiell databehandling erbjuder verktyg och teknik för skapandet av betrodda körningsmiljöer eller andra krypteringsmekanismer för att skydda data som används.
+- [Konfidentiell databehandling i Azure](https://azure.microsoft.com/solutions/confidential-compute). Azure-initiativet för konfidentiell databehandling erbjuder verktyg och teknik för skapandet av betrodda körningsmiljöer eller andra krypteringsmekanismer för att skydda data som används.
 
 ## <a name="next-steps"></a>Nästa steg
 

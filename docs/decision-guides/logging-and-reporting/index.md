@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 5a2ce2529073c40abf73432d562d241890a8d805
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9d2f4a6c8541d8967f26db1a38591c7ce775d5e8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025706"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223622"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Beslutsguide för loggning och rapportering
 
@@ -69,7 +69,7 @@ Antaganden gällande endast lokalt:
 
 ### <a name="gateway-aggregation"></a>Gateway-sammansättning
 
-För scenarier med stora mängder molnbaserade telemetri eller där befintliga lokala övervakningssystem behöver ändra loggdata innan de kan bearbetas kan en [gateway-sammansättningstjänst](https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation.md) för loggdata komma att krävas.
+För scenarier med stora mängder molnbaserade telemetri eller där befintliga lokala övervakningssystem behöver ändra loggdata innan de kan bearbetas kan en [gateway-sammansättningstjänst](/azure/architecture/patterns/gateway-aggregation) för loggdata komma att krävas.
 
 En gateway-tjänst distribueras till din molnleverantör. Sedan konfigureras relevanta program och tjänster för att skicka telemetridata till gatewayen i stället för ett standardmässigt loggningssystem. Gatewayen kan sedan bearbeta data genom att aggregera, kombinera eller på annat sätt formatera dem innan de skickas till din övervakningstjänst för datainmatning och analys.
 
