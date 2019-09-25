@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 459d4255a959d2911f56dd08186b92c4e89317dd
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 17538d7c49278a00a5927b0110a2591a03d59e5c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027654"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221464"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Fas 1: Nödvändig planering för Azure Server Management Services
 
@@ -48,7 +48,7 @@ I exemplen som beskrivs i den här vägledningen förutsätter vi en distributio
 
 Vid förberedelse av de arbets ytor och konton som du skapar för onboarding Management Services, se följande diskussioner om problem:
 
-- **Azures geografiska områden och**regelefterlevnad. Azure-regioner är indelade i *geografiska*områden. En [Azure-geografi](https://azure.microsoft.com/global-infrastructure/geographies/) säkerställer att data placering, suveränitet, efterlevnad och återhämtnings krav uppfylls inom geografiska gränser. Om dina arbets belastningar omfattas av data suveränitet eller andra krav på efterlevnad måste arbets ytor och Automation-konton distribueras till regioner i samma Azure-geografi som de arbets belastnings resurser som de stöder.
+- **Azures geografiska områden och**regelefterlevnad. Azure-regioner är indelade i *geografiska*områden. En [Azure-geografi](https://azure.microsoft.com/global-infrastructure/geographies) säkerställer att data placering, suveränitet, efterlevnad och återhämtnings krav uppfylls inom geografiska gränser. Om dina arbets belastningar omfattas av data suveränitet eller andra krav på efterlevnad måste arbets ytor och Automation-konton distribueras till regioner i samma Azure-geografi som de arbets belastnings resurser som de stöder.
 - **Antal arbets ytor**. Som en GUID-princip skapar du det minsta antal arbets ytor som krävs per Azure-geografi. Vi rekommenderar minst en arbets yta för varje Azure-geografi där dina beräknings-eller lagrings resurser finns. Den här inledande justeringen bidrar till att undvika framtida reglerings frågor när du migrerar data till olika geografiska områden.
 - **Data lagring och capping**. Du kan också behöva vidta data lagrings principer eller capping krav för data behandling när du skapar arbets ytor eller Automation-konton. Mer information om dessa principer och ytterligare överväganden vid planering av arbets ytor finns [i hantera loggdata och arbets ytor i Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access).
 - **Region mappning**. Länkning av en Log Analytics-arbetsyta och ett Azure Automation-konto stöds bara mellan vissa Azure-regioner. Om till exempel arbets ytan Log Analytics finns i *östra* regionen måste det länkade Automation-kontot skapas i *EastUS2* -regionen för att kunna användas med hanterings tjänster. Om du har ett Automation-konto som har skapats i en annan region kommer det inte att kunna länka till en arbets yta i *öster*. Valet av distributions region kan markant påverka kraven för Azure geografi. Kontakta [region mappnings tabellen](https://docs.microsoft.com/azure/automation/how-to/region-mappings) för att avgöra vilken region som ska vara värd för dina arbets ytor och Automation-konton.

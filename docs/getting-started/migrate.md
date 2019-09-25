@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7c35d64e3106c2a34670d4dc05614de087f5d5c3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ab637312535f1497b8f506cb9636025460a7905b
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023420"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223069"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>Komma igång med en moln migrerings resa
 
@@ -84,7 +84,7 @@ Som du ser i bilden ovan, justerar det här ramverket strategiska beslut till et
 - **[Redo](../ready/index.md):** Att förbereda affärs-, kultur-, folk-och miljö för kommande ändringar leder till framgång i varje arbete och påskyndar implementeringen och ändrings projekt.
 - **Implementera:** Se till att du har rätt implementering av önskade ändringar, över IT-och affärs processer, för att uppnå affärs resultat.
   - **[Migrera](../migrate/index.md):** Iterativ körning av [moln implementerings metoden](#cloud-implementation) som följer den testade processen för att utvärdera, migrera, optimera och skydda & hantera för att skapa en upprepnings bar process för migrering av arbets belastningar.
-- **[Arbeta](../operating-model/index.md):** Definiera en hanterbar drifts modell för att hantera aktiviteter under och länge efter införandet.
+- **[Arbeta](../operate/index.md):** Definiera en hanterbar drifts modell för att hantera aktiviteter under och länge efter införandet.
   - **[Organisera](../organize/index.md):** Justera människor och team för att leverera rätt moln drift och införande.
   - **[Styrning](../govern/index.md):** Justera företags principen mot materiella risker, med hjälp av princip-, process-och molnbaserad styrnings verktyg.
   - **[Hantera](../manage/index.md):** Utöka IT-driften för att säkerställa att molnbaserade lösningar kan köras genom säkra, kostnads effektiva processer med moderna, molnbaserade drift verktyg.

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a0a2674a91b963154d757eb35290b8aeead5c503
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4efd5b3de5551297a6ef5813a5108f3ad039472c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028240"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222296"
 ---
 # <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>Styrnings guide för komplexa företag: Styrning i flera lager
 
@@ -57,4 +57,3 @@ Den viktiga aspekten av vart och ett av dessa verktyg är möjligheten att till�
 - **Moln implementerings team:** Detaljerade beslut och implementeringar om program eller arbets belastningar kan göras av varje moln antagande team inom ramen för styrnings krav. Ibland kan teamet även begära ytterligare Azure-resursens konsekvens för att påskynda implementeringen.
 
 Informationen om styrnings implementering på varje nivå kräver samordning mellan varje team. Förbättringarna i styrnings MVP och styrning som beskrivs i den här hand boken kan hjälpa dig att justera samordningen.
-

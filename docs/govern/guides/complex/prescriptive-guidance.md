@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 651144a519103c1a35f6a189af88e2f3690ecbfc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9992d4ee6fbd955eea44e13a7f4f31c5836ce83a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028835"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220647"
 ---
 # <a name="governance-guide-for-complex-enterprises-prescriptive-guidance-explained"></a>Styrnings guide för komplexa företag: Vägledning förklaring
 
@@ -59,13 +59,17 @@ Beslutet om vilken prenumerations design som används avgör hur Azure-prenumera
 
 ### <a name="resource-consistency"></a>Resurskonsekvens
 
-Resurs konsekvens beslut avgör vilka verktyg, processer och ansträngningar som krävs för att säkerställa att Azure-resurser distribueras, konfigureras och hanteras konsekvent i en prenumeration. I den här bevaran har **[hierarkisk konsekvens](../../../decision-guides/resource-consistency/index.md#hierarchical-consistency)** valts som primärt resurs konsekvens mönster.
+Resurs konsekvens beslut avgör vilka verktyg, processer och ansträngningar som krävs för att säkerställa att Azure-resurser distribueras, konfigureras och hanteras konsekvent i en prenumeration. I det här avsnittet har **[distributions konsekvens](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** valts som primärt resurs konsekvens mönster.
 
-- Resurs grupper ska skapas för varje program. Hanterings grupper ska skapas för varje program-archetype. Azure Policy ska tillämpas på alla prenumerationer i den associerade hanterings gruppen.
-- Som en del av distributions processen bör resurs konsekvens mallar för alla till gångar lagras i käll kontrollen.
-- Varje resurs grupp bör anpassas till en specifik arbets belastning eller ett program.
-- Hierarkin för Azure Management Group definieras ska motsvara fakturerings ansvar och program ägarskap med hjälp av kapslade grupper.
-- Omfattande implementering av Azure Policy kan överstiga teamets tids åtaganden och kanske inte ger mycket värde just nu. En enkel standard princip bör dock skapas och tillämpas på varje resurs grupp för att genomdriva de första och andra moln styrnings princip satser. Detta används för att definiera implementeringen av särskilda styrnings krav. Dessa implementeringar kan sedan tillämpas på alla distribuerade till gångar.
+- Resurs grupper skapas för program som använder livs cykel metoden: allt som skapas, underhålls och dras tillbaka tillsammans bör finnas i en enda resurs grupp. Mer information om resurs grupper finns [här](../../../decision-guides/resource-consistency/index.md#basic-grouping).
+- Azure Policy ska tillämpas på alla prenumerationer från den associerade hanterings gruppen.
+- Som en del av distributions processen bör Azure Resource Consistency-mallar för resurs gruppen lagras i käll kontrollen.
+- Varje resurs grupp är kopplad till en specifik arbets belastning eller ett program baserat på den livs cykel metod som beskrivs ovan.
+- Med Azures hanterings grupper kan du uppdatera styrnings design som företags policy vuxen.
+- En omfattande implementering av Azure Policy kan överskrida teamets tids åtaganden och kanske inte ger ett bra värde för just nu. En enkel standard princip bör dock skapas och appliceras på varje hanterings grupp för att genomdriva ett litet antal aktuella princip satser för moln styrning. Den här principen definierar implementeringen av särskilda styrnings krav. Dessa implementeringar kan sedan tillämpas på alla distribuerade till gångar.
+
+>[!IMPORTANT]
+>När en resurs i en resurs grupp inte längre delar samma livs cykel, bör den flyttas till en annan resurs grupp. Exempel på detta är vanliga databaser och nätverks komponenter. Även om de kan hantera programmet som utvecklas kan de också hantera andra och bör därför finnas i andra resurs grupper.
 
 ### <a name="resource-tagging"></a>Resursmärkning
 
@@ -122,7 +126,7 @@ Om något av mönstren som valts i den här styrnings guiden inte överensstämm
 
 ## <a name="next-steps"></a>Nästa steg
 
-När den här vägledningen har implementerats kan varje moln antagande team fortsätta med en solid styrnings grund. Moln styrnings gruppen kommer att fungera parallellt för att ständigt uppdatera företags principerna och styrnings disciplinerna.
+När den här vägledningen har implementerats kan varje moln antagande team fortsätta med en solid styrnings grund. På samma gång kommer moln styrnings teamet att arbeta kontinuerligt för att kontinuerligt uppdatera företags principerna och styrnings disciplinerna.
 
 Båda teamen använder tolerans indikatorerna för att identifiera nästa uppsättning förbättringar som krävs för att fortsätta att stödja moln införande. Nästa steg för det här företaget är en stegvis förbättring av deras styrnings bas linje för att stödja program med äldre eller tredjeparts Multi-Factor Authentication-krav.
 

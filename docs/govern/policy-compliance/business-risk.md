@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Förstå affärs risk under molnbaserad migrering
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 26f110e808039fe17ac4186cdafa9e6a200f6fee
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 078ba561384c07cee6ce3a174d1663f7590e228c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028029"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220393"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -35,7 +35,7 @@ Under en omvandling finns samma relativa risker.
 
 - Vid tidig experimentering distribueras några till gångar med lite till inga relevanta data. Risken är liten.
 - När den första arbets belastningen distribueras hamnar en liten risk. Denna risk åtgärdas enkelt genom att välja ett program med låg risk med en liten användar bas.
-- När fler arbets belastningar är online förändras riskerna vid varje version. Nya appar går live, risker förändras.
+- När fler arbets belastningar är online förändras riskerna vid varje version. Nya appar går in i real tid och risker.
 - När ett företag ser till att de första 10-20 programmen är online är risk profilen mycket annorlunda än när 1000th-programmen går in i molnet.
 
 De till gångar som har samlats in i den traditionella, lokala egendom som troligen har ackumulerats över tid. Verksamhets-och IT-teamens mognads grad växer förmodligen på liknande sätt. Den parallella tillväxten kan tenderar att skapa några onödiga policy bagage.
@@ -54,10 +54,10 @@ En MVP-metod kan till exempel göra det möjligt för teamet att definiera en st
 
 Nedan följer några grundläggande exempel på affärs risker som kan ingå som en del av en MVP:
 
-- Alla till gångar riskerar att avslutas (genom fel, misstag eller underhåll).
+- Alla till gångar riskerar att tas bort (genom fel, misstag eller underhåll).
 - Alla till gångar riskerar att generera för mycket utgifter.
-- Alla till gångar kan komprometteras av svaga lösen ord.
-- Alla till gångar med alla öppna portar som exponeras för Internet är utsatta för angrepp.
+- Alla till gångar kan komprometteras av svaga lösen ord eller oskyddade inställningar.
+- Alla till gångar med öppna portar som exponeras för Internet är utsatta för angrepp.
 
 Ovanstående exempel är avsedda att skapa MVP-affärsrisker som en teori. Den faktiska listan är unik för alla miljöer.
 När Business risk MVP har upprättats kan de konverteras till [principer](./index.md) för att reparera varje risk.

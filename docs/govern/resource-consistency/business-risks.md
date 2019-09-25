@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Resultat av resurs konsekvens och affärs risker
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 42510f62cb3f673698832403126901789b05e978
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fd1eb5d9425b87d17613507d3955126ce1437edd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029266"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222013"
 ---
 # <a name="resource-consistency-motivations-and-business-risks"></a>Resultat av resurs konsekvens och affärs risker
 
@@ -22,7 +22,7 @@ Den här artikeln beskriver orsakerna till att kunderna vanligt vis antar en res
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-resource-consistency-relevant"></a>Är resurs konsekvensen relevant?
+## <a name="resource-consistency-relevancy"></a>Resurs konsekvens relevanta
 
 När det gäller att distribuera resurser och arbets belastningar erbjuder molnet ökad flexibilitet och flexibilitet i de flesta traditionella lokala data Center. De här potentiella molnbaserade fördelarna är dock också kopplade till potentiella hanterings nack delar som allvarligt kan äventyra framgången av ditt moln. Vilka resurser har du distribuerat? Vilka team äger olika resurser? Har du tillräckligt med resurser som stöder en arbets belastning? Hur vet du om arbets belastningarna är felfria?
 

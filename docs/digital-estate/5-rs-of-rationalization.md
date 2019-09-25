@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Granska de tillgängliga alternativen för att rationalisera en digital egendom.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 12/10/2018
+ms.date: 09/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 40962b8c658c40e4a27e3c025bc42b3aa5acd0f3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 35709a6208de54f43cdb51aadb1e32f34a0ba844
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023624"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223865"
 ---
 # <a name="cloud-rationalization"></a>Cloud rationalisering
 
@@ -69,7 +69,7 @@ Vanliga driv rutiner kan vara:
 
 - Snabbare och kortare uppdateringar
 - Kod portabilitet
-- Större moln effektivitet (resurser, hastighet, kostnad)
+- Bättre moln effektivitet (resurser, hastighet, kostnad, hanterade åtgärder)
 
 Kvantitativa analys faktorer:
 
@@ -77,6 +77,7 @@ Kvantitativa analys faktorer:
 - Beroenden (nätverks trafik)
 - Användar trafik (sid visningar, tid på sida, inläsnings tid)
 - Utvecklings plattform (språk, data plattform, tjänster på mellan nivå)
+- Databas (CPU, minne, lagring, version)
 
 Kvalitativa analys faktorer:
 
@@ -102,6 +103,7 @@ Kvantitativa analys faktorer:
 - Beroenden (nätverks trafik)
 - Användar trafik (sid visningar, tid på sida, inläsnings tid)
 - Utvecklings plattform (språk, data plattform, tjänster på mellan nivå)
+- Databas (CPU, minne, lagring, version)
 
 Kvalitativa analys faktorer:
 
@@ -125,6 +127,7 @@ Kvantitativa analys faktorer:
 - Beroenden (nätverks trafik)
 - Användar trafik (sid visningar, tid på sida, inläsnings tid)
 - Utvecklings plattform (språk, data plattform, tjänster på mellan nivå)
+- Databas (CPU, minne, lagring, version)
 
 Kvalitativa analys faktorer:
 
@@ -148,6 +151,7 @@ Kvantitativa analys faktorer:
 - VM-storlek (processor, minne, lagring)
 - Beroenden (nätverks trafik)
 - Till gångar som dras tillbaka
+- Databas (CPU, minne, lagring, version)
 
 Kvalitativa analys faktorer:
 

@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Förklaring av affärs risker som är associerade med en moln omvandling
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: cd8bee6cf7cf0ff06cb2846b440263cc83757f5f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2b8bc595377b2748bd00f306659a46196115e91d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028418"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223536"
 ---
 # <a name="evaluate-risk-tolerance"></a>Utvärdera risktolerans
 
@@ -47,7 +47,7 @@ Identifierings risken är en ganska direkt process. IT-relaterade risker är van
 För att förstå risk toleransen undersöker vi kund information. Om ett företag i någon bransch publicerar kund information på en oskyddad Server, är den tekniska risken för dessa data komprometterad eller stulen, ungefär detsamma. Ett företags tolerans för denna risk kommer dock att variera i naturen utifrån arten och det potentiella värdet av data.
 
 - Företag inom hälso vård och finansiering i USA regleras av stela krav på tredje parts efterlevnad. Det förutsätts att personliga data eller hälso vårds data är mycket konfidentiella. Det finns allvarliga konsekvenser för dessa typer av företag, om de ingår i risk scenariot ovan. Deras tolerans är extremt låg. Alla kund uppgifter som publiceras i eller utanför nätverket måste regleras av dessa efterlevnadsprinciper för tredje part.
-- Ett spel företag vars kund information är begränsad till ett användar namn, uppspelnings tider och höga poäng är inte lika mycket som sannolikt kommer att påverka eventuella betydande konsekvenser, om de bedriver risk beteendet ovan. Även om osäkra data är utsatta för risk, är effekten av denna risk liten. Därför är toleransen för risk i det här fallet hög.
+- Ett spel företag vars kund information är begränsad till ett användar namn, uppspelnings tider och höga poäng är inte lika bra som om det uppstår avsevärda följder för att förlora viktiga konsekvenser, om de bedriver risk beteendet ovan. Även om osäkra data är utsatta för risk, är effekten av denna risk liten. Därför är toleransen för risk i det här fallet hög.
 - Ett medel stort företag som tillhandahåller rengörings tjänster för mattor till tusentals kunder skulle ligga mellan dessa två tolerans extrema. Kundernas data kan vara mer robusta och innehåller information som adress eller telefonnummer. Båda kan betraktas som personliga data och bör skyddas. Det kan dock hända att det inte finns några speciella styrnings krav som kräva att data skyddas. Från ett IT-perspektiv är svaret enkelt och skyddar data. Från ett affärs perspektiv är det inte lika enkelt. Företaget skulle behöva mer information innan de kunde fastställa en tolerans nivå för den här risken.
 
 Nästa avsnitt delar några exempel frågor som kan hjälpa företaget att fastställa en risk tolerans för användnings fallet ovan eller andra.
@@ -56,10 +56,11 @@ Nästa avsnitt delar några exempel frågor som kan hjälpa företaget att fasts
 
 Det här avsnittet innehåller en lista över konversationer med frågor i tre kategorier: förlust påverkan, sannolikhet för förlust och reparations kostnader. När affärs-och IT-partner kan hantera vart och ett av dessa områden, kan beslutet att utnyttja hanteringen av risker och den övergripande toleransen för en viss risk enkelt fastställas.
 
-**Förlust påverkan:** Frågor för att fastställa effekten av en risk. Dessa frågor kan vara svåra (ibland omöjliga) att svara. Det är bäst att kvantifiera påverkan, men ibland är enbart konversationen tillräckligt för att förstå toleransen. Intervall är också acceptabla, särskilt om de innehåller antaganden som fastställt dessa intervall.
+**Förlust påverkan:** Frågor för att fastställa effekten av en risk. Dessa frågor kan vara svåra att besvara. Det är bäst att kvantifiera påverkan, men ibland är enbart konversationen tillräckligt för att förstå toleransen. Intervall är också acceptabla, särskilt om de innehåller antaganden som fastställt dessa intervall.
 
-- Strider den här risken om krav för tredje parts efterlevnad?
-- Bryter den här risken interna företags principer?
+- Kan den här risken bryta mot krav från tredje parts efterlevnad?
+- Kan den här risken kränka interna företags principer?
+- Kan den här risken orsaka förlust av livs längd, Limb eller egendom?
 - Gick det att använda risk kostnader för kunder eller marknads andelar? I så fall, kan den här kostnaden kvantifieras?
 - Kan den här risken skapa negativa kund upplevelser? Kommer de erfarenheter att påverka försäljningen eller intäkterna?
 - Kan den här risken skapa ny juridisk ansvar? I så fall, finns det en prioritet för skade belöningar i dessa typer av fall?
@@ -74,7 +75,7 @@ De här grundläggande frågorna leder till många fler. När du har utforskat e
 
 **Kostnader för risk reparation:** Frågor för att fastställa kostnaden för att ta bort eller på annat sätt minimera risken. Dessa frågor kan vara ganska direkta, särskilt när de visas i ett intervall.
 
-- Finns det en tydlig lösning? Vad kostar det?
+- Finns det en tydlig lösning och vad kostar det?
 - Finns det alternativ för att förhindra eller minimera den här risken? Vad är intervallet för kostnader för de här lösningarna?
 - Vad behövs från företaget för att välja den bästa, tydliga lösningen?
 - Vad behövs från företaget för att validera kostnader?

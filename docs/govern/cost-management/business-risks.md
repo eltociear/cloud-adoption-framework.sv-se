@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Cost Management motivation och affärs risker
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 328352ac7ccd8cacbc92cc09ce0c07e2843afcf1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 72d97057484ff757c94ab24a886d1232f01e5ee3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031068"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223618"
 ---
 # <a name="cost-management-motivations-and-business-risks"></a>Cost Management motivation och affärs risker
 
@@ -37,9 +37,9 @@ Cost Management disciplinen försöker lösa kärn affärs risker relaterade til
 Riskerna varierar mellan olika organisationer, men följande fungerar som vanliga kostnads relaterade risker som du kan använda som utgångs punkt för diskussioner i din moln styrnings grupp:
 
 - **Budget kontroll:** Att inte kontrol lera budgeten kan leda till orimliga utgifter med en moln leverantör.
-- **Förlust av användning:** För-inköp eller för åtaganden som inte används kan leda till onödigt investeringar.
+- **Förlust av användning:** För-köp eller-åtaganden som inte används kan leda till förlorade investeringar.
 - **Utgifts avvikelser:** Oväntade toppar i båda riktningarna kan vara indikatorer för felaktig användning.
-- **Överetablerade till gångar:** När till gångar distribueras i en konfiguration som överskrider behovet av ett program eller en virtuell dator (VM) kan de öka kostnaderna och skapa ett avfall.
+- **Överetablerade till gångar:** När till gångar distribueras i en konfiguration som överskrider behovet av ett program eller en virtuell dator (VM) kan de skapa avfall.
 
 ## <a name="next-steps"></a>Nästa steg
 

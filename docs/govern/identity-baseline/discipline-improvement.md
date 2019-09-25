@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Förbättringar av identitets bas linje disciplin
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c044e4af0560fe21229cb1790ce0eff6340d2a58
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 256242f90e45719994a12cdb209202a18bba830c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029051"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220481"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Förbättringar av identitets bas linje disciplin
 
@@ -46,7 +46,7 @@ Den här fasen av styrnings mognads bryggor förenar indelningen mellan affärs 
 - Definiera roller och tilldelningar som ska styra identitets-och åtkomst hantering i molnet.
 - Definiera dina lokala grupper och mappa till motsvarande molnbaserade roller.
 - Lager identitets leverantörer (inklusive databas drivna identiteter som används av anpassade program).
-- Överväg alternativ för konsolidering eller integrering av identitets leverantörer där duplicering finns, för att förenkla den övergripande identitets lösningen.
+- Konsolidera och integrera identitets leverantörer där duplicering finns, för att förenkla den övergripande identitets lösningen och minska risken.
 - Utvärdera hybrid kompatibilitet för befintliga identitets leverantörer.
 - För identitets leverantörer som inte är hybrid kompatibla kan du utvärdera alternativen för konsolidering eller ersättning.
 
@@ -98,7 +98,7 @@ Migrering är en stegvis process som fokuserar på förflyttning, testning och i
 - Validera och förfina din [hybrid identitets strategi](../../decision-guides/identity/index.md).
 - Se till att varje program eller arbets belastning fortsätter att överensstämma med identitets strategin före lanseringen.
 - Verifiera att enkel inloggning (SSO) och sömlös enkel inloggning fungerar som förväntat för dina program.
-- Minska eller eliminera antalet alternativa identitets lager när det är möjligt.
+- Minska eller eliminera antalet alternativa identitets lager.
 - Granska behovet av identitets lager i appar eller i databaser. Identiteter som faller utanför en korrekt identitets leverantör (första part eller tredje part) kan utgöra en risk för programmet och användarna.
 - Aktivera villkorlig åtkomst för [lokala federerade program](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-on-premises-setup).
 - Distribuera identitet i globala regioner i flera hubbar med synkronisering mellan regioner.
@@ -120,6 +120,7 @@ När omvandlingen är klar måste styrning och åtgärder vara aktiva för den n
 **Potentiella aktiviteter:**
 
 - Genomför regelbunden granskning av identitets principer och praxis.
+- Se till att känsliga användar konton (VD, VD, VD osv.) alltid är aktiverade för Multi-Factor Authentication och avvikande inloggnings identifiering.
 - Sök efter skadliga aktörer och data överträdelser regelbundet, särskilt sådana som rör identitets bedrägeri, till exempel potentiella administratörs konto övertag Ande.
 - Konfigurera ett övervaknings-och rapporterings verktyg.
 - Överväg att integrera mer tätt med säkerhets-och bedrägeri skydds system.

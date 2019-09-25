@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: e46c045d51bd4961f1cf355352cb84b110a81d81
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: afac61c918f90c21e8d96032199d5e8c1cdfa50c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023525"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222620"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>Anpassa kostnads modeller med den digitala fastigheten till prognos moln kostnader
 
@@ -24,7 +24,7 @@ Med pris verktygen för Azure kan du hantera moln utgifter med genomskinlighet o
 
 - [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview): Azure Migrate är kanske det mest kostnads effektiva sättet att justera kostnads modellen. Med det här verktyget kan du använda digitala fastighets [lager](./inventory.md), [begränsade rationalisering](./rationalize.md)och kostnads beräkningar i ett verktyg.
 
-- [Kalkylator för total ägande kostnad (TCO)](https://azure.microsoft.com/pricing/tco/calculator/): Sänk den totala ägande kostnaden för din lokala infrastruktur med Azure Cloud Platform. Använd Azures TCO-kalkylator för att beräkna de kostnads besparingar du kan inse genom att migrera dina program arbets belastningar till Azure. Ge en kort beskrivning av din lokala miljö för att få en snabb rapport.
+- [Kalkylator för total ägande kostnad (TCO)](https://azure.microsoft.com/pricing/tco/calculator): Sänk den totala ägande kostnaden för din lokala infrastruktur med Azure Cloud Platform. Använd Azures TCO-kalkylator för att beräkna de kostnads besparingar du kan inse genom att migrera dina program arbets belastningar till Azure. Ge en kort beskrivning av din lokala miljö för att få en snabb rapport.
 
 - [Pris kalkylator för Azure](https://azure.microsoft.com/pricing): Beräkna din förväntade månads faktura med hjälp av vår pris kalkylator. Spåra din faktiska konto användning och faktura när som helst med hjälp av fakturerings portalen. Konfigurera automatiska fakturerings aviseringar för e-post för att meddela dig om dina utgifter går över en mängd som du konfigurerar.
 

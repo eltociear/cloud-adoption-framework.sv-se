@@ -4,25 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Upprätta processer för att säkerställa efterlevnaden av företags principer.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: eff80cb530141a64f706d046bb9f76319f03e3c1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f6104a3b2f5f2e68016623029ac0e7b71a5e35f1
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028219"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222041"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="establish-policy-adherence-processes"></a>Etablera processer för policyefterlevnad
-
-<!---
-I've defined policies, I've provided an architecture guide. Now how do I monitor adherence to policy? If there is a violation, how do I enforce the policy?
---->
 
 När du har upprättat ditt Cloud policy-uttryck och skapat en design guide måste du skapa en strategi för att se till att moln distributionen hålls i överensstämmelse med dina princip krav. Den här strategin måste omfatta ditt moln styrnings Teams pågående gransknings-och kommunikations processer, fastställa kriterier för när princip överträdelser kräver åtgärder och definiera kraven för automatiska övervaknings-och efterlevnadsprinciper som kommer att identifiera överträdelser och Utlös reparations åtgärder.
 
@@ -57,6 +53,8 @@ Planera för att utvärdera nya potentiella risker och uppdatera princip satser 
 Policy efterlevnad kräver IT-personal och utvecklare för att förstå de princip krav som påverkar deras ansvars områden. Planera att ägna resurser till att dokumentera beslut och krav och utbilda alla relevanta team på de design guider som har stöd för dina princip krav.
 
 När princip ändringar uppdateras regelbundet dokumentations-och utbildnings material, och säkerställer att utbildnings insatserna kommunicerar med uppdaterade krav och rikt linjer för relevant IT-personal.
+
+I olika stadier av din moln resa kanske du tycker att det är bäst att kontakta partner och professionella utbildningsprogram för att förbättra din grupps utbildning, både tekniskt och procedur mässiga. Dessutom är många hitta att formella certifieringar är ett värdefullt tillägg till din utbildnings portfölj och bör övervägas.
 
 ### <a name="establish-escalation-paths"></a>Upprätta vägar för eskalering
 

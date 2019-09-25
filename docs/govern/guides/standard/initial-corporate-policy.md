@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4da4899038ca86bec2f1d003f9eaaee293119a09
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ec184cc41608452c945e7665eae845a773b7cfbd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030820"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223659"
 ---
 # <a name="standard-enterprise-guide-initial-corporate-policy-behind-the-governance-strategy"></a>Standard Enterprise-guide: Första företags principen bakom styrnings strategin
 
@@ -33,7 +33,7 @@ I den här berättelsen består gruppen moln styrning av två system administrat
 
 Den aktuella toleransen för risk är hög och riskbenägenhet för investeringar i moln styrning är låg. Därför fungerar tolerans indikatorerna som ett tidig varnings system för att utlösa mer tid och energi. Om och när följande indikatorer observeras bör du iterativt förbättra styrnings strategin.
 
-- **Cost Management:** Distributions skalan överskrider 100 till gångar till molnet, eller månads kostnaden överskrider $1 000 USD per månad.
+- **Cost Management:** Distributions skalan överskrider förinställda gränser för antalet resurser eller månads kostnaden.
 - **Säkerhets bas linje:** Inkludering av skyddade data i definierade moln införande planer.
 - **Resurs konsekvens:** Inkludering av alla verksamhets kritiska program i definierade moln implementerings planer.
 

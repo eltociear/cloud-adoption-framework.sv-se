@@ -4,24 +4,24 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Cloud – ursprunglig säkerhets bas linje princip
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: aef22e31d632a585e59dd946c5c0ef71c13d46de
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8768f1f9c1496fa53bec7e10432854d5ad16b747
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030623"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222898"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Cloud – ursprunglig säkerhets bas linje princip
 
 [Säkerhets bas linjen](./index.md) är en av de [fem disciplinerna i moln styrning](../governance-disciplines.md). Den här disciplinen fokuserar på allmänna säkerhets ämnen, inklusive skydd av nätverk, digitala till gångar, data osv. Som beskrivs i [princip gransknings hand boken](../policy-compliance/cloud-policy-review.md)innehåller moln implementerings ramverket tre nivåer av **exempel princip**: Moln-och företags design principen är kompatibel för var och en av de olika ämnes områden. Den här artikeln beskriver den molnbaserade exempel principen för säkerhets bas linje disciplin.
 
 > [!NOTE]
-> Microsoft har ingen möjlighet att diktera företags-eller IT-policy. Den här artikeln är avsedd att hjälpa dig att förbereda för en intern princip granskning. Det förutsätts att den här exempel principen kommer att utökas, val IDE ras och testas mot företagets policy innan du försöker använda den. All användning av den här exempel principen rekommenderas inte.
+> Microsoft har ingen möjlighet att diktera företags-eller IT-policy. Den här artikeln hjälper dig att förbereda för en intern princip granskning. Det förutsätts att den här exempel principen kommer att utökas, val IDE ras och testas mot företagets policy innan du försöker använda den. All användning av den här exempel principen rekommenderas inte.
 
 ## <a name="policy-alignment"></a>Princip justering
 
@@ -54,10 +54,10 @@ Nätverks kontrollen omfattar konfiguration, hantering och skydd av nätverks el
 
 En molnbaserad princip för nätverks kontroller kan innehålla krav som följande:
 
-- Hybrid anslutningar till lokala resurser (och tekniskt möjliga i Azure) kanske inte är tillåtna i en molnbaserad princip. Om en hybrid anslutning visar sig nödvändig är ett mer stabilt exempel på säkerhets princip för företag en mer relevant referens.
+- Hybrid anslutningar till lokala resurser är kanske inte tillåtna i en moln intern princip. Om en hybrid anslutning visar sig nödvändig är ett mer stabilt exempel på säkerhets princip för företag en mer relevant referens.
 - Användare kan upprätta säkra anslutningar till och inom Azure med hjälp av virtuella nätverk och nätverks säkerhets grupper.
-- Inbyggd Windows Azure-brandvägg skyddar värdar från skadlig nätverks trafik via begränsad port åtkomst. Ett användbart exempel på den här principen är ett krav för att blockera (eller inte aktivera) trafik direkt till en virtuell dator via RDP-TCP/UDP-port 3389.
-- Tjänster som Azure Application Gateway Web Application Firewall (WAF) och Azure DDoS Protection skydda program och se till att det finns tillgänglighet för virtuella datorer som körs i Azure. Dessa funktioner bör inte inaktive ras eller användas felaktigt.
+- Inbyggd Windows Azure-brandvägg skyddar värdar från skadlig nätverks trafik via begränsad port åtkomst. Ett användbart exempel på den här principen är ett krav för att blockera (eller inte aktivera) trafik direkt till en virtuell dator via SSH/RDP.
+- Tjänster som Azure Application Gateway Web Application Firewall (WAF) och Azure DDoS Protection skydda program och se till att det finns tillgänglighet för virtuella datorer som körs i Azure. Dessa funktioner bör inte inaktive ras.
 
 ### <a name="data-protection"></a>Dataskydd
 
@@ -65,7 +65,7 @@ En av nycklarna till data skydd i molnet är redovisning av de möjliga tillstå
 
 - Data krypterings kontroller är inbyggda i tjänster från virtuella datorer till lagring och SQL Database.
 - När data flyttas mellan moln och kunder kan de skyddas med krypterings protokoll som är bransch standard.
-- Azure Key Vault gör det möjligt för användare att skydda och kontrol lera kryptografiska nycklar och andra hemligheter som används av molnappar och tjänster.
+- Azure Key Vault gör det möjligt för användare att skydda och kontrol lera kryptografiska nycklar, lösen ord, anslutnings strängar och certifikat som används av molnappar och-tjänster.
 - Azure Information Protection hjälper till att klassificera, märka och skydda känsliga data i appar.
 
 Även om dessa funktioner är inbyggda i Azure, kräver var och en av ovanstående konfiguration och kan öka kostnaderna. Justering av varje moln intern funktion med en [data klassificerings strategi](../policy-compliance/data-classification.md) är starkt föreslagen.
@@ -78,6 +78,7 @@ Säkerhets övervakning är en proaktiv strategi som granskar dina resurser för
 - Kontinuerlig övervakning och säkerhets utvärdering för att säkerställa efterlevnad och åtgärda eventuella sårbarheter.
 - Interaktiva verktyg och sammanhangsbaserad Hot information för strömlinjeformad undersökning.
 - Omfattande loggning och integrering med befintlig säkerhets information.
+- Minskar behovet av dyra, icke-integrerade, en säkerhets lösning.
 
 ### <a name="extending-cloud-native-policies"></a>Utöka molnets egna principer
 
@@ -87,7 +88,9 @@ Att använda molnet kan minska en del av säkerhets belastningen. Microsoft till
 
 - **Säkra virtuella datorer.** Säkerheten bör vara varje organisations högsta prioritet och det krävs flera saker för att göra det effektivt. Du måste bedöma säkerhets status, skydda mot säkerhetshot och sedan identifiera och svara snabbt på hot som inträffar.
 - **Skydda innehållet i den virtuella datorn.** Det är viktigt att konfigurera vanliga automatiserade säkerhets kopieringar för att skydda mot användar fel. Detta är inte tillräckligt för, men. Du måste också se till att säkerhets kopiorna är säkra från cyberattacker och är tillgängliga när du behöver dem.
-- **Övervaka virtuella datorer och program.** Det här mönstret omfattar flera aktiviteter, inklusive inblick i hälso tillståndet för dina virtuella datorer, förståelse för samverkan mellan dem och hur du kan övervaka de program som de virtuella datorerna körs på. Alla dessa aktiviteter är viktiga för att hålla dina program igång dygnet runt.
+- **Övervaka program.** Det här mönstret omfattar flera aktiviteter, inklusive inblick i hälso tillståndet för dina virtuella datorer, förståelse för samverkan mellan dem och hur du kan övervaka de program som de virtuella datorerna körs på. Alla dessa aktiviteter är viktiga för att hålla dina program igång dygnet runt.
+- **Skydda och granska data åtkomst.** Organisationer bör granska all data åtkomst och utnyttja avancerade funktioner för maskin inlärning för att anropa avvikelser från vanliga åtkomst mönster.
+- **Praxis för redundans.** Moln åtgärder som har låg tolerans för misslyckande måste kunna redundansväxla och/eller återställa från en cybersäkerhet eller plattforms incident. Dessa procedurer får inte bara dokumenteras, utan bör användas i kvartal.
 
 ## <a name="next-steps"></a>Nästa steg
 

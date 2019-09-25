@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Exempel princip satser för säkerhets bas linje
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 253646b16d98a35c8cae8eb7f5c57aa60d55d580
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f92f3846f0282123fab8049dd47227db0843d955
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031082"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221650"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Exempel princip satser för säkerhets bas linje
 
@@ -40,7 +40,7 @@ Följande exempel på princip satser riktar sig mot vanliga säkerhets-relaterad
 
 **Princip instruktion:** Alla skyddade data måste krypteras när de är i vilo läge.
 
-**Alternativ för potentiell design:** I artikeln [Översikt över Azure-kryptering](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) finns en beskrivning av hur data i rest-kryptering utförs på Azure-plattformen.
+**Alternativ för potentiell design:** I artikeln [Översikt över Azure-kryptering](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) finns en beskrivning av hur data i rest-kryptering utförs på Azure-plattformen. Ytterligare kontroller, till exempel vid kryptering av konto data och kontroll över hur lagrings konto inställningar kan ändras bör också beaktas.
 
 ## <a name="network-isolation"></a>Nätverks isolering
 
@@ -54,17 +54,17 @@ Följande exempel på princip satser riktar sig mot vanliga säkerhets-relaterad
 
 **Teknisk risk:** Att tillåta åtkomst till arbets belastningar från det offentliga Internet innebär en risk för intrång som resulterar i obehörig data exponering eller affärs avbrott.
 
-**Princip instruktion:** Det går inte att komma åt ett undernät som innehåller skyddade data direkt via offentlig Internet eller mellan data Center. Åtkomst till dessa undernät måste dirigeras via mellanliggande undernät fungerar. All åtkomst till dessa undernät måste komma via en brand Väggs lösning som kan utföra paket genomsökning och blockera funktioner.
+**Princip instruktion:** Det går inte att komma åt ett undernät som innehåller skyddade data direkt via offentlig Internet eller mellan data Center. Åtkomst till dessa undernät måste dirigeras via mellanliggande undernät. All åtkomst till dessa undernät måste komma via en brand Väggs lösning som kan utföra paket genomsökning och blockera funktioner.
 
-**Alternativ för potentiell design:** I Azure, säkra offentliga slut punkter genom att distribuera en [DMZ mellan det offentliga Internet och ditt molnbaserade nätverk](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz).
+**Alternativ för potentiell design:** I Azure, säkra offentliga slut punkter genom att distribuera en [DMZ mellan det offentliga Internet och ditt molnbaserade nätverk](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz). Överväg distribution, konfiguration och automatisering av [Azure-brandväggen](https://docs.microsoft.com/azure/firewall).
 
 ## <a name="ddos-protection"></a>DDoS-skydd
 
 **Teknisk risk:** DDoS-attacker (distributed denial of Service) kan leda till ett affärs avbrott.
 
-**Princip instruktion:** Distribuera metoder för automatisk DDoS-minskning till alla offentligt tillgängliga nätverks slut punkter.
+**Princip instruktion:** Distribuera metoder för automatisk DDoS-minskning till alla offentligt tillgängliga nätverks slut punkter. Ingen offentlig webbplats som backas upp av IaaS bör exponeras för Internet utan DDoS.
 
-**Alternativ för potentiell design:** Använd [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) för att minimera störningar som orsakas av DDoS-attacker.
+**Alternativ för potentiell design:** Använd [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) standard för att minimera störningar som orsakas av DDoS-attacker.
 
 ## <a name="secure-on-premises-connectivity"></a>Säker lokal anslutning
 
@@ -88,7 +88,7 @@ Följande exempel på princip satser riktar sig mot vanliga säkerhets-relaterad
 
 **Princip instruktion:** Trender och potentiella utnyttjanden som kan påverka moln distributioner bör regelbundet granskas av säkerhets teamet för att tillhandahålla uppdateringar av verktyget för säkerhets bas linjer som används i molnet.
 
-**Alternativ för potentiell design:** Upprätta ett regelbundet säkerhets gransknings möte som innehåller relevanta IT-och styrelse grupp medlemmar. Granska befintliga säkerhets data och mått för att skapa luckor i den aktuella policyn och säkerhets bas linje verktyget, och uppdatera principen för att åtgärda eventuella nya risker.
+**Alternativ för potentiell design:** Upprätta ett regelbundet säkerhets gransknings möte som innehåller relevanta IT-och styrelse grupp medlemmar. Granska befintliga säkerhets data och mått för att skapa luckor i den aktuella policyn och säkerhets bas linje verktyget, och uppdatera principen för att åtgärda eventuella nya risker. Utnyttja [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) och [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) för att få användbara insikter om nya hot som är särskilt för dina distributioner.
 
 ## <a name="next-steps"></a>Nästa steg
 

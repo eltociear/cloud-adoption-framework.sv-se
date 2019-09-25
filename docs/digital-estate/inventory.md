@@ -8,12 +8,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 6b6bbfef4f9e404433119d412cd4bf625cd3b480
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5c7473fd5966f871bbbeef7dd2e42826b42cecf3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023500"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222615"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>Samla in inventerings data för en digital egendom
 
@@ -28,6 +28,9 @@ Det lager som stöder en digital egendom ändras beroende på önskad digital om
 - **Program innovation:** Inventering under en molnbaserad program Innovations ansträngning börjar med kunden. Det är en bra plats att börja med att mappa kund upplevelsen från början till slut. Genom att justera mappningen till program, API: er, data och andra till gångar skapas en detaljerad inventering för analys.
 
 - **Data innovation:** Cloud-aktiverade data innovation fokuserar på produkten eller tjänsten. En inventering innehåller också en mappning av möjligheterna för att störa marknaden samt de funktioner som behövs.
+
+- **Säkerhet:** Inventering ger säkerhet för att hjälpa till att utvärdera, skydda och övervaka organisationens till gångar.
+
 
 ## <a name="accuracy-and-completeness-of-an-inventory"></a>En inventerings precision och fullständighet
 

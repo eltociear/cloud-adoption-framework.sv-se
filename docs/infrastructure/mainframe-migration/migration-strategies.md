@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 00b2ee80709c36658a58f23b2848fdf1b64d856d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8416abd3429a0dafd50eda91323eb74bfb1bf9cd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024383"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221518"
 ---
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Gör växeln från stordatorer till Azure
 
@@ -27,7 +27,7 @@ Det här avsnittet innehåller teknisk vägledning för att göra växeln från 
 
 Det finns ingen Universal Mapping-formel som finns för att fastställa antalet virtuella centrala bearbetnings enheter (virtuella processorer) som krävs för att köra stordator belastningar. Måttet på en miljon instruktioner per sekund (MIPS) är dock ofta mappat till virtuella processorer på Azure. MIPS mäter den övergripande beräknings kraften i en stordator genom att tillhandahålla ett konstant värde för antalet cykler per sekund för en viss dator.
 
-En liten organisation kan kräva mindre än 500 MIPS, medan en stor organisation vanligt vis använder mer än 5 000 MIPS. Vid $1 000 per enskild MIPS tillbringar en stor organisation cirka $5 000 000 årligen för att distribuera en 5 000-MIPS-infrastruktur. Den årliga kostnads beräkningen för en typisk Azure-distribution av den här skalan är ungefär en tiondel av kostnaden för en MIPS-infrastruktur. Mer information finns i tabell 4 i [avmystifiera-stordatoren-till-Azure. Migrerings](https://azure.microsoft.com/resources/demystifying-mainframe-to-azure-migration) White Paper.
+En liten organisation kan kräva mindre än 500 MIPS, medan en stor organisation vanligt vis använder mer än 5 000 MIPS. Vid $1 000 per enskild MIPS tillbringar en stor organisation cirka $5 000 000 årligen för att distribuera en 5 000-MIPS-infrastruktur. Den årliga kostnads beräkningen för en typisk Azure-distribution av den här skalan är ungefär en tiondel av kostnaden för en MIPS-infrastruktur. Mer information finns i tabell 4 i [avmystifiera-migreringen från stordator till Azure](https://azure.microsoft.com/resources/demystifying-mainframe-to-azure-migration) White Paper.
 
 En korrekt beräkning av MIPS till virtuella processorer med Azure beror på typen av vCPU och den exakta arbets belastningen som du kör. Benchmark-undersökningar ger dock en bättre beräkning av antalet och typen av virtuella processorer som du behöver. Ett nyligen HPE zREF-prestandatest ger följande uppskattningar:
 

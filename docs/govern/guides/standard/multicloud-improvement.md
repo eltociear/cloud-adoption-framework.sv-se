@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d1953e190e2581d96db443be00aad74a6b94d5f9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2616193b01b252a74ad17a241d97bfd0ebc4860c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028440"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223799"
 ---
 # <a name="small-to-medium-enterprise-guide-multicloud-improvement"></a>Guide för små till medel stora företag: Förbättringar i multimolnet
 
@@ -22,7 +22,7 @@ Den här artikeln går vidare genom att lägga till kontroller för att införa 
 
 ## <a name="advancing-the-narrative"></a>Med den här berättelsenn
 
-Microsoft känner av att kunderna använder flera moln för ett bestämt syfte. Den fiktiva kunden i den här guiden är inget undantag. Parallellt med Azures implementerings resa har företags framgångar lett till förvärvet av en liten, men komplett verksamhet. Företaget kör alla sina IT-åtgärder på en annan moln leverantör.
+Microsoft känner av att kunderna kan använda flera moln för olika behov. Den fiktiva kunden i den här guiden är inget undantag. På parallellt med deras Azure-implementering har företags framgång lett till förvärv av en liten men kompletterande verksamhet. Företaget kör alla sina IT-åtgärder på en annan moln leverantör.
 
 Den här artikeln beskriver hur saker ändras när den nya organisationen integreras. Vi förutsätter att företaget har slutfört var och en av de styrnings iterationer som beskrivs i den här styrnings guiden.
 
@@ -65,23 +65,23 @@ Följande ändringar i principen hjälper dig att åtgärda de nya riskerna och 
 Det här avsnittet av artikeln ändrar designen för styrnings MVP till att inkludera nya Azure-principer och en implementering av Azure Cost Management. Tillsammans uppfyller dessa design ändringar de nya företags princip uttrycken.
 
 1. Anslut nätverken. Det här steget utförs av nätverkets och IT-säkerhetsteamen och stöds av moln styrnings teamet. Om du lägger till en anslutning från MPLS/lånad rad leverantör till det nya molnet integreras nätverk. Genom att lägga till routningstabeller och brand Väggs konfigurationer styr du åtkomst och trafik mellan miljöerna.
-1. Konsolidera identitets leverantörer. Beroende på vilka arbets belastningar som finns i det sekundära molnet finns det en mängd olika alternativ för konsolidering av identitets leverantörer. Följande är några exempel:
+2. Konsolidera identitets leverantörer. Beroende på vilka arbets belastningar som finns i det sekundära molnet finns det en mängd olika alternativ för konsolidering av identitets leverantörer. Följande är några exempel:
     1. För program som autentiserar med OAuth 2 kan användare från Active Directory i det sekundära molnet bara replikeras till den befintliga Azure AD-klienten. Detta säkerställer att alla användare kan autentiseras i klienten.
-    1. I den andra extrema federationen tillåter Federation att ou flödar till Active Directory lokalt, sedan till Azure AD-instansen.
-1. Lägg till till gångar till Azure Site Recovery.
+    2. I den andra extrema federationen tillåter Federation att ou flödar till Active Directory lokalt, sedan till Azure AD-instansen.
+3. Lägg till till gångar till Azure Site Recovery.
     1. Azure Site Recovery har utformats från början som ett hybrid-eller multicloud-verktyg.
-    1. Virtuella datorer i det sekundära molnet kan vara skyddade av samma Azure Site Recovery processer som används för att skydda lokala till gångar.
-1. Lägg till till gångar till Azure Cost Management.
+    2. Virtuella datorer i det sekundära molnet kan vara skyddade av samma Azure Site Recovery processer som används för att skydda lokala till gångar.
+4. Lägg till till gångar till Azure Cost Management.
     1. Azure Cost Management har utformats från början som ett multimoln-verktyg.
-    1. Virtuella datorer i det sekundära molnet kan vara kompatibla med Azure Cost Management för vissa moln leverantörer. Ytterligare kostnader kan tillkomma.
-1. Lägg till till gångar till Azure Monitor.
+    2. Virtuella datorer i det sekundära molnet kan vara kompatibla med Azure Cost Management för vissa moln leverantörer. Ytterligare kostnader kan tillkomma.
+5. Lägg till till gångar till Azure Monitor.
     1. Azure Monitor utformades som ett hybrid moln verktyg från början.
-    1. Virtuella datorer i det sekundära molnet kan vara kompatibla med Azure Monitor agenter, så att de kan tas med i Azure Monitor för drifts övervakning.
-1. Använd verk ställande verktyg för styrning.
+    2. Virtuella datorer i det sekundära molnet kan vara kompatibla med Azure Monitor agenter, så att de kan tas med i Azure Monitor för drifts övervakning.
+6. Använd verk ställande verktyg för styrning.
     1. Styrnings tvång är molnbaserad.
-    1. Företags principerna som fastställs i styrnings guiden är inte molnbaserade. Implementeringen kan variera från molnet till molnet, men principerna kan tillämpas på den sekundära providern.
+    2. Företags principerna som fastställs i styrnings guiden är inte molnbaserade. Implementeringen kan variera från molnet till molnet, men principerna kan tillämpas på den sekundära providern.
 
-När ett moln har införts växer fortsätter design ändringarna ovan att fortsätta till vuxen.
+Användningen av flera moln bör finnas där det krävs utifrån tekniska behov eller specifika affärs krav. I takt med att användningen av molnet ökar ökar komplexiteten och säkerhets riskerna.
 
 ## <a name="conclusion"></a>Sammanfattning
 

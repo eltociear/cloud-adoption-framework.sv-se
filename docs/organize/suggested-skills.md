@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 7b450165c1356e5297a3424ea8f699dced0422a4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 75aa65f9a39576eb807e7b147c2c4a658f693619
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030146"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224285"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>Sökväg för kompetens beredskap under "Ready"-fasen för en migrering
 
@@ -44,9 +44,9 @@ Under den färdiga fasen måste teknisk personal skapa en landnings zon för mig
 
 Under den färdiga fasen måste arkitekterna utforma lösningar som omfattar alla Azure-miljöer. Följande resurser kan förbereda dem för följande uppgifter:
 
-- [Grundläggande kurs i molnarkitektur](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/): En PluralSight kurs som hjälper dig att skapa rätt grundläggande lösningar.
-- [Microsoft Azure-arkitektur](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/): En PluralSight kurs till mark arkitekter i Azure-arkitekturen.
-- [Utforma migreringar för Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/): En PluralSight kurs som hjälper arkitekter att utforma en migrations lösning.
+- [Grundläggande kurs i molnarkitektur](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): En PluralSight kurs som hjälper dig att skapa rätt grundläggande lösningar.
+- [Microsoft Azure-arkitektur](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): En PluralSight kurs till mark arkitekter i Azure-arkitekturen.
+- [Utforma migreringar för Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): En PluralSight kurs som hjälper arkitekter att utforma en migrations lösning.
 
 ## <a name="deeper-skills-exploration"></a>Fördjupning
 
@@ -75,4 +75,4 @@ Här följer några exempel på rollspecifika utbildnings vägar på Microsoft L
 
 - [Utvecklare](/learn/browse/?roles=developer&term=infrastructure) kan använda sig av resurser för att hjälpa till med arkitektur, styrning, modernisering-aktiviteter.
 
-Om du vill ha ytterligare utbildningsvägar bläddrar du till [Inlärningskatalogen](/learn/browse/). Använd roles-filtret för att justera utbildnings vägar med din roll.
+Om du vill ha ytterligare utbildningsvägar bläddrar du till [Inlärningskatalogen](/learn/browse). Använd roles-filtret för att justera utbildnings vägar med din roll.

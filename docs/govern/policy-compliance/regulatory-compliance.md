@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Introduktion till regelefterlevnad
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b0bc28f46671c4ccf62bba9f3fa68f14e2b79aee
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b38b52fc6899000bf5f452425a8b6f26070af7dc
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026594"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222023"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Introduktion till regelefterlevnad
 
-Detta är en introduktions artikel om regelefterlevnad, vilket innebär att den inte är avsedd att användas för att implementera en strategi för efterlevnad. Det är endast för allmän medvetenhet. Mer detaljerad information om [Azure Compliance-erbjudanden](https://aka.ms/allcompliance) finns på [Microsoft Trust Center](https://www.microsoft.com/trustcenter/default.aspx). Dessutom är all nedladdnings bar dokumentation tillgänglig för vissa Azure-kunder från [Microsoft Service Trust Portal](https://servicetrust.microsoft.com).
+Detta är en introduktions artikel om regelefterlevnad, vilket innebär att den inte är avsedd att användas för att implementera en strategi för efterlevnad. Mer detaljerad information om [Azure Compliance-erbjudanden](https://aka.ms/allcompliance) finns på [Microsoft Trust Center](https://www.microsoft.com/trustcenter/default.aspx). Dessutom är all nedladdnings bar dokumentation tillgänglig för vissa Azure-kunder från [Microsoft Service Trust Portal](https://servicetrust.microsoft.com).
 
 Regelefterlevnad avser disciplinen och processen för att säkerställa att ett företag följer de lagar som styrs av styr organen i deras geografiska område eller regler som krävs av frivilligt infört bransch standarder. För IT-regler, övervakar människor och processer företagets system i arbetet för att upptäcka och förhindra överträdelser av principer och förfaranden som fastställs av dessa regler, förordningar och standarder. Detta gäller för ett brett utbud av övervaknings-och tvångs processer. Beroende på bransch och geografi kan dessa processer bli långa och komplexa.
 
@@ -42,7 +42,7 @@ Person uppgifter är information som kan användas för att identifiera en konsu
 
 ## <a name="gdpr"></a>GDPR
 
-En av de viktigaste uppgifterna i det här området är den senaste HITECH av Europeiska kommissionen i allmän dataskyddsförordning (GDPR) som har utformats för att stärka data skyddet för enskilda användare inom EU. GDPR kräver att data om individer (till exempel "ett namn, en hem adress, ett foto, en e-postadress, bank information, inlägg på webbplatser för sociala nätverk, medicinsk information eller datorns IP-adress") upprätthålls på servrar inom EU och inte överförs . Det kräver också att företag meddelar individer om alla data överträdelser och uppdrag som företag har en data skydds chef (DPO). Andra länder har eller utvecklar liknande typer av regler.
+En av de viktigaste fördelarna med det här området är allmän dataskyddsförordning (GDPR) som är utformad för att stärka data skyddet för enskilda användare inom EU. GDPR kräver att data om individer (till exempel "ett namn, en hem adress, ett foto, en e-postadress, bank information, inlägg på webbplatser för sociala nätverk, medicinsk information eller datorns IP-adress") upprätthålls på servrar inom EU och inte överförs . Det kräver också att företag meddelar individer om alla data överträdelser och uppdrag som företag har en data skydds chef (DPO). Andra länder har eller utvecklar liknande typer av regler.
 
 ## <a name="compliant-foundation-in-azure"></a>Kompatibel grund i Azure
 

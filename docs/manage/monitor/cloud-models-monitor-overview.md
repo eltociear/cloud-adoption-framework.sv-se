@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 3659f5e965e5a80c3b490f8b106a4cc30f1711a9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: badf03f3616de8e6612221282aa24996f0b6e8f8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026836"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221123"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Molnövervakningsguide: Övervaknings strategi för moln distributions modeller
 
@@ -50,7 +50,7 @@ Azure-klientorganisation|Azure Active Directory || Aktivera diagnostisk loggning
 
 ## <a name="hybrid-cloud-monitoring"></a>Övervakning av hybrid moln
 
-Det här avsnittet är för närvarande under utveckling för att tillhandahålla en omfattande uppsättning rekommendationer som är avsedda att hantera ditt intresse för den här moln modellen och kommer att göras tillgängligt snart.  
+Det här avsnittet är för närvarande under utveckling för att tillhandahålla en omfattande uppsättning rekommendationer som åtgärdar ditt intresse för den här moln modellen och kommer att göras tillgängligt snart.  
 
 ## <a name="private-cloud-monitoring"></a>Övervakning av privata moln
 

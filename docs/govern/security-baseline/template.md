@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Förklaring till koncept säkerhets bas linjen i förhållande till moln styrning.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 03d8e9cf2a5e4679b61a318aeee41b982f08ac51
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2a691223ccb3e6264b53fbf0e018d303cbcf091a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028660"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222819"
 ---
 # <a name="security-baseline-template"></a>Mall för säkerhets bas linje
 
-Det första steget för att implementera ändring är att kommunicera den önskade ändringen. Samma sak gäller när du byter styrnings praxis. Den allmänna mallen nedan innehåller en start punkt för att dokumentera och kommunicera princip satser som styr säkerhetsrelaterade problem i molnet.
+Det första steget för att implementera ändring är att meddela vad som önskas. Samma sak gäller när du byter styrnings praxis. Mallen nedan innehåller en start punkt för att dokumentera och kommunicera princip satser som styr säkerhetsrelaterade problem i molnet.
 
 Använd den här mallens struktur som en modell för att samla in affärs risker, risk toleranser, regelefterlevnad och verktyg som behövs för att definiera organisationens principer för säkerhets bas linjen för ditt arbete.
 

@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Styrnings guide för komplexa företag: Förbättra disciplinen för resurs konsekvens'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/05/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7e10f9262e7b29df98e2341cbae0ef05f85cd954
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9875fb2ebc6948d22ac6eaf350f9784b61fd4dc3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027226"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223809"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Styrnings guide för komplexa företag: Förbättra disciplinen för resurs konsekvens
 
@@ -65,7 +65,7 @@ Följande ändringar i principen hjälper dig att åtgärda de nya riskerna och 
 5. Styrnings verktyg måste verifiera att lämplig nivå av loggnings data samlas in för alla verksamhets kritiska program eller skyddade data.
 6. Styrnings processen måste verifiera att säkerhets kopiering, återställning och SLA-krav implementeras korrekt för verksamhets kritiska program och skyddade data.
 7. Styrnings verktyg måste begränsa distributionen av virtuella datorer till godkända avbildningar.
-8. Styrnings verktyg måste framtvinga att automatiska uppdateringar **förhindras** på alla distribuerade till gångar som stöder verksamhets kritiska program. Överträdelser måste granskas med operativa hanterings team och åtgärdas i enlighet med Operations policys. Till gångar som inte uppdateras automatiskt måste ingå i processer som ägs av IT-åtgärder.
+8. Styrnings verktyg måste framtvinga att automatiska uppdateringar **förhindras** på alla distribuerade till gångar som stöder verksamhets kritiska program. Överträdelser måste granskas med operativa hanterings team och åtgärdas i enlighet med Operations policys. Till gångar som inte uppdateras automatiskt måste ingå i processer som ägs av IT-åtgärder för att snabbt och effektivt uppdatera dessa servrar.
 9. Styrnings verktyg måste verifiera taggning relaterad till kostnader, allvarlighets grad, SLA, program och data klassificering. Alla värden måste justeras mot fördefinierade värden som hanteras av moln styrnings teamet.
 10. Styrnings processer måste innehålla revisioner vid distributions platsen och regelbundet för att säkerställa konsekvens för alla till gångar.
 11. Trender och utnyttjande som kan påverka moln distributioner bör regelbundet granskas av säkerhets teamet för att tillhandahålla uppdateringar av verktyget för säkerhets bas linjer som används i molnet.
@@ -85,25 +85,25 @@ Efter erfarenheten av det här fiktiva exemplet antas det att ändringar av skyd
 
 1. Som ett externt beroende måste moln drifts teamet definiera verktyg för drifts övervakning, verktyg för affärs kontinuitet och haveri beredskap (BCDR) och automatiserad reparations verktyg. Moln styrnings teamet kan sedan stödja nödvändiga identifierings processer.
     1. I det här användnings fallet väljer moln drifts teamet Azure Monitor som det primära verktyget för övervakning av verksamhets kritiska program.
-    1. Teamet väljer också Azure Site Recovery som det primära BCDR-verktyget.
-1. Azure Site Recovery implementering.
-    1. Definiera och Distribuera Azure-valv för säkerhets kopierings-och återställnings processer.
-    1. Skapa en Azure-resurs hanterings mall för att skapa ett valv i varje prenumeration.
-1. Azure Monitor implementering.
-    1. När en verksamhets kritisk prenumeration identifieras kan du skapa en Log Analytics-arbetsyta med hjälp av PowerShell. Detta är en för distributions process.
+    2. Teamet väljer också Azure Site Recovery som det primära BCDR-verktyget.
+2. Azure Site Recovery implementering.
+    1. Definiera och Distribuera Azure Site Recovery valv för säkerhets kopierings-och återställnings processer.
+    2. Skapa en Azure-resurs hanterings mall för att skapa ett valv i varje prenumeration.
+3. Azure Monitor implementering.
+    1. När en verksamhets kritisk prenumeration identifieras kan du skapa en Log Analytics-arbetsyta.
 
 **Individuell moln införande prenumeration:** Följande säkerställer att varje prenumeration kan identifieras av övervaknings lösningen och kan tas med i BCDR-metoder.
 
 1. Azure Policy för verksamhets kritiska noder:
     1. Granska och Använd endast standard roller.
-    1. Granska och framtvinga kryptering av program för alla lagrings konton.
-    1. Granska och Framtvinga användning av godkända nätverks under nät och VNet per nätverks gränssnitt.
-    1. Granska och genomdriva begränsningen för användardefinierade vägvals tabeller.
-    1. Granska och genomdriva distributionen av Log Analytics agenter för virtuella Windows-och Linux-datorer.
+    2. Granska och framtvinga kryptering av program för alla lagrings konton.
+    3. Granska och Framtvinga användning av godkända nätverks under nät och VNet per nätverks gränssnitt.
+    4. Granska och genomdriva begränsningen för användardefinierade vägvals tabeller.
+    5. Granska och genomdriva distributionen av Log Analytics agenter för virtuella Windows-och Linux-datorer.
 2. Azure-skiss:
     1. Skapa en skiss med `mission-critical-workloads-and-protected-data`namnet. I den här skissen används till gångar utöver den skyddade data skissen.
-    1. Lägg till de nya Azure-principerna i skissen.
-    1. Använd skissen på alla prenumerationer som förväntas vara värd för ett verksamhets kritiskt program.
+    2. Lägg till de nya Azure-principerna i skissen.
+    3. Använd skissen på alla prenumerationer som förväntas vara värd för ett verksamhets kritiskt program.
 
 ## <a name="conclusion"></a>Sammanfattning
 

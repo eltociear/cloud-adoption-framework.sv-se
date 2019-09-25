@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 56a989e975625c9d8f0f3db80dab9043dca3a479
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a5b1d551f52ae8800e9a29d4c8a92c14965645cc
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028078"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221511"
 ---
 # <a name="configure-azure-management-services-at-scale"></a>Konfigurera hanterings tjänster i Azure i stor skala
 
@@ -30,7 +30,7 @@ Att integrera Azures hanterings tjänster på dina servrar omfattar två uppgift
 
 Alla hanterings lösningar som diskuteras i [Azures hanterings verktyg och tjänster](./tools-services.md) kräver att Log Analytics Agent installeras på virtuella Azure-datorer (VM) och lokala servrar. Du kan publicera dina virtuella Azure-datorer i skala med hjälp av Azure Policy. Tilldela en princip för att säkerställa att agenten är installerad på alla virtuella Azure-datorer och är anslutna till rätt Log Analytics-arbetsyta.
 
-Azure Policy har ett inbyggt [princip initiativ](https://docs.microsoft.com/azure/governance/policy/index.md#initiative-definition) som innehåller både Log Analytics-agenten och [Microsofts beroende agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent), vilket krävs av Azure Monitor for VMS.
+Azure Policy har ett inbyggt [princip initiativ](/azure/governance/policy/index#initiative-definition) som innehåller både Log Analytics-agenten och [Microsofts beroende agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent), vilket krävs av Azure Monitor for VMS.
 
 <!-- TODO: Add these when available.
 - [Preview]: Enable Azure Monitor for virtual machine scale sets.

@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vad är dataklassificering?
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d293aa5b4427b8f714175b85c6bb5197b53f107a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 86c57efed1be2760aca607197eb8d28f0151097a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027206"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223578"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -40,7 +40,7 @@ Följande är en lista över klassificeringar som används av Microsoft. Beroend
 
 ## <a name="tagging-data-classification-in-azure"></a>Tagga data klassificering i Azure
 
-Varje moln leverantör bör erbjuda en mekanism för att registrera metadata om en till gång. När det gäller Azure är resurs Taggar den föreslagna metoden för lagring av metadata och dessa taggar kan användas för att tillämpa data klassificerings information till distribuerade resurser. Även om tagga moln till gångar enligt klassificering inte är en ersättning för en formell data klassificerings process, är det ett värdefullt verktyg för att hantera resurser och tillämpa principer.
+Resurs taggar är den rekommenderade metoden för lagring av metadata och dessa taggar kan användas för att tillämpa data klassificerings information till distribuerade resurser. Även om tagga moln till gångar enligt klassificering inte är en ersättning för en formell data klassificerings process, är det ett värdefullt verktyg för att hantera resurser och tillämpa principer. [Azure information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) är en utmärkt lösning som hjälper dig att klassificera _data_ oavsett var de finns (på lokal i Azure, någon annan stans) och bör betraktas som en del av en övergripande klassificerings strategi.
 
 Mer information om resurs taggning i Azure finns i artikeln om [att använda taggar för att ordna dina Azure-resurser](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 

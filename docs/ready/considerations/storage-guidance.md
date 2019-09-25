@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e32d85fb16ec68eba0896bfb2cf2087c436c050e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: c4733dbb77d7feb8fd2a0fdd289105cd5e112327
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71021919"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224198"
 ---
 # <a name="storage-design-decisions"></a>Beslut om lagringsdesign
 
@@ -39,7 +39,7 @@ Besvara följande frågor om dina arbetsbelastningar för att skapa ett beslutsu
 - **Behöver du stöd för arbetsbelastningar för stordataanalys?** [Azure Data Lake Storage gen 2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) distribueras ovanpå Azure Blob Storage. Data Lake Storage gen 2 har stöd för datasjöfunktioner för stora företag. Det kan också hantera lagring av flera petabyte med information samtidigt som dataflöden på hundratals gigabit hanteras.
 - **Behöver du tillhandahålla molnbaserade filresurser?** Azure har två primära tjänster som tillhandahåller molnbaserade filresurser: Azure NetApp Files och Azure Files. [Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-introduction) ger högpresterande NFS-resurser som lämpar sig väl för vanliga företagsarbetsbelastningar som SAP. [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) tillhandahåller filresurser som är tillgängliga via SMB 3.0 och HTTPS.
 - **Behöver du stöd för hybridmolnlagring för lokala arbetsbelastningar med höga prestandakrav (HPC)?** [Aver vFXT for Azure](https://docs.microsoft.com/azure/avere-vfxt/avere-vfxt-overview) är en hybridlösning för cachelagring som du kan använda för att utöka dina lokala lagringsfunktioner med hjälp av molnbaserad lagring. Aver vFXT for Azure är optimerat för storskaliga HPC-arbetsbelastningar som involverar beräkningsgrupper på 1 000 till 40 000 CPU-kärnor. Aver vFXT för Azure kan integreras med lokal maskinvara för nätverksansluten lagring (NAS), Azure Blob Storage eller båda.
-- **Kommer du att behöva utföra storskalig arkivering och synkronisering av dina lokala data till molnet?** [Azure Data Box](https://docs.microsoft.com/azure/databox-family/)-produkter är utformade för att hjälpa dig att flytta stora mängder data från din lokala miljö till molnet. [Azure Data Box Gateway](https://docs.microsoft.com/azure/databox-online/data-box-gateway-overview) är en virtuell enhet som lagras lokalt. Data Box Gateway hjälper dig att hantera storskalig datamigrering till molnet. Om du behöver analysera, omvandla eller filtrera data innan du flyttar dem till molnet kan du använda [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview), en AI-aktiverad fysisk dataenhet som distribueras till din lokala miljö. Data Box Edge påskyndar bearbetning och säker överföring av data till Azure.
+- **Kommer du att behöva utföra storskalig arkivering och synkronisering av dina lokala data till molnet?** [Azure Data Box](https://docs.microsoft.com/azure/databox-family)-produkter är utformade för att hjälpa dig att flytta stora mängder data från din lokala miljö till molnet. [Azure Data Box Gateway](https://docs.microsoft.com/azure/databox-online/data-box-gateway-overview) är en virtuell enhet som lagras lokalt. Data Box Gateway hjälper dig att hantera storskalig datamigrering till molnet. Om du behöver analysera, omvandla eller filtrera data innan du flyttar dem till molnet kan du använda [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview), en AI-aktiverad fysisk dataenhet som distribueras till din lokala miljö. Data Box Edge påskyndar bearbetning och säker överföring av data till Azure.
 - **Vill du expandera en befintlig lokal filresurs så att den använder molnlagring?** Med [Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-deployment-guide) kan du använda tjänsten Azure Files som ett tillägg till de filresurser som finns på dina lokala Windows Server-datorer. Windows Server omvandlas av synkroniseringstjänsten till ett snabbt cacheminne för Azure-filresursen. Det gör att dina lokala datorer som har åtkomst till resursen kan använda alla protokoll som är tillgängliga på Windows Server.
 
 ## <a name="common-storage-scenarios"></a>Vanliga lagringsscenarier

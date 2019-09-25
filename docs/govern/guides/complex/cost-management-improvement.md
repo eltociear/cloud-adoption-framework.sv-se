@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f8b78ab958f732920d7282ade80e9da421e5b0e5
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5dbb92053e12ec9aee795c54271ab45d56d6722c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027640"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220177"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Styrnings guide för komplexa företag: Förbättra Cost Managements disciplinen
 
@@ -66,14 +66,14 @@ Följande ändringar i principen hjälper dig att åtgärda de nya riskerna och 
 I det här avsnittet av artikeln får du förbättra designen för styrnings MVP för att inkludera nya Azure-principer och en implementering av Azure Cost Management. Tillsammans kommer dessa två design ändringar att uppfylla de nya företags princip satserna.
 
 1. Gör ändringar i Azure-Enterprise Portal för att fakturera avdelnings administratören för den kanadensiska distributionen.
-1. Implementera Azure Cost Management.
+2. Implementera Azure Cost Management.
     1. Etablera rätt nivå för åtkomstscope så att den överensstämmer med prenumerations mönstret och resurs grupp mönstret. Om du antar justering med styrnings MVP: t som definierats i föregående artiklar, skulle detta kräva åtkomst till **konto omfånget** för moln styrnings teamet som körs på rapportering på hög nivå. Ytterligare team utanför styrning, t. ex. det kanadensiska inköps teamet, kräver åtkomst till **resurs gruppens omfång** .
-    1. Upprätta en budget i Azure Cost Management.
-    1. Granska och agera på inledande rekommendationer. Vi rekommenderar att du har en återkommande process som stöder rapporterings processen.
-    1. Konfigurera och köra Azure Cost Management rapportering, både initial och återkommande.
-1. Uppdatera Azure Policy.
+    2. Upprätta en budget i Azure Cost Management.
+    3. Granska och agera på inledande rekommendationer. Vi rekommenderar att du har en återkommande process som stöder rapporterings processen.
+    4. Konfigurera och köra Azure Cost Management rapportering, både initial och återkommande.
+3. Uppdatera Azure Policy.
     1. Granska taggar, hanterings grupp, prenumeration och resurs grupps värden för att identifiera eventuella avvikelser.
-    1. Upprätta alternativ för SKU-storlek för att begränsa distributioner till SKU: er som anges i dokumentation om distributions planering.
+    2. Upprätta alternativ för SKU-storlek för att begränsa distributioner till SKU: er som anges i dokumentation om distributions planering.
 
 ## <a name="conclusion"></a>Sammanfattning
 

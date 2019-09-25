@@ -4,23 +4,23 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vilka säkerhets guider tillhandahåller Microsoft?
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6a4b256c665e0f4a86bca5a538de9ae950ccd400
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: daad23e411b48414a0eb7ca535345fbd5e64fabd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029713"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222909"
 ---
 <!-- markdownlint-disable MD026 -->
 
-# <a name="what-security-guidance-does-microsoft-provide"></a>Vilka säkerhets guider tillhandahåller Microsoft?
+# <a name="microsoft-security-guidance"></a>Microsofts säkerhets guider
 
-## <a name="security-guidance-and-tools"></a>Säkerhets vägledning och verktyg
+## <a name="tools"></a>Verktyg
 
 Microsoft introducerade [tjänsten Trusted Platform](https://servicetrust.microsoft.com) and Compliance Manager för att hjälpa till med följande:
 
@@ -52,7 +52,7 @@ Dessa verktyg är utformade för att hjälpa organisationer att uppfylla komplex
 
 ## <a name="unique-intelligent-insights"></a>Unika intelligenta insikter
 
-I takt med att säkerhets signalernas volym och komplexitet ökar, tar du reda på om dessa signaler är trovärdiga och sedan fungerar det tar för lång tid. Microsoft erbjuder en oöverträffad bredd av säkerhets information som levereras i moln skala för att hjälpa dig att snabbt upptäcka och åtgärda hot.
+I takt med att säkerhets signalernas volym och komplexitet ökar, tar du reda på om dessa signaler är trovärdiga och sedan fungerar det tar för lång tid. Microsoft erbjuder en oöverträffad bredd av säkerhets information som levereras i moln skala för att hjälpa dig att snabbt upptäcka och åtgärda hot. [Läs mer](https://docs.microsoft.com/azure/security-center/security-center-intro)
 
 ## <a name="azure-threat-intelligence"></a>Azure Threat Intelligence
 

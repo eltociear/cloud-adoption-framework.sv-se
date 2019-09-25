@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Identitets bas mått, indikatorer och risk tolerans
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ad0b06cad7aefc70eea6366eb9ef2b5844c871a6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bf929fe5f1addbb27da77b865dfbdc71253c62a3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026794"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220428"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Identitets bas mått, indikatorer och risk tolerans
 
-Den här artikeln är avsedd att hjälpa dig att kvantifiera affärs risk toleransen när det gäller identitets bas linjen. Genom att definiera mått och indikatorer kan du skapa ett affärs ärende för att göra en investering som förfaller i disciplinen för identitets bas linjen.
+I den här artikeln får du hjälp med att kvantifiera affärs risk toleransen när det gäller identitets bas linjen. Genom att definiera mått och indikatorer kan du skapa ett affärs ärende för att göra en investering som förfaller i disciplinen för identitets bas linjen.
 
 ## <a name="metrics"></a>Mått
 
@@ -28,13 +28,13 @@ Följande är exempel på användbara mått som du bör samla för att utvärder
 
 - **Identitets systemets storlek.** Totalt antal användare, grupper eller andra objekt som hanteras via dina identitets system.
 - **Övergripande storlek på infrastruktur för katalog tjänster.** Antal katalog skogar, domäner och innehavare som används av din organisation.
-- **Beroende av äldre eller lokala autentiseringsmekanismer.** Antal arbets belastningar som är beroende av äldre autentiseringsmekanismer eller Multi-Factor Authentication-tjänster från tredje part.
+- **Beroende av äldre eller lokala autentiseringsmekanismer.** Antal arbets belastningar som är beroende av tidigare eller mekanismer för multifaktorautentisering eller Multi-Factor Authentication.
 - **Omfattningen av moln distributions katalog tjänster.** Antal katalog skogar, domäner och klienter som du har distribuerat till molnet.
 - **Cloud-distribuerade Active Directory-servrar.** Antalet Active Directory-servrar som distribuerats till molnet.
 - **Cloud-distribuerade organisationsenheter.** Antalet Active Directory organisationsenheter (OU) som distribuerats till molnet.
 - **Federationens omfattning.** Antal identitets bas system som är federerade med din organisations system.
 - **Utökade användare.** Antal användar konton med utökad åtkomst till resurser eller hanterings verktyg.
-- **Användning av rollbaserad åtkomst kontroll.** Antal prenumerationer, resurs grupper eller enskilda resurser som inte hanteras via rollbaserad åtkomst kontroll (RBAC).
+- **Användning av rollbaserad åtkomst kontroll.** Antal prenumerationer, resurs grupper eller enskilda resurser som inte hanteras via rollbaserad åtkomst kontroll (RBAC) via grupper.
 - **Autentiserings anspråk.** Antalet lyckade och misslyckade autentiseringsförsök för användare.
 - **Authorization-anspråk.** Antalet lyckade och misslyckade försök för användare att komma åt resurser.
 - **Komprometterade konton.** Antal användar konton som har komprometterats.
@@ -56,7 +56,7 @@ När du har en bas linje kan du fastställa de lägsta benchmark-värden som rep
 - **RBAC-utlösare.** Ett företag med under _x%_ av resurser som använder rollbaserad åtkomst kontroll metoder bör överväga att investera i identitets bas disciplinen för att identifiera optimerade sätt att tilldela användar åtkomst till resurser.
 - **Autentiserings haveri utlösare.** Ett företag där autentiseringsfel representerar mer än _x%_ av försöken bör investera i identitets bas punkten för att säkerställa att autentiseringsmetoder inte är under externa angrepp och att användarna kan använda autentiseringsmetoderna Bra.
 - **Utlösa auktoriseringsfel.** Ett företag där åtkomst försök nekas mer än _x%_ av tiden bör investera i identitets bas punkten för att förbättra programmet och uppdatering av åtkomst kontroller och identifiera potentiellt skadliga åtkomst försök.
-- **Komprometterad konto utlösare.** Ett företag med mer än _x_ komprometterade konton bör investera i bas linjen för identitets bas linjer för att förbättra hållfastheten och säkerheten för autentiseringsmekanismer och förbättra mekanismer för att åtgärda risker som rör komprometterade konton.
+- **Komprometterad konto utlösare.** Ett företag med mer än 1 komprometterat konto bör investera i identitets bas punkten för att förbättra hållfastheten och säkerheten för autentiseringsmekanismer och förbättra mekanismer för att åtgärda risker som rör komprometterade konton.
 
 De exakta mått och utlösare som du använder för att mäta risk toleransen och nivån av investering i identitets bas linjen är specifika för din organisation, men exemplen ovan bör fungera som en användbar bas för diskussioner i din organisation för moln styrning.
 

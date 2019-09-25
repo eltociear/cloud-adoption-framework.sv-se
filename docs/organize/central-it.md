@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: b99fbeca1d9761d16c780bf8329572e5b84fffe9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 54e08a42a64d06005620b450b1458288316df74e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027871"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224025"
 ---
 # <a name="central-it-capabilities"></a>Centrala IT-funktioner
 
@@ -111,7 +111,7 @@ Men en av deras moln antagande team kräver nu en miljö med en dedikerad och s�
 
 **Förhandla** Enbart klassificeringen räcker inte. Delade tjänster implementerades för att konsekvent hantera känsliga och verksamhets kritiska till gångar. Att ändra reglerna skulle påverka styrnings-och efterlevnadsprinciper som har utformats för till gångar som behöver mer skydd. En bättre införande kan inte ske med kostnaden för stabilitet, säkerhet eller styrning. Detta ledde till en förhandling med antagande teamet för att svara på vissa frågor. Skulle ett företags LED DevOps-team kunna tillhandahålla drifts hantering för den här miljön? Behöver den här lösningen direkt åtkomst till andra interna resurser? Om moln implementerings teamet är bekväm med dessa kompromisser kan ingångs trafiken vara möjlig.
 
-**Gruppera** Eftersom verksamheten kan ge sin egen pågående drift hantering, och eftersom lösningen inte är beroende av direkt trafik till andra interna till gångar, kan den avspärrade av i en ny prenumeration. Den prenumerationen läggs också till i en separat nod i den nya hanterings gruppens hierarki.
+**Gruppera** Eftersom företaget kan ge sin egen pågående drift hantering, och eftersom lösningen inte förlitar sig på direkt trafik till andra interna till gångar, kan det vara avspärradet i en ny prenumeration. Den prenumerationen läggs också till i en separat nod i den nya hanterings gruppens hierarki.
 
 **Automation:** En annan Sign of mognad i det här teamet är sina automatiserings principer. Teamet använder Azure Policy för att automatisera princip tillämpning. De använder också Azure-ritningar för att automatisera distributionen av vanliga plattforms komponenter och tillämpa den definierade identitets bas linjen. För den här prenumerationen och andra i den nya hanterings gruppen skiljer sig principerna och mallarna något. Principer som blockerar inkommande bandbredd har lyfts upp. De har ersatts av krav för att dirigera trafik genom prenumerationen för delade tjänster, som all inkommande trafik, för att upprätthålla trafik isolering. Eftersom verktyget för lokal Operations Management inte kan komma åt den här prenumerationen, krävs agenter för verktyget inte längre. Alla andra styrnings guardrails som krävs av andra prenumerationer i hanterings gruppens hierarki upprätthålls fortfarande, vilket säkerställer tillräckligt med guardrails.
 

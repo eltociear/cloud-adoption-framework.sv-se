@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vägledning för att konfigurera Azures styrnings kontroller för flera team, flera arbets belastningar och flera miljöer.
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d9b1dddff5cadd9219e6dffad87690145214b162
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d6a21e852ff44a9036f2fbb9d0d0e60a0f4c930f
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031021"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223949"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Styrningsdesign för flera team
 
@@ -26,16 +26,17 @@ Kraven är:
   - Den person i organisationen som ansvarar för ägarskapetav prenumerationer.
   - Den person i organisationen som ansvarar för de **delade infrastruktur resurser** som används för att ansluta ditt lokala nätverk till ett virtuellt Azure-nätverk.
   - Två personer i din organisation som ansvarar för att hantera en **arbets belastning**.
-- Stöd för flera **miljöer**. En miljö är en logisk gruppering av resurser, t. ex. virtuella datorer, virtuella nätverk och nätverks trafik tjänster för routning. Dessa resurs grupper har liknande hanterings-och säkerhets krav och används vanligt vis för ett särskilt ändamål, till exempel testning eller produktion. I det här exemplet är kravet för tre miljöer:
+- Stöd för flera **miljöer**. En miljö är en logisk gruppering av resurser, t. ex. virtuella datorer, virtuella nätverk och nätverks trafik tjänster för routning. Dessa resurs grupper har liknande hanterings-och säkerhets krav och används vanligt vis för ett särskilt ändamål, till exempel testning eller produktion. I det här exemplet är kravet för fyra miljöer:
   - En **delad infrastruktur miljö** som innehåller resurser som delas av arbets belastningar i andra miljöer. Till exempel ett virtuellt nätverk med ett Gateway-undernät som ger anslutning till lokalt.
   - En **produktions miljö** med de mest restriktiva säkerhets principerna. Kan omfatta interna eller externa riktade arbets belastningar.
-  - En **utvecklings miljö** för koncept bevis-och testnings arbete. Den här miljön har säkerhets-, efterlevnads-och kostnads principer som skiljer sig från dem i produktions miljön.
+  - En **produktions miljö** för utveckling och testning fungerar inte. Den här miljön har säkerhets-, efterlevnads-och kostnads principer som skiljer sig från dem i produktions miljön. I Azure tar detta en Enterprise Dev/Test prenumerations form.
+  - En **sand Box miljö** för koncept bevis-och utbildnings syfte. Den här miljön tilldelas vanligt vis per medarbetare som deltar i utvecklings aktiviteter och har strikt procedur-och drift säkerhets kontroller på plats för att förhindra att företags data Informas här. I Azure har dessa formen av Visual Studio-prenumerationer. Dessa prenumerationer bör _inte_ heller vara knutna till företagets Azure Active Directory.
 - En **behörighets modell med minst privilegium** där användare saknar behörighet som standard. Modellen måste ha stöd för följande:
-  - En enskild betrodd användare i prenumerations omfånget med behörighet att tilldela resurs åtkomst rättigheter.
-  - Varje arbets belastnings ägare nekas åtkomst till resurser som standard. Resurs åtkomst behörighet beviljas uttryckligen av den enda betrodda användaren i prenumerations omfånget.
-  - Hanterings åtkomst för delade infrastruktur resurser begränsas till ägaren av den delade infrastrukturen.
-  - Hanterings åtkomst för varje arbets belastning som är begränsad till arbets Belastningens ägare.
-  - Företaget vill inte behöva hantera roller oberoende av varandra i de tre miljöerna och behöver därför bara använda [inbyggda roller](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) som är tillgängliga i Azures rollbaserad åtkomst kontroll (RBAC). Om de företags anpassade RBAC-rollerna används, krävs ytterligare en process för att synkronisera anpassade roller i de tre miljöerna.
+  - En enkel betrodd användare (ett kvasibolag) i prenumerations omfånget med behörighet att tilldela resurs åtkomst rättigheter.
+  - Varje arbets belastnings ägare nekas åtkomst till resurser som standard. Resurs åtkomst behörighet beviljas uttryckligen av den enda betrodda användaren i resurs grupps omfånget.
+  - Hanterings åtkomst för resurserna för delad infrastruktur är begränsad till ägare av den delade infrastrukturen.
+  - Hanterings åtkomst för varje arbets belastning som är begränsad till arbets Belastningens ägare (i produktion) och ökande kontroll nivåer som utveckling ökar från dev till att testas till Prod.
+  - Företaget vill inte behöva hantera roller oberoende av varandra i de tre huvud miljöerna och behöver därför bara använda [inbyggda roller](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) som är tillgängliga i Azures rollbaserad åtkomst kontroll (RBAC). Om företaget absolut kräver anpassade RBAC-roller krävs ytterligare processer för att synkronisera anpassade roller i de tre miljöerna.
 - Kostnads uppföljning per arbets belastnings ägarens namn, miljö eller både och.
 
 ## <a name="identity-management"></a>Identitetshantering
@@ -54,7 +55,7 @@ När din organisation har registrerat sig för ett Azure-konto tilldelades minst
 Användar identiteter för både Azure-kontots ägare och den globala Azure AD-administratören lagras i ett mycket säkert identitets system som hanteras av Microsoft. Azure-kontots ägare har behörighet att skapa, uppdatera och ta bort prenumerationer. Den globala Azure AD-administratören har behörighet att utföra många åtgärder i Azure AD, men i den här design guiden fokuserar vi på att skapa och ta bort användar identitet.
 
 > [!NOTE]
-> Din organisation kanske redan har en befintlig Azure AD-klient om det finns en befintlig Office 365-eller Intune-licens som är kopplad till ditt konto.
+> Din organisation kanske redan har en befintlig Azure AD-klient om det finns en befintlig Office 365-, Intune-eller Dynamics-licens som är associerad med ditt konto.
 
 Azure-kontots ägare har behörighet att skapa, uppdatera och ta bort prenumerationer:
 
@@ -134,11 +135,11 @@ Om du jämför varje exempel med kraven ser du att båda exemplen har stöd för
 
 Nu när du har utformat en behörighets modell med minsta behörighet kan vi gå vidare och ta en titt på några praktiska program i dessa styrnings modeller. Kom ihåg krav som du måste ha stöd för följande tre miljöer:
 
-1. **Delad infrastruktur:** En enskild grupp med resurser som delas av alla arbets belastningar. Detta är resurser som nätverks-gatewayer, brand väggar och säkerhets tjänster.
-2. **Utformningen** Flera grupper med resurser som representerar flera färdiga arbets belastningar som inte är produktion. Dessa resurser används för koncept bevis, testning och andra utvecklings aktiviteter. Dessa resurser kan ha en mer avslappnad styrnings modell för att ge ökad flexibilitet i utvecklare.
-3. **Produktions** Flera grupper med resurser som representerar flera produktions arbets belastningar. Dessa resurser används för att vara värd för privata och offentliga program artefakter. Dessa resurser har vanligt vis de tätt flesta styrnings-och säkerhets modeller som skyddar resurserna, program koden och data från obehörig åtkomst.
+1. **Delad infrastruktur:** En grupp resurser som delas av alla arbets belastningar. Detta är resurser som nätverks-gatewayer, brand väggar och säkerhets tjänster.
+2. **Produktions** Flera grupper med resurser som representerar flera produktions arbets belastningar. Dessa resurser används för att vara värd för privata och offentliga program artefakter. Dessa resurser har vanligt vis de tätt flesta styrnings-och säkerhets modeller som skyddar resurserna, program koden och data från obehörig åtkomst.
+3. **Inte produktion:** Flera grupper med resurser som representerar flera färdiga arbets belastningar som inte är produktion. Dessa resurser används för utveckling och testning av dessa resurser kan ha en mer avslappnad styrnings modell för att ge ökad flexibilitet i utvecklare. Säkerheten i dessa grupper bör öka närmare "produktion" för att få en program utvecklings process.
 
-För var och en av dessa tre miljöer finns det ett krav för att spåra kostnads data efter **arbets belastnings ägare**, **miljö**eller både och. Det innebär att du vill veta den kontinuerliga kostnaden för den **delade infrastrukturen**, kostnaderna för enskilda användare i både **utvecklings** -och **produktions** miljö och slutligen den övergripande kostnaden för **utveckling** och  **produktion**.
+För var och en av dessa tre miljöer finns det ett krav för att spåra kostnads data efter **arbets belastnings ägare**, **miljö**eller både och. Det innebär att du vill veta den kontinuerliga kostnaden för den **delade infrastrukturen**, kostnaderna för enskilda personer i både **icke-produktions-** och **produktions** miljö och slutligen den totala kostnaden för **icke-produktion** och  **produktion**.
 
 Du har redan lärt dig att resurserna är begränsade till två nivåer: **prenumeration** och **resurs grupp**. Det första beslutet är därför att organisera miljöer efter **prenumeration**. Det finns bara två möjligheter: en enda prenumeration eller flera prenumerationer.
 

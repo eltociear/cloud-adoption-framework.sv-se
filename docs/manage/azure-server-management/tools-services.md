@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 854653882b8a07662da092ee4ec0006644000f56
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: dbb00a411eb7905ad557e1acdc2a98d4d03cff49
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027242"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221417"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Verktyg och tjänster för Azure Server Management
 
@@ -96,4 +96,4 @@ Om du vill veta mer om priser för Azure Management Services går du till följa
 - [Azure File Sync tjänst](https://azure.microsoft.com/pricing/details/storage/blobs)
 
 > [!NOTE]
-> Azure Uppdateringshantering-lösningen är kostnads fri, men det finns en låg kostnad för data inmatning. Som en tumregel är de första 5 GB per månad då data inmatningen är kostnads fri. Vi observerar vanligt vis att varje dator använder ca 25 MB per månad. Så om 200-datorer per månad omfattas kostnads fritt. Multiplicera antalet ytterligare servrar med 25 MB per månad för varje ytterligare Server. Multiplicera med kostnaden för lagring för den totala mängden lagring som behövs. [Lagrings kostnaderna finns här](https://azure.microsoft.com/pricing/details/storage/). Varje ytterligare Server bör ha en nominell inverkan på kostnaderna.
+> Azure Uppdateringshantering-lösningen är kostnads fri, men det finns en låg kostnad för data inmatning. Som en tumregel är de första 5 GB per månad då data inmatningen är kostnads fri. Vi observerar vanligt vis att varje dator använder ca 25 MB per månad. Så om 200-datorer per månad omfattas kostnads fritt. Multiplicera antalet ytterligare servrar med 25 MB per månad för varje ytterligare Server. Multiplicera med kostnaden för lagring för den totala mängden lagring som behövs. [Lagrings kostnaderna finns här](https://azure.microsoft.com/pricing/details/storage). Varje ytterligare Server bör ha en nominell inverkan på kostnaderna.

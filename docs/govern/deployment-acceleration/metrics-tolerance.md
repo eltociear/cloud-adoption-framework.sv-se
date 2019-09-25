@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Distributions accelerations mått, indikatorer och risk tolerans
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5049b41abc03c5f59d0d750373b48a39b0638084
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d7a7965acb7b1ace74983c7d0e1e65c3d47b2cc5
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028050"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220705"
 ---
 # <a name="deployment-acceleration-metrics-indicators-and-risk-tolerance"></a>Distributions accelerations mått, indikatorer och risk tolerans
 
-Den här artikeln är avsedd att hjälpa dig att kvantifiera affärs risk toleransen när den är kopplad till distributions acceleration. Genom att definiera mått och indikatorer kan du skapa ett affärs ärende för att göra en investering i förgrunden för distributions accelerationens disciplin.
+I den här artikeln får du hjälp med att kvantifiera affärs risk toleransen när det gäller distributions acceleration. Genom att definiera mått och indikatorer kan du skapa ett affärs ärende för att göra en investering i förgrunden för distributions accelerationens disciplin.
 
 ## <a name="metrics"></a>Mått
 
@@ -34,7 +34,7 @@ Risker som rör distributions acceleration är i stort sett relaterade till anta
 
 <!-- "en-us" location is required for the URL below. -->
 
-Överväg att använda en DevOps-eller [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops) organisations kultur tidigt i molnet för att anta resan. Traditionella företags IT-organisationer har ofta silon för drift-, säkerhets-och utvecklings grupper som ofta inte samarbetar eller som är till och med adversariala eller som är farliga mot varandra. Att identifiera de här utmaningarna tidigt och integrera viktiga intressenter från var och en av teamen kan hjälpa till att se över din moln användning samtidigt som den är skyddad och väl styrd.
+Traditionella företags IT-organisationer har ofta silon för drift-, säkerhets-och utvecklings grupper som ofta inte samarbetar eller som är till och med adversariala eller som är farliga mot varandra. Att identifiera de här utmaningarna tidigt och integrera viktiga intressenter från var och en av teamen kan hjälpa till att se över din moln användning samtidigt som den är skyddad och väl styrd. Därför bör man överväga att anta en DevOps-eller [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops) organisations kultur tidigt i molnets införande resa. 
 
 Arbeta med ditt DevSecOps-team och affärs intressenter för att identifiera [affärs risker](./business-risks.md) som är relaterade till konfigurationen och bestäm sedan en acceptabel bas linje för konfigurations risk tolerans. Det här avsnittet i vägledningen för moln implementerings ramverket innehåller exempel, men de detaljerade riskerna och bas linjerna för ditt företag eller distributioner är förmodligen annorlunda.
 

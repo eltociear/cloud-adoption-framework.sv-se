@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 5e6d77a86d1e3d928913e47c5781411f1973b3cc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b3ec947b841c36bcd28bdbd02615182fd25a158a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025026"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221444"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Utvärdera lokala arbetsbelastningar för migrering till Azure
 
@@ -242,12 +242,12 @@ Konfigurera ett nytt Azure Migrate-projekt enligt följande.
 
 6. I **Projektinformation* anger du projektnamnet och geografin där du vill skapa projektet. USA, Asien, Europa, Australien, Storbritannien, Kanada, Indien och Japan stöds.
 
-    * Projektgeografin används bara för att lagra de metadata som samlas in från lokala virtuella datorer.
-    * Du kan välja vilken målregion du vill när du kör en migrering.
+    - Projektgeografin används bara för att lagra de metadata som samlas in från lokala virtuella datorer.
+    - Du kan välja vilken målregion du vill när du kör en migrering.
 
 7. Klicka på **Nästa**.
 
-8. I **Välj utvärderingsverktyg** väljer du **Azure Migrate: Serverutvärdering** > **Nästa**.
+8. I **Välj bedömnings verktyg**väljer **du Azure Migrate: Serverutvärdering** > **Nästa**.
 
     ![Azure Migrate – Utvärderingsverktyg](./media/contoso-migration-assessment/assessment-tool.png)
 
@@ -262,7 +262,7 @@ granskar du inställningarna och klickar på **Lägg till verktyg**.
 
 1. I **Migreringsmål** > **Servrar** > **Azure Migrate: Serverutvärdering** klickar du på **Identifiera**.
 
-2. I **Identifiera datorer** > **Är dina datorer virtualiserade?** klickar du på **	Ja, med VMware vSphere Hypervisor-programmet**.
+2. I **Identifiera datorer** > **Är dina datorer virtualiserade?** klickar du på **Ja, med VMware vSphere Hypervisor-programmet**.
 
 3. Klicka på **Ladda ned** för att ladda ned .OVA-mallfilen.
 
@@ -313,14 +313,13 @@ Contoso kör sedan insamlaren (Collector) för att identifiera virtuella datorer
 
     ![Azure Migrate Collector – Verifiera förutsättningar](./media/contoso-migration-assessment/collector-verify-prereqs-v2.png)
 
-6. Logga in på ditt **Azure**-konto och välj den prenumeration och det migreringsprojekt som du skapade tidigare. Ange också ett namn på **datorn** så att du kan hitta den i Azure Portal. 
-7. I **Ange vCenter Server-information** anger Contoso namnet (FQDN) eller IP-adressen för vCenter Server-instansen och de skrivskyddade autentiseringsuppgifterna som används för identifiering.
-8. Contoso väljer ett omfång för identifiering av virtuella datorer. Insamlaren kan bara identifiera virtuella datorer i angivet omfång. Omfånget kan anges till en viss mapp, ett datacenter eller ett kluster. 
+5. Logga in på ditt **Azure**-konto och välj den prenumeration och det migreringsprojekt som du skapade tidigare. Ange ett namn på **enheten** så att du kan identifiera den i Azure Portal.
+6. I **Ange vCenter Server-information** anger Contoso namnet (FQDN) eller IP-adressen för vCenter Server-instansen och de skrivskyddade autentiseringsuppgifterna som används för identifiering.
+7. Contoso väljer ett omfång för identifiering av virtuella datorer. Insamlaren kan bara identifiera virtuella datorer i angivet omfång. Omfånget kan anges till en viss mapp, ett datacenter eller ett kluster.
 
     ![Ange vCenter Server-information](./media/contoso-migration-assessment/collector-connect-vcenter.png)
 
-
-8. Insamlaren börjar att identifiera och samla in information om Contoso-miljön. 
+8. Insamlaren börjar att identifiera och samla in information om Contoso-miljön.
 
     ![Visa insamlingsförloppet](./media/contoso-migration-assessment/migrate-disccovery.png)
 
@@ -350,8 +349,8 @@ För att behålla en kopia av de virtuella datorerna innan de ändrar dem tar Co
 
 1. I **Datorer**väljer Contoso datorn. I kolumnen **Beroenden** väljer Contoso **Kräver installation**.
 2. Följ panelen **Identifiera datorer** gör Contoso följande:
-    - Hämtar Microsoft Monitoring Agent (MMA) och beroendeagenten för varje virtuell Windows-dator.
-    - Laddar ned MMA och Dependency Agent för varje virtuell Linux-dator.
+    - Laddar ned Microsoft Monitoring Agent (MMA) och Microsofts beroende agent för varje virtuell Windows-dator.
+    - Laddar ned MMA och beroende agent för varje virtuell Linux-dator.
 3. Contoso kopierar arbetsytans ID och nyckel. Contoso måste ha arbetsytans ID och nyckel när MMA installeras.
 
     ![Hämning av agent](./media/contoso-migration-assessment/download-agents.png)
@@ -376,10 +375,10 @@ Contoso kör installationen på varje virtuell dator.
 
 #### <a name="install-the-dependency-agent-on-windows-vms"></a>Installera beroendeagenten på virtuella Windows-datorer
 
-1. Contoso dubbelklickar på den hämtade beroendeagenten.
+1. Contoso dubbelklickar på den hämtade beroende agenten.
 2. Contoso accepterar licensvillkoren och väntar på att installationen ska slutföras.
 
-    ![Dependency Agent-installation – Installera](./media/contoso-migration-assessment/dependency-agent.png)
+    ![Dependency Agent installation – installation](./media/contoso-migration-assessment/dependency-agent.png)
 
 ### <a name="install-the-agents-on-linux-vms"></a>Installera agenterna på virtuella Linux-datorer
 
@@ -390,9 +389,11 @@ Contoso kör installationen på varje virtuell dator.
 1. Contoso installerar python ctypes-biblioteket på varje virtuell dator med hjälp av följande kommando:
 
     `sudo apt-get install python-ctypeslib`
+
 2. Contoso måste köra kommandot för att installera MMA-agenten som rot. För att bli rot kör Contoso följande kommando och anger rotlösenordet:
 
     `sudo -i`
+
 3. Contoso installerar MMA:
     - Contoso anger arbetsytans ID och nyckel i kommandot.
     - Kommandon är för 64-bitars.
@@ -405,11 +406,11 @@ Contoso kör installationen på varje virtuell dator.
 
 #### <a name="install-the-dependency-agent-on-linux-vms"></a>Installera beroendeagenten på virtuella Linux-datorer
 
-När MMA har installerats installerar Contoso beroendeagenten på virtuella Linux-datorer:
+När MMA har installerats installerar contoso beroende agenten på virtuella Linux-datorer:
 
-1. Beroendeagenten installeras på Linux-datorer med InstallDependencyAgent-Linux64.bin, ett kommandoskript med en självextraherande binär fil. Contoso kör filen med hjälp av sh eller lägger till körningsbehörighet till själva filen.
+1. Beroende agenten är installerad på Linux-datorer med hjälp av InstallDependencyAgent-Linux64. bin, ett gränssnitts skript som har en självextraherande binärfil. Contoso kör filen med hjälp av sh eller lägger till körningsbehörighet till själva filen.
 
-2. Contoso installerar Linux-beroendeagenten som rot:
+2. Contoso installerar Linux-beroende agenten som rot:
 
     ```console
     wget --content-disposition https://aka.ms/dependencyagentlinux -O InstallDependencyAgent-Linux64.bin && sudo sh InstallDependencyAgent-Linux64.bin -s

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8cc3c5564d51a096f2794ec62e50c19a2a8e740c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8f9bd9d7dadbd880265cc441b1e927ab835165cb
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031053"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223829"
 ---
 # <a name="standard-enterprise-guide-prescriptive-guidance-explained"></a>Standard Enterprise-guide: Vägledning förklaring
 
@@ -61,7 +61,7 @@ Beslutet om vilken prenumerations design som används avgör hur Azure-prenumera
 
 Resurs konsekvens beslut avgör vilka verktyg, processer och ansträngningar som krävs för att säkerställa att Azure-resurser distribueras, konfigureras och hanteras konsekvent i en prenumeration. I det här avsnittet har **[distributions konsekvens](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** valts som primärt resurs konsekvens mönster.
 
-- Resurs grupper skapas för program som använder livs cykel metoden: allt som skapas tillsammans behålls tillsammans och återdäcken kan finnas i en enda resurs grupp.
+- Resurs grupper skapas för program som använder livs cykel metoden: allt som skapas, underhålls och dras tillbaka tillsammans bör finnas i en enda resurs grupp. Mer information om resurs grupper finns [här](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - Azure Policy ska tillämpas på alla prenumerationer från den associerade hanterings gruppen.
 - Som en del av distributions processen bör Azure Resource Consistency-mallar för resurs gruppen lagras i käll kontrollen.
 - Varje resurs grupp är kopplad till en specifik arbets belastning eller ett program baserat på den livs cykel metod som beskrivs ovan.
@@ -116,7 +116,7 @@ Om något av de mönster som valts i den här styrnings guiden inte överensstä
 
 ## <a name="next-steps"></a>Nästa steg
 
-När den här guiden har implementerats kan varje moln antagande team gå vidare med en sund styrnings bas. Moln styrnings teamet kommer att fungera parallellt för att kontinuerligt uppdatera företags principerna och styrnings disciplinerna.
+När den här guiden har implementerats kan varje moln antagande team gå vidare med en sund styrnings bas. På samma gång kommer moln styrnings teamet att fungera kontinuerligt och uppdatera företags principerna och styrnings disciplinerna.
 
 De två teamen använder tolerans indikatorerna för att identifiera nästa uppsättning förbättringar som krävs för att fortsätta att stödja moln införande. För det fiktiva företaget i den här guiden, förbättrar nästa steg säkerhets bas linjen för att stödja flytt av skyddade data till molnet.
 

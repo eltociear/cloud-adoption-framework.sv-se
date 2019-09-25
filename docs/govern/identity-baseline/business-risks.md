@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Motiveringar och affärs risker för identitets bas
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9c838063c77b02af4ec86187854a15d93b2998ef
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: e4203944d6ab5de891f637034d60381290a31c46
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026998"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222186"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>Motiveringar och affärs risker för identitets bas
 
@@ -22,11 +22,11 @@ I den här artikeln beskrivs orsakerna till att kunderna vanligt vis antar en id
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-identity-baseline-relevant"></a>Är identitets bas linjen relevant?
+## <a name="identity-baseline-relevancy"></a>Identitets bas linje relevanta
 
 Traditionella lokala kataloger är utformade för att tillåta företag att strikt kontrol lera behörigheter och principer för användare, grupper och roller i sina interna nätverk och data Center. Detta är vanligt vis avsett att stödja en enda klient implementering, med tjänster som endast gäller inom den lokala miljön.
 
-Moln identitets tjänster är avsedda att expandera en organisations funktioner för autentisering och åtkomst kontroll till Internet. De stöder flera innehavare och kan användas för att hantera användare och åtkomst principer i moln program och distributioner. Offentliga moln plattformar har någon form av molnbaserade identitets tjänster som stöder hanterings-och distributions uppgifter och som kan [variera mellan olika integrerings nivåer](../../decision-guides/identity/index.md) med dina befintliga lokala identitets lösningar. Alla dessa funktioner kan resultera i att moln identitets principer är mer komplicerade än dina traditionella lokala lösningar kräver.
+Cloud Identity Services utökar en organisations funktioner för autentisering och åtkomst kontroll till Internet. De stöder flera innehavare och kan användas för att hantera användare och åtkomst principer i moln program och distributioner. Offentliga moln plattformar har molnbaserade identitets tjänster som stöder hanterings-och distributions uppgifter och som kan [variera mellan olika integrerings nivåer](../../decision-guides/identity/index.md) med dina befintliga lokala identitets lösningar. Alla dessa funktioner kan resultera i att moln identitets principer är mer komplicerade än dina traditionella lokala lösningar kräver.
 
 Betydelsen av identitets bas disciplinen för moln distributionen beror på teamets storlek och måste integrera din molnbaserade identitets lösning med en befintlig lokal identitets tjänst. De första test distributionerna kanske inte kräver mycket av användarens organisation eller hantering, men eftersom moln fastigheten mognar, behöver du förmodligen stöd för mer komplex organisations integrering och centraliserad hantering.
 

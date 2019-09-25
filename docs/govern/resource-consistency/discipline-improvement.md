@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Disciplin förbättring av resurs konsekvens
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 12a1dbd734d4159f814c093c104709b950dddad8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 84c7a45b52c541ad9efbec4594db022947b3ff40
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029455"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223022"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>Disciplin förbättring av resurs konsekvens
 
@@ -101,7 +101,7 @@ Migrering är en stegvis process som fokuserar på förflyttning, testning och i
 - Ta reda på om din organisation kräver en tydlig ekonomisk justering för P & LS for Business Units.
 - För globala organisationer ska du implementera kraven för SLA-efterlevnad eller suveränitets krav.
 - För moln agg regering distribuerar du en gateway-lösning till en moln leverantör.
-- För verktyg som inte tillåter hybrid-eller gateway-alternativ kan du nära övervaka med ett verktyg för drifts övervakning.
+- För verktyg som inte tillåter hybrid-eller gateway-alternativ kan du nära övervaka med ett verktyg för drifts övervakning som omfattar alla data Center och moln.
 
 ## <a name="operate-and-post-implementation"></a>Drift och efter implementering
 

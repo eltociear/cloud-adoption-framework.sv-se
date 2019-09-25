@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Standard Enterprise-guide: Förbättra säkerhets bas linje disciplinen'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a9b67b20f0f9169f5da7f941615612218ef29f94
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 37d47b0a190506f84ed2b973b44ca731e70ad664
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026604"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223781"
 ---
 # <a name="standard-enterprise-guide-improve-the-security-baseline-discipline"></a>Standard Enterprise-guide: Förbättra säkerhets bas linje disciplinen
 
@@ -71,7 +71,7 @@ Följande ändringar i principen hjälper dig att åtgärda de nya riskerna och 
 
 1. Alla distribuerade till gångar måste kategoriseras efter allvarlighets grad och data klassificering. Klassificeringarna bör granskas av moln styrnings teamet och program ägaren innan distributionen till molnet.
 2. Program som lagrar eller kommer åt skyddade data ska hanteras annorlunda än de som inte är det. De bör minst segmenteras för att undvika oavsiktlig åtkomst till skyddade data.
-3. Alla skyddade data måste krypteras när de är i vilo läge.
+3. Alla skyddade data måste krypteras när de är i vilo läge. Även om detta är standard för alla Azure Storage-konton kan ytterligare krypterings strategier behövas, inklusive kryptering av data i lagrings kontot, kryptering av virtuella datorer och kryptering på databas nivå om SQL används i en virtuell dator (TDE och kolumn kryptering).
 4. Utökade behörigheter i alla segment som innehåller skyddade data ska vara ett undantag. Eventuella sådana undantag kommer att registreras med moln styrnings teamet och granskas regelbundet.
 5. Nätverks under nät som innehåller skyddade data måste isoleras från andra undernät. Nätverks trafik mellan skyddade data under nät kommer att granskas regelbundet.
 6. Det går inte att komma åt ett undernät som innehåller skyddade data direkt via det offentliga Internet eller i flera data Center. Åtkomst till dessa undernät måste dirigeras via mellanliggande undernät. All åtkomst till dessa undernät måste komma via en brand Väggs lösning som kan utföra paket genomsökning och blockera funktioner.
@@ -93,35 +93,35 @@ Följande ändringar i principen hjälper dig att åtgärda de nya riskerna och 
 Designen styrning MVP kommer att ändras till att inkludera nya Azure-principer och en implementering av Azure Cost Management. Tillsammans kommer dessa två design ändringar att uppfylla de nya företags princip satserna.
 
 1. Nätverks-och IT-säkerhetsteamen definierar nätverks krav. Moln styrnings teamet kommer att stödja konversationen.
-1. Identitets-och IT-säkerhetsteamen definierar identitets krav och gör nödvändiga ändringar i den lokala Active Directory implementeringen. Moln styrnings teamet kommer att granska ändringar.
-1. Skapa en lagrings plats i Azure DevOps för att lagra och version av alla relevanta Azure Resource Manager mallar och konfigurationer med skript.
-1. Azure Security Center implementering:
+2. Identitets-och IT-säkerhetsteamen definierar identitets krav och gör nödvändiga ändringar i den lokala Active Directory implementeringen. Moln styrnings teamet kommer att granska ändringar.
+3. Skapa en lagrings plats i Azure DevOps för att lagra och version av alla relevanta Azure Resource Manager mallar och konfigurationer med skript.
+4. Azure Security Center implementering:
     1. Konfigurera Azure Security Center för alla hanterings grupper som innehåller skyddade data klassificeringar.
-    1. Ange automatisk etablering till på som standard för att säkerställa att du korrigerar kompatibiliteten.
-    1. Upprätta OS-säkerhetskonfigurationer. IT-säkerhetsteamet definierar konfigurationen.
-    1. Ge support till IT-säkerhetsteamet i den första användningen av Security Center. Över gången till användningen av Security Center till IT-säkerhetsteamet, men ha kvar åtkomsten för att ständigt förbättra styrningen.
-    1. Skapa en Resource Manager-mall som motsvarar de ändringar som krävs för Security Center konfiguration i en prenumeration.
-1. Uppdatera Azure-principer för alla prenumerationer:
+    2. Ange automatisk etablering till på som standard för att säkerställa att du korrigerar kompatibiliteten.
+    3. Upprätta OS-säkerhetskonfigurationer. IT-säkerhetsteamet definierar konfigurationen.
+    4. Ge support till IT-säkerhetsteamet i den första användningen av Security Center. Över gången till användningen av Security Center till IT-säkerhetsteamet, men ha kvar åtkomsten för att ständigt förbättra styrningen.
+    5. Skapa en Resource Manager-mall som motsvarar de ändringar som krävs för Security Center konfiguration i en prenumeration.
+5. Uppdatera Azure-principer för alla prenumerationer:
     1. Granska och genomdriva allvarlighets grad och data klassificering i alla hanterings grupper och prenumerationer för att identifiera eventuella prenumerationer med skyddade data klassificeringar.
-    1. Granska och Använd endast godkända avbildningar.
-1. Uppdatera Azure-principer för alla prenumerationer som innehåller skyddade data klassificeringar:
+    2. Granska och Använd endast godkända avbildningar.
+6. Uppdatera Azure-principer för alla prenumerationer som innehåller skyddade data klassificeringar:
     1. Granska och Använd endast Azure RBAC-roller med standard typ.
-    1. Granska och genomdriva kryptering för alla lagrings konton och filer i vila på enskilda noder.
-    1. Granska och framtvinga tillämpning av en NSG för alla nätverkskort och undernät. Nätverks-och IT-säkerhetsteamen kommer att definiera NSG.
-    1. Granska och genomdriva användningen av godkända nätverks under nät och vNet per nätverks gränssnitt.
-    1. Granska och genomdriva begränsningen för användardefinierade vägvals tabeller.
-    1. Använd de inbyggda principerna för gäst konfiguration enligt följande:
+    2. Granska och genomdriva kryptering för alla lagrings konton och filer i vila på enskilda noder.
+    3. Granska och framtvinga tillämpning av en NSG för alla nätverkskort och undernät. Nätverks-och IT-säkerhetsteamen kommer att definiera NSG.
+    4. Granska och genomdriva användningen av godkända nätverks under nät och vNet per nätverks gränssnitt.
+    5. Granska och genomdriva begränsningen för användardefinierade vägvals tabeller.
+    6. Använd de inbyggda principerna för gäst konfiguration enligt följande:
         1. Granska att Windows-webbservrar använder säkra kommunikations protokoll.
-        1. Granska att inställningarna för lösen ords säkerhet är korrekt i Linux-och Windows-datorer.
-1. Brandväggskonfiguration:
+        2. Granska att inställningarna för lösen ords säkerhet är korrekt i Linux-och Windows-datorer.
+7. Brandväggskonfiguration:
     1. Identifiera en konfiguration av Azure-brandväggen som uppfyller nödvändiga säkerhets krav. Du kan också identifiera en kompatibel tredje parts installation som är kompatibel med Azure.
-    1. Skapa en Resource Manager-mall för att distribuera brand väggen med nödvändiga konfigurationer.
-1. Azure-skiss:
+    2. Skapa en Resource Manager-mall för att distribuera brand väggen med nödvändiga konfigurationer.
+8. Azure-skiss:
     1. Skapa en ny skiss med `protected-data`namnet.
-    1. Lägg till brand väggen och Azure Security Center mallar i skissen.
-    1. Lägg till de nya principerna för skyddade data prenumerationer.
-    1. Publicera skissen till alla hanterings grupper som för närvarande planerar att vara värd för skyddade data.
-    1. Tillämpa den nya skissen på varje berörd prenumeration, förutom befintliga ritningar.
+    2. Lägg till brand väggen och Azure Security Center mallar i skissen.
+    3. Lägg till de nya principerna för skyddade data prenumerationer.
+    4. Publicera skissen till alla hanterings grupper som för närvarande planerar att vara värd för skyddade data.
+    5. Tillämpa den nya skissen på varje berörd prenumeration, förutom befintliga ritningar.
 
 ## <a name="conclusion"></a>Sammanfattning
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 58dcbc125f0f4b65b4f4e4f2b292bbe1a4890ec0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: dc045d26dd855240700341748c189a985f1f6758
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028043"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220548"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Styrnings guide för komplexa företag: Förbättra säkerhets bas linje disciplinen
 
@@ -105,26 +105,26 @@ De nya bästa metoderna är i två kategorier: Företags IT (hubb) och molnbaser
 **Upprätta en företags IT-hubb och eker-prenumeration för att centralisera säkerhets bas linjen:** I den här bästa praxis omsluts den befintliga styrnings kapaciteten av en [nav-och eker-topologi med delade tjänster](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services), med några viktiga tillägg från moln styrnings teamet.
 
 1. Azure DevOps-lagringsplats. Skapa en lagrings plats i Azure DevOps för att lagra och version av alla relevanta Azure Resource Manager mallar och konfigurationer med skript.
-1. Mall för hubb och eker:
+2. Mall för hubb och eker:
     1. Rikt linjerna i [topologin hubb och eker med delade tjänster](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) kan användas för att skapa Resource Manager-mallar för de till gångar som krävs i en företags IT-hubb.
-    1. Med hjälp av dessa mallar kan den här strukturen göras repeterbar, som en del av en central styrnings strategi.
-    1. Förutom den aktuella referens arkitekturen, rekommenderar vi att du skapar en mall för nätverks säkerhets grupper som fångar in alla port spärrnings-eller vit listning-krav för det virtuella nätverket som värd för brand väggen. Den här nätverks säkerhets gruppen skiljer sig från tidigare grupper, eftersom det är den första nätverks säkerhets gruppen som tillåter offentlig trafik till ett VNet.
-1. Skapa Azure-principer. Skapa en princip med `Hub NSG Enforcement` namnet för att genomdriva konfigurationen av den nätverks säkerhets grupp som har tilldelats till ett virtuellt nätverk som skapats i den här prenumerationen. Använd de inbyggda principerna för gäst konfiguration enligt följande:
+    2. Med hjälp av dessa mallar kan den här strukturen göras repeterbar, som en del av en central styrnings strategi.
+    3. Förutom den aktuella referens arkitekturen, rekommenderar vi att du skapar en mall för nätverks säkerhets grupper som fångar in alla port spärrnings-eller vit listning-krav för det virtuella nätverket som värd för brand väggen. Den här nätverks säkerhets gruppen skiljer sig från tidigare grupper, eftersom det är den första nätverks säkerhets gruppen som tillåter offentlig trafik till ett VNet.
+3. Skapa Azure-principer. Skapa en princip med `Hub NSG Enforcement` namnet för att genomdriva konfigurationen av den nätverks säkerhets grupp som har tilldelats till ett virtuellt nätverk som skapats i den här prenumerationen. Använd de inbyggda principerna för gäst konfiguration enligt följande:
     1. Granska att Windows-webbservrar använder säkra kommunikations protokoll.
-    1. Granska att inställningarna för lösen ords säkerhet är korrekt i Linux-och Windows-datorer.
-1. IT-skiss för företag
+    2. Granska att inställningarna för lösen ords säkerhet är korrekt i Linux-och Windows-datorer.
+4. IT-skiss för företag
     1. Skapa en Azure-skiss `corporate-it-subscription`med namnet.
-    1. Lägg till Hub-och eker- `Hub NSG Enforcement` mallarna och principen.
-1. Expanderar den inledande hanterings gruppens hierarki.
+    2. Lägg till Hub-och eker- `Hub NSG Enforcement` mallarna och principen.
+5. Expanderar den inledande hanterings gruppens hierarki.
     1. För varje hanterings grupp som har begärt stöd för skyddade data `corporate-it-subscription-blueprint` tillhandahåller skissen en accelererad nav lösning.
-    1. Eftersom hanterings grupper i det här fiktiva exemplet innehåller en regional hierarki förutom en affär senhets hierarki, kommer den här skissen att distribueras i varje region.
-    1. Skapa en prenumeration med namnet `Corporate IT Subscription`för varje region i hanterings gruppens hierarki.
-    1. `corporate-it-subscription-blueprint` Använd skissen på varje regional instans.
-    1. Detta upprättar en hubb för varje affär senhet i varje region. Obs! Ytterligare kostnads besparingar kan uppnås, men delnings nav mellan affär senheter i varje region.
-1. Integrera grup princip objekt (GPO) via önskad tillstånds konfiguration (DSC):
+    2. Eftersom hanterings grupper i det här fiktiva exemplet innehåller en regional hierarki förutom en affär senhets hierarki, kommer den här skissen att distribueras i varje region.
+    3. Skapa en prenumeration med namnet `Corporate IT Subscription`för varje region i hanterings gruppens hierarki.
+    4. `corporate-it-subscription-blueprint` Använd skissen på varje regional instans.
+    5. Detta upprättar en hubb för varje affär senhet i varje region. Obs! Ytterligare kostnads besparingar kan uppnås, men delnings nav mellan affär senheter i varje region.
+6. Integrera grup princip objekt (GPO) via önskad tillstånds konfiguration (DSC):
     1. Konvertera GPO till DSC – [Microsoft Baseline Management-projektet](https://github.com/Microsoft/BaselineManagement) i GitHub kan påskynda denna ansträngning. * Var noga med att lagra DSC i databasen parallellt med Resource Manager-mallar.
-    1. Distribuera Azure Automation tillstånds konfiguration till alla instanser av företags IT-prenumerationen. Azure Automation kan användas för att tillämpa DSC på virtuella datorer som distribuerats i stödda prenumerationer i hanterings gruppen.
-    1. Den aktuella översikten planerar att aktivera anpassade principer för gäst konfiguration. När funktionen släpps krävs inte längre användningen av Azure Automation i den här rekommenderade metoden.
+    2. Distribuera Azure Automation tillstånds konfiguration till alla instanser av företags IT-prenumerationen. Azure Automation kan användas för att tillämpa DSC på virtuella datorer som distribuerats i stödda prenumerationer i hanterings gruppen.
+    3. Den aktuella översikten planerar att aktivera anpassade principer för gäst konfiguration. När funktionen släpps krävs inte längre användningen av Azure Automation i den här rekommenderade metoden.
 
 **Använda ytterligare styrning för en moln implementerings prenumeration (eker):** Att bygga vidare `Corporate IT Subscription`på de mindre ändringar i styrnings MVP som tillämpas på varje prenumeration som är avsedd för supporten av Application archetypes kan skapa snabb förbättring.
 
@@ -132,38 +132,38 @@ I tidigare repetitiva ändringar av bästa praxis definierade vi nätverks säke
 
 1. Mall för nätverks peering. Den här mallen kommer att peer-nätverket i varje prenumeration med hubb-VNet i den företags IT-prenumerationen.
     1. Referens arkitekturen från föregående avsnitt, [hubb och eker-topologi med delade tjänster](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services), genererade en Resource Manager-mall för att aktivera VNet-peering.
-    1. Mallen kan användas som en guide för att ändra DMZ-mallen från föregående styrnings iteration.
-    1. I stort sett lägger vi nu till VNet-peering till DMZ VNet som tidigare var anslutna till den lokala Edge-enheten via VPN.
-    1. Vi rekommenderar också att du tar bort VPN-adressen från den här mallen även för att se till att ingen trafik dirigeras direkt till det lokala data centret utan att passera genom den lokala IT-prenumerationen och brand Väggs lösningen.
-    1. Ytterligare [nätverks konfiguration](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) krävs av Azure Automation att använda DSC för virtuella datorer som är värdar för virtuella datorer.
-1. Ändra nätverks säkerhets gruppen. Blockera all offentlig **och** direkt lokal trafik i nätverks säkerhets gruppen. Den enda inkommande trafiken ska komma via VNet-peer i IT-prenumerationen för företaget.
+    2. Mallen kan användas som en guide för att ändra DMZ-mallen från föregående styrnings iteration.
+    3. Nu lägger vi till VNet-peering i DMZ VNet som tidigare var anslutna till den lokala Edge-enheten via VPN.
+    4. Vi rekommenderar också att du tar bort VPN-adressen från den här mallen även för att se till att ingen trafik dirigeras direkt till det lokala data centret utan att passera genom den lokala IT-prenumerationen och brand Väggs lösningen. Du kan också ange den här VPN-kretsen som en redundansväxling i händelse av en ExpressRoute-krets outge.
+    5. Ytterligare [nätverks konfiguration](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) krävs av Azure Automation att använda DSC för virtuella datorer som är värdar för virtuella datorer.
+2. Ändra nätverks säkerhets gruppen. Blockera all offentlig **och** direkt lokal trafik i nätverks säkerhets gruppen. Den enda inkommande trafiken ska komma via VNet-peer i IT-prenumerationen för företaget.
     1. I den tidigare iterationen skapades en nätverks säkerhets grupp som blockerar all offentlig trafik och vit listning all intern trafik. Nu vill vi byta till den här nätverks säkerhets gruppen en bit.
-    1. Den nya nätverks säkerhets grupp konfigurationen ska blockera all offentlig trafik, tillsammans med all trafik från det lokala data centret.
-    1. Trafik som anger det här virtuella nätverket ska endast komma från VNet på den andra sidan av VNet-peer-datorn.
-1. Azure Security Center implementering:
+    2. Den nya nätverks säkerhets grupp konfigurationen ska blockera all offentlig trafik, tillsammans med all trafik från det lokala data centret.
+    3. Trafik som anger det här virtuella nätverket ska endast komma från VNet på den andra sidan av VNet-peer-datorn.
+3. Azure Security Center implementering:
     1. Konfigurera Azure Security Center för alla hanterings grupper som innehåller skyddade data klassificeringar.
-    1. Ange automatisk etablering till på som standard för att säkerställa att du korrigerar kompatibiliteten.
-    1. Upprätta OS-säkerhetskonfigurationer. IT-säkerhet för att definiera konfigurationen.
-    1. Stöd IT-säkerhet vid inledande användning av Azure Security Center. Över gångs användning av Security Center till IT-säkerhet, men bevara åtkomsten för kontinuerligt förbättrings syfte.
-    1. Skapa en Resource Manager-mall som återspeglar de ändringar som krävs för Azure Security Center konfiguration i en prenumeration.
-1. Uppdatera Azure Policy för alla prenumerationer.
+    2. Ange automatisk etablering till på som standard för att säkerställa att du korrigerar kompatibiliteten.
+    3. Upprätta OS-säkerhetskonfigurationer. IT-säkerhet för att definiera konfigurationen.
+    4. Stöd IT-säkerhet vid inledande användning av Azure Security Center. Över gångs användning av Security Center till IT-säkerhet, men bevara åtkomsten för kontinuerligt förbättrings syfte.
+    5. Skapa en Resource Manager-mall som återspeglar de ändringar som krävs för Azure Security Center konfiguration i en prenumeration.
+4. Uppdatera Azure Policy för alla prenumerationer.
     1. Granska och Använd allvarlighets grad och data klassificering i alla hanterings grupper och prenumerationer för att identifiera eventuella prenumerationer med skyddade data klassificeringar.
-    1. Granska och Använd endast godkända OS-avbildningar.
-    1. Granska och Använd gäst konfigurationerna baserat på säkerhets krav för varje nod.
-1. Uppdatera Azure Policy för alla prenumerationer som innehåller skyddade data klassificeringar.
+    2. Granska och Använd endast godkända OS-avbildningar.
+    3. Granska och Använd gäst konfigurationerna baserat på säkerhets krav för varje nod.
+5. Uppdatera Azure Policy för alla prenumerationer som innehåller skyddade data klassificeringar.
     1. Granska och Använd endast standard roller
-    1. Granska och framtvinga kryptering av kryptering för alla lagrings konton och filer i vila på enskilda noder.
-    1. Granska och tillämpa den nya versionen av DMZ-nätverks säkerhets gruppen.
-    1. Granska och Framtvinga användning av godkända nätverks under nät och VNet per nätverks gränssnitt.
-    1. Granska och genomdriva begränsningen för användardefinierade vägvals tabeller.
-1. Azure-skiss:
+    2. Granska och framtvinga kryptering av kryptering för alla lagrings konton och filer i vila på enskilda noder.
+    3. Granska och tillämpa den nya versionen av DMZ-nätverks säkerhets gruppen.
+    4. Granska och Framtvinga användning av godkända nätverks under nät och VNet per nätverks gränssnitt.
+    5. Granska och genomdriva begränsningen för användardefinierade vägvals tabeller.
+6. Azure-skiss:
     1. Skapa en Azure-skiss `protected-data`med namnet.
-    1. Lägg till VNet-peer, nätverks säkerhets grupp och Azure Security Center mallar i skissen.
-    1. Se till att mallen för Active Directory från föregående iteration **inte** ingår i skissen. Eventuella beroenden på Active Directory anges av IT-prenumerationen för företaget.
-    1. Avsluta alla befintliga Active Directory virtuella datorer som distribuerats i föregående iteration.
-    1. Lägg till de nya principerna för skyddade data prenumerationer.
-    1. Publicera skissen till en hanterings grupp som är avsedd att vara värd för skyddade data.
-    1. Använd den nya skissen på varje berörd prenumeration tillsammans med befintliga ritningar.
+    2. Lägg till VNet-peer, nätverks säkerhets grupp och Azure Security Center mallar i skissen.
+    3. Se till att mallen för Active Directory från föregående iteration **inte** ingår i skissen. Eventuella beroenden på Active Directory anges av IT-prenumerationen för företaget.
+    4. Avsluta alla befintliga Active Directory virtuella datorer som distribuerats i föregående iteration.
+    5. Lägg till de nya principerna för skyddade data prenumerationer.
+    6. Publicera skissen till alla hanterings grupper som ska vara värd för skyddade data.
+    7. Använd den nya skissen på varje berörd prenumeration tillsammans med befintliga ritningar.
 
 ## <a name="conclusion"></a>Sammanfattning
 

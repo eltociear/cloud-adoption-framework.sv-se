@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig hur du utför en granskning av en moln princip.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 167613bd304505bc53128c2864250e5cae80b281
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7ce392797cf21d9f69ae791eb2db6a6d38c38dfc
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028824"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223847"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -31,7 +31,7 @@ Som företag mogna IT-principer har beroenden för tidigare tekniska beslut en t
 Moln omvandlingar skapar en naturlig Bryt punkt för att se över de tidigare princip besluten tidigare. Tekniska funktioner och standard processer förändras avsevärt i molnet, precis som de ärver risker. I föregående exempel har säkerhets kopierings principen för band som har samlats in från risken för en enskild felpunkt genom att lagra data på en plats och företaget behöver minimera risk profilen genom att begränsa risken. I en moln distribution finns det flera alternativ som ger samma risk minskning, med mycket lägre återställnings tid (RTO). Exempel:
 
 - En molnbaserad lösning kan möjliggöra geo-replikering av Azure SQL Database.
-- En hybrid lösning kan använda Azure Site Recovery för att replikera en IaaS-arbetsbelastning till flera data Center.
+- En hybrid lösning kan använda Azure Site Recovery för att replikera en IaaS-arbetsbelastning till Azure.
 
 När en moln omvandling körs, styr principerna ofta många av de verktyg, tjänster och processer som är tillgängliga för moln implementerings teamen. Om dessa principer är baserade på äldre tekniker kan de hindra teamets ansträngningar att ändra på enheten. I värsta fall ignoreras viktiga principer helt av migration-teamet för att aktivera lösningar. Inget är ett acceptabelt resultat.
 
@@ -43,8 +43,8 @@ För var och en av dessa ämnes områden följer gransknings processen följande
 
 1. Granska befintliga lokala principer som är relaterade till den specifika disciplinen, och leta efter två viktiga data punkter: äldre beroenden och identifierade affärs risker.
 2. Utvärdera varje affärs risk genom att fråga en enkel fråga: "Finns affärs risken kvar i en moln modell?"
-3. Om risken fortfarande finns skriver du om principen genom att dokumentera nödvändig minskning, inte den tekniska lösningen.
-4. Granska den uppdaterade principen med moln implementerings teamen för att förstå möjliga lösningar på den nödvändiga lösningen.
+3. Om risken fortfarande finns skriver du om den genom att dokumentera nödvändig affärs minskning, inte den tekniska lösningen.
+4. Granska den uppdaterade principen med moln implementerings teamen för att förstå potentiella tekniska lösningar på den nödvändiga lösningen.
 
 ## <a name="example-of-a-policy-review-for-a-legacy-policy"></a>Exempel på en princip granskning för en äldre princip
 
@@ -55,6 +55,7 @@ Om du vill ha ett exempel på processen ska vi använda säkerhets kopierings pr
   - En förmodad affärs risk som är kopplad till lagringen av säkerhets kopior på samma fysiska plats som produktions utrustningen.
 - Finns risken kvar? Ja. Även i molnet, skapar ett beroende på en enskild funktion en risk. Det finns en lägre sannolikhet för denna risk som påverkar verksamheten än vad som fanns i den lokala lösningen, men risken finns kvar.
 - Omskrivningen av principen. I händelse av en data Centrals katastrof måste det finnas ett sätt att återställa produktions system inom 24 timmar från avbrottet i ett annat data Center och en annan geografisk plats.
+  - Det är också viktigt att tänka på att tids linjen som anges i ovanstående krav kan ha angetts av tekniska begränsningar som inte längre finns i molnet. Se till att förstå de tekniska begränsningarna och funktionerna i molnet innan du bara använder en äldre RTO/återställnings punkt.
 - Granska med moln implementerings teamen. Beroende på vilken lösning som implementeras finns det flera sätt att följa den här resurs konsekvens principen.
 
 ## <a name="next-steps"></a>Nästa steg

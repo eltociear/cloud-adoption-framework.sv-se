@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Motiveringar och affärs risker för säkerhets bas linjer
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a77df6b190db7f9fd5f44e233e175670ff7f4855
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 937eb35c07996e57bc51f85090f8e1fd136848f8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030624"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222279"
 ---
 # <a name="security-baseline-motivations-and-business-risks"></a>Motiveringar och affärs risker för säkerhets bas linjer
 
@@ -22,7 +22,7 @@ I den här artikeln beskrivs orsakerna till att kunderna vanligt vis antar en s�
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-a-security-baseline-relevant"></a>Är säkerhets bas linjen relevant?
+## <a name="security-baseline-relevancy"></a>Säkerhets bas linje relevanta
 
 Säkerhet är ett viktigt problem för alla IT-organisationer. Moln distributioner är mycket av samma säkerhets risker som arbets belastningar som finns i traditionella lokala data Center. De offentliga moln plattformarna, som saknar direkt ägande rätt för den fysiska maskin varan som lagrar och kör dina arbets belastningar, innebär dock att moln säkerhet kräver en egen princip och sina processer.
 

@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Processer för efterlevnad av resurs konsekvens principer
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5daec332aa4fdbc75e15bfd9948fe6db52935d20
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fd44ae6fcdc84efd42ea3f79719475a32ead3111
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029988"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223720"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>Processer för efterlevnad av resurs konsekvens principer
 
@@ -60,6 +60,7 @@ Följande utlösare och tvingande åtgärder innehåller exempel som du kan refe
 - **Underetablerad resurs har identifierats.** Resurser som har identifierats med mer än 80% processor-eller minnes kapacitet bör automatiskt skala upp eller att etablering av ytterligare resurser för att ge ytterligare kapacitet.
 - **Ingen Taggad resurs skapas.** Alla begär Anden om att skapa en resurs utan obligatoriska meta-taggar kommer att avvisas automatiskt.
 - **Kritiskt resurs avbrott identifierat.** IT-personal meddelas på alla identifierade avbrott i verksamhets kritiska avbrott. Om avbrott inte kan matchas omedelbart, kommer personalen att eskalera problemet och meddela arbets belastnings ägare och moln styrnings teamet. Moln styrnings teamet spårar problemet fram till lösning och uppdaterings vägledning om princip revision är nödvändig för att förhindra framtida incidenter.
+- **Konfigurations avvikelse.** Resurser som identifieras som inte uppfyller de etablerade bas linjerna bör utlösa aviseringar och åtgärdas automatiskt med hjälp av konfigurations hanterings verktyg som Azure Automation, chef, Puppet, Ansible osv.
 
 ## <a name="next-steps"></a>Nästa steg
 

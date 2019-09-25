@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Förklaring av resurs åtkomst hanterings konstruktioner i Azure: Azure Resource Manager, prenumerationer, resurs grupper och resurser'
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 46c6de1ecaba5b8278138114b6aa27a2608bfb74
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 87e0918f4d1dad896576d322c8754bc2f6c56fb3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026628"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223033"
 ---
 # <a name="resource-access-management-in-azure"></a>Åtkomsthantering av resurser i Azure
 
@@ -33,7 +33,7 @@ I Azure refererar termen _resurs_ till en entitet som hanteras av Azure. Till ex
 
 ## <a name="what-is-an-azure-resource-group"></a>Vad är en Azure-resurs grupp?
 
-Varje resurs i Azure måste tillhöra en [resurs grupp](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups). En resurs grupp är helt enkelt en logisk konstruktion som grupperar flera resurser så att de kan hanteras som en enda enhet. Till exempel kan resurser som delar samma livs cykel, till exempel resurser för ett [program på n-nivå](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier) , skapas eller tas bort som en grupp.
+Varje resurs i Azure måste tillhöra en [resurs grupp](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups). En resurs grupp är helt enkelt en logisk konstruktion som grupperar flera resurser så att de kan hanteras som en enda enhet _baserat på livs cykel och säkerhet_. Till exempel kan resurser som delar samma livs cykel, till exempel resurser för ett [program på n-nivå](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier) , skapas eller tas bort som en grupp. Använd ett annat sätt: allt som är sammankopplat, som hanteras tillsammans och som är inaktuella tillsammans, hamnar tillsammans i en resurs grupp.
 
 ![Diagram över en resurs grupp som innehåller en](../../_images/govern/design/governance-1-10.png)
 resurs*bild 2 – en resurs grupp innehåller en resurs.*
@@ -42,7 +42,7 @@ Resurs grupper och de resurser som de innehåller är associerade med en Azure- 
 
 ## <a name="what-is-an-azure-subscription"></a>Vad är en Azure-prenumeration?
 
-En Azure-prenumeration liknar en resurs grupp i så att den är en logisk konstruktion som grupperar samman resurs grupper och deras resurser. En Azure-prenumeration är dock också kopplad till de kontroller som används av Azure Resource Manager. Vad betyder detta? Ta en närmare titt på Azure Resource Manager om du vill veta mer om relationen mellan den och en Azure-prenumeration.
+En Azure-prenumeration liknar en resurs grupp i så att den är en logisk konstruktion som grupperar samman resurs grupper och deras resurser. En Azure-prenumeration är dock också kopplad till de kontroller som används av Azure Resource Manager. Ta en närmare titt på Azure Resource Manager om du vill veta mer om relationen mellan den och en Azure-prenumeration.
 
 ![Diagram över en Azure-](../../_images/govern/design/governance-1-11.png)
 prenumeration *, bild 3 – en Azure-prenumeration.*

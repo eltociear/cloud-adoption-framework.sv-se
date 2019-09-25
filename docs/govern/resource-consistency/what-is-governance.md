@@ -4,20 +4,20 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Förklaring moln resurs styrning på Azure
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 083b18c0c8c5edc0dc21a198df32e8934929299c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7f22a4f28d0d84a8847d06d37ad88002a03ecc16
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027821"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221862"
 ---
 <!-- markdownlint-disable MD026 -->
 
-# <a name="what-is-cloud-resource-governance"></a>Vad är styrning av molnresurser?
+# <a name="cloud-resource-governance"></a>Resurs styrning i molnet?
 
 I [Hur fungerar Azure?](../../getting-started/what-is-azure.md)och du har lärt dig att Azure är en samling servrar och nätverks maskin vara som kör virtualiserad maskin vara och program vara för användarens räkning. Azure gör det möjligt för din organisations program utveckling och IT-avdelningar att bli flexibla genom att göra det enkelt att skapa, läsa, uppdatera och ta bort resurser efter behov.
 

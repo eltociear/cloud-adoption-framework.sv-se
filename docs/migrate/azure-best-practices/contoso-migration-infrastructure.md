@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: c367bb500cf9271603cab07ac07649607bfc04a4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 35a7d62236203dd916d99aea8bf67853c86df10a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024347"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224149"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Distribuera en migreringsinfrastruktur
 
@@ -90,7 +90,7 @@ När Contoso har betalat för Azure måste de bestämma hur de ska hantera Azure
 
 När prenumerationerna har konfigurerats kan Contoso titta på Microsoft-licensieringen. Licensieringsstrategin beror på vilka resurser som Contoso vill migrera till Azure och hur virtuella Azure-datorer och -tjänster är valda och distribuerade.
 
-#### <a name="azure-hybrid-benefit"></a>Azure Hybrid-förmån
+#### <a name="azure-hybrid-benefit"></a>Azure Hybrid-fördel
 
 När Contoso distribuerar virtuella datorer i Azure innehåller standardavbildningar en licens. Contoso debiteras för dessa licenser för varje minut som programvaran används. Contoso har dock varit en Microsoft-kund under en lång tid och har använt Enterprise-avtal och öppna licenser med Software Assurance (SA).
 
@@ -496,7 +496,7 @@ De virtuella nätverken i centrala USA sammanfattas i tabellen nedan.
 
 #### <a name="subnets-in-the-central-us-production-network-vnet-prod-cus"></a>Undernät i produktionsnät i centrala USA (VNET-PROD-CUS2)
 
-Parallellt med produktionsnätverket i den primära regionen USA, östra 2, finns det ett produktionsnätverk i den sekundära regionen centrala USA.
+Parallellt med produktions nätverket i den primära regionen USA, östra 2, finns det ett produktions nätverk i den sekundära centrala regionen.
 
 **Undernät** | **CIDR** | **Adresser** | **I undernät**
 --- | --- | --- | ---

@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: b65f0ea129888440fbfa7598a6bc7790ad91b177
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 6e5a9b00ff7cb6a2f8b16ee62f9e61f4ecae3906
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027600"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223982"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure Enterprise-Autogenerera: Förebyggande prenumerationsåtgärder
 
@@ -168,7 +168,7 @@ Ett av de första och viktigaste frågorna som du ställer när du börjar med d
 
 För att skydda åtkomsten till dina resurser ska du först konfigurera din identitetsprovider och sedan konfigurera roller och åtkomst. Azure Active Directory (Azure AD), som är ansluten till din lokala Active Directory, är grunden i Azure Identity. I detta fall är Azure AD *inte* detsamma som lokalt Active Directory, och det är viktigt att förstå vad en Azure AD-klient är och hur den är kopplad till din Azure-registrering. Granska tillgänglig [information](../govern/resource-consistency/resource-access-management.md) för att få en solid grund på Azure AD och lokala Active Directory. Installera och konfigurera [Azure AD Connect-verktyget](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) lokalt för att ansluta och synkronisera Active Directory till Azure AD.
 
-![Arkitekturdiagram](../_images/reference/ad-architecture.png)
+![Diagram över AD-arkitektur](../_images/reference/ad-architecture.png)
 
 När Azure ursprungligen släpptes var åtkomst kontroller till en prenumeration grundläggande: Administratör eller medadministratör. Åtkomst till en prenumeration i den klassiska modellen underförstådd åtkomst till alla resurser i portalen. Detta brist på detaljerad kontroll ledde till spridningen av prenumerationer för att ge en nivå av rimlig åtkomst kontroll för en Azure-registrering. Den här spridningen av prenumerationer behövs inte längre. Med rollbaserad åtkomst kontroll (RBAC) kan du tilldela användare till standard roller som ger gemensam åtkomst, till exempel "ägare", "deltagare" eller "läsare" eller till och med skapa egna roller.
 

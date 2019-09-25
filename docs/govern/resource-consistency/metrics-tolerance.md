@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Resurs konsekvens statistik, indikatorer och risk tolerans
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e4ec7b4700f80a8ad7b46900ed0f3f869ccfbb94
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 387cc7b320e50628e2f10c25ab49f200878d3636
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029657"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222942"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>Resurs konsekvens statistik, indikatorer och risk tolerans
 
-Den här artikeln är avsedd att hjälpa dig att kvantifiera affärs risk toleransen när det gäller resurs konsekvens. Genom att definiera mått och indikatorer får du hjälp att skapa ett affärs ärende för att göra en investering som förfaller i disciplinen för resurs konsekvens.
+I den här artikeln får du hjälp med att kvantifiera affärs risk toleransen när det gäller resurs konsekvens. Genom att definiera mått och indikatorer får du hjälp att skapa ett affärs ärende för att göra en investering som förfaller i disciplinen för resurs konsekvens.
 
 ## <a name="metrics"></a>Mått
 
@@ -33,7 +33,7 @@ Varje organisation har olika drifts scenarier, men följande objekt visar använ
 - **Resursens ålder.** Tid sedan resursen senast distribuerades eller ändrades.
 - **Virtuella datorer i kritiskt tillstånd.** Antal distribuerade virtuella datorer där ett eller flera kritiska problem identifieras som måste åtgärdas för att återställa normala funktioner.
 - **Aviseringar efter allvarlighets grad.** Totalt antal aviseringar på en distribuerad till gång, uppdelat efter allvarlighets grad.
-- **Länkar till felaktiga undernät.** Antal resurser med problem med nätverks anslutningen.
+- **Nätverks länkar som inte är felfria.** Antal resurser med problem med nätverks anslutningen.
 - **Felaktiga tjänst slut punkter.** Antal problem med externa nätverks slut punkter.
 - **Hälso incidenter i Cloud Provider service.** Antal avbrott eller prestanda incidenter som orsakas av moln leverantören.
 - **Service nivå avtal.** Detta kan omfatta både Microsofts åtaganden för drift tid och anslutning av Azure-tjänster, samt åtaganden som görs av verksamheten till externa och interna kunder.

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ec9263b1e1ab47e2018d86093a5198cdb1ac7b67
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bede887bcb4589b286920a79016701961a04b8b6
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027812"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222234"
 ---
 # <a name="standard-enterprise-guide-improving-resource-consistency"></a>Standard Enterprise-guide: Förbättra resurs konsekvensen
 
@@ -84,31 +84,31 @@ Följande ändringar i principen hjälper dig att åtgärda de nya riskerna och 
 Det här avsnittet av artikeln ändrar designen för styrnings MVP till att inkludera nya Azure-principer och en implementering av Azure Cost Management. Tillsammans kommer dessa två design ändringar att uppfylla de nya företags princip satserna.
 
 1. Moln drifts teamet definierar verktyg för drift övervakning och automatiserad reparation. Moln styrnings teamet kommer att ha stöd för dessa identifierings processer. I det här användnings fallet väljer moln drifts teamet Azure Monitor som det primära verktyget för övervakning av verksamhets kritiska program.
-1. Skapa en lagrings plats i Azure DevOps för att lagra och version av alla relevanta Resource Manager-mallar och skriptbaserade konfigurationer.
-1. Implementering av Azure-valvet:
-    1. Definiera och Distribuera Azure-valv för säkerhets kopierings-och återställnings processer.
-    1. Skapa en Resource Manager-mall för att skapa ett valv i varje prenumeration.
-1. Uppdatera Azure Policy för alla prenumerationer:
+2. Skapa en lagrings plats i Azure DevOps för att lagra och version av alla relevanta Resource Manager-mallar och skriptbaserade konfigurationer.
+3. Implementering av Azure Recovery Services Vault:
+    1. Definiera och Distribuera Azure Recovery Services Vault för säkerhets kopierings-och återställnings processer.
+    2. Skapa en Resource Manager-mall för att skapa ett valv i varje prenumeration.
+4. Uppdatera Azure Policy för alla prenumerationer:
     1. Granska och Genomdriv allvarlighets grad och data klassificering för alla prenumerationer för att identifiera prenumerationer med verksamhets kritiska till gångar.
-    1. Granska och Använd endast godkända avbildningar.
-1. Azure Monitor implementering:
-    1. När en verksamhets kritisk prenumeration identifieras skapar du en Azure Monitor arbets yta med PowerShell. Detta är en för distributions process.
-    1. Under testningen av distributionen distribuerar moln drifts teamet de nödvändiga agenterna och testerna.
-1. Uppdatera Azure Policy för alla prenumerationer som innehåller verksamhets kritiska program.
+    2. Granska och Använd endast godkända avbildningar.
+5. Azure Monitor implementering:
+    1. När en verksamhets kritisk arbets belastning har identifierats skapar du en Azure Monitor-arbetsyta.
+    2. Under testningen av distributionen distribuerar moln drifts teamet de nödvändiga agenterna och testerna.
+6. Uppdatera Azure Policy för alla prenumerationer som innehåller verksamhets kritiska program.
     1. Granska och framtvinga tillämpning av en NSG för alla nätverkskort och undernät. Nätverks-och IT-säkerhet definierar NSG.
-    1. Granska och tillämpa användningen av godkända nätverks under nät och virtuella nätverk för varje nätverks gränssnitt.
-    1. Granska och genomdriva begränsningen för användardefinierade vägvals tabeller.
-    1. Granska och tillämpa distribution av Azure Monitor agenter för alla virtuella datorer.
-    1. Granska och genomdriva att Azure Vault finns i prenumerationen.
-1. Brandväggskonfiguration:
+    2. Granska och tillämpa användningen av godkända nätverks under nät och virtuella nätverk för varje nätverks gränssnitt.
+    3. Granska och genomdriva begränsningen för användardefinierade vägvals tabeller.
+    4. Granska och tillämpa distribution av Azure Monitor agenter för alla virtuella datorer.
+    5. Granska och genomdriva att Azure Recovery Services-valv finns i prenumerationen.
+7. Brandväggskonfiguration:
     1. Identifiera en konfiguration av Azure-brandväggen som uppfyller säkerhets kraven. Du kan också identifiera en tredje parts apparat som är kompatibel med Azure.
     1. Skapa en Resource Manager-mall för att distribuera brand väggen med nödvändiga konfigurationer.
-1. Azure-skiss:
+8. Azure-skiss:
     1. Skapa en ny Azure-skiss `protected-data`med namnet.
-    1. Lägg till brand väggen och Azure Vault-mallarna i skissen.
-    1. Lägg till de nya principerna för skyddade data prenumerationer.
-    1. Publicera skissen till en hanterings grupp som är avsedd att vara värd för verksamhets kritiska program.
-    1. Använd den nya skissen för varje berörd prenumeration samt befintliga ritningar.
+    2. Lägg till brand väggen och Azure Vault-mallarna i skissen.
+    3. Lägg till de nya principerna för skyddade data prenumerationer.
+    4. Publicera skissen till alla hanterings grupper som ska vara värd för verksamhets kritiska program.
+    5. Använd den nya skissen för varje berörd prenumeration samt befintliga ritningar.
 
 ## <a name="conclusion"></a>Sammanfattning
 

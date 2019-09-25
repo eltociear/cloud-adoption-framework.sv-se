@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0c17f9043dd88f401b07293a6b93e50ccefe0137
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ea4596c734e5bef03179569e537aacbca430d77e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030600"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222325"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Styrnings guide för komplexa företag: Förbättra disciplinen för identitets bas linjer
 
@@ -79,14 +79,14 @@ Här är de nya bästa metoderna:
 - **Skydda hybrid VNet-skiss:** Den lokala sidan av hybrid nätverket bör konfigureras för att tillåta kommunikation mellan följande lösningar och de lokala Active Directory-servrarna. Den här rekommenderade metoden kräver en DMZ för att aktivera Active Directory Domain Services över nätverks gränserna.
 - **Azure Resource Manager mallar:**
     1. Definiera en NSG för att blockera extern trafik och tillåta intern trafik.
-    1. Distribuera två Active Directory virtuella datorer i ett belastnings Utjämnings par baserat på en gyllene bild. Vid den första starten kör avbildningen ett PowerShell-skript för att ansluta till domänen och registrera med domän tjänster. Mer information finns i [utöka Active Directory Domain Services (AD DS) till Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).
+    2. Distribuera två Active Directory virtuella datorer i ett belastnings Utjämnings par baserat på en gyllene bild. Vid den första starten kör avbildningen ett PowerShell-skript för att ansluta till domänen och registrera med domän tjänster. Mer information finns i [utöka Active Directory Domain Services (AD DS) till Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).
 - Azure Policy: Tillämpa NSG på alla resurser.
 - Azure-skiss:
     1. Skapa en skiss med `active-directory-virtual-machines`namnet.
-    1. Lägg till var och en av Active Directory mallar och principer till skissen.
-    1. Publicera skissen till alla tillämpliga hanterings grupper.
-    1. Använd skissen för alla prenumerationer som kräver äldre autentisering med flera företag eller andra leverantörer.
-    1. Instansen av Active Directory som körs i Azure kan nu användas som en utökning av den lokala Active Directory-lösningen, så att den kan integreras med det befintliga Multi-Factor Authentication-verktyget och tillhandahålla anspråksbaserad autentisering, både via befintliga Active Directory-funktioner.
+    2. Lägg till var och en av Active Directory mallar och principer till skissen.
+    3. Publicera skissen till alla tillämpliga hanterings grupper.
+    4. Använd skissen för alla prenumerationer som kräver äldre autentisering med flera företag eller andra leverantörer.
+    5. Instansen av Active Directory som körs i Azure kan nu användas som en utökning av den lokala Active Directory-lösningen, så att den kan integreras med det befintliga Multi-Factor Authentication-verktyget och tillhandahålla anspråksbaserad autentisering, både via befintliga Active Directory-funktioner.
 
 ## <a name="conclusion"></a>Sammanfattning
 

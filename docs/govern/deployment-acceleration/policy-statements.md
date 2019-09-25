@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Exempel princip satser för distributions acceleration
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4a2b1666332ca884dfb95b2b2372f3b5518bd635
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4de6cced9bb387f2955d644f93523ac4f26931da
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030603"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222657"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Exempel princip satser för distributions acceleration
 
@@ -32,7 +32,7 @@ Följande exempel på princip satser hanterar vanliga konfigurations relaterade 
 
 **Princip instruktion:** Alla till gångar som distribueras till molnet bör distribueras med hjälp av mallar eller Automation-skript närhelst det är möjligt.
 
-**Potentiella design alternativ:** [Azure Resource Manager mallar](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment) innehåller en infrastruktur som kod för att distribuera dina resurser till Azure. [Azures Bygg stenar](https://github.com/mspnp/template-building-blocks/wiki) tillhandahåller ett kommando rads verktyg och en uppsättning Resource Manager-mallar som har utformats för att förenkla distributionen av Azure-resurser.
+**Potentiella design alternativ:** [Azure Resource Manager mallar](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment) innehåller en infrastruktur som kod för att distribuera dina resurser till Azure. Du kan också använda [terraform](https://docs.microsoft.com/azure/terraform/terraform-overview) som ett konsekvent lokalt och molnbaserad distributions verktyg.
 
 ## <a name="lack-of-visibility-into-system-issues"></a>Brist på insyn i system problem
 
@@ -43,21 +43,21 @@ Följande exempel på princip satser hanterar vanliga konfigurations relaterade 
 - Nyckel mått och diagnostiska mått kommer att identifieras för alla produktions system och-komponenter, och övervaknings-och diagnostikverktyg kommer att tillämpas på dessa system och övervakas regelbundet av drifts personal.
 - Åtgärder bör använda övervaknings-och diagnostikverktyg i miljöer som inte är för produktion, till exempel mellanlagring och frågor och svar för att identifiera system problem innan de inträffar i produktions miljön.
 
-**Potentiella design alternativ:** [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor), som även innehåller Log Analytics och Application Insights, innehåller verktyg för att samla in och analysera telemetri för att hjälpa dig att förstå hur dina program presterar och proaktivt identifiera problem som påverkar dem och resurser som de är beroende av.
+**Potentiella design alternativ:** [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor), som även innehåller Log Analytics och Application Insights, innehåller verktyg för att samla in och analysera telemetri för att hjälpa dig att förstå hur dina program presterar och proaktivt identifiera problem som påverkar dem och resurser som de är beroende av. Dessutom rapporterar [Azure aktivitets logg](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) alla ändringar som görs på plattforms nivå och bör övervakas/granskas för icke-kompatibla ändringar.
 
 ## <a name="configuration-security-reviews"></a>Säkerhets granskningar av konfiguration
 
 **Teknisk risk:** Med tiden kan nya säkerhetshot eller problem öka risken för obehörig åtkomst till säkra resurser.
 
-**Princip instruktion:** Moln styrnings processer måste ta med kvartals granskning med konfigurations hanterings team för att identifiera skadliga aktörer eller användnings mönster som bör förhindras av konfiguration av moln till gångar.
+**Princip instruktion:** Moln styrnings processer måste innehålla månatlig granskning med konfigurations hanterings team för att identifiera skadliga aktörer eller användnings mönster som bör förhindras av konfiguration av moln till gångar.
 
-**Potentiella design alternativ:** Upprätta ett kvartals Visa säkerhets gransknings möte som omfattar både styrelse ledamöter och IT-personal som ansvarar för konfiguration av moln program och resurser. Granska befintliga säkerhets data och mått för att skapa luckor i aktuell distributions accelerations princip och verktyg och uppdatera principer för att åtgärda eventuella nya risker.
+**Potentiella design alternativ:** Upprätta ett månatligt säkerhets gransknings möte som omfattar både styrnings grupp medlemmar och IT-personal som ansvarar för konfiguration av moln program och resurser. Granska befintliga säkerhets data och mått för att skapa luckor i aktuell distributions accelerations princip och verktyg och uppdatera principer för att åtgärda eventuella nya risker.
 
 ## <a name="next-steps"></a>Nästa steg
 
 Använd de exempel som nämns i den här artikeln som utgångs punkt för att utveckla principer som åtgärdar specifika affärs risker som överensstämmer med dina moln implementerings planer.
 
-Om du vill börja utveckla dina egna anpassade policy-instruktioner som rör identitets hantering laddar du ned [bas linje mal len för identiteten](./template.md).
+Om du vill börja utveckla dina egna anpassade policy-instruktioner som rör identitets hantering laddar du ned [bas linje mal len för identiteten](../identity-baseline/template.md).
 
 För att påskynda införandet av denna disciplin väljer du den [Åtgärds bara styrnings guide](../guides/index.md) som bäst passar din miljö. Ändra sedan designen så att du kan lägga till dina företags princip beslut.
 

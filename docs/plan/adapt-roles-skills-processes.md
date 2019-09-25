@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 96eb90f5761fd53ab0c4e6b128c77e441c7b36cd
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 30b3a88a8ce7c90f4b3925af7ead21489c2fb821
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025339"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223925"
 ---
 # <a name="adapt-existing-roles-skills-and-processes-for-the-cloud"></a>Anpassa befintliga roller, kunskaper och processer i molnet
 
@@ -57,4 +57,4 @@ Spåra dessa beroenden och anteckna de processer som ska stödja dem. Observera 
 Att säkerställa korrekt stöd för de översatta rollerna är en grupp ansträngning. Om du vill följa den här vägledningen granskar du [organisationens beredskap](../organize/index.md) för att identifiera rätt team strukturer och deltagare.
 
 > [!div class="nextstepaction"]
-> [Identifiera rätt team strukturer](./index.md)
+> [Identifiera rätt team strukturer](../organize/index.md)

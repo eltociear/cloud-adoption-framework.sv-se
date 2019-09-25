@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Förbättringar av distributions accelerations disciplin
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7cff2c0cbf8fea06ea7ebdfaaade1c8538802639
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: e23dc632df009468c5ec87c9a2862ffacf4b2729
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029688"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220762"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>Förbättringar av distributions accelerations disciplin
 
@@ -52,6 +52,7 @@ Den här fasen av styrnings mognads bryggor förenar indelningen mellan affärs 
 
 - För nya molnbaserade program ska du införa helt automatiserade distributioner tidigt i utvecklings processen. Den här investeringen förbättrar tillförlitligheten för dina test processer och garanterar konsekvens i dina utvecklings-, frågor och produktions miljöer.
 - Lagra alla distributions artefakter som mallar för distribution eller konfigurations skript med en käll kontroll plattform, till exempel GitHub eller Azure DevOps.
+- Lagra alla hemligheter, lösen ord, certifikat och anslutnings strängar i [Azure Key Vault](https://docs.microsoft.com/azure/key-vault)
 - Överväg ett pilot test innan du implementerar [verktygskedjan för distributions acceleration](./toolchain.md), och se till att det effektiviserar distributionerna så mycket som möjligt. Använd feedback från pilot test under fasen för distribution, och upprepa vid behov.
 - Utvärdera programens logiska och fysiska arkitektur och identifiera möjligheter att automatisera distributionen av program resurser eller förbättra delar av arkitekturen med hjälp av andra molnbaserade resurser.
 - Uppdatera rikt linjer för arkitektur som innehåller distributions-och användar implementerings planer och distribuera till viktiga intressenter.
