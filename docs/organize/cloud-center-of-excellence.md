@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 9726cc5bea1d8f7852dbb8831fc211dda2f4f4f7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ac1fe4cac44d4a1f830be1faba7f2d50ddbd98f0
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028213"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224334"
 ---
 # <a name="cloud-center-of-excellence"></a>Molncenter för utmärkthet
 
@@ -32,7 +32,7 @@ CCoE kräver samarbete mellan var och en av följande funktioner:
 
 ## <a name="impact-and-cultural-change"></a>Inverkan och kulturell förändring
 
-När den här funktionen är korrekt strukturerad och stöds kan deltagarna påskynda innovationen och migreringen samtidigt som den totala kostnaden för förändringar och ökad affärs flexibilitet minskas. När den här funktionen har implementerats kan den skapa märkbara minskningar i tid till marknad. Som lag praxis mogna kan ökningar i kvalitets indikatorer ses, inklusive tillförlitlighet, prestanda effektivitet, säkerhet, underhåll och kund tillfredsställelse. Dessa vinster i effektivitet, flexibilitet och kvalitet är särskilt viktiga om företaget planerar att implementera storskaliga migreringar av moln migrering eller vill använda molnet för att driva innovationer som är kopplade till marknads differentiering.
+När den här funktionen är korrekt strukturerad och stöds kan deltagarna påskynda innovationen och migreringen samtidigt som den totala kostnaden för förändringar och ökad affärs flexibilitet minskas. När den här funktionen har implementerats kan den skapa märkbara minskningar i tid till marknad. Som lag praxis kan kvalitets indikatorer förbättra, inklusive tillförlitlighet, prestanda effektivitet, säkerhet, underhåll och kund tillfredsställelse. Dessa vinster i effektivitet, flexibilitet och kvalitet är särskilt viktiga om företaget planerar att implementera storskaliga migreringar av moln migrering eller vill använda molnet för att driva innovationer som är kopplade till marknads differentiering.
 
 När det är klart kommer en CCoE-modell att skapa en betydande kulturell skiftning. Den grundläggande lokala CCoE-metoden är att den fungerar som en koordinator, partner eller representant för verksamheten. Den här modellen är en paradigm skiftning från den traditionella vyn som en drift enhet eller ett abstraktions lager mellan verksamheten och IT-tillgångar.
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c96ad14ab98dd5a6da1b81eb2f4add6281732da7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8056ef1a53a47bc79e106f0fcd4fcf768e3a5126
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024196"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224311"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>Byta värd för en lokal Linux-app till virtuella Azure-datorer och Azure Database for MySQL
 
@@ -432,7 +432,7 @@ Nu måste Contoso göra följande:
 - Ta bort de lokala virtuella datorerna från lokala säkerhetskopieringsjobb.
 - Uppdatera intern dokumentation med de nya platserna och IP-adresserna.
 - Granska alla resurser som interagerar med de lokala virtuella datorerna och uppdatera alla relevanta inställningar eller dokumentation så att de överensstämmer med den nya konfigurationen.
-- Contoso använde Azure Migrate-tjänsten med beroendemappning för att utvärdera den virtuella datorn **OSTICKETWEB** för migrering. Nu bör de ta bort de agenter (Microsoft Monitoring Agent/Dependency Agent) som de installerade för detta ändamål från den virtuella datorn.
+- Contoso använde Azure Migrate-tjänsten med beroendemappning för att utvärdera den virtuella datorn **OSTICKETWEB** för migrering. De bör nu ta bort agenterna (Microsoft Monitoring Agent och Microsofts beroende agent) som de har installerat för detta ändamål från den virtuella datorn.
 
 ## <a name="review-the-deployment"></a>Granska distributionen
 

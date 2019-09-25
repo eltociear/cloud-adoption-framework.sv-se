@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a3a1ae1f49fea514ce2ab194f7e959e428b37ad6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 242c8a1a054507c3b1134b1126ea95e3ead74d84
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030420"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221364"
 ---
 # <a name="automate-onboarding"></a>Automatisera onboarding
 
@@ -21,7 +21,7 @@ ms.locfileid: "71030420"
 
 ## <a name="onboarding-by-using-automation"></a>Onboarding med hjälp av Automation
 
-Den här vägledningen har en stödjande GitHub-lagringsplats med exempel kod, [CloudAdoptionFramework](https://aka.ms/CAF/manage/automation-samples), som innehåller exempel skript och Azure Resource Manager mallar som hjälper dig att automatisera distributionen av Azure Server Management Services.
+Den här vägledningen har en stödjande GitHub-lagringsplats med exempel kod, [CloudAdoptionFramework](https://aka.ms/caf/manage/automation-samples), som innehåller exempel skript och Azure Resource Manager mallar som hjälper dig att automatisera distributionen av Azure Server Management Services.
 
 De här exempelfilerna illustrerar hur du använder Azure PowerShell cmdlets för att automatisera följande uppgifter:
 
@@ -33,7 +33,7 @@ De här exempelfilerna illustrerar hur du använder Azure PowerShell cmdlets fö
 
 4. Aktivera Uppdateringshantering och Ändringsspårning och inventering för arbets ytan.
 
-5. Publicera virtuella Azure-datorer med Azure Policy (en princip installerar Log Analytics agent och Dependency Agent på virtuella Azure-datorer).
+5. Publicera virtuella Azure-datorer med Azure Policy (en princip installerar Log Analytics-agenten och beroende agenten på virtuella Azure-datorer).
 
 6. Publicera lokala servrar genom att installera Log Analytics-agenten på dem.
 

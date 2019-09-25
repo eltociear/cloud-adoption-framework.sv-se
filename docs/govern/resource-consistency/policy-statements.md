@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Princip satser för resurs konsekvens exempel
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 654ec56f2196af4d16b3e19a47ae117b9936b38f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f2e15ad1640bec4e289c49a1f9dcf83de7c04ec3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030347"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221978"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>Princip satser för resurs konsekvens exempel
 
@@ -74,8 +74,8 @@ Följande exempel på princip satser löser vanliga affärs risker relaterade ti
 
 **Princip instruktion:** Följande principer kommer att implementeras:
 
-- Styrnings verktyg måste kontrol lera att alla till gångar som är relaterade till verksamhets kritiska program eller skyddade data ingår i övervakningen av resurs uttömdning och optimering.
-- Styrnings verktyg måste verifiera att lämplig nivå av loggnings data samlas in för alla verksamhets kritiska program eller skyddade data.
+- Styrnings verktyg måste kontrol lera att alla till gångar ingår i övervakningen av resurs uttömdhet, säkerhet, efterlevnad och optimering.
+- Styrnings verktyg måste verifiera att lämplig nivå av loggnings data samlas in för alla program och data.
 
 **Potentiella design alternativ:** [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) är standard övervaknings tjänsten i Azure och konsekvent övervakning kan tillämpas via [Azure-ritningar](https://docs.microsoft.com/azure/governance/blueprints) när du distribuerar resurser.
 
@@ -85,7 +85,7 @@ Följande exempel på princip satser löser vanliga affärs risker relaterade ti
 
 **Princip instruktion:** Alla verksamhets kritiska program och skyddade data måste ha säkerhets kopierings-och återställnings lösningar som har implementerats för att minimera affärs påverkan av avbrott eller systemfel.
 
-**Potentiella design alternativ:** Tjänsten [Azure Site Recovery] tillhandahåller funktioner för säkerhets kopiering, återställning och replikering som är avsedda att minimera avbrottnas varaktighet i scenarier för affärs kontinuitet och haveri beredskap (BCDR).
+**Potentiella design alternativ:** Tjänsten [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) tillhandahåller funktioner för säkerhets kopiering, återställning och replikering som minimerar tiden för avbrott i affärs kontinuitet och haveri beredskap (BCDR).
 
 ## <a name="next-steps"></a>Nästa steg
 

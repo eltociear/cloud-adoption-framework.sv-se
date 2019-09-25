@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 76fb8084aad799d3bbfdaf3bd2ef4330fd080ac0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 554bfdaf0a21fac50cafe9c510c4fd83c6702b81
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029993"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221391"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Molnövervakningsguide: Aviseringar
 
@@ -94,7 +94,7 @@ Det här är några viktiga fotnoter till den här regeln.
 
 **Gäst operativ systemets telemetri** har ett antal sökvägar för att komma in i systemet.
 
-- Det snabbaste sättet att varna för dessa data är att importera det som anpassade mått. Gör detta med hjälp av Azure-diagnostik-tillägget och Använd sedan en måtta-avisering. Anpassade mått är dock för närvarande en för hands version och är [dyrare än andra alternativ](https://azure.microsoft.com/pricing/details/monitor/).
+- Det snabbaste sättet att varna för dessa data är att importera det som anpassade mått. Gör detta med hjälp av Azure-diagnostik-tillägget och Använd sedan en måtta-avisering. Anpassade mått är dock för närvarande en för hands version och är [dyrare än andra alternativ](https://azure.microsoft.com/pricing/details/monitor).
 
 - Metoden billigaste men långsammast är att skicka den till Azure-loggfilerna Kusto Store. Att köra Log Analytics-agenten på den virtuella datorn är det bästa sättet att hämta alla gäst operativ system mått och logga data i det här arkivet.
 
@@ -113,9 +113,9 @@ Om du inte använder Azure Monitor for VMs kan du utforska följande funktioner 
 
 - [Dynamiska tröskelvärden](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-dynamic-thresholds). Dynamiska tröskelvärden tittar på resursens aktivitet under en tids period och skapar det övre och nedre tröskelvärdet för "normala beteende". När det mått som övervakas faller utanför dessa tröskelvärden får du en avisering.
 
-- [Multisign-aviseringar](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts/). Du kan skapa en mått avisering som använder kombinationen av två olika indata från två olika resurs typer. Om du till exempel vill utlösa en avisering när CPU: n för en virtuell dator är över 90 procent och antalet meddelanden i en viss Azure Service Bus Queue som den virtuella datorn överskrider en viss mängd, kan du göra det utan att skapa en logg fråga. Detta fungerar bara för två signaler. Om du har en mer komplex fråga matar du in dina mått data i Azure Monitor logg lager och använder en logg fråga.
+- [Multisign-aviseringar](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts). Du kan skapa en mått avisering som använder kombinationen av två olika indata från två olika resurs typer. Om du till exempel vill utlösa en avisering när CPU: n för en virtuell dator är över 90 procent och antalet meddelanden i en viss Azure Service Bus Queue som den virtuella datorn överskrider en viss mängd, kan du göra det utan att skapa en logg fråga. Detta fungerar bara för två signaler. Om du har en mer komplex fråga matar du in dina mått data i Azure Monitor logg lager och använder en logg fråga.
 
-- [Aviseringar via multiresurs](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts/). Azure Monitor tillåter en enda måtta varnings regel som gäller för alla VM-resurser. Med den här funktionen kan du spara tid eftersom du inte behöver skapa enskilda aviseringar för varje virtuell dator. Prissättningen för den här typen av avisering är samma. Om du har skapat 50 aviseringar för övervakning av CPU-användning för 50-datorer eller 1 avisering som övervakar CPU-användningen för alla virtuella datorer i 50, kostar det samma belopp. Du kan även använda dessa typer av aviseringar i kombination med dynamiska tröskelvärden.
+- [Aviseringar via multiresurs](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts). Azure Monitor tillåter en enda måtta varnings regel som gäller för alla VM-resurser. Med den här funktionen kan du spara tid eftersom du inte behöver skapa enskilda aviseringar för varje virtuell dator. Prissättningen för den här typen av avisering är samma. Om du har skapat 50 aviseringar för övervakning av CPU-användning för 50-datorer eller 1 avisering som övervakar CPU-användningen för alla virtuella datorer i 50, kostar det samma belopp. Du kan även använda dessa typer av aviseringar i kombination med dynamiska tröskelvärden.
 
 De här funktionerna används tillsammans och sparar tid genom att minimera aviserings aviseringar och hantering av underliggande aviseringar.
 
