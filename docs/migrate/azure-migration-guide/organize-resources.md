@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 19299c5855600524f3335b00272974790d83c8fa
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fc0f91ac6c2a4476786935555c4c4305f33a0980
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022759"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224047"
 ---
 # <a name="organize-your-azure-resources"></a>Organisera dina Azure-resurser
 
@@ -66,7 +66,7 @@ Använd prenumerationer till att hantera kostnader och de resurser som skapas av
 
 Skapa en resursgrupp där du kan lagra resurser som webbappar, databaser och lagringskonton som delar samma livscykel, behörigheter och principer.
 
-1. går du till [Resursgrupper](https://portal.azure.com/#create/Microsoft.ResourceGroup).
+1. Gå till [Resursgrupper](https://portal.azure.com/#create/Microsoft.ResourceGroup).
 1. Välj **Lägg till**.
 1. Välj den **prenumeration** som du vill skapa resursgruppen under.
 1. Ange ett namn för **resursgruppen**.
