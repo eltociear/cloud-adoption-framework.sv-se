@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig om molnplattformsprenumerationer som en central tjänst i Azure-migreringar.
 author: alexbuckgit
 ms.author: abuck
-ms.date: 06/07/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 209de4c03474a956edf629c9c24f6b29f492284b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a5774cc1f22265c532bc9d885aab354cc1b2d297
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023640"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221003"
 ---
 # <a name="subscription-decision-guide"></a>Beslutsguide för prenumerationer
 
@@ -67,13 +67,8 @@ I takt med att en organisations molnfotavtryck växer så skapas normalt ytterli
 Varje organisation kategoriserar sina program på olika sätt och separerar ofta prenumerationer baserat på specifika program eller tjänster eller utefter programarketyper. Den här kategoriseringen är ofta utformad för att stödja arbetsbelastningar som förväntas förbruka de flesta av resursgränserna för en prenumeration, eller för att separera verksamhetskritiska arbetsbelastningar så att de inte konkurrerar med andra arbetsbelastningar under dessa begränsningar. Några arbetsbelastningar som kan motivera en separat prenumeration under det här mönstret är:
 
 - Verksamhetskritiska arbetsbelastningar.
-- Program med skyddade data.
-- Experimentella program.
-- Program som omfattas av regelkrav (till exempel HIPAA eller FedRAMP).
-- Batch-arbetsbelastningar.
-- Stordataarbetsbelastningar såsom Hadoop.
-- Containerbaserade arbetsbelastningar som använder distributionsorkestrerare såsom Kubernetes.
-- Analysarbetsbelastningar.
+- Program som är en del av ”kostnader för sålda varor” (KSV) i företaget. Exempel: Varje instans av företagets X-widget innehåller en Azure IoT-modul som skickar telemetri. Detta kan kräva en dedikerad prenumeration för redovisnings-/styrningsändamål som en del av KSV.
+- Program som omfattas av regelkrav, till exempel HIPAA eller FedRAMP.
 
 ### <a name="functional-pattern"></a>Funktionsmönster
 
@@ -97,7 +92,7 @@ Hanteringsgruppshierarkier kan ha ett djup på upp till sex nivåer. Detta ger d
 
 - [Åtkomsthantering av resurser i Azure](../../govern/resource-consistency/resource-access-management.md)
 - [Flera styrningsnivåer i stora företag](../../govern/guides/complex/multiple-layers-of-governance.md)
-- [Flera geografiska områden](../../migrate/expanded-scope/multiple-regions.md)
+- [Flera geografiska områden](../regions/index.md)
 
 ## <a name="next-steps"></a>Nästa steg
 

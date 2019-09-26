@@ -9,16 +9,16 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: 982451c9043f775c2e211d9b166ca2d094479ca9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3734a9b692dd345f45ee6a2987abf773b3391c63
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816405"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224372"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Molnmigrering i Cloud Adoption Framework
 
-Alla [molnimplementeringsplaner](../plan/index.md) i företagsskala inkluderar arbetsbelastningar som inte kräver några stora investeringar i skapandet av en ny affärslogik. Dessa arbetsbelastningar kan flyttas till molnet på flera olika sätt: lyfta och flytta, lyfta och optimera eller modernisera. Alla anses vara migreringar. Följande övningar hjälper dig att upprätta iterativa processer för att utvärdera, migrera, optimera, skydda och hantera dessa arbetsbelastningar.
+Alla [molnimplementeringsplaner](../plan/index.md) i företagsskala inkluderar arbetsbelastningar som inte kräver några stora investeringar i skapandet av en ny affärslogik. Dessa arbetsbelastningar kan flyttas till molnet på flera olika sätt: lyfta och flytta, lyfta och optimera eller modernisera. Var och en av dessa metoder anses vara en migrering. Följande övningar hjälper dig att upprätta iterativa processer för att utvärdera, migrera, optimera, skydda och hantera dessa arbetsbelastningar.
 
 ## <a name="getting-started"></a>Komma igång
 
@@ -126,7 +126,7 @@ Migration är en högaktivitetsprocess. När migreringsarbetet skalas kan du anv
 
 ## <a name="iterative-migration-process"></a>Iterativ migreringsprocess
 
-I grunden kan migrering till molnet delas in i fyra enkla faser: Utvärdera, migrera, optimera samt skydda och hantera. Det här avsnittet av CAF lär du dig att maximera avkastningen från varje fas av processen och anpassa dessa faser till din molnimplementeringsplan. Följande bild illustrerar dessa faser ur ett iterativt perspektiv:
+I grunden kan migrering till molnet delas in i fyra enkla faser: Utvärdera, migrera, optimera samt skydda och hantera. I det här avsnittet om Cloud Adoption Framework lär du dig att maximera avkastningen från varje fas av processen och anpassa dessa faser till din molnimplementeringsplan. Följande bild illustrerar dessa faser ur ett iterativt perspektiv:
 
 ![Cloud Adoption Framework-migreringsmodellen](../_images/operational-transformation-migrate.png)
 

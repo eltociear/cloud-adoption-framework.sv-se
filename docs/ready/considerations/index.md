@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f9926fd59133303960338ac4e8b45cc9007dad51
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: a3c824b3f36a3252de0c43ff420096c48eda5fc1
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816235"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224233"
 ---
 # <a name="landing-zone-considerations"></a>Landingzon – att tänka på
 
@@ -48,5 +48,5 @@ I följande artiklar får du hjälp att fatta styrningsrelaterade beslut angåen
 - **Kostnadskrav**. Givet organisationens motiv för att flytta till molnet och de driftsmässiga kraven på miljön så kan du behöva justera kostnadshanteringen för landningszonen.
 - **Övervakningsbeslut**. Beroende på de driftsmässiga kraven för landningszonen så kan du distribuera olika övervakningsverktyg. I artikeln om övervakningsbeslut får du hjälp att avgöra vilka verktyg du bör distribuera.
 - **Använda rollbaserad åtkomstkontroll**. Azures [rollbaserade åtkomstkontroll (RBAC)](../azure-best-practices/roles.md) ger en detaljerad och gruppbaserad åtkomsthantering för resurser som har organiserats efter användarroller.
-- **Policybeslut**. Azure Blueprint-exempel är förberedda efterlevnadsskisser som vart och ett har fördefinierade policyinitiativ. Organisationens policybeslut avgör vilken skiss eller vilket policyinitiativ som passar bäst sett till krav och begränsningar.
+- **Policybeslut**. [Azure Blueprints-exempel](https://docs.microsoft.com/azure/governance/blueprints/samples) är förberedda efterlevnadsskisser som vart och ett har fördefinierade policyinitiativ. Organisationens policybeslut avgör vilken skiss eller vilket policyinitiativ som passar bäst sett till krav och begränsningar.
 - **[Skapa hybridmolnskonsekvens](../../infrastructure/misc/hybrid-consistency.md)** . Skapa hybridmolnlösningar som ger organisationen molnets alla fördelar samtidigt som en del praktiska aspekter av lokal hantering bibehålls.

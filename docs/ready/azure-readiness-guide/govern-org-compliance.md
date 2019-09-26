@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e38512ef75a0bb60f07467fc6a73ca90e1392fca
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 99d8520b74f00372d5cbf22f81669a6c27d22431
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025249"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224267"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Styrning, säkerhet och efterlevnad i Azure
 
@@ -69,7 +69,7 @@ Så här publicerar du skissartefakter till din prenumeration:
 1. Gå till **Skisser – Skissdefinitioner**.
 1. Välj skissen som du skapade i föregående steg.
 1. Granska skissdefinitionen och välj **Publicera skiss.**
-1. Ange en **Version** (t.e.x. 1.0) och eventuellt **Ändra anteckningar** och sedan **Publicera**.
+1. Ange en **version** (t.ex. _1.0_) och eventuella **ändringsanmärkningar** och välj sedan **Publicera**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints]" submitText="Blueprint definitions" :::
 
@@ -80,7 +80,7 @@ Så här publicerar du skissartefakter till din prenumeration:
 1. Gå till [Skisser – Skissdefinitioner](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Välj skissen som du skapade i föregående steg.
 1. Granska skissdefinitionen och välj **Publicera skiss.**
-1. Ange en **Version** (t.e.x. 1.0) och eventuellt **Ändra anteckningar** och sedan **Publicera**.
+1. Ange en **version** (t.ex. _1.0_) och eventuella **ändringsanmärkningar** och välj sedan **Publicera**.
 
 ::: zone-end
 
@@ -92,7 +92,7 @@ Du kan läsa mer här:
 
 - [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints)
 - [Ramverk för molnimplementering: Beslutsguide för resurskonsekvens](../../decision-guides/resource-consistency/index.md)
-- [Standardbaserade skissexempel](https://docs.microsoft.com/azure/governance/blueprints/samples/index.md#standards-based-blueprint-samples)
+- [Standardbaserade skissexempel](/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
 
 ::: zone-end
 

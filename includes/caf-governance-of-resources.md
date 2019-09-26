@@ -53,6 +53,7 @@ Innan förtroendet till molnmiljön är helt fastställd är det viktigt att nog
     1. [VPN-referensarkitekturen](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn) upprättar ett mönster och en distributionsmodell för skapande av en VPN-gateway i Azure.
     2. Verifiera att de lokala mekanismerna för säkerhet och trafikhantering behandlar anslutna molnnätverk som ej betrodda. Resurser och tjänster som hanteras i molnet ska endast ha åtkomst till auktoriserade lokala tjänster.
     3. Validera att den lokala gränsenheten i det lokala datacentret är kompatibel med [kraven för Azure VPN Gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) och har konfigurerats för att få åtkomst till det offentliga Internet.
+    4. Observera att VPN-tunnlar endast bör betraktas som produktionsklara kretsar för de allra enklaste arbetsbelastningarna. Azure-ExpressRoute bör användas för allt annat än ett fåtal arbetsbelastningar som kräver lokal anslutning.
 1. I rothanteringsgruppen skapar du en andra skissdefinition som heter `secure-hybrid-vnet`.
     1. Lägg till Resource Manager-mallen för VPN-gatewayen som en artefakt till skissdefinitionen.
     2. Lägg till Resource Manager-mallen för det virtuella nätverket som en artefakt till skissdefinitionen.

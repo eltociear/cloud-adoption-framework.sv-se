@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4947f980bbcaa153e55af835c2e6892cf4e2dab3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d14ee6491e4fc804d6545c6708f1d27a44c83501
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022788"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224067"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrera tillgångar (infrastruktur, appar och data)
 
@@ -196,6 +196,14 @@ Mer information finns i:
 
 - [Översikt av Database Experimentation Assistant](https://docs.microsoft.com/sql/dea/database-experimentation-assistant-overview)
 
+## <a name="cosmos-db-data-migration-tool"></a>Azure Cosmos DB-datamigreringsverktyget
+
+Med datamigreringsverktyget i Azure Cosmos DB kan du importera data från olika källor till samlingar och tabeller i Azure Cosmos DB. Du kan importera från JSON-filer, CSV-filer, SQL, MongoDB, Azure Table Storage, Amazon DynamoDB och till och med Azure Cosmos DB SQL API-samlingar. Datamigreringsverktyget kan också användas när du migrerar från en enda partitionssamling till en samling med flera partitioner för SQL API.
+
+Mer information finns i:
+
+- [Azure Cosmos DB-datamigreringsverktyget](https://docs.microsoft.com/en-us/azure/cosmos-db/import-data)
+
 # <a name="third-party-migration-toolstabthird-party-tools"></a>[Migreringsverktyg från tredje part](#tab/third-party-tools)
 
 Det finns flera migreringsverktyg från tredje part och ISV-tjänster som kan hjälpa till med migreringsprocessen. De har alla olika fördelar och styrkor. Dessa verktyg innefattar:
@@ -224,16 +232,28 @@ Movere är en identifieringslösning som tillhandahåller de data och insikter s
 
 [Läs mer](https://www.movere.io)
 
+## <a name="cosmos-db-partners"></a>Cosmos DB-partner
+
+Du kan välja mellan olika erfarna systemintegreringspartner och verktyg som underlättar Azure Cosmos DB-migreringen baserat på dina NoSQL-databaskrav.
+
+[Läs mer](https://docs.microsoft.com/en-us/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
+
 Besök [Azure Migration Center](https://azure.microsoft.com/migration/support) för att identifiera organisationer som erbjuder färdiga partnertekniklösningar som passar dina migreringsscenarier och få mer information om ytterligare migreringsverktyg från tredje part samt supporttjänster.
+
+I [Azure Database-migreringsguiden](https://datamigration.microsoft.com) hittar du en rad olika alternativ för databasmigrering och inbyggd stegvis vägledning och hjälp från partner.
 
 # <a name="project-management-toolstabproject-management-tools"></a>[Verktyg för projekthantering](#tab/project-management-tools)
 
-Projekt som inte spåras och hanteras löper större risk att stöta på problem. För att säkerställa ett lyckat resultat anser vi att du bör använda ett verktyg för projekthantering. Det finns många olika tillgängliga verktyg, och kanske har projektledarna i din organisation redan en favorit. Microsoft erbjuder följande verktyg för projekthantering, som kan fungera tillsammans för att tillhandahålla bredare funktioner:
+Projekt som inte spåras och hanteras löper större risk att stöta på problem. För att säkerställa ett lyckat resultat anser vi att du bör använda ett verktyg för projekthantering. Det finns många olika tillgängliga verktyg, och kanske har projektledarna i din organisation redan en favorit.
+
+Azure DevOps är det rekommenderade verktyget för projekthantering vid en molnbaserad migrering. För att påskynda användningen av Azure DevOps innehåller Cloud Adoption Framework ett verktyg för automatisk distribution av en projektmall. Mallen innehåller de uppgifter som vanligtvis utförs under en migrering. Distribuera mallen genom att följa [dessa anvisningar](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/template). Sedan kan du ändra mallen så att den överensstämmer med de [arbetsbelastningar](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/workloads) och [tillgångar](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/assets) som ska migreras.
+
+Microsoft erbjuder även följande verktyg för projekthantering, som kan fungera tillsammans för att tillhandahålla bredare funktioner:
 
 - [Microsoft Planner](https://tasks.office.com): Ett enkelt, visuellt sätt att organisera arbete i team.
 - [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software): Projekt- och portföljhantering, hantering av resurskapacitet, ekonomihantering samt hantering av tidrapporter och scheman.
 - [Microsoft Teams](https://products.office.com/microsoft-teams): Verktyg för samarbete och kommunikation i team. Teams integrerar även Planner och andra verktyg för att förbättra samarbetet.
-- [Azure DevOps](https://dev.azure.com): Med hjälp av Azure DevOps kan du hantera din infrastruktur som kod eller använda arbetsuppgifter och tavlor för att utföra projekthantering. När dina kunskaper växer kan din organisation dra nytta av CI/CD-funktionerna.
+- [Azure DevOps](https://dev.azure.com): Planeringsmallen för Cloud Adoption Framework krävs inte för att använda Azure DevOps. Du kan använda tjänsten utan mallen för att hantera din infrastruktur som kod eller använda arbetsobjekt och paneler för att hantera projekt. När dina kunskaper växer kan din organisation dra nytta av CI/CD-funktionerna.
 
 Det finns även fler verktyg utöver dessa. Många andra verktyg från tredje part används ofta inom projekthantering.
 

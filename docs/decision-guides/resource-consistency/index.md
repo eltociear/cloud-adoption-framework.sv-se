@@ -2,19 +2,19 @@
 title: Beslutsguide för resurskonsekvens
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Läs mer om resurskonsekvens vid planering av en Azure-migrering.
-author: rotycenh
-ms.author: v-tyhopk
-ms.date: 02/11/2019
+author: doodlemania2
+ms.author: dermar
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 04d0a1e2ed63145baf94010fdf071a271461e7d0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 58fc2c1f3ac08fb38fcbd71e6dc1d91db768284e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023765"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221106"
 ---
 # <a name="resource-consistency-decision-guide"></a>Beslutsguide för resurskonsekvens
 
@@ -32,16 +32,22 @@ När dessa faktorer blir allt viktigare gäller det även fördelarna med att s�
 
 I Azure är [resursgrupper](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) en central mekanism för resursorganisering för logisk gruppering av resurser i en prenumeration.
 
-Resursgrupper fungerar som containrar för resurser med gemensam livscykel eller delade hanteringsrestriktioner såsom krav för princip- eller rollbaserad åtkomstkontroll (RBAC). Resursgrupper kan inte kapslas, och resurser kan endast tillhöra en enskild resursgrupp. Vissa åtgärder kan tillämpas på alla resurser i en resursgrupp. Till exempel tas alla resurser bort i en resursgrupp om resursgruppen i sig tas bort. Vanliga mönster för att skapa resursgrupper delas ofta in i två kategorier:
+Resursgrupper fungerar som containrar för resurser med gemensam livscykel eller delade hanteringsrestriktioner såsom krav för princip- eller rollbaserad åtkomstkontroll (RBAC). Resursgrupper kan inte kapslas, och resurser kan endast tillhöra en enskild resursgrupp. Alla kontrollplansåtgärder fungerar med alla resurser i en resursgrupp. Till exempel tas alla resurser bort i en resursgrupp om resursgruppen i sig tas bort. Följande frågor kan användas som vägledning för resursgruppshantering:
 
-- **Traditionella IT-arbetsbelastningar:** Grupperas oftast efter objekt i samma livscykel, till exempel ett program. Gruppering av program möjliggör hantering av enskilda program.
-- **Agile IT-arbetsbelastningar:** Fokus på externa, kundriktade molnprogram. De här resursgrupperna speglar ofta de funktionella lagren för distribution (exempelvis webbnivå eller appnivå) och hantering.
+1. Utvecklas innehållet i resursgruppen tillsammans?
+1. Hanteras, uppdateras och övervakas innehållet i resursgruppen tillsammans och av samma personer eller team?
+1. Dras innehållet i resursgruppen tillbaka tillsammans?
+
+Om du svarar _nej_ på någon av ovanstående frågor bör resursen i fråga placeras någon annanstans, i en annan resursgrupp.
+
+> [!IMPORTANT]
+> Resursgrupper är även landsspecifika, men det är vanligt att resurserna finns i olika regioner i samma resursgrupp eftersom de hanteras tillsammans på det sätt som beskrivs ovan. Mer information om hur du väljer region finns [här](../regions/index.md).
 
 ## <a name="deployment-consistency"></a>Distributionskonsekvens
 
 Azure-plattformen bygger ovanpå den grundläggande grupperingsmekanismen för att ge ett system för användning av mallar vid distribution av resurser till molnmiljön. Du kan använda mallar för att skapa konsekvent organisering och namngivningskonventioner när du distribuerar arbetsbelastningar, så att du framtvingar de aspekterna av din resursdistribution och hanteringsdesign.
 
-[Azure Resource Manager-mallar](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment) gör att du upprepade gånger kan distribuera resurser i ett konsekvent tillstånd med hjälp av en förutbestämd struktur för konfiguration och resursgruppering. Resource Manager-mallar hjälper dig att definiera en uppsättning standarder som utgångspunkt för dina distributioner.
+[Azure Resource Manager-mallar](/azure/azure-resource-manager/template-deployment-overview) gör att du upprepade gånger kan distribuera resurser i ett konsekvent tillstånd med hjälp av en förutbestämd struktur för konfiguration och resursgruppering. Resource Manager-mallar hjälper dig att definiera en uppsättning standarder som utgångspunkt för dina distributioner.
 
 Du kan till exempel ha en standardmall för distribution av en webbserverarbetsbelastning som innehåller två virtuella datorer som webbservrar kombinerat med en lastbalanserare för att distribuera trafik mellan servrarna. Du kan sedan återanvända den här mallen för att skapa en strukturellt identisk uppsättning virtuella datorer och en lastbalanserare när den här typen av arbetsbelastning behövs. I det fallet ändrar du bara det distributionsnamn och de IP-adresser som är aktuella.
 

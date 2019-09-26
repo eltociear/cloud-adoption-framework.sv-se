@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 19c3d6861ddb4ad87255233fae1a7f535538324b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 78c82a2cb8793f8b5f0b90b1958fb4a83e3da935
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022842"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224401"
 ---
 # <a name="assess-the-digital-estate"></a>Utvärdera den digitala egendomen
 
@@ -76,7 +76,7 @@ Azure Migrate använder Tjänstkarta till att förbättra rapporteringsfunktione
 Om du vill använda beroendevisualisering måste du ladda ned och installera agenter på varje lokal dator som du vill analysera.
 
 - [Microsoft Monitoring Agent (MMA)](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) måste vara installerad på varje dator.
-- [Beroendeagenten](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) måste vara installerad på varje dator.
+- [Microsofts beroendeagent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) måste vara installerad på varje dator.
 - Om du har datorer utan Internetanslutning måste du dessutom ladda ned och installera Log Analytics-gatewayen på dem.
 
 <!-- markdownlint-disable MD024 -->
@@ -85,7 +85,6 @@ Om du vill använda beroendevisualisering måste du ladda ned och installera age
 
 - [Använda lösningen Tjänstkarta i Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate och Tjänstkarta: Visualisering av beroenden](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
-
 
 # <a name="scenarios-and-stakeholderstabscenarios"></a>[Scenarier och intressenter](#tab/Scenarios)
 

@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Förklaring av identitetsbaslinje i förhållande till molnstyrning
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 888e9e7381f5dba0dd2b3797bb4cc06e79a2c9b8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7b670f2159784fdb948c95ea45b70adfd6a5fe2d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025889"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222255"
 ---
 # <a name="identity-baseline-discipline-overview"></a>Översikt över området identitetsbaslinje
 
@@ -26,7 +26,7 @@ Identitetsbaslinje är ett av de [fem områdena för molnstyrning](../governance
 
 I det här avsnittet av Cloud Adoption Framework beskrivs metoden för att utveckla ett identitetsbaslinjeområde som en del av din strategi för molnstyrning. Den primära målgruppen för den här vägledningen är din organisations molnarkitekter och andra medlemmar i teamet för molnstyrning. Dock bör de beslut, policyer och processer som härrör från det här området omfatta engagemang från och diskussioner med relevanta medlemmar i de IT-team som ansvarar för implementering och hantering av organisationens lösningar för identitetshantering.
 
-Om din organisation saknar lokal kompetens inom identitetsbaslinje och säkerhet bör du överväga att anlita externa konsulter som en del av detta område. Överväg även att använda [Microsoft Consulting Services](https://www.microsoft.com/enterprise/services), molnimplementeringstjänsten [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) eller andra externa experter på molnimplementering för att diskutera frågor kring det här området.
+Om din organisation saknar lokal kompetens inom identitetsbaslinje och säkerhet bör du överväga att anlita externa konsulter som en del av detta område. Överväg även att använda [Microsoft Consulting Services](https://www.microsoft.com/enterprise/services), molnimplementeringstjänsten [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) eller andra externa partner inom molnimplementering för att diskutera frågor kring det här området.
 
 ## <a name="policy-statements"></a>Principrapporter
 
