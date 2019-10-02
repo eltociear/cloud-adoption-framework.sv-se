@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig att distribuera en landningszon i Azure.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 5/19/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: f642ea80ac0147f46a93b7c48f38757f456b7436
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 329274859f50aa83ebb90e79597fa1ffe0973ab8
+ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223933"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71811111"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Distribuera en landningszon för migrering
 
@@ -75,7 +75,7 @@ Följande beslut speglas i skissen för landningszonen.
 
 Lär dig mer och ladda ned ett referens exempel för moln införande ramverk migrera landnings zon skiss för distribution eller anpassning från [Azure-exempel](https://docs.microsoft.com/azure/governance/blueprints/samples).
 
-Skissexemplen finns också i portalen. Mer information om hur du distribuerar en skiss finns i [Azure Blueprints](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
+Skissexemplen finns också i portalen. Mer information om hur du skapar en skiss finns i [Azure-ritningar](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
 
 Information om anpassning av den här skissen eller den resulterande landningszonen finns artiklarna [Landingzon – att tänka på](../considerations/index.md).
 
