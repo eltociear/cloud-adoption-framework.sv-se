@@ -678,6 +678,8 @@
                   href: manage/monitor/platform-overview.md
             - name: Etablera granskning av driftslämplighet
               href: manage/operational-fitness-review.md
+            - name: Centralisera hanteringsåtgärder
+              href: manage/centralize-operations.md
     - name: Referens
       items:
         - name: Översikt över Cloud Adoption Framework

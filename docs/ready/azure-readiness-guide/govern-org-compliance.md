@@ -4,22 +4,22 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig hur du ställer in styrning, säkerhet och efterlevnad i Azure-miljön.
 author: tvuylsteke
 ms.author: kfollis
-ms.date: 04/09/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 99d8520b74f00372d5cbf22f81669a6c27d22431
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: b94c1cac96fa5458c722d0a66e1ef2dac9d167f9
+ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224267"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71804486"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Styrning, säkerhet och efterlevnad i Azure
 
-När du skapar en företagsprincip och planerar dina styrningsstrategier kan du använda verktyg och tjänster som Azure Policy, Azure Blueprints och Azure Security Center för att genomföra och automatisera organisationens styrningsbeslut. Innan du börjar planera styrningen bör du använda [verktyget Governance Benchmark](http://aka.ms/caf/gov/assess) för att identifiera eventuella brister i din organisations metod för molnstyrning. Mer information om hur du utvecklar styrningsprocesser finns i [vägledningen Ramverk för molnimplementering för styrning i Azure](../../govern/index.md).
+När du skapar en företagsprincip och planerar dina styrningsstrategier kan du använda verktyg och tjänster som Azure Policy, Azure Blueprints och Azure Security Center för att genomföra och automatisera organisationens styrningsbeslut. Innan du börjar planera styrningen bör du använda [verktyget Governance Benchmark](https://cafbaseline.com) för att identifiera eventuella brister i din organisations metod för molnstyrning. Mer information om hur du utvecklar styrningsprocesser finns i [vägledningen Ramverk för molnimplementering för styrning i Azure](../../govern/index.md).
 
 # <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
 
@@ -78,7 +78,7 @@ Så här publicerar du skissartefakter till din prenumeration:
 ::: zone target="docs"
 
 1. Gå till [Skisser – Skissdefinitioner](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
-1. Välj skissen som du skapade i föregående steg.
+1. Välj skissdefinitionen som du skapade i föregående steg.
 1. Granska skissdefinitionen och välj **Publicera skiss.**
 1. Ange en **version** (t.ex. _1.0_) och eventuella **ändringsanmärkningar** och välj sedan **Publicera**.
 
@@ -165,6 +165,7 @@ Du kan läsa mer här:
 ::: zone-end
 
 ::: zone target="chromeless"
+
 ## <a name="action"></a>Åtgärd
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0]" submitText="Explore Azure Security Center" :::
