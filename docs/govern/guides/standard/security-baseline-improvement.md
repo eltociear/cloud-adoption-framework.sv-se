@@ -1,7 +1,7 @@
 ---
-title: 'Standard Enterprise-guide: Förbättra säkerhets bas linje disciplinen'
+title: 'Standard styrnings guide för företag: Förbättra säkerhets bas linje disciplinen'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Standard Enterprise-guide: Förbättra säkerhets bas linje disciplinen'
+description: 'Standard styrnings guide för företag: Förbättra säkerhets bas linje disciplinen'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 37d47b0a190506f84ed2b973b44ca731e70ad664
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 2e9a913ce0d27e2f15cb83bb842630fcc039f6cc
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223781"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967332"
 ---
-# <a name="standard-enterprise-guide-improve-the-security-baseline-discipline"></a>Standard Enterprise-guide: Förbättra säkerhets bas linje disciplinen
+# <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Standard styrnings guide för företag: Förbättra säkerhets bas linje disciplinen
 
 Den här artikeln går vidare genom att lägga till säkerhets kontroller som stöder flytt av skyddade data till molnet.
 
@@ -117,7 +117,7 @@ Designen styrning MVP kommer att ändras till att inkludera nya Azure-principer 
     1. Identifiera en konfiguration av Azure-brandväggen som uppfyller nödvändiga säkerhets krav. Du kan också identifiera en kompatibel tredje parts installation som är kompatibel med Azure.
     2. Skapa en Resource Manager-mall för att distribuera brand väggen med nödvändiga konfigurationer.
 8. Azure-skiss:
-    1. Skapa en ny skiss med `protected-data`namnet.
+    1. Skapa en ny skiss med namnet `protected-data`.
     2. Lägg till brand väggen och Azure Security Center mallar i skissen.
     3. Lägg till de nya principerna för skyddade data prenumerationer.
     4. Publicera skissen till alla hanterings grupper som för närvarande planerar att vara värd för skyddade data.

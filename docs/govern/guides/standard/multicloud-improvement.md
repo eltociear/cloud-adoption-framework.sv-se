@@ -1,7 +1,7 @@
 ---
-title: 'Standard Enterprise-guide: Förbättringar i multimolnet'
+title: 'Standard styrnings guide för företag: Förbättringar i multimolnet'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Standard Enterprise-guide: Förbättringar i multimolnet'
+description: 'Standard styrnings guide för företag: Förbättringar i multimolnet'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2616193b01b252a74ad17a241d97bfd0ebc4860c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 3a14603574430272004d9fe40654409409dd563e
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223799"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967314"
 ---
-# <a name="small-to-medium-enterprise-guide-multicloud-improvement"></a>Guide för små till medel stora företag: Förbättringar i multimolnet
+# <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>Standard styrnings guide för företag: Förbättringar i multimolnet
 
 Den här artikeln går vidare genom att lägga till kontroller för att införa ett moln.
 

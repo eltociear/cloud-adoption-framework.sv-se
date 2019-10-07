@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e026ac8c46fd8c39d2c6ff36c3612fed2bed7e82
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 67313af2166fbd8dab0f66abb8c6477079a049ad
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022167"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967730"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Spåra kostnader för affärsenheter, miljöer och projekt
 
@@ -40,7 +40,7 @@ Det första steget i att noggrant spåra kostnadsinformation mellan affärsenhet
 
 ### <a name="resource-organization"></a>Resursorganisering
 
-Det finns flera metoder för att organisera tillgångar. Det här avsnittet beskriver bästa praxis baserat på behoven hos ett stort företag med kostnadsstrukturer som är uppdelade i olika affärsenheter, geografiska områden och IT-organisationer. Ett liknande metodtips för en mindre, mindre komplex organisation finns i [Styrningsresa för små till medelstora företag](../../govern/guides/standard/index.md).
+Det finns flera metoder för att organisera tillgångar. Det här avsnittet beskriver bästa praxis baserat på behoven hos ett stort företag med kostnadsstrukturer som är uppdelade i olika affärsenheter, geografiska områden och IT-organisationer. Ett liknande bästa tillvägagångs sätt för en mindre komplex organisation finns i [standard styrnings guiden för Enterprise](../../govern/guides/standard/index.md).
 
 För ett stort företag skapar följande modell en hierarki för hanteringsgrupper, prenumerationer och resursgrupper som gör det möjligt för varje team att ha rätt insynsnivå för att utföra sina uppgifter. När företaget behöver kostnadskontroller för att förhindra budgetöverskridningar kan det använda styrningsverktyg som Azure-skisser eller Azure Policy för att snabbt förhindra framtida kostnadsfel.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: df33e9f7f1c591d9de286b0a2c646bb009fc2775
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9a64a069dcebb12cf550f697561b76903e6d01bf
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223052"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967347"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Styrningsdesign för en enkel arbetsbelastning
 
@@ -34,8 +34,7 @@ Innan du börjar utforma vår styrnings modell är det viktigt att förstå hur 
 
 När Azure lades till i organisationens Enterprise-avtal uppmanas din organisation att skapa ett **Azure-konto**. När kontot skapas skapas en Azure- **konto ägare** , samt en Azure Active Directory-klient (Azure AD) med ett **globalt administratörs** konto. En Azure AD-klient är en logisk konstruktion som representerar en säker, dedikerad instans av Azure AD.
 
-![Azure-konto med Azure konto hanteraren och global administratör](../../_images/govern/design/governance-3-0.png)
-för Azure AD*figur 1 – ett Azure-konto med en global administratör för konto hanteraren och Azure AD.*
+0Azure-konto med Azures konto hanteraren och global administratör för Azure AD @ no__t-1*bild 1 – ett Azure-konto med en global administratör för konto hanteraren och Azure AD.* @no__t
 
 ## <a name="identity-management"></a>Identitetshantering
 
@@ -45,8 +44,7 @@ Vårt krav är identitets hantering för en enskild **arbets belastnings ägare*
 
 Vår globala Azure AD-administratör kommer att skapa **arbets belastnings ägar** kontot för arbets belastnings ägaren:
 
-![Azure AD global-administratören skapar arbets Belastningens ägar](../../_images/govern/design/governance-1-2.png)
-konto*bild 2 – Azure AD global-administratören skapar användar kontot för arbets belastnings ägare.*
+![The Azure AD global Administrator skapar kontot för arbets belastnings ägare @ no__t-1*bild 2 – den globala Azure AD-administratören skapar användar kontot för arbets belastnings ägare.*
 
 Du kan inte tilldela resurs åtkomst behörighet förrän den här användaren har lagts till i en **prenumeration**, så du kommer att göra det i följande två avsnitt.
 
@@ -56,27 +54,23 @@ När antalet resurser som distribueras av din organisation växer växer även k
 
 Den översta nivån av resurs hanterings omfång är **prenumerations** nivån. En prenumeration skapas av Azures **konto ägare**, som upprättar det ekonomiska åtagandet och ansvarar för att betala för alla Azure-resurser som är associerade med prenumerationen:
 
-![Azure-kontots ägare skapar en](../../_images/govern/design/governance-1-3.png)
-prenumerations*bild 3 – Azures konto ägare skapar en prenumeration.*
+![The Azure-konto ägare skapar en prenumeration @ no__t-1*bild 3 – Azure-kontots ägare skapar en prenumeration.*
 
 När prenumerationen har skapats associerar Azure- **konto ägaren** en Azure AD-klient med prenumerationen och den här Azure AD-klienten används för att autentisera och auktorisera användare:
 
-![Azure-kontots ägare associerar Azure AD-klienten med](../../_images/govern/design/governance-1-4.png)
-prenumerations*figuren 4 – Azures konto ägare kopplar Azure AD-klienten till prenumerationen.*
+![The Azure-kontonamnet associerar Azure AD-klienten med prenumerationen @ no__t-1*bild 4 – Azures konto ägare kopplar Azure AD-klienten till prenumerationen.*
 
 Du kanske har märkt att det inte finns någon användare som är associerad med prenumerationen, vilket innebär att ingen har behörighet att hantera resurser. I verkligheten är **konto ägaren** ägare till prenumerationen och har behörighet att vidta åtgärder på en resurs i prenumerationen. **Konto ägaren** är dock mer än troligt vis en ekonomi person i din organisation och ansvarar inte för att skapa, läsa, uppdatera och ta bort resurser – dessa aktiviteter utförs av **arbets Belastningens ägare**. Därför måste du lägga till **arbets belastnings ägaren** till prenumerationen och tilldela behörigheter.
 
 Eftersom **kontots ägare** för närvarande är den enda användaren med behörighet att lägga till **arbets belastnings ägaren** till prenumerationen lägger de till **arbets belastnings ägaren** till prenumerationen:
 
-![Azure-kontots ägare lägger till * * arbets Belastningens ägare * *](../../_images/govern/design/governance-1-5.png)
-till prenumerations*bilden 5 – Azure-kontots ägare lägger till arbets belastnings ägaren till prenumerationen.*
+![The Azure-konto ägare lägger till * * arbets Belastningens ägare * * i prenumerationen @ no__t-1*figur 5 – Azure-kontots ägare lägger till arbets belastnings ägaren till prenumerationen.*
 
 Azure- **kontots ägare** beviljar behörigheter till **arbets belastnings ägaren** genom att tilldela en [rollbaserad åtkomst kontroll (RBAC)](https://docs.microsoft.com/azure/role-based-access-control) roll. RBAC-rollen anger en uppsättning behörigheter som **arbets belastnings ägaren** har för en enskild resurs typ eller en uppsättning resurs typer.
 
 Observera att **konto ägaren** i det här exemplet har tilldelat den [inbyggda **ägar** rollen](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner):
 
-![* * Arbets Belastningens ägare * * tilldelades den inbyggda ägar rollen](../../_images/govern/design/governance-1-6.png)
-*bild 6 – arbets belastnings ägaren har tilldelats den inbyggda ägar rollen.*
+![The * * arbets belastnings ägare * * tilldelades den inbyggda ägar rollen @ no__t-1*bild 6 – arbets belastnings ägaren har tilldelats den inbyggda ägar rollen.*
 
 Den inbyggda **ägar** rollen beviljar alla behörigheter till **arbets belastnings ägaren** i prenumerations omfånget.
 
@@ -87,15 +81,13 @@ Nästa nivå av hanterings omfång är **resurs grupps** nivån. En resurs grupp
 
 Vi illustrerar detta genom att titta på vad som händer när **arbets belastnings ägaren** skapar en resurs grupp:
 
-![* * Arbets Belastningens ägare * * skapar en resurs](../../_images/govern/design/governance-1-7.png)
-grupp*bild 7 – arbets belastnings ägaren skapar en resurs grupp och ärver den inbyggda ägar rollen i resurs grupps omfånget.*
+![The * * arbets belastnings ägare * * skapar en resurs grupp @ no__t-1*bild 7 – arbets belastnings ägaren skapar en resurs grupp och ärver den inbyggda ägar rollen i resurs grupps omfånget.*
 
 Återigen ger den inbyggda **ägar** rollen alla behörigheter till **arbets belastnings ägaren** i resurs grupps omfånget. Som vi nämnt tidigare ärvs rollen från prenumerations nivån. Om en annan roll tilldelas den här användaren i det här omfånget gäller den bara för detta omfång.
 
 Den lägsta nivån av hanterings omfång finns på **resurs** nivån. Åtgärder som tillämpas på resurs nivå gäller endast för själva resursen. Samtidigt ärvs behörigheter på resurs nivå från resurs gruppens omfång. Låt oss till exempel ta en titt på vad som händer om **arbets belastnings ägaren** distribuerar ett [virtuellt nätverk](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) till resurs gruppen:
 
-![* * Arbets Belastningens ägare * * skapar en](../../_images/govern/design/governance-1-8.png)
-resurs*bild 8 – arbets belastnings ägaren skapar en resurs och ärver den inbyggda ägar rollen i resurs omfånget.*
+![The * * arbets belastnings ägare * * skapar en resurs @ no__t-1*bild 8 – arbets belastnings ägaren skapar en resurs och ärver den inbyggda ägar rollen i resurs omfånget.*
 
 **Arbets belastnings ägaren** ärver ägar rollen i resurs omfånget, vilket innebär att arbets belastnings ägaren har alla behörigheter för det virtuella nätverket.
 
@@ -109,7 +101,7 @@ När ditt Azure-konto har skapats anger du att en person i din organisation ska 
 
 Därefter måste ditt Azure- **kontos ägare** [skapa en prenumeration](https://docs.microsoft.com/partner-center/create-a-new-subscription) och [associera Azure AD-klienten](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) med den.
 
-Slutligen, nu när prenumerationen har skapats och din Azure AD-klient är kopplad till den, kan du [lägga till **arbets belastnings ägaren** till prenumerationen med den inbyggda **ägar** rollen](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription).
+Slutligen, nu när prenumerationen har skapats och din Azure AD-klient är kopplad till den, kan du [lägga till **arbets belastnings ägaren** till prenumerationen med den inbyggda **ägar** rollen](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#to-assign-a-user-as-an-administrator).
 
 ## <a name="next-steps"></a>Nästa steg
 

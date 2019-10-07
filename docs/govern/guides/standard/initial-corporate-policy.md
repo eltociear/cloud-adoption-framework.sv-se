@@ -1,7 +1,7 @@
 ---
-title: 'Standard Enterprise-guide: Första företags principen bakom styrnings strategin'
+title: 'Standard styrnings guide för företag: Första företags principen bakom styrnings strategin'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Standard Enterprise-guide: Första företags principen bakom styrnings strategin'
+description: 'Standard styrnings guide för företag: Första företags principen bakom styrnings strategin'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ec184cc41608452c945e7665eae845a773b7cfbd
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5e269e623f22fa976f85c75c130ef0b19e4e9620
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223659"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967537"
 ---
-# <a name="standard-enterprise-guide-initial-corporate-policy-behind-the-governance-strategy"></a>Standard Enterprise-guide: Första företags principen bakom styrnings strategin
+# <a name="standard-enterprise-governance-guide-initial-corporate-policy-behind-the-governance-strategy"></a>Standard styrnings guide för företag: Första företags principen bakom styrnings strategin
 
 Följande företags policy definierar en inledande styrnings position, som är start punkten för den här guiden. Den här artikeln definierar tidiga risker, inledande princip-instruktioner och tidiga processer för att genomdriva princip satser.
 

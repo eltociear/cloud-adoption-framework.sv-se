@@ -1,5 +1,5 @@
 ---
-title: 'Standard Enterprise-guide: Vägledning förklaring'
+title: 'Standard styrnings guide för företag: Vägledning förklaring'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig mer om vägledning för styrning i standard företag.
 author: BrianBlanchard
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8f9bd9d7dadbd880265cc441b1e927ab835165cb
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 3f9149c3edc90a12b0e9dd1f99e20172cf277fb2
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223829"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967500"
 ---
-# <a name="standard-enterprise-guide-prescriptive-guidance-explained"></a>Standard Enterprise-guide: Vägledning förklaring
+# <a name="standard-enterprise-governance-guide-prescriptive-guidance-explained"></a>Standard styrnings guide för företag: Vägledning förklaring
 
 Styrnings guiden börjar med en uppsättning inledande [företags principer](./initial-corporate-policy.md). Dessa principer används för att upprätta en styrnings MVP som återspeglar [rekommenderade metoder](./index.md).
 

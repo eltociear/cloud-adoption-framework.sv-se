@@ -1,7 +1,7 @@
 ---
-title: 'Standard Enterprise-guide: Förbättra resurs konsekvensen'
+title: 'Standard styrnings guide för företag: Förbättra resurs konsekvensen'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Standard Enterprise-guide: Förbättra resurs konsekvensen'
+description: 'Standard styrnings guide för företag: Förbättra resurs konsekvensen'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bede887bcb4589b286920a79016701961a04b8b6
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d501f976613eae869228dfd75e4612f974997558
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222234"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967452"
 ---
-# <a name="standard-enterprise-guide-improving-resource-consistency"></a>Standard Enterprise-guide: Förbättra resurs konsekvensen
+# <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Standard styrnings guide för företag: Förbättra resurs konsekvensen
 
 Den här artikeln går vidare genom att lägga till resurs konsekvens kontroller för att stödja verksamhets kritiska appar.
 
@@ -104,7 +104,7 @@ Det här avsnittet av artikeln ändrar designen för styrnings MVP till att inkl
     1. Identifiera en konfiguration av Azure-brandväggen som uppfyller säkerhets kraven. Du kan också identifiera en tredje parts apparat som är kompatibel med Azure.
     1. Skapa en Resource Manager-mall för att distribuera brand väggen med nödvändiga konfigurationer.
 8. Azure-skiss:
-    1. Skapa en ny Azure-skiss `protected-data`med namnet.
+    1. Skapa en ny Azure-skiss med namnet `protected-data`.
     2. Lägg till brand väggen och Azure Vault-mallarna i skissen.
     3. Lägg till de nya principerna för skyddade data prenumerationer.
     4. Publicera skissen till alla hanterings grupper som ska vara värd för verksamhets kritiska program.

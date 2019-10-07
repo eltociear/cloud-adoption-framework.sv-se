@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4de6cced9bb387f2955d644f93523ac4f26931da
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 1a4a82893535228e84defc8918be6e5fa884ca16
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222657"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967693"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Exempel princip satser för distributions acceleration
 
@@ -32,7 +32,7 @@ Följande exempel på princip satser hanterar vanliga konfigurations relaterade 
 
 **Princip instruktion:** Alla till gångar som distribueras till molnet bör distribueras med hjälp av mallar eller Automation-skript närhelst det är möjligt.
 
-**Potentiella design alternativ:** [Azure Resource Manager mallar](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment) innehåller en infrastruktur som kod för att distribuera dina resurser till Azure. Du kan också använda [terraform](https://docs.microsoft.com/azure/terraform/terraform-overview) som ett konsekvent lokalt och molnbaserad distributions verktyg.
+**Potentiella design alternativ:** [Azure Resource Manager mallar](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) innehåller en infrastruktur som kod för att distribuera dina resurser till Azure. Du kan också använda [terraform](https://docs.microsoft.com/azure/terraform/terraform-overview) som ett konsekvent lokalt och molnbaserad distributions verktyg.
 
 ## <a name="lack-of-visibility-into-system-issues"></a>Brist på insyn i system problem
 

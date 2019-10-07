@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 7b80d61aea9f713de422b5575e7cb3617314857f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4a1135ec23d508cdd0f013439bb034ff66cf0c4d
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022498"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967795"
 ---
 # <a name="initial-organization-alignment"></a>Inledande organisatorisk anpassning
 
@@ -43,9 +43,11 @@ Om vi antar att den föreslagna strukturen anpassas till din moln implementering
 - Vilken person kommer att vara ansvarig för att definiera dessa styrnings kontroller?
 - Finns det andra funktioner eller personer som har ansvar eller ansvar inom moln implementerings planen?
 
+När du har dokumenterat svaren på dessa frågor kan du upprätta [planer för kompetens beredskap](./adapt-roles-skills-processes.md) för att definiera planer för att förbereda dessa personer för kommande arbete.
+
 ## <a name="next-steps"></a>Nästa steg
 
-När du har dokumenterat svaren på dessa frågor fortsätter du till [artikeln kunskaps beredskap](./adapt-roles-skills-processes.md) för att definiera planer för att förbereda dessa personer för arbetet.
+Lär dig hur du planerar för moln införande.
 
 > [!div class="nextstepaction"]
-> [Definiera en färdighets beredskaps plan](./adapt-roles-skills-processes.md)
+> [Planera för moln införande](./plan-intro.md)

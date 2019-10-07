@@ -1,5 +1,5 @@
 ---
-title: 'Standard Enterprise-guide: De som står bakom styrnings strategin'
+title: 'Standard styrnings guide för företag: De som står bakom styrnings strategin'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Detta upprättar ett användnings fall för styrning under ett standard företags moln införande resa.
 author: BrianBlanchard
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 434a4d0238a4633210d31013e9787c3a0a92fc7a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: be679c1265907f2b4a6be86d82ce287dc94d4b70
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028039"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967458"
 ---
-# <a name="standard-enterprise-guide-the-narrative-behind-the-governance-strategy"></a>Standard Enterprise-guide: De som står bakom styrnings strategin
+# <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Standard styrnings guide för företag: De som står bakom styrnings strategin
 
 I följande beskrivare beskrivs användnings fallet för styrning under en [standard företags införande resa i molnet](./index.md). Innan du implementerar resan är det viktigt att förstå antaganden och rationella som återges i den här informationen. Sedan kan du bättre justera styrnings strategin till din egen organisations resa.
 
@@ -52,7 +52,7 @@ Följande ändringar förväntas under de närmaste åren:
 - INFORMATIONS gruppen är att granska principen om personliga data och finansiella data för att tillåta framtida tillstånds mål.
 - Program utvecklingen och BI-teamen vill frisläppa molnbaserade lösningar för produktion under de närmaste 24 månaderna, baserat på vad som krävs för kund engagemang och nya produkter.
 - Det här året kommer IT-teamet att avsluta arbets belastningarna för haveri beredskap i DR-datacenter genom att migrera 2 000-VM: ar till molnet. Detta förväntas ge en uppskattad kostnad på $25M USD under de kommande fem åren.
-    ![Lokala kostnader jämfört med Azure-kostnader som demonstrerar en avkastning på $25M USD under de kommande fem åren](../../../_images/govern/calculator-small-to-medium-enterprise.png)
+    ![On-kostnader jämfört med Azure-kostnader som demonstrerar en avkastning på $25M USD under de kommande fem åren @ no__t-1
 - Företaget planerar att ändra hur det gör IT-investeringar genom att flytta in den utbetalade kapital kostnaden som en drifts kostnad i den. Den här ändringen ger bättre kostnads kontroll och gör det möjligt för IT att påskynda andra planerade insatser.
 
 ## <a name="next-steps"></a>Nästa steg

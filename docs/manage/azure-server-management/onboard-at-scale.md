@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a5b1d551f52ae8800e9a29d4c8a92c14965645cc
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 7144e772da10cd6c7d581fba61c11677524b60c2
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221511"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967303"
 ---
 # <a name="configure-azure-management-services-at-scale"></a>Konfigurera hanterings tjänster i Azure i stor skala
 
@@ -30,7 +30,7 @@ Att integrera Azures hanterings tjänster på dina servrar omfattar två uppgift
 
 Alla hanterings lösningar som diskuteras i [Azures hanterings verktyg och tjänster](./tools-services.md) kräver att Log Analytics Agent installeras på virtuella Azure-datorer (VM) och lokala servrar. Du kan publicera dina virtuella Azure-datorer i skala med hjälp av Azure Policy. Tilldela en princip för att säkerställa att agenten är installerad på alla virtuella Azure-datorer och är anslutna till rätt Log Analytics-arbetsyta.
 
-Azure Policy har ett inbyggt [princip initiativ](/azure/governance/policy/index#initiative-definition) som innehåller både Log Analytics-agenten och [Microsofts beroende agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent), vilket krävs av Azure Monitor for VMS.
+Azure Policy har ett inbyggt [princip initiativ](/azure/governance/policy/concepts/definition-structure#initiatives) som innehåller både Log Analytics-agenten och [Microsofts beroende agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent), vilket krävs av Azure Monitor for VMS.
 
 <!-- TODO: Add these when available.
 - [Preview]: Enable Azure Monitor for virtual machine scale sets.
@@ -44,11 +44,11 @@ Azure Policy har ett inbyggt [princip initiativ](/azure/governance/policy/index#
 
 Så här tilldelar du de principer som anges i föregående avsnitt:
 
-1. I Azure Portal går du till **Azure policy** > **tilldelningar** > **tilldela initiativ**.
+1. I Azure Portal går du till **Azure Policy**@no__t 1**tilldelningar** > **tilldela initiativ**.
 
     ![Skärm bild av portalens princip gränssnitt](./media/onboarding-at-scale1.png)
 
-2. På sidan **tilldela princip** väljer du omfånget genom att klicka på ellipsen (...) och väljer sedan antingen en hanterings grupp eller prenumeration. Du kan även välja en resursgrupp. En omfattning avgör vilka resurser eller grupper av resurser som principen är tilldelad till. Välj sedan **Välj** längst ned på sidan **omfång** .
+2. På sidan **tilldela princip** väljer du **omfånget** genom att klicka på ellipsen (...) och väljer sedan antingen en hanterings grupp eller prenumeration. Du kan även välja en resursgrupp. En omfattning avgör vilka resurser eller grupper av resurser som principen är tilldelad till. Välj sedan **Välj** längst ned på sidan **omfång** .
 
 3. Välj ellipsen (...) bredvid **princip definition** för att öppna listan över tillgängliga definitioner. Du kan filtrera initiativ definitionen genom att ange **Azure Monitor** i **sökrutan:**
 
@@ -60,7 +60,7 @@ Så här tilldelar du de principer som anges i föregående avsnitt:
 
     ![Skärm bild av portalens princip gränssnitt](./media/onboarding-at-scale3.png)
 
-6. Kontrol lera **platsen**för den hanterade identiteten. Om den här principen är av typen [DeployIfNotExists](https://docs.microsoft.com/azure/governance/policy/concepts/effects#deployifnotexists), krävs en hanterad identitet för att distribuera principen. I portalen skapas kontot enligt vad som anges i kryss rutan.
+6. Kontrol lera **platsen för den hanterade identiteten**. Om den här principen är av typen [DeployIfNotExists](https://docs.microsoft.com/azure/governance/policy/concepts/effects#deployifnotexists), krävs en hanterad identitet för att distribuera principen. I portalen skapas kontot enligt vad som anges i kryss rutan.
 
 7. Välj **Tilldela**.
 
@@ -71,7 +71,7 @@ När du har slutfört guiden kommer princip tilldelningen att distribueras till 
 > [!NOTE]
 > Skapa den nödvändiga [Log Analytics arbets ytan och Azure Automation kontot](./prerequisites.md#create-a-workspace-and-automation-account) innan du registrerar servrar i Azure Management Services.
 
-För lokala servrar måste du ladda ned och installera [Log Analytics agenten och Microsofts beroende agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) manuellt och konfigurera dem för att ansluta till rätt arbets yta. Gör detta genom att ange arbetsyte-ID och nyckelinformation, som du kan hitta genom att gå till din Log Analytics arbets yta i Azure Portal och välja **Inställningar** > **Avancerade inställningar**.
+För lokala servrar måste du ladda ned och installera [Log Analytics agenten och Microsofts beroende agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) manuellt och konfigurera dem för att ansluta till rätt arbets yta. Det gör du genom att ange arbetsyte-ID och nyckelinformation, som du kan hitta genom att gå till din Log Analytics arbets yta i Azure Portal och välja **inställningar** > **Avancerade inställningar**.
 
 ![Skärm bild av Log Analytics avancerade inställningar för arbets ytan i Azure Portal](./media/onboarding-on-premises.png)
 
@@ -95,7 +95,7 @@ Uppdateringshantering, Ändringsspårning och inventerings lösningar kräver b�
 
 Vi rekommenderar att du aktiverar Uppdateringshantering-lösning för alla servrar. Uppdateringshantering är kostnads fritt för virtuella Azure-datorer och lokala servrar. Om du aktiverar Uppdateringshantering via ditt Automation-konto skapas en [omfattnings konfiguration](https://docs.microsoft.com/azure/automation/automation-onboard-solutions-from-automation-account#scope-configuration) i arbets ytan. Du måste uppdatera omfattningen manuellt för att inkludera datorer som omfattas av uppdaterings tjänsten.
 
-Om du vill ta med alla befintliga servrar och framtida servrar måste du ta bort omfattnings konfigurationen. Det gör du genom att visa ditt Automation-konto i Azure Portal och välja **uppdateringshantering** > **Hantera dator** > **aktivering på alla tillgängliga och framtida datorer**. Om du aktiverar den här inställningen kan alla virtuella Azure-datorer som är anslutna till arbets ytan använda Uppdateringshantering.
+Om du vill ta med alla befintliga servrar och framtida servrar måste du ta bort omfattnings konfigurationen. Det gör du genom att visa ditt Automation-konto i Azure Portal och välja **Uppdateringshantering** > **Hantera dator** > **Aktivera på alla tillgängliga och framtida datorer**. Om du aktiverar den här inställningen kan alla virtuella Azure-datorer som är anslutna till arbets ytan använda Uppdateringshantering.
 
 ![Skärm bild av Uppdateringshantering i Azure Portal](./media/onboarding-configuration1.png)
 
@@ -148,7 +148,7 @@ Använd följande steg för att skapa eller ändra den sparade sökningen:
 
 Så här lägger du till den här lösningen:
 
-1. I Azure Portal öppnar du **alla tjänster** och väljer hanterings-och **styrnings** > **lösningar**.
+1. I Azure Portal öppnar du **alla tjänster** och väljer **hantering + styrning** > **lösningar**.
 2. I vyn **lösningar** väljer du **Lägg till**.
 3. Sök efter **Aktivitetslogganalys** och markera det.
 4. Välj **Skapa**.
@@ -161,14 +161,14 @@ Azure Log Analytics Agenthälsa-lösningen ger dig insikt i hälsa, prestanda oc
 
 Så här lägger du till den här lösningen:
 
-1. I Azure Portal öppnar du **alla tjänster** och väljer hanterings-och **styrnings** > **lösningar**.
+1. I Azure Portal öppnar du **alla tjänster** och väljer **hantering + styrning** > **lösningar**.
 2. I vyn **lösningar** väljer du **Lägg till**.
 3. Sök efter **hälso tillstånd för Azure-Log Analytics agent** och markera det.
 4. Välj **Skapa**.
 
 Du måste ange **arbets ytans namn** på arbets ytan som du skapade i föregående avsnitt där lösningen är aktive rad.
 
-När du har skapat den här arbets ytan visar resurs instansen **AgentHealthAssessment** när du väljer **Visa** > **lösningar**.
+När du har skapat den här arbets ytan visar resurs instansen **AgentHealthAssessment** när du väljer **Visa** > -**lösningar**.
 
 ### <a name="antimalware-assessment"></a>Utvärdering av program mot skadlig kod
 
@@ -176,14 +176,14 @@ Lösningen för utvärdering av program mot skadlig kod hjälper dig att identif
 
 Så här lägger du till den här lösningen:
 
-1. I Azure Portal öppnar du **alla tjänster** och väljer hanterings-och **styrnings** > **lösningar**.
+1. I Azure Portal öppnar du **alla tjänster** och väljer **hantering + styrning** > **lösningar**.
 2. I vyn **lösningar** väljer du **Lägg till**.
 3. Sök efter **utvärdering av program mot skadlig kod** och välj den.
 4. Välj **Skapa**.
 
 Du måste ange **arbets ytans namn** på arbets ytan som du skapade i föregående avsnitt där lösningen är aktive rad.
 
-När du har skapat den här arbets ytan visar resurs instansen **program mot skadlig kod** när du väljer **Visa** > **lösningar**.
+När du har skapat den här arbets ytan visar resurs instansen **program mot skadlig kod** när du väljer **Visa** > -**lösningar**.
 
 ### <a name="azure-monitor-for-vms"></a>Azure Monitor för virtuella datorer
 
