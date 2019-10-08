@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 041e1ccaf6ec0e928b6868f4e8c90849c8d4dea8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 8323a8bded4f2cc1d24407fa3326abf3b96ef810
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224600"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967700"
 ---
 # <a name="azure-regions"></a>Azure-regioner
 
@@ -110,7 +110,7 @@ Denna metod drivs av kvantifierbar information. Följande metod kommer därför 
 När omfånget för en migrering innehåller flera regioner bör följande beredskapsöverväganden utvärderas av teamet för molnimplementering:
 
 - Datasuveränitet kan kräva lokalisering av vissa till gångar, men det finns många till gångar som kanske inte styrs av dessa begränsningar. Saker som loggning, rapportering, nätverksroutning, identitet och andra centrala IT-tjänster kan vara möjliga att hantera som delade tjänster över flera prenumerationer eller till och med flera regioner. Teamet för molnimplementering bör utvärderar en modell för delade tjänster för dessa tjänster, enligt beskrivningen i [referensarkitektur för en nav- och eker-topologi med delade tjänster](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
-- Vid införandet av flera instanser av liknande miljöer kan en miljöfabrik skapa konsekvens, förbättra styrningen och påskynda distributionen. [Styrningsresa för stora företag](../../govern/guides/complex/index.md) fastställer en metod som skapar en miljö som skalar över flera regioner.
+- Vid införandet av flera instanser av liknande miljöer kan en miljöfabrik skapa konsekvens, förbättra styrningen och påskynda distributionen. [Styrningsguiden för komplexa företag](../../govern/guides/complex/index.md) fastställer en metod som skapar en miljö som skalar över flera regioner.
 
 När teamet är nöjda med grundmetoden och beredskapen justerats finns det några datadrivna förutsättningar att tänka på:
 

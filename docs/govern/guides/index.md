@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: b5d5bca79d08a0084026c027a242086cefb0100f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: c7d019cc7264ba972252b6182d4f2c10d7b91f43
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025928"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967595"
 ---
 # <a name="cloud-governance-guides"></a>Molnstyrningsguider
 
@@ -76,27 +76,27 @@ Välj något av följande två alternativ för att påbörja en styrningsresa. A
 
 ### <a name="business-characteristics"></a>Företagsegenskaper
 
-| Egenskap | Standardorganisation                                                                              | Komplext företag                                                                                               |
-|--------------------------------------------|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Geografiskt område (land eller geopolitisk region) | Kunder eller personal finns huvudsakligen i samma geografiska område                                                      | Kunder eller personal finns i flera geografiska områden eller kräver nationella moln.                                                             |
-| Affärsenheter som påverkas                    | Affärsenheter som delar en gemensam IT-infrastruktur                                                                                    | Flera affärsenheter som inte delar en gemensam IT-infrastruktur                                                                                        |
-| IT-budget                                  | En enda IT-budget                                                                                        | Budget fördelad mellan affärsenheter och valutor                                                                         |
-| IT-investeringar                             | Kapitalkostnaderna för investeringar planeras årligen och täcker oftast endast grundläggande underhåll. | Kapitalkostnaderna för investeringar planeras årligen och täcker ofta underhåll och en förnyelsecykel på tre till fem år. |
+| Egenskap | Standardorganisation | Komplext företag |
+|---|---|---|
+| Geografiskt område (land eller geopolitisk region) | Kunder eller personal finns huvudsakligen i samma geografiska område | Kunder eller personal finns i flera geografiska områden eller kräver nationella moln. |
+| Affärsenheter som påverkas | Affärsenheter som delar en gemensam IT-infrastruktur | Flera affärsenheter som inte delar en gemensam IT-infrastruktur |
+| IT-budget | En enda IT-budget | Budget fördelad mellan affärsenheter och valutor |
+| IT-investeringar | Kapitalkostnaderna för investeringar planeras årligen och täcker oftast endast grundläggande underhåll. | Kapitalkostnaderna för investeringar planeras årligen och täcker ofta underhåll och en förnyelsecykel på tre till fem år. |
 
 ### <a name="current-state-before-adopting-cloud-governance"></a>Tillstånd före implementeringen av molnstyrning
 
-| Status | Standardföretag                                                                               | Komplext företag                                                                                                          |
-|---------------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Datacenter eller utomstående leverantörer av värdtjänster | Mindre än fem datacenter                                                                                  | Fler än fem datacenter                                                                                                   |
-| Nätverk                                  | Inga WAN- eller 1 &ndash; 2 WAN-leverantörer                                                                             | Komplext nätverk eller globalt WAN                                                                                             |
-| Identitet                                    | En skog, en domän. | Komplext, flera skogar, flera domäner.  |
+| Status | Standardföretag | Komplext företag |
+|---|---|---|
+| Datacenter eller utomstående leverantörer av värdtjänster | Mindre än fem datacenter | Fler än fem datacenter |
+| Nätverk | Inga WAN- eller 1 &ndash; 2 WAN-leverantörer | Komplext nätverk eller globalt WAN |
+| Identitet | En skog, en domän. | Komplext, flera skogar, flera domäner. |
 
 ### <a name="desired-future-state-after-incremental-improvement-of-cloud-governance"></a>Önskat tillstånd efter inkrementell förbättring av molnstyrning
 
-| Status | Standardorganisation                                                                        | Komplext företag                                                                                        |
-|----------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Kostnadshantering – molnredovisning           | Showback-modell. Faktureringen är centraliserad via IT.                                                | Återbetalningsmodell. Faktureringen kan distribueras via IT-inköp.                                  |
-| Säkerhetsbaslinje – skyddade data           | Finansiella företagsdata och IP. Begränsade kunddata. Inga krav på efterlevnad från tredje part.     | Flera samlingar av kunders finansiella och personliga data. Kan behöva tänka på efterlevnadskrav från tredje part. |
+| Status | Standardorganisation | Komplext företag |
+|---|---|---|
+| Kostnadshantering – molnredovisning | Showback-modell. Faktureringen är centraliserad via IT. | Återbetalningsmodell. Faktureringen kan distribueras via IT-inköp. |
+| Säkerhetsbaslinje – skyddade data | Finansiella företagsdata och IP. Begränsade kunddata. Inga krav på efterlevnad från tredje part. | Flera samlingar av kunders finansiella och personliga data. Kan behöva tänka på efterlevnadskrav från tredje part. |
 
 ## <a name="azure-virtual-datacenter"></a>Azure Virtual Datacenter
 
@@ -124,6 +124,6 @@ Mer information finns i avsnittet [Azure Virtual Datacenter](../../reference/vdc
 Välj någon av dessa guider:
 
 > [!div class="nextstepaction"]
-> [Standardguide för styrning](./standard/index.md)
+> [Standardguide för styrning av företag](./standard/index.md)
 >
 > [Styrningsguide för komplexa företag](./complex/index.md)
