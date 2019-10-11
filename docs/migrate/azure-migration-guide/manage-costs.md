@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c6b195a69622a4934f257090650a8ba6ce884025
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7a5f3b3f9a50cf4a989d268788279f132a42efb7
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024815"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967217"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mekanismer för migreringsfokuserad kostnadskontroll
 
@@ -71,7 +71,7 @@ Beräkningen som skapas och som visas nedan identifierar de månatliga kostnader
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 - [Ställa in och granska en utvärdering med Azure Migrate](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
-- En mer omfattande plan om kostnadshantering över ett större antal tillgångar (infrastruktur, appar och data) finns i [styrningsmodellen i Ramverk för molnimplementering](../../govern/guides/index.md). I synnerhet riktlinjerna för [Cost Management-disciplin](../../govern/cost-management/index.md) och [förbättringar av Cost Management i handboken för stora företag](../../govern/guides/complex/cost-management-improvement.md).
+- En mer omfattande plan om kostnadshantering över ett större antal tillgångar (infrastruktur, appar och data) finns i [styrningsmodellen i Ramverk för molnimplementering](../../govern/guides/index.md). I synnerhet riktlinjerna för [Cost Management-disciplin](../../govern/cost-management/index.md) och [förbättringar av Cost Management i styrningshandboken för komplexa företag](../../govern/guides/complex/cost-management-improvement.md).
 
 # <a name="estimate-and-optimize-vm-costs-during-and-after-migrationtabestimateoptimize"></a>[Beräkna och optimera kostnader för virtuella datorer under och efter migrering](#tab/EstimateOptimize)
 
@@ -104,7 +104,7 @@ Med den här analysen kan du granska totala kostnader, budget (om tillgängligt)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-- En mer omfattande plan om kostnadshantering över ett större antal tillgångar (infrastruktur, appar och data) finns i [styrningsmodellen i Ramverk för molnimplementering](../../govern/guides/index.md). I synnerhet riktlinjerna för [Cost Management-disciplin](../../govern/cost-management/index.md) och [stegvisa förbättringar av Cost Management i handboken för stora företag](../../govern/guides/complex/cost-management-improvement.md).
+- En mer omfattande plan om kostnadshantering över ett större antal tillgångar (infrastruktur, appar och data) finns i [styrningsmodellen i Ramverk för molnimplementering](../../govern/guides/index.md). I synnerhet riktlinjerna för [Cost Management-disciplin](../../govern/cost-management/index.md) och [inkrementella förbättringar av Cost Management i styrningshandboken för komplexa företag](../../govern/guides/complex/cost-management-improvement.md).
 - Mer information om Azure Advisor finns i [Sänk tjänstekostnaderna med Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations).
 - Mer information om Azure Cost Management finns i [Förstå och arbeta med omfattningar](https://docs.microsoft.com/azure/cost-management/understand-work-scopes) och [Utforska och analysera kostnader med kostnadsanalys](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis).
 
@@ -142,4 +142,4 @@ För bakgrundsprocesser med låg prioritet erbjuder Batch ett sätt att hantera 
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-En mer omfattande plan om kostnadshantering över ett större antal tillgångar (infrastruktur, appar och data) finns i [styrningsmodellen i Ramverk för molnimplementering](../../govern/guides/index.md). I synnerhet riktlinjerna för [Cost Management-disciplin](../../govern/cost-management/index.md) och [stegvisa förbättringar av Cost Management i handboken för styrning av stora företag](../../govern/guides/complex/cost-management-improvement.md).
+En mer omfattande plan om kostnadshantering över ett större antal tillgångar (infrastruktur, appar och data) finns i [styrningsmodellen i Ramverk för molnimplementering](../../govern/guides/index.md). I synnerhet riktlinjerna för [Cost Management-disciplin](../../govern/cost-management/index.md) och [inkrementella förbättringar av Cost Management i styrningshandboken för komplexa företag](../../govern/guides/complex/cost-management-improvement.md).
