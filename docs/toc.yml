@@ -92,24 +92,24 @@
       items:
         - name: Översikt
           href: ready/index.md
-        - name: Guide för Azure-beredskap
+        - name: Konfigurationsguide för Azure
           items:
             - name: Innan du börjar
-              href: ready/azure-readiness-guide/index.md
+              href: ready/azure-setup-guide/index.md
             - name: Organisera dina resurser
-              href: ready/azure-readiness-guide/organize-resources.md
+              href: ready/azure-setup-guide/organize-resources.md
             - name: Hantera åtkomst
-              href: ready/azure-readiness-guide/manage-access.md
+              href: ready/azure-setup-guide/manage-access.md
             - name: Hantera kostnader och fakturering
-              href: ready/azure-readiness-guide/manage-costs.md
+              href: ready/azure-setup-guide/manage-costs.md
             - name: 'Planera styrning, säkerhet och efterlevnad'
-              href: ready/azure-readiness-guide/govern-org-compliance.md
+              href: ready/azure-setup-guide/govern-org-compliance.md
             - name: Använd övervakning och rapportering
-              href: ready/azure-readiness-guide/monitoring-reporting.md
+              href: ready/azure-setup-guide/monitoring-reporting.md
             - name: Håll dig aktuell med Azure
-              href: ready/azure-readiness-guide/staying-current.md
+              href: ready/azure-setup-guide/staying-current.md
             - name: Distribuera en landningszon för migrering
-              href: ready/azure-readiness-guide/migration-landing-zone.md
+              href: ready/azure-setup-guide/migration-landing-zone.md
         - name: Landingzon – att tänka på
           items:
             - name: Översikt
@@ -404,196 +404,196 @@
           items:
             - name: Översikt
               href: innovate/index.md
+    - name: Styrning
+      items:
+        - name: Översikt
+          href: govern/index.md
+        - name: Metodik
+          href: govern/methodology.md
+        - name: Benchmark
+          href: govern/benchmark.md
+        - name: Initial styrningsgrund
+          href: govern/initial-foundation.md
+        - name: Förbättrad styrningsgrund
+          href: govern/foundation-improvements.md
+        - name: Styrningsguider
+          items:
+            - name: Översikt
+              href: govern/guides/index.md
+            - name: Standardguide för styrning av företag
+              items:
+                - name: Översikt
+                  href: govern/guides/standard/index.md
+                - name: Berättelse
+                  href: govern/guides/standard/narrative.md
+                - name: Inledande företagspolicy
+                  href: govern/guides/standard/initial-corporate-policy.md
+                - name: Förebyggande vägledning
+                  href: govern/guides/standard/prescriptive-guidance.md
+                - name: Förbättrad teori om grundläggande säkerhet
+                  href: govern/guides/standard/security-baseline-improvement.md
+                - name: Förbättrat resurskonsekvensområde
+                  href: govern/guides/standard/resource-consistency-improvement.md
+                - name: Förbättrat kostnadshanteringsområde
+                  href: govern/guides/standard/cost-management-improvement.md
+                - name: Scenarier med flera moln
+                  href: govern/guides/standard/multicloud-improvement.md
+            - name: Styrningsguide för komplexa företag
+              items:
+                - name: Översikt
+                  href: govern/guides/complex/index.md
+                - name: Berättelse
+                  href: govern/guides/complex/narrative.md
+                - name: Inledande företagspolicy
+                  href: govern/guides/complex/initial-corporate-policy.md
+                - name: Förebyggande vägledning
+                  href: govern/guides/complex/prescriptive-guidance.md
+                - name: Förbättrad teori om grundläggande identitet
+                  href: govern/guides/complex/identity-baseline-improvement.md
+                - name: Förbättrad teori om grundläggande säkerhet
+                  href: govern/guides/complex/security-baseline-improvement.md
+                - name: Förbättrat resurskonsekvensområde
+                  href: govern/guides/complex/resource-consistency-improvement.md
+                - name: Förbättrat kostnadshanteringsområde
+                  href: govern/guides/complex/cost-management-improvement.md
+                - name: Scenarier med flera moln
+                  href: govern/guides/complex/multicloud-improvement.md
+                - name: Styrning i flera lager
+                  href: govern/guides/complex/multiple-layers-of-governance.md
+        - name: Saker att tänka på i samband med styrning
+          items:
+            - name: Utvärdera företagsprinciper
+              href: govern/corporate-policy.md
+            - name: Molnförberedda företagsprinciper och efterlevnad
+              items:
+                - name: Förbereda företagsprinciper för molnet
+                  href: govern/policy-compliance/index.md
+                - name: Förstå affärsrisker
+                  href: govern/policy-compliance/business-risk.md
+                - name: Utvärdera risktolerans
+                  href: govern/policy-compliance/risk-tolerance.md
+                - name: Definiera företagsprinciper
+                  href: govern/policy-compliance/policy-definition.md
+                - name: Justera design med princip
+                  href: govern/policy-compliance/governance-alignment.md
+                - name: Etablera processer för policyefterlevnad
+                  href: govern/policy-compliance/processes.md
+                - name: Regelefterlevnad
+                  href: govern/policy-compliance/regulatory-compliance.md
+                - name: Beredskap för molnsäkerhet
+                  href: govern/policy-compliance/cloud-security-readiness.md
+                - name: Granskning av principer för molnet
+                  href: govern/policy-compliance/cloud-policy-review.md
+                - name: Dataklassificering
+                  href: govern/policy-compliance/data-classification.md
+        - name: Molnstyrningsområden
+          href: govern/governance-disciplines.md
+        - name: Implementera molnstyrningsområden
+          items:
+            - name: Kostnadshantering
+              items:
+                - name: Översikt över kostnadshantering
+                  href: govern/cost-management/index.md
+                - name: Ladda ned mallen
+                  href: govern/cost-management/template.md
+                - name: Förstå affärsrisker
+                  href: govern/cost-management/business-risks.md
+                - name: Mått och indikatorer för risktolerans
+                  href: govern/cost-management/metrics-tolerance.md
+                - name: Exempel på kostnadshanteringsprinciper
+                  href: govern/cost-management/policy-statements.md
+                - name: Processer för policyefterlevnad
+                  href: govern/cost-management/compliance-processes.md
+                - name: Förbättra kostnadshanteringen
+                  href: govern/cost-management/discipline-improvement.md
+                - name: Azure-verktyg för kostnadshantering
+                  href: govern/cost-management/toolchain.md
+            - name: Säkerhetsbaslinje
+              items:
+                - name: Översikt över säkerhetsbaslinjen
+                  href: govern/security-baseline/index.md
+                - name: Ladda ned mallen
+                  href: govern/security-baseline/template.md
+                - name: Förstå affärsrisker
+                  href: govern/security-baseline/business-risks.md
+                - name: Mått och indikatorer för risktolerans
+                  href: govern/security-baseline/metrics-tolerance.md
+                - name: Exempel på principer för säkerhetsbaslinjen
+                  href: govern/security-baseline/policy-statements.md
+                - name: Processer för policyefterlevnad
+                  href: govern/security-baseline/compliance-processes.md
+                - name: Förbättra säkerhetsbaslinjen
+                  href: govern/security-baseline/discipline-improvement.md
+                - name: Molnautentisk säkerhetsbaslinje
+                  href: govern/security-baseline/cloud-native-policy.md
+                - name: Ytterligare vägledning om säkerheten i Azure
+                  href: govern/security-baseline/azure-security-guidance.md
+                - name: Azure-verktyg för säkerhetsbaslinjen
+                  href: govern/security-baseline/toolchain.md
+            - name: Identitetsbaslinje
+              items:
+                - name: Översikt över identitetsbaslinjen
+                  href: govern/identity-baseline/index.md
+                - name: Ladda ned mallen
+                  href: govern/identity-baseline/template.md
+                - name: Förstå affärsrisker
+                  href: govern/identity-baseline/business-risks.md
+                - name: Mått och indikatorer för risktolerans
+                  href: govern/identity-baseline/metrics-tolerance.md
+                - name: Exempel på principer för identitetsbaslinjen
+                  href: govern/identity-baseline/policy-statements.md
+                - name: Processer för policyefterlevnad
+                  href: govern/identity-baseline/compliance-processes.md
+                - name: Förbättra identitetsbaslinjen
+                  href: govern/identity-baseline/discipline-improvement.md
+                - name: Azure-verktyg för identitetsbaslinjen
+                  href: govern/identity-baseline/toolchain.md
+            - name: Resurskonsekvens
+              items:
+                - name: Översikt över resurskonsekvens
+                  href: govern/resource-consistency/index.md
+                - name: Ladda ned mallen
+                  href: govern/resource-consistency/template.md
+                - name: Förstå affärsrisker
+                  href: govern/resource-consistency/business-risks.md
+                - name: Mått och indikatorer för risktolerans
+                  href: govern/resource-consistency/metrics-tolerance.md
+                - name: Exempel på principer för resurskonsekvens
+                  href: govern/resource-consistency/policy-statements.md
+                - name: Processer för policyefterlevnad
+                  href: govern/resource-consistency/compliance-processes.md
+                - name: Förbättra resurskonsekvens
+                  href: govern/resource-consistency/discipline-improvement.md
+                - name: Azure-verktyg för resurskonsekvens
+                  href: govern/resource-consistency/toolchain.md
+                - name: Åtkomsthantering av resurser
+                  href: govern/resource-consistency/resource-access-management.md
+                - name: Styrningsdesign för en enkel arbetsbelastning
+                  href: govern/resource-consistency/governance-simple-workload.md
+                - name: Styrningsdesign för flera team
+                  href: govern/resource-consistency/governance-multiple-teams.md
+            - name: Distributionsacceleration
+              items:
+                - name: Översikt över distributionsacceleration
+                  href: govern/deployment-acceleration/index.md
+                - name: Ladda ned mallen
+                  href: govern/deployment-acceleration/template.md
+                - name: Förstå affärsrisker
+                  href: govern/deployment-acceleration/business-risks.md
+                - name: Mått och indikatorer för risktolerans
+                  href: govern/deployment-acceleration/metrics-tolerance.md
+                - name: Exempel på principer för distributionsacceleration
+                  href: govern/deployment-acceleration/policy-statements.md
+                - name: Processer för policyefterlevnad
+                  href: govern/deployment-acceleration/compliance-processes.md
+                - name: Förbättra distributionsacceleration
+                  href: govern/deployment-acceleration/discipline-improvement.md
+                - name: Azure-verktyg för distributionsacceleration
+                  href: govern/deployment-acceleration/toolchain.md
     - name: Körning
       items:
         - name: Översikt
           href: operate/index.md
-        - name: Styrning
-          items:
-            - name: Översikt
-              href: govern/index.md
-            - name: Metodik
-              href: govern/methodology.md
-            - name: Benchmark
-              href: govern/benchmark.md
-            - name: Initial styrningsgrund
-              href: govern/initial-foundation.md
-            - name: Förbättrad styrningsgrund
-              href: govern/foundation-improvements.md
-            - name: Styrningsguider
-              items:
-                - name: Översikt
-                  href: govern/guides/index.md
-                - name: Standardguide för styrning av företag
-                  items:
-                    - name: Översikt
-                      href: govern/guides/standard/index.md
-                    - name: Berättelse
-                      href: govern/guides/standard/narrative.md
-                    - name: Inledande företagspolicy
-                      href: govern/guides/standard/initial-corporate-policy.md
-                    - name: Förebyggande vägledning
-                      href: govern/guides/standard/prescriptive-guidance.md
-                    - name: Förbättrad teori om grundläggande säkerhet
-                      href: govern/guides/standard/security-baseline-improvement.md
-                    - name: Förbättrat resurskonsekvensområde
-                      href: govern/guides/standard/resource-consistency-improvement.md
-                    - name: Förbättrat kostnadshanteringsområde
-                      href: govern/guides/standard/cost-management-improvement.md
-                    - name: Scenarier med flera moln
-                      href: govern/guides/standard/multicloud-improvement.md
-                - name: Styrningsguide för komplexa företag
-                  items:
-                    - name: Översikt
-                      href: govern/guides/complex/index.md
-                    - name: Berättelse
-                      href: govern/guides/complex/narrative.md
-                    - name: Inledande företagspolicy
-                      href: govern/guides/complex/initial-corporate-policy.md
-                    - name: Förebyggande vägledning
-                      href: govern/guides/complex/prescriptive-guidance.md
-                    - name: Förbättrad teori om grundläggande identitet
-                      href: govern/guides/complex/identity-baseline-improvement.md
-                    - name: Förbättrad teori om grundläggande säkerhet
-                      href: govern/guides/complex/security-baseline-improvement.md
-                    - name: Förbättrat resurskonsekvensområde
-                      href: govern/guides/complex/resource-consistency-improvement.md
-                    - name: Förbättrat kostnadshanteringsområde
-                      href: govern/guides/complex/cost-management-improvement.md
-                    - name: Scenarier med flera moln
-                      href: govern/guides/complex/multicloud-improvement.md
-                    - name: Styrning i flera lager
-                      href: govern/guides/complex/multiple-layers-of-governance.md
-            - name: Saker att tänka på i samband med styrning
-              items:
-                - name: Utvärdera företagsprinciper
-                  href: govern/corporate-policy.md
-                - name: Molnförberedda företagsprinciper och efterlevnad
-                  items:
-                    - name: Förbereda företagsprinciper för molnet
-                      href: govern/policy-compliance/index.md
-                    - name: Förstå affärsrisker
-                      href: govern/policy-compliance/business-risk.md
-                    - name: Utvärdera risktolerans
-                      href: govern/policy-compliance/risk-tolerance.md
-                    - name: Definiera företagsprinciper
-                      href: govern/policy-compliance/policy-definition.md
-                    - name: Justera design med princip
-                      href: govern/policy-compliance/governance-alignment.md
-                    - name: Etablera processer för policyefterlevnad
-                      href: govern/policy-compliance/processes.md
-                    - name: Regelefterlevnad
-                      href: govern/policy-compliance/regulatory-compliance.md
-                    - name: Beredskap för molnsäkerhet
-                      href: govern/policy-compliance/cloud-security-readiness.md
-                    - name: Granskning av principer för molnet
-                      href: govern/policy-compliance/cloud-policy-review.md
-                    - name: Dataklassificering
-                      href: govern/policy-compliance/data-classification.md
-                - name: Molnstyrningsområden
-                  href: govern/governance-disciplines.md
-                - name: Implementera molnstyrningsområden
-                  items:
-                    - name: Kostnadshantering
-                      items:
-                        - name: Översikt över kostnadshantering
-                          href: govern/cost-management/index.md
-                        - name: Ladda ned mallen
-                          href: govern/cost-management/template.md
-                        - name: Förstå affärsrisker
-                          href: govern/cost-management/business-risks.md
-                        - name: Mått och indikatorer för risktolerans
-                          href: govern/cost-management/metrics-tolerance.md
-                        - name: Exempel på kostnadshanteringsprinciper
-                          href: govern/cost-management/policy-statements.md
-                        - name: Processer för policyefterlevnad
-                          href: govern/cost-management/compliance-processes.md
-                        - name: Förbättra kostnadshanteringen
-                          href: govern/cost-management/discipline-improvement.md
-                        - name: Azure-verktyg för kostnadshantering
-                          href: govern/cost-management/toolchain.md
-                    - name: Säkerhetsbaslinje
-                      items:
-                        - name: Översikt över säkerhetsbaslinjen
-                          href: govern/security-baseline/index.md
-                        - name: Ladda ned mallen
-                          href: govern/security-baseline/template.md
-                        - name: Förstå affärsrisker
-                          href: govern/security-baseline/business-risks.md
-                        - name: Mått och indikatorer för risktolerans
-                          href: govern/security-baseline/metrics-tolerance.md
-                        - name: Exempel på principer för säkerhetsbaslinjen
-                          href: govern/security-baseline/policy-statements.md
-                        - name: Processer för policyefterlevnad
-                          href: govern/security-baseline/compliance-processes.md
-                        - name: Förbättra säkerhetsbaslinjen
-                          href: govern/security-baseline/discipline-improvement.md
-                        - name: Molnautentisk säkerhetsbaslinje
-                          href: govern/security-baseline/cloud-native-policy.md
-                        - name: Ytterligare vägledning om säkerheten i Azure
-                          href: govern/security-baseline/azure-security-guidance.md
-                        - name: Azure-verktyg för säkerhetsbaslinjen
-                          href: govern/security-baseline/toolchain.md
-                    - name: Identitetsbaslinje
-                      items:
-                        - name: Översikt över identitetsbaslinjen
-                          href: govern/identity-baseline/index.md
-                        - name: Ladda ned mallen
-                          href: govern/identity-baseline/template.md
-                        - name: Förstå affärsrisker
-                          href: govern/identity-baseline/business-risks.md
-                        - name: Mått och indikatorer för risktolerans
-                          href: govern/identity-baseline/metrics-tolerance.md
-                        - name: Exempel på principer för identitetsbaslinjen
-                          href: govern/identity-baseline/policy-statements.md
-                        - name: Processer för policyefterlevnad
-                          href: govern/identity-baseline/compliance-processes.md
-                        - name: Förbättra identitetsbaslinjen
-                          href: govern/identity-baseline/discipline-improvement.md
-                        - name: Azure-verktyg för identitetsbaslinjen
-                          href: govern/identity-baseline/toolchain.md
-                    - name: Resurskonsekvens
-                      items:
-                        - name: Översikt över resurskonsekvens
-                          href: govern/resource-consistency/index.md
-                        - name: Ladda ned mallen
-                          href: govern/resource-consistency/template.md
-                        - name: Förstå affärsrisker
-                          href: govern/resource-consistency/business-risks.md
-                        - name: Mått och indikatorer för risktolerans
-                          href: govern/resource-consistency/metrics-tolerance.md
-                        - name: Exempel på principer för resurskonsekvens
-                          href: govern/resource-consistency/policy-statements.md
-                        - name: Processer för policyefterlevnad
-                          href: govern/resource-consistency/compliance-processes.md
-                        - name: Förbättra resurskonsekvens
-                          href: govern/resource-consistency/discipline-improvement.md
-                        - name: Azure-verktyg för resurskonsekvens
-                          href: govern/resource-consistency/toolchain.md
-                        - name: Åtkomsthantering av resurser
-                          href: govern/resource-consistency/resource-access-management.md
-                        - name: Styrningsdesign för en enkel arbetsbelastning
-                          href: govern/resource-consistency/governance-simple-workload.md
-                        - name: Styrningsdesign för flera team
-                          href: govern/resource-consistency/governance-multiple-teams.md
-                    - name: Distributionsacceleration
-                      items:
-                        - name: Översikt över distributionsacceleration
-                          href: govern/deployment-acceleration/index.md
-                        - name: Ladda ned mallen
-                          href: govern/deployment-acceleration/template.md
-                        - name: Förstå affärsrisker
-                          href: govern/deployment-acceleration/business-risks.md
-                        - name: Mått och indikatorer för risktolerans
-                          href: govern/deployment-acceleration/metrics-tolerance.md
-                        - name: Exempel på principer för distributionsacceleration
-                          href: govern/deployment-acceleration/policy-statements.md
-                        - name: Processer för policyefterlevnad
-                          href: govern/deployment-acceleration/compliance-processes.md
-                        - name: Förbättra distributionsacceleration
-                          href: govern/deployment-acceleration/discipline-improvement.md
-                        - name: Azure-verktyg för distributionsacceleration
-                          href: govern/deployment-acceleration/toolchain.md
         - name: Organisera
           items:
             - name: Hantera organisatorisk anpassning
@@ -681,7 +681,7 @@
     - name: Referens
       items:
         - name: Översikt över Cloud Adoption Framework
-          href: reference/roadmap.md
+          href: reference/index.md
         - name: Beslutsguider
           items:
             - name: Översikt

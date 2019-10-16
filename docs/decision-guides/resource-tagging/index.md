@@ -2,19 +2,19 @@
 title: Beslutsguide för namngivning och taggning av resurser
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Läs mer om resursorganisering och taggning som en central tjänst i Azure-migreringar.
-author: rotycenh
-ms.author: v-tyhopk
+author: alexbuckgit
+ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4d28e0ec6dea61a96e463df8fd2717ed0a8c8f02
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ef226d55d6b16c69b35c57734de25efec6abaa00
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023655"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378019"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>Beslutsguide för namngivning och taggning av resurser
 
@@ -40,7 +40,7 @@ Taggningsscheman som omfattar ett affärsinriktat fokus, till exempel redovisnin
 
 En standardiserad namngivningskonvention är startpunkten för att organisera dina molnhanterade resurser. Med ett korrekt strukturerat namngivningssystem kan du snabbt identifiera resurser för både hanterings- och redovisningsändamål. Om du har befintliga IT-namngivningskonventioner i andra delar av organisationen bör du överväga huruvida dina namngivningskonventioner för moln ska riktas in med dem eller om du bör upprätta separata molnbaserade standarder.
 
-Observera även att olika Azure-resurstyper har olika [namngivningskrav](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions#naming-rules-and-restrictions). Dina namngivningskonventioner måste vara kompatibla med dessa namngivningskrav.
+Observera även att olika Azure-resurstyper har olika [namngivningskrav](../../ready/considerations/naming-and-tagging.md). Dina namngivningskonventioner måste vara kompatibla med dessa namngivningskrav.
 
 ## <a name="resource-tagging-patterns"></a>Mönster för resurstaggning
 
