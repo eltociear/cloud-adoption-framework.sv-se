@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 layout: LandingPage
-ms.openlocfilehash: fa7777f0c6be9c3cd93cfb24cac4ee8e87bee553
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d5fada848418093b4d1ac7ae3ccc08b492544567
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816167"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378326"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -30,7 +30,7 @@ Följande övningar guidar dig genom processen att skapa en landningszon som beh
 
 <ul class="panelContent cardsF">
     <li style="display: flex; flex-direction: column;">
-        <a href="./azure-readiness-guide/index.md">
+        <a href="./azure-setup-guide/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -40,8 +40,8 @@ Följande övningar guidar dig genom processen att skapa en landningszon som beh
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Guide för Azure-beredskap</h3>
-Studera guiden för Azure-beredskap och bekanta dig med de verktyg och metoder du behöver när du skapar landningszonen.
+                            <h3>Konfigurationsguide för Azure</h3>
+Studera konfigurationsguiden för Azure och bekanta dig med de verktyg och metoder du behöver när du skapar landningszonen.
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ Studera guiden för Azure-beredskap och bekanta dig med de verktyg och metoder d
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./azure-readiness-guide/migration-landing-zone.md">
+        <a href="./azure-setup-guide/migration-landing-zone.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -111,7 +111,7 @@ Kontrollera ändringarna av landningszonen mot avsnitten med metodtips så att d
 
 ## <a name="next-steps"></a>Nästa steg
 
-Gör dig redo för molnimplementeringen genom att läsa [guiden för Azure-beredskap](./azure-readiness-guide/index.md).
+Gör dig redo för molnimplementeringen genom att läsa [konfigurationsguiden för Azure](./azure-setup-guide/index.md).
 
 > [!div class="nextstepaction"]
-> [Guide för Azure-beredskap](./azure-readiness-guide/index.md)
+> [Konfigurationsguide för Azure](./azure-setup-guide/index.md)
