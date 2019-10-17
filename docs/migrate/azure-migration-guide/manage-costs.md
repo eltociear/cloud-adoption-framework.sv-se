@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7a5f3b3f9a50cf4a989d268788279f132a42efb7
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 38e412bda80e68b0c5cb7e53ad52c078fa39f8fb
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967217"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378417"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mekanismer för migreringsfokuserad kostnadskontroll
 
@@ -91,7 +91,7 @@ Följande steg innehåller kostnadsrekommendationer för tillgångar (infrastruk
 
 Azure Cost Management kan ge en mer omfattande vy över utgiftsvanor, inklusive en detaljerad överblick över kostnader och utgiftstrender över tid. För stora eller komplexa migreringar kan den här vyn ge de insikter som krävs för att fatta generella beslut om kostnadshantering.
 
-Krav: Resten av den här fliken förutsätter att läsaren har slutfört installationen av Azure Cost Management i samband med genomförandet av guiden för Azure-beredskap. Mer information om hur du konfigurerar Azure Cost Management finns den här [artikeln i guiden för Azure-beredskap](../../ready/azure-readiness-guide/manage-costs.md). När data har fyllts följer du nästa steg för att uppskatta månadskostnaden baserat på de data som samlas in.
+Krav: Resten av den här fliken förutsätter att läsaren har slutfört installationen av Azure Cost Management i samband med genomförandet av guiden för Azure-installation. Mer information om hur du konfigurerar Azure Cost Management finns i den här [artikeln i guiden för Azure-installation](../../ready/azure-setup-guide/manage-costs.md). När data har fyllts följer du nästa steg för att uppskatta månadskostnaden baserat på de data som samlas in.
 
 Följande steg läser in kostnadsanalysdata för Azure Cost Management för dina prenumerationer:
 
