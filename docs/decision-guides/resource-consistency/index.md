@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 58fc2c1f3ac08fb38fcbd71e6dc1d91db768284e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c32bbb180bc7b78a74681dc4a2554fd449bb21dc
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221106"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547879"
 ---
 # <a name="resource-consistency-decision-guide"></a>Beslutsguide för resurskonsekvens
 
@@ -47,7 +47,7 @@ Om du svarar _nej_ på någon av ovanstående frågor bör resursen i fråga pla
 
 Azure-plattformen bygger ovanpå den grundläggande grupperingsmekanismen för att ge ett system för användning av mallar vid distribution av resurser till molnmiljön. Du kan använda mallar för att skapa konsekvent organisering och namngivningskonventioner när du distribuerar arbetsbelastningar, så att du framtvingar de aspekterna av din resursdistribution och hanteringsdesign.
 
-[Azure Resource Manager-mallar](/azure/azure-resource-manager/template-deployment-overview) gör att du upprepade gånger kan distribuera resurser i ett konsekvent tillstånd med hjälp av en förutbestämd struktur för konfiguration och resursgruppering. Resource Manager-mallar hjälper dig att definiera en uppsättning standarder som utgångspunkt för dina distributioner.
+[Azure Resource Manager-mallar](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) gör att du upprepade gånger kan distribuera resurser i ett konsekvent tillstånd med hjälp av en förutbestämd struktur för konfiguration och resursgruppering. Resource Manager-mallar hjälper dig att definiera en uppsättning standarder som utgångspunkt för dina distributioner.
 
 Du kan till exempel ha en standardmall för distribution av en webbserverarbetsbelastning som innehåller två virtuella datorer som webbservrar kombinerat med en lastbalanserare för att distribuera trafik mellan servrarna. Du kan sedan återanvända den här mallen för att skapa en strukturellt identisk uppsättning virtuella datorer och en lastbalanserare när den här typen av arbetsbelastning behövs. I det fallet ändrar du bara det distributionsnamn och de IP-adresser som är aktuella.
 
