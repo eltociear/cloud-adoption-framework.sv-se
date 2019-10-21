@@ -8,17 +8,17 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 6e5a9b00ff7cb6a2f8b16ee62f9e61f4ecae3906
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 2e605766e06b106fab61576e64bd5059569c8b38
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223982"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548779"
 ---
-# <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure Enterprise-Autogenerera: Förebyggande prenumerationsåtgärder
+# <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure Enterprise-Autogenerera: handskriven prenumerations styrning
 
 > [!NOTE]
-> Azure Enterprise-ramverk har integrerats i Microsoft Cloud adoptions ramverket. Innehållet i den här artikeln visas nu i avsnittet [klart](../ready/index.md) i det nya ramverket. Den här artikeln är inaktuell i början av 2020. Om du vill börja använda den nya processen går du till [klar översikt](../ready/index.md), [skapar din första landnings zon](../ready/azure-readiness-guide/migration-landing-zone.md)och/eller de överväganden som finns i [landnings zonen](../ready/considerations/index.md).
+> Azure Enterprise-ramverk har integrerats i Microsoft Cloud adoptions ramverket. Innehållet i den här artikeln visas nu i avsnittet [klart](../ready/index.md) i det nya ramverket. Den här artikeln är inaktuell i början av 2020. Om du vill börja använda den nya processen går du till [klar översikt](../ready/index.md), [skapar din första landnings zon](../ready/azure-setup-guide/migration-landing-zone.md)och/eller de överväganden som finns i [landnings zonen](../ready/considerations/index.md).
 
 Företag kan i allt större utsträckning använda det offentliga molnet för att bli flexibelt och flexibelt. De förlitar sig på molnets hållfasthet för att skapa intäkter och optimera resursanvändningen för verksamheten. Microsoft Azure tillhandahåller en mängd tjänster och funktioner som företag sätter samman som bygg stenar för att hantera en mängd olika arbets belastningar och program.
 
@@ -34,7 +34,7 @@ Den här artikeln ger en utgångs punkt för tekniska experter som kan hantera b
 
 ## <a name="need-for-governance"></a>Behov av styrning
 
-När du flyttar till Azure måste du hantera avsnittet av styrningen tidigt för att säkerställa att molnet används i företaget. Tids-och bureaucracy för att skapa ett omfattande styrnings system innebär tyvärr att vissa affärs grupper går direkt till leverantörer utan att det ingår i företaget. Den här metoden kan lämna företaget öppet för att kompromettera om resurserna inte hanteras korrekt. Egenskaperna hos det offentliga molnets&mdash;flexibilitet, flexibilitet och förbruknings priser&mdash;är viktiga för affärs grupper som snabbt behöver uppfylla kundernas behov (både interna och externa). Men företags IT måste se till att data och system är effektivt skyddade.
+När du flyttar till Azure måste du hantera avsnittet av styrningen tidigt för att säkerställa att molnet används i företaget. Tids-och bureaucracy för att skapa ett omfattande styrnings system innebär tyvärr att vissa affärs grupper går direkt till leverantörer utan att det ingår i företaget. Den här metoden kan lämna företaget öppet för att kompromettera om resurserna inte hanteras korrekt. Egenskaperna hos det offentliga molnet &mdash;agility, flexibilitet och konsumtions-baserade priser &mdash;are viktiga för affärs grupper som snabbt behöver uppfylla kundernas behov (både interna och externa). Men företags IT måste se till att data och system är effektivt skyddade.
 
 När du skapar en byggnad används ramverk för att skapa en grund för en struktur. Autogenerera vägleder den allmänna dispositionen och tillhandahåller fäst punkter för att frigöra permanenta system som ska monteras. En Enterprise-Autogenerera är detsamma: en uppsättning flexibla kontroller och Azure-funktioner som ger en struktur till miljön och ankare för tjänster som bygger på det offentliga molnet. Det ger byggare (IT-och affärs grupper) en grund för att skapa och ansluta nya tjänster som håller leverans hastigheten i åtanke.
 
@@ -75,11 +75,11 @@ De tre vanligaste mönstren för Azure-registreringar är:
 
   ![Det geografiska mönstret](../_images/reference/geographic.png)
 
-Även om var och en av dessa mönster har sitt ställe, är **affär senhets** mönstret allt vanligare för att utforma en organisations kostnads modell och återspegla kontroll. Microsoft Core Engineering och Operations Group har skapat en effektiv delmängd av **affär senhets** mönstret som modelleras på **federala**, delstatliga och **lokalt**. Mer information finns i [ordna prenumerationer och resurs grupper i företaget](https://azure.microsoft.com/blog/organizing-subscriptions-and-resource-groups-within-the-enterprise).
+Även om var och en av dessa mönster har sitt ställe, är **affär senhets** mönstret allt vanligare för att utforma en organisations kostnads modell och återspegla kontroll. Microsoft Core Engineering och Operations Group har skapat en effektiv delmängd av **affär senhets** mönstret som modelleras på **federala**, **delstatliga**och **lokalt**. Mer information finns i [ordna prenumerationer och resurs grupper i företaget](https://azure.microsoft.com/blog/organizing-subscriptions-and-resource-groups-within-the-enterprise).
 
 ### <a name="azure-management-groups"></a>Hanteringsgrupper i Azure
 
-Microsoft erbjuder nu ett annat sätt att modellera din hierarki: [Hanterings grupper för Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview). Hanterings grupper är mycket mer flexibla än avdelningar och konton, och de kan kapslas upp till sex nivåer. Med hanterings grupper kan du skapa en hierarki som är separat från din fakturerings-hierarki, endast för effektiv hantering av resurser. Hanterings grupper kan spegla din fakturerings-hierarki och ofta företag startar på det sättet. Kraften i hanterings grupper är dock när du använder dem för att modellera din organisation, gruppera relaterade prenumerationer (oavsett var de befinner sig i hierarkin) och tilldela gemensamma roller, principer och initiativ. Några exempel är:
+Microsoft erbjuder nu ett annat sätt att modellera din hierarki: [Azure-hanterings grupper](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview). Hanterings grupper är mycket mer flexibla än avdelningar och konton, och de kan kapslas upp till sex nivåer. Med hanterings grupper kan du skapa en hierarki som är separat från din fakturerings-hierarki, endast för effektiv hantering av resurser. Hanterings grupper kan spegla din fakturerings-hierarki och ofta företag startar på det sättet. Kraften i hanterings grupper är dock när du använder dem för att modellera din organisation, gruppera relaterade prenumerationer (oavsett var de befinner sig i hierarkin) och tilldela gemensamma roller, principer och initiativ. Några exempel är:
 
 - **Produktion jämfört med ingen produktion.** Vissa företag skapar hanterings grupper för att identifiera sina produktions-och inproduction-prenumerationer. Med hanteringsgrupper blir det enklare för dessa kunder att hantera roller och principer. Till exempel kan en prenumeration som inte är en "deltagare"-åtkomst, men i produktion har endast "läsare"-åtkomst.
 - **Interna tjänster jämfört med externa tjänster.** Företag har ofta olika krav, principer och roller för interna tjänster jämfört med kund tjänster.
@@ -91,10 +91,10 @@ Väl utformade hanterings grupper är, tillsammans med Azure Policy och initiati
 När du bestämmer dig för dina avdelningar och konton (eller hanterings grupper) tittar du främst på hur du delar upp Azure-miljön för att matcha din organisation. Men prenumerationer är den plats där det verkliga arbetet sker och dina beslut kan påverka säkerhet, skalbarhet och fakturering. Många organisationer tittar på följande mönster som stöd linjer:
 
 - **Program/tjänst:** Prenumerationer representerar ett program eller en tjänst (portfölj av program)
-- **–** Prenumerationer representerar en livs cykel för en tjänst, till exempel produktion eller utveckling.
+- **Livs cykel:** Prenumerationer representerar en livs cykel för en tjänst, till exempel produktion eller utveckling.
 - **Avdelning:** Prenumerationer representerar avdelningar i organisationen.
 
-De två första mönstren är de som används oftast och båda rekommenderas. Livs cykel metoden är lämplig för de flesta organisationer. I det här fallet är den allmänna rekommendationen att använda två bas `Production` prenumerationer `Nonproduction`och och sedan använda resurs grupper för att separera miljöerna ytterligare.
+De två första mönstren är de som används oftast och båda rekommenderas. Livs cykel metoden är lämplig för de flesta organisationer. I det här fallet är den allmänna rekommendationen att använda två bas prenumerationer, `Production` och `Nonproduction`, och Använd sedan resurs grupper för att separera miljöerna ytterligare.
 
 ### <a name="resource-groups"></a>Resursgrupper
 
@@ -129,7 +129,7 @@ Resurs taggar är tätt justerade med namngivnings standarder. När resurser lä
 > [!IMPORTANT]
 > Taggar kan innehålla personlig information och kan omfattas av reglerna i GDPR. Planera för hantering av Taggar noggrant. Om du vill ha allmän information om GDPR kan du läsa avsnittet GDPR på [service Trust-portalen](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
-Taggar används på många sätt utöver fakturering och hantering. De används ofta som en del av Automation (se senare avsnitt). Detta kan orsaka konflikter om de inte anses vara överst. Den rekommenderade metoden är att identifiera alla vanliga taggar på företags nivå (till exempel ApplicationOwner och CostCenter) och tillämpa dem konsekvent när du distribuerar resurser med Automation.
+Taggar används på många sätt utöver fakturering och hantering. De används ofta som en del av Automation (se senare avsnitt). Detta kan orsaka konflikter om de inte anses vara överst. Det bästa sättet är att identifiera alla vanliga taggar på företags nivå (till exempel ApplicationOwner och CostCenter) och tillämpa dem konsekvent när du distribuerar resurser med Automation.
 
 ## <a name="azure-policy-and-initiatives"></a>Azure Policy och initiativ
 
@@ -139,7 +139,7 @@ Principer och initiativ är ännu mer kraftfulla när de används med de hanteri
 
 ### <a name="common-uses-of-resource-manager-policies"></a>Vanliga användnings områden för Resource Manager-principer
 
-Principer och initiativ är ett kraftfullt verktyg i Azure Toolkit. Policys gör det möjligt för företag att tillhandahålla kontroller för "traditionella IT"-arbets belastningar som möjliggör den stabilitet som behövs för branschspecifika program samtidigt som de också tillåter "Agile&mdash;" arbets belastningar, till exempel utveckling av kund program utan att exponera företaget för ytterligare risk. De vanligaste mönstren för principer är:
+Principer och initiativ är ett kraftfullt verktyg i Azure Toolkit. Policys gör det möjligt för företag att tillhandahålla kontroller för "traditionella IT"-arbets belastningar som möjliggör den stabilitet som behövs för branschspecifika program samtidigt som du kan även tillåta "Agile-arbetsbelastningar &mdash;for exempel, utveckla kund program utan exponera företaget för ytterligare risk. De vanligaste mönstren för principer är:
 
 - **Geo-efterlevnad och data suveränitet.** Azure har en ständigt växande lista över regioner över hela världen. Företag behöver ofta se till att resurser i ett särskilt område finns kvar i en geografisk region för att uppfylla myndighets krav.
 - **Undvik att exponera servrar offentligt.** Azure Policy kan förhindra distribution av vissa resurs typer. Det är vanligt att skapa en princip för att neka skapandet av en offentlig IP-adress inom en bestämd omfattning, vilket förhindrar oavsiktlig exponering av en server till Internet.
@@ -170,7 +170,7 @@ För att skydda åtkomsten till dina resurser ska du först konfigurera din iden
 
 ![Diagram över AD-arkitektur](../_images/reference/ad-architecture.png)
 
-När Azure ursprungligen släpptes var åtkomst kontroller till en prenumeration grundläggande: Administratör eller medadministratör. Åtkomst till en prenumeration i den klassiska modellen underförstådd åtkomst till alla resurser i portalen. Detta brist på detaljerad kontroll ledde till spridningen av prenumerationer för att ge en nivå av rimlig åtkomst kontroll för en Azure-registrering. Den här spridningen av prenumerationer behövs inte längre. Med rollbaserad åtkomst kontroll (RBAC) kan du tilldela användare till standard roller som ger gemensam åtkomst, till exempel "ägare", "deltagare" eller "läsare" eller till och med skapa egna roller.
+När Azure ursprungligen släpptes var åtkomst kontroller till en prenumeration grundläggande: administratör eller medadministratör. Åtkomst till en prenumeration i den klassiska modellen underförstådd åtkomst till alla resurser i portalen. Detta brist på detaljerad kontroll ledde till spridningen av prenumerationer för att ge en nivå av rimlig åtkomst kontroll för en Azure-registrering. Den här spridningen av prenumerationer behövs inte längre. Med rollbaserad åtkomst kontroll (RBAC) kan du tilldela användare till standard roller som ger gemensam åtkomst, till exempel "ägare", "deltagare" eller "läsare" eller till och med skapa egna roller.
 
 När du implementerar rollbaserad åtkomst rekommenderas följande:
 
@@ -180,7 +180,7 @@ När du implementerar rollbaserad åtkomst rekommenderas följande:
 - Följ principen för att bevilja den **minsta behörighet** som krävs för att utföra det förväntade arbetet.
 
 > [!IMPORTANT]
->Överväg att använda [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure), Azure [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) och villkorliga [åtkomst](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) funktioner för att ge bättre säkerhet och bättre insyn i administrativa åtgärder i Azure prenumerationer. Dessa funktioner kommer från en giltig Azure AD Premium-licens (beroende på funktion) för att ytterligare skydda och hantera din identitet. Azure AD PIM aktiverar "just-in-Time" administrativ åtkomst med arbets flödet för godkännande, samt en fullständig granskning av administratörs aktiveringar och aktiviteter. Azure Multi-Factor Authentication är en viktig funktion och möjliggör tvåstegsverifiering för inloggning till Azure Portal. I kombination med villkorliga åtkomst kontroller kan du effektivt hantera risken för angrepp.
+>Överväg att använda [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure), Azure [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) och funktioner för [villkorlig åtkomst](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) för att ge bättre säkerhet och bättre insyn i administrativa åtgärder i Azure prenumerationer. Dessa funktioner kommer från en giltig Azure AD Premium-licens (beroende på funktion) för att ytterligare skydda och hantera din identitet. Azure AD PIM aktiverar "just-in-Time" administrativ åtkomst med arbets flödet för godkännande, samt en fullständig granskning av administratörs aktiveringar och aktiviteter. Azure Multi-Factor Authentication är en viktig funktion och möjliggör tvåstegsverifiering för inloggning till Azure Portal. I kombination med villkorliga åtkomst kontroller kan du effektivt hantera risken för angrepp.
 
 Planera och förbereda för dina identitets-och åtkomst kontroller och följande metod tips för Azure Identity Management ([länk](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices)) är en av de bästa strategierna för risk minskning som du kan använda och bör betraktas som obligatoriska för varje distribution.
 
@@ -228,15 +228,15 @@ Att samla in och analysera telemetri som ger detaljerad information om aktivitet
 
 Den här informationen kan visas och åtgärdas på flera nivåer och förbättras kontinuerligt. Azure tillhandahåller **delade**, **grundläggande**och **djup** övervaknings funktioner i Azure-resurser genom de tjänster som beskrivs i diagrammet nedan.
 
-![övervakning](../_images/reference/monitoring.png)
+![Granska](../_images/reference/monitoring.png)
 
 ### <a name="shared-capabilities"></a>Delade funktioner
 
-- **Aviseringar** Du kan samla in alla logg-, händelse-och mått från Azure-resurser, men utan möjlighet att bli informerad om kritiska villkor och agera, så är dessa data bara användbara för historiska syfte och data utredning. Azure-aviseringar proaktivt meddelar dig om villkor som du definierar i alla dina program och din infrastruktur. Du skapar aviserings regler för loggar, händelser och mått som använder åtgärds grupper för att meddela mottagares uppsättningar. Åtgärds grupper ger också möjlighet att automatisera reparationen med hjälp av externa åtgärder som Webhooks för att köra Azure Automation runbooks och Azure Functions.
+- **Aviseringar:** Du kan samla in alla logg-, händelse-och mått från Azure-resurser, men utan möjlighet att bli informerad om kritiska villkor och agera, så är dessa data bara användbara för historiska syfte och data utredning. Azure-aviseringar proaktivt meddelar dig om villkor som du definierar i alla dina program och din infrastruktur. Du skapar aviserings regler för loggar, händelser och mått som använder åtgärds grupper för att meddela mottagares uppsättningar. Åtgärds grupper ger också möjlighet att automatisera reparationen med hjälp av externa åtgärder som Webhooks för att köra Azure Automation runbooks och Azure Functions.
 
-- **Instrument paneler** Med instrument paneler kan du sammanställa övervaknings Visa vyer och kombinera data över resurser och prenumerationer för att ge dig en företagsomfattande vy över telemetri för Azure-resurser. Du kan skapa och konfigurera dina egna vyer och dela dem med andra. Du kan till exempel skapa en instrument panel som består av olika paneler för databas administratörer för att tillhandahålla information över alla Azure Database-tjänster, inklusive Azure SQL DB, Azure DB för PostgreSQL och Azure DB för MySQL.
+- **Instrument paneler:** Med instrument paneler kan du sammanställa övervaknings Visa vyer och kombinera data över resurser och prenumerationer för att ge dig en företagsomfattande vy över telemetri för Azure-resurser. Du kan skapa och konfigurera dina egna vyer och dela dem med andra. Du kan till exempel skapa en instrument panel som består av olika paneler för databas administratörer för att tillhandahålla information över alla Azure Database-tjänster, inklusive Azure SQL DB, Azure DB för PostgreSQL och Azure DB för MySQL.
 
-- **Metrics Explorer:** Mått är numeriska värden som genereras av Azure-resurser (t. ex.% processor-eller disk-I/O) som ger inblick i dina resursers drift och prestanda. Med hjälp av Metrics Explorer kan du definiera och skicka de mått som intresserar dig för att Log Analytics för agg regering och analys.
+- **Metrics Explorer:** Mått är numeriska värden som genereras av Azure-resurser (t. ex .% processor-eller disk-I/O) som ger inblick i dina resursers drift och prestanda. Med hjälp av Metrics Explorer kan du definiera och skicka de mått som intresserar dig för att Log Analytics för agg regering och analys.
 
 ### <a name="core-monitoring"></a>Kärnövervakning
 
@@ -267,7 +267,7 @@ Den här informationen kan visas och åtgärdas på flera nivåer och förbättr
 
 ## <a name="cost-management"></a>Kostnadshantering
 
-En av de större ändringarna som du kommer att stöta på när du flyttar från ett lokalt moln till det offentliga molnet är att byta från kapital utgifter (köpa maskin vara) till drifts utgifter (som du betalar för tjänsten när du använder den). Den här växeln kräver också mer noggrann hantering av dina kostnader. Fördelen med molnet är att du kan grundläggande och positivt påverka kostnaden för en tjänst som du använder genom att stänga av eller ändra storlek på den när den inte behövs. Att avsiktligt hantera dina kostnader i molnet är en rekommenderad metod och en som mogna kunder gör dagligen.
+En av de större ändringarna som du kommer att stöta på när du flyttar från ett lokalt moln till det offentliga molnet är att byta från kapital utgifter (köpa maskin vara) till drifts utgifter (som du betalar för tjänsten när du använder den). Den här växeln kräver också mer noggrann hantering av dina kostnader. Fördelen med molnet är att du kan grundläggande och positivt påverka kostnaden för en tjänst som du använder genom att stänga av eller ändra storlek på den när den inte behövs. Att medvetet hantera dina kostnader i molnet är bästa praxis och en som mogna kunder gör dagligen.
 
 Microsoft tillhandahåller flera verktyg som du kan använda för att visualisera, spåra och hantera dina kostnader. Vi tillhandahåller också en fullständig uppsättning API: er så att du kan anpassa och integrera kostnads hanteringen i dina egna verktyg och instrument paneler. Dessa verktyg är lösta grupperade i Azure Portal funktioner och externa funktioner.
 
@@ -276,7 +276,7 @@ Microsoft tillhandahåller flera verktyg som du kan använda för att visualiser
 Dessa är verktyg för att ge dig omedelbar information om kostnad samt möjligheten att vidta åtgärder.
 
 - **Prenumerations resurs kostnad:** I portalen för [Azure Cost-analys](https://docs.microsoft.com/azure/cost-management/overview) finns en snabb titt på dina kostnader och information om dagliga utgifter per resurs eller resurs grupp.
-- **Azure Cost Management:** Den här produkten är resultatet av köpet av Cloudyn av Microsoft och gör att du kan hantera och analysera dina Azure-utgifter samt vad du lägger på andra offentliga moln leverantörer. Det finns både kostnads fria och betalda nivåer, med en stor mängd funktioner som visas i översikten [](https://docs.microsoft.com/azure/cost-management/overview).
+- **Azure Cost Management:** Den här produkten är resultatet av köpet av Cloudyn av Microsoft och gör att du kan hantera och analysera dina Azure-utgifter samt vad du lägger på andra offentliga moln leverantörer. Det finns både kostnads fria och betalda nivåer, med en stor mängd funktioner som visas i [översikten](https://docs.microsoft.com/azure/cost-management/overview).
 - **Azure-budgetar och åtgärds grupper:** Du vet vad något kostar och gör något om det tills det nyligen har varit en manuell övning. Med introduktionen av Azure-budgetar och dess API: er är det nu möjligt att skapa åtgärder (som visas i [det här exemplet](https://channel9.msdn.com/Shows/Azure-Friday/Managing-costs-with-the-Azure-Budgets-API-and-Action-Groups)) när kostnaderna träffar ett tröskelvärde. Du kan till exempel stänga av resurs gruppen "test" när den når 100% av budgeten eller [ett annat exempel].
 - **Azure Advisor** Att veta vad något kostar är bara hälften av slaget. den andra halvan vet vad du ska göra med den informationen. [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) ger dig rekommendationer om åtgärder som ska vidtas för att spara pengar, öka tillförlitligheten eller till och med öka säkerheten.
 
@@ -284,9 +284,9 @@ Dessa är verktyg för att ge dig omedelbar information om kostnad samt möjligh
 
 - **Power BI Azure Consumption Insights:** Vill du skapa dina egna visualiseringar för din organisation? I så fall är Azure Consumption Insights innehålls paketet för Power BI det verktyg som du väljer. Med hjälp av det här innehålls paketet och Power BI kan du skapa anpassade visualiseringar som representerar din organisation, göra djupare analyser av kostnader och lägga till i andra data källor för ytterligare berikning.
 
-- **Förbruknings-API:** Förbruknings- [API: er](/rest/api/consumption) ger dig program mässig åtkomst till kostnader och användnings data utöver information om budgetar, reserverade instanser och Marketplace-avgifter. Dessa API: er är bara tillgängliga för företags registreringar och vissa WebDirect-prenumerationer men de ger dig möjlighet att integrera dina kostnads data i dina egna verktyg och informations lager. Du kan också [komma åt dessa API: er via Azure CLI](/cli/azure/consumption?view=azure-cli-latest).
+- **Förbruknings-API:** [Förbruknings-API: er](/rest/api/consumption) ger dig program mässig åtkomst till kostnader och användnings data utöver information om budgetar, reserverade instanser och Marketplace-avgifter. Dessa API: er är bara tillgängliga för företags registreringar och vissa WebDirect-prenumerationer men de ger dig möjlighet att integrera dina kostnads data i dina egna verktyg och informations lager. Du kan också [komma åt dessa API: er via Azure CLI](/cli/azure/consumption?view=azure-cli-latest).
 
-Kunder som är långsiktiga och mogna moln användare följer vissa rekommendationer:
+Kunder som är långsiktiga och mogna moln användare följer vissa rekommenderade metoder:
 
 - **Övervaka kostnader aktivt.** Organisationer som är mogna Azure-användare kan ständigt övervaka kostnader och vidta åtgärder när det behövs. Vissa organisationer är till och med att göra analyser och föreslå ändringar i användningen, och dessa personer är mer än betala själva första gången de hittar ett oanvänt HDInsight-kluster som körs för månader.
 - **Använd reserverade VM-instanser.** En annan viktig läro sats för att hantera kostnader i molnet är att använda rätt verktyg för jobbet. Om du har en virtuell IaaS-dator som måste ligga dygnet runt, sparar med en reserverad VM-instans dig betydande pengar. Att hitta rätt balans mellan att automatisera avstängningen av virtuella datorer och använda reserverade VM-instanser har erfarenhet och analys.
@@ -329,12 +329,12 @@ Den sista delen av referens modellen för Azure-Autogenerera är kärnan till hu
 
 - **Virtuella nätverk** är behållar objekt för undernät. Även om det inte är absolut nödvändigt används det ofta när du ansluter program till interna företags resurser.
 - Med **användardefinierade vägar** kan du manipulera routningstabellen i ett undernät så att du kan skicka trafik via en virtuell nätverks installation eller till en fjärran sluten gateway i ett peer-kopplat virtuellt nätverk.
-- Med peering för **virtuella nätverk** kan du sömlöst ansluta två eller flera virtuella Azure-nätverk, vilket skapar mer komplexa nav-och eker-designer eller delade tjänst nätverk.
+- Med **peering för virtuella nätverk** kan du sömlöst ansluta två eller flera virtuella Azure-nätverk, vilket skapar mer komplexa nav-och eker-designer eller delade tjänst nätverk.
 - **Tjänst slut punkter.** Tidigare PaaS tjänster förlitade sig på olika metoder för att skydda åtkomsten till dessa resurser från dina virtuella nätverk. Med tjänst slut punkter kan du skydda åtkomsten till aktiverade PaaS-tjänster från **enbart** anslutna slut punkter, vilket ökar den övergripande säkerheten.
 - **Säkerhets grupper** är en omfattande uppsättning regler som ger möjlighet att tillåta eller neka inkommande och utgående trafik till och från Azure-resurser. [Säkerhets grupper](https://docs.microsoft.com/azure/virtual-network/security-overview) består av säkerhets regler som kan utökas med **service märken** (som definierar vanliga Azure-tjänster som Azure Key Vault eller Azure SQL Database) och **program säkerhets grupper** (som definierar och program struktur, till exempel webb servrar eller App-servrar).
 
 > [!TIP]
-> Använd tjänst Taggar och program säkerhets grupper i dina nätverks säkerhets grupper för att inte bara förbättra läsbarheten för dina regler&mdash;, vilket är avgörande för att&mdash;förstå påverkan, men också för att möjliggöra effektiv mikrosegmentering inom en större undernät, vilket minskar tillväxten och ökar flexibiliteten.
+> Använd tjänst Taggar och program säkerhets grupper i dina nätverks säkerhets grupper för att inte bara förbättra läsbarheten för dina regler &mdash;which är avgörande för att förstå påverkan &mdash;but även möjliggöra effektiv mikrosegmentering i ett större undernät, minska tillväxten och ökad flexibilitet.
 
 ### <a name="azure-virtual-datacenter"></a>Azure Virtual Datacenter
 

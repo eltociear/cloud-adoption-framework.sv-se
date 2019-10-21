@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8768f1f9c1496fa53bec7e10432854d5ad16b747
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 037cfa2a10ecce9bc56d747eb658824014758827
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222898"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548031"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Cloud – ursprunglig säkerhets bas linje princip
 
-[Säkerhets bas linjen](./index.md) är en av de [fem disciplinerna i moln styrning](../governance-disciplines.md). Den här disciplinen fokuserar på allmänna säkerhets ämnen, inklusive skydd av nätverk, digitala till gångar, data osv. Som beskrivs i [princip gransknings hand boken](../policy-compliance/cloud-policy-review.md)innehåller moln implementerings ramverket tre nivåer av **exempel princip**: Moln-och företags design principen är kompatibel för var och en av de olika ämnes områden. Den här artikeln beskriver den molnbaserade exempel principen för säkerhets bas linje disciplin.
+[Säkerhets bas linjen](./index.md) är en av de [fem disciplinerna i moln styrning](../governance-disciplines.md). Den här disciplinen fokuserar på allmänna säkerhets ämnen, inklusive skydd av nätverk, digitala till gångar, data osv. Som beskrivs i [princip gransknings guiden](../policy-compliance/cloud-policy-review.md)innehåller moln implementerings ramverket tre nivåer av **exempel princip**: Cloud-Native, Enterprise och Cloud design policy som är kompatibel för var och en av de olika ämnes nivåerna. Den här artikeln beskriver den molnbaserade exempel principen för säkerhets bas linje disciplin.
 
 > [!NOTE]
 > Microsoft har ingen möjlighet att diktera företags-eller IT-policy. Den här artikeln hjälper dig att förbereda för en intern princip granskning. Det förutsätts att den här exempel principen kommer att utökas, val IDE ras och testas mot företagets policy innan du försöker använda den. All användning av den här exempel principen rekommenderas inte.
@@ -78,7 +78,7 @@ Säkerhets övervakning är en proaktiv strategi som granskar dina resurser för
 - Kontinuerlig övervakning och säkerhets utvärdering för att säkerställa efterlevnad och åtgärda eventuella sårbarheter.
 - Interaktiva verktyg och sammanhangsbaserad Hot information för strömlinjeformad undersökning.
 - Omfattande loggning och integrering med befintlig säkerhets information.
-- Minskar behovet av dyra, icke-integrerade, en säkerhets lösning.
+- Minskar behovet av kostsamma, ej integrerade, en säkerhets lösning.
 
 ### <a name="extending-cloud-native-policies"></a>Utöka molnets egna principer
 
@@ -90,7 +90,7 @@ Att använda molnet kan minska en del av säkerhets belastningen. Microsoft till
 - **Skydda innehållet i den virtuella datorn.** Det är viktigt att konfigurera vanliga automatiserade säkerhets kopieringar för att skydda mot användar fel. Detta är inte tillräckligt för, men. Du måste också se till att säkerhets kopiorna är säkra från cyberattacker och är tillgängliga när du behöver dem.
 - **Övervaka program.** Det här mönstret omfattar flera aktiviteter, inklusive inblick i hälso tillståndet för dina virtuella datorer, förståelse för samverkan mellan dem och hur du kan övervaka de program som de virtuella datorerna körs på. Alla dessa aktiviteter är viktiga för att hålla dina program igång dygnet runt.
 - **Skydda och granska data åtkomst.** Organisationer bör granska all data åtkomst och utnyttja avancerade funktioner för maskin inlärning för att anropa avvikelser från vanliga åtkomst mönster.
-- **Praxis för redundans.** Moln åtgärder som har låg tolerans för misslyckande måste kunna redundansväxla och/eller återställa från en cybersäkerhet eller plattforms incident. Dessa procedurer får inte bara dokumenteras, utan bör användas i kvartal.
+- **Praxis för redundans.** Moln åtgärder som har låg tolerans för fel måste kunna redundansväxla eller återställa från en cybersäkerhet eller plattforms incident. Dessa procedurer får inte bara dokumenteras, utan bör användas i kvartal.
 
 ## <a name="next-steps"></a>Nästa steg
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: fbb1e57d1073286d9b92db96dbf923eb28612f49
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 1e8b42170a4db025087acdabba14544cea9c8194
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224093"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548115"
 ---
 # <a name="scale-a-migration-to-azure"></a>Skala en migrering till Azure
 
@@ -58,18 +58,18 @@ När Contoso har planerat och konfigurerat en [Azure-infrastruktur](./contoso-mi
 
 <!--markdownlint-enable MD033 -->
 
-## <a name="migration-process"></a>Migreringsprocess
+## <a name="migration-process"></a>Migreringsprocessen
 
 Nu när Contoso har identifierat sina affärsincitament och migreringsmål bestämmer de sig för en fyrdelad metod för migreringsprocessen:
 
-- **Fas 1: Utvärdera.** Identifiera aktuella tillgångar och ta reda på om de är lämpliga för migrering till Azure.
-- **Fas 2: Migrera.** Flytta tillgångarna till Azure. Hur de flyttar appar och objekt till Azure beror på appen och vad de vill uppnå.
-- **Fas 3: Optimera.** När de har flyttat resurser till Azure måste Contoso förbättra och effektivisera dem för högsta möjliga prestanda och effektivitet.
-- **Fas 4: Skydda och hantera.** Med allt på plats använder Contoso nu Azures säkerhets- och hanteringsresurser och -tjänster för att styra, skydda och övervaka dess molnappar i Azure.
+- **Fas 1: utvärdera.** Identifiera aktuella tillgångar och ta reda på om de är lämpliga för migrering till Azure.
+- **Fas 2: migrera.** Flytta tillgångarna till Azure. Hur de flyttar appar och objekt till Azure beror på appen och vad de vill uppnå.
+- **Fas 3: optimera.** När de har flyttat resurser till Azure måste Contoso förbättra och effektivisera dem för högsta möjliga prestanda och effektivitet.
+- **Fas 4: skydda och hantera.** Med allt på plats använder Contoso nu Azures säkerhets- och hanteringsresurser och -tjänster för att styra, skydda och övervaka dess molnappar i Azure.
 
 Dessa faser är inte seriella i hela organisationen. Varje del av Contosos migreringsprojekt kommer att befinna sig i olika skeden av utvärderings- och migreringsprocessen. Optimering, säkerhet och hantering kommer att pågå under en längre tid.
 
-## <a name="phase-1-assess"></a>Fas 1: Utvärdera
+## <a name="phase-1-assess"></a>Fas 1: utvärdera
 
 Contoso inleder sin Azure-migrering med att identifiera och utvärdera lokala appar, data och infrastruktur. Det här är vad Contoso planerar att göra:
 
@@ -88,7 +88,7 @@ Contoso kör tusentals appar över ett stort antal servrar. Utöver CMDB och ser
 
 ### <a name="identify-classifications"></a>Identifiera klassificeringar
 
-Contoso identifierar några vanliga kategorier för att klassificera tillgångar i förteckningen. De här klassificeringarna är viktiga för Contosos beslutsprocess för migreringen. Klassificeringslistan hjälper till att upprätta prioriteringar för migrering och identifiera komplexa problem.
+Contoso identifierar några vanliga kategorier för att klassificera tillgångar i förteckningen. De här klassificeringarna är viktiga för Contosos beslut att utföra migrering. Klassificeringslistan hjälper till att upprätta prioriteringar för migrering och identifiera komplexa problem.
 
 **Kategori** | **Tilldelat värde** | **Detaljer**
 --- | --- | ---
@@ -141,13 +141,13 @@ Contoso bestämmer vilket verktyg som ska användas för identifiering, utvärde
 
 Azure Migrate beskriver hur du identifierar och utvärderar lokala virtuella VMware-datorer inför migrering till Azure. Så här gör Azure Migrate:
 
-1. Utforska: Utforska lokala virtuella VMware-datorer.
+1. Identifiera: identifiera lokala virtuella VMware-datorer.
     - Azure Migrate stöder identifiering från flera vCenter-servrar (seriellt) och kan köra identifieringar i separata Azure Migrate-projekt.
     - Azure Migrate utför identifieringen med hjälp av en virtuell VMware-dator som kör migreringsinsamlaren. Samma insamlare kan identifiera virtuella datorer på olika vCenter-servrar och skicka data till olika projekt.
-2. Utvärdera beredskap: Utvärdera om dina lokala datorer är lämpliga att köras i Azure. Utvärderingen inkluderar:
-    - Storleksrekommendationer: Få storleksrekommendationer för virtuella Azure-datorer, baserat på lokala virtuella datorers prestandahistorik.
-    - Beräknad kostnad per månad: Få uppskattade kostnader för att köra lokala virtuella datorer i Azure.
-3. Identifiera beroenden: Visualisera beroenden i lokala datorer för att skapa optimala grupper av datorer som utvärderas och migreras tillsammans.
+2. Utvärdera beredskap: Bedöm om lokala datorer är lämpliga för att köra i Azure. Utvärderingen inkluderar:
+    - Storleks rekommendationer: få storleks rekommendationer för virtuella Azure-datorer, baserat på lokala virtuella datorers prestanda historik.
+    - Uppskattade månads kostnader: få beräknade kostnader för att köra lokala datorer i Azure.
+3. Identifiera beroenden: visualisera beroenden för lokala datorer för att skapa optimala dator grupper för utvärdering och migrering.
 
 ![Azure Migrate](./media/contoso-migration-scale/azure-migrate.png)
 
@@ -159,7 +159,7 @@ Contoso måste använda Azure Migrate korrekt med tanke på migreringens skala.
 - Contosos administratörer läser [om att distribuera Azure Migrate i stor skala](https://docs.microsoft.com/azure/migrate/how-to-scale-assessment)
 - Contoso noterar Azure Migrate-gränserna som sammanfattas i följande tabell.
 
-**Åtgärd** | **Gränsen**
+**Åtgärd** | **Gräns**
 --- | ---
 Skapa ett Azure Migrate-projekt | 10 000 virtuella datorer
 Identifiering | 10 000 virtuella datorer
@@ -184,7 +184,7 @@ Förutom DMS har Contoso några andra skript som de använder för att identifie
 
 Det finns flera andra partnerverktyg som kan hjälpa Contoso att utvärdera den lokala migreringsmiljön för Azure. [Lär dig mer](https://azure.microsoft.com/migration/partners) om Azure-migreringspartners.
 
-## <a name="phase-2-migrate"></a>Fas 2: Migrera
+## <a name="phase-2-migrate"></a>Fas 2: migrera
 
 Med deras bedömning måste du identifiera verktyg för att flytta appar, data och infrastruktur till Azure.
 
@@ -197,9 +197,9 @@ Det finns fyra huvudsakliga migreringsstrategier som Contoso kan överväga.
 **Strategi** | **Detaljer** | **Användning**
 --- | --- | ---
 **Värdbyte** | Det här migreringsalternativet kallas ofta ”Lift and Shift” och är ett kodfritt alternativ som låter dig snabbt migrera befintliga appar till Azure.<br/><br/> En app migreras i befintligt skick för att dra nytta av molnets fördelar utan de risker och kostnader som är förknippade med kodändringar. | Contoso kan vara värd för mindre strategiska appar, vilket innebär att inga kodändringar krävs.
-**Omstrukturera** | Den här strategin kallas även "ompaketering" och kräver minimal kod för appar eller konfigurationsändringar som krävs för att ansluta appen till Azure PaaS och för att utnyttja molnfunktionerna bättre. | Contoso kan omstrukturera strategiska appar för att behålla samma grundläggande funktioner men flytta dem till att köras på en Azure-plattform som Azure App Service.<br/><br/> Detta kräver minimala kodändringar.<br/><br/> Å andra sidan måste contoso underhålla en VM-plattform eftersom den inte hanteras av Microsoft.
+**Refaktorisering** | Den här strategin kallas även "ompaketering" och kräver minimal kod för appar eller konfigurationsändringar som krävs för att ansluta appen till Azure PaaS och för att utnyttja molnfunktionerna bättre. | Contoso kan omstrukturera strategiska appar för att behålla samma grundläggande funktioner men flytta dem till att köras på en Azure-plattform som Azure App Service.<br/><br/> Detta kräver minimala kodändringar.<br/><br/> Å andra sidan måste contoso underhålla en VM-plattform eftersom den inte hanteras av Microsoft.
 **Arkitekturomarbetning** | Den här strategin ändrar eller utökar en apps kodbas för att optimera appens arkitektur för molnfunktioner och skalning.<br/><br/> Den moderniserar en app till en elastisk och mycket skalbar arkitektur som kan distribueras självständigt.<br/><br/> Använd Azure-tjänster om du vill accelerera processen, skala ut program säkert och hantera dina appar utan problem.
-**Återskapa** | Den här strategin återskapa en app från grunden med hjälp av inbyggd molnteknik.<br/><br/> Azure PaaS (plattform som tjänst) levererar en fullständig miljö för utveckling och distribution i molnet. Vissa av kostnaderna samt komplexiteten programvarulicenserna minskar och underliggande appinfrastruktur, mellanprogram och andra resurser behövs inte. | Contoso kan skriva om viktiga appar från grunden för att utnyttja molnteknik, till exempel en serverlös dator eller mikrotjänster.<br/><br/> Contoso hanterar sin app och tjänst medan Azure hanterar allt annat.
+**Återskapande** | Den här strategin återskapa en app från grunden med hjälp av inbyggd molnteknik.<br/><br/> Azure PaaS (plattform som tjänst) levererar en fullständig miljö för utveckling och distribution i molnet. Vissa av kostnaderna samt komplexiteten programvarulicenserna minskar och underliggande appinfrastruktur, mellanprogram och andra resurser behövs inte. | Contoso kan skriva om viktiga appar från grunden för att utnyttja molnteknik, till exempel en serverlös dator eller mikrotjänster.<br/><br/> Contoso hanterar sin app och tjänst medan Azure hanterar allt annat.
 
 <!--markdownlint-enable MD033 -->
 
@@ -209,8 +209,8 @@ Data måste övervägas, särskilt med Contosos stora databaser. Contosos standa
 
 Contoso använder i första hand ett par Azure-tjänster och -verktyg för migreringen:
 
-- [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview): Samordnar haveriberedskap och migrerar lokala virtuella datorer till Azure.
-- [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview): Migrerar lokala databaser som SQL Server, MySQL och Oracle till Azure.
+- [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview): dirigerar haveri beredskap och migrerar lokala virtuella datorer till Azure.
+- [Azure Database migration service](https://docs.microsoft.com/azure/dms/dms-overview): migrerar lokala databaser som SQL Server, MySQL och Oracle till Azure.
 
 #### <a name="azure-site-recovery"></a>Azure Site Recovery
 
@@ -260,17 +260,17 @@ Contoso måste räkna ut hur dessa komponenter ska distribueras baserat på kapa
 
 **Komponent** | **Kapacitetskrav**
 --- | ---
-**Maximal daglig ändringshastighet** | En enda processerver kan hantera en daglig ändrings hastighet på upp till 2 TB. Eftersom en virtuell dator endast kan använda en processerver är det högsta antalet dagliga data ändringar som stöds för en replikerad virtuell dator 2 TB.
+**Maximal daglig ändringshastighet** | En enda processerver kan hantera en daglig ändrings hastighet på upp till 2 TB. Eftersom en virtuell dator bara kan använda en processerver är det högsta antalet dagliga data ändringar som stöds för en replikerad virtuell dator 2 TB.
 **Maximalt dataflöde** | Ett Azure Storage-standardkonto kan hantera högst 20 000 förfrågningar per sekund och in-/utdataåtgärder per sekund (IOPS) över en replikerad virtuell dator ska ligga inom den här gränsen. Till exempel, om en virtuell dator har 5 diskar och varje disk genererar 120 IOPS (8K storlek) på den virtuella datorn kommer den att ligga inom Azures IOPS-gräns per disk på 500.<br/><br/> Observera att antalet lagringskonton som behövs motsvarar den totala källdatorns IOPS delat med 20 000. En replikerad dator kan bara tillhöra ett enda lagrings konto i Azure.
-**Konfigurationsserver** | Baserat på Contosos uppskattning av de behöver replikera 100=200 virtuella datorer och [storlekskraven för konfigurationsservern](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server) uppskattar Contoso att de behöver följande konfigurationsserverdator:<br/><br/> CPU: 16 virtuella processorer (2 sockets * 8 kärnor på 2,5 GHz)<br/><br/> Minne: 32 GB<br/><br/> Cache-disk: 1 TB<br/><br/> Dataändringshastighet: 1 TB till 2 TB.<br/><br/> Utöver storlekskraven vill Contoso se till att konfigurationsservern är belägen på en optimal plats, samt på samma nätverk och LAN-segment som den virtuella datorn som ska migreras.
-**Processervern** | Contoso distribuerar en fristående dedikerad processerver med möjlighet att replikera 100-200 virtuella datorer:<br/><br/> CPU: 16 virtuella processorer (2 sockets * 8 kärnor på 2,5 GHz)<br/><br/> Minne: 32 GB<br/><br/> Cache-disk: 1 TB<br/><br/> Dataändringshastighet: 1 TB till 2 TB.<br/><br/> Processervern kommer att arbeta hårt och därför bör den finnas på en ESXi-värd som kan hantera sådana volymer för disk-I/O, nätverk trafik och CPU som krävs för replikeringen. Contoso överväger att använda den dedikerad värd för detta.
+**Konfigurationsserver** | Baserat på Contosos uppskattning av de behöver replikera 100=200 virtuella datorer och [storlekskraven för konfigurationsservern](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server) uppskattar Contoso att de behöver följande konfigurationsserverdator:<br/><br/> CPU: 16 virtuella processorer (2 Sockets * 8 kärnor @ 2,5 GHz)<br/><br/> Minne: 32 GB<br/><br/> Cache-disk: 1 TB<br/><br/> Data ändrings frekvens: 1 TB till 2 TB.<br/><br/> Utöver storlekskraven vill Contoso se till att konfigurationsservern är belägen på en optimal plats, samt på samma nätverk och LAN-segment som den virtuella datorn som ska migreras.
+**Processervern** | Contoso distribuerar en fristående dedikerad processerver med möjlighet att replikera 100-200 virtuella datorer:<br/><br/> CPU: 16 virtuella processorer (2 Sockets * 8 kärnor @ 2,5 GHz)<br/><br/> Minne: 32 GB<br/><br/> Cache-disk: 1 TB<br/><br/> Data ändrings frekvens: 1 TB till 2 TB.<br/><br/> Processervern kommer att arbeta hårt och därför bör den finnas på en ESXi-värd som kan hantera sådana volymer för disk-I/O, nätverk trafik och CPU som krävs för replikeringen. Contoso överväger att använda den dedikerad värd för detta.
 **Nätverk** | Contoso har granskat den aktuella plats-till-plats-VPN-infrastrukturen och beslutat sig för att implementera Azure-ExpressRoute. Implementeringen är kritisk eftersom den kommer att minska svarstiden och förbättra bandbredden till Contosos primära region: USA, östra 2.<br/><br/> **Övervakning:** Contoso måste noggrant övervaka data som flödar från processervern. Om data överbelastar nätverksbandbredden kan Contoso överväga att [begränsa processerverns bandbredd](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#control-network-bandwidth).
 **Azure Storage** | För migreringen måste Contoso identifiera och skapa rätt typ och antal för sina Azure Storage-målkonton. Site Recovery replikerar data från virtuella datorer till Azure Storage.<br/><br/> Site Recovery kan replikeras till standard- eller premiumlagringskonton (SSD).<br/><br/> Contoso måste granska [lagrings gränserna](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) och bedöma den förväntade tillväxten och ökade användning över tid för att fatta ett beslut om lagring. Med tanke på migreringarnas hastighet och prioritet har Contoso valt att använda premium-SSD<br/><br/>
 Contoso har valt att använda hanterade diskar för alla virtuella datorer som distribueras till Azure. IOPS-behovet avgör om diskarna ska vara Standard HDD, Standard SSD eller Premium (SSD).<br/><br/>
 
 <!--markdownlint-enable MD033 -->
 
-#### <a name="azure-database-migration-service"></a>Azure-databasmigreringstjänst
+#### <a name="azure-database-migration-service"></a>Azure Database Migration Service
 
 Azure Database Migration Service är en fullständigt hanterad tjänst som möjliggör sömlösa migreringar från flera databaskällor till Azure-dataplattformar med minimal avbrottstid.
 
@@ -298,7 +298,7 @@ Förutom DMS kan Contoso använda andra verktyg och tjänster för att identifie
 - De har skript som underlättar vid manuella migreringar. Dessa finns i GitHub-lagringsplatsen.
 - Olika [partnerverktyg](https://azure.microsoft.com/migration/partners) kan också användas för migrering.
 
-## <a name="phase-3-optimize"></a>Fas 3: Optimera
+## <a name="phase-3-optimize"></a>Fas 3: optimera
 
 När Contoso har flyttat resurser till Azure måste de effektivisera dem för att förbättra prestandan och maximera avkastningen med kostnadshanteringsverktyg. Med tanke på att Azure är en tjänst med betalning per användning är det viktigt för Contoso att förstå hur systemen presterar och se till att de har rätt storlek.
 
@@ -318,7 +318,7 @@ För att få ut så mycket som möjligt av sin molninvestering använder Contoso
 Contoso kommer också att använda skript för att hitta oanvända resurser.
 
 - Vid stora migreringar finns ofta kvarblivna data, till exempel virtuella hårddiskar (VHD:er) som debiteras utan att tillföra värde till företaget. Skript är tillgängliga i GitHub-lagringsplatsen.
-- Contoso drar nytta av Microsofts IT-avdelnings arbete och överväger att implementera verktygslådan Azure Resource Optimization (ARO).
+- Contoso kommer att utnyttja arbete som utförs av Microsofts IT-avdelning och överväga att implementera ARO-verktygslådan (Azure Resource Optimization).
 - Contoso kan distribuera ett Azure Automation-konto med förkonfigurerade runbooks och scheman till prenumerationen och börja spara pengar. Azure-resursoptimering sker automatiskt i en prenumeration efter att ett schema har aktiverats eller skapats, inklusive optimering av nya resurser.
 - Detta ger decentraliserade automatiseringsfunktioner som minskar kostnaderna. Funktionerna omfattar:
   - Automatiskt viloläge för virtuella Azure-datorer baserat på låg processoranvändning.
@@ -331,7 +331,7 @@ Contoso kommer också att använda skript för att hitta oanvända resurser.
 
 Partnerverktyg som [Hanu](https://hanu.com/insight) och [Scalr]( https://www.scalr.com/cost-optimization) kan användas.
 
-## <a name="phase-4-secure-and-manage"></a>Fas 4: Skydda och hantera
+## <a name="phase-4-secure-and-manage"></a>Fas 4: skydda och hantera
 
 I den här fasen använder Contoso Azures säkerhets- och hanteringsresurser för att styra, skydda och övervaka molnappar i Azure. De här resurserna hjälper dig att köra en säker och välhanterad miljö samtidigt som du använder produkter som är tillgängliga på Azure-portalen. Contoso börjar använda de här tjänsterna under migreringen och fortsätter, med Azures hybridstöd, att använda flera av dem för att få en enhetlig upplevelse i hybridmolnet.
 
@@ -358,7 +358,7 @@ Contoso behöver en strategi för affärskontinuitet och haveriberedskap (BCDR) 
 
 - Azure innehåller [inbyggda BCDR-funktioner](https://docs.microsoft.com/azure/architecture/resiliency/disaster-recovery-azure-applications) för att skydda data och hålla igång appar/tjänster.
 - Förutom de inbyggda funktionerna vill Contoso se till att de kan återhämta sig efter haverier, undvika kostsamma verksamhetsavbrott, uppfylla efterlevnadsmål och skydda data mot utpressningstrojaner och den mänskliga faktorn. Gör så här:
-  - Contoso distribuerar Azure Backup som en kostnadseffektiv lösning för säkerhetskopiering av Azure-resurser. Eftersom det är inbyggt kan Contoso konfigurera sin molnsäkerhetskopiering med bara några enkla steg.
+  - Contoso distribuerar Azure Backup som en kostnadseffektiv lösning för säkerhetskopiering av Azure-resurser. Eftersom den är inbyggd kan Contoso konfigurera moln säkerhets kopieringar i några enkla steg.
   - Contoso kommer att konfigurera haveriberedskap för virtuella Azure-datorer som använder Azure Site Recovery för replikering, redundans och återställning efter fel mellan de Azure-regioner som de anger. Detta säkerställer att appar som körs på virtuella Azure-datorer är tillgängliga i en sekundär region som Contosos väljer om ett avbrott inträffar i den primära regionen. [Läs mer](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 
 ## <a name="conclusion"></a>Sammanfattning

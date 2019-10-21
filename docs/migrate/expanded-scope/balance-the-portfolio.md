@@ -1,23 +1,23 @@
 ---
 title: Balansera portföljen
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Balansera portföljen
+description: Lean för att balansera din moln portfölj.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1227b798972ce7e139181c9267a1a1e860390029
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2b26f8c763d477d95b21e302158c318e3ab4b101
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825762"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548582"
 ---
 # <a name="balance-the-portfolio"></a>Balansera portföljen
 
-Molnimplementering handlar om portföljhantering förklädd som en teknisk implementering. Precis som med vilket portföljhanteringsarbete som helst är portföljens balans en viktig aspekt för framgång. På strategisk nivå innebär detta att balansera migrering, innovation och experimentering för att få ut det mesta möjliga av molnet. När arbetet med molnimplementering går för långt i en viss riktning ökar komplexiteten i migreringsarbetet. Den här artikeln vägleder läsaren genom metoder för att uppnå balans i portföljen.
+Molnimplementering handlar om portföljhantering förklädd som en teknisk implementering. I likhet med portfölj hanterings övningen är det viktigt att balansera portföljen. På strategisk nivå innebär detta att balansera migrering, innovation och experimentering för att få ut det mesta möjliga av molnet. När arbetet med molnimplementering går för långt i en viss riktning ökar komplexiteten i migreringsarbetet. Den här artikeln vägleder läsaren genom metoder för att uppnå balans i portföljen.
 
 ## <a name="general-scope-expansion"></a>Allmän omfångsutökning
 
@@ -66,7 +66,7 @@ Om svaret på endera frågan är ”nej” kan det vara klokt att upprätta en p
 
 ## <a name="suggested-prerequisites"></a>Föreslagna förutsättningar
 
-De förutsättningar som anges i baslinjeguiden bör fortfarande vara tillräckliga för att behandla det här komplexitetsämnet. Dock bör tillgångslagret och den digitala egendomen framhävas tydligt bland dessa förutsättningar, eftersom dessa data driver följande aktiviteter.
+De förutsättningar som anges i baslinjeguiden bör fortfarande vara tillräckliga för att behandla det här komplexitetsämnet. Dock bör till gångs lagret och den digitala fastigheten markeras och fetstilas bland dessa krav, eftersom dessa data kommer att driva följande aktiviteter.
 
 ## <a name="assess-process-changes"></a>Utvärdera processändringar
 
@@ -107,11 +107,11 @@ Portföljrationalisering kräver tekniskt arbete av olika slag. Det är lockande
 
 Vi rekommenderar att dessa olika arbeten delas upp bland två eller fler molnimplementeringsteam. Med hjälp av en modell med två team som ett exempel för genomförande är Team 1 migreringsteamet, och Team 2 är innovationsteamet. För större arbeten kan dessa team delas upp ytterligare för att hantera andra metoder såsom ersättning/PaaS eller mindre refaktorisering. Följande beskriver de kunskaper och roller som behövs för metoderna för värdbyte, omstrukturering eller mindre refaktorisering:
 
-**Värdbyte:** Värdbyte kräver att teammedlemmar implementerar ändringar som fokuserar på infrastrukturen. Normalt används ett verktyg såsom Azure Site Recovery för att migrera virtuella datorer eller andra tillgångar till Azure. Detta arbete är väl lämpat för datacenteradministratörer eller IT-implementatörer. Molnmigreringsteamet har en lämplig struktur för att leverera detta arbete i stor skala. Det här är den snabbaste metoden för att migrera befintliga tillgångar i de flesta scenarier.
+**Rehost:** Rehost kräver att grupp medlemmar implementerar ändringar i infrastrukturen. Normalt används ett verktyg såsom Azure Site Recovery för att migrera virtuella datorer eller andra tillgångar till Azure. Detta arbete är väl lämpat för datacenteradministratörer eller IT-implementatörer. Molnmigreringsteamet har en lämplig struktur för att leverera detta arbete i stor skala. Det här är den snabbaste metoden för att migrera befintliga tillgångar i de flesta scenarier.
 
-**Refaktorisering:** Refaktorisering kräver att teammedlemmar ändrar källkod, ändrar arkitekturen för ett program eller inför nya molntjänster. För sådant arbete används oftast utvecklingsverktyg såsom Visual Studio och distributionspipelineverktyg som Azure DevOps för att omdistribuera moderniserade program till Azure. Detta arbete är väl lämpat för programutvecklingsroller eller DevOps-pipelineutvecklingsroller. Molninnovationsteamet har den bästa strukturen för att leverera detta arbete. Det kan ta längre tid att ersätta befintliga tillgångar med molntillgångar via den här metoden, men apparna kan dra nytta av molnspecifika funktioner.
+**Återfaktum:** Du måste ha grupp medlemmar för att kunna ändra käll koden, ändra arkitekturen för ett program eller införa nya moln tjänster. För sådant arbete används oftast utvecklingsverktyg såsom Visual Studio och distributionspipelineverktyg som Azure DevOps för att omdistribuera moderniserade program till Azure. Detta arbete är väl lämpat för programutvecklingsroller eller DevOps-pipelineutvecklingsroller. Molninnovationsteamet har den bästa strukturen för att leverera detta arbete. Det kan ta längre tid att ersätta befintliga tillgångar med molntillgångar via den här metoden, men apparna kan dra nytta av molnspecifika funktioner.
 
-**Mindre refaktorisering:** Vissa program kan moderniseras via mindre refaktorisering på data- eller programnivå. Detta arbete kräver att teammedlemmar distribuerar data till molnbaserade dataplattformar eller gör mindre konfigurationsändringar i programmet. Detta kan kräva visst stöd från ämnesexperter inom data- eller programutveckling. Detta arbete liknar dock det arbete som utförs av IT-implementatörer vid distribution av appar från tredje part. Detta arbete kan enkelt anpassas till teamet för molnmigrering eller molnstrategi. Detta arbete är inte alls lika snabbt som en migrering med värdbyte, men det tar ändå mindre tid att genomföra än arbete med refaktorisering.
+**Mindre omfabriker:** Vissa program kan förvaras med mindre omfaktor på data-eller program nivå. Detta arbete kräver att teammedlemmar distribuerar data till molnbaserade dataplattformar eller gör mindre konfigurationsändringar i programmet. Detta kan kräva visst stöd från ämnesexperter inom data- eller programutveckling. Detta arbete liknar dock det arbete som utförs av IT-implementatörer vid distribution av appar från tredje part. Detta arbete kan enkelt anpassas till teamet för molnmigrering eller molnstrategi. Detta arbete är inte alls lika snabbt som en migrering med värdbyte, men det tar ändå mindre tid att genomföra än arbete med refaktorisering.
 
 Under migreringen rekommenderas det att arbetet delas upp på de tre sätt som beskrivs ovan samt att detta arbetet utförs av rätt team i rätt iteration. Även om det rekommenderas att portföljen diversifieras är det även lämpligt att hålla arbetet mycket fokuserat och uppdelat.
 
@@ -128,4 +128,4 @@ Inga ytterligare ändringar krävs i processerna för skydd och hantering under 
 Gå tillbaka till [checklistan för utökat omfång](./index.md) och se till att din migreringsmetod är helt anpassad till kraven.
 
 > [!div class="nextstepaction"]
-> [Checklista för utökat omfång](./index.md)
+> [Utökad checklista](./index.md)

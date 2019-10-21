@@ -1,7 +1,7 @@
 ---
-title: Övervaknings guide för molnet – översikt över övervaknings plattformar
+title: 'Övervaknings guide för molnet: översikt över Monitoring Platforms'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Välj när Azure Monitor eller System Center Operations Manager ska användas i Microsoft Azure
+description: Välj när Azure Monitor eller System Center Operations Manager ska användas i Microsoft Azure.
 author: mgoedtel
 ms.author: magoedte
 ms.date: 07/31/2019
@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 33d9647a0804859a611d45e130c753cab89a6ef6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 668710d38fe6d3aa03761580f530f484133df792
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027651"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547260"
 ---
-# <a name="cloud-monitoring-guide-overview-of-our-monitoring-platforms"></a>Molnövervakningsguide: Översikt över våra övervaknings plattformar
+# <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>Övervaknings guide för molnet: översikt över Monitoring Platforms
 
-Microsoft tillhandahåller ett antal övervaknings funktioner från två produkter: System Center Operations Manager som har utformats lokalt och sedan utökats till molnet och Azure Monitor, som har utformats för molnet, men som även kan övervaka lokala system. Dessa två erbjudanden levererar grundläggande övervaknings tjänster, t. ex. avisering, service drift tids spårning, övervakning av program och infrastruktur hälsa, diagnostik och analys.
+Microsoft tillhandahåller ett antal övervaknings funktioner från två produkter: System Center Operations Manager som har utformats lokalt och sedan utökats till molnet och Azure Monitor, som har utformats för molnet, men som även kan övervaka lokala system . Dessa två erbjudanden levererar grundläggande övervaknings tjänster, t. ex. avisering, service drift tids spårning, övervakning av program och infrastruktur hälsa, diagnostik och analys.
 
 Många organisationer använder de senaste metoderna för DevOps rörlighet och moln innovationer för att hantera sina heterogena-miljöer. De är ännu bekymrade över sin förmåga att fatta lämpliga och ansvariga beslut om hur du övervakar arbets belastningarna.
 
@@ -34,7 +34,7 @@ När Azure släpptes i 2010 tillhandahölls övervakning av moln tjänster med A
 
 Application Insights har introducerats för att växla till förändringar i branschen där spridning av moln-, mobil-och IoT-enheter växer och införandet av DevOps-metoder. Den har utvecklats från övervakning av program prestanda i Operations Manager till en tjänst i Azure, där den ger omfattande övervakning av webb program som har skrivits på flera olika språk. I 2015 har förhands granskningen av Application Insights för Visual Studio annonser ATS och senare beskrevs den precis som Application Insights. Den samlar in information om program prestanda, begär Anden och undantag och spårningar.
 
-I 2015 gjordes Azure Operational Insights allmänt tillgänglig. Den levererade tjänsten Log Analytics Analysis som samlar in och sökte efter data från datorer i Azure, lokal eller andra moln miljöer och är anslutna till System Center Operations Manager. Intelligence-paket erbjöds som levererade olika förpaketerade hanterings-och övervaknings konfigurationer som innehöll en samling frågor och analys logik, visualiseringar och data insamlings regler för sådana scenarier som säkerhets granskning, hälsa utvärderingar och aviserings hantering.  Senare är Azure Operational Insights känt som Log Analytics.  
+I 2015 gjordes Azure Operational Insights allmänt tillgänglig. Den levererade tjänsten Log Analytics Analysis som samlar in och sökte efter data från datorer i Azure, lokalt eller i andra moln miljöer och är anslutna till System Center Operations Manager. Intelligence-paket erbjöds som levererade olika förpaketerade hanterings-och övervaknings konfigurationer som innehöll en samling frågor och analys logik, visualiseringar och data insamlings regler för sådana scenarier som säkerhets granskning, hälsa utvärderingar och aviserings hantering. Senare är Azure Operational Insights känt som Log Analytics.  
 
 I 2016 annonserades förhands granskningen av Azure Monitor. Det tillhandahöll ett gemensamt ramverk för att samla in plattforms mått, resurs-diagnostikloggar och aktivitets logg händelser på prenumerations nivå från alla Azure-tjänster som har börjat använda ramverket. Tidigare hade varje Azure-tjänst sin egen övervaknings metod.
 
@@ -51,10 +51,10 @@ På Microsoft antändnings konferens i 2018 presenterade vi att Azure Monitor va
 Från 2015 till och med den 2018 april är Operations Management Suite (OMS) en databunt av följande Azure-hanterings tjänster i licens syfte:
 
 - Application Insights
-- Azure Automation
+- Azure Automatisering
 - Azure Backup
 - Operational Insights (senare den ommärkes Log Analytics)
-- Site Recovery
+- Webbplatsåterställning
 
 Funktionerna i de tjänster som var en del av OMS ändrades inte när OMS skulle upphöra, de justerades under Azure Monitor.
 
@@ -132,7 +132,7 @@ Azure Monitor tillhandahåller inte en användar definierbar metod för att impl
 
 - **Azure Monitor for VMS** ger en hälso övervakning för virtuella gäst datorer i Azure, på samma sätt som Operations Manager, när du övervakar virtuella Windows-och Linux-datorer. Den utvärderar hälso tillståndet för viktiga operativ Systems komponenter från tillgänglighets-och prestanda perspektivet för att fastställa det aktuella hälso tillståndet. När den fastställer att den virtuella gäst datorn har drabbats av resursutnyttjande, disk utrymmes kapacitet eller ett problem som rör kärn funktioner i operativ systemet, genererar den en avisering för att få det här läget.
 
-- **Azure Monitor for containers** övervakar prestanda och hälsa för Azure Kubernetes Services eller Azure Container instances. Den samlar in minne och mått från domänkontrollanter, noder och behållare som är tillgängliga i Kubernetes via mått-API. Den samlar även in behållar loggar och inventerings data om behållare och avbildningar. Fördefinierade hälso kriterier som baseras på de prestanda data som samlas in hjälper dig att identifiera om det finns en resurs Flask hals eller kapacitets problem. Du kan också förstå den övergripande prestandan eller prestandan från en speciell Kubernetes objekt typ (pod, Node, Controller eller container).
+- **Azure Monitor for containers** övervakar prestanda och hälsa för Azure Kubernetes Services eller Azure Container instances. Den samlar in minnes-och processor mått från styrenheter, noder och behållare som är tillgängliga i Kubernetes via Metrics-API: et. Den samlar även in behållar loggar och inventerings data om behållare och avbildningar. Fördefinierade hälso kriterier som baseras på de prestanda data som samlas in hjälper dig att identifiera om det finns en resurs Flask hals eller kapacitets problem. Du kan också förstå den övergripande prestandan eller prestandan från en speciell Kubernetes objekt typ (pod, Node, Controller eller container).
 
 ## <a name="analyzing-data"></a>Analysera data
 
@@ -166,7 +166,7 @@ Med Azure Monitor kan du skapa aviseringar baserat på ett mått som korsar ett 
 
 Övervaknings lösningar kan innehålla aviserings regler, vanligt vis skapar du dem utifrån dina egna krav.
 
-## <a name="workflows"></a>Workflows
+## <a name="workflows"></a>Arbetsflöden
 
 ### <a name="operations-manager"></a>Operations Manager
 

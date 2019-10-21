@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 5cee6318edd04e219b33bce6b72a78c7aa21ba4f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 24799668ab898822cf4a1d82ee2bf6906af71773
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023423"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547820"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationalisera den digitala egendomen
 
@@ -24,9 +24,9 @@ Cloud rationalisering är en process för att utvärdera till gångar för att f
 
 Det är enkelt att förstå rationalisering när du visualiserar den traditionella processen för rationalisering som ett komplext besluts träd. Varje till gång i den digitala fastigheten matas genom en process som resulterar i en av fem svar (den fem RS). För små fastigheter fungerar den här processen bra. För större fastigheter är det ineffektivt och kan leda till betydande fördröjningar. Vi går igenom processen för att se varför. Sedan kommer vi att presentera en mer effektiv modell.
 
-**Hantering** En grundlig inventering av till gångar, inklusive program, program vara, maskin vara, operativ system och system prestanda mått, krävs för att slutföra en fullständig rationalisering med hjälp av traditionella modeller.
+**Inventering:** En grundlig inventering av till gångar, inklusive program, program vara, maskin vara, operativ system och system prestanda mått, krävs för att slutföra en fullständig rationalisering med hjälp av traditionella modeller.
 
-**Kvantitativ analys:** I besluts trädet driver kvantitativa frågor det första lagret med beslut. Vanliga frågor innehåller följande: Används den till gång som används idag? I så fall, är den optimerad och storlek korrekt? Vilka beroenden finns mellan till gångar? Dessa frågor är viktiga för klassificeringen av inventeringen.
+**Kvantitativ analys:** I besluts trädet driver kvantitativa frågor det första lagret med beslut. Vanliga frågor är följande: är den till gång som används idag? I så fall, är den optimerad och storlek korrekt? Vilka beroenden finns mellan till gångar? Dessa frågor är viktiga för klassificeringen av inventeringen.
 
 **Kvalitativ analys:** Nästa uppsättning beslut kräver mänsklig intelligens i form av kvalitativ analys. Ofta är frågorna som finns här unika för lösningen och kan bara besvaras av affärs intressenter och privilegierade användare. Dessa beslut är vanligt vis försenade processen och saktar ned saker avsevärt. Den här analysen förbrukar vanligt vis 40 till 80 HELTIDs timmar per program.
 
@@ -48,7 +48,7 @@ Resten av den här artikeln beskriver en alternativ metod, som kallas stegvisa r
 
 Den fullständiga rationalisering av en stor digital egendom är känslig för risker och kan drabbas av fördröjningar på grund av dess komplexitet. Antaganden bakom den stegvisa metoden är att fördröjda beslut ökar belastningen på verksamheten för att minska risken för hindren. Med tiden skapar den här metoden en ekologisk modell för utveckling av de processer och den erfarenhet som krävs för att göra kvalificerade rationalisering-beslut mer effektivt.
 
-### <a name="inventory-reduce-discovery-data-points"></a>Hantering Minska identifierings data punkter
+### <a name="inventory-reduce-discovery-data-points"></a>Inventering: minska identifierings data punkter
 
 Några organisationer investerar tid, energi och kostnader för att upprätthålla en korrekt, real tids inventering av den fullständiga digitala fastigheten. Förlust, stöld, uppdaterings cykler och medarbetarprogram ofta motiverar detaljerad till gångs spårning av slut användar enheter. RÄNTABILITETen att underhålla en korrekt Server-och program inventering i ett traditionellt, lokalt Data Center är ofta låg. De flesta IT-organisationer har andra fler problem med att trycka på och spåra användningen av fasta till gångar i ett Data Center.
 
@@ -58,13 +58,13 @@ Agent-baserad genomsökning är den mest citerade fördröjningen. De robusta da
 
 I en stegvis rationalisering-process kan en agent lös lösning användas för en inledande identifiering för att påskynda tidiga beslut. Beroende på komplexitets nivån i miljön kan en agent-baserad lösning fortfarande krävas. Men det kan tas bort från den kritiska vägen till företags förändringar.
 
-### <a name="quantitative-analysis-streamline-decisions"></a>Kvantitativ analys: Effektivisera beslut
+### <a name="quantitative-analysis-streamline-decisions"></a>Kvantitativ analys: effektivisera beslut
 
 Oavsett vilken metod som används för inventerings identifieringen kan kvantitativ analys driva inledande beslut och antaganden. Detta gäller särskilt när du försöker identifiera den första arbets belastningen eller när målet för rationalisering är en kostnads jämförelse på hög nivå. I en stegvis rationalisering process begränsar moln strategi teamet och moln implementerings teamen [fem RS-rationalisering](./5-rs-of-rationalization.md) till två kortfattade beslut och tillämpar bara dessa kvantitativa faktorer. Detta effektiviserar analysen och minskar mängden inledande data som krävs för att ändra på enheten.
 
 Om en organisation till exempel är i pågående för en IaaS-migrering till molnet kan du anta att de flesta arbets belastningar antingen dras tillbaka eller reageras.
 
-### <a name="qualitative-analysis-temporary-assumptions"></a>Kvalitativ analys: Tillfälliga antaganden
+### <a name="qualitative-analysis-temporary-assumptions"></a>Kvalitativ analys: temporära antaganden
 
 Genom att minska antalet möjliga resultat är det enklare att komma fram till ett första beslut om en till gångs framtida tillstånd. När du minskar alternativen minskar du också antalet frågor som ställts i företaget i det här skedet.
 

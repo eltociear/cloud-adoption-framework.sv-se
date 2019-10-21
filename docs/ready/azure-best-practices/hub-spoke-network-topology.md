@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 35750064b0a88c65796f662d20dc51e9a38e77ac
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fcbcda63ff080de234075f0a8784731e591ca0f3
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022381"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549011"
 ---
 # <a name="hub-and-spoke-network-topology"></a>Nätverkstopologi med hubb och ekrar
 
@@ -75,7 +75,7 @@ Det är möjligt att implementera komplexa arbetsbelastningar i en enda eker. Du
 
 En arkitekt kan vilja distribuera en arbetsbelastning på flera nivåer i flera virtuella nätverk. Med peering av virtuella nätverk kan ekrar ansluta till andra ekrar i samma hubb eller i olika hubbar.
 
-Ett typiskt exempel på det här scenariot när programbearbetningsservrar finns i en eker eller virtuellt nätverk. Databasen distribueras i en annan eker- eller ett virtuellt nätverk. I det här fallet är det enkelt att koppla ekrarna med peering av virtuella nätverk och undvika att överföra genom hubben. Lösningen är att utföra en noggrann arkitektur och säkerhetsgranskning för att se till att ekern inte kringgår viktiga säkerhets- och granskningspunkter som bara finns i hubben.
+Ett typiskt exempel på det här scenariot när programbearbetningsservrar finns i en eker eller virtuellt nätverk. Databasen distribueras i en annan eker- eller ett virtuellt nätverk. I det här fallet är det enkelt att koppla ekrarna med peering av virtuella nätverk och undvika att överföra genom hubben. Lösningen är att utföra en noggrann arkitektur och säkerhets granskning för att se till att kringgå navet inte kringgår viktiga säkerhets-och gransknings punkter som bara finns i hubben.
 
 ![Ekrar som ansluter till varandra och en hubb][3]
 

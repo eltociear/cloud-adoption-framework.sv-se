@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: governance
-ms.openlocfilehash: 5e425a61f6b9da7fed044d06ac9323306d728261
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b15cee23f81027e3b5597079e61fcc7ac0e534e2
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71021943"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548737"
 ---
 # <a name="initial-organization-alignment"></a>Inledande organisatorisk anpassning
 
@@ -35,7 +35,7 @@ Den övergripande processen för digital omvandling är:
 <!--6. Develop processes for operating in the cloud to make solutions more robust in terms of availability, resiliency, and security.
 1. Optimize solutions for performance, scalability, and cost efficiency.-->
 
-## <a name="step-1-create-a-cloud-strategy-team"></a>Steg 1: Skapa ett team för molnstrategi
+## <a name="step-1-create-a-cloud-strategy-team"></a>Steg 1: skapa ett moln strategi team
 
 Det första steget i företagets omvandling är att engagera verksamhetsledare runt om i organisationen för att skapa ett team för molnstrategi (cloud strategy team – CST). Detta team består av verksamhetsledare från ekonomi, IT-infrastruktur och programgrupper. Dessa team kan hjälpa till under molnanalysen och experimenteringsfasen.
 
@@ -49,7 +49,7 @@ Styrningsteamet ansvarar för design och implementering av företagets styrnings
 
 Säkerhetsteamet ansvarar för design och implementering av företagets säkerhetsprinciper för molnet, i nära samarbete med styrningsteamet. Säkerhetsteamet ansvarar för utökningen av säkerhetsgränsen från det lokala nätverket till det virtuella nätverket i molnet. Detta kan ske i form av ägande och underhåll av brandväggarna för inkommande och utgående trafik i det virtuella nätverket i molnet samt verktyg och principer som förhindrar införande av obehöriga resurser.
 
-## <a name="step-2-learn-whats-new-in-the-cloud"></a>Steg 2: Nyheter i molnet
+## <a name="step-2-learn-whats-new-in-the-cloud"></a>Steg 2: Lär dig vad som är nytt i molnet
 
 Nästa steg i företagets digitala omvandling är att medlemmarna i teamet för molnstrategi lär sig hur molnteknik kommer att förändra hur företaget arbetar. Detta är förberedelser och planering för de ändringar som kommer att påverka verksamheten, personalen och tekniken. Det är viktigt att medlemmarna i teamet för molnstrategi förstår vad som är nytt och annorlunda i molnet jämfört med i lokala installationer.
 
@@ -59,13 +59,13 @@ Startpunkten för att förstå molnet är att lära sig [hur Azure fungerar](../
 
 För avancerad information ska styrningsteamet gå igenom guiderna för koncept och design i styrningsavsnittet i innehållsförteckningen. Avsnitten om infrastruktur och arbetsbelastning är användbara för att lära sig om typiska arkitekturer och arbetsbelastningar i molnet.
 
-## <a name="step-3-identify-gaps-in-business-strategy"></a>Steg 3: Identifiera luckor i affärsstrategin
+## <a name="step-3-identify-gaps-in-business-strategy"></a>Steg 3: identifiera luckor i affärs strategin
 
 Nästa steg är att teamet för molnstrategi listar de affärsproblem som kräver en lösning som bygger på digital omvandling. Ett företag kan till exempel ha ett befintligt lokalt datacenter med maskinvara som nått slutet på sin livstid och behöver bytas. Ett annat exempel är ett företag som har problem att få ut nya funktioner och tjänster på marknaden tillräckligt snabbt och börjar tappa till konkurrenterna. Dessa luckor representerar _målen_ för företagets digitala omvandling.
 
 Luckor i affärsstrategi kan klassificeras i följande kategorier:
 
-| Category | Beskrivning |
+| Kategori | Beskrivning |
 | --- | --- |
 | Kostnadshantering | Representerar en lucka i hur företaget betalar för teknik. |
 | Styrning | Representerar en lucka i de processer som används av företaget för att skydda tillgångar från obehörig användning som kan leda till högre kostnader, säkerhetsproblem eller problem med efterlevnad. |
@@ -87,7 +87,7 @@ När alla luckorna i affärsstrategin har räknats upp och övergripande lösnin
 
 Resultatet av denna process är en ordnad lista med övergripande lösningar som är anpassade till verksamhetskategorier.
 
-## <a name="step-4-align-high-level-solutions-with-business-groups-to-design-solutions"></a>Steg 4: Anpassa övergripande lösningar till affärsgrupper för att ta fram lösningar
+## <a name="step-4-align-high-level-solutions-with-business-groups-to-design-solutions"></a>Steg 4: justera lösningar på hög nivå med affärs grupper till design lösningar
 
 När nu målen för den digitala omvandlingen listats och ordnats i prioriteringsordning samt övergripande lösningar föreslagits är nästa steg att teamet för molnstrategi tilldelar var och en av de övergripande lösningarna till design- och implementeringsteam i var och en av affärsgrupperna.
 
@@ -99,11 +99,11 @@ Utformningen av varje lösning är inte en enkel uppgift. Allteftersom lösninga
 
 När utformningen av en lösning är klar går teamet vidare till implementeringsfasen för varje design. Implementeringsfasen för varje lösning kan hanteras med vanliga projekthanteringsprocesser.
 
-## <a name="step-5-adapt-existing-roles-skills-and-process-for-the-cloud"></a>Steg 5: Anpassa befintliga roller, färdigheter och processer för molnet
+## <a name="step-5-adapt-existing-roles-skills-and-process-for-the-cloud"></a>Steg 5: anpassa befintliga roller, kunskaper och processer för molnet
 
 Under varje fas i IT-branschens historia markeras de största förändringarna oftast av förändringar i personalroller. Under övergången från stordatorer till klient/server-modellen försvann rollen som datoroperatör i stort sett och ersattes av systemadministratören. När virtualiseringen kom minskade behovet av personer som arbetade med fysiska servrar och ersattes av ett behov av specialister på virtualisering. På samma sätt kommer rollerna antagligen att förändras med övergången till molnbaserad databehandling. Exempelvis kommer datacenterspecialister kanske att ersättas av personal som är specialiserad på ekonomiska analyser av molnanvändning. Även om IT-befattningarna inte har bytt namn, har det dagliga arbetet ändrats avsevärt.
 
-IT-personal kan vara oroliga för sina roller och positioner när de inser att andra kunskaper krävs för support av molnlösningar. Flexibla medarbetare som utforskar och tar till sig nya molntekniker behöver inte vara rädda. De kan leda övergången till molnlösningar och hjälpa organisationen förstå och ta till sig de relaterade förändringarna.
+IT-personal kan vara oroliga för sina roller och positioner när de inser att andra kunskaper krävs för support av molnlösningar. Men flexibla medarbetare som utforskar och lär sig nya moln tekniker behöver inte ha denna frukt. De kan leda övergången till molnlösningar och hjälpa organisationen förstå och ta till sig de relaterade förändringarna.
 
 ### <a name="capturing-concerns"></a>Fånga upp och hantera oro
 

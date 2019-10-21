@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d2366e4b5fad3344f324f9ff6f1b7dda0cc0b8c6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5b4e192aac3cf73aca704ed2c04116cd0d2a972b
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022601"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378389"
 ---
 # <a name="migration-environment-planning-checklist---validate-environmental-readiness-prior-to-migration"></a>Planeringschecklista för migreringsmiljön – Verifiera att miljön är redo inför migreringen
 
@@ -35,7 +35,7 @@ Oavsett om du väljer att använda en mer omfattande molnstyrningsstrategi för 
 
 Om du planerar att anpassa migreringen till en molnstyrningsstrategi från början måste du tillämpa de [fem disciplinerna för molnstyrningn](../../../govern/governance-disciplines.md) för att fatta rätt beslut om principer, verktygskedjor och verkställande mekanismer som anpassar din molnmiljö med företagets övergripande krav. Mer information om hur du implementerar den här modellen med hjälp av Azure-tjänster finns i [design guiderna för styrning](../../../govern/guides/index.md) i Ramverk för molnimplementering.
 
-Om din ursprungliga migrering inte är noggrant anpassad till en bredare strategi för molnstyrning måste den allmänna organisations-, åtkomst- och infrastruktur planeringen fortfarande hanteras. Se [guiden för Azure-beredskap](../../../ready/azure-readiness-guide/index.md) för hjälp med dessa beslut om molnberedskap.
+Om din ursprungliga migrering inte är noggrant anpassad till en bredare strategi för molnstyrning måste den allmänna organisations-, åtkomst- och infrastruktur planeringen fortfarande hanteras. I [installations guiden för Azure](../../../ready/azure-setup-guide/index.md) hittar du hjälp med dessa beslut om moln beredskap.
 
 > [!CAUTION]
 > Vi rekommenderar starkt att du utvecklar en styrningsstrategi för allt som går bortom din ursprungliga migrering av arbetsbelastningen.

@@ -8,18 +8,18 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 61acef963538ec7fc4e4c11432f2c2ddc64a738b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bc880e3bb27492b18a8e577911527978c7a4e0d2
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028412"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548349"
 ---
 # <a name="prepare-for-cultural-complexity-aligning-roles-and-responsibilities"></a>Förbered för kulturell komplexitet: justera roller och ansvarsområden
 
 En förståelse av den kultur som krävs för att använda befintliga datacentra är viktigt för att en migrering ska lyckas. I vissa organisationer ingår datacenterhantering i centraliserade IT-team. I dessa centraliserade team brukar roller och ansvarsområden vara väl definierade och förstås väl i hela teamet. För större företag, särskilt de som är knutna till krav från tredjepartsefterlevnad, tenderar kulturen att vara mer nyanserade och komplex. Kulturell komplexitet kan leda till hinder som är svåra att förstå och tar lång tid att övervinna.
 
-I båda fallet är det klokt att dokumentera de roller och ansvarsområden som krävs för att slutföra en migrering. Den här artikeln beskriver några av de roller och ansvarsområden som visas i en datacentermigrering. Den kan fungera som mall för dokumentation som kan förtydliga genomförandet.
+I båda fallen är det klokt att investera i den dokumentation av roller och ansvars områden som krävs för att slutföra en migrering. Den här artikeln beskriver några av de roller och ansvarsområden som visas i en datacentermigrering. Den kan fungera som mall för dokumentation som kan förtydliga genomförandet.
 
 ## <a name="business-functions"></a>Verksamhetsfunktioner
 
@@ -29,7 +29,7 @@ I samband med en migrering finns det några viktiga funktioner som, om möjligt,
 |---------|---------|---------|
 | Utvärdera | Verksamhetsmål | Definiera vad ni hoppas på att få ut av migreringen som företag. |
 | Utvärdera | Prioriteringar | Försäkra er om att migreringen överensstämmer med växlande affärsprioriteringar och marknadsförutsättningar. |
-| Utvärdera | Justering | Bekräfta antaganden som ligger till grund för föränderliga affärsmotiveringar. |
+| Utvärdera | Motivering | Bekräfta antaganden som ligger till grund för föränderliga affärsmotiveringar. |
 | Utvärdera | Risk | Hjälp molnimplementeringsteamet förstå de konkreta affärsriskernas betydelse. |
 | Utvärdera | Godkänn | Granska och godkänn de beräknade konsekvenserna för företaget till följd av arkitekturändringarna. |
 | Optimera | Ändringsplan | Definiera en ändringsplan för företagets förbrukning, inklusive perioder med låg aktivitet och ändringslås. |
@@ -53,7 +53,7 @@ Varje process i diskussionen om ramprinciperna för molnimplementering inkludera
 | Utvärdera | Arkitektur | Kräv inledande antaganden för att definiera målarkitekturen baserat på användningsstatistik. | molnimplementeringsteamet |
 | Utvärdera | Godkännande | Godkänn den föreslagna arkitekturen. | molnstrategiteamet |
 | Migrera | Replikeringsåtkomst | Åtkomst till befintliga lokala värdar och tillgångar för att upprätta replikeringsprocesser. | molnimplementeringsteamet |
-| Optimera | Klar | Kontrollera att systemet uppfyller prestanda- och kostnadskraven inför upphöjning. | molnimplementeringsteamet |
+| Optimera | Redo | Kontrollera att systemet uppfyller prestanda- och kostnadskraven inför upphöjning. | molnimplementeringsteamet |
 | Optimera | Höj upp | Behörigheter för att höja upp en arbetsbelastning till produktion och dirigera om produktionstrafiken. | molnimplementeringsteamet |
 | Skydda och hantera | Åtgärdsövergång | Dokumentera produktionssystem inför produktionsåtgärder. | molnimplementeringsteamet |
 
@@ -62,7 +62,7 @@ Varje process i diskussionen om ramprinciperna för molnimplementering inkludera
 
 ## <a name="next-steps"></a>Nästa steg
 
-När teamet har en allmän förståelse för roller och ansvarsområden är det dags att börja förbereda den tekniska informationen om migreringen. Kännedom om [teknik komplexitet och ändringshantering](./technical-complexity.md) kan hjälpa dig att förbereda molnimplementeringsteamet för migreringens juridiska komplexitet genom att samordna med en stegvis ändringshanteringsprocess.
+När teamet har en allmän förståelse för roller och ansvars områden är det dags att börja förbereda den tekniska informationen om migreringen. Kännedom om [teknik komplexitet och ändringshantering](./technical-complexity.md) kan hjälpa dig att förbereda molnimplementeringsteamet för migreringens juridiska komplexitet genom att samordna med en stegvis ändringshanteringsprocess.
 
 > [!div class="nextstepaction"]
 > [Teknisk komplexitet och ändringshantering](./technical-complexity.md)

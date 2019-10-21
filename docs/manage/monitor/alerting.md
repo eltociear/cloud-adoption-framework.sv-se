@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 554bfdaf0a21fac50cafe9c510c4fd83c6702b81
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 0157cf5c50cd676478b28889b565c7f3f6952e32
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221391"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548601"
 ---
-# <a name="cloud-monitoring-guide-alerting"></a>Molnövervakningsguide: Aviseringar
+# <a name="cloud-monitoring-guide-alerting"></a>Övervaknings guide för molnet: avisering
 
 För år har IT-organisationerna fått problem med att bekämpa en aviserings utmattning som skapats av de övervaknings verktyg som distribueras i företaget. Många system genererar en stor mängd aviseringar ofta som meningslösa, medan andra är relevanta, men antingen förbises eller ignoreras. Det innebär att IT-och utvecklarnas åtgärder har fått problem att uppfylla den utlovade kvaliteten på service nivån för interna eller externa kunder. Det är viktigt att förstå statusen för din infrastruktur och dina program för att säkerställa tillförlitligheten. Du behöver snabbt identifiera orsaker, minimera tjänstens försämring och avbrott, eller minska risken för eller minska antalet incidenter.
 
@@ -81,7 +81,7 @@ Azure Monitor innehåller stöd för integrering med andra övervaknings plattfo
 
 Lösning| Datatyp | Aviserings beteende
 :---|:---|:---
-Azure Monitor för containrar | Beräknade genomsnitts prestanda data från noder och poddar skrivs till mått lagret. | Skapa mått aviseringar om du vill bli aviserad utifrån variationen av uppmätta användnings prestanda, sammanställd under en viss tids period.
+Azure Monitor för containrar | Beräknade genomsnitts prestanda data från noder och poddar skrivs till mått lagret. | Skapa mått aviseringar om du vill bli aviserad utifrån variationen av uppmätta användnings prestanda, sammanställt över tid.
 || Beräknade prestanda data som använder percentiler från noder, styrenheter, behållare och poddar skrivs till logg lagret. Behållar loggar och inventerings information skrivs också till logg lagret. | Skapa logg fråga aviseringar om du vill få en avisering utifrån variationen av uppmätt användning från kluster och behållare. Aviseringar för logg frågor kan också konfigureras baserat på antal Pod-faser och antal status noder.
 Azure Monitor för virtuella datorer | Hälso kriterier är mått som skrivs till mått lagret. | Aviseringar genereras när hälso tillståndet ändras från felfritt till ohälsosamt tillstånd. Stöder endast åtgärds grupper som kon figurer ATS för att skicka SMS eller e-postmeddelanden.
 || Kart-och gäst operativ systemets prestanda logg data skrivs till logg lagret. | Skapa aviseringar för logg frågor.
@@ -106,7 +106,7 @@ Det här är några viktiga fotnoter till den här regeln.
 
 Om du använder en lösning som Azure Monitor for VMs och hittar standard hälso kriterier som övervakar att prestanda användningen godkänns, ska du inte skapa överlappande mått eller logg fråga aviseringar baserat på samma prestanda räknare.
 
-Om du inte använder Azure Monitor for VMs kan du utforska följande funktioner för att göra jobbet att skapa aviseringar och hantera meddelanden enklare:  
+Om du inte använder Azure Monitor for VMs kan du utforska följande funktioner för att göra jobbet att skapa aviseringar och hantera meddelanden enklare:
 
 > [!NOTE]
 > Dessa funktioner gäller endast för mått aviseringar. det vill säga aviseringar som baseras på data som skickas till Azure Monitor Metric-databasen. De gäller inte för andra typer av aviseringar. Som tidigare nämnts är det primära målet för mått aviseringar hastigheten. Om du får en avisering på mindre än 5 minuter inte är primärt, kan du använda en logg fråga i stället.

@@ -4,22 +4,22 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Komma igång med en moln migrerings resa
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: ab637312535f1497b8f506cb9636025460a7905b
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: af93f71b1e4e9eb3249720fd14c88482a8402789
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223069"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547836"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>Komma igång med en moln migrerings resa
 
 Lär dig mer om att använda Microsoft Cloud implementerings ramverk för Azure för att påbörja en migrering av moln migrering. Det här ramverket innehåller omfattande vägledning för över gång av äldre program arbets belastningar med hjälp av innovativa molnbaserade tekniker.
 
-## <a name="executive-summary"></a>Sammanfattning
+## <a name="executive-summary"></a>Sammanfattning av chefer
 
 Ramverket för moln införande hjälper kunder att åta sig en förenklad moln implementering. Det här ramverket innehåller detaljerad information som täcker en slutpunkt-till-slutpunkt-körning av molnet, som börjar med riktade affärs resultat och justerar moln beredskap och-utvärderingar med tydliga definierade affärs mål. Dessa resultat uppnås via en definierad sökväg för moln införande. Med migration-baserad implementering fokuserar den definierade sökvägen i stor utsträckning på att slutföra en migrering av lokala arbets belastningar till molnet. Ibland omfattar den här resan modernisering av arbets belastningar för att öka avkastningen på investeringar från migreringens ansträngning.
 
@@ -52,7 +52,7 @@ Att förbereda alla deltagare över migreringens ansträngning med en medvetenhe
 
 Ramverket för moln införande upprättar en övergripande uppbyggnad av plan, klar, och antar de typer av insatser som krävs för alla moln införande. Den här exekutiva sammanfattningen bygger på det högnivå flödet för att upprätta iterativa processer som kan under lätta lyft/Shift/optimera insatser **och** modernisering ansträngningar i en enda metod i alla aktiviteter för moln migrering.
 
-Den här metoden består av två metoder eller fokus områden: Moln strategi & planering och moln implementering. [Motivet](#motivations) eller det önskade affärs resultatet för en molnbaserad migrering bestämmer ofta hur mycket ett team bör investera i [strategi och planering](#cloud-strategy-and-planning) och [implementering](#cloud-implementation). Dessa motivation kan också påverka besluten att köra var för sig eller parallellt.
+Den här metoden består av två metoder eller fokus områden: moln strategi & planering och moln implementering. [Motivet](#motivations) eller det önskade affärs resultatet för en molnbaserad migrering bestämmer ofta hur mycket ett team bör investera i [strategi och planering](#cloud-strategy-and-planning) och [implementering](#cloud-implementation). Dessa motivation kan också påverka besluten att köra var för sig eller parallellt.
 
 ## <a name="cloud-implementation"></a>Moln implementering
 
@@ -64,7 +64,7 @@ Fokus på den här ansträngningen är migreringen eller modernisering av arbets
 
 Migrering av moln betraktas ofta som ett enda projekt i ett bredare program för att effektivisera IT-verksamheten, kostnader och komplexitet. Moln implementerings metodiken hjälper till att justera de tekniska ansträngningarna i en serie arbets belastnings migreringar till affärs värden på högre nivå som beskrivs i moln strategin och planen.
 
-**Komma igång:** För att komma igång med en moln implementering, finns guiden [Azure migration guide](../migrate/azure-migration-guide/index.md) och [Azure readiness guide](../ready/azure-readiness-guide/index.md) de verktyg och hög nivå processer som krävs för att lyckas med körningen av en moln implementering. Genom att migrera din första arbets belastning med hjälp av de här guiderna får du hjälp att lösa inledande inlärnings kurvor tidigt i planerings processen. Därefter bör ytterligare överväganden ges till den [expanderade omfångs check listan](../migrate/expanded-scope/index.md), [metod tips för migrering](../migrate/azure-best-practices/index.md) och [migrering](../migrate/migration-considerations/index.md), för att justera rikt linjerna med din ansträngnings unika begränsningar, processer, team strukturer och mål.
+**Komma igång:** För att komma igång med en moln implementering kan du använda [Azure migration guide](../migrate/azure-migration-guide/index.md) och [Azures installations guide](../ready/azure-setup-guide/index.md) för att hantera de verktyg och hög nivå processer som krävs för att genomföra en moln implementering. Genom att migrera din första arbets belastning med hjälp av de här guiderna får du hjälp att lösa inledande inlärnings kurvor tidigt i planerings processen. Därefter bör ytterligare överväganden ges till den [expanderade omfångs check listan](../migrate/expanded-scope/index.md), [metod tips för migrering](../migrate/azure-best-practices/index.md) och [migrering](../migrate/migration-considerations/index.md), för att justera rikt linjerna med din ansträngnings unika begränsningar, processer, team strukturer och mål.
 
 ## <a name="cloud-strategy-and-planning"></a>Moln strategi och planering
 
@@ -81,13 +81,13 @@ Moln strategi-och planerings metodiken i molnet bygger på en stegvis metod för
 Som du ser i bilden ovan, justerar det här ramverket strategiska beslut till ett litet antal inneslutna processer, som körs inom en iterativ modell. Det beskrivs i ett linjärt dokument och var och en av följande processer förväntas vara mogna parallellt med iterationer av moln implementeringen. Länkarna för varje process har stöd för att definiera slut tillstånd och förfaller till önskat slut tillstånd:
 
 - **[Plan](../strategy/index.md):** När den tekniska implementeringen är justerad med tydliga affärs mål är det mycket enklare att mäta och justera framgång i flera moln implementerings ansträngningar, oavsett tekniska beslut.
-- **[Redo](../ready/index.md):** Att förbereda affärs-, kultur-, folk-och miljö för kommande ändringar leder till framgång i varje arbete och påskyndar implementeringen och ändrings projekt.
-- **Implementera:** Se till att du har rätt implementering av önskade ändringar, över IT-och affärs processer, för att uppnå affärs resultat.
-  - **[Migrera](../migrate/index.md):** Iterativ körning av [moln implementerings metoden](#cloud-implementation) som följer den testade processen för att utvärdera, migrera, optimera och skydda & hantera för att skapa en upprepnings bar process för migrering av arbets belastningar.
-- **[Arbeta](../operate/index.md):** Definiera en hanterbar drifts modell för att hantera aktiviteter under och länge efter införandet.
-  - **[Organisera](../organize/index.md):** Justera människor och team för att leverera rätt moln drift och införande.
-  - **[Styrning](../govern/index.md):** Justera företags principen mot materiella risker, med hjälp av princip-, process-och molnbaserad styrnings verktyg.
-  - **[Hantera](../manage/index.md):** Utöka IT-driften för att säkerställa att molnbaserade lösningar kan köras genom säkra, kostnads effektiva processer med moderna, molnbaserade drift verktyg.
+- **[Klart](../ready/index.md):** Att förbereda affärs-, kultur-, folk-och miljö för kommande ändringar leder till framgång i varje arbete och påskyndar implementeringen och ändrings projekt.
+- **Anta:** Se till att du har rätt implementering av önskade ändringar, över IT-och affärs processer, för att uppnå affärs resultat.
+  - **[Migrera](../migrate/index.md):** iterativ körning av [moln implementerings metoden](#cloud-implementation) som följer den testade processen för att utvärdera, migrera, optimera och skydda & hantera för att skapa en upprepnings bar process för migrering av arbets belastningar.
+  - **[Förnya](../innovate/index.md):** Driva affärs värde genom Innovations aktiviteter som låser upp nya tekniska kunskaper och utökade affärs funktioner.
+- **[Styr](../govern/index.md):** Justera företags principen mot materiella risker, med hjälp av princip-, process-och molnbaserad styrnings verktyg.
+- **[Hantera](../manage/index.md):** Utöka IT-driften för att säkerställa att molnbaserade lösningar kan köras genom säkra, kostnads effektiva processer med moderna, molnbaserade drift verktyg.
+- **[Organisera](../organize/index.md):** Justera människor och team för att leverera rätt moln drift och införande.
 
 I den här versionen av migreringen används det här ramverket för att lösa tvetydigheter, hantera ändringar och vägleda arbets grupper med hjälp av affärs resultat.
 
@@ -110,9 +110,9 @@ Under implementeringen av moln strategin och planerar IT-teamet kommer att fokus
 
 ### <a name="common-workload-examples"></a>Vanliga arbets belastnings exempel
 
-Moln strategi och planering riktar ofta sig till en bred samling arbets belastningar och program. I portföljen migreras vanligt vis vanliga program eller arbets belastnings typer. Följande är några exempel:
+Moln strategi och planering riktar ofta sig till en bred samling arbets belastningar och program. I portföljen migreras vanligt vis vanliga program eller arbets belastnings typer. Detta är några exempel:
 
-- Line-of-business-program
+- Branschspecifika program
 - Program som riktas mot kund
 - Program från tredje part
 - Plattformar för data analys
@@ -129,17 +129,23 @@ Tekniken som migreras till molnet ökar ständigt när moln leverantörer lägge
 - SAP på Azure
 - Analys (informations lager, Data Lake)
 
-## <a name="next-steps-lifecycle-solution"></a>Nästa steg: Livs cykel lösning
+## <a name="next-steps-lifecycle-solution"></a>Nästa steg: livs cykel lösning
 
 Ramverket för moln införande är en livs cykel lösning. Den är utformad för att hjälpa läsare som bara påbörjar sin resa, samt läsare som är djupgående i migreringen. Därför är innehållet mycket Sammanhangs beroende och mål grupp. Nästa steg är bäst att justera till den övergripande processen som läsaren vill förbättra härnäst.
 
 > [!div class="nextstepaction"]
+> [Strategi](../strategy/index.md)
+>
 > [Planera](../plan/index.md)
 >
 > [Redo](../ready/index.md)
 >
 > [Migrera](../migrate/index.md)
 >
-> [Hantera](../manage/index.md)
+> [Utveckla](../innovate/index.md)
 >
 > [Styras](../govern/index.md)
+>
+> [Hantera](../manage/index.md)
+>
+> [Externa](../organize/index.md)

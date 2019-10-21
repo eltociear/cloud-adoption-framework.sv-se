@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e795074526db2b5aec88052dc15aa9fa4140a91f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: be35763ea3beeec5977073dab8ef98c2e441b537
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025150"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548789"
 ---
 # <a name="scaling-with-multiple-azure-subscriptions"></a>Skalning med flera Azure-prenumerationer
 
@@ -45,7 +45,7 @@ Andra situationer kan kräva ytterligare prenumerationer. Tänk på följande n�
 
 - Prenumerationer i offentliga moln regioner och statliga eller myndighets moln regioner har olika begränsningar. Dessa styrs ofta av olika dataklassificeringsnivåer mellan miljöer.
 
-- Om du helt åtskiljer olika uppsättningar av användare av säkerhets- eller efterlevnadsskäl kan du behöva separata prenumerationer. Till exempel kan nationella myndigheter behöva begränsa en prenumerations åtkomst till endast medborgare.
+- Om du helt åtskiljer olika uppsättningar av användare av säkerhets- eller efterlevnadsskäl kan du behöva separata prenumerationer. Till exempel kan nationella myndighets organisationer behöva begränsa en prenumerations åtkomst till endast medborgarna.
 
 - Olika prenumerationer kan ha olika typer av erbjudanden, var och ett med sina egna villkor.
 
@@ -65,9 +65,9 @@ Du kan flytta många typer av resurser från en prenumeration till en annan elle
 
 Om du bara har ett fåtal prenumerationer är det relativt enkelt att hantera dem oberoende av varandra. Men om du har många prenumerationer bör du överväga att skapa en hierarki för hanteringsgrupper för att förenkla hanteringen av dina prenumerationer och resurser.
 
-Hanteringsgrupper möjliggör effektiv hantering av åtkomst, principer och efterlevnad för en organisations prenumerationer. Varje hanteringsgrupp är en behållare för en eller flera prenumerationer.
+Hanterings grupper möjliggör effektiv hantering av åtkomst, principer och efterlevnad för en organisations prenumerationer. Varje hanteringsgrupp är en behållare för en eller flera prenumerationer.
 
-Hanterings grupper är ordnade i en enkel hierarki. Du definierar den här hierarkin i din Azure Active Directory (Azure AD)-klient så att den överensstämmer med organisationens struktur och behov. Den översta nivån kallas för *rothanteringsgruppen.* Du kan definiera upp till sex nivåer av hanteringsgrupper i hierarkin. Varje prenumeration finns bara i en hanteringsgrupp.
+Hanterings grupper är ordnade i en enkel hierarki. Du definierar den här hierarkin i din Azure Active Directory (Azure AD)-klient organisation så att den överensstämmer med organisationens struktur och behov. Den översta nivån kallas för *rothanteringsgruppen.* Du kan definiera upp till sex nivåer av hanteringsgrupper i hierarkin. Varje prenumeration finns bara i en hanteringsgrupp.
 
 Azure har fyra hanteringsnivåer: hanteringsgrupper, prenumerationer, resursgrupper och resurser. Åtkomst eller principer som tillämpas på en nivå i hierarkin tillämpas också på nivåerna under denna. En resursägare eller en prenumerationsägare kan inte ändra en nedärvd princip. Den här begränsningen förbättrar styrningen.
 
@@ -76,7 +76,7 @@ Azure har fyra hanteringsnivåer: hanteringsgrupper, prenumerationer, resursgrup
 
 Genom att förlita dig på den här arvsmodellen kan du ordna prenumerationerna i hierarkin så att varje prenumeration följer lämpliga principer och säkerhetskontroller.
 
-![De fyra omfångsnivåerna för att organisera dina Azure-resurser](../../ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
+![De fyra omfångsnivåerna för att organisera dina Azure-resurser](../../ready/azure-setup-guide/media/organize-resources/scope-levels.png)
 
 Alla tilldelningar av användaråtkomst eller principtilldelning för rothanteringsgruppen gäller för alla resurser inom katalogen. Tänk efter noga vilka objekt du definierar i det här omfånget. Inkludera endast de tilldelningar som du måste ha.
 

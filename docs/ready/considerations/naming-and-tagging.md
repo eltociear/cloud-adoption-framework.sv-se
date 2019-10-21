@@ -1,5 +1,5 @@
 ---
-title: 'Redo: Rekommenderade regler för namngivning och taggar'
+title: 'Klar: rekommenderade namngivnings-och taggnings konventioner'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Den här artikeln innehåller detaljerad information om resursnamn och taggar som bidrar till molnimplementeringen för företag.
 author: BrianBlanchard
@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: fc4d337f844cef3408c9bc073e3848ee4612fca3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 242b397312fe466670d3f1a315059f72447b300b
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031108"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548835"
 ---
-# <a name="ready-recommended-naming-and-tagging-conventions"></a>Redo: Rekommenderade regler för namngivning och taggar
+# <a name="ready-recommended-naming-and-tagging-conventions"></a>Klar: rekommenderade namngivnings-och taggnings konventioner
 
 Omorganisation av molnbaserade resurser på sätt som bidrar till driftsstyrning och som kan hantera redovisningskrav är en utmaning som är vanlig vid en övergång till molnet. Genom att använda väldefinierade system för namngivning och metadatataggar för molnbaserade resurser kan IT-personal snabbt hitta och hantera resurser. Väldefinierade namn och taggar bidrar också till att samordna molnkostnaderna med företagets team genom att använda redovisningsmekanismer som debiterar eller visar utgifter för avdelningar.
 
-Azure Architecture Centers [namnkonventioner för Azure-resurser](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) innehåller allmänna rekommendationer om namngivningskonventioner och diskussioner om namngivningsbegränsningar och regler för plattformar. Följande diskussion utökar den allmänna vägledningen med mer detaljerade rekommendationer som syftar till att ge stöd för företags molnimplementeringar.
+Azure Architecture Center [namngivnings regler och begränsningar för Azures resurs](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) vägledning ger allmänna rekommendationer och plattforms begränsningar. Följande diskussion utökar den allmänna vägledningen med mer detaljerade rekommendationer som syftar till att ge stöd för företags molnimplementeringar.
 
 Resursnamn kan vara svåra att ändra. Be dina molnimplementeringsteam att prioritera att etablera en omfattande namngivningskonvention innan du påbörjar en omfattande molndistribution.
 
@@ -46,7 +46,7 @@ Från namnet kan du snabbt identifiera resurstypen, dess associerade arbetsbelas
 
 #### <a name="naming-scope"></a>Namngivningsomfång
 
-Alla typer av Azure-resurser har ett omfång som definierar hur dessa tillgångar kan hanteras i förhållande till andra resurstyper. När det gäller namngivningskonventioner innebär detta att en resurs måste ha ett unikt namn inom dess omfång.
+Alla typer av Azure-resurser har en omfattning som definierar nivån som resurs namn måste vara unika. En resurs måste ha ett unikt namn inom sitt omfång.
 
 Ett virtuellt nätverk har till exempel en resursgrupps omfång, vilket innebär att det bara kan finnas ett nätverk med namnet `vnet-prod-westus-001` i en specifik resursgrupp. Andra resursgrupper kan ha sitt eget virtuella nätverk med namnet `vnet-prod-westus-001`. Ett annat exempel är undernät, som är begränsade till virtuella nätverk. Det innebär att varje undernät inom ett virtuellt nätverk måste ha ett unikt namn.
 
@@ -76,46 +76,49 @@ I följande lista visas rekommenderade prefix för Azure-resurstyper som du kan 
 
 | Resurstyp                       | Resursnamnprefix |
 | ----------------------------------- | -------------------- |
-| Resource group                      | rg-                  |
-| Azure Virtual Network                     | vnet-                |
+| Resursgrupp                      | rg-                  |
+| Azure Virtual Network               | vnet-                |
 | Virtuell nätverksgateway             | vnet-gw-             |
 | Gateway-anslutning                  | cn-                  |
-| Subnet                              | snet-                |
+| Undernät                              | snet-                |
 | Nätverkssäkerhetsgrupp              | nsg-                 |
-| Azure virtuella maskiner                    | vm-                  |
+| Routningstabell                         | styra               |
+| Azure Virtual Machines              | vm-                  |
 | Lagringskonto för virtuell dator                  | stvm                 |
-| Offentlig IP                           | pip-                 |
-| Azure Load Balancer                       | lb-                  |
+| Offentlig IP-adress                           | pip-                 |
+| Azure Load Balancer                 | lb-                  |
 | NIC                                 | nic-                 |
-| Azure Service Bus                         | sb-                  |
-| Azure Service Bus-köer                  | sbq-                 |
-| Azure App Service-appar                    | azapp-               |
-| Azure Functions-appar                       | azfun-               |
-| Azure Cloud Services                      | azcs-                |
+| Azure Key Vault                     | 3,0                  |
+| Azure Kubernetes Service            | AKS                 |
+| Azure Service Bus                   | sb-                  |
+| Azure Service Bus-köer            | sbq-                 |
+| Azure App Service-appar              | azapp-               |
+| Azure Functions-appar                | azfun-               |
+| Azure Cloud Services                | azcs-                |
 | Azure SQL Database                  | sqldb-               |
 | Azure Cosmos DB (tidigare Azure DocumentDB) | cosdb-               |
 | Azure Cache for Redis               | redis-               |
-| Azure Database for MySQL            | mysql-               |
-| Azure SQL Data Warehouse                  | sqldw-               |
+| Azure-databas för MySQL            | mysql-               |
+| Azure SQL Data Warehouse            | sqldw-               |
 | SQL Server Stretch Database         | sqlstrdb-            |
 | Azure Storage                       | stor                 |
-| Azure StorSimple                          | ssimp                |
+| Azure StorSimple                    | ssimp                |
 | Azure Search                        | srch-                |
-| Azure Cognitive Services                  | cs-                  |
+| Azure Cognitive Services            | cs-                  |
 | Azure Machine Learning-arbetsyta    | aml-                 |
 | Azure Data Lake Storage             | DLS                  |
 | Azure Data Lake Analytics           | dla                  |
-| Azure HDInsight – Spark                   | hdis-                |
-| Azure HDInsight – Hadoop                  | hdihd-               |
-| Azure HDInsight – R Server                | hdir-                |
-| Azure HDInsight – HBase                   | hdihb-               |
-| Inbäddat Power BI                   | pbiemb               |
-| Azure Stream Analytics                    | asa-                 |
-| Azure Data Factory                        | df-                  |
-| Azure Event Hubs                           | evh-                 |
+| Azure HDInsight – Spark             | hdis-                |
+| Azure HDInsight – Hadoop            | hdihd-               |
+| Azure HDInsight – R Server          | hdir-                |
+| Azure HDInsight – HBase             | hdihb-               |
+| Power BI Embedded                   | pbiemb               |
+| Azure Stream Analytics              | asa-                 |
+| Azure Data Factory                  | df-                  |
+| Azure Event Hubs                    | evh-                 |
 | Azure IoT Hub                       | aih-                 |
-| Azure Notification Hubs                   | anh-                 |
-| Azure Notification Hubs-namnområde          | anhns-               |
+| Azure Notification Hubs             | anh-                 |
+| Azure Notification Hubs-namnområde   | anhns-               |
 
 ### <a name="metadata-tags"></a>Metadatataggar
 
@@ -142,102 +145,104 @@ De taggar som du fäster på resurser och de taggar som behövs eller är valfri
 
 I följande avsnitt finns exempel på namngivningssystem för vanliga typer av Azure-resurser som distribueras i samband med en molndistribution för företag.
 
+<!-- markdownlint-disable MD033 -->
+
 ### <a name="subscriptions"></a>Prenumerationer
 
 | Tillgångstyp   | Omfång                        | Format                                             | Exempel                                     |
 |--------------|------------------------------|----------------------------------------------------|----------------------------------------------|
-| Subscription | Konto/företagsavtal | \<Affärsenhet\>-\<Prenumerationstyp\>-\<\#\#\#\> | <ul><li>mktg-prod-001 </li><li>corp-shared-001 </li><li>fin-client-001</li></ul> |
+| Prenumeration | Konto/företagsavtal | \<Affärsenhet\>-\<Prenumerationstyp\>-\<\#\#\#\> | <ul><li>mktg-prod-001 </li><li>corp-shared-001 </li><li>fin-client-001</li></ul> |
 
 ### <a name="resource-groups"></a>Resursgrupper
 
 | Tillgångstyp     | Omfång        | Format                                                     | Exempel                                                                            |
 |----------------|--------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| Resource group | Subscription | rg-\<App / Service name\>-\<Subscription type\>-\<\#\#\#\> | <ul><li>rg-mktgsharepoint-prod-001 </li><li>rg-acctlookupsvc-share-001 </li><li>rg-ad-dir-services-shared-001</li></ul> |
+| Resursgrupp | Prenumeration | rg-\<App / Service name\>-\<Subscription type\>-\<\#\#\#\> | <ul><li>rg-mktgsharepoint-prod-001 </li><li>rg-acctlookupsvc-share-001 </li><li>rg-ad-dir-services-shared-001</li></ul> |
 
 ### <a name="virtual-networking"></a>Virtuellt nätverk
 
 | Tillgångstyp               | Omfång           | Format                                                                | Exempel                                                                                              |
 |--------------------------|-----------------|-----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| Azure Virtual Network          | Resource group  | vnet-\<Subscription type\>-\<Region\>-\<\#\#\#\>                      | <ul><li>vnet-shared-eastus2-001 </li><li>vnet-prod-westus-001 </li><li>vnet-client-eastus2-001</li></ul>                                  |
+| Azure Virtual Network          | Resursgrupp  | vnet-\<Subscription type\>-\<Region\>-\<\#\#\#\>                      | <ul><li>vnet-shared-eastus2-001 </li><li>vnet-prod-westus-001 </li><li>vnet-client-eastus2-001</li></ul>                                  |
 | Virtuell gateway för virtuellt nätverk     | Virtuellt nätverk | vnet-gw-v-\<Subscription type\>-\<Region\>-\<\#\#\#\>                 | <ul><li>vnet-gw-v-shared-eastus2-001 </li><li>vnet-gw-v-prod-westus-001 </li><li>vnet-gw-v-client-eastus2-001</li></ul>                   |
 | Virtuell lokal nätverksgateway       | Virtuell gateway | vnet-gw-l-\<Subscription type\>-\<Region\>-\<\#\#\#\>                 | <ul><li>vnet-gw-l-shared-eastus2-001 </li><li>vnet-gw-l-prod-westus-001 </li><li>vnet-gw-l-client-eastus2-001</li></ul>                   |
-| Plats-till-plats-anslutningar | Resource group  | cn-\<local gateway name\>-to-\<virtual gateway name\>                 | <ul><li>cn-l-gw-shared-eastus2-001-to-v-gw-shared-eastus2-001 </li><li>cn-l-gw-shared-eastus2-001-to-shared-westus-001</li></ul> |
-| Anslutningar till virtuellt nätverk         | Resource group  | cn-\<prenumeration1\>\<region1\>-till-\<prenumeration2\>\<region2\>-      | <ul><li>cn-shared-eastus2-to-shared-westus </li><li>cn-shared-eastus2-to-shared-westus</li></ul>                                     |
-| Subnet                   | Virtuellt nätverk | snet-\<subscription\>-\<subregion\>-\<\#\#\#\>                       | <ul><li>snet-shared-eastus2-001 </li><li>snet-prod-westus-001 </li><li>snet-client-eastus2-001</li></ul>                                  |
+| Plats-till-plats-anslutningar | Resursgrupp  | cn-\<local gateway name\>-to-\<virtual gateway name\>                 | <ul><li>cn-l-gw-shared-eastus2-001-to-v-gw-shared-eastus2-001 </li><li>cn-l-gw-shared-eastus2-001-to-shared-westus-001</li></ul> |
+| Anslutningar till virtuellt nätverk         | Resursgrupp  | cn-\<prenumeration1\>\<region1\>-till-\<prenumeration2\>\<region2\>-      | <ul><li>cn-shared-eastus2-to-shared-westus </li><li>cn-shared-eastus2-to-shared-westus</li></ul>                                     |
+| Undernät                   | Virtuellt nätverk | snet-\<subscription\>-\<subregion\>-\<\#\#\#\>                       | <ul><li>snet-shared-eastus2-001 </li><li>snet-prod-westus-001 </li><li>snet-client-eastus2-001</li></ul>                                  |
 | Nätverkssäkerhetsgrupp   | Undernät eller NIC   | nsg-\<policy name or appname\>-\<\#\#\#\>                             | <ul><li>nsg-weballow-001 </li><li>nsg-rdpallow-001 </li><li>nsg-sqlallow-001 </li><li>nsg-dnsbloked-001</li></ul>                                  |
-| Offentlig IP                | Resource group  | pip-\<vm name or app name\>-\<Environment\>-\<subregion\>-\<\#\#\#\> | <ul><li>pip-dc1-shared-eastus2-001 </li><li>pip-hadoop-prod-westus-001</li></ul>                                                 |
+| Offentlig IP-adress                | Resursgrupp  | pip-\<vm name or app name\>-\<Environment\>-\<subregion\>-\<\#\#\#\> | <ul><li>pip-dc1-shared-eastus2-001 </li><li>pip-hadoop-prod-westus-001</li></ul>                                                 |
 
-### <a name="azure-virtual-machines"></a>Azure virtuella maskiner
+### <a name="azure-virtual-machines"></a>Azure Virtual Machines
 
 | Tillgångstyp         | Omfång          | Format                                                              | Exempel                                                                             |
 |--------------------|----------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| Azure virtuella maskiner    | Resource group | vm\<policy name or appname\>\<\#\#\#\>                              | <ul><li>vmnavigator001 </li><li>vmsharepoint001 </li><li>vmsqlnode001 </li><li>vmhadoop001</li></ul>                              |
-| Lagringskonto för virtuell dator | Global         | stvm\<performance type\>\<appname or prodname\>\<region\>\<\#\#\#\> | <ul><li>stvmstcoreeastus2001 </li><li>stvmpmcoreeastus2001 </li><li>stvmstplmeastus2001 </li><li>stvmsthadoopeastus2001</li></ul> |
-| DNS-etikett          | Global         | \<En post för en virtuell dator\>.[\<region\>.cloudapp.azure.com]                  | <ul><li>dc1.westus.cloudapp.azure.com </li><li>web1.eastus2.cloudapp.azure.com</li></ul>                        |
-| Azure Load Balancer      | Resource group | lb-\<app name or role\>\<Environment\>\<\#\#\#\>                    | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-dev-001</li></ul>                                          |
-| NIC                | Resource group | nic-\<\#\#\>-\<vmname\>-\<subscription\>\<\#\#\#\>                  | <ul><li>nic-01-dc1-shared-001 </li><li>nic-02-vmhadoop1-prod-001 </li><li>nic-02-vmtest1-client-001</li></ul>            |
+| Azure Virtual Machines    | Resursgrupp | vm\<policy name or appname\>\<\#\#\#\>                              | <ul><li>vmnavigator001 </li><li>vmsharepoint001 </li><li>vmsqlnode001 </li><li>vmhadoop001</li></ul>                              |
+| Lagringskonto för virtuell dator | Globalt         | stvm\<performance type\>\<appname or prodname\>\<region\>\<\#\#\#\> | <ul><li>stvmstcoreeastus2001 </li><li>stvmpmcoreeastus2001 </li><li>stvmstplmeastus2001 </li><li>stvmsthadoopeastus2001</li></ul> |
+| DNS-etikett          | Globalt         | \<En post för en virtuell dator\>.[\<region\>.cloudapp.azure.com]                  | <ul><li>dc1.westus.cloudapp.azure.com </li><li>web1.eastus2.cloudapp.azure.com</li></ul>                        |
+| Azure Load Balancer      | Resursgrupp | lb-\<app name or role\>\<Environment\>\<\#\#\#\>                    | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-dev-001</li></ul>                                          |
+| NIC                | Resursgrupp | nic-\<\#\#\>-\<vmname\>-\<subscription\>\<\#\#\#\>                  | <ul><li>nic-01-dc1-shared-001 </li><li>nic-02-vmhadoop1-prod-001 </li><li>nic-02-vmtest1-client-001</li></ul>            |
 
 ### <a name="paas-services"></a>PaaS-tjänster
 
 | Tillgångstyp     | Omfång  | Format                                                              | Exempel                                                                                 |
 |----------------|--------|---------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| Azure App Service    | Global | azapp-\<App Name\>-\<Environment\>-\<\#\#\#\>.[{azurewebsites.net}] | <ul><li>azapp-navigator-prod-001.azurewebsites.net </li><li>azapp-accountlookup-dev-001.azurewebsites.net</li></ul> |
-| Azure Functions App   | Global | azfun-\<App Name\>-\<Environment\>-\<\#\#\#\>.[{azurewebsites.net}] | <ul><li>azfun-navigator-prod-001.azurewebsites.net </li><li>azfun-accountlookup-dev-001.azurewebsites.net</li></ul> |
-| Azure Cloud Services | Global | azcs-\<App Name\>-\<Environment\>-\<\#\#\#\>.[{cloudapp.net}]       | <ul><li>azcs-navigator-prod-001.azurewebsites.net </li><li>azcs-accountlookup-dev-001.azurewebsites.net</li></ul>   |
+| Azure App Service    | Globalt | azapp-\<App Name\>-\<Environment\>-\<\#\#\#\>.[{azurewebsites.net}] | <ul><li>azapp-navigator-prod-001.azurewebsites.net </li><li>azapp-accountlookup-dev-001.azurewebsites.net</li></ul> |
+| Azure Functions App   | Globalt | azfun-\<App Name\>-\<Environment\>-\<\#\#\#\>.[{azurewebsites.net}] | <ul><li>azfun-navigator-prod-001.azurewebsites.net </li><li>azfun-accountlookup-dev-001.azurewebsites.net</li></ul> |
+| Azure Cloud Services | Globalt | azcs-\<App Name\>-\<Environment\>-\<\#\#\#\>.[{cloudapp.net}]       | <ul><li>azcs-navigator-prod-001.azurewebsites.net </li><li>azcs-accountlookup-dev-001.azurewebsites.net</li></ul>   |
 
 ### <a name="azure-service-bus"></a>Azure Service Bus
 
 | Tillgångstyp         | Omfång       | Format                                                     | Exempel                           |
 |--------------------|-------------|------------------------------------------------------------|------------------------------------|
-| Azure Service Bus        | Global      | sb-\<App Name\>-\<Environment\>.[{servicebus.windows.net}] | <ul><li>sb-navigator-prod </li><li>sb-emissions-dev</li></ul> |
+| Azure Service Bus        | Globalt      | sb-\<App Name\>-\<Environment\>.[{servicebus.windows.net}] | <ul><li>sb-navigator-prod </li><li>sb-emissions-dev</li></ul> |
 | Azure Service Bus-köer | Service Bus | sbq-\<query descriptor\>                                   | <ul><li>sbq-messagequery</li></ul>                   |
 
 ### <a name="databases"></a>Databaser
 
 | Tillgångstyp                          | Omfång              | Format                                | Exempel                                       |
 |-------------------------------------|--------------------|---------------------------------------|------------------------------------------------|
-| Azure SQL Database                  | Global             | sqldb-\<App Name\>-\<Environment\>    | <ul><li>sqldb-navigator-prod </li><li>sqldb-emissions-dev</li></ul>       |
-| Azure Cosmos DB (tidigare Azure DocumentDB) | Global             | cosdb-\<App Name\>-\<Environment\>    | <ul><li>cosdb-navigator-prod </li><li>cosdb-emissions-dev</li></ul>       |
-| Azure Cache for Redis               | Global             | redis-\<App Name\>-\<Environment\>    | <ul><li>redis-navigator-prod </li><li>redis-emissions-dev</li></ul>       |
-| Azure Database for MySQL            | Global             | mysql-\<App Name\>-\<Environment\>    | <ul><li>mysql-navigator-prod </li><li>mysql-emissions-dev</li></ul>       |
-| Azure SQL Data Warehouse                  | Global             | sqldw-\<App Name\>-\<Environment\>    | <ul><li>sqldw-navigator-prod </li><li>sqldw-emissions-dev</li></ul>       |
+| Azure SQL Database                  | Globalt             | sqldb-\<App Name\>-\<Environment\>    | <ul><li>sqldb-navigator-prod </li><li>sqldb-emissions-dev</li></ul>       |
+| Azure Cosmos DB (tidigare Azure DocumentDB) | Globalt             | cosdb-\<App Name\>-\<Environment\>    | <ul><li>cosdb-navigator-prod </li><li>cosdb-emissions-dev</li></ul>       |
+| Azure Cache for Redis               | Globalt             | redis-\<App Name\>-\<Environment\>    | <ul><li>redis-navigator-prod </li><li>redis-emissions-dev</li></ul>       |
+| Azure-databas för MySQL            | Globalt             | mysql-\<App Name\>-\<Environment\>    | <ul><li>mysql-navigator-prod </li><li>mysql-emissions-dev</li></ul>       |
+| Azure SQL Data Warehouse                  | Globalt             | sqldw-\<App Name\>-\<Environment\>    | <ul><li>sqldw-navigator-prod </li><li>sqldw-emissions-dev</li></ul>       |
 | SQL Server Stretch Database         | Azure SQL Database | -\<App Name\>-\<Environment\> | <ul><li>sqlstrdb-navigator-prod </li><li>sqlstrdb-emissions-dev</li></ul> |
 
-### <a name="storage"></a>Storage
+### <a name="storage"></a>Lagring
 
 | Tillgångstyp                              | Omfång  | Format                                                                        | Exempel                                   |
 |-----------------------------------------|--------|-------------------------------------------------------------------------------|--------------------------------------------|
-| Azure Storage-konto – allmän användning     | Global | st\<storage name\>\<\#\#\#\>                                                  | <ul><li>stnavigatordata001 </li><li>stemissionsoutput001</li></ul>    |
-| Azure Storage-konto – diagnostikloggar | Global | stdiag\<första två bokstäverna i prenumerationsnamnet och numret\>\<region\>\<\#\#\#\> | <ul><li>stdiagsh001eastus2001 </li><li>stdiagsh001westus001</li></ul> |
-| Azure StorSimple                              | Global | ssimp\<App Name\>\<Environment\>                                              | <ul><li>ssimpnavigatorprod </li><li>ssimpemissionsdev</li></ul>       |
+| Azure Storage-konto – allmän användning     | Globalt | st\<storage name\>\<\#\#\#\>                                                  | <ul><li>stnavigatordata001 </li><li>stemissionsoutput001</li></ul>    |
+| Azure Storage-konto – diagnostikloggar | Globalt | stdiag\<första två bokstäverna i prenumerationsnamnet och numret\>\<region\>\<\#\#\#\> | <ul><li>stdiagsh001eastus2001 </li><li>stdiagsh001westus001</li></ul> |
+| Azure StorSimple                              | Globalt | ssimp\<App Name\>\<Environment\>                                              | <ul><li>ssimpnavigatorprod </li><li>ssimpemissionsdev</li></ul>       |
 
-### <a name="ai--machine-learning"></a>AI + Machine Learning
+### <a name="ai--machine-learning"></a>AI + maskininlärning
 
 | Tillgångstyp                       | Omfång          | Format                            | Exempel                               |
 |----------------------------------|----------------|-----------------------------------|----------------------------------------|
-| Azure Search                     | Global         | srch-\<App Name\>-\<Environment\> | <ul><li>srch-navigator-prod </li><li>srch-emissions-dev</li></ul> |
-| Azure Cognitive Services               | Resource group | cs-\<App Name\>-\<Environment\>   | <ul><li>cs-navigator-prod </li><li>cs-emissions-dev</li></ul>     |
-| Azure Machine Learning-arbetsyta | Resource group | aml-\<App Name\>-\<Environment\>  | <ul><li>aml-navigator-prod </li><li>aml-emissions-dev</li></ul>   |
+| Azure Search                     | Globalt         | srch-\<App Name\>-\<Environment\> | <ul><li>srch-navigator-prod </li><li>srch-emissions-dev</li></ul> |
+| Azure Cognitive Services               | Resursgrupp | cs-\<App Name\>-\<Environment\>   | <ul><li>cs-navigator-prod </li><li>cs-emissions-dev</li></ul>     |
+| Azure Machine Learning-arbetsyta | Resursgrupp | aml-\<App Name\>-\<Environment\>  | <ul><li>aml-navigator-prod </li><li>aml-emissions-dev</li></ul>   |
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Analyser
 
 | Tillgångstyp                | Omfång  | Format                             | Exempel                                 |
 |---------------------------|--------|------------------------------------|------------------------------------------|
-| Azure Data Factory        | Global | df-\<App Name\>\<Environment\>     | <ul><li>df-navigator-prod </li><li>df-emissions-dev</li></ul>       |
-| Azure Data Lake Storage   | Global | dls\<App Name\>\<Environment\>     | <ul><li>dlsnavigatorprod </li><li>dlsemissionsdev</li></ul>         |
-| Azure Data Lake Analytics | Global | dla\<App Name\>\<Environment\>     | <ul><li>dlanavigatorprod </li><li>dlaemissionsdev</li></ul>         |
-| Azure HDInsight – Spark         | Global | hdis-\<App Name\>-\<Environment\>  | <ul><li>hdis-navigator-prod </li><li>hdis-emissions-dev </li></ul>  |
-| Azure HDInsight – Hadoop        | Global | hdihd-\<App Name\>-\<Environment\> | <ul><li>hdihd-hadoop-prod </li><li>hdihd-emissions-dev</li></ul>    |
-| Azure HDInsight – R Server      | Global | hdir-\<App Name\>-\<Environment\>  | <ul><li>hdir-navigator-prod </li><li>hdir-emissions-dev</li></ul>   |
-| Azure HDInsight – HBase         | Global | hdihb-\<App Name\>-\<Environment\> | <ul><li>hdihb-navigator-prod </li><li>hdihb-emissions-dev</li></ul> |
-| Inbäddat Power BI         | Global | pbiemb\<App Name\>\<Environment\>  | <ul><li>pbiem-navigator-prod </li><li>pbiem-emissions-dev</li></ul> |
+| Azure Data Factory        | Globalt | df-\<App Name\>\<Environment\>     | <ul><li>df-navigator-prod </li><li>df-emissions-dev</li></ul>       |
+| Azure Data Lake Storage   | Globalt | dls\<App Name\>\<Environment\>     | <ul><li>dlsnavigatorprod </li><li>dlsemissionsdev</li></ul>         |
+| Azure Data Lake Analytics | Globalt | dla\<App Name\>\<Environment\>     | <ul><li>dlanavigatorprod </li><li>dlaemissionsdev</li></ul>         |
+| Azure HDInsight – Spark         | Globalt | hdis-\<App Name\>-\<Environment\>  | <ul><li>hdis-navigator-prod </li><li>hdis-emissions-dev </li></ul>  |
+| Azure HDInsight – Hadoop        | Globalt | hdihd-\<App Name\>-\<Environment\> | <ul><li>hdihd-hadoop-prod </li><li>hdihd-emissions-dev</li></ul>    |
+| Azure HDInsight – R Server      | Globalt | hdir-\<App Name\>-\<Environment\>  | <ul><li>hdir-navigator-prod </li><li>hdir-emissions-dev</li></ul>   |
+| Azure HDInsight – HBase         | Globalt | hdihb-\<App Name\>-\<Environment\> | <ul><li>hdihb-navigator-prod </li><li>hdihb-emissions-dev</li></ul> |
+| Power BI Embedded         | Globalt | pbiemb\<App Name\>\<Environment\>  | <ul><li>pbiem-navigator-prod </li><li>pbiem-emissions-dev</li></ul> |
 
 ### <a name="internet-of-things-iot"></a>Sakernas Internet (IoT)
 
 | Tillgångstyp                         | Omfång          | Format                             | Exempel                                 |
 |------------------------------------|----------------|------------------------------------|------------------------------------------|
-| Azure Stream Analytics på IoT Edge | Resource group | asa-\<App Name\>-\<Environment\>   | <ul><li>asa-navigator-prod </li><li>asa-emissions-dev</li></ul>     |
-| Azure IoT Hub                      | Global         | aih-\<App Name\>-\<Environment\>   | <ul><li>asa-navigator-prod </li><li>aih-emissions-dev</li></ul>     |
-| Azure Event Hubs                          | Global         | evh-\<App Name\>-\<Environment\>   | <ul><li>evh-navigator-prod </li><li>evh-emissions-dev</li></ul>     |
-| Azure Notification Hubs                   | Resource group | anh-\<App Name\>-\<Environment\>   | <ul><li>evh-navigator-prod </li><li>evh-emissions-dev</li></ul>     |
-| Azure Notification Hubs-namnområde         | Global         | anhns-\<App Name\>-\<Environment\> | <ul><li>anhns-navigator-prod </li><li>anhns-emissions-dev</li></ul> |
+| Azure Stream Analytics på IoT Edge | Resursgrupp | asa-\<App Name\>-\<Environment\>   | <ul><li>asa-navigator-prod </li><li>asa-emissions-dev</li></ul>     |
+| Azure IoT Hub                      | Globalt         | aih-\<App Name\>-\<Environment\>   | <ul><li>asa-navigator-prod </li><li>aih-emissions-dev</li></ul>     |
+| Azure Event Hubs                          | Globalt         | evh-\<App Name\>-\<Environment\>   | <ul><li>evh-navigator-prod </li><li>evh-emissions-dev</li></ul>     |
+| Azure Notification Hubs                   | Resursgrupp | anh-\<App Name\>-\<Environment\>   | <ul><li>evh-navigator-prod </li><li>evh-emissions-dev</li></ul>     |
+| Azure Notification Hubs-namnområde         | Globalt         | anhns-\<App Name\>-\<Environment\> | <ul><li>anhns-navigator-prod </li><li>anhns-emissions-dev</li></ul> |

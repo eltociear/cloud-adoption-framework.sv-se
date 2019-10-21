@@ -1,7 +1,7 @@
 ---
-title: 'Styrnings guide för komplexa företag: Förbättra säkerhets bas linje disciplinen'
+title: 'Styrnings guide för komplexa företag: förbättra säkerhets bas linje disciplinen'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Styrnings guide för komplexa företag: Förbättra säkerhets bas linje disciplinen'
+description: 'Styrnings guide för komplexa företag: förbättra säkerhets bas linje disciplinen'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dc045d26dd855240700341748c189a985f1f6758
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 2e2e075b6f051af003d4c8d542e592943084c1e7
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220548"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547603"
 ---
-# <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Styrnings guide för komplexa företag: Förbättra säkerhets bas linje disciplinen
+# <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Styrnings guide för komplexa företag: förbättra säkerhets bas linje disciplinen
 
 Den här artikeln går vidare genom att lägga till säkerhets kontroller som stöder flytt av skyddade data till molnet.
 
@@ -100,7 +100,7 @@ Följande ändringar i principen hjälper dig att åtgärda de nya riskerna och 
 
 Det här avsnittet av artikeln ändrar designen för styrnings MVP till att inkludera nya Azure-principer och en implementering av Azure Cost Management. Tillsammans kommer dessa två design ändringar att uppfylla de nya företags princip satserna.
 
-De nya bästa metoderna är i två kategorier: Företags IT (hubb) och molnbaserad adoption (eker).
+De nya bästa metoderna är i två kategorier: företags IT (hubb) och molnbaserad adoption (eker).
 
 **Upprätta en företags IT-hubb och eker-prenumeration för att centralisera säkerhets bas linjen:** I den här bästa praxis omsluts den befintliga styrnings kapaciteten av en [nav-och eker-topologi med delade tjänster](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services), med några viktiga tillägg från moln styrnings teamet.
 
@@ -109,24 +109,24 @@ De nya bästa metoderna är i två kategorier: Företags IT (hubb) och molnbaser
     1. Rikt linjerna i [topologin hubb och eker med delade tjänster](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) kan användas för att skapa Resource Manager-mallar för de till gångar som krävs i en företags IT-hubb.
     2. Med hjälp av dessa mallar kan den här strukturen göras repeterbar, som en del av en central styrnings strategi.
     3. Förutom den aktuella referens arkitekturen, rekommenderar vi att du skapar en mall för nätverks säkerhets grupper som fångar in alla port spärrnings-eller vit listning-krav för det virtuella nätverket som värd för brand väggen. Den här nätverks säkerhets gruppen skiljer sig från tidigare grupper, eftersom det är den första nätverks säkerhets gruppen som tillåter offentlig trafik till ett VNet.
-3. Skapa Azure-principer. Skapa en princip med `Hub NSG Enforcement` namnet för att genomdriva konfigurationen av den nätverks säkerhets grupp som har tilldelats till ett virtuellt nätverk som skapats i den här prenumerationen. Använd de inbyggda principerna för gäst konfiguration enligt följande:
+3. Skapa Azure-principer. Skapa en princip med namnet `Hub NSG Enforcement` för att genomdriva konfigurationen av den nätverks säkerhets grupp som har tilldelats till ett virtuellt nätverk som skapats i den här prenumerationen. Använd de inbyggda principerna för gäst konfiguration enligt följande:
     1. Granska att Windows-webbservrar använder säkra kommunikations protokoll.
     2. Granska att inställningarna för lösen ords säkerhet är korrekt i Linux-och Windows-datorer.
 4. IT-skiss för företag
-    1. Skapa en Azure-skiss `corporate-it-subscription`med namnet.
-    2. Lägg till Hub-och eker- `Hub NSG Enforcement` mallarna och principen.
+    1. Skapa en Azure-skiss med namnet `corporate-it-subscription`.
+    2. Lägg till hubb-och eker-mallarna och `Hub NSG Enforcement` principen.
 5. Expanderar den inledande hanterings gruppens hierarki.
-    1. För varje hanterings grupp som har begärt stöd för skyddade data `corporate-it-subscription-blueprint` tillhandahåller skissen en accelererad nav lösning.
+    1. För varje hanterings grupp som har begärt stöd för skyddade data tillhandahåller `corporate-it-subscription-blueprint` skissen en accelererad nav lösning.
     2. Eftersom hanterings grupper i det här fiktiva exemplet innehåller en regional hierarki förutom en affär senhets hierarki, kommer den här skissen att distribueras i varje region.
-    3. Skapa en prenumeration med namnet `Corporate IT Subscription`för varje region i hanterings gruppens hierarki.
-    4. `corporate-it-subscription-blueprint` Använd skissen på varje regional instans.
-    5. Detta upprättar en hubb för varje affär senhet i varje region. Obs! Ytterligare kostnads besparingar kan uppnås, men delnings nav mellan affär senheter i varje region.
+    3. Skapa en prenumeration med namnet `Corporate IT Subscription` för varje region i hanterings gruppens hierarki.
+    4. Använd `corporate-it-subscription-blueprint` skissen på varje regional instans.
+    5. Detta upprättar en hubb för varje affär senhet i varje region. Obs! ytterligare kostnads besparingar kan uppnås, men delnings nav mellan affär senheter i varje region.
 6. Integrera grup princip objekt (GPO) via önskad tillstånds konfiguration (DSC):
     1. Konvertera GPO till DSC – [Microsoft Baseline Management-projektet](https://github.com/Microsoft/BaselineManagement) i GitHub kan påskynda denna ansträngning. * Var noga med att lagra DSC i databasen parallellt med Resource Manager-mallar.
     2. Distribuera Azure Automation tillstånds konfiguration till alla instanser av företags IT-prenumerationen. Azure Automation kan användas för att tillämpa DSC på virtuella datorer som distribuerats i stödda prenumerationer i hanterings gruppen.
     3. Den aktuella översikten planerar att aktivera anpassade principer för gäst konfiguration. När funktionen släpps krävs inte längre användningen av Azure Automation i den här rekommenderade metoden.
 
-**Använda ytterligare styrning för en moln implementerings prenumeration (eker):** Att bygga vidare `Corporate IT Subscription`på de mindre ändringar i styrnings MVP som tillämpas på varje prenumeration som är avsedd för supporten av Application archetypes kan skapa snabb förbättring.
+**Använda ytterligare styrning för en moln implementerings prenumeration (eker):** Genom att bygga vidare på `Corporate IT Subscription` kan mindre förbättringar av styrnings MVP: en för varje prenumeration som är avsedd för program archetypes skapa snabb förbättring.
 
 I tidigare repetitiva ändringar av bästa praxis definierade vi nätverks säkerhets grupper för att blockera offentlig trafik och vit listas intern trafik. Dessutom skapade Azure-skissen tillfälligt DMZ och Active Directory funktioner. I den här iterationen ska vi anpassa dessa till gångar till en bit, vilket skapar en ny version av Azure-skissen.
 
@@ -157,7 +157,7 @@ I tidigare repetitiva ändringar av bästa praxis definierade vi nätverks säke
     4. Granska och Framtvinga användning av godkända nätverks under nät och VNet per nätverks gränssnitt.
     5. Granska och genomdriva begränsningen för användardefinierade vägvals tabeller.
 6. Azure-skiss:
-    1. Skapa en Azure-skiss `protected-data`med namnet.
+    1. Skapa en Azure-skiss med namnet `protected-data`.
     2. Lägg till VNet-peer, nätverks säkerhets grupp och Azure Security Center mallar i skissen.
     3. Se till att mallen för Active Directory från föregående iteration **inte** ingår i skissen. Eventuella beroenden på Active Directory anges av IT-prenumerationen för företaget.
     4. Avsluta alla befintliga Active Directory virtuella datorer som distribuerats i föregående iteration.

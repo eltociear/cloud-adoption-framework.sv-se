@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4bc84ad8bd2d0a0521399c1762585db6f9a5a6ab
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 01380bdd795fac0fc2740e4e41c3638a8b8d93f3
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025417"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548304"
 ---
 # <a name="decisions-that-affect-migrations"></a>Beslut som påverkar migreringen
 
@@ -55,7 +55,7 @@ Innan du fattar beslut som kan ha en långsiktig inverkan på det aktuella migre
 
 ### <a name="effort-type"></a>Typ av projekt
 
-Vid all migrering på stor skala (> 250 virtuella datorer) migreras tillgångar med en mängd olika övergångsalternativ som beskrivs i rationaliseringens fem principer: *Byt värd*, *omstrukturera*, *omarbeta arkitektur*, *återskapa* och *ersätt*.
+Vid all migrering av stor skala (> 250 virtuella datorer) migreras till gångar med en mängd olika över gångs alternativ, som beskrivs i fem *RS-rationalisering*: *Rehost*, *rekonstruktör, rekonstruktion, återskapa*och *Ersätt*.
 
 Vissa arbetsbelastningar moderniseras genom att *återskapa* eller *omarbeta arkitekturen*, vilket skapar modernare program med nya funktioner och teknisk kapacitet. Andra tillgångar genomgår en *omstrukturering*, till exempel en övergång till behållare eller andra modernare värd- och driftmetoder som inte påverkar lösningarnas kodbas. Vanligtvis genomgår virtuella datorer och andra tillgångar som är mer väletablerade ett *värdbyte* så att tillgångarna överförs från datacentret till molnet. Vissa arbetsbelastningar kan eventuellt migreras till molnet, men ska istället *ersättas* med tjänstbaserade (SaaS-baserade) molntjänster som uppfyller samma verksamhetsbehov, till exempel genom att använda Office 365 som ett alternativ till att migrera Exchange Server-instanser.
 
@@ -88,9 +88,9 @@ Innan du fortsätter måste du dokumentera följande antaganden och dela dem med
 
 ## <a name="next-steps"></a>Nästa steg
 
-När alla i teamen förstår processen är det dags att titta på de tekniska förutsättningarna. [Checklistan för planering av migreringsmiljön](./planning-checklist.md) används för att kontrollera att det finns en färdig teknisk grund för migreringen.
+När processen har tolkats mellan teamet är det dags att granska tekniska krav. [Checklistan för planering av migreringsmiljön](./planning-checklist.md) används för att kontrollera att det finns en färdig teknisk grund för migreringen.
 
-När alla i teamen förstår processen är det dags att titta på de tekniska kraven [checklista för planering av migrering] så att det finns en färdig teknisk grund för migreringen.
+När processen har förståts i teamet, är det dags att granska tekniska krav för [planerings check lista för migrering] för att säkerställa att den tekniska grunden är redo för migrering.
 
 > [!div class="nextstepaction"]
 > [Läs checklistan för planering av migrering](./planning-checklist.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Standard styrnings guide för företag: Vägledning förklaring'
+title: 'Standard styrnings guide för företag: bästa praxis förklaras'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Lär dig mer om vägledning för styrning i standard företag.
+description: Lär dig mer om metod tips för styrning i standard företag.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3f9149c3edc90a12b0e9dd1f99e20172cf277fb2
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 0f7a6b76ba348414b4aed7b40aaffa4867e62c02
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967500"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547485"
 ---
-# <a name="standard-enterprise-governance-guide-prescriptive-guidance-explained"></a>Standard styrnings guide för företag: Vägledning förklaring
+# <a name="standard-enterprise-governance-guide-best-practices-explained"></a>Standard styrnings guide för företag: bästa praxis förklaras
 
-Styrnings guiden börjar med en uppsättning inledande [företags principer](./initial-corporate-policy.md). Dessa principer används för att upprätta en styrnings MVP som återspeglar [rekommenderade metoder](./index.md).
+Styrnings guiden börjar med en uppsättning inledande [företags principer](./initial-corporate-policy.md). Dessa principer används för att upprätta en styrnings MVP som återspeglar [bästa praxis](./index.md).
 
 I den här artikeln diskuterar vi de övergripande strategier som krävs för att skapa en styrnings MVP. Kärnan i styrnings MVP är [distributions accelerations](../../deployment-acceleration/index.md) disciplin. Verktygen och mönstren som används i det här skedet aktiverar de stegvisa förbättringar som krävs för att utöka styrningen i framtiden.
 
@@ -38,7 +38,7 @@ Implementeringen av styrnings-MVP: en har beroenden av identitet, säkerhet och 
 
 Den här implementeringen kan också beskrivas med en enkel check lista:
 
-1. Begär beslut angående kärn beroenden: Identitet, nätverk, övervakning och kryptering.
+1. Begär beslut angående kärn beroenden: identitet, nätverk, övervakning och kryptering.
 2. Bestäm vilket mönster som ska användas vid tillämpning av företags principen.
 3. Fastställ lämpliga styrnings mönster för resurs konsekvens, resurs märkning och loggnings-och rapporterings disciplin.
 4. Implementera styrnings verktygen som är justerade med det valda princip tillämpnings mönstret för att tillämpa de beroende besluten och styrnings besluten.
@@ -61,7 +61,7 @@ Beslutet om vilken prenumerations design som används avgör hur Azure-prenumera
 
 Resurs konsekvens beslut avgör vilka verktyg, processer och ansträngningar som krävs för att säkerställa att Azure-resurser distribueras, konfigureras och hanteras konsekvent i en prenumeration. I det här avsnittet har **[distributions konsekvens](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** valts som primärt resurs konsekvens mönster.
 
-- Resurs grupper skapas för program som använder livs cykel metoden: allt som skapas, underhålls och dras tillbaka tillsammans bör finnas i en enda resurs grupp. Mer information om resurs grupper finns [här](../../../decision-guides/resource-consistency/index.md#basic-grouping).
+- Resurs grupper skapas för program som använder livs cykel metoden. Allt som skapas, underhålls och dras tillbaka tillsammans bör finnas i en enda resurs grupp. Mer information om resurs grupper finns [här](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - Azure Policy ska tillämpas på alla prenumerationer från den associerade hanterings gruppen.
 - Som en del av distributions processen bör Azure Resource Consistency-mallar för resurs gruppen lagras i käll kontrollen.
 - Varje resurs grupp är kopplad till en specifik arbets belastning eller ett program baserat på den livs cykel metod som beskrivs ovan.

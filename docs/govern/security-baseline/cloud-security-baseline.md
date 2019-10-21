@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 40bcd90d632bedd4e924942ac6efae5034cc0af8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 216614c06f1638bf25149dac99f9bd258e9364aa
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221777"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548011"
 ---
 # <a name="understand-the-cloud-security-baseline"></a>Förstå moln säkerhets bas linjen
 
@@ -36,7 +36,7 @@ Som minst bör en strategi för moln säkerhet överväga följande ämnen:
 
 ## <a name="protecting-data-and-privacy"></a>Skydda data och sekretess
 
-För organisationer i hela världen&mdash;, oavsett om myndigheter, icke-vinster eller&mdash;företag som använder moln tjänster, har blivit viktiga delar av sin pågående IT-strategi. Cloud Services ger organisationer av alla storlekar åtkomst till praktiskt taget obegränsade data lagring samtidigt som du frigör dem från behovet av att köpa, underhålla och uppdatera sina egna nätverk och dator system. Microsoft och andra moln leverantörer erbjuder IT-infrastruktur, plattform och program vara som en tjänst (SaaS), vilket gör det möjligt för kunder att snabbt skala upp eller ned efter behov och bara betala för den data behandlings kraft och lagrings enhet de använder.
+För organisationer i hela världen &mdash;whether myndigheter, ideella eller företag &mdash;cloud data behandling har blivit en viktig del av sin pågående IT-strategi. Cloud Services ger organisationer av alla storlekar åtkomst till praktiskt taget obegränsade data lagring samtidigt som du frigör dem från behovet av att köpa, underhålla och uppdatera sina egna nätverk och dator system. Microsoft och andra moln leverantörer erbjuder IT-infrastruktur, plattform och program vara som en tjänst (SaaS), vilket gör det möjligt för kunder att snabbt skala upp eller ned efter behov och bara betala för den data behandlings kraft och lagrings enhet de använder.
 
 Eftersom organisationer fortsätter att dra nytta av fördelarna med moln tjänster, t. ex. ökad valmöjligheter, flexibilitet och flexibilitet samtidigt som du ökar effektiviteten och sänker IT-kostnaderna, måste de överväga hur introduktionen av moln tjänster påverkar deras sekretess-, säkerhets-och position. Microsoft har arbetat med att göra sina moln erbjudanden inte bara skalbara, tillförlitliga och hanterbara, utan också att se till att våra kunders data skyddas och används på ett transparent sätt.
 
@@ -44,7 +44,7 @@ Säkerhet är en viktig komponent i starka data skydd i alla onlinebaserade data
 
 ## <a name="risk-mitigation"></a>Riskreducering
 
-De två största riskerna i ett Data Center kan grupperas i två källor: Ålders system och mänskligt fel. Att skydda mot dessa två risker är ett minimum när du definierar en IT-säkerhetsstrategi. Samma sak gäller i molnet. Nedan följer några exempel på kontroller som kan användas för att åtgärda risker och förbättra din moln säkerhets strategi.
+De två största riskerna i ett Data Center kan grupperas i två källor: ålders system och mänskligt fel. Att skydda mot dessa två risker är ett minimum när du definierar en IT-säkerhetsstrategi. Samma sak gäller i molnet. Nedan följer några exempel på kontroller som kan användas för att åtgärda risker och förbättra din moln säkerhets strategi.
 
 - **Äldre system:** Många komponenter i lokala data Center lösningar består av program vara, maskin vara och processer som fördaterar aktuella säkerhets risker. Åtgärda, Ersätt eller dra tillbaka dessa system vid en moln omvandling när det är möjligt. Naturligtvis är det inte alltid möjligt. Om det finns äldre system kvar i produktions miljön i en hybrid lösning är det viktigt att dessa system har inventerats och förstås under utformningen av virtuella Data Center. På så sätt kan design teamet eliminera eller kontrol lera åtkomsten till dessa system från molnet.
 - **IT-säkerhetsprocesser och kontroller:** Som minst bör moln design grupper uppdateras på befintliga IT-säkerhetsprocesser och kontroller för att överföra dem till molnet. I ett idealiskt scenario skulle en medlem i IT-säkerhetsteamet tränas i cybersäkerhet och engageras som medlem i design-och implementerings teamen.

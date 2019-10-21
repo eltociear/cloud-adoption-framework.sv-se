@@ -8,12 +8,12 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 819d0c058acf48402296bbac8d4cb4837271259e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5b2de64af3d7e48a38fd1f125fc5f8b37b190dd2
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70821654"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547191"
 ---
 # <a name="create-hybrid-cloud-consistency"></a>Skapa hybridmolnskonsekvens
 
@@ -25,8 +25,8 @@ Hybrid distributions modeller under migreringen kan minska risken och bidra till
 
 Med en hybrid moln lösning kan organisationer skala data behandlings resurser. Det eliminerar också behovet av att göra enorma kapital utgifter för att hantera kortsiktiga toppar i efter frågan. Om du ändrar ditt företag kan du behöva frigöra lokala resurser för mer känsliga data eller program. Det är enklare, snabbare och billigare att avetablera moln resurser. Du betalar bara för de resurser som din organisation tillfälligt använder, i stället för att behöva köpa och underhålla ytterligare resurser. Den här metoden minskar mängden utrustning som kan vara inaktiv under långa tids perioder. Med hybrid molnbaserad data behandling får du alla fördelar med moln data behandling, skalbarhet och kostnads effektivitet med lägsta möjliga risk för data exponering.
 
-![Skapa konsekvent hybrid moln över identitet, hantering, säkerhet, data, utveckling och DevOps](../../_images/hybrid-consistency.png)
-*bild 1 – skapa hybrid moln kontinuitet för identiteter, hantering, säkerhet, data, utveckling och DevOps.*
+![Creating hybrid molnets konsekvens i identitets-, hanterings-, säkerhets-, data-, utvecklings-och DevOps ](../../_images/hybrid-consistency.png)
+*figur 1 – skapa hybrid moln kontinuitet för identitet, hantering, säkerhet, data, utveckling och DevOps.*
 
 En verklig hybrid moln lösning måste tillhandahålla fyra komponenter, som var och en ger avsevärda fördelar:
 

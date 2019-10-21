@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1bf9497684c1043d23eec48b1ab5d5f1f12ef752
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6bbd3ffe401a3e886ee1f91072a715002ab5e836
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829961"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547249"
 ---
 # <a name="cloud-migration-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Molnmigrering i Microsoft Cloud Adoption Framework för Azure
 
@@ -34,11 +34,11 @@ Vägledningen i Cloud Adoption Framework berör verksamheten, tekniken och kultu
 
 Molnarkitekten fungerar som strateg och ledare för att sammanföra dessa målgrupper. Innehållet i den här samlingen guider är utformad för att hjälpa molnarkitekten att stödja rätt konversation med rätt målgrupp för att främja de beslut som behövs. Affärsomvandling som drivs av molnet är beroende av molnarkitektrollen för att kunna fatta beslut för företaget och IT-verksamheten.
 
-**Molnarkitektsspecialisering i det här avsnittet:** Avsnitt av Cloud Adoption Framework representerar olika specialiseringar eller varianter av molnarkitektsrollen. Det här avsnittet är utformat för molnarkitekter med ämnesexpertkunskaper om den befintliga lokala miljön och hur den påverkar migreringsalternativen.
+**Cloud Architect-specialisering i det här avsnittet:** Varje del av ramverket för moln införande representerar en annan specialisering eller variant av moln arkitekt rollen. Det här avsnittet är utformat för molnarkitekter med ämnesexpertkunskaper om den befintliga lokala miljön och hur den påverkar migreringsalternativen.
 
-**Ansvarsfördelning:** I många företag finns det en ansvarsfördelning som begränsar åtkomsten till produktionssystem eller segment i företagsmiljön. I dessa fall blir migreringsprocessen mer komplicerad. Ibland kan dessa roller och ansvarsområden kräva flera molnarkitekter för att kunna hantera hela migreringsprocessen.
+**Separering av uppgifter:** I många företag finns separering av uppgifter för att begränsa åtkomsten till produktions system eller segment i företags miljön. I dessa fall blir migreringsprocessen mer komplicerad. Ibland kan dessa roller och ansvarsområden kräva flera molnarkitekter för att kunna hantera hela migreringsprocessen.
 
-**Partnerskapsalternativ** I var och en av de här processerna kommer teamen att lära sig nya färdigheter och metoder för det tekniska utförandet. Att förbättra de tekniska färdigheterna hos de befintliga teammedlemmarna är ett alternativ under körningen. Att anställa ytterligare personal är ett annat alternativ. Ett partnersamarbete med tredje part kan ofta ge en betydande acceleration och riskminskning. Med [partnerskapsalternativen](./migration-considerations/assess/partnership-options.md) kan du få hjälp att fatta beslut om hur du väljer det bästa partneralternativet.
+**Partnerskapsalternativ** I var och en av de här processerna kommer teamen att lära sig nya färdigheter och metoder för det tekniska utförandet. Att utöka tekniska kunskaper mellan befintliga grupp medlemmar är ett alternativ under körningen. Att anställa ytterligare personal är ett annat alternativ. Ett partnersamarbete med tredje part kan ofta ge en betydande acceleration och riskminskning. Med [partnerskapsalternativen](./migration-considerations/assess/partnership-options.md) kan du få hjälp att fatta beslut om hur du väljer det bästa partneralternativet.
 
 ## <a name="next-steps"></a>Nästa steg
 

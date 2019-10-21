@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: cbe5de4242baedfa704bd90baa7fa3ca0f0aa026
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 258b5a656293001228aab51dd1319fe6a89780a9
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025136"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548216"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Bygga om en lokal app i Azure
 
@@ -54,7 +54,7 @@ Efter att ha fastställt målen och kraven kan Contoso utforma och utvärdera en
 - De virtuella datorerna finns på VMware ESXi-värden **contosohost1.contoso.com** (version 6.5)
 - VMware-miljön hanteras av vCenter Server 6.5 (**vcenter.contoso.com**), som körs på en virtuell dator.
 - Contoso har ett lokalt datacenter (contoso-datacenter) med en lokal domänkontrollant (**contosodc1**).
-- De lokala, virtuella datorerna i Contosos datacentret inaktiveras när migreringen är färdig.
+- De lokala, virtuella datorerna i Contoso-datacentret kommer att inaktiveras när migreringen är färdig.
 
 ### <a name="proposed-architecture"></a>Föreslagen arkitektur
 
@@ -68,7 +68,7 @@ Efter att ha fastställt målen och kraven kan Contoso utforma och utvärdera en
 
     ![Scenariots arkitektur](./media/contoso-migration-rebuild/architecture.png)
 
-### <a name="solution-review"></a>Utvärdering av lösningen
+### <a name="solution-review"></a>Lösningsgranskning
 
 Contoso utvärderar den föreslagna designen genom att skapa en lista med för- och nackdelar.
 
@@ -98,9 +98,9 @@ Contoso utvärderar den föreslagna designen genom att skapa en lista med för- 
 [AKS](/sql/dma/dma-overview?view=ssdt-18vs2017) | Förenklar hanteringen, distributionen och åtgärderna för Kubernetes. Tillhandahåller en fullständigt hanterad orkestreringstjänst för Kubernetes-containrar. | AKS är en kostnadsfri tjänst. Betala bara för de virtuella datorerna och de associerade lagrings- och nätverksresurser som förbrukas. [Läs mer](https://azure.microsoft.com/pricing/details/kubernetes-service).
 [Azure Functions](https://azure.microsoft.com/services/functions) | Utveckla snabbare med en händelsedriven miljö för databearbetning utan server. Skala på begäran. | Betala endast för de resurser du använder. Planen faktureras baserat på resursanvändning och körningar per sekund. [Läs mer](https://azure.microsoft.com/pricing/details/functions).
 [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | Lagrar avbildningar för alla typer av containerdistributioner. | Kostnad baserad på funktioner, lagring och användningstid. [Läs mer](https://azure.microsoft.com/pricing/details/container-registry).
-[Azure App Service](https://azure.microsoft.com/services/app-service/containers) | Skapa, distribuera och skala snabbt webb-, mobil- och API-appar i företagsklass som körs på valfri plattform. | App Service-planer faktureras per sekund. [Läs mer](https://azure.microsoft.com/pricing/details/app-service/windows).
+[Azure Apptjänst](https://azure.microsoft.com/services/app-service/containers) | Skapa, distribuera och skala snabbt webb-, mobil- och API-appar i företagsklass som körs på valfri plattform. | App Service-planer faktureras per sekund. [Läs mer](https://azure.microsoft.com/pricing/details/app-service/windows).
 
-## <a name="prerequisites"></a>Förutsättningar
+## <a name="prerequisites"></a>Krav
 
 Det här är vad Contoso behöver i det här scenariot:
 
@@ -109,8 +109,8 @@ Det här är vad Contoso behöver i det här scenariot:
 **Krav** | **Detaljer**
 --- | ---
 **Azure-prenumeration** | Contoso skapade prenumerationer i en tidigare artikel. Om du inte har någon Azure-prenumeration kan du skapa ett [kostnadsfritt konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Om du skapar ett kostnadsfritt konto är du administratör för din prenumeration och kan utföra alla åtgärder.<br/><br/> Om du använder en befintlig prenumeration och inte är administratör måste du be administratören att ge dig ägar- eller deltagarbehörighet.
-**Azure-infrastruktur** | [Läs om](./contoso-migration-infrastructure.md) hur Contoso konfigurerar en Azure-infrastruktur.
-**Krav för utvecklare** | Contoso behöver följande verktyg på en arbetsstation för utvecklare:<br/><br/> - [Visual Studio 2017 Community Edition: Version 15.5](https://www.visualstudio.com)<br/><br/> .NET-arbetsbelastning aktiverad.<br/><br/> [Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> [Docker CE (Windows 10) eller Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) konfigurerat att använda Windows-containrar.
+**Azure-infrastruktur** | [Läs om hur](./contoso-migration-infrastructure.md) Contoso konfigurerar en Azure-infrastruktur.
+**Krav för utvecklare** | Contoso behöver följande verktyg på en arbetsstation för utvecklare:<br/><br/> - [Visual Studio 2017 Community Edition: Version 15,5](https://www.visualstudio.com)<br/><br/> .NET-arbetsbelastning aktiverad.<br/><br/> [Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> [Docker CE (Windows 10) eller Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) konfigurerat att använda Windows-containrar.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -120,21 +120,21 @@ Contoso genomför migreringen på följande sätt:
 
 > [!div class="checklist"]
 >
-> - **Steg 1: Etablera AKS och ACR.** Contoso etablerar det hanterade AKS-klustret och Azure Container Registry med hjälp av PowerShell.
-> - **Steg 2: Skapa Docker-containrar.** De konfigurerar CI för Docker-containrar med hjälp av Azure DevOps och push-överför dem till ACR.
-> - **Steg 3: Distribuera mikrotjänster på serversidan.** De distribuerar resten av infrastrukturen som ska användas av mikrotjänster på serversidan.
-> - **Steg 4: Distribuera infrastrukturen på klientsidan.** De distribuerar infrastrukturen på klientsidan, inklusive bloblagring för husdjurbilderna, Cosmos-databasen och API:et för Visuellt innehåll.
-> - **Steg 5: Migrera serverdelen.** De distribuerar mikrotjänster och använder AKS för att migrera serverdelen.
-> - **Steg 6: Publicera klientdelen.** De publicerar SmartHotel360-appen till App Service, och funktionsappen som ska anropas av husdjurstjänsten.
+> - **Steg 1: etablera AKS och ACR.** Contoso etablerar det hanterade AKS-klustret och Azure Container Registry med hjälp av PowerShell.
+> - **Steg 2: Bygg Docker-behållare.** De konfigurerar CI för Docker-containrar med hjälp av Azure DevOps och push-överför dem till ACR.
+> - **Steg 3: Distribuera Server dels mikrotjänster.** De distribuerar resten av infrastrukturen som ska användas av mikrotjänster på serversidan.
+> - **Steg 4: Distribuera klient dels infrastruktur.** De distribuerar infrastrukturen på klientsidan, inklusive bloblagring för husdjurbilderna, Cosmos-databasen och API:et för Visuellt innehåll.
+> - **Steg 5: Migrera Server delen.** De distribuerar mikrotjänster och använder AKS för att migrera serverdelen.
+> - **Steg 6: publicera klient delen.** De publicerar SmartHotel360-appen till App Service, och funktionsappen som ska anropas av husdjurstjänsten.
 
-## <a name="step-1-provision-back-end-resources"></a>Steg 1: Etablera resurser för serverdelen
+## <a name="step-1-provision-back-end-resources"></a>Steg 1: etablera Server dels resurser
 
 Contosos administratörer kör ett distributionsskript för att skapa det hanterade Kubernetes-klustret med AKS och ACR (Azure Container Registry).
 
 - I anvisningarna i det här avsnittet används lagringsplatsen **SmartHotel360-Azure-backend**.
 - GitHub-lagringsplatsen **SmartHotel360-Azure-backend** innehåller all programvara för den här delen av distributionen.
 
-### <a name="prerequisites"></a>Förutsättningar
+### <a name="prerequisites"></a>Krav
 
 1. Innan de börjar ser Contosos administratörer till att all programvara som krävs är installerad på utvecklingsdatorn som används för distributionen.
 2. De klonar lagringsplatsen lokalt till utvecklingsdatorn med Git: `git clone https://github.com/Microsoft/SmartHotel360-Azure-backend.git`
@@ -143,7 +143,7 @@ Contosos administratörer kör ett distributionsskript för att skapa det hanter
 
 Contosos administratörer etablerar enligt följande:
 
-1. De öppnar mappen med Visual Studio Code och flyttar till katalogen **/deploy/K8s** som innehåller skriptet **gen-aks-env.ps1**.
+1. de öppnar mappen med Visual Studio Code och flyttar till katalogen **/Deploy/K8s** som innehåller skriptet **gen-AKS-ENV. ps1**.
 2. De kör skriptet för att skapa det hanterade Kubernetes-klustret med hjälp av AKS och ACR.
     ![AKS](./media/contoso-migration-rebuild/aks1.png)
 3. När filen är öppen uppdaterar de $location-parametern till **eastus2**och sparar filen.
@@ -184,7 +184,7 @@ Contosos administratörer etablerar enligt följande:
 
     ![AKS](./media/contoso-migration-rebuild/aks9.png)
 
-## <a name="step-2-configure-the-back-end-pipeline"></a>Steg 2: Konfigurera backend-pipelinen
+## <a name="step-2-configure-the-back-end-pipeline"></a>Steg 2: Konfigurera backend-pipeline
 
 ### <a name="create-an-azure-devops-project-and-build"></a>Skapa ett Azure DevOps-projekt och -bygge
 
@@ -295,7 +295,7 @@ De skapar pipelinen:
 
       ![Namn på fas](./media/contoso-migration-rebuild/back-pipe4.png)
 
-      ![Pipelinenamn](./media/contoso-migration-rebuild/back-pipe5.png)
+      ![Namn på pipeline](./media/contoso-migration-rebuild/back-pipe5.png)
 
 5. De lägger till en artefakt.
 
@@ -333,7 +333,7 @@ De skapar pipelinen:
 
 14. När distributionen är klar kör de följande kommando för att kontrollera statusen för tjänsterna med hjälp av Azure Cloud Shell: **kubectl get services**.
 
-## <a name="step-3-provision-front-end-services"></a>Steg 3: Etablera tjänster på klientsidan
+## <a name="step-3-provision-front-end-services"></a>Steg 3: etablera klient dels tjänster
 
 Contosos administratörer behöver distribuera infrastrukturen som ska användas av programmen på klientsidan. De skapar en bloblagringscontainer för lagring av bilderna på husdjuren; Cosmos-databasen för lagring av dokument med information om husdjuren; och API:et för Visuellt innehåll för webbplatsen.
 
@@ -422,7 +422,7 @@ Contosos administratörer etablerar funktionsappen på Azure-portalen.
 
 3. När appen har distribuerats bläddrar de till appens adress för att kontrollera att appen har skapats.
 
-## <a name="step-4-set-up-the-front-end-pipeline"></a>Steg 4: Konfigurera pipelinen på klientsidan
+## <a name="step-4-set-up-the-front-end-pipeline"></a>Steg 4: Konfigurera klient delens pipeline
 
 Contosos administratörer skapar två olika projekt för klientsidan.
 
@@ -500,7 +500,7 @@ Nu kan Contosos administratörer publicera webbplatsen.
 11. I **Miljö** väljer de **1 jobb, 1 uppgift** under **staging** (mellanlagring).
 12. När de har valt prenumerationen och appens namn öppnar de aktiviteten **Distribuera Azure App Service**. Distributionen har konfigurerats att använda distributionsplatsen **staging** (mellanlagring). Det innebär att kod för granskning och godkännande skapas automatiskt på den här platsen.
 
-     ![Fack](./media/contoso-migration-rebuild/vsts-publishfront7.png)
+     ![Plats](./media/contoso-migration-rebuild/vsts-publishfront7.png)
 
 13. I **Pipeline** lägger de till en ny fas.
 

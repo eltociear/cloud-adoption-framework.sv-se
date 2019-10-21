@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: cc4567495d60f76be760d532dc16a66274834396
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 431895263473481fbd43fc9c63d832a538a499db
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029268"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547402"
 ---
 # <a name="cloud-governance-methodology"></a>Metod för moln styrning
 
@@ -24,21 +24,21 @@ Ramverket för moln införande tillhandahåller styrnings guider som beskriver u
 
 ## <a name="envision-an-end-state"></a>Föreställ dig ett slutresultat
 
-En resa utan ett mål blir bara ett planlöst irrande. Det är viktigt att formulera en övergripande vision av slutresultatet innan det första steget tas. Följande informationsgrafik kan fungera som en referensram för slutresultatet. Det är inte startpunkten, men visar det potentiella målet.
+En resa utan ett mål blir bara ett planlöst irrande. Det är viktigt att upprätta en stor del av slut läget innan du börjar med det första steget. Följande informationsgrafik kan fungera som en referensram för slutresultatet. Det är inte din start punkt, men det visar det potentiella målet.
 
 ![Informationsgrafik av Cloud Adoption Framework-styrningsmodellen](../_images/operational-transformation-govern-highres.png)
 
 Cloud Adoption Framework-styrningsmodellen identifierar områden som är viktiga under resans gång. Varje område relaterar till olika typer av risker som företaget måste hantera i takt med att man implementerar fler molntjänster. I det här ramverket identifierar styrningsguiden åtgärder som molnstyrningsteamet måste vidta. De olika principerna i Cloud Adoption Framework-styrningsmodellen beskrivs utförligare under resans gång. De generella principerna är som följer:
 
-**Företagsprinciper:** Företagsprinciperna driver på molnstyrningen. Styrningsguiden fokuserar på specifika aspekter i företagsprincipen:
+**Företags principer:** Företags principer enhets styrning av molnet. Styrningsguiden fokuserar på specifika aspekter i företagsprincipen:
 
-- **Affärsrisker:** Identifiera och förstå affärsrisker.
-- **Principer och efterlevnad:** Förvandla risker till principformuleringar som har stöd för alla slags efterlevnadskrav.
-- **Processer:** Säkerställa efterlevnad av de fastställda principerna.
+- **Affärs risker:** Identifiera och förstå företags risker.
+- **Princip och efterlevnad:** Att konvertera risker till princip satser som stöder eventuella krav på efterlevnad.
+- **Processer:** Se till att de angivna principerna efterlevs.
 
-**Fem molnstyrningsområden:** Dessa områden relaterar till företagsprinciperna. Varje område skyddar företaget mot potentiella fallgropar:
+**Fem ämnes områden i moln styrning:** Dessa ämnes områden har stöd för företags principer. Varje område skyddar företaget mot potentiella fallgropar:
 
-- Cost Management
+- Kostnadshantering
 - Grundläggande säkerhet
 - Resurskonsekvens
 - Grundläggande identitet
@@ -50,7 +50,7 @@ Företagsprinciper fungerar i grunden som ett tidigt varningssystem för att ide
 
 Eftersom styrningskraven förändras genom hela molnimplementeringsresan krävs en ny styrningsstrategi. Företag kan inte längre vänta på att ett litet team ska garantera absolut säkerhet genom hela resan *innan man tar det första steget*. Affärsresultat förväntas komma snabbare och smidigare. IT-styrningen måste också vara flexibel och hålla jämna steg med verksamhetens krav för att vara användbar under molnintegreringen och för att förhindra ”skugg-IT”.
 
-En **inkrementell styrningsstrategi** kan främja detta. Vid inkrementell styrning krävs en liten uppsättning företagsprinciper, processer och verktyg för att upprätta en grund för implementeringen och styrningen. Den här grunden kallas för en **MVP (Minimum Viable Product)** . En MVP gör att styrningsteamet snabbt kan integrera styrning i implementeringar i hela implementeringslivscykeln. En MVP kan upprättas när som helst under molnimplementeringsprocessen. Det är dock en bra idé att införa en MVP så tidigt som möjligt.
+En **inkrementell styrningsstrategi** kan främja detta. Vid inkrementell styrning krävs en liten uppsättning företagsprinciper, processer och verktyg för att upprätta en grund för implementeringen och styrningen. Den här grunden kallas för en **MVP (Minimum Viable Product)** . En MVP gör att styrningsteamet snabbt kan integrera styrning i implementeringar i hela implementeringslivscykeln. En MVP kan upprättas när som helst under molnimplementeringsprocessen. Det är dock en bra idé att anta en MVP så tidigt som möjligt.
 
 Möjligheten att snabbt svara på föränderliga risker gör att molnstyrningsteamet kan arbeta på nya sätt. Molnstyrningsteamet kan samarbeta med molnstrategiteamet och bana vägen för molnimplementeringsteamen genom att staka ut riktningar och snabbt se till att riskerna som är associerade med implementeringsplanerna hanteras effektivt. Dessa JIT-styrningslager (Just-In-Time) kallas för **styrningsiterationer**. Med den här metoden ligger styrningsstrategiteamet steget före implementeringsteamen.
 

@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 67313af2166fbd8dab0f66abb8c6477079a049ad
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 625706fe404f2b1bde16d54170ef3be36ea35c00
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967730"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548957"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Spåra kostnader för affärsenheter, miljöer och projekt
 
@@ -115,7 +115,7 @@ Azure Cost Management är ett väldokumenterat verktyg för att ställa in budge
 
 ### <a name="get-started-with-azure-cost-management"></a>Kom igång med Azure Cost Management
 
-Mer information om att komma igång med Azure Cost Management finns i [Optimera din molninvestering med Azure Cost Management](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json).
+Mer information om att komma igång med Azure Cost Management finns i [Optimera din molninvestering med Azure Cost Management](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json).
 
 ### <a name="use-azure-cost-management"></a>Använd Azure Cost Management
 

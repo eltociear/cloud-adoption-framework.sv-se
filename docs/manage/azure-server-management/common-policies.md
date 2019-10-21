@@ -8,19 +8,19 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9eee6f81922c88304c0ca5bf7edd6572daf493d8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 0d998f06e73c03a74cdaf5fbd75cb605fa9a2fbb
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028474"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547309"
 ---
 # <a name="common-azure-policy-examples"></a>Vanliga Azure Policys exempel
 
 [Azure policy](https://docs.microsoft.com/azure/governance/policy/overview) kan hjälpa dig att använda styrning för dina moln resurser. Den här tjänsten kan hjälpa dig att skapa guardrails som garanterar företagets efterlevnad av styrnings princip krav. Använd antingen Azure Portal-eller PowerShell-cmdletar för att skapa principer. Den här artikeln innehåller PowerShell-cmdlet-exempel.
 
 > [!NOTE]
-> Med Azure Policy distribueras inte tillämpnings principer (**deployIfNotExists**) automatiskt till befintliga virtuella datorer. Reparation krävs för att de virtuella datorerna ska vara kompatibla. Mer information finns i [Reparera icke-kompatibla resurser med Azure policy](https://docs.microsoft.com/azure/governance/policy/how-to/remediate-resources).
+> Med Azure Policy distribueras inte tillämpnings principer (**deployIfNotExists**) automatiskt till befintliga virtuella datorer. Reparation krävs för att de virtuella datorerna ska vara kompatibla. Mer information finns i [Reparera inkompatibla resurser med Azure policy](https://docs.microsoft.com/azure/governance/policy/how-to/remediate-resources).
 
 ## <a name="common-policy-examples"></a>Vanliga princip exempel
 
@@ -36,7 +36,7 @@ Du kan också köra denna cmdlet för att hitta principen:
 Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq "BuiltIn") -and ($_.Properties.displayName -like "*location*") }
 ```
 
-Följande skript visar hur du tilldelar principen. Om du vill använda skriptet ändrar `$SubscriptionID` du värdet så att det pekar på den prenumeration som du vill tilldela principen. Innan du kör skriptet måste du logga in med hjälp av cmdleten [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) .
+Följande skript visar hur du tilldelar principen. Om du vill använda skriptet ändrar du `$SubscriptionID` värde så att det pekar på den prenumeration som du vill tilldela principen. Innan du kör skriptet måste du logga in med hjälp av cmdleten [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) .
 
 ```powershell
 #Specify the value for $SubscriptionID.
@@ -73,9 +73,9 @@ Azure erbjuder ett brett utbud av VM-storlekar för att stödja olika typer av a
 
 Du kan använda den här principen för att distribuera ett Microsoft IaaSAntimalware-tillägg med en standard konfiguration till virtuella datorer som inte skyddas av program mot skadlig kod.
 
-Principens GUID är `2835b622-407b-4114-9198-6f7064cbe0dc`.
+Princip-GUID är `2835b622-407b-4114-9198-6f7064cbe0dc`.
 
-Följande skript visar hur du tilldelar principen. Om du vill använda skriptet ändrar `$SubscriptionID` du värdet så att det pekar på den prenumeration som du vill tilldela principen. Innan du kör skriptet måste du logga in med hjälp av cmdleten [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) .
+Följande skript visar hur du tilldelar principen. Om du vill använda skriptet ändrar du `$SubscriptionID` värde så att det pekar på den prenumeration som du vill tilldela principen. Innan du kör skriptet måste du logga in med hjälp av cmdleten [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) .
 
 ```powershell
 #Specify the value for $SubscriptionID.

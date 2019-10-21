@@ -8,18 +8,18 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 4e095dd90711f201935e88ea5f2712e881a8574b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: c5bafd4504a0df9570bf65846a5a077e54e158ca
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70828739"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549024"
 ---
 # <a name="timelines-in-a-cloud-adoption-plan"></a>Tids linjer i en moln implementerings plan
 
 I föregående artikel i den här serien tilldelade arbets belastningar och uppgifter till [versioner och iterationer](./iteration-paths.md). Tilldelningarna kommer att matas in i beräkningen av tids linjen i den här artikeln.
 
-Arbets struktur strukturer används ofta i sekventiella projekt hanterings verktyg. De visar hur beroende aktiviteter kommer att slutföras under en viss tids period. Dessa strukturer fungerar bra när uppgifter är sekventiella av typen. Beroenden i aktiviteter som påträffades i moln implementeringen gör det svårt att hantera dessa strukturer. För att kunna fylla i detta mellanrum kan du uppskatta tids linjer baserat på iteration-vägs tilldelningar genom att dölja komplexitet.
+Arbets struktur strukturer används ofta i sekventiella projekt hanterings verktyg. De visar hur beroende aktiviteter kommer att slutföras över tid. Dessa strukturer fungerar bra när uppgifter är sekventiella av typen. Beroenden i aktiviteter som påträffades i moln implementeringen gör det svårt att hantera dessa strukturer. För att kunna fylla i detta mellanrum kan du uppskatta tids linjer baserat på iteration-vägs tilldelningar genom att dölja komplexitet.
 
 ## <a name="estimate-timelines"></a>Uppskatta tids linjer
 

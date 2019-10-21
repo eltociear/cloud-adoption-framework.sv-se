@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 2b8bc595377b2748bd00f306659a46196115e91d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 61f661a167b9a38a54a51dc9612a0b17df0bd0c3
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223536"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547170"
 ---
 # <a name="evaluate-risk-tolerance"></a>Utvärdera risktolerans
 
@@ -30,7 +30,7 @@ Sanna affärs risker baseras på information om specifika transformeringar. Fler
 > [!IMPORTANT]
 > Innan du läser följande bör du vara medveten om att var och en av dessa risker kan hanteras. Målet med den här artikeln är att informera och förbereda läsarna för mer produktiva riskhanterings diskussioner.
 
-- **Data intrång:** Antalet en risk som associeras med en transformering är data skyddet. Data läckor kan orsaka betydande skador på företaget, vilket leder till förlust av kunder, minskad verksamhet eller till och med juridiskt ansvar. Ändringar av hur data lagras, bearbetas eller används skapar risker. Moln omvandlingar skapar en hög grad av ändring för data hantering, så risken bör inte beaktas lätt. [Säkerhets bas linjen](../security-baseline/index.md), [data klassificering](./data-classification.md)och [stegvisa rationalisering](../../digital-estate/rationalize.md#incremental-rationalization) kan användas för att hantera den här risken.
+- **Data intrång:** Den största risken som är kopplad till en transformering är en data överträdelse. Data läckor kan orsaka betydande skador på företaget, vilket leder till förlust av kunder, minskad verksamhet eller till och med juridiskt ansvar. Ändringar av hur data lagras, bearbetas eller används skapar risker. Moln omvandlingar skapar en hög grad av ändring för data hantering, så risken bör inte beaktas lätt. [Säkerhets bas linjen](../security-baseline/index.md), [data klassificering](./data-classification.md)och [stegvisa rationalisering](../../digital-estate/rationalize.md#incremental-rationalization) kan användas för att hantera den här risken.
 
 - **Avbrott i tjänsten:** Verksamhets-och kund upplevelser förlitar sig mycket på tekniska åtgärder. Moln omvandlingar kommer att skapa ändringar i IT-driften. I vissa organisationer är den här ändringen liten och enkelt justerad. I andra organisationer kan dessa ändringar kräva att du behöver göra om, träna om eller nya metoder för att stödja moln åtgärder. Den större ändringen, desto större är den potentiella effekten för affärs åtgärder och kund upplevelse. Att hantera den här risken kräver att verksamheten i omvandlings planeringen är inblandad. Versions planering och första arbets belastnings val i den [stegvisa rationalisering](../../digital-estate/rationalize.md#incremental-rationalization) artikeln diskuterar hur du väljer arbets belastningar för omvandlings projekt. Företagets roll i den aktiviteten är att kommunicera affärs verksamhetens risk för att ändra prioriterade arbets belastningar. Att hjälpa IT-avdelningen att välja arbets belastningar som har en lägre påverkan på verksamheten minskar den övergripande risken.
 
@@ -66,7 +66,7 @@ Det här avsnittet innehåller en lista över konversationer med frågor i tre k
 - Kan den här risken skapa ny juridisk ansvar? I så fall, finns det en prioritet för skade belöningar i dessa typer av fall?
 - Kan den här risken stoppa affärs åtgärder? I så fall, hur länge skulle åtgärdas?
 - Kan den här risken sakta ned affärs verksamhet? I så fall, hur långsamt och hur länge?
-- I den här fasen i omvandlingen är detta en engångs risk eller kommer den att upprepas?
+- I det här steget i omvandlingen är det en risk eller kommer den att upprepas?
 - Ökar eller minskar risken i frekvens när omvandlingen fortskrider?
 - Ökar risken för risken eller minskningen av tiden?
 - Är risk tiden känslig i natur? Kommer risken att lyckas eller bli sämre om den inte åtgärdas?

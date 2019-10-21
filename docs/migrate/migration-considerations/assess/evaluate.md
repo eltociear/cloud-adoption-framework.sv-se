@@ -1,19 +1,19 @@
 ---
 title: Utvärdera beredskap för arbetsbelastningar
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: En process inom molnmigreringen som fokuserar uppgifterna för att migrera arbetsbelastningar till molnet.
+description: En process inom molnmigreringen som fokuserar på att överföra arbetsbelastningar till molnet.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 186aa4d4dc5218e2166e7dfb4c9834917e647a02
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 34d9cd3252849353b0fe765db4d84f7e9f2e5ea7
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024654"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549141"
 ---
 # <a name="evaluate-workload-readiness"></a>Utvärdera beredskap för arbetsbelastningar
 
@@ -27,8 +27,8 @@ Den här artikeln är inte avsedd att behandla alla tänkbara utvärderingsaktiv
 
 ## <a name="common-infrastructure-evaluation-activities"></a>Vanliga aktiviteter för utvärdering av infrastruktur
 
-- Krav för VMware: [Granska Azure Site Recovery-kraven för VMware](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix).
-- Krav för Hyper-V: [Granska Azure Site Recovery-kraven för Hyper-V](https://docs.microsoft.com/azure/site-recovery/hyper-v-azure-support-matrix).
+- VMware-krav: [granska Azure Site Recovery krav för VMware](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix).
+- Krav för Hyper-V: [granska Azure Site Recoverys kraven för Hyper-v](https://docs.microsoft.com/azure/site-recovery/hyper-v-azure-support-matrix).
 
 Se till att dokumentera eventuella skillnader i värdkonfiguration, konfiguration av replikerade virtuella datorer, lagringskrav eller nätverkskonfiguration.
 
@@ -36,7 +36,7 @@ Se till att dokumentera eventuella skillnader i värdkonfiguration, konfiguratio
 
 - Dokumentera målen för återställningspunkt och målen för återställningstid för den aktuella databasdistributionen. Dessa används i [arkitekturaktiviteter](./architect.md) för att underlätta beslutsfattande.
 - Dokumentera eventuella krav för konfiguration med hög tillgänglighet. Mer information om SQL Server-krav finns i [guiden för SQL Server-lösningar med hög tillgänglighet](https://docs.microsoft.com/sql/sql-server/failover-clusters/high-availability-solutions-sql-server).
-- Utvärdera PaaS-kompatibilitet. [Guiden för Azure-datamigrering](https://datamigration.microsoft.com) mappar lokala databaser till kompatibla Azure PaaS-lösningar såsom [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db) eller [Azure DB](https://docs.microsoft.com/azure/sql-database) for [MySQL](https://docs.microsoft.com/azure/mysql), [Postgres](https://docs.microsoft.com/azure/postgresql) eller [MariaDB](https://docs.microsoft.com/azure/mariadb).
+- Utvärdera PaaS-kompatibilitet. [Azure Data Migration guide](https://datamigration.microsoft.com) mappar lokala databaser till kompatibla Azure PaaS-lösningar, t. ex. [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db) eller [Azure DB](https://docs.microsoft.com/azure/sql-database) för [MySQL](https://docs.microsoft.com/azure/mysql), [postgresql](https://docs.microsoft.com/azure/postgresql)eller [MariaDB](https://docs.microsoft.com/azure/mariadb).
 - När PaaS-kompatibilitet är en möjlighet utan att reparation krävs bör det team som ansvarar för [arkitekturaktiviteter](./architect.md) rådfrågas. PaaS-migreringar kan ge betydande tidsbesparingar och minska den totala ägandekostnaden (TCO) för de flesta molnlösningar.
 - När PaaS-kompatibilitet är en möjlighet men reparation krävs bör de team som ansvarar för [arkitekturaktiviteter](./architect.md) och [reparationsaktiviteter](../migrate/remediate.md) rådfrågas. I många fall kan fördelarna med PaaS-migreringar för databaslösningar väga tyngre än ökningen av reparationstid.
 - Dokumentera storleken och ändringsfrekvensen för varje databas som ska migreras.

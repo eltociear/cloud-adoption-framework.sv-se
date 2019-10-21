@@ -8,14 +8,14 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 17538d7c49278a00a5927b0110a2591a03d59e5c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: ac4ece6c5daec788d116e67c79429572722fc618
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221464"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548238"
 ---
-# <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Fas 1: Nödvändig planering för Azure Server Management Services
+# <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Fas 1: planering för Azure Server Management Services som krävs
 
 I den här fasen får du bekanta dig med Azure Server Management Suite med tjänster och planerar hur du distribuerar de resurser som behövs för att implementera dessa hanterings lösningar.
 

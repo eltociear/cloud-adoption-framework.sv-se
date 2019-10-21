@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8056ef1a53a47bc79e106f0fcd4fcf768e3a5126
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 3e39452782f1966e0efe2742264d26a60062d78b
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224311"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547320"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>Byta värd för en lokal Linux-app till virtuella Azure-datorer och Azure Database for MySQL
 
@@ -26,7 +26,7 @@ osTicket, supportappen som används i det här exemplet, är tillgänglig som ö
 IT-ledningsgruppen har arbetat tillsammans med affärspartner för att komma fram till vad man vill uppnå:
 
 - **Hantera företagets tillväxt.** Contoso växer, vilket leder till tryck på lokala system och infrastruktur.
-- **Begränsa risken.** Supportappen är viktig för verksamheten. Contoso vill flytta den till Azure utan några risker.
+- **Begränsa risker.** Supportappen är viktig för verksamheten. Contoso vill flytta den till Azure utan några risker.
 - **Utöka.** Contoso vill inte ändra appen just nu. Det vill bara hålla appen stabil.
 
 ## <a name="migration-goals"></a>Migreringsmål
@@ -34,7 +34,7 @@ IT-ledningsgruppen har arbetat tillsammans med affärspartner för att komma fra
 Molnteamet för Contoso har fastställt mål för migreringen för att avgöra vilken migreringsmetod som är bäst:
 
 - Efter migreringen ska appen i Azure ha samma prestandafunktioner som den har i dag i den lokala VMware-miljön. Appen är lika viktig i molnet som den är lokalt.
-- Contoso vill inte investera i appen. Den är viktig för verksamheten, men i dess aktuella form vill Contoso bara flytta den till molnet på ett säkert sätt.
+- Contoso vill inte investera i den här appen. Den är viktig för verksamheten, men i dess aktuella form vill Contoso bara flytta den till molnet på ett säkert sätt.
 - Efter att ha gjort ett par migreringar av Windows-appar vill Contoso lära sig hur man använder en Linux-baserad infrastruktur i Azure.
 - Contoso vill minimera databasadministrationen när programmet har flyttats till molnet.
 
@@ -53,11 +53,11 @@ I det här scenariot:
   - Den virtuella webbdatorn placeras i undernätet på klientsidan (`PROD-FE-EUS2`).
   - Databasinstansen placeras i databasundernätet (`PROD-DB-EUS2`).
 - Appdatabasen migreras till Azure Database for MySQL med MySQL-verktyg.
-- De lokala, virtuella datorerna i Contosos datacenter inaktiveras när migreringen är färdig.
+- De lokala, virtuella datorerna i Contoso-datacentret kommer att inaktiveras när migreringen är färdig.
 
 ![Scenariots arkitektur](./media/contoso-migration-rehost-linux-vm-mysql/architecture.png)
 
-## <a name="migration-process"></a>Migreringsprocess
+## <a name="migration-process"></a>Migreringsprocessen
 
 Så här genomför Contoso migreringen:
 
@@ -79,10 +79,10 @@ Migrering av databasen:
 
 **Tjänst** | **Beskrivning** | **Kostnad**
 --- | --- | ---
-[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | Tjänsten orkestrerar och hanterar migrering och haveriberedskap för virtuella Azure-datorer, lokala virtuella datorer och fysiska servrar. | Under replikeringen till Azure debiteras Azure Storage-avgifter. Virtuella Azure-datorer skapas och medför kostnader i samband med en redundansväxling. [Läs mer](https://azure.microsoft.com/pricing/details/site-recovery) om avgifter och priser.
+[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | Tjänsten orkestrerar och hanterar migrering och haveriberedskap för virtuella Azure-datorer, lokala virtuella datorer och fysiska servrar. | Vid replikering till Azure debiteras Azure Storage-avgifter. Virtuella Azure-datorer skapas och medför kostnader i samband med en redundansväxling. [Läs mer](https://azure.microsoft.com/pricing/details/site-recovery) om avgifter och priser.
 [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql) | Databasen baseras på MySQL-servermotorn med öppen källkod. Den innehåller en fullständigt hanterad, företagsklar community-version av en MySQL-databas som en apputvecklings- och appdistributionstjänst.
 
-## <a name="prerequisites"></a>Förutsättningar
+## <a name="prerequisites"></a>Krav
 
 Det här är vad Contoso behöver i det här scenariot.
 
@@ -103,14 +103,14 @@ Contosos administratörer utför migreringen på följande sätt:
 
 > [!div class="checklist"]
 >
-> - **Steg 1: Förbereda Azure för Site Recovery.** De skapar ett Azure Storage-konto för att lagra replikerade data och skapar ett Recovery Services-valv.
-> - **Steg 2: Förbereda lokala VMware för Site Recovery.** De förbereder konton för identifiering av virtuella datorer och installation av agenter, och förbereder för att ansluta till virtuella Azure-datorer efter en redundansväxling.
-> - **Steg 3: Etablera databasen.** I Azure etablerar de en instans av Azure Database for MySQL.
-> - **Steg 4: Replikera virtuella datorer.** De konfigurerar käll- och målmiljön för Site Recovery, konfigurerar en replikeringsprincip och startar replikeringen av virtuella datorer till Azure Storage.
+> - **Steg 1: Förbered Azure för Site Recovery.** De skapar ett Azure Storage-konto för att lagra replikerade data och skapar ett Recovery Services-valv.
+> - **Steg 2: Förbered lokala VMware för Site Recovery.** De förbereder konton för identifiering av virtuella datorer och installation av agenter, och förbereder för att ansluta till virtuella Azure-datorer efter en redundansväxling.
+> - **Steg 3: etablera databasen.** I Azure etablerar de en instans av Azure Database for MySQL.
+> - **Steg 4: replikera virtuella datorer.** De konfigurerar käll- och målmiljön för Site Recovery, konfigurerar en replikeringsprincip och startar replikeringen av virtuella datorer till Azure Storage.
 > - **Steg 5: Migrera databasen.** De konfigurerar migrering med MySQL-verktyg.
-> - **Steg 6: Migrera de virtuella datorerna med Site Recovery.** Till sist kör de ett redundanstest för att se till att allt fungerar och kör sedan en fullständig redundansväxling för att migrera de virtuella datorerna till Azure.
+> - **Steg 6: migrera de virtuella datorerna med Site Recovery.** Till sist kör de ett redundanstest för att se till att allt fungerar och kör sedan en fullständig redundansväxling för att migrera de virtuella datorerna till Azure.
 
-## <a name="step-1-prepare-azure-for-the-site-recovery-service"></a>Steg 1: Förbereda Azure för Site Recovery-tjänsten
+## <a name="step-1-prepare-azure-for-the-site-recovery-service"></a>Steg 1: Förbered Azure för tjänsten Site Recovery
 
 Contoso behöver ett par Azure-komponenter för Site Recovery:
 
@@ -135,7 +135,7 @@ Contosos administratörer skapar ett lagringskonto och valv enligt följande:
 
 [Lär dig hur du](https://docs.microsoft.com/azure/site-recovery/tutorial-prepare-azure) konfigurerar Azure för Site Recovery.
 
-## <a name="step-2-prepare-on-premises-vmware-for-site-recovery"></a>Steg 2: Förbereda lokala VMware för Site Recovery
+## <a name="step-2-prepare-on-premises-vmware-for-site-recovery"></a>Steg 2: Förbered lokala VMware för Site Recovery
 
 Contosos administratörer förbereder den lokala VMware-infrastrukturen på följande sätt:
 
@@ -168,7 +168,7 @@ Mobility Service måste installeras på varje virtuell dator som Contoso vill mi
 
 Efter redundansväxlingen till Azure vill Contoso kunna ansluta till de virtuella Azure-datorerna. Contosos administratörer måste göra följande för att göra detta:
 
-- För att få åtkomst via Internet aktiverar de SSH på den lokala virtuella Linux-datorn innan migreringen. För Ubuntu kan detta utföras med hjälp av följande kommando: **Sudo apt-get ssh install -y**.
+- För att få åtkomst via Internet aktiverar de SSH på den lokala virtuella Linux-datorn innan migreringen. För Ubuntu kan detta utföras med hjälp av följande kommando: **sudo apt – Hämta ssh install-y**.
 - Efter redundansväxlingen bör de kontrollera **startdiagnostiken** för att visa en skärmbild av den virtuella datorn.
 - Om detta inte fungerar måste de kontrollera att den virtuella datorn körs och gå igenom [de här felsökningstipsen](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx).
 
@@ -177,7 +177,7 @@ Efter redundansväxlingen till Azure vill Contoso kunna ansluta till de virtuell
 - [Lär dig](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery) hur du skapar och tilldelar en roll för automatisk identifiering.
 - [Lär dig](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation) hur du skapar ett konto för push-installation av Mobility Service.
 
-## <a name="step-3-provision-azure-database-for-mysql"></a>Steg 3: Etablera Azure Database for MySQL
+## <a name="step-3-provision-azure-database-for-mysql"></a>Steg 3: etablera Azure Database for MySQL
 
 Contosos administratörer etablerar en MySQL-databasinstans i den primära regionen USA, östra 2.
 
@@ -202,7 +202,7 @@ Contosos administratörer etablerar en MySQL-databasinstans i den primära regio
 
     ![MySQL](./media/contoso-migration-rehost-linux-vm-mysql/mysql-4.png)
 
-## <a name="step-4-replicate-the-on-premises-vms"></a>Steg 4: Replikera lokala virtuella datorer
+## <a name="step-4-replicate-the-on-premises-vms"></a>Steg 4: replikera lokala virtuella datorer
 
 Innan de kan migrera den virtuella webbdatorn till Azure måste Contosos administratörer konfigurera och aktivera replikering.
 
@@ -247,25 +247,25 @@ Contosos administratörer gör detta på följande sätt:
 
 8. Verktyget utför vissa konfigurationsåtgärder och startar sedan om datorn.
 9. De loggar in på datorn igen och guiden Konfigurera serverhantering startar automatiskt.
-10. I guiden väljer de det nätverkskort som ska ta emot replikeringstrafik. Det går inte att ändra den här inställningen när den har konfigurerats.
+10. I guiden väljer de det nätverkskort som ska ta emot replikeringstrafiken. Det går inte att ändra den här inställningen när den har konfigurerats.
 11. De väljer den prenumeration, den resursgrupp och det valv som konfigurationsservern ska registreras i.
 
     ![valv](./media/contoso-migration-rehost-linux-vm-mysql/cswiz1.png)
 
 12. Nu laddar de ned och installerar MySQL Server och VMware PowerCLI.
-13. Efter verifieringen anger de FQDN eller IP-adressen för vCenter-servern eller vSphere-värden. De lämnar standardporten och anger ett eget namn för vCenter-servern.
+13. Efter verifieringen anger de FQDN eller IP-adressen för vCenter-servern eller vSphere-värden. De lämnar standardporten och anger ett användarvänligt namn för vCenter-servern.
 14. De anger kontot som de skapade för automatisk identifiering och de autentiseringsuppgifter som Site Recovery ska använda för att installera Mobility Service automatiskt.
 
     ![vCenter](./media/contoso-migration-rehost-linux-vm-mysql/cswiz2.png)
 
-15. När registreringen är klar på Azure-portalen kontrollerar de att konfigurationsservern och VMware-servern visas på sidan **Källa** i valvet. Identifieringen kan ta 15 minuter eller mer.
+15. När registreringen är klar på Azure-portalen kontrollerar de att konfigurationsservern och VMware-servern visas på sidan **Källa** i valvet. Identifieringen kan ta minst 15 minuter.
 16. När allt är klart ansluter Site Recovery till VMware-servrar och identifierar virtuella datorer.
 
 ### <a name="set-up-the-target"></a>Konfigurera målet
 
 Nu anger Contosos administratörer inställningar för målreplikeringen.
 
-1. De klickar på **Förbered infrastruktur** > **Mål** och väljer målinställningarna.
+1. De klickar på **Förbered infrastrukturen** > **Mål** och väljer målinställningarna.
 2. Site Recovery kontrollerar att det finns ett Azure-lagringskonto och nätverk på det angivna målet.
 
 ### <a name="create-a-replication-policy"></a>Skapa replikeringsprincip
@@ -275,9 +275,9 @@ Med käll- och målkonfigurationen är Contosos administratörer redo att skapa 
 1. I **Förbered infrastruktur** > **Replikeringsinställningar** > **Replikeringsprincip** >  **Skapa och associera** skapar de principen **ContosoMigrationPolicy**.
 
 2. De använder standardinställningarna:
-    - **Tröskelvärde för mål för återställningspunkt:** Standardvärdet är 60 minuter. Det här värdet anger hur ofta återställningspunkter skapas. En avisering genereras när den kontinuerliga replikeringen överskrider den här gränsen.
-    - **Kvarhållning av återställningspunkt:** Standardvärdet är 24 timmar. Det här värdet anger kvarhållningsperioden för varje återställningspunkt. Replikerade virtuella datorer kan återställas till valfri punkt i ett fönster.
-    - **Appkonsekvent ögonblicksbildsfrekvens:** Standardvärdet är en timme. Det här värdet anger med vilken frekvens programkonsekventa ögonblicksbilder skapas.
+    - Återställnings **tröskel:** Standardvärdet är 60 minuter. Det här värdet anger hur ofta återställningspunkter skapas. En avisering genereras när den kontinuerliga replikeringen överskrider den här gränsen.
+    - **Kvarhållning av återställnings punkter:** Standardvärdet är 24 timmar. Det här värdet anger kvarhållningsperioden för varje återställningspunkt. Replikerade virtuella datorer kan återställas till valfri punkt i ett fönster.
+    - **Frekvens för programkonsekventa ögonblicks bilder:** Standardvärdet en timme. Det här värdet anger med vilken frekvens programkonsekventa ögonblicksbilder skapas.
 
         ![Skapa replikeringsprincip](./media/contoso-migration-rehost-linux-vm-mysql/replication-policy.png)
 
@@ -288,7 +288,7 @@ Med käll- och målkonfigurationen är Contosos administratörer redo att skapa 
 **Behöver du mer hjälp?**
 
 - En fullständig genomgång av de här stegen finns i [Konfigurera haveriberedskap för lokala virtuella VMware-datorer](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial).
-- Detaljerade instruktioner finns tillgängliga som hjälper dig att [konfigurera källmiljön](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-source), [distribuera konfigurationsservern](https://docs.microsoft.com/azure/site-recovery/vmware-azure-deploy-configuration-server) och [konfigurera replikeringsinställningar](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-replication).
+- Där finns detaljerade anvisningar som hjälper dig att [konfigurera källmiljön](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-source), [distribuera konfigurationsservern](https://docs.microsoft.com/azure/site-recovery/vmware-azure-deploy-configuration-server) och [konfigurera replikeringsinställningar](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-replication).
 - [Lär dig mer](https://docs.microsoft.com/azure/virtual-machines/extensions/agent-linux) om Azures gästagent för Linux.
 
 ### <a name="enable-replication-for-the-web-vm"></a>Aktivera replikering för den virtuella webbdatorn
@@ -313,7 +313,7 @@ Nu kan Contosos administratörer starta replikeringen av den virtuella datorn **
      ![Mobilitetstjänsten](./media/contoso-migration-rehost-linux-vm-mysql/linux-mobility.png)
 
 6. I **Replikeringsinställningar** > **Konfigurera replikeringsinställningar** kontrollerar de att rätt replikeringsprincip används och väljer **Aktivera replikering**. Mobility Service installeras automatiskt.
-7. De spårar replikeringsförloppet i **Jobb**. När jobbet **Slutför skydd** har körts är datorn redo för redundans.
+7. De spårar replikeringens förlopp i **Jobb**. När jobbet **Slutför skydd** har körts är datorn redo för redundans.
 
 **Behöver du mer hjälp?**
 
@@ -343,7 +343,7 @@ Contosos administratörer migrerar databasen med hjälp av säkerhetskopiering o
 
     ![MySQL Workbench](./media/contoso-migration-rehost-linux-vm-mysql/workbench4.png)
 
-## <a name="step-6-migrate-the-vms-with-site-recovery"></a>Steg 6: Migrera de virtuella datorerna med Site Recovery
+## <a name="step-6-migrate-the-vms-with-site-recovery"></a>Steg 6: migrera de virtuella datorerna med Site Recovery
 
 Slutligen kör Contosos administratörer en snabb testning av redundansen och migrerar sedan den virtuella datorn.
 
@@ -351,8 +351,8 @@ Slutligen kör Contosos administratörer en snabb testning av redundansen och mi
 
 Genom att köra ett redundanstest kan de vara säkra på att allt fungerar som förväntat innan de genomför migreringen.
 
-1. De kör ett redundanstest till den senaste tillgängliga tidpunkten (**Senast bearbetad**).
-2. De väljer **Stäng datorn innan du påbörjar redundans**, så att Site Recovery försöker stänga av den virtuella källdatorn innan redundansväxlingen utlöses. Redundansväxlingen fortsätter även om avstängningen misslyckas.
+1. De kör ett redundanstest till den senaste tillgängliga tidpunkten (**Senast bearbetade**).
+2. De väljer **Stäng datorn innan du påbörjar redundans**, så att Site Recovery försöker stänga av den virtuella källdatorn innan redundansväxlingen utlöses. Redundansen fortsätter även om avstängningen misslyckas.
 3. Redundanstest:
 
     - En kravkontroll körs för att säkerställa att alla villkor som krävs för migreringen är uppfyllda.
@@ -372,19 +372,19 @@ För att migrera den virtuella datorn skapar Contosos administratörer en åters
 
 2. De kör en redundansväxling mot planen. De väljer den senaste återställningspunkten och anger att Site Recovery ska försöka stänga av den lokala virtuella datorn innan redundansväxlingen utlöses. De kan följa redundansförloppet på sidan **Jobb**.
 
-    ![Redundans](./media/contoso-migration-rehost-linux-vm-mysql/failover1.png)
+    ![växling vid fel](./media/contoso-migration-rehost-linux-vm-mysql/failover1.png)
 
 3. Under redundansväxlingen skickar vCenter Server kommandon för att stoppa de två virtuella datorerna som körs på ESXi-värden.
 
-    ![Redundans](./media/contoso-migration-rehost-linux-vm-mysql/vcenter-failover.png)
+    ![växling vid fel](./media/contoso-migration-rehost-linux-vm-mysql/vcenter-failover.png)
 
-4. Efter redundansväxlingen kontrollerar de att den virtuella Azure-datorn visas som förväntat på Azure-portalen.
+4. Efter redundansen kontrollerar de att den virtuella Azure-datorn visas som förväntat i Azure-portalen.
 
-    ![Redundans](./media/contoso-migration-rehost-linux-vm-mysql/failover2.png)
+    ![växling vid fel](./media/contoso-migration-rehost-linux-vm-mysql/failover2.png)
 
 5. När de har kontrollerat den virtuella datorn slutför de migreringen. Nu stoppas replikeringen för den virtuella datorn och Site Recovery-debiteringen för den virtuella datorn.
 
-    ![Redundans](./media/contoso-migration-rehost-linux-vm-mysql/failover3.png)
+    ![växling vid fel](./media/contoso-migration-rehost-linux-vm-mysql/failover3.png)
 
 **Behöver du mer hjälp?**
 
@@ -422,7 +422,7 @@ Som det sista steget i migreringsprocessen uppdaterar Contosos administratörer 
 
     ![Uppdatera DNS](./media/contoso-migration-rehost-linux-vm-mysql/update-dns.png)
 
-## <a name="clean-up-after-migration"></a>Rensa efter migreringen
+## <a name="clean-up-after-migration"></a>Rensa efter migrering
 
 När migreringen är klar körs osTicket-appens nivåer på virtuella Azure-datorer.
 
@@ -448,7 +448,7 @@ Contosos säkerhetsteam granskar den virtuella datorn och databasen för att fas
 
 [Läs mer](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) om säkerhetsrutiner för virtuella datorer.
 
-### <a name="bcdr"></a>BCDR
+### <a name="bcdr"></a>Affärskontinuitet och haveriberedskap
 
 För affärskontinuitet och haveriberedskap vidtar Contoso följande åtgärder:
 

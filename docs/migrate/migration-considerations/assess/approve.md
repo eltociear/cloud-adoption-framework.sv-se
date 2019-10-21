@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 360565a9d42dadc25c5ddcce5e8f1b3941d9ee42
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: cdc6abe2be94bb0d91047d4d64a0774bac6a8e0e
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833536"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549217"
 ---
 # <a name="approve-architecture-changes-before-migration"></a>Godkänna arkitekturändringar före migrering
 
@@ -21,9 +21,9 @@ Under utvärderingsprocessen för migrering utvärderas, konstrueras och beräkn
 
 ## <a name="business-impact-and-approval"></a>Affärspåverkan och godkännande
 
-Under migreringen är det troligt att vissa saker ändras på sätt som påverkar verksamheten. Även om ändring ibland inte kan undvikas bör överraskningar på grund av undanhållna eller ej dokumenterade ändringar undvikas. För att vidhålla intressenternas stöd under hela migreringen är det viktigt att undvika överraskningar. Om programägarna eller verksamhetens intressenter överraskas kan implementeringsarbetet saktas ned eller stanna av helt.
+Under migreringen är det troligt att vissa saker ändras på sätt som påverkar verksamheten. Även om ändringen ibland inte kan undvikas, bör överraskningar på grund av icke-avslöjade eller icke-genererade ändringar vara. För att upprätthålla från intressenter-support under hela migreringen är det viktigt att undvika överraskningar. Om programägarna eller verksamhetens intressenter överraskas kan implementeringsarbetet saktas ned eller stanna av helt.
 
-Före migreringen är det viktigt att förbereda arbetsbelastningens affärsägare inför alla ändringar som kan påverka affärsprocesser, till exempel ändringar i följande:
+Innan migreringen är det viktigt att förbereda arbets Belastningens företags ägare för alla ändringar som kan påverka affärs processer, till exempel ändringar i:
 
 - Serviceavtal.
 - Åtkomstmönster eller säkerhetskrav som påverkar slutanvändaren.

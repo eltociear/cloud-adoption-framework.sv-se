@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 01d41b3b1486ea563ab1c0b100559e80ad3a03f6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5eabc654c174ac3eff895e6b2ff94700789f5de5
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022689"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549171"
 ---
 # <a name="understand-partnership-options"></a>Förstå partnerskapsalternativ
 
@@ -33,11 +33,11 @@ Under planering, skapande eller migrering har ett företag vanligtvis fyra alter
 Om en organisation planerar en Azure-migrering på egen hand, finns Microsoft alltid där för att underlätta processen. För att hjälpa till att snabbt komma igång med migreringen till Azure har Microsoft och dess partners utvecklat en omfattande uppsättning arkitekturer, guider, verktyg och tjänster som minskar riskerna och påskyndar migreringen av virtuella datorer, program och databaser. Dessa verktyg och tjänster har stöd för ett brett urval av operativsystem, programmeringsspråk, ramverk och databaser.
 
 - **Verktyg för utvärdering och migrering.** Azure innehåller en mängd olika verktyg som kan användas i olika faser vid din molnomvandling, bland annat en utvärdering av din befintliga infrastruktur. Mer information finns i avsnittet ”Utvärdera” i kapitlet ”Migrering” nedan.
-- **[Microsoft Cloud Adoption Framework](../../index.md).** I det här ramverket finns en strukturerad metod för molnimplementering och migrering. Det baseras på beprövade metoder från Microsoft och är ordnade som en serie steg, från arkitektur och design till implementering. För varje steg finns det vägledning som hjälper dig med utformningen av programarkitekturen.
+- **[Microsoft Cloud Adoption Framework](../../index.md).** I det här ramverket finns en strukturerad metod för molnimplementering och migrering. Den baseras på bästa praxis över många kund engagemang i Microsoft och är ordnade som en serie steg, från arkitektur och design till implementering. För varje steg finns det vägledning som hjälper dig med utformningen av programarkitekturen.
 - **[Designmönster för molnet](https://docs.microsoft.com/azure/architecture/patterns).** Azure innehåller användbara molndesignmönster som kan användas till att skapa tillförlitliga, skalbara och säkra arbetsbelastningar i molnet. Varje mönster beskriver problemet som mönstret är avsett att hantera, överväganden när du ska tillämpa mönstret och ett exempel baserat på Azure. De flesta av mönstren innehåller kodexempel eller kodstycken som visar hur du implementerar mönstret i Azure. De avser dock alla typer av distribuerade system, oavsett om det är Azure eller någon annan molnplattform.
 - **[Grunderna för molnet](https://docs.microsoft.com/azure/architecture/guide).** I grunderna kan du läsa mer om de grundläggande metoderna för implementering av viktiga begrepp. I guiden får teknisk personal hjälp att tänka ut lösningar som använder sig av mer än en enda Azure-tjänst.
 - **[Exempelscenarier](https://docs.microsoft.com/azure/architecture/example-scenario).** Guiden innehåller referenser från verkliga kundimplementeringar och beskriver de verktyg, metoder och processer som tidigare kunder har följt för att uppnå specifika affärsmål.
-- **[Referensarkitekturer](https://docs.microsoft.com/azure/architecture/reference-architectures).** Referensarkitekturerna ordnas efter scenario, där relaterade arkitekturer finns i samma grupp. Varje arkitektur innehåller rekommenderade metoder samt överväganden kring skalbarhet, tillgänglighet, hanterbarhet och säkerhet. De flesta innehåller även en distribuerbar lösning.
+- **[Referensarkitekturer](https://docs.microsoft.com/azure/architecture/reference-architectures).** Referensarkitekturerna ordnas efter scenario, där relaterade arkitekturer finns i samma grupp. Varje arkitektur innehåller bästa praxis, tillsammans med överväganden för skalbarhet, tillgänglighet, hanterbarhet och säkerhet. De flesta innehåller även en distribuerbar lösning.
 
 ## <a name="fasttrack-for-azure"></a>FastTrack for Azure
 
@@ -55,12 +55,12 @@ Med [FastTrack för Azure](https://azure.microsoft.com/roadmap/fasttrack-for-azu
 - Analys i molnskala**
 - Smarta appar
 - Intelligenta agenter**
-- Datamodernisering i Azure
+- Datamodernisering till Azure
 - Säkerhet och hantering
 - Globalt distribuerade data
 - IoT***
 
-*Begränsad förhandsversion i USA, Kanada, Storbritannien och Västeuropa
+*Begränsad förhandsversion i Kanada, Storbritannien, USA och Västeuropa
 
 **Begränsad förhandsversion i Storbritannien och Västeuropa
 
@@ -78,11 +78,11 @@ Följande huvudfaser ingår i ett normalt FastTrack for Azure-engagemang:
 
 ![Microsoft-tjänster – Cloud Adoption Framework-metod](../../../_images/migrate/mcs-program-approach.jpg)
 
-**Utvärdera:** Microsoft-tjänsterna använder sig av en [enhetlig, data- och verktygsstyrd metod](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) som består av arkitekturstudiegrupper, Azures realtidsinformation, säkerhets- och identitetshotmodeller och olika verktyg som ger insikter om utmaningar, risker, rekommendationer och problem i en befintlig Azure-miljö med viktiga resultat som t.ex. [moderniseringsöversikt på hög nivå](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf).
+**Utvärdera:** Microsoft-tjänster använder sig av en [enhetlig, data-och verktygs driven metod](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) som består av arkitektur workshops, Azure real tids information, säkerhets-och identitets hot modeller och olika verktyg för att ge insikter om utmaningar, risker, rekommendationer och problem med en befintlig Azure-miljö med viktiga resultat som [modernisering-översikt på hög nivå](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf).
 
-**Implementera:** Med Microsoft-tjänsternas [Azure Cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf) kan du upprätta din grundläggande Azure-design, mönster och styrningsarkitektur genom att mappa dina krav till den mest lämpliga referensarkitekturen och planera, utforma och distribuera den infrastruktur, hantering, säkerhet och identitet som krävs för arbetsbelastningarna.
+**Anta:** Med Microsoft-tjänsternas [Azure Cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf)kan du upprätta din grundläggande Azure-design, mönster och styrnings arkitektur genom att mappa dina krav till den mest lämpliga referens arkitekturen och planera, utforma och distribuera infrastrukturen. hantering, säkerhet och identitet som krävs för arbets belastningar.
 
-**Migrera/optimera:** Microsoft-tjänsternas [lösning för molnmodernisering](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) är en heltäckande metod för att flytta program och infrastruktur till Azure, samt för att optimera och modernisera i molnet med en effektiv migrering.
+**Migrera/optimera:** Microsoft-tjänsternas [Cloud modernisering-lösning](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) erbjuder en omfattande metod för att flytta program och infrastruktur till Azure, samt för att optimera och modernisera en gång i molnet som backas upp av strömlinjeformad migrering.
 
 **Förnya:** Microsoft-tjänsternas [CCoE-lösning (Cloud Center of expert)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) erbjuder ett DevOps coaching-engagemang och använder DevOps-principer tillsammans med fördefinierad molnbaserad tjänst hantering och säkerhets kontroller för att hjälpa till att driva företags innovation, öka flexibiliteten och minska tiden till värde inom en säker, förutsägbar och flexibel tjänst leverans-och hanterings funktioner för tjänster.
 

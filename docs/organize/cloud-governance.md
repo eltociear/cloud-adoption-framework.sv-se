@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 33942811554556b1f67dc6515a8c679b09bfa983
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 4613a8f4a4bdfc065f6c8e48eda609f6d1703130
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224004"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549092"
 ---
 # <a name="cloud-governance-capabilities"></a>Funktioner för moln styrning
 
@@ -73,7 +73,7 @@ Vissa stora organisationer har befintliga, dedikerade team som fokuserar på IT-
 
 **Ingen styrning:** Det är vanligt för organisationer att gå över till molnet utan att klara planer för styrning. Före lång tid gäller säkerhet, kostnad, skalning och åtgärder för att utlösa konversationer om behovet av en styrnings modell och personer att bemanna de processer som är kopplade till den modellen. Att starta dessa konversationer innan de börjar gälla är alltid ett lämpligt första steg för att lösa antimönstret "ingen styrning". Avsnittet om hur du [definierar företags principer](../govern/corporate-policy.md) kan hjälpa dem att under lätta dessa konversationer.
 
-**Styrning blockerad:** När det gäller säkerhets-, kostnads-, skalnings-och drifts åtgärder som inte har svarat, kan projekt och affärs mål bli blockerade. Brist på rätt styrning genererar en frukt, osäkerhet och tvekan bland intressenter och ingenjörer. Stoppa detta i dess spår genom att vidta åtgärder tidigt. De två styrnings guiderna som definierats i moln implementerings ramverket kan hjälpa dig att starta små, ange regler för att begränsa antalet osäkerheter och vuxen styrning över tid. Välj från den [komplexa Enterprise-guiden](../govern/guides/complex/index.md) eller [standard Enterprise-guiden](../govern/guides/standard/index.md).
+**Styrning blockerad:** När det gäller säkerhets-, kostnads-, skalnings-och drifts åtgärder som inte har svarat, kan projekt och affärs mål bli blockerade. Brist på rätt styrning genererar en frukt, osäkerhet och tvivel mellan intressenter och tekniker. Stoppa detta i dess spår genom att vidta åtgärder tidigt. De två styrnings guiderna som definierats i moln implementerings ramverket kan hjälpa dig att starta små, ange regler för att begränsa antalet osäkerheter och vuxen styrning över tid. Välj från den [komplexa Enterprise-guiden](../govern/guides/complex/index.md) eller [standard Enterprise-guiden](../govern/guides/standard/index.md).
 
 **Frivillig styrning:** Det tenderar att Brave Souls i alla företag. Dessa Gallant få vem som är villiga att gå in och hjälpa teamet att lära sig av misstag. Detta är ofta hur styrning startar, särskilt i mindre företag. Dessa Brave soulsr i ideell tid för att åtgärda vissa problem och skicka moln användnings team till en konsekvent och välhanterad uppsättning bästa praxis.
 

@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 8b0aebe00d987ac49ba965fc1982c1615372ba92
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 3d8d6b656f6bfe8072b53dccc05a67479aa36f24
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027456"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548573"
 ---
-# <a name="cloud-monitoring-guide-collecting-the-right-data"></a>Molnövervakningsguide: Samlar in rätt data
+# <a name="cloud-monitoring-guide-collecting-the-right-data"></a>Övervaknings guide för molnet: samla in rätt data
 
 I den här artikeln beskrivs några saker att tänka på när du samlar in övervaknings data i ett moln program.
 

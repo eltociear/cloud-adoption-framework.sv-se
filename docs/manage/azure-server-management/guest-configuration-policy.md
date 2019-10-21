@@ -8,16 +8,16 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c43d07c6cfdea0152559d7a13fec7dde148b1530
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 16d67f628ff99f971d2d79127b25698987cc8977
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221564"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547282"
 ---
 # <a name="guest-configuration-policy"></a>Princip för gäst konfiguration
 
-Med tillägget Azure Policy [gäst konfiguration](/azure/governance/policy/concepts/guest-configuration) kan du granska konfigurations inställningarna på en virtuell dator. Gäst konfigurationen stöds för närvarande endast på virtuella Azure-datorer.
+Med tillägget Azure Policy [gäst konfiguration](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration) kan du granska konfigurations inställningarna på en virtuell dator. Gäst konfigurationen stöds för närvarande endast på virtuella Azure-datorer.
 
 Du hittar listan över principer för gäst konfiguration genom att söka efter kategorin "gäst konfiguration" på sidan Azure Policy Portal. Du kan också hitta listan genom att köra denna cmdlet i ett PowerShell-fönster:
 

@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 590875a336b8af23723ab122e2af8f2290404ab3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 46c7d77aecc93f5c129f098145bfec97820995a2
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224135"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378080"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -49,15 +49,15 @@ Den här listan innehåller ett exempel på ett första projekt för varje motiv
 
 - **Kritiska affärs händelser:** När en viktig affärs händelse är den främsta motivation, kan implementeringen av ett verktyg som [Azure Site Recovery](../migrate/azure-migration-guide/migrate.md?tabs=Tools#azure-site-recovery) vara ett lämpligt första projekt. Under migreringen kan du använda det här verktyget för att snabbt migrera data Center till gångar. Men under det första projektet kan du använda det rent som ett haveri beredskaps verktyg för att minska beroendet av Disaster Recovery-tillgångar i data centret.
 
-- **Motivation i migreringen:** När migrering är den främsta motivationen är det klokt att börja med migreringen av en icke-kritisk arbets belastning. [Azure readiness guide](../ready/azure-readiness-guide/index.md) och [Azure migration guide](../migrate/azure-migration-guide/index.md) kan ge vägledning om migreringen av din första arbets belastning.
+- **Motivation i migreringen:** När migrering är den främsta motivationen är det klokt att börja med migreringen av en icke-kritisk arbets belastning. [Installations guiden för Azure](../ready/azure-setup-guide/index.md) och [Azure migration guide](../migrate/azure-migration-guide/index.md) kan ge vägledning om migreringen av din första arbets belastning.
 
 - **Nyskapande motivation:** När innovation är den främsta motivation kan skapandet av en riktad dev/test-miljö vara ett fantastiskt första projekt.
 
 Ytterligare exempel på första antagande projekt är:
 
 - **Haveri beredskap och affärs kontinuitet (DRBC):** Utöver Azure Site Recovery kan du implementera flera DRBC-strategier som ett första projekt.
-- **Icke** Distribuera en inproduktion instans av en arbets belastning.
-- **Arkivattributet** Kall lagring kan belasta Data Center resurser. Att flytta data till molnet är en solid Quick Win.
+- **Inproduktion:** Distribuera en inproduktion instans av en arbets belastning.
+- **Arkiv:** Kall lagring kan belasta Data Center resurser. Att flytta data till molnet är en solid Quick Win.
 - **Slut på support (EOS):** Att migrera till gångar som har nått slutet av support är en annan snabb chans som bygger tekniska kunskaper. Det kan också vara ett kostnads fritt sätt att undvika dyra support avtal eller licens kostnader.
 - **VDI (Virtual Desktop Interface):** Att skapa virtuella skriv bord för fjärran slutna anställda kan ge en snabb chans. I vissa fall kan det här första tillämpnings projektet också minska beroendet av kostsamma privata nätverk för att ge en offentlig Internet anslutning.
 - **Utveckling/testning:** Ta bort dev/test från lokala miljöer för att ge utvecklare kontroll, flexibilitet och självbetjänings kapacitet.

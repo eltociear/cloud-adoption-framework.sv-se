@@ -8,12 +8,12 @@ ms.date: 12/31/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6cf1be3679032976efa0331e13ea6806f2f8a79f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5c3fcb72fc58f4b33735a95a7fcf1623fe081795
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024357"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548101"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>Distribuera en grundläggande arbets belastning i Azure
 
@@ -41,7 +41,7 @@ För ett grundläggande webb program väljer du en av snabb starterna på fem mi
 > [!NOTE]
 > En del snabb starts guider distribuerar en resurs grupp som standard. I det här fallet behöver du inte skapa en resurs grupp uttryckligen. Annars distribuerar du webb programmet till resurs gruppen som du skapade ovan.
 
-När du har distribuerat en enkel arbets belastning kan du lära dig mer om beprövade metoder för att distribuera ett [grundläggande webb program](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app?toc=/azure/architecture/cloud-adoption-guide/toc.json) till Azure.
+När du har distribuerat en enkel arbets belastning kan du lära dig mer om bästa praxis för att distribuera ett [grundläggande webb program](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app?toc=/azure/architecture/cloud-adoption-guide/toc.json) till Azure.
 
 ## <a name="single-windows-or-linux-vm-iaas"></a>Enskild virtuell Windows-eller Linux-dator (IaaS)
 
@@ -49,7 +49,7 @@ Det första steget är att distribuera ett virtuellt nätverk för en enkel arbe
 
 Nästa steg är att bestämma om du ska distribuera en enskild virtuell Windows-eller Linux-dator. För virtuella Windows-datorer följer du stegen för att [distribuera en virtuell Windows-dator till Azure med portalen](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). När du har angett inställningarna för den virtuella datorn i Azure Portal anger du namnet på resurs gruppen som du skapade ovan.
 
-När du har följt stegen och distribuerat den virtuella datorn kan du lära dig mer om [beprövade metoder för att köra en virtuell Windows-dator på Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json). För en virtuell Linux-dator följer du stegen för att [distribuera en virtuell Linux-dator till Azure med portalen](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Du kan också lära dig mer om [beprövade metoder för att köra en virtuell Linux-dator på Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-linux/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json).
+När du har följt stegen och distribuerat den virtuella datorn kan du lära dig mer om [metod tips för att köra en virtuell Windows-dator på Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json). För en virtuell Linux-dator följer du stegen för att [distribuera en virtuell Linux-dator till Azure med portalen](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Du kan också lära dig mer om [metod tips för att köra en virtuell Linux-dator på Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-linux/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json).
 
 ## <a name="next-steps"></a>Nästa steg
 

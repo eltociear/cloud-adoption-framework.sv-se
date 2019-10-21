@@ -1,7 +1,7 @@
 ---
-title: 'Styrnings guide för komplexa företag: Förbättra disciplinen för resurs konsekvens'
+title: 'Styrnings guide för komplexa företag: förbättra disciplinen för resurs konsekvens'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Styrnings guide för komplexa företag: Förbättra disciplinen för resurs konsekvens'
+description: 'Styrnings guide för komplexa företag: förbättra disciplinen för resurs konsekvens'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/19/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9875fb2ebc6948d22ac6eaf350f9784b61fd4dc3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5b381bf483937e2edfbf503063fd4e520203b819
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223809"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547627"
 ---
-# <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Styrnings guide för komplexa företag: Förbättra disciplinen för resurs konsekvens
+# <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Styrnings guide för komplexa företag: förbättra disciplinen för resurs konsekvens
 
 Den här artikeln går vidare genom att lägga till resurs konsekvens kontroller till styrnings-MVP: en som stöder verksamhets kritiska program.
 
@@ -101,7 +101,7 @@ Efter erfarenheten av det här fiktiva exemplet antas det att ändringar av skyd
     4. Granska och genomdriva begränsningen för användardefinierade vägvals tabeller.
     5. Granska och genomdriva distributionen av Log Analytics agenter för virtuella Windows-och Linux-datorer.
 2. Azure-skiss:
-    1. Skapa en skiss med `mission-critical-workloads-and-protected-data`namnet. I den här skissen används till gångar utöver den skyddade data skissen.
+    1. Skapa en skiss med namnet `mission-critical-workloads-and-protected-data`. I den här skissen används till gångar utöver den skyddade data skissen.
     2. Lägg till de nya Azure-principerna i skissen.
     3. Använd skissen på alla prenumerationer som förväntas vara värd för ett verksamhets kritiskt program.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1a4a82893535228e84defc8918be6e5fa884ca16
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: c713af7557760d0bafeabf9d0cd0ef37a3885fe4
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967693"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547761"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Exempel princip satser för distributions acceleration
 
@@ -32,7 +32,7 @@ Följande exempel på princip satser hanterar vanliga konfigurations relaterade 
 
 **Princip instruktion:** Alla till gångar som distribueras till molnet bör distribueras med hjälp av mallar eller Automation-skript närhelst det är möjligt.
 
-**Potentiella design alternativ:** [Azure Resource Manager mallar](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) innehåller en infrastruktur som kod för att distribuera dina resurser till Azure. Du kan också använda [terraform](https://docs.microsoft.com/azure/terraform/terraform-overview) som ett konsekvent lokalt och molnbaserad distributions verktyg.
+**Potentiella design alternativ:** [Azure Resource Manager mallar](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) är en infrastruktur som kod för att distribuera dina resurser till Azure. Du kan också använda [terraform](https://docs.microsoft.com/azure/terraform/terraform-overview) som ett konsekvent lokalt och molnbaserad distributions verktyg.
 
 ## <a name="lack-of-visibility-into-system-issues"></a>Brist på insyn i system problem
 
@@ -43,7 +43,7 @@ Följande exempel på princip satser hanterar vanliga konfigurations relaterade 
 - Nyckel mått och diagnostiska mått kommer att identifieras för alla produktions system och-komponenter, och övervaknings-och diagnostikverktyg kommer att tillämpas på dessa system och övervakas regelbundet av drifts personal.
 - Åtgärder bör använda övervaknings-och diagnostikverktyg i miljöer som inte är för produktion, till exempel mellanlagring och frågor och svar för att identifiera system problem innan de inträffar i produktions miljön.
 
-**Potentiella design alternativ:** [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor), som även innehåller Log Analytics och Application Insights, innehåller verktyg för att samla in och analysera telemetri för att hjälpa dig att förstå hur dina program presterar och proaktivt identifiera problem som påverkar dem och resurser som de är beroende av. Dessutom rapporterar [Azure aktivitets logg](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) alla ändringar som görs på plattforms nivå och bör övervakas/granskas för icke-kompatibla ändringar.
+**Potentiella design alternativ:** [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor), som även innehåller Log Analytics och Application Insights, innehåller verktyg för att samla in och analysera telemetri för att hjälpa dig att förstå hur dina program presterar och proaktivt identifiera problem som påverkar dem och de resurser som de är beroende av. Dessutom rapporterar [Azure aktivitets logg](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) alla ändringar som görs på plattforms nivå och bör övervakas/granskas för inkompatibla ändringar.
 
 ## <a name="configuration-security-reviews"></a>Säkerhets granskningar av konfiguration
 

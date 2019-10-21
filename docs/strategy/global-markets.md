@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: ca1e18bdc8da300667b721e673bb1fc0388b4bdf
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 36f0d5ccf826746370054ed213b83968babdee6b
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030406"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548615"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -33,7 +33,7 @@ Det är viktigt att förstå vilka affär senheter som körs i utländska lände
 
 ## <a name="employee-usage-patterns"></a>Användnings mönster för medarbetare
 
-Det är viktigt att förstå hur globala användare kommer åt program som inte finns i samma land som användaren. Tid för globala WAN-nätverk (Wide Area Network) är ofta väg användare baserade på befintliga nätverks avtal. I en traditionell lokal värld, begränsar vissa begränsningar WAN-design. Dessa begränsningar kan leda till dåliga användar upplevelser om de inte är korrekt tolkade innan du börjar använda molnet.
+Det är viktigt att förstå hur globala användare kommer åt program som inte finns i samma land som användaren. Globala WAN-användare (Wide-Area Network) baseras på befintliga nätverks avtal. I en traditionell lokal värld, begränsar vissa begränsningar WAN-design. Dessa begränsningar kan leda till dåliga användar upplevelser om de inte är korrekt tolkade innan du börjar använda molnet.
 
 I en moln modell öppnar Internet även flera nya alternativ. Att kommunicera spridningen av anställda över flera geografiska områden kan hjälpa molnet att utforma WAN-lösningar som skapar positiva användar upplevelser **och** potentiellt minskade nätverks kostnader.
 
@@ -44,7 +44,7 @@ Det är lika viktigt att förstå användnings mönstren för externa användare
 ## <a name="next-steps"></a>Nästa steg
 
 När globala marknads beslut har fattats och meddelats är teamet redo att börja [upprätta tekniska standarder](../digital-estate/index.md) mot dessa mått.
-Resultatet blir en omvandling efter [släpning eller](..//migrate/migration-considerations/prerequisites/technical-complexity.md)efter släpning för migrering.
+Resultatet blir en omvandling efter [släpning eller efter släpning för migrering](..//migrate/migration-considerations/prerequisites/technical-complexity.md).
 
 > [!div class="nextstepaction"]
 > [Utvärdera den digitala fastigheten](../digital-estate/index.md)

@@ -1,7 +1,7 @@
 ---
-title: 'Styrnings guide för komplexa företag: Första företags principen bakom styrnings strategin'
+title: 'Styrnings guide för komplexa företag: första företags principen bakom styrnings strategin'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Styrnings guide för komplexa företag: Första företags principen bakom styrnings strategin'
+description: 'Styrnings guide för komplexa företag: första företags principen bakom styrnings strategin'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2d8c2923820883561f75902830425b1bd81eb846
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 56629e6f313614965ee1baddaa08e4264b4bef53
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027422"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547680"
 ---
-# <a name="governance-guide-for-complex-enterprises-initial-corporate-policy-behind-the-governance-strategy"></a>Styrnings guide för komplexa företag: Första företags principen bakom styrnings strategin
+# <a name="governance-guide-for-complex-enterprises-initial-corporate-policy-behind-the-governance-strategy"></a>Styrnings guide för komplexa företag: första företags principen bakom styrnings strategin
 
 Följande företags policy definierar den inledande styrnings positionen, som är start punkten för den här guiden. Den här artikeln definierar tidiga risker, inledande princip-instruktioner och tidiga processer för att genomdriva princip satser.
 
@@ -47,4 +47,4 @@ Den aktuella risk toleransen är hög och riskbenägenhet för investeringar i m
 Den här företags policyn förbereder moln styrnings teamet för att implementera styrnings-MVP, som är grunden för införande. Nästa steg är att implementera denna MVP.
 
 > [!div class="nextstepaction"]
-> [Vägledning förklaring](./prescriptive-guidance.md)
+> [Metod tips förklaras](./prescriptive-guidance.md)

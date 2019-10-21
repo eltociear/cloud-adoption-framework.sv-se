@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2bbafffd50cba58fc5304489f31521e6da8a8345
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: be4fe4616b4f0599075ceac2b9c0838949b350c8
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025442"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548481"
 ---
 # <a name="estimate-cloud-costs"></a>Beräkna molnkostnader
 
@@ -25,15 +25,15 @@ Storleken på din digitala egendom har en direkt påverkan på migreringsbeslute
 
 Men tänk på att en migrering av en mindre arbetsbelastning ändå kan innehålla ett varierande antal stödjande tillgångar. Om migreringen omfattar maximalt 1 000 virtuella datorer räcker det förmodligen med ett verktyg som [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) vid insamlingen av data om lager och beräknade kostnader. Fler alternativ på verktyg för att beräkna kostnader beskrivs i artikeln om [kostnadsberäkningar för digital egendom](../../../digital-estate/calculate.md).
 
-När antalet digitala egendomar är mer än 1 000 enheter är det fortfarande möjligt att dela upp beräkningen i fyra eller fem iterationer, vilket gör beräkningsprocessen mer hanterbar. Vid större egendomar eller när en högre grad av precision krävs i beräkningen, är en mer heltäckande metod (t.ex. den som beskrivs i avsnittet ”[Digital egendom](../../../digital-estate/index.md)” i Cloud Adoption Framework) troligtvis nödvändig.
+För 1 000 + enhets digitala fastigheter är det fortfarande möjligt att dela upp en uppskattning i fyra eller fem åtgärds bara iterationer, vilket gör uppskattnings processen hanterbar. Vid större egendomar eller när en högre grad av precision krävs i beräkningen, är en mer heltäckande metod (t.ex. den som beskrivs i avsnittet ”[Digital egendom](../../../digital-estate/index.md)” i Cloud Adoption Framework) troligtvis nödvändig.
 
 ## <a name="accounting-models"></a>Redovisningsmodeller
 
 Redovisningsmodeller
 
-Om du har arbetat med traditionella IT-upphandlingsprocesser kan en beräkning i molnet verka främmande. När du implementerar molnteknologier ändras anskaffningen från en fast och strukturerad modell för kapitalkostnader till en modell med rörliga driftskostnader. I den traditionella modellen för kapitalkostnader skulle IT-teamet försökt samla köpkraften för flera arbetsbelastningar i olika program till en central pool med delade IT-tillgångar som kunde stödja var och en av dessa lösningar. I molnmodellen för driftskostnader kan kostnaderna kopplas direkt till supportbehoven för enskilda arbetsbelastningar, team eller affärsenheter. Med den här metoden kan man använda en mer direkt tilldelning av kostnader till den interna kund som stöds. När man beräknar kostnader är det viktigt att först förstå hur mycket av den nya redovisningsfunktionen som kommer att användas av IT-teamet.
+Om du har arbetat med traditionella IT-upphandlingsprocesser kan en beräkning i molnet verka främmande. När du implementerar molnteknologier ändras anskaffningen från en fast och strukturerad modell för kapitalkostnader till en modell med rörliga driftskostnader. I den traditionella modellen för kapitalkostnader skulle IT-teamet försökt samla köpkraften för flera arbetsbelastningar i olika program till en central pool med delade IT-tillgångar som kunde stödja var och en av dessa lösningar. I molnmodellen för driftskostnader kan kostnaderna kopplas direkt till supportbehoven för enskilda arbetsbelastningar, team eller affärsenheter. Med den här metoden kan man använda en mer direkt tilldelning av kostnader till den interna kund som stöds. När du uppskattar kostnaderna är det viktigt att du först förstår hur mycket av den nya redovisnings kapaciteten som kommer att användas av IT-teamet.
 
-De som vill fortsätta använda den äldre kapitalkostnadsmetoden till redovisningen kan använda utdatan från någon av de metoder som föreslås i avsnittet ”[Storlek på digital egendom](#digital-estate-size)” ovan för att få en årlig kostnadsgrund. Därefter multipliceras den årliga kostnaden med företagets normala uppdateringscykel för maskinvara. Uppdateringscykeln för maskinvara är den hastighet som ett företag ersätter äldre maskinvara med, vanligtvis mätt i år. Den årliga hastigheten för körning multipliceras med uppdateringscykeln för maskinvara och skapar en kostnadsstruktur som liknar ett investeringsmönster för kapitalkostnader.
+De som vill fortsätta använda den äldre kapitalkostnadsmetoden till redovisningen kan använda utdatan från någon av de metoder som föreslås i avsnittet ”[Storlek på digital egendom](#digital-estate-size)” ovan för att få en årlig kostnadsgrund. Sedan multiplicerar du denna årliga kostnad med företagets typiska maskin varu uppdaterings cykel. Uppdateringscykeln för maskinvara är den hastighet som ett företag ersätter äldre maskinvara med, vanligtvis mätt i år. Den årliga hastigheten för körning multipliceras med uppdateringscykeln för maskinvara och skapar en kostnadsstruktur som liknar ett investeringsmönster för kapitalkostnader.
 
 ## <a name="next-steps"></a>Nästa steg
 

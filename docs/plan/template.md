@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: f7634f15735c68296a96d997d3bf8e915d03e6b7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9988141c1f0133a0a18c11c46e09d7285d988e5e
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022312"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549181"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Moln implementerings plan och Azure-DevOps
 
@@ -45,14 +45,14 @@ Om du vill förbereda din arbets station för Mass redigering, se [Mass Lägg ti
 
 Moln implementerings planen organiserar aktiviteter efter aktivitets typ:
 
-- **Epics**: En *episka* representerar en övergripande fas i moln införande livs cykel.
-- **Funktioner**: Funktionerna används för att organisera vissa mål i varje fas. Migreringen av en speciell arbets belastning skulle till exempel vara en funktion.
-- **Användar berättelser**: Användar nyhets gruppen fungerar i logiska samlingar av aktiviteter baserat på ett speciellt mål.
-- **Uppgifter**: Aktiviteter är det faktiska arbetet som ska utföras.
+- **Epics**: en *episka* representerar en övergripande fas i moln införande livs cykel.
+- **Funktioner**: funktioner används för att organisera vissa mål i varje fas. Migreringen av en speciell arbets belastning skulle till exempel vara en funktion.
+- **Användar berättelser**: användar berättelser gruppen arbetar i logiska samlingar av aktiviteter baserat på ett speciellt mål.
+- **Uppgifter**: aktiviteter är det faktiska arbetet som ska utföras.
 
 På varje lager sekvenseras aktiviteter baserat på beroenden. Aktiviteterna är länkade till artiklar i moln implementerings ramverket för att klargöra målet eller uppgiften i handen.
 
-Den tydligaste vyn av moln implementerings planen kommer från vyn **Epics** efter släpning. Information om hur du ändrar till vyn **Epics** efter släpning finns i artikeln om att [Visa en](https://docs.microsoft.com/azure/devops/boards/backlogs/define-features-epics?view=azure-devops#view-a-backlog-or-portfolio-backlog)efter släpning. I den här vyn är det enkelt att planera och hantera det arbete som krävs för att slutföra den aktuella fasen av livs cykeln för införande.
+Den tydligaste vyn av moln implementerings planen kommer från vyn **Epics** efter släpning. Information om hur du ändrar till vyn **Epics** efter släpning finns i artikeln om att [Visa en efter släpning](https://docs.microsoft.com/azure/devops/boards/backlogs/define-features-epics?view=azure-devops#view-a-backlog-or-portfolio-backlog). I den här vyn är det enkelt att planera och hantera det arbete som krävs för att slutföra den aktuella fasen av livs cykeln för införande.
 
 > [!NOTE]
 > Det aktuella läget för moln implementerings planen fokuserar kraftigt på migrering. Uppgifter som rör styrning, innovation eller åtgärder måste fyllas i manuellt.
@@ -63,11 +63,11 @@ Den tydligaste vyn av moln implementerings planen kommer från vyn **Epics** eft
 
 Följande artiklar stöder justering av moln implementerings planen:
 
-- [Arbets belastningar](./workloads.md): Justera funktionerna i Molnmigrering episka för att avbilda varje arbets belastning som ska migreras eller förvaras. Lägg till och ändra dessa funktioner för att samla in ansträngningen för att migrera de 10 främsta arbets belastningarna.
-- [Till gångar](./assets.md): Varje till gång (virtuell dator, program eller data) representeras av användarnas berättelser under varje arbets belastning. Lägg till och ändra dessa användar berättelser så att de passar din digitala egendom.
-- [Rationalisering](./review-rationalization.md): När varje arbets belastning har definierats kan de första antagandena om den arbets belastningen anropas. Detta kan leda till ändringar i aktiviteterna under varje till gång.
-- [Skapa versions planer](./iteration-paths.md): Upprepnings Sök vägar upprättar versions planer genom att justera insatserna med olika versioner och iterationer.
-- [Upprätta tids linjer](./timelines.md): När du definierar start-och slutdatum för varje iteration skapas en tids linje för att hantera det övergripande projektet.
+- [Arbets belastningar](./workloads.md): justera funktionerna i molnmigrering episka för att avbilda varje arbets belastning som ska migreras eller förvaras. Lägg till och ändra dessa funktioner för att samla in ansträngningen för att migrera de 10 främsta arbets belastningarna.
+- [Till gångar](./assets.md): varje till gång (virtuell dator, program eller data) representeras av användarnas berättelser under varje arbets belastning. Lägg till och ändra dessa användar berättelser så att de passar din digitala egendom.
+- [Rationalisering](./review-rationalization.md): när varje arbets belastning definieras kan de första antagandena om den arbets belastningen anropas. Detta kan leda till ändringar i aktiviteterna under varje till gång.
+- [Skapa versions planer](./iteration-paths.md): upprepnings Sök vägar upprättar versions planer genom att justera ansträngningarna med olika versioner och iterationer.
+- [Upprätta tids linjer](./timelines.md): definiera start-och slutdatum för varje iteration skapar en tids linje för att hantera det övergripande projektet.
 
 Dessa fem artiklar hjälper till med var och en av de justerings uppgifter som krävs för att börja hantera dina implementerings åtgärder. Nästa steg hjälper dig att komma igång med justerings övningen.
 

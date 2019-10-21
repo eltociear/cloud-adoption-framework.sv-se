@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ba799c8634fc6eeda70507ae85464506103e44ff
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d669d720d1bf56a5adc0df42a505608ab76b02ec
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025372"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548274"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Förbered dig för teknisk komplexitet: smidig förändringsledning
 
@@ -31,16 +31,16 @@ Termen _arbetsbelastning_ förekommer i hela Ramverk för molnimplementering. En
 
 INVEST är en vanlig akronym i många dynamiska metoder för att skriva användarberättelser eller produktuppgifter, eftersom båda är utdata från dynamiska projekthanteringsverktyg. Den mätbara enheten för utdata i en migrering är en migrerad arbetsbelastning. Ramverk för molnimplementering anpassar begreppet INVEST lite för att definiera arbetsbelastningar:
 
-- **Independent (Oberoende):** En arbetsbelastning får inte ha några otillgängliga beroenden. För att en arbetsbelastning ska betraktas som migrerad bör alla beroenden vara tillgängliga och ingå i migreringen.
-- **Negotiable (Förhandlingsbar):** När vidare identifiering utförs ändras definitionen av en arbetsbelastning. Arkitekterna som planerar migreringen kan förhandla faktorer som berör beroenden. Exempel på förhandlingspunkter är förlansering av funktioner, att göra funktioner tillgängliga på ett hybridnätverk eller samling av alla beroenden i en enda lansering.
-- **Valuable:** Värdet i en arbetsbelastning mäts av möjligheten att ge användare åtkomst till en produktionsarbetsbelastning.
-- **Estimable (Uppskattningsbar):** Beroenden, tillgångar, migreringstid, prestanda och molnkostnader bör gå att uppskatta och beräkna inför migreringen.
-- **Small (Liten):** Målet är att samla arbetsbelastningarna i en enda spurt. Detta är dock inte alltid möjligt. I stället uppmuntras team att planera spurtar och versioner för att minimera den tid som krävs för att flytta en arbetsbelastning till produktion.
-- **Testbar:** Det bör alltid finnas ett definierat sätt att testa eller verifiera att migreringen av en arbetsbelastning har slutförts.
+- **Oberoende:** En arbets belastning får inte ha några otillgängliga beroenden. För att en arbetsbelastning ska betraktas som migrerad bör alla beroenden vara tillgängliga och ingå i migreringen.
+- **Överlåtbart:** När ytterligare identifiering utförs ändras definitionen av en arbets belastning. Arkitekterna som planerar migreringen kan förhandla faktorer som berör beroenden. Exempel på förhandlingspunkter är förlansering av funktioner, att göra funktioner tillgängliga på ett hybridnätverk eller samling av alla beroenden i en enda lansering.
+- **Värdefull:** Värdet i en arbets belastning mäts av möjligheten att ge användare åtkomst till en produktions arbets belastning.
+- **Estimable:** Beroenden, till gångar, migrerings tid, prestanda och moln kostnader bör estimable och beräknas innan migreringen.
+- **Liten:** Målet är att paketera arbets belastningar i en enda Sprint. Detta är dock inte alltid möjligt. I stället uppmuntras team att planera spurtar och versioner för att minimera den tid som krävs för att flytta en arbetsbelastning till produktion.
+- **Testable:** Det bör alltid finnas ett definierat sätt att testa eller verifiera att migreringen av en arbets belastning slutförs.
 
 Den här förkortningen är inte avsedd som en stel pekpinne men kan vägleda definitionen av begreppet _arbetsbelastning_.
 
-## <a name="migration-backlog-aligning-business-priorities-and-timing"></a>Migreringsuppgifter: Justera verksamhetsprioriteter och tidsramar
+## <a name="migration-backlog-aligning-business-priorities-and-timing"></a>Efter släpning för migrering: justera affärs prioriteringar och tids inställningar
 
 Migreringsuppgifterna låter dig spåra din portfölj med arbetsbelastningar som ska migreras på högsta nivå. Innan migreringen uppmuntras molnstrategiteamet och molnimplementeringsteamet att göra en granskning av den aktuella [digitala egendomen](../../../digital-estate/index.md) och komma överens om en prioriteringslista för arbetsbelastningar som ska migreras. Den här listan utgör grunden för den första listan med migreringsuppgifter.
 
@@ -63,7 +63,7 @@ I migreringsuppgifterna bör förändringsledningsteamet försöka inhämta föl
 - **Namn på arbetsbelastning.**
 - **Första inventeringen.** Alla tillgångar som krävs för att tillhandahålla arbetsbelastningens funktioner, inklusive virtuella datorer, IT-enheter, data, program, distribueringspipelines med mera. Den här informationen är förmodligen felaktig.
 
-## <a name="release-backlog-aligning-business-change-and-technical-coordination"></a>Lanseringsuppgifter: Justera affärsändringar och teknisk samordning
+## <a name="release-backlog-aligning-business-change-and-technical-coordination"></a>Versions efter släpning: justera affärs ändring och teknisk samordning
 
 I samband med en migrering är en _version_ en aktivitet som distribuerar en eller flera arbetsbelastningar till produktion. En lansering täcker i allmänhet flera iterationer eller tekniska uppgifter. Den representerar en enda iteration av en affärsförändring. När en eller flera arbetsbelastningar har förberetts för produktionsbefordran sker en lansering. Beslut om att samla en lansering sker när de migrerade arbetsbelastningarna medför tillräckligt företagsvärde för att motivera att införa ändringen i en företagsmiljö. Versioner körs tillsammans med en [verksamhetsförändringsplan](../optimize/business-change-plan.md)när [företagstestningen](../optimize/business-test.md) har slutförts. Molnstrategiteamet ansvarar för att planera och se över körningen av en version för att säkerställa att den önskade affärsändringen lanseras.
 
@@ -86,13 +86,13 @@ Ett samarbete mellan molnstrategiteamet och molnimplementeringsteamet lägger ti
 
 ### <a name="release-backlog-cadence"></a>Takt för lanseringsuppgifter
 
-Lanseringarna sker regelbundet i inarbetade migreringar. Molnimplementeringsteamets takt normaliseras vanligtvis till att ta fram en lansering för varje två till fyra upprepningar (vanligtvis en eller två månader). Detta bör dock ske naturligt. En artificiell lanseringstakt kan skada molnimplementeringsteamets förmåga att uppnå ett konsekvent genomflöde.
+Lanseringarna sker regelbundet i inarbetade migreringar. Molnimplementeringsteamets takt normaliseras vanligtvis till att ta fram en lansering för varje två till fyra upprepningar (vanligtvis en eller två månader). Detta bör dock ske naturligt. Att skapa artificiell release-cadences kan påverka moln implementerings teamets möjlighet att uppnå konsekvent data flöde.
 
 För att stabilisera inverkan på företaget bör molnstrategiteamet etablera en månatlig lanseringsprocess med företaget så att regelbunden dialog bibehålls men de bör även skapa en förväntning om att det kommer att ta flera månader innan en regelbunden lanseringstakt kan förutsägas.
 
-## <a name="sprint-or-iteration-backlog-aligning-technical-change-and-effort"></a>Spring- eller iterationsuppgifter: Anpassa teknisk ändring och tekniska projekt
+## <a name="sprint-or-iteration-backlog-aligning-technical-change-and-effort"></a>Efter släpning i Sprint eller iteration: justera teknisk ändring och ansträngning
 
-En *spring-* eller *iteration* är en konsekvent och tidsbegränsad arbetsenhet. I migreringsprocessen mäts detta ofta i steg om två veckor. Det är dock inte omöjligt att ha iterationer på en till fyra veckor. När du skapar tidsbegränsade iterationer tvingas konsekventa intervall vilket möjliggör mer regelbunden justering av planer baserat på ny information. Under en given spurt ingår vanligtvis utvärderings-, migrerings- och arbetsbelastningsoptimeringsuppgifter som definieras i migreringsuppgifterna. De här arbetsenheterna bör spåras och hanteras i samma projektledningsverktyg som migrerings- och lanseringsuppgifterna så att alla nivåer av förändringsledningen är konsekvent.
+En *spring-* eller *iteration* är en konsekvent och tidsbegränsad arbetsenhet. I migreringsprocessen mäts detta ofta i steg om två veckor. Det är dock inte helt hört att ha en veckas eller fyra veckors iterationer. När du skapar tidsbegränsade iterationer tvingas konsekventa intervall vilket möjliggör mer regelbunden justering av planer baserat på ny information. Under en given spurt ingår vanligtvis utvärderings-, migrerings- och arbetsbelastningsoptimeringsuppgifter som definieras i migreringsuppgifterna. De här arbetsenheterna bör spåras och hanteras i samma projektledningsverktyg som migrerings- och lanseringsuppgifterna så att alla nivåer av förändringsledningen är konsekvent.
 
 *Sprintuppgifter* eller *iterationsuppgifter* består av tekniska uppgifter som ska slutföras i en enda spurt eller iteration för migrering av individuella tillgångar. Arbetet bör härledas från listan med arbetsbelastningar som migreras. När du använder verktyg som Azure DevOps (tidigare Visual Studio Online) för projekthantering är uppgifterna i en spurt underordnade produktuppgifterna i loggen med lanseringsuppgifterna och migreringsuppgifterna. En sådan överordnad-underordnad relation förtydligar på alla nivåer i förändringsledningen.
 

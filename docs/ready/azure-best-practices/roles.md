@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 62d6ab27e127f9d954989465838cd7c328db0573
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: d9b51b7bb67a58d3a41818b1c51138c2e1c9c43a
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967778"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548977"
 ---
 # <a name="role-based-access-control"></a>Rollbaserad åtkomstkontroll
 
@@ -28,7 +28,7 @@ En översikt över rekommenderade RBAC-rutiner som en del av en identitets-och s
 
 Genom att använda [rollbaserad åtkomstkontroll](https://docs.microsoft.com/azure/role-based-access-control/overview)kan du separera uppgifter i ditt team och endast bevilja tillräcklig åtkomst för särskilda Azure Active Directory (Azure AD)-användare, grupper, tjänsthuvudnamn eller hanterade identiteter så att de kan utföra sina uppgifter. I stället för att ge alla obegränsad behörighet i din Azure-prenumeration eller dina resurser kan du begränsa åtkomsten för varje uppsättning resurser.
 
-[Rolldefinitioner för RBAC-roller](https://docs.microsoft.com/azure/role-based-access-control/role-definitions) är en lista med åtgärder som tillåts eller inte tillåts för användare eller grupper som har tilldelats rollen. En rolls [omfång](/azure/role-based-access-control/overview#scope) anger vilka resurser som dessa definierade behörigheter gäller för. Omfånget kan anges på flera nivåer: hanteringsgrupp, prenumeration, resursgrupp och resurs. Omfång är strukturerade i en överordnad/underordnad relation.
+[Rolldefinitioner för RBAC-roller](https://docs.microsoft.com/azure/role-based-access-control/role-definitions) är en lista med åtgärder som tillåts eller inte tillåts för användare eller grupper som har tilldelats rollen. En rolls [omfång](https://docs.microsoft.com/azure/role-based-access-control/overview#scope) anger vilka resurser som dessa definierade behörigheter gäller för. Omfånget kan anges på flera nivåer: hanteringsgrupp, prenumeration, resursgrupp och resurs. Omfång är strukturerade i en överordnad/underordnad relation.
 
 ![Hierarki för RBAC-omfång](../../_images/azure-best-practices/rbac-scope.png)
 

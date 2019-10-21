@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 4b9f6bcb8ce2732cda094e83b832c0e4c920c665
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4948035001cba4ba9b433a6f31811f0c66e1704f
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024181"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548161"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Ange en ny värd för en lokal app på en virtuell Azure-dator och SQL Database Managed Instance
 
@@ -39,7 +39,7 @@ Contosos IT-ledningsgrupp har arbetat tillsammans med företagets affärspartner
 Contosos molnteam har identifierat mål för den här migreringen. Företaget använder migreringsmålen till att fastställa den bästa migreringsmetoden.
 
 - Efter migreringen ska appen i Azure ha samma prestandafunktioner som appen har i dag i Contosos lokala VMware-miljö. Övergången till molnet innebär inte att appens prestanda är mindre viktig.
-- Contoso vill inte investera mer i appen. Appen är kritisk och viktig för verksamheten, men Contoso vill bara flytta appen i sin aktuella form till molnet.
+- Contoso vill inte investera i appen. Appen är kritisk och viktig för verksamheten, men Contoso vill bara flytta appen i sin aktuella form till molnet.
 - Databasadministrationen bör minska betydligt när appen har migrerats.
 - Contoso vill inte använda en Azure SQL Database för den här appen. Man letar efter alternativ.
 
@@ -81,7 +81,7 @@ Som en del av processen för lösningsdesign gjorde Contoso en funktionsjämför
 - Contoso kan helt enkelt göra en ”Lift and Shift”-migrering till Managed Instance med hjälp av den helt automatiserade Azure Database Migration Service. Med den här tjänsten kan Contoso återanvända den vid framtida databasmigreringar.
 - SQL Managed Instance har stöd för SQL Server Agent, vilket är viktigt för SmartHotel360-appen. Contoso behöver denna kompatibilitet, annars måste de göra en ny design av underhållsplanerna som krävs av appen.
 - Med Software Assurance kan Contoso byta ut befintliga licenser till rabatterade priser för en SQL Database Managed Instance med hjälp av Azure Hybrid-förmånen för SQL Server. Detta kan innebära att Contoso sparar upp till 30 % på Managed Instance.
-- SQL Managed Instance finns helt i det virtuella nätverket, så den ger bättre isolering och säkerhet för Contosos data. Contoso får fördelarna med det offentliga molnet, samtidigt som miljön hålls isolerad från offentligt Internet.
+- SQL-hanterad instans finns helt i det virtuella nätverket, så den ger bättre isolering och säkerhet för Contosos data. Contoso får fördelarna med det offentliga molnet, samtidigt som miljön hålls isolerad från offentligt Internet.
 - Managed Instance stöder många säkerhetsfunktioner, inklusive Always Encrypted, dynamisk datamaskering, säkerhet på radnivå och hotidentifiering.
 
 ### <a name="solution-review"></a>Lösningsgranskning
@@ -97,7 +97,7 @@ Contoso utvärderar den föreslagna designen genom att skapa en lista med för- 
 
 <!-- markdownlint-enable MD033 -->
 
-### <a name="migration-process"></a>Migreringsprocess
+### <a name="migration-process"></a>Migreringsprocessen
 
 Contoso migrerar webb- och datanivåerna för sin SmartHotel360-app till Azure genom att utföra dessa steg:
 
@@ -109,13 +109,13 @@ Contoso migrerar webb- och datanivåerna för sin SmartHotel360-app till Azure g
 
 ### <a name="azure-services"></a>Azure-tjänster
 
-Tjänsten | Beskrivning | Kostnad
+Tjänst | Beskrivning | Kostnad
 --- | --- | ---
 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Med Azure Database Migration Service kan du migrera sömlöst från flera databaskällor till Azure-dataplattformar med minsta möjliga stilleståndstid. | Lär dig mer om [regioner som stöds](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) och [Database Migration Service- prissättning](https://azure.microsoft.com/pricing/details/database-migration).
 [Azure SQL Database Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | Managed Instance är en hanterad databastjänst som representerar en fullständigt hanterad SQL Server-instans i Azure-molnet. Den använder samma kod som den senaste versionen av SQL Server Database Engine och innehåller de senaste funktionerna, prestandaförbättringar och säkerhetskorrigeringar. | Om du använder en SQL Database Managed Instance som körs i Azure, debiteras avgifter baserat på kapacitet. Läs mer om [prissättning av Managed Instance](https://azure.microsoft.com/pricing/details/sql-database/managed).
 [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | Site Recovery-tjänsten dirigerar samt hanterar migrering och haveriberedskap för virtuella Azure-datorer, lokala virtuella datorer och fysiska servrar. | Vid replikering till Azure debiteras Azure Storage-avgifter. Virtuella Azure-datorer skapas och debiteras när redundans sker. Läs mer om [debitering och prissättning för Site Recovery](https://azure.microsoft.com/pricing/details/site-recovery).
 
-## <a name="prerequisites"></a>Förutsättningar
+## <a name="prerequisites"></a>Krav
 
 Contoso och andra användare måste uppfylla följande krav för det här scenariot:
 
@@ -126,26 +126,26 @@ Krav | Information
 **Registrera dig för förhandsversionen av Managed Instance** | Du måste vara registrerad för den begränsade offentliga förhandsversionen av SQL Database Managed Instance. Du måste ha en Azure-prenumeration för att kunna [registrera dig](https://portal.azure.com#create/Microsoft.SQLManagedInstance). Det kan ta några dagar att slutföra registreringen, så glöm inte att registrera dig innan du börjar distribuera det här scenariot.
 **Azure-prenumeration** | Du bör redan ha skapat en prenumeration när du gjorde utvärderingen i den första artikeln i den här serien. Om du inte har någon Azure-prenumeration kan du skapa ett [kostnadsfritt konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Om du skapar ett kostnadsfritt konto är du administratör för din prenumeration och kan utföra alla åtgärder.<br/><br/> Om du använder en befintlig prenumeration och du inte är administratör av prenumerationen, måste du be administratören tilldela dig ägar- eller deltagarbehörighet.<br/><br/> Om du behöver mer detaljerad behörighet kan du läsa mer i [Använda rollbaserad åtkomstkontroll till att hantera Site Recovery-åtkomst](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
 **Azure-infrastruktur** | Contoso konfigurerar Azure-infrastrukturen enligt beskrivningen i [Azure-infrastruktur för migrering.](./contoso-migration-infrastructure.md)
-**Site Recovery (lokalt)** | Din lokala vCenter Server-instans måste köra version 5.5, 6.0 eller 6.5<br/><br/> En ESXi-värd som kör version 5.5, 6.0 eller 6.5<br/><br/> En eller flera virtuella VMware-datorer som körs på ESXi-värden.<br/><br/> De virtuella datorerna måste uppfylla [kraven för Azure](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).<br/><br/> Konfiguration av [nätverk](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network) och [lagring](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage) som stöds.
+**Site Recovery (lokalt)** | Din lokala vCenter Server-instans måste köra version 5.5, 6.0 eller 6.5<br/><br/> En ESXi-värd som kör version 5.5, 6.0 eller 6.5<br/><br/> En eller flera virtuella VMware-datorer som körs på ESXi-värden.<br/><br/> Virtuella datorer måste uppfylla [kraven för Azure](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).<br/><br/> Konfiguration av [nätverk](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network) och [lagring](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage) som stöds.
 **Database Migration Service** | För Azure Database Migration Service behöver du en [kompatibel lokal VPN-enhet](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).<br/><br/> Du måste kunna konfigurera den lokala VPN-enheten. Den måste ha en extern offentlig IPv4-adress. IP-adressen får inte finnas bakom en NAT-enhet.<br/><br/> Kontrollera att du har åtkomst till din lokala SQL Server-databas.<br/><br/> Windows-brandväggen måste ha åtkomst till källdatabasmotorn. Läs om att [konfigurera Windows-brandväggen för databasmotoråtkomst](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access).<br/><br/> Om det finns en brandvägg framför din databasdator lägger du till regler som tillåter åtkomst till databasen och filerna via SMB-port 445.<br/><br/> De autentiseringsuppgifter som används för att ansluta till källans SQL Server-instans och som Managed Instance riktar sig mot måste vara medlemmar i serverrollen sysadmin.<br/><br/> Du behöver en nätverksresurs i din lokala databas som Azure Database Migration Service kan använda när källdatabasen säkerhetskopieras.<br/><br/> Kontrollera att tjänstkontot som kör SQL Server-källinstansen har skrivbehörighet till nätverksresursen.<br/><br/> Skriv ned en Windows-användare och ett lösenord som har fullständig kontrollbehörighet till nätverksresursen. Azure Database Migration Service personifierar användarens autentiseringsuppgifter till att ladda upp de säkerhetskopierade filerna till Azure Storage-containern.<br/><br/> Installationsprocessen för SQL Server Express anger TCP/IP-protokollet som **Inaktiverat** som standard. Kontrollera att det är aktiverat.
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="scenario-steps"></a>Scenariosteg
+## <a name="scenario-steps"></a>Steg i scenariot
 
 Så här planerar Contoso att konfigurera distributionen:
 
 > [!div class="checklist"]
 >
-> - **Steg 1: Konfigurera en SQL Database Managed Instance.** Contoso behöver en befintlig hanterad instans som den lokala SQL Server-databasen ska migreras till.
+> - **Steg 1: Konfigurera en SQL Database Hanterad instans.** Contoso behöver en befintlig hanterad instans som den lokala SQL Server-databasen ska migreras till.
 > - **Steg 2: Förbered Azure Database Migration Service.** Contoso måste registrera migreringsprovidern för databasen, skapa en instans och sedan skapa ett Azure Database Migration Service-projekt. Contoso måste också konfigurera en signatur för delad åtkomst (SAS) med URI:n (Uniform Resource Identifier) för Azure Database Migration Service. En SAS-URI ger delegerad åtkomst till resurser på Contosos lagringskonto, vilket innebär att Contoso kan bevilja begränsade behörigheter till lagringsobjekt. Contoso konfigurerar en SAS-URI, så att Azure Database Migration Service får åtkomst till lagringskontots container som tjänsten laddar upp SQL Server-säkerhetskopiorna till.
 > - **Steg 3: Förbered Azure för Site Recovery.** Contoso måste skapa ett lagringskonto där replikerade data för Site Recovery ska lagras. De måste också skapa ett Azure Recovery Services-valv.
-> - **Steg 4: Förbered lokal VMware för Site Recovery.** Contoso förbereder konton för VM-identifiering och agentinstallation för att ansluta till virtuella Azure-datorer efter en redundans.
-> - **Steg 5: Replikera virtuella datorer.** Contoso konfigurerar replikeringen genom att konfigurera Site Recoverys käll- och målmiljö, konfigurera en replikeringsprincip och börja replikera virtuella datorer till Azure Storage.
-> - **Steg 6: Migrera databasen med Azure Database Migration Service.** Contoso migrerar databasen.
-> - **Steg 7: Migrera de virtuella datorerna med hjälp av Site Recovery.** Contoso kör ett redundanstest för att kontrollera att allt fungerar. Contoso kör sedan en fullständig redundans för att migrera de virtuella datorerna till Azure.
+> - **Steg 4: Förbered lokala VMware för Site Recovery.** Contoso förbereder konton för VM-identifiering och agentinstallation för att ansluta till virtuella Azure-datorer efter en redundans.
+> - **Steg 5: replikera virtuella datorer.** Contoso konfigurerar replikeringen genom att konfigurera Site Recoverys käll- och målmiljö, konfigurera en replikeringsprincip och börja replikera virtuella datorer till Azure Storage.
+> - **Steg 6: Migrera databasen med hjälp av Azure Database Migration Service.** Contoso migrerar databasen.
+> - **Steg 7: migrera de virtuella datorerna med hjälp av Site Recovery.** Contoso kör ett redundanstest för att kontrollera att allt fungerar. Contoso kör sedan en fullständig redundans för att migrera de virtuella datorerna till Azure.
 
-## <a name="step-1-prepare-a-sql-database-managed-instance"></a>Steg 1: Förbered en SQL Database Managed Instance
+## <a name="step-1-prepare-a-sql-database-managed-instance"></a>Steg 1: Förbered en SQL Database Hanterad instans
 
 För att kunna konfigurera en Azure SQL Database Managed Instance måste Contoso ha ett undernät som uppfyller följande krav:
 
@@ -153,7 +153,7 @@ För att kunna konfigurera en Azure SQL Database Managed Instance måste Contoso
 - När den hanterade instansen har skapats, får Contoso inte lägga till resurser i undernätet.
 - Undernätet får inte ha någon associerad nätverkssäkerhetsgrupp.
 - Undernätet måste ha en användardefinierad routningstabell. Den enda tilldelade vägen ska vara 0.0.0.0/0 som nästa hopp till Internet.
-- Valfri anpassad DNS: Om en anpassad DNS anges i det virtuella Azure-nätverket måste Azures rekursiva matchning för IP-adressen (till exempel 168.63.129.16) läggas till i listan. Lär dig att [konfigurera anpassad DNS för en hanterad instans](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
+- Valfri anpassad DNS: om anpassad DNS anges i det virtuella Azure-nätverket måste Azures IP-adress för rekursiva matchare (till exempel 168.63.129.16) läggas till i listan. Lär dig att [konfigurera anpassad DNS för en hanterad instans](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
 - Undernätet får inte ha någon associerad tjänstslutpunkt (lagring eller SQL). Tjänstens slutpunkter ska vara inaktiverade i det virtuella nätverket.
 - Undernätet måste ha minst 16 IP-adresser. Lär dig att [ändra storlek på undernätet för den hanterade instansen](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-vnet-configuration).
 - I Contosos hybridmiljö krävs anpassade DNS-inställningar. Contoso konfigurerar DNS-inställningarna till att använda en eller flera av företagets Azure DNS-servrar. Läs mer om [DNS-anpassning](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
@@ -180,9 +180,9 @@ Contosos administratörer konfigurerar det virtuella nätverket på följande s�
 5. De anger anpassade DNS-inställningar. DNS:en pekar först på Contosos Azure-domänkontrollanter. Azure DNS är sekundär. Contosos Azure-domänkontrollanter finns på följande platser:
 
     - Finns i undernätet **PROD-DC-EUS2** i produktionsnätverket USA, östra 2 (**VNET-PROD-EUS2**)
-    - **CONTOSODC3**-adress: 10.245.42.4
-    - **CONTOSODC4**-adress: 10.245.42.5
-    - Azure DNS-matchare: 168.63.129.16
+    - **CONTOSODC3** -adress: 10.245.42.4
+    - **CONTOSODC4** -adress: 10.245.42.5
+    - Azure DNS-lösare: 168.63.129.16
 
       ![Nätverkets DNS-servrar](media/contoso-migration-rehost-vm-sql-managed-instance/mi-dns.png)
 
@@ -229,14 +229,14 @@ Nu kan Contosos administratörer etablera en SQL Database Managed Instance:
 1. Eftersom Managed Instance används till en företagsapp, distribuerar de den hanterade instansen i företagets primära region för USA, östra 2. De lägger till den hanterade instansen i resursgruppen **ContosoRG**.
 2. De väljer en prisnivå, storleksberäkning och lagring för instansen. Läs mer om [prissättning av Managed Instance](https://azure.microsoft.com/pricing/details/sql-database/managed).
 
-    ![Managed Instance](media/contoso-migration-rehost-vm-sql-managed-instance/mi-create.png)
+    ![Hanterad instans](media/contoso-migration-rehost-vm-sql-managed-instance/mi-create.png)
 
 3. När den hanterade instansen har distribuerats, visas två nya resurser i resursgruppen **ContosoRG**:
 
     - Ett virtuellt kluster om Contoso har flera hanterade instanser.
     - SQL Server Database Managed Instance.
 
-      ![Managed Instance](media/contoso-migration-rehost-vm-sql-managed-instance/mi-resources.png)
+      ![Hanterad instans](media/contoso-migration-rehost-vm-sql-managed-instance/mi-resources.png)
 
 **Behöver du mer hjälp?**
 
@@ -274,7 +274,7 @@ Sedan utför de följande steg:
 - Lär dig att [konfigurera Azure Database Migration Service](https://docs.microsoft.com/azure/dms/quickstart-create-data-migration-service-portal).
 - Lär dig att [skapa och använda SAS](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2).
 
-## <a name="step-3-prepare-azure-for-the-site-recovery-service"></a>Steg 3: Förbered Azure för Site Recovery-tjänsten
+## <a name="step-3-prepare-azure-for-the-site-recovery-service"></a>Steg 3: Förbered Azure för tjänsten Site Recovery
 
 Flera Azure-element krävs för att Contoso ska kunna konfigurera Site Recovery för migrering av den virtuella datorns webbnivå (**WEBMV**):
 
@@ -297,7 +297,7 @@ Contosos administratörer konfigurerar Site Recovery enligt följande:
 
 Lär dig att [konfigurera Azure för Site Recovery](https://docs.microsoft.com/azure/site-recovery/tutorial-prepare-azure).
 
-## <a name="step-4-prepare-on-premises-vmware-for-site-recovery"></a>Steg 4: Förbered lokal VMware för Site Recovery
+## <a name="step-4-prepare-on-premises-vmware-for-site-recovery"></a>Steg 4: Förbered lokala VMware för Site Recovery
 
 Contosos administratörer måste utföra följande uppgifter för att VMware ska förberedas för Site Recovery:
 
@@ -347,7 +347,7 @@ Contosos administratörer måste också kontrollera dessa objekt när de kör en
 - Det får inte finnas några väntande Windows-uppdateringar på den virtuella datorn när en redundans utlöses. Om Windows-uppdateringar väntar kan Contoso-användarna inte logga in på den virtuella datorn förrän uppdateringen är färdig.
 - Efter en redundans bör administratörerna kontrollera att **Startdiagnostik** visar en skärmbild av den virtuella datorn. Om de inte kan se startdiagnostiken bör de kontrollera att den virtuella datorn körs och sedan läsa [felsökningstipsen](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx).
 
-## <a name="step-5-replicate-the-on-premises-vms-to-azure"></a>Steg 5: Replikera lokala virtuella datorer till Azure
+## <a name="step-5-replicate-the-on-premises-vms-to-azure"></a>Steg 5: replikera lokala virtuella datorer till Azure
 
 Innan de kör en migrering till Azure, måste Contosos administratörer konfigurera och aktivera replikering för den lokala virtuella datorn.
 
@@ -420,9 +420,9 @@ När källan och målet har konfigurerats skapar Contosos administratörer en re
 
 1. I **Förbered infrastrukturen** > **Replikeringsinställningar** > **Replikeringsprincip** >  **Skapa och associera** skapar de principen **ContosoMigrationPolicy**.
 2. De använder standardinställningarna:
-    - **Tröskelvärde för mål för återställningspunkt:** Standardvärdet är 60 minuter. Det här värdet anger hur ofta återställningspunkter skapas. En avisering genereras när den kontinuerliga replikeringen överskrider den här gränsen.
-    - **Kvarhållning av återställningspunkt:** Standardvärdet är 24 timmar. Det här värdet anger kvarhållningsperioden för varje återställningspunkt. Replikerade virtuella datorer kan återställas till valfri punkt i ett fönster.
-    - **Appkonsekvent ögonblicksbildsfrekvens:** Standardinställningen är 1 timme. Det här värdet anger med vilken frekvens programkonsekventa ögonblicksbilder skapas.
+    - Återställnings **tröskel:** Standardvärdet är 60 minuter. Det här värdet anger hur ofta återställningspunkter skapas. En avisering genereras när den kontinuerliga replikeringen överskrider den här gränsen.
+    - **Kvarhållning av återställnings punkter:** Standardvärdet är 24 timmar. Det här värdet anger kvarhållningsperioden för varje återställningspunkt. Replikerade virtuella datorer kan återställas till valfri punkt i ett fönster.
+    - **Frekvens för programkonsekventa ögonblicks bilder:** Standardvärdet är 1 timme. Det här värdet anger med vilken frekvens programkonsekventa ögonblicksbilder skapas.
 
     ![Replikeringsprincip – Skapa](./media/contoso-migration-rehost-vm-sql-managed-instance/replication-policy.png)
 
@@ -507,7 +507,7 @@ Contosos administratörer måste skapa ett Azure Database Migration Service-proj
 
     ![Database Migration Service – Verifiera databasmigreringen](./media/contoso-migration-rehost-vm-sql-managed-instance/dms-monitor2.png)
 
-## <a name="step-7-migrate-the-vm"></a>Steg 7: Migrera den virtuella datorn
+## <a name="step-7-migrate-the-vm"></a>Steg 7: migrera den virtuella datorn
 
 Contosos administratörer kör en snabb testning av redundansen och migrerar sedan den virtuella datorn.
 
@@ -531,7 +531,7 @@ Innan de migrerar WEBVM kan ett redundanstest hjälpa dem att se att allt funger
 
 2. De kör en redundans i planen och väljer den senaste återställningspunkten. De anger att Site Recovery ska försöka stänga av den lokala virtuella datorn innan redundansen utlöses.
 
-    ![Redundans](./media/contoso-migration-rehost-vm-sql-managed-instance/failover1.png)
+    ![växling vid fel](./media/contoso-migration-rehost-vm-sql-managed-instance/failover1.png)
 
 3. Efter redundansen kontrollerar de att den virtuella Azure-datorn visas som förväntat i Azure-portalen.
 
@@ -594,8 +594,8 @@ Mer information om säkerhet för virtuella datorer finns i [Säkerhetsmetodtips
 
 För affärskontinuitet och haveriberedskap (BCDR) vidtar Contoso följande åtgärder:
 
-- Skydda data: Contoso säkerhetskopierar data på de virtuella datorerna med hjälp av Azure Backup-tjänsten. [Läs mer](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
-- Undvika avbrott i apparna: Contoso replikerar appens virtuella datorer i Azure till en sekundär region med hjälp av Site Recovery. [Läs mer](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
+- Behåll data säkra: contoso säkerhetskopierar data på de virtuella datorerna med hjälp av tjänsten Azure Backup. [Läs mer](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
+- Håll apparna igång: contoso replikerar virtuella app-datorer i Azure till en sekundär region med hjälp av Site Recovery. [Läs mer](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 - Contoso lär sig mer om att hantera SQL Managed Instance, inklusive [säkerhetskopiering av databaser](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups).
 
 ### <a name="licensing-and-cost-optimization"></a>Licensierings- och kostnadsoptimering

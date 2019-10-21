@@ -1,7 +1,7 @@
 ---
-title: 'Styrnings guide för komplexa företag: Förbättra disciplinen för identitets bas linjer'
+title: 'Styrnings guide för komplexa företag: förbättra disciplinen för identitets bas linjer'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Styrnings guide för komplexa företag: Förbättra disciplinen för identitets bas linjer'
+description: 'Styrnings guide för komplexa företag: förbättra disciplinen för identitets bas linjer'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/06/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ea4596c734e5bef03179569e537aacbca430d77e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 7decae6a0b9e0c8b41d30f5f3ccac2fdeab41feb
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222325"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547725"
 ---
-# <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Styrnings guide för komplexa företag: Förbättra disciplinen för identitets bas linjer
+# <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Styrnings guide för komplexa företag: förbättra disciplinen för identitets bas linjer
 
 Den här artikeln går vidare genom att lägga till identitets bas kontroller i styrnings MVP.
 
@@ -80,9 +80,9 @@ Här är de nya bästa metoderna:
 - **Azure Resource Manager mallar:**
     1. Definiera en NSG för att blockera extern trafik och tillåta intern trafik.
     2. Distribuera två Active Directory virtuella datorer i ett belastnings Utjämnings par baserat på en gyllene bild. Vid den första starten kör avbildningen ett PowerShell-skript för att ansluta till domänen och registrera med domän tjänster. Mer information finns i [utöka Active Directory Domain Services (AD DS) till Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).
-- Azure Policy: Tillämpa NSG på alla resurser.
+- Azure Policy: tillämpa NSG på alla resurser.
 - Azure-skiss:
-    1. Skapa en skiss med `active-directory-virtual-machines`namnet.
+    1. Skapa en skiss med namnet `active-directory-virtual-machines`.
     2. Lägg till var och en av Active Directory mallar och principer till skissen.
     3. Publicera skissen till alla tillämpliga hanterings grupper.
     4. Använd skissen för alla prenumerationer som kräver äldre autentisering med flera företag eller andra leverantörer.

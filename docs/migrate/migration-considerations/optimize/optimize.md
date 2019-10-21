@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 13a18db6a074f73b962d29f4d5963571a49869d4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 53ff6f0d32b80ef9c89d4ebd0234dd3442412907
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022651"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548423"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>Benchmark-testa och ändra storlek på molntillgångar
 
@@ -30,7 +30,7 @@ I molnet eliminerar redovisnings- och etableringsmodellerna de tidsfördröjning
 Ska tillgångar optimeras&mdash;före eller efter migrering? Det enkla svaret är *både* och. Men det är inte helt korrekt. För att förstå svaret tar vi två grundläggande scenarion för resursoptimering:
 
 - **Planerad storleksförändring.** Ofta är en tillgång uppenbarligen för stor och underanvänd och bör storleksförändras under införandet. För att avgöra om en tillgång storleksförändrats korrekt i detta fall krävs användargodkännande efter migreringen. Om en avancerad användare inte upplever brister i prestanda eller funktionalitet under testning kan du dra slutsatsen att tillgången har rätt storlek.
-- **Optimering.** I fall där behovet av optimering är oklart ska IT-team använda en datadriven metod för hantering av storleksförändring av resurser. Med benchmark-värden för tillgångens prestanda kan ett IT-team fatta underbyggda beslut om lämpligast storlek, tjänster, skalning och arkitektur för en lösning. Sedan kan de storleksförändra och testa prestandateorier efter migreringen.
+- **Optimering.** I fall där behovet av optimering är oklart ska IT-team använda en datadriven metod för hantering av storleksförändring av resurser. Med hjälp av benchmarks för till gångens prestanda kan ett IT-team fatta sammanfattande beslut om lämplig storlek, tjänster, omfattning och arkitektur för en lösning. Sedan kan de storleksförändra och testa prestandateorier efter migreringen.
 
 Använd underbyggda gissningar och experimentera med storleksförändring under migreringen. Verklig optimering av resurser kräver data baserat på verklig prestanda i en molnmiljö. För att genomföra en ordentlig optimering måste IT-teamet först implementera metoder för övervakning av prestanda och resursutnyttjande.
 

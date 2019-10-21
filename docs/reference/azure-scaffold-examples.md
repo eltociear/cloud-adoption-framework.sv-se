@@ -8,17 +8,17 @@ ms.date: 01/03/2017
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 208bab0093d8add065a8c8f5ad2b92d9ff012fe8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ffda6a8f11954895e934f310c1a53c95fb2e1351
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029451"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378048"
 ---
 # <a name="examples-of-implementing-azure-enterprise-scaffold"></a>Exempel på implementering av Azure Enterprise-Autogenerera
 
 > [!NOTE]
-> Azure Enterprise-ramverk har integrerats i Microsoft Cloud adoptions ramverket. Innehållet i den här artikeln visas nu i avsnittet [klart](../ready/index.md) i det nya ramverket. Den här artikeln är inaktuell i början av 2020. Om du vill börja använda den nya processen går du till [klar översikt](../ready/index.md), [skapar din första landnings zon](../ready/azure-readiness-guide/migration-landing-zone.md)och/eller de överväganden som finns i [landnings zonen](../ready/considerations/index.md).
+> Azure Enterprise-ramverk har integrerats i Microsoft Cloud adoptions ramverket. Innehållet i den här artikeln visas nu i avsnittet [klart](../ready/index.md) i det nya ramverket. Den här artikeln är inaktuell i början av 2020. Om du vill börja använda den nya processen går du till [klar översikt](../ready/index.md), [skapar din första landnings zon](../ready/azure-setup-guide/migration-landing-zone.md)och/eller de överväganden som finns i [landnings zonen](../ready/considerations/index.md).
 
 Den här artikeln innehåller exempel på hur ett företag kan implementera rekommendationer för en [Azure Enterprise-Autogenerera](./azure-scaffold.md). Det använder ett fiktivt företag som heter Contoso för att illustrera bästa praxis för vanliga scenarier.
 
@@ -45,11 +45,11 @@ Contoso bygger ett BitBucket (Source Code Management System) som ska användas a
 
 Dave skapar en prenumeration som stöder utvecklingsverktyg som är gemensamma för alla affär senheter. Dave måste skapa meningsfulla namn för prenumerationen och resurs grupperna (för programmet och nätverken). Han skapar följande prenumeration och resurs grupper:
 
-| Objekt | Name | Beskrivning |
+| Objekt | Namn | Beskrivning |
 | --- | --- | --- |
-| Subscription |Contoso ETS DeveloperTools-produktion |Stöder vanliga utvecklarverktyg |
-| Resource group |BitBucket-Prod-rg |Innehåller programmets webb server och databas server |
-| Resource group |corenetworks-Prod-rg |Innehåller virtuella nätverk och plats-till-plats-Gateway-anslutning |
+| Prenumeration |Contoso ETS DeveloperTools-produktion |Stöder vanliga utvecklarverktyg |
+| Resursgrupp |BitBucket-Prod-rg |Innehåller programmets webb server och databas server |
+| Resursgrupp |corenetworks-Prod-rg |Innehåller virtuella nätverk och plats-till-plats-Gateway-anslutning |
 
 ### <a name="role-based-access-control"></a>Rollbaserad åtkomstkontroll
 
@@ -57,14 +57,14 @@ När du har skapat sin prenumeration vill du se till att lämpliga team och prog
 
 Dave tilldelar följande roller för prenumerationen:
 
-| Role | Tilldelat till | Beskrivning |
+| Roll | Tilldelad | Beskrivning |
 | --- | --- | --- |
 | [Ägare](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner) |Hanterat ID från Contosos lokala Active Directory |Detta ID styrs av just-in-Time (JIT)-åtkomst via Contosos identitets hanterings verktyg och säkerställer att prenumerationens ägar åtkomst är fullständigt granskad |
 | [Säkerhets läsare](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#security-reader) |Avdelning för säkerhets-och risk hantering |Med den här rollen kan användare se Azure Security Center och status för resurserna |
 | [Nätverksdeltagare](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#network-contributor) |Nätverks team |Med den här rollen kan Contosos nätverks team hantera plats-till-plats-VPN och virtuella nätverk |
 | *Anpassad roll* |Program ägare |Dave skapar en roll som ger möjlighet att ändra resurser i resurs gruppen. Mer information finns i [anpassade roller i Azure RBAC](https://docs.microsoft.com/azure/role-based-access-control/custom-roles) |
 
-### <a name="policies"></a>Principer
+### <a name="policies"></a>Policy
 
 Dave har följande krav för att hantera resurser i prenumerationen:
 
@@ -77,10 +77,10 @@ Han skapar följande principer via [Azure policy](https://docs.microsoft.com/azu
 | Fält | Verkan | Beskrivning |
 | --- | --- | --- |
 | location |Händelse |Granska skapandet av resurserna i vilken region som helst |
-| type |avvisa |Neka skapande av virtuella datorer i G-serien |
-| taggar |avvisa |Kräv program ägar tag gen |
-| taggar |avvisa |Kräv kostnads ställe tag gen |
-| taggar |slå |Lägg till tagg namn **BusinessUnit** och tagg värde **ETS** till alla resurser |
+| typ |autentiseringsregel |Neka skapande av virtuella datorer i G-serien |
+| tags |autentiseringsregel |Kräv program ägar tag gen |
+| tags |autentiseringsregel |Kräv kostnads ställe tag gen |
+| tags |slå |Lägg till tagg namn **BusinessUnit** och tagg värde **ETS** till alla resurser |
 
 ### <a name="resource-tags"></a>Resurstaggar
 
@@ -91,8 +91,8 @@ Han lägger till följande [taggar](https://docs.microsoft.com/azure/azure-resou
 | Taggnamn | Tagg värde |
 | --- | --- |
 | ApplicationOwner |Namnet på den person som hanterar det här programmet |
-| Kostnadsställe |Kostnads Center för den grupp som betalar för Azure-förbrukningen |
-| BusinessUnit |**ETS** (den affär senhet som är associerad med prenumerationen) |
+| CostCenter |Kostnads Center för den grupp som betalar för Azure-förbrukningen |
+| BusinessUnit |**ETS** (affär senheten som är associerad med prenumerationen) |
 
 ### <a name="core-network"></a>Kärn nätverk
 
@@ -100,23 +100,23 @@ Contosos informations säkerhets-och riskhanterings team granskar Daves föresla
 
 Han skapar följande resurser:
 
-| Resurstyp | Name | Beskrivning |
+| Resurstyp | Namn | Beskrivning |
 | --- | --- | --- |
-| Virtuellt nätverk |internt-VNet |Används med BitBucket-programmet och är anslutet via ExpressRoute till Contosos företags nätverk. Ett undernät (`bitbucket`) tillhandahåller programmet med ett specifik IP-adressutrymme |
-| Virtuellt nätverk |externt-VNet |Tillgängligt för framtida program som kräver offentliga slut punkter |
-| Nätverkssäkerhetsgrupp |bitbucket-nsg |Säkerställer att angrepps ytan för den här arbets belastningen minimeras genom att endast tillåta anslutningar på port 443 för under nätet där`bitbucket`programmet bor () |
+| Virtual Network |internt-VNet |Används med BitBucket-programmet och är anslutet via ExpressRoute till Contosos företags nätverk. Ett undernät (`bitbucket`) tillhandahåller programmet med ett specifik IP-adressutrymme |
+| Virtual Network |externt-VNet |Tillgängligt för framtida program som kräver offentliga slut punkter |
+| Nätverkssäkerhetsgrupp |BitBucket – NSG |Säkerställer att den här arbets Belastningens attack yta minimeras genom att endast tillåta anslutningar på port 443 för under nätet där programmet finns (`bitbucket`) |
 
-### <a name="resource-locks"></a>Resurslås
+### <a name="resource-locks"></a>Resurs lås
 
 Dave känner av att anslutningen från Contosos företags nätverk till det interna virtuella nätverket måste skyddas från alla Wayward-skript eller oavsiktlig borttagning.
 
 Han skapar följande [resurs lås](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources):
 
-| Låstyp | Resource | Beskrivning |
+| Lås typ | Resurs | Beskrivning |
 | --- | --- | --- |
 | **CanNotDelete** |internt-VNet |Hindrar användare från att ta bort det virtuella nätverket eller undernät, men förhindrar inte tillägg av nya undernät |
 
-### <a name="azure-automation"></a>Azure Automation
+### <a name="azure-automation"></a>Azure Automatisering
 
 Dave har inget att automatisera för det här programmet. Även om han skapade ett Azure Automation-konto, används den inte för första gången.
 
@@ -134,12 +134,12 @@ Företaget som är ledande i leverans kedjans affär senhet har identifierat oli
 
 Dave loggar in på Azure-Enterprise Portal och ser att avdelningen för leverans kedjan redan finns. Men eftersom det här projektet är det första utvecklings projektet för leverans kedjans team i Azure, känner Dave igen behovet av ett nytt konto för Alices utvecklings team. Han skapar kontot "R & D" för hennes team och tilldelar åtkomst till Alice. Alice loggar in via Azure Portal och skapar två prenumerationer: en för att hålla utvecklings servrarna och en för att hålla produktions servrarna. Hon följer de tidigare etablerade namngivnings standarderna när de skapade följande prenumerationer:
 
-| Användning av prenumeration | Name |
+| Användning av prenumeration | Namn |
 | --- | --- |
 | Utveckling |Contoso SupplyChain ResearchDevelopment LoyaltyCard Development |
 | Produktion |Contoso SupplyChain-åtgärder LoyaltyCard produktion |
 
-### <a name="policies"></a>Principer
+### <a name="policies"></a>Policy
 
 Dave och Alice diskuterar programmet och identifierar att det här programmet endast tjänar kunder i Nord amerikanska regionen. Alice och hennes team plan för att använda Azures program tjänst miljö och Azure SQL för att skapa programmet. De kan behöva skapa virtuella datorer under utvecklingen. Alice vill se till att deras utvecklare har de resurser de behöver för att utforska och undersöka problem utan att behöva hämta ETS.
 
@@ -155,10 +155,10 @@ För **produktions prenumerationen**skapar de följande principer:
 
 | Fält | Verkan | Beskrivning |
 | --- | --- | --- |
-| location |avvisa |Förhindra att några resurser skapas utanför USA-datacentren |
-| taggar |avvisa |Kräv program ägar tag gen |
-| taggar |avvisa |Kräv avdelnings tagg |
-| taggar |slå |Lägg till tagg i varje resurs grupp som visar produktions miljön |
+| location |autentiseringsregel |Förhindra att några resurser skapas utanför USA-datacentren |
+| tags |autentiseringsregel |Kräv program ägar tag gen |
+| tags |autentiseringsregel |Kräv avdelnings tagg |
+| tags |slå |Lägg till tagg i varje resurs grupp som visar produktions miljön |
 
 De begränsar inte vilken typ av SKU som en användare kan skapa i produktion.
 
@@ -170,36 +170,36 @@ Dave vet att han måste ha speciell information för att identifiera rätt affä
 | --- | --- |
 | ApplicationOwner |Namnet på den person som hanterar det här programmet |
 | Avdelning |Kostnads Center för den grupp som betalar för Azure-förbrukningen |
-| EnvironmentType |**Produktion** (Även om prenumerationen innehåller **produktion** i namnet, inklusive den här taggen möjliggör enkel identifiering när du tittar på resurser i portalen eller på fakturan) |
+| EnvironmentType |**Produktion** (även om prenumerationen omfattar **produktion** i namnet, inklusive den här taggen möjliggör enkel identifiering när du tittar på resurser i portalen eller på fakturan) |
 
 ### <a name="core-networks"></a>Kärn nätverk
 
-Contosos informations säkerhets-och riskhanterings team granskar Daves föreslagna plan för att flytta programmet till Azure. De vill säkerställa att programmet kortet korrekt isoleras och skyddas i ett perimeternätverk. För att uppfylla detta krav, kan du med Dave och Alice skapa ett externt virtuellt nätverk och en nätverks säkerhets grupp för att isolera förmåns kort programmet från contoso företags nätverk.
+Contosos informations säkerhets-och riskhanterings team granskar Daves föreslagna plan för att flytta programmet till Azure. De vill se till att programmet för lojalitets kort är korrekt isolerat och skyddat i ett DMZ nätverk. För att uppfylla detta krav, kan du med Dave och Alice skapa ett externt virtuellt nätverk och en nätverks säkerhets grupp för att isolera förmåns kort programmet från contoso företags nätverk.
 
 För **utvecklings prenumerationen**skapar de:
 
-| Resurstyp | Name | Beskrivning |
+| Resurstyp | Namn | Beskrivning |
 | --- | --- | --- |
-| Virtuellt nätverk |internt-VNet |Hanterar utvecklings miljön contoso lojalitets kort och är ansluten via ExpressRoute till Contosos företags nätverk |
+| Virtual Network |internt-VNet |Hanterar utvecklings miljön contoso lojalitets kort och är ansluten via ExpressRoute till Contosos företags nätverk |
 
 För **produktions prenumerationen**skapar de:
 
-| Resurstyp | Name | Beskrivning |
+| Resurstyp | Namn | Beskrivning |
 | --- | --- | --- |
-| Virtuellt nätverk |externt-VNet |Är värd för programmet för förmåns kort och är inte anslutet direkt till Contosos ExpressRoute. Koden skickas via deras käll kods system direkt till PaaS-tjänsterna. |
-| Nätverkssäkerhetsgrupp |loyaltycard-nsg |Säkerställer att angrepps ytan för den här arbets belastningen minimeras genom att endast tillåta Inbound kommunikation på TCP 443. Contoso undersöker också användningen av en brand vägg för webbaserade program för ytterligare skydd. |
+| Virtual Network |externt-VNet |Är värd för programmet för förmåns kort och är inte anslutet direkt till Contosos ExpressRoute. Koden skickas via deras käll kods system direkt till PaaS-tjänsterna. |
+| Nätverkssäkerhetsgrupp |loyaltycard – NSG |Säkerställer att angrepps ytan för den här arbets belastningen minimeras genom att endast tillåta Inbound kommunikation på TCP 443. Contoso undersöker också användningen av en brand vägg för webbaserade program för ytterligare skydd. |
 
-### <a name="resource-locks"></a>Resurslås
+### <a name="resource-locks"></a>Resurs lås
 
 Dave och Alice ger och bestämmer sig för att lägga till resurs lås på några av nyckel resurserna i miljön för att förhindra oavsiktlig borttagning under en Errant kod-push.
 
 De skapar följande Lås:
 
-| Låstyp | Resource | Beskrivning |
+| Lås typ | Resurs | Beskrivning |
 | --- | --- | --- |
 | **CanNotDelete** |externt-VNet |Förhindra att personer tar bort det virtuella nätverket eller undernät. Låset förhindrar inte tillägg av nya undernät |
 
-### <a name="azure-automation"></a>Azure Automation
+### <a name="azure-automation"></a>Azure Automatisering
 
 Alice och hennes utvecklings team har omfattande Runbooks för att hantera miljön för det här programmet. Runbooks gör det möjligt att lägga till/ta bort noder för programmet och andra DevOps-uppgifter.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 84c7a45b52c541ad9efbec4594db022947b3ff40
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9d465716784d125edebaf44d8a1bae2f369b9d5a
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223022"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548078"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>Disciplin förbättring av resurs konsekvens
 
@@ -130,6 +130,6 @@ När omvandlingen är klar måste styrning och åtgärder vara aktiva för den n
 Nu när du förstår begreppet moln resurs styrning kan du gå vidare till Lär dig mer om [hur resurs åtkomst hanteras](./resource-access-management.md) i Azure för att lära dig hur du utformar en styrnings modell för en [enkel arbets belastning](./governance-simple-workload.md) eller [flera team](./governance-multiple-teams.md) .
 
 > [!div class="nextstepaction"]
-> [Lär dig mer om resurs åtkomst hantering i Azure](./resource-access-management.md)
-> [Läs mer om service nivå avtal för Azure](https://azure.microsoft.com/support/legal/sla)
+> Lär dig mer om [resurs åtkomst hantering i azure](./resource-access-management.md) 
+> [Lär dig mer om service nivå avtal för Azure](https://azure.microsoft.com/support/legal/sla) 
 > [Lär dig mer om loggning, rapportering och övervakning](../../decision-guides/logging-and-reporting/index.md)

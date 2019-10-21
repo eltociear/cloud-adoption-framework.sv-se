@@ -1,7 +1,7 @@
 ---
-title: 'Styrnings guide för komplexa företag: Vägledning förklaring'
+title: 'Styrnings guide för komplexa företag: bästa praxis förklaras'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Lär dig mer om vägledning för styrning i komplexa företag.
+description: Lär dig mer om metod tips för styrning i komplexa företag.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9992d4ee6fbd955eea44e13a7f4f31c5836ce83a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 543f4e59645fb389b00508fbd9d6426ded6f41f9
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220647"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547642"
 ---
-# <a name="governance-guide-for-complex-enterprises-prescriptive-guidance-explained"></a>Styrnings guide för komplexa företag: Vägledning förklaring
+# <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>Styrnings guide för komplexa företag: bästa praxis förklaras
 
 Styrnings guiden börjar med en uppsättning inledande [företags principer](./initial-corporate-policy.md). Dessa principer används för att upprätta en minimal livskraftig produkt (MVP) för styrning som återspeglar [bästa praxis](./index.md).
 
@@ -38,7 +38,7 @@ Implementeringen av styrnings-MVP: en har beroenden av identitet, säkerhet och 
 
 Den här implementeringen kan också beskrivas med en enkel check lista:
 
-1. Begär beslut angående kärn beroenden: Identitet, nätverk och kryptering.
+1. Begär beslut angående kärn beroenden: identitet, nätverk och kryptering.
 1. Bestäm vilket mönster som ska användas vid tillämpning av företags principen.
 1. Fastställ lämpliga styrnings mönster för resurs konsekvens, resurs märkning och loggnings-och rapporterings disciplin.
 1. Implementera styrnings verktygen som är justerade med det valda princip tillämpnings mönstret för att tillämpa de beroende besluten och styrnings besluten.
@@ -54,14 +54,14 @@ Moln styrnings teamet kommer att ansvara för följande beslut och implementerin
 Beslutet om vilken prenumerations design som används avgör hur Azure-prenumerationer blir strukturerade och hur Azure-hanteringsportalen används för att effektivt hantera åtkomst, principer och efterlevnad för den här prenumerationen. I den här gruppen har styrnings teamet valt design mönstret **[blandad](../../../decision-guides/subscriptions/index.md#mixed-patterns)** prenumeration.
 
 - När nya begär Anden för Azure-resurser uppstår, ska en "avdelning" upprättas för varje större affär senhet i varje operativ geografi. I varje avdelning bör prenumerationer skapas för varje program archetype.
-- Ett program archetype är ett sätt att gruppera program med liknande behov. Vanliga exempel är: Program med skyddade data, styrda program (t. ex. HIPAA eller FedRAMP), låg risk program, program med lokala beroenden, SAP eller andra stordator program i Azure eller program som utökar lokala SAP eller stordatorer ansökan. Varje organisation har unika behov baserat på data klassificeringar och de typer av program som stöder verksamheten. Beroende mappning av den digitala fastigheten kan hjälpa till att definiera programmet archetypes i en organisation.
+- Ett program archetype är ett sätt att gruppera program med liknande behov. Vanliga exempel är: program med skyddade data, styrda program (t. ex. HIPAA eller FedRAMP), låg risk program, program med lokala beroenden, SAP eller andra stordator program i Azure eller program som utökar lokala SAP-eller stordator program. Varje organisation har unika behov baserat på data klassificeringar och de typer av program som stöder verksamheten. Beroende mappning av den digitala fastigheten kan hjälpa till att definiera programmet archetypes i en organisation.
 - En gemensam namngivnings konvention bör överenskommas som en del av prenumerations designen, baserat på de två punkterna ovan.
 
 ### <a name="resource-consistency"></a>Resurskonsekvens
 
 Resurs konsekvens beslut avgör vilka verktyg, processer och ansträngningar som krävs för att säkerställa att Azure-resurser distribueras, konfigureras och hanteras konsekvent i en prenumeration. I det här avsnittet har **[distributions konsekvens](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** valts som primärt resurs konsekvens mönster.
 
-- Resurs grupper skapas för program som använder livs cykel metoden: allt som skapas, underhålls och dras tillbaka tillsammans bör finnas i en enda resurs grupp. Mer information om resurs grupper finns [här](../../../decision-guides/resource-consistency/index.md#basic-grouping).
+- Resurs grupper skapas för program som använder livs cykel metoden. Allt som skapas, underhålls och dras tillbaka tillsammans bör finnas i en enda resurs grupp. Mer information om resurs grupper finns [här](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - Azure Policy ska tillämpas på alla prenumerationer från den associerade hanterings gruppen.
 - Som en del av distributions processen bör Azure Resource Consistency-mallar för resurs gruppen lagras i käll kontrollen.
 - Varje resurs grupp är kopplad till en specifik arbets belastning eller ett program baserat på den livs cykel metod som beskrivs ovan.
@@ -77,7 +77,7 @@ Resurs märknings beslut avgör hur metadata tillämpas på Azure-resurser i en 
 
 - Distribuerade till gångar ska taggas med värden för:
   - Avdelning/fakturerings enhet
-  - Geografi
+  - Placering
   - Data klassificering
   - Allvarlighets grad
   - SLA

@@ -1,25 +1,25 @@
 ---
 title: Hur bidrar utvärderingar till att utveckla ett tillväxtorienterat tänkesätt?
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: En process inom molnmigreringen som fokuserar uppgifterna för att migrera arbetsbelastningar till molnet.
+description: En process inom molnmigreringen som fokuserar på att överföra arbetsbelastningar till molnet.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cd58f4e369100ab55556b7c492c0a46d7c543b92
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 881f8f396d40ca189267d6dbf50eac65abf0b56d
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825463"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548366"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="how-do-retrospectives-help-build-a-growth-mindset"></a>Hur bidrar utvärderingar till att utveckla ett tillväxtorienterat tänkesätt?
 
-”Kultur slår strategi med hästlängder”. Den bästa migreringsplanen kan lätt vara förgäves om den inte stöds och uppmuntras från ledningen. Inlärning, utveckling och till och med misslyckande är själva grunden för ett tillväxtorienterat tänktesätt. Det ligger också till grunden för alla omvandlingar.
+”Kultur slår strategi med hästlängder”. Det bästa migrerings planen kan enkelt göras om den inte har support för chefer och uppmuntras från ledarskap. Inlärning, utveckling och till och med misslyckande är själva grunden för ett tillväxtorienterat tänktesätt. Det ligger också till grunden för alla omvandlingar.
 
 Ödmjukhet och nyfikenhet har aldrig varit viktigare än de är under en verksamhetsomvandling. En digital omvandling behöver båda i stora mått. Dessa egenskaper stärks genom regelbundna reflektioner och en uppmuntrande miljö. När de anställda uppmuntras att ta risker hittar de bättre lösningar. När anställda tillåts att misslyckas och dra lärdomar når de framgångar. Utvärderingar är tillfällen för sådana reflektioner och tillväxt.
 

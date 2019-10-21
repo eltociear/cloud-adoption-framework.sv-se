@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 54e08a42a64d06005620b450b1458288316df74e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d1d59b105dd6d75b0c5b5ed12d711473fd4995c8
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224025"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549112"
 ---
 # <a name="central-it-capabilities"></a>Centrala IT-funktioner
 
 Som en skalning i molnet kanske moln styrnings funktioner inte räcker till för att reglera antagande ansträngningar. När antagandet är gradvis, tenderar teamen att utveckla de kunskaper och processer som behövs för molnet över tid.
 
-Om ett moln antagande team utnyttjar molnet för att uppnå affärs resultat med hög profil, är det dock sällan fallet. Lyckades efter lyckad. Detta gäller även för moln införande, men det sker i moln skala. När moln införande utökas från ett team till flera team under en relativt kort tids period krävs ytterligare support från befintlig IT-personal. Dessa personal medlemmar kan dock sakna den utbildning och erfarenhet som krävs för att stödja molnet med molnbaserade IT-verktyg. Detta driver ofta bildande av ett centralt IT-team som styr molnet.
+Om ett moln antagande team utnyttjar molnet för att uppnå affärs resultat med hög profil, är det dock sällan fallet. Lyckades efter lyckad. Detta gäller även för moln införande, men det sker i moln skala. När moln införande utökas från ett team till flera team relativt snabbt, krävs ytterligare support från befintlig IT-personal. Dessa personal medlemmar kan dock sakna den utbildning och erfarenhet som krävs för att stödja molnet med molnbaserade IT-verktyg. Detta driver ofta bildande av ett centralt IT-team som styr molnet.
 
 > [!CAUTION]
 > Även om det här är ett vanligt förfallo steg, kan det utgöra en hög risk för att anta, eventuellt blockera innovationer och migrering av migrering om de inte hanteras effektivt. Se avsnittet risk nedan för att lära dig hur du kan minska risken för att centralisering blir ett kulturellt antimönster.
@@ -105,13 +105,13 @@ Det här exemplet illustrerar den metod som en vuxen central IT-grupp har vidtag
 
 Contoso har LLC infört en central IT-modell för support för företagets moln resurser. För att leverera den här modellen har de implementerat tätt kontroller för olika delade tjänster, t. ex. inkommande nätverks anslutningar. Den här åtgärden förminskar exponeringen för moln miljön och tillhandahöll en enda "Break-glas"-enhet för att blockera all trafik i händelse av en överträdelse. Deras principer för säkerhets bas linjen är att all inkommande trafik måste komma via en delad enhet som hanteras av centrala IT-teamet.
 
-Men en av deras moln antagande team kräver nu en miljö med en dedikerad och särskilt konfigurerad ingångs nätverks anslutning för att utnyttja en viss moln teknik. Ett inmogna central IT-team skulle bara neka begäran och prioritera sina befintliga processer vid implementerings behov. Contosos centrala IT-team är annorlunda. De identifierade snabbt en enkel lösning med fyra delar till den här dilemma: Klassificering, förhandling, isolering och automatisering.
+Men en av deras moln antagande team kräver nu en miljö med en dedikerad och särskilt konfigurerad ingångs nätverks anslutning för att utnyttja en viss moln teknik. Ett inmogna central IT-team skulle bara neka begäran och prioritera sina befintliga processer vid implementerings behov. Contosos centrala IT-team är annorlunda. De identifierade snabbt en enkel lösning med fyra delar till denna dilemma: klassificering, förhandling, isolering och automatisering.
 
-**Klassning** Eftersom moln implementerings teamet var i det tidiga skedet av att skapa en ny lösning och inte hade några känsliga data eller verksamhets kritiska support behov, klassificeras till gångarna i miljön som låg risk och icke-kritisk. En effektiv klassificering är ett tecken på förfallo tid i Central IT. Att klassificera alla till gångar och miljöer gör det möjligt att göra mer tydligare principer.
+**Klassificering:** Eftersom moln implementerings teamet var i det tidiga skedet av att skapa en ny lösning och inte hade några känsliga data eller verksamhets kritiska support behov, klassificeras till gångarna i miljön som låg risk och icke-kritisk. En effektiv klassificering är ett tecken på förfallo tid i Central IT. Att klassificera alla till gångar och miljöer gör det möjligt att göra mer tydligare principer.
 
-**Förhandla** Enbart klassificeringen räcker inte. Delade tjänster implementerades för att konsekvent hantera känsliga och verksamhets kritiska till gångar. Att ändra reglerna skulle påverka styrnings-och efterlevnadsprinciper som har utformats för till gångar som behöver mer skydd. En bättre införande kan inte ske med kostnaden för stabilitet, säkerhet eller styrning. Detta ledde till en förhandling med antagande teamet för att svara på vissa frågor. Skulle ett företags LED DevOps-team kunna tillhandahålla drifts hantering för den här miljön? Behöver den här lösningen direkt åtkomst till andra interna resurser? Om moln implementerings teamet är bekväm med dessa kompromisser kan ingångs trafiken vara möjlig.
+**Förhandling:** Enbart klassificeringen räcker inte. Delade tjänster implementerades för att konsekvent hantera känsliga och verksamhets kritiska till gångar. Att ändra reglerna skulle påverka styrnings-och efterlevnadsprinciper som har utformats för till gångar som behöver mer skydd. En bättre införande kan inte ske med kostnaden för stabilitet, säkerhet eller styrning. Detta ledde till en förhandling med antagande teamet för att svara på vissa frågor. Skulle ett företags LED DevOps-team kunna tillhandahålla drifts hantering för den här miljön? Behöver den här lösningen direkt åtkomst till andra interna resurser? Om moln implementerings teamet är bekväm med dessa kompromisser kan ingångs trafiken vara möjlig.
 
-**Gruppera** Eftersom företaget kan ge sin egen pågående drift hantering, och eftersom lösningen inte förlitar sig på direkt trafik till andra interna till gångar, kan det vara avspärradet i en ny prenumeration. Den prenumerationen läggs också till i en separat nod i den nya hanterings gruppens hierarki.
+**Isolering:** Eftersom företaget kan ge sin egen pågående drift hantering, och eftersom lösningen inte förlitar sig på direkt trafik till andra interna till gångar, kan det vara avspärradet i en ny prenumeration. Den prenumerationen läggs också till i en separat nod i den nya hanterings gruppens hierarki.
 
 **Automation:** En annan Sign of mognad i det här teamet är sina automatiserings principer. Teamet använder Azure Policy för att automatisera princip tillämpning. De använder också Azure-ritningar för att automatisera distributionen av vanliga plattforms komponenter och tillämpa den definierade identitets bas linjen. För den här prenumerationen och andra i den nya hanterings gruppen skiljer sig principerna och mallarna något. Principer som blockerar inkommande bandbredd har lyfts upp. De har ersatts av krav för att dirigera trafik genom prenumerationen för delade tjänster, som all inkommande trafik, för att upprätthålla trafik isolering. Eftersom verktyget för lokal Operations Management inte kan komma åt den här prenumerationen, krävs agenter för verktyget inte längre. Alla andra styrnings guardrails som krävs av andra prenumerationer i hanterings gruppens hierarki upprätthålls fortfarande, vilket säkerställer tillräckligt med guardrails.
 

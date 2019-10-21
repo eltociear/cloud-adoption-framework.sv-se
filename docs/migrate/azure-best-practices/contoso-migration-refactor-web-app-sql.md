@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: c94ad845571c5007f14773268d383764cdc89a6c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 0118fcf3ca5b724a90d5e68482bfe6fe1a7e6abb
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025037"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548198"
 ---
 # <a name="refactor-an-on-premises-app-to-an-azure-app-service-web-app-and-azure-sql-database"></a>Omstrukturera en lokal app till en Azure App Service-webbapp och Azure SQL-databas
 
@@ -78,7 +78,7 @@ Contoso utvärderar den föreslagna designen genom att sätta samman en lista me
 **Övervägande** | **Detaljer**
 --- | ---
 **Fördelar** | Koden för SmartHotel360-appen behöver inte ändras för migrering till Azure.<br/><br/> Contoso kan dra nytta av sina investeringar i Software Assurance och använda Azure Hybrid-förmånen för både SQL Server och Windows Server.<br/><br/> Efter migreringen behöver Windows Server 2008 R2 inte stödjas. [Läs mer](https://support.microsoft.com/lifecycle).<br/><br/> Contoso kan konfigurera webbnivån för appen med flera instanser, så att den inte längre är en felkritisk systemdel.<br/><br/> Databasen är inte längre beroende av åldrande SQL Server 2008 R2.<br/><br/> SQL Database stöder de tekniska kraven. Contoso utvärderade den lokala databasen med hjälp av Data Migration Assistant och kom fram till att den var kompatibel.<br/><br/> Azure SQL Database har inbyggd feltolerans som Contoso inte behöver konfigurera. Detta säkerställer att datanivån inte längre är en felkritisk systemdel.
-**Nackdelar** | Azure App Service stöder endast en app-distribution för varje webbapp. Det innebär att två webbappar måste etableras (en för webbplatsen och en för WCF-tjänsten).<br/><br/> Om Contoso använder Data Migration Assistant i stället för Azure Database Migration Service för att migrera databasen, kommer man inte att ha infrastrukturen klar för migrering av databaser i stor skala. Contoso måste bygga en annan region för att säkerställa redundansväxling om den primära regionen inte är tillgänglig.
+**Nackdelar** | Azure App Service stöder endast en app-distribution för varje webbapp. Det innebär att två webbappar måste etableras (en för webbplatsen och en för WCF-tjänsten).<br/><br/> Om Contoso använder Data Migration Assistant i stället för Azure Database Migration Service för att migrera databasen, så har den inte den infrastruktur som är klar för migrering av databaser i stor skala. Contoso måste bygga en annan region för att säkerställa redundansväxling om den primära regionen inte är tillgänglig.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -86,12 +86,12 @@ Contoso utvärderar den föreslagna designen genom att sätta samman en lista me
 
 ![Scenariots arkitektur](media/contoso-migration-refactor-web-app-sql/architecture.png)
 
-### <a name="migration-process"></a>Migreringsprocess
+### <a name="migration-process"></a>Migreringsprocessen
 
 1. Contoso etablerar en Azure SQL-instans och migrerar SmartHotel360-databasen till den.
 2. Contoso tillhandahåller och konfigurerar webbappar och distribuerar SmartHotel360-appen till dem.
 
-    ![Migreringsprocess](media/contoso-migration-refactor-web-app-sql/migration-process.png)
+    ![Migreringsprocessen](media/contoso-migration-refactor-web-app-sql/migration-process.png)
 
 ### <a name="azure-services"></a>Azure-tjänster
 
@@ -99,10 +99,10 @@ Contoso utvärderar den föreslagna designen genom att sätta samman en lista me
 --- | --- | ---
 [Data Migration Assistant (DMA)](/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso kommer att använda DMA för att utvärdera och identifiera kompatibilitetsproblem som kan påverka deras databasfunktioner i Azure. DMA utvärderar funktionsparitet mellan SQL-källor och -mål och rekommenderar förbättringar av prestanda och tillförlitlighet. | Det här verktyget kan laddas ned utan kostnad.
 [Azure SQL Database](https://azure.microsoft.com/services/sql-database) | En intelligent, fullständigt hanterad och molnbaserad relationsdatabastjänst. | Kostnaden baseras på funktioner, dataflöde och storlek. [Läs mer](https://azure.microsoft.com/pricing/details/sql-database/managed).
-[Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | Skapa kraftfulla molnappar med en fullständigt hanterad plattform | Kostnaden baseras på storlek, plats och användningstid. [Läs mer](https://azure.microsoft.com/pricing/details/app-service/windows).
+[Azure Apptjänst](https://docs.microsoft.com/azure/app-service/overview) | Skapa kraftfulla molnappar med en fullständigt hanterad plattform | Kostnaden baseras på storlek, plats och användningstid. [Läs mer](https://azure.microsoft.com/pricing/details/app-service/windows).
 [Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | Tillhandahåller en pipeline för kontinuerlig integrering och distribution (CI/CD) för utveckling av appar. Pipelinen börjar med en Git-lagringsplats för hantering av app-kod, ett build-system för att skapa paket och andra build-artefakter och ett versionshanteringssystem för att distribuera ändringar i utvecklings-, test- och produktionsmiljöer.
 
-## <a name="prerequisites"></a>Förutsättningar
+## <a name="prerequisites"></a>Krav
 
 Här måste Contoso måste köra följande scenario:
 
@@ -115,20 +115,20 @@ Här måste Contoso måste köra följande scenario:
 
 <!--markdownlint-enable MD033 -->
 
-## <a name="scenario-steps"></a>Scenariosteg
+## <a name="scenario-steps"></a>Steg i scenariot
 
 Contoso genomför migreringen på följande sätt:
 
 > [!div class="checklist"]
 >
-> - **Steg 1: Etablera en SQL Database-instans i Azure.** Contoso tillhandahåller en SQL-instans i Azure. När appens webbplats har migrerats till Azure pekar WCF Service-webbappen på den här instansen.
+> - **Steg 1: etablera en SQL Database-instans i Azure.** Contoso tillhandahåller en SQL-instans i Azure. När appens webbplats har migrerats till Azure pekar WCF Service-webbappen på den här instansen.
 > - **Steg 2: Migrera databasen med DMA.** Contoso migrerar app-databasen med Data Migration Assistant.
-> - **Steg 3: Tillhandahålla webbappar.** Contoso tillhandahåller de två webbapparna.
-> - **Steg 4: Konfigurera Azure DevOps.** Contoso skapar ett nytt Azure DevOps-projekt och importerar Git-lagringsplatsen.
-> - **Steg 5: Konfigurera anslutningssträngar.** Contoso konfigurerar anslutningssträngar så att webbnivåns webbapp, WCF-tjänstens webbapp och SQL-instansen kan kommunicera.
-> - **Steg 6: Konfigurera Build and Release-pipelines.** Som ett sista steg konfigurerar Contoso Build and Release-pipelines för att skapa appen och distribuerar dem till två separata webbappar.
+> - **Steg 3: etablera webbappar.** Contoso tillhandahåller de två webbapparna.
+> - **Steg 4: Konfigurera Azure-DevOps.** Contoso skapar ett nytt Azure DevOps-projekt och importerar Git-lagringsplatsen.
+> - **Steg 5: Konfigurera anslutnings strängar.** Contoso konfigurerar anslutningssträngar så att webbnivåns webbapp, WCF-tjänstens webbapp och SQL-instansen kan kommunicera.
+> - **Steg 6: Konfigurera pipeliner för build och release.** Som ett sista steg konfigurerar Contoso Build and Release-pipelines för att skapa appen och distribuerar dem till två separata webbappar.
 
-## <a name="step-1-provision-an-azure-sql-database"></a>Steg 1: Etablera en Azure SQL-databas
+## <a name="step-1-provision-an-azure-sql-database"></a>Steg 1: etablera en Azure SQL Database
 
 1. Contoso-administratörerna väljer att skapa en SQL Database i Azure.
 
@@ -209,7 +209,7 @@ Contoso-administratörer migrerar SmartHotel360-databasen med hjälp av DMA.
 
     ![DMA](media/contoso-migration-refactor-web-app-sql/dma-9.png)
 
-## <a name="step-3-provision-web-apps"></a>Steg 3: Tillhandahålla webbappar
+## <a name="step-3-provision-web-apps"></a>Steg 3: etablera webb program
 
 När databasen har migrerats kan Contoso-administratörerna etablera de två webbapparna.
 
@@ -227,7 +227,7 @@ När databasen har migrerats kan Contoso-administratörerna etablera de två web
 
 4. När de är klara bläddrar de till adressen för apparna för att kontrollera att de har skapats korrekt.
 
-## <a name="step-4-set-up-azure-devops"></a>Steg 4: Konfigurera Azure DevOps
+## <a name="step-4-set-up-azure-devops"></a>Steg 4: Konfigurera Azure-DevOps
 
 Contoso måste bygga DevOps-infrastrukturen och pipelines för programmet. För att göra det skapar Contoso-administratörerna ett nytt DevOps-projekt, importerar koden och konfigurerar sedan Build and Release-pipelines.
 
@@ -247,7 +247,7 @@ Contoso måste bygga DevOps-infrastrukturen och pipelines för programmet. För 
 
     ![Lösningsfil](./media/contoso-migration-refactor-web-app-sql/vsts4.png)
 
-## <a name="step-5-configure-connection-strings"></a>Steg 5: Konfigurera anslutningssträngar
+## <a name="step-5-configure-connection-strings"></a>Steg 5: Konfigurera anslutnings strängar
 
 Contoso-administratörerna måste se till att webbapparna och databasen kan kommunicera. Det gör de genom att konfigurera anslutningssträngar i koden och i webbapparna.
 
@@ -266,7 +266,7 @@ Contoso-administratörerna måste se till att webbapparna och databasen kan komm
 
 5. När ändringarna väl finns i koden måste administratörerna genomföra ändringarna. Med hjälp av Team Explorer i Visual Studio genomför och synkroniserar de.
 
-## <a name="step-6-set-up-build-and-release-pipelines-in-azure-devops"></a>Steg 6: Konfigurera Build and Release-pipelines i Azure DevOps
+## <a name="step-6-set-up-build-and-release-pipelines-in-azure-devops"></a>Steg 6: Konfigurera en pipeline för build och release i Azure DevOps
 
 Contoso-administratörerna konfigurerar nu Azure DevOps för att utföra Build- och Release-processen.
 
@@ -319,7 +319,7 @@ Contoso-administratörerna konfigurerar nu Azure DevOps för att utföra Build- 
 
 12. På pipelinen > **Artefakter** väljer de **+Lägga till en artefakt** och väljer sedan att skapa med pipelinen **ContosoSmarthotel360Refactor**.
 
-     ![Utveckla](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
+     ![Version](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
 
 13. De markerar blixten på artefakten för att aktivera utlösaren för kontinuerlig distribution.
 

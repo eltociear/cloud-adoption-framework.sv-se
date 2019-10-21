@@ -1,7 +1,7 @@
 ---
-title: 'Standard styrnings guide för företag: Förbättringar i multimolnet'
+title: 'Standard styrnings guide för företag: multicloud-förbättringar'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Standard styrnings guide för företag: Förbättringar i multimolnet'
+description: 'Standard styrnings guide för företag: multicloud-förbättringar'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3a14603574430272004d9fe40654409409dd563e
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 78ffb3b3d91f1f00fb92d70147fd7177ffa9f1b0
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967314"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547502"
 ---
-# <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>Standard styrnings guide för företag: Förbättringar i multimolnet
+# <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>Standard styrnings guide för företag: multicloud-förbättringar
 
 Den här artikeln går vidare genom att lägga till kontroller för att införa ett moln.
 
@@ -65,7 +65,7 @@ Följande ändringar i principen hjälper dig att åtgärda de nya riskerna och 
 Det här avsnittet av artikeln ändrar designen för styrnings MVP till att inkludera nya Azure-principer och en implementering av Azure Cost Management. Tillsammans uppfyller dessa design ändringar de nya företags princip uttrycken.
 
 1. Anslut nätverken. Det här steget utförs av nätverkets och IT-säkerhetsteamen och stöds av moln styrnings teamet. Om du lägger till en anslutning från MPLS/lånad rad leverantör till det nya molnet integreras nätverk. Genom att lägga till routningstabeller och brand Väggs konfigurationer styr du åtkomst och trafik mellan miljöerna.
-2. Konsolidera identitets leverantörer. Beroende på vilka arbets belastningar som finns i det sekundära molnet finns det en mängd olika alternativ för konsolidering av identitets leverantörer. Följande är några exempel:
+2. Konsolidera identitets leverantörer. Beroende på vilka arbets belastningar som finns i det sekundära molnet finns det en mängd olika alternativ för konsolidering av identitets leverantörer. Detta är några exempel:
     1. För program som autentiserar med OAuth 2 kan användare från Active Directory i det sekundära molnet bara replikeras till den befintliga Azure AD-klienten. Detta säkerställer att alla användare kan autentiseras i klienten.
     2. I den andra extrema federationen tillåter Federation att ou flödar till Active Directory lokalt, sedan till Azure AD-instansen.
 3. Lägg till till gångar till Azure Site Recovery.
@@ -81,7 +81,7 @@ Det här avsnittet av artikeln ändrar designen för styrnings MVP till att inkl
     1. Styrnings tvång är molnbaserad.
     2. Företags principerna som fastställs i styrnings guiden är inte molnbaserade. Implementeringen kan variera från molnet till molnet, men principerna kan tillämpas på den sekundära providern.
 
-Användningen av flera moln bör finnas där det krävs utifrån tekniska behov eller specifika affärs krav. I takt med att användningen av molnet ökar ökar komplexiteten och säkerhets riskerna.
+För att kunna använda molnet bör det finnas ett krav som baseras på tekniska behov eller specifika affärs behov. Allt eftersom införandet av molnet växer ökar komplexiteten och säkerhets riskerna.
 
 ## <a name="conclusion"></a>Sammanfattning
 

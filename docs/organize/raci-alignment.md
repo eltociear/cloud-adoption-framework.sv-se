@@ -1,6 +1,6 @@
 ---
 title: Justera ansvar mellan team
-titleSuffix: Microsoft Cloud adoption Framework for Azure
+titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig att justera ansvars områden mellan team.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 818d2fa74c480b8aee36c4d268ae7a83cb93fab3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 40ccd0c17a55a87c84d40abd749bf8e61f891e6c
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027869"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549087"
 ---
 # <a name="align-responsibilities-across-teams"></a>Justera ansvars områden mellan team
 
@@ -40,22 +40,22 @@ Den sista raden i varje tabell (förutom den första) innehåller en länk till 
 
 ## <a name="cloud-adoption-team-only"></a>Endast moln antagande team
 
-|  |Lösnings leverans  |Affärs justering  |Ändringshantering  |Lösnings åtgärder  |Styrning |Plattforms förfallo tid  |Plattforms åtgärder  |Plattforms automatisering  |
+|  |Lösnings leverans  |Affärs justering  |Ändrings hantering  |Lösnings åtgärder  |Styrning |Plattforms förfallo tid  |Plattforms åtgärder  |Plattforms automatisering  |
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |Moln antagande team |Accountable|Accountable|Accountable|Accountable|Accountable|Accountable|Accountable|Accountable|
 
 ## <a name="best-practice-minimum-viable-product-mvp"></a>Bästa praxis: minimal livskraftig produkt (MVP)
 
-|  |Lösnings leverans  |Affärs justering  |Ändringshantering  |Lösnings åtgärder  |Styrning |Plattforms förfallo tid  |Plattforms åtgärder  |Plattforms automatisering  |
+|  |Lösnings leverans  |Affärs justering  |Ändrings hantering  |Lösnings åtgärder  |Styrning |Plattforms förfallo tid  |Plattforms åtgärder  |Plattforms automatisering  |
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |Moln antagande team|Accountable|Accountable|Accountable|Accountable|Konsulterad|Konsulterad|Konsulterad|Uppdaterad|
 |Team för moln styrning|Konsulterad|Uppdaterad|Uppdaterad|Uppdaterad|Accountable|Accountable|Accountable|Accountable|
 ||||||||||
-|Justerad moln kapacitet|[Moln införande](./cloud-adoption.md)|[Moln strategi](./cloud-strategy.md)|[Moln strategi](./cloud-strategy.md)|[Moln åtgärder](./cloud-operations.md)|[](./cloud-center-of-excellence.md)CCoE-[Cloud-styrning](./cloud-governance.md)|[](./cloud-center-of-excellence.md)CCoE-[Cloud Platform](./cloud-platform.md)|[](./cloud-center-of-excellence.md)CCoE-[Cloud Platform](./cloud-platform.md)|[](./cloud-center-of-excellence.md)CCoE-[Cloud Automation](./cloud-automation.md)|
+|Justerad moln kapacitet|[Moln införande](./cloud-adoption.md)|[Moln strategi](./cloud-strategy.md)|[Moln strategi](./cloud-strategy.md)|[Moln åtgärder](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md) -[moln styrning](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md) -[Cloud Platform](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md) -[Cloud Platform](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md) -[Cloud Automation](./cloud-automation.md)|
 
 ## <a name="central-it"></a>Central IT
 
-| |Lösnings leverans  |Affärs justering  |Ändringshantering  |Lösnings åtgärder  |Styrning |Plattforms förfallo tid  |Plattforms åtgärder  |Plattforms automatisering  |
+| |Lösnings leverans  |Affärs justering  |Ändrings hantering  |Lösnings åtgärder  |Styrning |Plattforms förfallo tid  |Plattforms åtgärder  |Plattforms automatisering  |
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |Moln antagande team  |Accountable|Accountable|Skyldighet    |Skyldighet|Uppdaterad   |Uppdaterad   |Uppdaterad   |Uppdaterad   |
 |Team för moln styrning|Konsulterad  |Uppdaterad   |Uppdaterad   |Uppdaterad   |Accountable|Konsulterad  |Skyldighet|Uppdaterad   |
@@ -65,28 +65,28 @@ Den sista raden i varje tabell (förutom den första) innehåller en länk till 
 
 ## <a name="strategic-alignment"></a>Strategisk justering
 
-|  |Lösnings leverans  |Affärs justering  |Ändringshantering  |Lösnings åtgärder  |Styrning |Plattforms förfallo tid  |Plattforms åtgärder  |Plattforms automatisering  |
+|  |Lösnings leverans  |Affärs justering  |Ändrings hantering  |Lösnings åtgärder  |Styrning |Plattforms förfallo tid  |Plattforms åtgärder  |Plattforms automatisering  |
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |Moln strategi team  |Konsulterad  |Accountable|Accountable|Konsulterad  |Konsulterad  |Uppdaterad   |Uppdaterad   |Uppdaterad   |
 |Moln antagande team  |Accountable|Konsulterad  |Skyldighet|Accountable|Uppdaterad   |Uppdaterad   |Uppdaterad   |Uppdaterad   |
 |CCoE-modell RACI      |Konsulterad  |Uppdaterad   |Uppdaterad   |Uppdaterad   |Accountable|Accountable|Accountable|Accountable|
 ||||||||||
-|Justerad moln kapacitet|[Moln införande](./cloud-adoption.md)|[Moln strategi](./cloud-strategy.md)|[Moln strategi](./cloud-strategy.md)|[Moln åtgärder](./cloud-operations.md)|[](./cloud-center-of-excellence.md)CCoE-[Cloud-styrning](./cloud-governance.md)|[](./cloud-center-of-excellence.md)CCoE-[Cloud Platform](./cloud-platform.md)|[](./cloud-center-of-excellence.md)CCoE-[Cloud Platform](./cloud-platform.md)|[](./cloud-center-of-excellence.md)CCoE-[Cloud Automation](./cloud-automation.md)|
+|Justerad moln kapacitet|[Moln införande](./cloud-adoption.md)|[Moln strategi](./cloud-strategy.md)|[Moln strategi](./cloud-strategy.md)|[Moln åtgärder](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md) -[moln styrning](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md) -[Cloud Platform](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md) -[Cloud Platform](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md) -[Cloud Automation](./cloud-automation.md)|
 
 ## <a name="operational-alignment"></a>Drift justering
 
-|  |Lösnings leverans  |Affärs justering  |Ändringshantering  |Lösnings åtgärder  |Styrning |Plattforms förfallo tid  |Plattforms åtgärder  |Plattforms automatisering  |
+|  |Lösnings leverans  |Affärs justering  |Ändrings hantering  |Lösnings åtgärder  |Styrning |Plattforms förfallo tid  |Plattforms åtgärder  |Plattforms automatisering  |
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |Moln strategi team  |Konsulterad  |Accountable|Accountable|Konsulterad  |Konsulterad  |Uppdaterad   |Uppdaterad   |Uppdaterad   |
 |Moln antagande team  |Accountable|Konsulterad  |Skyldighet|Konsulterad  |Uppdaterad   |Uppdaterad   |Uppdaterad   |Uppdaterad   |
 |Moln drifts team|Konsulterad  |Konsulterad  |Skyldighet|Accountable|Konsulterad  |Uppdaterad   |Accountable|Konsulterad  |
 |CCoE-modell RACI      |Konsulterad  |Uppdaterad   |Uppdaterad   |Uppdaterad   |Accountable|Accountable|Skyldighet|Accountable|
 ||||||||||
-|Justerad moln kapacitet|[Moln införande](./cloud-adoption.md)|[Moln strategi](./cloud-strategy.md)|[Moln strategi](./cloud-strategy.md)|[Moln åtgärder](./cloud-operations.md)|[](./cloud-center-of-excellence.md)CCoE-[Cloud-styrning](./cloud-governance.md)|[](./cloud-center-of-excellence.md)CCoE-[Cloud Platform](./cloud-platform.md)|[](./cloud-center-of-excellence.md)CCoE-[Cloud Platform](./cloud-platform.md)|[](./cloud-center-of-excellence.md)CCoE-[Cloud Automation](./cloud-automation.md)|
+|Justerad moln kapacitet|[Moln införande](./cloud-adoption.md)|[Moln strategi](./cloud-strategy.md)|[Moln strategi](./cloud-strategy.md)|[Moln åtgärder](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md) -[moln styrning](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md) -[Cloud Platform](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md) -[Cloud Platform](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md) -[Cloud Automation](./cloud-automation.md)|
 
 ## <a name="cloud-center-of-excellence-ccoe"></a>Expert Center i molnet (CCoE)
 
-|  |Lösnings leverans  |Affärs justering  |Ändringshantering  |Lösnings åtgärder  |Styrning |Plattforms förfallo tid  |Plattforms åtgärder  |Plattforms automatisering  |
+|  |Lösnings leverans  |Affärs justering  |Ändrings hantering  |Lösnings åtgärder  |Styrning |Plattforms förfallo tid  |Plattforms åtgärder  |Plattforms automatisering  |
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |Moln strategi team  |Konsulterad  |Accountable|Accountable|Konsulterad  |Konsulterad  |Uppdaterad   |Uppdaterad   |Uppdaterad   |
 |Moln antagande team  |Accountable|Konsulterad  |Skyldighet|Konsulterad  |Uppdaterad   |Uppdaterad   |Uppdaterad   |Uppdaterad   |
@@ -95,7 +95,7 @@ Den sista raden i varje tabell (förutom den första) innehåller en länk till 
 |Moln plattforms team  |Konsulterad  |Uppdaterad   |Uppdaterad   |Konsulterad  |Konsulterad  |Accountable|Skyldighet|Skyldighet|
 |Cloud Automation-team|Konsulterad  |Uppdaterad   |Uppdaterad   |Uppdaterad   |Konsulterad  |Skyldighet|Skyldighet|Accountable|
 ||||||||||
-|Justerad moln kapacitet|[Moln införande](./cloud-adoption.md)|[Moln strategi](./cloud-strategy.md)|[Moln strategi](./cloud-strategy.md)|[Moln åtgärder](./cloud-operations.md)|[](./cloud-center-of-excellence.md)CCoE-[Cloud-styrning](./cloud-governance.md)|[](./cloud-center-of-excellence.md)CCoE-[Cloud Platform](./cloud-platform.md)|[](./cloud-center-of-excellence.md)CCoE-[Cloud Platform](./cloud-platform.md)|[](./cloud-center-of-excellence.md)CCoE-[Cloud Automation](./cloud-automation.md)|
+|Justerad moln kapacitet|[Moln införande](./cloud-adoption.md)|[Moln strategi](./cloud-strategy.md)|[Moln strategi](./cloud-strategy.md)|[Moln åtgärder](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md) -[moln styrning](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md) -[Cloud Platform](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md) -[Cloud Platform](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md) -[Cloud Automation](./cloud-automation.md)|
 
 ## <a name="next-steps"></a>Nästa steg
 

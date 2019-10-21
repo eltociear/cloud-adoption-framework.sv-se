@@ -1,19 +1,19 @@
 ---
-title: 'Stordator-migrering: Migrering av stordator program'
+title: 'Stordator-migrering: stordator program migrering'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Migrera program från stordator miljöer till Azure, en beprövad, hög tillgänglig och skalbar infrastruktur för system som för närvarande körs på stordatorer.
+description: Migrera program från stordatormiljöer till Azure, en beprövad och skalbar infrastruktur med hög tillgänglighet för system som för närvarande körs på stordatorer.
 author: njray
 ms.author: v-nanra
 ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 47460a4099011cd96a75af9e8f99e3a6cccabb0c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ba2d68a2b382ccccf0d124a57d33d1344476c3dc
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024414"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547956"
 ---
 # <a name="mainframe-application-migration"></a>Migrering av stordator program
 
@@ -21,15 +21,15 @@ När du migrerar program från stordator miljöer till Azure följer de flesta t
 
 Programmigreringen omfattar vanligt vis en eller flera av följande strategier:
 
-- **Värdbyte:** Du kan flytta befintliga kod, program och program från stordatoren och sedan kompilera om koden så att den körs i en stordator-emulator som finns i en moln instans. Den här metoden börjar normalt med att flytta program till en molnbaserad emulator och sedan migrera databasen till en molnbaserad databas. Vissa tekniker och omfactoring krävs tillsammans med data-och fil versioner.
+- **Rehost:** Du kan flytta befintliga kod, program och program från stordatoren och sedan kompilera om koden så att den körs i en stordator-emulator som finns i en moln instans. Den här metoden börjar normalt med att flytta program till en molnbaserad emulator och sedan migrera databasen till en molnbaserad databas. Vissa tekniker och omfactoring krävs tillsammans med data-och fil versioner.
 
     Alternativt kan du vara värd för med hjälp av en traditionell värd leverantör. En av de huvudsakliga fördelarna med molnet är att lägga ut infrastruktur hantering. Du kan hitta en data Center leverantör som ska vara värd för dina stordator belastningar. Den här modellen kan köpa tid, minska leverantörs låset och skapa interimistiska kostnads besparingar.
 
-- **Pensions** Alla program som inte längre behövs bör dras tillbaka innan migreringen.
+- **Dra tillbaka:** Alla program som inte längre behövs bör dras tillbaka innan migreringen.
 
 - **Återskapa:** Vissa organisationer väljer att helt skriva om program med modern teknik. Med tanke på den extra kostnaden och komplexiteten i den här metoden är det inte lika vanligt som en metod för att lyfta och byta. Ofta efter den här typen av migrering är det klokt att börja ersätta moduler och kod med hjälp av kod omvandlings motorer.
 
-- **Ersätta:** Den här metoden ersätter stordator funktioner med motsvarande funktioner i molnet. Program vara som en tjänst (SaaS) är ett alternativ, som använder en lösning som skapats specifikt för ett företags problem, till exempel ekonomi, personal, produktion eller företags resurs planering. Dessutom är många branschspecifika appar tillgängliga för att lösa problem med anpassade stordator lösningar som används för att lösa problemet tidigare.
+- **Ersätt:** Den här metoden ersätter stordator funktioner med motsvarande funktioner i molnet. Program vara som en tjänst (SaaS) är ett alternativ, som använder en lösning som skapats specifikt för ett företags problem, till exempel ekonomi, personal, produktion eller företags resurs planering. Dessutom är många branschspecifika appar tillgängliga för att lösa problem med anpassade stordator lösningar som används för att lösa problemet tidigare.
 
 Du bör börja med att planera de arbets belastningar som du vill migrera och sedan ta reda på dessa krav för att flytta associerade program, befintliga kodbaser och databaser.
 
@@ -67,7 +67,7 @@ I Azure används emuleringsklienter för att köra TP Manager och de batch-jobb 
 
 Funktionerna för skärm hantering och formulär inmatning implementeras ofta med hjälp av webb servrar, som kan kombineras med databas-API: er, till exempel ADO, ODBC och JDBC för data åtkomst och transaktioner. Exakt vilken rad med Azure IaaS-komponenter som ska användas beror på vilket operativ system du föredrar. Exempel:
 
-- Windows-baserade virtuella datorer: Internet Information Server (IIS) tillsammans med ASP.NET för skärm hantering och affärs logik. Använd ADO.NET för data åtkomst och transaktioner.
+- Windows-baserade virtuella datorer: IIS (Internet Information Server) tillsammans med ASP.NET för skärm hantering och affärs logik. Använd ADO.NET för data åtkomst och transaktioner.
 
 - Linux-baserade virtuella datorer: Java-baserade program servrar som är tillgängliga, till exempel Apache Tomcat för skärm hantering och Java-baserade företags funktioner. Använd JDBC för data åtkomst och transaktioner.
 
@@ -77,7 +77,7 @@ Batch-åtgärder i Azure skiljer sig från den typiska batch-miljön i stordator
 
 Du kan optimera batch-prestanda med hjälp av Azure genom att tänka på [beräknings](https://docs.microsoft.com/azure/virtual-machines/windows/overview)-, [lagrings](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction)-, [nätverks](https://azure.microsoft.com/blog/maximize-your-vm-s-performance-with-accelerated-networking-now-generally-available-for-both-windows-and-linux)-och [övervaknings](https://docs.microsoft.com/azure/azure-monitor/overview) alternativen enligt följande.
 
-### <a name="compute"></a>Compute
+### <a name="compute"></a>Databearbetning
 
 Använd
 
@@ -89,7 +89,7 @@ Använd
 
 - Parallell bearbetning kan i Azure skalas enkelt för parallell bearbetning, vilket ger mer beräknings kraft för en batch-körning.
 
-### <a name="storage"></a>Storage
+### <a name="storage"></a>Lagring
 
 Använd
 
@@ -115,7 +115,7 @@ Molnets distribuerade arkitekturer förlitar sig på en annan uppsättning utvec
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | z/OS             | Windows, Linux eller UNIX                                                                                                                      |
 | CICS             | Azure-tjänster som erbjuds av Micro Focus, Oracle, GT Software (Fujitsu), TmaxSoft, Raincode och NTT data eller omskrivning med Kubernetes |
-| IMS              | Azure-tjänster som erbjuds av Micro Focus och Oracle                                                                                  |
+| SNABB              | Azure-tjänster som erbjuds av Micro Focus och Oracle                                                                                  |
 | Assembler        | Azure-tjänster från Raincode och TmaxSoft; eller COBOL, C eller Java, eller mappa till operativ system funktioner               |
 | JCL              | JCL, PowerShell eller andra skript verktyg                                                                                                   |
 | COBOL            | COBOL, C eller Java                                                                                                                            |
@@ -175,7 +175,7 @@ Om du överväger en stordator-migrering är partner eko systemet tillgängligt 
 
 Azure tillhandahåller en beprövad, hög tillgänglig och skalbar infrastruktur för system som för närvarande körs på stordatorer. Vissa arbets belastningar kan migreras med relativt enkelt. Andra arbets belastningar som är beroende av äldre systemprogram, till exempel CICS och IMS, kan reageras med partner lösningar och migreras till Azure över tid. Oavsett vilket alternativ du gör är Microsoft och våra partner tillgängliga för att hjälpa dig att optimera för Azure samtidigt som program varu funktionerna i stordator systemet upprätthålls.
 
-## <a name="learn-more"></a>Lär dig mer
+## <a name="learn-more"></a>Läs mer
 
 Mer information finns i följande resurser:
 
