@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 96752e360442c2532ce48d61dd69b84ae3641ddd
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: ce4cf827f391c5fb15f6b9e78997dd0f02e1751b
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378401"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683782"
 ---
 # <a name="prerequisites-for-migration"></a>Förutsättningar för migrering
 
@@ -57,8 +57,8 @@ En enskild medlem från varje grupp ska identifieras som ansvarig för var och e
 Utöver det övergripande ansvaret finns det åtgärder som en person eller en grupp måste vara direkt ansvarig för. Här följer några sådana ansvarsområden som påverkar dessa aktiviteter:
 
 - **Affärsprioritering.** Fatta affärsbeslut om de arbetsbelastningar som ska migreras samt allmänna begränsningar vad gäller tidsschemat. Mer information finns i avsnittet om [affärsmotiveringar gällande molnmigrering](../../../strategy/motivations.md).
-- **Beredskap för ändringshantering.** Upprätta och förmedla planen för att spåra tekniska ändringar under migrering. Mer information om det här ämnet blir tillgängligt under det tredje kvartalet 2019.
-- **Inriktning av företagsanvändare.** Upprätta en plan för att förbereda den bredare gruppen med företagsanvändare för genomförandet av migrering. Mer information om det här ämnet blir tillgängligt under det tredje kvartalet 2019.
+- **Beredskap för ändringshantering.** Upprätta och förmedla planen för att spåra tekniska ändringar under migrering.
+- **Inriktning av företagsanvändare.** Upprätta en plan för att förbereda den bredare gruppen med företagsanvändare för genomförandet av migrering.
 - **Inventering och analys av digital egendom.** Körning av de verktyg som krävs för att inventera och analysera den digitala egendomen. Mer information finns i Cloud Adoption Framework-genomgången av [digital egendom](../../../digital-estate/index.md).
 - **Molnberedskap.** Utvärdera målmiljön för distribution för att säkerställa att den överensstämmer med kraven för de första arbetsbelastningskandidaterna. Mer information finns i [konfigurationsguiden för Azure](../../../ready/azure-setup-guide/index.md).
 
