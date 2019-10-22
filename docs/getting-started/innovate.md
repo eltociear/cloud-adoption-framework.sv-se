@@ -8,19 +8,16 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 096d6756c1d2b4713b6a464cbcc05785e96bc5cc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 718835335103130418f9fe75284adb7ceb94821c
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023402"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683480"
 ---
 # <a name="innovation-through-cloud-adoption-in-the-cloud-adoption-framework"></a>Innovation genom moln införande i ramverket för moln införande
 
-Innovation är nära länkad till migrering. När arbets belastningar skapar marknads differentierings möjligheter är det vanligt att arbets belastningarna migreras till molnet och genomgår modernisering ansträngningar. En gång i molnet modernisering kan påskyndas av moderna molnbaserade metoder, vilket också möjliggör utveckling av nya innovationer.
-
-> [!NOTE]
-> Den här vägledningen har utvecklats för att utveckla ramverket Q3 2019 i molnet. Taxonomin och metoden nedan kan komma att ändras. Följande information visar den allmänna riktningen för nyskapande vägledning.
+Molnbaserad migrering är ett utmärkt alternativ för arbets belastningar som redan finns i en miljö. Att skapa nya produkter och tjänster kräver en annan metod. Den innovativa metoden i det här ramverket upprättar en metod för att vägleda utvecklingen av nya produkter och tjänster.
 
 ## <a name="motivations-behind-innovation"></a>Motivation bakom innovation
 
@@ -34,21 +31,17 @@ Innovation bör inte vara den valda införande sökvägen för alla arbets belas
 - Omvandla produkter eller tjänster
 - Störa marknaden med nya produkter eller tjänster
 
-## <a name="innovation-guidance"></a>Nyskapande vägledning
-
-Allt eftersom Innovations innehållet i moln implementerings ramverket utvecklas ger det vägledning om följande ämnen:
-
-- Modernisera befintliga till gångar
-- Bygg nya appar
-- Följ praxis som uppmuntrar en tillväxt tänkesätt
-- Integrera DevOps-strategier
-
-![Översikt över Cloud Adoption Framework](../_images/caf-overview.png)
-
 ## <a name="common-workload-examples-associated-with-a-cloud-innovation"></a>Vanliga arbets belastnings exempel som är associerade med en moln innovation
 
 - Anpassade program som skapats.
 - Teknikbaserade upplevelser.
-- IoT Integrering av fysiska produkter och teknik.
-- Omgivnings information: Integrering av inkräktande-teknik i en miljö.
+- IoT: integrering av fysiska produkter och teknik.
+- Omgivnings information: integrering av inkräktande Technology i en miljö.
 - Cognitive Services: Big data, AI, Machine Learning och förutsägande lösningar.
+
+## <a name="next-steps"></a>Nästa steg
+
+Påbörja din Innovations resa med hjälp av [förnyelse metoden](../innovate/index.md).
+
+> [!div class="nextstepaction"]
+> [Påbörja din Innovations resa](../innovate/index.md)

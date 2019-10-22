@@ -4,22 +4,24 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Introduktion till utveckling av moln – delta i program
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/24/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5dcfbc34c31346b4efada049fc46effac149cd68
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3db2349e3c1da7c80f3089ea187a3de72d006d1f
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557263"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683302"
 ---
 # <a name="engage-through-applications"></a>Delta i program
 
 Som beskrivs i artikeln om [democratizing data](./data.md)är data den nya oljan. IT-bränslen de flesta innovationer i den digitala ekonomin. För att bygga på den analoga funktionen är program den bränsle Station och infrastruktur som krävs för att få det här bränslet i rätt händer.
 
 I vissa fall är det tillräckligt med data för att kunna ändra och möta kundernas behov. Oftare kräver lösningen av kund behov program för att forma data och skapa en upplevelse. Program är det sätt som vi använder för att engagera användaren. De är start sidan för de processer som krävs för att svara på kund utlösare. De är kunderna för att tillhandahålla vägledning om data och mottagning. Den här artikeln beskriver några principer som hjälper dig att justera rätt program lösning, baserat på Hypotheses som ska verifieras.
+
+![Engagera via appar](../../_images/innovate/engage-via-apps.png)
 
 ## <a name="shared-code"></a>Delad kod
 
@@ -36,11 +38,27 @@ Medborgarna kan vara en bra idé när tidiga Hypotheses kan verifieras med hjäl
 > [!NOTE]
 > När du använder medborgarna för att testa Hypotheses, rekommenderar vi att professionella utvecklare tillhandahåller support, granskning och vägledning. När en hypotes har validerats i stor skalar en process för att överföra programmet till en stabilare programmerings modell, vilket påskyndar återställningarna i innovationen. Att involvera professionella utvecklare i tidiga process definitioner kan resultera i renare över gångar senare.
 
-## <a name="modern-web-experiences"></a>Moderna webb upplevelser
+## <a name="intelligent-experiences"></a>Intelligenta upplevelser
+
+Smarta upplevelser kombinerar hastigheten och skalningen av moderna webb program, med information om kognitiva tjänster och robotar. Var och en kan vara tillräckligt för att uppfylla kundernas behov. Kombinerat det spektrum av behov som kan uppfyllas med en digital upplevelse är expanderad, men utvecklings investeringar kan fortfarande finnas.
+
+### <a name="modern-web-apps"></a>Moderna webb program
 
 När ett program eller en miljö krävs för att uppfylla ett kund behov kan moderna webb program vara det snabbaste sättet att möta detta behov. Moderna webb upplevelser kan engagera interna eller externa kunder snabbt och möjliggöra snabb iteration av lösningen.
 
-Azure App Service tillhandahåller en värd miljö för dina program som minskar belastningen på infrastruktur hantering och uppdatering av operativ system. Det ger till gång till skalning för att uppfylla användarnas krav, men begränsas av gränser som du definierar för att hålla kostnaderna i kontroll. App Service tillhandahåller stöd från första klass för språk som ASP.NET, ASP.NET Core, Java, ruby, Node. js, PHP eller python. Om du behöver vara värd för en annan körnings stack ger Web App for container möjlighet att snabbt och enkelt vara värd åt en Docker-behållare i App Services miljön så att du kan vara värd för din anpassade kod stack i en miljö som hjälper dig att komma igång med servern busin ess.
+### <a name="infusing-intelligence"></a>Startgroparna intelligens
+
+Maskin inlärning och artificiell intelligens blir allt mer tillgängligt för utvecklare. Den breda tillgängligheten för vanliga API: er med förutsägande funktioner, gör att utvecklare bättre kan uppfylla behoven hos kunden genom utökad åtkomst till data och förutsägelser.
+
+Genom att lägga till intelligens i en lösning kan du aktivera tal till text, text översättning, visuellt innehåll och till och med visuell sökning. Med dessa utökade funktioner är det enklare för utvecklare att skapa lösningar som utnyttjar intelligens för att skapa en interaktiv och modern upplevelse.
+
+### <a name="bots"></a>Robotar
+
+Robotar ger en upplevelse som upplever mindre som att använda en dator och mer som att hantera en person eller minst en intelligent robot. De kan användas för att skifta enkla, repetitiva uppgifter, som att ta en middag eller samla in profil information, på automatiserade system som inte längre kräver direkt mänsklig inblandning. Användare är kopplade till en robot med hjälp av text, interaktiva kort och tal. En bot-interaktion kan vara en snabb fråga och ett avancerat samtal, och det kan vara en sofistikerad konversation som intelligent ger till gång till tjänster.
+
+Robotar är mycket som moderna webb program, lever på Internet och använda API: er för att skicka och ta emot meddelanden. Vad som finns i en robot varierar mycket beroende på vilken typ av bot det är. Modern bot-programvara är beroende av en trave med teknik och verktyg för att leverera allt mer komplexa upplevelser på en mängd olika plattformar. En enkel robot kan dock bara ta emot ett meddelande och eko meddelandet tillbaka till användaren med mycket lite kod.
+
+Robotar kan göra samma saker som andra typer av program vara kan göra-läsa och skriva filer, använda databaser och API: er och utföra vanliga beräknings uppgifter. Det som gör robotar unikt är användningen av mekanismer som är allmänt reserverade för kommunikation från människa till människa.
 
 ## <a name="cloud-native-solutions"></a>Moln – inbyggda lösningar
 
@@ -54,7 +72,7 @@ Många kund Hypotheses kan bäst levereras med en modern version av en befintlig
 
 De flesta former av modernisering, inklusive lätt omstrukturering av programmet, ingår i metoderna för [migrering](../../migrate/index.md) i moln införande ramverket. Metoden vägleder moln implementerings team genom processerna för att migrera en [digital egendom](../../digital-estate/index.md) till molnet. [Azure migration guide](../../migrate/azure-migration-guide/index.md) är ett effektiviserat tillvägagångs sätt för samma metod, vilket är lämpligt för ett litet antal arbets belastningar eller till och med ett enda program.
 
-När du har migrerat och förvarat finns det en mängd olika sätt att använda lösningen för att skapa nya innovativa lösningar för kund behov. Till exempel kan [medborgare-utvecklare](#citizen-developers) testa Hypotheses eller professionella utvecklare kan skapa [moderna webb upplevelser](#modern-web-experiences) eller [molnbaserade lösningar](#cloud-native-solutions).
+När du har migrerat och förvarat finns det en mängd olika sätt att använda lösningen för att skapa nya innovativa lösningar för kund behov. Till exempel kan [medborgare-utvecklare](#citizen-developers) testa Hypotheses eller professionella utvecklare kan skapa [intelligenta upplevelser](#intelligent-experiences) eller [molnbaserade lösningar](#cloud-native-solutions).
 
 ### <a name="extend-an-existing-solution"></a>Utöka en befintlig lösning
 
@@ -69,7 +87,7 @@ Att utöka en lösning är en vanlig form av modernisering. Detta kan vara den s
 Om ett program inte kan utökas enkelt kan du behöva återföra lösningen. I den här metoden migreras arbets belastningen till molnet. När den har migrerats ändras eller dupliceras delar av programmet, som webb tjänster eller [mikrotjänster](/azure/architecture/guide/architecture-styles/microservices), som distribueras parallellt med den befintliga lösningen. Den parallella service-baserade lösningen kan behandlas som en utökad lösning. Den här lösningen skulle helt enkelt figursätta den befintliga lösningen med en ny upplevelse som finns i molnet. I Azure skulle den här lösningen troligen leva i Azure App Services.
 
 > [!CAUTION]
-> Omstrukturering/omkonstruktion av lösningar eller Central affärs logik kan snabbt bli en tids krävande [teknisk insamling](./build.md#reduce-complexity-and-delay-technical-spikes), i stället för en källa till kund värde. Detta är en risk för innovation, särskilt tidigt i hypotes validering. Med en kreativitet i utformningen av en lösning bör det finnas en sökväg till MVP som inte kräver omfabrik av befintliga lösningar. Det är klokt att skjuta upp omstrukturering tills den första hypotesen kan val IDE ras i stor skala.
+> Omstrukturering eller omkonstruktion av lösningar eller Central affärs logik kan snabbt bli en tids krävande [teknisk insamling](./build.md#reduce-complexity-and-delay-technical-spikes), i stället för en källa till kund värde. Detta är en risk för innovation, särskilt tidigt i hypotes validering. Med en kreativitet i utformningen av en lösning bör det finnas en sökväg till MVP som inte kräver omfabrik av befintliga lösningar. Det är klokt att skjuta upp omstrukturering tills den första hypotesen kan val IDE ras i stor skala.
 
 ## <a name="operating-model-innovations"></a>Innovationer om drifts modeller
 
@@ -85,7 +103,7 @@ Det är bara att underhålla i en lösning, desto längre tid kommer lösningen 
 
 För att förbereda för många iterationer som krävs för att leverera en innovativ lösning är det viktigt att tänka på. Minimera drifts bördan tidigt i processen genom att prioritera Server alternativ.
 
-I Azure kan program utan Server alternativ innehålla [Azure App Service](https://docs.microsoft.com/azure/app-service/overview), [Service Fabric](https://docs.microsoft.com/azure/architecture/example-scenario/infrastructure/service-fabric-microservices), [behållare](https://docs.microsoft.com/azure/architecture/cloud-adoption/migrate/azure-best-practices/contoso-migration-rearchitect-container-sql)osv.
+I Azure kan program utan Server alternativ innehålla [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) eller [behållare](https://docs.microsoft.com/azure/architecture/cloud-adoption/migrate/azure-best-practices/contoso-migration-rearchitect-container-sql).
 
 I parallellt tillhandahåller Azure Data alternativ utan server, vilket också minskar kostnaderna. [Listan med databas produkter](https://docs.microsoft.com/azure/#pivot=products&panel=databases) innehåller alternativ för att vara värd för data, utan att det krävs någon fullständig data plattform.
 

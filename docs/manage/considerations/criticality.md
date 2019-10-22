@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Verksamhets kritiskhet – moln hantering och åtgärder
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/07/2019
+ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 6e372156d3fd8d765bcafeeff3a6919aa7f8ead3
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 290fcf7093f128c1415bbf960d65074d12490ae1
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557627"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683653"
 ---
 # <a name="business-criticality-in-cloud-management"></a>Affärs kritiskhet i moln hantering
 

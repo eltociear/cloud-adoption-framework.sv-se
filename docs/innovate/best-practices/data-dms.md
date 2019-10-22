@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Cloud innovation – data migration service
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/24/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 7b6d9d2bb08bd4e3e34fe1cc67f4c6a006a75bb5
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: c75efe3576bb61ecb116ab22e4946b8d87da3d4a
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557406"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683425"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Samla in data genom migreringen och modernisering av befintliga data källor
 
@@ -46,5 +46,5 @@ När du använder DMS för migrering och modernisering av data är det viktigt a
 |PostgreSQL|Azure-databas för PostgreSQL|DMS|Online|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)|
 |MondoDB|Azure Cosmos DB Mongo-API|DMS|Anslutningen|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db)|
 |MongoDB|Azure Cosmos DB Mongo-API|DMS|Online|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online)|
-|Oracle|PaaS & IaaS alternativ|Tredje part eller Azure Migrate|Önskade|[Besluts träd](../considerations/data-oracle-migration.md)|
-|Olika NoSQL-databaser|Alternativ för Cosmo DB eller IaaS|Stegvisa migreringar eller Azure Migrate|Önskade|[Besluts träd](../considerations/data-no-sql-migration.md)|
+|Oracle|PaaS & IaaS alternativ|Tredje part eller Azure Migrate|Önskade|[Besluts träd](../../migrate/expanded-scope/data-oracle-migration.md)|
+|Olika NoSQL-databaser|Alternativ för Cosmo DB eller IaaS|Stegvisa migreringar eller Azure Migrate|Önskade|[Besluts träd](../../migrate/expanded-scope/data-no-sql-migration.md)|
