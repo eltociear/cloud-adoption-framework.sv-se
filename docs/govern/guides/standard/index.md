@@ -9,20 +9,20 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 492415da236ad54b66d6aeb6b1571f623793db0a
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 059e60e44ccf393bb731005bd4a579f3e3e41951
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967643"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547591"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Standardguide för styrning av företag
 
 ## <a name="overview-of-best-practices"></a>Översikt över metodtips
 
-Den här styrningsguiden följer ett fiktivt företag under de olika stegen för styrningsmognad. Den är baserad på verkliga kundupplevelser. De rekommenderade metoderna baseras på det fiktiva företagets begränsningar och behov.
+Den här styrningsguiden följer ett fiktivt företag under de olika stegen för styrningsmognad. Den är baserad på verkliga kundupplevelser. Metodtipsen är baserade på det fiktiva företagets begränsningar och behov.
 
-Som en snabb startpunkt definierar den här översikten MVP-kraven (Minimum Viable Product) för styrning baserat på förebyggande vägledning. Den innehåller även länkar till några styrningsförbättringar som lägger till ytterligare rekommenderade metoder allt eftersom nya affärsrisker eller tekniska risker uppstår.
+Som en snabb startpunkt definierar den här översikten MVP-kraven (Minimum Viable Product) för styrning baserat på bästa praxis. Den innehåller även länkar till några styrningsförbättringar som lägger till ytterligare bästa praxis allt eftersom nya affärsrisker eller tekniska risker uppstår.
 
 > [!WARNING]
 > Denna MVP är en baslinjestartpunkt som baseras på en uppsättning antaganden. Även den här minimala uppsättningen med bästa praxis baseras på företagspolicyer som drivs av unika affärsrisker och risktoleranser. Om du vill se om dessa antaganden gäller dig kan du läsa den [längre berättelsen](./narrative.md) som efterföljer den här artikeln.
@@ -82,7 +82,7 @@ I MVP:n etableras metoder och verktyg från området [Distributionsacceleration]
 
 ## <a name="next-steps"></a>Nästa steg
 
-Nu när du är bekant med styrnings-MVP och har en uppfattning om vilka styrningsförbättringar som bör följas kan du läsa följande stödjande berättelse för att få ytterligare kontext.
+Nu när du är bekant med styrnings-MVP och har en uppfattning om vilka styrningsförbättringar du bör göra kan du läsa den relaterade berättelsen för att få ytterligare sammanhang.
 
 > [!div class="nextstepaction"]
 > [Läs den stödjande berättelsen](./narrative.md)

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8323a8bded4f2cc1d24407fa3326abf3b96ef810
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 65c7d342aa201f06e3b38ed25e933ba7d6a471b1
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967700"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547839"
 ---
 # <a name="azure-regions"></a>Azure-regioner
 
@@ -51,9 +51,9 @@ En robust molndistribution kräver ett välfungerande nätverk som tar hänsyn t
     > [!WARNING]
     > Försök inte utnyttja Azure GRS för säkerhetskopiering eller återställning av virtuella datorer. Använd i stället [Azure Backup](https://azure.microsoft.com/services/backup) och [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) tillsammans med [Managed Disks](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) för att stödja återhämtningen av dina IaaS-arbetsbelastningar.
 2. Azure Backup och Azure Site Recovery fungerar tillsammans med din nätverksdesign för att underlätta regional återhämtning för dina behov av IaaS- och datasäkerhetskopiering. Kontrollera att nätverket är optimerat så att dataöverföringarna sker i Microsofts stamnät och utnyttja [VNet-peering](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) om möjligt. Vissa större organisationer med globala distributioner kan i stället använda [ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) för att dirigera trafik mellan regioner, vilket kan innebära lägre regionala avgifter för utgående trafik.
-3. Azures resursgrupper är regionsspecifika konstruktioner. Det är normalt att resurser inom en resursgrupp sträcker sig över flera regioner. Tänk på att, om det uppstår problem i en region, så misslyckas åtgärder i kontrollplanet i den berörda regionen, även om resurserna i andra regioner (i den aktuella resursgruppen) fortsätter fungera. Detta kan påverka både ditt nätverk och din resursgruppsdesign.
-4. Många PaaS-tjänster i Azure har stöd för [tjänstslutpunkter](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) och/eller [Private Link](https://docs.microsoft.com/azure/private-link/private-link-overview). Båda dessa lösningar påverkar dina nätverksstrategier avsevärt med avseende på regional återhämtning, migrering och styrning.
-5. Många PaaS-tjänster är beroende av egna regionala återhämtningslösningar. Azure SQL Database kan till exempel enkelt replikera till N ytterligare regioner, vilket är fallet med CosmosDB. Vissa tjänster är regionsoberoende, t.ex. Azure DNS. När du funderar på vilka tjänster du kommer att använda i implementeringen är det viktigt att du förstår redundansfunktionerna och återställningsstegen som krävs för respektive Azure-tjänst.
+3. Azures resursgrupper är regionsspecifika konstruktioner. Det är normalt att resurser inom en resursgrupp sträcker sig över flera regioner. Om det uppstår problem i en region så misslyckas åtgärder i kontrollplanet i den berörda regionen, vilket är viktigt att komma ihåg, även om resurserna i andra regioner (i den aktuella resursgruppen) fortsätter fungera. Detta kan påverka både ditt nätverk och din resursgruppsdesign.
+4. Många PaaS-tjänster i Azure har stöd för [tjänstslutpunkter](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) och [Private Link](https://docs.microsoft.com/azure/private-link/private-link-overview). Båda dessa lösningar påverkar dina nätverksstrategier avsevärt med avseende på regional återhämtning, migrering och styrning.
+5. Många PaaS-tjänster är beroende av egna regionala återhämtningslösningar. Azure SQL Database kan till exempel enkelt replikera till N ytterligare regioner, vilket är fallet med Cosmos DB. Vissa tjänster är regionsoberoende, t.ex. Azure DNS. När du funderar på vilka tjänster du kommer att använda i implementeringen är det viktigt att du förstår redundansfunktionerna och återställningsstegen som krävs för respektive Azure-tjänst.
 6. Förutom att distribuera i flera regioner för att stödja haveriberedskap väljer många organisationer att distribuera i ett ”aktiv-aktiv”-mönster så att ingen redundans krävs. Detta har den extra fördelen med att tillhandahålla global belastningsutjämning, ytterligare feltolerans och bättre nätverksprestanda. För att kunna dra nytta av det här mönstret måste dina program ha stöd för körning av ”aktiv-aktiv” i flera regioner.
 
 > [!WARNING]
@@ -62,10 +62,10 @@ En robust molndistribution kräver ett välfungerande nätverk som tar hänsyn t
 När du har kommit fram till vilken nätverkstopologi som krävs måste du gå igenom ytterligare dokumentations- och processteg. Följande metod kan underlätta vid utvärdering av potentiella utmaningar och fastställa en allmän åtgärdsplan:
 
 - Överväg en robustare implementering för beredskap och styrning.
-- Gör en inventering av de berörda områdena. Sätt ihop en lista över regioner och länder som påverkas.
-- Dokumentera krav på datasuveränitet: Har de länder som identifierats krav som påverkar datasuveräniteten?
-- Dokumentera användarbasen: Kommer anställda, partner eller kunder i det identifierade landet att påverkas av molnmigreringen?
-- Dokumentera datacenter och tillgångar: Finns det tillgångar i det identifierade landet som kan beröras av migreringsarbetet?
+- Gör en inventering av de berörda områdena. Sätt ihop en lista med de regioner och länder som påverkas.
+- Dokumentera kraven på datasuveränitet. Har de länder som identifierats krav som påverkar datasuveräniteten?
+- Dokumentera användarbasen. Kommer anställda, partner eller kunder i det identifierade landet att påverkas av molnmigreringen?
+- Dokumentera datacenter och tillgångar. Finns det tillgångar i det identifierade landet som kan beröras av migreringsarbetet?
 - Dokumentera krav på regional SKU-tillgänglighet och redundans.
 
 Genomför ändringar i migreringsprocessen för att hantera den inledande inventeringen.

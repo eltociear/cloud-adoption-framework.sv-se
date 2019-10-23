@@ -8,12 +8,12 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f4e8f8c1ef9a145fc1497727738d6d12e8f13d7b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 88f844cb0a80971457beeb8814a109d70bb5d814
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025075"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547927"
 ---
 # <a name="mainframe-migration-overview"></a>Översikt över stordatormigrering
 
@@ -27,7 +27,7 @@ De flesta Fortune 500-företag kör redan Azure för sina kritiska arbetsbelastn
 
 ## <a name="intended-audience"></a>Målgrupp
 
-Om du överväger att använda en migrering eller lägga till molntjänster som ett alternativ för din IT-miljö är den här guiden för dig.
+Om du överväger en migrering eller att lägga till molntjänster som ett alternativ för din IT-miljö är den här guiden för dig.
 
 Den här guiden hjälper IT-organisationer att börja diskutera en migrering. Du kanske är mer bekant med Azure och molnbaserade infrastrukturer än stordatorer, så den här guiden börjar med en översikt över hur stordatorer fungerar och fortsätter med olika strategier för att avgöra vad och hur du ska migrera.
 

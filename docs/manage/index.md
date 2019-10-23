@@ -1,48 +1,146 @@
 ---
-title: Introduktion till åtgärdshantering
+title: Molnhantering
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Förstå driftshantering i Cloud Adoption Framework.
+description: Molnhantering i Cloud Adoption Framework
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 05/19/2019
-ms.topic: article
+ms.date: 10/07/2019
+ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.custom: manage
-ms.openlocfilehash: 96f87583f50783fa0c6a8c947aa8b34ae440fc95
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+layout: LandingPage
+ms.openlocfilehash: 2ae964d2b145a9d241cc647b939771f219b0379e
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221437"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547287"
 ---
-# <a name="establishing-operational-management-practices-in-the-cloud"></a>Upprätta metoder för driftshantering i molnet
+# <a name="cloud-management-in-the-cloud-adoption-framework"></a>Molnhantering i Cloud Adoption Framework
 
-Molnimplementering är en katalysator för att skapa affärsvärde. Dock realiseras verkligt affärsvärde genom löpande, stabil drift av de tekniktillgångar som distribueras till molnet. Det här avsnittet om Cloud Adoption Framework vägleder läsaren genom olika övergångar till driftshantering i molnet.
+För att en [molnstrategi](../strategy/index.md) ska lyckas krävs det en gedigen planering, beredskap och implementering. Det är dock den kontinuerliga driften av de digitala tillgångarna som ger mätbara affärsresultat. Utan en plan för en tillförlitlig och välhanterad drift av molnlösningarna kommer du inte få ut mycket av dina ansträngningar. I följande övningar får du hjälp att utveckla de verksamhetsmässiga och tekniska metoder du behöver för en molnhantering som stödjer den kontinuerliga driften.
 
-## <a name="actionable-best-practices"></a>Användbara metodtips
+## <a name="getting-started"></a>Komma igång
 
-Moderna lösningar för åtgärdshantering ger tillgång till en vy över åtgärder i flera moln. Tillgångar som hanteras via följande rekommenderade metoder kan lagras i molnet, i ett befintligt datacenter eller rentav hos en konkurrerande molnleverantör. Ramverket innehåller för närvarande två rekommenderade metoder för åtgärdshantering i molnet:
+Om du vill förbereda dig för den här fasen av molnimplementeringens livscykel rekommenderar ramverket följande övningar:
 
-- [Azure-serverhantering](./azure-server-management/index.md): Introduktionsguide för att införa molnbaserade verktyg och tjänster som behövs för åtgärdshantering.
-- [Hybridövervakning](./monitor/index.md): Många kunder har redan gjort betydande investeringar i System Center Operations Manager. Den här guiden för hybridövervakning hjälper dessa kunder att jämföra och kontrastera de molnbaserade rapporteringsverktygen med Operations Manager-verktyg. Den här jämförelsen gör det lättare att bestämma vilka verktyg som ska användas för driftshantering.
+<!-- markdownlint-disable MD033 -->
+<ul class="panelContent cardsF">
+    <li style="display: flex; flex-direction: column;">
+        <a href="./azure-management-guide/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Upprätta en baslinje för hanteringen</h3>
+Definiera de kritiska klassificeringar, molnhanteringsverktyg och processer som krävs för att du ska kunna leverera grundåtagandet till drifthanteringen.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./considerations/business-alignment.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Definiera verksamhetsåtaganden</h3>
+Dokumentera vilka arbetsbelastningar som stöds och upprätta driftsåtaganden för verksamheten och kom överens om vilka investeringar i molnhanteringen som ska göras för respektive arbetsbelastning.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./best-practices.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Utöka baslinjen för hantering</h3>
+Utgå från besluten kring verksamhetsåtaganden och driften och använd metodtipsen till att implementera verktygen som behövs för molnhanteringen.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./design-principles.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Avancerade principer för drift och design</h3>
+För plattformar och arbetsbelastningar som behöver större verksamhetsåtaganden kan du behöva granska arkitekturen närmare för att förbättra stabiliteten och tillförlitligheten.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
+<!-- markdownlint-enable MD033 -->
 
-## <a name="cloud-operations"></a>Molnåtgärder
+## <a name="scalable-cloud-management-methodology"></a>Metod för skalbar molnhantering
 
-Båda dessa metoder syftar till att främja metodik för framtida tillstånd för driftshantering.
+Stegen ovan är ett praktiskt genomförbart sätt att använda hanteringsmetoden i Cloud Adoption Framework.
 
-![Metodik för CAF-hantering](../_images/manage/caf-manage.png)
+![Hanteringsmetoden i Cloud Adoption Framework](../_images/manage/caf-manage.png)
 
-**Affärsanpassning:** I hanteringsmetodiken klassificeras alla arbetsbelastningar efter allvarlighetsgrad och affärsvärde. Denna klassificering kan sedan mätas via en konsekvensanalys som beräknar det förlorade värde som är associerat med prestandaförsämring eller avbrott i verksamheten. Med hjälp av den praktiska intäktsinverkan kan teamet för molndrift arbeta med verksamheten för att upprätta ett åtagande som balanserar kostnad och prestanda.
+## <a name="creating-a-balanced-cloud-portfolio"></a>Skapa en balanserad molnportfölj
 
-**Områden inom molnverksamhet:** När företaget har anpassats är det mycket enklare att spåra och rapportera om rätt områden för molnverksamheten för varje arbetsbelastning. Genom att fatta beslut inom varje område kan du genomdriva tydliga affärsprojekt. Det här sättet att samarbeta gör att affärsintressenten blir en partner vad gäller att hitta rätt balans mellan kostnad och prestanda.
+Precis som det står i artikeln om [anpassning av verksamheten](./considerations/business-alignment.md) så är inte alla arbetsbelastningar verksamhetskritiska. Alla portföljer innehåller olika viktiga arbetsbelastningar. Verksamhetsanpassningen handlar om att fånga upp den här faktorn och att anpassa hanteringskostnaderna efter verksamheten så att bästa möjliga processer och verktyg används i driftshanteringen.
 
-- **Inventering och synlighet:** Åtgärdshantering kräver minst ett sätt att inventera tillgångar och skapa insyn i varje tillgångs körningstillstånd.
-- **Verksamhetsefterlevnad:** Regelbunden hantering av konfiguration, storleksbestämning, kostnader och prestanda för tillgångar är nyckeln till att uppfylla förväntningarna om prestanda.
-- **Skydda och återställa:** Genom att minimera driftsavbrott och påskynda återställning går det att undvika prestandaförluster och inverkan på intäkterna. Identifiering och återställning är viktiga aspekter inom det här området.
-- **Plattformsdrift:** Alla IT-miljöer innehåller en uppsättning plattformar som används ofta. Dessa plattformar kan omfatta datalager såsom SQL Server eller HDInsights. Andra vanliga plattformar kan omfatta containerlösningar såsom Kubernetes eller AKS. Oavsett plattformarna fokuserar mognad i plattformsdriften på anpassning av verksamheter som baseras på hur dessa vanliga plattformar distribueras, konfigureras och används av arbetsbelastningar.
-- **Arbetsbelastningsåtgärder:** På den högsta nivån av operativ mognad kan teamen för molnverksamhet justera åtgärder för arbetsbelastningar som är viktiga för företagets resultat. För dessa viktiga arbetsbelastningar kan tillgängliga data hjälpa till med automatisering av åtgärder, storleksbestämning eller skydd av arbetsbelastningar baserat på deras användning.
+## <a name="objective-of-this-content"></a>Det här innehållets mål
 
-Ytterligare vägledning som [Designa granskningsramverk (kodnamn: Molndesignprinciper)](https://docs.microsoft.com/azure/architecture/reliability) kan underlätta detaljerat beslutsfattande om arkitektur för varje arbetsbelastning inom vart och ett av ovanstående områden.
+Riktlinjerna i det här avsnittet om Cloud Adoption Framework har två syften:
 
-I det här avsnittet om Cloud Adoption Framework tar vi upp var och en av dessa aspekter som bidrar till molnimplementeringen i din organisation.
+- Ge exempel på praktiskt tillämpbara metoder för driftshantering som motsvarar vanliga kundscenarier.
+- Hjälpa dig att skapa anpassade hanteringslösningar baserade på dina verksamhetsåtaganden.
+
+Det här innehållet är avsett för teamet som ansvarar för molndriften. Det är även relevant för molnarkitekter som behöver förbättra sin kompetens inom molndrift och molndesign.
+
+## <a name="intended-audience"></a>Målgrupp
+
+Innehållet i Cloud Adoption Framework berör verksamheten, tekniken och kulturen hos företag. Det här avsnittet av Cloud Adoption Framework är nära knutet till IT-drift, IT-styrning, ekonomi, verksamhetschefer, nätverk, identiteter och teamen för molnimplementering. Eftersom de här personalgrupperna ofta är beroende av varandra måste molnarkitekterna använda en process med stor delaktighet. Den här delaktigheten är sällan en engångsföreteelse.
+
+Molnarkitekten fungerar som strateg och ledare när de här personalgrupperna sammanförs. Innehållet i den här samlingen guider är utformat för att hjälpa molnarkitekten att leda diskussionen så att rätt beslut kan fattas. När det gäller affärsomvandlingar som drivs av molnet måste molnarkitekten ge beslutsstöd till både IT och verksamheten i stort.
+
+**Molnarkitektsspecialisering i det här avsnittet:** Varje avsnitt av Cloud Adoption Framework representerar en viss specialisering eller variant av molnarkitektens roll. Det här avsnittet av Cloud Adoption Framework är utformat för molnarkitekter med intresse för drift och hantering av distribuerade lösningar. I det här sammanhanget kallas dessa specialister ofta för *molndriften* eller kollektivt som *molndriftteamet*.
+
+## <a name="use-this-guide"></a>Använd den här guiden
+
+Om du vill följa guiden från början till slut så får du hjälp att utveckla en robust strategi för molndriften. Vägledningen guidar dig genom teori och implementering av en sådan strategi.
+
+<!-- For a crash course on the theory and quick access to Azure implementation, get started with the [governance guides overview](./guide/index.md). Using this guidance, you can start small and iteratively improve your governance needs in parallel with cloud adoption efforts. -->
+
+## <a name="next-steps"></a>Nästa steg
+
+Använd metoden till att [upprätta tydliga verksamhetsåtaganden](./considerations/business-alignment.md).
+
+> [!div class="nextstepaction"]
+> [Upprätta tydliga verksamhetsåtaganden](./considerations/business-alignment.md)

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: c7d019cc7264ba972252b6182d4f2c10d7b91f43
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: d6e95ebec986d0a4af29ec70332f1c6fcb3518f2
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967595"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547580"
 ---
 # <a name="cloud-governance-guides"></a>Molnstyrningsguider
 
@@ -71,6 +71,8 @@ Välj något av följande två alternativ för att påbörja en styrningsresa. A
 > [!WARNING]
 > En mer stabil startpunkt för styrningen kan krävas. I sådana fall bör du överväga att [Azure Virtual Datacenter](#azure-virtual-datacenter)-metoden som beskrivs kortfattat [nedan](#azure-virtual-datacenter). Den här metoden rekommenderas ofta för implementeringar i företagsskala, särskilt för implementeringar som överstiger 10 000 tillgångar. Det är också det naturliga valet i komplexa styrningsscenarier när något av följande krävs: omfattande krav på efterlevnad med tredje part, djupgående domänexpertis eller paritet med mogna IT-styrningsprinciper och efterlevnadskrav.
 
+<!-- markdownlint-disable MD028 -->
+
 > [!NOTE]
 > Det är osannolikt att en guide helt överensstämmer med din situation. Välj den guide som mest liknar din situation och använd den som startpunkt. Ytterligare information ges under hela guiden så att du kan anpassa beslut efter specifika villkor.
 
@@ -96,7 +98,7 @@ Välj något av följande två alternativ för att påbörja en styrningsresa. A
 | Status | Standardorganisation | Komplext företag |
 |---|---|---|
 | Kostnadshantering – molnredovisning | Showback-modell. Faktureringen är centraliserad via IT. | Återbetalningsmodell. Faktureringen kan distribueras via IT-inköp. |
-| Säkerhetsbaslinje – skyddade data | Finansiella företagsdata och IP. Begränsade kunddata. Inga krav på efterlevnad från tredje part. | Flera samlingar av kunders finansiella och personliga data. Kan behöva tänka på efterlevnadskrav från tredje part. |
+| Säkerhetsbaslinje – skyddade data | Finansiella företagsdata och IP. Begränsade kunddata. Inga krav på efterlevnad från tredje part. | Flera samlingar med kunders finansiella och personliga data. Kan behöva tänka på efterlevnadskrav från tredje part. |
 
 ## <a name="azure-virtual-datacenter"></a>Azure Virtual Datacenter
 

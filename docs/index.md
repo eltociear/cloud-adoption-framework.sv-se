@@ -7,29 +7,17 @@ ms.custom: homepage
 layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
-ms.date: 07/04/2019
-ms.openlocfilehash: 19a0b45359fb271d5d4d1355f0bf147f396dc976
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.date: 10/14/2019
+ms.openlocfilehash: 73012184e5eab2592cfbeac1e9b5f294284ae270
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72377947"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547966"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Microsoft Cloud Adoption Framework för Azure
 
-Cloud Adoption Framework är Microsofts metod för molnimplementering i Azure, som bygger på bästa praxis från Microsofts anställda, partner och kunder. Det här ramverket förser företagskunder med verktyg, vägledning och berättelser som bidrar till att forma strategier för teknik, företag och människor för att uppnå önskade affärsresultat under implementeringen. Den här vägledningen ger riktlinjer för olika faser och iterationer för en normal livscykel för molnimplementering, och garanterar enkel åtkomst till rätt vägledning vid rätt tidpunkt.
-
-![Översikt över Cloud Adoption Framework](./_images/caf-overview.png)
-
-## <a name="getting-started-executive-summaries"></a>Komma igång: Sammanfattningar
-
-Vi erbjuder tre introduktionsartiklar till kunder som inte har tidigare erfarenhet av Cloud Adoption Framework: [Migrera](./getting-started/migrate.md), [Förnya](./getting-started/innovate.md) och [Aktivera](./getting-started/enable.md). Varje artikel innehåller en sammanfattning och en övergripande resa genom företagets implementeringslivscykel.
-
-Mer specifik information finns på länkarna för respektive fas i integreringsprocessen.
-
-## <a name="use-the-cloud-adoption-framework-throughout-the-adoption-lifecycle"></a>Använd Cloud Adoption Framework under hela integreringsprocessen
-
-Varje Cloud Adoption Framework-avsnitt är länkat till översiktsdiagrammet ovan. Den här listan leder dig till det avsnitt som bäst överensstämmer med din nuvarande fas i molnimplementeringsprocessen.
+Cloud Adoption Framework är Microsofts metod för molnimplementering i Azure, som bygger på bästa praxis från Microsofts anställda, partner och kunder. Det här ramverket förser kunder med verktyg, vägledning och berättelser som bidrar till att forma strategier för teknik, företag och människor för att uppnå önskade affärsresultat under implementeringen. Den här vägledningen ger riktlinjer för följande faser under livscykeln för molnimplementering, så att du enkelt kommer åt den vägledning du behöver vid rätt tidpunkt.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -98,12 +86,31 @@ Förbered molnmiljön för de planerade ändringarna.
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img alt="" src="./_images/caf-adopt.png" data-linktype="external">
+                                <img alt="" src="./_images/caf-migrate.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Migrera</h3>
 Migrera och modernisera befintliga arbetsbelastningar.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./innovate/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="./_images/caf-adopt.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Förnya</h3>
+Utveckla nya moln- och hybridlösningar.
                         </div>
                     </div>
                 </div>
@@ -130,13 +137,32 @@ Reglera miljö och arbetsbelastningar.
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./organize/index.md">
+        <a href="./manage/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
                                 <img alt="" src="./_images/caf-manage.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Hantera</h3>
+Drift hantering för moln- och hybridlösningar.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./organize/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="./_images/caf-organize.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
@@ -150,16 +176,11 @@ Anpassa personer om du vill aktivera molnimplementering och åtgärder.
     </li>
 </ul>
 
-## <a name="product-roadmap"></a>Produktöversikt
+## <a name="understanding-the-lifecycle"></a>Förstå livscykeln
 
-Cloud Adoption Framework erbjuds för närvarande som en offentlig förhandsversion. Ramverket får allmän tillgänglighet (GA) när avsikten nedan har uppnåtts till fullo. I den här förhandsversionen är de viktigaste områdena:
+Var och en av faserna som beskrivs ovan ingår i molnimplementeringens livscykel. I den här bilden försöker vi skildra hela livscykeln genom att koppla samman faserna. Cloud Adoption Framework är ett ramverk för hela livscykeln där kunderna ges stöd under var och en av faserna.
 
-- [Molnimplementeringsstrategi](./strategy/index.md)
-- [Molnimplementeringsplanering](./plan/index.md)
-- [Molnmigrering](./migrate/index.md)
-- [Molnstyrning](./govern/guides/index.md)
-
-Cloud Adoption Framework kommer att expanderas ofta under den tid då det närmar sig allmän tillgänglighet. Detta kommer att tillföra djup till avsnitten samt nya innehållsavsnitt. Mer information finns i [översikten för Cloud Adoption Framework](./reference/index.md).
+![Översikt över Cloud Adoption Framework](./_images/caf-overview.png)
 
 ## <a name="intent"></a>Avsikt
 
@@ -179,9 +200,7 @@ Avsnitt av Cloud Adoption Framework representerar olika specialiseringar eller v
 
 ## <a name="how-to-use-the-microsoft-cloud-adoption-framework-for-azure"></a>Så använder du Microsoft Cloud Adoption Framework för Azure
 
-Om Azure är nytt för ditt företag kan du börja med att läsa avsnittet [Kom igång med Cloud Adoption Framework](./getting-started/migrate.md). Den här översikten ger riktlinjer för ditt företags digitala omvandling med vägledning genom varje steg i processen.
-
-Om ditt företag har erfarenhet av Azure och söker mer detaljerad vägledning och metodtips för specifika områden kan du läsa [styrningsöversikten](./govern/index.md) och [beslutsguiderna för arkitekturer](./decision-guides/index.md). Vi kommer att lägga till fler avsnitt under tiden fram till allmän tillgänglighet.
+Om Azure är nytt för ditt företag kan du börja med att läsa avsnittet [Kom igång med Cloud Adoption Framework](./getting-started/migrate.md). Den här översikten ger riktlinjer för företagets digitala omvandling, och du får vägledning genom varje steg i processen.
 
 > [!div class="nextstepaction"]
 > [Kom igång](./getting-started/migrate.md)

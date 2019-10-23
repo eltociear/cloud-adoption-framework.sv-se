@@ -10,18 +10,19 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 124b308538161423c3f1b0c34f9834f4454c1e69
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: f2954bafecf542d9fc62587ca051c4cd527ef620
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378372"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548925"
 ---
 # <a name="before-you-start"></a>Innan du börjar
 
 ::: zone target="docs"
+
 > [!NOTE]
-> Den här guiden är en startpunkt för vägledningen kring beredskap i Cloud Adoption Framework och är även tillgänglig i Azures snabbstartscenter (se tipset nedan). I tipset i artikeln finns en länk.
+> Den här guiden är en utgångspunkt för vägledningen kring innovation i Cloud Adoption Framework. Du hittar den även i Azures Snabbstartscenter. I tipset senare i artikeln finns en länk till Azures snabbstartscenter.
 
 ::: zone-end
 
@@ -62,6 +63,6 @@ Nästa steg: [Organisera dina resurser för att förenkla hur du tillämpar inst
 
 ::: zone target="chromeless"
 
-Den här guiden innehåller interaktiva steg där du kan prova funktioner när de är introduceras. Om du vill börja om där du slutade använder du navigeringslänken.
+Den här guiden innehåller interaktiva steg där du kan prova funktionerna i takt med att de introduceras. Om du vill börja om där du slutade använder du navigeringslänken.
 
 ::: zone-end
