@@ -10,27 +10,31 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: f2954bafecf542d9fc62587ca051c4cd527ef620
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: c344751d8db08a84efdcaddc32a48f6326d1ac3f
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548925"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72698510"
 ---
-# <a name="before-you-start"></a>Innan du börjar
-
 ::: zone target="docs"
+
+# <a name="azure-setup-guide-before-you-start"></a>Konfigurationsguide för Azure: Innan du börjar
 
 > [!NOTE]
 > Den här guiden är en utgångspunkt för vägledningen kring innovation i Cloud Adoption Framework. Du hittar den även i Azures Snabbstartscenter. I tipset senare i artikeln finns en länk till Azures snabbstartscenter.
 
 ::: zone-end
 
+::: zone target="docs"
+
+# <a name="before-you-start"></a>Innan du börjar
+
+::: zone-end
+
 Innan du börjar skapa och distribuera lösningar med hjälp av Azure-tjänster måste du förbereda din miljö. I den här guiden presenterar vi olika funktioner som hjälper dig att organisera resurser, kontrollera kostnader samt skydda och hantera organisationen. Mer information, metodtips och överväganden när det gäller att förbereda din molnmiljö finns i avsnittet om [Cloud Adoption Framework-beredskap](../index.md).
 
 Du lär dig följande:
-
-::: zone target="chromeless"
 
 > [!div class="checklist"]
 >
@@ -41,18 +45,7 @@ Du lär dig följande:
 > - **Använd övervakning och rapportering:** Få en överblick över dina resurser så att du kan identifiera och åtgärda problem, optimera prestanda och få insikt i kundernas beteende.
 > - **Håll dig uppdaterad med Azure:** Håll koll på produktuppdateringar så att du kan hantera eventuella ändringar proaktivt.
 
-::: zone-end
-
 ::: zone target="docs"
-
-> [!div class="checklist"]
->
-> - **Organisera resurser.** Ordna en hanteringshierarki för åtkomstkontroll, principer och efterlevnad för grupper av resurser och använd märkning till att spåra relaterade resurser.
-> - **Hantera åtkomst.** Använd rollbaserad åtkomstkontroll för att se till att användarna bara har de behörigheter som verkligen behövs.
-> - **Hantera kostnader och fakturering.** Identifiera din prenumerationstyp, förstå hur faktureringen fungerar och se hur du kan kontrollera dina kostnader.
-> - **Planera styrning, säkerhet och efterlevnad.** Tillämpa och automatisera principer och säkerhetsinställningar som hjälper dig att följa gällande lagstiftning.
-> - **Använd övervakning och rapportering.** Få en överblick över dina resurser så att du kan identifiera och åtgärda problem, optimera prestanda och få insikt i kundernas beteende.
-> - **Håll dig uppdaterad med Azure.** Håll koll på produktuppdateringar så att du kan hantera eventuella ändringar proaktivt.
 
 > [!TIP]
 > Visa den här guiden i Azure-portalen om du vill ha en interaktiv upplevelse. Gå till [Azures snabbstartcenter](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) i Azure-portalen och **Introduction to Azure Setup** (Introduktion till Azure-inställningar). Följ sedan instruktionerna.
