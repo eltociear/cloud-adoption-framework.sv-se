@@ -192,7 +192,7 @@
               href: migrate/index.md
             - name: Guide för Azure-migrering
               items:
-                - name: Introduktion till guiden för Azure-migrering
+                - name: Innan du börjar
                   href: migrate/azure-migration-guide/index.md
                 - name: Förhandskrav för Azure-migrering
                   href: migrate/azure-migration-guide/prerequisites.md
@@ -334,7 +334,7 @@
                           href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-zerto?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Konfigurera privat moln som en haveriberedskapsplats med hjälp av VMware SRM
                           href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-site-recovery-manager?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                - name: Regelverk för migrering av SQL-servrar
+                - name: Regelverk för migrering av dataplattformar
                   items:
                     - name: Översikt
                       href: migrate/azure-best-practices/sql-migration.md
@@ -418,16 +418,16 @@
                           href: 'https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Migrera Oracle till Azure DB for PostgreSQL online
                           href: 'https://docs.microsoft.com/azure/dms/tutorial-oracle-azure-postgresql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: Stordatormigrering
-                      items:
-                        - name: Översikt
-                          href: infrastructure/mainframe-migration/index.md
-                        - name: Myter och fakta
-                          href: infrastructure/mainframe-migration/myths-and-facts.md
-                        - name: Migreringsstrategier
-                          href: infrastructure/mainframe-migration/migration-strategies.md
-                        - name: Tillämpningsstrategier
-                          href: infrastructure/mainframe-migration/application-strategies.md
+                - name: Regelverk för migrering av stordatorer
+                  items:
+                    - name: Översikt
+                      href: infrastructure/mainframe-migration/index.md
+                    - name: Myter och fakta
+                      href: infrastructure/mainframe-migration/myths-and-facts.md
+                    - name: Migreringsstrategier
+                      href: infrastructure/mainframe-migration/migration-strategies.md
+                    - name: Tillämpningsstrategier
+                      href: infrastructure/mainframe-migration/application-strategies.md
                 - name: Regelverk för att optimera arbetsbelastningar
                   items:
                     - name: Hantera kostnader och ändra storlek på arbetsbelastningar
@@ -546,7 +546,7 @@
               href: innovate/index.md
             - name: Guide till Azure-innovation
               items:
-                - name: Introduktion
+                - name: Innan du börjar
                   href: innovate/innovation-guide/index.md
                 - name: Förbereda för kundfeedback
                   href: innovate/innovation-guide/adoption.md
@@ -654,40 +654,6 @@
                   items:
                     - name: Översikt
                       href: innovate/best-practices/apps.md
-                    - name: Molnbaserat
-                      items:
-                        - name: Molnbaserade appar
-                          items:
-                            - name: Referenslösningar för molnbaserade appar
-                              href: 'https://azure.microsoft.com/solutions/architecture/?product=app-service'
-                            - name: Skapa en .NET Core-app med SQL DB
-                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnetcore-sqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                            - name: Skapa en .NET-app med SQL DB
-                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                            - name: Skapa en PHP-app med MySQL
-                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-php-mysql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                            - name: Skapa en Node.js med MongoDB
-                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-nodejs-mongodb-app?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                            - name: Skapa en iOS-app
-                              href: 'https://docs.microsoft.com/azure/app-service-mobile/app-service-mobile-ios-get-started?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: Mikrotjänster
-                          items:
-                            - name: 'Utforma, skapa och använda mikrotjänster i Azure'
-                              href: 'https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                            - name: Referensarkitektur för mikrotjänster i Service Fabric
-                              href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/microservices/service-fabric?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                            - name: Referensarkitektur för mikrotjänster i AKS (Azure Kubernetes Service)
-                              href: 'https://docs.microsoft.com/azure/architecture/azure/architecture/reference-architectures/microservices/aks?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                            - name: Guide till att utforma Azure-appar
-                              href: 'https://docs.microsoft.com/azure/architecture/guide?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: Migrera/modernisera och sedan förnya
-                      items:
-                        - name: 'Migrera arbetsbelastningar (appar, virtuella datorer och data)'
-                          href: 'https://azure.microsoft.com/migration/'
-                        - name: Migrera en befintlig app med AKS (Azure Managed Kubernetes Services)
-                          href: 'https://azure.microsoft.com/solutions/architecture/migrate-existing-applications-with-aks/'
-                        - name: Utöka äldre data med Azure Stack och molnbaserade appar
-                          href: 'https://azure.microsoft.com/solutions/architecture/unlock-legacy-data/'
                     - name: Medborgarutvecklare
                       items:
                         - name: Skapa appar i PowerApps
@@ -700,28 +666,58 @@
                           href: 'https://docs.microsoft.com/power-platform/admin/wp-compliance-data-privacy?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Policyer för att förhindra dataförluster i lösningar med medborgarutvecklare
                           href: 'https://docs.microsoft.com/power-platform/admin/wp-data-loss-prevention?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: Moderna webbupplevelser
+                    - name: Intelligenta upplevelser
                       items:
-                        - name: Referenslösningar för molnbaserade appar
-                          href: 'https://azure.microsoft.com/solutions/architecture/?product=app-service'
-                        - name: Skapa en .NET Core-app med SQL DB
-                          href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnetcore-sqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: Skapa en .NET-app med SQL DB
-                          href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: Skapa en PHP-app med MySQL
-                          href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-php-mysql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: Skapa en Node.js med MongoDB
-                          href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-nodejs-mongodb-app?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Moderna webbappar
+                          items:
+                            - name: Referenslösningar för webbappar
+                              href: 'https://azure.microsoft.com/solutions/architecture/?product=app-service'
+                            - name: Skapa en .NET Core-app med SQL DB
+                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnetcore-sqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Skapa en .NET-app med SQL DB
+                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Skapa en PHP-app med MySQL
+                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-php-mysql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Skapa en Node.js med MongoDB
+                              href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-nodejs-mongodb-app?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Berika med intelligens
+                          items:
+                            - name: Visuellt innehåll i Visual Studio
+                              href: 'https://docs.microsoft.com/azure/cognitive-services/computer-vision/vs-computer-vision-connected-service'
+                            - name: Översätta text i realtid
+                              href: 'https://docs.microsoft.com/azure/cognitive-services/translator/quickstart-translate'
+                            - name: Förstå attitydanalyser med hjälp av LUIS
+                              href: 'https://docs.microsoft.com/azure/cognitive-services/luis/luis-quickstart-intent-and-sentiment-analysis'
+                            - name: Konvertera tal till text
+                              href: 'https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstart-csharp-dotnet-windows'
+                            - name: Webbsökning i Bing
+                              href: 'https://docs.microsoft.com/azure/cognitive-services/bing-web-search/tutorial-bing-web-search-single-page-app'
+                            - name: Visuell sökning från bilder
+                              href: 'https://docs.microsoft.com/azure/cognitive-services/bing-visual-search/index'
+                        - name: Chattrobotar
+                          items:
+                            - name: Skapa och distribuera en grundläggande robot
+                              href: 'https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-basic-deploy'
+                            - name: Utbildningsväg – skapa robotar med Azure Bot Service
+                              href: 'https://docs.microsoft.com/learn/paths/create-bots-with-the-azure-bot-service/'
+                            - name: Lagringsplats – Azures robotexempel på GitHub
+                              href: 'https://github.com/microsoft/botframework-sdk'
                     - name: Molnbaserade appar
                       items:
                         - name: Arkitektur för mikrotjänster
                           items:
-                            - name: Referensarkitektur för mikrotjänster i AKS (Azure Kubernetes Service)
-                              href: 'https://docs.microsoft.com/azure/architecture/azure/architecture/reference-architectures/microservices/aks?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: Containrar
-                          items:
                             - name: 'Utforma, skapa och använda mikrotjänster i Azure'
                               href: 'https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Referensarkitektur för mikrotjänster i AKS (Azure Kubernetes Service)
+                              href: 'https://docs.microsoft.com/azure/architecture/azure/architecture/reference-architectures/microservices/aks?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Referensarkitektur – exempel på serverlösa mikrotjänster
+                              href: 'https://docs.microsoft.com/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Containrar
+                          items:
+                            - name: Vad är Kubernetes?
+                              href: 'https://azure.microsoft.com/topic/what-is-kubernetes/'
+                            - name: Förbered ett program för Azure Kubernetes Service (AKS)
+                              href: 'https://docs.microsoft.com/azure/aks/tutorial-kubernetes-prepare-app?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                             - name: Skapa ett Azure Red Hat OpenShift-kluster
                               href: 'https://docs.microsoft.com/azure/openshift/tutorial-create-cluster?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Mikrotjänster för Spring Boot
@@ -732,6 +728,16 @@
                               href: 'https://docs.microsoft.com/azure/spring-cloud/spring-cloud-tutorial-distributed-tracing?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                             - name: Binda en Azure Cosmos DB till din Azure Spring Cloud-app
                               href: 'https://docs.microsoft.com/azure/spring-cloud/spring-cloud-tutorial-bind-cosmos?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        - name: Händelsedrivna program
+                          items:
+                            - name: Utbildningsväg – skapa serverlösa program
+                              href: 'https://docs.microsoft.com/learn/paths/create-serverless-applications/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Utvecklarguide för Functions
+                              href: 'https://docs.microsoft.com/azure/azure-functions/functions-reference?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: E-bok – Handbok för serverlös databehandling
+                              href: 'https://azure.microsoft.com/resources/azure-serverless-computing-cookbook/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            - name: Dokumentation – Azure Functions
+                              href: 'https://docs.microsoft.com/azure/azure-functions/'
                 - name: Underlätta implementeringen
                   items:
                     - name: Översikt

@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig mer om hur du väljer region för molnplattformen.
 author: doodlemania2
 ms.author: dermar
-ms.date: 09/19/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 65c7d342aa201f06e3b38ed25e933ba7d6a471b1
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 14ebb2d3f253a7cf80b005595584202537e46cc1
+ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547839"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72769404"
 ---
 # <a name="azure-regions"></a>Azure-regioner
 
@@ -44,7 +44,7 @@ I takt med att vi tittar närmare på utmaningarna ovan kommer du att förstå h
 
 En robust molndistribution kräver ett välfungerande nätverk som tar hänsyn till Azure-regioner. När du har granskat egenskaperna ovan vad gäller valet av region, måste nätverket distribueras. I det här avsnittet går vi inte igenom alla nätverksaspekter, utan fokuserar endast på några få:
 
-1. Azure-regioner distribueras i par. I händelse av ett oåterkalleligt fel i en region, är regionen associerad till en annan region inom samma politiska gränser *. Tänk på distributionen i associerade regioner som en primär och sekundär återhämtningsstrategi. \* Azure Brasilien är ett viktigt undantag där den associerade regionen är USA, södra centrala. Mer information finns [här](https://docs.microsoft.com/en-us/azure/best-practices-availability-paired-regions).
+1. Azure-regioner distribueras i par. I händelse av ett oåterkalleligt fel i en region, är regionen associerad till en annan region inom samma politiska gränser *. Tänk på distributionen i associerade regioner som en primär och sekundär återhämtningsstrategi. \* Azure Brasilien är ett viktigt undantag där den associerade regionen är USA, södra centrala. Mer information finns här: [Azure-länkade regioner](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
     1. Azure Storage stöder [geo-redundant lagring (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs), vilket innebär att tre kopior av dina data lagras i den primära regionen och ytterligare tre kopior i den associerade regionen. Det går inte att ändra lagringspar för GRS.
     1. Tjänster som är beroende av Azure Storage GRS kan dra nytta av funktionen för associerade regioner. För att göra det måste dina program och nätverket konfigureras med stöd för det.
     1. Om du inte planerar att använda GRS för regional återhämtning, rekommenderar vi att du _inte_ använder den associerade regionen som sekundär region. I händelse av ett fel i en region, blir trycket på resurser i den associerade regionen stort när resurserna migreras. Genom att undvika detta hårda tryck kan du snabba upp återhämtningen genom att återställa till en alternativ plats.
