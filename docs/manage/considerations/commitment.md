@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e9ac7b930018e8eb8a8d750692de808be943db0c
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 7e7618163b15d17eab51571779e573dd9acb726e
+ms.sourcegitcommit: 73dbedf580951f25bf4b5544b83451cb075b1fa1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72558134"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72805816"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Affärs engagemang i moln hantering
 
@@ -54,6 +54,8 @@ Hanterings bas linjen för Operations Management fungerar som en första start p
 
 I en traditionell lokal miljö förutsätts kostnaden för att hantera miljön ofta vara en sunk kostnad som ägs av IT-avdelningen. I molnet är hanteringen ett ändamålsenlig-beslut med direkt budget påverkan. Kostnaderna för varje hanterings funktion kan direkt attributas till varje arbets belastning som distribueras till molnet. Den här metoden ger bättre kontroll, men det skapar ett krav för moln drifts grupper och moln strategi team för att först kunna genomföra ett avtal angående ansvars områden.
 
+Organisationer kan också välja att få ut [vissa av de kontinuerliga hanterings funktionerna till en tjänst leverantör](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage). Dessa tjänst leverantörer kan använda [Azure-Lighthouse](https://azure.com/lighthouse) för att ge organisationer mer precision och kontroll över att bevilja åtkomst till sina resurser, tillsammans med större insyn i de åtgärder som utförs av tjänst leverantörerna.
+
 **Delegerat ansvar:** Eftersom det inte finns något behov av att centralisera och ta hänsyn till drifts hanterings kostnader, kommer IT-avdelningen för många organisationer att ta upp nya metoder. Ett vanligt sätt kallas delegerat ansvar. I ett moln Center med en expert modell tillhandahåller plattforms åtgärder och plattforms automatisering självbetjänings hanterings verktyg som kan användas av affärs LED ande drifts grupper, oberoende av en central IT-grupp. Den här metoden ger affärs intressenterna fullständig kontroll över förvaltnings-relaterade budgetar. Det gör det också möjligt för CCoE att säkerställa att en minsta uppsättning guardrails implementeras korrekt. I den här modellen fungerar det som en Service Broker och en guide för att hjälpa verksamheten fatta beslut. Affärs åtgärder övervakar dagliga åtgärder för beroende arbets belastningar.
 
 **Centraliserat ansvar:** Krav på efterlevnad, tekniska komplexitet och vissa delade tjänst modeller kan kräva en central IT-modell. I den här modellen fortsätter den att underhålla åtgärds hanterings ansvars områden. Därför kan miljö design, hanterings kontroller och styrnings verktyg hanteras centralt och kontrol leras, vilket begränsar affärs intressenternas roll när de gör förvaltnings åtaganden. Men när det gäller moln metoder i molnet är det mycket enklare för dig att göra det enklare att kommunicera kostnaderna och hanterings nivån för varje arbets belastning.
@@ -66,7 +68,7 @@ Det första steget är att genomföra en ansvars metod som formar följande åta
 
 ## <a name="cloud-tenancy"></a>Moln innehav
 
-Trots att det inte är ovanligt, är det inte ovanligt för en verksamhet att stödja till gångar i flera klienter. I artikeln om Lighthouse för flera organisationer finns några exempel på orsaker till Azure-miljöer med flera innehavare. Enligt exemplen i den artikeln är nästa åtagande att innehavas.
+För de flesta företag är hanteringen enklare när alla till gångar finns i en enda klient. Vissa organisationer kan dock behöva underhålla flera klienter. I artikeln om hur du [centraliserar hanterings åtgärder med Azure Lighthouse](../centralize-operations.md) får du några exempel där företag kan behöva Azure-miljöer med flera innehavare.
 
 **Kommer den här arbets belastningen finnas i en enda Azure-klient, tillsammans med alla andra arbets belastningar?**
 

@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 294ea288af478e0e451c9fd38663a26acb10359d
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 44bfe58f86a442a5129eee791e3da0f7a6b68031
+ms.sourcegitcommit: 73dbedf580951f25bf4b5544b83451cb075b1fa1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72682598"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72805790"
 ---
 # <a name="management-leveling-across-cloud-management-disciplines"></a>Hanterings nivåer i moln hanterings ämnes områden
 
@@ -33,6 +33,8 @@ Följande hanterings nivåer (som också visas ovan) är några föreslagna niv�
 - **Specialisering av arbets belastning**: för de arbets belastningar som verkligen är verksamhets kritiska kan det vara en kostnads motivering att gå mycket djupare i hanteringen av arbets belastningen. Arbets belastnings specialisering utnyttjar arbets belastnings telemetri för att fastställa fler avancerade metoder för daglig hantering. Samma data identifierar ofta automatisering, distribution och design förbättringar som skulle leda till högre stabilitet, tillförlitlighet och återhämtning utöver vad som är möjligt med enbart drifts hantering.
 - **Stöds**inte: det är lika viktigt att kommunicera vanliga hanterings processer som inte levereras via moln hanterings ämnes områden för arbets belastningar som klassificeras som icke-kompatibla eller inte kritiska.
 
+Organisationer kan också välja att [Hantera funktioner som är relaterade till en eller flera av dessa hanterings nivåer till en tjänst leverantör](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage). Dessa tjänst leverantörer kan använda [Azure-Lighthouse](https://azure.com/lighthouse) för att ge bättre precision och öppenhet.
+
 I de återstående artiklarna i serien finns ett antal processer som ofta finns i var och en av dessa ämnes områden.
 I parallellt visar [Azures hanterings guide](../azure-management-guide/index.md) de verktyg som har stöd för var och en av dessa processer. Om du vill ha hjälp med att skapa en hanterings bas linje börjar du med Azures hanterings guide. När bas linjen har upprättats kan den här artikel serien och de medföljande metod tipsen hjälpa till att utöka den bas linjen och definiera andra nivåer av hanterings stöd.
 
@@ -46,8 +48,8 @@ I de flesta fall består den "hanterings bas linje nivå" som beskrivs ovan av p
 - **Operativa krav:** Regelbunden hantering av konfiguration, storlek, kostnad och prestanda för till gångar är nyckel för att underhålla prestanda förväntningar och en hanterings bas linje.
 - **Skydda och återställa:** Minimera drift avbrott och påskynda återställningen av varje hjälp för att undvika prestanda förluster och inkomst påverkan. Identifiering och återställning är viktiga aspekter av denna disciplin inom någon hanterings bas linje.
 
-Plattformens specialiserings nivå för hantering hämtas från processer och verktyg som är justerade med plattforms åtgärdernas disciplin.
-På samma sätt hämtar specialisering för arbets belastningen hantering från de processer och verktyg som är justerade mot disciplinerna för arbets belastnings åtgärder.
+Plattformens specialiserings nivå för hantering hämtas från processer och verktyg som är justerade med plattforms åtgärdernas disciplin. På samma sätt hämtar specialisering för arbets belastningen hantering från de processer och verktyg som är justerade mot disciplinerna för arbets belastnings åtgärder.
+
   
 ## <a name="next-steps"></a>Nästa steg
 
