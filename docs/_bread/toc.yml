@@ -19,6 +19,13 @@
         - name: Redo
           tocHref: /azure/cloud-adoption-framework/ready/
           topicHref: /azure/cloud-adoption-framework/ready
+          items:
+            - name: Bästa praxis
+              tocHref: /azure/cloud-adoption-framework/ready/azure-best-practices/
+              topicHref: /azure/cloud-adoption-framework/ready/azure-best-practices
+            - name: Bästa praxis
+              tocHref: /azure/security/fundamentals/
+              topicHref: /azure/cloud-adoption-framework/ready/azure-best-practices
         - name: Implementera
           items:
             - name: Migrera

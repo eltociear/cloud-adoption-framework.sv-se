@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c0ef1165fc416814e0563ec29c4ad5901a83b032
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 80cd8c74f283436d9f32ce647c27bb7c67d3c92c
+ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683278"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888894"
 ---
 # <a name="democratize-data"></a>Demokratisera identifieringen av-data
 
@@ -47,7 +47,7 @@ Att dela data kan snabbt producera en MVP som kan användas i kund konversatione
 Data styrning är ett brett ämne som kan kräva att det är ett eget dedikerat ramverk. Detta ligger utanför omfånget för [moln införande ramverket](../../index.md). Det finns dock några aspekter av data styrning som bör beaktas, så snart som kund hypotesen verifieras. Här följer några exempel på dessa frågor:
 
 - **Är de delade data känsliga?** [Data bör klassificeras](../../govern/policy-compliance/data-classification.md) före all offentlig delning för att skydda kundernas och företagets intresse.
-- **Om data är känsliga, har de skyddats?** Skydd av känsliga data bör vara ett krav för alla democratized-data. Exempel arbets belastningen som fokuserar på att [skydda data lösningar](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions.md) är några referenser för att skydda data.
+- **Om data är känsliga, har de skyddats?** Skydd av känsliga data bör vara ett krav för alla democratized-data. Exempel arbets belastningen som fokuserar på att [skydda data lösningar](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions) är några referenser för att skydda data.
 - **Är Data Catalog?** Att samla in information om de data som delas kommer att hjälpa till med långsiktig data hantering. Verktyg för att dokumentera data, som Azure Data Catalog, kan göra den här processen mycket enklare i molnet. Vägledning om [anteckningen av data](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-annotate) och [dokumentation av data källor](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-documentation) kan påskynda processen.
 
 När democratization av data är viktigt för en kundfokuserad hypotes, bör styrning av delade data ligga någonstans i versions planen för att skydda kunder, data konsumenter och företaget.

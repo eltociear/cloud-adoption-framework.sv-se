@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 4613a8f4a4bdfc065f6c8e48eda609f6d1703130
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 33572e5de14c4d59e6281124cf488ca0e0c36aef
+ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549092"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888845"
 ---
 # <a name="cloud-governance-capabilities"></a>Funktioner för moln styrning
 
@@ -63,7 +63,7 @@ Moln styrnings funktioner levereras vanligt vis av ett arbets team. Tids åtagan
 Följande representerar deltagare som ofta kommer att delta i moln styrnings aktiviteter:
 
 - Ledare från mellan hantering och direkt deltagare i viktiga roller som har utsetts att representera verksamheten kommer att hjälpa till att utvärdera risk toleranser.
-- Moln styrnings funktionerna erbjuds levererade som en utökning av [moln strategi funktionen](./cloud-strategy.md). Precis som CIO och affärsmässiga förväntas delta i moln strategins kapacitet förväntas deras direkt rapporter delta i moln styrnings aktiviteter.
+- Moln styrnings funktionerna levereras av en utökning av [moln strategi funktionen](./cloud-strategy.md). Precis som CIO och affärsmässiga förväntas delta i moln strategins kapacitet förväntas deras direkt rapporter delta i moln styrnings aktiviteter.
 - Företags anställda som är medlemmar i affär senheten som arbetar nära affärs ledningen bör fatta beslut om företags-och teknik risker.
 - Information Technology (IT) och information Security (är) anställda som förstår de tekniska aspekterna av moln omvandlingen kan tjäna i en roterande kapacitet i stället för att vara en konsekvent leverantör av funktioner för moln styrning.
 
