@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 265365d2064349f53d61b10af4af053c418c871a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1a1f7d21d1291b567d1ec1b1a2d4305bcb202b99
+ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547459"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915058"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Förbättringar av identitets bas linje disciplin
 
@@ -126,7 +126,7 @@ När omvandlingen är klar måste styrning och åtgärder vara aktiva för den n
 - Överväg att integrera mer tätt med säkerhets-och bedrägeri skydds system.
 - Granska åtkomst rättigheter för utökade användare eller roller regelbundet.
   - Identifiera alla användare som är berättigade att aktivera administratörs behörighet.
-- Granska uppdaterings processer för on-Board, off-boarding och Credential.
+- Granska uppdaterings processer för registrering, offboarding och autentiseringsuppgift.
 - Undersök ökande nivåer av Automation och kommunikation mellan IAM-moduler (Identity Access Management).
 - Överväg att implementera en DevSecOps-metod (Development Security Operations).
 - Genomför en effekt analys för att mäta resultat om kostnader, säkerhet och användar införande.

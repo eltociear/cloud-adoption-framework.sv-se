@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 24799668ab898822cf4a1d82ee2bf6906af71773
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 17087228df93164a697b86c7c3934278a55bf91b
+ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547820"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915025"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationalisera den digitala egendomen
 
@@ -50,7 +50,7 @@ Den fullständiga rationalisering av en stor digital egendom är känslig för r
 
 ### <a name="inventory-reduce-discovery-data-points"></a>Inventering: minska identifierings data punkter
 
-Några organisationer investerar tid, energi och kostnader för att upprätthålla en korrekt, real tids inventering av den fullständiga digitala fastigheten. Förlust, stöld, uppdaterings cykler och medarbetarprogram ofta motiverar detaljerad till gångs spårning av slut användar enheter. RÄNTABILITETen att underhålla en korrekt Server-och program inventering i ett traditionellt, lokalt Data Center är ofta låg. De flesta IT-organisationer har andra fler problem med att trycka på och spåra användningen av fasta till gångar i ett Data Center.
+Några organisationer investerar tid, energi och kostnader för att upprätthålla en korrekt, real tids inventering av den fullständiga digitala fastigheten. Förlust, stöld, uppdaterings cykler och medarbetarnas onboarding brukar motivera detaljerad till gångs spårning av slut användar enheter. RÄNTABILITETen att underhålla en korrekt Server-och program inventering i ett traditionellt, lokalt Data Center är ofta låg. De flesta IT-organisationer har andra fler problem med att trycka på och spåra användningen av fasta till gångar i ett Data Center.
 
 I en moln omvandling korrelerar lagret direkt med drifts kostnaderna. Korrekt inventerings information krävs för korrekt planering. De nuvarande alternativen för miljö genomsökning kan tyvärr fördröja beslut efter veckor eller månader. Lyckligt vis kan några trick påskynda data insamlingen.
 
