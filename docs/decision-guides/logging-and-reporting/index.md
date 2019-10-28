@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 082b9ccdcc94548b46a5a220cfe83768f7c4cbf6
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3254cf195c001f7ce575bf067cd434649293b970
+ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547904"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915032"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Beslutsguide för loggning och rapportering
 
@@ -26,7 +26,7 @@ Hoppa till: [Planera övervakningsinfrastrukturen](#planning-your-monitoring-inf
 
 Brytpunkten när du fastställer en strategi för molnloggning och rapportering baseras främst på befintliga investeringar som din organisation har gjort inom driftsprocesser samt till viss del på eventuella krav som du har för att stödja en strategi för flera moln.
 
-Det finns flera sätt att logga och rapportera om aktiviteter i molnet. Molnbaserad och centraliserad loggning är två vanliga SaaS-alternativ (programvara som en tjänst) som drivs av prenumerationsdesignen och antalet prenumerationer.
+Det finns flera sätt att logga och rapportera om aktiviteter i molnet. Molnbaserad och centraliserad loggning är två vanligt alternativ för hanterade tjänster, som drivs av prenumerationsdesignen och antalet prenumerationer.
 
 ## <a name="planning-your-monitoring-infrastructure"></a>Planera övervakningsinfrastrukturen
 
