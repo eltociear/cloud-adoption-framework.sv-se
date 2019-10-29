@@ -10,16 +10,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d14ee6491e4fc804d6545c6708f1d27a44c83501
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 345811e62442341091cf91b3e52870ec454784bf
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224067"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549254"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrera tillgångar (infrastruktur, appar och data)
 
 I den här fasen av resan använder du resultatet av utvärderingsfasen för att inleda migreringen av miljön. Den här guiden hjälper dig att identifiera lämpliga verktyg för att nå ”färdigt tillstånd”, däribland inbyggda verktyg, verktyg från tredje part samt verktyg för projekthantering.
+
+<!-- markdownlint-disable MD025 -->
 
 # <a name="native-migration-toolstabtools"></a>[Inbyggda migreringsverktyg](#tab/Tools)
 
@@ -202,7 +204,9 @@ Med datamigreringsverktyget i Azure Cosmos DB kan du importera data från olika 
 
 Mer information finns i:
 
-- [Azure Cosmos DB-datamigreringsverktyget](https://docs.microsoft.com/en-us/azure/cosmos-db/import-data)
+- [Azure Cosmos DB-datamigreringsverktyget](https://docs.microsoft.com/azure/cosmos-db/import-data)
+
+<!-- markdownlint-disable MD025 -->
 
 # <a name="third-party-migration-toolstabthird-party-tools"></a>[Migreringsverktyg från tredje part](#tab/third-party-tools)
 
@@ -236,7 +240,7 @@ Movere är en identifieringslösning som tillhandahåller de data och insikter s
 
 Du kan välja mellan olika erfarna systemintegreringspartner och verktyg som underlättar Azure Cosmos DB-migreringen baserat på dina NoSQL-databaskrav.
 
-[Läs mer](https://docs.microsoft.com/en-us/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
+[Läs mer](https://docs.microsoft.com/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
 
 Besök [Azure Migration Center](https://azure.microsoft.com/migration/support) för att identifiera organisationer som erbjuder färdiga partnertekniklösningar som passar dina migreringsscenarier och få mer information om ytterligare migreringsverktyg från tredje part samt supporttjänster.
 

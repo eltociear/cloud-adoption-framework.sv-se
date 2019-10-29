@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 38e412bda80e68b0c5cb7e53ad52c078fa39f8fb
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 219f5868f8fa8f3f5d26fa4c3c63db7786479a2c
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378417"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683828"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mekanismer för migreringsfokuserad kostnadskontroll
 
@@ -31,7 +31,7 @@ Verktygen i den här artikeln omfattar:
 > - Azure Cost Management
 > - Azure Advisor
 
-Processerna som beskrivs i den här artikeln kan också kräva ett partnerskap med IT-chefer, ekonomi eller affärsprogramägare. Information om hur du samarbetar med de här rollerna finns i artikeln Ramverk för molnimplementering om att upprätta en kostnadseffektiv organisation (som kommer under tredje kvartalet 2019).
+Processerna som beskrivs i den här artikeln kan också kräva ett partnerskap med IT-chefer, ekonomi eller affärsprogramägare.
 
 <!-- markdownlint-disable MD024 MD025 -->
 
@@ -54,14 +54,14 @@ Dessa manuella kostnadskalkylatorer kan användas fristående för att beräkna 
 
 Azure Migrate beräknar **månatliga kostnader** baserat på data som samlas in av insamlaren och tjänstkartan. Följande steg läser in kostnadsuppskattningarna:
 
-1. Gå till bladet Azure Migrate-utvärdering i portalen.
-1. På projektsidan **Översikt** klickar du på **+Skapa utvärdering**.
-1. Klicka på **Visa alla** för att granska utvärderingsegenskaperna.
-1. Skapa gruppen och ange ett gruppnamn.
-1. Välj de datorer som du vill lägga till i gruppen.
-1. Klicka på **Skapa utvärdering** för att skapa gruppen och utvärderingen.
-1. När utvärderingen har skapats kan du se den i Översikt > Instrumentpanel.
-1. I området Bedömningsinformation i bladet navigering väljer du **Kostnadsinformation.**
+1. Gå till Azure Migrate-utvärdering i portalen.
+2. På projektsidan **Översikt** klickar du på **+Skapa utvärdering**.
+3. Klicka på **Visa alla** för att granska utvärderingsegenskaperna.
+4. Skapa gruppen och ange ett gruppnamn.
+5. Välj de datorer som du vill lägga till i gruppen.
+6. Klicka på **Skapa utvärdering** för att skapa gruppen och utvärderingen.
+7. När utvärderingen har skapats kan du se den i Översikt > Instrumentpanel.
+8. I området Bedömningsinformation väljer du **Kostnadsinformation**.
 
 Beräkningen som skapas och som visas nedan identifierar de månatliga kostnaderna för beräkning och lagring, vilket ofta utgör den största delen av molnkostnaderna.
 
@@ -83,9 +83,9 @@ Inom 24 timmar efter migrering av tillgångar (infrastruktur, appar och data) ti
 
 Följande steg innehåller kostnadsrekommendationer för tillgångar (infrastruktur, appar och data) i dina aktuella prenumerationer:
 
-1. Gå till bladet **Azure Advisor** i portalen. I det vänstra navigeringsfönstret i Azure Portal klickar du på **Advisor**. Om du inte ser Advisor i den vänstra rutan väljer du **Alla tjänster**. I tjänstmenyfönstret under **Övervakning och hantering** väljer du **Advisor**.
-1. Advisor-instrumentpanelen visar en sammanfattning av dina rekommendationer för alla valda prenumerationer. Du kan välja de prenumerationer som du vill att rekommendationerna ska visas för i listrutan prenumerationsfilter.
-1. Om du vill se kostnadsrekommendationerna väljer du fliken Kostnad.
+1. Navigera till **Azure Advisor** i portalen. I det vänstra navigeringsfönstret i Azure Portal klickar du på **Advisor**. Om du inte ser Advisor i den vänstra rutan väljer du **Alla tjänster**. I tjänstmenyfönstret under **Övervakning och hantering** väljer du **Advisor**.
+2. Advisor-instrumentpanelen visar en sammanfattning av dina rekommendationer för alla valda prenumerationer. Du kan välja de prenumerationer som du vill att rekommendationerna ska visas för i listrutan prenumerationsfilter.
+3. Om du vill se kostnadsrekommendationerna väljer du fliken Kostnad.
 
 ## <a name="azure-cost-management"></a>Azure Cost Management
 
@@ -95,10 +95,10 @@ Krav: Resten av den här fliken förutsätter att läsaren har slutfört install
 
 Följande steg läser in kostnadsanalysdata för Azure Cost Management för dina prenumerationer:
 
-1. Navigera till bladet **Cost Management + Fakturering** i portalen. Om du inte ser Cost Management + Fakturering i den vänstra rutan klickar du på **Alla tjänster**. I tjänstmenyfönstret under **Övervakning och hantering** väljer du **Cost Management + Fakturering**.
-1. På bladet Cost Management + Fakturering väljer du **Cost Management** i det vänstra navigeringsfönstret för det öppna bladet och börja analysera och optimera molnkostnaderna.
-1. På bladet Cost Management väljer du **Kostnadsanalys**.
-    1. Använd reglaget **Omfång** för att växla till ett annat omfång i kostnadsanalysen.
+1. Navigera till **Kostnadshantering + Fakturering** i portalen. Om du inte ser Cost Management + Fakturering i den vänstra rutan klickar du på **Alla tjänster**. I tjänstmenyfönstret under **Övervakning och hantering** väljer du **Cost Management + Fakturering**.
+2. I Cost Management + Fakturering väljer du **Cost Management** i det vänstra navigeringsfönstret för att börja analysera och optimera molnkostnaderna.
+3. I Cost Management väljer du **Kostnadsanalys**.
+    a. Använd reglaget **Omfång** för att växla till ett annat omfång i kostnadsanalysen.
 
 Med den här analysen kan du granska totala kostnader, budget (om tillgängligt) och ackumulerade kostnader. Varje beräkning kan visas per tjänst, per resurs och över tid. Framför allt kan kostnader analyserar per tagg. Korrekt namngivning och taggning av tillgångar (infrastruktur, appar och data) är en förutsättning för goda styrnings- och kostnadshanteringsprocesser. Lämpliga taggar ger bättre hantering av kostnader och tydlig insyn om effekten av prestanda- och kostnadsoptimering.
 

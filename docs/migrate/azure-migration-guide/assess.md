@@ -10,18 +10,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 78c82a2cb8793f8b5f0b90b1958fb4a83e3da935
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 0d1918f60f6bfe2a6d458b83b5838a8776af51a7
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224401"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549267"
 ---
 # <a name="assess-the-digital-estate"></a>Utvärdera den digitala egendomen
 
 Vid en idealisk migrering skulle varje tillgång (infrastruktur, app eller data) vara kompatibel med en molnplattform och vara redo för migrering. I verkligheten är det inte allting som bör migreras till molnet. Dessutom är inte alla tillgångar kompatibla med molnplattformarna. Innan du migrerar en arbetsbelastning till molnet är det viktigt att utvärdera arbetsbelastningen och varje relaterad tillgång (infrastruktur, appar och data).
 
 Resurserna i det här avsnittet hjälper dig att utvärdera din miljö och avgöra om den är lämplig att migrera, samt vilka metoder som skulle kunna användas.
+
+<!-- markdownlint-disable MD025 -->
 
 # <a name="toolstabtools"></a>[Verktyg](#tab/Tools)
 
