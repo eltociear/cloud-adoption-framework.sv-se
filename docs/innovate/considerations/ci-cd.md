@@ -8,95 +8,97 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 0c6f55ec7f82756658fc67fb9412d7d83d503b97
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 4f3c7f139cb2445ef6d29682a663523d614eef3c
+ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683231"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72980093"
 ---
 # <a name="empower-adoption"></a>Förbättra införandet
 
-Det ultimata testet av innovation är att kunden reagera på din uppfinning. Skulle hypotesen visa sig vara sann? Använder kunderna lösningen? Skalar den för att uppfylla behoven för den önskade procent andelen av användarna? Viktigast av detta ska de fortsätta att komma tillbaka? Ingen av dessa frågor kan tillfrågas förrän MVP-lösningen har distribuerats. I den här artikeln fokuserar vi på disciplinen för att fatta beslut.
+Det ultimata testet av innovation är att kunden reagera på din uppfinning. Skulle hypotesen visa sig vara sann? Använder kunderna lösningen? Skalar den för att uppfylla behoven för den önskade procent andelen av användarna? Viktigast av detta ska de fortsätta att komma tillbaka? Ingen av dessa frågor kan tillfrågas förrän den lägsta produkt-och MVP-lösningen har distribuerats. I den här artikeln ska vi fokusera på disciplinen för att fatta beslut.
 
 ## <a name="reducing-friction-to-adoption"></a>Minska friktionen för att anta
 
-Det finns några viktiga friktions punkter att införa som kan minimeras genom en kombination av teknik och processer. För läsare som är bekanta med CI/CD-eller DevOps-processer verkar följande vara mycket likt. Fokus för den här artikeln är att upprätta en utgångs punkt för moln implementerings team, som kommer att få nya slingor för utveckling och feedback av bränsle. Längre tid kan den här start punkten växa till robusta CI/CD-eller DevOps-metoder som de produkter och team som är mogna.
+Det finns några viktiga friktions punkter att införa som kan minimeras genom en kombination av teknik och processer. För läsare med kunskaper om kontinuerlig integrering (CI) och kontinuerlig distribution (CD) eller DevOps-processer verkar följande vara välbekant. Den här artikeln avser att upprätta en utgångs punkt för moln implementerings team, som kommer att få nya slingor för utveckling och feedback av bränsle. Längre tid kan den här start punkten gynna mer robusta CI/CD-eller DevOps-metoder som de produkter och team som är mogna.
 
-En beskrivning av hur man [mäter kund påverkan](./measure.md)kräver positiv verifiering av hypotesen iteration och bestämning. Du får fler fler avbrott än WINS under en Innovations cykel. Detta är normalt. Men när kund behovet, hypotesen och lösningen justeras i skala, ändras världen snabbt. Den här artikeln syftar till att minimera [teknisk insamling](./build.md#reduce-complexity-and-delay-technical-spikes) som skulle göra innovationen långsammare, men se till att det finns några heltäckande bästa metoder. På så sätt blir det lättare för dig att få till gång till framtida framgångar, men du kan leverera på aktuella kund behov.
+Som det beskrivs i [mått för kund påverkan](./measure.md), kräver positiv verifiering av alla hypotes upprepning och bestämning. Du får mycket fler avbrott än WINS under en Innovations cykel. Detta är normalt. Men när en kund behöver, hypotes och lösning justeras i skala, ändras världen snabbt. Den här artikeln syftar till att minimera [tekniska toppar](./build.md#reduce-complexity-and-delay-technical-spikes) som saktar ned innovation, men som ändå ser till att du behåller några rena bästa metoder. På så sätt blir det lättare för IT-utformningen att leverera på aktuella kund behov.
 
 ## <a name="empowering-adoption---maturity-model"></a>Förstärkning av implementerings förfallo modell
 
 Det främsta målet med [förnyelse metoden](./index.md) är att bygga upp kund partnerskap och påskynda feedback-slingor, vilket leder till marknads innovationer.
-Följande bild och avsnitt i innehållet beskriver de första implementeringar som har stöd för metoden.
+I följande bild och avsnitt beskrivs de första implementeringar som har stöd för den här metoden.
 
-![Öka modell för införande-förfall](../../_images/innovate/empower-adoption-maturity.png)
+![Förstärknings implementering – förfallo modellen](../../_images/innovate/empower-adoption-maturity.png)
 
 - [Delad lösning](#shared-solution): upprätta en central lagrings plats för alla aspekter av lösningen.
-- [Feedback-slingor](#feedback-loops): se till att feedback-slingor kan hanteras konsekvent via iterationer.
+- [Feedback-slingor](#feedback-loops): se till att feedback-slingor kan hanteras på ett konsekvent sätt via iterationer.
 - [Kontinuerlig integrering](#continuous-integration): Bygg och konsolidera regelbundet lösningen.
-- [Tillförlitlig testning](#reliable-testing): validera lösnings kvalitet och förväntade ändringar av enheten för att säkerställa åtgärder.
-- [Lösnings distribution](#solution-deployment): distribution av en lösning som gör det möjligt för teamet att snabbt dela ändringar med kunder.
+- [Tillförlitlig testning](#reliable-testing): validera lösnings kvalitet och förväntade ändringar för att säkerställa att dina test mått är tillförlitliga.
+- [Lösnings distribution](#solution-deployment): distribuera lösningar så att teamet snabbt kan dela ändringar med kunderna.
 - [Integrerad mätning](#integrated-measurements): Lägg till inlärnings mått i feedback-slingan för att ta bort en fullständig analys av hela teamet.
 
-För minimerade tekniska toppar är förfallo dagen inlednings vis låg för var och en av dessa principer. Men planera framåt genom att justera till verktyg och processer som kan skalas när Hypotheses blir mer detaljerade. I Azure ger kombinationen av [GitHub](https://guides.github.com) och [Azure DevOps](https://docs.microsoft.com/azure/devops) små team att komma igång med lite friktion. Utöka sedan till tusentals utvecklare att samar beta kring skalnings lösningar som testar hundratals Hypotheses. Resten av den här artikeln illustrerar planen stor, en liten metod för att göra det möjligt att fatta beslut över var och en av dessa principer.
+För att minimera tekniska toppar antar vi att förfallo tiden inlednings vis är låg för var och en av dessa principer. Men den dagliga planeringen fortsätter genom att justera till verktyg och processer som kan skalas när Hypotheses blir mer detaljerad. I Azure ger [GitHub](https://guides.github.com) och [Azure DevOps](https://docs.microsoft.com/azure/devops) små team att komma igång med lite friktion. Dessa team kan växa för att inkludera tusentals utvecklare som samarbetar kring skalnings lösningar och testar hundratals kund Hypotheses. Resten av den här artikeln visar plan Big/start-metoden för att göra det möjligt att fatta beslut över var och en av dessa principer.
 
 ## <a name="shared-solution"></a>Delad lösning
 
-En beskrivning av hur man [mäter kund påverkan](./measure.md)kräver positiv verifiering av hypotesen iteration och bestämning. Du får fler fler avbrott än WINS under en Innovations cykel. Detta är normalt. Men när kund behovet, hypotesen och lösningen justeras i skala, ändras världen snabbt.
+Som det beskrivs i [mått för kund påverkan](./measure.md), kräver positiv verifiering av alla hypotes upprepning och bestämning. Du får mycket fler avbrott än WINS under en Innovations cykel. Detta är normalt. Men när en kund behöver, hypotes och lösning justeras i skala, ändras världen snabbt.
 
-När du skalar innovationer finns det inget värdefullt verktyg än en delad kodbas för lösningen. Sadly, det finns inget sätt att förutsäga vilken iteration eller vilken MVP som ger den vinnande kombinationen. Därför är det aldrig för tidigt att upprätta en delad kodbas eller lagrings plats. Detta är den [tekniska insamling](./build.md#reduce-complexity-and-delay-technical-spikes) som aldrig ska förskjutas. När teamet upprepas genom olika MVP-lösningar kan en delad lagrings platsen vara enkel att samar beta och påskyndad utveckling. När ändringar i lösningen resulterar i en negativ inverkan på inlärnings mått, kan versions kontroll tillåta en återställning till den tidigare, mer effektiva versionen av lösningen.
+När du skalar innovation finns det inget värdefullt verktyg än en delad kodbas för lösningen. Tyvärr finns det inget tillförlitligt sätt att förutsäga vilken iteration eller vilken MVP som ger den vinnande kombinationen. Därför är det aldrig för tidigt att upprätta en delad kodbas eller lagrings plats. Detta är den [tekniska insamling](./build.md#reduce-complexity-and-delay-technical-spikes) som aldrig ska förskjutas. När teamet itererar genom olika MVP-lösningar möjliggör en delad lagrings platsen enkel samarbete och snabbare utveckling. När du gör ändringar i lösningen och drar nedåt inlärnings mått kan du återställa till en tidigare, mer effektiv version av lösningen.
 
-Det vanligaste verktyget för att hantera kod databaser är [GitHub](https://guides.github.com) som gör det möjligt att skapa en delad kod lagring med några få klick. Dessutom kan [Azure databaser](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) -funktionen i Azure DevOps användas för att skapa en [git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) -eller [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) -lagringsplats.
+Det vanligaste verktyget för att hantera kod databaser är [GitHub](https://guides.github.com), vilket gör att du kan skapa en delad kod lagring med bara några få klick. Dessutom kan [Azure databaser](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) -funktionen i Azure DevOps användas för att skapa en [git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) -eller [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) -lagringsplats.
 
 ## <a name="feedback-loops"></a>Feedback-slingor
 
-Den nyckel som används för att skapa kund partnerskap under Innovations cykler är att göra kunden till en del av lösningen. Detta görs med en armarna längd genom att [mäta kund påverkan](./measure.md). Mer noggrant kräver den konversationer och direkt testning med kunden. Båda resulterar i feedback som måste hanteras.
+Att göra kund delen av lösningen är nyckeln till att skapa kund samarbeten under Innovations cykler. Detta sker delvis genom att [mäta kund påverkan](./measure.md). Den kräver konversationer och direkt testning med kunden. Båda genererar feedback som måste hanteras effektivt.
 
-Varje återkopplings punkt är en potentiell lösning på kund behovet. Det är viktigt att varje bit av feedback direkt från en kund är en möjlighet att förbättra samarbetet. Om feedback gör den till en MVP-lösning, kan du fira den med kunden. Även om feedbacken inte kan åtgärdas, är det helt enkelt att bli transparent med beslutet att göra en prioritering av feedbacken, vilket visar en [tillväxt tänkesätt](./learn.md#growth-mindset) och ett fokus på [kontinuerlig inlärning](./learn.md#continuous-learning).
+Varje återkopplings punkt är en potentiell lösning på kund behovet. Mer viktigt är att varje bit av direkt kundfeedback representerar en möjlighet att förbättra samarbetet. Om feedback gör det till en MVP-lösning, kommer du att fira med kunden. Även om vissa synpunkter inte är åtgärds bara, är det helt enkelt att bli transparent med beslutet att bli av med att göra en [växande tänkesätt](./learn.md#growth-mindset) och fokusera på [kontinuerlig inlärning](./learn.md#continuous-learning).
 
-[Azure DevOps](https://docs.microsoft.com/azure/devops) innehåller metoder för att [begära, tillhandahålla och hantera feedback](https://docs.microsoft.com/azure/devops/project/feedback). Vart och ett av dessa verktyg centraliserar feedback så att teamet kan vidta åtgärder och rapportera feedback, vilket ger en genomskinlig feedback-slinga.
+[Azure DevOps](https://docs.microsoft.com/azure/devops) innehåller metoder för att [begära, tillhandahålla och hantera feedback](https://docs.microsoft.com/azure/devops/project/feedback). Vart och ett av dessa verktyg centraliserar feedback så att teamet kan vidta åtgärder och tillhandahålla uppföljning av en genomskinlig feedback-slinga.
 
 ## <a name="continuous-integration"></a>Kontinuerlig integrering
 
-Eftersom antaganden skalas och en hypotes växer närmare den faktiska innovationen i stor skala, kommer antalet mindre Hypotheses som ska testas att växa snabbt. För riktiga feedback-slingor och smidiga införande processer är det viktigt att var och en av dessa Hypotheses är integrerade och stöder den främsta hypotesen bakom innovationen. Tyvärr måste du också gå snabbt till förnyat och växa, vilket kräver flera utvecklare som testar varianterna av den viktigaste hypotesen. Vid senare skedes utvecklings arbete kan det krävas flera team av utvecklare varje byggnad mot en delad lösning. Kontinuerlig integrering är det första steget mot hantering av olika rörliga delar.
+Eftersom antaganden skalas och en hypotes är närmare den sanna innovationen i stor skala, är antalet mindre Hypotheses som testas att växa snabbt. För riktiga feedback-slingor och smidiga implementerings processer är det viktigt att var och en av dessa Hypotheses är integrerad och att du har stöd för den främsta hypotesen bakom innovationen. Det innebär att du också måste gå snabbt till att förnya och växa, vilket kräver flera utvecklare för att testa variationer i Core hypotesen. För senare utveckling av steg kan du behöva flera team av utvecklare, varje byggnad mot en delad lösning. Kontinuerlig integrering är det första steget mot hantering av alla rörliga delar.
 
-I kontinuerlig integrering slås kod ändringar ofta samman i huvud grenen. Automatiserade bygg-och test processer säkerställer att kod i huvud grenen alltid är produktions kvalitet. På så sätt kan utvecklare samar beta för att utveckla delade lösningar som ger korrekta och tillförlitliga feedback-slingor.
+I kontinuerlig integrering slås kod ändringar ofta samman i huvud grenen. Automatiserade bygg-och test processer se till att koden i huvud grenen alltid är produktions kvalitet. Detta säkerställer att utvecklare arbetar tillsammans för att utveckla delade lösningar som ger korrekta och tillförlitliga feedback-slingor.
 
-Azure-DevOps och [Azure-pipelines](https://docs.microsoft.com/azure/devops/pipelines) tillhandahåller kontinuerliga integrerings funktioner med några få klickningar, för GitHub eller flera andra lagrings platser.
-Läs mer om [kontinuerlig integrering](https://docs.microsoft.com/azure/devops/learn/what-is-continuous-integration) eller kör [praktiska labbet](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration) för mer information. Det finns även lösnings arkitekturer för att påskynda skapandet av dina [CI/CD-pipeliner med Azure DevOps](https://azure.microsoft.com/solutions/devops).
+Azure-DevOps och [Azure-pipeliner](https://docs.microsoft.com/azure/devops/pipelines) ger kontinuerlig integrering med bara några få klick i GitHub eller flera andra lagrings platser.
+Läs mer om [kontinuerlig integrering](https://docs.microsoft.com/azure/devops/learn/what-is-continuous-integration)eller mer information finns i [praktiska labb övningar](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration). Det finns även lösnings arkitekturer för att påskynda skapandet av dina [CI/CD-pipeliner via Azure DevOps](https://azure.microsoft.com/solutions/devops).
 
 ## <a name="reliable-testing"></a>Reliable test
 
-Fel i alla lösningar kan skapa falska positiva eller falska negativa negativa tal. Oväntade fel kan lätt leda till fel tolkning av användar mått. Det kan också leda till negativ feedback från kunder som inte korrekt representerar testet av din hypotes.
+Fel i alla lösningar kan skapa falska positiva eller falska negativa negativa tal. Oväntade fel kan lätt leda till fel tolkning av användar mått. De kan också generera negativa synpunkter från kunder som inte korrekt representerar testet av din hypotes.
 
-Vid tidiga iterationer av en MVP-lösning förväntas defekter, och vi kan till och med upptäcka dem. I tidiga versioner kommer godkännande testningen troligen inte att finnas. En aspekt av att skapa med empati är dock valideringen av behovet och hypotesen. Båda kan slutföras genom enhets tester på en kod nivå och manuella acceptans test innan distributionen. Tillsammans ger dessa ett visst sätt att testa tillförlitlighet. Längre sikt en väldefinierad serie med build-, enhets-och acceptans test bör automatiseras för att säkerställa att pålitliga Mät värden som är relaterade till mer fina kärnor justeras mot hypotesen och den resulterande lösningen.
+Vid tidiga iterationer av en MVP-lösning förväntas defekter. tidiga antaganden kanske till och med tycker att de är kära. I tidiga versioner är test av godkännanden vanligt vis icke. En aspekt av att skapa med empati avser dock valideringen av behovet och hypotesen. Båda kan slutföras genom enhets tester på en kod nivå och manuella acceptans test före distributionen. Tillsammans ger dessa en viss tillförlitlighet för testning. Längre tid bör du sträva efter att automatisera en väldefinierad serie med build-, enhets-och acceptans test. Dessa säkerställer pålitliga mått som är relaterade till mer detaljerade anpassningar till hypotesen och den resulterande lösningen.
 
-[Azures testplaner](https://docs.microsoft.com/azure/devops/test/track-test-status?view=azure-devops) innehåller verktyg för att utveckla och driva test planer under manuell eller automatiserad test körning.
+Funktionen [Azure-testplaner](https://docs.microsoft.com/azure/devops/test/track-test-status?view=azure-devops) innehåller verktyg för att utveckla och driva test planer under manuell eller automatiserad test körning.
 
 ## <a name="solution-deployment"></a>Lösningsdistribution
 
-Kanske är den mest meningsfulla aspekten av att införa en bättre möjlighet att styra lanseringen av en lösning till kunderna. Genom att tillhandahålla en självbetjänings-eller automatiserad pipeline för att släppa en lösning på kunder kan du påskynda feedback-slingan. Att låta kunderna interagera med ändringar i lösningen snabbt, bjuder in kunden i processen. Det gör det också enklare att testa Hypotheses, minska antaganden och möjlighet att arbeta.
+Det kanske är den mest meningsfulla aspekten av att ge dig möjlighet att styra lanseringen av en lösning till kunder. Genom att tillhandahålla en självbetjänings-eller automatiserad pipeline för att släppa ut en lösning till kunder kan du påskynda feedback-slingan. Genom att göra det möjligt för kunder att snabbt interagera med ändringar i lösningen kan du bjuda in dem till processen. Den här metoden utlöser också snabbare tester av Hypotheses, vilket minskar antaganden och eventuell möjlighet att arbeta.
 
-Det finns flera metoder för att distribuera lösningar, följande tre vanligaste metoder:
+Det finns flera metoder för distribution av lösningar. Följande motsvarar de tre vanligaste:
 
-- Den mest avancerade metoden, **kontinuerlig distribution**, distribuerar automatiskt kod ändringar till produktion. För vuxen team som testar vuxen Hypotheses kan kontinuerlig distribution vara mycket värdefull.
-- Vid tidiga utvecklings faser kan **kontinuerlig leverans** vara lämpligare. I kontinuerlig leverans distribueras alla kod ändringar automatiskt till en produktions miljö. Utvecklare, företags besluts fattare och andra i teamet kan använda den här miljön för att kontrol lera att deras arbete är produktions klart. Det kan också användas för att testa en hypotes med kunder, utan att påverka pågående affärs aktiviteter.
-- **Manuell distribution** är den minst avancerade metoden för versions hantering. Som namnet antyder skulle någon i teamet manuellt distribuera de senaste kod ändringarna. Den här metoden är fel känsligt, otillförlitligt och betraktas som ett antimönster av de mest erfarna teknikerna.
+- **Kontinuerlig distribution** är den mest avancerade metoden, eftersom den automatiskt distribuerar kod ändringar till produktion. För vuxen team som testar mogna Hypotheses kan kontinuerlig distribution vara mycket värdefull.
+- Vid tidiga utvecklings faser kan **kontinuerlig leverans** vara mer lämpligt. I kontinuerlig leverans distribueras alla kod ändringar automatiskt till en produktions miljö. Utvecklare, företags besluts fattare och andra i teamet kan använda den här miljön för att kontrol lera att deras arbete är produktions klart. Du kan också använda den här metoden för att testa en hypotes med kunder utan att påverka pågående affärs aktiviteter.
+- **Manuell distribution** är den minst avancerade metoden för versions hantering. Som namnet antyder distribuerar någon i teamet manuellt de senaste kod ändringarna. Den här metoden är fel känsligt, otillförlitligt och betraktas som ett antimönster av de mest erfarna teknikerna.
 
-Under den första iterationen av en MVP-lösning är manuell distribution en vanlig metod, trots beskrivningen ovan. När lösningen är mycket flytande och kundfeedback är okänd, finns det en betydande risk för att återställa hela lösningen (eller till och med Core hypotesen). Den allmänna regeln för manuell distribution: inget kund bevis, ingen distributions automatisering. Att investera tidigt kan leda till förlorad tid. Det kan vara viktigare att skapa beroenden på den lanserings pipeline som gör gruppen mer motstånds kraftig mot en tidig Pivot Pivot. Efter de första iterationerna eller när kunden feedback föreslår potentiell framgång, bör en mer avancerad distributions modell snabbt antas.
+Under den första iterationen av en MVP-lösning är manuell distribution vanligt, trots föregående utvärdering. När lösningen är mycket flytande och kundfeedback är okänd, finns det en betydande risk för att återställa hela lösningen (eller till och med Core hypotesen). Här är den allmänna regeln för manuell distribution: inget kund bevis, ingen distributions automatisering. 
 
-I alla stadier av hypotes validering ger Azure-DevOps och [Azure-pipeliner](https://docs.microsoft.com/azure/devops/pipelines) kontinuerlig leverans och kontinuerliga distributions möjligheter med bara några få klick. Läs mer om [kontinuerlig leverans](https://docs.microsoft.com/azure/devops/learn/what-is-continuous-delivery) eller kör [praktiska labbet](https://www.azuredevopslabs.com/labs/azuredevops/continuousdeployment) för mer information. Lösnings arkitekturer kan också påskynda skapandet av dina [CI/CD-pipeliner med Azure DevOps](https://azure.microsoft.com/solutions/devops).
+Att investera tidigt kan leda till förlorad tid. Det kan vara viktigt att skapa beroenden på den versions pipeline som gör teamet mer motstånds kraftiga mot en tidig Pivot Pivot. Efter de första iterationerna eller när kunden feedback föreslår potentiell framgång, bör en mer avancerad distributions modell snabbt antas.
+
+I alla stadier av hypotes validering ger Azure-DevOps och [Azure-pipeliner](https://docs.microsoft.com/azure/devops/pipelines) kontinuerlig leverans och kontinuerliga distributions möjligheter. Läs mer om [kontinuerlig leverans](https://docs.microsoft.com/azure/devops/learn/what-is-continuous-delivery)eller ta en titt på [praktiska labb övningar](https://www.azuredevopslabs.com/labs/azuredevops/continuousdeployment). Lösnings arkitekturen kan också påskynda skapandet av dina [CI/CD-pipeliner via Azure DevOps](https://azure.microsoft.com/solutions/devops).
 
 ## <a name="integrated-measurements"></a>Integrerade mätningar
 
-När du [mäter kund påverkan](./measure.md)är det viktigt att förstå hur kunderna reagerar på ändringar i lösningen. Dessa data kallas telemetri och ger insikter om vilka åtgärder en användning (eller kohort av användare) vidtog när lösningen användes. Från dessa data är det enkelt att få en kvantitativ validering av hypotesen. Dessa mått kan sedan användas för att justera lösningen och generera mer detaljerade Hypotheses. De här diskreta ändringarna bidrar mogna till den första lösningen i efterföljande iterationer, vilket i slut ändan upprepas i stor skala.
+När du [mäter kund påverkan](./measure.md)är det viktigt att förstå hur kunderna reagerar på ändringar i lösningen. Dessa data, som kallas *telemetri*, ger insikter om vilka åtgärder en användare (eller kohort av användare) vidtog när de arbetade med lösningen. Från dessa data är det enkelt att få en kvantitativ validering av hypotesen. Dessa mått kan sedan användas för att justera lösningen och generera mer detaljerade Hypotheses. De här diskreta ändringarna bidrar mogna till den första lösningen i efterföljande iterationer, vilket i slut ändan upprepas i stor skala.
 
-I Azure tillhandahåller [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) verktyg och gränssnitt för att samla in och granska data från kund upplevelser. Dessa observationer och insikter kan användas för att förfina efter släpning med hjälp av [Azure-kort](https://docs.microsoft.com/azure/devops/boards).
+I Azure tillhandahåller [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) verktyg och gränssnitt för att samla in och granska data från kund upplevelser. Du kan använda dessa observationer och insikter för att förfina efter släpning med hjälp av [Azure-kort](https://docs.microsoft.com/azure/devops/boards).
 
 ## <a name="next-steps"></a>Nästa steg
 
-Med en förståelse för de verktyg och processer som krävs för att göra det, är det dags att undersöka en mer avancerad Innovations disciplin, [interagera med enheter](./devices.md). Det kan bidra till att minska barriärerna mellan fysiska och digitala upplevelser, vilket gör lösningen ännu enklare att införa.
+När du har fått en förståelse för de verktyg och processer som krävs för att göra det, är det dags att undersöka en mer avancerad Innovations disciplin: [interagera med enheter](./devices.md). Den här disciplinen kan hjälpa till att minska barriärerna mellan fysiska och digitala upplevelser, vilket gör lösningen ännu enklare att införa.
 
 > [!div class="nextstepaction"]
 > [Interagera med enheter](./devices.md)
