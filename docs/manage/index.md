@@ -9,16 +9,16 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 layout: LandingPage
-ms.openlocfilehash: 3f66a3ef43c16c9a331fabdaf718c85f9f131d8a
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 5a53b72747d20e8b7b2d3ca25a6ffc29b46e1203
+ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72682717"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72979880"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>Molnhantering i Cloud Adoption Framework
 
-För att en [molnstrategi](../strategy/index.md) ska lyckas krävs det en gedigen planering, beredskap och implementering. Det är dock den kontinuerliga driften av de digitala tillgångarna som ger mätbara affärsresultat. Utan en plan för en tillförlitlig och välhanterad drift av molnlösningarna kommer du inte få ut mycket av dina ansträngningar. I följande övningar får du hjälp att utveckla de verksamhetsmässiga och tekniska metoder du behöver för en molnhantering som stödjer den kontinuerliga driften.
+För att en [molnstrategi](../strategy/index.md) ska lyckas krävs det en gedigen planering, beredskap och implementering. Det är dock den kontinuerliga driften av de digitala tillgångarna som ger mätbara affärsresultat. Utan en plan för en tillförlitlig och välhanterad drift av molnlösningarna kommer du inte få ut mycket av dina ansträngningar. I följande övningar får du hjälp att utveckla de verksamhetsmässiga och tekniska metoder som krävs vid en molnhantering av den kontinuerliga driften.
 
 ## <a name="getting-started"></a>Komma igång
 
@@ -76,7 +76,7 @@ Dokumentera vilka arbetsbelastningar som stöds och upprätta driftsåtaganden f
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Utöka baslinjen för hantering</h3>
-Utgå från besluten kring verksamhetsåtaganden och driften och använd metodtipsen till att implementera verktygen som behövs för molnhanteringen.
+Utgå från besluten kring verksamhetsåtaganden och driften och använd metodtipsen till att implementera de verktyg som behövs för molnhanteringen.
                         </div>
                     </div>
                 </div>
@@ -107,13 +107,13 @@ För plattformar och arbetsbelastningar som behöver större verksamhetsåtagand
 
 ## <a name="scalable-cloud-management-methodology"></a>Metod för skalbar molnhantering
 
-Stegen ovan är ett praktiskt genomförbart sätt att använda hanteringsmetoden i Cloud Adoption Framework.
+Föregående steg är ett praktiskt genomförbart sätt att använda hanteringsmetoden i Cloud Adoption Framework.
 
 ![Hanteringsmetoden i Cloud Adoption Framework](../_images/manage/caf-manage.png)
 
 ## <a name="creating-a-balanced-cloud-portfolio"></a>Skapa en balanserad molnportfölj
 
-Precis som det står i artikeln om [anpassning av verksamheten](./considerations/business-alignment.md) så är inte alla arbetsbelastningar verksamhetskritiska. Alla portföljer innehåller olika viktiga arbetsbelastningar. Verksamhetsanpassningen handlar om att fånga upp den här faktorn och att anpassa hanteringskostnaderna efter verksamheten så att bästa möjliga processer och verktyg används i driftshanteringen.
+Precis som det står i artikeln om [anpassning av verksamheten](./considerations/business-alignment.md) så är inte alla arbetsbelastningar verksamhetskritiska. Alla portföljer innehåller olika viktiga arbetsbelastningar. Verksamhetsanpassningen handlar om att fånga upp den här faktorn och att anpassa hanteringskostnaderna efter verksamheten, så att bästa möjliga processer och verktyg används i driftshanteringen.
 
 ## <a name="objective-of-this-content"></a>Det här innehållets mål
 
@@ -126,11 +126,11 @@ Det här innehållet är avsett för teamet som ansvarar för molndriften. Det �
 
 ## <a name="intended-audience"></a>Målgrupp
 
-Innehållet i Cloud Adoption Framework berör verksamheten, tekniken och kulturen hos företag. Det här avsnittet av Cloud Adoption Framework är nära knutet till IT-drift, IT-styrning, ekonomi, verksamhetschefer, nätverk, identiteter och teamen för molnimplementering. Eftersom de här personalgrupperna ofta är beroende av varandra måste molnarkitekterna använda en process med stor delaktighet. Den här delaktigheten är sällan en engångsföreteelse.
+Innehållet i Cloud Adoption Framework berör verksamheten, tekniken och kulturen hos företag. Det här avsnittet av Cloud Adoption Framework är nära knutet till IT-drift, IT-styrning, ekonomi, verksamhetschefer, nätverk, identiteter och teamen för molnimplementering. Eftersom de här personalgrupperna ofta är beroende av varandra, måste molnarkitekterna använda en process med stor delaktighet. Den här delaktigheten är sällan en engångsföreteelse.
 
 Molnarkitekten fungerar som strateg och ledare när de här personalgrupperna sammanförs. Innehållet i den här samlingen guider är utformat för att hjälpa molnarkitekten att leda diskussionen så att rätt beslut kan fattas. När det gäller affärsomvandlingar som drivs av molnet måste molnarkitekten ge beslutsstöd till både IT och verksamheten i stort.
 
-**Molnarkitektsspecialisering i det här avsnittet:** Varje avsnitt av Cloud Adoption Framework representerar en viss specialisering eller variant av molnarkitektens roll. Det här avsnittet av Cloud Adoption Framework är utformat för molnarkitekter med intresse för drift och hantering av distribuerade lösningar. I det här sammanhanget kallas dessa specialister ofta för *molndriften* eller kollektivt som *molndriftteamet*.
+**Molnarkitektsspecialisering i det här avsnittet:** Varje avsnitt av Cloud Adoption Framework representerar en viss specialisering eller variant av molnarkitektens roll. Det här avsnittet av Cloud Adoption Framework är utformat för molnarkitekter med intresse för drift och hantering av distribuerade lösningar. I det här sammanhanget kallas dessa specialister ofta för *molndriften*, eller kollektivt som *molndriftteamet*.
 
 ## <a name="use-this-guide"></a>Använd den här guiden
 
@@ -140,7 +140,7 @@ Om du vill följa guiden från början till slut så får du hjälp att utveckla
 
 ## <a name="next-steps"></a>Nästa steg
 
-Använd metoden till att [upprätta tydliga verksamhetsåtaganden](./considerations/business-alignment.md).
+Använd metoden till att upprätta tydliga verksamhetsåtaganden.
 
 > [!div class="nextstepaction"]
 > [Upprätta tydliga verksamhetsåtaganden](./considerations/business-alignment.md)
