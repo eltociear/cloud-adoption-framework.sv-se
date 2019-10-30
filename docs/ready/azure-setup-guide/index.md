@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 354fbe7333e1e2deccc0a7894387a8fa1a78be11
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 13dc4936bff9058c7fe28761c584be8faa398f89
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72698477"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048475"
 ---
 ::: zone target="docs"
 
@@ -48,7 +48,7 @@ Du lär dig följande:
 ::: zone target="docs"
 
 > [!TIP]
-> Visa den här guiden i Azure-portalen om du vill ha en interaktiv upplevelse. Gå till [Azures snabbstartcenter](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) i Azure-portalen och **Introduction to Azure Setup** (Introduktion till Azure-inställningar). Följ sedan instruktionerna.
+> Visa den här guiden i Azure-portalen om du vill ha en interaktiv upplevelse. Gå till [Azure Quickstart Center](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) i Microsoft Azure-portalen, välj **Introduktion till Azure-installation** och följ instruktionerna.
 
 Nästa steg: [Organisera dina resurser för att förenkla hur du tillämpar inställningar](./organize-resources.md)
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: 85d284494a6fd9ca95b9566c939015a0a57b6f78
-ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
+ms.openlocfilehash: cdfa8ffe64ac7af6d545f9706f8f0652a4d583c4
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888915"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047724"
 ---
 # <a name="migration-tools-decision-guide"></a>Beslutsguide för migreringsverktyg
 
@@ -40,7 +40,7 @@ I linje med Cloud Adoption Frameworks betoning på arbete med [inkrementell migr
 
 ## <a name="learn-more"></a>Läs mer
 
-- **[Grunderna för molnet: Översikt över databearbetningsalternativ i Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview)** . Innehåller information om funktionerna i Azure IaaS- och PaaS-beräkningsalternativ.
-- **[Grunderna för molnet: Välja rätt datalager](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)** . Beskriver PaaS-lagringsalternativ som finns tillgängliga på Azure-plattformen.
-- **[Migrering med utökat omfång: Lagringskraven överskrider nätverkskapaciteten under ett migreringsprojekt](../../migrate/expanded-scope/network-capacity-exceeded.md)** . Beskriver alternativa mekanismer för datamigrering för scenarier där datamigrering hindras av tillgänglig nätverksbandbredd.
-- **[SQL Database: Välja rätt alternativ för SQL Server i Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines)** . Beskrivning av alternativen affärsmotiveringarna för valet att värdhantera dina SQL Server-arbetsbelastningar i en miljö med värdhanterad infrastruktur (IaaS) eller en värdhanterad tjänst (PaaS).
+- **[Grunderna för molnet: Översikt över databearbetningsalternativ i Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview).** Innehåller information om funktionerna i Azure IaaS- och PaaS-beräkningsalternativ.
+- **[Grunderna för molnet: Välj rätt datalager](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview).** Beskriver PaaS-lagringsalternativ som finns tillgängliga på Azure-plattformen.
+- **[Migrering med utökat omfång: Lagringskraven överskrider nätverkskapaciteten under ett migreringsprojekt](../../migrate/expanded-scope/network-capacity-exceeded.md).** Beskriver alternativa mekanismer för datamigrering för scenarier där datamigrering hindras av tillgänglig nätverksbandbredd.
+- **[SQL Database: Välja rätt alternativ för SQL Server i Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines).** Beskrivning av alternativen affärsmotiveringarna för valet att värdhantera dina SQL Server-arbetsbelastningar i en miljö med värdhanterad infrastruktur (IaaS) eller en värdhanterad tjänst (PaaS).

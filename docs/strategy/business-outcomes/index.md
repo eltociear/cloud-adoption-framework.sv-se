@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: e67d3e0ed1e13fc4c7a5cfdca1bb2f6c138601ba
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 58891a3afcafc9ac160f90027c35aa459ca7636a
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548720"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048011"
 ---
-<!-- markdownlint-disable -->
+<!-- markdownlint-disable MD026 -->
 
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>Vilka affärsresultat är associerade med omvandlingsresor?
 
@@ -32,39 +32,39 @@ Här följer några affärsresultat som brukar leda till konversationer mellan o
 - **Ekonomiledarskap:** Öka lönsamheten samtidigt som efterlevnaden främjas.
 - **Marknadsföring:** Skaffa och behåll kunder samt skapa anseende.
 - **Försäljning:** Öka försäljningen och förbättra kundernas livslängdsvärde.
-- **HR:** Behåll, rekrytera och ge anställda möjligheter.
+- **Personalfrågor:** Behåll, rekrytera och ge anställda möjligheter.
 
-# <a name="sample-outcomes-by-category"></a>Exempelresultat efter kategori
+## <a name="sample-outcomes-by-category"></a>Exempelresultat efter kategori
 
 Att tala med affärsresultat som utgångspunkt kan kännas som ett främmande språk för många teknikinriktade personer. Microsoft organiserar en uppsättning exempel på affärsresultat i [Business Outcome Framework](../index.md) som gör översättningen till detta språk enklare. Använd de här exemplen för att inspirera och demonstrera affärsresultat baserat på faktiska omvandlingar.
 
 Som hjälp för dig att lättare hitta affärsresultat har vi delat upp dem i följande kategorier. Den här metoden brukar främja diskussioner mellan olika affärsenheter som hjälp att skapa konsensus.
 
-## <a name="fiscal-outcomes"></a>Ekonomiska resultat
+### <a name="fiscal-outcomes"></a>Ekonomiska resultat
 
 Ekonomisk prestanda är det tydligaste affärsresultatet för många affärsledare, men det är inte det enda resultatet.
 
 Visa exempel på [ekonomiska resultat](./fiscal-outcomes.md).
 
-## <a name="agility-outcomes"></a>Agilitetsresultat
+### <a name="agility-outcomes"></a>Agilitetsresultat
 
 I dagens snabbt föränderliga affärsmiljö är tiden en mycket viktig faktor. Möjlighet att svara på och driva marknadsförändringar utgör det grundläggande måttet på agilitet i verksamheten.
 
 Visa exempel av [agilitetsresultat](./agility-outcomes.md).
 
-## <a name="reach-outcomes"></a>Resultat för global räckvidd
+### <a name="reach-outcomes"></a>Resultat för global räckvidd
 
 I en ständigt krympande marknad kan global räckvidd (förmågan att stödja kunder och användare globalt) mätas utifrån efterlevnad i geografiska områden som är relevanta för verksamheten.
 
 Visa resultat som rör [global räckvidd](./reach-outcomes.md).
 
-## <a name="customer-engagement-outcomes"></a>Resultat för kundengagemang
+### <a name="customer-engagement-outcomes"></a>Resultat för kundengagemang
 
 Sociala marknadsplatser kastar om branschens spelregler i en oerhörd takt. Att svara på användarnas behov är ett viktigt mått på kundengagemang.
 
 Läs mer om [resultat för kundengagemang](./engagement-outcomes.md).
 
-## <a name="performance-outcomes"></a>Prestandaresultat
+### <a name="performance-outcomes"></a>Prestandaresultat
 
 Det förutsätts att prestanda och pålitlighet erbjuds. Om endera av dessa misslyckas kan skadan på anseendet vara både stor och långvarig.
 

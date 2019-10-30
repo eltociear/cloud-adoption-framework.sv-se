@@ -10,19 +10,19 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8d30001a3ee97783dca2709c33e7bebb9ab9a889
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 2e624ad1ede3546d4babb232f7bd4b974afadaaa
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769312"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047456"
 ---
 ::: zone target="docs"
 
 # <a name="azure-innovation-guide-before-you-start"></a>Guide till Azure-innovation: Innan du börjar
 
 > [!NOTE]
-> Den här guiden är en utgångspunkt för vägledningen kring innovation i Cloud Adoption Framework. Du hittar den även i Azures Snabbstartscenter. I tipset senare i artikeln finns en länk till Azures snabbstartscenter.
+> Den här guiden är en utgångspunkt för vägledningen kring innovation i Cloud Adoption Framework. Du hittar den även i [Azure Quickstart Center](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade).
 
 ::: zone-end
 
@@ -32,9 +32,9 @@ ms.locfileid: "72769312"
 
 ::: zone-end
 
-Innan du börjar utveckla innovativa lösningar med hjälp av Azure-tjänster måste du förbereda din miljö, bland annat genom att hantera slingor för kundernas feedback. I den här guiden presenterar vi några funktioner som hjälper dig att engagera kunderna, skapa lösningar och underlätta implementeringen. Mer information, metodtips och överväganden när det gäller att förbereda din molnmiljö finns i [innovationsavsnittet i Cloud Adoption Framework](../index.md).
+Innan du börjar utveckla innovativa lösningar med hjälp av Azure-tjänster måste du förbereda din miljö, bland annat genom att förbereda att hantera slingor för kundernas feedback. I den här guiden presenterar vi några funktioner som hjälper dig att engagera kunderna, skapa lösningar och underlätta implementeringen. Mer information, metodtips och överväganden när det gäller att förbereda din molnmiljö finns i [innovationsavsnittet i Cloud Adoption Framework](../index.md).
 
-Du lär dig följande:
+I den här guiden får du lära dig att:
 
 > [!div class="checklist"]
 >
@@ -48,7 +48,7 @@ Du lär dig följande:
 ::: zone target="docs"
 
 > [!TIP]
-> Visa den här guiden i Azure-portalen om du vill ha en interaktiv upplevelse. Gå till [Azures snabbstartcenter](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) i Azure-portalen och **Introduction to Azure Setup** (Introduktion till Azure-inställningar). Följ sedan instruktionerna.
+> Visa den här guiden i Azure-portalen om du vill ha en interaktiv upplevelse. Gå till [Azure Quickstart Center](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) i Microsoft Azure-portalen, välj **Azures innovationsguide** och följ instruktionerna.
 
 Nästa steg: [Förbered för innovation med en delad lagringsplats och hanteringsverktyg för idéstadiet](./adoption.md)
 
