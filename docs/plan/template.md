@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9988141c1f0133a0a18c11c46e09d7285d988e5e
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3bd26321eca1747e5ed579e4394b0a4b7b713294
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549181"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048224"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Moln implementerings plan och Azure-DevOps
 
@@ -45,10 +45,10 @@ Om du vill förbereda din arbets station för Mass redigering, se [Mass Lägg ti
 
 Moln implementerings planen organiserar aktiviteter efter aktivitets typ:
 
-- **Epics**: en *episka* representerar en övergripande fas i moln införande livs cykel.
-- **Funktioner**: funktioner används för att organisera vissa mål i varje fas. Migreringen av en speciell arbets belastning skulle till exempel vara en funktion.
-- **Användar berättelser**: användar berättelser gruppen arbetar i logiska samlingar av aktiviteter baserat på ett speciellt mål.
-- **Uppgifter**: aktiviteter är det faktiska arbetet som ska utföras.
+- **Epics:** En *episka* representerar en övergripande fas i moln införande livs cykel.
+- **Funktioner:** Funktionerna används för att organisera vissa mål i varje fas. Migreringen av en speciell arbets belastning skulle till exempel vara en funktion.
+- **Användar berättelser:** Användar nyhets gruppen fungerar i logiska samlingar av aktiviteter baserat på ett speciellt mål.
+- **Uppgifter:** Aktiviteter är det faktiska arbetet som ska utföras.
 
 På varje lager sekvenseras aktiviteter baserat på beroenden. Aktiviteterna är länkade till artiklar i moln implementerings ramverket för att klargöra målet eller uppgiften i handen.
 

@@ -9,20 +9,20 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 1a0c1bfe2943176d647e53e8f91c8d92e168af12
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 350b13e993d2130dc72482cbe7cafb3823b6a4d8
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548690"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048376"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Exempel på finansiella resultat
 
 På den högsta nivån består räkenskaps samtal av tre grundläggande koncept:
 
-- **Intäkter**: kostar mer pengar i företaget till följd av försäljningen av varor eller tjänster.
-- **Kostnad**: kommer mindre pengar att ägnas åt att skapa, marknadsföra, sälja eller leverera varor eller tjänster.
-- **Vinst**: även om de är ovanliga kan vissa transformeringar både öka intäkterna och minska kostnaderna. Detta är ett vinst resultat.
+- **Intäkter:** Kommer mer pengar att komma in i företaget som ett resultat av försäljningen av varor eller tjänster.
+- **Kostnad:** Kommer mindre pengar att ägnas åt att skapa, marknadsföra, sälja eller leverera varor eller tjänster.
+- **Vinst:** Även om de är ovanliga kan vissa transformeringar både öka intäkterna och minska kostnaderna. Detta är ett vinst resultat.
 
 I resten av den här artikeln förklaras dessa räkenskaps resultat i samband med en moln omvandling.
 
@@ -35,13 +35,13 @@ I resten av den här artikeln förklaras dessa räkenskaps resultat i samband me
 
 Molnet kan hjälpa dig att skapa möjligheter att leverera nya produkter till kunder eller leverera befintliga produkter på ett nytt sätt. Nya intäkts strömmar är innovativa, företags och spännande för många personer i företags världen. Nya intäkts strömmar är också känslig för haveri och betraktas som många företag som ska vara höga risker. När intäkts-relaterade resultat föreslås, kommer det sannolikt att vara motstånd. Om du vill lägga till trovärdighet för dessa resultat kan du samar beta med en affärs ledare som är en beprövad innovatör. Validering av intäkts strömmen tidigt i processen hjälper till att undvika hindren från företaget.
 
-- **Exempel**: ett företag har Sälj böcker i över ett hundra år. En anställd i företaget inser att innehållet kan levereras elektroniskt. Medarbetaren skapar en enhet som kan säljas i pärmen, vilket gör att samma böcker kan hämtas direkt, med hjälp av $X i ny bok försäljning.
+- **Exempel:** Ett företag har Sälj böcker i över ett hundra år. En anställd i företaget inser att innehållet kan levereras elektroniskt. Medarbetaren skapar en enhet som kan säljas i pärmen, vilket gör att samma böcker kan hämtas direkt, med hjälp av $X i ny bok försäljning.
 
 ### <a name="revenue-increases"></a>Ökad intäkt
 
 Med global skala och digital räckvidd kan molnet hjälpa företag att öka intäkter från befintliga intäkts strömmar. Den här typen av resultat kommer ofta från en justering med försäljnings-eller marknads ledarskap.
 
-- **Exempel**: ett företag som säljer widgetar kunde sälja fler widgetar, om säljarna säkert kan komma åt företagets digitala katalog och lager nivåer. Dessa data finns tyvärr bara i företagets ERP-system, som endast kan nås via en nätverksansluten enhet. Genom att skapa en tjänst fasad till ett gränssnitt med ERP och exponera katalog listan och icke-känsliga lager nivåer till ett program i molnet, skulle kunderna kunna få till gång till de data som de behöver, samtidigt som kunden är på plats. Att utöka lokala Active Directory att använda Azure Active Directory (Azure AD) och integrera rollbaserad åtkomst till programmet gör det möjligt för företaget att se till att data förblir säkra. Det här enkla projektet kan påverka intäkterna från en befintlig produkt linje med _x%_ .
+- **Exempel:** Ett företag som säljer widgetar kunde sälja fler widgetar, om säljarna säkert kan komma åt företagets digitala katalog och lager nivåer. Dessa data finns tyvärr bara i företagets ERP-system, som endast kan nås via en nätverksansluten enhet. Genom att skapa en tjänst fasad till ett gränssnitt med ERP och exponera katalog listan och icke-känsliga lager nivåer till ett program i molnet, skulle kunderna kunna få till gång till de data som de behöver, samtidigt som kunden är på plats. Att utöka lokala Active Directory att använda Azure Active Directory (Azure AD) och integrera rollbaserad åtkomst till programmet gör det möjligt för företaget att se till att data förblir säkra. Det här enkla projektet kan påverka intäkterna från en befintlig produkt linje med _x%_ .
 
 ### <a name="profit-increases"></a>Vinst ökningar
 
@@ -53,9 +53,9 @@ Sällan medför en enda insats samtidigt intäkter och lägre kostnader. Men nä
 
 Med molnbaserad data behandling kan du minska kapital kostnader för maskin-och program vara, konfigurera Data Center, köra Data Center på plats och så vidare. Kostnaderna för rack servrar, Round-of-ingångs elektricitet för ström och kylning, och IT-experter för att hantera infrastrukturen lägger upp snabbt. Om du stänger ett Data Center kan det minska kapital utgifts åtagandet. Detta kallas vanligt vis för att "komma ut från data Center Business". Kostnads nedsättning mäts vanligt vis i kronor i den aktuella budgeten, vilket kan omfatta en till fem år beroende på hur ekonomi chefen hanterar ekonomin.
 
-- **Exempel #1**: ett företags data Center förbrukar en stor del av den årliga IT-budgeten. DET väljer att genomföra en molnbaserad migrering och över gångar i data centret till infrastruktur som en tjänst (IaaS) lösningar, vilket skapar en kostnads nedsättning på tre år.
-- **Exempel #2**: ett Holding bolag förvärvade nyligen ett nytt företag. I anskaffningen anger villkoren att den nya entiteten ska tas bort från de aktuella data centren inom sex månader. Om du inte gör det kommer det att resultera i en fin på 1 000 000 USD per månad till företaget. Att flytta de digitala resurserna till molnet i en molnbaserad migrering kan göra det möjligt för en snabbt avställning av de gamla till gångarna.
-- **Exempel #3**: ett inkomst skatte bolag som betjänar konsumenter som har 70 procent av sina årliga intäkter under de tre första månaderna av året. Resten av året är dess stora IT-investeringar relativt vilande. En molnbaserad migrering kan göra det möjligt att distribuera beräknings-/värd kapaciteten som krävs för dessa tre månader. Under de återstående nio månaderna skulle IaaS-kostnaderna minska avsevärt genom att minska beräknings utrymmet.
+- **Exempel #1:** Ett företags data Center förbrukar en stor del av den årliga IT-budgeten. DET väljer att genomföra en molnbaserad migrering och över gångar i data centret till infrastruktur som en tjänst (IaaS) lösningar, vilket skapar en kostnads nedsättning på tre år.
+- **Exempel #2:** Ett Holding bolag förvärvade nyligen ett nytt företag. I anskaffningen anger villkoren att den nya entiteten ska tas bort från de aktuella data centren inom sex månader. Om du inte gör det kommer det att resultera i en fin på 1 000 000 USD per månad till företaget. Att flytta de digitala resurserna till molnet i en molnbaserad migrering kan göra det möjligt för en snabbt avställning av de gamla till gångarna.
+- **Exempel #3:** Ett inkomst skatte företag som betjänar konsumenterna har 70 procent av sina årliga intäkter under de tre första månaderna av året. Resten av året är dess stora IT-investeringar relativt vilande. En molnbaserad migrering kan göra det möjligt att distribuera beräknings-/värd kapaciteten som krävs för dessa tre månader. Under de återstående nio månaderna skulle IaaS-kostnaderna minska avsevärt genom att minska beräknings utrymmet.
 
 ### <a name="example-coverdell"></a>Exempel: Coverdell
 
@@ -70,7 +70,7 @@ Coverdell moderniserar sin infrastruktur för att driva in besparingar av kostna
 
 Att avsluta ett Data Center kan också ge kostnads undvikade kostnader genom att förhindra framtida uppdaterings cykler. En uppdaterings cykel är en process för att köpa ny maskin-och program vara för att ersätta åldrande lokala system. I Azure underhålls och uppdateras maskin vara och operativ system regelbundet, korrigeras och uppdateras utan extra kostnad för kunderna. Detta gör att en ekonomi chef kan ta bort planerade framtida utgifter från långsiktiga finansiella prognoser. Kostnads skatteundandragande mäts i dollar. Det skiljer sig från kostnads minskning, som i allmänhet fokuserar på en framtida budget som ännu inte har godkänts fullständigt.
 
-- **Exempel**: ett företags data Center är upp för en låne förnyelse på sex månader. Data centret har varit i tjänst i åtta år. För fyra år sedan har alla servrar uppdaterats och virtualiserats, vilket kostar företaget miljon tals dollar. Nästa år planerar företaget att uppdatera maskin varan och program varan igen. Genom att migrera till gångarna i data centret som en del av en molnbaserad migrering skulle du kunna undvika kostnads snedvridning genom att ta bort den planerade uppdateringen från nästa års prognostiserade budget. Det kan också medföra kostnads nedsättning genom att minska eller eliminera fastighets leasing kostnader.
+- **Exempel:** Ett företags data Center är upp för en låne förnyelse på sex månader. Data centret har varit i tjänst i åtta år. För fyra år sedan har alla servrar uppdaterats och virtualiserats, vilket kostar företaget miljon tals dollar. Nästa år planerar företaget att uppdatera maskin varan och program varan igen. Genom att migrera till gångarna i data centret som en del av en molnbaserad migrering skulle du kunna undvika kostnads snedvridning genom att ta bort den planerade uppdateringen från nästa års prognostiserade budget. Det kan också medföra kostnads nedsättning genom att minska eller eliminera fastighets leasing kostnader.
 
 ### <a name="capital-expenses-vs-operating-expenses"></a>Kapital kostnader jämfört med drifts kostnader
 
@@ -91,7 +91,7 @@ Innan du associerar en omvandlings resa med den här typen av kapital kontra kon
 
 Om en modell för drifts kostnader är önskvärd kan följande exempel vara ett livskraftigt affärs resultat:
 
-- **Exempel**: företagets data Center skriver för närvarande till _x USD_ per år under de kommande tre åren. Vi förväntas kräva ytterligare _y-USD_ för att uppdatera maskin varan nästa år. Vi kan omvandla kapital utgifterna till en modell för drifts kostnader till en jämn pris på _ö USD_ per månad, vilket ger bättre hantering av och ansvar för drifts kostnaderna för teknik.
+- **Exempel:** Företagets data Center skriver för närvarande till _x USD_ per år under de kommande tre åren. Vi förväntas kräva ytterligare _y-USD_ för att uppdatera maskin varan nästa år. Vi kan omvandla kapital utgifterna till en modell för drifts kostnader till en jämn pris på _ö USD_ per månad, vilket ger bättre hantering av och ansvar för drifts kostnaderna för teknik.
 
 ## <a name="next-steps"></a>Nästa steg
 

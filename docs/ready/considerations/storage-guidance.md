@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d1fbc6fb2d16672c7ebfe0eabb28b77288856a3b
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0505b9e09492c5533d17e2f6369794aaa9b6619b
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548764"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048419"
 ---
 # <a name="storage-design-decisions"></a>Beslut om lagringsdesign
 
@@ -61,7 +61,7 @@ Azure erbjuder flera produkter och tjänster som har olika lagringskapaciteter. 
 | Jag kör behållare med beständiga volymer. | [Azure Files (Standard eller Premium)](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br/><br/> [Azure-disklagring (Standard, Premium eller Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Drivrutinsalternativ för fil (RWX) och block (RWO) är tillgängliga för både Azure Kubernetes Service (AKS) och anpassade Kubernetes-distributioner. Beständiga volymer kan mappas till antingen en Azure-disklagring eller en hanterad Azure Files-resurs. Välj mellan premium och standard baserat på krav på arbetsbelastning för beständiga volymer. |
 | Jag har en datasjö (till exempel ett Hadoop-kluster för HDFS-data). | [Azure Data Lake Storage Gen 2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) <br/><br/> [Azure-disklagring (Standard eller Premium SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Funktionen Data Lake Storage gen 2 i Azure Blob Storage är HDFS-kompatibel på serversidan och tillhandahåller petabyteskalning för parallellanalys. Den erbjuder även hög tillgänglighet och tillförlitlighet. Programvara som Cloudera kan använda Premium eller Standard SSD på Master-/Worker-noder om det behövs. |
 | Jag har en SAP- eller SAP HANA-distribution. | [Azure-disklagring (Premium eller Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Ultra SSD har optimerats för att erbjuda svarstider under millisekunden för SAP-arbetsbelastningar på nivå 1. Nu är Ultra SSD tillgänglig som förhandsversion. Premium SSD tillsammans med M-serien erbjuder alternativet allmän tillgänglighet (GA). |
-| Jag har en webbplats för haveriberedskap med en strikt RPO/RTO som synkroniserar från mina primära servrar. | [Azure-sidblobbar](https://docs.microsoft.com/azure/storage/blobs/storage-blob-pageblob-overview) | Azure-sidblobbar används av replikeringsprogram för att möjliggöra replikering till Azure till låg kostnad utan att behöva beräkna virtuella datorer förrän redundansväxlingen sker. Mer information finns i [dokumentationen om Azure-disklagring](https://docs.microsoft.com/azure/virtual-machines/windows/backup-and-disaster-recovery-for-azure-iaas-disks). **Obs**: Page blobbar stöder högst 8 TB. |
+| Jag har en webbplats för haveriberedskap med en strikt RPO/RTO som synkroniserar från mina primära servrar. | [Azure-sidblobbar](https://docs.microsoft.com/azure/storage/blobs/storage-blob-pageblob-overview) | Azure-sidblobbar används av replikeringsprogram för att möjliggöra replikering till Azure till låg kostnad utan att behöva beräkna virtuella datorer förrän redundansväxlingen sker. Mer information finns i [dokumentationen om Azure-disklagring](https://docs.microsoft.com/azure/virtual-machines/windows/backup-and-disaster-recovery-for-azure-iaas-disks). **Obs:** Page blobbar stöder högst 8 TB. |
 
 ### <a name="file-and-object-storage-scenarios"></a>Scenarier för fil- och objekt lagring
 

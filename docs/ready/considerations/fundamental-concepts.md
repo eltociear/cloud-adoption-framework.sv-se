@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 02d4cf1218c6b00dd0d42dfb877af49a92498115
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 7b635ea417502a175b7fe308e5faeee1ff8a65a5
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548823"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048406"
 ---
 # <a name="azure-fundamental-concepts"></a>Grundläggande koncept för Azure
 
@@ -23,25 +23,25 @@ Lär dig grundläggande begrepp och termer som används i Azure samt hur begrepp
 
 Det är bra att känna till följande definitioner när du påbörjar arbetet med Azure-molnimplementering:
 
-- **Resurs**: en entitet som hanteras av Azure. Exempel är virtuella Azure-datorer, virtuella nätverk och lagringskonton.
-- **Prenumeration**: en logisk behållare för dina resurser. Varje Azure-resurs är bara associerad med en enskild prenumeration. Att skapa en prenumeration är det första steget i att implementera Azure.
-- **Azure-konto**: den e-postadress som du anger när du skapar en Azure-prenumeration är Azure-kontot för prenumerationen. Den part som är kopplad till e-postkontot ansvarar för de månatliga kostnader som debiteras för resurserna i prenumerationen. När du skapar ett Azure-konto anger du kontaktuppgifter och faktureringsinformation, till exempel ett kreditkort. Du kan använda samma Azure-konto (e-postadress) för flera prenumerationer. Varje prenumeration är bara associerad med ett enskilt Azure-konto.
-- **Konto administratör**: den part som är kopplad till den e-postadress som används för att skapa en Azure-prenumeration. Konto administratören ansvarar för att betala för alla kostnader som uppkommer av prenumerationens resurser.
-- **Azure Active Directory** (Azure AD): Microsoft Cloud-baserad identitets-och åtkomst hanterings tjänst. Azure AD gör att dina medarbetare kan logga in och få åtkomst till resurser.
-- **Azure AD-klient**: en dedikerad och betrodd instans av Azure AD. En Azure AD-klientorganisation som skapas automatiskt när organisationen för första gången registrerar sig för en Microsoft-molntjänstprenumeration som Microsoft Azure, Microsoft Intune eller Office 365. En Azure-klientorganisation representerar en enskild organisation.
-- **Azure AD-katalog**: varje Azure AD-klient har en enda, dedikerad och betrodd katalog. Katalogen innehåller klientorganisationens användare, grupper och appar. Katalogen används för att utföra funktioner för identitet och åtkomsthantering för klientorganisationsresurser. En katalog kan associeras med flera prenumerationer, men varje prenumeration är bara associerad med en enskild katalog.
-- **Resurs grupper**: logiska behållare som du använder för att gruppera relaterade resurser i en prenumeration. Varje resurs kan endast finnas i en resursgrupp.
-- **Hanterings grupper**: logiska behållare som du använder för en eller flera prenumerationer. Du kan definiera en hierarki för hanteringsgrupper, prenumerationer, resursgrupper och resurser för att effektivt hantera åtkomst, principer och efterlevnad genom arv.
-- **Region**: en uppsättning Azure-datacenter som har distribuerats i en latens-definierad perimeter. Datacentren är anslutna via ett dedikerat, regionalt nätverk med låg svarstid. De flesta Azure-resurser körs i en specifik Azure-region.
+- **Resurs:** En entitet som hanteras av Azure. Exempel är virtuella Azure-datorer, virtuella nätverk och lagringskonton.
+- **Prenumeration:** En logisk behållare för dina resurser. Varje Azure-resurs är bara associerad med en enskild prenumeration. Att skapa en prenumeration är det första steget i att implementera Azure.
+- **Azure-konto:** Den e-postadress som du anger när du skapar en Azure-prenumeration är Azure-kontot för prenumerationen. Den part som är kopplad till e-postkontot ansvarar för de månatliga kostnader som debiteras för resurserna i prenumerationen. När du skapar ett Azure-konto anger du kontaktuppgifter och faktureringsinformation, till exempel ett kreditkort. Du kan använda samma Azure-konto (e-postadress) för flera prenumerationer. Varje prenumeration är bara associerad med ett enskilt Azure-konto.
+- **Konto administratör:** Den part som är kopplad till den e-postadress som används för att skapa en Azure-prenumeration. Konto administratören ansvarar för att betala för alla kostnader som uppkommer av prenumerationens resurser.
+- **Azure Active Directory (Azure AD):** Microsoft Cloud-baserad identitets-och åtkomst hanterings tjänst. Azure AD gör att dina medarbetare kan logga in och få åtkomst till resurser.
+- **Azure AD-klient:** En dedikerad och betrodd instans av Azure AD. En Azure AD-klientorganisation som skapas automatiskt när organisationen för första gången registrerar sig för en Microsoft-molntjänstprenumeration som Microsoft Azure, Microsoft Intune eller Office 365. En Azure-klientorganisation representerar en enskild organisation.
+- **Azure AD-katalog:** Varje Azure AD-klient har en enda, dedikerad och betrodd katalog. Katalogen innehåller klientorganisationens användare, grupper och appar. Katalogen används för att utföra funktioner för identitet och åtkomsthantering för klientorganisationsresurser. En katalog kan associeras med flera prenumerationer, men varje prenumeration är bara associerad med en enskild katalog.
+- **Resurs grupper:** Logiska behållare som du använder för att gruppera relaterade resurser i en prenumeration. Varje resurs kan endast finnas i en resursgrupp.
+- **Hanterings grupper:** Logiska behållare som du använder för en eller flera prenumerationer. Du kan definiera en hierarki för hanteringsgrupper, prenumerationer, resursgrupper och resurser för att effektivt hantera åtkomst, principer och efterlevnad genom arv.
+- **Region:** En uppsättning Azure-datacenter som distribueras inuti en latens-definierad perimeter. Datacentren är anslutna via ett dedikerat, regionalt nätverk med låg svarstid. De flesta Azure-resurser körs i en specifik Azure-region.
 
 ## <a name="azure-subscription-purposes"></a>Syften med Azure-prenumeration
 
 En Azure-prenumeration har flera olika syften. En Azure-prenumeration är:
 
-- **Ett juridiskt avtal**. Varje prenumeration är associerad med ett [Azure-erbjudande](https://azure.microsoft.com/support/legal/offer-details) (till exempel en kostnadsfri utvärderingsversion eller betala per användning). Varje erbjudande har en speciell prisplan, förmåner och tillhörande villkor. Du väljer ett Azure-erbjudande när du skapar en prenumeration.
-- **Ett betalningsavtal**. När du skapar en prenumeration anger du betalningsinformation för den prenumerationen, till exempel ett kreditkortsnummer. Varje månad beräknas kostnaderna för de resurser som distribuerats till den prenumerationen och debiteras via den betalningsmetoden.
-- **En gräns för skala**. Gränser för skala definieras för en prenumeration. Prenumerationens resurser får inte överskrida de inställda skalnings gränserna. Det finns till exempel en gräns för det antal virtuella datorer som du kan skapa i en enstaka prenumeration.
-- **En administrativ gräns**. En prenumeration kan fungera som en gräns för administration, säkerhet och principer. Azure innehåller även andra mekanismer för att uppfylla dessa behov, till exempel hanteringsgrupper, resursgrupper och rollbaserad åtkomstkontroll.
+- **Ett juridiskt avtal.** Varje prenumeration är associerad med ett [Azure-erbjudande](https://azure.microsoft.com/support/legal/offer-details) (till exempel en kostnadsfri utvärderingsversion eller betala per användning). Varje erbjudande har en speciell prisplan, förmåner och tillhörande villkor. Du väljer ett Azure-erbjudande när du skapar en prenumeration.
+- **Ett betalnings avtal.** När du skapar en prenumeration anger du betalningsinformation för den prenumerationen, till exempel ett kreditkortsnummer. Varje månad beräknas kostnaderna för de resurser som distribuerats till den prenumerationen och debiteras via den betalningsmetoden.
+- **En gräns för skalning.** Gränser för skala definieras för en prenumeration. Prenumerationens resurser får inte överskrida de inställda skalnings gränserna. Det finns till exempel en gräns för det antal virtuella datorer som du kan skapa i en enstaka prenumeration.
+- **En administrativ gränser.** En prenumeration kan fungera som en gräns för administration, säkerhet och principer. Azure innehåller även andra mekanismer för att uppfylla dessa behov, till exempel hanteringsgrupper, resursgrupper och rollbaserad åtkomstkontroll.
 
 ## <a name="azure-subscription-considerations"></a>Överväganden för Azure-prenumerationer
 
