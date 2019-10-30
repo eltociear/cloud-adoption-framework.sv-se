@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: bfa693155bb017f377b3a19c95c8cdb98ae3baa0
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 718c93b560b38eaae6556e549a0c6f6bb97b807b
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769600"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048252"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Virtuella Data Center: ett nätverks perspektiv
 
@@ -321,17 +321,17 @@ Arbets belastnings komponenter är där dina faktiska program och tjänster finn
 
 Arbets belastnings möjligheterna är oändliga. Följande är bara några av de möjliga arbets belastnings typerna:
 
-**Interna LOB-program**: branschspecifika program är dator program som är viktiga för pågående drift av ett företag. LOB-program har några gemensamma egenskaper:
+**Interna LOB-program:** Branschspecifika program är dator program som är viktiga för pågående drift av ett företag. LOB-program har några gemensamma egenskaper:
 
-- **Interaktivt** efter typ. Data har angetts och resultat eller rapporter returneras.
-- **Data driven** &mdash;data intensiv med frekvent åtkomst till databaser eller andra lagrings enheter.
-- **Integrerad** &mdash;offer-integrering med andra system inom eller utanför organisationen.
+- **Interaktivt efter typ:** Data har angetts och resultat eller rapporter returneras.
+- **Data driven:** Data intensiva arbets belastningar med frekvent åtkomst till databaser eller andra lagrings enheter.
+- **Integrerad:** Arbets belastningar erbjuder integration med andra system inom eller utanför organisationen.
 
 **Kund riktade webbplatser (Internet eller internt)** : de flesta program som interagerar med Internet är webbplatser. Azure erbjuder funktioner för att köra en webbplats på en virtuell IaaS-dator eller från en [Azure Web Apps][WebApps] -plats (PaaS). Azure Web Apps stöd för integrering med virtuella nätverk som tillåter distribution av Web Apps i en eker-nätverks zon. Interna riktade webbplatser behöver inte exponera en offentlig Internet-slutpunkt eftersom resurserna är tillgängliga via privata adresser som inte är Internet-dirigerade från det privata virtuella nätverket.
 
-**Big data/analys**: när data måste skalas upp till en stor volym kan det hända att databaser inte skalas upp på rätt sätt. Hadoop-tekniken erbjuder ett system för att köra distribuerade frågor parallellt på ett stort antal noder. Kunderna har möjlighet att köra data arbets belastningar i virtuella IaaS-datorer eller PaaS ([HDInsight][HDI]). HDInsight stöder distribution till ett location-baserat VNet, kan distribueras till ett kluster i en eker i ett virtuellt Data Center.
+**Big data och analys:** När data måste skalas upp till en stor volym kan det hända att databaser inte skalas upp på rätt sätt. Hadoop-tekniken erbjuder ett system för att köra distribuerade frågor parallellt på ett stort antal noder. Kunderna har möjlighet att köra data arbets belastningar i virtuella IaaS-datorer eller PaaS ([HDInsight][HDI]). HDInsight stöder distribution till ett location-baserat VNet, kan distribueras till ett kluster i en eker i ett virtuellt Data Center.
 
-**Händelser och meddelanden**: [Azure Event Hubs][EventHubs] är en inmatnings tjänst för storskalig telemetri som samlar in, transformerar och lagrar miljon tals händelser. Som en distribuerad strömmande plattform erbjuder den låg latens och konfigurerbar tids kvarhållning, så att du kan mata in stora mängder telemetri i Azure och läsa dessa data från flera program. Med Event Hubs kan en enda data ström stödja både real tids-och batch-baserade pipeliner.
+**Händelser och meddelanden:** [Azure Event Hubs][EventHubs] är en inmatnings tjänst för storskalig telemetri som samlar in, transformerar och lagrar miljon tals händelser. Som en distribuerad strömmande plattform erbjuder den låg latens och konfigurerbar tids kvarhållning, så att du kan mata in stora mängder telemetri i Azure och läsa dessa data från flera program. Med Event Hubs kan en enda data ström stödja både real tids-och batch-baserade pipeliner.
 
 Du kan implementera en mycket tillförlitlig moln meddelande tjänst mellan program och tjänster via [Azure Service Bus][ServiceBus]. Den erbjuder asynkrona asynkrona meddelanden mellan klient och Server, strukturerade First-in-First-meddelanden (FIFO) och publicera och prenumerera-funktioner.
 

@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 74fd1f02455d822ae8f8266bc3f6deb5935c09fe
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 027b685b2c75edc59e03cca9f9d2614422684bf0
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833770"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048290"
 ---
 # <a name="plan-for-cloud-adoption"></a>Planera för moln införande
 
@@ -35,11 +35,11 @@ Anskaffnings modeller för molnet ändrar de kärn beroenden som gjorde en sekve
 
 Den här artikel serien går igenom varje steg i översättning av strategi och insatser till en användbar plan för moln införande:
 
-1. **Krav**: Bekräfta att alla nödvändiga steg har slutförts innan du skapar din plan.
-2. **Definiera och prioritera arbets belastningar**: Prioritera dina första 10 arbets belastningar för att upprätta en första implementerings efter släpning.
-3. **Justera till gångar**: Identifiera vilka till gångar (föreslagna eller befintliga) som krävs för att stödja prioriterade arbets belastningar.
-4. **Granska rationalisering**: Granska rationalisering beslut för att förfina beslut om införande av sökväg: Migrera eller förnya.
-5. **Definiera iterationer och versioner**: *Iterationer* är de tids block som tilldelas för arbete. *Versioner* är definitionen av arbetet som ska utföras innan en ändring av produktions processerna utlöses.
+1. **Krav:** Bekräfta att alla nödvändiga steg har slutförts innan du skapar din plan.
+2. **Definiera och prioritera arbets belastningar:** Prioritera dina första 10 arbets belastningar för att upprätta en första implementerings efter släpning.
+3. **Justera till gångar:** Identifiera vilka till gångar (föreslagna eller befintliga) som krävs för att stödja prioriterade arbets belastningar.
+4. **Granska rationalisering:** Granska rationalisering beslut för att förfina antaganden om Sök vägs beslut: migrera eller förnya.
+5. **Definiera iterationer och versioner:** *iterationer* är de tids block som tilldelas för arbete. *Versioner* är definitionen av arbetet som ska utföras innan en ändring av produktions processerna utlöses.
 6. **Uppskatta tids linjer:** Skapa grova tids linjer för versions planering, baserat på inledande uppskattningar.
 
 ## <a name="next-steps"></a>Nästa steg

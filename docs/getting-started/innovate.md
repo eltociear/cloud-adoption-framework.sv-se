@@ -1,41 +1,43 @@
 ---
-title: Innovation genom moln införande
+title: Förnya genom moln införande
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Innovation genom moln införande
+description: Lär dig hur du kan förnya molnet med hjälp av moln implementerings ramverket.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 718835335103130418f9fe75284adb7ceb94821c
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 7dcb61b24834caa1da0de414ab5eaa7291711258
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683480"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048445"
 ---
-# <a name="innovation-through-cloud-adoption-in-the-cloud-adoption-framework"></a>Innovation genom moln införande i ramverket för moln införande
+# <a name="innovate-through-cloud-adoption"></a>Förnya genom moln införande
 
-Molnbaserad migrering är ett utmärkt alternativ för arbets belastningar som redan finns i en miljö. Att skapa nya produkter och tjänster kräver en annan metod. Den innovativa metoden i det här ramverket upprättar en metod för att vägleda utvecklingen av nya produkter och tjänster.
+Molnbaserad migrering är ett utmärkt alternativ för dina befintliga arbets belastningar. Men att skapa nya produkter och tjänster kräver en annan metod. Den innovativa metoden i Cloud adoption Framework upprättar en metod som vägleder utvecklingen av nya produkter och tjänster.
 
 ## <a name="motivations-behind-innovation"></a>Motivation bakom innovation
 
-Innovation bör inte vara den valda införande sökvägen för alla arbets belastningar. Den här sökvägen till moln införande kräver ofta en större investering i anpassad kod och data hantering. Innovation tar också längre tid än att migrera, eller till och med många former av modernisering. Den här sökvägen föreslås dock när kunderna riktar in sig på följande typer av affärs resultat:
+Innovation är inte rätt tillämpnings Sök väg för varje arbets belastning. En innovation-sökväg kräver vanligt vis en större investering i anpassad kod och data hantering än andra sökvägar. Innovation tar också längre tid än migrering eller andra former av modernisering. Den här sökvägen rekommenderas när kunderna riktar sig till följande affärs resultat:
 
-- Förbered dig för nya tekniska funktioner
-- Skala för att uppfylla marknadens krav
-- Skala för att uppfylla geografiska krav
-- Bygg nya tekniska funktioner
-- Förbättra kund upplevelse/engagemang
-- Omvandla produkter eller tjänster
-- Störa marknaden med nya produkter eller tjänster
+- Förbereda sig för nya tekniska funktioner.
+- Skala för att uppfylla kraven på marknaden.
+- Skala för att uppfylla geografiska krav.
+- Bygg nya tekniska funktioner.
+- Förbättra kund upplevelsen och engagemang.
+- Omvandla produkter eller tjänster.
+- Störa marknaden med nya produkter eller tjänster.
 
-## <a name="common-workload-examples-associated-with-a-cloud-innovation"></a>Vanliga arbets belastnings exempel som är associerade med en moln innovation
+## <a name="workloads-associated-with-cloud-innovation"></a>Arbets belastningar som är associerade med utveckling av moln
+
+Kandidat arbets belastningar för moln innovationer omfattar:
 
 - Anpassade program som skapats.
 - Teknikbaserade upplevelser.
-- IoT: integrering av fysiska produkter och teknik.
+- Integrering av fysiska produkter och teknik med IoT.
 - Omgivnings information: integrering av inkräktande Technology i en miljö.
 - Cognitive Services: Big data, AI, Machine Learning och förutsägande lösningar.
 

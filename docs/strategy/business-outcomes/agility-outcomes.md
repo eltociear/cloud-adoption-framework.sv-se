@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 3fb87179de2dac492b506f8aba610cc52d69a751
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 6e1743fbac07c27bfafdf679ff7aae056545b6eb
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548699"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048075"
 ---
 # <a name="examples-of-agility-outcomes"></a>Exempel på smidiga resultat 
 
@@ -33,9 +33,9 @@ För de som är både etablerade och utgångs rik kan företags flexibilitet var
 
 Vid molnbaserade Innovations insatser är tiden till marknaden ett viktigt mått på att det är möjligt att adressera marknads förändringar. I många fall kan en affärs ledare ha en befintlig budget för att skapa ett program eller starta en ny produkt. Att på ett tydligt sätt kommunicera en tid till en marknads förmån kan motivera att ledaren ska omdirigera budgeten till IT: s omvandlings resa.
 
-- **Exempel 1**: Europeiska indelningen av ett amerikanskt företag måste följa GDPR-regler genom att skydda kund information i en databas som stöder åtgärder i Storbritannien. Den befintliga SQL-versionen stöder inte nödvändig säkerhet på radnivå. En uppgradering på plats skulle vara alltför störande. Med Azure SQL för att replikera och uppgradera databasen lägger kunden till nödvändiga efterlevnadsprinciper på några veckor.
+- **Exempel 1:** Den europeiska indelningen av ett AMERIKANSKt företag måste följa GDPR-regler genom att skydda kund information i en databas som stöder åtgärder i Storbritannien. Den befintliga SQL-versionen stöder inte nödvändig säkerhet på radnivå. En uppgradering på plats skulle vara alltför störande. Med Azure SQL för att replikera och uppgradera databasen lägger kunden till nödvändiga efterlevnadsprinciper på några veckor.
 
-- **Exempel 2**: ett logistik företag har identifierat ett outnyttjat segment på marknaden, men det behöver en ny version av sitt skepps-program för att kunna avbilda denna marknads andel. Den större konkurrenten har gjort samma identifiering. Genom körningen av en moln aktive rad applikations innovation, omfattar företaget kund besatthet och en DevOps utvecklings metod för att öka den långsamma, äldre konkurrenten med _x_ månader. Det här hoppet om marknads ingången säkrade kundens bas.
+- **Exempel 2:** Ett logistik företag har identifierat ett outnyttjat segment på marknaden, men det behöver en ny version av sitt skepps-program för att kunna avbilda denna marknads andel. Den större konkurrenten har gjort samma identifiering. Genom körningen av en moln aktive rad applikations innovation, omfattar företaget kund besatthet och en DevOps utvecklings metod för att öka den långsamma, äldre konkurrenten med _x_ månader. Det här hoppet om marknads ingången säkrade kundens bas.
 
 **Aurora Health Care**: hälso vårds systemet transformerar onlinetjänster till en egen digital upplevelse. För att omvandla sina digitala tjänster har Aurora Health Care migrerat sina webbplatser till Microsoft Azure-plattformen och infört en strategi för kontinuerlig innovation.
 
@@ -48,7 +48,7 @@ Vid molnbaserade Innovations insatser är tiden till marknaden ett viktigt mått
 
 När företaget kräver nya IT-tjänster eller skalar till befintliga tjänster kan förvärv och tillhandahållande av ny maskin vara eller virtuella resurser ta flera veckor. Efter migreringen av molnet kan du enklare aktivera självbetjänings etablering, vilket gör det möjligt för företaget att skala i timmar.
 
-- **Exempel**: ett företag som förpackat gods handel kräver att du har skapat och upprivat av hundratals databas kluster per år för att uppfylla verksamhetens operativa krav. Lokala virtuella värdar kan etableras snabbt, men processen för att återfå virtuella till gångar är långsam och kräver avsevärd tid från teamet. På så sätt lider den äldre lokala miljön från överdriven storlek och kan sällan hålla sig uppdaterad med efter frågan. Efter migreringen av molnet är det lättare att enkelt tillhandahålla skript för självbetjänings etablering av resurser, med en åter betalnings metod för fakturering. Tillsammans gör det möjligt för företaget att flytta så snabbt som de behöver, men det är fortfarande konto bara för kostnaden för de resurser som de kräver. Att göra det i molnet begränsar distributioner till endast företagets budget.
+- **Exempel:** Ett företag som är förpaketerat för konsumenter måste skapa och riva ned av hundratals databas kluster per år för att uppfylla drifts kraven för verksamheten. Lokala virtuella värdar kan etableras snabbt, men processen för att återfå virtuella till gångar är långsam och kräver avsevärd tid från teamet. På så sätt lider den äldre lokala miljön från överdriven storlek och kan sällan hålla sig uppdaterad med efter frågan. Efter migreringen av molnet är det lättare att enkelt tillhandahålla skript för självbetjänings etablering av resurser, med en åter betalnings metod för fakturering. Tillsammans gör det möjligt för företaget att flytta så snabbt som de behöver, men det är fortfarande konto bara för kostnaden för de resurser som de kräver. Att göra det i molnet begränsar distributioner till endast företagets budget.
 
 ## <a name="next-steps"></a>Nästa steg
 

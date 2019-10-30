@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 037cfa2a10ecce9bc56d747eb658824014758827
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 9c9676684ebec0a34fcc2dc845935c598814ea52
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548031"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047867"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Cloud – ursprunglig säkerhets bas linje princip
 
-[Säkerhets bas linjen](./index.md) är en av de [fem disciplinerna i moln styrning](../governance-disciplines.md). Den här disciplinen fokuserar på allmänna säkerhets ämnen, inklusive skydd av nätverk, digitala till gångar, data osv. Som beskrivs i [princip gransknings guiden](../policy-compliance/cloud-policy-review.md)innehåller moln implementerings ramverket tre nivåer av **exempel princip**: Cloud-Native, Enterprise och Cloud design policy som är kompatibel för var och en av de olika ämnes nivåerna. Den här artikeln beskriver den molnbaserade exempel principen för säkerhets bas linje disciplin.
+[Säkerhets bas linjen](./index.md) är en av de [fem disciplinerna i moln styrning](../governance-disciplines.md). Den här disciplinen fokuserar på allmänna säkerhets ämnen, inklusive skydd av nätverk, digitala till gångar, data osv. Som beskrivs i [princip gransknings guiden](../policy-compliance/cloud-policy-review.md)innehåller moln implementerings ramverket tre nivåer av **exempel princip**: Cloud-Native, Enterprise och Cloud-design-policy-kompatibel för var och en av de olika ämnes nivåerna. Den här artikeln beskriver den molnbaserade exempel principen för säkerhets bas linje disciplin.
 
 > [!NOTE]
 > Microsoft har ingen möjlighet att diktera företags-eller IT-policy. Den här artikeln hjälper dig att förbereda för en intern princip granskning. Det förutsätts att den här exempel principen kommer att utökas, val IDE ras och testas mot företagets policy innan du försöker använda den. All användning av den här exempel principen rekommenderas inte.

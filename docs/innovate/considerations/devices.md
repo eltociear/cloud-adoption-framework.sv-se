@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 37bff0c476746efadb86a179f03d5d7951ea0b81
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: c226c765390805bf4b9ae52ebaf74d337286b90e
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980124"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047675"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Omgivande upplevelser: interagera med enheter
 
@@ -33,7 +33,7 @@ En vanlig webb upplevelse är den vanligaste program utvecklings tekniken som an
 
 Omgivande upplevelser kräver vanligt vis mer än en webbapp dessa dagar. Genom att [mäta](./measure.md) och [lära med kunden](./learn.md) är det beteende som utlöser kundens behov observeras, spåras och används för att bygga en mer omgivande upplevelse. I följande lista sammanfattas några metoder för integrering av omgivande lösningar i Hypotheses, med mer information om var och en av följande stycken.
 
-- **[Mobil miljö](#mobile-experience)** : precis som med bärbara datorer är Mobile Apps mer vanliga i kundens miljö. I vissa situationer kan detta ge en tillräcklig nivå av interaktivitet för att skapa en lösning som är omgivande.
+- **[Mobil miljö](#mobile-experience):** Som med bärbara datorer är Mobile Apps allmänt förekommande i kund miljöer. I vissa situationer kan detta ge en tillräcklig nivå av interaktivitet för att skapa en lösning som är omgivande.
 - **[Mixad verklighet](#mixed-reality):** Ibland måste en kunds typiska miljö ändras för att göra en interaktion som är omgivande. Den här faktorn skapar något av en falskt verklighet där kunden interagerar med lösningen och behöver uppfyllas. I det här fallet är lösningen inom den falska verkligheten.
 - **[Integrerad verklighet](#integrated-reality):** Fokusera närmare på sanna Ambience-lösningar med integrerad verklighet och fokusera på användningen av en enhet som finns i kundens verklighet för att integrera lösningen i sina naturliga beteenden. En virtuell assistent är ett bra exempel på integrering av verklighet i omgivande miljö. En mindre känd option rör Sakernas Internet-teknik (IoT) som integrerar enheter som redan finns i kundens omgivningar.
 - **[Justerad verklighet](#adjusted-reality):** När någon av dessa lösningar använder förutsägelse analys i molnet för att definiera och tillhandahålla en interaktion med kunden genom den naturliga omgivningen har lösningen justerats i verkligheten.

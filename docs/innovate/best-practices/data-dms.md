@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c75efe3576bb61ecb116ab22e4946b8d87da3d4a
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 538cbc89fb592ecc19a5c25c42cf21231bfe05fe
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683425"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047760"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Samla in data genom migreringen och modernisering av befintliga data källor
 
@@ -25,7 +25,7 @@ Den här artikeln beskriver en serie metoder som överensstämmer med migreringe
 
 ## <a name="primary-toolset"></a>Primära verktyg
 
-När du migrerar och bevarar data som är aktuella på lokal, är det vanligaste valet av Azure-verktyg den [data migration service (DMS)](https://docs.microsoft.com/azure/dms) som är en del av den bredare [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) verktygskedjan. För befintliga SQL Server data källor kan [Data Migration Assistant (DMA)](/sql/dma/dma-overview) också hjälpa till med att utvärdera och migrera ett mindre antal data strukturer.
+När du migrerar och bevarar data som är aktuella på lokal, är det vanligaste valet av Azure-verktyg den [data migration service (DMS)](https://docs.microsoft.com/azure/dms) som är en del av den bredare [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) verktygskedjan. För befintliga SQL Server data källor kan [Data Migration Assistant (DMA)](https://docs.microsoft.com/sql/dma/dma-overview) också hjälpa till med att utvärdera och migrera ett mindre antal data strukturer.
 
 För att stödja Oracle-och NoSQL-migreringar kan du även använda [data migration service (DMS)](https://docs.microsoft.com/azure/dms) för vissa typer av källa till mål databaser, till exempel Oracle till postgresql eller MongoDB för att Cosmos dB. Det är vanligare för att kunna använda verktyg från tredje part eller anpassade migreringsjobb för att migrera till Cosmos DB-, HDInsight-eller IaaS-baserade VM-alternativ.
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: dda348b5e0707a949df0171d718b8615918d9dff
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: b8c28314037e023423d48c604a1dd9bd6c4ad381
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548656"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047903"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>Exempel på globala räckvidds resultat
 
@@ -27,13 +27,13 @@ Moln lösningar flyttar kostnaderna för globalisering till moln leverantören. 
 
 Att utöka till en ny marknad kan vara en av de mest värdefulla affärs resultatet under en omvandling. Möjligheten att snabbt distribuera resurser på marknaden utan ett långsiktigt åtagande gör att Sälj-och drift ledare kan utforska alternativ som inte hade beaktats tidigare.
 
-- **Exempel**: en kosmetik-tillverkare har identifierat en trend. Vissa produkter levereras till den Asien och stillahavsområdet regionen även om inga försäljnings team körs i den regionen. Minimi kraven för de system som krävs av en fjärran sluten Sälj kraft är små, men latens förhindrar en lösning för fjärråtkomst. För att göra den här trenden i den här trenden vill försäljnings avdelningen experimentera med sälj team i Japan och Korea. Eftersom företaget har genomgått en molnbaserad migrering, kunde det distribuera de nödvändiga systemen i både Japan och Korea inom några dagar. Detta tillåter försäljnings direktör att öka intäkterna i regionen med _x procent_ inom tre månader. Dessa två marknader fortsätter att avsevärt andra delar av världen, vilket leder till försäljnings åtgärder inom hela regionen.
+- **Exempel:** En kosmetik-tillverkare har identifierat en trend. Vissa produkter levereras till den Asien och stillahavsområdet regionen även om inga försäljnings team körs i den regionen. Minimi kraven för de system som krävs av en fjärran sluten Sälj kraft är små, men latens förhindrar en lösning för fjärråtkomst. För att göra den här trenden i den här trenden vill försäljnings avdelningen experimentera med sälj team i Japan och Korea. Eftersom företaget har genomgått en molnbaserad migrering, kunde det distribuera de nödvändiga systemen i både Japan och Korea inom några dagar. Detta tillåter försäljnings direktör att öka intäkterna i regionen med _x procent_ inom tre månader. Dessa två marknader fortsätter att avsevärt andra delar av världen, vilket leder till försäljnings åtgärder inom hela regionen.
 
 ## <a name="data-sovereignty"></a>Data suveränitet
 
 Vid drift på nya marknader införs ytterligare styrnings begränsningar. GDPR är ett exempel på styrnings kriterier som kan orsaka betydande ekonomiska återkurs. Azure tillhandahåller erbjudanden för regelefterlevnad som hjälper kunderna att uppfylla efterlevnaden av efterlevnaden för reglerade branscher och globala marknader. Mer information finns i [Översikt över Microsoft Azure efterlevnad](https://aka.ms/AzureCompliance).
 
-- **Exempel**: en USA-baserad verktyg-provider har tilldelats ett kontrakt för att tillhandahålla verktyg i Kanada. Kanadensisk data suveränitets lagstiftning kräver att kanadensiska data hålls i Kanada. Det här företaget hade arbetat med en moln aktive rad program innovation i flera år. Det innebär att deras program vara kunde distribueras genom fullständigt skriptbaserade DevOps-processer. Med några mindre ändringar i kodbasen kunde de distribuera en fungerande kopia av koden till ett Azure-datacenter i Kanada, uppfylla data suveränitets efterlevnad och hålla kunden.
+- **Exempel:** En leverantör av USA-baserade verktyg har tilldelats ett avtal för att tillhandahålla verktyg i Kanada. Kanadensisk data suveränitets lagstiftning kräver att kanadensiska data hålls i Kanada. Det här företaget hade arbetat med en moln aktive rad program innovation i flera år. Det innebär att deras program vara kunde distribueras genom fullständigt skriptbaserade DevOps-processer. Med några mindre ändringar i kodbasen kunde de distribuera en fungerande kopia av koden till ett Azure-datacenter i Kanada, uppfylla data suveränitets efterlevnad och hålla kunden.
 
 ## <a name="next-steps"></a>Nästa steg
 

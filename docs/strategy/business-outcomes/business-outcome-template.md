@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 3874b1af74d7604e3e5c5dd3376b11c43ce24e05
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8703734cbb287003edfd38ddac4395ac0e437332
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030873"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048389"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>Så här använder du mallen affärs resultat
 
@@ -51,15 +51,15 @@ Identifiering är en grundläggande läro sats i företags arkitekturen. Om iden
 
 *Bild 3 – fem områden med fokus i identifiering: intressenter, resultat, driv rutiner, KPI: er och funktioner.*
 
-**Intressenter**: Vem i organisationen kan troligt vis se det största värdet i ett särskilt företags resultat? Vem har flest stöd för den här omvandlingen, särskilt när saker blir svårt eller tar tid? Vem har störst spel i framgången av den här omvandlingen? Den här personen är en potentiell från intressenter.
+**Intressenter:** Vem i organisationen kan troligt vis se det största värdet i ett särskilt företags resultat? Vem har flest stöd för den här omvandlingen, särskilt när saker blir svårt eller tar tid? Vem har störst spel i framgången av den här omvandlingen? Den här personen är en potentiell från intressenter.
 
-**Affärs resultat**: Ett företags resultat är ett koncist, definierat och mätbart resultat eller förändringar i affärs prestanda som stöds av ett visst mått. Hur vill från intressenter ändra företaget? Hur påverkas verksamheten? Vad är värdet för den här omvandlingen?
+**Affärs resultat:** Ett företags resultat är ett koncist, definierat och mätbart resultat eller förändringar i affärs prestanda som stöds av ett visst mått. Hur vill från intressenter ändra företaget? Hur påverkas verksamheten? Vad är värdet för den här omvandlingen?
 
-**Affärs drivande faktorer**: Affärs drivande faktorer fångar den aktuella utmaningen som hindrar företaget från att uppnå önskade resultat. De kan också samla in nya affärs möjligheter som företaget kan dra på med rätt lösning. Hur skulle du beskriva aktuella utmaningar eller framtida tillstånd för verksamheten? Vilka affärs funktioner ska ändras för att uppfylla önskade resultat?
+**Affärs drivande faktorer:** Affärs drivande faktorer fångar den aktuella utmaningen som hindrar företaget från att uppnå önskade resultat. De kan också samla in nya affärs möjligheter som företaget kan dra på med rätt lösning. Hur skulle du beskriva aktuella utmaningar eller framtida tillstånd för verksamheten? Vilka affärs funktioner ska ändras för att uppfylla önskade resultat?
 
-**KPI: er**: Hur kommer den här ändringen att mätas? Hur vet företaget om de lyckas? Hur ofta kommer denna KPI att observeras? Att förstå varje KPI bidrar till att möjliggöra stegvis ändring och experimentering.
+**KPI: er:** Hur kommer den här ändringen att mätas? Hur vet företaget om de lyckas? Hur ofta kommer denna KPI att observeras? Att förstå varje KPI bidrar till att möjliggöra stegvis ändring och experimentering.
 
-**Funktioner**: Hur kan de tekniska funktionerna påskynda genomförandet av affärs resultatet när du definierar en omvandlings resa? Vilka program måste ingå i omvandlingen för att uppnå affärs mål? Hur prioriteras olika program eller arbets belastningar för att tillhandahålla funktioner? Hur måste delar av lösningen expanderas eller byggas om för att möta varje resultat? Kan körnings metoder (eller tids linjer) ordnas om för att prioritera affärs resultat med hög effekt?
+**Funktioner:** Hur kan de tekniska funktionerna påskynda genomförandet av affärs resultatet när du definierar en omvandlings resa? Vilka program måste ingå i omvandlingen för att uppnå affärs mål? Hur prioriteras olika program eller arbets belastningar för att tillhandahålla funktioner? Hur måste delar av lösningen expanderas eller byggas om för att möta varje resultat? Kan körnings metoder (eller tids linjer) ordnas om för att prioritera affärs resultat med hög effekt?
 
 ## <a name="next-steps"></a>Nästa steg
 

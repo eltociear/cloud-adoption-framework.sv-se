@@ -8,16 +8,16 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 48d7872b04f610326e0e0f38d9f89e15cf1c9692
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 75590b73aff96e3d90ca5103e0ec15e6ad0f0a1e
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980148"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047748"
 ---
 # <a name="create-customer-partnerships-through-the-build-measure-learn-feedback-loop"></a>Skapa kund partnerskap med hjälp av slingan build-Measure-feedback
 
-Den verkliga innovationen kommer från det hårda arbetet med att skapa lösningar som demonstrerar kund empati, från att mäta effekten av dessa ändringar på kunden och från att lära sig med kunden. Viktigast av detta kommer från upprepade upprepningar av den här cykeln.
+Den verkliga innovationen kommer från det hårda arbetet med att skapa lösningar som demonstrerar kund empati, från att mäta effekten av dessa ändringar på kunden och från att lära sig med kunden. Viktigast är att det kommer från feedback över flera iterationer.
 
 Om de senaste tio åren har lärde oss allt om innovation, är det dags att de gamla företags reglerna har ändrats. I stor utsträckning har Wealthy inte längre någon hårt behållning på marknaden. De första eller bästa spelarna på marknaden är alltid vinnarna. Att ha den bästa idén leder inte till marknads dominerande ställning. I ett snabbt föränderligt affärs klimat är marknads ledarna de mest flexibla. De som kan anpassa sig till att ändra villkoren i lead.
 

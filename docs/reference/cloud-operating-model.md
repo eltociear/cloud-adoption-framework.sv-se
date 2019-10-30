@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 8d9bce8b12b3054c2f4a6aa0421e1d30d5011860
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8408b657a3896cbb9376d0364dbd752ed90b9306
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030779"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048126"
 ---
 # <a name="cloud-operating-model-is-now-part-of-the-microsoft-cloud-adoption-framework-for-azure"></a>Cloud Opera ting Model är nu en del av Microsoft Cloud implementerings ramverk för Azure
 
-I början av 2018 släppte Microsoft Cloud Opera ting Model (COM). COM var en guide som hjälpte kunderna att förstå **vad** och **varför** i den digitala omvandlingen. Detta hjälpte kunderna att få en uppfattning om alla områden som behövde åtgärdas: affärs strategi, kultur strategi och teknik strategi. Vad som inte ingår i COM var den speciella _instruktionen_, som lämnade kunder undrar "var vill vi gå hit?"
+I början av 2018 släppte Microsoft Cloud Operating Model (COM). COM var en guide som hjälpte kunderna att förstå **vad** och **varför** i den digitala omvandlingen. Detta hjälpte kunderna att få en uppfattning om alla områden som behövde åtgärdas: affärs strategi, kultur strategi och teknik strategi. Vad som inte ingår i COM var den speciella _instruktionen_, som lämnade kunder undrar "var vill vi gå hit?"
 
 I oktober 2018 påbörjade vi en granskning av alla modeller som hade blivit spridda över Microsoft-communityn, men vi hittade ungefär 60 olika modeller för moln införande. Ett cross-Microsoft-team upprättades för att samla allt tillsammans som en särskild konstruktions produkt med definierade implementeringar mellan tjänster, försäljning och marknadsföring. Den här ansträngningen culminated för att skapa en enskild modell, Microsoft Cloud implementerings ramverk för Azure som hjälper kunderna att förstå **vad** och **varför** och ger enhetlig vägledning om **hur** de kan hjälpa dem att påskynda sin moln införande. Målet med det här projektet är att skapa ett ett Microsoft-tillvägagångs sätt för moln införande.
 
@@ -26,9 +26,9 @@ I oktober 2018 påbörjade vi en granskning av alla modeller som hade blivit spr
 
 För en liknande metod för COM bör läsarna börja med något av följande:
 
-- [Komma igång med molnbaserad migrering](../getting-started/migrate.md)
-- [Komma igång med Cloud-aktiverad innovation](../getting-started/innovate.md)
-- [Implementeringen har Aktiver ATS](../getting-started/enable.md)
+- [Starta en resa för moln migrering](../getting-started/migrate.md)
+- [Förnya genom moln införande](../getting-started/innovate.md)
+- [Aktivera lyckad moln införande](../getting-started/enable.md)
 
 Rikt linjerna som tidigare angavs i COM är fortfarande relevanta för moln implementerings ramverket. Upplevelsen är annorlunda, men strukturen i moln implementerings ramverket är helt enkelt en utökning av den vägledningen. För att kunna övergå från COM till moln implementerings ramverket är det viktigt att förstå omfattning och struktur. I följande två avsnitt beskrivs över gången.
 
@@ -45,7 +45,7 @@ COM upprättat ett definitions område som består av följande komponenter:
 De övergripande omfattningarna i moln operativ modellen och moln införande ramverket liknar varandra. Verksamhet, kultur och teknik visas i hela vägledningen och i varje metod i moln implementerings ramverket.
 
 > [!NOTE]
-> Moln implementerings ramverkets omfattning har två viktiga punkter i klarhet. I moln integrerings ramverket går affärs strategin bortom dokumentationen av moln kostnader&mdash;, men det är en uppfattning om motivation, önskade resultat, returer och moln kostnader för att skapa åtgärds bara planer och ta bort affärs skäl. I ramverket för moln införande går det utöver utbildning att ta med metoder för att skapa en påvisbar kultur mognad. Några områden i översikten innehåller demonstrationer av effekten av smidig hantering, DevOps-integrering, empati och besatthet samt Lean produkt utvecklings metoder.
+> Moln implementerings ramverkets omfattning har två viktiga punkter i klarhet. I moln integrerings ramverket går affärs strategin bortom dokumentation av moln kostnader&mdash;det är en uppfattning om motivation, önskade resultat, avkastning och moln kostnader för att skapa åtgärds bara planer och ta bort affärs skäl. I ramverket för moln införande går det utöver utbildning att ta med metoder för att skapa en påvisbar kultur mognad. Några områden i översikten innehåller demonstrationer av effekten av smidig hantering, DevOps-integrering, empati och besatthet samt Lean produkt utvecklings metoder.
 
 ## <a name="structure"></a>hierarkistruktur
 
@@ -59,14 +59,14 @@ På Executive-nivå har moln implementerings ramverket förenklats i följande t
 
 De tre stegen i antagandet är:
 
-- **Projektplan** Utveckla affärs planen för att vägleda moln implementeringen med hjälp av önskade affärs resultat.
-- **Redo** Förbered personer, organisationer och teknisk miljö för körning av implementerings planen.
-- **Implementera:** Teknisk strategi som krävs för att köra en speciell införande plan, i en bestämd användnings resa, för att realisera affärs resultat.
+- **Plan:** Utveckla affärs planen för att vägleda moln implementeringen med hjälp av önskade affärs resultat.
+- **Klart:** Förbered personer, organisationer och teknisk miljö för körning av implementerings planen.
+- **Anta:** Teknisk strategi som krävs för att köra en speciell införande plan, i en bestämd användnings resa, för att realisera affärs resultat.
 
 De tre faserna av moln implementeringen har mappats till två angivna transporter:
 
 - [Migrera](../getting-started/migrate.md): Flytta befintliga arbets belastningar till molnet.
-- [Förnya](../getting-started/innovate.md): Modernisera befintliga arbets belastningar och skapa nya produkter och tjänster.
+- [Förnya](../getting-started/innovate.md): modernisera befintliga arbets belastningar och skapa nya produkter och tjänster.
 
 Ytterligare resurser som krävs för lyckad moln införande finns i [Aktivera genomförd implementering](../getting-started/enable.md).
 

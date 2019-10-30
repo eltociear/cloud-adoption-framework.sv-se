@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f0349afd5507300588df9b10628d3b28b25827c3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 45c4f22613a559add109c1fbfd608452911d0c86
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029648"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047947"
 ---
 # <a name="examples-of-customer-engagement-outcomes"></a>Exempel på resultat från kund engagemang
 
@@ -29,7 +29,7 @@ Följande är exempel och resultat relaterade till kund engagemang:
 
 Vid Obsessed omvandlingar, som en molnbaserad program Innovations ansträngning, svarar kunder från direkt engagemang och möjligheten att snabbt se att de behöver uppfyllas av utvecklings teamet. Cykel tiden är en Six Sigma-term som refererar till varaktigheten från början till slut för en funktion. För företags ledare som är kund-Obsessed och som investerar kraftigt i att förbättra kund engagemang kan cykel tiden vara ett starkt affärs resultat.
 
-- **Exempel**: Ett tjänste företag som tillhandahåller B2B-tjänster (Business-to-Business) försöker hålla på marknads andelar på en konkurrens kraftig marknad. Kunder som har lämnat en konkurrerande tjänst leverantör har angett att deras komplexa tekniska lösningar stör sina affärs processer och är den främsta anledningen till att de lämnar. I det här fallet är cykel tiden absolut nödvändig. Idag tar det 12 månader innan en funktion skickas från begäran till version. Om den prioriteras av Executive-teamet kan den cykeln minskas till sex till nio månader. Genom en molnbaserad program Innovations ansträngning, molnbaserade program modeller och Azure DevOps-integrering har teamet möjlighet att ta bort cykel tiden till en månad, vilket gör det möjligt för affärs-och program utvecklings team att interagera mer direkt med kunden.
+- **Exempel:** Ett tjänste företag som tillhandahåller B2B-tjänster (Business-to-Business) försöker hålla på marknads andelar på en konkurrens kraftig marknad. Kunder som har lämnat en konkurrerande tjänst leverantör har angett att deras komplexa tekniska lösningar stör sina affärs processer och är den främsta anledningen till att de lämnar. I det här fallet är cykel tiden absolut nödvändig. Idag tar det 12 månader innan en funktion skickas från begäran till version. Om den prioriteras av Executive-teamet kan den cykeln minskas till sex till nio månader. Genom en molnbaserad program Innovations ansträngning, molnbaserade program modeller och Azure DevOps-integrering har teamet möjlighet att ta bort cykel tiden till en månad, vilket gör det möjligt för affärs-och program utvecklings team att interagera mer direkt med kunden.
 
 > **ExakTime**
 >

@@ -1,27 +1,27 @@
 ---
-title: Komma igång med en moln migrerings resa
+title: Påbörja en migrering av molnet i Azure
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Komma igång med en moln migrerings resa
+description: Påbörja en migrering av molnet i Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: af93f71b1e4e9eb3249720fd14c88482a8402789
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8870f5ebeab855ec841ed00d109245a1efdeff20
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547836"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048323"
 ---
-# <a name="getting-started-with-a-cloud-migration-journey"></a>Komma igång med en moln migrerings resa
+# <a name="begin-a-cloud-migration-journey-in-azure"></a>Påbörja en migrering av molnet i Azure
 
-Lär dig mer om att använda Microsoft Cloud implementerings ramverk för Azure för att påbörja en migrering av moln migrering. Det här ramverket innehåller omfattande vägledning för över gång av äldre program arbets belastningar med hjälp av innovativa molnbaserade tekniker.
+Använd Microsoft Cloud implementerings ramverk för Azure för att påbörja en migrering av moln migrering. Det här ramverket innehåller omfattande vägledning för över gång av äldre program arbets belastningar till molnet med hjälp av innovativa molnbaserade tekniker.
 
 ## <a name="executive-summary"></a>Sammanfattning av chefer
 
-Ramverket för moln införande hjälper kunder att åta sig en förenklad moln implementering. Det här ramverket innehåller detaljerad information som täcker en slutpunkt-till-slutpunkt-körning av molnet, som börjar med riktade affärs resultat och justerar moln beredskap och-utvärderingar med tydliga definierade affärs mål. Dessa resultat uppnås via en definierad sökväg för moln införande. Med migration-baserad implementering fokuserar den definierade sökvägen i stor utsträckning på att slutföra en migrering av lokala arbets belastningar till molnet. Ibland omfattar den här resan modernisering av arbets belastningar för att öka avkastningen på investeringar från migreringens ansträngning.
+Ramverket för moln införande hjälper kunder att åta sig en förenklad moln implementering. Det här ramverket innehåller detaljerad information om en moln implementering från slut punkt till slut punkt som börjar med riktade företags resultat och sedan justerar moln beredskap och-utvärderingar med tydliga definierade affärs mål. Dessa resultat uppnås via en definierad sökväg för moln införande. Med migration-baserad implementering fokuserar den definierade sökvägen i stor utsträckning på migreringen av lokala arbets belastningar till molnet. Ibland omfattar den här resan modernisering av arbets belastningar för att öka avkastningen på investeringar från migreringens ansträngning.
 
 Det här ramverket är främst utformat för moln arkitekter och moln strategi team som leder till moln implementerings ansträngningar. Många ämnen i det här ramverket är dock relevanta för andra roller i företaget och det. Cloud Architects fungerar ofta som underlättare för att engagera var och en av de relevanta rollerna. Den här exekutiva sammanfattningen är utformad för att förbereda de olika rollerna innan du underlätterar konversationer.
 

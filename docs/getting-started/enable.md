@@ -1,7 +1,7 @@
 ---
-title: Aktivera kund framgångar för alla moln införande resor
+title: Aktivera kund framgångar under en moln införande resa
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Aktivera kund framgångar för alla moln införande resor
+description: Aktivera kund framgångar i en moln implementerings resa
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -9,26 +9,26 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 5e1b1c24b076c56fdf6e42a8340589ee58bd69dc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ea9d6b17627883f63e0814b66ed5cb657555995d
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023449"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048327"
 ---
-# <a name="enable-success-across-any-cloud-adoption-journey"></a>Aktivera lyckad över alla moln införande transporter
+# <a name="enable-success-during-a-cloud-adoption-journey"></a>Aktivera lyckad under en moln införande resa
 
-Microsoft Cloud implementerings ramverk för Azure tillhandahålls som ett kostnads fritt självbetjänings verktyg för att vägleda läsarna genom olika moln införande åtgärder. Fokus på det här innehållet är att hjälpa kunder att realisera affärs mål som kan aktive ras av Azure. Detta innehåll innebär dock också att läsaren kan rikta in sig på affärs-, kultur-eller tekniska utmaningar som kan vara av stor natur och kan vid tider kräva en moln neutral position. Därför börjar varje avsnitt i den här vägledningen med en första Azure-metod, men följer med moln oberoende teori som kan skalas mellan företags-och tekniska beslut.
+Ramverket för moln införande är ett kostnads fritt självbetjänings verktyg som vägleder läsarna genom olika moln införande åtgärder. Ramverket hjälper kunder att realisera affärs mål som kan aktive ras med Microsoft Azure. Detta innehåll känner dock också igen att läsaren kan vara riktad mot breda affärs-, kultur-eller tekniska utmaningar och att ibland kan kräva en moln neutral position. Därför börjar varje avsnitt i den här vägledningen med en Azure-första metod och följer sedan med molnbaserad teori som kan skalas över flera affärs-och tekniska beslut.
 
-I det här ramverket är aktivering ett kärn tema. Följande check lista innehåller en serie med ämnen som ska bäddas in i molnet för att säkerställa att resan är framgångs rik i ögonen både för IT och verksamheten:
+I det här ramverket är aktivering ett kärn tema. Följande check lista specificerar grundläggande principer för införande av moln som garanterar att en implementerings resa betraktas som lyckad av både IT och verksamheten:
 
-- **Projektplan** Upprättande av klara [affärs resultat](../strategy/business-outcomes/index.md), en definierad [plan för digital egendom](../digital-estate/index.md)och väl välförståde införda- [loggfiler](../migrate/migration-considerations/prerequisites/migration-backlog-review.md).
-- **Redo** Se till att personalen har beredskap genom [kunskaper och utbildnings planer](../ready/technical-skills.md).
-- **Träd** Definiera en hanterbar drifts modell för att hantera aktiviteter under och länge efter införandet.
+- **Plan:** Upprätta tydliga [affärs resultat](../strategy/business-outcomes/index.md), en tydligt definierad plan för [digital plan](../digital-estate/index.md)och välförståde [implementerings loggar](../migrate/migration-considerations/prerequisites/migration-backlog-review.md).
+- **Klart:** Se till att personalen har beredskap genom [kunskaper och utbildnings planer](../ready/technical-skills.md).
+- **Arbeta:** Definiera en hanterbar drifts modell för att hantera aktiviteter under och länge efter införandet.
   - **[Organisera](../organize/index.md):** Justera människor och team för att leverera rätt moln drift och införande.
-  - **Styras** Justera lämpliga [styrnings discipliner](../govern/index.md) för att konsekvent tillämpa kostnads hantering, risk minskning, efterlevnad och säkerhets bas linjer i alla moln införande.
+  - **Styr:** Justera lämpliga [styrnings discipliner](../govern/index.md) för att konsekvent tillämpa kostnads hantering, risk minskning, efterlevnad och säkerhets bas linjer i alla moln införande.
   - **Hantera:** Kontinuerlig [drift hantering](../manage/index.md) av IT-portföljen för att minimera avbrott i affärs processer och säkerställa stabiliteten hos IT-portföljen.
-  - **Hjälp** Justera lämpliga [alternativ för partnerskap och support](../migrate/migration-considerations/assess/partnership-options.md).
+  - **Support:** Justera lämpliga [alternativ för partnerskap och support](../migrate/migration-considerations/assess/partnership-options.md).
 
 ## <a name="additional-tools"></a>Ytterligare verktyg
 
@@ -124,7 +124,7 @@ Utöver moln implementerings ramverket täcker Microsoft ytterligare ämnen som 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Azure Architecture Center</h3>
+                        <h3>Azure arkitekturcenter</h3>
                         <p>Arkitektur lösningar, referens arkitekturer, exempel scenarier, metod tips och moln design mönster för att hjälpa till med arkitekturen i lösningar som körs på Azure.</p>
                     </div>
                 </div>
@@ -143,7 +143,7 @@ Utöver moln implementerings ramverket täcker Microsoft ytterligare ämnen som 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Priskalkylator för Azure</h3>
+                        <h3>Azure priskalkylator</h3>
                         <p>Beräkna kostnaden för de olika Azure-komponenter som krävs för att skapa eller migrera en vald lösning.</p>
                     </div>
                 </div>
