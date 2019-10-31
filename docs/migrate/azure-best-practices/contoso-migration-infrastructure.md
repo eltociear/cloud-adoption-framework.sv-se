@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 93c0bb52159b4573ed796ca3a1aa7cb0ac2d8149
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 13a3a8a8734ffe67298d09544882c612916b995f
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547340"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058899"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Distribuera en migreringsinfrastruktur
 
@@ -325,7 +325,7 @@ Med den regionala designen på plats är Contoso redo att fundera på en nätver
 
 ### <a name="plan-hybrid-network-connectivity"></a>Planera hybridnätverksanslutning
 
-Contoso övervägde ett [antal utformningar](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking) för hybridnätverk mellan Azure och det lokala datacentret. [Läs mer](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations) om att jämföra alternativ.
+Contoso övervägde ett [antal utformningar](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking) för hybridnätverk mellan Azure och det lokala datacentret. Mer information finns i [Välj en lösning för att ansluta ett lokalt nätverk till Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations).
 
 Som en påminnelse består den lokala nätverksinfrastrukturen i Contoso för närvarande av datacentret i New York och lokala grenar i östra USA. Alla platser har en anslutning till Internet i företagsklass. Varje avdelning ansluts sedan till datacentret via en IPSec VPN-tunnel via Internet.
 
@@ -638,7 +638,7 @@ Active Directory är en kritisk tjänst i nätverk och måste vara korrekt konfi
 
 ## <a name="step-5-plan-for-governance"></a>Steg 5: planera för styrning
 
-Azure har en serie styrningskontroller för olika tjänster och delar av Azure-plattformen. [Läs mer](https://docs.microsoft.com/azure/security/governance-in-azure) om du vill ha en grundläggande förståelse av alternativen.
+Azure har en serie styrningskontroller för olika tjänster och delar av Azure-plattformen. Mer information finns i alternativ för [Azure-styrning](https://docs.microsoft.com/azure/security/governance-in-azure).
 
 När de konfigurerade identitets- och åtkomstkontroll började Contoso redan etablera vissa aspekter av styrning och säkerhet. Generellt sett finns det tre områden att ta hänsyn till:
 

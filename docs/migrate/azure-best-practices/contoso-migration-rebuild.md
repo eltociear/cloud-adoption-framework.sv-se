@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 258b5a656293001228aab51dd1319fe6a89780a9
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: bd9042fcd0b7ae6d18a5cc522a4006b7f8bfdbc6
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548216"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058560"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Bygga om en lokal app i Azure
 
@@ -132,11 +132,11 @@ Contoso genomför migreringen på följande sätt:
 Contosos administratörer kör ett distributionsskript för att skapa det hanterade Kubernetes-klustret med AKS och ACR (Azure Container Registry).
 
 - I anvisningarna i det här avsnittet används lagringsplatsen **SmartHotel360-Azure-backend**.
-- GitHub-lagringsplatsen **SmartHotel360-Azure-backend** innehåller all programvara för den här delen av distributionen.
+- GitHub-lagringsplatsen **SmartHotel360-Azure-backend** innehåller all programvara för den här delen av distributionen.  
 
 ### <a name="prerequisites"></a>Krav
 
-1. Innan de börjar ser Contosos administratörer till att all programvara som krävs är installerad på utvecklingsdatorn som används för distributionen.
+1. Innan de börjar ser contoso-administratörer till att all nödvändig program vara installeras på den utvecklings dator som de använder för distributionen.
 2. De klonar lagringsplatsen lokalt till utvecklingsdatorn med Git: `git clone https://github.com/Microsoft/SmartHotel360-Azure-backend.git`
 
 ### <a name="provision-aks-and-acr"></a>Etablera AKS och ACR
@@ -152,7 +152,7 @@ Contosos administratörer etablerar enligt följande:
     ![AKS](./media/contoso-migration-rebuild/aks3.png)
 5. I den PowerShell-integrerade terminalen loggar de in i Azure med kommandot Connect-AzureRmAccount. [Lär dig mer](https://docs.microsoft.com/powershell/azure/get-started-azureps) om hur du kommer igång med PowerShell.
     ![AKS](./media/contoso-migration-rebuild/aks4.png)
-6. De autentiserar Azure CLI genom att först köra kommandot **az login** och sedan följa instruktionerna för att autentisera med hjälp av webbläsaren. [Lär dig mer](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) om hur du loggar in med Azure CLI.
+6. De autentiserar Azure CLI genom att köra kommandot `az login` och följa instruktionerna för att autentisera med hjälp av webbläsaren. [Lär dig mer](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) om hur du loggar in med Azure CLI.
     ![AKS](./media/contoso-migration-rebuild/aks5.png)
 7. De kör följande kommando och skickar resursgruppens namn, ContosoRG, namnet på AKS-klustret, smarthotel-aks-eus2, och det nya registernamnet.
 
@@ -178,7 +178,9 @@ Contosos administratörer etablerar enligt följande:
 
 11. De kör följande kommando för att starta Kubernetes-instrumentpanelen:
 
-    **az aks browse --resource-group ContosoRG --name smarthotelakseus2**
+    ```console
+    az aks browse --resource-group ContosoRG --name smarthotelakseus2
+    ```
 
 12. En webbläsarflik öppnas med instrumentpanelen. Detta är en tunnelanslutning som använder Azure CLI.
 
@@ -278,7 +280,7 @@ Contosos administratörer gör nu följande:
 - Distribuera mikrotjänsterna till AKS-klustret.
 - Som ett första steg uppdaterar de anslutningssträngarna till mikrotjänsterna med hjälp av Azure DevOps. De konfigurerar sedan en ny distributionspipeline för Azure DevOps för distribution av mikrotjänsterna.
 - I anvisningarna i det här avsnittet används lagringsplatsen [SmartHotel360-Azure-Backend](https://github.com/Microsoft/SmartHotel360-Azure-backend).
-- Observera att vissa av konfigurationsinställningarna (till exempel Active Directory B2C) inte beskrivs i den här artikeln. Mer information om de här inställningarna finns i databasen.
+- Några av konfigurations inställningarna (till exempel Active Directory B2C) beskrivs inte i den här artikeln. Mer information om de här inställningarna finns i lagrings platsen ovan.
 
 De skapar pipelinen:
 

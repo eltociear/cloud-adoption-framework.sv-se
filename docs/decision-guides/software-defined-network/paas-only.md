@@ -1,5 +1,5 @@
 ---
-title: 'Program varu definitions nätverk: Endast PaaS'
+title: 'Program varu definitions nätverk: PaaS – endast'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Diskussion av PaaS-modellen för program varu definierade nätverk i molnet.
 author: rotycenh
@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 704dbb16be57c4203199ca972aa61b520eece3ca
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ca73050c2ca6a753727b7b972a3c1febe4ec9515
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023552"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058738"
 ---
-# <a name="software-defined-networking-paas-only"></a>Program varu definitions nätverk: Endast PaaS
+# <a name="software-defined-networking-paas-only"></a>Program varu definitions nätverk: PaaS – endast
 
 När du implementerar en PaaS-resurs (Platform as a Service) skapar distributions processen automatiskt ett förmodat underliggande nätverk med ett begränsat antal kontroller över nätverket, inklusive belastnings utjämning, Port blockering och anslutningar till andra PaaS Terminal.
 
-I Azure kan flera PaaS-resurs typer [distribueras till](https://docs.microsoft.com/azure/virtual-network/virtual-network-for-azure-services) eller [anslutas till](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) ett virtuellt nätverk, så att dessa resurser kan integreras med din befintliga virtuella nätverks infrastruktur. Andra tjänster, till exempel [App Service miljöer](https://docs.microsoft.com/azure/app-service/environment/intro), [Azure Kubernetes Services](https://docs.microsoft.com/azure/aks/intro-kubernetes)och [Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) måste distribueras i det virtuella nätverket. I många fall är det dock tillräckligt med en PaaS nätverks arkitektur, som endast förlitar sig på de inbyggda standard nätverksfunktioner som tillhandahålls av PaaS-resurser, så att det räcker att uppfylla arbets Belastningens anslutnings-och trafik hanterings krav.
+I Azure kan flera PaaS-resurs typer [distribueras till](https://docs.microsoft.com/azure/virtual-network/virtual-network-for-azure-services) eller [anslutas till](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) ett virtuellt nätverk, så att dessa resurser kan integreras med din befintliga virtuella nätverks infrastruktur. Andra tjänster, till exempel [App Service miljöer](https://docs.microsoft.com/azure/app-service/environment/intro), [Azure KUBERNETES service (AKS)](https://docs.microsoft.com/azure/aks/intro-kubernetes)och [Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) måste distribueras i det virtuella nätverket. I många fall är det dock tillräckligt med en PaaS nätverks arkitektur, som endast förlitar sig på de inbyggda standard nätverksfunktioner som tillhandahålls av PaaS-resurser, så att det räcker att uppfylla arbets Belastningens anslutnings-och trafik hanterings krav.
 
 Om du överväger en PaaS nätverks arkitektur måste du kontrol lera att de nödvändiga antagandena överensstämmer med dina krav.
 

@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 86e1cbe87b81bcd68ff2a7e6ad6a4652674c9c5f
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: f930f1b0f228b3969b89319962706104176717cc
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683452"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058615"
 ---
 # <a name="tools-to-engage-via-apps-in-azure"></a>Verktyg för att kommunicera via appar i Azure
 
@@ -31,7 +31,7 @@ I den här artikeln förutsätter vi att alla uppfinningar som orsakats av ett p
 - **Smarta upplevelser:** Skapa moderna upplevelser med moln plattformarna för att driva snabb distribution och korta feedback-slingor. Utöka webb program till integrera Intelligence eller integrera robotar.
 - **Moln – inbyggt:** Bygg en ny uppfinning som naturligt drar nytta av moln funktionerna.
 
-Varje sökväg resulterar i kortsiktiga och långsiktiga fördelar och nack delar. När moln styrning, moln drift och moln Center för nya team är för beredda för att stödja varje metod, kan implementeringen accelereras med minimal påverkan på hållbara affärs åtgärder.
+Varje sökväg resulterar i kortsiktiga och långsiktiga fördelar och nack delar. När moln styrnings teamet, moln drifts teamet och moln Center för expert team har för beretts för att stödja varje metod, kan implementeringen accelereras med minimal påverkan på hållbara affärs åtgärder.
 
 ## <a name="toolchain"></a>Verktygskedja
 

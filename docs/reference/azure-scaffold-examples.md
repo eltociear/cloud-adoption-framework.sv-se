@@ -8,17 +8,17 @@ ms.date: 01/03/2017
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: ffda6a8f11954895e934f310c1a53c95fb2e1351
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 3cc5071ca4b57473b52e0478e59b3c6a0dd49bea
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378048"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058061"
 ---
 # <a name="examples-of-implementing-azure-enterprise-scaffold"></a>Exempel på implementering av Azure Enterprise-Autogenerera
 
 > [!NOTE]
-> Azure Enterprise-ramverk har integrerats i Microsoft Cloud adoptions ramverket. Innehållet i den här artikeln visas nu i avsnittet [klart](../ready/index.md) i det nya ramverket. Den här artikeln är inaktuell i början av 2020. Om du vill börja använda den nya processen går du till [klar översikt](../ready/index.md), [skapar din första landnings zon](../ready/azure-setup-guide/migration-landing-zone.md)och/eller de överväganden som finns i [landnings zonen](../ready/considerations/index.md).
+> Azure Enterprise-ramverk har integrerats i Microsoft Cloud adoptions ramverket. Innehållet i den här artikeln visas nu i avsnittet [klart](../ready/index.md) i det nya ramverket. Den här artikeln är inaktuell i början av 2020. För att börja använda den nya processen, se [färdig översikt](../ready/index.md), [skapa din första landnings zon](../ready/azure-setup-guide/migration-landing-zone.md)och [överväganden vid landnings zon](../ready/considerations/index.md).
 
 Den här artikeln innehåller exempel på hur ett företag kan implementera rekommendationer för en [Azure Enterprise-Autogenerera](./azure-scaffold.md). Det använder ett fiktivt företag som heter Contoso för att illustrera bästa praxis för vanliga scenarier.
 
@@ -138,6 +138,8 @@ Dave loggar in på Azure-Enterprise Portal och ser att avdelningen för leverans
 | --- | --- |
 | Utveckling |Contoso SupplyChain ResearchDevelopment LoyaltyCard Development |
 | Produktion |Contoso SupplyChain-åtgärder LoyaltyCard produktion |
+
+<!-- markdownlint-disable MD024 -->
 
 ### <a name="policies"></a>Policy
 

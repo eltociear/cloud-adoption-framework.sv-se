@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5bcede8d56ae08228e302fb1af016013cb9ef8c3
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 0e4377f8d26cd28df1f9e6d9a82314fbe73fd0a4
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980131"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058093"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>Vanliga blockerare och utmaningar för innovation
 
@@ -47,7 +47,7 @@ Molnet har en lösning på många av de här uppfinningarna genom att tillhandah
 
 De uppfinnings utmaningarna för idag är olika. Den oändliga potentialen hos moln teknologier ger också fler implementerings alternativ och mer detaljerad information om hur dessa implementeringar kan utnyttjas.
 
-Förnyelse metoden använder följande fem Innovations discipliner för att hjälpa dig att justera dina implementerings beslut med dina uppfinnings-och implementerings mål:
+Förnyelse metoden använder följande Innovations discipliner för att hjälpa dig att justera dina implementerings beslut med dina uppfinnings-och implementerings mål:
 
 - **Data plattformar:** Nya källor och variationer för data är tillgängliga. Många av dessa kan inte integreras i äldre eller lokala program för att skapa kostnads effektiva lösningar. Att förstå den ändring du hoppas över i kunderna kommer att informera dina data plattforms beslut. Dessa beslut är en förlängning av valda metoder för att mata in, integrera, kategorisera och dela data. Microsoft refererar till den här besluts fattande processen som democratization av data.
 - **Enhets interaktioner:** IoT, mobil och utöknings bara verklighet utökar linjerna mellan digital och fysisk, vilket påskyndar den digitala ekonomin. Att förstå de verkliga interaktioner som omger kund beteendet kommer att driva beslut om enhets integrering.

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3e39452782f1966e0efe2742264d26a60062d78b
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: c623d7c537d19f700fed4d28523f60c4fd03d4ea
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547320"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058636"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>Byta värd för en lokal Linux-app till virtuella Azure-datorer och Azure Database for MySQL
 
@@ -446,7 +446,7 @@ Contosos säkerhetsteam granskar den virtuella datorn och databasen för att fas
 - De kan skydda data på de virtuella datordiskarna med diskkryptering och Azure Key Vault.
 - Kommunikationen mellan den virtuella datorn och databasinstansen har inte konfigurerats för SSL. De måste göra detta för att säkerställa att databastrafiken inte kan hackas.
 
-[Läs mer](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) om säkerhetsrutiner för virtuella datorer.
+Mer information finns i [rekommenderade säkerhets metoder för IaaS-arbetsbelastningar i Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
 
 ### <a name="bcdr"></a>Affärskontinuitet och haveriberedskap
 

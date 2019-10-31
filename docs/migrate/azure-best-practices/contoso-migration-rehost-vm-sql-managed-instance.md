@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 4948035001cba4ba9b433a6f31811f0c66e1704f
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 574fa1ede2d7ddeb0fe41f05c8519e9b16ba6c51
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548161"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058502"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Ange en ny värd för en lokal app på en virtuell Azure-dator och SQL Database Managed Instance
 
@@ -125,7 +125,7 @@ Krav | Information
 --- | ---
 **Registrera dig för förhandsversionen av Managed Instance** | Du måste vara registrerad för den begränsade offentliga förhandsversionen av SQL Database Managed Instance. Du måste ha en Azure-prenumeration för att kunna [registrera dig](https://portal.azure.com#create/Microsoft.SQLManagedInstance). Det kan ta några dagar att slutföra registreringen, så glöm inte att registrera dig innan du börjar distribuera det här scenariot.
 **Azure-prenumeration** | Du bör redan ha skapat en prenumeration när du gjorde utvärderingen i den första artikeln i den här serien. Om du inte har någon Azure-prenumeration kan du skapa ett [kostnadsfritt konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Om du skapar ett kostnadsfritt konto är du administratör för din prenumeration och kan utföra alla åtgärder.<br/><br/> Om du använder en befintlig prenumeration och du inte är administratör av prenumerationen, måste du be administratören tilldela dig ägar- eller deltagarbehörighet.<br/><br/> Om du behöver mer detaljerad behörighet kan du läsa mer i [Använda rollbaserad åtkomstkontroll till att hantera Site Recovery-åtkomst](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Azure-infrastruktur** | Contoso konfigurerar Azure-infrastrukturen enligt beskrivningen i [Azure-infrastruktur för migrering.](./contoso-migration-infrastructure.md)
+**Azure-infrastruktur** | Contoso konfigurerar Azure-infrastrukturen enligt beskrivningen i [Azure-infrastrukturen för migrering.](./contoso-migration-infrastructure.md)
 **Site Recovery (lokalt)** | Din lokala vCenter Server-instans måste köra version 5.5, 6.0 eller 6.5<br/><br/> En ESXi-värd som kör version 5.5, 6.0 eller 6.5<br/><br/> En eller flera virtuella VMware-datorer som körs på ESXi-värden.<br/><br/> Virtuella datorer måste uppfylla [kraven för Azure](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).<br/><br/> Konfiguration av [nätverk](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network) och [lagring](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage) som stöds.
 **Database Migration Service** | För Azure Database Migration Service behöver du en [kompatibel lokal VPN-enhet](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).<br/><br/> Du måste kunna konfigurera den lokala VPN-enheten. Den måste ha en extern offentlig IPv4-adress. IP-adressen får inte finnas bakom en NAT-enhet.<br/><br/> Kontrollera att du har åtkomst till din lokala SQL Server-databas.<br/><br/> Windows-brandväggen måste ha åtkomst till källdatabasmotorn. Läs om att [konfigurera Windows-brandväggen för databasmotoråtkomst](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access).<br/><br/> Om det finns en brandvägg framför din databasdator lägger du till regler som tillåter åtkomst till databasen och filerna via SMB-port 445.<br/><br/> De autentiseringsuppgifter som används för att ansluta till källans SQL Server-instans och som Managed Instance riktar sig mot måste vara medlemmar i serverrollen sysadmin.<br/><br/> Du behöver en nätverksresurs i din lokala databas som Azure Database Migration Service kan använda när källdatabasen säkerhetskopieras.<br/><br/> Kontrollera att tjänstkontot som kör SQL Server-källinstansen har skrivbehörighet till nätverksresursen.<br/><br/> Skriv ned en Windows-användare och ett lösenord som har fullständig kontrollbehörighet till nätverksresursen. Azure Database Migration Service personifierar användarens autentiseringsuppgifter till att ladda upp de säkerhetskopierade filerna till Azure Storage-containern.<br/><br/> Installationsprocessen för SQL Server Express anger TCP/IP-protokollet som **Inaktiverat** som standard. Kontrollera att det är aktiverat.
 
@@ -588,7 +588,7 @@ Contosos säkerhetsteam granskar de virtuella Azure-datorerna och SQL Database M
 
      ![Managed Instance-säkerhet – Hotidentifiering](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-security.png)
 
-Mer information om säkerhet för virtuella datorer finns i [Säkerhetsmetodtips för IaaS-arbetsbelastningar i Azure](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms).
+Mer information om säkerhet för virtuella datorer finns i [Säkerhetsmetodtips för IaaS-arbetsbelastningar i Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
 
 ### <a name="bcdr"></a>Affärskontinuitet och haveriberedskap
 

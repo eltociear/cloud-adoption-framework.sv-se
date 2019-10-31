@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3869103c257fa03806fe09b840ab41fd6365c152
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1292eeec6559fc6caa6cd6ff265a37147cf0b887
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547221"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058657"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-group"></a>Byta värd för en lokal app på virtuella Azure-datorer och SQL Server AlwaysOn-tillgänglighetsgrupp
 
@@ -659,7 +659,7 @@ Contosos säkerhetsteam granskar de virtuella Azure-datorerna WEBVM, SQLAOG1 och
 - Teamet överväger att skydda data på disken med Azure Disk Encryption och Key Vault.
 - Teamet bör utvärdera transparent datakryptering (TDE) och sedan aktivera det på SmartHotel360-databasen som körs på den nya SQL-AOG. [Läs mer](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017).
 
-[Läs mer](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) om säkerhetsrutiner för virtuella datorer.
+Mer information finns i [rekommenderade säkerhets metoder för IaaS-arbetsbelastningar i Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
 
 ## <a name="bcdr"></a>Affärskontinuitet och haveriberedskap
 

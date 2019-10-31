@@ -8,12 +8,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: ec0df5b7cae458f8f67ec1c62c6598fee9134a04
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 25cc7cac212bffda6d7fa3514de7bb274fc1c17e
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980112"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058602"
 ---
 # <a name="build-with-customer-empathy"></a>Bygg med kund empati
 
@@ -58,13 +58,13 @@ Under varje iteration av en build-Measure-feedback-loop, kan ditt försök att b
 
 En MVP är den minsta arbets insatsen (uppfinning, teknik, program utveckling eller data arkitektur) som krävs för att skapa tillräckligt med en lösning för att lära sig _med kunden_. Målet med varje MVP är att testa vissa eller alla tidigare Hypotheses och för att få feedback direkt från kunden. Utdata är inte ett snyggt program med alla funktioner som krävs för att ändra din bransch. De önskade utmatningarna för varje iteration är en utbildnings möjlighet &mdash;a chans att testa en hypotes mer grundligt.
 
-_Timeboxing_ är ett standard sätt för att se till att en produkt är minimal. Kontrol lera till exempel att utvecklings gruppen tycker att lösningen kan skapas i en enda iteration för att möjliggöra snabb testning. Mer information om hur du använder hastighet, iterationer och versioner för att definiera vad som är minimalt finns i avsnittet [Planera hastighet, iterationer, utgåva och iterationer](../../plan/iteration-paths.md).
+_Timeboxing_ är ett standard sätt för att se till att en produkt förblir Lean. Kontrol lera till exempel att utvecklings gruppen tycker att lösningen kan skapas i en enda iteration för att möjliggöra snabb testning. Mer information om hur du använder hastighet, iterationer och versioner för att definiera vad som är minimalt finns i avsnittet [Planera hastighet, iterationer, utgåva och iterationer](../../plan/iteration-paths.md).
 
 ### <a name="reduce-complexity-and-delay-technical-spikes"></a>Minska komplexiteten och fördröj tekniska toppar
 
 De [ämnes områden](./invention.md) som finns i [förnyelse metoden](./index.md) beskriver de funktioner som ofta krävs för att leverera en vuxen innovation eller en skalbar MVP-lösning. Använd dessa ämnes områden som en långsiktig guide för att inkludera funktions insikter. På samma sätt kan du använda dem som en varnings guide under tidig testning av kund värde och empati i din lösning.
 
-Funktions bredd och olika ämnes områden för innovation kan inte skapas i en enda iteration. Det kan ta flera versioner av en MVP-lösning att inkludera komplexiteten i flera ämnes områden. Beroende på investeringen i utvecklingen kan det finnas flera parallella grupper som arbetar inom olika ämnes områden för att testa flera Hypotheses. Även om det är smart att upprätthålla arkitektur anpassning mellan dessa team, är det klokt att försöka bygga komplexa, integrerade lösningar tills värdet Hypotheses kan val IDE ras.
+Funktions bredd och de olika ämnes områdennas ämnes områden kan inte skapas i en enskild iteration. Det kan ta flera versioner av en MVP-lösning att inkludera komplexiteten i flera ämnes områden. Beroende på investeringen i utvecklingen kan det finnas flera parallella grupper som arbetar inom olika ämnes områden för att testa flera Hypotheses. Även om det är smart att upprätthålla arkitektur anpassning mellan dessa team, är det klokt att försöka bygga komplexa, integrerade lösningar tills värdet Hypotheses kan val IDE ras.
 
 Komplexitet identifieras bäst i frekvensen eller volymen av *tekniska toppar*. Tekniska toppar är ansträngningar för att skapa tekniska lösningar som inte kan testas med kunderna. När kund värde och kund empati har avtestats utgör tekniska toppar en risk för innovation och bör minimeras. För de typer av beprövade lösningar som finns i en migrerings ansträngning kan tekniska toppar vara vanliga i hela antagandet. De fördröjer dock testningen av Hypotheses i Innovations arbete och bör senareläggas närhelst det är möjligt.
 
@@ -84,7 +84,7 @@ En MVP-lösning består vanligt vis av en enkel webbapp eller data lösning med 
 - En manuell process som återskapar fördelarna med programmet att följa.
 - Ett tråd block eller en video som är tillräckligt detaljerad för att kunden ska kunna interagera.
 
-Att utveckla en MVP bör inte kräva enorma mängder utvecklings investeringar. Helst bör investeringen vara så begränsad som möjligt för att minimera antalet Hypotheses som testas vid ett tillfälle. I varje iteration och med varje version kan lösningen till en skalbar lösning som representerar flera ämnes områden för innovation förbättras avsiktligt.
+Att utveckla en MVP bör inte kräva enorma mängder utvecklings investeringar. Helst bör investeringen vara så begränsad som möjligt för att minimera antalet Hypotheses som testas vid ett tillfälle. I varje iteration och med varje version kan lösningen till en skalbar lösning som representerar flera ämnes områden för uppfinningen förbättras avsiktligt.
 
 ### <a name="accelerate-mvp-development"></a>Påskynda MVP-utvecklingen
 

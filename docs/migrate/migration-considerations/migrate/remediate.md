@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 54621d366f0ae0a3e2e3504532ace183bc7f49c4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5fede95558e32b4cbc07be3ef60635e8c13eda97
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833458"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058855"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>Reparera tillgångar före migrering
 
@@ -21,7 +21,7 @@ Under utvärderingsprocessen i migreringen vill teamet identifiera alla konfigur
 
 ## <a name="common-remediation-tasks"></a>Vanliga reparationsåtgärder
 
-I företagsmiljöer finns det tekniska skulder. En del av dessa är att förvänta och är inte tecken på att något är fel. Arkitekturbeslut som passade bra för en lokal miljö är kanske inte helt lämpliga på en molnplattform. I endera fallet kan det krävs vanliga reparationsåtgärder för att förbereda tillgångarna för migrering. Följande är några exempel:
+I företagsmiljöer finns det tekniska skulder. En del av dessa är att förvänta och är inte tecken på att något är fel. Arkitekturbeslut som passade bra för en lokal miljö är kanske inte helt lämpliga på en molnplattform. I endera fallet kan det krävs vanliga reparationsåtgärder för att förbereda tillgångarna för migrering. Detta är några exempel:
 
 - **Mindre uppgraderingar av värd.** Ibland behöver en föråldrad värd uppgraderas före replikering.
 - **Mindre uppgraderingar av gäst-OS.** Det är mer troligt att ett operativsystem behöver korrigeras eller uppgraderas före replikering.
@@ -31,7 +31,7 @@ I företagsmiljöer finns det tekniska skulder. En del av dessa är att förvän
 - **Ändringar i programkonfiguration.** Migrerade program kan kräva ändringar av variabler, till exempel nätverkssökvägar till beroende tillgångar, ändringar i tjänstkonto eller uppdateringar av beroende IP-adresser.
 - **Mindre ändringar av nätverkssökvägar.** Dirigeringsmönster kan behöva ändras så att de korrekt dirigerar användartrafik till nya tillgångar.
     > [!NOTE]
-    > Detta är inte produktionsdirigering till nya tillgångar, utan konfiguration som möjliggör korrekt dirigering till tillgångar i allmänhet.
+    > Detta är inte produktions dirigering till nya till gångar, utan i stället för att det ska finnas tillräckligt med routning till till gångarna i allmänhet.
 
 ## <a name="large-scale-remediation-tasks"></a>Storskaliga reparationsuppgifter
 

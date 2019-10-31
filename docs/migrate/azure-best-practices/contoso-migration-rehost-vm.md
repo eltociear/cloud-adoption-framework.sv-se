@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d0fff6d3c88d62ed3efc9f4cf2140981e8be331a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0bfadba7f6cefc5cd597d002c3cb18b0cfcc8c3d
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547207"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058192"
 ---
 # <a name="rehost-an-on-premises-app-to-azure-vms"></a>Byt värd för en lokal app till virtuella Azure-datorer
 
@@ -283,7 +283,7 @@ Contosos säkerhetsteam granskar de virtuella Azure-datorerna för att faststäl
 - För åtkomstkontroll granskar teamet nätverkssäkerhetsgrupperna (NSG:er) för de virtuella datorerna. Nätverkssäkerhetsgrupper används för att säkerställa att bara behörig trafik kan nå appen.
 - Teamet överväger också att skydda data på disken med Azure Disk Encryption och Key Vault.
 
-[Läs mer](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) om säkerhetsrutiner för virtuella datorer.
+Mer information finns i [rekommenderade säkerhets metoder för IaaS-arbetsbelastningar i Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
 
 ## <a name="bcdr"></a>Affärskontinuitet och haveriberedskap
 

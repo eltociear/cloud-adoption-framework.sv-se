@@ -8,17 +8,17 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 2e605766e06b106fab61576e64bd5059569c8b38
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: dcf717841e7ac42e0957ce540fc974c84d112a79
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548779"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058168"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure Enterprise-Autogenerera: handskriven prenumerations styrning
 
 > [!NOTE]
-> Azure Enterprise-ramverk har integrerats i Microsoft Cloud adoptions ramverket. Innehållet i den här artikeln visas nu i avsnittet [klart](../ready/index.md) i det nya ramverket. Den här artikeln är inaktuell i början av 2020. Om du vill börja använda den nya processen går du till [klar översikt](../ready/index.md), [skapar din första landnings zon](../ready/azure-setup-guide/migration-landing-zone.md)och/eller de överväganden som finns i [landnings zonen](../ready/considerations/index.md).
+> Azure Enterprise-ramverk har integrerats i Microsoft Cloud adoptions ramverket. Innehållet i den här artikeln visas nu i avsnittet [klart](../ready/index.md) i det nya ramverket. Den här artikeln är inaktuell i början av 2020. För att börja använda den nya processen, se [färdig översikt](../ready/index.md), [skapa din första landnings zon](../ready/azure-setup-guide/migration-landing-zone.md)och [överväganden vid landnings zon](../ready/considerations/index.md).
 
 Företag kan i allt större utsträckning använda det offentliga molnet för att bli flexibelt och flexibelt. De förlitar sig på molnets hållfasthet för att skapa intäkter och optimera resursanvändningen för verksamheten. Microsoft Azure tillhandahåller en mängd tjänster och funktioner som företag sätter samman som bygg stenar för att hantera en mängd olika arbets belastningar och program.
 

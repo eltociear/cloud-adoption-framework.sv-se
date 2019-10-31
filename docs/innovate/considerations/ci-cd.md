@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4f3c7f139cb2445ef6d29682a663523d614eef3c
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 8828b79aa27083b3b3e0a0188ac9e538089c52cf
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980093"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058586"
 ---
 # <a name="empower-adoption"></a>Förbättra införandet
 
@@ -25,12 +25,11 @@ Det finns några viktiga friktions punkter att införa som kan minimeras genom e
 
 Som det beskrivs i [mått för kund påverkan](./measure.md), kräver positiv verifiering av alla hypotes upprepning och bestämning. Du får mycket fler avbrott än WINS under en Innovations cykel. Detta är normalt. Men när en kund behöver, hypotes och lösning justeras i skala, ändras världen snabbt. Den här artikeln syftar till att minimera [tekniska toppar](./build.md#reduce-complexity-and-delay-technical-spikes) som saktar ned innovation, men som ändå ser till att du behåller några rena bästa metoder. På så sätt blir det lättare för IT-utformningen att leverera på aktuella kund behov.
 
-## <a name="empowering-adoption---maturity-model"></a>Förstärkning av implementerings förfallo modell
+## <a name="empowering-adoption-the-maturity-model"></a>Besluts förstärkning: förfallo modell
 
-Det främsta målet med [förnyelse metoden](./index.md) är att bygga upp kund partnerskap och påskynda feedback-slingor, vilket leder till marknads innovationer.
-I följande bild och avsnitt beskrivs de första implementeringar som har stöd för den här metoden.
+Det främsta målet med [förnyelse metoden](./index.md) är att bygga upp kund partnerskap och påskynda feedback-slingor, vilket leder till marknads innovationer. I följande bild och avsnitt beskrivs de första implementeringar som har stöd för den här metoden.
 
-![Förstärknings implementering – förfallo modellen](../../_images/innovate/empower-adoption-maturity.png)
+![Förbättra införandet: förfallo modellen](../../_images/innovate/empower-adoption-maturity.png)
 
 - [Delad lösning](#shared-solution): upprätta en central lagrings plats för alla aspekter av lösningen.
 - [Feedback-slingor](#feedback-loops): se till att feedback-slingor kan hanteras på ett konsekvent sätt via iterationer.
@@ -84,7 +83,7 @@ Det finns flera metoder för distribution av lösningar. Följande motsvarar de 
 - Vid tidiga utvecklings faser kan **kontinuerlig leverans** vara mer lämpligt. I kontinuerlig leverans distribueras alla kod ändringar automatiskt till en produktions miljö. Utvecklare, företags besluts fattare och andra i teamet kan använda den här miljön för att kontrol lera att deras arbete är produktions klart. Du kan också använda den här metoden för att testa en hypotes med kunder utan att påverka pågående affärs aktiviteter.
 - **Manuell distribution** är den minst avancerade metoden för versions hantering. Som namnet antyder distribuerar någon i teamet manuellt de senaste kod ändringarna. Den här metoden är fel känsligt, otillförlitligt och betraktas som ett antimönster av de mest erfarna teknikerna.
 
-Under den första iterationen av en MVP-lösning är manuell distribution vanligt, trots föregående utvärdering. När lösningen är mycket flytande och kundfeedback är okänd, finns det en betydande risk för att återställa hela lösningen (eller till och med Core hypotesen). Här är den allmänna regeln för manuell distribution: inget kund bevis, ingen distributions automatisering. 
+Under den första iterationen av en MVP-lösning är manuell distribution vanligt, trots föregående utvärdering. När lösningen är mycket flytande och kundfeedback är okänd, finns det en betydande risk för att återställa hela lösningen (eller till och med Core hypotesen). Här är den allmänna regeln för manuell distribution: inget kund bevis, ingen distributions automatisering.
 
 Att investera tidigt kan leda till förlorad tid. Det kan vara viktigt att skapa beroenden på den versions pipeline som gör teamet mer motstånds kraftiga mot en tidig Pivot Pivot. Efter de första iterationerna eller när kunden feedback föreslår potentiell framgång, bör en mer avancerad distributions modell snabbt antas.
 

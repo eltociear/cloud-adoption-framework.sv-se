@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8c052b5a9c3745a1d253b533086a9fdf4d86eae9
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 5459d775051b831112029fe1502a62a13c21e1c2
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967802"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058765"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Styrningsdesign för flera team
 
@@ -29,10 +29,10 @@ Kraven är:
 - Stöd för flera **miljöer**. En miljö är en logisk gruppering av resurser, t. ex. virtuella datorer, virtuella nätverk och nätverks trafik tjänster för routning. Dessa resurs grupper har liknande hanterings-och säkerhets krav och används vanligt vis för ett särskilt ändamål, till exempel testning eller produktion. I det här exemplet är kravet för fyra miljöer:
   - En **delad infrastruktur miljö** som innehåller resurser som delas av arbets belastningar i andra miljöer. Till exempel ett virtuellt nätverk med ett Gateway-undernät som ger anslutning till lokalt.
   - En **produktions miljö** med de mest restriktiva säkerhets principerna. Kan omfatta interna eller externa riktade arbets belastningar.
-  - En **produktions miljö** för utveckling och testning fungerar inte. Den här miljön har säkerhets-, efterlevnads-och kostnads principer som skiljer sig från dem i produktions miljön. I Azure tar detta en Enterprise Dev/Test prenumerations form.
+  - En för **produktions miljö** för utveckling och testning. Den här miljön har säkerhets-, efterlevnads-och kostnads principer som skiljer sig från dem i produktions miljön. I Azure tar detta en Enterprise Dev/Test prenumerations form.
   - En **sand Box miljö** för koncept bevis-och utbildnings syfte. Den här miljön tilldelas vanligt vis per medarbetare som deltar i utvecklings aktiviteter och har strikt procedur-och drift säkerhets kontroller på plats för att förhindra att företags data Informas här. I Azure har dessa formen av Visual Studio-prenumerationer. Dessa prenumerationer bör _inte_ heller vara knutna till företagets Azure Active Directory.
 - En **behörighets modell med minst privilegium** där användare saknar behörighet som standard. Modellen måste ha stöd för följande:
-  - En enkel betrodd användare (ett kvasibolag) i prenumerations omfånget med behörighet att tilldela resurs åtkomst rättigheter.
+  - En enda betrodd användare (som behandlas som ett tjänst konto) i prenumerations omfånget med behörighet att tilldela resurs åtkomst rättigheter.
   - Varje arbets belastnings ägare nekas åtkomst till resurser som standard. Resurs åtkomst behörighet beviljas uttryckligen av den enda betrodda användaren i resurs grupps omfånget.
   - Hanterings åtkomst för resurserna för delad infrastruktur är begränsad till ägare av den delade infrastrukturen.
   - Hanterings åtkomst för varje arbets belastning som är begränsad till arbets Belastningens ägare (i produktion) och ökande kontroll nivåer som utveckling ökar från dev till att testas till Prod.
@@ -43,10 +43,10 @@ Kraven är:
 
 Innan du kan utforma identitets hantering för din styrnings modell är det viktigt att förstå de fyra huvud områdena som den omfattar:
 
-- **Administrationsverktyg** Processer och verktyg för att skapa, redigera och ta bort användar identitet.
-- **Anspråksautentisering** Verifierar användar identitet genom att verifiera autentiseringsuppgifter, till exempel användar namn och lösen ord.
-- **Authorization:** Avgöra vilka resurser som en autentiserad användare får åtkomst till eller vilka åtgärder de har behörighet att utföra.
-- **Granskning** Granska loggar och annan information med jämna mellanrum för att identifiera säkerhets problem som rör användar identitet. Detta omfattar att granska misstänkta användnings mönster, granska användar behörigheter med jämna mellanrum för att kontrol lera att de är korrekta och andra funktioner.
+- **Administration:** Processer och verktyg för att skapa, redigera och ta bort användar identitet.
+- **Autentisering:** Verifierar användar identitet genom att verifiera autentiseringsuppgifter, till exempel användar namn och lösen ord.
+- **Auktorisering:** Avgöra vilka resurser som en autentiserad användare får åtkomst till eller vilka åtgärder de har behörighet att utföra.
+- **Granskning:** Granska loggar och annan information med jämna mellanrum för att identifiera säkerhets problem som rör användar identitet. Detta omfattar att granska misstänkta användnings mönster, granska användar behörigheter med jämna mellanrum för att kontrol lera att de är korrekta och andra funktioner.
 
 Det finns bara en tjänst som är betrodd av Azure för identitet och som är Azure Active Directory (Azure AD). Du kommer att lägga till användare i Azure AD och använda det för alla funktioner som anges ovan. Men innan du tittar på hur du konfigurerar Azure AD är det viktigt att förstå de privilegierade konton som används för att hantera åtkomst till dessa tjänster.
 
@@ -59,11 +59,13 @@ Användar identiteter för både Azure-kontots ägare och den globala Azure AD-a
 
 Azure-kontots ägare har behörighet att skapa, uppdatera och ta bort prenumerationer:
 
-0Azure-konto med Azures konto hanterare och Azure AD global admin @ no__t-1*bild 1 – ett Azure-konto med en global administratör för konto hanteraren och Azure AD.* @no__t
+![Azure-konto med Azure konto hanteraren och global administratör för Azure AD](../../_images/govern/design/governance-3-0.png)
+*figur 1 – ett Azure-konto med en global administratör för konto hanteraren och Azure AD.*
 
 Den globala Azure AD- **administratören** har behörighet att skapa användar konton:
 
-0Azure-konto med Azures konto hanterare och Azure AD global admin @ no__t-1*bild 2 – Azure AD global-administratören skapar nödvändiga användar konton i klienten.* @no__t
+![Azure-konto med Azure konto hanteraren och global administratör i Azure AD](../../_images/govern/design/governance-3-0a.png)
+*figur 2 – den globala Azure AD-administratören skapar nödvändiga användar konton i klienten.*
 
 De två första kontona, **APP1 arbets belastnings ägare** och **APP2 arbets belastnings ägare** är associerade med en individ i din organisation som ansvarar för att hantera en arbets belastning. **Nätverks åtgärds** kontot ägs av den person som ansvarar för resurserna för delad infrastruktur. Slutligen är **prenumerationens ägar** konto associerat med den person som ansvarar för ägarskapet för prenumerationer.
 
@@ -80,47 +82,50 @@ Därför måste du bestämma vilka åtgärder en viss typ av användare får ta 
 Vi tar en titt på två exempel på behörighets modeller för att förstå det här konceptet lite bättre. I det första exemplet har modellen bara förtroende för tjänst administratören som skapar resurs grupper. I det andra exemplet tilldelar modellen den inbyggda ägar rollen till varje arbets belastnings ägare i prenumerations omfånget.
 
 I båda exemplen finns en prenumerations tjänst administratör som har tilldelats den inbyggda ägar rollen i prenumerations omfånget. Kom ihåg att den inbyggda ägar rollen beviljar alla behörigheter, inklusive hantering av åtkomst till resurser.
-![subscription tjänst administratör med ägar rollen @ no__t-1*bild 3 – en prenumeration med en tjänst administratör som har tilldelats den inbyggda ägar rollen.*
+![prenumerations tjänst administratör med ägar rollen](../../_images/govern/design/governance-2-1.png)
+*bild 3 – en prenumeration med en tjänst administratör som har tilldelats den inbyggda ägar rollen.*
 
 1. I det första exemplet finns **arbets belastnings ägare A** utan behörigheter i prenumerations omfånget – de har inga resurs åtkomst hanterings rättigheter som standard. Den här användaren vill distribuera och hantera resurserna för deras arbets belastning. De måste kontakta **tjänst administratören** för att begära att en resurs grupp skapas.
-    ![workload ägare som skapar resurs gruppen A @ no__t-1
+    ![arbets belastnings ägare begär skapande av resurs grupp A](../../_images/govern/design/governance-2-2.png)
 2. **Tjänst administratören** granskar sin begäran och skapar **resurs grupp A**. I det här läget har **arbets belastnings ägaren** fortfarande inte behörighet att göra något.
-    ![service-administratör skapar resurs gruppen A @ no__t-1
+    ![tjänst administratör skapar resurs grupp A](../../_images/govern/design/governance-2-3.png)
 3. **Tjänst administratören** lägger till **arbets belastnings ägare a** i **resurs gruppen a** och tilldelar den [inbyggda rollen deltagare](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor). Deltagar rollen beviljar alla behörigheter för **resurs gruppen A** förutom att hantera åtkomst behörighet.
-    ![service-administratör lägger till arbets belastnings ägare a till resurs gruppen a @ no__t-1
+    ![tjänst administratör lägger till arbets belastnings ägare a till resurs gruppen a](../../_images/govern/design/governance-2-4.png)
 4. Vi antar att **arbets Belastningens ägare a** har krav på att ett par team medlemmar ska kunna visa data om processor-och nätverks trafiken som en del av kapacitets planeringen för arbets belastningen. Eftersom **arbets belastnings ägare A** tilldelas rollen deltagare har de inte behörighet att lägga till en användare i **resurs gruppen A**. De måste skicka denna begäran till **tjänst administratören**.
-    ![workload ägare begär arbets deltagare läggs till i resurs gruppen @ no__t-1
+    ![arbets belastnings ägare begär arbets deltagare läggs till i resurs gruppen](../../_images/govern/design/governance-2-5.png)
 5. **Tjänst administratören** granskar begäran och lägger till de två **arbets belastnings deltagarnas** användare i **resurs grupp A**. Ingen av dessa två användare kräver behörighet att hantera resurser, så de tilldelas den [inbyggda rollen läsare](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor).
-    ![service-administratör lägger till arbets belastnings deltagare i resurs gruppen A @ no__t-1
+    ![tjänst administratör lägger till arbets belastnings deltagare i resurs gruppen A](../../_images/govern/design/governance-2-6.png)
 6. Därefter kräver **arbets belastnings ägare B** också en resurs grupp som innehåller resurserna för deras arbets belastning. Precis som med **arbets belastnings ägare A**har **arbets belastnings ägaren B** inlednings vis inte behörighet att vidta några åtgärder i prenumerations omfånget, så de måste skicka en begäran till **tjänst administratören**.
-    ![workload ägare B som begär att resurs gruppen B @ no__t-1 skapas
-7. **Tjänst administratören** granskar begäran och skapar **resurs grupp B**.  ![Service-administratör skapar resurs grupp B @ no__t-1
+    ![arbets belastnings ägare B begär Anden om att skapa resurs grupp B](../../_images/govern/design/governance-2-7.png)
+7. **Tjänst administratören** granskar begäran och skapar **resurs grupp B**.  ![tjänst administratör skapar resurs grupp B](../../_images/govern/design/governance-2-8.png)
 8. **Tjänst administratören** lägger sedan till **arbets belastnings ägare b** till **resurs grupp b** och tilldelar den inbyggda rollen deltagare.
-    ![Service-administratör lägger till arbets belastnings ägare B till resurs grupp B @ no__t-1
+    ![tjänst administratör lägger till arbets Belastningens ägare B till resurs grupp B](../../_images/govern/design/governance-2-9.png)
 
 I det här läget är var och en av arbets belastnings ägarna isolerade i sin egen resurs grupp. Ingen av arbets belastnings ägarna eller deras grupp medlemmar har hanterings åtkomst till resurserna i någon annan resurs grupp.
 
-![subscription med resurs grupper A och B @ no__t-1*bild 4 – en prenumeration med två arbets belastnings ägare isolerade med sin egen resurs grupp.*
+![prenumeration med resurs grupper A och B](../../_images/govern/design/governance-2-10.png)
+*figur 4 – en prenumeration med två arbets belastnings ägare isolerade med sin egen resurs grupp.*
 
-Den här modellen är en modell med minst privilegium @ no__t-0each som är tilldelad rätt behörighet i rätt resurs hanterings omfång.
+Den här modellen är en modell med minst privilegium&mdash;varje användare tilldelas rätt behörighet i rätt resurs hanterings omfång.
 
 Tänk dock på att alla aktiviteter i det här exemplet utfördes av **tjänst administratören**. Även om det här är ett enkelt exempel och kanske inte verkar vara ett problem eftersom det bara fanns två arbets belastnings ägare, är det lätt att tänka på vilka typer av problem som skulle leda till en stor organisation. **Tjänst administratören** kan till exempel bli en Flask hals med en stor efter släpning av begär Anden som resulterar i fördröjningar.
 
 Vi tar en titt på det andra exemplet som minskar antalet uppgifter som utförs av **tjänst administratören**.
 
-1. I den här modellen tilldelas **arbets belastnings ägare A** den inbyggda ägar rollen i prenumerations omfånget, vilket gör att de kan skapa sina egna resurs grupper: **resurs grupp A**.  ![Service-administratör lägger till arbets belastnings ägare A till prenumeration @ no__t-1
+1. I den här modellen tilldelas **arbets belastnings ägare A** den inbyggda ägar rollen i prenumerations omfånget, vilket gör att de kan skapa sina egna resurs grupper: **resurs grupp A**.  ![tjänst administratör lägger till arbets belastnings ägare A i prenumerationen](../../_images/govern/design/governance-2-11.png)
 2. När **resurs grupp a** skapas läggs **arbets Belastningens ägare A** till som standard och ärver den inbyggda ägar rollen från prenumerations omfånget.
-    ![Workload ägare A skapar resurs gruppen A @ no__t-1
+    ![arbets belastnings ägare A skapar resurs grupp A](../../_images/govern/design/governance-2-12.png)
 3. Den inbyggda ägar rollen ger **arbets belastnings ägaren** behörighet att hantera åtkomst till resurs gruppen. **Arbets belastnings ägare A** lägger till två **arbets belastnings deltagare** och tilldelar den inbyggda rollen rollen till var och en av dem.
-    ![Workload Owner A lägger till arbets belastnings deltagare @ no__t-1
+    ![arbets belastnings ägare A lägger till arbets belastnings deltagare](../../_images/govern/design/governance-2-13.png)
 4. **Tjänst administratören** lägger nu till **arbets belastnings ägare B** i prenumerationen med den inbyggda ägar rollen.
-    ![Service-administratör lägger till arbets belastnings ägare B till prenumeration @ no__t-1
+    ![tjänst administratör lägger till arbets belastnings ägare B i prenumerationen](../../_images/govern/design/governance-2-14.png)
 5. **Arbets Belastningens ägare b** skapar **resurs grupp b** och läggs till som standard. Sedan ärver **arbets Belastningens ägare B** den inbyggda ägar rollen från prenumerations omfånget.
-    ![Workload Owner B skapar resurs grupp B @ no__t-1
+    ![arbets belastnings ägare B skapar resurs grupp B](../../_images/govern/design/governance-2-15.png)
 
 Observera att i den här modellen utförde **tjänst administratören** färre åtgärder än de gjorde i det första exemplet på grund av delegeringen av hanterings åtkomst till var och en av de enskilda arbets belastnings ägarna.
 
-![subscription med resurs grupper A och B @ no__t-1*figur 5 – en prenumeration med en tjänst administratör och två arbets belastnings ägare, som alla tilldelats den inbyggda ägar rollen.*
+![prenumeration med resurs grupper A och B](../../_images/govern/design/governance-2-16.png)
+*figur 5 – en prenumeration med en tjänst administratör och två arbets belastnings ägare, som alla tilldelats den inbyggda ägar rollen.*
 
 Men eftersom både **arbets belastnings ägare A** och **arbets belastnings ägare B** tilldelas den inbyggda ägar rollen i prenumerations omfånget, har de alla ärvda inbyggda ägar roller för var och en av resurs grupperna. Det innebär att inte bara har full åtkomst till en annans resurser, de kan också delegera hanterings åtkomst till var och en av resurs grupperna. Till exempel har **arbets Belastningens ägare B** behörighet att lägga till andra användare i **resurs gruppen A** och kan tilldela dem en roll, inklusive den inbyggda ägar rollen.
 
@@ -130,11 +135,11 @@ Om du jämför varje exempel med kraven ser du att båda exemplen har stöd för
 
 Nu när du har utformat en behörighets modell med minsta behörighet kan vi gå vidare och ta en titt på några praktiska program i dessa styrnings modeller. Kom ihåg krav som du måste ha stöd för följande tre miljöer:
 
-1. **Delad infrastruktur:** En grupp resurser som delas av alla arbets belastningar. Detta är resurser som nätverks-gatewayer, brand väggar och säkerhets tjänster.
-2. **Produktions** Flera grupper med resurser som representerar flera produktions arbets belastningar. Dessa resurser används för att vara värd för privata och offentliga program artefakter. Dessa resurser har vanligt vis de tätt flesta styrnings-och säkerhets modeller som skyddar resurserna, program koden och data från obehörig åtkomst.
-3. **Inte produktion:** Flera grupper med resurser som representerar flera färdiga arbets belastningar som inte är produktion. Dessa resurser används för utveckling och testning av dessa resurser kan ha en mer avslappnad styrnings modell för att ge ökad flexibilitet i utvecklare. Säkerheten i dessa grupper bör öka närmare "produktion" för att få en program utvecklings process.
+1. **Miljö för delad infrastruktur:** En grupp resurser som delas av alla arbets belastningar. Detta är resurser som nätverks-gatewayer, brand väggar och säkerhets tjänster.
+2. **Produktions miljö:** Flera grupper med resurser som representerar flera produktions arbets belastningar. Dessa resurser används för att vara värd för privata och offentliga program artefakter. Dessa resurser har vanligt vis de tätt flesta styrnings-och säkerhets modeller som skyddar resurserna, program koden och data från obehörig åtkomst.
+3. För **produktions miljö:** Flera grupper med resurser som representerar flera färdiga arbets belastningar som inte är produktion. Dessa resurser används för utveckling och testning av dessa resurser kan ha en mer avslappnad styrnings modell för att ge ökad flexibilitet i utvecklare. Säkerheten i dessa grupper bör öka närmare "produktion" för att få en program utvecklings process.
 
-För var och en av dessa tre miljöer finns det ett krav för att spåra kostnads data efter **arbets belastnings ägare**, **miljö**eller både och. Det innebär att du vill veta den kontinuerliga kostnaden för den **delade infrastrukturen**, kostnaderna för enskilda personer i både **icke-produktions-** och **produktions** miljö och slutligen den totala kostnaden för **icke-produktion** och  **produktion**.
+För var och en av dessa tre miljöer finns det ett krav för att spåra kostnads data efter **arbets belastnings ägare**, **miljö**eller både och. Det innebär att du vill veta den kontinuerliga kostnaden för den **delade infrastrukturen**, kostnaderna för enskilda användare i både för produktions-och **produktions** miljöerna och slutligen den totala **kostnaden för för** **produktion och**  **produktions** miljöer.
 
 Du har redan lärt dig att resurserna är begränsade till två nivåer: **prenumeration** och **resurs grupp**. Det första beslutet är därför att organisera miljöer efter **prenumeration**. Det finns bara två möjligheter: en enda prenumeration eller flera prenumerationer.
 
@@ -142,12 +147,13 @@ Innan du tittar på exempel på var och en av dessa modeller kan vi granska hant
 
 Kom ihåg från kraven att du har en person i organisationen som ansvarar för prenumerationer, och den här användaren äger **prenumerations ägar** kontot i Azure AD-klienten. Detta konto har dock inte behörighet att skapa prenumerationer. Endast **Azure-kontots ägare** har behörighet att göra detta:
 
-![An Azure-konto ägare skapar en prenumeration @ no__t-1*figur 6 – en Azure-konto ägare skapar en prenumeration.*
+![en Azure-konto ägare skapar en prenumeration](../../_images/govern/design/governance-3-0b.png)
+*figur 6 – en Azure-konto ägare skapar en prenumeration.*
 
 När prenumerationen har skapats kan Azure- **kontots ägare** lägga till **prenumerationens ägar** konto till prenumerationen med **ägar** rollen:
 
-![The Azure-konto ägare lägger till användar kontot för prenumerations ägare i prenumerationen med ägar rollen. ](../../_images/govern/design/governance-3-0c.png)
-*bild 7 – Azure-kontots ägare lägger till användar kontot för **prenumerations ägare** i prenumerationen med **ägar** rollen.*
+![Azure-kontots ägare lägger till prenumerations ägarens användar konto i prenumerationen med ägar rollen.](../../_images/govern/design/governance-3-0c.png)
+*figur 7 – ägaren av Azure-kontot lägger till användar kontot för **prenumerations ägare** i prenumerationen med **ägar** rollen.*
 
 **Prenumerationens ägare** kan nu skapa **resurs grupper** och delegera resurs åtkomst hantering.
 
@@ -159,25 +165,25 @@ Först ska vi titta på ett exempel på en resurs hanterings modell med en enda 
 Vi börjar med att utvärdera det första alternativet. Du använder den behörighets modell som diskuterades i föregående avsnitt, med en enda prenumerations tjänst administratör som skapar resurs grupper och lägger till användare till dem med antingen den inbyggda rollen **deltagare** eller **läsare** .
 
 1. Den första resurs gruppen som distribueras representerar den **delade infrastruktur** miljön. **Prenumerationens ägare** skapar en resurs grupp för resurserna för delade infrastrukturer med namnet `netops-shared-rg`.
-    ![Creating en resurs grupp @ no__t-1
+    ![att skapa en resurs grupp](../../_images/govern/design/governance-3-0d.png)
 2. **Prenumerations ägaren** lägger till **användar kontot för nätverks åtgärder** i resurs gruppen och tilldelar rollen **deltagare** .
-    ![Adding en nätverks åtgärd användare @ no__t-1
+    ![att lägga till en nätverks åtgärds användare](../../_images/govern/design/governance-3-0e.png)
 3. **Nätverks drift användaren** skapar en [VPN-gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) och konfigurerar den för att ansluta till den lokala VPN-enheten. **Nätverks drifts** användaren använder också ett par med [taggar](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags) för var och en av resurserna: *miljö: Shared* och *managedBy: netOps*. När **prenumerations tjänst administratören** exporterar en kostnads rapport justeras kostnaderna med var och en av dessa taggar. På så sätt kan **prenumerations tjänst administratören** pivotera kostnader med hjälp av *miljö* tag gen och *managedBy* -taggen. Observera räknaren för **resurs gränser** överst till höger i bilden. Varje Azure-prenumeration har [tjänst begränsningar](https://docs.microsoft.com/azure/azure-subscription-service-limits)och hjälper dig att förstå effekterna av dessa gränser. du kommer att följa den virtuella nätverks gränsen för varje prenumeration. Det finns en gräns på 1000 virtuella nätverk per prenumeration och när det första virtuella nätverket har distribuerats finns det nu 999 tillgängligt.
-    ![Creating en VPN-gateway @ no__t-1
-4. Två fler resurs grupper har distribuerats. Det första heter `prod-rg`. Den här resurs gruppen är justerad till produktions miljön. Den andra heter `dev-rg` och är anpassad till utvecklings miljön. Alla resurser som är kopplade till produktions arbets belastningar distribueras till produktions miljön och alla resurser som är kopplade till utvecklings arbets belastningarna distribueras till utvecklings miljön. I det här exemplet distribuerar du bara två arbets belastningar till var och en av dessa två miljöer, så att du inte får några begränsningar för Azure-prenumerationen. Tänk dock på att varje resurs grupp har en gräns på 800 resurser per resurs grupp. Om du fortsätter att lägga till arbets belastningar i varje resurs grupp kommer den här gränsen att nås.
-    ![Creating resurs grupper @ no__t-1
+    ![att skapa en VPN-gateway](../../_images/govern/design/governance-3-1.png)
+4. Två fler resurs grupper har distribuerats. Det första heter `prod-rg`. Den här resurs gruppen är justerad till produktions miljön. Den andra heter `dev-rg` och justeras i utvecklings miljön. Alla resurser som är kopplade till produktions arbets belastningar distribueras till produktions miljön och alla resurser som är kopplade till utvecklings arbets belastningarna distribueras till utvecklings miljön. I det här exemplet distribuerar du bara två arbets belastningar till var och en av dessa två miljöer, så att du inte får några begränsningar för Azure-prenumerationen. Tänk dock på att varje resurs grupp har en gräns på 800 resurser per resurs grupp. Om du fortsätter att lägga till arbets belastningar i varje resurs grupp kommer den här gränsen att nås.
+    ![skapa resurs grupper](../../_images/govern/design/governance-3-2.png)
 5. Den första **arbets belastnings ägaren** skickar en begäran till **prenumerations tjänstens administratör** och läggs till i alla resurs grupper för utvecklings-och produktions miljön med **deltagar** rollen. Som du tidigare har lärt dig kan du använda rollen **deltagare** för att utföra andra åtgärder än att tilldela en roll till en annan användare. Den första **arbets belastnings ägaren** kan nu skapa de resurser som är kopplade till arbets belastningen.
-    ![Adding-deltagare @ no__t-1
+    ![lägger till bidrags givare](../../_images/govern/design/governance-3-3.png)
 6. Den första **arbets belastnings ägaren** skapar ett virtuellt nätverk i var och en av de två resurs grupperna med ett par virtuella datorer i var och en. Den första **arbets belastnings ägaren** använder *miljö* -och *managedBy* -taggarna för alla resurser. Observera att räknaren för Azure Service Limit nu är 997 virtuella nätverk kvar.
-    ![Creating virtuella nätverk @ no__t-1
+    ![att skapa virtuella nätverk](../../_images/govern/design/governance-3-4.png)
 7. Vart och ett av de virtuella nätverken har ingen anslutning till lokalt när de skapas. I den här typen av arkitektur måste varje virtuellt nätverk peer-kopplas till *Hub-VNet* i den **delade infrastruktur** miljön. Peering av virtuella nätverk skapar en anslutning mellan två separata virtuella nätverk och tillåter att nätverks trafiken färdas mellan dem. Observera att peering av virtuella nätverk inte är transitivt. En peering måste anges i vart och ett av de två virtuella nätverk som är anslutna, och om bara ett av de virtuella nätverken anger att anslutningen är ofullständig. För att illustrera effekterna av detta anger den första **arbets belastnings ägaren** en peering mellan **Prod-VNet** och **Hub-VNet**. Den första peer kopplingen skapas, men inga trafikflöden eftersom kompletterande peering från **hubb-VNet** till **Prod-VNet** ännu inte har angetts. Den första **arbets belastnings ägaren** kontaktar **nätverks drifts** användaren och begär denna kompletterande peering-anslutning.
-    ![Creating en peering-anslutning @ no__t-1
+    ![att skapa en peering-anslutning](../../_images/govern/design/governance-3-5.png)
 8. Användare av **nätverks åtgärder** granskar begäran, godkänner den och anger sedan peering i inställningarna för **hubb-VNet**. Peering-anslutningen är nu klar och nätverks trafiken flödar mellan de två virtuella nätverken.
-    ![Creating en peering-anslutning @ no__t-1
+    ![att skapa en peering-anslutning](../../_images/govern/design/governance-3-6.png)
 9. Nu skickar en andra **arbets belastnings ägare** en begäran till **prenumerations tjänstens administratör** och läggs till i de befintliga resurs grupperna för **produktions** -och **utvecklings** miljön med **deltagar** rollen. Den andra **arbets belastnings ägaren** har samma behörigheter för alla resurser som den första **arbets belastnings ägaren** i varje resurs grupp.
-    ![Adding-deltagare @ no__t-1
+    ![lägger till bidrags givare](../../_images/govern/design/governance-3-7.png)
 10. Den andra **arbets belastnings ägaren** skapar ett undernät **i det virtuella** nätverket för virtuella nätverk och lägger sedan till två virtuella datorer. Den andra **arbets belastnings ägaren** använder *miljö* -och *managedBy* -taggarna för varje resurs.
-    ![Creating-undernät @ no__t-1
+    ![att skapa undernät](../../_images/govern/design/governance-3-8.png)
 
 I den här exempel resurs hanterings modellen kan vi hantera resurser i de tre nödvändiga miljöerna. Resurserna för delad infrastruktur skyddas eftersom det bara finns en enda användare i prenumerationen med behörighet att komma åt dessa resurser. Var och en av arbets belastnings ägarna kan använda delade infrastruktur resurser utan att ha några behörigheter för själva delade resurser. Den här hanterings modellen uppfyller dock inte kraven för arbets belastnings isolering – var och en av de två **arbets belastnings ägarna** kan komma åt resurserna för den andra arbets belastningen.
 
@@ -190,15 +196,15 @@ Det innebär att **APP2 arbets belastnings ägare** hade behörighet att distrib
 Nu ska vi titta på en enda prenumeration med flera resurs grupper för olika miljöer och arbets belastningar. Observera att i föregående exempel var resurserna för varje miljö lätt att identifiera eftersom de fanns i samma resurs grupp. Nu när du inte längre har grupperat, måste du förlita dig på en namngivnings konvention för resurs grupper för att kunna tillhandahålla den funktionen.
 
 1. Resurserna för **delad infrastruktur** kommer fortfarande att ha en separat resurs grupp i den här modellen, vilket är detsamma. Varje arbets belastning kräver två resurs grupper – en för varje **utvecklings** -och **produktions** miljö. För den första arbets belastningen skapar **prenumerations ägaren** två resurs grupper. Det första heter **APP1-Prod-RG** och den andra heter **APP1-dev-RG**. Som tidigare nämnts identifierar den här namngivnings konventionen resurserna som associeras med den första arbets belastningen, **APP1**och antingen **utvecklings** -eller **produktions** miljön. *Prenumerations* ägaren lägger återigen till **APP1 arbets belastnings ägare** i resurs gruppen med **deltagar** rollen.
-    ![Adding-deltagare @ no__t-1
+    ![lägger till bidrags givare](../../_images/govern/design/governance-3-12.png)
 2. På samma sätt som i det första exemplet distribuerar **APP1 arbets belastnings ägare** ett virtuellt nätverk med namnet **APP1-Prod-VNet** till **produktions** miljön, och en annan namngiven **APP1-dev-VNet** i **utvecklings** miljön. **APP1 arbets belastnings ägare** skickar en begäran till användaren med **nätverks åtgärder** för att skapa en peering-anslutning. Observera att **APP1 arbets belastnings ägare** lägger till samma taggar som i det första exemplet och att begränsnings räknaren har minskats till 997 virtuella nätverk som återstår i prenumerationen.
-    ![Creating en peering-anslutning @ no__t-1
+    ![att skapa en peering-anslutning](../../_images/govern/design/governance-3-13.png)
 3. **Prenumerationens ägare** skapar nu två resurs grupper för **APP2 arbets belastnings ägare**. Efter samma konventioner som för **APP1 arbets belastnings ägare**heter resurs grupperna **APP2-Prod-RG** och **APP2-dev-RG**. **Prenumerations ägaren** lägger till **APP2 arbets belastnings ägare** till varje resurs grupp med **deltagar** rollen.
-    ![Adding-deltagare @ no__t-1
+    ![lägger till bidrags givare](../../_images/govern/design/governance-3-14.png)
 4. *APP2 arbets belastnings ägare* distribuerar virtuella nätverk och virtuella datorer till resurs grupperna med samma namn konventioner. Taggar läggs till och begränsnings räknaren har minskats till 995 virtuella nätverk kvar i *prenumerationen*.
-    @no__t 0Deploying virtuella nätverk och virtuella datorer @ no__t-1
+    ![distribution av virtuella nätverk och virtuella datorer](../../_images/govern/design/governance-3-15.png)
 5. *APP2 arbets belastnings ägare* skickar en begäran till *nätverks drifts* användaren att peer *-nätverket APP2-net-VNet* med *hubb-VNet*. Den *nätverks åtgärd* som användaren skapar peering-anslutningen.
-    ![Creating en peering-anslutning @ no__t-1
+    ![att skapa en peering-anslutning](../../_images/govern/design/governance-3-16.png)
 
 Den resulterande hanterings modellen liknar det första exemplet, med flera viktiga skillnader:
 
@@ -210,9 +216,9 @@ Den resulterande hanterings modellen liknar det första exemplet, med flera vikt
 Nu ska vi titta på en resurs hanterings modell med flera prenumerationer. I den här modellen kommer du att justera var och en av de tre miljöerna till en separat prenumeration: en prenumeration på **delade tjänster** , **produktions** prenumeration och slutligen en **utvecklings** prenumeration. Övervägandena för den här modellen liknar en modell som använder en enda prenumeration i som du måste bestämma för att justera resurs grupper till arbets belastningar. Redan fastställt är att skapa en resurs grupp för varje arbets belastning uppfyller kraven för arbets belastnings isolering, så du kommer att se den modellen i det här exemplet.
 
 1. I den här modellen finns tre *prenumerationer*: *delad infrastruktur*, *produktion*och *utveckling*. Var och en av dessa tre prenumerationer kräver en *prenumerations ägare*, och i det enkla exemplet använder du samma användar konto för alla tre. Resurserna för *delad infrastruktur* hanteras på samma sätt som de två första exemplen ovan, och den första arbets belastningen är kopplad till *APP1-RG* i *produktions* miljön och samma resurs grupp med samma namn i *utvecklingen* miljö. *APP1 arbets belastnings ägare* läggs till i varje resurs grupp med *deltagar* rollen.
-    ![Adding-deltagare @ no__t-1
+    ![lägger till bidrags givare](../../_images/govern/design/governance-3-17.png)
 2. Som i de tidigare exemplen skapar *APP1 arbets belastnings ägare* resurserna och begär peering-anslutningen till det virtuella nätverket för *delad infrastruktur* . *APP1-arbetsbelastnings ägare* lägger bara till *managedBy* -taggen eftersom det inte längre behövs någon av *miljö* tag gen. Det innebär att resurserna är för varje miljö grupperade nu i samma *prenumeration* och att *miljö* tag gen är redundant. Begränsnings räknaren minskas till 999 virtuella nätverk kvar.
-    ![Creating en peering-anslutning @ no__t-1
+    ![att skapa en peering-anslutning](../../_images/govern/design/governance-3-18.png)
 3. Slutligen upprepar *prenumerations ägaren* processen för den andra arbets belastningen och lägger till resurs grupperna med *APP2 arbets belastnings ägare* i * Contributor-rollen. Gräns räknaren för var och en av miljö prenumerationerna överförs till 998 virtuella nätverk kvar.
 
 Den här hanterings modellen har fördelarna med det andra exemplet ovan. Den viktigaste skillnaden är dock att gränserna är mindre av ett problem på grund av att de är spridda över två *prenumerationer*. Nack delen är att kostnads data som spåras med taggar måste aggregeras i alla tre *prenumerationer*.
