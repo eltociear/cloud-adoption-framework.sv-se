@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0d1918f60f6bfe2a6d458b83b5838a8776af51a7
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 39c756c1d90cc9baf7927b2a0ba02814a82f6031
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549267"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058804"
 ---
 # <a name="assess-the-digital-estate"></a>Utvärdera den digitala egendomen
 
@@ -59,7 +59,7 @@ granskar du inställningarna och klickar på **Lägg till verktyg**
 
 ::: zone target="docs"
 
-### <a name="read-more"></a>Läs mer
+### <a name="learn-more"></a>Läs mer
 
 - [Översikt över Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview)
 - [Migrera fysiska eller virtualiserade servrar till Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
@@ -83,7 +83,7 @@ Om du vill använda beroendevisualisering måste du ladda ned och installera age
 
 <!-- markdownlint-disable MD024 -->
 
-### <a name="read-more"></a>Läs mer
+### <a name="learn-more"></a>Läs mer
 
 - [Använda lösningen Tjänstkarta i Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate och Tjänstkarta: Visualisering av beroenden](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
@@ -105,7 +105,7 @@ Den fullständiga listan med intressenter kan variera mellan migreringsprojekten
 
 Att upprätta ett kärnteam för molnstrategin med dessa viktiga intressenter på hög nivå, kan vara till hjälp när du förbereder din organisation på molnimplementeringen och dina övergripande åtgärder för molnmigreringen. Det här teamet ansvarar för att förstå molnteknikerna och migreringsprocesserna, identifiera affärsmotiveringen för migreringar och fastställa de bästa lösningarna för migreringen. De hjälper också till att identifiera och arbeta med specifika program- och affärsintressenter för att säkerställa en lyckad migrering.
 
-Mer information om hur du förbereder din organisation på molnmigreringen finns i Cloud Adoption Framework-artikeln om den [inledande organisatoriska anpassningen](../../ready/initial-org-alignment.md).
+Mer information om hur du förbereder din organisation på molnmigreringen finns i Cloud Adoption Framework-artikeln om den [inledande organisatoriska anpassningen](../../plan/initial-org-alignment.md).
 
 # <a name="timelinestabtimelines"></a>[Tidslinjer](#tab/Timelines)
 
