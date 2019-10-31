@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 58891a3afcafc9ac160f90027c35aa459ca7636a
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: faa1728dd72828478a167cf09535bdf9f2ac1a82
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048011"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058877"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -62,13 +62,13 @@ Visa resultat som rör [global räckvidd](./reach-outcomes.md).
 
 Sociala marknadsplatser kastar om branschens spelregler i en oerhörd takt. Att svara på användarnas behov är ett viktigt mått på kundengagemang.
 
-Läs mer om [resultat för kundengagemang](./engagement-outcomes.md).
+Mer information om [resultat för kundengagemang](./engagement-outcomes.md).
 
 ### <a name="performance-outcomes"></a>Prestandaresultat
 
 Det förutsätts att prestanda och pålitlighet erbjuds. Om endera av dessa misslyckas kan skadan på anseendet vara både stor och långvarig.
 
-Läs mer om [prestandaresultat](./performance-outcomes.md).
+Mer information om [prestandaresultat](./performance-outcomes.md).
 
 Vart och ett av de affärsresultat som anges i kategorierna ovan kan bidra till att främja ett samtal om affärsresultat med medlemmar i affärs- och teknikteamen. Du bör dock inte begränsa dina samtal till de här allmänna exemplen. Förståelse för verksamhetens unika behov och att skapa motsvarande resultat maximerar värdet av molnomvandling.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 000d1aba1ec496e7b6583c84351e2d6ca29b3e1f
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: a6ee53355313a0f0c277d7b1c69e77494cdf8e1c
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683507"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058726"
 ---
 # <a name="subscription-decision-guide"></a>Beslutsguide för prenumerationer
 
@@ -26,7 +26,7 @@ När din digitala egendom i Azure växer, så behöver du förmodligen skapa ytt
 
 Vissa grundläggande exempel på hur du kan använda hanteringsgrupper för att separera olika arbetsbelastningar:
 
-- **Produktion kontra icke-produktion:** Vissa företag skapar hanteringsgrupper för att separera sina produktions- och icke-produktionsprenumerationer. Med hanteringsgrupper blir det enklare för dessa kunder att hantera roller och principer. Till exempel kan en icke-produktionsprenumeration ge utvecklare **deltagaråtkomst**, men i produktion har de bara **läsaråtkomst**.
+- **Arbetsbelastningar för produktion kontra icke-produktion:** Vissa företag skapar hanteringsgrupper för att separera sina produktions- och icke-produktionsprenumerationer. Med hanteringsgrupper blir det enklare för dessa kunder att hantera roller och principer. Till exempel kan en icke-produktionsprenumeration ge utvecklare **deltagaråtkomst**, men i produktion har de bara **läsaråtkomst**.
 - **Interna tjänster kontra externa tjänster:** Liksom med produktions- respektive icke-produktionsarbetsbelastningar har företag ofta olika krav, principer och roller för interna tjänster jämfört med externa, kundriktade tjänster.
 
 Den här beslutsguiden hjälper dig att överväga olika sätt att ordna din hanteringsgruppshierarki på.

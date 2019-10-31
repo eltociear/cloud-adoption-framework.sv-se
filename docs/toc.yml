@@ -127,6 +127,12 @@
           href: ready/azure-best-practices/roles.md
         - name: Skapa hybridmolnskonsekvens
           href: infrastructure/misc/hybrid-consistency.md
+    - name: Utökat omfång
+      items:
+        - name: Terraform-landningszoner
+          href: ready/expanded-scope/terraform-landing-zone.md
+        - name: Gränssäkerhet för nätverk
+          href: reference/networking-vdc.md
     - name: Bästa praxis
       items:
         - name: Översikt
@@ -437,8 +443,6 @@
                   href: migrate/azure-best-practices/migrate-best-practices-security-management.md
                 - name: Ytterligare metodtips
                   items:
-                    - name: Metodtips för gränssäkerhet i Azure
-                      href: reference/networking-vdc.md
                     - name: Metodtips för databassäkerhet
                       href: 'https://docs.microsoft.com/azure/security/fundamentals/database-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Metodtips för datasäkerhet och kryptering i Azure

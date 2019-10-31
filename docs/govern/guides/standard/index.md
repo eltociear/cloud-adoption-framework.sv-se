@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 059e60e44ccf393bb731005bd4a579f3e3e41951
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: ea7d9c51ced367734b28fd550ec1caa69ffe1f27
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547591"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058688"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Standardguide för styrning av företag
 
@@ -40,7 +40,7 @@ Följande diagram visar MVP-styrningshierarkin för att organisera resurser.
 Varje program bör distribueras i korrekt område i hierarkin för hanteringsgrupp, prenumeration och resursgrupp. Under distributionsplaneringen skapar teamet för molnstyrning nödvändiga noder i hierarkin för att stödja molnimplementeringsteamen.
 
 1. En hanteringsgrupp för varje typ av miljö (såsom produktion, utveckling och testning).
-2. Två prenumerationer, en för produktion och en annan för icke-produktion.
+2. Två prenumerationer, en för produktionsarbetsbelastningar och en annan för icke-produktionsarbetsbelastningar.
 3. [Konsekvent terminologi](../../../ready/considerations/naming-and-tagging.md) ska tillämpas på varje nivå i den här grupperingshierarkin.
 4. Resursgrupper bör distribueras på ett sätt som tar hänsyn till innehållets livslängd: allt som utvecklas tillsammans hanteras tillsammans och dras tillbaka tillsammans. Mer information om metodtips för resursgrupper finns [här](../../../decision-guides/resource-consistency/index.md).
 5. [Valet av region](../../../decision-guides/regions/index.md) är otroligt viktigt. Du måste se till att nätverk, övervakning och granskning är tillgängligt för redundans/återställning och att [nödvändiga SKU:er är tillgängliga i de önskade regionerna](https://azure.microsoft.com/global-infrastructure/services).
