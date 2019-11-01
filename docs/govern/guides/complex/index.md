@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: be75f4315d90c09c277846f8608ca0552f1d9853
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: c2e7d5a3b442e6094ccc08fefbadab6102b09fcc
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058708"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239727"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Styrningsguide för komplexa företag
 
@@ -41,7 +41,7 @@ Varje program bör distribueras i korrekt område i hierarkin för hanteringsgru
 
 1. Definiera en hanteringsgrupp för varje affärsenhet med en detaljerad hierarki som återspeglar geografiskt område och miljötyp (till exempel produktions- eller förproduktionsmiljöer).
 2. Skapa en prenumeration för produktion och icke-prenumeration för varje unik kombination av diskret affärsenhet eller geografiskt område. Var försiktig om du skapar flera prenumerationer. Mer information finns [här](../../../decision-guides/subscriptions/index.md).
-3. Tillämpa [konsekvent terminologi](../../../ready/considerations/naming-and-tagging.md) på varje nivå i den här grupperingshierarkin.
+3. Tillämpa [konsekvent terminologi](../../../ready/azure-best-practices/naming-and-tagging.md) på varje nivå i den här grupperingshierarkin.
 4. Resursgrupper bör distribueras på ett sätt som tar hänsyn till innehållets livslängd: allt som utvecklas tillsammans hanteras tillsammans och dras tillbaka tillsammans. Mer information om metodtips för resursgrupper finns [här](../../../decision-guides/resource-consistency/index.md).
 5. [Valet av region](../../../decision-guides/regions/index.md) är otroligt viktigt. Du måste se till att nätverk, övervakning och granskning är tillgängligt för redundans/återställning och att [nödvändiga SKU:er är tillgängliga i de önskade regionerna](https://azure.microsoft.com/global-infrastructure/services).
 

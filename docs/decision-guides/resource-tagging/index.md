@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ef226d55d6b16c69b35c57734de25efec6abaa00
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 77fe8ba38b2ebf79ddceeb9fe2df940e8e333cc6
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378019"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238856"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>Beslutsguide för namngivning och taggning av resurser
 
@@ -40,7 +40,7 @@ Taggningsscheman som omfattar ett affärsinriktat fokus, till exempel redovisnin
 
 En standardiserad namngivningskonvention är startpunkten för att organisera dina molnhanterade resurser. Med ett korrekt strukturerat namngivningssystem kan du snabbt identifiera resurser för både hanterings- och redovisningsändamål. Om du har befintliga IT-namngivningskonventioner i andra delar av organisationen bör du överväga huruvida dina namngivningskonventioner för moln ska riktas in med dem eller om du bör upprätta separata molnbaserade standarder.
 
-Observera även att olika Azure-resurstyper har olika [namngivningskrav](../../ready/considerations/naming-and-tagging.md). Dina namngivningskonventioner måste vara kompatibla med dessa namngivningskrav.
+Observera även att olika Azure-resurstyper har olika [namngivningskrav](../../ready/azure-best-practices/naming-and-tagging.md). Dina namngivningskonventioner måste vara kompatibla med dessa namngivningskrav.
 
 ## <a name="resource-tagging-patterns"></a>Mönster för resurstaggning
 

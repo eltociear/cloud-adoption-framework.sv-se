@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a3c824b3f36a3252de0c43ff420096c48eda5fc1
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 775e41b0bc671756f372ed4ce382f1b8c91db6f5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224233"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239796"
 ---
 # <a name="landing-zone-considerations"></a>Landingzon – att tänka på
 
@@ -27,10 +27,10 @@ I den här bilden ser du de viktigaste sakerna att tänka på när du implemente
 
 Alla landningszoner tillhandahåller en struktur för olika värdalternativ. Strukturen skapas explicit via styrningskontroller eller organiskt genom de tjänster som används i landningszonen. I följande artiklar får du hjälp att fatta beslut som sedan återspeglas i skissen eller andra automatiserade skript som skapar landningszonen:
 
-- **[Beräkningsbeslut](./compute-decisions.md)** . Du kan göra driften mindre komplicerad genom att anpassa beräkningsalternativen till landningszonens syfte. Det här beslutet kan tillämpas med hjälp av verktygskedjor för automation som Azure Policy-initiativ och skisser för landningszoner.
-- **[Lagringsbeslut](./storage-guidance.md)** . Välj den Azure Storage-lösning som passar för arbetsbelastningens krav.
-- **[Nätverksbeslut](./network-decisions.md)** . Välj de nätverkstjänster, verktyg och arkitekturer som behövs för organisationens arbetsbelastning, styrningen och behovet av anslutningar.
-- **[Databasbeslut](./data-decisions.md)** . Avgör vilken databasteknik som passar bäst för dina arbetsbelastningskrav.
+- **[Beräkningsbeslut](./compute-options.md)** . Du kan göra driften mindre komplicerad genom att anpassa beräkningsalternativen till landningszonens syfte. Det här beslutet kan tillämpas med hjälp av verktygskedjor för automation som Azure Policy-initiativ och skisser för landningszoner.
+- **[Lagringsbeslut](./storage-options.md)** . Välj den Azure Storage-lösning som passar för arbetsbelastningens krav.
+- **[Nätverksbeslut](./networking-options.md)** . Välj de nätverkstjänster, verktyg och arkitekturer som behövs för organisationens arbetsbelastning, styrningen och behovet av anslutningar.
+- **[Databasbeslut](./data-options.md)** . Avgör vilken databasteknik som passar bäst för dina arbetsbelastningskrav.
 
 ## <a name="azure-fundamentals"></a>Grunderna i Azure
 
@@ -47,6 +47,6 @@ I följande artiklar får du hjälp att fatta styrningsrelaterade beslut angåen
 
 - **Kostnadskrav**. Givet organisationens motiv för att flytta till molnet och de driftsmässiga kraven på miljön så kan du behöva justera kostnadshanteringen för landningszonen.
 - **Övervakningsbeslut**. Beroende på de driftsmässiga kraven för landningszonen så kan du distribuera olika övervakningsverktyg. I artikeln om övervakningsbeslut får du hjälp att avgöra vilka verktyg du bör distribuera.
-- **Använda rollbaserad åtkomstkontroll**. Azures [rollbaserade åtkomstkontroll (RBAC)](../azure-best-practices/roles.md) ger en detaljerad och gruppbaserad åtkomsthantering för resurser som har organiserats efter användarroller.
+- **Använda rollbaserad åtkomstkontroll**. Azures [rollbaserade åtkomstkontroll (RBAC)](../considerations/roles.md) ger en detaljerad och gruppbaserad åtkomsthantering för resurser som har organiserats efter användarroller.
 - **Policybeslut**. [Azure Blueprints-exempel](https://docs.microsoft.com/azure/governance/blueprints/samples) är förberedda efterlevnadsskisser som vart och ett har fördefinierade policyinitiativ. Organisationens policybeslut avgör vilken skiss eller vilket policyinitiativ som passar bäst sett till krav och begränsningar.
-- **[Skapa hybridmolnskonsekvens](../../infrastructure/misc/hybrid-consistency.md)** . Skapa hybridmolnlösningar som ger organisationen molnets alla fördelar samtidigt som en del praktiska aspekter av lokal hantering bibehålls.
+- **[Skapa hybridmolnskonsekvens](./hybrid-consistency.md)** . Skapa hybridmolnlösningar som ger organisationen molnets alla fördelar samtidigt som en del praktiska aspekter av lokal hantering bibehålls.

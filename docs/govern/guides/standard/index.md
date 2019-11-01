@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ea7d9c51ced367734b28fd550ec1caa69ffe1f27
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 1f0db9ecd49973c769d74a5357e56406e3bce3cf
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058688"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239705"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Standardguide för styrning av företag
 
@@ -41,7 +41,7 @@ Varje program bör distribueras i korrekt område i hierarkin för hanteringsgru
 
 1. En hanteringsgrupp för varje typ av miljö (såsom produktion, utveckling och testning).
 2. Två prenumerationer, en för produktionsarbetsbelastningar och en annan för icke-produktionsarbetsbelastningar.
-3. [Konsekvent terminologi](../../../ready/considerations/naming-and-tagging.md) ska tillämpas på varje nivå i den här grupperingshierarkin.
+3. [Konsekvent terminologi](../../../ready/azure-best-practices/naming-and-tagging.md) ska tillämpas på varje nivå i den här grupperingshierarkin.
 4. Resursgrupper bör distribueras på ett sätt som tar hänsyn till innehållets livslängd: allt som utvecklas tillsammans hanteras tillsammans och dras tillbaka tillsammans. Mer information om metodtips för resursgrupper finns [här](../../../decision-guides/resource-consistency/index.md).
 5. [Valet av region](../../../decision-guides/regions/index.md) är otroligt viktigt. Du måste se till att nätverk, övervakning och granskning är tillgängligt för redundans/återställning och att [nödvändiga SKU:er är tillgängliga i de önskade regionerna](https://azure.microsoft.com/global-infrastructure/services).
 
