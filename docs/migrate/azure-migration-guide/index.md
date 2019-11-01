@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 221259ce6550f42aad6e8dbb0a1dd2144bbdb6b4
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 9f9ad2db240ad9453a8e337bdbc23f0122ebb9c5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048526"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239988"
 ---
 ::: zone target="docs"
 
@@ -42,7 +42,7 @@ Innan du migrerar resurser till Azure behöver du välja den migreringsmetod och
 
 Den här guiden leder dig igenom grunderna i att migrera program och resurser från din lokala miljö till Azure. Den är utformad för migreringsomfång med minimal komplexitet. Du kan avgöra huruvida den här guiden passar för din migrering genom att gå till fliken **När du bör använda den här guiden**.
 
-När du migrerar till Azure kan du migrera dina program som de är med hjälp av IaaS-baserade VM-lösningar (detta kallas migrering med ”värdbyte” eller ”lift and shift”), eller så har du kanske flexibiliteten att använda hanterade tjänster och andra molnbaserade funktioner för att modernisera dina program. Mer information om de här alternativen finns på fliken **Migreringsalternativ**. När du utvecklar en migreringsstrategi bör du överväga följande:
+När du migrerar till Azure kan du migrera dina program som de är med hjälp av IaaS-baserade VM-lösningar (detta kallas migrering med _värdbyte_ eller _lift and shift_), eller så har du kanske flexibiliteten att använda hanterade tjänster och andra molnbaserade funktioner för att modernisera dina program. Mer information om de här alternativen finns på fliken **Migreringsalternativ**. När du utvecklar en migreringsstrategi bör du överväga följande:
 
 - Kommer mina migrerande program att fungera i molnet?
 - Vilken är den bästa strategin (vad gäller teknik, verktyg och migreringar) för mitt program? Se Microsoft Cloud Adoption Frameworks [beslutsguide för migreringsverktyg](../../decision-guides/migrate-decision-guide/index.md) för mer information.

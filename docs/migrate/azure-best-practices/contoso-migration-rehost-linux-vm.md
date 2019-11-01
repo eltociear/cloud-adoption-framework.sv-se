@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: aa7ce8c882521e9a346e3f00da8c664af7585423
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 8b925564b3186e153cdd9a8139499a83a1fd96ff
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058232"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239404"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>Byta värd för en lokal Linux-app till virtuella Azure-datorer
 
@@ -69,8 +69,8 @@ Contoso utvärderar den föreslagna designen genom att skapa en lista med för- 
 
 **Övervägande** | **Detaljer**
 --- | ---
-**Fördelar** | Båda appens virtuella datorer flyttas till Azure utan ändringar, vilket gör migreringen enkel.<br/><br/> Eftersom Contoso använder ”lift and shift” för båda appens virtuella datorer, behövs ingen speciell konfiguration eller speciella migreringsverktyg för appdatabasen.<br/><br/> Contoso har fortfarande full kontroll över appens virtuella datorer i Azure. <br/><br/> Appens virtuella datorer kör Ubuntu 16.04-TLS, som är en godkänd Linux-distribution. [Läs mer](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros).
-**Nackdelar** | Appens webb- och datanivå förblir en enskild felpunkt. <br/><br/> Contoso måste fortsätta att hantera appen som virtuella Azure-datorer i stället för att flytta till en hanterad tjänst, till exempel Azure App Service och Azure Database for MySQL.<br/><br/> Contoso vet att det är enkelt att göra en ”lift and shift”-migrering av virtuella datorer, men att de i så fall inte utnyttjar funktionerna i [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) fullt ut (inbyggd hög tillgänglighet, förutsägbara prestanda, enkel skalning, automatisk säkerhetskopiering och inbyggd säkerhet).
+**Fördelar** | Båda appens virtuella datorer flyttas till Azure utan ändringar, vilket gör migreringen enkel.<br/><br/> Eftersom Contoso använder en hiss och Skift-metod för både virtuella app-datorer behövs inga särskilda konfigurations-eller Migreringsverktyg för app-databasen.<br/><br/> Contoso har fortfarande full kontroll över appens virtuella datorer i Azure. <br/><br/> Appens virtuella datorer kör Ubuntu 16.04-TLS, som är en godkänd Linux-distribution. [Läs mer](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros).
+**Nackdelar** | Appens webb- och datanivå förblir en enskild felpunkt. <br/><br/> Contoso måste fortsätta att hantera appen som virtuella Azure-datorer i stället för att flytta till en hanterad tjänst, till exempel Azure App Service och Azure Database for MySQL.<br/><br/> Contoso är medveten om att det är enkelt att göra saker med en hiss och Shift VM-migrering, de har inte fullständig nytta av de funktioner som tillhandahålls av [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) (inbyggd hög tillgänglighet, förutsägbar prestanda, enkel skalning, automatisk säkerhets kopiering och inbyggd säkerhet).
 
 <!-- markdownlint-enable MD033 -->
 

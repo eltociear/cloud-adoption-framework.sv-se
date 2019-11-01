@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 625706fe404f2b1bde16d54170ef3be36ea35c00
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8a632f9632c1ad5bf6abbfeb60096e2cfadce141
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548957"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240136"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Spåra kostnader för affärsenheter, miljöer och projekt
 
@@ -25,7 +25,7 @@ ms.locfileid: "72548957"
 
 Kostnadskontroll, ungefär som styrning och andra hanteringsstrukturer, är beroende av en välhanterad miljö. Att upprätta en sådan miljö (särskilt en komplex sådan) kräver konsekventa processer när tillgångar klassificeras och organiseras.
 
-Till gångar (även kallade resurser) inkluderar alla virtuella datorer, datakällor och program som distribueras till molnet. Azure tillhandahåller flera mekanismer för att klassificera och organisera tillgångar. [Skalning med flera Azure-prenumerationer](../considerations/scaling-subscriptions.md) beskriver alternativ för att organisera resurser baserat på flera kriterier och därmed skapa en välhanterad miljö. Den här artikeln fokuserar på Azures grundläggande koncept för insyn i molnkostnader.
+Till gångar (även kallade resurser) inkluderar alla virtuella datorer, datakällor och program som distribueras till molnet. Azure tillhandahåller flera mekanismer för att klassificera och organisera tillgångar. [Skalning med flera Azure-prenumerationer](../azure-best-practices/scaling-subscriptions.md) beskriver alternativ för att organisera resurser baserat på flera kriterier och därmed skapa en välhanterad miljö. Den här artikeln fokuserar på Azures grundläggande koncept för insyn i molnkostnader.
 
 ### <a name="classification"></a>Klassificering
 
@@ -35,7 +35,7 @@ Taggning är ett grundläggande sätt att förstå data i alla kostnadsrapporter
 
 Det första steget i att noggrant spåra kostnadsinformation mellan affärsenheter, miljöer och projekt är att definiera en taggningsstandard. Nästa steg är att se till att taggningsstandarden används konsekvent. Följande artiklar kan hjälpa dig med dessa steg:
 
-- [Utveckla standarder för namngivning och taggning](../considerations/naming-and-tagging.md)
+- [Utveckla standarder för namngivning och taggning](../azure-best-practices/naming-and-tagging.md)
 - [Upprätta ett styrnings-MVP för att tillämpa taggningsstandarder](../../govern/guides/complex/index.md)
 
 ### <a name="resource-organization"></a>Resursorganisering
@@ -59,7 +59,7 @@ Diagrammet visar metodtips men omfattar inte följande alternativ:
 
 Resten av den här artikeln förutsätter att du använder metodtipsen i föregående diagram. Följande artiklar kan dock hjälpa dig att tillämpa metoden på en resursorganisation som passar ditt företag bäst:
 
-- [Skalning med flera Azure-prenumerationer](../considerations/scaling-subscriptions.md)
+- [Skalning med flera Azure-prenumerationer](../azure-best-practices/scaling-subscriptions.md)
 - [Distribuera en styrningsMVP för att styra standarder för välhanterad miljö](../../govern/guides/complex/index.md)
 
 ## <a name="provide-the-right-level-of-cost-access"></a>Ange rätt nivå för kostnadsåtkomst
@@ -102,7 +102,7 @@ Följande omfång- och rollinställningar kommer att skapa den insyn som krävs 
 
 - [Molncenter för utmärkthet](../../organize/cloud-center-of-excellence.md). Ansvaret för att hantera kostnader som rör delade tjänster kräver Cost Management-deltagaråtkomst på prenumerationsnivå. Dessutom kan detta team behöva Cost Management-deltagaråtkomst till resursgrupper eller prenumerationer som innehåller tillgångar som distribuerats av CCoE-automatiseringar för att förstå hur dessa automatiseringar påverkar kostnaderna.
 
-  - **Delade tjänster**. När ett molncenter för utmärkthet används rekommenderar vi att tillgångar som hanteras av CCoE stöds från en centraliserad delad tjänstprenumeration inom en hubb-/ekermodell. I det här scenariot har CCoE troligen deltagar- eller ägaråtkomst till den prenumerationen, vilket gör ytterligare omfångstilldelningar för [Cost Management-deltagare](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) onödigt.
+  - **Delade tjänster**. När ett moln Center med hög kvalitet är engagerat, föreslår bästa praxis att till gångar som hanteras av CCoE stöds av en centraliserad prenumeration för delade tjänster i en nav-och eker-modell. I det här scenariot har CCoE troligen deltagar- eller ägaråtkomst till den prenumerationen, vilket gör ytterligare omfångstilldelningar för [Cost Management-deltagare](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) onödigt.
   - **CCoE-automatisering/kontroller**. CCoE innehåller ofta kontroller och automatiserade distributionsskript för molnimplementeringsteamen. CCoE har ansvar för att förstå hur dessa acceleratorer påverkar kostnader. Teamet behöver [Cost Management-deltagaråtkomst](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) till alla resursgrupper eller prenumerationer som kör dessa acceleratorer för att få insyn.
 
 - **Molndriftsteam**. Ansvaret för att hantera löpande kostnader för produktionsmiljöer kräver Cost Management-deltagaråtkomst till alla produktionsprenumerationer.

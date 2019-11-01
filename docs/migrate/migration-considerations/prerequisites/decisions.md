@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 01380bdd795fac0fc2740e4e41c3638a8b8d93f3
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 14946c48e69471f72d4979d18f39e43e6ce374e1
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548304"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239933"
 ---
 # <a name="decisions-that-affect-migrations"></a>Beslut som påverkar migreringen
 
@@ -33,7 +33,7 @@ Den här förutsättningen är inte ett krav för att du ska kunna välja något
 
 ### <a name="acting-on-migration-outcomes"></a>Satsa på migreringsresultat
 
-Om verksamhetsresultaten är viktigast på listan kommer det här avsnittet i Ramverk för molnimplementering fungera bra för ditt team. I det här avsnittet förutsätter vi att du behöver prioritera hastighets- och kostnadsbesparingar som primära nyckeltal (KPI: er), vilket innebär att en migreringsmodell för implementering ska vara anpassad till dessa resultat. En migreringsfokuserad modell bygger i stor utsträckning på ”lift and shift”-migrering för infrastruktur som en tjänst (IaaS)-tillgångar för att tömma ett datacenter och minska kostnader. I en sådan modell kan modernisering ske, men detta är av mindre betydelse tills den primära migreringsprioriteten har uppnåtts.
+Om verksamhetsresultaten är viktigast på listan kommer det här avsnittet i Ramverk för molnimplementering fungera bra för ditt team. I det här avsnittet förutsätter vi att du behöver prioritera hastighets- och kostnadsbesparingar som primära nyckeltal (KPI: er), vilket innebär att en migreringsmodell för implementering ska vara anpassad till dessa resultat. En migrerings modell är kraftigt predikat på hissen och Shift-migreringen av infrastruktur som en tjänst (IaaS) till gångar som tar slut på ett Data Center och ger kostnads besparingar. I en sådan modell kan modernisering ske, men detta är av mindre betydelse tills den primära migreringsprioriteten har uppnåtts.
 
 ### <a name="acting-on-application-innovations"></a>Satsa på programinnovationer
 

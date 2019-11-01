@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 1e8b42170a4db025087acdabba14544cea9c8194
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 16289952e74f81c885f15d69436c17e9d012d80a
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548115"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238916"
 ---
 # <a name="scale-a-migration-to-azure"></a>Skala en migrering till Azure
 
@@ -196,7 +196,7 @@ Det finns fyra huvudsakliga migreringsstrategier som Contoso kan överväga.
 
 **Strategi** | **Detaljer** | **Användning**
 --- | --- | ---
-**Värdbyte** | Det här migreringsalternativet kallas ofta ”Lift and Shift” och är ett kodfritt alternativ som låter dig snabbt migrera befintliga appar till Azure.<br/><br/> En app migreras i befintligt skick för att dra nytta av molnets fördelar utan de risker och kostnader som är förknippade med kodändringar. | Contoso kan vara värd för mindre strategiska appar, vilket innebär att inga kodändringar krävs.
+**Värdbyte** | Kallas ofta för en _hiss och Shift_ -migrering. det här är ett alternativ utan kod för att migrera befintliga appar till Azure snabbt.<br/><br/> En app migreras i befintligt skick för att dra nytta av molnets fördelar utan de risker och kostnader som är förknippade med kodändringar. | Contoso kan vara värd för mindre strategiska appar, vilket innebär att inga kodändringar krävs.
 **Refaktorisering** | Den här strategin kallas även "ompaketering" och kräver minimal kod för appar eller konfigurationsändringar som krävs för att ansluta appen till Azure PaaS och för att utnyttja molnfunktionerna bättre. | Contoso kan omstrukturera strategiska appar för att behålla samma grundläggande funktioner men flytta dem till att köras på en Azure-plattform som Azure App Service.<br/><br/> Detta kräver minimala kodändringar.<br/><br/> Å andra sidan måste contoso underhålla en VM-plattform eftersom den inte hanteras av Microsoft.
 **Arkitekturomarbetning** | Den här strategin ändrar eller utökar en apps kodbas för att optimera appens arkitektur för molnfunktioner och skalning.<br/><br/> Den moderniserar en app till en elastisk och mycket skalbar arkitektur som kan distribueras självständigt.<br/><br/> Använd Azure-tjänster om du vill accelerera processen, skala ut program säkert och hantera dina appar utan problem.
 **Återskapande** | Den här strategin återskapa en app från grunden med hjälp av inbyggd molnteknik.<br/><br/> Azure PaaS (plattform som tjänst) levererar en fullständig miljö för utveckling och distribution i molnet. Vissa av kostnaderna samt komplexiteten programvarulicenserna minskar och underliggande appinfrastruktur, mellanprogram och andra resurser behövs inte. | Contoso kan skriva om viktiga appar från grunden för att utnyttja molnteknik, till exempel en serverlös dator eller mikrotjänster.<br/><br/> Contoso hanterar sin app och tjänst medan Azure hanterar allt annat.
@@ -223,7 +223,7 @@ Contoso har [redan slutfört en POC](./contoso-migration-rehost-vm.md) för att 
 
 ##### <a name="using-site-recovery-at-scale"></a>Använda Site Recovery i stor skala
 
-Contoso planerar att köra flera ”lift and shift”-migreringar. För att detta ska fungera kommer Site Recovery att replikera omgångar med cirka 100 virtuella datorer i taget. Contoso måste utföra en kapacitetsplanering för den föreslagna Site Recovery-migreringen lära sig hur detta går till.
+Contoso planerar att utföra flera migreringar och Shift-migreringar. För att detta ska fungera kommer Site Recovery att replikera omgångar med cirka 100 virtuella datorer i taget. Contoso måste utföra en kapacitetsplanering för den föreslagna Site Recovery-migreringen lära sig hur detta går till.
 
 - Contoso måste samla in information om deras trafikvolymer. Framför allt:
   - Contoso måste bestämma ändringstakten för de virtuella datorer som de vill replikera.

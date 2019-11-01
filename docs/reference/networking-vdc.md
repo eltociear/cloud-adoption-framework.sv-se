@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 718c93b560b38eaae6556e549a0c6f6bb97b807b
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: cbd72c04c7d938aae41e20fae82a29b731f4b256
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048252"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240097"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Virtuella Data Center: ett nätverks perspektiv
 
@@ -378,7 +378,7 @@ Eftersom den använder DNS är Traffic Manager bara för användning med offentl
 
 ### <a name="summary"></a>Sammanfattning
 
-Ett virtuellt Data Center är en metod för att migrera data Center för att skapa en skalbar arkitektur i Azure som maximerar användningen av moln resurser, minskar kostnaderna och fören klar system styrningen. Ett virtuellt Data Center baseras på en nav-och eker-nätverkstopologi, vilket ger gemensamma delade tjänster i hubben och tillåter vissa program och arbets belastningar i ekrarna. Ett virtuellt Data Center matchar också strukturen för företags roller, där olika avdelningar, till exempel central IT, DevOps och drift och underhåll fungerar tillsammans samtidigt som de utför sina egna roller. Ett virtuellt Data Center uppfyller kraven för migrering av "lyft och Shift", men ger även många fördelar för distributioner av interna moln.
+Ett virtuellt Data Center är en metod för att migrera data Center för att skapa en skalbar arkitektur i Azure som maximerar användningen av moln resurser, minskar kostnaderna och fören klar system styrningen. Ett virtuellt Data Center baseras på en nav-och eker-nätverkstopologi, vilket ger gemensamma delade tjänster i hubben och tillåter vissa program och arbets belastningar i ekrarna. Ett virtuellt Data Center matchar också strukturen för företags roller, där olika avdelningar, till exempel central IT, DevOps och drift och underhåll fungerar tillsammans samtidigt som de utför sina egna roller. Ett virtuellt Data Center uppfyller kraven för en överförings-och Shift-migrering, men ger också många fördelar för distribution av interna moln.
 
 ## <a name="references"></a>Referenser
 
@@ -388,7 +388,7 @@ Följande funktioner beskrivs i det här dokumentet. Följ länkarna om du vill 
 
 |Nätverksfunktioner|Belastningsutjämning|Anslutningsmöjlighet|
 |-|-|-|
-|[Azure Virtual Networks][VNet]</br>[Nätverkssäkerhetsgrupper][network-security-groups]</br>[Loggar för nätverks säkerhets grupper][nsg-log]</br>[Användardefinierade vägar][user-defined-routes]</br>[Virtuella nätverks enheter][NVA]</br>[offentliga IP-adresser][PIP]</br>[Azure-DDoS][DDoS]</br>[Azure Firewall][AzFW]</br>[Azure DNS][DNS]|[Azure-front dörr][AFD]</br>[Azure Load Balancer (L3)][ALB]</br>[Application Gateway (L7)][AppGW]</br>[Brand vägg för webbaserade program] WAF</br>[Azure Traffic Manager][traffic-manager]</br></br></br></br></br> |[VNet-peering][VNetPeering]</br>[Virtuellt privat nätverk][VPN]</br>[Virtuellt WAN][vWAN]</br>[ExpressRoute][ExR]</br>[ExpressRoute Direct][ExRD]</br></br></br></br></br>
+|[Azure Virtual Networks][VNet]</br>[Nätverkssäkerhetsgrupper][network-security-groups]</br>[Loggar för nätverks säkerhets grupper][nsg-log]</br>[Användardefinierade vägar][user-defined-routes]</br>[Virtuella nätverks enheter][NVA]</br>[offentliga IP-adresser][PIP]</br>[Azure-DDoS][DDoS]</br>[Azure Firewall][AzFW]</br>[Azure DNS][DNS]|[Azure Front Door][AFD]</br>[Azure Load Balancer (L3)][ALB]</br>[Application Gateway (L7)][AppGW]</br>[Brand vägg för webbaserade program] WAF</br>[Azure Traffic Manager][traffic-manager]</br></br></br></br></br> |[VNet-peering][VNetPeering]</br>[Virtuellt privat nätverk][VPN]</br>[Virtuellt WAN][vWAN]</br>[ExpressRoute][ExR]</br>[ExpressRoute Direct][ExRD]</br></br></br></br></br>
 
 |Identitet</br>|Övervakning</br>|Bästa metoder</br>|
 |-|-|-|

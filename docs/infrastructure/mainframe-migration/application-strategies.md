@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ba2d68a2b382ccccf0d124a57d33d1344476c3dc
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 9eb8c85c2355ae06e63d58e3078f1101bf7e3412
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547956"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239443"
 ---
 # <a name="mainframe-application-migration"></a>Migrering av stordator program
 
@@ -27,7 +27,7 @@ Programmigreringen omfattar vanligt vis en eller flera av följande strategier:
 
 - **Dra tillbaka:** Alla program som inte längre behövs bör dras tillbaka innan migreringen.
 
-- **Återskapa:** Vissa organisationer väljer att helt skriva om program med modern teknik. Med tanke på den extra kostnaden och komplexiteten i den här metoden är det inte lika vanligt som en metod för att lyfta och byta. Ofta efter den här typen av migrering är det klokt att börja ersätta moduler och kod med hjälp av kod omvandlings motorer.
+- **Återskapa:** Vissa organisationer väljer att helt skriva om program med modern teknik. Med tanke på den extra kostnaden och komplexiteten i den här metoden är det inte lika vanligt som en hiss och Skift-metod. Ofta efter den här typen av migrering är det klokt att börja ersätta moduler och kod med hjälp av kod omvandlings motorer.
 
 - **Ersätt:** Den här metoden ersätter stordator funktioner med motsvarande funktioner i molnet. Program vara som en tjänst (SaaS) är ett alternativ, som använder en lösning som skapats specifikt för ett företags problem, till exempel ekonomi, personal, produktion eller företags resurs planering. Dessutom är många branschspecifika appar tillgängliga för att lösa problem med anpassade stordator lösningar som används för att lösa problemet tidigare.
 
@@ -57,7 +57,7 @@ Förutom emuleringsenheter tillhandahåller Azure plattform som en tjänst (PaaS
 
 ## <a name="migrate-oltp-workloads-to-azure"></a>Migrera OLTP-arbetsbelastningar till Azure
 
-Metoden "lyft och Shift" är alternativet No-Code för att snabbt migrera befintliga program till Azure. Varje program migreras i befintligt skick, vilket ger fördelarna med molnet utan risker eller kostnader för att göra kod ändringar. Användning av en emulator för transaktions bearbetning av stordatorer (TP) i Azure har stöd för den här metoden.
+Det går inte att använda alternativet för att lyfta och flytta befintliga program till Azure. Varje program migreras i befintligt skick, vilket ger fördelarna med molnet utan risker eller kostnader för att göra kod ändringar. Användning av en emulator för transaktions bearbetning av stordatorer (TP) i Azure har stöd för den här metoden.
 
 TP-övervakare är tillgängliga från olika leverantörer och körs på virtuella datorer, ett IaaS-alternativ (Infrastructure as a Service) på Azure. I följande före och efter-diagram visas en migrering av ett online-program som backas upp av IBM DB2, ett Relations databas hanterings system (DBMS) på en IBM z/OS-stordator. DB2 för z/OS använder VSAM-filer (Virtual Storage Access Method) för att lagra data och indexerad sekventiell åtkomst metod (ISAM) för flata filer. Den här arkitekturen använder också CICS för transaktions övervakning.
 

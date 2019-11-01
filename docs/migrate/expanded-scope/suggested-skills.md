@@ -8,16 +8,16 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d98d8ea586d76c583ab22670ac310a9f5bf36fc1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ffef26fd2ff6261133f5b63a8c13b5f4cd4364f5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024729"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240261"
 ---
-# <a name="skills-readiness-path-during-the-migrate-phase-of-a-migration-journey"></a>Vägen för kunskapsberedskap under fasen ”migrera” för en migreringsresa
+# <a name="skills-readiness-for-cloud-migration"></a>Kunskapsberedskap för molnmigrering
 
-Under en molnmigrering är det troligt att anställda, och även vissa befintliga partner för systemintegrering eller partner för hanterade tjänster, behöver skaffa sig nya kunskaper för att vara effektiva under migreringsarbetet.
+Under en migrering av molnet, är det troligt att de anställda, samt vissa partner partner eller hanterade tjänste partner, kommer att behöva utveckla nya kunskaper för att vara effektiva under migreringen.
 
 Det finns fyra distinkta processer som slutförs iterativt under fasen ”migrera” för en migreringsresa. I följande avsnitt avstäms de nödvändiga kunskaperna för var och en av dessa processer med referenser till två resurser för kunskapsförutsättningar.
 
@@ -29,39 +29,39 @@ Implementering av ”migrera-processer” kommer att bygga på de kunskaper som 
 
 Följande verktyg kan hjälpa teamet vid utförandet av utvärderingsaktiviteter:
 
-- [Balansera portföljen](./balance-the-portfolio.md): Säkerställ balans och rätt investeringsallokeringar i en programportfölj.
-- [Skapa en affärsmotivering](../../strategy/cloud-migration-business-case.md): Skapa och förstå den affärsmotivering som driver arbetet med molnmigrering.
-- [Rationalisera den digitala egendomen](../../digital-estate/rationalize.md): Rationalisera tillgångar i den digitala egendomen.
-- [Utvärdering av programportföljen](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization): Kriterier för beslutsfattande om migrerings- eller innovationsalternativ i programportföljen.
-- [Utvärdera och planera Microsoft Azure-migrering](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning): PluralSights-kurs som underlättar utvärdering av lokala arbetsbelastningar
+- [Balansera portföljen](./balance-the-portfolio.md): se till att balansera och rätt investerings tilldelningar i en program portfölj.
+- Skapa [en affärs justering](../../strategy/cloud-migration-business-case.md): skapa och förstå affärs justeringen för att köra moln migreringen.
+- [Rationalisera den digitala egendomen](../../digital-estate/rationalize.md): rationalisera-tillgångar i den digitala fastigheten.
+- [Utvärdering av program portfölj](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization): kriterier för att fatta beslut om migrerings-eller Innovations alternativ i program portföljen.
+- [Utvärdering och planering Microsoft Azure migrering](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning): PluralSight-kurs för att utvärdera lokala arbets belastningar
 
 Vid utvärderingsprocesser får arkitekter uppdraget att konstruera lösningar för varje arbetsbelastning. Följande kunskapsresurser kan förbereda arkitekter för dessa uppgifter:
 
-- [Grunderna inom molnarkitektur](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): PluralSight-kurs som hjälper till med skapandet av rätt grundläggande lösningar
-- [Microsoft Azure-arkitektur](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): PluralSight-kurs som ger en arkitekter kunskap om grundläggande begrepp i Azure-arkitekturen
-- [Utforma migreringar för Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): PluralSight-kurs som hjälper arkitekter att utforma en migreringslösning
+- [Grunder för moln arkitektur](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): PluralSight kurs som hjälper dig att skapa rätt grundläggande lösningar
+- [Microsoft Azure arkitektur](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): PluralSight kurs till mark arkitekter i Azure-arkitektur
+- [Designa migreringar för Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): PluralSight kurs för att hjälpa arkitekter att utforma en migrations lösning
 
 ## <a name="migrate-skilling-resources"></a>Kunskapsresurser för migrering
 
 Följande självstudie kan förbereda teamet för migreringsaktiviteter:
 
-- [Migrera till Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure): Använda Azure Site Recovery för att migrera virtuella datorer till Azure.
-- [Byta värd för arbetsbelastningar till Azure](https://aka.ms/rehostcourse): PluralSight-kurs som lär deltagarna hur det går till att byta värd för arbetsbelastningar till Azure
-- [Migrera fysiska och virtuella servrar till Azure](https://app.pluralsight.com/library/courses/microsoft-azure-migrating-physical-virtual-servers/table-of-contents): PluralSights-kurs för migrering av servrar till Azure
-- [Importera och exportera data till Azure](https://app.pluralsight.com/library/courses/microsoft-azure-import-export-data/table-of-contents): PluralSight-kurs om dataflytt till och från Azure
+- [Migrera till Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure): använda Azure Site Recovery för att migrera virtuella datorer till Azure.
+- [Rehost-arbetsbelastningar till Azure](https://aka.ms/rehostcourse): PluralSight kurs som undervisar användarna hur de kan återvara värd för arbets belastningar till Azure
+- [Migrera fysiska och virtuella servrar till Azure](https://app.pluralsight.com/library/courses/microsoft-azure-migrating-physical-virtual-servers/table-of-contents): PluralSight kurs för att migrera servrar till Azure
+- [Importera och exportera data till Azure](https://app.pluralsight.com/library/courses/microsoft-azure-import-export-data/table-of-contents): PluralSight kurs om data flödet till och från Azure
 
 ## <a name="optimize-and-promote-process-changes"></a>Optimera och höja upp processändringar
 
 Följande verktyg kan hjälpa teamet att optimera resurser och höja upp till produktion:
 
-- [Kostnader och storleksändring](../azure-best-practices/migrate-best-practices-costs.md): Justera storlek för att anpassa kostnader och budgetar.
-- [Höja upp en arbetsbelastning](../azure-best-practices/migrate-best-practices-networking.md): Ändra nätverkskonfigurationen för att omdirigera produktionsanvändare till migrerade arbetsbelastningar.
+- [Kostnad och storlek](../azure-best-practices/migrate-best-practices-costs.md): Justera storlek för att justera kostnader och budgetar.
+- [Befordra en arbets belastning](../azure-best-practices/migrate-best-practices-networking.md): ändra nätverks konfiguration för att omdirigera produktions användare till migrerade arbets belastningar.
 
 ## <a name="secure-and-manage-process-changes"></a>Skydda och hantera processändringar
 
 Följande verktyg kan hjälpa teamet att hitta sätt att skydda och hantera migrerade tillgångar:
 
-- [Skydda och hantera arbetsbelastningar i Azure](../azure-best-practices/migrate-best-practices-security-management.md): Bästa praxis för att skydda och hantera arbetsbelastningar i Azure.
+- [Skydda och hantera arbets belastningar i Azure](../azure-best-practices/migrate-best-practices-security-management.md): metod tips för att skydda och hantera arbets belastningar i Azure.
 
 ## <a name="next-steps"></a>Nästa steg
 

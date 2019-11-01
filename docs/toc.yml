@@ -3,7 +3,7 @@
   pdf_name: Microsoft Cloud Adoption Framework for Azure
 - name: Komma igång
   items:
-    - name: Så här fungerar migreringsresan
+    - name: Påbörja en molnmigrering
       href: getting-started/migrate.md
     - name: Så här fungerar innovationsresan
       href: getting-started/innovate.md
@@ -21,27 +21,27 @@
           href: strategy/business-outcomes/index.md
         - name: Ekonomiska resultat
           href: strategy/business-outcomes/fiscal-outcomes.md
-        - name: Resultat inom flexibilitet
+        - name: Agilitetsresultat
           href: strategy/business-outcomes/agility-outcomes.md
-        - name: Resultat inom global räckvidd
+        - name: Resultat för global räckvidd
           href: strategy/business-outcomes/reach-outcomes.md
-        - name: Resultat inom kundengagemang
+        - name: Resultat för kundengagemang
           href: strategy/business-outcomes/engagement-outcomes.md
         - name: Prestandaresultat
           href: strategy/business-outcomes/performance-outcomes.md
-        - name: Hur man använder affärsresultat
+        - name: Mall för affärsresultat
           href: strategy/business-outcomes/business-outcome-template.md
-        - name: Matcha tekniska insatser med inlärningsmått
+        - name: Matcha insatser med inlärningsmått
           href: strategy/learning-metrics.md
     - name: Affärsrelaterad motivering
       items:
-        - name: Skapa en affärsstudie om molnmigrering
+        - name: Skapa en affärsmotivering
           href: strategy/cloud-migration-business-case.md
-        - name: Skapa en finansiell modell för molnomvandling
+        - name: Skapa en ekonomisk modell
           href: strategy/financial-models.md
-        - name: Vad är molnredovisning?
+        - name: Förstå molnredovisning
           href: strategy/cloud-accounting.md
-    - name: Första införande-projekt
+    - name: Det första molnimplementeringsprojektet
       href: strategy/first-adoption-project.md
     - name: Föreslagna färdigheter
       href: strategy/suggested-skills.md
@@ -55,7 +55,7 @@
           href: digital-estate/5-rs-of-rationalization.md
         - name: Vad är digital egendom?
           href: digital-estate/index.md
-        - name: Metoder för att planera för digital egendom
+        - name: Planering för digital egendom
           href: digital-estate/approach.md
         - name: Samla in inventeringsdata
           href: digital-estate/inventory.md
@@ -67,25 +67,25 @@
       href: plan/initial-org-alignment.md
     - name: Molnimplementeringsplan
       items:
-        - name: Introduktion
+        - name: Översikt
           href: plan/plan-intro.md
         - name: Nödvändiga komponenter
           href: plan/prerequisites.md
-        - name: Distribuera planmallen för molnimplementering till Azure DevOps
+        - name: Distribuera mallen till Azure DevOps
           href: plan/template.md
-        - name: Definiera och prioritera arbetsbelastningar
+        - name: Rangordna och definiera arbetsbelastningar
           href: plan/workloads.md
         - name: Anpassa tillgångar till arbetsbelastningar
           href: plan/assets.md
         - name: Granska rationaliseringbeslut
           href: plan/review-rationalization.md
-        - name: Uppdatera iterationssökvägarna (definiera versioner och iterationer)
+        - name: Etablera iterationer och publiceringsplaner
           href: plan/iteration-paths.md
-        - name: Skapa tidslinjer
+        - name: Uppskatta tidslinjer
           href: plan/timelines.md
     - name: Föreslagna färdigheter
       href: plan/suggested-skills.md
-    - name: 'Anpassa befintliga roller, färdigheter och processer'
+    - name: Anpassa för molnet
       href: plan/adapt-roles-skills-processes.md
 - name: Redo
   items:
@@ -103,9 +103,9 @@
           href: ready/azure-setup-guide/manage-costs.md
         - name: 'Planera styrning, säkerhet och efterlevnad'
           href: ready/azure-setup-guide/govern-org-compliance.md
-        - name: Använd övervakning och rapportering
+        - name: Etablera övervakning och rapportering
           href: ready/azure-setup-guide/monitoring-reporting.md
-        - name: Håll dig aktuell med Azure
+        - name: Håll dig uppdaterad med Azure
           href: ready/azure-setup-guide/staying-current.md
         - name: Distribuera en landningszon för migrering
           href: ready/azure-setup-guide/migration-landing-zone.md
@@ -115,18 +115,18 @@
           href: ready/considerations/index.md
         - name: Grundläggande koncept för Azure
           href: ready/considerations/fundamental-concepts.md
-        - name: Välja beräkningstjänster
-          href: ready/considerations/compute-decisions.md
-        - name: Nätverksbeslut
-          href: ready/considerations/network-decisions.md
-        - name: Minnesriktlinjer
-          href: ready/considerations/storage-guidance.md
-        - name: Välja ett datalager
-          href: ready/considerations/data-decisions.md
+        - name: Granska beräkningsalternativ
+          href: ready/considerations/compute-options.md
+        - name: Granska nätverksalternativ
+          href: ready/considerations/networking-options.md
+        - name: Granska lagringsalternativ
+          href: ready/considerations/storage-options.md
+        - name: Granska dataalternativ
+          href: ready/considerations/data-options.md
         - name: Rollbaserade åtkomstkontroller
-          href: ready/azure-best-practices/roles.md
+          href: ready/considerations/roles.md
         - name: Skapa hybridmolnskonsekvens
-          href: infrastructure/misc/hybrid-consistency.md
+          href: ready/considerations/hybrid-consistency.md
     - name: Utökat omfång
       items:
         - name: Terraform-landningszoner
@@ -137,31 +137,31 @@
       items:
         - name: Översikt
           href: ready/azure-best-practices/index.md
-        - name: Azure-primitiver
+        - name: Resursorganisering
           items:
             - name: Skalning med flera prenumerationer
-              href: ready/considerations/scaling-subscriptions.md
+              href: ready/azure-best-practices/scaling-subscriptions.md
             - name: Namngivning och taggning
-              href: ready/considerations/naming-and-tagging.md
+              href: ready/azure-best-practices/naming-and-tagging.md
         - name: Nätverk
           items:
             - name: Planera virtuella nätverk
               href: 'https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
             - name: Metodtips för nätverkssäkerhet
               href: 'https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-            - name: Metodtips för arbetsbelastningsmigrering i nätverk
+            - name: Metodtips för nätverk med migrerade arbetsbelastningar
               href: migrate/azure-best-practices/migrate-best-practices-networking.md
             - name: Perimeternätverk
               href: ready/azure-best-practices/perimeter-networks.md
-            - name: Nätverkstopologi av typen hub-spoke
+            - name: Nätverkstopologi med nav och ekrar
               href: ready/azure-best-practices/hub-spoke-network-topology.md
         - name: Identitet och åtkomstkontroller
           items:
             - name: Metodtips för identitetshantering
               href: 'https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-            - name: Säkra administratörsåtkomst i Azure AD
+            - name: Säker privilegierad åtkomst
               href: 'https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-admin-roles-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-            - name: Välj Azure AD-autentisering
+            - name: Välj en autentiseringsmetod
               href: 'https://docs.microsoft.com/azure/security/fundamentals/choose-ad-authn?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
         - name: Storage
           items:
@@ -171,13 +171,13 @@
           items:
             - name: Metodtips för databassäkerhet
               href: 'https://docs.microsoft.com/azure/security/fundamentals/database-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-            - name: Välja en version av Azure SQL
+            - name: Välj ett distributionsalternativ i Azure SQL
               href: 'https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
         - name: Kostnadshantering
           items:
-            - name: 'Spåra kostnader i affärsenheter, miljöer och projekt'
+            - name: Spåra kostnader
               href: ready/azure-best-practices/track-costs.md
-            - name: Metodtips för Azure Cost Management
+            - name: Optimera molninvesteringar
               href: 'https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
             - name: Skapa och hantera budgetar
               href: 'https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
@@ -185,7 +185,7 @@
               href: 'https://docs.microsoft.com/azure/cost-management/tutorial-export-acm-data?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
             - name: Optimera kostnader utifrån rekommendationer
               href: 'https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-            - name: Använda kostnadsaviseringar för att övervaka användning och utgifter
+            - name: Övervaka användning och utgifter
               href: 'https://docs.microsoft.com/azure/cost-management/cost-mgt-alerts-monitor-usage-spending?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
     - name: Föreslagna färdigheter
       href: ready/suggested-skills.md
@@ -201,9 +201,9 @@
               href: migrate/azure-migration-guide/index.md
             - name: Förhandskrav för Azure-migrering
               href: migrate/azure-migration-guide/prerequisites.md
-            - name: Utvärdera enskilda arbetsbelastningar före migreringen
+            - name: Utvärdera din digitala egendom
               href: migrate/azure-migration-guide/assess.md
-            - name: Migrera tillgångar som utgör en arbetsbelastning
+            - name: Migrera tillgångar för arbetsbelastningar
               href: migrate/azure-migration-guide/migrate.md
             - name: Mekanismer för migreringsfokuserad kostnadskontroll
               href: migrate/azure-migration-guide/manage-costs.md
@@ -211,7 +211,7 @@
               href: migrate/azure-migration-guide/optimize-and-transform.md
             - name: Skydda och hantera
               href: migrate/azure-migration-guide/secure-and-manage.md
-            - name: Få hjälp under migreringen till Azure
+            - name: Få hjälp
               href: migrate/azure-migration-guide/assistance.md
         - name: Utökat omfång
           items:
@@ -235,25 +235,25 @@
           items:
             - name: Översikt
               href: migrate/azure-best-practices/index.md
-            - name: Metodtips för att bedöma arbetsbelastningar
+            - name: Utvärdera arbetsbelastningar
               items:
-                - name: Utvärdera lokala resurser för migrering
+                - name: Utvärdera lokala arbetsbelastningar
                   href: migrate/azure-best-practices/contoso-migration-assessment.md
-            - name: Bästa praxis för att migrera arbetsbelastningar
+            - name: Migrera arbetsbelastningar
               items:
                 - name: Konfigurera nätverksfunktioner för migrerade arbetsbelastningar
                   href: migrate/azure-best-practices/migrate-best-practices-networking.md
-                - name: Programmigrering – mönster och exempel
+                - name: Migrering av program
                   items:
                     - name: Översikt
                       href: migrate/azure-best-practices/contoso-migration-overview.md
-                    - name: Distribuera en Azure-infrastruktur
+                    - name: Distribuera en migreringsinfrastruktur
                       href: migrate/azure-best-practices/contoso-migration-infrastructure.md
                     - name: Windows Server-arbetsbelastningar
                       items:
-                        - name: Byta värd för en app på virtuella Azure-datorer
+                        - name: Byta värd för en Windows-app på virtuella Azure-datorer
                           href: migrate/azure-best-practices/contoso-migration-rehost-vm.md
-                        - name: Omforma en app för att använda Azure-containrar och Azure SQL Database
+                        - name: Utföra arkitekturomarbetning för en Windows-app med containrar och Azure SQL
                           href: migrate/azure-best-practices/contoso-migration-rearchitect-container-sql.md
                     - name: Linux-arbetsbelastningar
                       items:
@@ -279,7 +279,7 @@
                           href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
                     - name: Skala en migrering
                       href: migrate/azure-best-practices/contoso-migration-scale.md
-            - name: Regelverk för migrering av VMware-värdar
+            - name: Migrera VMware-värdar
               items:
                 - name: Översikt
                   href: migrate/azure-best-practices/vmware-host.md
@@ -289,57 +289,53 @@
                       href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/private-cloud-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Hantering av privata moln
                       items:
-                        - name: Eskalera privilegier för privat moln
+                        - name: Eskalera CloudSimple-behörigheter
                           href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/escalate-privileges?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: DNS- och DHCP-konfiguration för arbetsbelastning
+                        - name: Konfigurera DNS- och DHCP-arbetsbelastningar
                           href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/dns-dhcp-setup?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Migrera arbetsbelastningar med hjälp av stretchade Layer 2-nätverk
                           href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/migration-layer-2-vpn?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Privata nätverk i molnet
                       items:
-                        - name: VPN-anslutning till privat moln
+                        - name: Lokal nätverksanslutning med VPN
                           href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/set-up-vpn?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Lokal nätverksanslutning med ExpressRoute
                           href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/on-premises-connection?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Virtuell nätverksanslutning i Azure med ExpressRoute
                           href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/azure-expressroute-connection?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: Konfigurera DNS-namnmatchning
+                        - name: Konfigurera DNS för namnmatchning
                           href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/on-premises-dns-setup?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: VMware-plattform
                       items:
-                        - name: Lär dig behörighetsmodellen för privat moln
+                        - name: Behörighetsmodellen för privat moln
                           href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/learn-private-cloud-permissions?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: vCenter-identitetskällor
                           href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/set-vcenter-identity?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Azure Application Gateway med virtuella VMware-datorer
                           href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/azure-application-gateway?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: Konfigurera vCenter-server för privat moln som vRealize-automationsslutpunkt
+                        - name: vCenter-server som vRealize Automation-slutpunkt
                           href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/configure-server-vrealize-automation-endpoint?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Säkerställa hög tillgänglighet för program i VMware på Azure
                           href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/ensuring-high-availability?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Välja en lösning för belastningsutjämning
                           href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/load-balancers?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: Azure Core-integrering
+                    - name: Azure Core-integration
                       items:
-                        - name: Azure AD-identitetskälla på privat moln i vCenter
+                        - name: Azure AD som identitetsprovider för vCenter
                           href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/azure-ad?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: Lokal nätverksanslutning med ExpressRoute
-                          href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/on-premises-connection?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: Virtuell nätverksanslutning i Azure med ExpressRoute
-                          href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/azure-expressroute-connection?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                 - name: Alternativ för migrering och haveriberedskap
                   items:
-                    - name: Migrera virtuella arbetsbelastningsdatorer till ett privat moln
+                    - name: Migrera virtuella arbetsbelastningsdatorer till vCenter i privat moln
                       href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/migrate-workloads?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: Migrera med hjälp av Azure Data Box
+                    - name: Migrera data med hjälp av Azure Data Box
                       href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/migration-using-azure-data-box?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: Säkerhetskopiera virtuella datorer med arbetsbelastningar
+                    - name: Säkerhetskopiera virtuella arbetsbelastningsdatorer
                       href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/backup-workloads-veeam?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Konfigurera privat moln som en haveriberedskapsplats med hjälp av Zerto
                       href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-zerto?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Konfigurera privat moln som en haveriberedskapsplats med hjälp av VMware SRM
                       href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-site-recovery-manager?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-            - name: Regelverk för migrering av dataplattformar
+            - name: Migrera dataplattformar
               items:
                 - name: Översikt
                   href: migrate/azure-best-practices/sql-migration.md
@@ -423,21 +419,21 @@
                       href: 'https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Migrera Oracle till Azure DB for PostgreSQL online
                       href: 'https://docs.microsoft.com/azure/dms/tutorial-oracle-azure-postgresql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-            - name: Regelverk för migrering av stordatorer
+            - name: Migrera stordatorer
               items:
                 - name: Översikt
                   href: infrastructure/mainframe-migration/index.md
                 - name: Myter och fakta
                   href: infrastructure/mainframe-migration/myths-and-facts.md
-                - name: Migreringsstrategier
+                - name: Växla från stordatorer till Azure
                   href: infrastructure/mainframe-migration/migration-strategies.md
-                - name: Tillämpningsstrategier
+                - name: Migrering av program från stordatorer
                   href: infrastructure/mainframe-migration/application-strategies.md
-            - name: Regelverk för att optimera arbetsbelastningar
+            - name: Optimera arbetsbelastningar
               items:
                 - name: Hantera kostnader och ändra storlek på arbetsbelastningar
                   href: migrate/azure-best-practices/migrate-best-practices-costs.md
-            - name: Regelverk för att skydda och hantera arbetsbelastningar
+            - name: Skydda och hantera arbetsbelastningar
               items:
                 - name: Skydda och hantera arbetsbelastningar efter migreringen
                   href: migrate/azure-best-practices/migrate-best-practices-security-management.md
@@ -705,9 +701,9 @@
                           href: 'https://docs.microsoft.com/learn/paths/create-bots-with-the-azure-bot-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Lagringsplats – Azures robotexempel på GitHub
                           href: 'https://github.com/microsoft/botframework-sdk'
-                - name: Molnbaserade appar
+                - name: Molnbaserade program
                   items:
-                    - name: Arkitektur för mikrotjänster
+                    - name: Arkitektur med mikrotjänster
                       items:
                         - name: 'Utforma, skapa och använda mikrotjänster i Azure'
                           href: 'https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
@@ -733,13 +729,13 @@
                           href: 'https://docs.microsoft.com/azure/spring-cloud/spring-cloud-tutorial-bind-cosmos?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Händelsedrivna program
                       items:
-                        - name: Utbildningsväg – skapa serverlösa program
+                        - name: Utbildningsväg för att skapa serverlösa program
                           href: 'https://docs.microsoft.com/learn/paths/create-serverless-applications/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: Utvecklarguide för Functions
+                        - name: Utvecklarguide för Azure Functions
                           href: 'https://docs.microsoft.com/azure/azure-functions/functions-reference?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: E-bok – Handbok för serverlös databehandling
+                        - name: Kokbok för serverlös databehandling i Azure
                           href: 'https://azure.microsoft.com/resources/azure-serverless-computing-cookbook/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: Dokumentation – Azure Functions
+                        - name: Azure Functions-dokumentation
                           href: 'https://docs.microsoft.com/azure/azure-functions/'
             - name: Underlätta implementeringen
               items:
@@ -1107,7 +1103,7 @@
               href: manage/azure-server-management/tools-services.md
         - name: Övervakning
           items:
-            - name: Introduktion
+            - name: Översikt
               href: manage/monitor/index.md
             - name: Övervakning av molnmodeller
               href: manage/monitor/cloud-models-monitor-overview.md

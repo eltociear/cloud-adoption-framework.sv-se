@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e7582df81e305ab602c8172b5e93531eb8112432
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8e58c0e95517d49e9c8685539407127880b5d090
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022273"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240191"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Prioritera och definiera arbets belastningar för en moln implementerings plan
 
@@ -27,13 +27,13 @@ Genom att begränsa planen till 10 arbets belastningar uppmuntrar du flexibilite
 
 I samband med ett moln införande är en arbets belastning en samling IT-tillgångar (servrar, virtuella datorer, program, data eller apparater) som gemensamt stöder en definierad process. Arbets belastningar kan ha stöd för mer än en process. Arbets belastningar kan också vara beroende av andra delade till gångar eller större plattformar. En arbets belastning bör dock ha definierade gränser för beroende till gångar och de processer som är beroende av arbets belastningen. Ofta kan arbets belastningar visualiseras genom att övervaka nätverks trafiken mellan IT-tillgångar.
 
-## <a name="prerequisites"></a>Förutsättningar
+## <a name="prerequisites"></a>Krav
 
-De strategiska inmatningarna från check lista för krav listor gör det mycket enklare att utföra följande uppgifter. Om du behöver hjälp med att samla in data som diskuteras i den här artikeln granskar du [krav kontroll listan](./prerequisites.md).
+De strategiska inmatningarna från krav listan gör följande uppgifter mycket enklare att utföra. Om du behöver hjälp med att samla in data som beskrivs i den här artikeln granskar du [kraven](./prerequisites.md).
 
 ## <a name="initial-workload-prioritization"></a>Inledande arbets belastnings prioritering
 
-Under den stegvisa [rationalisering](../digital-estate/rationalize.md)bör ditt team enas om en "kraft med 10"-metod, som består av 10 prioriterade arbets belastningar. Dessa arbets belastningar fungerar som en ursprunglig gränser för införande av planering.
+Under den [stegvisa rationalisering](../digital-estate/rationalize.md)bör ditt team enas om en "kraft med 10"-metod, som består av 10 prioriterade arbets belastningar. Dessa arbets belastningar fungerar som en ursprunglig gränser för införande av planering.
 
 Om du bestämmer att en digital egendom rationalisering inte behövs, rekommenderar vi att moln implementerings teamen och moln strategi teamet samtycker till en lista med 10 program som fungerar som migreringens första fokus. Vi rekommenderar att de här 10 arbets belastningarna innehåller en blandning av enkla arbets belastningar (färre än 10 resurser i en fristående distribution) och mer avancerade arbets belastningar. De 10 arbets belastningarna startar prioriterings processen för arbets belastning.
 
@@ -46,7 +46,7 @@ I föregående artikel, [Cloud adoption plan och Azure DevOps](./template.md)ska
 
 Du kan nu representera arbets belastningarna i den kraftfulla 10-listan i din moln implementerings plan. Det enklaste sättet att göra detta är via Mass redigering i Microsoft Excel. Om du vill förbereda din arbets station för Mass redigering, se [Mass Lägg till eller ändra arbets objekt med Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
 
-Steg 5 i artikeln visar att du kan väljaindatalistor. Välj i stället **fråge lista**. Välj sedan frågan **arbets belastnings mal len** i list rutan **Välj en fråga** . Den frågan läser in alla ansträngningar som rör migreringen av en enskild arbets belastning i kalkyl bladet.
+Steg 5 i artikeln visar att du kan välja **indatalistor**. Välj i stället **fråge lista**. Välj sedan frågan **arbets belastnings mal len** i list rutan **Välj en fråga** . Den frågan läser in alla ansträngningar som rör migreringen av en enskild arbets belastning i kalkyl bladet.
 
 När arbets uppgifterna för arbets belastnings mal len har lästs in följer du de här stegen för att börja lägga till nya arbets belastningar:
 
@@ -91,7 +91,7 @@ När de ursprungliga prioriteterna har definierats och arbets belastningar har l
 | Allvarlighets grad | Visa en lista över den aktuella program kritiskheten. |         |
 | Dataklassificering | Ange klassificeringen av data känslighet. |         |
 | Drifts geografiska områden | Lista de geografiska områden där arbets belastningen är eller bör vara värd. |         |
-| Program | Ange en inledande lista eller ett antal program som ingår i den här arbets belastningen. |         |
+| Appar | Ange en inledande lista eller ett antal program som ingår i den här arbets belastningen. |         |
 | Virtuella datorer | Ange en inledande lista eller antal virtuella datorer eller servrar som ingår i arbets belastningen. |         |
 | Datakällor | Ange en inledande lista eller ett antal data källor som ingår i arbets belastningen. |         |
 | Beroenden | Lista de till gångs beroenden som inte ingår i arbets belastningen. |         |

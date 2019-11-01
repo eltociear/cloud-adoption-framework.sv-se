@@ -1,5 +1,5 @@
 ---
-title: Byta värd för en app genom att migrera den till virtuella Azure-datorer och SQL Server AlwaysOn-tillgänglighetsgrupp
+title: Revara värd för en app genom att migrera den till virtuella Azure-datorer och SQL Server Always on-tillgänglighetsgrupper
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Läs om hur Contoso byter värd för en lokal app genom att migrera den till virtuella Azure-datorer och SQL Server AlwaysOn-tillgänglighetsgrupper.
 author: BrianBlanchard
@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 1292eeec6559fc6caa6cd6ff265a37147cf0b887
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 3f80454b864ae89f15a3be6d736192545683a0ed
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058657"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239276"
 ---
-# <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-group"></a>Byta värd för en lokal app på virtuella Azure-datorer och SQL Server AlwaysOn-tillgänglighetsgrupp
+# <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-groups"></a>Revara Host på en lokal app på virtuella Azure-datorer och SQL Server Always on-tillgänglighetsgrupper
 
 Den här artikeln beskriver hur det fiktiva företaget Contoso byter värd för en Windows .NET-app med två nivåer som körs på virtuella VMware-datorer som en del av en migrering till Azure. Contoso migrerar appens klientdels-VM till en virtuell Azure-dator och appdatabasen till en Azure SQL Server VM, som körs i ett Windows Server-redundanskluster med SQL Server AlwaysOn-tillgänglighetsgrupper.
 
@@ -141,7 +141,7 @@ Contoso genomför migreringen på följande sätt:
 > - **Steg 5: Förbered lokala VMware för Site Recovery.** Förbered konton för identifiering av virtuella datorer och agentinstallation. Förbered lokala virtuella datorer så att användare kan ansluta till virtuella Azure-datorer efter migreringen.
 > - **Steg 6: replikera virtuella datorer.** Aktivera VM-replikering till Azure.
 > - **Steg 7: installera DMA.** Ladda ned och installera Data Migration Assistant.
-> - **Steg 7: Migrera databasen med DMA.** Migrera databasen till Azure.
+> - **Steg 8: Migrera databasen med DMA.** Migrera databasen till Azure.
 > - **Steg 9: skydda databasen.** Skapa en AlwaysOn-tillgänglighetsgrupp för klustret.
 > - **Steg 10: migrera den virtuella webb program datorn.** Kör ett redundanstest för att kontrollera att allt fungerar som förväntat. Kör sedan en fullständig redundansväxling till Azure.
 
@@ -224,7 +224,7 @@ Innan Contosos administratörer konfigurerar klustret tar de en ögonblicksbild 
 
      ![Skapa kluster](media/contoso-migration-rehost-vm-sql-ag/create-cluster2.png)
 
-## <a name="configure-the-cloud-witness"></a>Konfigurera molnvittnet
+### <a name="configure-the-cloud-witness"></a>Konfigurera molnvittnet
 
 1. Contosos administratörer konfigurerar molnvittnet med hjälp av **kvorumkonfigurationsguiden** i Klusterhanteraren för växling vid fel.
 2. I guiden väljer de att skapa ett molnvittne med lagringskontot.
@@ -437,7 +437,7 @@ Contosos administratörer utför följande steg:
 
 7. Verktyget utför vissa konfigurationsåtgärder och startar sedan om datorn.
 8. De loggar in på datorn igen och guiden Konfigurera serverhantering startar automatiskt.
-9. I guiden väljer de det nätverkskort som ska ta emot replikeringstrafiken. Det går inte att ändra den här inställningen när den har konfigurerats.
+9. I guiden väljer de det nätverkskort som ska ta emot replikeringstrafik. Det går inte att ändra den här inställningen när den har konfigurerats.
 10. De väljer den prenumeration, den resursgrupp och det valv som konfigurationsservern ska registreras i.
         ![valv](./media/contoso-migration-rehost-vm-sql-ag/cswiz1.png)
 
@@ -454,7 +454,7 @@ Contosos administratörer utför följande steg:
 
 Nu anger Contosos administratörer inställningar för målreplikeringen.
 
-1. De klickar på **Förbered infrastrukturen** > **Mål** och väljer målinställningarna.
+1. De klickar på **Förbered infrastruktur** > **Mål** och välj målinställningarna.
 2. Site Recovery kontrollerar att det finns ett Azure-lagringskonto och nätverk på det angivna målet.
 
 ### <a name="create-a-replication-policy"></a>Skapa replikeringsprincip
@@ -534,7 +534,7 @@ Contosos administratörer migrerar SmartHotel360-databasen till den virtuella Az
 
 DMA ansluter till den lokala SQL Server VM över en VPN-anslutning från plats till plats mellan Contosos datacenter och Azure, och migrerar sedan databasen.
 
-## <a name="step-7-protect-the-database-with-always-on"></a>Steg 7: skydda databasen med Always on
+## <a name="step-9-protect-the-database-with-always-on"></a>Steg 9: skydda databasen med Always on
 
 När appdatabasen körs på **SQLAOG1** kan Contosos administratörer nu skydda den med hjälp av AlwaysOn-tillgänglighetsgrupper. De konfigurerar AlwaysOn med hjälp av SQL Management Studio och tilldelar sedan en lyssnare med hjälp av Windows-klustring.
 
@@ -581,7 +581,7 @@ När allt är konfigurerat har Contoso nu en fungerande tillgänglighetsgrupp i 
 - [Konfigurera manuellt klustret att använda lastbalanserarens IP-adress](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener#configure-the-cluster-to-use-the-load-balancer-ip-address).
 - [Läs mer](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2) om att skapa och använda SAS.
 
-## <a name="step-8-migrate-the-vm-with-site-recovery"></a>Steg 8: migrera den virtuella datorn med Site Recovery
+## <a name="step-10-migrate-the-vm-with-site-recovery"></a>Steg 10: migrera den virtuella datorn med Site Recovery
 
 Contosos administratörer kör en snabb testning av redundansen och migrerar sedan den virtuella datorn.
 
@@ -635,7 +635,7 @@ Som sista steg i migreringsprocessen uppdaterar Contosos administratörer progra
 - [Lär dig](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans) hur du skapar en återställningsplan.
 - [Lär dig](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover) hur du redundansväxlar till Azure.
 
-## <a name="clean-up-after-migration"></a>Rensa efter migrering
+### <a name="clean-up-after-migration"></a>Rensa efter migrering
 
 Efter migreringen körs SmartHotel360-appen på en virtuell Azure-dator och SmartHotel360-databasen finns i Azure SQL-klustret.
 
@@ -647,7 +647,7 @@ Nu måste Contoso utföra följande steg för rensning:
 - Granska alla resurser som interagerar med de inaktiverade virtuella datorerna och uppdatera alla relevanta inställningar eller dokumentation så att de överensstämmer med den nya konfigurationen.
 - Lägga till de två nya virtuella datorerna (SQLAOG1 och SQLAOG2) i produktionsövervakningssystem.
 
-## <a name="review-the-deployment"></a>Granska distributionen
+### <a name="review-the-deployment"></a>Granska distributionen
 
 Med de migrerade resurserna i Azure måste Contoso fullständigt operationalisera och skydda sin nya infrastruktur.
 
@@ -663,11 +663,11 @@ Mer information finns i [rekommenderade säkerhets metoder för IaaS-arbetsbelas
 
 ## <a name="bcdr"></a>Affärskontinuitet och haveriberedskap
 
- För affärskontinuitet och haveriberedskap (BCDR) vidtar Contoso följande åtgärder:
+För affärskontinuitet och haveriberedskap (BCDR) vidtar Contoso följande åtgärder:
 
-- Skydda data: contoso säkerhetskopierar data på WEBVM-, SQLAOG1-och SQLAOG2-datorer med hjälp av tjänsten Azure Backup. [Läs mer](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
+- För att skydda data kan Contoso säkerhetskopiera data på WEBVM-, SQLAOG1-och SQLAOG2-datorer som använder tjänsten Azure Backup. [Läs mer](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
 - Contoso får också lära sig hur de använder Azure Storage för att säkerhetskopiera SQL Server direkt till bloblagring. [Läs mer](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-use-storage-sql-server-backup-restore).
-- Håll apparna igång: contoso replikerar virtuella app-datorer i Azure till en sekundär region med hjälp av Site Recovery. [Läs mer](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
+- För att hålla apparna igång replikeras de virtuella apparna i Azure till en sekundär region med hjälp av Site Recovery. [Läs mer](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 
 ### <a name="licensing-and-cost-optimization"></a>Licensierings- och kostnadsoptimering
 

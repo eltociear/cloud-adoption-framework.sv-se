@@ -8,14 +8,14 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e6187bc926aacd9a09e67b8cd2bfe94e5a4a42dd
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 83165e21882b4979d0fb3b104fa4f2c12aed326c
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72682632"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239466"
 ---
-# <a name="predict-and-influence"></a>Förutsäg och inflytande
+# <a name="predict-and-influence"></a>Förutspå och påverka
 
 Det finns två klasser av program i den digitala ekonomin: historisk och förutsäga. Många kund behov kan bara uppfyllas genom att använda historiska data, inklusive data i nära real tid. De flesta lösningar fokuserar främst på att samla in data, i ögonblick. De bearbetar och delar dessa data tillbaka till kunden i form av en digital eller omgivande upplevelse.
 
@@ -78,7 +78,7 @@ Lär dig mer om interaktioner inom en [justerad verklighets lösning](./devices.
 
 ## <a name="next-steps"></a>Nästa steg
 
-Baserat på den kunskap som vunnits om [Innovations ämnes områden](./invention.md) inom den [förnyelse metod](./index.md) du känner till har de tekniska verktyg som krävs för att [bygga med empati](./build.md).
+Baserat på den kunskap som vunnits om [uppfinningarna](./invention.md) i den innovativa [metod](./index.md) du känner till har de tekniska verktyg som krävs för att [bygga med empati](./build.md).
 
 > [!div class="nextstepaction"]
 > [Bygg med empati](./build.md)

@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f9dc2a7276a8845ad19ce4196822b730e7a6502d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a35579cbb26f292e349cd2d1101596bdd4a94b86
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030640"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240013"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Sökväg för kompetens beredskap under plan fasen för en migrerings resa
 
@@ -58,7 +58,7 @@ Under den färdiga fasen skapar teknisk personal en landnings zon för migrering
 - [Skapa ett Azure-konto](/learn/modules/create-an-azure-account). Det första steget i att använda Azure är att skapa ett konto. Ditt konto innehåller de Azure-tjänster som du etablerar och hanterar dina personliga inställningar, t. ex. identitet, fakturering och preferenser.
 - [Azure Portal](/learn/modules/tour-azure-portal). Ta en titt på funktionerna och tjänsterna i Azure-portalen och se hur du anpassar portalen.
 - [Introduktion till Azure](/learn/modules/welcome-to-azure). Kom igång med Azure genom att skapa och konfigurera din första virtuella dator i molnet.
-- [Introduktion till säkerhet i Azure](/learn/modules/intro-to-security-in-azure). Lär dig grunderna för att skydda din infrastruktur och dina data när du arbetar i molnet. Ta reda på vad som är ditt ansvar och vad Azure tar hand om åt dig.
+- [Introduktion till säkerhet i Azure](/learn/modules/intro-to-security-in-azure). Lär dig om de grundläggande begreppen för att skydda din infrastruktur och dina data när du arbetar i molnet. Ta reda på vad som är ditt ansvar och vad Azure tar hand om åt dig.
 - [Hantera resurser i Azure](/learn/paths/manage-resources-in-azure). Lär dig hur du använder kommandoraden och webbportalen i Azure till att skapa, hantera och styra molnbaserade resurser.
 - [Skapa en virtuell dator](/learn/modules/create-windows-virtual-machine-in-azure). Skapa en virtuell dator med hjälp av Azure Portal.
 - [Azure-nätverk](/learn/modules/intro-to-azure-networking). Lär dig grunderna i Azure-nätverk och hur Azure-nätverk hjälper dig att förbättra återhämtningen och minska svars tiden.
@@ -81,24 +81,16 @@ Utöver de här inledande alternativen för att utveckla färdigheter är en mä
 
 Microsoft och partner erbjuder olika alternativ för att hjälpa alla mål grupper att utveckla sina kunskaper med Azure-tjänster:
 
-- [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/microsoft-azure). Erbjuder utbildning från personerna som bidrog till att bygga Azure. Från en grundläggande översikt till djupgående teknisk utbildning kan de här kurserna hjälpa IT-implementerare att lära sig hur de använder Azure för sin verksamhet.
-- [Microsoft IT Pro Cloud Essentials](https://www.microsoft.com/azureessentials). Detta är en kostnadsfri årsprenumeration som omfattar molntjänster, utbildning och supportmöjligheter. Cloud Essentials för IT-proffs tillhandahåller praktiska erfarenheter, riktade utbildnings möjligheter och åtkomst till experter på områden som är mest viktiga för att öka kunskapen och skapa en väg till karriären.
 - [Microsoft IT Pro Center](https://www.microsoft.com/itpro). Fungerar som en kostnadsfri onlineresurs som hjälper dig att planera din molnkarriär. Få tips från branschexperter för din molnroll och vilka kunskaper du behöver för att komma dit. Följ ett utbildningsprogram i din egen takt för att bygga de kunskaper du behöver för att hålla dig uppdaterad.
 
 Vi rekommenderar att du aktiverar kunskap om Azure till officiell igenkänning med [Microsoft Azure certifierings utbildning och-examina](https://www.microsoft.com/learning/azure-certification.aspx).
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-Microsoft Learn är en ny metod för inlärning. Det är inte lätt att förbereda sig för de nya ansvarsområdena som medföljer vid en övergång till molnet. Microsoft Learn erbjuder en mer givande metod för konkret inlärning som hjälper er att uppnå era mål snabbare. Tjäna poäng och nivåer och få mer!
+Microsoft Learn är en ny metod för inlärning. Det är lätt att komma igång med nya kunskaper och ansvars områden som medföljer moln införande. Microsoft Learn erbjuder en mer givande metod för konkret inlärning som hjälper er att uppnå era mål snabbare. Tjäna poäng, nivåer och få mer!
 
-Här följer några exempel på rollspecifika utbildnings vägar på Microsoft Learn:
+Här är ett exempel på en skräddarsydd inlärnings väg som överensstämmer med strategin Potion i moln införande ramverket. 
 
-[Företags användare](/learn/browse/?roles=business-user) kan uppleva en brant inlärnings kurva när de uppmanas att delta i planeringen, testningen och införandet av den molnbaserade tekniken. Microsoft Learn moduler som fokuserar på att införa moln modeller och verktyg kan hjälpa dessa användare att hantera sin verksamhet genom molnbaserade tjänster.
+[Lär dig Microsoft Azure](/learn/paths/learn-business-value-of-azure/): den här inlärningen tar dig på en resa som börjar genom att visa hur den digitala omvandlingen och kraften i molnet kan förändra ditt företag. Vi kommer att gå igenom hur Microsoft Azure Cloud Services kan driva din organisation på en betrodd moln plattform. Slutligen kommer vi att figursättas genom att illustrera hur du gör den här resan för din organisation. 
 
-[Lösnings arkitekter](/learn/browse/?roles=solution-architect) kan interagera med hundratals moduler och utbildnings vägar. De tillgängliga avsnitten sträcker sig från kärninfrastrukturtjänster till avancerad dataomvandling.
-
-[Administratörer](/learn/browse/?roles=administrator) kan interagera med moduler som fokuserar på grundläggande Azure-funktioner, konfigurerar behållare och till och med avancerad administration i molnet.
-
-[Utvecklare](/learn/browse/?roles=developer&term=infrastructure) spelar en viktig roll vid migreringen av tillgångar till molnet. Utvecklare kan lära sig mer om olika sätt att hjälpa till med arkitektur, styrning, modernisering-aktiviteter.
-
-Om du vill identifiera ytterligare utbildnings vägar, bläddrar du till [katalogen lär dig](/learn/browse). Använd roles-filtret för att justera utbildnings vägar med din roll.
+Om du vill identifiera ytterligare utbildnings vägar, bläddrar du till [katalogen lär dig](/learn/browse). Använd filtret **Roller** för att anpassa utbildningsvägarna till din roll.

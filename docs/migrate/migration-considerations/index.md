@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 15c4be90354e30333384023e67090ef6103464e2
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8087c67d07a17475e49d70a2b70b78d8af20460a
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548460"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240273"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>Cloud Adoption Framework-migreringsmodellen
 
@@ -34,7 +34,7 @@ Det är viktigt att upprätta en ungefärlig vision om slutresultatet innan du p
 
 ![Infografik med migreringsalternativen](../../_images/migrate/migration-options.png)
 
-Migrering och modernisering av arbetsbelastningar omfattar allt från enkla *värdbytesmigreringar* (”lift and shift”) med hjälp av IaaS-funktioner (infrastruktur som en tjänst), som inte kräver kod- eller appändringar, till *refaktorisering* med minimala ändringar eller *arkitekturomarbetning* för att ändra och utöka funktionerna i kod och app till att utnyttja molntekniker.
+Migrering och modernisering av arbetsbelastningar omfattar allt från enkla _värdbytesmigreringar_ (_lift and shift_) med hjälp av IaaS-funktioner (infrastruktur som en tjänst), som inte kräver kod- eller appändringar, till _refaktorisering_ med minimala ändringar eller _arkitekturomarbetning_ för att ändra och utöka funktionerna i kod och app till att utnyttja molntekniker.
 
 Molnbaserade strategier och PaaS-strategier (plattform som en tjänst) *återskapar* lokala arbetsbelastningar med hjälp av Azure-plattformserbjudanden och hanterade tjänster. Arbetsbelastningar som har motsvarande fullständigt hanterade molnbaserade SaaS-erbjudanden (programvara som en tjänst) kan ofta *ersättas* helt av dessa tjänster som en del av migreringsprocessen.
 

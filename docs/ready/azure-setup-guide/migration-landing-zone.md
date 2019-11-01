@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, setup
-ms.openlocfilehash: 0eee9746f4d2ee5fcf078774e070ffc25d430f38
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 1e9fe49f03eb9cc0b2f53e334f649e8dea9cf2fe
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72379190"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240113"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Distribuera en landningszon för migrering
 
@@ -47,7 +47,7 @@ Följande antaganden eller begränsningar användes när den inledande landnings
 - **Prenumerations begränsningar:** Den här antagande ansträngningen förväntas inte överskrida [prenumerations gränserna](https://docs.microsoft.com/azure/azure-subscription-service-limits). Två vanliga indikatorer är ett överskott på 25 000 virtuella datorer eller 10 000 virtuella processorer.
 - **Kompatibilitet:** Det behövs inga krav från tredje part för efterlevnad i denna landnings zon.
 - **Arkitektur komplexitet:** Arkitektur komplexitet kräver inte ytterligare produktions prenumerationer.
-- **Delade tjänster:** Det finns inga befintliga delade tjänster i Azure som kräver att den här prenumerationen behandlas som en eker i en nav-och-eker-arkitektur.
+- **Delade tjänster:** Det finns inga befintliga delade tjänster i Azure som kräver att den här prenumerationen behandlas som en eker i en hubb och eker-arkitektur.
 
 Om dessa antaganden verkar stämma överens med din nuvarande miljö kan den här skissen vara lämplig för att börja bygga din landningszon.
 
@@ -59,17 +59,17 @@ Följande beslut speglas i skissen för landningszonen.
 |---------|---------|---------|
 |Migreringsverktyg|Azure Site Recovery distribueras och ett Azure Migrate-projekt skapas.|[Beslutsguide för migreringsverktyg](../../decision-guides/migrate-decision-guide/index.md)|
 |Loggning och övervakning|Arbetsytan Operational Insights och ett diagnostiskt lagringskonto kommer att tillhandahållas.|         |
-|Nätverk|Ett virtuellt nätverk skapas med undernät för gateway, brandvägg, jumpbox och landningszon.|[Nätverksbeslut](../considerations/network-decisions.md)|
+|Nätverk|Ett virtuellt nätverk skapas med undernät för gateway, brandvägg, jumpbox och landningszon.|[Nätverksbeslut](../considerations/networking-options.md)|
 |Identitet|Vi förutsätter att prenumerationen redan är associerad med en instans av Azure Active Directory.|[Metodtips för identitetshantering](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
 |Princip|Skissen förutsätter för närvarande att inga Azure-principer ska tillämpas.|         |
-|Prenumerationsdesign|Saknas – utformad för en enda produktionsprenumeration.|[Skalanpassa prenumerationer](../considerations/scaling-subscriptions.md)|
-|Hanteringsgrupper|Saknas – utformad för en enda produktionsprenumeration.|[Skalanpassa prenumerationer](../considerations/scaling-subscriptions.md)         |
-|Resursgrupper|Saknas – utformad för en enda produktionsprenumeration.|[Skalanpassa prenumerationer](../considerations/scaling-subscriptions.md)         |
+|Prenumerationsdesign|Saknas – utformad för en enda produktionsprenumeration.|[Skalanpassa prenumerationer](../azure-best-practices/scaling-subscriptions.md)|
+|Hanteringsgrupper|Saknas – utformad för en enda produktionsprenumeration.|[Skalanpassa prenumerationer](../azure-best-practices/scaling-subscriptions.md)         |
+|Resursgrupper|Saknas – utformad för en enda produktionsprenumeration.|[Skalanpassa prenumerationer](../azure-best-practices/scaling-subscriptions.md)         |
 |Data|Gäller inte|[Välj rätt SQL Server alternativ i Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/architecture/bread/toc.json) och [Azure Data Store vägledning](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Lagring|Gäller inte|[Riktlinjer för Azure Storage](../considerations/storage-guidance.md)         |
-|Standarder för namngivning och taggning|Gäller inte|[Metodtips för namngivning och taggning](../considerations/naming-and-tagging.md)         |
+|Lagring|Gäller inte|[Riktlinjer för Azure Storage](../considerations/storage-options.md)         |
+|Standarder för namngivning och taggning|Gäller inte|[Metodtips för namngivning och taggning](../azure-best-practices/naming-and-tagging.md)         |
 |Kostnadshantering|Gäller inte|[Spåra kostnader](../azure-best-practices/track-costs.md)|
-|Databearbetning|Gäller inte|[Compute-alternativ](../considerations/compute-decisions.md)|
+|Databearbetning|Gäller inte|[Compute-alternativ](../considerations/compute-options.md)|
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>Anpassa eller distribuera en landningszon från den här skissen
 

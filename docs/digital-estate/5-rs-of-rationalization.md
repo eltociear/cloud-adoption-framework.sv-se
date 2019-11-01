@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 35709a6208de54f43cdb51aadb1e32f34a0ba844
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 91ea4b076740bb745a32f2197d9ddc14970d75f0
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223865"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238795"
 ---
 # <a name="cloud-rationalization"></a>Cloud rationalisering
 
@@ -24,11 +24,11 @@ Cloud rationalisering är en process för att utvärdera till gångar för att f
 
 "Fem RS-rationalisering" som listas i den här artikeln är ett bra sätt att ge ett möjligt framtida tillstånd för arbets belastningar som betraktas som en moln kandidat. Den här etiketten bör dock placeras i rätt sammanhang innan du försöker rationalisera en miljö. Granska följande myths för att tillhandahålla den kontexten:
 
-- **Myten Det är enkelt att fatta rationalisering beslut tidigt i processen.** Korrekt rationalisering kräver en djupgående kunskap om arbets belastningen och tillhör Ande till gångar (appar, virtuella datorer och data). Viktigast av detta är att vi tar tid av korrekta rationalisering. Vi rekommenderar att du använder en [stegvis rationalisering-process](./rationalize.md#incremental-rationalization).
+- **Myten: det är enkelt att fatta rationalisering beslut tidigt i processen.** Korrekt rationalisering kräver en djupgående kunskap om arbets belastningen och tillhör Ande till gångar (appar, virtuella datorer och data). Viktigast av detta är att vi tar tid av korrekta rationalisering. Vi rekommenderar att du använder en [stegvis rationalisering-process](./rationalize.md#incremental-rationalization).
 
-- **Myten Moln införande måste vänta tills alla arbets belastningar är rationella.** Att rationalisera en hel IT-portfölj eller till och med ett enda data Center kan försena förverkligandet av affärs värde per månad eller till och med år. Fullständig rationalisering bör undvikas när det är möjligt. Använd i stället [kraften hos 10 tillvägagångs sätt för att planera](./rationalize.md#release-planning) för att fatta beslut om de kommande 10 arbets belastningarna som är planerad för moln införande.
+- **Myten: moln införande måste vänta tills alla arbets belastningar är rationella.** Att rationalisera en hel IT-portfölj eller till och med ett enda data Center kan försena förverkligandet av affärs värde per månad eller till och med år. Fullständig rationalisering bör undvikas när det är möjligt. Använd i stället [kraften hos 10 tillvägagångs sätt för att planera](./rationalize.md#release-planning) för att fatta beslut om de kommande 10 arbets belastningarna som är planerad för moln införande.
 
-- **Myten Affärs justering måste vänta tills alla arbets belastningar är rationella.** Om du vill utveckla en affärs motivering för en moln implementering kan du göra några grundläggande antaganden på portfölj nivå. När motivation justeras till innovation, antar du omarkitekturen. Anta att du är värd för de motivation som ska migreras. Dessa antaganden kan påskynda affärs justerings processen. Antaganden anropas sedan och budgetarna förfinas under utvärderings fasen för varje arbets belastnings antagande.
+- **Myten: affärs justering måste vänta tills alla arbets belastningar är rationella.** Om du vill utveckla en affärs motivering för en moln implementering kan du göra några grundläggande antaganden på portfölj nivå. När motivation justeras till innovation, antar du omarkitekturen. Anta att du är värd för de motivation som ska migreras. Dessa antaganden kan påskynda affärs justerings processen. Antaganden anropas sedan och budgetarna förfinas under utvärderings fasen för varje arbets belastnings antagande.
 
 Granska nu följande fem RS-rationalisering för att bekanta dig med den långsiktiga processen. När du utvecklar din moln implementerings plan väljer du det alternativ som passar bäst för dina motivation, affärs resultat och nuvarande tillstånds miljö. Målet i rationalisering för digital egendom är att ange en bas linje och inte rationalisera varje arbets belastning.
 
@@ -38,7 +38,7 @@ De fem RS-rationalisering som visas här beskriver de vanligaste alternativen f�
 
 ## <a name="rehost"></a>Byta värd
 
-En Rehost-migrering, som även kallas "lyft och Shift", flyttar en aktuell tillstånds till gång till den valda moln leverantören, med minimal förändring i den övergripande arkitekturen.
+En Rehost-migrering kallas även för en _hiss och Shift_ -migrering och flyttar en aktuell tillstånds till gång till den valda moln leverantören, med minimal förändring i den övergripande arkitekturen.
 
 Vanliga driv rutiner kan vara:
 

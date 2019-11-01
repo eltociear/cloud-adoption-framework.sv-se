@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 67b65affee2a2ac351ab603a52b0b6202d41458f
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: d55635078be0c32496a0237df1b2a67aecc5e574
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549001"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240149"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Metodtips för Azure-beredskap
 
@@ -24,16 +24,16 @@ En stor del av molnberedskapen handlar om att förse personalen med de tekniska 
 Använd följande riktlinjer när du ordnar och distribuerar dina tillgångar i Azure-miljön:
 
 - [Grundläggande koncept för Azure](../considerations/fundamental-concepts.md). Läs om grundläggande koncept och termer som används i Azure. Lär dig också hur dessa koncept är relaterade till varandra.
-- [Rekommenderade regler för namngivning och etiketter](../considerations/naming-and-tagging.md). Läs detaljerade rekommendationer för att namnge och märka upp dina resurser. De här rekommendationerna är lämpliga när företag flyttar till molnet.
-- [Skalning med flera Azure-prenumerationer](../considerations/scaling-subscriptions.md). Förstå strategier för skalning med flera Azure-prenumerationer.
+- [Rekommenderade regler för namngivning och etiketter](../azure-best-practices/naming-and-tagging.md). Läs detaljerade rekommendationer för att namnge och märka upp dina resurser. De här rekommendationerna är lämpliga när företag flyttar till molnet.
+- [Skalning med flera Azure-prenumerationer](../azure-best-practices/scaling-subscriptions.md). Förstå strategier för skalning med flera Azure-prenumerationer.
 - [Organisera dina resurser i Azure-hanteringsgrupper](https://docs.microsoft.com/azure/governance/management-groups/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Lär dig hur Azure-hanteringsgrupper kan hantera resurser, roller, principer och distribution över flera prenumerationer.
-- [Skapa konsekventa hybridmoln](../../infrastructure/misc/hybrid-consistency.md). Skapa hybridmolnlösningar som tillhandahåller fördelarna med molnskapande samtidigt som många av fördelarna med lokal hantering bibehålls.
+- [Skapa konsekventa hybridmoln](../considerations/hybrid-consistency.md). Skapa hybridmolnlösningar som tillhandahåller fördelarna med molnskapande samtidigt som många av fördelarna med lokal hantering bibehålls.
 
 ## <a name="networking"></a>Nätverk
 
 Använd följande riktlinjer när du ska förbereda din molnnätverksinfrastruktur för dina arbetsbelastningar:
 
-- [Nätverksbeslut](../considerations/network-decisions.md). Välj de nätverkstjänster, verktyg och arkitekturer som stöder för krav som din organisations arbetsbelastning, styrning och anslutningskrav.
+- [Nätverksbeslut](../considerations/networking-options.md). Välj de nätverkstjänster, verktyg och arkitekturer som stöder för krav som din organisations arbetsbelastning, styrning och anslutningskrav.
 - [Planering av virtuella nätverk](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Lär dig att planera virtuella datornätverk som baseras på dina krav på isolering, anslutningar och plats.
 - [Metodtips för nätverkssäkerhet](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Läs om metodtips för att hantera vanliga säkerhetsproblem i nätverk med inbyggda Azure-funktioner.
 - [Perimeternätverk](./perimeter-networks.md). Perimeternätverk, som även kallas för DMZ:er, ger säkra anslutningar mellan dina molnnätverk och lokala eller fysiska datacenternätverk, tillsammans med någon anslutning till och från internet.
@@ -44,12 +44,12 @@ Använd följande riktlinjer när du ska förbereda din molnnätverksinfrastrukt
 Använd följande riktlinjer när du utformar din infrastruktur för identiteter och åtkomstkontroll för att öka effektiviteten i säkerheten för och hanteringen av dina arbetsbelastningar:
 
 - [Metodtips för identitetshantering och åtkomstkontroll i Azure](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Lär dig metodtips för identitetshantering och åtkomstkontroll med hjälp av inbyggda Azure-funktioner.
-- [Metodtips för rollbaserad åtkomstkontroll](./roles.md). Azures rollbaserade åtkomstkontroll (RBAC) erbjuder detaljerad gruppbaserad åtkomsthantering för resurser som har organiserats efter användarroller.
+- [Metodtips för rollbaserad åtkomstkontroll](../considerations/roles.md). Azures rollbaserade åtkomstkontroll (RBAC) erbjuder detaljerad gruppbaserad åtkomsthantering för resurser som har organiserats efter användarroller.
 - [Skydda privilegierad åtkomst för hybrid- och molndistributioner i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-admin-roles-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Använd Azure Active Directory till att säkerställa att organisationens administrativa åtkomst och administratörskonton är säkra både i molnmiljön och lokalt.
 
 ## <a name="storage"></a>Storage
 
-- [Riktlinjer för Azure Storage](../considerations/storage-guidance.md). Välj den Azure Storage-lösning som passar för ditt användningsfall.
+- [Riktlinjer för Azure Storage](../considerations/storage-options.md). Välj den Azure Storage-lösning som passar för ditt användningsfall.
 - [Guide till Azure Storage-säkerhet](https://docs.microsoft.com/azure/storage/common/storage-security-guide?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Läs mer om säkerhetsfunktionerna i Azure Storage.
 
 ## <a name="databases"></a>Databaser

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 574fa1ede2d7ddeb0fe41f05c8519e9b16ba6c51
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 15bce39a8ffee6c3f35a8de3d205f863374ae3ff
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058502"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239167"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Ange en ny värd för en lokal app på en virtuell Azure-dator och SQL Database Managed Instance
 
@@ -78,7 +78,7 @@ Som en del av processen för lösningsdesign gjorde Contoso en funktionsjämför
 
 - Managed Instance strävar efter att i princip leverera 100 % kompatibilitet med den senaste lokala SQL Server-versionen. Microsoft rekommenderar Managed Instance för kunder som kör SQL Server lokalt eller på virtuella IaaS-datorer som vill migrera sina appar till en fullständigt hanterad tjänst med minimala designändringar.
 - Contoso planerar att migrera ett stort antal appar från en lokal plats till IaaS. Många av dessa kommer från oberoende programvaruleverantörer. Contoso inser att användningen av Managed Instance bidrar till att säkerställa databasens kompatibilitet för dessa appar, i stället för att använda SQL Database som kanske inte stöds.
-- Contoso kan helt enkelt göra en ”Lift and Shift”-migrering till Managed Instance med hjälp av den helt automatiserade Azure Database Migration Service. Med den här tjänsten kan Contoso återanvända den vid framtida databasmigreringar.
+- Contoso kan helt enkelt utföra en hiss och flytta migreringen till en hanterad instans med hjälp av den helt automatiserade Azure Database Migration Service. Med den här tjänsten kan Contoso återanvända den vid framtida databasmigreringar.
 - SQL Managed Instance har stöd för SQL Server Agent, vilket är viktigt för SmartHotel360-appen. Contoso behöver denna kompatibilitet, annars måste de göra en ny design av underhållsplanerna som krävs av appen.
 - Med Software Assurance kan Contoso byta ut befintliga licenser till rabatterade priser för en SQL Database Managed Instance med hjälp av Azure Hybrid-förmånen för SQL Server. Detta kan innebära att Contoso sparar upp till 30 % på Managed Instance.
 - SQL-hanterad instans finns helt i det virtuella nätverket, så den ger bättre isolering och säkerhet för Contosos data. Contoso får fördelarna med det offentliga molnet, samtidigt som miljön hålls isolerad från offentligt Internet.
@@ -103,7 +103,7 @@ Contoso migrerar webb- och datanivåerna för sin SmartHotel360-app till Azure g
 
 1. Contoso har redan sin Azure-infrastruktur på plats, så de behöver bara lägga till ett par olika Azure-komponenter i det här scenariot.
 2. Datanivån kommer att migreras med hjälp av Azure Database Migration Service. Den här tjänsten ansluter till den lokala SQL Server VM över en VPN-anslutning från plats till plats mellan Contosos datacenter och Azure. Tjänsten migrerar sedan databasen.
-3. Webbnivån kommer att migreras med hjälp av en ”Lift and Shift”-migrering med hjälp av Site Recovery. Processen innebär att förbereda den lokala VMware-miljön, konfigurera och aktivera replikering samt migrera de virtuella datorerna genom att redundansväxla dem till Azure.
+3. Webb nivån kommer att migreras med hjälp av en hiss och Shift-migrering med hjälp av Site Recovery. Processen innebär att förbereda den lokala VMware-miljön, konfigurera och aktivera replikering samt migrera de virtuella datorerna genom att redundansväxla dem till Azure.
 
      ![Migreringsarkitektur](media/contoso-migration-rehost-vm-sql-managed-instance/migration-architecture.png)
 
@@ -392,7 +392,7 @@ Contosos administratörer gör följande för att konfigurera källmiljön:
     ![Registrera konfigurationsservern](./media/contoso-migration-rehost-vm-sql-managed-instance/config-server-register2.png)
 
 7. Verktyget utför vissa konfigurationsåtgärder och startar sedan om datorn. De loggar in på datorn igen. Guiden för konfiguration av hanteringsservrar startar automatiskt.
-8. I guiden väljer de det nätverkskort som ska ta emot replikeringstrafiken. Det går inte att ändra den här inställningen när den har konfigurerats.
+8. I guiden väljer de det nätverkskort som ska ta emot replikeringstrafik. Det går inte att ändra den här inställningen när den har konfigurerats.
 9. De väljer prenumeration, resursgrupp och Recovery Services-valv där konfigurationsservern ska registreras.
 
     ![Välja Recovery Services-valv](./media/contoso-migration-rehost-vm-sql-managed-instance/cswiz1.png)
@@ -411,7 +411,7 @@ Contosos administratörer gör följande för att konfigurera källmiljön:
 
 Nu konfigurerar Contosos administratörer målreplikeringens miljö:
 
-1. De klickar på **Förbered infrastrukturen** > **Mål** och väljer målinställningarna.
+1. De klickar på **Förbered infrastruktur** > **Mål** och välj målinställningarna.
 2. Site Recovery kontrollerar att det finns ett lagringskonto och ett nätverk på det angivna målet.
 
 ### <a name="create-a-replication-policy"></a>Skapa replikeringsprincip
@@ -518,7 +518,7 @@ Innan de migrerar WEBVM kan ett redundanstest hjälpa dem att se att allt funger
 1. De kör ett redundanstest till den senaste tillgängliga tidpunkten (**Senast bearbetade**).
 2. De väljer **Stäng datorn innan du påbörjar redundans**. När det här alternativet är valt försöker Site Recovery stänga av den virtuella källdatorn innan redundansen utlöses. Redundansen fortsätter även om avstängningen misslyckas.
 3. Redundanstestet kör: a. En kravkontroll körs för att säkerställa att alla de villkor som krävs vid migreringen är uppfyllda.
-    b. Redundansen bearbetar data så att du kan skapa en virtuell Azure-dator. Om den senaste återställningspunkten väljs, skapas en återställningspunkt från datan.
+    b. Redundansen bearbetar data så att du kan skapa en virtuell Azure-dator. Om den senaste återställningspunkten väljs, skapas en återställningspunkt från dessa data.
     c. En virtuell Azure-dator skapas med hjälp av de data som bearbetades i föregående steg.
 4. När redundansen är klar visas repliken av den virtuella Azure-datorn i Azure-portalen. De kontrollerar att allt fungerar som det ska: att den virtuella datorn har rätt storlek, att den är ansluten till rätt nätverk och att den körs.
 5. När de har verifierat redundanstestet rensar de redundansen och registrerar eventuella observationer.

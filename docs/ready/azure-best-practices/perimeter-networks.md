@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 3ac29e353f04370daf36e4c780fde8a14be45a37
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 92aa03c07a6652f15a0400a025b8911a4d0d07dd
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022230"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240171"
 ---
 # <a name="perimeter-networks"></a>Perimeternätverk
 
@@ -42,9 +42,9 @@ Perimeternätverket använder följande Azure-funktioner och -tjänster:
 
 Vanligtvis ansvarar dina centrala IT- och säkerhetsteam för att definiera krav för att använda perimeternätverket.
 
-![Exempel på nätverk med hubb och ekrar][7]
+![Exempel på en nätverkstopologi för nav och ekrar][7]
 
-Föregående diagram visar ett exempel på ett [ hubb-och-ekernätverk](./hub-spoke-network-topology.md) som använder två perimeternätverk med åtkomst till Internet och ett lokalt nätverk. Båda perimeterna finns i DMZ-hubben. I DMZ-hubben kan perimeternätverket till Internet skala upp för att stödja många affärsapplikationer (LOBs) genom att använda flera grupper av WAF och Azure Firewall-instanser som skyddar de virtuella ekernätverken. Hubben tillåter också anslutning via VPN eller Azure-ExpressRoute efter behov.
+Föregående diagram visar ett exempel på [hubb och eker](./hub-spoke-network-topology.md) -nätverkstopologi som implementerar tvingande av två perimeter med åtkomst till Internet och ett lokalt nätverk. Båda perimeterna finns i DMZ-hubben. I DMZ-hubben kan perimeternätverket till Internet skala upp för att stödja många affärsapplikationer (LOBs) genom att använda flera grupper av WAF och Azure Firewall-instanser som skyddar de virtuella ekernätverken. Hubben tillåter också anslutning via VPN eller Azure-ExpressRoute efter behov.
 
 ## <a name="virtual-networks"></a>Virtuella nätverk
 
@@ -54,7 +54,7 @@ Perimeternätverk skapas vanligtvis med hjälp av [ett virtuellt][virtual-networ
 
 Genom att [använda användardefinierade vägar][user-defined-routes] kan kunder distribuera brandväggar, IDS/IPS och andra virtuella enheter. Kunderna kan sedan dirigera nätverkstrafik genom de här säkerhetsanordningarna för tillämpning, granskning och inspektion av säkerhetsgränser. Användardefinierade vägar kan skapas för att garantera att trafiken passerar genom de angivna anpassade virtuella datorerna, NVA:erna och belastningsutjämnare.
 
-I ett hubb-och-ekernätverk som ser till att trafiken som skapas av virtuella datorer i ekrarna passerar genom rätt virtuella installationer i hubben behövs en användardefinierad väg i ekernätverkets undernät. Den här vägen anger klientdelens IP-adress för den interna belastningsutjämnaren som nästa hopp. Den interna belastningsutjämnaren distribuerar den interna trafiken till de virtuella datorerna (belastningsutjämnarens serverdelspool).
+I ett exempel på hubb och ekrar som garanterar att trafiken som genereras av virtuella datorer som finns i ekern passerar genom rätt virtuella enheter i hubben kräver en användardefinierad väg som definierats i under näten i ekern. Den här vägen anger klientdelens IP-adress för den interna belastningsutjämnaren som nästa hopp. Den interna belastningsutjämnaren distribuerar den interna trafiken till de virtuella datorerna (belastningsutjämnarens serverdelspool).
 
 ## <a name="azure-firewall"></a>Azure Firewall
 
@@ -80,7 +80,7 @@ Använd en uppsättning Azure Firewall-instanser (eller NVA) för trafik som kom
 
 Azure Load Balancer kan också avsöka hälsotillståndet för de olika serverinstanserna. När en instans inte svarar på avsökningen slutar belastningsutjämnaren att skicka trafik till de ohälsosamma instanserna.
 
-Som exempel på att använda ett hubb- och ekernätverk kan du distribuera en extern belastningsutjämnare till både hubbarna och ekrarna. I hubben dirigerar belastningsutjämnaren trafik effektivt till tjänster i ekrarna. I ekrarna hanterar belastningsutjämnarna programtrafik.
+Som ett exempel på att använda en nätverkstopologi för nav och ekrar kan du distribuera en extern belastningsutjämnare till både hubben och ekrarna. I hubben dirigerar belastningsutjämnaren trafik effektivt till tjänster i ekrarna. I ekrarna hanterar belastningsutjämnarna programtrafik.
 
 ## <a name="azure-front-door-service"></a>Azure Front Door Service
 

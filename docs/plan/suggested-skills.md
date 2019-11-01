@@ -8,19 +8,19 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 3caefb507f2348f48d39c055000c3a0250fcc28a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 70308733893ac3a8baf1d910b23c9d9162719b5f
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549060"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240201"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Komma igång med en färdighets beredskaps väg
 
 IT-personal kan känna sig Anxious om sina roller och befattningar när de använder en annan uppsättning kunskaper som krävs för att stödja moln lösningar. Agile-anställda som utforskar och lär sig nya moln tekniker behöver inte ha den frukten. De kan leda till att moln tjänster införs genom att hjälpa organisationen att förstå och hantera de tillhör ande ändringarna.
 
-![Mapping av kunskaper för IT-roller i en miljö med en värd i molnet ](../_images/skills-guidance.png)
-*figur 1 – kart läggning av kunskaper till IT-roller i en miljö som är värd för molnet.*
+![mappning av kunskaper till IT-roller i en miljö värd miljö](../_images/skills-guidance.png)
+*figur 1 – kart läggning av kunskaper till IT-roller i en moln värd miljö.*
 
 Moln implementerings ramverket hjälper till att läsa igenom hela livs cykeln för införande. I det här ramverket ges läsarna möjlighet att bygga nödvändiga kunskaper. För att hjälpa dig att komma igång med den här resan ingår kunskaps beredskaps artiklar i följande disposition för enklare åtkomst. Var och en av följande länkar mappar till de kunskaper som krävs för att lyckas i varje införande fas.
 
@@ -37,3 +37,19 @@ Moln implementerings ramverket hjälper till att läsa igenom hela livs cykeln f
   - **Hantera:** Få de kunskaper som krävs för att hantera en moln miljö.
 
 Var och en av de tidigare inlärnings vägarna delar affärs möjligheter över flera medie typer för att maximera kunskaps förvärvet.
+
+# <a name="microsoft-learn"></a>Microsoft Learn
+
+Microsoft Learn är en ny metod för inlärning. Det är lätt att komma igång med nya kunskaper och ansvars områden som medföljer moln införande. Microsoft Learn erbjuder en mer givande metod för konkret inlärning som hjälper er att uppnå era mål snabbare. Tjäna poäng och nivåer och få mer!
+Här följer några exempel på skräddarsydda utbildnings vägar på Microsoft Learn som anpassas till plan-avsnittet i Cloud adoption Framework:
+
+[Utveckla dina DevOps-metoder](learn/paths/evolve-your-devops-practices/):D evops är en union av personer, processer och produkter för att möjliggöra kontinuerlig leverans av värde till dina slutanvändare. Azure DevOps är en uppsättning tjänster som ger dig de verktyg du behöver för att göra just det. Med Azure DevOps kan du bygga, testa och distribuera valfritt program, antingen till molnet eller lokalt.
+
+[Azure för data teknikern](learn/paths/azure-for-the-data-engineer/): utforska hur data teknikern har utvecklats och hur ankomsten i moln teknik ger nya möjligheter för företag att utforska. Du får lära dig de olika data plattforms tekniker som är tillgängliga och hur en data tekniker kan dra nytta av den här tekniken för en organisations förmån.     
+
+Om du vill identifiera ytterligare utbildnings vägar bläddrar du till [lär dig katalogen] (/Learn/Browse). Använd roles-filtret för att justera utbildnings vägar med din roll.
+
+
+
+
+

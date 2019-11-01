@@ -8,12 +8,12 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cc6ce12f425354cbf907474431f2ec0f45735fea
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f993676a002eeac128c9a221059815802bf36bdf
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024954"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239337"
 ---
 # <a name="application-migration-patterns-and-examples"></a>Programmigrering – mönster och exempel
 
@@ -35,7 +35,7 @@ Strategier för migrering till molnet kan delas in i fyra allmänna mönster: v�
 
 **Mönster** | **Definition** | **När det bör användas**
 --- | --- | ---
-**Värdbyte** | Detta kallas ofta för lift-and-shift-migrering. Det här alternativet kräver inte kodändringar och gör att du snabbt kan migrera dina befintliga appar till Azure. Varje app migreras i befintligt skick för att dra nytta av molnets fördelar utan de risker och kostnader som är förknippade med kodändringar. | När du behöver flytta appar till molnet snabbt.<br/><br/> När du vill flytta en app utan att ändra den.<br/><br/> När dina appar konstrueras så att de kan dra nytta av [Azure IaaS](https://azure.microsoft.com/overview/what-is-iaas)-skalbarhet efter migreringen.<br/><br/> När appar är viktiga för verksamheten men du inte behöver omedelbara ändringar av appfunktioner.
+**Värdbyte** | Kallas ofta för en _hiss och Shift_ -migrering. Det här alternativet kräver inte kodändringar och gör att du snabbt kan migrera dina befintliga appar till Azure. Varje app migreras i befintligt skick för att dra nytta av molnets fördelar utan de risker och kostnader som är förknippade med kodändringar. | När du behöver flytta appar till molnet snabbt.<br/><br/> När du vill flytta en app utan att ändra den.<br/><br/> När dina appar konstrueras så att de kan dra nytta av [Azure IaaS](https://azure.microsoft.com/overview/what-is-iaas)-skalbarhet efter migreringen.<br/><br/> När appar är viktiga för verksamheten men du inte behöver omedelbara ändringar av appfunktioner.
 **Refaktorisering** | Refaktorisering kallas ofta ”ompaketering” och kräver minimala ändringar i appar så att de kan ansluta till [Azure-PaaS](https://azure.microsoft.com/overview/what-is-paas) och använda molnerbjudanden.<br/><br/> Du skulle till exempel kunna migrera befintliga appar till Azure App Service eller Azure Kubernetes Service (AKS).<br/><br/> Du skull även kunna refaktorisera relationsdatabaser och icke-relationella databaser till alternativ såsom Azure SQL Database Managed Instance, Azure Database for MySQL, Azure Database for PostgreSQL samt Azure Cosmos DB. | Om din app enkelt kan paketeras om till att fungera i Azure.<br/><br/> Om du vill använda innovativa DevOps-metoder som tillhandahålls av Azure, eller om du överväger DevOps med en containerstrategi för arbetsbelastningar.<br/><br/> För refaktorisering behöver du tänka på portabiliteten i din befintliga kodbas samt tillgängliga utvecklingskunskaper.
 **Arkitekturomarbetning** | Arkitekturomarbetning för migrering fokuserar på att ändra och utöka appfunktionaliteten och kodbasen för att optimera apparkitekturen för molnskalbarhet.<br/><br/> Du kan till exempel dela upp ett monolitiskt program i en grupp med mikrotjänster som fungerar tillsammans och skalas enkelt.<br/><br/> Eller så kan du utföra arkitekturomarbetning för relationsdatabaser och icke-relationella databaser till fullständigt hanterade hanterad Azure SQL Database-instans, Azure Database for MySQL, Azure Database for PostgreSQL samt Azure Cosmos DB. | När dina appar kräver större revideringar för att införliva nya funktioner eller för att fungera effektivt på en molnplattform.<br/><br/> När du vill använda befintliga programinvesteringar, uppfylla skalbarhetskrav, använda innovativa Azure DevOps-metoder och minimera användningen av virtuella datorer.
 **Återskapande** | Återskapande går ett steg längre genom att återskapa en app från grunden med hjälp av Azure-molntekniker.<br/><br/> Till exempel kan du skapa helt nya appar med [molnbaserade](https://azure.com/cloudnative) tekniker såsom Azure Functions, Azure AI, hanterad Azure SQL Database-instans samt Azure Cosmos DB. | När du vill utveckla snabbt, och befintliga appar har begränsad funktionalitet och livslängd.<br/><br/> När du är redo att påskynda företagsinnovationen (däribland DevOps-metoder som tillhandahålls av Azure) kan du skapa nya program med hjälp av molnbaserade tekniker och dra nytta av framsteg inom AI, blockkedjan och IoT.
@@ -79,13 +79,13 @@ Artiklarna i serien sammanfattas nedan.
 **Artikel** | **Detaljer**
 --- | ---
 [Byta värd för en Linux-app på virtuella Azure-datorer och Azure Database for MySQL](./contoso-migration-rehost-linux-vm-mysql.md) | Den här artikeln innehåller ett exempel på migrering av en Linux-värdbaserad app till virtuella Azure-datorer med hjälp av Site Recovery. Den migrerar appdatabasen till Azure Database for MySQL med hjälp av MySQL Workbench.
-[Byta värd för en Linux-app på virtuella Azure-datorer](./contoso-migration-rehost-linux-vm.md) | Det här exemplet visar hur du utför en lift-and-shift-migrering av en Linux-baserad app till virtuella Azure-datorer med hjälp av Site Recovery-tjänsten.
+[Byta värd för en Linux-app på virtuella Azure-datorer](./contoso-migration-rehost-linux-vm.md) | Det här exemplet visar hur du utför en hiss och flyttar migreringen av en Linux-baserad app till virtuella Azure-datorer med hjälp av tjänsten Site Recovery.
 
 ### <a name="sql-server-workloads"></a>SQL Server-arbetsbelastningar
 
 **Artikel** | **Detaljer**
 --- | ---
-[Byta värd för en app på en virtuell Azure-dator och hanterad SQL Database-instans](./contoso-migration-rehost-vm-sql-managed-instance.md) | Den här artikeln innehåller ett exempel på en lift-and-shift-migrering till Azure för en lokal app. Detta inbegriper migrering av appens virtuella klientdatorn med hjälp av [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) och appdatabasen till en hanterad Azure SQL Database-instans med hjälp av [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
+[Byta värd för en app på en virtuell Azure-dator och hanterad SQL Database-instans](./contoso-migration-rehost-vm-sql-managed-instance.md) | Den här artikeln innehåller ett exempel på en hiss och Shift-migrering till Azure för en lokal app. Detta inbegriper migrering av appens virtuella klientdatorn med hjälp av [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) och appdatabasen till en hanterad Azure SQL Database-instans med hjälp av [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
 [Byta värd för en app på virtuella Azure-datorer och i en SQL Server AlwaysOn-tillgänglighetsgrupp](./contoso-migration-rehost-vm-sql-ag.md) | Det här exemplet visar hur du migrerar en app och data med hjälp av Azure-värdhanterade virtuella SQL Server-datorer. Det använder Site Recovery för att migrera de virtuella appdatorerna och Azure Database Migration Service för att migrera appdatabasen till ett SQL Server-kluster som skyddas av en AlwaysOn-tillgänglighetsgrupp.
 
 ### <a name="aspnet--php--java-apps"></a>ASP.NET-/PHP-/Java-appar
@@ -105,7 +105,7 @@ Artiklarna i serien sammanfattas nedan.
 
 ### <a name="demo-apps"></a>Demoappar
 
-I de exempelartiklar som anges i det här avsnittet används två demoappar: SmartHotel360 och osTicket.
+I de exempel artiklar som beskrivs i det här avsnittet används två demo appar: SmartHotel360 och osTicket.
 
-- **SmartHotel360:** Den här appen utvecklades av Microsoft som en testapp som du kan använda när du arbetar med Azure. Den tillhandahålls med öppen källkod, och du kan ladda ned den från [GitHub](https://github.com/Microsoft/SmartHotel360). Det är en ASP.NET-app som är ansluten till en SQL Server-databas. I de scenarier som beskrivs i dessa artiklar distribueras den aktuella versionen av den här appen till två virtuella VMware-datorer som kör Windows Server 2008 R2 och SQL Server 2008 R2. Dessa virtuella appdatorer värdhanteras lokalt och hanteras av vCenter Server.
-- **osTicket:** En supportapp för biljetter med öppen källkod som körs i Linux. Du kan ladda ned den från [GitHub](https://github.com/osTicket/osTicket). I de scenarier som beskrivs i dessa artiklar distribueras den aktuella versionen av den här appen lokalt till två virtuella VMware-datorer som kör Ubuntu 16.04 LTS med hjälp av Apache 2, PHP 7.0 och MySQL 5.7
+- **SmartHotel360:** Den här appen har utvecklats av Microsoft som en testapp som du kan använda när du arbetar med Azure. Den tillhandahålls med öppen källkod, och du kan ladda ned den från [GitHub](https://github.com/Microsoft/SmartHotel360). Det är en ASP.NET-app som är ansluten till en SQL Server-databas. I de scenarier som beskrivs i dessa artiklar distribueras den aktuella versionen av den här appen till två virtuella VMware-datorer som kör Windows Server 2008 R2 och SQL Server 2008 R2. Dessa virtuella appdatorer värdhanteras lokalt och hanteras av vCenter Server.
+- **osTicket:** En app med öppen källkod för att köra biljetter som körs på Linux. Du kan ladda ned den från [GitHub](https://github.com/osTicket/osTicket). I de scenarier som beskrivs i dessa artiklar distribueras den aktuella versionen av den här appen lokalt till två virtuella VMware-datorer som kör Ubuntu 16.04 LTS med hjälp av Apache 2, PHP 7.0 och MySQL 5.7

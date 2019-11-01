@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3254cf195c001f7ce575bf067cd434649293b970
-ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
+ms.openlocfilehash: ee1006efd3a8807e294480fdea4e46b8555a0bb8
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915032"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238759"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Beslutsguide för loggning och rapportering
 
@@ -58,7 +58,7 @@ Det kan kräva betydande nyutvecklingsarbete för att program och tjänster som 
 
 För att stödja den här metoden behöver dina molnresurser kunna kommunicera direkt med dina lokala system via en kombination av [hybridnätverk](../software-defined-network/hybrid.md) och [molnhanterade domäntjänster](../identity/index.md#cloud-hosted-domain-services). När detta sker fungerar det virtuella molnnätverket som en nätverksutökning av den lokala miljön. Därför kan molnhanterade arbetsbelastningar kommunicera direkt med ditt lokala system för loggning och rapportering.
 
-Den här metoden drar nytta av din befintliga investering i övervakningsverktyg med begränsade ändringar av molndistribuerade program eller tjänster. Det här är ofta den snabbaste metoden för att stödja övervakning under en ”lift and shift”-migrering. Däremot registrerar den inte loggdata som produceras av molnbaserade PaaS- och SaaS-resurser, och den utelämnar VM-relaterade loggar som genereras av själva molnplattformen, till exempel VM-status. Därför bör det här mönstret vara en tillfällig lösnings tills en mer omfattande hybridövervakningslösning implementeras.
+Den här metoden drar nytta av din befintliga investering i övervakningsverktyg med begränsade ändringar av molndistribuerade program eller tjänster. Det här är ofta den snabbaste metoden för att stödja övervakning under en lift and shift-migrering. Däremot registrerar den inte loggdata som produceras av molnbaserade PaaS- och SaaS-resurser, och den utelämnar VM-relaterade loggar som genereras av själva molnplattformen, till exempel VM-status. Därför bör det här mönstret vara en tillfällig lösnings tills en mer omfattande hybridövervakningslösning implementeras.
 
 Antaganden gällande endast lokalt:
 

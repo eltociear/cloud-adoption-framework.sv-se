@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3bba3d7f028849ec3397e14dbdb0f39dfa246660
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 4496d272ec4c23feb84157e2eba40935b1d16370
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058892"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240041"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Metodtips för att konfigurera nätverk för arbetsbelastningar som migrerats till Azure
 
@@ -120,7 +120,7 @@ Azure lägger till en DNS-server som standard när du distribuerar ett virtuellt
 **Läs mer:**
 
 - [Lär dig](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure) mer om namnmatchning när du använder en egen DNS-server.
-- [Läs mer om](../../ready/considerations/naming-and-tagging.md) namngivningsregler och begränsningar för DNS.
+- [Läs mer om](../../ready/azure-best-practices/naming-and-tagging.md) namngivningsregler och begränsningar för DNS.
 
 ## <a name="best-practice-set-up-availability-zones"></a>Bästa praxis: Konfigurera tillgänglighets zoner
 

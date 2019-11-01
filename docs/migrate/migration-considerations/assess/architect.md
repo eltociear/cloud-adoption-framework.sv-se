@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d62b2f5957dc5cee19f462e3c7d74c85672eadfe
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 151698c836add7c46c389cc94c76b942e52b0341
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819509"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240242"
 ---
 # <a name="architect-workloads-prior-to-migration"></a>Beräkna arbetsbelastningar före migrering
 
@@ -23,7 +23,7 @@ Denna artikel utökar utvärderingsprocessen genom att granska aktiviteter som �
 
 Följande arkitekturantaganden är typiska för alla migreringar:
 
-- **IaaS.** Det antas normalt att migrering av arbetsbelastningar i huvudsak består av förflyttning av virtuella maskiner från ett fysiskt datacenter till ett molndatacenter via en IaaS-migrering, vilket kräver minsta möjliga utveckling och omkonfiguration. Detta är känt som en Lift and shift-migrering. (Undantag nedan.)
+- **IaaS.** Det antas normalt att migrering av arbetsbelastningar i huvudsak består av förflyttning av virtuella maskiner från ett fysiskt datacenter till ett molndatacenter via en IaaS-migrering, vilket kräver minsta möjliga utveckling och omkonfiguration. Detta kallas för en _hiss och Shift_ -migrering. (Undantag nedan.)
 - **Arkitekturkonsekvens.** Ändringar av grundläggande arkitektur under en migrering ökar i hög grad komplexiteten. Felsökning av ett ändrat system på en ny plattform inför många variabler som kan vara svåra att isolera. Av detta skäl ska arbetsbelastningar bara genomgå smärre förändringar under migrering och alla ändringar ska testas noggrant.
 - **Indragningstest.** Migreringar och att vara värd för tillgångar förbrukar driftskostnader och potentiella kapitalutgifter. Det antas att alla arbetsbelastningar som migreras har granskats för att validera fortsatt användning. Att kunna dra in oanvända tillgångar ger omedelbara kostnadsbesparingar.
 - **Storleksförändra tillgångar.** Det antas att få lokala tillgångar fullt ut använder de tilldelade resurserna. Innan migrering antas det att storleken på tillgångar kommer att anpassas för att bäst passa verklig användning.

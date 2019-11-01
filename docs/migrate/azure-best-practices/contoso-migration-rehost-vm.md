@@ -1,7 +1,7 @@
 ---
-title: Byta värd för en app genom migrering till virtuella Azure-datorer med Azure Site Recovery
+title: Revara Host för en app på virtuella Azure-datorer med Azure Site Recovery
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Läs om hur Contoso byter värd för en lokalt installerad app med en lift and shift-migrering av lokala datorer till Azure med Azure Site Recovery-tjänsten.
+description: Lär dig hur contoso kan vara värd för en lokal app med en lyft-och Shift-migrering av lokala datorer till Azure med hjälp av tjänsten Azure Site Recovery.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 0bfadba7f6cefc5cd597d002c3cb18b0cfcc8c3d
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 61f329bbd708417dc98994946eb4754682413a34
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058192"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239015"
 ---
-# <a name="rehost-an-on-premises-app-to-azure-vms"></a>Byt värd för en lokal app till virtuella Azure-datorer
+# <a name="rehost-an-on-premises-app-on-azure-vms"></a>Vara värd för en lokal app på virtuella Azure-datorer
 
 Den här artikeln beskriver hur det fiktiva företaget Contoso byter värd för en Windows .NET-klientapp med två nivåer som körs på virtuella VMware-datorer genom att migrera appens virtuella datorer till virtuella Azure-datorer.
 
@@ -75,7 +75,7 @@ Contoso utvärderar den föreslagna designen genom att skapa en lista med för- 
 
 **Övervägande** | **Detaljer**
 --- | ---
-**Fördelar** | Båda appens virtuella datorer flyttas till Azure utan ändringar, vilket gör migreringen enkel.<br/><br/> Eftersom Contoso använder ”lift and shift” för båda appens virtuella datorer, behövs ingen speciell konfiguration eller speciella migreringsverktyg för appdatabasen.<br/><br/> Contoso kan dra nytta av sina investeringar i Software Assurance och använda Azure Hybrid-förmånen.<br/><br/> Contoso har fortfarande full kontroll över appens virtuella datorer i Azure.
+**Fördelar** | Båda appens virtuella datorer flyttas till Azure utan ändringar, vilket gör migreringen enkel.<br/><br/> Eftersom Contoso använder en hiss och Skift-metod för både virtuella app-datorer behövs inga särskilda konfigurations-eller Migreringsverktyg för app-databasen.<br/><br/> Contoso kan dra nytta av sina investeringar i Software Assurance och använda Azure Hybrid-förmånen.<br/><br/> Contoso har fortfarande full kontroll över appens virtuella datorer i Azure.
 **Nackdelar** | WEBVM och SQLVM kör Windows Server 2008 R2. Operativsystemet stöds av Azure för specifika roller (juli 2018). [Läs mer](https://support.microsoft.com/help/2721672/microsoft-server-software-support-for-microsoft-azure-virtual-machines).<br/><br/> Appens webb- och datanivåer förblir en enskild felpunkt.<br/><br/> SQLVM körs på SQL Server 2008 R2 som inte inkluderas i mainstream-support. Det stöds dock för virtuella Azure-datorer (juli 2018). [Läs mer](https://support.microsoft.com/help/956893).<br/><br/> Contoso måste fortsätta att hantera appen som virtuella Azure-datorer i stället för att flytta till en hanterad tjänst, till exempel Azure App Service och Azure SQL Database.
 
 <!-- markdownlint-enable MD033 -->

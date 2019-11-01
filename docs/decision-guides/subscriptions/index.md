@@ -9,20 +9,20 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a6ee53355313a0f0c277d7b1c69e77494cdf8e1c
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 4f024a95afcb993bd0fe314737ee4d2f97daffb0
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058726"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238783"
 ---
 # <a name="subscription-decision-guide"></a>Beslutsguide för prenumerationer
 
-En effektiv prenumerationsdesign hjälper organisationer att upprätta en struktur för organisera resurser i Azure under en molnanpassning.
+En effektiv prenumerationsdesign hjälper organisationer att upprätta en struktur för att organisera resurser i Azure under en molnanpassning.
 
 Varje resurs i Azure, t.ex. en virtuell dator eller en databas, är kopplad till en prenumeration. Du börjar använda Azure när du skapar en Azure-prenumeration, kopplar den till ett konto och distribuerar resurser till prenumerationen. En översikt av de här koncepten finns i [Grundläggande Azure-begrepp](../../ready/considerations/fundamental-concepts.md).
 
-När din digitala egendom i Azure växer, så behöver du förmodligen skapa ytterligare prenumerationer för att uppfylla dina krav. Med Azure kan du definiera en hierarki av hanteringsgrupper för att organisera dina prenumerationer och enkelt tillämpa rätt princip till rätt resurser. Mer information finns i [Skalning med flera Azure-prenumerationer](../../ready/considerations/scaling-subscriptions.md).
+När din digitala egendom i Azure växer, så behöver du förmodligen skapa ytterligare prenumerationer för att uppfylla dina krav. Med Azure kan du definiera en hierarki av hanteringsgrupper för att organisera dina prenumerationer och enkelt tillämpa rätt princip till rätt resurser. Mer information finns i [Skalning med flera Azure-prenumerationer](../../ready/azure-best-practices/scaling-subscriptions.md).
 
 Vissa grundläggande exempel på hur du kan använda hanteringsgrupper för att separera olika arbetsbelastningar:
 

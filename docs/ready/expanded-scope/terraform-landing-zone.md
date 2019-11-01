@@ -8,16 +8,16 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 51751ab0033505e34c02c17db363bc985b83e44d
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 99d5e42f8c7e506ba28617022f2a8076c9501979
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058156"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239772"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Använd terraform för att bygga landnings zoner
 
-Azure tillhandahåller inbyggda tjänster för att distribuera landnings zoner. Andra verktyg från tredje part kan också hjälpa dig med den här ansträngningen. Ett sådant verktyg som kunder och partners ofta använder för att distribuera landnings zoner är Hashicorp-terraform till. Det här avsnittet visar hur du använder en prototyp zon för att distribuera grundläggande loggnings-, redovisnings-och säkerhets funktioner för en Azure-prenumeration.
+Azure tillhandahåller inbyggda tjänster för att distribuera landnings zoner. Andra verktyg från tredje part kan också hjälpa dig med den här ansträngningen. Ett sådant verktyg som kunder och partners ofta använder för att distribuera landnings zoner är Hashicorp-terraform. Det här avsnittet visar hur du använder en prototyp zon för att distribuera grundläggande loggnings-, redovisnings-och säkerhets funktioner för en Azure-prenumeration.
 
 ## <a name="purpose-of-the-landing-zone"></a>Syftet med landnings zonen
 
@@ -56,7 +56,7 @@ Följande antaganden eller begränsningar ansågs när den inledande landnings z
 - **Prenumerations begränsningar:** Den här antagande ansträngningen är osannolik för att överskrida [prenumerations gränserna](https://docs.microsoft.com/azure/azure-subscription-service-limits). Två vanliga indikatorer är ett överskott på 25 000 virtuella datorer eller 10 000 virtuella processorer.
 - **Kompatibilitet:** Det behövs inga krav från tredje parts efterlevnad för denna landnings zon.
 - **Arkitektur komplexitet:** Arkitektur komplexitet kräver inte ytterligare produktions prenumerationer.
-- **Delade tjänster:** Det finns inga befintliga delade tjänster i Azure som kräver att den här prenumerationen behandlas som en eker i en nav-och-eker-arkitektur.
+- **Delade tjänster:** Det finns inga befintliga delade tjänster i Azure som kräver att den här prenumerationen behandlas som en eker i en hubb och eker-arkitektur.
 
 Om dessa antaganden matchar din aktuella miljö kan den här skissen vara ett bra sätt att börja skapa din landnings zon.
 
@@ -67,17 +67,17 @@ Följande beslut visas i terraform landnings zon:
 | Komponent | Beslut | Alternativa metoder |
 | --- | --- | --- |
 |Loggning och övervakning | Azure Monitor Log Analytics arbets ytan kommer att användas. Ett lagrings konto för diagnostik samt Händelsehubben kommer att tillhandahållas. |         |
-|Nätverk | N/A-nätverket kommer att implementeras i en annan landnings zon. |[Nätverksbeslut](../considerations/network-decisions.md) |
+|Nätverk | N/A-nätverket kommer att implementeras i en annan landnings zon. |[Nätverksbeslut](../considerations/networking-options.md) |
 |Identitet | Vi förutsätter att prenumerationen redan är associerad med en instans av Azure Active Directory. | [Metodtips för identitetshantering](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices) |
 | Princip | Denna landnings zon förutsätter för närvarande att inga Azure-principer ska tillämpas. | |
-|Prenumerationsdesign | Saknas – utformad för en enda produktionsprenumeration. | [Skalanpassa prenumerationer](../considerations/scaling-subscriptions.md) |
-| Hanteringsgrupper | Saknas – utformad för en enda produktionsprenumeration. |[Skalanpassa prenumerationer](../considerations/scaling-subscriptions.md) |
-| Resursgrupper | Saknas – utformad för en enda produktionsprenumeration. | [Skalanpassa prenumerationer](../considerations/scaling-subscriptions.md) |
+|Prenumerationsdesign | Saknas – utformad för en enda produktionsprenumeration. | [Skalanpassa prenumerationer](../azure-best-practices/scaling-subscriptions.md) |
+| Hanteringsgrupper | Saknas – utformad för en enda produktionsprenumeration. |[Skalanpassa prenumerationer](../azure-best-practices/scaling-subscriptions.md) |
+| Resursgrupper | Saknas – utformad för en enda produktionsprenumeration. | [Skalanpassa prenumerationer](../azure-best-practices/scaling-subscriptions.md) |
 | Data | Gäller inte | [Välj rätt SQL Server alternativ i Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) och [Azure Data Store vägledning](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Lagring|Gäller inte|[Riktlinjer för Azure Storage](../considerations/storage-guidance.md) |
-| Namngivningsregler | När miljön skapas skapas även ett unikt prefix. Resurser som kräver ett globalt unikt namn (till exempel lagrings konton) använder det här prefixet. Det anpassade namnet läggs till med ett slumpmässigt suffix. Tagga användningen bestäms enligt beskrivningen i tabellen nedan. | [Metodtips för namngivning och taggning](../considerations/naming-and-tagging.md) |
+|Lagring|Gäller inte|[Riktlinjer för Azure Storage](../considerations/storage-options.md) |
+| Namngivningsregler | När miljön skapas skapas även ett unikt prefix. Resurser som kräver ett globalt unikt namn (till exempel lagrings konton) använder det här prefixet. Det anpassade namnet läggs till med ett slumpmässigt suffix. Tagga användningen bestäms enligt beskrivningen i tabellen nedan. | [Metodtips för namngivning och taggning](../azure-best-practices/naming-and-tagging.md) |
 | Kostnadshantering | Gäller inte | [Spåra kostnader](../azure-best-practices/track-costs.md) |
-| Databearbetning | Gäller inte | [Compute-alternativ](../considerations/compute-decisions.md) |
+| Databearbetning | Gäller inte | [Compute-alternativ](../considerations/compute-options.md) |
 
 ### <a name="tagging-standards"></a>Tagga standarder
 

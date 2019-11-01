@@ -1,7 +1,7 @@
 ---
-title: Nätverkstopologi med hubb och ekrar
+title: Nätverkstopologi för nav och ekrar
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Nätverkstopologi med hubb och ekrar
+description: Lär dig mer om topologier för nav och ekrar.
 author: tracsman
 ms.author: jonor
 ms.date: 05/10/2019
@@ -11,14 +11,14 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: fcbcda63ff080de234075f0a8784731e591ca0f3
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 4bd368bacd68a44d0b825eb0e2ad0b91b07b3b48
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549011"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239918"
 ---
-# <a name="hub-and-spoke-network-topology"></a>Nätverkstopologi med hubb och ekrar
+# <a name="hub-and-spoke-network-topology"></a>Nätverkstopologi för nav och ekrar
 
 *Hubb och ekrar* är en nätverksmodell för effektiv hantering av vanlig kommunikation och säkerhetskrav. Det bidrar också till att undvika begränsningar i Azure-prenumerationen. Den här modellen riktar sig mot följande överväganden:
 
@@ -26,21 +26,21 @@ ms.locfileid: "72549011"
 - **Hantera prenumerationsbegränsningar**. Stora molnbaserade arbetsbelastningar kan behöva flera resurser än det som tillåts i en enda Azure-prenumeration. Med peer-anslutning av arbetsbelastningar i virtuella nätverk från olika prenumerationer till en central hubb löser du dessa problem. Mer information finns i [prenumerations gränser](https://docs.microsoft.com/azure/azure-subscription-service-limits).
 - **Separering av problem**. Du kan distribuera enskilda arbetsbelastningar mellan centrala IT-team och arbetsbelastningsteam.
 
-Mindre molnegendomar har kanske inte nytta av den ökade strukturen och kapaciteten i den här modellen. Men större molnimplementeringar bör överväga att implementera ett hubb- och ekernätverk om de påverkas av några av ovanstående överväganden.
+Mindre molnegendomar har kanske inte nytta av den ökade strukturen och kapaciteten i den här modellen. Men större moln implementerings ansträngningar bör överväga att implementera en nätverks arkitektur för hubb och eker om de har något av de problem som anges ovan.
 
 > [!NOTE]
-> Webbplatsen Azure Reference Architectures innehåller exempelmallar som du kan använda som grund för implementeringen av dina egna hubb- och ekernätverk:
+> Azure Reference arkitekturer-platsen innehåller exempel på mallar som du kan använda som grund för att implementera egna nav-och eker-nätverk:
 >
-> - [Implementera en nätverkstopologi av typen hubb/eker i Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
-> - [Implementera en nätverkstopologi av typen hubb/eker med delade tjänster i Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
+> - [Implementera en nätverkstopologi för nav och ekrar i Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
+> - [Implementera en nätverkstopologi med nav och ekrar med delade tjänster i Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
 
 ## <a name="overview"></a>Översikt
 
-![Examples på en nätverkstopologi med hubb och ekrar][1]
+![Exempel på en nätverkstopologi för nav och ekrar][1]
 
-Som du ser i diagrammet stöder Azure två typer av hubb- och eker-designer. Det har stöd för kommunikation, delade resurser och centraliserade säkerhetsprinciper (”Vnet Hub” i diagrammet) eller en virtuell WAN-typ (”Virtual WAN” i diagrammet) för storskaliga kommunikationer från gren till gren eller gren till Azure.
+Som du ser i diagrammet stöder Azure två typer av nav och eker-design. Det har stöd för kommunikation, delade resurser och centraliserade säkerhetsprinciper (”Vnet Hub” i diagrammet) eller en virtuell WAN-typ (”Virtual WAN” i diagrammet) för storskaliga kommunikationer från gren till gren eller gren till Azure.
 
-En hubb är en central nätverkszon som styr och kontrollerar inkommande eller utgående trafik mellan zoner: Internet, lokalt och ekrar. Hubb- och ekertopologin ger IT-avdelningen ett effektivt sätt att verkställa säkerhetsprinciper centralt. Det minskar också risken för felaktig konfiguration och exponering.
+En hubb är en central nätverkszon som styr och kontrollerar inkommande eller utgående trafik mellan zoner: Internet, lokalt och ekrar. NAV-och eker-topologin ger IT-avdelningen ett effektivt sätt att tillämpa säkerhets principer på en central plats. Det minskar också risken för felaktig konfiguration och exponering.
 
 Hubben innehåller ofta de gemensamma tjänstkomponenter som ekrarna använder. Följande exempel är gemensamma centrala tjänster:
 
@@ -61,7 +61,7 @@ Ekrarna kan också särskilja och aktivera olika grupper i din organisation. Ett
 
 I Azure distribueras alla komponenter, oavsett typ, i en Azure-prenumeration. Isolering av Azure-komponenter i olika Azure-prenumerationer kan uppfylla kraven på olika affärslinjer, till exempel att ställa in differentierade nivåer av åtkomst och auktorisering.
 
-En enda hubb- och eker-implementering kan skala upp till ett stort antal ekrar. Men precis som med varje IT-system finns det plattformsgränser. Hubb-distributionen är kopplad till en enskild Azure-prenumeration som har begränsningar. (Ett exempel är ett maximalt antal peer-anslutna virtuella nätverk. Se [Azure-prenumeration och tjänst begränsningar, kvoter och begränsningar] [gränser] för mer information).
+En enda hubb och eker-implementering kan skala upp till ett stort antal ekrar. Men precis som med varje IT-system finns det plattformsgränser. Hubb-distributionen är kopplad till en enskild Azure-prenumeration som har begränsningar. (Ett exempel är ett maximalt antal peer-anslutna virtuella nätverk. Se [Azure-prenumeration och tjänst begränsningar, kvoter och begränsningar] [gränser] för mer information).
 
 I fall där gränser kan vara ett problem kan du skala upp arkitekturen ytterligare genom att utöka modellen från en enda hubb och eker till ett kluster med hubbar och ekrar. Du kan sammankoppla flera hubbar i en eller flera Azure-regioner med hjälp av peering av virtuella nätverk, Azure ExpressRoute, ett virtuellt WAN-nätverk eller ett plats-till-plats-VPN.
 
@@ -79,7 +79,7 @@ Ett typiskt exempel på det här scenariot när programbearbetningsservrar finns
 
 ![Ekrar som ansluter till varandra och en hubb][3]
 
-Ekrar kan också vara sammankopplade till en eker som fungerar som hubb. Den här metoden skapar en hierarki på två nivåer: ekern på den högre nivån (nivå 0) blir hubb för nedre ekrar (nivå 1) i hierarkin. Ekrarna för en nav- och-ekerimplementering krävs för att vidarebefordra trafiken till den centrala hubben så att trafiken kan vidarebefordras till sitt mål i antingen det lokala nätverket eller det offentliga Internet. En arkitektur med två nivåer av hubbar introducerar komplex routning som tar bort fördelarna med en enkel hubb-och-ekerrelation.
+Ekrar kan också vara sammankopplade till en eker som fungerar som hubb. Den här metoden skapar en hierarki på två nivåer: ekern på den högre nivån (nivå 0) blir hubb för nedre ekrar (nivå 1) i hierarkin. Ekrarna för en nav-och eker-implementering krävs för att vidarebefordra trafiken till den centrala hubben så att trafiken kan vidarebefordra till sitt mål i antingen det lokala nätverket eller det offentliga Internet. En arkitektur med två nivåer av hubbar introducerar komplex routning som tar bort fördelarna med en enkel hubb och eker-relation.
 
 <!-- images -->
 
