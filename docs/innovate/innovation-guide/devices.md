@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: f38c207c89cbe4d37958292c552165f39e2bd383
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 8f7882a28dc135763584c8f2af4f5d834160f3ba
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769293"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047575"
 ---
 ::: zone target="docs"
 
@@ -29,9 +29,9 @@ ms.locfileid: "72769293"
 
 ::: zone-end
 
-Förnya genom tillfälligt anslutna och perceptiva gränsenheter. Samordna miljontals sådana enheter, inhämta och bearbeta obegränsade data och dra nytta av ett växande antal upplevelser för flera sensorer och flera enheter. För enheter i nätverkets utkant ger Azure ett ramverk för att skapa avancerade och effektiva affärslösningar. Allmänt förekommande databehandling som möjliggörs av det offentliga molnet och tekniker för artificiell intelligens (AI) gör att du kan skapa alla typer av intelligenta program och system du kan föreställa dig.
+Förnya genom tillfälligt anslutna och perceptiva gränsenheter. Samordna miljontals sådana enheter, inhämta och bearbeta obegränsade data och dra nytta av ett växande antal upplevelser för flera sensorer och flera enheter. För enheter i nätverkets utkant ger Azure ett ramverk för att skapa avancerade och effektiva affärslösningar. Med ubik datateknik, som du får när du använder Azure i kombination med tekniker för artificiell intelligens (AI), kan du skapa alla typer av intelligenta program och system du kan föreställa dig.
 
-Azure-kunder använder ständigt expanderande anslutna system och enheter som samlar in och analyserar data – i nära anslutning till sina användare, data eller både och. Användare får insikter och upplevelser i realtid som levereras av mycket responsiva och sammanhangsmedvetna program. När du flyttar delar av arbetsbelastningen till nätverksgränsen går det åt mindre tid till att skicka meddelanden till molnet och dina enheter reagerar snabbare på rumsliga händelser.
+Azure-kunder använder en ständigt expanderande uppsättning med anslutna system och enheter som samlar in och analyserar data – i nära anslutning till sina användare, data eller både och. Användare får insikter och upplevelser i realtid som levereras av mycket responsiva och sammanhangsmedvetna program. När du flyttar delar av arbetsbelastningen till nätverksgränsen går det åt mindre tid till att skicka meddelanden till molnet och dina enheter reagerar snabbare på rumsliga händelser.
 
 > [!div class="checklist"]
 >
@@ -49,7 +49,9 @@ Azure-kunder använder ständigt expanderande anslutna system och enheter som sa
 
 <!-- markdownlint-enable MD025 -->
 
-Arkitektlösningar som utövar dubbelriktad kommunikation med miljarder IoT-enheter. Använd färdiga telemetridata från enhet till moln för att få bättre förståelse för dina enheters tillstånd och definiera meddelanderutter till andra Azure-tjänster endast via konfiguration. Genom att använda meddelanden från moln till enhet kan du tillförlitligt skicka kommandon och meddelanden till anslutna enheter och spåra meddelandeleveransen med bekräftelsekvitton. Skicka automatiskt enhetsmeddelanden på nytt om det behövs vid tillfälliga anslutningar.
+Arkitektlösningar som utövar dubbelriktad kommunikation med miljarder IoT-enheter. Använd färdiga telemetridata från enhet till moln för att få bättre förståelse för dina enheters tillstånd och definiera meddelanderutter till andra Azure-tjänster endast via konfiguration. Genom att använda meddelanden från moln till enhet kan du tillförlitligt skicka kommandon och meddelanden till anslutna enheter och spåra meddelandeleveransen med bekräftelsekvitton. Och du kan automatiskt skicka enhetsmeddelanden på nytt om det behövs vid tillfälliga anslutningar.
+
+Här är några av funktionerna som finns:
 
 - **Säkerhetsoptimerad kommunikationskanal** för överföring av data till och från IoT-enheter.
 - **Inbyggd enhetshantering** och etablering för anslutning till och hantering av IoT-enheter i stor skala.
@@ -66,16 +68,18 @@ Arkitektlösningar som utövar dubbelriktad kommunikation med miljarder IoT-enhe
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Åtgärd
 
 Så här skapar du en IoT-hubb:
 
 1. Gå till **IoT Hub**.
-2. Klicka på **Skapa en IoT-hubb**.
+2. Välj **Skapa IoT-hubb**.
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Devices%2FIotHubs]" submitText="Go to IoT Hub" :::
+
+<!-- markdownlint-enable DOCSMD001 -->
 
 IoT Hub Device Provisioning Service är en hjälptjänst för IoT Hub som möjliggör zero-touch och just-in-time-etablering.
 
@@ -86,7 +90,9 @@ IoT Hub Device Provisioning Service är en hjälptjänst för IoT Hub som möjli
 Så här skapar du IoT Hub Device Provisioning Services:
 
 1. Gå till **IoT Hub Device Provisioning Services**.
-2. Klicka på **Create Device Provisioning Services** (Skapa enhetsetableringstjänster).
+2. Välj **Create Device Provisioning Services** (Skapa enhetsetableringstjänster).
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Devices%2FProvisioningServices]" submitText="Go to Device Provisioning Services" :::
 
@@ -100,9 +106,9 @@ Så här skapar du IoT Hub Device Provisioning Services:
 
 Skapa återanvändningsbara, mycket skalbara, rumsligt medvetna upplevelser som länkar strömmande data i hela den digitala och fysiska världen. Förbättra kundengagemanget med hjälp av omfattande modeller av fysiska miljöer. Generera diagram för rumslig intelligens för att modellera relationer och interaktioner mellan människor, platser och enheter. Skicka dataförfrågningar från ett fysiskt utrymme i stället för olika sensorer.
 
-**Azure Digital Twins-objektmodeller:** En ontologi som beskriver regioner, lokaler, våningar, kontor, zoner, konferensrum och fokusrum i en smart byggnad, eller olika kraftverk, understationer, energiresurser och kunder i ett energinät, kan modelleras med Digital Twins-objektmodeller och ontologier.
+**Azure Digital Twins-objektmodeller:** En ontologi som beskriver regioner, lokaler, våningar, kontor, zoner, konferensrum och fokusrum i en smart byggnad, eller olika kraftverk, understationer, energiresurser och kunder i ett energinät, kan modelleras med hjälp av Digital Twins-objektmodeller och ontologier.
 
-**Diagram för rumslig intelligens:** Det hierarkiska diagrammet över platser, enheter och personer som definierats i Digital Twins-objektmodellen som stöder arv, filtrering, bläddring, skalbarhet och utökningsbarhet. Du kan hantera och interagera med diagrammet med en samling REST-API:er som finns i Azure.
+**Diagram för rumslig intelligens:** Det hierarkiska diagrammet över platser, enheter och personer som definierats i Digital Twins-objektmodellen som stöder arv, filtrering, bläddring, skalbarhet och utökningsbarhet. Du kan hantera och interagera med diagrammet med den samling REST-API:er som finns i Azure.
 
 ::: zone target="docs"
 
@@ -112,16 +118,16 @@ Skapa återanvändningsbara, mycket skalbara, rumsligt medvetna upplevelser som 
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Åtgärd
 
 Så här skapar du Azure Digital Twins:
 
 1. Välj **Skapa en resurs** i fönstret till vänster.
-2. Sök efter ”digital twins” och välj **Digital Twins**.
+2. Sök efter **digital twins** och välj **Digital Twins**.
 3. Välj **Skapa** för att starta distributionsprocessen.
-4. Klicka på knappen nedan om du vill granska befintliga Digital Twins.
+4. Välj den här knappen om du vill granska befintliga Digital Twins:
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.IoTSpaces%2FGraph]" submitText="Go to Digital Twins" :::
 
@@ -149,14 +155,14 @@ Förutom traditionella platsfunktioner som platser i närheten, trafik och routn
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Åtgärd
 
 Så här använder du platsintelligens:
 
 1. Gå till **Azure Maps-konton**.
-2. Klicka på **Skapa Azure Maps-konton**.
+2. Välj **Skapa Azure Maps-konton**.
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Maps%2Faccounts]" submitText="Go to Azure Maps Account" :::
 
@@ -184,14 +190,14 @@ Azure Spatial Anchors består av en hanterad tjänst och klient-SDK:er för enhe
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Åtgärd
 
 Så här använder du rumsupplevelser:
 
 1. Gå till **Spatial Anchors-konton**.
-2. Klicka på **Skapa Spatial Anchors-konton**.
+2. Välj **Skapa Spatial Anchors-konton**.
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.MixedReality%2FspatialAnchorsAccounts]" submitText="Go to Spatial Anchors Accounts" :::
 
@@ -215,14 +221,14 @@ Renderingsprocessen är databehandlingsintensiv. Det kan finnas många bilder so
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Åtgärd
 
 Så här använder du Remote Rendering:
 
 1. Gå till **Batch-konton**.
-2. Klicka på **Skapa Batch-konton**.
+2. Välj **Skapa Batch-konton**.
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Batch%2FbatchAccounts]" submitText="Go to Azure Batch" :::
 

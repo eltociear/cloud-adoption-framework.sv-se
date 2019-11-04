@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 222768f457f566d1ba19f8c53814110595e03bf3
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 94b1f2784875553bb27f32189e6d7d723de42634
+ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72379126"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72980197"
 ---
 # <a name="organize-your-azure-resources"></a>Organisera dina Azure-resurser
 
@@ -159,7 +159,7 @@ Du kan också använda taggar till mycket annat. Vanliga användningsområden ä
 - **Automation:** Du kan ha skript som körs regelbundet och utför åtgärder baserat på ett taggvärde, som ”ShutdownTime” eller ”DeprovisionDate”.
 - **Fakturering:** Du kan visa taggar på fakturan. Du kan använda dem till att dela in fakturan i områden med taggar som ”CostCenter” eller ”BillTo”.
 
-Varje resurs eller resursgrupp kan innehålla upp till 15 taggnamn-/taggvärdepar. Den här begränsningen gäller dock bara taggar som läggs till direkt för resursgruppen eller resursen.
+Varje resurs eller resursgrupp kan innehålla upp till 50 taggnamn-/taggvärdepar. Den här begränsningen gäller dock bara taggar som läggs till direkt för resursgruppen eller resursen.
 
 Mer taggningsrekommendationer och exempel finns i [vägledningen om taggning](../considerations/naming-and-tagging.md) i Ramverk för molnimplementering.
 
