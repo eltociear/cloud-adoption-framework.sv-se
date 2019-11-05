@@ -1,47 +1,47 @@
 ---
-title: Introduktion till driftshantering
+title: Introduktion till åtgärdshantering
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Förstå driftshantering i Cloud Adoption Framework.
+description: Förstå drift hantering i moln införande ramverket.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 46af630c299f1fb66565cf1d55e5acf9f36d8251
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
-ms.translationtype: MT
+ms.openlocfilehash: 8e58aea5c0d3b77cd194f8bd8919f43143ab18a4
+ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683665"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72979945"
 ---
-# <a name="establishing-operational-management-practices-in-the-cloud"></a>Upprätta metoder för driftshantering i molnet
+# <a name="establish-operational-management-practices-in-the-cloud"></a>Upprätta operativa hanterings metoder i molnet
 
-Molnimplementering är en katalysator som ger affärsvärde. Dock realiseras verkligt affärsvärde genom löpande, stabil drift av de tekniktillgångar som distribueras till molnet. Det här avsnittet av Cloud Adoption Framework vägleder läsaren genom olika övergångar till driftshantering i molnet.
+Molnimplementering är en katalysator för att skapa affärsvärde. Dock realiseras verkligt affärsvärde genom löpande, stabil drift av de tekniktillgångar som distribueras till molnet. I det här avsnittet av moln implementerings ramverket får du hjälp att gå igenom olika över gångar i den operativa hanteringen i molnet.
 
 ## <a name="actionable-best-practices"></a>Användbara metodtips
 
-Lösningar för modern drifts hantering skapar en multimoln-vy med åtgärder. Till gångar som hanteras med följande metod tips kan leva i molnet, i ett befintligt Data Center eller till och med i en konkurrerande moln leverantör. För närvarande innehåller ramverket två metodtips som referens för att vägleda driftshantering till mognad i molnet:
+Lösningar för modern drifts hantering skapar en multimoln-vy med åtgärder. Till gångar som hanteras med följande metod tips kan leva i molnet, i ett befintligt Data Center eller till och med i en konkurrerande moln leverantör. För närvarande innehåller ramverket två metod tips för att hjälpa drifts hanteringens förfallo tid i molnet:
 
-- [Hantering av Azure-Server](./azure-server-management/index.md): den medföljande guiden för att ta med de molnbaserade verktyg och tjänster som krävs för att hantera åtgärder.
-- [Hybrid övervakning](./monitor/index.md): många kunder har redan gjort en betydande investering i System Center Operations Manager. Den här guiden för hybridövervakning hjälper dessa kunder att jämföra och kontrastera de molnbaserade rapporteringsverktygen med Operations Manager-verktyg. Den här jämförelsen gör det lättare att bestämma vilka verktyg som ska användas för driftshantering.
+- [Azure Server Management](./azure-server-management/index.md): en onboarding-guide för att införliva de molnbaserade verktyg och tjänster som krävs för att hantera åtgärder.
+- [Hybrid övervakning](./monitor/index.md): många kunder har redan gjort en betydande investering i System Center Operations Manager. För dessa kunder kan den här hand boken till hybrid övervakning hjälpa dem att jämföra och kontrasta de molnbaserade rapporterings verktygen med Operations Manager verktyg. Den här jämförelsen gör det lättare att bestämma vilka verktyg som ska användas för drifts hantering.
 
 ## <a name="cloud-operations"></a>Molnåtgärder
 
-Båda dessa bästa metoder bygger mot en framtida tillstånds metod för Operations Management.
+Båda dessa metod tips bygger på en metod för framtida tillstånd för Operations Management, som illustreras i följande diagram:
 
 ![Hantera metoder i moln införande ramverket](../_images/manage/caf-manage.png)
 
-**Affärs justering:** I den hantera metodiken klassificeras alla arbets belastningar efter allvarlighets grad och affärs värde. Denna klassificering kan sedan mätas via en konsekvensanalys som beräknar det förlorade värde som är associerat med prestandaförsämring eller avbrott i verksamheten. Med hjälp av den praktiska intäktsinverkan kan teamet för molndrift arbeta med verksamheten för att upprätta ett åtagande som balanserar kostnad och prestanda.
+**Affärs justering**: i hantera metodik klassificeras alla arbets belastningar efter allvarlighets grad och affärs värde. Denna klassificering kan sedan mätas via en konsekvensanalys som beräknar det förlorade värde som är associerat med prestandaförsämring eller avbrott i verksamheten. Med hjälp av den praktiska intäktsinverkan kan teamet för molndrift arbeta med verksamheten för att upprätta ett åtagande som balanserar kostnad och prestanda.
 
-**Moln drifts discipliner:** När verksamheten är justerad är det mycket enklare att spåra och rapportera om de olika disciplinerna för moln åtgärder för varje arbets belastning. Beslutsfattande inom varje område kan sedan konverteras till åtagandevillkor som är enkla för verksamheten att förstå. Denna samarbetsmetod gör att affärsintressenten blir en partner vad gäller att hitta rätt balans mellan kostnad och prestanda.
+**Moln drifts discipliner**: när företaget har justerats är det mycket enklare att spåra och rapportera om de olika disciplinerna för moln åtgärder för varje arbets belastning. Att fatta beslut längs varje disciplin kan sedan konverteras till åtagande villkor som enkelt kan förstås av verksamheten. Denna samarbetsmetod gör att affärsintressenten blir en partner vad gäller att hitta rätt balans mellan kostnad och prestanda.
 
-- **Inventering och synlighet:** Drifts hantering kräver minst ett sätt att inventera till gångar och att skapa insyn i körnings tillstånd för varje till gång.
-- **Operativa krav:** Regelbundet hantering av konfiguration, storlek, kostnad och prestanda för till gångar är nyckel för att underhålla prestanda förväntningarna.
-- **Skydda och återställa:** Minimera drift avbrott och påskynda återställningen av varje hjälp för att undvika prestanda förluster och inkomst påverkan. Identifiering och återställning är viktiga aspekter inom det här området.
-- **Plattforms åtgärder:** Alla IT-miljöer innehåller en uppsättning ofta använda plattformar. Dessa plattformar kan omfatta datalager såsom SQL Server eller HDInsights. Andra vanliga plattformar kan omfatta containerlösningar såsom Kubernetes eller AKS. Oavsett plattformarna fokuserar mognad i plattformsdriften på anpassning av verksamheter som baseras på hur dessa vanliga plattformar distribueras, konfigureras och används av arbetsbelastningar.
-- **Arbets belastnings åtgärder:** På den högsta nivån av drifts förfallo tid kan moln drifts grupper finjustera åtgärder för arbets belastningar som är viktiga för företagets framgång. För dessa arbetsbelastningar med hög allvarlighetsgrad kan tillgängliga data hjälpa till med automatisering av åtgärder, storleksbestämning eller skydd av arbetsbelastningar baserat på deras användning.
+- **Inventering och synlighet**: med minsta möjliga drift hantering krävs ett sätt att inventera till gångar och skapa insyn i körnings tillstånd för varje till gång.
+- **Operativa krav**: regelbunden hantering av konfiguration, storlek, kostnad och prestanda för till gångar är nyckeln till att bibehålla prestanda förväntningarna.
+- **Skydda och återställa**: minimera drift avbrott och påskynda återställnings hjälpen för att undvika prestanda förluster och negativ inkomst påverkan. Identifiering och återställning är viktiga aspekter inom det här området.
+- **Plattforms åtgärder**: alla IT-miljöer innehåller en uppsättning ofta använda plattformar. Dessa plattformar kan omfatta data lager som SQL Server eller Azure HDInsight. Andra vanliga plattformar kan omfatta behållar lösningar som Azure Kubernetes service (AKS). Oavsett plattform, fokuserar plattforms drifts förfallo tiden på att anpassa åtgärder baserat på hur de gemensamma plattformarna distribueras, konfigureras och används av arbets belastningar.
+- **Arbets belastnings åtgärder**: på den högsta nivån av drifts förfallo tid kan moln drifts grupper justera åtgärder för arbets belastningar som är viktiga för företagets framgång. För dessa arbets belastningar med hög allvarlighets grad kan tillgängliga data hjälpa till med automatisering av reparation, storlek eller skydd av arbets belastningar baserat på deras användning.
 
-Ytterligare vägledning som [ramverket för design granskning (kod tips: Cloud design-principer)](https://docs.microsoft.com/azure/architecture/reliability) kan hjälpa till att fatta detaljerade arkitektoniska beslut om varje arbets belastning, inom ämnes områden ovan.
+Ytterligare vägledning, till exempel [ramverket för design granskning (kod namn: principer för moln design)](https://docs.microsoft.com/azure/architecture/reliability), kan hjälpa dig att fatta detaljerade arkitektoniska beslut om varje arbets belastning, inom de tidigare beskrivna ämnes områden.
 
-I det här avsnittet om Cloud Adoption Framework tar vi upp var och en av dessa aspekter som bidrar till molnimplementeringen i din organisation.
+Det här avsnittet av ramverket för moln införande bygger på var och en av de föregående ämnena för att främja mogna moln åtgärder i din organisation.
