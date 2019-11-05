@@ -8,18 +8,18 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 93449f754e3908e092fa64c55ad62fc604b4ba5b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 32f0a5f9b5d0fabe9e1989e54293b74aeb130b96
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028865"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565438"
 ---
 # <a name="enable-tracking-and-alerting-for-critical-changes"></a>Aktivera spårning och avisering för viktiga ändringar
 
 Azure Ändringsspårning och Inventory innehåller aviseringar om konfigurations tillstånd för din hybrid miljö och eventuella ändringar i den miljön. Du kan övervaka viktiga filer, tjänster, program och register ändringar som kan påverka dina distribuerade servrar.
 
-Som standard övervakar inte Azure Automation inventerings tjänsten filer eller register inställningar. Lösningen innehåller en lista över register nycklar som vi rekommenderar för övervakning. Om du vill se den här listan går du till ditt Automation-konto i Azure Portal och väljer **lager** > **redigerings inställningar**:
+Som standard övervakar inte Azure Automation inventerings tjänsten filer eller register inställningar. Lösningen innehåller en lista över register nycklar som vi rekommenderar för övervakning. Om du vill se den här listan går du till ditt Automation-konto i Azure Portal och väljer **lager** > **Redigera inställningar**.
 
 ![Skärm bild av vyn Azure Automation lager i Azure Portal](./media/change-tracking1.png)
 
@@ -81,7 +81,7 @@ Användbart för miljöer som behöver låsa program varu konfigurationer.
 
 ### <a name="specific-software-version-is-or-isnt-installed-on-a-machine"></a>Den aktuella program varu versionen är eller är inte installerad på en dator
 
-Användbart för att utvärdera säkerheten. Observera att den här frågan `ConfigurationData`refererar till, som innehåller loggarna för inventering och rapporterar det senaste rapporterade konfigurations läget, inte ändringar.
+Användbart för att utvärdera säkerheten. Observera att den här frågan refererar till `ConfigurationData`som innehåller loggarna för inventering och rapporterar det senaste rapporterade konfigurations läget, inte ändringar.
 
   ```kusto
   ConfigurationData | where SoftwareName contains "Monitoring Agent" and CurrentVersion != "8.0.11081.0"

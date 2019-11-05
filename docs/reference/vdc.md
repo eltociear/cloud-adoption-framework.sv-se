@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: a07b9609c67d08c445e1f373d1db05c87b791748
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 4e13c064cb449e3f8fca9573b44d214bb644b927
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239748"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566680"
 ---
 # <a name="azure-virtual-datacenter"></a>Azure Virtual Datacenter
 
@@ -43,7 +43,7 @@ ms.locfileid: "73239748"
 <tr>
     <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf"><img src="../_images/vdc/vdc-lift-and-shift.png" alt="Lift and Shift Guide" /></a></td>
     <td>
-        <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf">Azure Virtual Datacenter: Lift and Shift-guide </a></h3>
+        <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf">Azure Virtual Data Center: lyft och Shift-guide</a></h3>
         <p>Den här white paper diskuterar processen som företags IT-personal och besluts fattare kan använda för att identifiera och Planera migreringen av program och servrar till Azure med hjälp av en hiss och Skift-metod, vilket minimerar eventuella ytterligare utvecklings kostnader samtidigt som molnet optimeras värd alternativ.</p>
     </td>
 </tr>

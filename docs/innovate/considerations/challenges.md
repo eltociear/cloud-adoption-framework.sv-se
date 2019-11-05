@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 0e4377f8d26cd28df1f9e6d9a82314fbe73fd0a4
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: fe10230be2c71942fa411389b99e00811e008fbc
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058093"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565729"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>Vanliga blockerare och utmaningar för innovation
 
@@ -55,7 +55,7 @@ Förnyelse metoden använder följande Innovations discipliner för att hjälpa 
 - **Källkod och distribution:** Samarbetet mellan utvecklare av alla steg förbättrar både kvalitet och hastighet på marknaden. Integrering av feedback och ett snabbt svar på utbildnings Forms marknads ledare. Åtaganden till bygg-, mät-och Läs processerna hjälper till att påskynda verktyg för att fatta beslut.
 - **Förutsägelse lösningar:** I en digital ekonomi är det sällan tillräckligt att bara uppfylla kundernas aktuella behov. Kunderna förväntar sig att företag ska förutse sina nästa steg och förutsäga sina framtida behov. Kontinuerlig inlärning utvecklas ofta till förutsägelse verktyg. Komplexiteten för kundernas behov och tillgängligheten för data kan hjälpa dig att definiera de bästa verktygen och metoderna för att förutse och påverka.
 
-I en digital ekonomi är den största utmaningen arkitekten att tydligt förstå kundernas uppfinnings-och implementerings behov och sedan avgöra den bästa molnbaserade verktygs kedjan för att leverera på dessa behov.
+I en digital ekonomi är den största utmaningen arkitekten att tydligt förstå kundernas uppfinnings-och implementerings behov och sedan avgöra de bästa molnbaserade verktygskedjan för att leverera på dessa behov.
 
 ## <a name="next-steps"></a>Nästa steg
 

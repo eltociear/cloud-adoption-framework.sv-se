@@ -8,14 +8,14 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 997975a01b171ca1613ace518f29047793c6d437
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: f854b103decc3b23f27a41d01a81b812d2bc3c3f
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980077"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565706"
 ---
-# <a name="democratize-data"></a>Demokratisera identifieringen av-data
+# <a name="democratize-data"></a>Demokratisera data
 
 Kol, olja och mänsklig potential var de tre sekventiella till gångarna under industrins revolution. Dessa till gångar skapade företag, skiftade marknader och slutligen ändrade länder. I den digitala ekonomin finns det tre lika viktiga till gångar: data, enheter och mänsklig potential. Var och en av dessa till gångar innehåller fantastiska möjligheter till innovation. För all innovation ansträngning i modern ansträngning är data den nya oljan.
 
@@ -80,7 +80,7 @@ Du kan integrera dessa olika typer av data i ett centralt data lager på en OLAP
 
 **Virtualisering:** Integrering och inmatning av data kan ibland sakta innovationer. När en lösning för datavirtualizering redan är tillgänglig, kan det innebära en mer rimlig metod. Inmatning och integrering kan både medföra dubbla lagrings-och utvecklings krav, lägga till data svars tid, öka attack ytan, utlösa kvalitets problem och förbättra styrnings arbetet. Datavirtualizering är ett mer modernt alternativ som lämnar ursprungliga data på en enda plats och skapar direkt-eller cachelagrade frågor för källdata.
 
-SQL Server 2017 och Azure SQL Data Warehouse både support [PolyBase](/sql/relational-databases/polybase/polybase-guide) , som är den metod för datavirtualisering som oftast används i Azure.
+SQL Server 2017 och Azure SQL Data Warehouse både support [PolyBase](https://docs.microsoft.com/sql/relational-databases/polybase/polybase-guide) , som är den metod för datavirtualisering som oftast används i Azure.
 
 ## <a name="next-steps"></a>Nästa steg
 

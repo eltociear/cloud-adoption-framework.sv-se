@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6345a8cae51a6b26b7fad174113a40e9dc0dae3e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: eb3bfc584e3c3f86e39918495fe7e0d313f13e55
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220973"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564724"
 ---
 # <a name="cost-management-policy-compliance-processes"></a>Principer för regelefterlevnad för Cost Management
 
@@ -42,7 +42,7 @@ Den här kvartals planerings processen är också en lämplig tid att utvärdera
 
 Dessa grundläggande processer hjälper till att justera utgifterna och upprätta en grund för Cost Management disciplinen.
 
-## <a name="ongoing-monitoring-processes"></a>Pågående övervaknings processer
+## <a name="processes-for-ongoing-monitoring"></a>Processer för pågående övervakning
 
 En lyckad Cost Management styrnings strategi är beroende av insyn i tidigare, aktuella och planerade framtida molnbaserade utgifter. Utan möjlighet att analysera relevanta mått och data för dina befintliga kostnader kan du inte identifiera ändringar i riskerna eller identifiera överträdelser av dina risk toleranser. De löpande styrnings processer som beskrivs ovan kräver kvalitets data för att säkerställa att principen kan ändras för att bättre skydda infrastrukturen mot ändring av affärs krav och moln användning.
 
@@ -54,8 +54,8 @@ När överträdelser identifieras bör du vidta tvingande åtgärder för att ju
 
 Följande är exempel på utlösare:
 
-- **Månatlig budget avvikelser.** Diskutera eventuella avvikelser i månads utgifter som överstiger 20% prognos-till-faktisk-förhållande med fakturerings enhetens ledare. Registrera lösningar och ändringar i prognosen.
-- **Implementerings steg.** Eventuella avvikelser på en prenumerations nivå som överstiger 20% utlöser en granskning med fakturerings enhetens ledare. Registrera lösningar och ändringar i prognosen.
+- **Månads budget avvikelser:** Diskutera eventuella avvikelser i månads utgifter som överstiger 20% prognos-till-faktisk-förhållande med fakturerings enhetens ledare. Registrera lösningar och ändringar i prognosen.
+- **Implementerings steg:** Eventuella avvikelser på en prenumerations nivå som överstiger 20% utlöser en granskning med fakturerings enhetens ledare. Registrera lösningar och ändringar i prognosen.
 
 ## <a name="next-steps"></a>Nästa steg
 

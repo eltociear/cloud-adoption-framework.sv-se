@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9c9676684ebec0a34fcc2dc845935c598814ea52
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 19559e34f396561a25761e2b452133f84580fe85
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047867"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565960"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Cloud – ursprunglig säkerhets bas linje princip
 
-[Säkerhets bas linjen](./index.md) är en av de [fem disciplinerna i moln styrning](../governance-disciplines.md). Den här disciplinen fokuserar på allmänna säkerhets ämnen, inklusive skydd av nätverk, digitala till gångar, data osv. Som beskrivs i [princip gransknings guiden](../policy-compliance/cloud-policy-review.md)innehåller moln implementerings ramverket tre nivåer av **exempel princip**: Cloud-Native, Enterprise och Cloud-design-policy-kompatibel för var och en av de olika ämnes nivåerna. Den här artikeln beskriver den molnbaserade exempel principen för säkerhets bas linje disciplin.
+[Säkerhets bas linjen](./index.md) är en av de [fem disciplinerna i moln styrning](../governance-disciplines.md). Den här disciplinen fokuserar på allmänna säkerhets ämnen, inklusive skydd av nätverk, digitala till gångar, data osv. Som beskrivs i [princip gransknings guiden](../policy-compliance/cloud-policy-review.md)innehåller moln implementerings ramverket tre nivåer av exempel princip: Cloud-Native, Enterprise och Cloud-design-policy-kompatibel för var och en av de olika ämnes nivåerna. Den här artikeln beskriver den molnbaserade exempel principen för säkerhets bas linje disciplin.
 
 > [!NOTE]
 > Microsoft har ingen möjlighet att diktera företags-eller IT-policy. Den här artikeln hjälper dig att förbereda för en intern princip granskning. Det förutsätts att den här exempel principen kommer att utökas, val IDE ras och testas mot företagets policy innan du försöker använda den. All användning av den här exempel principen rekommenderas inte.
@@ -82,7 +82,8 @@ Säkerhets övervakning är en proaktiv strategi som granskar dina resurser för
 
 ### <a name="extending-cloud-native-policies"></a>Utöka molnets egna principer
 
-Att använda molnet kan minska en del av säkerhets belastningen. Microsoft tillhandahåller fysisk säkerhet för Azure-datacenter och skyddar moln plattformen mot infrastruktur hot som en DDoS-attack. Med tanke på att Microsoft har tusentals cybersäkerhet-specialister som arbetar med säkerhet varje dag, är resurserna för att upptäcka, förhindra eller minimera cyberattacker stora. I själva verket var organisationerna i själva verket på väg om huruvida molnet var säkert, men det är nu viktigt att den nivå av investeringar i människor och specialiserad infrastruktur som görs av leverantörer, som Microsoft gör molnet säkrare än de flesta lokalt Data Center.
+Att använda molnet kan minska en del av säkerhets belastningen. Microsoft tillhandahåller fysisk säkerhet för Azure-datacenter och skyddar moln plattformen mot infrastruktur hot som en DDoS-attack. Med tanke på att Microsoft har tusentals cybersäkerhet-specialister som arbetar med säkerhet varje dag, är resurserna för att upptäcka, förhindra eller minimera cyberattacker stora. I själva verket är det faktum att organisationer som har använt sig på att bekymra sig om molnet var säkra, men som nu förstår att nivån av investeringar i människor och specialiserad infrastruktur som görs av leverantörer, som Microsoft gör molnet säkrare än de flesta lokala data Center.
+Att använda molnet kan minska en del av säkerhets belastningen. Microsoft tillhandahåller fysisk säkerhet för Azure-datacenter och skyddar moln plattformen mot infrastruktur hot som en DDoS-attack. Med tanke på att Microsoft har tusentals cybersäkerhet-specialister som arbetar med säkerhet varje dag, är resurserna för att upptäcka, förhindra eller minimera cyberattacker stora. I själva verket är det faktum att organisationer som har använt sig på att bekymra sig om molnet var säkra, men som nu förstår att nivån av investeringar i människor och specialiserad infrastruktur som görs av leverantörer, som Microsoft gör molnet säkrare än de flesta lokala data Center.
 
 Även om den här investeringen i en Cloud-inbyggd säkerhets bas linje, rekommenderar vi att en säkerhets bas linje princip utökar standard principerna för molnet. Följande är exempel på utökade principer som bör övervägas, även i en moln intern miljö:
 

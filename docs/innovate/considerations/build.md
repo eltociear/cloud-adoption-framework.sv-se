@@ -8,18 +8,18 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 25cc7cac212bffda6d7fa3514de7bb274fc1c17e
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: d1f9b53a152ee85d8817fcfdc9cfc613a89a585b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058602"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565740"
 ---
-# <a name="build-with-customer-empathy"></a>Bygg med kund empati
+# <a name="build-with-customer-empathy"></a>Skapa med empati för kunderna
 
 "Det är man som är moder för uppfinningen". Den här proverb fångar in indelibility för mänsklig anda och vår naturliga enhet till lager. Som förklaras i den engelska ord listan för Oxford "när behovet av något skulle vara absolut tvingas du se hur du kan hämta eller uppnå det." Få skulle neka dessa Universal Truths om uppfinning. Som det beskrivs i [innovation i den digitala ekonomin](./index.md)kräver innovation dock en balans mellan *uppfinning* och *införande*.
 
-Om du fortsätter med den analoga funktionen kommer innovation från en mer utökad familj. *Kund empati är den stolt över innovationen.* Att skapa en lösning som driver innovation kräver att en legitim kund behöver&mdash;en som gör att kunden kommer tillbaka för att lösa kritiska utmaningar. De här lösningarna baseras på vad en kund behöver, i stället för den som vill eller whims. För att hitta kundernas sanna behov börjar vi med empati &mdash;a djupgående förståelse för kundens upplevelse. Empati är en underutvecklad kunskap för många tekniker, produkt chefer och till och med företags ledare. Lyckligt vis har olika interaktioner och snabba arbets takt i moln arkitekt rollen redan börjat att utveckla den här kunskapen.
+Om du fortsätter med den analoga funktionen kommer innovation från en mer utökad familj. *Kund empati är den stolt över innovationen.* Att skapa en lösning som driver innovation kräver att en legitim kund behöver&mdash;en som gör att kunden kommer tillbaka för att lösa kritiska utmaningar. De här lösningarna baseras på vad en kund behöver, i stället för den som vill eller whims. För att hitta kundernas sanna behov börjar vi med empati&mdash;en djup förståelse av kundens upplevelse. Empati är en underutvecklad kunskap för många tekniker, produkt chefer och till och med företags ledare. Lyckligt vis har olika interaktioner och snabba arbets takt i moln arkitekt rollen redan börjat att utveckla den här kunskapen.
 
 Varför är empati så viktigt? Från den första versionen av en minimal livskraftig produkt (MVP) till den allmänna tillgängligheten för en lösning på marknads nivå hjälper kund empati oss att förstå och dela i upplevelsen av kunden. Empati hjälper oss att bygga en bättre lösning. Mer viktigt är det bättre att se till att du kommer till kund lösningar som uppmuntrar till antagande. I en digital ekonomi kan de som är mest empathizea med kund behovet skapa en klarare framtid som omdefinierar och leder marknaden.
 
@@ -56,7 +56,7 @@ Därifrån kan du beräkna den procentuella andelen av den totala marknaden som 
 
 Under varje iteration av en build-Measure-feedback-loop, kan ditt försök att bygga med empati definieras av en MVP.
 
-En MVP är den minsta arbets insatsen (uppfinning, teknik, program utveckling eller data arkitektur) som krävs för att skapa tillräckligt med en lösning för att lära sig _med kunden_. Målet med varje MVP är att testa vissa eller alla tidigare Hypotheses och för att få feedback direkt från kunden. Utdata är inte ett snyggt program med alla funktioner som krävs för att ändra din bransch. De önskade utmatningarna för varje iteration är en utbildnings möjlighet &mdash;a chans att testa en hypotes mer grundligt.
+En MVP är den minsta arbets insatsen (uppfinning, teknik, program utveckling eller data arkitektur) som krävs för att skapa tillräckligt med en lösning för att lära sig _med kunden_. Målet med varje MVP är att testa vissa eller alla tidigare Hypotheses och för att få feedback direkt från kunden. Utdata är inte ett snyggt program med alla funktioner som krävs för att ändra din bransch. Önskade utdata från varje iteration är en inlärnings möjlighet&mdash;en chans att testa en hypotes.
 
 _Timeboxing_ är ett standard sätt för att se till att en produkt förblir Lean. Kontrol lera till exempel att utvecklings gruppen tycker att lösningen kan skapas i en enda iteration för att möjliggöra snabb testning. Mer information om hur du använder hastighet, iterationer och versioner för att definiera vad som är minimalt finns i avsnittet [Planera hastighet, iterationer, utgåva och iterationer](../../plan/iteration-paths.md).
 

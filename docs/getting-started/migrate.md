@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8870f5ebeab855ec841ed00d109245a1efdeff20
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: cdfe247470626a142d31ab6357f771fb39ced55f
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048323"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564689"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Påbörja en migrering av molnet i Azure
 
@@ -36,7 +36,7 @@ Moln migreringar kan hjälpa företag att uppnå sina önskade affärs resultat.
 
 |Kritiska affärs händelser | Motivation vid migrering | Nyskapande motivation |
 |---------|---------|---------|
-| Avsluta data Center<br/><br/>Sammanslagningar, förvärv eller Divestiture<br/><br/>Minskning av kapital utgifter<br/><br/>Slut på support för verksamhets kritiska tekniker<br/><br/>Svar på ändringar i regelefterlevnad<br/><br/>Möta nya krav för data suveränitet<br/><br/>Minska störningar och förbättra IT-stabiliteten|Kostnadsbesparingar<br/><br/>Minskning av leverantör eller teknisk komplexitet<br/><br/>Optimering av interna åtgärder<br/><br/>Öka affärsflexibiliteten<br/><br/>Förbered dig för nya tekniska funktioner<br/><br/>Skala för att uppfylla marknadens krav<br/><br/>Skala för att uppfylla geografiska krav|Förbered dig för nya tekniska funktioner<br/><br/>Bygg nya tekniska funktioner<br/><br/>Skala för att uppfylla marknadens krav<br/><br/>Skala för att uppfylla geografiska krav<br/><br/>Förbättra kund upplevelse/engagemang<br/><br/>Omvandla produkter eller tjänster<br/><br/>Störa marknaden med nya produkter eller tjänster|
+| Avsluta data Center<br/><br/>Sammanslagningar, förvärv eller Divestiture<br/><br/>Minskning av kapital utgifter<br/><br/>Slut på support för verksamhets kritiska tekniker<br/><br/>Svar på ändringar i regelefterlevnad<br/><br/>Möta nya krav för data suveränitet<br/><br/>Minska störningar och förbättra IT-stabiliteten|Kostnadsbesparingar<br/><br/>Minskning av leverantör eller teknisk komplexitet<br/><br/>Optimering av interna åtgärder<br/><br/>Öka affärsflexibiliteten<br/><br/>Förbered dig för nya tekniska funktioner<br/><br/>Skala för att uppfylla marknadens krav<br/><br/>Skala för att uppfylla geografiska krav|Förbered dig för nya tekniska funktioner<br/><br/>Bygg nya tekniska funktioner<br/><br/>Skala för att uppfylla marknadens krav<br/><br/>Skala för att uppfylla geografiska krav<br/><br/>Förbättra kund upplevelsen och engagemang<br/><br/>Omvandla produkter eller tjänster<br/><br/>Störa marknaden med nya produkter eller tjänster|
 
 <!-- markdownlint-enable MD033 -->
 
@@ -50,7 +50,7 @@ Att förbereda alla deltagare över migreringens ansträngning med en medvetenhe
 
 ## <a name="migration-approach"></a>Metod för migrering
 
-Ramverket för moln införande upprättar en övergripande uppbyggnad av plan, klar, och antar de typer av insatser som krävs för alla moln införande. Den här exekutiva sammanfattningen bygger på det högnivå flödet för att upprätta iterativa processer som kan under lätta lyft/Shift/optimera insatser **och** modernisering ansträngningar i en enda metod i alla aktiviteter för moln migrering.
+Ramverket för moln införande upprättar en övergripande uppbyggnad av plan, klar, och antar de typer av insatser som krävs för alla moln införande. Den här exekutiva sammanfattningen bygger på det högnivå flödet för att upprätta iterativa processer som kan under lätta lyfta-Shift-optimera insatser och modernisering ansträngningar i en enda metod i alla aktiviteter för moln migrering.
 
 Den här metoden består av två metoder eller fokus områden: moln strategi & planering och moln implementering. [Motivet](#motivations) eller det önskade affärs resultatet för en molnbaserad migrering bestämmer ofta hur mycket ett team bör investera i [strategi och planering](#cloud-strategy-and-planning) och [implementering](#cloud-implementation). Dessa motivation kan också påverka besluten att köra var för sig eller parallellt.
 
@@ -110,7 +110,7 @@ Under implementeringen av moln strategin och planerar IT-teamet kommer att fokus
 
 ### <a name="common-workload-examples"></a>Vanliga arbets belastnings exempel
 
-Moln strategi och planering riktar ofta sig till en bred samling arbets belastningar och program. I portföljen migreras vanligt vis vanliga program eller arbets belastnings typer. Detta är några exempel:
+Moln strategi och planering riktar ofta sig till en bred samling arbets belastningar och program. I portföljen migreras vanligt vis vanliga program eller arbets belastnings typer. Följande är några exempel:
 
 - Branschspecifika program
 - Program som riktas mot kund

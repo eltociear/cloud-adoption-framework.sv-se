@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d669d720d1bf56a5adc0df42a505608ab76b02ec
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 842143afbb042ceddee5029a3fa86d0aa8cdd997
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548274"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564554"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Förbered dig för teknisk komplexitet: smidig förändringsledning
 
@@ -21,7 +21,7 @@ När ett helt datacenter avetableras och återskapas med en enda kodrad är det 
 
 När du övergår till en dynamisk modell där flexibilitet och iteration står i centrum hanteras teknisk komplexitet och förändringsledning annorlunda än i traditionella vattenfallsmodeller som fokuserar på en linjär serie migreringssteg. Den här artikeln beskriver en övergripande metod för förändringsledning i samband med en dynamisk migrering. När du har läst den här artikeln kommer du att ha utvecklat en kännedom om olika nivåer av förändringsledning och dokumentation som ingår i en stegvis migreringsmetod. Vidare utbildning och beslut krävs för att välja och implementera dynamiska metoder baserat på denna förståelse. Syftet med artikeln är att förbereda molnarkitekter för ett enklare samtal med projektledningen för att förklara det allmänna förändringsledningsbegreppet i denna metod.
 
-## <a name="addressing-technical-complexity"></a>Hantera teknisk komplexitet
+## <a name="address-technical-complexity"></a>Åtgärda teknisk komplexitet
 
 När du ändrar tekniska system medför komplexitet och beroenden risker. Molnbaserad migrering är inget undantag. När tusentals&mdash;eller tiotusentals&mdash;tillgångar flyttas till molnet förstärks dessa risker. Det kan ta flera år att identifiera och kartlägga alla beroenden i en stor digital egendom. Det är få företag som klarar av en så lång analyscykel. För att avväga behovet av arkitekturanalys och företagsacceleration fokuserar Ramverk för molnimplementering på en INVEST-modell för hantering av produktuppgifter. I följande avsnitt sammanfattas den här typen av modell.
 
@@ -103,7 +103,7 @@ Inom en enda spurt eller iteration arbetar molnimplementeringsteamet med att lev
 För en liten migrering med ett fristående migreringsteam kan en enda spurt omfatta alla fyra faser i en migrering för en enskild arbetsbelastning (*utvärdering*, *migrering*, *optimering* och *säkerhets och hantering*). Oftast delas var och en av dessa processer av flera team i olika arbetsobjekt mellan olika spurter. Beroende på projekttyp, projektskala och roller kan dessa spurter utformas på olika sätt.
 
 - **Migreringsfabrik.** Storskaliga migreringar kräver ibland en metod som påminner om en fabrik för körningsmodellen. I den här modellen allokeras olika team till körningen av en viss migreringsprocess (eller en delmängd av processen). När körningen är klar fylls uppgiftslistan för nästa team automatiskt med resultatet från det andra teamets spurt. Det här är en effektiv metod för storskalig migrering med värdbyte för många arbetsbelastningar med tusentals virtuella datorer som rör sig genom utvärderings-, arkitektur-, reparations- och migreringsfaser. Men för att den här metoden ska fungera måste en ny homogen miljö med strömlinjeformad ändringshantering och godkännandeprocesser finnas.
-- **Migreringsvågor.** En annan metod som fungerar bra för stora migreringar är en vågmodell. I den här modellen är arbetsfördelningen inte lika tydlig. Team hanterar själva migreringsprocessen för individuella arbetsbelastningar själva. Varje spurt är dock olik de andra. I en spurt kanske teamet slutför en utvärdering och arkitektur. I en annan spurt slutför de kanske migreringen. I ännu en sprint kanske fokus ligger på optimering och produktionslansering. Med den här metoden kan en kärngrupp anpassa sig till arbetsbelastningarna och följa dem genom hela processen. När den här metoden används kan mångfalden av färdigheter och sammanhang minska teamets förmåga att arbeta snabbt vilket kan fördröja migreringen. Dessutom kan hinder under godkännandefaserna orsaka stora förseningar. Om du använder den här metoden är det viktigt att du har olika alternativ i lanseringsuppgifterna så att teamet kan fortsätta arbeta under blockerade perioder. Det är också viktigt att korsutbilda teammedlemmar så att deras färdigheter passar för temat för varje spurt.
+- **Migreringsvågor.** En annan metod som fungerar bra för stora migreringar är en vågmodell. I den här modellen är arbetsfördelningen inte lika tydlig. Team hanterar själva migreringsprocessen för individuella arbetsbelastningar själva. Varje spurt är dock olik de andra. I en spurt kanske teamet slutför en utvärdering och arkitektur. I en annan spurt slutför de kanske migreringen. I ännu en sprint kanske fokus ligger på optimering och produktionslansering. Med den här metoden kan en kärngrupp anpassa sig till arbetsbelastningarna och följa dem genom hela processen. När den här metoden används kan mångfalden av färdigheter och sammanhang minska teamets förmåga att arbeta snabbt vilket kan fördröja migreringen. Dessutom kan hinder under godkännandefaserna orsaka stora förseningar. Om du använder den här metoden är det viktigt att du har olika alternativ i lanseringsuppgifterna så att teamet kan fortsätta arbeta under blockerade perioder. Det är också viktigt att du väljer mellan olika team medlemmar och att du ser till att kunskaps uppsättningarna överensstämmer med temat för varje Sprint.
 
 ### <a name="sprint-backlog-data-points"></a>Datapunkter i spurtuppgifter
 

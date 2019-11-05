@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: a35579cbb26f292e349cd2d1101596bdd4a94b86
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: ce3949a6d778ed61eea74fbd8a1aa955a477d3d8
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240013"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561641"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Sökväg för kompetens beredskap under plan fasen för en migrerings resa
 
@@ -55,16 +55,16 @@ Konvertera affärs fallet och den rationella digitala egendomen till en plan med
 
 Under den färdiga fasen skapar teknisk personal en landnings zon för migrering som kan vara värd för, drift och styrning av arbets belastningar som har migrerats till molnet. Dessa utbildnings vägar kan hjälpa dig att utveckla de kunskaper som krävs:
 
-- [Skapa ett Azure-konto](/learn/modules/create-an-azure-account). Det första steget i att använda Azure är att skapa ett konto. Ditt konto innehåller de Azure-tjänster som du etablerar och hanterar dina personliga inställningar, t. ex. identitet, fakturering och preferenser.
-- [Azure Portal](/learn/modules/tour-azure-portal). Ta en titt på funktionerna och tjänsterna i Azure-portalen och se hur du anpassar portalen.
-- [Introduktion till Azure](/learn/modules/welcome-to-azure). Kom igång med Azure genom att skapa och konfigurera din första virtuella dator i molnet.
-- [Introduktion till säkerhet i Azure](/learn/modules/intro-to-security-in-azure). Lär dig om de grundläggande begreppen för att skydda din infrastruktur och dina data när du arbetar i molnet. Ta reda på vad som är ditt ansvar och vad Azure tar hand om åt dig.
-- [Hantera resurser i Azure](/learn/paths/manage-resources-in-azure). Lär dig hur du använder kommandoraden och webbportalen i Azure till att skapa, hantera och styra molnbaserade resurser.
-- [Skapa en virtuell dator](/learn/modules/create-windows-virtual-machine-in-azure). Skapa en virtuell dator med hjälp av Azure Portal.
-- [Azure-nätverk](/learn/modules/intro-to-azure-networking). Lär dig grunderna i Azure-nätverk och hur Azure-nätverk hjälper dig att förbättra återhämtningen och minska svars tiden.
-- [Beräknings alternativ för Azure](/learn/modules/intro-to-azure-compute). Lär dig mer om Azure Compute Services.
-- [Skydda resurser med RBAC](/learn/modules/secure-azure-resources-with-rbac). Använd rollbaserad åtkomstkontroll för att skydda resurser.
-- [Alternativ för data lagring](/learn/modules/intro-to-data-in-azure/index). Lär dig mer om fördelarna med Azure Data Storage.
+- [Skapa ett Azure-konto](https://docs.microsoft.com/learn/modules/create-an-azure-account). Det första steget i att använda Azure är att skapa ett konto. Ditt konto innehåller de Azure-tjänster som du etablerar och hanterar dina personliga inställningar, t. ex. identitet, fakturering och preferenser.
+- [Azure Portal](https://docs.microsoft.com/learn/modules/tour-azure-portal). Ta en titt på funktionerna och tjänsterna i Azure-portalen och se hur du anpassar portalen.
+- [Introduktion till Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure). Kom igång med Azure genom att skapa och konfigurera din första virtuella dator i molnet.
+- [Introduktion till säkerhet i Azure](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure). Lär dig om de grundläggande begreppen för att skydda din infrastruktur och dina data när du arbetar i molnet. Ta reda på vad som är ditt ansvar och vad Azure tar hand om åt dig.
+- [Hantera resurser i Azure](https://docs.microsoft.com/learn/paths/manage-resources-in-azure). Lär dig hur du använder kommandoraden och webbportalen i Azure till att skapa, hantera och styra molnbaserade resurser.
+- [Skapa en virtuell dator](https://docs.microsoft.com/learn/modules/create-windows-virtual-machine-in-azure). Skapa en virtuell dator med hjälp av Azure Portal.
+- [Azure-nätverk](https://docs.microsoft.com/learn/modules/intro-to-azure-networking). Lär dig grunderna i Azure-nätverk och hur Azure-nätverk hjälper dig att förbättra återhämtningen och minska svars tiden.
+- [Beräknings alternativ för Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-compute). Lär dig mer om Azure Compute Services.
+- [Skydda resurser med RBAC](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac). Använd rollbaserad åtkomstkontroll för att skydda resurser.
+- [Alternativ för data lagring](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/index). Lär dig mer om fördelarna med Azure Data Storage.
 
 ## <a name="organizational-skills"></a>Organisatoriska kunskaper
 
@@ -89,8 +89,10 @@ Vi rekommenderar att du aktiverar kunskap om Azure till officiell igenkänning m
 
 Microsoft Learn är en ny metod för inlärning. Det är lätt att komma igång med nya kunskaper och ansvars områden som medföljer moln införande. Microsoft Learn erbjuder en mer givande metod för konkret inlärning som hjälper er att uppnå era mål snabbare. Tjäna poäng, nivåer och få mer!
 
-Här är ett exempel på en skräddarsydd inlärnings väg som överensstämmer med strategin Potion i moln införande ramverket. 
+Här är ett exempel på en skräddarsydd inlärnings väg som överensstämmer med strategin Potion i moln införande ramverket.
 
-[Lär dig Microsoft Azure](/learn/paths/learn-business-value-of-azure/): den här inlärningen tar dig på en resa som börjar genom att visa hur den digitala omvandlingen och kraften i molnet kan förändra ditt företag. Vi kommer att gå igenom hur Microsoft Azure Cloud Services kan driva din organisation på en betrodd moln plattform. Slutligen kommer vi att figursättas genom att illustrera hur du gör den här resan för din organisation. 
+[Lär dig Microsoft Azure](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure): den här inlärningen tar dig på en resa som börjar genom att visa hur den digitala omvandlingen och kraften i molnet kan förändra ditt företag. Vi kommer att gå igenom hur Microsoft Azure Cloud Services kan driva din organisation på en betrodd moln plattform. Slutligen kommer vi att figursättas genom att illustrera hur du gör den här resan för din organisation.
 
-Om du vill identifiera ytterligare utbildnings vägar, bläddrar du till [katalogen lär dig](/learn/browse). Använd filtret **Roller** för att anpassa utbildningsvägarna till din roll.
+## <a name="learn-more"></a>Läs mer
+
+Bläddra i [Microsoft Learn katalogen](https://docs.microsoft.com/learn/browse)om du vill identifiera ytterligare utbildnings vägar. Använd filtret **Roller** för att anpassa utbildningsvägarna till din roll.

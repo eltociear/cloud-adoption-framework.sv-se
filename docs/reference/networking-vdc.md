@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: cbd72c04c7d938aae41e20fae82a29b731f4b256
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: e5729e592fe0e602d24e2e37831c782fada73128
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240097"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566691"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Virtuella Data Center: ett nätverks perspektiv
 
@@ -35,7 +35,7 @@ Molnet var i grunden en plattform för att vara värd för offentliga program. F
 
 Moln lösningar har först utformats för att vara värdar för enkla, relativt isolerade program i det offentliga spektrumet. Den här metoden fungerade bra under några få år. Sedan var fördelarna med moln lösningar uppenbara och flera storskaliga arbets belastningar fanns i molnet. Adressering av säkerhet, tillförlitlighet, prestanda och kostnader för distributioner i en eller flera regioner blev avgörande under hela livs cykeln för moln tjänsten.
 
-I följande moln distributions diagram visas ett exempel på en säkerhets lucka i den **röda rutan**. Den **gula rutan** visar plats för optimering av virtuella nätverks enheter över arbets belastningar.
+Följande moln distributions diagram visar ett exempel på en säkerhets lucka som marker ATS i den röda rutan. Den gula rutan visar plats för optimering av virtuella nätverks enheter över arbets belastningar.
 
 ![0][0]
 
@@ -263,7 +263,7 @@ Vi rekommenderar att du använder en uppsättning Azure Firewall-instanser, elle
 
 Azure Load Balancer kan avsöka hälso tillståndet för de olika Server instanserna och när en instans inte svarar på en avsökning slutar belastningsutjämnaren att skicka trafik till den felaktiga instansen. I ett virtuellt Data Center distribueras en extern belastningsutjämnare till hubben och ekrarna. I hubben används belastningsutjämnaren för att effektivt dirigera trafik till tjänster i ekrar, och i ekrar används belastnings utjämning för att hantera program trafik.
 
-[**Azure**][AFD] -AFD (Azure-frontend) är Microsofts hög tillgängliga och skalbara plattform för webb programs acceleration, global HTTP-load balancer, program skydd och Content Delivery Network. Genom att köra på fler än 100 platser på kanten av Microsofts globala nätverk kan du använda AFD för att bygga, driva och skala ut ditt dynamiska webb program och statiskt innehåll. AFD tillhandahåller ditt program med slutanvändarens prestanda i världs klass, enhetlig regional/stämplad underhålls automatisering, BCDR Automation, enhetlig klient/användar information, cachelagring och service insikter. Plattformen erbjuder prestanda, tillförlitlighet och support service avtal, certifieringar för regelefterlevnad och gransknings bara säkerhets metoder som utvecklats, drivs och stöds internt av Azure.
+[Azure-AFD (Azure-frontend)][AFD] är Microsofts hög tillgängliga och skalbara plattform för webb programs acceleration, global HTTP-load balancer, program skydd och Content Delivery Network. Genom att köra på fler än 100 platser på kanten av Microsofts globala nätverk kan du använda AFD för att bygga, driva och skala ut ditt dynamiska webb program och statiskt innehåll. AFD tillhandahåller ditt program med slutanvändarens prestanda i världs klass, enhetlig regional/stämplad underhålls automatisering, BCDR Automation, enhetlig klient/användar information, cachelagring och service insikter. Plattformen erbjuder prestanda, tillförlitlighet och support service avtal, certifieringar för regelefterlevnad och gransknings bara säkerhets metoder som utvecklats, drivs och stöds internt av Azure.
 
 [**Application Gateway**][AppGW] Microsoft Azure Application Gateway är en dedikerad virtuell installation som tillhandahåller program leverans kontroll (ADC) som en tjänst som erbjuder olika Layer 7 belastnings Utjämnings funktioner för ditt program. Du kan optimera webb server gruppens produktivitet genom att avlasta processor intensiva SSL-avslutning till Application Gateway. Här finns även andra layer 7-routningsfunktioner, till exempel resursallokeringsdistribution av inkommande trafik, cookiebaserad sessionstillhörighet, URL-sökvägsbaserad routning och möjligheten att vara värd för flera webbplatser bakom en enda Application Gateway. En brandvägg för webbaserade program (WAF) ingår också som en del av programgatewayens WAF SKU. Den här SKU:n skyddar webbprogram mot vanliga säkerhetsrisker och sårbarheter på webben. Application Gateway kan konfigureras som internetuppkopplad gateway, endast intern gateway eller en kombination av båda.
 
@@ -327,7 +327,7 @@ Arbets belastnings möjligheterna är oändliga. Följande är bara några av de
 - **Data driven:** Data intensiva arbets belastningar med frekvent åtkomst till databaser eller andra lagrings enheter.
 - **Integrerad:** Arbets belastningar erbjuder integration med andra system inom eller utanför organisationen.
 
-**Kund riktade webbplatser (Internet eller internt)** : de flesta program som interagerar med Internet är webbplatser. Azure erbjuder funktioner för att köra en webbplats på en virtuell IaaS-dator eller från en [Azure Web Apps][WebApps] -plats (PaaS). Azure Web Apps stöd för integrering med virtuella nätverk som tillåter distribution av Web Apps i en eker-nätverks zon. Interna riktade webbplatser behöver inte exponera en offentlig Internet-slutpunkt eftersom resurserna är tillgängliga via privata adresser som inte är Internet-dirigerade från det privata virtuella nätverket.
+**Kund riktade webbplatser (Internet eller internt riktade):** De flesta program som interagerar med Internet är webbplatser. Azure erbjuder funktioner för att köra en webbplats på en virtuell IaaS-dator eller från en [Azure Web Apps][WebApps] -plats (PaaS). Azure Web Apps stöd för integrering med virtuella nätverk som tillåter distribution av Web Apps i en eker-nätverks zon. Interna riktade webbplatser behöver inte exponera en offentlig Internet-slutpunkt eftersom resurserna är tillgängliga via privata adresser som inte är Internet-dirigerade från det privata virtuella nätverket.
 
 **Big data och analys:** När data måste skalas upp till en stor volym kan det hända att databaser inte skalas upp på rätt sätt. Hadoop-tekniken erbjuder ett system för att köra distribuerade frågor parallellt på ett stort antal noder. Kunderna har möjlighet att köra data arbets belastningar i virtuella IaaS-datorer eller PaaS ([HDInsight][HDI]). HDInsight stöder distribution till ett location-baserat VNet, kan distribueras till ett kluster i en eker i ett virtuellt Data Center.
 
@@ -337,7 +337,7 @@ Du kan implementera en mycket tillförlitlig moln meddelande tjänst mellan prog
 
 ![10][10]
 
-### <a name="making-a-virtual-datacenter-highly-available-multiple-virtual-datacenters"></a>Göra ett virtuellt Data Center tillgängligt med hög tillgänglighet: flera virtuella Data Center
+### <a name="make-a-virtual-datacenter-highly-available-multiple-virtual-datacenters"></a>Gör ett virtuellt Data Center hög tillgängligt: flera virtuella Data Center
 
 Den här artikeln har hittills fokuserat på utformningen av ett enda virtuellt Data Center, som beskriver de grundläggande komponenterna och arkitekturen som bidrar till återhämtning. Azure-funktioner som Azure Load Balancer, NVA, tillgänglighets uppsättningar, skalnings uppsättningar, tillsammans med andra mekanismer bidrar till ett system som gör det möjligt att bygga fasta SLA-nivåer i dina produktions tjänster.
 
@@ -390,7 +390,7 @@ Följande funktioner beskrivs i det här dokumentet. Följ länkarna om du vill 
 |-|-|-|
 |[Azure Virtual Networks][VNet]</br>[Nätverkssäkerhetsgrupper][network-security-groups]</br>[Loggar för nätverks säkerhets grupper][nsg-log]</br>[Användardefinierade vägar][user-defined-routes]</br>[Virtuella nätverks enheter][NVA]</br>[offentliga IP-adresser][PIP]</br>[Azure-DDoS][DDoS]</br>[Azure Firewall][AzFW]</br>[Azure DNS][DNS]|[Azure Front Door][AFD]</br>[Azure Load Balancer (L3)][ALB]</br>[Application Gateway (L7)][AppGW]</br>[Brand vägg för webbaserade program] WAF</br>[Azure Traffic Manager][traffic-manager]</br></br></br></br></br> |[VNet-peering][VNetPeering]</br>[Virtuellt privat nätverk][VPN]</br>[Virtuellt WAN][vWAN]</br>[ExpressRoute][ExR]</br>[ExpressRoute Direct][ExRD]</br></br></br></br></br>
 
-|Identitet</br>|Övervakning</br>|Bästa metoder</br>|
+|Identitet</br>|Övervakning</br>|Metodtips</br>|
 |-|-|-|
 |[Azure Active Directory][azure-ad]</br>[Multi-Factor Authentication][multi-factor-authentication]</br>[Åtkomst kontroller för roll bas][RBAC]</br>[Standard roller för Azure AD][Roles]</br></br></br> |[Network Watcher][NetWatch]</br>[Azure Monitor][Monitor]</br>[Aktivitets loggar][ActLog]</br>[Diagnostikloggar][DiagLog]</br>[Microsoft Operations Management Suite][OMS]</br>[Övervakning av nätverksprestanda][NPM]|[Metod tips för perimeter-nätverk][DMZ]</br>[Prenumerations hantering][SubMgmt]</br>[Hantering av resurs grupper][RGMgmt]</br>[Begränsningar för Azure-prenumeration][limits] </br></br></br>|
 

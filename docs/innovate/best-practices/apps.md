@@ -8,46 +8,48 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f930f1b0f228b3969b89319962706104176717cc
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 96450c838ce6833d77803428272e96d2327747de
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058615"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565879"
 ---
 # <a name="tools-to-engage-via-apps-in-azure"></a>Verktyg för att kommunicera via appar i Azure
 
-Som beskrivs i [delta via appar](../considerations/apps.md)kan program vara en viktig aspekt av en MVP-lösning. Ofta krävs det program för att testa en hypotes. I den här artikeln får du hjälp att komma igång med verktygen i Azure, vilket gör det snabbare att utveckla programmen.
+Som beskrivs i [delta via appar](../considerations/apps.md)kan program vara en viktig aspekt av en MVP-lösning. Program krävs ofta för att testa en hypotes. Den här artikeln hjälper dig att lära dig verktygen Azure ger för att påskynda utvecklingen av programmen.
 
 ![Ramverk för moln införande för att engagera via appar](../../_images/innovate/engage-via-apps.png)
 
-## <a name="alignment-to-the-methodology"></a>Justering av metodiken
+## <a name="alignment-to-the-methodology"></a>Anpassning till metodiken
 
-Den här typen av digital uppfinning kan påskyndas genom varje metod som visas nedan, och som visas ovan. Teknisk vägledning för att påskynda Digital uppfinning visas i innehålls förteckningen till vänster. Dessa artiklar har grupper ATS i metoderna för att justera rikt linjerna med den övergripande metoden:
+Du kan påskynda den här typen av digital uppfinning genom var och en av följande metoder i listan. Föregående bild visar också dessa metoder. Teknisk vägledning för att påskynda Digital uppfinning visas i innehålls förteckningen till vänster på den här sidan. Dessa artiklar grupperas efter deras metoder för att justera rikt linjerna med den övergripande metoden.
 
-I den här artikeln förutsätter vi att alla uppfinningar som orsakats av ett program kommer att härröra från en delad lösning (beskrivs [i artikeln för](./ci-cd.md) att införa). Anta också att varje program resulterar i viss typ av kund upplevelse (för en intern eller extern kund). Utifrån dessa antaganden är följande tre sökvägar de vanligaste för moln implementerings team som utvecklar digitala uppfinningar:
+I den här artikeln förutsätter vi att alla uppfinningar som resulterar i ett program är i form av en delad lösning enligt beskrivningen i att [anta](./ci-cd.md)detta. Anta också varje program resultat i viss typ av kund upplevelse för både interna och externa kunder.
 
-- **Medborgare-utvecklare:** Företags ämnes experter väljer att använda specialverktyg-verktyg för att snabbt testa och kontrol lera att en kund hypotes kan uppfylla kundernas behov innan han engagerar professionella utvecklare.
-- **Smarta upplevelser:** Skapa moderna upplevelser med moln plattformarna för att driva snabb distribution och korta feedback-slingor. Utöka webb program till integrera Intelligence eller integrera robotar.
+Baserat på dessa antaganden är följande tre sökvägar de vanligaste för moln implementerings team som utvecklar digitala uppfinningar:
+
+- **Medborgare-utvecklare:** Innan yrkes utvecklare engageras, använder företags ämnes experterna specialverktyg. Med dessa verktyg kan du snabbt testa och kontrol lera att en kund hypotes kan uppfylla behoven hos kunden.
+- **Smarta upplevelser:** Skapa moderna upplevelser genom att använda moln plattformarna för att driva snabb distribution och korta feedback-slingor. Utöka webb program till integrera Intelligence eller integrera robotar.
 - **Moln – inbyggt:** Bygg en ny uppfinning som naturligt drar nytta av moln funktionerna.
 
-Varje sökväg resulterar i kortsiktiga och långsiktiga fördelar och nack delar. När moln styrnings teamet, moln drifts teamet och moln Center för expert team har för beretts för att stödja varje metod, kan implementeringen accelereras med minimal påverkan på hållbara affärs åtgärder.
+Varje sökväg resulterar i fördelar och nack delar som är både kortsiktiga och långsiktiga. När moln styrnings teamet, moln drifts teamet och moln centret är redo att stödja varje metod kan du påskynda implementeringen med en minimal effekt på hållbara affärs åtgärder.
 
 ## <a name="toolchain"></a>Verktygskedja
 
-Azure tillhandahåller verktyg för att påskynda teamets möjlighet att bygga med kund empati, beroende på den sökväg som tas av moln implementerings teamet. Följande lista över Azure-erbjudanden grupperas baserat på besluts Sök vägarna ovan. Dessa erbjudanden är:
+Beroende på den väg som moln implementerings teamet tar, erbjuder Azure verktyg för att påskynda teamets möjlighet att bygga med kund empati. Följande lista över Azure-erbjudanden grupperas baserat på föregående besluts Sök vägar. Dessa erbjudanden är:
 
 - Azure App Service
-- Azure Kubernetes Service
+- Azure Kubernetes Service (AKS)
 - Azure Migrate
 - Azure Stack
 - PowerApps
 - Microsoft Flow
 - Power BI
 
-## <a name="get-started"></a>Kom i gång
+## <a name="get-started"></a>Kom igång
 
-I innehålls förteckningen till vänster visas många artiklar för att komma igång med var och en av verktygen i den här verktygskedjan.
+I innehålls förteckningen till vänster på den här sidan finns många artiklar. De här artiklarna hjälper dig att komma igång med var och en av verktygen i verktygskedjan.
 
 > [!NOTE]
-> Vissa länkar kan lämna ramverket för moln införande för att få hjälp utanför det här ramverkets omfattning.
+> Vissa länkar kan lämna ramverket för moln införande för att hjälpa dig utöver det här ramverkets omfattning.

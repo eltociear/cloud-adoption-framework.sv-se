@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fd44ae6fcdc84efd42ea3f79719475a32ead3111
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: ebff4e0bbeb7f74a61b81527e0dbc62874ffbe6c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223720"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566047"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>Processer för efterlevnad av resurs konsekvens principer
 
@@ -50,7 +50,7 @@ Se till att IT-teamen har implementerat automatiska övervaknings system för di
 
 ## <a name="violation-triggers-and-enforcement-actions"></a>Fel utlösare och tvingande åtgärder
 
-Eftersom regelefterlevnad för resurs konsekvens kan leda till kritiska avbrott i tjänsten eller avsevärda kostnader för att överskrida riskerna, bör moln styrnings teamet ha insyn i incidenter som inte uppfyller kraven. Se till att IT-personalen har tydliga eskalering sökvägar för att rapportera de här problemen till de styrnings grupp medlemmar som är bäst lämpade att identifiera och kontrol lera att princip problemen begränsas när de upptäcks.
+Eftersom regelefterlevnad för resurs konsekvens kan leda till kritiska avbrott i tjänsten eller avsevärda kostnader för att överskrida riskerna, bör moln styrnings teamet ha insyn i incidenter som inte uppfyller kraven. Se till att IT-personalen har tydliga eskalering sökvägar för att rapportera de här problemen till de styrnings grupp medlemmar som är bäst lämpade att identifiera och kontrol lera att princip problem minimeras när de upptäcks.
 
 När överträdelser identifieras bör du vidta åtgärder för att justera med principen så snart som möjligt. IT-teamet kan automatisera de flesta fel utlösare med hjälp av verktygen som beskrivs i [resurs konsekvens verktygskedjan för Azure](./toolchain.md).
 

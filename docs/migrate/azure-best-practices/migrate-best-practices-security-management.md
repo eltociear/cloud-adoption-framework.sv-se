@@ -8,12 +8,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f7782aeedf794441a7ba4e1f6a97f162fa33abfb
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: ca56669818add8e54d7c4805a19879412da54567
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548552"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564769"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Metodtips för att skydda och hantera arbetsbelastningar som migreras till Azure
 
@@ -355,7 +355,7 @@ Med Azure Backup skapas dataåterställningspunkter som lagras i Azure Storage. 
 
 Du kan använda Azure Backup för att säkerhetskopiera virtuella datorer på ett par olika sätt.
 
-- **Direkt säkerhetskopiering från VM-inställningar.** Du kan säkerhetskopiera virtuella datorer med Azure Backup direkt från alternativen för virtuella datorer i Azure-portalen. Du kan säkerhetskopiera den virtuella datorn en gång om dagen och återställa VM-disken efter behov. Azure Backup tar appmedvetna dataögonblicksbilder (VSS) och ingen agent installeras på den virtuella datorn.
+- **Direkt säkerhetskopiering från VM-inställningar.** Du kan säkerhetskopiera virtuella datorer med Azure Backup direkt från alternativen för virtuella datorer i Azure-portalen. Du kan säkerhetskopiera den virtuella datorn en gång per dag och du kan återställa den virtuella dator disken efter behov. Azure Backup tar appmedvetna dataögonblicksbilder (VSS) och ingen agent installeras på den virtuella datorn.
 - **Direkt säkerhetskopiering i ett Recovery Services-valv.** Du kan säkerhetskopiera virtuella IaaS-datorer genom att distribuera ett Azure Backup Recovery Services-valv. Det ger en enda plats för att spåra och hantera säkerhetskopior samt detaljerade alternativ för säkerhetskopiering och återställning. Säkerhetskopieringen sker upp till tre gånger per dag, på fil-/mappnivå. Den är inte appmedveten och Linux stöds inte. Installera MARS-agenten (Microsoft Azure Recovery Services) på varje virtuell dator som du vill säkerhetskopiera med den här metoden.
 - **Skydda den virtuella datorn med Azure Backup Server.** Azure Backup Server tillhandahålls utan kostnad med Azure Backup. Den virtuella datorn säkerhetskopieras till lokal Azure Backup Server-lagring. Sedan säkerhetskopierar du Azure Backup Server till Azure i ett valv. Säkerhetskopieringen är appmedveten, med fullständig kornighet för säkerhetskopieringsfrekvens och -kvarhållning. Du kan säkerhetskopiera på appnivå, till exempel genom att säkerhetskopiera SQL Server eller SharePoint.
 
@@ -419,7 +419,7 @@ Hanterade Azure-diskar förenklar diskhantering för virtuella Azure IaaS-datore
 - Du kan konvertera befintliga diskar till hanterade.
 - Du bör skapa virtuella datorer i tillgänglighetsuppsättningar för hög återhämtning och tillgänglighet. Vid planerade eller oplanerade avbrott säkerställer tillgänglighetsuppsättningar att minst en av dina virtuella datorer i uppsättningen fortfarande är tillgänglig.
 
-![Managed Disks](./media/migrate-best-practices-security-management/managed-disks.png)
+![Hanterade diskar](./media/migrate-best-practices-security-management/managed-disks.png)
 
 *Hanterade diskar*
 
@@ -560,4 +560,4 @@ Azure har en lösning för ändringsspårning i Azure Automation:
 Läs andra metodtips:
 
 - [Metodtips](./migrate-best-practices-networking.md) för nätverk efter migrering.
-- [Metodtips](./migrate-best-practices-costs.md) för kostnadshantering efter migrering.
+- [Metodtips](./migrate-best-practices-costs.md) för säkerhet och hantering efter migrering.

@@ -8,36 +8,43 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 28b13b472729a8500719afbe34013daaddc9a3fc
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 9bb5f837ce3a7bb07fb108f48229f488df1b9dc7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683353"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565790"
 ---
 # <a name="tools-to-predict-and-influence-data-in-azure"></a>Verktyg för att förutsäga och påverka data i Azure
 
-Som det beskrivs i teori-artikeln om [förutsägelse och påverkan](../considerations/predict.md), är datorer och artificiell intelligens mycket bättre att se mönster än vi är. Med hjälp av molnbaserad analys verktyg kan mönster enkelt identifieras och tillämpas på kundernas behov, vilket resulterar i en förutsägelse av det bästa resultatet. När dessa förutsägelser är integrerade i kund upplevelsen kan förutsägelsen påverka dina kunders beteende mönster genom interaktioner.
+Som det beskrivs i den konceptuella artikeln om [förutsägelse och påverkan](../considerations/predict.md), är datorer och AI mycket bättre än vad vi har att se mönster. Med hjälp av molnbaserad analys verktyg kan du enkelt identifiera mönster och använda dem för kundernas behov. Användningen av dessa verktyg resulterar i förutsägelser av de bästa resultaten. När dessa förutsägelser är integrerade i kund upplevelser kan de påverka dina kunders beteende mönster genom interaktioner.
 
 ![Ramverks metod för moln införande för att förutsäga och påverka](../../_images/innovate/predict-and-influence.png)
 
-## <a name="alignment-to-the-methodology"></a>Justering av metodiken
+## <a name="alignment-to-the-methodology"></a>Anpassning till metodiken
 
-Den här typen av digital uppfinning kan påskyndas genom varje fas i följande process, i justering med den metod som visas ovan. Teknisk vägledning för att påskynda Digital uppfinning visas i innehålls förteckningen till vänster. Dessa artiklar har grupper ATS i samma faser för att passa metoden:
+Du kan påskynda den här typen av digital uppfinning genom varje fas i följande process. Faserna justeras med den metod som visas i föregående bild. Teknisk vägledning för att påskynda Digital uppfinning visas i innehålls förteckningen till vänster på den här sidan. Dessa artiklar grupperas efter fas för att passa metoden.
 
-I bilden ovan överensstämmer data och insikter med de bästa metoderna som beskrivs i artikeln [democratizing data](./data.md) . Eftersom experter upptäcker insikter som kan vara upprepnings bara kan följande tre steg användas för att mogna dessa insikter:
+I föregående bild justeras data och insikter med de bästa metoderna som beskrivs i artikeln [democratizing data](./data.md) . Eftersom experter upptäcker insikter som kan vara upprepnings bara kan de använda följande tre steg för att mogna dessa insikter:
 
 - **Mönster:** Hitta och definiera mönster för att skapa förutsägande modeller.
-- **Förutsägelser:** Använd mönstret till kunddata för att förutsäga resultat baserat på modellen och det underliggande mönstret.
+- **Förutsägelser:** Använd mönster för kunddata för att förutsäga resultat baserat på modellen och det underliggande mönstret.
 - **Interaktioner:** Använd förutsägelserna inifrån ett program eller en data källa för att driva en interaktion med kunden.
 
 ## <a name="toolchain"></a>Verktygskedja
 
-I Azure utnyttjas ofta följande verktyg för att påskynda digitala uppfinningar över var och en av stegen ovan: Azure ML, HDInsight, Hadoop R Scaleer och Azure SQL Data Warehouse. Hur varje verktyg hjälper med varje fas av förutsägelse och påverkan visas i rikt linjerna i innehålls förteckningen till vänster.
+I Azure används följande verktyg ofta för att påskynda digitala uppfinningar i vart och ett av de föregående faserna:
 
-## <a name="get-started"></a>Kom i gång
+- Azure Machine Learning
+- Azure HDInsight
+- Hadoop R-skala
+- Azure SQL Data Warehouse
 
-I innehålls förteckningen till vänster visas många artiklar för att komma igång med var och en av verktygen i den här verktygskedjan.
+Hur varje verktyg hjälper med varje fas av förutsägelse och påverkan visas i rikt linjerna i innehålls förteckningen till vänster på den här sidan.
+
+## <a name="get-started"></a>Kom igång
+
+I innehålls förteckningen till vänster på den här sidan finns många artiklar. De här artiklarna hjälper dig att komma igång med var och en av verktygen i verktygskedjan.
 
 > [!NOTE]
-> Vissa länkar kan lämna ramverket för moln införande för att få hjälp utanför det här ramverkets omfattning.
+> Vissa länkar kan lämna ramverket för moln införande för att hjälpa dig utöver det här ramverkets omfattning.

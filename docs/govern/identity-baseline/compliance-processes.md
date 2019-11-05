@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 22fa26bdf4665584224551015cd4b3277d4755a3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 6b92072ed182eefc596ab446638a87b4fd560080
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223757"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566219"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>Principer för regelefterlevnad för identitetens bas linje
 
@@ -40,7 +40,7 @@ Den här planerings processen är också en lämplig tid att utvärdera det aktu
 
 **Granskningar av månads granskning och rapportering:** Varje månad bör du utföra en granskning på alla moln distributioner för att säkerställa att deras fortsatta anpassningar med identitets policyn. Använd den här granskningen för att kontrol lera användarnas åtkomst till företags förändringar för att se till att användarna har rätt åtkomst till moln resurser och se till att åtkomst strategier som RBAC följs konsekvent. Identifiera privilegierade konton och dokumentera deras syfte. Den här gransknings processen skapar en rapport för moln strategi teamet och varje moln antagande team som beskriver den övergripande principen. Rapporten lagras också för granskning och juridiskt syfte.
 
-## <a name="ongoing-monitoring-processes"></a>Pågående övervaknings processer
+## <a name="processes-for-ongoing-monitoring"></a>Processer för pågående övervakning
 
 Avgöra om din identitets styrnings strategi lyckas beror på insyn i aktuella och tidigare tillstånd för dina identitets system. Utan möjlighet att analysera moln distributionens relevanta mått och relaterade data kan du inte identifiera ändringar i riskerna eller identifiera överträdelser av dina risk toleranser. De löpande styrnings processer som beskrivs ovan kräver kvalitets data för att säkerställa att principen kan ändras för att stödja företagets föränderliga behov.
 

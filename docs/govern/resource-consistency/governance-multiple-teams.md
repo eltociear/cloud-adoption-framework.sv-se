@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5459d775051b831112029fe1502a62a13c21e1c2
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 04e78b51bcea5aea8d8db719b7d88865696d781b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058765"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566022"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Styrningsdesign för flera team
 
@@ -225,7 +225,7 @@ Den här hanterings modellen har fördelarna med det andra exemplet ovan. Den vi
 
 Därför kan du välja någon av dessa två exempel på resurs hanterings modeller, beroende på prioriteten för dina behov. Om du förväntar dig att din organisation inte ska uppnå tjänst gränserna för en enskild prenumeration kan du använda en enda prenumeration med flera resurs grupper. Om din organisation förväntar sig många arbets belastningar kan flera prenumerationer för varje miljö vara bättre.
 
-## <a name="implementing-the-resource-management-model"></a>Implementera resurs hanterings modellen
+## <a name="implement-the-resource-management-model"></a>Implementera resurs hanterings modellen
 
 Du har lärt dig om flera olika modeller för att styra åtkomsten till Azure-resurser. Nu ska du gå igenom de steg som krävs för att implementera resurs hanterings modellen med en prenumeration för var och en av de **delade infrastruktur**-, **produktions**-och **utvecklings** miljöerna från design guiden. Du har en **prenumerations ägare** för alla tre miljöer. Varje arbets belastning isoleras i en **resurs grupp** med en **arbets belastnings ägare** tillagd med **deltagar** rollen.
 

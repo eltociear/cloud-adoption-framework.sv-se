@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c226c765390805bf4b9ae52ebaf74d337286b90e
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 309ea099eee5fcec5700a48afc4376dbc30805f9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047675"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565656"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Omgivande upplevelser: interagera med enheter
 
@@ -46,9 +46,9 @@ I det första steget i den omgivande miljön flyttas användaren bort från dato
 
 När kunderna är mobila och ändrings platser ofta, kan det representera den mest relevanta formen av den omgivande upplevelsen för en viss lösning. Under de senaste tio åren har innovation ofta utlösts av integrering av befintliga lösningar med en mobil miljö.
 
-Azure App Services är ett bra exempel på den här metoden. Under tidiga iterationer kan [webbappens funktion i Azure App-tjänster](/azure/app-service/overview) användas för att testa hypotesen. När Hypotheses blir mer komplexa kan [Mobile app-funktionen i Azure App Services](/azure/app-service-mobile/) utöka webbappen så att den körs på flera olika mobila plattformar.
+Azure App Services är ett bra exempel på den här metoden. Under tidiga iterationer kan [webbappens funktion i Azure App-tjänster](https://docs.microsoft.com/azure/app-service/overview) användas för att testa hypotesen. När Hypotheses blir mer komplexa kan [Mobile app-funktionen i Azure App Services](https://docs.microsoft.com/azure/app-service-mobile) utöka webbappen så att den körs på flera olika mobila plattformar.
 
-## <a name="mixed-reality"></a>Mixad verklighet
+## <a name="mixed-reality"></a>Mixed Reality
 
 Lösningar för Mixad verklighet representerar nästa förfallo nivå för omgivande upplevelser. Den här metoden förstärker eller replikerar kundens omgivningar. Det skapar en förlängning av verklighet för kunden att arbeta i.
 
@@ -68,7 +68,7 @@ Den här upplevelsen är idealisk när en viss typ av enhet är konsekvent inom 
 Exempel på integrerad verklighet i Azure kan vara:
 
 - [Azure Sakernas Internet-lösningar (IoT)](https://docs.microsoft.com/azure/iot-fundamentals), en samling tjänster i Azure som varje stöd för att hantera enheter och data flödet från dessa enheter till molnet och ut till slutanvändarna.
-- [Azure Sphere](/azure-sphere)en kombination av maskin vara och program vara. Azure Sphere är ett innately säkert sätt att aktivera en befintlig enhet för att på ett säkert sätt överföra data mellan enheten och Azure IoT-lösningar.
+- [Azure Sphere](https://docs.microsoft.com/azure-sphere)en kombination av maskin vara och program vara. Azure Sphere är ett innately säkert sätt att aktivera en befintlig enhet för att på ett säkert sätt överföra data mellan enheten och Azure IoT-lösningar.
 - [Azure Kinect Developer Kit](https://docs.microsoft.com/azure/Kinect-dk), AI-sensorer med avancerad dator vision och tal modeller. Dessa sensorer kan samla in visuella data och ljuddata från den omedelbara omgivningen och mata in dessa indata i din lösning.
 
 Du kan använda alla tre verktygen för att samla in data från den naturliga omgivningen och när kunden behöver det. Därifrån kan din lösning svara på dessa data inmatningar för att lösa behovet, ibland innan kunden är ännu medveten om att en utlösare för detta behov har uppstått.
@@ -81,7 +81,7 @@ Virtuella assistenter och smarta högtalare erbjuder bra exempel på justerad ve
 
 Fabriks golv runtom i världen ger ytterligare exempel på justerad verklighet. I tidiga faser av integrerad verklighet identifierade sensorer på enheter, t. ex. överhettning, och aviserar sedan en mänsklig genom ett program. I justerad verklighet kan kunden fortfarande vara involverad, men feedback-slingan är tätare. På ett justerat verklighet fabriks lager kan en enhet upptäcka överhettning på en viktig dator någonstans längs med monterings linjen. Någon annan stans på golvet, en andra enhet kan sedan sakta produktion något så att datorn blir sval och sedan återupptas hela takten när villkoret är löst. I den här situationen är kunden en andra deltagare. Kunden använder ditt program för att ange regler och förstå hur dessa regler har påverkat produktion, men de är inte nödvändiga för feedback-slingan.
 
-De Azure-tjänster som beskrivs i [azure Sakernas Internet-lösningar (IoT)](https://docs.microsoft.com/azure/iot-fundamentals), [Azure Sphere](/azure-sphere)och [Azure Kinect Developer Kit](https://docs.microsoft.com/azure/Kinect-dk) kan var och en vara komponenter i en anpassad verklighet-lösning. Ditt ursprungliga program och din affärs logik fungerar sedan som mellanliggande mellan miljö ingången och den ändring som ska göras i den fysiska miljön.
+De Azure-tjänster som beskrivs i [azure Sakernas Internet-lösningar (IoT)](https://docs.microsoft.com/azure/iot-fundamentals), [Azure Sphere](https://docs.microsoft.com/azure-sphere)och [Azure Kinect Developer Kit](https://docs.microsoft.com/azure/Kinect-dk) kan var och en vara komponenter i en anpassad verklighet-lösning. Ditt ursprungliga program och din affärs logik fungerar sedan som mellanliggande mellan miljö ingången och den ändring som ska göras i den fysiska miljön.
 
 En digital, dubbel är ett annat exempel på en justerad verklighet. Den här termen avser en digital representation av en fysisk enhet som presenteras via dator-, mobil-eller blandade real tids format. Till skillnad från mindre avancerade 3D-modeller, visar digitala dubbla data som samlas in från en faktisk enhet i den fysiska miljön. Den här lösningen gör att användaren kan interagera med den digitala representationen på ett sätt som aldrig kan göras i verkligheten. I den här metoden justerar fysiska enheter en blandad verklighets miljö. Lösningen samlar dock fortfarande in data från en integrerad verklighets lösning och använder dessa data för att forma verkligheten för kundens aktuella miljö.
 

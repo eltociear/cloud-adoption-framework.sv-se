@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: b1d5562b6e8248f371e01473d141aefecf1554b4
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 6b3fd0ca16bf54e5eaf026037ba1f59c2043f4e7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223739"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566153"
 ---
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>Anpassa design guiden för moln styrning med företags principer
 
@@ -27,7 +27,7 @@ En design guide för moln styrning bör upprätta arkitektur val och design mön
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="using-the-actionable-governance-guides"></a>Använda de stödda styrnings guiderna
+## <a name="use-the-actionable-governance-guides"></a>Använd de stödda styrnings guiderna
 
 Om du planerar att använda Azure-plattformen för ditt moln införande, tillhandahåller moln implementerings ramverket [stöd linjer för styrning](../guides/index.md) som illustrerar den stegvisa metoden för organisations modellen för moln införande ramverk. De här vägledningarna innehåller en mängd vanliga antagande scenarier, inklusive affärs risker, tolerans krav och policy-instruktioner som ingick i att skapa en minimal livskraftig produkt (MVP) för styrning. De här guiderna visar en sammanfattning av verklig kund upplevelse av moln införande processen i Azure.
 

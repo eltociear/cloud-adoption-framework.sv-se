@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9e6e078859bb580794477328099b66d14009bdca
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5bb3e37073c3c5d7f401f6d6c706314172eecf88
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221407"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565267"
 ---
 # <a name="create-update-schedules"></a>Skapa uppdaterings scheman
 
@@ -21,20 +21,20 @@ Du kan hantera uppdaterings scheman med hjälp av Azure Portal eller de nya Powe
 
 Information om hur du skapar ett uppdaterings schema via Azure Portal finns i [Schemalägga en uppdaterings distribution](https://docs.microsoft.com/azure/automation/automation-tutorial-update-management#schedule-an-update-deployment).
 
-AZ. Automation-modulen stöder nu konfiguration av uppdaterings hantering med hjälp av Azure PowerShell. [Version 1.7.0](https://www.powershellgallery.com/packages/Az/1.7.0) av modulen lägger till stöd för cmdleten [New-AzAutomationUpdateManagementAzureQuery](/powershell/module/az.automation/new-azautomationupdatemanagementazurequery?view=azps-1.7.0) , vilket gör att du kan använda taggar, plats och sparade sökningar för att konfigurera uppdaterings scheman för en flexibel grupp datorer.
+AZ. Automation-modulen stöder nu konfiguration av uppdaterings hantering med hjälp av Azure PowerShell. [Version 1.7.0](https://www.powershellgallery.com/packages/Az/1.7.0) av modulen lägger till stöd för cmdleten [New-AzAutomationUpdateManagementAzureQuery](https://docs.microsoft.com/powershell/module/az.automation/new-azautomationupdatemanagementazurequery?view=azps-1.7.0) . Med den här cmdleten kan du använda taggar, platser och sparade sökningar för att konfigurera uppdaterings scheman för en flexibel grupp datorer.
 
 ## <a name="example-script"></a>Exempelskript
 
-Följande exempel skript illustrerar användningen av taggning och frågor för att skapa dynamiska grupper av datorer som du kan använda uppdaterings scheman för. Den utför följande åtgärder. Du kan referera till implementeringarna av de specifika åtgärderna när du skapar egna skript.
+Exempel skriptet i det här avsnittet visar hur du använder taggning och frågor för att skapa dynamiska grupper av datorer som du kan använda uppdaterings scheman för. Den utför följande åtgärder. Du kan referera till implementeringarna av de specifika åtgärderna när du skapar egna skript.
 
-- Skapar ett Azure Automation uppdaterings schema som körs varje lördag kl. 8:00
+- Skapar ett Azure Automation uppdaterings schema som körs varje lördag kl. 8:00.
 - Skapar en fråga för datorer som matchar följande kriterier:
-  - Distribuerad på `westus`, eller `eastus` `eastus2` Azure-platsen
-  - Ha en `Owner` -tagg som tillämpas på dem med ett värde som är inställt på`JaneSmith`
-  - Ha en `Production` -tagg som tillämpas på dem med ett värde som är inställt på`true`
-- Tillämpar uppdaterings schemat på de efterfrågade datorerna och anger ett uppdaterings fönster med två timmar
+  - Distribuerat på `westus`, `eastus`eller `eastus2` Azure-platsen
+  - Använd en `Owner`-tagg för dem med ett värde som är inställt på `JaneSmith`
+  - Använd en `Production`-tagg för dem med ett värde som är inställt på `true`
+- Tillämpar uppdaterings schemat på de efterfrågade datorerna och anger ett uppdaterings fönster med två timmar.
 
-Innan du kör exempel skriptet måste du logga in med hjälp av cmdleten [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) . När du startar skriptet måste du ange följande information:
+Innan du kör exempel skriptet måste du logga in med hjälp av cmdleten [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) . Ange följande information när du startar skriptet:
 
 - ID för mål prenumeration
 - Mål resurs gruppen
@@ -105,11 +105,11 @@ Innan du kör exempel skriptet måste du logga in med hjälp av cmdleten [Connec
         -Duration (New-TimeSpan -Hours 2) `
         -AzureQuery $AzureQueries `
         -IncludedUpdateClassification Security,Critical
-    ```
+```
 
-## Next steps
+## <a name="next-steps"></a>Nästa steg
 
-See examples of how to implement [common policies in Azure](./common-policies.md) that can help manage your servers.
+Se exempel på hur du implementerar [vanliga principer i Azure](./common-policies.md) som kan hjälpa dig att hantera dina servrar.
 
 > [!div class="nextstepaction"]
-> [Common policies in Azure](./common-policies.md)
+> [Vanliga principer i Azure](./common-policies.md)

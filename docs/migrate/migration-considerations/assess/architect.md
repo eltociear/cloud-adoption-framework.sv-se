@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 151698c836add7c46c389cc94c76b942e52b0341
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 77931f6315c43d963947cbdaf628b8bfa514749c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240242"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566832"
 ---
 # <a name="architect-workloads-prior-to-migration"></a>Beräkna arbetsbelastningar före migrering
 
@@ -37,9 +37,9 @@ De antaganden som beskrivits kan skapa hinder som kan sakta ner framsteg eller o
 - **Betala tekniska skulder.** En del äldre arbetsbelastningar har en hög nivå av teknisk skuld. Detta kan leda till långvariga utmaningar genom att öka värdkostnaden oavsett molnleverantör. När teknisk skuld på ett onaturligt sätt ökar värdkostnaderna ska alternativa arkitekturer utvärderas.
 - **Mönster för användartrafik.** Befintliga lösningar kan vara avhängiga av befintliga routingmönster. Dessa mönster kan allvarligt påverka prestanda. Dessutom kan införande av nya lösningar som bygger på hybrid-WAN ta veckor eller till och med månader. Förbered för dessa hinder tidigt i arkitekturprocessen genom att ta hänsyn till trafikmönster och ändringar i grundläggande infrastrukturtjänster.
 
-## <a name="accelerating-business-value"></a>Skapa affärsvärde snabbare
+## <a name="accelerate-business-value"></a>Accelerera affärs värde
 
-En del scenarion kan kräva en annan arkitektur än den IaaS-strategi med byte av värd som förutsatts. Detta är några exempel:
+En del scenarion kan kräva en annan arkitektur än den IaaS-strategi med byte av värd som förutsatts. Följande är några exempel:
 
 - PaaS-alternativ. PaaS kan minska värdkostnader samt den tid som krävs för att migrera vissa arbetsbelastningar. En lista med tillvägagångssätt som kan dra fördel av en PaaS-konvertering finns i artikeln [utvärdera tillgångar](./evaluate.md).
 - Skriptat införande/DevOps. Om en arbetsbelastning har en befintlig DevOps-installation eller andra former av skriptat införande kan kostnaden för att ändra dessa skript vara lägre än för att migrera tillgången.

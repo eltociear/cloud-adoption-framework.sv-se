@@ -1,54 +1,52 @@
 ---
-title: Automatisera registrering och aviserings konfiguration
+title: Automatisera onboarding
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Automatisera registrering och aviserings konfiguration
+description: Automatisera onboarding
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 242c8a1a054507c3b1134b1126ea95e3ead74d84
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: f5dd418a03dd35ebced1a9c73eb8fe6567339859
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221364"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565397"
 ---
 # <a name="automate-onboarding"></a>Automatisera onboarding
 
-Överväg att automatisera distributionen av hanterings tjänster genom att följa rekommendationerna som beskrivs i föregående avsnitt i den här vägledningen för att förbättra effektiviteten vid distribution av Azure Server Management Services. Skript-och exempel mallarna som anges i följande avsnitt är start punkter för att utveckla din egen automatisering av onboarding-processer.
+Du kan förbättra effektiviteten vid distribution av Azure Server Management Services genom att automatisera distributionen enligt beskrivningen i föregående avsnitt i den här vägledningen. Skript-och exempel mallarna som anges i följande avsnitt är start punkter för att utveckla din egen automatisering av onboarding-processer.
 
-## <a name="onboarding-by-using-automation"></a>Onboarding med hjälp av Automation
+Den här vägledningen har en support GitHub-lagringsplats med exempel kod, [CloudAdoptionFramework](https://aka.ms/caf/manage/automation-samples). Lagrings platsen innehåller exempel skript och Azure Resource Manager mallar som hjälper dig att automatisera distributionen av Azure Server Management Services.
 
-Den här vägledningen har en stödjande GitHub-lagringsplats med exempel kod, [CloudAdoptionFramework](https://aka.ms/caf/manage/automation-samples), som innehåller exempel skript och Azure Resource Manager mallar som hjälper dig att automatisera distributionen av Azure Server Management Services.
+Exempelfilerna illustrerar hur du använder Azure PowerShell cmdlets för att automatisera följande uppgifter:
 
-De här exempelfilerna illustrerar hur du använder Azure PowerShell cmdlets för att automatisera följande uppgifter:
+- Skapa en [Log Analytics-arbetsyta](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access). (Du kan också använda en befintlig arbets yta om den uppfyller kraven. Mer information finns i [planering av arbets ytan](./prerequisites.md#log-analytics-workspace-and-automation-account-planning).
 
-1. Skapa en [Log Analytics arbets yta](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access) (eller Använd en befintlig arbets yta om den uppfyller&mdash;kraven se [planering av arbets yta](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)).
+- Skapa ett Automation-konto. (Du kan också använda ett befintligt konto om det uppfyller kraven. Mer information finns i [planering av arbets yta](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)).
 
-2. Skapa ett Automation-konto (eller Använd ett befintligt konto om det uppfyller kraven&mdash;se [planering av arbets yta](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)).
+- Länka Automation-kontot och Log Analytics-arbetsytan. Det här steget är inte obligatoriskt om du registrerar dig med hjälp av Azure Portal.
 
-3. Länka Automation-kontot och Log Analytics arbets ytan (krävs inte om du registrerar via portalen).
+- Aktivera Uppdateringshantering och Ändringsspårning och inventering för arbets ytan.
 
-4. Aktivera Uppdateringshantering och Ändringsspårning och inventering för arbets ytan.
+- Publicera virtuella Azure-datorer med hjälp av Azure Policy. En princip installerar Log Analytics agent och Microsoft Dependency Agent på virtuella Azure-datorer.
 
-5. Publicera virtuella Azure-datorer med Azure Policy (en princip installerar Log Analytics-agenten och beroende agenten på virtuella Azure-datorer).
+- Publicera lokala servrar genom att installera Log Analytics-agenten på dem.
 
-6. Publicera lokala servrar genom att installera Log Analytics-agenten på dem.
-
-Filerna som beskrivs i följande tabell används i det här exemplet och du kan anpassa dem så att de stöder dina egna distributions scenarier.
+Filerna som beskrivs i följande tabell används i det här exemplet. Du kan anpassa dem så att de stöder dina egna distributions scenarier.
 
 | Filnamn | Beskrivning |
 |-----------|-------------|
-| New-AMSDeployment. ps1 | Huvud-och Dirigerings skript som automatiserar onboarding. Det här PowerShell-skriptet kräver en befintlig prenumeration, men skapar resurs grupper, plats, arbets yta och Automation-konton om de inte finns. |
-| Workspace-AutomationAccount.json | En Resource Manager-mall som distribuerar arbets ytans och automations konto resurser. |
-| WorkspaceSolutions.json | En Resource Manager-mall som möjliggör de önskade lösningarna i Log Analytics-arbetsytan. |
-| ScopeConfig.json | En Resource Manager-mall som använder opt-in-modellen för lokala servrar med ändrings spårnings lösningen. Att använda opt-in-modellen är valfritt. |
-| Enable-VMInsightsPerfCounters.ps1 | Ett PowerShell-skript som aktiverar VMInsight för servrar och konfigurerar prestanda räknare. |
-| ChangeTracking-Filelist.json | En Resource Manager-mall som definierar en lista över filer som ska övervakas av Ändringsspårning. |
+| New-AMSDeployment. ps1 | Huvud-och Dirigerings skript som automatiserar onboarding. Det skapar resurs grupper, plats, arbets yta och Automation-konton, om de inte redan finns. Det här PowerShell-skriptet kräver en befintlig prenumeration. |
+| Arbets yta-AutomationAccount. JSON | En Resource Manager-mall som distribuerar arbets ytans och automations konto resurser. |
+| WorkspaceSolutions. JSON | En Resource Manager-mall som aktiverar de lösningar som du vill använda i arbets ytan Log Analytics. |
+| ScopeConfig. JSON | En Resource Manager-mall som använder opt-in-modellen för lokala servrar med Ändringsspårning-lösningen. Att använda opt-in-modellen är valfritt. |
+| Enable-VMInsightsPerfCounters. ps1 | Ett PowerShell-skript som möjliggör VM-insikter för servrar och konfigurerar prestanda räknare. |
+| ChangeTracking-filelist. JSON | En Resource Manager-mall som definierar en lista över filer som ska övervakas av Ändringsspårning. |
 
-Du kan köra New-AMSDeployment. ps1 med hjälp av följande kommando:
+Använd följande kommando för att köra New-AMSDeployment. ps1:
 
 ```powershell
 .\New-AMSDeployment.ps1 -SubscriptionName '{Subscription Name}' -WorkspaceName '{Workspace Name}' -WorkspaceLocation '{Azure Location}' -AutomationAccountName {Account Name} -AutomationAccountLocation {Account Location}

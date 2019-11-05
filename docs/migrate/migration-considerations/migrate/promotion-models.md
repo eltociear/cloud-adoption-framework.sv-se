@@ -1,5 +1,5 @@
 ---
-title: Befordransmodeller – befordra, mellanlagra eller förhandsversion
+title: 'Kampanj modeller: enkla steg, mellanlagrade eller Flight'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Förstå hur befordran påverkar migreringsaktiviteter
 author: BrianBlanchard
@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b251e5159f6e6728e0b5a7ce807eaba0ea85696a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 690c871ab18bef96a5a1738de90a216ca5b8df90
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548443"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564624"
 ---
-# <a name="promotion-models---single-step-staged-or-flight"></a>Uppflyttningsmodeller – i ett enda steg, mellanlagring eller förhandsversion
+# <a name="promotion-models-single-step-staged-or-flight"></a>Kampanj modeller: enkla steg, mellanlagrade eller Flight
 
 Migrering av en arbetsbelastning diskuteras ofta som en enskild aktivitet. I verkligheten är det en samling av mindre aktiviteter som möjliggör överföringen av en digital tillgång till molnet. En av de sista aktiviteterna i en migrering är befordran av en tillgång till produktion. Befordran är den tidpunkt då produktionssystemet ändras för slutanvändare. Det kan ofta vara så enkelt som att ändra nätverksroutingen och omdirigera användare till den nya produktionstillgången. Befordran är också den punkt där avdelningen för IT- eller molndrift ändrar fokus på driftshanteringsprocessen från det tidigare produktionssystemet till de nya.
 

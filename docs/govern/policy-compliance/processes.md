@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f6104a3b2f5f2e68016623029ac0e7b71a5e35f1
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 57f94fde4e7f4863a3ddca710d523d9c027571d0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222041"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566122"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -83,7 +83,7 @@ Några exempel på fel utlösare och åtgärder:
 | Grundläggande säkerhet | Identifiera misstänkt användar inloggnings aktivitet. | Meddela IT-säkerhetsteamet och inaktivera misstänkt användar konto. |
 | Resurskonsekvens | PROCESSOR belastningen för arbets belastningen är större än 90%. | Meddela IT-avdelningen och skala ut ytterligare resurser för att hantera belastningen. |
 
-## <a name="monitoring-and-compliance-automation"></a>Automatisering av övervakning och efterlevnad
+## <a name="automation-of-monitoring-and-compliance"></a>Automatisering av övervakning och efterlevnad
 
 När du har definierat fel utlösare och åtgärder för regelefterlevnad kan du börja planera hur du ska använda loggnings-och rapporterings verktygen och andra funktioner i moln plattformen för att automatisera strategin för övervakning och policy efterlevnad.
 

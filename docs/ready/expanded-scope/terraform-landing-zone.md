@@ -8,12 +8,12 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 99d5e42f8c7e506ba28617022f2a8076c9501979
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: deebe6db08d573872f67d79f734d1f65a85c6904
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239772"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561692"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Använd terraform för att bygga landnings zoner
 
@@ -21,11 +21,11 @@ Azure tillhandahåller inbyggda tjänster för att distribuera landnings zoner. 
 
 ## <a name="purpose-of-the-landing-zone"></a>Syftet med landnings zonen
 
-Den grundläggande landnings zonen för terraform har en begränsad uppsättning ansvars områden och funktioner för att genomdriva loggning, redovisning och säkerhet. Vi har utformat den här landnings zonen använder standard komponenter som kallas terraform-moduler för att tvinga fram konsekvens mellan resurser som distribueras i miljön.
+Den grundläggande landnings zonen för terraform har en begränsad uppsättning ansvars områden och funktioner för att genomdriva loggning, redovisning och säkerhet. Den här landnings zonen använder standard komponenter som kallas terraform-moduler för att tvinga fram konsekvens mellan resurser som distribueras i miljön.
 
-## <a name="using-standard-modules"></a>Använda standardmoduler
+## <a name="use-standard-modules"></a>Använda standardmoduler
 
-Åter användning av komponenter är en grundläggande princip för infrastruktur som kod. Moduler är instrumentell för att definiera standarder och konsekvens för resurs distribution inom och mellan olika miljöer. Den uppsättning moduler som används för att distribuera den första landnings zonen är tillgängliga i det officiella [terraform-registret](https://registry.terraform.io/search?q=aztfmod).
+Åter användning av komponenter är en grundläggande princip för infrastruktur som kod. Moduler är instrumentell för att definiera standarder och konsekvens för resurs distribution inom och mellan olika miljöer. Modulerna som används för att distribuera den första landnings zonen är tillgängliga i den officiella [terraform-registret](https://registry.terraform.io/search?q=aztfmod).
 
 ## <a name="architecture-diagram"></a>Arkitekturdiagram
 
@@ -33,17 +33,17 @@ Den första landnings zonen distribuerar följande komponenter i din prenumerati
 
 ![Foundation-landnings zon med terraform](../../_images/ready/foundations-terraform-landingzone.png)
 
-## <a name="capabilities"></a>Kapacitet
+## <a name="capabilities"></a>Funktioner
 
 De komponenter som distribueras och deras syfte är följande:
 
 | Komponent | Ligger |
 |---------|---------|
 | Resursgrupper | Kärn resurs grupper som behövs för stiftelsen |
-| Aktivitets loggning | Granska alla prenumerations aktiviteter och arkivering: </br> – Lagrings konto </br> -Event Hubs |  
-| Diagnostikloggning | Alla drift loggar har behållits för ett angivet antal dagar: </br> – Lagrings konto </br> -Event Hubs |
+| Aktivitets loggning | Granska alla prenumerations aktiviteter och arkivering: </br> – Lagrings konto </br> – Azure Event Hubs |  
+| Diagnostikloggning | Alla åtgärds loggar som behålls under ett angivet antal dagar: </br> – Lagrings konto </br> -Event Hubs |
 | Log Analytics | Lagrar alla åtgärds loggar </br> Distribuera vanliga lösningar för djupgående program metod tips: </br> - NetworkMonitoring </br> - ADAssessment </br> – ADReplication </br> - AgentHealthAssessment </br> - DnsAnalytics </br> - KeyVaultAnalytics
-| Säkerhetscenter | Mått och aviseringar för säkerhets hygien som skickas till e-post och telefonnummer |
+| Azure Security Center | Mått och aviseringar för säkerhets hygien som skickas till e-post och telefonnummer |
 
 ## <a name="use-this-blueprint"></a>Använd den här skissen
 
@@ -66,16 +66,16 @@ Följande beslut visas i terraform landnings zon:
 
 | Komponent | Beslut | Alternativa metoder |
 | --- | --- | --- |
-|Loggning och övervakning | Azure Monitor Log Analytics arbets ytan kommer att användas. Ett lagrings konto för diagnostik samt Händelsehubben kommer att tillhandahållas. |         |
-|Nätverk | N/A-nätverket kommer att implementeras i en annan landnings zon. |[Nätverksbeslut](../considerations/networking-options.md) |
+|Loggning och övervakning | Azure Monitor Log Analytics arbets ytan används. Ett diagnostiskt lagrings konto samt Händelsehubben är etablerad. |         |
+|Nätverk | N/A-nätverket är implementerat i en annan landnings zon. |[Nätverksbeslut](../considerations/networking-options.md) |
 |Identitet | Vi förutsätter att prenumerationen redan är associerad med en instans av Azure Active Directory. | [Metodtips för identitetshantering](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices) |
 | Princip | Denna landnings zon förutsätter för närvarande att inga Azure-principer ska tillämpas. | |
 |Prenumerationsdesign | Saknas – utformad för en enda produktionsprenumeration. | [Skalanpassa prenumerationer](../azure-best-practices/scaling-subscriptions.md) |
 | Hanteringsgrupper | Saknas – utformad för en enda produktionsprenumeration. |[Skalanpassa prenumerationer](../azure-best-practices/scaling-subscriptions.md) |
 | Resursgrupper | Saknas – utformad för en enda produktionsprenumeration. | [Skalanpassa prenumerationer](../azure-best-practices/scaling-subscriptions.md) |
 | Data | Gäller inte | [Välj rätt SQL Server alternativ i Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) och [Azure Data Store vägledning](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Lagring|Gäller inte|[Riktlinjer för Azure Storage](../considerations/storage-options.md) |
-| Namngivningsregler | När miljön skapas skapas även ett unikt prefix. Resurser som kräver ett globalt unikt namn (till exempel lagrings konton) använder det här prefixet. Det anpassade namnet läggs till med ett slumpmässigt suffix. Tagga användningen bestäms enligt beskrivningen i tabellen nedan. | [Metodtips för namngivning och taggning](../azure-best-practices/naming-and-tagging.md) |
+|Storage|Gäller inte|[Riktlinjer för Azure Storage](../considerations/storage-options.md) |
+| Namngivningsregler | När miljön skapas skapas även ett unikt prefix. Resurser som kräver ett globalt unikt namn (till exempel lagrings konton) använder det här prefixet. Det anpassade namnet läggs till med ett slumpmässigt suffix. Tagga användningen bestäms enligt beskrivningen i följande tabell. | [Metodtips för namngivning och taggning](../azure-best-practices/naming-and-tagging.md) |
 | Kostnadshantering | Gäller inte | [Spåra kostnader](../azure-best-practices/track-costs.md) |
 | Databearbetning | Gäller inte | [Compute-alternativ](../considerations/compute-options.md) |
 
@@ -83,24 +83,24 @@ Följande beslut visas i terraform landnings zon:
 
 Följande uppsättning med lägsta Taggar måste finnas på alla resurser och resurs grupper:
 
-| Taggnamn | Beskrivning | Nyckel | Exempel värde |
+| Taggnamn | Beskrivning | Nyckel | Exempelvärde |
 |--|--|--|--|
 | Affär senhet | Avdelning på toppnivå för ditt företag som äger prenumerationen eller arbetsbelastningen som resursen tillhör. | BusinessUnit | EKONOMI, marknadsföring, {produkt namn}, CORP, delad |
 | Kostnadsställe | Kostnadsställe som associeras med resursen.| CostCenter | Tal |
-| Katastrofåterställning | Programmet, arbetsbelastningen eller tjänstens affärskritiskhet. | AR | DR-AKTIVERAD, ICKE-DR-AKTIVERAD |
+| Haveriberedskap | Programmet, arbetsbelastningen eller tjänstens affärskritiskhet. | AR | DR-AKTIVERAD, ICKE-DR-AKTIVERAD |
 | Miljö | Programmet, arbetsbelastningen eller tjänstens distributionsmiljö. |  Kuvert | Produktion, utveckling, frågor och svar, Stage, test, utbildning |
 | Ägar namn | Programmet, arbetsbelastningen eller tjänstens ägare.| Ägare | e-post |
-| deploymentType | Definierar hur resurserna upprätthålls. | deploymentType | Manuell, terraform |
-| Version | Ritningens version som distribuerats | version | v-0,1 |
+| Distributions typ | Definierar hur resurserna upprätthålls. | deploymentType | Manuell, terraform |
+| Version | Ritningens version har distribuerats. | version | v-0,1 |
 | Programnamn | Namnet på det associerade programmet, tjänsten eller arbets belastningen som är associerad med resursen. | applicationName | "app-namn" |
 
 ## <a name="customize-and-deploy-your-first-landing-zone"></a>Anpassa och distribuera din första landnings zon
 
-Du kan [klona din terraform Foundation-landnings zon](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready). Det är enkelt att komma igång med landnings zonen genom att ändra terraform-variablerna. I vårt exempel använder vi **blueprint_foundations. sandbox. Auto. tfvars**, så terraform kommer automatiskt att ange värdena i den här filen åt dig.
+Du kan [klona din terraform Foundation-landnings zon](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready). Det är enkelt att komma igång med landnings zonen genom att ändra terraform-variablerna. I vårt exempel använder vi **blueprint_foundations. sandbox. Auto. tfvars**, så terraform ställer automatiskt in värdena i den här filen åt dig.
 
 Nu ska vi titta på de olika variabel avsnitten.
 
-I det här första objektet skapar vi två resurs grupper i `southeastasia` region, med namnet "-Hub-Core-SEC" och "-Hub-Core-SEC" tillsammans med ett prefix som lagts till vid körning.
+I det här första objektet skapar vi två resurs grupper i regionen `southeastasia` som heter `-hub-core-sec` och `-hub-operations` tillsammans med ett prefix som lagts till vid körning.
 
 ```hcl
 resource_groups_hub = {
@@ -115,7 +115,7 @@ resource_groups_hub = {
 }
 ```
 
-Därefter anger vi de regioner där vi kan ställa in grunderna. Här kommer `southeastasia` användas för att distribuera alla resurser.
+Därefter anger vi de regioner där vi kan ställa in grunderna. Här `southeastasia` används för att distribuera alla resurser.
 
 ```hcl
 location_map = {
@@ -131,7 +131,7 @@ azure_activity_logs_retention = 365
 azure_diagnostics_logs_retention = 60
 ```
 
-I tags_hub anger vi den minsta uppsättning taggar som ska användas för alla resurser som skapats.
+I tags_hub anger vi den minsta uppsättningen taggar som används för alla resurser som skapats.
 
 ```hcl
 tags_hub = {
@@ -144,7 +144,7 @@ tags_hub = {
 }
 ```
 
-Sedan anger vi Log Analytics-namnet och en uppsättning lösningar som kommer att analysera distributionen. Här har vi kvar nätverks övervakning, AD-utvärdering och replikering, DNS-analys och Key Vault-analys.
+Sedan anger vi Log Analytics-namnet och en uppsättning lösningar som analyserar distributionen. Här har vi kvar nätverks övervakning, Active Directory (AD)-utvärdering och replikering, DNS-analys och Key Vault-analys.
 
 ```hcl
 
@@ -189,20 +189,20 @@ security_center = {
 }
 ```
 
-## <a name="getting-started"></a>Komma igång
+## <a name="get-started"></a>Kom igång
 
-När du har granskat konfigurationen kan du distribuera konfigurationen på samma sätt som du distribuerar en terraform-miljö. Vi rekommenderar dock att du använder Rover, som är en Docker-behållare som tillåter distribution från Windows, Linux eller MacOS. Du kan komma igång med [Rover GitHub-lagringsplatsen](https://github.com/aztfmod/rover).
+När du har granskat konfigurationen kan du distribuera konfigurationen på samma sätt som du distribuerar en terraform-miljö. Vi rekommenderar att du använder Rover, som är en Docker-behållare som tillåter distribution från Windows, Linux eller MacOS. Du kan komma igång med [Rover GitHub-lagringsplatsen](https://github.com/aztfmod/rover).
 
 ## <a name="next-steps"></a>Nästa steg
 
-I bas landnings zonen fördelas en komplicerad miljö på ett sammansatt sätt. Den här versionen innehåller en uppsättning mycket enkla funktioner som kan utökas av:
+I bas landnings zonen fördelas en komplicerad miljö på ett sammansatt sätt. Den här versionen innehåller en uppsättning enkla funktioner som kan utökas av:
 
 - Lägga till andra moduler till skissen.
 - Skiktning av ytterligare landnings zoner ovanpå den.
 
 Skiktning av landnings zoner är en bra metod för att koppla från system, versions hantering av varje komponent som du använder och möjliggör snabb innovation och stabilitet för din infrastruktur som kod distribution.
 
-Framtida referens arkitekturer visar det här konceptet för en nav-och eker-topologi.
+Framtida referens arkitekturer visar det här konceptet för en nav-och-eker-topologi.
 
 > [!div class="nextstepaction"]
-> [Granska exemplet för Foundation-zon med terraform](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)
+> [Granska exemplet för bas zon för terraform-vilplan](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)

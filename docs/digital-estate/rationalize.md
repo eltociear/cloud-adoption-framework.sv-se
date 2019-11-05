@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 17087228df93164a697b86c7c3934278a55bf91b
-ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
+ms.openlocfilehash: fee983ba2379bb84d56f23139bba987a56e5c54d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915025"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564695"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationalisera den digitala egendomen
 
@@ -28,7 +28,7 @@ Det är enkelt att förstå rationalisering när du visualiserar den traditionel
 
 **Kvantitativ analys:** I besluts trädet driver kvantitativa frågor det första lagret med beslut. Vanliga frågor är följande: är den till gång som används idag? I så fall, är den optimerad och storlek korrekt? Vilka beroenden finns mellan till gångar? Dessa frågor är viktiga för klassificeringen av inventeringen.
 
-**Kvalitativ analys:** Nästa uppsättning beslut kräver mänsklig intelligens i form av kvalitativ analys. Ofta är frågorna som finns här unika för lösningen och kan bara besvaras av affärs intressenter och privilegierade användare. Dessa beslut är vanligt vis försenade processen och saktar ned saker avsevärt. Den här analysen förbrukar vanligt vis 40 till 80 HELTIDs timmar per program.
+**Kvalitativ analys:** Nästa uppsättning beslut kräver mänsklig intelligens i form av kvalitativ analys. Ofta är frågorna som finns här unika för lösningen och kan endast besvaras av affärs intressenter och privilegierade användare. Dessa beslut är vanligt vis försenade processen och saktar ned saker avsevärt. Den här analysen förbrukar vanligt vis 40 till 80 HELTIDs timmar per program.
 
 Information om hur du skapar en lista med kvalitativa analys frågor finns i avsnittet [metoder för planering av digital auktion](./approach.md).
 

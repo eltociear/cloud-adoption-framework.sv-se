@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 61f661a167b9a38a54a51dc9612a0b17df0bd0c3
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 7a6f77bdf2cbd0d34815fc1ef659385444c95fe7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547170"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566064"
 ---
 # <a name="evaluate-risk-tolerance"></a>Utvärdera risktolerans
 
@@ -38,7 +38,7 @@ Sanna affärs risker baseras på information om specifika transformeringar. Fler
 
 Ovanstående är några av de vanligaste riskerna som anges av kunderna. Moln styrnings teamet och moln implementerings teamen kan börja utveckla en risk profil, eftersom arbets belastningar migreras och blir tillgängliga för produktions versionen. Förbereds för konversationer för att definiera, förfina och hantera risker utifrån önskade affärs resultat och omvandlings arbete.
 
-## <a name="understanding-risk-tolerance"></a>Förstå risk tolerans
+## <a name="understand-risk-tolerance"></a>Förstå risk tolerans
 
 Identifierings risken är en ganska direkt process. IT-relaterade risker är vanligt vis standard i hela branscher. Toleransen för dessa risker är dock unik för varje organisation. Det här är den punkt där affärs-och IT-konversationer tenderar att sätta igång. Varje sida av konversationen talar i grunden om ett annat språk. Följande jämförelser och frågor är utformade för att starta konversationer som hjälper varje part att bättre förstå och beräkna risk tolerans.
 

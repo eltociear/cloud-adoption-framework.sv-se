@@ -8,18 +8,18 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8828b79aa27083b3b3e0a0188ac9e538089c52cf
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: ea3bcdc521a043affb71375442b9d5f6fe542fa1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058586"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565679"
 ---
-# <a name="empower-adoption"></a>Förbättra införandet
+# <a name="empower-adoption"></a>Underlätta implementeringen
 
 Det ultimata testet av innovation är att kunden reagera på din uppfinning. Skulle hypotesen visa sig vara sann? Använder kunderna lösningen? Skalar den för att uppfylla behoven för den önskade procent andelen av användarna? Viktigast av detta ska de fortsätta att komma tillbaka? Ingen av dessa frågor kan tillfrågas förrän den lägsta produkt-och MVP-lösningen har distribuerats. I den här artikeln ska vi fokusera på disciplinen för att fatta beslut.
 
-## <a name="reducing-friction-to-adoption"></a>Minska friktionen för att anta
+## <a name="reduce-friction-that-affects-adoption"></a>Minska friktion som påverkar införande
 
 Det finns några viktiga friktions punkter att införa som kan minimeras genom en kombination av teknik och processer. För läsare med kunskaper om kontinuerlig integrering (CI) och kontinuerlig distribution (CD) eller DevOps-processer verkar följande vara välbekant. Den här artikeln avser att upprätta en utgångs punkt för moln implementerings team, som kommer att få nya slingor för utveckling och feedback av bränsle. Längre tid kan den här start punkten gynna mer robusta CI/CD-eller DevOps-metoder som de produkter och team som är mogna.
 
@@ -48,7 +48,7 @@ När du skalar innovation finns det inget värdefullt verktyg än en delad kodba
 
 Det vanligaste verktyget för att hantera kod databaser är [GitHub](https://guides.github.com), vilket gör att du kan skapa en delad kod lagring med bara några få klick. Dessutom kan [Azure databaser](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) -funktionen i Azure DevOps användas för att skapa en [git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) -eller [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) -lagringsplats.
 
-## <a name="feedback-loops"></a>Feedback-slingor
+## <a name="feedback-loops"></a>Feedbackslingor
 
 Att göra kund delen av lösningen är nyckeln till att skapa kund samarbeten under Innovations cykler. Detta sker delvis genom att [mäta kund påverkan](./measure.md). Den kräver konversationer och direkt testning med kunden. Båda genererar feedback som måste hanteras effektivt.
 
@@ -65,7 +65,7 @@ I kontinuerlig integrering slås kod ändringar ofta samman i huvud grenen. Auto
 Azure-DevOps och [Azure-pipeliner](https://docs.microsoft.com/azure/devops/pipelines) ger kontinuerlig integrering med bara några få klick i GitHub eller flera andra lagrings platser.
 Läs mer om [kontinuerlig integrering](https://docs.microsoft.com/azure/devops/learn/what-is-continuous-integration)eller mer information finns i [praktiska labb övningar](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration). Det finns även lösnings arkitekturer för att påskynda skapandet av dina [CI/CD-pipeliner via Azure DevOps](https://azure.microsoft.com/solutions/devops).
 
-## <a name="reliable-testing"></a>Reliable test
+## <a name="reliable-testing"></a>Tillförlitlig testning
 
 Fel i alla lösningar kan skapa falska positiva eller falska negativa negativa tal. Oväntade fel kan lätt leda till fel tolkning av användar mått. De kan också generera negativa synpunkter från kunder som inte korrekt representerar testet av din hypotes.
 

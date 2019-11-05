@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3bfb26e97d35bc3ace4b150045633ac2773d647f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2050c210bad9434e688ec4ef7c2e700cccf39f2c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025452"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564602"
 ---
 # <a name="business-change-plan"></a>Plan för verksamhetsändring
 
@@ -31,7 +31,7 @@ Planer för att introducera ny teknik för användare fokuserar på hur använda
 
 Dessa ämnen baseras normalt på antagandet att införandet av nya lösningar för användare i hög utsträckning ska fokusera på riskstyrning och på att underlätta hanteringen av förändring. Dessutom har IT-avdelningar i stor utsträckning fokuserat på riskerna vid teknikförändringen och på att underlätta ändringen.
 
-## <a name="creating-business-change-plans"></a>Skapa planer för verksamhetsändring
+## <a name="create-business-change-plans"></a>Skapa affärs ändrings planer
 
 En plan för verksamhetsändring ser längre än till den tekniska förändringen och antar att varje införande i en migrering driver någon typ av affärsprocessförändring. Den följer tidslinjen både framåt och bakåt vad gäller de tekniska förändringarna. Följande frågor hjälper användare att tänka på användarinförande utifrån perspektivet verksamhetsändring, för att maximera verksamhetspåverkan:
 
@@ -67,4 +67,4 @@ När verksamhetsförändring dokumenterats och planerats kan [verksamhetstestnin
 
 ## <a name="references"></a>Referenser
 
-- Eason, K. (1988) _Informationsteknik och organisationsförändring_, New York: Taylor and Francis.
+- Eason, K. (1988) _informations teknik och organisatoriska förändringar_, New York: Taylor och Francis.

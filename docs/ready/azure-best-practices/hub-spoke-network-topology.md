@@ -1,5 +1,5 @@
 ---
-title: Nätverkstopologi för nav och ekrar
+title: Nätverkstopologi med nav och ekrar
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig mer om topologier för nav och ekrar.
 author: tracsman
@@ -11,14 +11,14 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 4bd368bacd68a44d0b825eb0e2ad0b91b07b3b48
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 166c45feddd1b6e1ccc17b5301b99e91a3d18e0e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239918"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566774"
 ---
-# <a name="hub-and-spoke-network-topology"></a>Nätverkstopologi för nav och ekrar
+# <a name="hub-and-spoke-network-topology"></a>Nätverkstopologi med nav och ekrar
 
 *Hubb och ekrar* är en nätverksmodell för effektiv hantering av vanlig kommunikation och säkerhetskrav. Det bidrar också till att undvika begränsningar i Azure-prenumerationen. Den här modellen riktar sig mot följande överväganden:
 
@@ -61,7 +61,7 @@ Ekrarna kan också särskilja och aktivera olika grupper i din organisation. Ett
 
 I Azure distribueras alla komponenter, oavsett typ, i en Azure-prenumeration. Isolering av Azure-komponenter i olika Azure-prenumerationer kan uppfylla kraven på olika affärslinjer, till exempel att ställa in differentierade nivåer av åtkomst och auktorisering.
 
-En enda hubb och eker-implementering kan skala upp till ett stort antal ekrar. Men precis som med varje IT-system finns det plattformsgränser. Hubb-distributionen är kopplad till en enskild Azure-prenumeration som har begränsningar. (Ett exempel är ett maximalt antal peer-anslutna virtuella nätverk. Se [Azure-prenumeration och tjänst begränsningar, kvoter och begränsningar] [gränser] för mer information).
+En enda hubb och eker-implementering kan skala upp till ett stort antal ekrar. Men precis som med varje IT-system finns det plattformsgränser. Hubb-distributionen är kopplad till en enskild Azure-prenumeration som har begränsningar. Ett exempel är ett maximalt antal virtuella nätverks peer-datorer. Läs mer i [Azure-prenumeration och tjänstbegränsningar, kvoter och begränsningar](https://docs.microsoft.com/azure/azure-subscription-service-limits).
 
 I fall där gränser kan vara ett problem kan du skala upp arkitekturen ytterligare genom att utöka modellen från en enda hubb och eker till ett kluster med hubbar och ekrar. Du kan sammankoppla flera hubbar i en eller flera Azure-regioner med hjälp av peering av virtuella nätverk, Azure ExpressRoute, ett virtuellt WAN-nätverk eller ett plats-till-plats-VPN.
 

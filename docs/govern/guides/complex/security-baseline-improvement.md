@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 075d587b60b7da1748cd6d06ce01a1a5866f8304
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 99155a4dba7c51c5fc5d1888798275c47f870d5e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058127"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566271"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Styrnings guide för komplexa företag: förbättra säkerhets bas linje disciplinen
 
@@ -118,15 +118,15 @@ De nya bästa metoderna är i två kategorier: företags IT (hubb) och molnbaser
 5. Expanderar den inledande hanterings gruppens hierarki.
     1. För varje hanterings grupp som har begärt stöd för skyddade data tillhandahåller `corporate-it-subscription-blueprint` skissen en accelererad nav lösning.
     2. Eftersom hanterings grupper i det här fiktiva exemplet innehåller en regional hierarki förutom en affär senhets hierarki, kommer den här skissen att distribueras i varje region.
-    3. Skapa en prenumeration med namnet `Corporate IT Subscription` för varje region i hanterings gruppens hierarki.
+    3. Skapa en prenumeration med namnet `Corporate IT Subscription`för varje region i hanterings gruppens hierarki.
     4. Använd `corporate-it-subscription-blueprint` skissen på varje regional instans.
     5. Detta upprättar en hubb för varje affär senhet i varje region. Obs! ytterligare kostnads besparingar kan uppnås, men delnings nav mellan affär senheter i varje region.
 6. Integrera grup princip objekt (GPO) via önskad tillstånds konfiguration (DSC):
-    1. Konvertera GPO till DSC – [Microsoft Baseline Management-projektet](https://github.com/Microsoft/BaselineManagement) i GitHub kan påskynda denna ansträngning. * Var noga med att lagra DSC i databasen parallellt med Resource Manager-mallar.
+    1. Konvertera GPO till DSC – [Microsoft Baseline Management-projektet](https://github.com/Microsoft/BaselineManagement) i GitHub kan påskynda denna ansträngning. Se till att lagra DSC i databasen parallellt med Resource Manager-mallar.
     2. Distribuera Azure Automation tillstånds konfiguration till alla instanser av företags IT-prenumerationen. Azure Automation kan användas för att tillämpa DSC på virtuella datorer som distribuerats i stödda prenumerationer i hanterings gruppen.
     3. Den aktuella översikten planerar att aktivera anpassade principer för gäst konfiguration. När funktionen släpps krävs inte längre användningen av Azure Automation i den här rekommenderade metoden.
 
-**Använda ytterligare styrning för en moln implementerings prenumeration (eker):** Genom att bygga vidare på `Corporate IT Subscription` kan mindre förbättringar av styrnings MVP: en för varje prenumeration som är avsedd för program archetypes skapa snabb förbättring.
+**Använda ytterligare styrning för en moln implementerings prenumeration (eker):** Genom att bygga vidare på `Corporate IT Subscription`kan mindre förbättringar av styrnings MVP: en för varje prenumeration som är avsedd för program archetypes skapa snabb förbättring.
 
 I tidigare repetitiva ändringar av bästa praxis definierade vi nätverks säkerhets grupper för att blockera offentlig trafik och vit listas intern trafik. Dessutom skapade Azure-skissen tillfälligt DMZ och Active Directory funktioner. I den här iterationen ska vi anpassa dessa till gångar till en bit, vilket skapar en ny version av Azure-skissen.
 
@@ -165,7 +165,7 @@ I tidigare repetitiva ändringar av bästa praxis definierade vi nätverks säke
     6. Publicera skissen till alla hanterings grupper som ska vara värd för skyddade data.
     7. Använd den nya skissen på varje berörd prenumeration tillsammans med befintliga ritningar.
 
-## <a name="conclusion"></a>Sammanfattning
+## <a name="conclusion"></a>Slutsats
 
 Genom att lägga till dessa processer och ändringar i styrnings MVP: n kan du åtgärda många av de risker som är förknippade med säkerhets styrningen. Tillsammans lägger de till de nätverks-, identitets-och säkerhets övervaknings verktyg som behövs för att skydda data.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7decae6a0b9e0c8b41d30f5f3ccac2fdeab41feb
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8c64507c03a99ef771f7885dc8fbde960c570e4d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547725"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566315"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Styrnings guide för komplexa företag: förbättra disciplinen för identitets bas linjer
 
@@ -31,7 +31,7 @@ Affärs justeringen för moln migreringen av de två data centren godkändes av 
 
 De två första hindren hanteras parallellt. I den här artikeln behandlas den tredje och fjärde hindren-lösningen.
 
-### <a name="expanding-the-cloud-governance-team"></a>Expandera moln styrnings teamet
+### <a name="expand-the-cloud-governance-team"></a>Expandera gruppen moln styrning
 
 Moln styrnings teamet expanderar. Med tanke på behovet av ytterligare stöd för identitets hantering, kommer en system administratör från identitets gruppen nu att delta i ett vecko möte för att hålla de befintliga team medlemmarna medvetna om ändringar.
 
@@ -88,7 +88,7 @@ Här är de nya bästa metoderna:
     4. Använd skissen för alla prenumerationer som kräver äldre autentisering med flera företag eller andra leverantörer.
     5. Instansen av Active Directory som körs i Azure kan nu användas som en utökning av den lokala Active Directory-lösningen, så att den kan integreras med det befintliga Multi-Factor Authentication-verktyget och tillhandahålla anspråksbaserad autentisering, både via befintliga Active Directory-funktioner.
 
-## <a name="conclusion"></a>Sammanfattning
+## <a name="conclusion"></a>Slutsats
 
 Genom att lägga till dessa ändringar i styrnings MVP: n kan du åtgärda många av riskerna i den här artikeln, så att varje moln antagande team snabbt kan gå förbi den här Roadblock.
 

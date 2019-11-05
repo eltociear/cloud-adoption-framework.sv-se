@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 6aa17f3ffb16afae0b27bcccbee84ddf9ad2c5f0
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 47933f12bea00ff1ea9052125147287ffc9381d6
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73243141"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561784"
 ---
 # <a name="role-based-access-control"></a>Rollbaserad åtkomstkontroll
 
@@ -41,7 +41,7 @@ När du planerar din strategi för åtkomstkontroll ska du använda en modell f�
 > [!NOTE]
 > Ju mer specifika och detaljerade behörigheter du definierar desto mer sannolikt är det att din åtkomstkontroll blir komplex och svår att hantera. Detta gäller särskilt efter hand som din molnegendom blir större. Undvik resursspecifika behörigheter. Använd istället [hanteringsgrupper](https://docs.microsoft.com/azure/governance/management-groups) för åtkomstkontroll för hela företaget och [resursgrupper](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) för åtkomstkontroll inom prenumerationer. Undvik användarspecifika behörigheter. Tilldela istället åtkomst till [grupper i Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups).
 
-## <a name="using-built-in-rbac-roles"></a>Använda inbyggda RBAC-roller
+## <a name="use-built-in-rbac-roles"></a>Använd inbyggda RBAC-roller
 
 Azure tillhandahåller en mängd inbyggda rolldefinitioner, med tre huvudsakliga åtkomstroller:
 
@@ -59,7 +59,7 @@ Ett annat exempel på hur du använder inbyggda roller för att hantera specifik
 
 En lista med alla inbyggda roller finns i [Inbyggda roller för Azure-resurser](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles).
 
-## <a name="using-custom-roles"></a>Använda anpassade roller
+## <a name="use-custom-roles"></a>Använd anpassade roller
 
 Även om rollerna som är inbyggda i Azure har stöd för ett brett utbud av åtkomstkontrollscenarier, kanske de inte uppfyller alla krav för din organisation eller ditt team. Om du till exempel har en enda grupp med användare som ansvarar för att hantera virtuella datorer och Azure SQL Database-resurser kan du skapa en anpassad roll för att optimera hanteringen av de nödvändiga åtkomstkontrollerna.
 
