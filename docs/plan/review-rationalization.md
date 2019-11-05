@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8d374fdc5df4589e58b890ae5c169d26d0b1f206
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: a5ccbe2f3dd754914997ccba7b49ba47505dffa3
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833757"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564146"
 ---
 # <a name="review-rationalization-decisions"></a>Granska rationaliseringbeslut
 
@@ -26,7 +26,7 @@ Om du vill validera rationalisering-beslut kan du använda följande frågor fö
 
 ## <a name="innovation-indicators"></a>Innovations indikatorer
 
-Om den gemensamma granskningen av följande frågor resulterar i ett "Ja"-svar kan en arbets belastning vara en bättre kandidat för innovation. Sådan arbets belastning migreras inte via en Shift/lyft-eller modernisera-modell. I stället återskapas affärs logiken eller data strukturerna som ett nytt eller rekonstruerat program. Den här metoden kan vara mer arbets krävande och tids krävande. Men för en arbets belastning som representerar betydande affärs avkastning är investeringen berättigad.
+Om den gemensamma granskningen av följande frågor resulterar i ett "Ja"-svar kan en arbets belastning vara en bättre kandidat för innovation. Sådan arbets belastning migreras inte via en hiss och Shift eller modernisera modell. I stället skapas affärs logiken eller data strukturerna igen som ett nytt eller rekonstruktions program. Den här metoden kan vara mer arbets krävande och tids krävande. Men för en arbets belastning som representerar betydande affärs avkastning är investeringen berättigad.
 
 - Skapar du en marknads differentiering i programmen i den här arbets belastningen?
 - Finns det en föreslagen eller godkänd investering som syftar till att förbättra upplevelsen som är associerade med program i den här arbets belastningen?

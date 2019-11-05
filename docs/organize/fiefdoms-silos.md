@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 170054f07cb7e8282b3abd582e484a730aca1280
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: beac1a3d459bd0f8654a9c746bc25981ad366fb0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029453"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566762"
 ---
-# <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Organisatoriska antimönster: Silor och fiefdoms
+# <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Organisatoriska antimönster: silor och fiefdoms
 
 En större ändring av affärs metoder, kultur-eller teknik åtgärder kräver en tillväxt tänkesätt. I hjärtat av tillväxten är tänkesätt ett godkännande av förändringar och möjligheten att leda till att det inte går att leda till tvetydighet.
 
@@ -64,7 +64,7 @@ Team medlemmar i en IT-silo kan förmodligen definiera sig själva genom sin jus
 
 Det här antimönstret uppstår ofta från en gemensam passion för en speciell lösning. IT-silon förstärks sedan av teamets avancerade kunskaper som ett resultat av investeringen i denna speciella lösning. Den här överlägsna kompetensen kan vara en Accelerator för moln implementerings ansträngningar om resistens mot ändring kan lösas. Det kan också bli en större Blocker om silorna är uppdelade eller om grupp medlemmarna inte kan utvärdera alternativ korrekt. I tur och ordning kan IT-silo ofta lösas utan betydande ändringar i organisations diagrammet.
 
-### <a name="addressing-resistance-from-it-silos"></a>Rikta motstånd från IT-silor
+### <a name="address-resistance-from-it-silos"></a>Adress motstånd från IT-silor
 
 IT-silor kan åtgärdas med hjälp av följande metoder. Den bästa metoden beror på den bakomliggande orsaken till motståndet.
 
@@ -112,16 +112,18 @@ Fiefdoms är särskilt vanliga i organisationer som har erfarenhet av IT-downsiz
 
 I allmänhet är fiefdoms resultatet av en rad chef som oroliga förlust av teamet och den tillhör ande energi basen. De här ledarna har ofta en känsla för att ge sitt team och behöver skydda sina underordnade från negativa konsekvenser. Fraser som "skyddade teamet från Change" och "skydda teamet från process avbrott" kan vara indikatorer för en överskyddad chef som kan behöva mer support från ledarskap.
 
-### <a name="addressing-resistance-from-it-fiefdoms"></a>Rikta motstånd från IT-fiefdoms
+### <a name="address-resistance-from-it-fiefdoms"></a>Adress motstånd från IT-fiefdoms
 
-IT-fiefdoms kan demonstrera viss tillväxt genom att följa de metoder som beskrivs för att [hantera IT-silons motstånd](#addressing-resistance-from-it-silos). Innan du försöker adressera resistens från en IT-fiefdom rekommenderar vi att du hanterar teamet som en IT-silo först. Om dessa typer av metoder inte kan ge upphov till betydande förändringar kan det motstånds laget bli lidande från en IT fiefdom-antimönster. Rotor saken till IT-fiefdoms är lite mer komplex för att adressera, eftersom den här motståndet kan komma från den direkta linje hanteraren (eller en ledare högre upp i organisations diagrammet). Utmaningar som är en silo – driven är vanligt vis enklare att lösa.
+IT-fiefdoms kan demonstrera viss tillväxt genom att följa de metoder som beskrivs för att [hantera IT-silons motstånd](#address-resistance-from-it-silos). Innan du försöker adressera resistens från en IT-fiefdom rekommenderar vi att du hanterar teamet som en IT-silo först. Om dessa typer av metoder inte kan ge upphov till betydande förändringar kan det motstånds laget bli lidande från en IT fiefdom-antimönster. Rotor saken till IT-fiefdoms är lite mer komplex för att adressera, eftersom den här motståndet kan komma från den direkta linje hanteraren (eller en ledare högre upp i organisations diagrammet). Utmaningar som är en silo – driven är vanligt vis enklare att lösa.
 
 När kontinuerliga motstånd från IT-fiefdoms blockerar moln implementerings ansträngningar, kan det vara en bra idé att utvärdera situationen med befintliga IT-ledare. IT-ledare bör noggrant överväga insikter från [moln strategi teamet](./cloud-strategy.md), [moln Center](./cloud-center-of-excellence.md)och [moln styrnings grupper](./cloud-governance.md) innan beslut fattas.
 
 > [!NOTE]
-> IT-ledare bör aldrig ta ändringar i organisations diagrammet lätt. De bör också validera och analysera feedback från var och en av de stödda teamen. Transformativa-ansträngningar som moln implementering tenderar att öka de underliggande problem som har försvunnit eller som inte har adresser ATS långt före den här ansträngningen. När fiefdoms hindrar företagets framgång, är ledarskaps förändringar en sannolik nödvändighet.
+> IT-ledare bör aldrig ta ändringar i organisations diagrammet lätt. De bör också validera och analysera feedback från var och en av de stödda teamen. Investeringar i molnet är dock ett exempel på hur du kan förstora underliggande problem som har försvunnit eller som inte har adresser ATS långt före den här ansträngningen. När fiefdoms hindrar företagets framgång, är ledarskaps förändringar en sannolik nödvändighet.
 >
 > Lyckligt vis upphör inte en borttagning av ledaren av en fiefdom ofta att avslutas. Dessa starka, passion ledare kan ofta flyttas till en hanterings roll efter en kort period av reflektion. Med rätt support kan den här ändringen vara felfri för fiefdom-ledare och det aktuella teamet.
+
+<!-- -->
 
 > [!CAUTION]
 > För chefer av IT-fiefdoms är det ett tydligt ledarskaps värde att skydda teamet från risk. Det finns dock en fin linje mellan skydd och isolering. När teamet har blockerats från att delta i att köra ändringar kan IT-avdelningen ha psykologisk och professionella följder för teamet. Det kan vara starkt att ändra motstånds tiden, särskilt under tider med synlig förändring.

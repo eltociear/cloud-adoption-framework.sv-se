@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8623a845a6c8d8b0a8cc50d404ead85eae256134
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: dbdabb6edc425ea3c70706313d2357323d2a523c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73243193"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561884"
 ---
 # <a name="review-your-compute-options"></a>Granska dina beräknings alternativ
 
@@ -35,7 +35,7 @@ För varje program eller tjänst som du distribuerar till din landningszonmiljö
 Besvara följande frågor om dina arbetsbelastningar för att skapa ett beslutsunderlag baserat på beslutsträdet för Azure-processortjänster:
 
 - **Skapar du helt nya program och tjänster eller migrerar du från befintliga lokala arbetsbelastningar?** Genom att utveckla nya program som en del av din molnimplementering kan du dra full nytta av modern molnbaserad värdteknik redan från utvecklingsfasen.
-- **Om du migrerar befintliga arbetsbelastningar, kan de använda modern molnteknik?** Migrering av lokala arbets belastningar kräver analys: kan du enkelt optimera befintliga program och tjänster så att du kan dra nytta av modern moln teknik eller en ökning *och Skift* -metod som fungerar bättre för dina arbets belastningar?
+- **Om du migrerar befintliga arbetsbelastningar, kan de använda modern molnteknik?** Migrering av lokala arbets belastningar kräver analys: kan du enkelt optimera befintliga program och tjänster för att dra nytta av modern moln teknik eller kommer att fungera bättre för dina arbets belastningar?
 - **Kan dina program eller tjänster använda behållare?** Om dina program är bra kandidater för behållarvärdtjänster kan du utnyttja resurseffektiviteten, skalbarheten och samordningskapaciteten hos [Azure Container Services](https://azure.microsoft.com/product-categories/containers). Både [Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) och[Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) kan användas för beständig lagring för program i behållare.
 - **Är dina program webbaserade eller API-baserade och använder de PHP, ASP.NET, Node. js eller liknande teknik?** Webbappar kan distribueras till hanterade [Azure App Service](https://docs.microsoft.com/azure/app-service/overview)-instanser så att du inte behöver underhålla virtuella datorer som servrar.
 - **Behöver du fullständig kontroll över operativsystemet och värdmiljön för din arbetsbelastning?** Om du behöver kontrollera värd miljön, inklusive operativsystemet, diskar, lokal programvara och andra konfigurationer kan du använda [virtuella Azure-datorer](https://azure.microsoft.com/services/virtual-machines) som värd för dina program och tjänster. Utöver valet av storlek på de virtuella datorerna och prestandanivåer påverkar dina beslut om virtuellt diskutrymme prestanda och serviceavtal för dina IaaS-baserade (infrastruktur som en tjänst) arbetsbelastningar. Mer information finns i [dokumentationen om Azure-disklagring](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview).

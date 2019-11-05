@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 92aa03c07a6652f15a0400a025b8911a4d0d07dd
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 95a2bf325615c7eb765ad747d0aad16f008e015d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240171"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564022"
 ---
 # <a name="perimeter-networks"></a>Perimeternätverk
 
@@ -27,9 +27,9 @@ För att perimeternätverket ska vara effektiva måste inkommande paket flöda g
 Perimeternätverket använder följande Azure-funktioner och -tjänster:
 
 - [Virtuella nätverk][virtual-networks], [användardefinierade vägar][user-defined-routes] och [nätverkssäkerhetsgrupper][network-security-groups]
-- [Virtuell nätverksutrustning][NVA]
+- [Virtuella nätverks enheter (NVA)][NVA]
 - [Azure Load Balancer][ALB]
-- [Azure Application Gateway][AppGW] och [brandvägg för webbaserade program][AppGWWAF] (WAF)
+- [Azure Application Gateway][AppGW] och [brand vägg för webbaserade program (WAF)][AppGWWAF]
 - [Offentliga IP-adresser][PIP]
 - [Azure Front Door][AFD] med [brandvägg för webbaserade program][AFDWAF]
 - [Azure Firewall][AzFW]

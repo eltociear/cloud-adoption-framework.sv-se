@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: ac1fe4cac44d4a1f830be1faba7f2d50ddbd98f0
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c1819bafaed5e75e6667754d598b075eb3204925
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224334"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564302"
 ---
 # <a name="cloud-center-of-excellence"></a>Molncenter för utmärkthet
 
@@ -92,7 +92,7 @@ I utbyte för dessa förmåner kan den befintliga IT-funktionen vara handel med 
 
 I friska Cloud Forward-företag är den här förhandlings processen en dynamisk konversation mellan peer-datorer och partner IT-team. De tekniska detaljerna kan vara komplexa, men är hanterbara när de förstår målet och har stöd för CCoE-ansträngningarna. När det är mindre än stöd för, kan följande avsnitt om hur du aktiverar CCoE lyckas hjälpa till att lösa kultur Blocker.
 
-## <a name="enabling-ccoe-success"></a>Aktivering av CCoE lyckades
+## <a name="enable-ccoe-success"></a>Aktivering av CCoE lyckades
 
 Innan du fortsätter med den här modellen är det viktigt att validera företagets tolerans för en tillväxt tänkesätt och det är lättare att släppa ut centrala ansvar. Som nämnts ovan är syftet med en CCoE att utbyta kontroll över rörlighet och hastighet.
 

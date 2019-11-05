@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cdc6abe2be94bb0d91047d4d64a0774bac6a8e0e
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8e3030a53a7812eea87ec8cd12d492888cc3c421
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549217"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566836"
 ---
 # <a name="approve-architecture-changes-before-migration"></a>Godkänna arkitekturändringar före migrering
 
@@ -54,7 +54,7 @@ Följande bästa praxis kan hjälpa CAB:en att känna visst förtroende under mi
 
 ### <a name="standardize-change"></a>Standardisera förändring
 
-För ett molnimplementeringsteam är det lockande att överväga detaljerade arkitekturbeslut för varje arbetsbelastning som migreras till molnet. Det är lika lockande att använda molnmigrering som en katalysator för att refaktorisera tidigare arkitektoniska beslut. För organisationer som migrerar några hundra virtuella datorer eller några dussin arbetsbelastningar kan endera metoden hanteras korrekt. Vid migrering av 1 000 eller fler tillgångar till ett datacenter anses båda dessa metoder vara ett antimönster med hög risk som avsevärt minskar sannolikheten för ett lyckat resultat. Modernisering, refaktorisering och arkitekturomarbetning av varje program kräver olika kompetensuppsättningar och en betydande mängd olika ändringar. Dessa uppgifter skapar beroenden av mänskligt arbete i stor skala. Var och en av dessa beroenden medför risker för migreringsarbetet.
+För ett molnimplementeringsteam är det lockande att överväga detaljerade arkitekturbeslut för varje arbetsbelastning som migreras till molnet. Det är lika lockande att använda molnmigrering som en katalysator för att refaktorisera tidigare arkitektoniska beslut. För organisationer som migrerar några hundra virtuella datorer eller några dussin arbetsbelastningar kan endera metoden hanteras korrekt. Vid migrering av 1 000 eller fler tillgångar till ett datacenter anses båda dessa metoder vara ett antimönster med hög risk som avsevärt minskar sannolikheten för ett lyckat resultat. Att ställa av, omforma och återskapa alla program kräver olika kunskaps uppsättningar och en stor mängd olika ändringar, och dessa uppgifter skapar beroenden för mänskliga ansträngningar i stor skala. Var och en av dessa beroenden medför risker för migreringsarbetet.
 
 I artikeln om [rationalisering av digital egendom](../../../digital-estate/rationalize.md) diskuteras flexibiliteten och de tidsbesparande effekterna av grundläggande antaganden vid rationalisering av en digital egendom. Det finns ytterligare en fördel med standardiserad förändring. Genom att välja en standardmetod för rationalisering till att styra migreringsarbetet kan molnrådgivningsstyrelsen eller produktägaren granska och godkänna tillämpningen av en enskild ändring på en lång lista av arbetsbelastningar. Detta minskar det tekniska godkännandet av varje arbetsbelastning till dem som kräver en betydande arkitekturändring för att säkerställa molnkompatibilitet.
 

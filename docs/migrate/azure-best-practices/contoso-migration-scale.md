@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 16289952e74f81c885f15d69436c17e9d012d80a
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: ab5e8cdb7058a773b4085f01a6be64b4521e6b69
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73238916"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566453"
 ---
 # <a name="scale-a-migration-to-azure"></a>Skala en migrering till Azure
 
@@ -174,7 +174,7 @@ Contoso använder Azure Migrate på följande sätt:
 
 #### <a name="database-tools"></a>Databasverktyg
 
-Förutom Azure Migrate fokuserar Contoso på att använda verktyg som är specifika för utvärderingen av databasen. Verktyg som [Data Migration Assistant](/sql/dma/dma-overview?view=sql-server-2017) bidrar till att utvärdera SQL Server-databaser för migrering.
+Förutom Azure Migrate fokuserar Contoso på att använda verktyg som är specifika för utvärderingen av databasen. Verktyg som [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=sql-server-2017) bidrar till att utvärdera SQL Server-databaser för migrering.
 
 Data Migration Assistant (DMA) kan hjälpa Contoso att ta reda på om lokala databaser är kompatibla med ett utbud av Azure Database-lösningar, till exempel Azure SQL Database, SQL Server som körs på en virtuell Azure IaaS-dator och Azure SQL-hanterad instans.
 
@@ -221,7 +221,7 @@ Azure Site Recovery är den primära Azure-tjänsten för att samordna haveriber
 
 Contoso har [redan slutfört en POC](./contoso-migration-rehost-vm.md) för att se hur Site Recovery kan hjälpa dem att migrera till molnet.
 
-##### <a name="using-site-recovery-at-scale"></a>Använda Site Recovery i stor skala
+##### <a name="use-site-recovery-at-scale"></a>Använd Site Recovery i skala
 
 Contoso planerar att utföra flera migreringar och Shift-migreringar. För att detta ska fungera kommer Site Recovery att replikera omgångar med cirka 100 virtuella datorer i taget. Contoso måste utföra en kapacitetsplanering för den föreslagna Site Recovery-migreringen lära sig hur detta går till.
 
@@ -262,10 +262,10 @@ Contoso måste räkna ut hur dessa komponenter ska distribueras baserat på kapa
 --- | ---
 **Maximal daglig ändringshastighet** | En enda processerver kan hantera en daglig ändrings hastighet på upp till 2 TB. Eftersom en virtuell dator bara kan använda en processerver är det högsta antalet dagliga data ändringar som stöds för en replikerad virtuell dator 2 TB.
 **Maximalt dataflöde** | Ett Azure Storage-standardkonto kan hantera högst 20 000 förfrågningar per sekund och in-/utdataåtgärder per sekund (IOPS) över en replikerad virtuell dator ska ligga inom den här gränsen. Till exempel, om en virtuell dator har 5 diskar och varje disk genererar 120 IOPS (8K storlek) på den virtuella datorn kommer den att ligga inom Azures IOPS-gräns per disk på 500.<br/><br/> Observera att antalet lagringskonton som behövs motsvarar den totala källdatorns IOPS delat med 20 000. En replikerad dator kan bara tillhöra ett enda lagrings konto i Azure.
-**Konfigurationsserver** | Baserat på Contosos uppskattning av de behöver replikera 100=200 virtuella datorer och [storlekskraven för konfigurationsservern](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server) uppskattar Contoso att de behöver följande konfigurationsserverdator:<br/><br/> CPU: 16 virtuella processorer (2 Sockets * 8 kärnor @ 2,5 GHz)<br/><br/> Minne: 32 GB<br/><br/> Cache-disk: 1 TB<br/><br/> Data ändrings frekvens: 1 TB till 2 TB.<br/><br/> Utöver storlekskraven vill Contoso se till att konfigurationsservern är belägen på en optimal plats, samt på samma nätverk och LAN-segment som den virtuella datorn som ska migreras.
-**Processervern** | Contoso distribuerar en fristående dedikerad processerver med möjlighet att replikera 100-200 virtuella datorer:<br/><br/> CPU: 16 virtuella processorer (2 Sockets * 8 kärnor @ 2,5 GHz)<br/><br/> Minne: 32 GB<br/><br/> Cache-disk: 1 TB<br/><br/> Data ändrings frekvens: 1 TB till 2 TB.<br/><br/> Processervern kommer att arbeta hårt och därför bör den finnas på en ESXi-värd som kan hantera sådana volymer för disk-I/O, nätverk trafik och CPU som krävs för replikeringen. Contoso överväger att använda den dedikerad värd för detta.
+**Konfigurationsserver** | Baserat på Contosos uppskattning av de behöver replikera 100=200 virtuella datorer och [storlekskraven för konfigurationsservern](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server) uppskattar Contoso att de behöver följande konfigurationsserverdator:<br/><br/> CPU: 16 virtuella processorer (2 Sockets &#215; 8 kärnor @ 2,5 GHz)<br/><br/> Minne: 32 GB<br/><br/> Cache-disk: 1 TB<br/><br/> Data ändrings frekvens: 1 TB till 2 TB.<br/><br/> Utöver storlekskraven vill Contoso se till att konfigurationsservern är belägen på en optimal plats, samt på samma nätverk och LAN-segment som den virtuella datorn som ska migreras.
+**Processervern** | Contoso distribuerar en fristående dedikerad processerver med möjlighet att replikera 100-200 virtuella datorer:<br/><br/> CPU: 16 virtuella processorer (2 Sockets &#215; 8 kärnor @ 2,5 GHz)<br/><br/> Minne: 32 GB<br/><br/> Cache-disk: 1 TB<br/><br/> Data ändrings frekvens: 1 TB till 2 TB.<br/><br/> Processervern kommer att arbeta hårt och därför bör den finnas på en ESXi-värd som kan hantera sådana volymer för disk-I/O, nätverk trafik och CPU som krävs för replikeringen. Contoso överväger att använda den dedikerad värd för detta.
 **Nätverk** | Contoso har granskat den aktuella plats-till-plats-VPN-infrastrukturen och beslutat sig för att implementera Azure-ExpressRoute. Implementeringen är kritisk eftersom den kommer att minska svarstiden och förbättra bandbredden till Contosos primära region: USA, östra 2.<br/><br/> **Övervakning:** Contoso måste noggrant övervaka data som flödar från processervern. Om data överbelastar nätverksbandbredden kan Contoso överväga att [begränsa processerverns bandbredd](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#control-network-bandwidth).
-**Azure Storage** | För migreringen måste Contoso identifiera och skapa rätt typ och antal för sina Azure Storage-målkonton. Site Recovery replikerar data från virtuella datorer till Azure Storage.<br/><br/> Site Recovery kan replikeras till standard- eller premiumlagringskonton (SSD).<br/><br/> Contoso måste granska [lagrings gränserna](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) och bedöma den förväntade tillväxten och ökade användning över tid för att fatta ett beslut om lagring. Med tanke på migreringarnas hastighet och prioritet har Contoso valt att använda premium-SSD<br/><br/>
+**Azure Storage** | För migreringen måste Contoso identifiera och skapa rätt typ och antal för sina Azure Storage-målkonton. Site Recovery replikerar data från virtuella datorer till Azure Storage.<br/><br/> Site Recovery kan replikeras till standard- eller premiumlagringskonton (SSD).<br/><br/> Contoso måste granska [lagrings gränserna](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) och bedöma den förväntade tillväxten och ökade användning över tid för att fatta ett beslut om lagring. Med tanke på hastigheten och prioriteten hos migreringar har contoso valt att använda Premium-SSD.<br/><br/>
 Contoso har valt att använda hanterade diskar för alla virtuella datorer som distribueras till Azure. IOPS-behovet avgör om diskarna ska vara Standard HDD, Standard SSD eller Premium (SSD).<br/><br/>
 
 <!--markdownlint-enable MD033 -->
@@ -281,7 +281,7 @@ Azure Database Migration Service är en fullständigt hanterad tjänst som möjl
 
 DMS är inte det enda migreringsverktyget för Microsoft Database. Få en [jämförelse av verktyg och tjänster](https://blogs.msdn.microsoft.com/datamigration/2017/10/13/differentiating-microsofts-database-migration-tools-and-services).
 
-##### <a name="using-dms-at-scale"></a>Använda DMS i stor skala
+##### <a name="use-dms-at-scale"></a>Använd DMS i skala
 
 Contoso kommer att använda DMS vid migrering från SQL Server.
 
@@ -291,7 +291,7 @@ Contoso kommer att använda DMS vid migrering från SQL Server.
 
 - En annan skalningsstrategi för Contoso är att tillfälligt skala upp Azure SQL- eller My DQL-databasmålinstansen till ett SKU på premiumnivå under datamigreringen. Detta minimerar databasbegränsningen som kan påverka data överföringsaktiviteter när du använder SKU:er på lägre nivå.
 
-##### <a name="using-other-tools"></a>Använda andra verktyg
+##### <a name="use-other-tools"></a>Använd andra verktyg
 
 Förutom DMS kan Contoso använda andra verktyg och tjänster för att identifiera information om en virtuell dator.
 

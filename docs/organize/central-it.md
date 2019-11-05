@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: d1d59b105dd6d75b0c5b5ed12d711473fd4995c8
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: dcf98227f6464b71d0e3e3a1bc0bf505c149254b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549112"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564281"
 ---
 # <a name="central-it-capabilities"></a>Centrala IT-funktioner
 
@@ -93,7 +93,7 @@ Måtten på denna risk är snabba och flexibla. Molnet gör det enklare att snab
 
 Många branscher kräver en stelhet mot tredje parts efterlevnad. Vissa krav på efterlevnaden kräver fortfarande central IT-kontroll. Genom att leverera dessa efterlevnad kan du lägga till tid till distributions processer, särskilt för nya tekniker som inte har använts på ett brett sätt. I dessa scenarier förväntas förseningar i distributionen under de tidiga stegen som antas. Liknande situationer finns mitt för företag som hanterar känslig kund information, men som kanske inte styrs av ett krav för en tredje part.
 
-### <a name="operating-within-the-exceptions"></a>Drift inom undantagen
+### <a name="operate-within-the-exceptions"></a>Arbeta inom undantagen
 
 När centraliserade IT-processer krävs och dessa processer skapar lämpliga kontroll punkter för att införa nya tekniker, kan dessa Innovations kontroll punkter fortfarande åtgärdas snabbt. Krav på styrning och efterlevnad är utformade för att skydda de saker som är känsliga, inte att skydda allt. Molnet innehåller enkla mekanismer för att förvärva och distribuera isolerade resurser samtidigt som du behåller rätt guardrails.
 

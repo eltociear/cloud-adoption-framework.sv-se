@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a393791aac072cb9a135c6fc11e08fc653817742
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: de64b03c6c6113261426beed5de729eb6927a440
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222585"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566384"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>Procedurer för efterlevnad av distributions accelerations principer
 
@@ -48,7 +48,7 @@ Se till att IT-avdelningen har implementerat automatiska övervaknings system f�
 
 ## <a name="violation-triggers-and-enforcement-actions"></a>Fel utlösare och tvingande åtgärder
 
-Eftersom inkompatibilitet med konfigurations principer kan leda till risker för kritiska tjänst störningar bör moln styrnings teamet ha insyn i allvarliga princip överträdelser. Se till att IT-personalen har tydliga eskalering sökvägar för rapportering av kompatibilitetsproblem till styrnings grupps medlemmar som är bäst lämpade att identifiera och kontrol lera att princip problemen begränsas när de upptäcks.
+Eftersom inkompatibilitet med konfigurations principer kan leda till risker för kritiska tjänst störningar bör moln styrnings teamet ha insyn i allvarliga princip överträdelser. Se till att IT-personalen har tydliga eskalering sökvägar för rapportering av kompatibilitetsproblem till styrnings grupps medlemmar som är bäst lämpade att identifiera och kontrol lera att princip problem minimeras när de upptäcks.
 
 När överträdelser identifieras bör du vidta åtgärder för att justera med principen så snart som möjligt. IT-teamet kan automatisera de flesta överträdelser med de verktyg som beskrivs i [distributions accelerationen verktygskedjan för Azure](./toolchain.md).
 
@@ -56,7 +56,7 @@ Följande utlösare och tvingande åtgärder innehåller exempel som du kan anv�
 
 - **Oväntade ändringar i konfigurationen har identifierats.** Om konfigurationen av en resurs ändras oväntad, arbetar du med IT-personal och arbets belastnings ägare för att identifiera rotor saken och utveckla en reparations plan.
 - **Konfigurationen av nya resurser följer inte med policyn.** Arbeta med DevOps-team och arbets belastnings ägare för att granska distributions accelerations principer under projekt starten så att alla kan använda relevanta princip krav.
-- **Distributions fel eller konfigurations problem orsakar fördröjningar i projekt scheman.** Arbeta med utvecklings team och arbets belastnings ägare för att se till att teamet förstår hur du automatiserar distributionen av molnbaserade resurser för konsekvens och repeterbarhet. Helt automatiserade distributioner bör krävas tidigt i utvecklings cykeln&mdash;för att försöka uppnå sent i utvecklings cykeln, vanligt vis leder till oväntade problem och fördröjningar.
+- **Distributions fel eller konfigurations problem orsakar fördröjningar i projekt scheman.** Arbeta med utvecklings team och arbets belastnings ägare för att se till att teamet förstår hur du automatiserar distributionen av molnbaserade resurser för konsekvens och repeterbarhet. Helt automatiserade distributioner bör krävas tidigt i utvecklings cykeln&mdash;att försöka göra detta sent i utvecklings cykeln leder vanligt vis till oväntade problem och fördröjningar.
 
 ## <a name="next-steps"></a>Nästa steg
 

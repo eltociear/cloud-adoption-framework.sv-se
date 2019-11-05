@@ -9,20 +9,20 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: efc105298462afa9dfac76f0505854fdc157c17d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 086740f6677896220824096a5afe66618779a2d0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220937"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566403"
 ---
 # <a name="cost-management-sample-policy-statements"></a>Cost Management exempel på princip satser
 
 Enskilda moln princips instruktioner är rikt linjer för att åtgärda specifika risker som identifieras under riskbedömningen. Dessa instruktioner bör ge en kortfattad sammanfattning av riskerna och planer för att hantera dem. Varje uttrycks definition ska innehålla dessa delar av informationen:
 
-- **Affärs risk.** En sammanfattning av risken som den här principen kommer att åtgärda.
-- **Princip instruktion.** En tydlig Sammanfattning av princip kraven.
-- **Design alternativ.** Rekommendationer, specifikationer eller andra rikt linjer som IT-team och utvecklare kan använda när de implementerar principen.
+- **Affärs risk:** En sammanfattning av risken som den här principen kommer att åtgärda.
+- **Princip instruktion:** En tydlig Sammanfattning av princip kraven.
+- **Design alternativ:** Rekommendationer, specifikationer eller andra rikt linjer som IT-team och utvecklare kan använda när de implementerar principen.
 
 Följande exempel på princip satser riktar sig mot vanliga kostnads relaterade affärs risker. Dessa instruktioner är exempel som du kan referera till när du använder policy-instruktioner för att uppfylla organisationens behov. Dessa exempel är inte avsedda att vara proskriptiga och det finns potentiellt flera princip alternativ för att hantera varje identifierad risk. Arbeta nära företags-och IT-team för att identifiera de bästa principerna för din unika uppsättning risker.
 

@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 70308733893ac3a8baf1d910b23c9d9162719b5f
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: e025b46c99e36340afd777e06b3a493c9f65c5dd
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240201"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564202"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Komma igång med en färdighets beredskaps väg
 
@@ -38,18 +38,15 @@ Moln implementerings ramverket hjälper till att läsa igenom hela livs cykeln f
 
 Var och en av de tidigare inlärnings vägarna delar affärs möjligheter över flera medie typer för att maximera kunskaps förvärvet.
 
-# <a name="microsoft-learn"></a>Microsoft Learn
+## <a name="microsoft-learn"></a>Microsoft Learn
 
 Microsoft Learn är en ny metod för inlärning. Det är lätt att komma igång med nya kunskaper och ansvars områden som medföljer moln införande. Microsoft Learn erbjuder en mer givande metod för konkret inlärning som hjälper er att uppnå era mål snabbare. Tjäna poäng och nivåer och få mer!
 Här följer några exempel på skräddarsydda utbildnings vägar på Microsoft Learn som anpassas till plan-avsnittet i Cloud adoption Framework:
 
-[Utveckla dina DevOps-metoder](learn/paths/evolve-your-devops-practices/):D evops är en union av personer, processer och produkter för att möjliggöra kontinuerlig leverans av värde till dina slutanvändare. Azure DevOps är en uppsättning tjänster som ger dig de verktyg du behöver för att göra just det. Med Azure DevOps kan du bygga, testa och distribuera valfritt program, antingen till molnet eller lokalt.
+[Utveckla dina DevOps-metoder](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices):D evops är en union av personer, processer och produkter för att möjliggöra kontinuerlig leverans av värde till dina slutanvändare. Azure DevOps är en uppsättning tjänster som ger dig de verktyg du behöver för att göra just det. Med Azure DevOps kan du bygga, testa och distribuera valfritt program, antingen till molnet eller lokalt.
 
-[Azure för data teknikern](learn/paths/azure-for-the-data-engineer/): utforska hur data teknikern har utvecklats och hur ankomsten i moln teknik ger nya möjligheter för företag att utforska. Du får lära dig de olika data plattforms tekniker som är tillgängliga och hur en data tekniker kan dra nytta av den här tekniken för en organisations förmån.     
+[Azure för data teknikern](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer): utforska hur data teknikern har utvecklats och hur ankomsten i moln teknik ger nya möjligheter för företag att utforska. Du får lära dig de olika data plattforms tekniker som är tillgängliga och hur en data tekniker kan dra nytta av den här tekniken för en organisations förmån.
 
-Om du vill identifiera ytterligare utbildnings vägar bläddrar du till [lär dig katalogen] (/Learn/Browse). Använd roles-filtret för att justera utbildnings vägar med din roll.
+## <a name="learn-more"></a>Läs mer
 
-
-
-
-
+Bläddra i [Microsoft Learn katalogen](https://docs.microsoft.com/learn/browse)om du vill identifiera ytterligare utbildnings vägar. Använd roles-filtret för att justera utbildnings vägar med din roll.

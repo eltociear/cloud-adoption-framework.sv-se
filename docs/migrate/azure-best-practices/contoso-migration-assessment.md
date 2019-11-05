@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b3ec947b841c36bcd28bdbd02615182fd25a158a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 3fe54994ac99a86bcb0a6c84c37b7b8612a129fa
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221444"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566480"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Utvärdera lokala arbetsbelastningar för migrering till Azure
 
@@ -73,7 +73,7 @@ Contoso använder Microsoft-verktyg för sin migreringsutvärdering. Verktygen �
 
 Teknik | Beskrivning | Kostnad
 --- | --- | ---
-[Data Migration Assistant](/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso kommer att använda Data Migration Assistant för att utvärdera och identifiera kompatibilitetsproblem som kan påverka deras databasfunktioner i Azure. Data Migration Assistant utvärderar funktionspariteten mellan SQL-källor och -mål. Det rekommenderar förbättringar för prestanda och tillförlitlighet. | Data Migration Assistant är ett kostnadsfritt nedladdningsbart verktyg.
+[Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso kommer att använda Data Migration Assistant för att utvärdera och identifiera kompatibilitetsproblem som kan påverka deras databasfunktioner i Azure. Data Migration Assistant utvärderar funktionspariteten mellan SQL-källor och -mål. Det rekommenderar förbättringar för prestanda och tillförlitlighet. | Data Migration Assistant är ett kostnadsfritt nedladdningsbart verktyg.
 [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Contoso använder tjänsten Azure Migrate för att utvärdera sina virtuella VMware-datorer. Azure Migrate bedömer datorernas lämplighet för migrering. Den ger storleks- och kostnadsuppskattningar för körning i Azure. | Från och med maj 2018 är Azure Migrate en kostnadsfri tjänst.
 [Tjänstkarta](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Azure Migrate använder Tjänstkarta för att visa beroenden mellan datorer som ska migreras. | Tjänstkarta är en del av Azure Monitor-loggarna. Contoso kan för närvarande använda Tjänstkarta i 180 dagar utan att debiteras.
 
@@ -98,7 +98,7 @@ I det här scenariot laddar Contoso ned och kör Data Migration Assistant för a
   - **OSTICKETWEB** kör Apache 2 och php 7.0.
   - **OSTICKETMYSQL** kör MySQL 5.7.22.
 
-## <a name="prerequisites"></a>Förutsättningar
+## <a name="prerequisites"></a>Krav
 
 Contoso och andra användare måste uppfylla följande krav för utvärderingen:
 
@@ -122,11 +122,11 @@ Så här utför Contoso utvärderingen:
 > [!div class="checklist"]
 >
 > - **Steg 1: Ladda ned och installera Data Migration Assistant.** Contoso förbereder Data Migration Assistant för utvärdering av den lokala SQL Server-databasen.
-> - **Steg 2: Utvärdera databasen med hjälp av Data Migration Assistant.** Contoso kör och analyserar databasutvärderingen.
-> - **Steg 3: Förbereda för VM-utvärdering med Azure Migrate.** Contoso konfigurerar lokala konton och justerar VMware-inställningar.
-> - **Steg 4: Upptäck lokala virtuella datorer med Azure Migrate.** Contoso skapar en virtuell dator för Azure Migrate Collector. Contoso kör sedan insamlaren (Collector) för att identifiera virtuella datorer för utvärdering.
-> - **Steg 5: Förbered för beroendeanalys med hjälp av Azure Migrate.** Contoso installerar Azure Migrate-agenter på de virtuella datorerna så att företaget kan se beroendemappningen mellan virtuella datorer.
-> - **Steg 6: Utvärdera de virtuella datorerna med Azure Migrate.** Contoso kontrollerar beroenden, grupperar de virtuella datorerna och kör utvärderingen. När utvärderingen är klar analyserar Contoso den för att förbereda inför migreringen.
+> - **Steg 2: utvärdera databasen med hjälp av Data Migration Assistant.** Contoso kör och analyserar databasutvärderingen.
+> - **Steg 3: Förbered för utvärdering av virtuella datorer med hjälp av Azure Migrate.** Contoso konfigurerar lokala konton och justerar VMware-inställningar.
+> - **Steg 4: identifiera lokala virtuella datorer med hjälp av Azure Migrate.** Contoso skapar en virtuell dator för Azure Migrate Collector. Contoso kör sedan insamlaren (Collector) för att identifiera virtuella datorer för utvärdering.
+> - **Steg 5: förbereda för beroende analys med hjälp av Azure Migrate.** Contoso installerar Azure Migrate-agenter på de virtuella datorerna så att företaget kan se beroendemappningen mellan virtuella datorer.
+> - **Steg 6: utvärdera de virtuella datorerna med hjälp av Azure Migrate.** Contoso kontrollerar beroenden, grupperar de virtuella datorerna och kör utvärderingen. När utvärderingen är klar analyserar Contoso den för att förbereda inför migreringen.
 
     > [!NOTE]
     > Assessments shouldn't just be limited to using tooling to discover information about your environment, you should schedule in time to speak to business owners, end users, other members within the IT department, etc in order to get a full picture of what is happening within the environment and understand things tooling cannot tell you. 
@@ -139,7 +139,7 @@ Så här utför Contoso utvärderingen:
 2. Contoso kör den hämtade installationsfilen (DownloadMigrationAssistant.msi) för att starta installationen.
 3. På sidan **Slutför** väljer Contoso **Starta Microsoft Data Migration Assistant** innan de avslutar guiden.
 
-## <a name="step-2-run-and-analyze-the-database-assessment-for-smarthotel360"></a>Steg 2: Köra och analysera databasutvärderingen för SmartHotel360
+## <a name="step-2-run-and-analyze-the-database-assessment-for-smarthotel360"></a>Steg 2: köra och analysera databas utvärderingen för SmartHotel360
 
 Contoso kan nu köra en utvärdering för att analysera den lokala SQL Server-databasen för SmartHotel360-appen.
 
@@ -188,7 +188,7 @@ Resultatet visas när de är tillgängliga. Om Contoso åtgärdar problemen mås
     ![Data Migration Assistant – rapporten funktionsrekommendationer](./media/contoso-migration-assessment/dma-assessment-6.png)
 
     > [!NOTE]
-    > Contoso bör [aktivera transparent datakryptering](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017) för alla SQL Server-databaser. Detta är ännu viktigare när en databas befinner sig i molnet än när den finns lokalt. Transparent datakryptering bör endast aktiveras efter migrering. Om transparent datakryptering redan har aktiverats måste Contoso flytta certifikatet eller den asymmetriska nyckeln till huvuddatabasen på målservern. Lär dig hur [du flyttar en transparent data krypteringsdatabas till en annan SQL Server-instans](/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017).
+    > Contoso bör [aktivera transparent datakryptering](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017) för alla SQL Server-databaser. Detta är ännu viktigare när en databas befinner sig i molnet än när den finns lokalt. Transparent datakryptering bör endast aktiveras efter migrering. Om transparent datakryptering redan har aktiverats måste Contoso flytta certifikatet eller den asymmetriska nyckeln till huvuddatabasen på målservern. Lär dig hur [du flyttar en transparent data krypteringsdatabas till en annan SQL Server-instans](https://docs.microsoft.com/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017).
 
 3. Contoso kan exportera utvärderingen i JSON-eller CSV-format.
 
@@ -196,10 +196,10 @@ Resultatet visas när de är tillgängliga. Om Contoso åtgärdar problemen mås
 > För storskaliga utvärderingar:
 >
 > - Kör flera utvärderingar samtidigt och se tillståndet för utvärderingarna genom att öppna sidan **Alla utvärderingar**.
-> - Konsolidera utvärderingarna till en [SQL Server-databas](/sql/dma/dma-consolidatereports?view=ssdt-18vs2017).
-> - Konsolidera utvärderingarna till en [PowerBI-rapport](/sql/dma/dma-powerbiassesreport?view=ssdt-18vs2017).
+> - Konsolidera utvärderingarna till en [SQL Server-databas](https://docs.microsoft.com/sql/dma/dma-consolidatereports?view=ssdt-18vs2017).
+> - Konsolidera utvärderingarna till en [PowerBI-rapport](https://docs.microsoft.com/sql/dma/dma-powerbiassesreport?view=ssdt-18vs2017).
 
-## <a name="step-3-prepare-for-vm-assessment-by-using-azure-migrate"></a>Steg 3: Förbereda för virtuell dator med Azure Migrate
+## <a name="step-3-prepare-for-vm-assessment-by-using-azure-migrate"></a>Steg 3: Förbered för utvärdering av virtuella datorer med hjälp av Azure Migrate
 
 Contoso måste skapa ett VMware-konto som ska användas i Azure Migrate för att automatiskt identifiera virtuella datorer för utvärdering, kontrollera att de har behörighet att skapa en virtuell dator, observera portarna som måste vara öppna och ange nivå för statistikinställningar.
 
@@ -207,9 +207,9 @@ Contoso måste skapa ett VMware-konto som ska användas i Azure Migrate för att
 
 Identifiering av virtuella datorer kräver ett skrivskyddat konto i vCenter Server som har följande egenskaper:
 
-- **Användartyp:** Minst en skrivskyddad användare.
-- **Behörigheter:** För datacenterobjektet väljer du kryssrutan **Sprid till underordnade objekt**. För **Roll**väljer du **Skrivskyddad**.
-- **Detaljer:** Användaren tilldelas på datacenternivå och har åtkomst till alla objekt i datacentret.
+- **Användar typ:** Minst en skrivskyddad användare.
+- **Behörigheter:** För datacenter-objektet markerar du kryss rutan **Sprid till underordnade objekt** . För **Roll**väljer du **Skrivskyddad**.
+- **Information:** Användaren tilldelas på data center nivå med åtkomst till alla objekt i data centret.
 - Om du vill begränsa åtkomsten tilldelar du rollen **Ingen åtkomst** med **Sprid till underordnat** objekt till underordnade objekt (vSphere-värdar, datalager, virtuella datorer och nätverk).
 
 ### <a name="verify-permissions-to-create-a-vm"></a>Kontrollera behörigheter för att skapa en virtuell dator
@@ -220,7 +220,7 @@ Contoso kontrollerar att de har behörighet att skapa en virtuell dator genom at
 
 Contoso-utvärderingen använder beroendemappning. Beroendemappning kräver att en agent installeras på de virtuella datorer som ska utvärderas. Agenten måste kunna ansluta till Azure från TCP-port 443 på varje virtuell dator. Läs mer om [anslutningskraven](https://docs.microsoft.com/azure/log-analytics/log-analytics-concept-hybrid).
 
-## <a name="step-4-discover-vms"></a>Steg 4: Identifiera virtuella datorer
+## <a name="step-4-discover-vms"></a>Steg 4: identifiera virtuella datorer
 
 Contoso skapar ett Azure Migrate-projekt för att identifiera virtuella datorer. Contoso laddar ned och konfigurerar den virtuella datorn för insamlaren. Contoso kör sedan insamlaren (Collector) för att identifiera sina lokala virtuella datorer.
 
@@ -245,9 +245,9 @@ Konfigurera ett nytt Azure Migrate-projekt enligt följande.
     - Projektgeografin används bara för att lagra de metadata som samlas in från lokala virtuella datorer.
     - Du kan välja vilken målregion du vill när du kör en migrering.
 
-7. Klicka på **Nästa**.
+7. Klicka på **Next**.
 
-8. I **Välj bedömnings verktyg**väljer **du Azure Migrate: Serverutvärdering** > **Nästa**.
+8. I **Välj bedömnings verktyg**väljer du **Azure Migrate: Server utvärdering** > **Nästa**.
 
     ![Azure Migrate – Utvärderingsverktyg](./media/contoso-migration-assessment/assessment-tool.png)
 
@@ -260,9 +260,9 @@ granskar du inställningarna och klickar på **Lägg till verktyg**.
 
 ### <a name="download-the-collector-appliance"></a>Hämta insamlingsprogrammet
 
-1. I **Migreringsmål** > **Servrar** > **Azure Migrate: Serverutvärdering** klickar du på **Identifiera**.
+1. I **mål för migrering** > **servrar** > **Azure Migrate: Server utvärdering**, **Klicka på identifiera**.
 
-2. I **Identifiera datorer** > **Är dina datorer virtualiserade?** klickar du på **Ja, med VMware vSphere Hypervisor-programmet**.
+2. I **identifiera datorer** > **dina datorer virtualiserade?** , klicka på **Ja, med VMware vSphere hypervisor**.
 
 3. Klicka på **Ladda ned** för att ladda ned .OVA-mallfilen.
 
@@ -280,7 +280,7 @@ Innan de distribuerar den virtuella datorn kontrollerar Contoso att den OVA-file
     **Exempel:**
 
     ```C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256```
-3. Den genererade hashen ska matcha de hash-värden som anges i avsnittet [Verifiera säkerhet](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security) i självstudiekursen [Utvärdera VMware-datorer för migrering](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware).
+3. Den genererade hashen ska matcha de hash-värden som anges i avsnittet [Verifiera säkerhet](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security) i själv studie kursen [för att utvärdera VMware-datorer för migrering](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware) .
 
 ### <a name="create-the-collector-appliance"></a>Skapa insamlingsprogrammet
 
@@ -306,7 +306,7 @@ Contoso kör sedan insamlaren (Collector) för att identifiera virtuella datorer
     ![vSphere klientkonsol – genväg till insamlare](./media/contoso-migration-assessment/collector-shortcut-v2.png)
 
 3. I Azure Migrate Collector öppnar Contoso **Konfigurera förhandskrav**. Contoso accepterar licensvillkoren och läser informationen från tredje part.
-4. Insamlaren kontrollerar att den virtuella datorn är ansluten till internet, att tiden synkroniseras, att insamlartjänsten körs. (Tjänsten installeras som standard på den virtuella insamlardatorn). Contoso installerar också VMware vSphere Virtual Disk Development Kit.
+4. Insamlaren kontrollerar att den virtuella datorn är ansluten till internet, att tiden synkroniseras, att insamlartjänsten körs. (Insamlings tjänsten installeras som standard på den virtuella datorn.) Contoso installerar även VMware vSphere Virtual Disk Development Kit.
 
     > [!NOTE]
     > Vi förutsätter att den virtuella datorn har direkt åtkomst till Internet, utan proxy.
@@ -335,7 +335,7 @@ När insamlingen är färdig kontrollerar Contoso att de virtuella datorerna vis
 
     ![Azure Migrate – agentinstallation krävs](./media/contoso-migration-assessment/machines-no-agent.png)
 
-## <a name="step-5-prepare-for-dependency-analysis"></a>Steg 5: Förbereda för beroendeanalys
+## <a name="step-5-prepare-for-dependency-analysis"></a>Steg 5: förbereda för beroende analys
 
 För att visa beroenden mellan de virtuella datorer som det vill utvärdera, hämtar och installerar Contoso agenter på appens virtuella datorer. Contoso installerar agenter på alla virtuella datorer för dess appar, både för Windows och Linux.
 
@@ -395,6 +395,7 @@ Contoso kör installationen på varje virtuell dator.
     `sudo -i`
 
 3. Contoso installerar MMA:
+
     - Contoso anger arbetsytans ID och nyckel i kommandot.
     - Kommandon är för 64-bitars.
     - Arbetsytans ID och primära nyckel finns i arbetsytan logganalys i Azure Portal. Välj **Inställningar** och sedan **Anslutna källor**.
@@ -416,7 +417,7 @@ När MMA har installerats installerar contoso beroende agenten på virtuella Lin
     wget --content-disposition https://aka.ms/dependencyagentlinux -O InstallDependencyAgent-Linux64.bin && sudo sh InstallDependencyAgent-Linux64.bin -s
     ```
 
-## <a name="step-6-run-and-analyze-the-vm-assessment"></a>Steg 6: Köra och analysera utvärderingen av virtuell dator
+## <a name="step-6-run-and-analyze-the-vm-assessment"></a>Steg 6: köra och analysera VM-utvärderingen
 
 Contoso kan nu kontrollera datorberoenden och skapa en grupp. Sedan körs utvärderingen för gruppen.
 
@@ -470,7 +471,7 @@ En utvärdering har ett säkerhetsomdöme från 1 stjärna till 5 stjärnor (1 s
 - Säkerhetsomdömen är användbara när du gör *prestandabaserade storleksändringar*. Azure Migrate har kanske tillräckligt med datapunkter för användsbaserade storleksändringar. När storleksändringar av typen *som lokalt”* utförs är säkerhetsomdömet alltid 5 stjärnor eftersom Azure Migrate har tillgång till alla datapunkter som behövs för att sätta rätt storlek på den virtuella datorn.
 - Beroende på procentandelen datapunkter som är tillgängliga tillhandahålls säkerhetsomdömet för utvärderingen:
 
-   Tillgänglighet för datapunkter | Förtroendeklassificering
+   Tillgänglighet för datapunkter | Säkerhetsomdöme
    --- | ---
    0 %–20 % | 1 stjärna
    21 %–40 % | 2 stjärnor

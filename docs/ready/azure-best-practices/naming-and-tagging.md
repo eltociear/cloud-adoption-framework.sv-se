@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: 242b397312fe466670d3f1a315059f72447b300b
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: bc568602c283fab5abba1d6ad91197e9f0f9ce8e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73243284"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564039"
 ---
 # <a name="ready-recommended-naming-and-tagging-conventions"></a>Klar: rekommenderade namngivnings-och taggnings konventioner
 
@@ -157,7 +157,7 @@ I följande avsnitt finns exempel på namngivningssystem för vanliga typer av A
 
 | Tillgångstyp     | Omfång        | Format                                                     | Exempel                                                                            |
 |----------------|--------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| Resursgrupp | Prenumeration | rg-\<App / Service name\>-\<Subscription type\>-\<\#\#\#\> | <ul><li>rg-mktgsharepoint-prod-001 </li><li>rg-acctlookupsvc-share-001 </li><li>rg-ad-dir-services-shared-001</li></ul> |
+| Resursgrupp | Prenumeration | RG-\<app eller tjänst namn\>-\<prenumerations typ\>-\<\#\#\#\> | <ul><li>rg-mktgsharepoint-prod-001 </li><li>rg-acctlookupsvc-share-001 </li><li>rg-ad-dir-services-shared-001</li></ul> |
 
 ### <a name="virtual-networking"></a>Virtuellt nätverk
 

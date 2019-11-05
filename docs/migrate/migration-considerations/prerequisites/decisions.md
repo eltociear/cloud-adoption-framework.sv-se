@@ -1,21 +1,21 @@
 ---
 title: Beslut som påverkar migreringen
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Viktiga beslut att fatta om migreringsprocessen
+description: Viktiga beslut att fatta om migreringsprocessen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 14946c48e69471f72d4979d18f39e43e6ce374e1
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 4bd04de2bd773e3fc02fbab5264ae60f275a8e7d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239933"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564584"
 ---
-# <a name="decisions-that-affect-migrations"></a>Beslut som påverkar migreringen
+# <a name="decisions-that-affect-migration"></a>Beslut som påverkar migreringen
 
 Under migreringen finns det vissa faktorer som påverkar beslut och körning. Den här artikeln förklarar det centrala temat för dessa beslut och utforskar några frågor som är genomgående för alla diskussioner om migreringsprinciper i det här avsnittet av Ramverk för molnimplementering.
 
@@ -31,19 +31,19 @@ Det finns inget företag som endast satsar på ett av dessa resultat. Utan verks
 
 Den här förutsättningen är inte ett krav för att du ska kunna välja något av dessa tre mål, utan ska hjälpa molnstrategiteamet och molnimplementeringsteamet att ta fram verksamhetsprioriteteter som vägledning för de kommande tre till sex månaderna. Dessa prioriteter ställs in genom att rangordna var och ett av dessa tre alternativen från *viktigast* till *minst viktig* eftersom de avgör vad teamet kan bidra med under nästa eller de kommande två kvartalen.
 
-### <a name="acting-on-migration-outcomes"></a>Satsa på migreringsresultat
+### <a name="act-on-migration-outcomes"></a>Vidta åtgärder vid migreringen
 
 Om verksamhetsresultaten är viktigast på listan kommer det här avsnittet i Ramverk för molnimplementering fungera bra för ditt team. I det här avsnittet förutsätter vi att du behöver prioritera hastighets- och kostnadsbesparingar som primära nyckeltal (KPI: er), vilket innebär att en migreringsmodell för implementering ska vara anpassad till dessa resultat. En migrerings modell är kraftigt predikat på hissen och Shift-migreringen av infrastruktur som en tjänst (IaaS) till gångar som tar slut på ett Data Center och ger kostnads besparingar. I en sådan modell kan modernisering ske, men detta är av mindre betydelse tills den primära migreringsprioriteten har uppnåtts.
 
-### <a name="acting-on-application-innovations"></a>Satsa på programinnovationer
+### <a name="act-on-application-innovations"></a>Agera på program innovationer
 
 Om marknadsandelar och kundupplevelsen är era primära drivkrafter är detta kanske inte den viktigaste vägledningen i Ramverk för molnimplementering för dina team. Programinnovation kräver en plan som fokuserar på modernisering och övergång av arbetsbelastningar, oavsett vilken underliggande infrastruktur som används. I sådana fall kan riktlinjerna i det här avsnittet vara informativa men utgör inte det bästa sättet att fatta grundläggande beslut.
 
-### <a name="acting-on-data-innovations"></a>Satsa på datainnovationer
+### <a name="act-on-data-innovations"></a>Agera på data innovationer
 
 Om data, experimentering, forskning och utveckling (FoU) eller nya produkter är din huvudsakliga prioritet för de kommande sex månaderna eller så är detta kanske inte den viktigaste vägledningen i Ramverk för molnimplementering för dina team. All datainnovation gynnas av vägledning om migrering av befintliga källdata. Men projektets huvudsakliga fokus ska ligga på ingående data och integration av fler datakällor. Att utöka den här vägledningen med förutsägelser och nya upplevelser är mycket viktigare än migreringen av IaaS-tillgångar.
 
-## <a name="balancing-the-portfolio"></a>Balansera portföljen
+## <a name="balance-the-portfolio"></a>Balansera portföljen
 
 I det här avsnittet i Ramverk för molnimplementering beskrivs en teori för att hjälpa läsare förstå olika metoder för att hantera förändring inom en balanserad portfölj. Artikeln om att [Balansera portföljen](../../expanded-scope/balance-the-portfolio.md) är ett exempel på en utökad vägledning vars syfte är att underlätta åtgärder som bygger på den här teorin.
 

@@ -1,27 +1,27 @@
 ---
-title: Påskynda migrering med VMWare-värdar
+title: Påskynda migrering med VMware-värdar
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Påskynda migrering med VMWare-värdar
+description: Påskynda migrering med VMware-värdar
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 66a39d53adeaf73e96cf04bdc5f80fc9574b675a
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 724a227407f431e08b5344dfd1280397bfca9b65
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980211"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566870"
 ---
-# <a name="accelerate-migration-with-vmware-hosts"></a>Påskynda migrering med VMWare-värdar
+# <a name="accelerate-migration-with-vmware-hosts"></a>Påskynda migrering med VMware-värdar
 
-Migrering av hela VMWare-värdar kan flytta flera arbets belastningar och flera till gångar i en enda migrering. Följande rikt linjer utökar omfånget för [Azure migration-guiden](../azure-migration-guide/index.md) via en VMware-värd migrering. De flesta insatser som krävs i denna omfattnings expansion sker under förutsättningarna och migreringsprocessen av migreringen.
+Migrering av hela VMware-värdar kan flytta flera arbets belastningar och flera till gångar i en enda migrering. Följande rikt linjer utökar omfånget för [Azure migration-guiden](../azure-migration-guide/index.md) via en VMware-värd migrering. De flesta insatser som krävs i denna omfattnings expansion sker under förutsättningarna och migreringsprocessen av migreringen.
 
 ## <a name="suggested-prerequisites"></a>Föreslagna förutsättningar
 
-När du migrerar din första VMWare-värd till Azure måste du uppfylla ett antal krav för att förbereda krav för identitet, nätverk och hantering. När dessa krav är uppfyllda bör varje ytterligare värd kräva mycket mindre ansträngning för att migrera. I följande avsnitt finns mer information om kraven.
+När du migrerar din första VMware-värd till Azure måste du uppfylla ett antal krav för att förbereda krav för identitet, nätverk och hantering. När dessa krav är uppfyllda bör varje ytterligare värd kräva mycket mindre ansträngning för att migrera. I följande avsnitt finns mer information om kraven.
 
 ### <a name="secure-your-azure-environment"></a>Skydda din Azure-miljö
 
@@ -44,15 +44,15 @@ När hanterings kraven har upprättats kan du upprätta privata moln nätverk me
 
 ### <a name="integration-with-the-cloud-adoption-plan"></a>Integrering med moln implementerings planen
 
-När du har uppfyllt de andra förutsättningarna bör du inkludera varje VMWare-värd i [moln implementerings planen](../../plan/template.md). I moln implementerings planen lägger du till varje värd som ska migreras som en [distinkt arbets belastning](../../plan/workloads.md). I varje arbets belastning ska du lägga till de virtuella datorer som ska migreras som [till gångar](../../plan/workloads.md). Information om hur du lägger till arbets belastningar och till gångar i en införande plan i bulk finns i [lägga till/redigera arbets objekt med Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
+När du har uppfyllt de andra förutsättningarna bör du inkludera varje VMware-värd i [moln implementerings planen](../../plan/template.md). I moln implementerings planen lägger du till varje värd som ska migreras som en [distinkt arbets belastning](../../plan/workloads.md). I varje arbets belastning ska du lägga till de virtuella datorer som ska migreras som [till gångar](../../plan/workloads.md). Information om hur du lägger till arbets belastningar och till gångar i en införande plan i bulk finns i [lägga till/redigera arbets objekt med Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
 
 ## <a name="migrate-process-changes"></a>Ändringar i migreringsprocessen
 
-Under varje iteration, kommer antagande teamet att fungera genom efter släpning för att migrera arbets belastningar med högsta prioritet. Processen ändras inte i själva verket för VMWare-värdar. När nästa arbets belastning i efter släpning är en VMWare-värd används det verktyg som används.
+Under varje iteration, kommer antagande teamet att fungera genom efter släpning för att migrera arbets belastningar med högsta prioritet. Processen ändras inte i själva verket för VMware-värdar. När nästa arbets belastning i efter släpning är en VMware-värd används det verktyg som används.
 
 Du kan använda följande verktyg i arbets ansträngningen för migrering:
 
-- [Inbyggda VMWare-verktyg](https://docs.microsoft.com/azure/vmware-cloudsimple/migrate-workloads?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
+- [Inbyggda VMware-verktyg](https://docs.microsoft.com/azure/vmware-cloudsimple/migrate-workloads?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 - [Azure Data Box](https://docs.microsoft.com/azure/vmware-cloudsimple/migration-using-azure-data-box?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 
 Du kan också migrera arbets belastningar genom att redundansväxla haveri beredskap med hjälp av följande verktyg:

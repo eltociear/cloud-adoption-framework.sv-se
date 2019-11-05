@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 75f19fcdc9f23066d5a6471cd79c0a6a00869554
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: cb5653de592fb92fa9ad9f5866997703a928ee4e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028269"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566581"
 ---
 # <a name="create-a-financial-model-for-cloud-transformation"></a>Skapa en finansiell modell för molnomvandling
 
@@ -28,13 +28,13 @@ Avkastning på investering (ROI) är ofta ett viktigt kriterium för C-sviten el
 
 I nästa avsnitt kommer vi att gå igenom de data du behöver för att beräkna den första investeringen och vinsten från investeringen (intäkter).
 
-## <a name="calculating-initial-investment"></a>Beräkna initial investering
+## <a name="calculate-initial-investment"></a>Beräkna initial investering
 
 Initial investering är den kapital kostnad och drift kostnad som krävs för att slutföra en omvandling. Klassificeringen av kostnader kan variera beroende på redovisnings modeller och ekonomi preferenser. Den här kategorin omfattar exempelvis objekt som professionella tjänster att transformera, program varu licenser som används endast under omvandlingen, kostnaden för moln tjänster under omvandlingen och eventuellt kostnad för avlönade anställda under omvandlingen .
 
 Lägg till dessa kostnader för att skapa en uppskattning av den första investeringen.
 
-## <a name="calculating-the-gain-from-investment"></a>Beräkna vinsten från investeringen
+## <a name="calculate-the-gain-from-investment"></a>Beräkna vinsten från investeringen
 
 Att beräkna vinsten från investeringar kräver ofta en andra formel som är specifika för affärs resultat och tillhör ande tekniska ändringar. Att beräkna intäkter är svårare än att beräkna kostnads minskningar.
 

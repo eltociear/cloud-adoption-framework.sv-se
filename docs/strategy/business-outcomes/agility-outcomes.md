@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6e1743fbac07c27bfafdf679ff7aae056545b6eb
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 79c6c10d924781d494cd8dbd7cc104d42f168083
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048075"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566632"
 ---
-# <a name="examples-of-agility-outcomes"></a>Exempel på smidiga resultat 
+# <a name="examples-of-agility-outcomes"></a>Exempel på smidiga resultat
 
 Som det beskrivs i [översikten över företags resultat](./index.md)kan flera potentiella affärs resultat fungera som grund för alla omvandlings resor i samtal med verksamheten. Den här artikeln fokuserar på timeliest affärs mått: affärs flexibilitet. Att förstå ditt företags marknads läge och ett konkurrens kraftig landskap kan hjälpa dig att tydliggör affärs resultat som är målet för företagets omvandlings resa.
 
@@ -37,7 +37,9 @@ Vid molnbaserade Innovations insatser är tiden till marknaden ett viktigt mått
 
 - **Exempel 2:** Ett logistik företag har identifierat ett outnyttjat segment på marknaden, men det behöver en ny version av sitt skepps-program för att kunna avbilda denna marknads andel. Den större konkurrenten har gjort samma identifiering. Genom körningen av en moln aktive rad applikations innovation, omfattar företaget kund besatthet och en DevOps utvecklings metod för att öka den långsamma, äldre konkurrenten med _x_ månader. Det här hoppet om marknads ingången säkrade kundens bas.
 
-**Aurora Health Care**: hälso vårds systemet transformerar onlinetjänster till en egen digital upplevelse. För att omvandla sina digitala tjänster har Aurora Health Care migrerat sina webbplatser till Microsoft Azure-plattformen och infört en strategi för kontinuerlig innovation.
+### <a name="aurora-health-care"></a>Aurora Health Care
+
+Hälso vårds systemet omvandlar onlinetjänster till en egen digital upplevelse. För att omvandla sina digitala tjänster har Aurora Health Care migrerat sina webbplatser till Microsoft Azure-plattformen och infört en strategi för kontinuerlig innovation.
 
 > "Som ett team fokuserar vi på lösningar med hög kvalitet och hastighet. Att välja Azure var ett mycket transformativa beslut för oss. "  
 > Jamey Shiels  

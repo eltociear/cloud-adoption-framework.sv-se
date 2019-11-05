@@ -9,20 +9,20 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c713af7557760d0bafeabf9d0cd0ef37a3885fe4
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: a307c29a640332fdf82a69ec06eab27589f77304
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547761"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566354"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Exempel princip satser för distributions acceleration
 
 Enskilda moln princips instruktioner är rikt linjer för att åtgärda specifika risker som identifieras under riskbedömningen. Dessa instruktioner bör ge en kortfattad sammanfattning av riskerna och planer för att hantera dem. Varje uttrycks definition ska innehålla dessa delar av informationen:
 
-- **Teknisk risk.** En sammanfattning av risken som den här principen kommer att åtgärda.
-- **Princip instruktion.** En tydlig Sammanfattning av princip kraven.
-- **Design alternativ.** Rekommendationer, specifikationer eller andra rikt linjer som IT-team och utvecklare kan använda när de implementerar principen.
+- **Teknisk risk:** En sammanfattning av risken som den här principen kommer att åtgärda.
+- **Princip instruktion:** En tydlig Sammanfattning av princip kraven.
+- **Design alternativ:** Rekommendationer, specifikationer eller andra rikt linjer som IT-team och utvecklare kan använda när de implementerar principen.
 
 Följande exempel på princip satser hanterar vanliga konfigurations relaterade affärs risker. Dessa instruktioner är exempel som du kan referera till när du använder policy-instruktioner för att uppfylla organisationens behov. Dessa exempel är inte avsedda att vara proskriptiga och det finns potentiellt flera princip alternativ för att hantera varje identifierad risk. Arbeta nära företags-och IT-team för att identifiera de bästa principerna för din unika uppsättning risker.
 

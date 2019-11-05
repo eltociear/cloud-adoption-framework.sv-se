@@ -1,5 +1,5 @@
 ---
-title: Motivering Varför flyttar vi till molnet?
+title: 'Motivation: Varför flyttar vi till molnet?'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Moln redovisning och flytt till molnet
 author: BrianBlanchard
@@ -8,16 +8,16 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 9a6c007beedd06ff6e1a88cd7ccc497f58807af9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 65ef12ca476ca624ae1e71cce2e62d41141873a9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029853"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561611"
 ---
 <!-- markdownlint-disable MD026 -->
 
-# <a name="motivations-why-are-we-moving-to-the-cloud"></a>Motivering Varför flyttar vi till molnet?
+# <a name="motivations-why-are-we-moving-to-the-cloud"></a>Motivation: Varför flyttar vi till molnet?
 
 "Varför flyttar vi till molnet?" är en vanlig fråga för affärs-och tekniska intressenter. Om svaret är "vårt styrelse (eller CIO eller C-nivå chefer) fick vi att flytta till molnet," det är osannolikt att verksamheten kommer att uppnå önskade resultat.
 
@@ -25,7 +25,7 @@ I den här artikeln beskrivs några motivation bakom migrering av molnet som kan
 
 ## <a name="motivations"></a>Motiveringar
 
-Verksamhets omvandlingar som stöds av moln införande kan drivas av olika motivation. Det är ännu troligt att flera motivation kan användas samtidigt. Målet med listorna i följande tabell är att hjälpa till att sparka idéer om vilka motivation som är relevanta. Därifrån kan du prioritera och utvärdera de potentiella konsekvenserna av motiveringarna. I den här artikeln rekommenderar vi att ditt moln implementerings team uppfyller olika chefer och affärs ledare med hjälp av listan nedan för att förstå vilka av dessa motivation som påverkas av moln implementerings ansträngningen.
+Verksamhets omvandlingar som stöds av moln införande kan drivas av olika motivation. Det är troligt att flera motivation gäller samtidigt. Målet med listorna i följande tabell är att hjälpa till att sparka idéer om vilka motivation som är relevanta. Därifrån kan du prioritera och utvärdera de potentiella konsekvenserna av motiveringarna. I den här artikeln rekommenderar vi att ditt moln implementerings team uppfyller olika chefer och affärs ledare med hjälp av listan nedan för att förstå vilka av dessa motivation som påverkas av moln implementerings ansträngningen.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -47,7 +47,7 @@ Alla deltagare i migreringsprocessen bör ha en tydlig medvetenhet om sina motiv
 
 ## <a name="motivation-driven-strategies"></a>Motivations drivna strategier
 
-I det här avsnittet beskrivs migrerings-och *Innovations* motivation och deras motsvarande strategier.
+I det här avsnittet beskrivs *migrerings* -och *Innovations* motivation och deras motsvarande strategier.
 
 ### <a name="migration"></a>Migrering
 

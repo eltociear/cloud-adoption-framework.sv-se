@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: dcf717841e7ac42e0957ce540fc974c84d112a79
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 1cdf066617ee43de6fedfeb707311e663318f8c4
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058168"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561814"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure Enterprise-Autogenerera: handskriven prenumerations styrning
 
@@ -263,7 +263,7 @@ Den här informationen kan visas och åtgärdas på flera nivåer och förbättr
 - **Tjänstkarta:** Tjänstkarta ger en grafisk vy över dina infrastruktur komponenter, deras processer och beroenden på andra datorer och externa processer. Funktionen integrerar händelser, prestandadata och hanteringslösningar i Log Analytics.
 
 > [!TIP]
-> Innan du skapar enskilda aviseringar kan du skapa och underhålla en uppsättning delade åtgärds grupper som kan användas i Azure-aviseringar. På så sätt kan du centralt upprätthålla livs cykeln för dina mottagar listor, leverans metoder för meddelanden (e-post, SMS-telefonnummer) och Webhooks till externa åtgärder (Azure Automation runbooks, Azure Functions/Logic Apps, ITSM).
+> Innan du skapar enskilda aviseringar kan du skapa och underhålla en uppsättning delade åtgärds grupper som kan användas i Azure-aviseringar. På så sätt kan du centralt upprätthålla livs cykeln för dina mottagar listor, leverans metoder för meddelanden (e-post, SMS-telefonnummer) och Webhooks till externa åtgärder (Azure Automation runbooks, Azure Functions och Logic Apps ITSM).
 
 ## <a name="cost-management"></a>Kostnadshantering
 
@@ -284,7 +284,7 @@ Dessa är verktyg för att ge dig omedelbar information om kostnad samt möjligh
 
 - **Power BI Azure Consumption Insights:** Vill du skapa dina egna visualiseringar för din organisation? I så fall är Azure Consumption Insights innehålls paketet för Power BI det verktyg som du väljer. Med hjälp av det här innehålls paketet och Power BI kan du skapa anpassade visualiseringar som representerar din organisation, göra djupare analyser av kostnader och lägga till i andra data källor för ytterligare berikning.
 
-- **Förbruknings-API:** [Förbruknings-API: er](/rest/api/consumption) ger dig program mässig åtkomst till kostnader och användnings data utöver information om budgetar, reserverade instanser och Marketplace-avgifter. Dessa API: er är bara tillgängliga för företags registreringar och vissa WebDirect-prenumerationer men de ger dig möjlighet att integrera dina kostnads data i dina egna verktyg och informations lager. Du kan också [komma åt dessa API: er via Azure CLI](/cli/azure/consumption?view=azure-cli-latest).
+- **Förbruknings-API:** [Förbruknings-API: er](https://docs.microsoft.com/rest/api/consumption) ger dig program mässig åtkomst till kostnader och användnings data utöver information om budgetar, reserverade instanser och Marketplace-avgifter. Dessa API: er är bara tillgängliga för företags registreringar och vissa WebDirect-prenumerationer men de ger dig möjlighet att integrera dina kostnads data i dina egna verktyg och informations lager. Du kan också [komma åt dessa API: er via Azure CLI](https://docs.microsoft.com/cli/azure/consumption?view=azure-cli-latest).
 
 Kunder som är långsiktiga och mogna moln användare följer vissa rekommenderade metoder:
 
@@ -303,7 +303,7 @@ Flera verktyg kan hjälpa dig att bygga ut den här funktionen från första par
 
 - **Azure Automation** Är en molnbaserad funktion som gör att du kan skapa Runbooks (antingen i PowerShell eller python) och gör att du kan automatisera processer, konfigurera resurser och även använda korrigeringar. [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) har en omfattande uppsättning plattforms oberoende funktioner som är integrerade i din distribution, men som är för omfattande för att täckas i djup här.
 - **Event Grid** är ett helt hanterat system för händelse dirigering som gör att du kan reagera på händelser i din Azure-miljö. Precis som Azure Automation är arbets vävnaden för vuxen moln organisationer, [Event Grid](https://docs.microsoft.com/azure/event-grid) är den arbets vävnad som är bra att automatisera. Med hjälp av Event Grid kan du skapa en enkel server åtgärd som skickar ett e-postmeddelande till en administratör när en ny resurs skapas och loggar resursen i en databas. Samma Event Grid kan meddela när en resurs tas bort och ta bort objektet från databasen.
-- **Azure Cloud Shell** är ett interaktivt, webbläsarbaserat [gränssnitt](https://docs.microsoft.com/azure/cloud-shell/overview) för att hantera resurser i Azure. Det ger en fullständig miljö för antingen PowerShell eller bash som startas efter behov (och som behålls för dig) så att du har en konsekvent miljö som du kan köra skripten från. Azure Cloud Shell ger åtkomst till ytterligare nyckel verktyg – redan installerat – för att automatisera din miljö, inklusive [Azure CLI](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest), [terraform](https://docs.microsoft.com/azure/virtual-machines/linux/terraform-install-configure) och en växande lista med ytterligare [verktyg](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection) för att hantera behållare, databaser (SQLCMD) och kraftfull.
+- **Azure Cloud Shell** är ett interaktivt, webbläsarbaserat [gränssnitt](https://docs.microsoft.com/azure/cloud-shell/overview) för att hantera resurser i Azure. Det ger en fullständig miljö för antingen PowerShell eller bash som startas efter behov (och som behålls för dig) så att du har en konsekvent miljö som du kan köra skripten från. Azure Cloud Shell ger åtkomst till ytterligare nyckel verktyg – redan installerat – för att automatisera din miljö, inklusive [Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest), [terraform](https://docs.microsoft.com/azure/virtual-machines/linux/terraform-install-configure) och en växande lista med ytterligare [verktyg](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection) för att hantera behållare, databaser (SQLCMD) och kraftfull.
 
 Automation är ett heltids jobb och det kommer snabbt bli en av de viktigaste drift uppgifterna i moln teamet. Organisationer som använder metoden "automatisera första" har större framgångar i att använda Azure:
 

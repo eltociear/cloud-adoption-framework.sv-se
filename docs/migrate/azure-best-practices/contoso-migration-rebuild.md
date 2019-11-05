@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: bd9042fcd0b7ae6d18a5cc522a4006b7f8bfdbc6
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 6a7c27e1c2e4bf0bdf4a4ef9104bf13bf221f4e0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058560"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566598"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Bygga om en lokal app i Azure
 
@@ -95,7 +95,7 @@ Contoso utvärderar den föreslagna designen genom att skapa en lista med för- 
 
 **Tjänst** | **Beskrivning** | **Kostnad**
 --- | --- | ---
-[AKS](/sql/dma/dma-overview?view=ssdt-18vs2017) | Förenklar hanteringen, distributionen och åtgärderna för Kubernetes. Tillhandahåller en fullständigt hanterad orkestreringstjänst för Kubernetes-containrar. | AKS är en kostnadsfri tjänst. Betala bara för de virtuella datorerna och de associerade lagrings- och nätverksresurser som förbrukas. [Läs mer](https://azure.microsoft.com/pricing/details/kubernetes-service).
+[AKS](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Förenklar hanteringen, distributionen och åtgärderna för Kubernetes. Tillhandahåller en fullständigt hanterad orkestreringstjänst för Kubernetes-containrar. | AKS är en kostnadsfri tjänst. Betala bara för de virtuella datorerna och de associerade lagrings- och nätverksresurser som förbrukas. [Läs mer](https://azure.microsoft.com/pricing/details/kubernetes-service).
 [Azure Functions](https://azure.microsoft.com/services/functions) | Utveckla snabbare med en händelsedriven miljö för databearbetning utan server. Skala på begäran. | Betala endast för de resurser du använder. Planen faktureras baserat på resursanvändning och körningar per sekund. [Läs mer](https://azure.microsoft.com/pricing/details/functions).
 [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | Lagrar avbildningar för alla typer av containerdistributioner. | Kostnad baserad på funktioner, lagring och användningstid. [Läs mer](https://azure.microsoft.com/pricing/details/container-registry).
 [Azure Apptjänst](https://azure.microsoft.com/services/app-service/containers) | Skapa, distribuera och skala snabbt webb-, mobil- och API-appar i företagsklass som körs på valfri plattform. | App Service-planer faktureras per sekund. [Läs mer](https://azure.microsoft.com/pricing/details/app-service/windows).
@@ -110,7 +110,7 @@ Det här är vad Contoso behöver i det här scenariot:
 --- | ---
 **Azure-prenumeration** | Contoso skapade prenumerationer i en tidigare artikel. Om du inte har någon Azure-prenumeration kan du skapa ett [kostnadsfritt konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Om du skapar ett kostnadsfritt konto är du administratör för din prenumeration och kan utföra alla åtgärder.<br/><br/> Om du använder en befintlig prenumeration och inte är administratör måste du be administratören att ge dig ägar- eller deltagarbehörighet.
 **Azure-infrastruktur** | [Läs om hur](./contoso-migration-infrastructure.md) Contoso konfigurerar en Azure-infrastruktur.
-**Krav för utvecklare** | Contoso behöver följande verktyg på en arbetsstation för utvecklare:<br/><br/> - [Visual Studio 2017 Community Edition: Version 15,5](https://www.visualstudio.com)<br/><br/> .NET-arbetsbelastning aktiverad.<br/><br/> [Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> [Docker CE (Windows 10) eller Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) konfigurerat att använda Windows-containrar.
+**Krav för utvecklare** | Contoso behöver följande verktyg på en arbetsstation för utvecklare:<br/><br/> - [Visual Studio 2017 Community Edition: Version 15,5](https://www.visualstudio.com)<br/><br/> .NET-arbetsbelastning aktiverad.<br/><br/> [Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> [Docker CE (Windows 10) eller Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) konfigurerat att använda Windows-containrar.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -152,7 +152,7 @@ Contosos administratörer etablerar enligt följande:
     ![AKS](./media/contoso-migration-rebuild/aks3.png)
 5. I den PowerShell-integrerade terminalen loggar de in i Azure med kommandot Connect-AzureRmAccount. [Lär dig mer](https://docs.microsoft.com/powershell/azure/get-started-azureps) om hur du kommer igång med PowerShell.
     ![AKS](./media/contoso-migration-rebuild/aks4.png)
-6. De autentiserar Azure CLI genom att köra kommandot `az login` och följa instruktionerna för att autentisera med hjälp av webbläsaren. [Lär dig mer](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) om hur du loggar in med Azure CLI.
+6. De autentiserar Azure CLI genom att köra kommandot `az login` och följa instruktionerna för att autentisera med hjälp av webbläsaren. [Lär dig mer](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest) om hur du loggar in med Azure CLI.
     ![AKS](./media/contoso-migration-rebuild/aks5.png)
 7. De kör följande kommando och skickar resursgruppens namn, ContosoRG, namnet på AKS-klustret, smarthotel-aks-eus2, och det nya registernamnet.
 

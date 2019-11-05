@@ -8,12 +8,12 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f993676a002eeac128c9a221059815802bf36bdf
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 18b2bc641ba45c83a8ce6c5069857c398801adfd
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239337"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566436"
 ---
 # <a name="application-migration-patterns-and-examples"></a>Programmigrering – mönster och exempel
 
@@ -88,7 +88,7 @@ Artiklarna i serien sammanfattas nedan.
 [Byta värd för en app på en virtuell Azure-dator och hanterad SQL Database-instans](./contoso-migration-rehost-vm-sql-managed-instance.md) | Den här artikeln innehåller ett exempel på en hiss och Shift-migrering till Azure för en lokal app. Detta inbegriper migrering av appens virtuella klientdatorn med hjälp av [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) och appdatabasen till en hanterad Azure SQL Database-instans med hjälp av [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
 [Byta värd för en app på virtuella Azure-datorer och i en SQL Server AlwaysOn-tillgänglighetsgrupp](./contoso-migration-rehost-vm-sql-ag.md) | Det här exemplet visar hur du migrerar en app och data med hjälp av Azure-värdhanterade virtuella SQL Server-datorer. Det använder Site Recovery för att migrera de virtuella appdatorerna och Azure Database Migration Service för att migrera appdatabasen till ett SQL Server-kluster som skyddas av en AlwaysOn-tillgänglighetsgrupp.
 
-### <a name="aspnet--php--java-apps"></a>ASP.NET-/PHP-/Java-appar
+### <a name="aspnet-php-and-java-apps"></a>ASP.NET-, PHP-och Java-appar
 
 **Artikel** | **Detaljer**
 --- | ---

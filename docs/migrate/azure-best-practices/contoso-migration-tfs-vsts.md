@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 43e577eb429928efd0857549319e46a36c49a9e1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 887d2e2ec410b761fdc81b87d83f3a471c3bf99e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025098"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566559"
 ---
 # <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Omstrukturera en Team Foundation Server-distribution till Azure DevOps Services
 
@@ -24,9 +24,9 @@ Denna artikel beskriver hur det fiktiva företaget Contoso omstrukturerar sin lo
 
 IT-ledningsgruppen har arbetat tillsammans med affärspartner för att identifiera framtida mål. Partners är inte alltför bekymrade över nya utvecklingsverktyg och tekniker, men har fångat upp följande punkter:
 
-- **Programvara:** Oavsett huvudverksamhet så är alla företag nu programvaruföretag, inklusive Contoso. Företagsledningen är intresserad av hur IT kan hjälpa företaget med nya arbetsmetoder för användare och upplevelser för sina kunder.
-- **Effektivitet:** Contoso måste effektivisera processer och ta bort onödiga procedurer för utvecklare och användare. Detta kommer att ge företaget möjlighet att effektivare uppfylla kundernas krav. Verksamheten behöver att IT-avdelningen agerar snabbt, utan att slösa tid eller pengar.
-- **Smidighet:** Contoso IT behöver uppfylla verksamhetskraven och reagera snabbare än marknaden för att uppnå framgång i en global ekonomi. It får inte vara ett hinder för verksamheten.
+- **Program vara:** Oavsett kärn verksamheten är alla företag nu program varu företag, inklusive contoso. Företagsledningen är intresserad av hur IT kan hjälpa företaget med nya arbetsmetoder för användare och upplevelser för sina kunder.
+- **Effektivitet:** Contoso måste effektivisera processen och ta bort onödiga procedurer för utvecklare och användare. Detta kommer att ge företaget möjlighet att effektivare uppfylla kundernas krav. Verksamheten behöver att IT-avdelningen agerar snabbt, utan att slösa tid eller pengar.
+- **Flexibilitet:** Contoso IT måste svara på affärs behoven och reagera snabbare än marknads platsen för att möjliggöra framgång i en global ekonomi. It får inte vara ett hinder för verksamheten.
 
 ## <a name="migration-goals"></a>Migreringsmål
 
@@ -51,7 +51,7 @@ Contosos molnteam har fastställt mål för migreringen till Azure DevOps Servic
 
 ![Scenariots arkitektur](./media/contoso-migration-tfs-vsts/architecture.png)
 
-## <a name="migration-process"></a>Migreringsprocess
+## <a name="migration-process"></a>Migreringsprocessen
 
 Så här genomför Contoso migreringen:
 
@@ -63,7 +63,7 @@ Så här genomför Contoso migreringen:
 
 ![Migreringsprocessen](./media/contoso-migration-tfs-vsts/migration-process.png)
 
-## <a name="prerequisites"></a>Förutsättningar
+## <a name="prerequisites"></a>Krav
 
 Det här behöver Contoso för att köra detta scenario.
 
@@ -72,21 +72,21 @@ Det här behöver Contoso för att köra detta scenario.
 **Krav** | **Detaljer**
 --- | ---
 **Azure-prenumeration** | Contoso skapade prenumerationer i en tidigare artikel i den här serien. Om du inte har någon Azure-prenumeration kan du skapa ett [kostnadsfritt konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Om du skapar ett kostnadsfritt konto är du administratör för din prenumeration och kan utföra alla åtgärder.<br/><br/> Om du använder en befintlig prenumeration och inte är administratör måste du be administratören att ge dig ägar- eller deltagarbehörighet.<br/><br/> Om du behöver mer detaljerade behörigheter läser du [den här artikeln](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Azure-infrastruktur** | Contoso konfigurerar Azure-infrastrukturen enligt beskrivningen i [Azure-infrastruktur för migrering.](./contoso-migration-infrastructure.md)
+**Azure-infrastruktur** | Contoso konfigurerar Azure-infrastrukturen enligt beskrivningen i [Azure-infrastrukturen för migrering.](./contoso-migration-infrastructure.md)
 **Lokal TFS-server** | Den lokala servern måste köra TFS 2018 uppgradering 2 eller uppdateras till detta som en del av denna process.
 
-## <a name="scenario-steps"></a>Scenariosteg
+## <a name="scenario-steps"></a>Steg i scenariot
 
 Så här slutför Contoso migreringen:
 
 > [!div class="checklist"]
 >
-> - **Steg 1: Skapa ett Azure storage-konto.** Detta lagringskonto kommer att användas under migreringsprocessen.
-> - **Steg 2: Uppgradera TFS.** Contoso kommer att uppgradera sin version till TFS 2018 uppgradering 2.
-> - **Steg 3: Validera samlingen.** Contoso kommer att validera TFS-samlingen för att förbereda migreringen.
-> - **Steg 4: Skapa förberedelsefil.** Contoso kommer att skapa migreringsfilerna med TFS migreringsverktyg.
+> - **Steg 1: skapa ett Azure Storage-konto.** Detta lagringskonto kommer att användas under migreringsprocessen.
+> - **Steg 2: uppgradera TFS.** Contoso kommer att uppgradera sin version till TFS 2018 uppgradering 2.
+> - **Steg 3: validera samlingen.** Contoso kommer att validera TFS-samlingen för att förbereda migreringen.
+> - **Steg 4: Bygg förberedelse filen.** Contoso kommer att skapa migreringsfilerna med TFS migreringsverktyg.
 
-## <a name="step-1-create-a-storage-account"></a>Steg 1: skapar ett lagringskonto
+## <a name="step-1-create-a-storage-account"></a>Steg 1: skapa ett lagrings konto
 
 1. I Azure-portalen skapar Contosos administratörer ett lagringskonto (**contosodevmigration**).
 2. De placerar kontot i den sekundära region de använder för redundans – USA, centrala. De använder ett allmänt standardkonto med lokalt redundant lagring.
@@ -98,7 +98,7 @@ Så här slutför Contoso migreringen:
 - [Introduktion till Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction).
 - [Skapa ett lagringskonto](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account).
 
-## <a name="step-2-upgrade-tfs"></a>Steg 2: Uppgradera TFS
+## <a name="step-2-upgrade-tfs"></a>Steg 2: uppgradera TFS
 
 Contosos administratörer uppgraderar TFS-servern till TFS 2018 uppdatering 2. Innan de börjar:
 
@@ -132,9 +132,9 @@ De uppgraderar så här:
 
 **Behöver du mer hjälp?**
 
-Lär dig om [uppgradering av TFS](/tfs/server/upgrade/get-started).
+Lär dig om [uppgradering av TFS](https://docs.microsoft.com/tfs/server/upgrade/get-started).
 
-## <a name="step-3-validate-the-tfs-collection"></a>Steg 3: Validera TFS-samlingen
+## <a name="step-3-validate-the-tfs-collection"></a>Steg 3: verifiera TFS-samlingen
 
 Contosos administratörer kör TFS-migreringsverktyget mot ContosoDev-samlingens databas för att validera den innan migreringen.
 
@@ -174,7 +174,7 @@ Contosos administratörer kör TFS-migreringsverktyget mot ContosoDev-samlingens
 
     ![TFS](./media/contoso-migration-tfs-vsts/collection9.png)
 
-## <a name="step-4-create-the-migration-files"></a>Steg 4: Skapa migreringsfilerna
+## <a name="step-4-create-the-migration-files"></a>Steg 4: skapa filerna för migrering
 
 Nu när valideringen är slutförd kan Contosos administratörer använda TFS-migreringsverktyget för att skapa migreringsfilerna.
 
@@ -182,7 +182,7 @@ Nu när valideringen är slutförd kan Contosos administratörer använda TFS-mi
 
     `TfsMigrator prepare /collection:http://contosotfs:8080/tfs/ContosoDev /tenantDomainName:contosomigration.onmicrosoft.com /accountRegion:cus`
 
-     ![Förbered](./media/contoso-migration-tfs-vsts/prep1.png)
+     ![Förbered dig](./media/contoso-migration-tfs-vsts/prep1.png)
 
     Förbereda gör följande:
     - Söker igenom samlingen för att hitta en lista på alla användare och fyller i identitetsloggen (**IdentityMapLog.csv**).
@@ -191,19 +191,19 @@ Nu när valideringen är slutförd kan Contosos administratörer använda TFS-mi
 
 2. Skärmen för inloggning till Azure AD visas och de anger autentiseringsuppgifterna för en global administratör.
 
-    ![Förbered](./media/contoso-migration-tfs-vsts/prep2.png)
+    ![Förbered dig](./media/contoso-migration-tfs-vsts/prep2.png)
 
 3. Förbereda slutförs och verktyget rapporterar att importfilerna skapats korrekt.
 
-    ![Förbered](./media/contoso-migration-tfs-vsts/prep3.png)
+    ![Förbered dig](./media/contoso-migration-tfs-vsts/prep3.png)
 
 4. De kan nu se att både filerna IdentityMapLog.csv och import.json skapats i en ny mapp.
 
-    ![Förbered](./media/contoso-migration-tfs-vsts/prep4.png)
+    ![Förbered dig](./media/contoso-migration-tfs-vsts/prep4.png)
 
 5. Filen import.json innehåller importinställningar. Den innehåller information som önskat organisationsnamn och information om lagringskonto. De flesta fälten fylls i automatiskt. Vissa fält måste fyllas i av användaren. Contoso öppnar filen och lägger till organisationsnamnet som ska skapas för Azure DevOps Services: **contosodevmigration**. Med detta namn kommer deras URL för Azure DevOps Services att vara **contosodevmigration.visualstudio.com**.
 
-    ![Förbered](./media/contoso-migration-tfs-vsts/prep5.png)
+    ![Förbered dig](./media/contoso-migration-tfs-vsts/prep5.png)
 
     > [!NOTE]
     > Organisationen måste skapas innan migreringen men kan ändras efter migreringen.
@@ -214,9 +214,9 @@ Nu när valideringen är slutförd kan Contosos administratörer använda TFS-mi
     - I Azure DevOps Services kommer dessa identiteter att vara licensierade och visas som en användare i organisationen efter migrering.
     - Dessa identiteter är markerade som **Aktiv** i kolumnen **Förväntad importstatus** i filen.
 
-    ![Förbered](./media/contoso-migration-tfs-vsts/prep6.png)
+    ![Förbered dig](./media/contoso-migration-tfs-vsts/prep6.png)
 
-## <a name="step-5-migrate-to-azure-devops-services"></a>Steg 5: Migrera till Azure DevOps Services
+## <a name="step-5-migrate-to-azure-devops-services"></a>Steg 5: migrera till Azure DevOps Services
 
 När förberedelserna är klara kan Contosos administratörer fokusera på migreringen. Efter migreringen kommer de att byta från TFVC till Git för versionskontroll.
 
@@ -266,7 +266,7 @@ Innan de börjar gör Contosos administratörer en lokal SQL Server-säkerhetsko
 Contoso skapar en säkerhetskopia (DACPAC) för import till Azure DevOps Services.
 
 - SqlPackage.exe i SQL Server Data Tools används för att skapa DACPAC. Flera versioner av SqlPackage.exe installeras med SQL Server Data Tools, under mappar med namn som 120, 130 och 140. Det är viktigt att välja rätt version för att skapa DACPAC.
-- TFS 2018-importer måste använda SqlPackage.exe från mappen 140 eller högre. För CONTOSOTFS finns filen i mappen: **C:\Program (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140**.
+- TFS 2018-importer måste använda SqlPackage.exe från mappen 140 eller högre. För CONTOSOTFS finns den här filen i mappen: **C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140**.
 
 Contosos administratörer skapar DACPAC så här:
 
@@ -276,15 +276,15 @@ Contosos administratörer skapar DACPAC så här:
     SqlPackage.exe /sourceconnectionstring:"Data Source=SQLSERVERNAME\INSTANCENAME;Initial Catalog=Tfs_ContosoDev;Integrated Security=True" /targetFile:C:\TFSMigrator\Tfs_ContosoDev.dacpac /action:extract /p:ExtractAllTableData=true /p:IgnoreUserLoginMappings=true /p:IgnorePermissions=true /p:Storage=Memory
     ```
 
-    ![Säkerhetskopiera](./media/contoso-migration-tfs-vsts/backup1.png)
+    ![Backup](./media/contoso-migration-tfs-vsts/backup1.png)
 
 2. Följande meddelande visas när kommandot körts.
 
-    ![Säkerhetskopiera](./media/contoso-migration-tfs-vsts/backup2.png)
+    ![Backup](./media/contoso-migration-tfs-vsts/backup2.png)
 
 3. De verifierar DACPAC-filens egenskaper
 
-    ![Säkerhetskopiera](./media/contoso-migration-tfs-vsts/backup3.png)
+    ![Backup](./media/contoso-migration-tfs-vsts/backup3.png)
 
 ### <a name="update-the-file-to-storage"></a>Ladda upp filen till lagringsplatsen
 
@@ -324,9 +324,9 @@ Tidigare fyllde Contosos administratörer delvis i importspecifikationsfilen (im
 
 De öppnar filen import.json och fyller i följande fält:
 
-- **Plats:** Plats för SAS-nyckeln som skapades ovan.
-- **Dacpac:** Ange namnet på den DACPAC-fil du laddade upp till lagringskontot. Ta med filtillägget ”.dacpac”.
-- **ImportType:** Ställ in på DryRun så länge.
+- **Plats:** Plats för den SAS-nyckel som genererades ovan.
+- **DACPAC:** Ange namnet på den DACPAC-fil som du laddade upp till lagrings kontot. Ta med filtillägget ”.dacpac”.
+- **ImportType:** Ange till blobbar för tillfället.
 
 ![Importera inställningar](./media/contoso-migration-tfs-vsts/import1.png)
 

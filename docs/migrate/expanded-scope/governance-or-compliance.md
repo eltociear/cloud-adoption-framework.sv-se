@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a6371fe5f3d90e72b29ecfc1e66b3d4991ef5822
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3367a76be508b61c214210e9e712c8a310932f2e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549230"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566915"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategi för styrning eller efterlevnad
 
@@ -38,7 +38,7 @@ Konfigurationen av den grundläggande Azure-miljön kan ändras avsevärt vid in
 **Microsoft-tjänster:** Microsoft Services tillhandahåller lösnings erbjudanden som kan anpassas till moln implementerings ramverkets styrnings modell, uppfyllande ritningar eller virtuella Data Center alternativ för att säkerställa den lämpligaste styrningen eller efterlevnaden. Använd lösningen [Secure Cloud Insights (SCI)](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) som etablerar en datadriven bild av en kunddistribution i Azure och validera kundens Azure-övergångsmognad medan du identifierar optimeringen av befintliga distributionsarkitekturer och skyddar dig mot risker mot styrningssäkerheten och tillgängligheten. Baserat på kundinsikter bör du inleda med följande metoder:
 
 - **Cloud Foundation:** Etablera kundens centrala design, mönster och styrnings arkitektur med [Hybrid Cloud Foundation (HCF)](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf) lösnings erbjudande. Mappa kundens krav till den lämpligaste referens arkitekturen. Implementera en minimal användbar produkt som består av delade tjänster och IaaS-arbetsbelastningar.
-- **Cloud modernisering:** Använd [Cloud modernisering](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) -lösningen som en omfattande metod för att flytta program, data och infrastruktur till ett företags klart moln, samt för att optimera och modernisera en gång i molnet.
+- **Cloud modernisering:** Använd [Cloud modernisering](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) -lösningen som en omfattande metod för att flytta program, data och infrastruktur till ett företags klart moln, samt för att optimera och modernisera efter moln distribution.
 - **Förnya med molnet:** Engagera kunden genom en innovativ och unik lösning [för CCoE-lösning (Cloud Center of expert)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) som skapar en modern IT-organisation för att möjliggöra rörlighet i stor skala med DevOps samtidigt som kontrollen är klar. Implementerar en smidig metod för att samla in verksamhetsbehov, återanvända distributionspaket med anpassad säkerhet, efterlevnad och tjänsthanteringsprinciper. Azure-plattformen förblir anpassad till driftsrutinerna.
 
 ## <a name="assess-process-changes"></a>Utvärdera processändringar

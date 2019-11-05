@@ -47,7 +47,7 @@ Det första beslutet att fatta om distributions acceleration är mönstret för 
 - Även om Azures hanterings grupper används förväntas en relativt enkel hierarki.
 - Azure-ritningar används för att distribuera och uppdatera prenumerationer genom att använda RBAC-krav, Resource Manager-mallar och Azure Policy över hanterings grupper.
 
-## <a name="applying-the-dependent-patterns"></a>Använda de beroende mönstren
+## <a name="apply-the-dependent-patterns"></a>Använd de beroende mönstren
 
 Följande beslut representerar de mönster som ska tillämpas via policyn för tvingande principer ovan:
 

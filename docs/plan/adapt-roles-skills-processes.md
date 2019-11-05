@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 30b3a88a8ce7c90f4b3925af7ead21489c2fb821
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: a272a9b8633f60544aca9982654a899288e3b4e8
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223925"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564156"
 ---
 # <a name="adapt-existing-roles-skills-and-processes-for-the-cloud"></a>Anpassa befintliga roller, kunskaper och processer i molnet
 
@@ -25,7 +25,7 @@ IT-personal kan känna sig Anxious om sina roller och befattningar eftersom de i
 
 Information om hur du skapar en ny kunskaps uppsättning finns i [sökvägen till färdighets beredskap](./suggested-skills.md).
 
-## <a name="capturing-concerns"></a>Fånga upp och hantera oro
+## <a name="capture-concerns"></a>Infångnings problem
 
 I takt med att organisationen förbereder en moln implementerings ansträngning bör varje grupp dokumentera personal problem när de uppstår genom att identifiera:
 

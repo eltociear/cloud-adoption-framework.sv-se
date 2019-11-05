@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2b26f8c763d477d95b21e302158c318e3ab4b101
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: a320562f97b6e3a37e0f1b4912f1401189855530
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548582"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566928"
 ---
 # <a name="balance-the-portfolio"></a>Balansera portföljen
 
@@ -23,7 +23,7 @@ Molnimplementering handlar om portföljhantering förklädd som en teknisk imple
 
 Det här avsnittet handlar om den strategiska nivån. Därför är den metod som används i den här artikeln lika strategisk. I syfte att förankra strategin i datadrivna beslut förutsätter den här artikeln att läsaren har utvärderat den befintliga [digitala egendomen](../../digital-estate/index.md) (eller håller på att göra detta). Målet med den här metoden är att underlätta utvärdering av arbetsbelastningar för att säkerställa korrekt balans mellan portföljen via kvalitativa frågor och portföljförfining.
 
-### <a name="documenting-business-outcomes"></a>Dokumentera affärsresultat
+### <a name="document-business-outcomes"></a>Dokumentera affärs resultat
 
 Innan portföljen balanseras är det viktigt att dokumentera och dela de affärsresultat som driver arbetet med molnmigrering. Några exempel på generella affärsresultat som är relaterade till molnmigreringar finns i [sammanfattningen av molnmigrering](../../getting-started/migrate.md).
 
@@ -47,7 +47,7 @@ Vägledningen om [inkrementell rationalisering av den digitala egendomen](../../
 
 ### <a name="importance-of-sunset-and-retire-decisions"></a>Betydelsen av beslut om upphörande och tillbakadragning
 
-Tabellen i avsnittet [Dokumentera affärsresultat](#documenting-business-outcomes) ovan saknar ett viktigt resultat som skulle stödja det främsta målet: att minska IT-kostnader. När minskning av IT-kostnader överhuvudtaget förekommer i listan över affärsresultat är det viktigt att överväga möjligheten med upphörande eller tillbakadragning av arbetsbelastningar. I vissa scenarier kan kostnadsbesparingar komma från att arbetsbelastningar som inte motiverar kortsiktig investering INTE migreras. Vissa kunder har rapporterat kostnadsbesparingar över 20 % av de totala kostnadsminskningarna genom att dra tillbaka underutnyttjade arbetsbelastningar.
+Tabellen i avsnittet [Dokumentera affärsresultat](#document-business-outcomes) ovan saknar ett viktigt resultat som skulle stödja det främsta målet: att minska IT-kostnader. När minskning av IT-kostnader överhuvudtaget förekommer i listan över affärsresultat är det viktigt att överväga möjligheten med upphörande eller tillbakadragning av arbetsbelastningar. I vissa scenarier kan kostnadsbesparingar komma från att arbetsbelastningar som inte motiverar kortsiktig investering INTE migreras. Vissa kunder har rapporterat kostnadsbesparingar över 20 % av de totala kostnadsminskningarna genom att dra tillbaka underutnyttjade arbetsbelastningar.
 
 För att balansera portföljen, så att den på ett bättre sätt återspeglar beslut om upphörande och tillbakadragning, bör teamen för molnstrategi och molnimplementering ställa följande frågor angående varje arbetsbelastning inom processerna för utvärdering och migrering:
 
@@ -74,7 +74,7 @@ Balansering av portföljen kräver ytterligare kvalitativ analys under utvärder
 
 ### <a name="suggested-action-during-the-assess-process"></a>Föreslagna åtgärder under utvärderingsprocessen
 
-Baserat på data från tabellen i avsnittet [Dokumentera affärsresultat](#documenting-business-outcomes) ovan finns det en sannolik risk för att portföljen inriktar sig för mycket på en migreringsfokuserad genomförandemodell. Om kundupplevelsen vore den främsta prioriteten skulle en innovationsinriktad portfölj vara mer trolig. Ingen av dessa är rätt eller fel, men om fokuset riktas för starkt åt ett håll avtar ofta nyttan, onödig komplexitet införs och genomförandetiden vid arbete med molnimplementering ökar.
+Baserat på data från tabellen i avsnittet [Dokumentera affärsresultat](#document-business-outcomes) ovan finns det en sannolik risk för att portföljen inriktar sig för mycket på en migreringsfokuserad genomförandemodell. Om kundupplevelsen vore den främsta prioriteten skulle en innovationsinriktad portfölj vara mer trolig. Ingen av dessa är rätt eller fel, men om fokuset riktas för starkt åt ett håll avtar ofta nyttan, onödig komplexitet införs och genomförandetiden vid arbete med molnimplementering ökar.
 
 För att minska komplexiteten bör läsaren följa en traditionell metod för portföljrationalisering, men i en iterativ modell. Följande steg beskriver en kvalitativ modell för en sådan metod:
 
@@ -113,7 +113,7 @@ Vi rekommenderar att dessa olika arbeten delas upp bland två eller fler molnimp
 
 **Mindre omfabriker:** Vissa program kan förvaras med mindre omfaktor på data-eller program nivå. Detta arbete kräver att teammedlemmar distribuerar data till molnbaserade dataplattformar eller gör mindre konfigurationsändringar i programmet. Detta kan kräva visst stöd från ämnesexperter inom data- eller programutveckling. Detta arbete liknar dock det arbete som utförs av IT-implementatörer vid distribution av appar från tredje part. Detta arbete kan enkelt anpassas till teamet för molnmigrering eller molnstrategi. Detta arbete är inte alls lika snabbt som en migrering med värdbyte, men det tar ändå mindre tid att genomföra än arbete med refaktorisering.
 
-Under migreringen rekommenderas det att arbetet delas upp på de tre sätt som beskrivs ovan samt att detta arbetet utförs av rätt team i rätt iteration. Även om det rekommenderas att portföljen diversifieras är det även lämpligt att hålla arbetet mycket fokuserat och uppdelat.
+Under migreringen ska ansträngningarna segmenteras på de tre sätt som anges ovan och utföras av lämpligt team i lämplig iteration. Även om du skulle kunna förstå portföljen bör du också se till att ansträngningarna är mycket fokuserade och åtskiljda.
 
 ## <a name="optimize-and-promote-process-changes"></a>Optimera och höja upp processändringar
 

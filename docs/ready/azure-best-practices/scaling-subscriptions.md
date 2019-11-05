@@ -8,14 +8,14 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fbfe025b5e324ec685fcec3001cc8705ac001beb
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 4910309817d348874ec7eed75640bd0407f1ffcf
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73243271"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73563997"
 ---
-# <a name="scaling-with-multiple-azure-subscriptions"></a>Skalning med flera Azure-prenumerationer
+# <a name="scale-with-multiple-azure-subscriptions"></a>Skala med flera Azure-prenumerationer
 
 Organisationer behöver ofta mer än en Azure-prenumeration till följd av resurs begränsningar och andra styrnings överväganden. Det är viktigt att ha en strategi för att skala dina prenumerationer.
 
@@ -61,7 +61,7 @@ Du kan också välja att skapa ytterligare prenumerationer av andra affärsrelat
 
 Du kan flytta många typer av resurser från en prenumeration till en annan eller använda automatiserade distributioner för att migrera resurser till en annan prenumeration. Mer information finns i [Flytta Azure-resurser till en annan resursgrupp eller prenumeration](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources).
 
-## <a name="managing-multiple-subscriptions"></a>Hantera flera prenumerationer
+## <a name="manage-multiple-subscriptions"></a>Hantera flera prenumerationer
 
 Om du bara har ett fåtal prenumerationer är det relativt enkelt att hantera dem oberoende av varandra. Men om du har många prenumerationer bör du överväga att skapa en hierarki för hanteringsgrupper för att förenkla hanteringen av dina prenumerationer och resurser.
 

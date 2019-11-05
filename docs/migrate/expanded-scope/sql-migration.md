@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 217b2653a4bec268720f44ac1eefd74bc2d05366
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 444530a603d7d7e77bb71592a061486db835ea56
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980244"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566898"
 ---
 # <a name="accelerate-migration-by-migrating-an-instance-of-sql-server"></a>Påskynda migreringen genom att migrera en instans av SQL Server
 
@@ -32,7 +32,7 @@ Vissa data strukturer kan dock migreras effektivare genom en separat migrering a
 - **Databaser med hög densitet och låg användning:** Instansen av SQL Server har hög densitet av databaser. Var och en av dessa databaser har låga transaktions volymer och kräver en liten beräknings resurs. Du bör överväga andra, fler moderna lösningar, men en infrastruktur som en tjänst (IaaS) kan leda till betydligt lägre drifts kostnader.
 - **Total ägande kostnad:** När det är tillämpligt kan du använda [Azure Hybrid-förmåner](https://azure.microsoft.com/pricing/hybrid-benefit) för List priset för att skapa den lägsta ägande kostnaden för instanser av SQL Server. Detta är särskilt vanligt för kunder som är värdar för SQL Server i multimolns scenarier.
 - **Migration Accelerator:** Migrering av en SQL Server instans av en instans kan flytta flera databaser i en iteration. Den här metoden gör ibland att framtida iterationer kan fokusera mer specifikt på program och virtuella datorer, vilket innebär att du kan migrera fler arbets belastningar i en enda iteration.
-- **VMware-migrering:** En gemensam lokal arkitektur omfattar program och virtuella datorer på en virtuell värd och databaser på Bare Metal. I det här scenariot kan du migrera hela SQL Server instanser för att stödja migrering av VMWare-värden till Azure VMWare-tjänsten. Mer information finns i [migrering av VMware-värdar](./vmware-host.md).
+- **VMware-migrering:** En gemensam lokal arkitektur omfattar program och virtuella datorer på en virtuell värd och databaser på Bare Metal. I det här scenariot kan du migrera hela SQL Server instanser för att stödja migrering av VMware-värden till Azure VMware-tjänsten. Mer information finns i [migrering av VMware-värdar](./vmware-host.md).
 
 Om inget av ovanstående villkor gäller för migreringen kan det vara bäst att fortsätta med [standard processen för migrering](../index.md). I standard processen migreras data strukturer iterativt, tillsammans med varje arbets belastning.
 
@@ -81,7 +81,7 @@ Om en databas i planen kan migreras till en plattform som en tjänst (PaaS)-data
 
 För databaser som kan migreras till en PaaS-lösning slutförs följande åtgärder under utvärderings processen.
 
-- **Utvärdera med DMA:** Använd Data Migration Assistant för att identifiera kompatibilitetsproblem som kan påverka databas funktionen i mål Azure SQL Database Hanterad instans. Använd DMA för att rekommendera förbättringar av prestanda och tillförlitlighet, och för att flytta schema, data och objekt som inte har inkluderats från käll servern till mål servern. Mer information finns i [Data Migration Assistant](/sql/dma/dma-overview).
+- **Utvärdera med DMA:** Använd Data Migration Assistant för att identifiera kompatibilitetsproblem som kan påverka databas funktionen i mål Azure SQL Database Hanterad instans. Använd DMA för att rekommendera förbättringar av prestanda och tillförlitlighet, och för att flytta schema, data och objekt som inte har inkluderats från käll servern till mål servern. Mer information finns i [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview).
 - **Åtgärda och konvertera:** Konvertera dataschemat för data baserat på utdata från DMA för att åtgärda kompatibilitetsproblem. Testa det konverterade dataschemat med de beroende programmen.
 
 ## <a name="migrate-process-changes"></a>Ändringar i migreringsprocessen
@@ -96,9 +96,9 @@ Den föreslagna sökvägen för migrering och synkronisering använder en kombin
 
 |Migrations alternativ|Syfte|
 |---------|---------|
-|[Azure Database Migration Service](/sql/dma/dma-overview)|Har stöd för online (minimal nedtid) och offline (en gång) migreringar i skala till en Azure SQL Database Hanterad instans. Stöder migrering från: SQL Server 2005, SQL Server 2008 och SQL Server 2008 R2, SQL Server 2012, SQL Server 2014, SQL Server 2016 och SQL Server 2017.|
-|[Transaktionsreplikering](/sql/relational-databases/replication/administration/enhance-transactional-replication-performance)|Transaktionsreplikering till en Azure SQL Database Hanterad instans stöds för migreringar från: SQL Server 2012 (SP2 CU8, SP3 eller senare), SQL Server 2014 (RTM CU10 eller senare eller SP1 CU3 eller senare), SQL Server 2016, SQL Server 2017.|
-|[Mass inläsning](/sql/t-sql/statements/bulk-insert-transact-sql)|Använd Mass inläsning till en Azure SQL Database Hanterad instans för data som lagras i: SQL Server 2005, SQL Server 2008 och SQL Server 2008 R2, SQL Server 2012, SQL Server 2014, SQL Server 2016 och SQL Server 2017.|
+|[Azure Database Migration Service](https://docs.microsoft.com/sql/dma/dma-overview)|Har stöd för online (minimal nedtid) och offline (en gång) migreringar i skala till en Azure SQL Database Hanterad instans. Stöder migrering från: SQL Server 2005, SQL Server 2008 och SQL Server 2008 R2, SQL Server 2012, SQL Server 2014, SQL Server 2016 och SQL Server 2017.|
+|[Transaktionsreplikering](https://docs.microsoft.com/sql/relational-databases/replication/administration/enhance-transactional-replication-performance)|Transaktionsreplikering till en Azure SQL Database Hanterad instans stöds för migreringar från: SQL Server 2012 (SP2 CU8, SP3 eller senare), SQL Server 2014 (RTM CU10 eller senare eller SP1 CU3 eller senare), SQL Server 2016, SQL Server 2017.|
+|[Mass inläsning](https://docs.microsoft.com/sql/t-sql/statements/bulk-insert-transact-sql)|Använd Mass inläsning till en Azure SQL Database Hanterad instans för data som lagras i: SQL Server 2005, SQL Server 2008 och SQL Server 2008 R2, SQL Server 2012, SQL Server 2014, SQL Server 2016 och SQL Server 2017.|
 
 ### <a name="guidance-and-tutorials-for-suggested-migration-process"></a>Vägledning och självstudier för föreslagen migreringsprocessen
 
@@ -120,7 +120,7 @@ När du har flyttat databaser från en instans av SQL Server till Database Migra
 |---------|---------|---------|---------|---------|
 |SQL Server Integration Services|Azure Data Factory integration runtime|Azure Data Factory|Anslutningen|[Självstudie](https://docs.microsoft.com/azure/data-factory/create-azure-ssis-integration-runtime)|
 |SQL Server Analysis Services tabell modell|Azure Analysis Services|SQL Server Data Tools|Anslutningen|[Självstudie](https://docs.microsoft.com/azure/analysis-services/analysis-services-deploy)|
-|SQL Server Reporting Services|Power BI-rapportserver|Power BI|Anslutningen|[Självstudie](/power-bi/report-server/migrate-report-server)|
+|SQL Server Reporting Services|Power BI-rapportserver|Power BI|Anslutningen|[Självstudie](https://docs.microsoft.com/power-bi/report-server/migrate-report-server)|
 
 ### <a name="guidance-and-tutorials-for-migration-from-sql-server-to-an-iaas-instance-of-sql-server"></a>Vägledning och självstudier för migrering från SQL Server till en IaaS-instans av SQL Server
 
