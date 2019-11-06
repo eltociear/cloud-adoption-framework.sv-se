@@ -8,16 +8,15 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fd5cc25e652b28f71e03a80e29e87a2e7e5408ed
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 9e433585fa252c37a187adf21b8d09dec70f96f7
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72693911"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656675"
 ---
 # <a name="oracle-migration-decision-tree"></a>Besluts träd för Oracle-migrering
 
-I följande besluts träd beskrivs alternativ som är tillgängliga för migrering av en Oracle-datastruktur till olika data plattformar i Azure.
-Den här referensen kan hjälpa till att fastställa den lämpligaste migreringen för Oracle.
+I följande besluts träd beskrivs tillgängliga alternativ för att migrera en Oracle-datastruktur till olika data plattformar i Azure. Den här referensen kan hjälpa dig att avgöra den lämpligaste sökvägen för migrering för Oracle.
 
 ![Besluts träd för Oracle-migrering](../../_images/innovate/considerations/oracle-migration-decision-tree.png)

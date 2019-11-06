@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 38ecfe706840964caa7f6e3cd5b11daa24de2973
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 052c723372830791c9baaf490e43ac373ea05760
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565249"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656549"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>Upprätta operativa hanterings metoder i molnet
 
@@ -42,6 +42,6 @@ Båda dessa metod tips bygger på en metod för framtida tillstånd för Operati
 - **Plattforms åtgärder:** Alla IT-miljöer innehåller en uppsättning ofta använda plattformar. Dessa plattformar kan omfatta data lager som SQL Server eller Azure HDInsight. Andra vanliga plattformar kan omfatta behållar lösningar som Azure Kubernetes service (AKS). Oavsett plattform, fokuserar plattforms drifts förfallo tiden på att anpassa åtgärder baserat på hur de gemensamma plattformarna distribueras, konfigureras och används av arbets belastningar.
 - **Arbets belastnings åtgärder:** På den högsta nivån av drifts förfallo tid kan moln drifts grupper justera åtgärder för arbets belastningar som är viktiga för företagets framgång. För dessa arbets belastningar med hög allvarlighets grad kan tillgängliga data hjälpa till med automatisering av reparation, storlek eller skydd av arbets belastningar baserat på deras användning.
 
-Ytterligare vägledning, till exempel [ramverket för design granskning (kod namn: principer för moln design)](https://docs.microsoft.com/azure/architecture/reliability), kan hjälpa dig att fatta detaljerade arkitektoniska beslut om varje arbets belastning, inom de tidigare beskrivna ämnes områden.
+Ytterligare vägledning, till exempel [ramverket för design granskning (kod namn: principer för moln design)](https://docs.microsoft.com/azure/architecture/framework/resiliency/overview), kan hjälpa dig att fatta detaljerade arkitektoniska beslut om varje arbets belastning, inom de tidigare beskrivna ämnes områden.
 
 Det här avsnittet av ramverket för moln införande bygger på var och en av de föregående ämnena för att främja mogna moln åtgärder i din organisation.

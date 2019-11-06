@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 1cdf066617ee43de6fedfeb707311e663318f8c4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 79d784b65a2006559efc9f074b319ea67de67db0
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561814"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656666"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure Enterprise-Autogenerera: handskriven prenumerations styrning
 
@@ -115,7 +115,7 @@ Den första pelaren i Autogenerera är en konsekvent namngivnings standard. Med 
 > [!TIP]
 > För namngivnings konventioner:
 >
-> - Läs igenom och använd [vägledningen om mönster och praxis](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) om det är möjligt. Den här vägledningen hjälper dig att bestämma en meningsfull namngivnings standard och ger omfattande exempel.
+> - Läs igenom och använd [vägledningen om mönster och praxis](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) om det är möjligt. Den här vägledningen hjälper dig att bestämma en meningsfull namngivnings standard och ger omfattande exempel.
 > - Använda Resource Manager-principer för att säkerställa namngivnings standarder.
 >
 > Kom ihåg att det är svårt att ändra namnen senare, så några minuter kommer nu att spara problem senare.

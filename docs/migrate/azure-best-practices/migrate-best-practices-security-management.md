@@ -8,12 +8,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ca56669818add8e54d7c4805a19879412da54567
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 34659cb5cd3a223fe084ba8975f0f7a39b2b74f6
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564769"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656712"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Metodtips för att skydda och hantera arbetsbelastningar som migreras till Azure
 
@@ -219,7 +219,7 @@ Om resursgrupperna har beskrivande namn som administratörer och medlemmar i sup
 
 **Läs mer:**
 
-- [Läs mer](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) om namngivningskonventioner.
+- [Läs mer](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) om namngivningskonventioner.
 
 ## <a name="best-practice-implement-delete-locks-for-resource-groups"></a>Bästa praxis: implementera ta bort lås för resurs grupper
 
@@ -419,7 +419,7 @@ Hanterade Azure-diskar förenklar diskhantering för virtuella Azure IaaS-datore
 - Du kan konvertera befintliga diskar till hanterade.
 - Du bör skapa virtuella datorer i tillgänglighetsuppsättningar för hög återhämtning och tillgänglighet. Vid planerade eller oplanerade avbrott säkerställer tillgänglighetsuppsättningar att minst en av dina virtuella datorer i uppsättningen fortfarande är tillgänglig.
 
-![Hanterade diskar](./media/migrate-best-practices-security-management/managed-disks.png)
+![Managed Disks](./media/migrate-best-practices-security-management/managed-disks.png)
 
 *Hanterade diskar*
 
@@ -560,4 +560,4 @@ Azure har en lösning för ändringsspårning i Azure Automation:
 Läs andra metodtips:
 
 - [Metodtips](./migrate-best-practices-networking.md) för nätverk efter migrering.
-- [Metodtips](./migrate-best-practices-costs.md) för säkerhet och hantering efter migrering.
+- [Metodtips](./migrate-best-practices-costs.md) för kostnadshantering efter migrering.

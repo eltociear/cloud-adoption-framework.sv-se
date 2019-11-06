@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 04e78b51bcea5aea8d8db719b7d88865696d781b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: caa9d3ced70ce15eacf37b4bcbb653efae9da1ef
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566022"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656694"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Styrningsdesign för flera team
 
@@ -259,7 +259,7 @@ Följ de här stegen:
 6. Skapa en godkännande process för **arbets belastnings ägare** för att begära att resurs grupper skapas. Godkännande processen kan implementeras på många sätt, t. ex. via e-post, eller så kan du använda ett process hanterings verktyg som [SharePoint-arbetsflöden](https://support.office.com/article/introduction-to-sharepoint-workflow-07982276-54e8-4e17-8699-5056eff4d9e3). Godkännande processen kan följa dessa steg:
     - **Ägaren av arbets belastningen** förbereder en struktur för nödvändiga Azure-resurser i antingen **utvecklings** miljön, **produktions** miljön eller både och skickar den till **prenumerations ägaren**.
     - **Prenumerations ägaren** granskar struktur listan och validerar de begärda resurserna för att säkerställa att de begärda resurserna är lämpliga för planerad användning, t. ex. för att kontrol lera att de begärda [storlekarna för virtuella datorer](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) är eventuella.
-    - Om begäran inte godkänns, meddelas **arbets Belastningens ägare** . Om begäran godkänns skapar **prenumerations ägaren** [den begärda resurs gruppen](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups) enligt organisationens [namn konventioner](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions), och [lägger till **arbets belastnings ägaren** ](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment) med [rollen **deltagare** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) och skickar ett meddelande till den **arbets belastnings ägare** som resurs gruppen har skapats.
+    - Om begäran inte godkänns, meddelas **arbets Belastningens ägare** . Om begäran godkänns skapar **prenumerations ägaren** [den begärda resurs gruppen](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups) enligt organisationens [namn konventioner](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming), och [lägger till **arbets belastnings ägaren** ](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment) med [rollen **deltagare** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) och skickar ett meddelande till den **arbets belastnings ägare** som resurs gruppen har skapats.
 7. Skapa en godkännande process för arbets belastnings ägare för att begära en virtuell nätverks-peering-anslutning från ägaren till den delade infrastrukturen. Som i föregående steg kan denna godkännande process implementeras med hjälp av e-post eller ett process hanterings verktyg.
 
 Nu när du har implementerat styrnings modellen kan du distribuera dina delade infrastruktur tjänster.

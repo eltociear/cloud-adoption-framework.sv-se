@@ -8,43 +8,43 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 16d67f628ff99f971d2d79127b25698987cc8977
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 741a73bacadccc0ee7b06542b86b9958aa236982
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547282"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656319"
 ---
 # <a name="guest-configuration-policy"></a>Princip för gäst konfiguration
 
-Med tillägget Azure Policy [gäst konfiguration](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration) kan du granska konfigurations inställningarna på en virtuell dator. Gäst konfigurationen stöds för närvarande endast på virtuella Azure-datorer.
+Du kan använda tillägget Azure Policy [gäst konfiguration](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration) för att granska konfigurations inställningarna på en virtuell dator. Gäst konfigurationen stöds för närvarande endast på virtuella Azure-datorer.
 
-Du hittar listan över principer för gäst konfiguration genom att söka efter kategorin "gäst konfiguration" på sidan Azure Policy Portal. Du kan också hitta listan genom att köra denna cmdlet i ett PowerShell-fönster:
+Du hittar listan över principer för gäst konfiguration genom att söka efter "gäst konfiguration" på sidan Azure Policy Portal. Eller kör denna cmdlet i ett PowerShell-fönster för att hitta listan:
 
 ```powershell
 Get-AzPolicySetDefinition | where-object {$_.Properties.metadata.category -eq "Guest Configuration"}
 ```
 
 > [!NOTE]
-> Gäst konfigurations funktionerna uppdateras regelbundet för att stödja ytterligare princip uppsättningar. Sök efter nya principer som stöds regelbundet och utvärdera om de är användbara för dina behov.
+> Gäst konfigurations funktionerna uppdateras regelbundet för att stödja ytterligare princip uppsättningar. Sök efter nya principer som stöds regelbundet och utvärdera om de ska vara användbara.
 
 <!-- TODO: Update these links when available. 
 
-By default, we recommend enabling the following policies:
+By default, we recommend that you enable the following policies:
 
-- [Preview]: Audit to verify password security settings are set correctly inside Linux and Windows machines.
+- [Preview]: Audit to verify that password-security settings are correct on Linux and Windows machines.
 - Audit to verify that certificates are not nearing expiration on Windows VMs.
 
 -->
 
 ## <a name="deployment"></a>Distribution
 
-Du kan använda följande exempel PowerShell-skript för att distribuera dessa principer:
+Använd följande exempel PowerShell-skript för att distribuera dessa principer till:
 
 - Kontrol lera att inställningarna för lösen ords säkerhet på Windows-och Linux-datorer är korrekt inställda.
 - Kontrol lera att certifikaten inte är nära förfallo datum för virtuella Windows-datorer.
 
- Innan du kör det här skriptet måste du logga in med hjälp av cmdleten [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) . När du kör skriptet måste du ange namnet på den prenumeration som du vill tillämpa principerna på.
+ Innan du kör det här skriptet använder du cmdleten [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) för att logga in. När du kör skriptet måste du ange namnet på den prenumeration som du vill tillämpa principerna på.
 
 ```powershell
 

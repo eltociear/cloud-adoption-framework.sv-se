@@ -8,16 +8,15 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9f1d9b4a0f17b3f2fb556a95132d494042ba9bab
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 001231a74680a3dabbc1ec18646fad0dd4fc94e3
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72693924"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656573"
 ---
 # <a name="nosql-migration-decision-tree"></a>Besluts träd för NoSQL-migrering
 
-I följande besluts träd visas alternativ för att migrera en NoSQL-datastruktur till olika data plattformar i Azure.
-Den här referensen kan hjälpa till att fastställa den lämpligaste NoSQL för migrering.
+I följande besluts träd beskrivs tillgängliga alternativ för att migrera en NoSQL-datastruktur till olika data plattformar i Azure. Den här referensen kan hjälpa dig att avgöra den lämpligaste sökvägen för migrering för NoSQL.
 
 ![Besluts träd för NoSQL-migrering](../../_images/innovate/considerations/no-sql-decision-tree.png)
