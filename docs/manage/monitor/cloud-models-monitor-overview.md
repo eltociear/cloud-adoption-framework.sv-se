@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 6e02cffdbd76932e3066ed68501856aef2669b02
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
-ms.translationtype: HT
+ms.openlocfilehash: 849c6eace1704cababd4fc40f7976f5e1915345e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979898"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564979"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Övervaknings guide för molnet: övervaknings strategi för moln distributions modeller
 
@@ -88,7 +88,7 @@ I följande tabell sammanfattas de krav som Azure Monitor och System Center Oper
 |Övervakning av moderna webb program | Ja | Nej |
 |Övervakning av äldre webb program | Ja, begränsad, varierar beroende på SDK<br> Har stöd för övervakning av äldre versioner av .NET och Java-webbprogram. | Ja, begränsad |
 |Övervaka Azure Kubernetes service-behållare | Ja | Nej |
-|Övervaka Docker/Windows-behållare | Ja | Nej |
+|Övervaka Docker-eller Windows-behållare | Ja | Nej |
 |Övervakning av nätverks prestanda | Ja | Ja, begränsad<br> Stöder tillgänglighets kontroller och samlar in grundläggande statistik från nätverks enheter med hjälp av Simple Network Management Protocol (SNMP) från företags nätverket.|
 |Interaktiv data analys | Ja | Nej<br> Förlita dig på SQL Server Reporting Services för hands versioner av eller anpassade rapporter, visualiserings lösningar från tredje part eller en anpassad Power BI implementering. Det finns skalnings-och prestanda begränsningar med Operations Manager data lagret. Integrera med Azure Monitor-loggar som ett alternativ för data agg regerings krav. Du uppnår integrering genom att konfigurera Log Analytics anslutningen.|
 |Diagnostik från slut punkt till slut punkt, rotor Saks analys och problemlösnings tid | Ja | Ja, begränsad<br> Har stöd för diagnostik och fel sökning från slut punkt till slut punkt för lokal infrastruktur och program. Använder andra System Center-komponenter eller partner lösningar.|
@@ -131,7 +131,7 @@ För alla webb program som kan nås externt bör du aktivera en typ av syntetisk
 
 #### <a name="disadvantages-of-using-operations-manager-by-itself"></a>Nack delar med att använda Operations Manager av sig själv
 
-- Analys av övervaknings data i Operations Manager utförs ofta med hjälp av fördefinierade vyer som definieras i hanterings paket som du kommer åt från-konsolen, från SQL Server Reporting Services (SSRS) rapporter eller anpassade vyer som slutanvändarna har skapat. Det går inte att utföra ad hoc-analyser av data i rutan. Operations Manager rapportering är inflexibelt. Informations lagret som tillhandahåller långsiktig kvarhållning av övervaknings data skalar inte eller fungerar bra. Och expertis i skriva T-SQL-uttryck, utveckla en Power BI-lösning eller använda lösningar från tredje part krävs för att stödja kraven för de olika personer i IT-organisationen.
+- Analys av övervaknings data i Operations Manager utförs ofta med hjälp av fördefinierade vyer som tillhandahålls av hanterings paket som nås från-konsolen, från SQL Server Reporting Services-rapporter (SSRS) eller från anpassade vyer som slutanvändarna har skapat. Det går inte att utföra ad hoc-dataanalyser. Operations Manager rapportering är inflexibelt. Informations lagret som tillhandahåller långsiktig kvarhållning av övervaknings data skalar inte eller fungerar bra. Och expertis i skriva T-SQL-uttryck, utveckla en Power BI-lösning eller använda lösningar från tredje part krävs för att stödja kraven för de olika personer i IT-organisationen.
 
 - Aviseringar i Operations Manager stöder inte komplexa uttryck eller innehåller korrelations logik. För att minska bruset grupperas aviseringar för att Visa relationerna mellan dem och för att identifiera deras orsaker.
 
@@ -165,7 +165,7 @@ För alla webb program som kan nås externt bör du aktivera en typ av syntetisk
 
 - Aktivera Azure Monitor for VMs, Azure Monitor för behållare och Application Insights för att identifiera och diagnostisera problem mellan infrastruktur och program. För en mer omfattande analys och korrelation av data som samlas in från flera komponenter eller beroenden som stöder programmet måste du använda Azure Monitor loggar.
 
-- Skapa intelligenta aviseringar som kan gälla för en central uppsättning program och tjänst komponenter, hjälpa till att minska aviserings bruset med dynamiska tröskelvärden för komplexa signaler och Använd varnings agg regering baserat på Machine Learning-algoritmer för att snabbt kunna identifiera ge.
+- Skapa smarta aviseringar som gäller för en central uppsättning program och tjänst komponenter, minska aviserings bruset med dynamiska tröskelvärden för komplexa signaler och Använd varnings agg regering baserat på Machine Learning-algoritmer för att snabbt identifiera problemet.
 
 - Definiera ett bibliotek med frågor och instrument paneler för att stödja kraven för de olika personer i IT-organisationen.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 973bb0e86d3c60e1514061ed7d2aa7ccb787cef6
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
-ms.translationtype: HT
+ms.openlocfilehash: 4d50025ee6030e07ccb2979fff89ebb6569e0aed
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979993"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564962"
 ---
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>Övervaknings guide för molnet: översikt över Monitoring Platforms
 
@@ -78,7 +78,7 @@ Azure Monitor är en SaaS-tjänst (Software as a Service) där all infrastruktur
 
 #### <a name="agents"></a>Agenter
 
-Operations Manager samlar endast in data direkt från agenter som är installerade på [Windows-datorer](https://docs.microsoft.com//system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#windows-agent). Den kan ta emot data från Operations Manager SDK, men den här metoden används vanligt vis för partner som utökar produkten med anpassade program, inte för att samla in övervaknings data. Den kan samla in data från andra källor, till exempel [Linux-datorer](https://docs.microsoft.com/system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#linuxunix-agent) och nätverks enheter, genom att använda särskilda moduler som körs på Windows-agenten som fjärransluter till dessa enheter.
+Operations Manager samlar endast in data direkt från agenter som är installerade på [Windows-datorer](https://docs.microsoft.com/system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#windows-agent). Den kan ta emot data från Operations Manager SDK, men den här metoden används vanligt vis för partner som utökar produkten med anpassade program, inte för att samla in övervaknings data. Den kan samla in data från andra källor, till exempel [Linux-datorer](https://docs.microsoft.com/system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#linuxunix-agent) och nätverks enheter, genom att använda särskilda moduler som körs på Windows-agenten som fjärransluter till dessa enheter.
 
 ![Diagram över Operations Manager agent](./media/monitoring-management-guidance-cloud-and-on-premises/data-collection-opsman-agents-optimized.svg)
 
@@ -128,25 +128,25 @@ Hanterings paket i Operations Manager innehåller en tjänst modell som beskrive
 
 Azure Monitor ger inte en användar medveten metod för att implementera en tjänst modell eller Övervakare som anger det aktuella hälso tillståndet för alla tjänst komponenter. Eftersom övervaknings lösningar baseras på standard funktionerna i Azure Monitor, ger de inte övervakning på tillstånds nivå. Följande funktioner i Azure Monitor kan vara till hjälp:
 
-- **Application Insights**: skapar en sammansatt karta över ditt webb program och ger ett hälso tillstånd för varje program komponent eller beroende. Detta omfattar aviserings status och detaljerad information till mer detaljerad diagnostik för ditt program.
+- **Application Insights:** Skapar en sammansatt karta över ditt webb program och ger ett hälso tillstånd för varje program komponent eller beroende. Detta omfattar aviserings status och detaljerad information till mer detaljerad diagnostik för ditt program.
 
-- **Azure Monitor for VMS**: ger en hälso övervakning för de virtuella gäst Azure-datorerna, ungefär som Operations Manager, när de övervakar virtuella Windows-och Linux-datorer. Den utvärderar hälso tillståndet för viktiga operativ Systems komponenter från tillgänglighets-och prestanda perspektivet för att fastställa det aktuella hälso tillståndet. När den bestämmer sig för att den virtuella gäst datorn drabbas av resursutnyttjande, disk utrymmes kapacitet eller ett problem som rör kärn funktioner i operativ systemet, genererar den en avisering för att få det här läget.
+- **Azure Monitor for VMS:** Ger en hälso övervakning för virtuella gäst datorer i Azure, ungefär som Operations Manager, när de övervakar virtuella Windows-och Linux-datorer. Den utvärderar hälso tillståndet för viktiga operativ Systems komponenter från tillgänglighets-och prestanda perspektivet för att fastställa det aktuella hälso tillståndet. När den bestämmer sig för att den virtuella gäst datorn drabbas av resursutnyttjande, disk utrymmes kapacitet eller ett problem som rör kärn funktioner i operativ systemet, genererar den en avisering för att få det här läget.
 
-- **Azure Monitor för behållare**: övervakar prestanda och hälsa för Azure Kubernetes Services eller Azure Container instances. Den samlar in minnes-och processor mått från styrenheter, noder och behållare som är tillgängliga i Kubernetes via Metrics-API: et. Den samlar även in behållar loggar och inventerings data om behållare och avbildningar. Fördefinierade hälso kriterier som baseras på insamlade prestanda data hjälper dig att identifiera om det finns en resurs Flask hals eller kapacitets problem. Du kan också förstå den övergripande prestandan eller prestandan från en speciell Kubernetes objekt typ (pod, Node, Controller eller container).
+- **Azure Monitor för behållare:** Övervakar prestanda och hälsa för Azure Kubernetes-tjänsten eller Azure Container Instances. Den samlar in minnes-och processor mått från styrenheter, noder och behållare som är tillgängliga i Kubernetes via Metrics-API: et. Den samlar även in behållar loggar och inventerings data om behållare och avbildningar. Fördefinierade hälso kriterier som baseras på insamlade prestanda data hjälper dig att identifiera om det finns en resurs Flask hals eller kapacitets problem. Du kan också förstå den övergripande prestandan eller prestandan från en speciell Kubernetes objekt typ (pod, Node, Controller eller container).
 
-## <a name="analyzing-data"></a>Analysera data
+## <a name="analyze-data"></a>Analysera data
 
 ### <a name="operations-manager"></a>Operations Manager
 
 Operations Manager innehåller fyra grundläggande sätt att analysera data när de har samlats in:
 
-- **Hälsoutforskaren**: hjälper dig att identifiera vilka Övervakare som identifierar hälso tillstånds problem och läser igenom kunskap om övervakaren och möjliga orsaker till åtgärder som rör den.
+- **Hälsoutforskaren:** Hjälper dig att identifiera vilka Övervakare som identifierar hälso tillstånds problem och granskar kunskap om övervakaren och möjliga orsaker till åtgärder relaterade till den.
 
-- **Vyer**: innehåller fördefinierade visualiseringar av insamlade data, till exempel diagram över prestanda data eller en lista över övervakade komponenter och deras aktuella hälso tillstånd. Diagramvyn visar tjänst modellen för ett program visuellt.
+- **Vyer:** Innehåller fördefinierade visualiseringar av insamlade data, till exempel diagram över prestanda data eller en lista över övervakade komponenter och deras aktuella hälso tillstånd. Diagramvyn visar tjänst modellen för ett program visuellt.
 
-- **Rapporter**: gör att du kan sammanfatta historiska data som lagras i Operations Manager data lagret. Du kan anpassa de data som vyer och rapporter baseras på. Det finns dock ingen funktion för att tillåta komplex eller interaktiv analys av insamlade data.
+- **Rapporter:** Gör att du kan sammanfatta historiska data som lagras i Operations Manager data lagret. Du kan anpassa de data som vyer och rapporter baseras på. Det finns dock ingen funktion för att tillåta komplex eller interaktiv analys av insamlade data.
 
-- **Operations Manager Command Shell**: utökar Windows PowerShell med ytterligare en uppsättning cmdletar och kan fråga efter och visualisera insamlade data. Detta omfattar grafer och andra visualiseringar, internt med PowerShell eller med den Operations Manager HTML-baserade webb konsolen.
+- **Operations Manager kommando gränssnitt:** Utökar Windows PowerShell med ytterligare en uppsättning cmdletar och kan fråga efter och visualisera insamlade data. Detta omfattar grafer och andra visualiseringar, internt med PowerShell eller med den Operations Manager HTML-baserade webb konsolen.
 
 ### <a name="azure-monitor"></a>Azure Monitor
 
@@ -178,7 +178,7 @@ Arbets flöden i Operations Manager är oberoende av varandra, vilket gör det s
 
 Azure Monitor separerar data insamling från åtgärder och analyser som vidtas från dessa data. Agenter och andra data källor skriver loggdata till en Log Analytics arbets yta och skriver mått data till mått databasen, utan någon analys av dessa data eller kunskaper om hur de kan användas. Övervakaren utför aviseringar och andra åtgärder från lagrade data, vilket gör att du kan utföra analyser över data från alla källor.
 
-## <a name="extending-base-platform"></a>Utöka bas plattform
+## <a name="extend-the-base-platform"></a>Utöka bas plattformen
 
 ### <a name="operations-manager"></a>Operations Manager
 

@@ -8,14 +8,14 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e1e9d693e7ca8de494ec2eb3e833ed3d0b07786f
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
-ms.translationtype: HT
+ms.openlocfilehash: 6eaad06105ed6078f462082855378f72bc25d6a7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980035"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565669"
 ---
-# <a name="developing-digital-inventions"></a>Utveckla digitala uppfinningar
+# <a name="develop-digital-inventions"></a>Utveckla digital innovation
 
 Som det beskrivs i [innovation i den digitala ekonomin](./index.md), kräver innovation en balans mellan *uppfinning* och *införande*. Kundfeedback och partnerskap krävs för att införa en enhet. De ämnes områden som beskrivs i nästa avsnitt definierar en serie metoder för att utveckla digitala uppfinningar samtidigt som vi håller implementeringen och kund empati i åtanke. Varje ämnes område beskrivs kortfattat, tillsammans med djupare länkar i varje process.
 

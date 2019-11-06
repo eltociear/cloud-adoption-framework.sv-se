@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 8f0f2ed925432badf22de70dfa87aa3528738842
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
-ms.translationtype: HT
+ms.openlocfilehash: efbb3b677f2349f0d2e8c240c42c75d75cf849f1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979846"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564983"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Övervaknings guide för molnet: avisering
 
@@ -47,17 +47,17 @@ Om du använder Azure Monitor exklusivt, följer du dessa rikt linjer när du fu
 
 Beroende på vilken funktion och konfiguration du använder, kan du lagra övervaknings data i sex olika databaser:
 
-- **Azure Monitor mått databas**: en databas för tids serier som huvudsakligen används för Azure Monitor plattforms mått, men som också har Application Insights Mät data speglade i den. Information som anger den här databasen har snabbast aviserings tider.
+- **Azure Monitor mått databas:** En databas för tids serier används främst för Azure Monitor plattforms mått, men har även Application Insights Mät data som speglas i den. Information som anger den här databasen har snabbast aviserings tider.
 
-- **Application Insights loggar Store**: en databas som lagrar de flesta Application Insights telemetri i logg formuläret.
+- **Application Insights loggar Arkiv:** En databas som lagrar de flesta Application Insights telemetri i logg formuläret.
 
-- **Azure Monitor loggar Store**: det primära arkivet för Azures loggdata. Andra verktyg kan dirigera data till den och kan analyseras i Azure Monitor loggar. På grund av inhämtning och indexering har logg aviserings frågor högre latens. Den här fördröjningen är vanligt vis 5-10 minuter, men kan vara högre under vissa omständigheter.
+- **Azure Monitor loggar Arkiv:** Det primära arkivet för Azure-loggdata. Andra verktyg kan dirigera data till den och kan analyseras i Azure Monitor loggar. På grund av inhämtning och indexering har logg aviserings frågor högre latens. Den här fördröjningen är vanligt vis 5-10 minuter, men kan vara högre under vissa omständigheter.
 
-- **Aktivitets logg Arkiv**: används för alla aktivitets logg-och tjänst hälso händelser. Dedikerad avisering är möjlig. Innehåller händelser på prenumerations nivå som inträffar för objekt i din prenumeration, som du ser från utsidan av dessa objekt. Ett exempel kan vara när en princip har angetts eller om en resurs är tillgänglig eller borttagen.
+- **Aktivitets logg Arkiv:** Används för alla aktivitets logg-och tjänst hälso händelser. Dedikerad avisering är möjlig. Innehåller händelser på prenumerations nivå som inträffar för objekt i din prenumeration, som du ser från utsidan av dessa objekt. Ett exempel kan vara när en princip har angetts eller om en resurs är tillgänglig eller borttagen.
 
-- **Azure Storage**: allmän lagring som stöds av Azure-diagnostik och andra övervaknings verktyg. Det är ett billigt alternativ för långsiktig kvarhållning av övervakning av telemetri. Aviseringar stöds inte från data som lagras i den här tjänsten.
+- **Azure Storage:** Allmän lagring som stöds av Azure-diagnostik och andra övervaknings verktyg. Det är ett billigt alternativ för långsiktig kvarhållning av övervakning av telemetri. Aviseringar stöds inte från data som lagras i den här tjänsten.
 
-- **Event Hubs**: används vanligt vis för att strömma data till lokala eller andra partners övervaknings-eller ITSM-verktyg.
+- **Event Hubs:** Används vanligt vis för att strömma data till lokala eller andra partners övervaknings-eller ITSM-verktyg.
 
 Azure Monitor har fyra typer av aviseringar som var och en är knutna till den lagrings plats som data lagras i:
 
@@ -69,7 +69,7 @@ Azure Monitor har fyra typer av aviseringar som var och en är knutna till den l
 
 - [Service Health avisering](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications?toc=%2fazure%2fservice-health%2ftoc.json): en särskild typ av avisering, bara för service Health problem som kommer från aktivitets logg arkivet.
 
-### <a name="alerting-through-partner-tools"></a>Avisering via partner verktyg
+### <a name="enable-alerting-through-partner-tools"></a>Aktivera avisering via partner verktyg
 
 Om du använder en extern aviserings lösning dirigerar du så mycket som du kan via Azure Event Hubs, vilket är den snabbaste sökvägen från Azure Monitor. Du måste betala för inmatning till Event Hub. Om kostnad är ett problem och hastigheten inte är det kan du använda Azure Storage som ett billigare alternativ. Se bara till att dina övervaknings-eller ITSM-verktyg kan läsa Azure Storage för att extrahera data.
 
@@ -100,7 +100,7 @@ Det här är några viktiga fotnoter till den här regeln.
 
 - Du kan skicka den till båda butikerna genom att köra både tillägget och agenten på samma virtuella dator. Du kan sedan snabbt och enkelt använda gäst operativ systemets data som en del av mer komplexa sökningar när du kombinerar dem med andra telemetri.
 
-**Importera data från lokala platser**: om du försöker fråga och övervaka på datorer som körs i Azure och lokalt kan du använda Log Analytics-agenten för att samla in gäst operativ system data. Du kan sedan använda en funktion som kallas [loggar till mått](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric-logs) för att effektivisera måtten till mått lagringen. Den här metoden kringgår en del av inmatnings processen i Azure logs-butiken och data är sålunda tillgängliga i mått databasen tidigare.
+**Importera data från lokal plats:** Om du försöker fråga och övervaka på datorer som körs i Azure och lokalt kan du använda Log Analytics-agenten för att samla in gäst operativ system data. Du kan sedan använda en funktion som kallas [loggar till mått](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric-logs) för att effektivisera måtten till mått lagringen. Den här metoden kringgår en del av inmatnings processen i Azure logs-butiken och data är sålunda tillgängliga i mått databasen tidigare.
 
 ### <a name="minimize-alerts"></a>Minimera aviseringar
 

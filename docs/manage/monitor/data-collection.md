@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 0328ea8487817b9c8b74bda2200af9353a56e047
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
-ms.translationtype: HT
+ms.openlocfilehash: 05596379872fbfa9099297a55d4b75dedc0b672a
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979838"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564933"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>Övervaknings guide för molnet: samla in rätt data
 
@@ -34,7 +34,7 @@ Hur du besvarar dessa frågor och kriterierna för aviseringar bestämmer hur du
 
 ## <a name="develop-a-monitoring-configuration"></a>Utveckla en övervaknings konfiguration
 
-Övervaknings tjänstens ägare och team följer vanligt vis en gemensam uppsättning aktiviteter för att utveckla en övervaknings konfiguration. De här aktiviteterna börjar vid de första planerings faserna, fortsätter att testa och validera i en miljö som inte är en produktion och utökar till att distribueras till produktion. Övervakning av konfigurationer härleds från kända fellägen, test resultatet av simulerade haverier och erfarenheten av flera personer i organisationen (Service Desk, drift, ingenjörer och utvecklare). Sådana konfigurationer förutsätter att tjänsten redan finns och migreras till molnet och har inte ställts in på nytt.
+Övervaknings tjänstens ägare och team följer vanligt vis en gemensam uppsättning aktiviteter för att utveckla en övervaknings konfiguration. De här aktiviteterna börjar vid de första planerings faserna, fortsätter att testa och validera i en miljö som inte är en produktion och utökar till att distribueras till produktion. Övervakning av konfigurationer härleds från kända fellägen, test resultatet av simulerade haverier och erfarenheten av flera personer i organisationen (Service Desk, drift, ingenjörer och utvecklare). Sådana konfigurationer förutsätter att tjänsten redan finns, att den migreras till molnet och att den inte har återskapats.
 
 Övervaka hälso tillstånd och tillgänglighet för de här tjänsterna tidigt i utvecklings processen för kvalitets resultat på service nivå. Om du övervakar utformningen av tjänsten eller programmet som en efterhand så blir resultatet inte lika lyckat.
 

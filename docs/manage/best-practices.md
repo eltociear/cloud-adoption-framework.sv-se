@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8e58aea5c0d3b77cd194f8bd8919f43143ab18a4
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
-ms.translationtype: HT
+ms.openlocfilehash: 38ecfe706840964caa7f6e3cd5b11daa24de2973
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979945"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565249"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>Upprätta operativa hanterings metoder i molnet
 
@@ -32,15 +32,15 @@ Båda dessa metod tips bygger på en metod för framtida tillstånd för Operati
 
 ![Hantera metoder i moln införande ramverket](../_images/manage/caf-manage.png)
 
-**Affärs justering**: i hantera metodik klassificeras alla arbets belastningar efter allvarlighets grad och affärs värde. Denna klassificering kan sedan mätas via en konsekvensanalys som beräknar det förlorade värde som är associerat med prestandaförsämring eller avbrott i verksamheten. Med hjälp av den praktiska intäktsinverkan kan teamet för molndrift arbeta med verksamheten för att upprätta ett åtagande som balanserar kostnad och prestanda.
+**Affärs justering:** I den hantera metodiken klassificeras alla arbets belastningar efter allvarlighets grad och affärs värde. Denna klassificering kan sedan mätas via en konsekvensanalys som beräknar det förlorade värde som är associerat med prestandaförsämring eller avbrott i verksamheten. Med hjälp av den praktiska intäktsinverkan kan teamet för molndrift arbeta med verksamheten för att upprätta ett åtagande som balanserar kostnad och prestanda.
 
-**Moln drifts discipliner**: när företaget har justerats är det mycket enklare att spåra och rapportera om de olika disciplinerna för moln åtgärder för varje arbets belastning. Att fatta beslut längs varje disciplin kan sedan konverteras till åtagande villkor som enkelt kan förstås av verksamheten. Denna samarbetsmetod gör att affärsintressenten blir en partner vad gäller att hitta rätt balans mellan kostnad och prestanda.
+**Moln drifts discipliner:** När verksamheten har justerats är det mycket enklare att spåra och rapportera om de olika disciplinerna för moln åtgärder för varje arbets belastning. Att fatta beslut längs varje disciplin kan sedan konverteras till åtagande villkor som enkelt kan förstås av verksamheten. Denna samarbetsmetod gör att affärsintressenten blir en partner vad gäller att hitta rätt balans mellan kostnad och prestanda.
 
-- **Inventering och synlighet**: med minsta möjliga drift hantering krävs ett sätt att inventera till gångar och skapa insyn i körnings tillstånd för varje till gång.
-- **Operativa krav**: regelbunden hantering av konfiguration, storlek, kostnad och prestanda för till gångar är nyckeln till att bibehålla prestanda förväntningarna.
-- **Skydda och återställa**: minimera drift avbrott och påskynda återställnings hjälpen för att undvika prestanda förluster och negativ inkomst påverkan. Identifiering och återställning är viktiga aspekter inom det här området.
-- **Plattforms åtgärder**: alla IT-miljöer innehåller en uppsättning ofta använda plattformar. Dessa plattformar kan omfatta data lager som SQL Server eller Azure HDInsight. Andra vanliga plattformar kan omfatta behållar lösningar som Azure Kubernetes service (AKS). Oavsett plattform, fokuserar plattforms drifts förfallo tiden på att anpassa åtgärder baserat på hur de gemensamma plattformarna distribueras, konfigureras och används av arbets belastningar.
-- **Arbets belastnings åtgärder**: på den högsta nivån av drifts förfallo tid kan moln drifts grupper justera åtgärder för arbets belastningar som är viktiga för företagets framgång. För dessa arbets belastningar med hög allvarlighets grad kan tillgängliga data hjälpa till med automatisering av reparation, storlek eller skydd av arbets belastningar baserat på deras användning.
+- **Inventering och synlighet:** Drifts hantering kräver minst ett sätt att inventera till gångar och att skapa insyn i körnings tillstånd för varje till gång.
+- **Operativa krav:** Regelbunden hantering av konfiguration, storlek, kostnad och prestanda för till gångar är nyckeln till att bibehålla prestanda förväntningarna.
+- **Skydda och återställa:** Att minimera drift avbrott och påskynda återställningen hjälper företaget att undvika prestanda förluster och negativ inkomst påverkan. Identifiering och återställning är viktiga aspekter inom det här området.
+- **Plattforms åtgärder:** Alla IT-miljöer innehåller en uppsättning ofta använda plattformar. Dessa plattformar kan omfatta data lager som SQL Server eller Azure HDInsight. Andra vanliga plattformar kan omfatta behållar lösningar som Azure Kubernetes service (AKS). Oavsett plattform, fokuserar plattforms drifts förfallo tiden på att anpassa åtgärder baserat på hur de gemensamma plattformarna distribueras, konfigureras och används av arbets belastningar.
+- **Arbets belastnings åtgärder:** På den högsta nivån av drifts förfallo tid kan moln drifts grupper justera åtgärder för arbets belastningar som är viktiga för företagets framgång. För dessa arbets belastningar med hög allvarlighets grad kan tillgängliga data hjälpa till med automatisering av reparation, storlek eller skydd av arbets belastningar baserat på deras användning.
 
 Ytterligare vägledning, till exempel [ramverket för design granskning (kod namn: principer för moln design)](https://docs.microsoft.com/azure/architecture/reliability), kan hjälpa dig att fatta detaljerade arkitektoniska beslut om varje arbets belastning, inom de tidigare beskrivna ämnes områden.
 

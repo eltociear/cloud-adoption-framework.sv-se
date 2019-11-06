@@ -8,12 +8,12 @@ ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 4fa02d8b81e4f1b0afcd5cf5fb932c52fc3c1ea6
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
-ms.translationtype: HT
+ms.openlocfilehash: 122f1e451c8b83de3d020c58426d8b897013aa8d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979928"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564898"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Etablera granskning av driftslämplighet
 
@@ -94,13 +94,13 @@ Den här processen är iterativ och det är idealiskt att ditt företag har ett 
 
 Teamet som ansvarar för den operativa tränings granskningen består av följande roller:
 
-- **Företags ägare**: ger kunskap om verksamheten för att identifiera och prioritera varje verksamhets kritisk affärs åtgärd. Den här rollen Jämför även minsknings kostnaderna med påverkan på verksamheten och bedriver det slutliga beslutet om reparation.
+- **Företags ägare:** Ger kunskap om verksamheten för att identifiera och prioritera varje verksamhets kritisk affärs åtgärd. Den här rollen Jämför även minsknings kostnaderna med påverkan på verksamheten och bedriver det slutliga beslutet om reparation.
 
-- **Affärs**rådgivare: delar upp affärs åtgärder i diskret-delar och mappar dessa delar till tjänster och infrastruktur, oavsett om de finns lokalt eller i molnet. Rollen kräver djupgående kunskap om den teknik som är kopplad till varje affärs åtgärd.
+- **Affärs advokat:** Delar upp affärs åtgärder i diskret-delar och mappar dessa delar till tjänster och infrastruktur, oavsett om de finns lokalt eller i molnet. Rollen kräver djupgående kunskap om den teknik som är kopplad till varje affärs åtgärd.
 
-- **Tekniker ägare**: implementerar de tjänster som är kopplade till affärs åtgärden. Dessa personer kan delta i utformningen, implementeringen och distributionen av lösningar för problem som inte är av en funktion som inte kan hanteras av gransknings teamet.
+- **Tekniker ägare:** Implementerar de tjänster som är associerade med affärs åtgärden. Dessa personer kan delta i utformningen, implementeringen och distributionen av lösningar för problem som inte är av en funktion som inte kan hanteras av gransknings teamet.
 
-- **Tjänste ägare**: driver företagets program och tjänster. Dessa personer samlar in loggnings-och användnings data för dessa program och tjänster. Dessa data används både för att identifiera problem och för att verifiera korrigeringar när de har distribuerats.
+- **Tjänst ägare:** Driver verksamhetens program och tjänster. Dessa personer samlar in loggnings-och användnings data för dessa program och tjänster. Dessa data används både för att identifiera problem och för att verifiera korrigeringar när de har distribuerats.
 
 ## <a name="review-meeting"></a>Granska möte
 

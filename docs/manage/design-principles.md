@@ -8,18 +8,18 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8ea3610ed65ae45d924ca65ef26d249ed8343d0b
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
-ms.translationtype: HT
+ms.openlocfilehash: 8daab86846ef0c3dbc93a5382f76080f678c1a08
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979972"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565013"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Tillämpa design principer och avancerade åtgärder
 
 De tre första molnhanteringsdisciplinerna beskriver en baslinje för hantering. En hanterings bas linje bör minst omfatta ett standard affärs åtagande för att minimera affärs avbrott och påskynda återställning om tjänsten avbryts. De flesta hanterings bas linjer omfattar en fokuserad fokus på att underhålla "inventering och synlighet", "operativa krav" och "skydd och återställning".
 
-Syftet med en hanterings bas linje är att skapa ett enhetligt erbjudande som ger en minimi nivå av affärs åtagande för alla arbets belastningar som stöds. Den här bas linjen för vanliga, upprepnings bara hanterings erbjudanden gör det möjligt för teamet att tillhandahålla en mycket optimerad drift hanterings nivå med minimal avvikelse. Men det är inte säkert att standard erbjudandet ger företaget ett omfattande tillräckligt åtagande. 
+Syftet med en hanterings bas linje är att skapa ett enhetligt erbjudande som ger en minimi nivå av affärs åtagande för alla arbets belastningar som stöds. Den här bas linjen för vanliga, upprepnings bara hanterings erbjudanden gör det möjligt för teamet att tillhandahålla en mycket optimerad drift hanterings nivå med minimal avvikelse. Men det är inte säkert att standard erbjudandet ger företaget ett omfattande tillräckligt åtagande.
 
 Diagrammet i nästa avsnitt illustrerar tre sätt att gå förbi hanterings bas linjen.
 
@@ -45,8 +45,8 @@ För arbets belastningar som garanterar en högre investering för att uppfylla 
 
 Det finns två områden i specialisering:
 
-- **Plattforms specialisering**: investera i pågående drift av en delad plattform och distribuera investeringen över flera arbets belastningar.
-- **Specialisering av arbets belastning**: investera i pågående drift av en speciell arbets belastning, som vanligt vis reserveras för verksamhets kritiska arbets belastningar.
+- **Plattforms-specialisering:** Investera i pågående drift av en delad plattform och distribuera investeringen över flera arbets belastningar.
+- **Specialisering för arbets belastning:** Investera i pågående drift av en speciell arbets belastning, vanligt vis reserverat för verksamhets kritiska arbets belastningar.
 
 ### <a name="central-it-or-cloud-center-of-excellence-ccoe"></a>Central IT-eller moln Center med hög kvalitet (CCoE)
 
@@ -54,12 +54,13 @@ Beslut mellan plattforms specialisering och arbets belastnings specialisering ba
 
 Specialiseringen för arbetsbelastningar utlöser ofta en kulturell förändring. Traditionell IT och central IT skapar både processer som kan ge stöd i stor skala. Skalnings stödet är bättre för repeterbara tjänster som finns i en hanterings bas linje, förbättrad bas linje eller till och med plattforms åtgärder. Arbets belastnings specialisering skalar ofta inte. Denna brist på skalning gör det svårt för en centraliserad IT-organisation att tillhandahålla nödvändig support utan att nå begränsningar för organisations skalning.
 
-Ett annat sätt är att moln centret kan skalas genom ändamålsenlig delegering av ansvar och selektiv centralisering. Arbets belastnings specialiseringen är ett bra sätt att justera med den delegerade ansvars metoden för en CCoE. 
+Ett annat sätt är att moln centret kan skalas genom ändamålsenlig delegering av ansvar och selektiv centralisering. Arbets belastnings specialiseringen är ett bra sätt att justera med den delegerade ansvars metoden för en CCoE.
 
 Den naturliga justeringen av roller i en CCoE beskrivs på följande sätt:
-- Moln plattforms teamet hjälper till att bygga vanliga plattformar som stöder flera moln antagande team. 
-- Cloud Automation-teamet utökar plattformarna till distributions bara till gångar i en tjänst katalog. 
-- Cloud Management levererar hanterings bas linjen centralt och hjälper till att stödja användningen av tjänst katalogen. 
+
+- Moln plattforms teamet hjälper till att bygga vanliga plattformar som stöder flera moln antagande team.
+- Cloud Automation-teamet utökar plattformarna till distributions bara till gångar i en tjänst katalog.
+- Cloud Management levererar hanterings bas linjen centralt och hjälper till att stödja användningen av tjänst katalogen.
 - Men affär senheten (i form av ett DevOps team eller ett moln antagande team) innehåller ansvar för dagliga åtgärder för arbets belastningen, pipelinen eller prestandan.
 
 När det gäller justeringen av hanterings områden kan centrala IT-och CCoE-modeller vanligt vis levereras på plattforms-specialisering, med minimal kulturell förändring. Att leverera på arbets belastnings specialisering kan vara lite mer komplext för centrala IT-team.
@@ -68,10 +69,10 @@ När det gäller justeringen av hanterings områden kan centrala IT-och CCoE-mod
 
 I varje specialisering levereras följande fyra stegs process i en disciplin, iterativ metod. Den här metoden kräver samarbete mellan moln införande, moln plattform, moln automatisering och moln hanterings experter för att skapa en livskraftig och välgrundad feedback-slinga.
 
-- **Förbättra system design**: förbättra utformningen av vanliga system (plattformar) eller vissa arbets belastningar för att effektivt minimera avbrott.
-- **Automatiserad reparation**: vissa förbättringar är inte kostnads effektiva. I sådana fall kan det vara mer meningsfullt att automatisera reparationen och minska effekten av avbrott.
-- **Skala lösningen**: när system design och automatiserad reparation förbättras kan du skala ändringarna i miljön via tjänst katalogen.
-- **Kontinuerlig förbättring**: du kan använda olika övervaknings verktyg för att upptäcka stegvisa förbättringar av hur du kan åtgärda det i nästa steg av system design, automatisering och skalning.
+- **Förbättra system design:** Förbättra utformningen av vanliga system (plattformar) eller vissa arbets belastningar för att effektivt minimera avbrott.
+- **Automatiserad reparation:** Vissa förbättringar är inte kostnads effektiva. I sådana fall kan det vara mer meningsfullt att automatisera reparationen och minska effekten av avbrott.
+- **Skala lösningen:** När system design och automatiserad reparation har förbättrats kan du skala dessa ändringar i miljön via tjänst katalogen.
+- **Kontinuerlig förbättring:** Du kan använda olika övervaknings verktyg för att upptäcka stegvisa förbättringar av hur du kan lösa det i nästa steg av system design, automatisering och skalning.
 
 ### <a name="improve-system-design"></a>Förbättra systemdesignen
 
@@ -79,11 +80,11 @@ Att förbättra systemdesignen är den mest effektiva metoden för att förbätt
 
 Azure-arkitekturramverket fokuserar på förbättringar inom fem pelare för systemdesign:
 
-- **Skalbarhet**: skala vanliga plattforms till gångar för att hantera ökad belastning.
-- **Tillgänglighet**: minska affärs avbrott genom att förbättra drift tiden.
-- **Återhämtning**: förbättra återställnings tider för att minska tiden för avbrott.
-- **Säkerhet**: skydda program och data från externa hot.
-- **Hantering**: åtgärder som är speciella för dessa vanliga plattforms till gångar.
+- **Skalbarhet:** Skala vanliga plattforms till gångar för att hantera ökad belastning.
+- **Tillgänglighet:** Minska affärs avbrott genom att förbättra drift tiden.
+- **Återhämtning:** Förbättra återställnings tiderna för att minska tiden för avbrott.
+- **Säkerhet:** Skydda program och data från externa hot.
+- **Hantering:** Åtgärder som är speciella för dessa vanliga plattforms till gångar.
 
 De flesta driftavbrotten beror på någon form av teknisk skuld eller brist i arkitekturen. För befintliga distributioner kan förbättringar av systemdesignen ses som ett sätt att betala av den tekniska skulden. För nya distributioner kan förbättringar av systemdesignen ses som ett sätt att undvika att hamna i teknisk skuld. Nästa avsnitt, "automatiserad reparation", ser ut på olika sätt att åtgärda tekniska skulder som inte kan eller behöver åtgärdas.
 
@@ -107,7 +108,7 @@ Information om hur du publicerar till en tjänst katalog finns i serien om [publ
 
 ### <a name="continuous-improvement"></a>Kontinuerliga förbättringar
 
-Plattformsspecialiseringen och plattformsdriften är båda beroende av starka feedbackslingor mellan införande-, plattforms-, automatiserings- och hanteringsteamen. Genom att lägga till dessa feedbackslingor i data får varje team möjlighet att fatta kloka beslut. För plattforms åtgärder för långsiktiga affärs åtaganden är det viktigt att dra nytta av insikter som är specifika för den centrala plattformen. Eftersom behållare och SQL Server är de två vanligaste centralt hanterade plattformarna bör du tänka på att komma igång med data insamling för kontinuerlig förbättring genom att läsa följande artiklar: 
+Plattformsspecialiseringen och plattformsdriften är båda beroende av starka feedbackslingor mellan införande-, plattforms-, automatiserings- och hanteringsteamen. Genom att lägga till dessa feedbackslingor i data får varje team möjlighet att fatta kloka beslut. För plattforms åtgärder för långsiktiga affärs åtaganden är det viktigt att dra nytta av insikter som är specifika för den centrala plattformen. Eftersom behållare och SQL Server är de två vanligaste centralt hanterade plattformarna bör du tänka på att komma igång med data insamling för kontinuerlig förbättring genom att läsa följande artiklar:
 
 - [Prestanda för behållare](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview)
 - [PaaS Database-prestanda](https://docs.microsoft.com/azure/azure-monitor/insights/azure-sql)
