@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 14ebb2d3f253a7cf80b005595584202537e46cc1
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 3e43c6ac4136a2f8f89446091f9bcea005369fce
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769404"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564819"
 ---
 # <a name="azure-regions"></a>Azure-regioner
 
@@ -29,7 +29,7 @@ Azure består av många regioner runtom i världen. Var och en av [Azure-regione
     1. [Azure för amerikanska myndigheter](https://azure.microsoft.com/global-infrastructure/government)
     1. Obs! Det finns två regioner i [Australien](https://azure.microsoft.com/global-infrastructure/australia) som hanteras av Microsoft, men som är avsedda för den australiska regeringen och dess kunder och leverantörer, och som därför har liknande klientbegränsningar som de andra suveräna molnen.
 
-## <a name="operating-in-multiple-geographic-regions"></a>Arbeta i flera geografiska regioner
+## <a name="operate-in-multiple-geographic-regions"></a>Arbeta i flera geografiska regioner
 
 När företag arbetar i flera geografiska områden kan det innebära ytterligare komplexitet, samtidigt som det är nödvändigt för återhämtning. Dessa utmatningar tar sig i uttryck i fyra huvudsakliga former:
 
@@ -44,17 +44,23 @@ I takt med att vi tittar närmare på utmaningarna ovan kommer du att förstå h
 
 En robust molndistribution kräver ett välfungerande nätverk som tar hänsyn till Azure-regioner. När du har granskat egenskaperna ovan vad gäller valet av region, måste nätverket distribueras. I det här avsnittet går vi inte igenom alla nätverksaspekter, utan fokuserar endast på några få:
 
-1. Azure-regioner distribueras i par. I händelse av ett oåterkalleligt fel i en region, är regionen associerad till en annan region inom samma politiska gränser *. Tänk på distributionen i associerade regioner som en primär och sekundär återhämtningsstrategi. \* Azure Brasilien är ett viktigt undantag där den associerade regionen är USA, södra centrala. Mer information finns här: [Azure-länkade regioner](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
-    1. Azure Storage stöder [geo-redundant lagring (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs), vilket innebär att tre kopior av dina data lagras i den primära regionen och ytterligare tre kopior i den associerade regionen. Det går inte att ändra lagringspar för GRS.
-    1. Tjänster som är beroende av Azure Storage GRS kan dra nytta av funktionen för associerade regioner. För att göra det måste dina program och nätverket konfigureras med stöd för det.
-    1. Om du inte planerar att använda GRS för regional återhämtning, rekommenderar vi att du _inte_ använder den associerade regionen som sekundär region. I händelse av ett fel i en region, blir trycket på resurser i den associerade regionen stort när resurserna migreras. Genom att undvika detta hårda tryck kan du snabba upp återhämtningen genom att återställa till en alternativ plats.
-    > [!WARNING]
-    > Försök inte utnyttja Azure GRS för säkerhetskopiering eller återställning av virtuella datorer. Använd i stället [Azure Backup](https://azure.microsoft.com/services/backup) och [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) tillsammans med [Managed Disks](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) för att stödja återhämtningen av dina IaaS-arbetsbelastningar.
-2. Azure Backup och Azure Site Recovery fungerar tillsammans med din nätverksdesign för att underlätta regional återhämtning för dina behov av IaaS- och datasäkerhetskopiering. Kontrollera att nätverket är optimerat så att dataöverföringarna sker i Microsofts stamnät och utnyttja [VNet-peering](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) om möjligt. Vissa större organisationer med globala distributioner kan i stället använda [ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) för att dirigera trafik mellan regioner, vilket kan innebära lägre regionala avgifter för utgående trafik.
-3. Azures resursgrupper är regionsspecifika konstruktioner. Det är normalt att resurser inom en resursgrupp sträcker sig över flera regioner. Om det uppstår problem i en region så misslyckas åtgärder i kontrollplanet i den berörda regionen, vilket är viktigt att komma ihåg, även om resurserna i andra regioner (i den aktuella resursgruppen) fortsätter fungera. Detta kan påverka både ditt nätverk och din resursgruppsdesign.
-4. Många PaaS-tjänster i Azure har stöd för [tjänstslutpunkter](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) och [Private Link](https://docs.microsoft.com/azure/private-link/private-link-overview). Båda dessa lösningar påverkar dina nätverksstrategier avsevärt med avseende på regional återhämtning, migrering och styrning.
-5. Många PaaS-tjänster är beroende av egna regionala återhämtningslösningar. Azure SQL Database kan till exempel enkelt replikera till N ytterligare regioner, vilket är fallet med Cosmos DB. Vissa tjänster är regionsoberoende, t.ex. Azure DNS. När du funderar på vilka tjänster du kommer att använda i implementeringen är det viktigt att du förstår redundansfunktionerna och återställningsstegen som krävs för respektive Azure-tjänst.
-6. Förutom att distribuera i flera regioner för att stödja haveriberedskap väljer många organisationer att distribuera i ett ”aktiv-aktiv”-mönster så att ingen redundans krävs. Detta har den extra fördelen med att tillhandahålla global belastningsutjämning, ytterligare feltolerans och bättre nätverksprestanda. För att kunna dra nytta av det här mönstret måste dina program ha stöd för körning av ”aktiv-aktiv” i flera regioner.
+- Azure-regioner distribueras i par. I händelse av ett oåterkalleligt fel i en region, är regionen associerad till en annan region inom samma politiska gränser *. Tänk på distributionen i associerade regioner som en primär och sekundär återhämtningsstrategi. \* Azure Brasilien är ett viktigt undantag där den associerade regionen är USA, södra centrala. Mer information finns här: [Azure-länkade regioner](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
+
+  - Azure Storage stöder [geo-redundant lagring (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs), vilket innebär att tre kopior av dina data lagras i den primära regionen och ytterligare tre kopior i den associerade regionen. Det går inte att ändra lagringspar för GRS.
+  - Tjänster som är beroende av Azure Storage GRS kan dra nytta av funktionen för associerade regioner. För att göra det måste dina program och nätverket konfigureras med stöd för det.
+  - Om du inte planerar att använda GRS för regional återhämtning, rekommenderar vi att du _inte_ använder den associerade regionen som sekundär region. I händelse av ett fel i en region, blir trycket på resurser i den associerade regionen stort när resurserna migreras. Genom att undvika detta hårda tryck kan du snabba upp återhämtningen genom att återställa till en alternativ plats.
+  > [!WARNING]
+  > Försök inte utnyttja Azure GRS för säkerhetskopiering eller återställning av virtuella datorer. Använd i stället [Azure Backup](https://azure.microsoft.com/services/backup) och [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) tillsammans med [Azure-hanterade diskar](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) för att stödja återhämtningen av dina IaaS-arbetsbelastningar.
+
+- Azure Backup och Azure Site Recovery fungerar tillsammans med din nätverksdesign för att underlätta regional återhämtning för dina behov av IaaS- och datasäkerhetskopiering. Kontrollera att nätverket är optimerat så att dataöverföringarna sker i Microsofts stamnät och utnyttja [VNet-peering](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) om möjligt. Vissa större organisationer med globala distributioner kan i stället använda [ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) för att dirigera trafik mellan regioner, vilket kan innebära lägre regionala avgifter för utgående trafik.
+
+- Azures resursgrupper är regionsspecifika konstruktioner. Det är normalt att resurser inom en resursgrupp sträcker sig över flera regioner. Om det uppstår problem i en region så misslyckas åtgärder i kontrollplanet i den berörda regionen, vilket är viktigt att komma ihåg, även om resurserna i andra regioner (i den aktuella resursgruppen) fortsätter fungera. Detta kan påverka både ditt nätverk och din resursgruppsdesign.
+
+- Många PaaS-tjänster i Azure har stöd för [tjänstslutpunkter](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) och [Private Link](https://docs.microsoft.com/azure/private-link/private-link-overview). Båda dessa lösningar påverkar dina nätverksstrategier avsevärt med avseende på regional återhämtning, migrering och styrning.
+
+- Många PaaS-tjänster är beroende av egna regionala återhämtningslösningar. Azure SQL Database kan till exempel enkelt replikera till N ytterligare regioner, vilket är fallet med Cosmos DB. Vissa tjänster är regionsoberoende, t.ex. Azure DNS. När du funderar på vilka tjänster du kommer att använda i implementeringen är det viktigt att du förstår redundansfunktionerna och återställningsstegen som krävs för respektive Azure-tjänst.
+
+- Förutom att distribuera i flera regioner för att stödja haveriberedskap väljer många organisationer att distribuera i ett ”aktiv-aktiv”-mönster så att ingen redundans krävs. Detta har den extra fördelen med att tillhandahålla global belastningsutjämning, ytterligare feltolerans och bättre nätverksprestanda. För att kunna dra nytta av det här mönstret måste dina program ha stöd för körning av ”aktiv-aktiv” i flera regioner.
 
 > [!WARNING]
 > Azure-regioner är konstruktioner med hög tillgänglighet, och tjänsterna som körs i dem täcks av serviceavtal. Du bör dock undvika ett enda regionberoende för verksamhetskritiska program. Planera alltid för regionala fel och vidta återställnings- och riskreduceringsåtgärder.
@@ -70,7 +76,7 @@ När du har kommit fram till vilken nätverkstopologi som krävs måste du gå i
 
 Genomför ändringar i migreringsprocessen för att hantera den inledande inventeringen.
 
-## <a name="documenting-complexity"></a>Dokumentera komplexitet
+## <a name="document-complexity"></a>Dokumentkomplexitet
 
 Följande tabell kan underlätta dokumentationen av resultaten från stegen ovan:
 
@@ -99,7 +105,7 @@ Eftersom företaget hanterar anställda, partners och kunder i Tyskland men för
 
 Placeringen av befintliga datacenter kan påverka migreringsstrategin. Följande är några av de vanligaste effekterna:
 
-**Arkitekturbeslut:** Målregion/plats är ett av de första stegen vid utveckling av en migreringsstrategi. Detta påverkas ofta av de befintliga tillgångarnas placering. Dessutom kan de tillgängliga molntjänsterna och enhetskostnaden för dessa tjänster variera från ett område till ett annat. Därför påverkar placeringen av aktuella och framtida tillgångar arkitekturbeslut och kan även påverka budgetberäkningar.
+**Arkitekturbeslut:** Målregionen är ett av de första stegen vid utveckling av en migreringsstrategi. Detta påverkas ofta av de befintliga tillgångarnas placering. Dessutom kan de tillgängliga molntjänsterna och enhetskostnaden för dessa tjänster variera från ett område till ett annat. Därför påverkar placeringen av aktuella och framtida tillgångar arkitekturbeslut och kan även påverka budgetberäkningar.
 
 **Beroenden mellan datacenter:** Baserat på data i tabellen ovan är det troligt att beroenden finns mellan de olika datacentren runt om i världen. I många organisationer som verkar på denna skala kan dessa beroenden vara odokumenterade eller så kan kunskapen vara bristfällig. De metoder som används för att utvärdera användarprofiler kan hjälpa till att hitta en del av dessa beroenden. Ytterligare steg bör dock vidtas under utvärderingsprocessen för att minska riskerna med denna komplexitet.
 
@@ -114,7 +120,7 @@ När omfånget för en migrering innehåller flera regioner bör följande bered
 
 När teamet är nöjda med grundmetoden och beredskapen justerats finns det några datadrivna förutsättningar att tänka på:
 
-- **Allmän identifiering:** Fyll i tabellen [Dokumentera komplexitet](#documenting-complexity) ovan.
+- **Allmän identifiering:** Fyll i tabellen [Dokumentera komplexitet](#document-complexity) ovan.
 - **Utför en användarprofilanalys för varje berört land:** Det är viktigt att förstå allmän routning av slutanvändare tidigt i migreringsprocessen. Att ändra globala hyrda nätverk och lägga till anslutningar som ExpressRoute till ett molndatacenter kan kräva månader av förseningar på grund av nätverket. Hantera detta så tidigt i processen som möjligt.
 - **Inledande rationalisering av digitala tillgångar:** När komplexitet införs i migreringsstrategi ska en inledande rationalisering av digitala tillgångar genomföras. Se vägledningen för [rationalisering av digitala tillgångar](../../digital-estate/index.md) för hjälp.
   - **Ytterligare krav för digital egendom:** Ta fram taggningsprinciper som identifierar alla arbetsbelastningar som påverkas av krav på datasuveränitet. Dessa taggar ska påbörjas vid rationaliseringen av digitala tillgångar och följa med till de migrerade tillgångarna.

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: cab22f60604b2bf201f333df366c7ceca0398ffc
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: c6ad3e6b14ffde5f3c09feb6047a2d0bbe981314
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683534"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564804"
 ---
 # <a name="resource-consistency-decision-guide"></a>Beslutsguide för resurskonsekvens
 
@@ -32,7 +32,7 @@ När dessa faktorer blir allt viktigare gäller det även fördelarna med att s�
 
 I Azure är [resursgrupper](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) en central mekanism för resursorganisering för logisk gruppering av resurser i en prenumeration.
 
-Resursgrupper fungerar som containrar för resurser med gemensam livscykel eller delade hanteringsrestriktioner såsom krav för princip- eller rollbaserad åtkomstkontroll (RBAC). Resursgrupper kan inte kapslas, och resurser kan endast tillhöra en enskild resursgrupp. Alla kontrollplansåtgärder fungerar med alla resurser i en resursgrupp. Till exempel tas alla resurser bort i en resursgrupp om resursgruppen i sig tas bort. Följande frågor kan användas som vägledning för resursgruppshantering:
+Resursgrupper fungerar som containrar för resurser med en gemensam livscykel, eller delade hanteringsrestriktioner såsom krav för princip- eller rollbaserad åtkomstkontroll (RBAC). Resursgrupper kan inte kapslas, och resurser kan endast tillhöra en enskild resursgrupp. Alla kontrollplansåtgärder fungerar med alla resurser i en resursgrupp. Till exempel tas alla resurser bort i en resursgrupp om resursgruppen i sig tas bort. Följande frågor kan användas som vägledning för resursgruppshantering:
 
 1. Utvecklas innehållet i resursgruppen tillsammans?
 1. Hanteras, uppdateras och övervakas innehållet i resursgruppen tillsammans och av samma personer eller team?
@@ -41,7 +41,7 @@ Resursgrupper fungerar som containrar för resurser med gemensam livscykel eller
 Om du svarar _nej_ på någon av ovanstående frågor bör resursen i fråga placeras någon annanstans, i en annan resursgrupp.
 
 > [!IMPORTANT]
-> Resursgrupper är även landsspecifika, men det är vanligt att resurserna finns i olika regioner i samma resursgrupp eftersom de hanteras tillsammans på det sätt som beskrivs ovan. Mer information om hur du väljer region finns [här](../regions/index.md).
+> Resursgrupper är även regionspecifika, men det är vanligt att resurserna finns i olika regioner i samma resursgrupp eftersom de hanteras tillsammans på det sätt som beskrivs ovan. Mer information om val av regioner finns i [Beslutsguide för regioner](../regions/index.md).
 
 ## <a name="deployment-consistency"></a>Distributionskonsekvens
 

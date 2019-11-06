@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 layout: LandingPage
-ms.openlocfilehash: 5a53b72747d20e8b7b2d3ca25a6ffc29b46e1203
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 1e54fdc30e0db1ed1cecf01156bb9c25368a8457
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979880"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565023"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>Molnhantering i Cloud Adoption Framework
 
@@ -111,7 +111,7 @@ Föregående steg är ett praktiskt genomförbart sätt att använda hanteringsm
 
 ![Hanteringsmetoden i Cloud Adoption Framework](../_images/manage/caf-manage.png)
 
-## <a name="creating-a-balanced-cloud-portfolio"></a>Skapa en balanserad molnportfölj
+## <a name="create-a-balanced-cloud-portfolio"></a>Skapa en balanserad molnportfölj
 
 Precis som det står i artikeln om [anpassning av verksamheten](./considerations/business-alignment.md) så är inte alla arbetsbelastningar verksamhetskritiska. Alla portföljer innehåller olika viktiga arbetsbelastningar. Verksamhetsanpassningen handlar om att fånga upp den här faktorn och att anpassa hanteringskostnaderna efter verksamheten, så att bästa möjliga processer och verktyg används i driftshanteringen.
 

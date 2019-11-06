@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 77e3ded1f76b096655a7831bc1950bf28bd4c86b
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: d9e26d82dd0332c338567bf962094a39f2ef84b4
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683819"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564530"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Upprätta en driftsmodell för molnet
 
@@ -36,7 +36,7 @@ Det här avsnittet om Cloud Adoption Framework beskriver en praktiskt tillämpba
 - [Hantera](../manage/index.md): Anpassa pågående processer för den operativa hanteringen av teknik för att maximera värdet och minimera störningar.
 - [Organisera](../organize/index.md): I takt med att driftsmodellen utvecklas så gör även organisationen av team och resurser det, vilket i sin tur stärker utvecklingen.
 
-## <a name="aligning-operating-models"></a>Anpassa driftsmodeller efter varandra
+## <a name="align-operating-models"></a>Justera driftsmodeller
 
 Molnet och den digitala ekonomin har visat på behovet av att använda flera olika driftsmodeller. Ibland beror det här på att flera olika offentliga moln måste hanteras. Vanligare är att det beror på övergången från en lokal drift till molnet. I båda fallen är det viktigt att anpassa driftsmodellerna efter varandra så att du får bästa möjliga resultat och så lite redundans som möjligt.
 

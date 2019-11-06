@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: bbe9815b12226c193073bff3c2298d4124034935
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 46d01d6685b4cac55db7ed313b70891b4f9c029f
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023734"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564791"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Beslutsguide för programvarudefinierade nätverk
 
@@ -32,7 +32,7 @@ Brytpunkten i den här guiden beror på flera viktiga beslut som ditt team för 
 
 Små distributioner i en enskild region med färre än 1 000 virtuella datorer är mindre benägna att påverkas avsevärt av den här brytpunkten. Däremot kan stora implementeringsprojekt med fler än 1 000 virtuella datorer, flera affärsenheter eller flera geopolitiska marknader påverkas avsevärt av ditt SDN-beslut och den här nyckelbrytpunkten.
 
-## <a name="choosing-the-right-virtual-networking-architectures"></a>Välja rätt arkitekturer för virtuella nätverk
+## <a name="choose-the-right-virtual-networking-architectures"></a>Välja rätt arkitekturer för virtuella nätverk
 
 Det här avsnittet utökar beslutsguiden för att hjälpa dig välja rätt arkitekturer för virtuella nätverk.
 

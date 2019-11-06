@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: c112c1d340de944502ac16159977ffa12b5b095d
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: a6e7cb52fdac7607765b32c5355c0f2df066538a
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378267"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566862"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Molnmigrering i Cloud Adoption Framework
 
@@ -130,7 +130,7 @@ I grunden kan migrering till molnet delas in i fyra enkla faser: Utvärdera, mig
 
 ![Cloud Adoption Framework-migreringsmodellen](../_images/operational-transformation-migrate.png)
 
-## <a name="creating-a-balanced-cloud-portfolio"></a>Skapa en balanserad molnportfölj
+## <a name="create-a-balanced-cloud-portfolio"></a>Skapa en balanserad molnportfölj
 
 En balanserad teknikportfölj har en blandning av tillgångar i olika tillstånd. Vissa program schemaläggs att tas ur bruk och ges minimal support. Andra program eller tillgångar stöds i ett underhållstillstånd, men funktionerna i dessa lösningar är stabila. För nyare affärsprocesser kommer föränderliga marknadsvillkor sannolikt motivera pågående funktionsförbättringar eller modernisering. När det uppstår möjligheter att skapa nya intäktsströmmar introduceras nya program eller tillgångar i miljön. I varje steg i livscykeln för en tillgång ändras den påverkan som investering har på intäkter och vinster. Ju senare livscykelsteget är, desto mindre troligt är det att en ny funktion eller ett moderniseringsprojekt ger god avkastning på investeringar.
 

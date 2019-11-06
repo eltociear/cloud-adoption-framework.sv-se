@@ -20,8 +20,8 @@ Anpassade principdefinitioner sparas till antingen en hanteringsgrupp eller en p
 Eftersom de principer som krävs för att stödja styrnings-MVP är avsedda att gälla för alla aktuella prenumerationer implementeras följande affärskrav med hjälp av en kombination av inbyggda definitioner och anpassade definitioner som skapats i rothanteringsgruppen:
 
 1. Begränsa listan över tillgängliga rolltilldelningar till en uppsättning inbyggda Azure-roller som auktoriserats av ditt team för molnstyrning. Detta kräver en [anpassad principdefinition](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions).
-2. Kräv användning av följande taggar på alla resurser: *Avdelning/faktureringsenhet*, *Geografi*, *Dataklassificering*, *Allvarlighetsgrad*, *SLA*, *Miljö*, *Programarketyp*, *Program* och *Programägare*. Detta kan hanteras med hjälp av den inbyggda definitionen ”Kräv angiven tagg”.
-3. Kräv att taggen *Program* för resurser ska matcha namnet på relevant resursgrupp. Detta kan hanteras med hjälp av den inbyggda definitionen ”Kräv tagg och dess värde”.
+2. Kräv användning av följande taggar på alla resurser: *Avdelning/faktureringsenhet*, *Geografi*, *Dataklassificering*, *Allvarlighetsgrad*, *SLA*, *Miljö*, *Programarketyp*, *Program* och *Programägare*. Detta kan hanteras med hjälp av den inbyggda definitionen `Require specified tag`.
+3. Kräv att taggen `Application` för resurser ska matcha namnet på relevant resursgrupp. Detta kan hanteras med hjälp av den inbyggda definitionen ”Kräv tagg och dess värde”.
 
 Information om hur du definierar anpassade principer finns i [dokumentationen om Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition). Vägledning och exempel på anpassade principer finns på [webbplatsen med Azure Policy-exempel](https://docs.microsoft.com/azure/governance/policy/samples) och den associerade [GitHub-lagringsplatsen](https://github.com/Azure/azure-policy).
 
@@ -53,7 +53,7 @@ Innan förtroendet till molnmiljön är helt fastställd är det viktigt att nog
     1. [VPN-referensarkitekturen](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn) upprättar ett mönster och en distributionsmodell för skapande av en VPN-gateway i Azure.
     2. Verifiera att de lokala mekanismerna för säkerhet och trafikhantering behandlar anslutna molnnätverk som ej betrodda. Resurser och tjänster som hanteras i molnet ska endast ha åtkomst till auktoriserade lokala tjänster.
     3. Validera att den lokala gränsenheten i det lokala datacentret är kompatibel med [kraven för Azure VPN Gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) och har konfigurerats för att få åtkomst till det offentliga Internet.
-    4. Observera att VPN-tunnlar endast bör betraktas som produktionsklara kretsar för de allra enklaste arbetsbelastningarna. Azure-ExpressRoute bör användas för allt annat än ett fåtal arbetsbelastningar som kräver lokal anslutning.
+    4. Observera att VPN-tunnlar endast bör betraktas som produktionsklara kretsar för de allra enklaste arbetsbelastningarna. Azure ExpressRoute bör användas för allt annat än ett fåtal arbetsbelastningar som kräver lokal anslutning.
 1. I rothanteringsgruppen skapar du en andra skissdefinition som heter `secure-hybrid-vnet`.
     1. Lägg till Resource Manager-mallen för VPN-gatewayen som en artefakt till skissdefinitionen.
     2. Lägg till Resource Manager-mallen för det virtuella nätverket som en artefakt till skissdefinitionen.

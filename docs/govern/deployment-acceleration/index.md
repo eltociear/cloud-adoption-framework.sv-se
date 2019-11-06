@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: f96ada5b1c43694d0ea1af10524f3c344db62356
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9de6f01a4252383c1d7619078568964fe8e685c9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222704"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566375"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>Översikt över området distributionsacceleration
 
@@ -35,7 +35,7 @@ Den primära målgruppen för den här vägledningen är din organisations molna
 > [!CAUTION]
 > Exempelprinciperna kommer från vanliga kundupplevelser. För att bättre kunna inrikta dessa principer med specifika molnstyrningsbehov genomför du följande steg och skapar principframställningar som uppfyller dina unika affärsbehov.
 
-## <a name="developing-deployment-acceleration-governance-policy-statements"></a>Utveckla principframställningar för styrning av distributionsacceleration
+## <a name="develop-governance-policy-statements"></a>Utveckla principframställningar för styrning
 
 Följande sex steg hjälper dig att definiera styrningsprinciper för att kontrollera distribution och konfiguration av resurser i din molnmiljö.
 

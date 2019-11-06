@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ee1006efd3a8807e294480fdea4e46b8555a0bb8
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: b772eddfce65fa7a2ce4d67e36b1cc0f82e47ac5
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73238759"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564879"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Beslutsguide för loggning och rapportering
 
@@ -22,13 +22,13 @@ Alla organisationer behöver mekanismer för att meddela IT-team om prestanda, d
 
 ![Alternativ för loggning, rapportering och övervakning ordnade från minst till mest komplext, inriktat med direktlänkar nedan](../../_images/decision-guides/decision-guide-logging-and-reporting.png)
 
-Hoppa till: [Planera övervakningsinfrastrukturen](#planning-your-monitoring-infrastructure) | [Molnbaserat](#cloud-native) | [Lokal utökning](#on-premises-extension) | [Gateway-sammansättning](#gateway-aggregation) | [Hybridövervakning (lokal)](#hybrid-monitoring-on-premises) | [Hybridövervakning (molnbaserad)](#hybrid-monitoring-cloud-based) | [Flera moln](#multicloud) | [Läs mer](#learn-more)
+Hoppa till: [Planera övervakningsinfrastrukturen](#plan-your-monitoring-infrastructure) | [Molnbaserat](#cloud-native) | [Lokal utökning](#on-premises-extension) | [Gateway-sammansättning](#gateway-aggregation) | [Hybridövervakning (lokal)](#hybrid-monitoring-on-premises) | [Hybridövervakning (molnbaserad)](#hybrid-monitoring-cloud-based) | [Flera moln](#multicloud) | [Läs mer](#learn-more)
 
 Brytpunkten när du fastställer en strategi för molnloggning och rapportering baseras främst på befintliga investeringar som din organisation har gjort inom driftsprocesser samt till viss del på eventuella krav som du har för att stödja en strategi för flera moln.
 
 Det finns flera sätt att logga och rapportera om aktiviteter i molnet. Molnbaserad och centraliserad loggning är två vanligt alternativ för hanterade tjänster, som drivs av prenumerationsdesignen och antalet prenumerationer.
 
-## <a name="planning-your-monitoring-infrastructure"></a>Planera övervakningsinfrastrukturen
+## <a name="plan-your-monitoring-infrastructure"></a>Planera övervakningsinfrastrukturen
 
 När du planerar distributionen behöver du tänka på var loggningsdata lagras och hur du kommer att integrera molnbaserade rapporterings- och övervakningstjänster med dina befintliga processer och verktyg.
 
@@ -45,9 +45,9 @@ Om din organisation för närvarande saknar etablerade loggnings- och rapporteri
 
 I det här scenariot registreras och lagras alla loggdata i molnet medan de verktyg för loggning och rapportering som bearbetar och visar information för IT-personalen tillhandahålls av Azure-plattformen och Azure Monitor.
 
-Anpassad Azure Monitor-baserade loggningslösningar kan implementeras ad hoc för varje prenumeration eller arbetsbelastning i mindre eller experimentella distributioner och organiseras på ett centraliserat sätt för att övervaka loggdata i hela din molnegendom.
+Anpassade Azure Monitor-baserade loggningslösningar kan implementeras ad hoc för varje prenumeration eller arbetsbelastning i mindre eller experimentella distributioner, samt organiseras på ett centraliserat sätt för att övervaka loggdata i hela din molnmiljö.
 
-**Antaganden gällande molnbaserat.** Användning av ett molnbaserat system för loggning och rapportering förutsätter följande:
+**Molnautentiska antaganden:** Användning av ett molnbaserat system för loggning och rapportering förutsätter följande:
 
 - Du behöver inte integrera loggdata från dina molnarbetsbelastningar till befintliga lokala system.
 - Du kommer inte att använda dina molnbaserade rapporteringssystem för att övervaka lokala system.
@@ -87,7 +87,7 @@ En lösning för hybridövervakning kombinerar loggdata från både dina lokala 
 
 Om du har en befintlig investering i lokala övervakningssystem som skulle vara svår eller dyr att ersätta kan du behöva integrera telemetri från dina molnarbetsbelastningar till befintliga lokala övervakningslösningar. I ett lokalt hybridövervakningssystem fortsätter lokala telemetridata att använda det befintliga lokala övervakningssystemet. Antingen skickas molnbaserade telemetridata skickas direkt till det lokala övervakningssystemet, eller så skickas data till Azure Monitor och kompileras och matas därefter regelbundet in i det lokala systemet.
 
-**Antaganden gällande lokal hybridövervakning.** Användning av ett lokalt system för loggning och rapportering för hybridövervakning förutsätter följande:
+**Antaganden gällande lokal hybridövervakning:** Användning av ett lokalt system för loggning och rapportering för hybridövervakning förutsätter följande:
 
 - Du behöver använda befintliga lokala rapporteringssystem för att övervaka molnarbetsbelastningar.
 - Du behöver upprätthålla ägarskap för loggdata lokalt.

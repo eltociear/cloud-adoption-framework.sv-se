@@ -475,13 +475,13 @@
               items:
                 - name: Översikt
                   href: migrate/migration-considerations/prerequisites/index.md
-                - name: Beslut som påverkar migreringsaktiviteter
+                - name: Beslut som påverkar migrering
                   href: migrate/migration-considerations/prerequisites/decisions.md
                 - name: Checklista för planering av miljö
                   href: migrate/migration-considerations/prerequisites/planning-checklist.md
                 - name: Justera roller och ansvarsområden
                   href: migrate/migration-considerations/prerequisites/cultural-complexity.md
-                - name: Kvarvarande strukturrelaterade uppgifter för att hantera ändringar
+                - name: Smidig förändringsledning
                   href: migrate/migration-considerations/prerequisites/technical-complexity.md
                 - name: Granskning av kvarvarande migreringsuppgifter
                   href: migrate/migration-considerations/prerequisites/migration-backlog-review.md
@@ -491,31 +491,31 @@
                   href: migrate/migration-considerations/assess/index.md
                 - name: Se till att prioriteringar upprätthålls
                   href: migrate/migration-considerations/assess/business-priorities.md
-                - name: Utvärdera beredskap för arbetsbelastningar och tillgångar
+                - name: Utvärdera beredskap för arbetsbelastningar
                   href: migrate/migration-considerations/assess/evaluate.md
                 - name: Skapa arbetsbelastningar
                   href: migrate/migration-considerations/assess/architect.md
                 - name: Beräkna molnkostnader
                   href: migrate/migration-considerations/assess/estimate.md
-                - name: Interagera med migreringspartner och support
+                - name: Förstå partnerskapsalternativ
                   href: migrate/migration-considerations/assess/partnership-options.md
-                - name: Hantera inkrementella processer
+                - name: Hantera förändring
                   href: migrate/migration-considerations/assess/release-iteration-backlog.md
-                - name: Ändra godkännandeprocesser
+                - name: Godkänna arkitekturändringar
                   href: migrate/migration-considerations/assess/approve.md
             - name: Migrera enskilda tillgångar
               items:
                 - name: Översikt
                   href: migrate/migration-considerations/migrate/index.md
-                - name: 'Uppflyttningsmodeller – i ett enda steg, mellanlagring eller förhandsversion'
+                - name: Modeller för befordran
                   href: migrate/migration-considerations/migrate/promotion-models.md
-                - name: Reparationsåtgärder
+                - name: Åtgärda tillgångar
                   href: migrate/migration-considerations/migrate/remediate.md
-                - name: Replikera tillgångar till molnet
+                - name: Replikera tillgångar
                   href: migrate/migration-considerations/migrate/replicate.md
                 - name: Replikera alternativ
                   href: migrate/migration-considerations/migrate/replicate-options.md
-                - name: Mellanlagra arbetsbelastningar för testning och uppflyttning
+                - name: Mellanlagra arbetsbelastningar
                   href: migrate/migration-considerations/migrate/stage.md
             - name: Optimera och flytta upp arbetsbelastningar
               items:
@@ -525,15 +525,15 @@
                   href: migrate/migration-considerations/optimize/business-change-plan.md
                 - name: Verksamhetstestning
                   href: migrate/migration-considerations/optimize/business-test.md
-                - name: Benchmark-testa och optimera tillgångar
+                - name: Prestandatesta och ändra storlek på tillgångar
                   href: migrate/migration-considerations/optimize/optimize.md
-                - name: Redo för uppflyttning
+                - name: Förbereda befordran
                   href: migrate/migration-considerations/optimize/ready.md
-                - name: Flytta upp arbetsbelastningar till produktion
+                - name: Flytta upp till produktion
                   href: migrate/migration-considerations/optimize/promote.md
                 - name: Inaktivera tillbakadragna tillgångar
                   href: migrate/migration-considerations/optimize/decommission.md
-                - name: Återblick
+                - name: Genomföra utvärderingar
                   href: migrate/migration-considerations/optimize/retrospective.md
             - name: Skydda och hantera arbetsbelastningar i produktion
               items:

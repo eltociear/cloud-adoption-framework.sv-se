@@ -8,18 +8,18 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 4d1ada9d47e54f4b0d3828ce93b2d55f3eda8a34
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: c4939464c80668ca175a4d7ac53fe2198610afc1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025768"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565372"
 ---
 # <a name="overview-of-azure-server-management-services"></a>Översikt över Azures serverhanteringstjänster
 
-Azures serverhanteringstjänster ger kunderna konsekventa funktioner som gör att de kan hantera sina servrar i stor skala. Tjänsterna omfattar både Linux- och Windows-operativsystemen och kan användas i produktion, utveckling och testmiljöer. Dessutom har de stöd för virtuella Azure IaaS-datorer, fysiska servrar och virtuella datorer som antingen körs lokalt eller i andra värdmiljöer. 
+Azures serverhanteringstjänster ger kunderna konsekventa funktioner som gör att de kan hantera sina servrar i stor skala. Tjänsterna omfattar både Linux- och Windows-operativsystemen och kan användas i produktion, utveckling och testmiljöer. Dessutom har de stöd för virtuella Azure IaaS-datorer, fysiska servrar och virtuella datorer som antingen körs lokalt eller i andra värdmiljöer.
 
-I diagrammet nedan ser du några av Azure-tjänsterna för serverhantering. 
+I diagrammet nedan ser du några av Azure-tjänsterna för serverhantering.
 
 ![Diagram över Azure-driftsmodellen](./media/operations-diagram.png)
 
@@ -35,10 +35,10 @@ För enkelhetens skull har vi kategoriserat den här vägledningen i tre steg:
 
 Azures hanteringstjänster erbjuder följande fördelar:
 
-- **Azure-internt.** Hanteringstjänsterna är inbyggda och integrerade i Azure Resource Manager. De förbättras ständigt med nya funktioner.
-- **Windows och Linux**. Hanteringen sköts likadant på Windows- och Linux-datorer.
-- **Hybrid.** Hanteringstjänsterna omfattar såväl virtuella Azure IaaS-datorer som fysiska och virtuella servrar som körs lokalt eller i andra värdmiljöer.
-- **Säkerhet.** Microsoft ägnar stora resurser åt alla former av säkerhet. Den här investeringen skyddar inte bara Azure molninfrastrukturen, utan även den resulterande tekniken och expertisen när det gäller att skydda kundernas resurser oavsett var de finns.
+- **Ingår i Azure:** Hanteringstjänsterna är inbyggda och integrerade i Azure Resource Manager. De förbättras ständigt med nya funktioner.
+- **Windows och Linux:** Hanteringen sköts likadant på Windows- och Linux-datorer.
+- **Hybrid:** Hanteringstjänsterna omfattar såväl virtuella Azure IaaS-datorer som fysiska och virtuella servrar som körs lokalt eller i andra värdmiljöer.
+- **Säkerhet:** Microsoft ägnar stora resurser åt alla former av säkerhet. Den här investeringen skyddar inte bara Azure molninfrastrukturen, utan även den resulterande tekniken och expertisen när det gäller att skydda kundernas resurser oavsett var de finns.
 
 ## <a name="next-steps"></a>Nästa steg
 

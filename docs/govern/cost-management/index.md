@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: b95d3ccf3a7248c38da9936a55fc169adcf2f2a2
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: ac6c3cb0a26cebf655a1161a3fd54197c795c283
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221162"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566410"
 ---
 # <a name="cost-management-discipline-overview"></a>Översikt över området kostnadshantering
 
@@ -33,7 +33,7 @@ Den primära målgruppen för den här vägledningen är din organisations molna
 > [!CAUTION]
 > Exempelprinciperna kommer från vanliga kundupplevelser. För att bättre kunna inrikta dessa principer med specifika molnstyrningsbehov genomför du följande steg och skapar principframställningar som uppfyller dina unika affärsbehov.
 
-## <a name="developing-cost-management-governance-policy-statements"></a>Utveckla principframställningar för styrning av kostnadshantering
+## <a name="develop-governance-policy-statements"></a>Utveckla principframställningar för styrning
 
 Följande sex steg hjälper dig att definiera styrningsprinciper för att kontrollera kostnader i din miljö.
 

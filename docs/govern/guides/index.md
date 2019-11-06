@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: d6e95ebec986d0a4af29ec70332f1c6fcb3518f2
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1bf2331c8ee1275a71be2275cefef49cf0a50dfc
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547580"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566241"
 ---
 # <a name="cloud-governance-guides"></a>Molnstyrningsguider
 
@@ -62,7 +62,7 @@ Välj någon av följande styrningsguider för att påbörja din molnimplementer
 
 ## <a name="an-incremental-approach-to-cloud-governance"></a>En inkrementell molnstyrningsstrategi
 
-## <a name="choosing-a-governance-guide"></a>Välja en styrningsguide
+## <a name="choose-a-governance-guide"></a>Välja en styrningsguide
 
 Guiderna visar hur du implementerar en styrnings-MVP. Därifrån visar varje guide hur molnstyrningsteamet, i egenskap av partner, kan bana vägen för molnimplementeringsteamen och påskynda implementeringsarbetet. Cloud Adoption Framework-styrningsmodellen beskriver styrningsimplementeringen från det första steget och genom de efterföljande förbättringarna och utvecklingarna.
 

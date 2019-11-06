@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 5e7da35bb2b88c8f24abf09f8d3d2a708f732c1c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d4fc79c7829a0cc9058b07dd386e626a19cabb1b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222104"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565999"
 ---
 # <a name="resource-consistency-discipline-overview"></a>Översikt över området resurskonsekvens
 
@@ -35,7 +35,7 @@ Om din organisation saknar lokal kompetens inom strategier för resurskonsekvens
 > [!CAUTION]
 > Exempelprinciperna kommer från vanliga kundupplevelser. För att bättre kunna inrikta dessa principer med specifika molnstyrningsbehov genomför du följande steg och skapar principframställningar som uppfyller dina unika affärsbehov.
 
-## <a name="developing-resource-consistency-governance-policy-statements"></a>Utveckla principframställningar för styrning av resurskonsekvens
+## <a name="develop-governance-policy-statements"></a>Utveckla principframställningar för styrning
 
 Följande sex steg erbjuder exempel och potentiella alternativ att överväga när du utvecklar styrning av resurskonsekvens. Använd varje steg som utgångspunkt för diskussioner inom teamet för molnstyrning och med berörda verksamheter samt IT-team i organisationen för att upprätta de principer och processer som behövs för att hantera risker relaterade till identitet.
 

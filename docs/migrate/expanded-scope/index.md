@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ee164f75b4f3748fce027d0c6c98db5200dcdd71
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 181777e08e82cf7e58c73c7c8b66544d0960656d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548496"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564637"
 ---
 # <a name="expanded-scope-for-cloud-migration"></a>Utökat omfång för molnmigrering
 

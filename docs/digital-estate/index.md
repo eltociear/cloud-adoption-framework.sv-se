@@ -8,12 +8,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9a5b7c3eb1a831b9bf15540550d1c2005114a820
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 3504e9107f221e71953a238b5ebd092a7531e5ae
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023470"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564735"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -27,11 +27,11 @@ Vikten av digital egendom är mest uppenbar när man planerar och genomför proj
 
 Mätning av digitala egendomar varierar beroende på de önskade affärsresultaten.
 
-- **Infrastrukturmigreringar.** När en organisation riktar sig inåt och vill optimera kostnader, driftsprocesser, agilitet eller andra aspekter av driftsoptimering fokuseras den digitala egendomen på virtuella datorer, servrar och arbetsbelastningar.
+- **Infrastrukturmigreringar:** När en organisation riktar sig inåt och vill optimera kostnader, driftsprocesser, agilitet eller andra aspekter av driftsoptimering fokuseras den digitala egendomen på virtuella datorer, servrar och arbetsbelastningar.
 
-- **Programinnovation.** Fokus är lite annorlunda när det gäller kundinriktade omvandlingar. Då bör det handla om program, API:er och transaktionsdata för kundstöd. Virtuella datorer och nätverksenheter hamnar då ofta i bakgrunden.
+- **Programinnovation:** Fokus är lite annorlunda när det gäller kundinriktade omvandlingar. Då bör det handla om program, API:er och transaktionsdata för kundstöd. Virtuella datorer och nätverksenheter hamnar då ofta i bakgrunden.
 
-- **Datadriven innovation.** I dagens digitalt drivna marknad är det svårt att lansera en ny produkt eller tjänst utan att ha en stark datagrund. Vid arbete med molnaktiverad datainnovation ligger fokuset mer på datasilor i organisationen.
+- **Datadriven innovation:** I dagens digitalt drivna marknad är det svårt att lansera en ny produkt eller tjänst utan att ha en stark datagrund. Vid arbete med molnaktiverad datainnovation ligger fokuset mer på datasilor i organisationen.
 
 När en organisation väl har utvärderat den viktigaste formen av omvandling blir planeringen av digital egendom mycket enklare att hantera.
 

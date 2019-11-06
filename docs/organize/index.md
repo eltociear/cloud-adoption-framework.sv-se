@@ -10,14 +10,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 layout: LandingPage
-ms.openlocfilehash: b1fc986983b709491d0b06f4624c60deed7e9219
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d2ed2222aa536ec377987674837b237d1050cdeb
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71026075"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564296"
 ---
-# <a name="managing-organizational-alignment"></a>Hantera organisatorisk anpassning
+# <a name="manage-organizational-alignment"></a>Hantera organisatorisk anpassning
 
 Molnimplementering kräver en välorganiserad personal. En lyckad molnimplementering sker när personer med rätt kompetens utför rätt arbete som uppfyller tydligt definierade affärsmål, och allt detta i en väl hanterad miljö. Om du ska få en effektiv driftsmodell för molnet måste du upprätta organisationsstrukturer med rätt bemanning. I den här artikeln beskrivs hur du kan skapa och underhålla lämpliga organisationsstrukturer i fyra steg.
 
@@ -130,7 +130,7 @@ Följande är en lista över molnfunktioner som krävs för en lyckad molnimplem
 - [Molnplattform](./cloud-platform.md): Driv plattformen och ta den till mognad.
 - [Molnautomation](./cloud-automation.md): Påskynda implementering och innovation.
 
-## <a name="maturing-organizational-structures"></a>Ta organisationsstrukturer till mognad
+## <a name="mature-organizational-structures"></a>Ta organisationsstrukturer till mognad
 
 Till viss del levereras var och en av funktionerna ovan som en del av varje molnimplementering, antingen uttryckligen eller enligt en definierad teamstruktur.
 Behovet av att skapa balans och struktur växer i takt med ökande implementeringskrav. För att uppfylla dessa behov följer företag ofta en process med att ta organisationsstrukturer till mognad.
@@ -139,7 +139,7 @@ Behovet av att skapa balans och struktur växer i takt med ökande implementerin
 
 I artikeln om att [fastställa mognaden för organisationsstrukturer](./organization-structures.md) finns ytterligare information om varje mognadsnivå.
 
-## <a name="aligning-raci-charts"></a>Justera RACI-diagram
+## <a name="align-raci-charts"></a>Justera RACI-diagram
 
 På varje mognadsnivå övergår ansvaret för olika molnfunktioner till nya team. Detta växlande ansvar möjliggör snabbare migrerings- och innovationscykel genom att avlägsna och automatisera förändringshinder. Artikeln om [RACI-justering](./raci-alignment.md) delar ett RACI-diagram för var och en av de refererade organisationsstrukturerna i syfte att främja korrekt tilldelningsjustering.
 

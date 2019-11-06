@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 1338fb14ed39915dc9e55c855dd5bbf00ba7a6eb
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: a0b0ed642e11fc3ffc81db7fd1095853a5458b1d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221761"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565948"
 ---
 # <a name="security-baseline-discipline-overview"></a>Översikt över området säkerhetsbaslinje
 
@@ -35,7 +35,7 @@ Att fatta rätt säkerhetsbeslut är mycket viktigt för lyckade molndistributio
 > [!CAUTION]
 > Exempelprinciperna kommer från vanliga kundupplevelser. För att bättre kunna inrikta dessa principer med specifika molnstyrningsbehov genomför du följande steg och skapar principframställningar som uppfyller dina unika affärsbehov.
 
-## <a name="developing-security-baseline-governance-policy-statements"></a>Utveckla principframställningar för styrning av säkerhetsbaslinje
+## <a name="develop-governance-policy-statements"></a>Utveckla principframställningar för styrning
 
 Följande sex steg erbjuder exempel och potentiella alternativ att överväga när du utvecklar styrning av säkerhetsbaslinje. Använd varje steg som utgångspunkt för diskussioner inom molnstyrningsteamet och med berörda verksamheter samt IT- och säkerhetsteam i organisationen för att upprätta de principer och processer som behövs för att hantera risker relaterade till säkerhet.
 
