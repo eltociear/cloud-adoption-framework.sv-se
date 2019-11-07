@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c57152b92826539a236227636ee115c19bd70e7a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8085a87f114011ce9a1089c0427ff9c592b33d15
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565759"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752018"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>Bygg enighet om affärs värdet för innovation
 
@@ -75,5 +75,6 @@ Genom att följa metoderna och efter släpning-hanterings verktygen i varje avsn
 ## <a name="next-steps"></a>Nästa steg
 
 När du har justerat ditt affärs värde och kommunicerat, är du redo att börja skapa din lösning.
+
 > [!div class="nextstepaction"]
 > [Gå tillbaka till Innovations övningarna för nästa steg](./index.md)

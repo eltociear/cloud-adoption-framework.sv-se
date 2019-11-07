@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a320562f97b6e3a37e0f1b4912f1401189855530
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7383f07f4d52cef640bcb1e617de60697a20b248
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566928"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753484"
 ---
 # <a name="balance-the-portfolio"></a>Balansera portföljen
 
@@ -76,7 +76,7 @@ Balansering av portföljen kräver ytterligare kvalitativ analys under utvärder
 
 Baserat på data från tabellen i avsnittet [Dokumentera affärsresultat](#document-business-outcomes) ovan finns det en sannolik risk för att portföljen inriktar sig för mycket på en migreringsfokuserad genomförandemodell. Om kundupplevelsen vore den främsta prioriteten skulle en innovationsinriktad portfölj vara mer trolig. Ingen av dessa är rätt eller fel, men om fokuset riktas för starkt åt ett håll avtar ofta nyttan, onödig komplexitet införs och genomförandetiden vid arbete med molnimplementering ökar.
 
-För att minska komplexiteten bör läsaren följa en traditionell metod för portföljrationalisering, men i en iterativ modell. Följande steg beskriver en kvalitativ modell för en sådan metod:
+För att minska komplexiteten bör du följa en traditionell metod för portfölj rationalisering, men i en iterativ modell. Följande steg beskriver en kvalitativ modell för en sådan metod:
 
 - Molnstrategiteamet har en prioriterad lista över kvarvarande uppgifter för arbetsbelastningar som ska migreras.
 - Teamen för molnstrategi och molnimplementering håller ett möte om lanseringsplanering före slutförandet av varje lansering.
@@ -89,8 +89,8 @@ För att minska komplexiteten bör läsaren följa en traditionell metod för po
   - Kommer data i den här arbetsbelastningen att bidra till senare innovation inom BI, maskininlärning, IoT eller relaterad teknik?
   - Är arbetsbelastningen kompatibel med moderna programplattformar såsom Azure App Service?
 - Svaren på ovanstående frågor och annan nödvändig kvalitativ analys påverkar justeringarna av den prioriterade listan över kvarvarande uppgifter. Dessa justeringar kan omfatta följande:
-  - Om en arbetsbelastning kan ersättas med en PaaS-lösning kan den tas bort från migreringslistan helt. Åtminstone bör ytterligare undersökning av valet mellan värdbyte och ersättning läggas till som en uppgift, så att den arbetsbelastningens prioritet i migreringslistan minskas tillfälligt.
-  - Om det sker (eller bör ske) vidareutveckling av en viss arbetsbelastning kan det vara så att den passar bäst i en modell för refaktorisering/arkitekturomarbetning/återskapande. Eftersom innovation och migrering kräver olika tekniska kunskaper rekommenderas det ofta att program som passar för en metod för refaktorering/arkitekturomarbetning/återskapande hanteras via en lista över kvarvarande uppgifter för innovation snarare än en sådan för migrering.
+  - Om en arbetsbelastning kan ersättas med en PaaS-lösning kan den tas bort från migreringslistan helt. Ytterligare till följd av noggrannhet för att bestämma mellan Rehost och replace skulle läggas till som en uppgift, vilket tillfälligt minskar arbets Belastningens prioritet från den väntande migreringen.
+  - Om en arbets belastning är (eller bör vara) för hands versions utveckling kan den bäst anpassas till en rekonstruktions modell för återuppbyggnad. Eftersom innovation och migrering kräver olika tekniska kunskaper bör program som anpassas till en rekonstruktions återuppbyggnads metod hanteras genom en nyskapande efter släpning i stället för en övergång.
   - Om en arbetsbelastning ingår i senare innovation kan det vara bäst att refaktorisera dataplattformen men lämna kvar programlagren som en kandidat för värdbyte. Mindre refaktorisering av en arbetsbelastnings dataplattform kan ofta utföras i en lista med kvarvarande uppgifter för migrering eller innovation. Detta rationaliseringsresultat kan leda till mer detaljerade arbetsobjekt i listan med kvarvarande uppgifter, men skulle i övrigt inte ändra några prioriteter.
   - Om en arbetsbelastning inte är strategisk men är kompatibel med moderna, molnbaserade programvärdplattformar kan det vara klokt att utföra mindre refaktorisering av programmet för att distribuera det som en modern app. Detta kan bidra till övergripande besparingar genom att molnmigreringens allmänna krav för IaaS- och operativsystemlicensiering minskas.
   - Om en arbetsbelastning är ett program från tredje part, och den arbetsbelastningens data inte planeras för användning i senare innovation, kan det vara bäst att låta den vara kvar som ett alternativ för värdbyte i listan över kvarvarande uppgifter.
@@ -105,7 +105,7 @@ Under migreringen kan aktiviteter för portföljbalansering ha en negativ inverk
 
 Portföljrationalisering kräver tekniskt arbete av olika slag. Det är lockande för molnimplementeringsteam att matcha den portföljvariationen i migreringsarbetet. Affärsintressenter kan uppmana ett enda molnimplementeringsteam att hantera hela migreringslistan. Detta är sällan en lämplig metod, och i många fall kan den vara direkt kontraproduktiv.
 
-Vi rekommenderar att dessa olika arbeten delas upp bland två eller fler molnimplementeringsteam. Med hjälp av en modell med två team som ett exempel för genomförande är Team 1 migreringsteamet, och Team 2 är innovationsteamet. För större arbeten kan dessa team delas upp ytterligare för att hantera andra metoder såsom ersättning/PaaS eller mindre refaktorisering. Följande beskriver de kunskaper och roller som behövs för metoderna för värdbyte, omstrukturering eller mindre refaktorisering:
+Dessa skilda ansträngningar bör delas upp i två eller flera moln antagande team. Med hjälp av en modell med två team som ett exempel för genomförande är Team 1 migreringsteamet, och Team 2 är innovationsteamet. För större arbeten kan dessa team delas upp ytterligare för att hantera andra metoder såsom ersättning/PaaS eller mindre refaktorisering. Följande beskriver de kunskaper och roller som behövs för metoderna för värdbyte, omstrukturering eller mindre refaktorisering:
 
 **Rehost:** Rehost kräver att grupp medlemmar implementerar ändringar i infrastrukturen. Normalt används ett verktyg såsom Azure Site Recovery för att migrera virtuella datorer eller andra tillgångar till Azure. Detta arbete är väl lämpat för datacenteradministratörer eller IT-implementatörer. Molnmigreringsteamet har en lämplig struktur för att leverera detta arbete i stor skala. Det här är den snabbaste metoden för att migrera befintliga tillgångar i de flesta scenarier.
 

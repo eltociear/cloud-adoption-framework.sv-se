@@ -8,18 +8,18 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f854b103decc3b23f27a41d01a81b812d2bc3c3f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 242985f57cc377b78328e2277ba76f15abaec8b8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565706"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753034"
 ---
 # <a name="democratize-data"></a>Demokratisera data
 
 Kol, olja och mänsklig potential var de tre sekventiella till gångarna under industrins revolution. Dessa till gångar skapade företag, skiftade marknader och slutligen ändrade länder. I den digitala ekonomin finns det tre lika viktiga till gångar: data, enheter och mänsklig potential. Var och en av dessa till gångar innehåller fantastiska möjligheter till innovation. För all innovation ansträngning i modern ansträngning är data den nya oljan.
 
-I alla företag idag finns det data fickor som kan utnyttjas för att hitta och möta kund behovet mer effektivt. Processen för att vinna data för att öka innovationen har tyvärr länge varit kostsam och tids krävande. Många av de mest värdefulla lösningarna till kund behov är ouppfyllda eftersom rätt personer inte kan komma åt de data de behöver.
+I alla företag idag finns det data fickor som kan användas för att hitta och möta kund behovet mer effektivt. Processen för att vinna data för att öka innovationen har tyvärr länge varit kostsam och tids krävande. Många av de mest värdefulla lösningarna till kund behov är ouppfyllda eftersom rätt personer inte kan komma åt de data de behöver.
 
 Democratization av data är en process för att hämta data till rätt hand för att öka innovationen. Den här processen kan ta flera formulär, men de omfattar vanligt vis lösningar för inmatade eller integrerade rå data, centralisering av data, delning av data och data skydd. När dessa metoder lyckas kan experter runt företaget använda data för att testa Hypotheses. I många fall kan moln antagande team [bygga med kund empati](./build.md) med enbart data och snabbt adressera befintliga kund behov.
 
@@ -33,7 +33,7 @@ I följande faser beskrivs de beslut och tillvägagångs sätt som krävs för a
 
 När du [skapar med kund empati](./build.md)höjer alla processer kund behovet via en teknisk lösning. Eftersom democratizing-data inte är ett undantag börjar vi med att dela data. För att demokratisera identifieringen av data måste den innehålla en lösning som delar data med en data konsument. Data konsumenten kan vara en direkt kund eller en proxy som fattar beslut för kunder. Godkända data konsumenter kan analysera, undersöka och rapportera om centraliserade data, utan support från IT-personal.
 
-Många lyckade innovationer har lanserats som minsta livskraftiga produkter (MVP) som levererar manuella, data drivna processer för kundens räkning. I den här Concierge-modellen är en medarbetare data konsumenten. Den anställda använder data för att hjälpa kunden. Varje gången kunden engagerar sig manuellt, kan en hypotes testas och verifieras. Den här metoden är ofta ett kostnads effektivt sätt att testa en kund fokuserad hypotes innan du investerar kraftigt i integrerade lösningar.
+Många lyckade innovationer har lanserats som en minimal livskraftig produkt (MVP) som levererar manuella, data drivna processer för kundens räkning. I den här Concierge-modellen är en medarbetare data konsumenten. Den anställda använder data för att hjälpa kunden. Varje gången kunden engagerar sig manuellt, kan en hypotes testas och verifieras. Den här metoden är ofta ett kostnads effektivt sätt att testa en kund fokuserad hypotes innan du investerar kraftigt i integrerade lösningar.
 
 De primära verktygen för att dela data direkt med data konsumenter är självbetjänings rapportering eller data som är inbäddade i andra upplevelser, med hjälp av verktyg som [Power BI](https://docs.microsoft.com/power-bi).
 
@@ -46,7 +46,7 @@ Genom att dela data kan du snabbt skapa en MVP som du kan använda i kund samtal
 
 Data styrning är ett brett ämne som kan kräva att det är ett eget dedikerat ramverk. Den graden av granularitet ligger utanför omfattningen av [moln införande ramverket](../../index.md). Det finns dock flera aspekter av data styrning som du bör ta hänsyn till när kund hypotesen verifieras. Exempel:
 
-- **Är de delade data känsliga?** [Data bör klassificeras](../../govern/policy-compliance/data-classification.md) före all offentlig delning för att skydda kundernas och företagets intresse.
+- **Är de delade data känsliga?** [Data bör klassificeras](../../govern/policy-compliance/data-classification.md) innan de delas offentligt för att skydda kundernas och företagets intresse.
 - **Om data är känsliga, har de skyddats?** Skydd av känsliga data bör vara ett krav för alla democratized-data. Exempel arbets belastningen som fokuserar på att [skydda data lösningar](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions) är några referenser för att skydda data.
 - **Är data katalogiserade?** Att samla in information om de data som delas kommer att hjälpa till med långsiktig data hantering. Verktyg för att dokumentera data, som Azure Data Catalog, kan göra den här processen mycket enklare i molnet. Vägledning om [anteckningen av data](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-annotate) och [dokumentation av data källor](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-documentation) kan påskynda processen.
 
@@ -72,7 +72,7 @@ När du behöver data som ska centraliseras för att tillgodose ett kund behov, 
 
 **Integrering:** Data som finns i ett befintligt data lager kan integreras i det centraliserade data lagret med hjälp av traditionella metoder för data förflyttning. Detta är särskilt vanligt för scenarier som involverar data lagring i molnet. Dessa tekniker innebär att extrahera data från det befintliga data lagret och sedan läsa in dem i det centrala data lagret. Vid någon tidpunkt i den här processen omvandlas data vanligt vis till att vara mer användbara och relevanta i den centrala butiken.
 
-Molnbaserade verktyg har inaktiverat dessa tekniker i verktyg för att betala per användning, vilket minskar barriären för inmatning av data insamling och centralisering. Verktyg som data migration service och Data Factory är två exempel i Azure. Referens arkitekturen för [Data Factory med ett OLAP-datalager](https://docs.microsoft.com/azure/architecture/data-guide/relational-data/etl) är ett exempel på en sådan lösning.
+Molnbaserade verktyg har inaktiverat dessa tekniker i verktyg för att betala per användning, vilket minskar barriären för inmatning av data insamling och centralisering. Verktyg som Azure Database Migration Service och Azure Data Factory är två exempel. Referens arkitekturen för [Data Factory med ett OLAP-datalager](https://docs.microsoft.com/azure/architecture/data-guide/relational-data/etl) är ett exempel på en sådan lösning.
 
 Inmatning **:** Vissa data finns inte i ett befintligt data lager. När dessa tillfälliga data är en primär källa till innovation bör du överväga andra metoder. Tillfälliga data finns i en mängd olika befintliga källor, t. ex. program, API: er, data strömmar, IoT-enheter, en blockchain, ett programcache, i medie innehåll eller till och med i flata filer.
 

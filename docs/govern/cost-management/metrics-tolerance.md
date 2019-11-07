@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 575eace59b33163c1f0020b005bda2ceeb14dc9b
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: dc026ec6fc1a82db3c5c025becd31cd5cf2e7d8d
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220957"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752689"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Cost Management mått, indikatorer och risk tolerans
 
@@ -41,12 +41,12 @@ I det tidiga skedet av moln implementeringen kommer du att arbeta med din verksa
 
 När du har identifierat [affärs risker](./business-risks.md)arbetar du med din verksamhet för att identifiera de riktmärken som du kan använda för att identifiera utlösare som potentiellt kan öka riskerna. Här följer några exempel på hur mått, till exempel de som nämns ovan, kan jämföras med toleransen för risk bas linjen för att ange ditt företags behov av att investera i Cost Management.
 
-- **Åtagande driven (vanligt förekommande):** Ett företag som är förpliktigat att $X utgifter, 000000 det här året på en moln leverantör. De behöver en Cost Management disciplin för att säkerställa att verksamheten inte överskrider sina utgifts mål med mer än 20% och att de kommer att använda minst 90% av detta åtagande.
-- **Procent utlösare:** Ett företag med moln utgifter som är stabila för sina produktions system. Om du ändrar mer än _x%_ kommer en Cost Management disciplin vara en bra investering.
-- **Överetablerad utlösare:** Ett företag som bedömer att de distribuerade lösningarna har överetablerats. Cost Management är en prioritets investering tills de kan visa rätt justering av etablering och till gångs användning.
-- **Månads utgifts utlösare:** Ett företag som tillbringar över $x 000 per månad betraktas som en justerbar kostnad. Om utgifterna överstiger den summan under en angiven månad måste de investera i Cost Management.
-- **Utlösare för årliga utgifter:** Ett företag med en IT R & D-budget som gör det möjligt för utgifter $X 000 per år på moln experimentet. De kan köra produktions arbets belastningar i molnet, men de betraktas fortfarande som experimentella lösningar om budgeten inte överstiger den mängden. När den går vidare måste de behandla budgeten som en produktions investering och hantera utgifter nära.
-- **Drifts kostnad-negativ (ovanlig):** Som ett företag är de Avera för drifts kostnader och behöver Cost Management kontroller på plats innan du distribuerar en arbets belastning för utveckling/testning.
+- **Åtagande driven (vanligt förekommande):** Ett företag som är förpliktigat att _$x utgifter, 000000_ det här året på en moln leverantör. De behöver en Cost Management disciplin för att säkerställa att verksamheten inte överskrider sina utgifts mål med mer än 20% och att de kommer att använda minst 90% av sitt åtagande.
+- **Procent utlösare:** Ett företag med moln utgifter som är stabila för sina produktions system. Om detta ändras med mer än _x%_ är en Cost Management disciplin en bra investering.
+- **Överetablerad utlösare:** Ett företag som bedömer att de distribuerade lösningarna har överetablerats. Cost Management är en prioritets investering tills de visar rätt justering av etablering och till gångs användning.
+- **Månads utgifts utlösare:** Ett företag som tillbringar över _$x 000_ per månad betraktas som en justerbar kostnad. Om utgifterna överstiger den summan under en angiven månad måste de investera i Cost Management.
+- **Utlösare för årliga utgifter:** Ett företag med en IT R & D-budget som gör det möjligt för utgifter _$x 000_ per år på moln experimentet. De kan köra produktions arbets belastningar i molnet, men de anses fortfarande experimentella lösningar om budgeten inte överstiger den mängden. Om budgeten överskrids måste de behandla budgeten som en produktions investering och hantera utgifter på ett nära och samma sätt.
+- **Drifts kostnad-negativ (ovanlig):** Som ett företag är de viktiga för drifts kostnader och behöver kontrollerna för kostnads hantering på plats innan du distribuerar en arbets belastning för utveckling/testning.
 
 ## <a name="next-steps"></a>Nästa steg
 

@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: f2892dbfab86da07db2441aea7757846903ff7e9
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: cb5ba007c18643efe3b0c83b8ff247844cbbe7b2
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656595"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753287"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Aktivera lyckad under en moln införande resa
 
@@ -32,7 +32,7 @@ I det här ramverket är aktivering ett kärn tema. Följande check lista specif
 
 ## <a name="additional-tools"></a>Ytterligare verktyg
 
-Utöver moln implementerings ramverket täcker Microsoft ytterligare ämnen som kan aktivera framgång. I den här artikeln beskrivs några vanliga verktyg som kan förbättra effektiviteten i moln implementerings ramverket markant. Att upprätta moln styrning, elastiska arkitekturer, tekniska kunskaper och en DevOps-metod är var och en som är viktiga för att det ska bli en moln implementerings ansträngning. Läsaren uppmanas att sätta bok märket på den här sidan som en resurs för att gå tillbaka i alla moln införande resor.
+Utöver moln implementerings ramverket täcker Microsoft ytterligare ämnen som kan aktivera framgång. I den här artikeln beskrivs några vanliga verktyg som kan förbättra effektiviteten i moln implementerings ramverket markant. Att upprätta moln styrning, elastiska arkitekturer, tekniska kunskaper och en DevOps-metod är var och en som är viktiga för att det ska bli en moln implementerings ansträngning. Bok märke den här sidan som en resurs för att gå tillbaka i alla moln införande resor.
 
 <!-- markdownlint-disable MD033 -->
 

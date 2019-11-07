@@ -1,5 +1,5 @@
 ---
-title: Guide för moln övervakning – avisering
+title: 'Övervaknings guide för molnet: avisering'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Välj när Azure Monitor eller System Center Operations Manager ska användas i Microsoft Azure
 author: MGoedtel
@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: efbb3b677f2349f0d2e8c240c42c75d75cf849f1
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7e602ce0c27da5204a51d0a4a790ce65dc7e6871
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564983"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752740"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Övervaknings guide för molnet: avisering
 
@@ -88,7 +88,7 @@ Azure Monitor för virtuella datorer | Hälso kriterier är mått som skrivs til
 
 ### <a name="fastest-speed-driven-by-cost"></a>Snabbast hastighet driven genom kostnad
 
-Svars tiden är ett av de mest kritiska besluten som påverkar aviseringen och en snabb lösning på problem som påverkar din tjänst. Om du behöver aviseringar i nära real tid under fem minuter ska du först utvärdera om du har eller kan få aviseringar på din telemetri där den lagras som standard. I allmänhet är den här strategin också alternativet billigaste, eftersom verktyget som du använder redan skickar data till den platsen.
+Svars tiden är ett av de mest kritiska besluten som påverkar aviseringen och en snabb lösning på problem som påverkar din tjänst. Om du behöver aviseringar i nära real tid under fem minuter ska du först utvärdera om du har eller kan få aviseringar om din telemetri där den lagras som standard. I allmänhet är den här strategin också alternativet billigaste, eftersom verktyget som du använder redan skickar data till den platsen.
 
 Det här är några viktiga fotnoter till den här regeln.
 

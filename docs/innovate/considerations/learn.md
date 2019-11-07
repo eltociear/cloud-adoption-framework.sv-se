@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 82f6ea5b422bc4d33fe898f86d003ffb2ab92422
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: b960bbd4382a14f254038397f3843d7ad7b65f8c
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565641"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752994"
 ---
 # <a name="learn-with-customers"></a>Lär dig med kunderna
 
@@ -56,4 +56,4 @@ Som nästa steg för att förstå den här metoden kan [vanliga blockerare och u
 > [!div class="nextstepaction"]
 > [Förstå vanliga blockerare och utmaningar](./challenges.md)
 
-Några av begreppen i den här artikeln bygger vidare på ämnen som beskrivs i [den Lean-starten](http://theleanstartup.com/book), skrivet av Eric Återställ inställningar.
+Några av begreppen i den här artikeln bygger vidare på ämnen som beskrivs i [den Lean-starten](https://theleanstartup.com/book), skrivet av Eric Återställ inställningar.

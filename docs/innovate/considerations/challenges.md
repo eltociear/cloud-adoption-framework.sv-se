@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: fe10230be2c71942fa411389b99e00811e008fbc
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 85b02e488476960a50112c1b5ebd7380a873a3f8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565729"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752005"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>Vanliga blockerare och utmaningar för innovation
 
@@ -45,7 +45,7 @@ Molnet har en lösning på många av de här uppfinningarna genom att tillhandah
 
 ### <a name="invention-challenges-in-a-digital-economy"></a>Uppfinnings utmaningar i en digital ekonomi
 
-De uppfinnings utmaningarna för idag är olika. Den oändliga potentialen hos moln teknologier ger också fler implementerings alternativ och mer detaljerad information om hur dessa implementeringar kan utnyttjas.
+De uppfinnings utmaningarna för idag är olika. Den oändliga potentialen hos moln teknologier ger också fler implementerings alternativ och mer detaljerad information om hur dessa implementeringar kan användas.
 
 Förnyelse metoden använder följande Innovations discipliner för att hjälpa dig att justera dina implementerings beslut med dina uppfinnings-och implementerings mål:
 

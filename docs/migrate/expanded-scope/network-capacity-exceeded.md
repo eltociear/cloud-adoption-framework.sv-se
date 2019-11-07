@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a2afa6e7961a8cc53abb6c3dbe0d78c2251b134d
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 402628da8fb5af7526c33d6c4900298eb42bced5
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239968"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753489"
 ---
 # <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>Data kraven överskrider nätverks kapaciteten under en migrering
 
@@ -39,7 +39,7 @@ Det finns även [lösningar från tredje part](https://azuremarketplace.microsof
 
 Om lagringsbehovet för en arbetsbelastning (eller flera arbetsbelastningar) överskrider nätverkskapaciteten kan Azure Data Box fortfarande användas vid en dataöverföring offline.
 
-Microsofts inställning är att nätverksöverföring är det rekommenderade alternativet, om inte nätverket är otillgängligt. Detta förslag bygger på överföringshastigheten. Att överföra data via nätverket (även när bandbredden är begränsad) är normalt snabbare än att fysiskt överföra samma mängd data med en offline-metod, som Data Box.
+Nätverks överföring är den rekommenderade metoden om inte nätverket är tillgängligt. Hastigheten för överföring av data över nätverket, även om bandbredden är begränsad, är vanligt vis snabbare än att fysiskt leverera samma mängd data med hjälp av en mekanism för offline-överföring, till exempel Data Box-enhet.
 
 Om anslutning till Azure är tillgänglig ska en analys genomföras innan Data Box används, särskilt om migreringen av arbetsbelastningen är tidskänslig. Data Box rekommenderas bara när tiden för att överföra nödvändiga data överskrider tiden för att läsa in, transportera och återställa data med Data Box.
 
@@ -81,4 +81,4 @@ Aktiviteterna för att skydda och hantera påverkas troligen inte av denna för�
 Gå tillbaka till [checklistan för utökat omfång](./index.md) och se till att din migreringsmetod är helt anpassad till kraven.
 
 > [!div class="nextstepaction"]
-> [Checklista för utökat omfång](./index.md)
+> [Utökad checklista](./index.md)

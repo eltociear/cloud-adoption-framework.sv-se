@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8daab86846ef0c3dbc93a5382f76080f678c1a08
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: f2e6aabec18d309aaae0a3a3d3cfd43ac6216a85
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565013"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752759"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Tillämpa design principer och avancerade åtgärder
 
@@ -54,7 +54,7 @@ Beslut mellan plattforms specialisering och arbets belastnings specialisering ba
 
 Specialiseringen för arbetsbelastningar utlöser ofta en kulturell förändring. Traditionell IT och central IT skapar både processer som kan ge stöd i stor skala. Skalnings stödet är bättre för repeterbara tjänster som finns i en hanterings bas linje, förbättrad bas linje eller till och med plattforms åtgärder. Arbets belastnings specialisering skalar ofta inte. Denna brist på skalning gör det svårt för en centraliserad IT-organisation att tillhandahålla nödvändig support utan att nå begränsningar för organisations skalning.
 
-Ett annat sätt är att moln centret kan skalas genom ändamålsenlig delegering av ansvar och selektiv centralisering. Arbets belastnings specialiseringen är ett bra sätt att justera med den delegerade ansvars metoden för en CCoE.
+Ett moln Center med expert metoder kan skalas genom ändamålsenlig delegering av ansvar och selektiv centralisering. Arbets belastnings specialiseringen är ett bra sätt att justera med den delegerade ansvars metoden för en CCoE.
 
 Den naturliga justeringen av roller i en CCoE beskrivs på följande sätt:
 

@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: ea3bcdc521a043affb71375442b9d5f6fe542fa1
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: e4c09cb67872cec6fca8ab395f7ab88e2e0f2064
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565679"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752098"
 ---
 # <a name="empower-adoption"></a>Underlätta implementeringen
 
@@ -21,7 +21,7 @@ Det ultimata testet av innovation är att kunden reagera på din uppfinning. Sku
 
 ## <a name="reduce-friction-that-affects-adoption"></a>Minska friktion som påverkar införande
 
-Det finns några viktiga friktions punkter att införa som kan minimeras genom en kombination av teknik och processer. För läsare med kunskaper om kontinuerlig integrering (CI) och kontinuerlig distribution (CD) eller DevOps-processer verkar följande vara välbekant. Den här artikeln avser att upprätta en utgångs punkt för moln implementerings team, som kommer att få nya slingor för utveckling och feedback av bränsle. Längre tid kan den här start punkten gynna mer robusta CI/CD-eller DevOps-metoder som de produkter och team som är mogna.
+Det finns några viktiga friktions punkter att införa som kan minimeras genom en kombination av teknik och processer. För läsare med kunskaper om kontinuerlig integrering (CI) och kontinuerlig distribution (CD) eller DevOps-processer är följande bekant. I den här artikeln upprättas en utgångs punkt för moln implementerings team som arbetar med utveckling och feedback av bränslen. I framtiden kan den här start punkten gynna mer robusta CI/CD-eller DevOps-metoder som de produkter och team som är mogna.
 
 Som det beskrivs i [mått för kund påverkan](./measure.md), kräver positiv verifiering av alla hypotes upprepning och bestämning. Du får mycket fler avbrott än WINS under en Innovations cykel. Detta är normalt. Men när en kund behöver, hypotes och lösning justeras i skala, ändras världen snabbt. Den här artikeln syftar till att minimera [tekniska toppar](./build.md#reduce-complexity-and-delay-technical-spikes) som saktar ned innovation, men som ändå ser till att du behåller några rena bästa metoder. På så sätt blir det lättare för IT-utformningen att leverera på aktuella kund behov.
 
@@ -69,7 +69,7 @@ Läs mer om [kontinuerlig integrering](https://docs.microsoft.com/azure/devops/l
 
 Fel i alla lösningar kan skapa falska positiva eller falska negativa negativa tal. Oväntade fel kan lätt leda till fel tolkning av användar mått. De kan också generera negativa synpunkter från kunder som inte korrekt representerar testet av din hypotes.
 
-Vid tidiga iterationer av en MVP-lösning förväntas defekter. tidiga antaganden kanske till och med tycker att de är kära. I tidiga versioner är test av godkännanden vanligt vis icke. En aspekt av att skapa med empati avser dock valideringen av behovet och hypotesen. Båda kan slutföras genom enhets tester på en kod nivå och manuella acceptans test före distributionen. Tillsammans ger dessa en viss tillförlitlighet för testning. Längre tid bör du sträva efter att automatisera en väldefinierad serie med build-, enhets-och acceptans test. Dessa säkerställer pålitliga mått som är relaterade till mer detaljerade anpassningar till hypotesen och den resulterande lösningen.
+Vid tidiga iterationer av en MVP-lösning förväntas defekter. tidiga antaganden kanske till och med tycker att de är kära. I tidiga versioner är test av godkännanden vanligt vis icke. En aspekt av att skapa med empati avser dock valideringen av behovet och hypotesen. Båda kan slutföras genom enhets tester på en kod nivå och manuella acceptans test före distributionen. Tillsammans ger dessa en viss tillförlitlighet för testning. Du bör sträva efter att automatisera en väldefinierad serie med build-, enhets-och acceptans test. Dessa säkerställer pålitliga mått som är relaterade till mer detaljerade anpassningar till hypotesen och den resulterande lösningen.
 
 Funktionen [Azure-testplaner](https://docs.microsoft.com/azure/devops/test/track-test-status?view=azure-devops) innehåller verktyg för att utveckla och driva test planer under manuell eller automatiserad test körning.
 

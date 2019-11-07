@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 7dbddb91d38a11c455e47fcd6f5a589929d8b003
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2aeda3e6efac30e03a917e790ef619f7a6d74cde
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027606"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753411"
 ---
 # <a name="cloud-adoption-capabilities"></a>Moln införande funktioner
 
@@ -31,7 +31,7 @@ Beroende på de önskade affärs behoven kan de kunskaper som krävs för att ti
 - Infrastruktur implementerare
 - DevOps-tekniker
 - Programutvecklare
-- Data forskare
+- Data scientists
 - Data eller program plattforms specialister
 
 För optimalt samarbete och effektivitet rekommenderar vi att moln implementerings team har en genomsnittlig grupp storlek på sex personer. Dessa team bör vara självorganiserade från ett tekniskt körnings perspektiv. Vi rekommenderar starkt att dessa team även omfattar kunskaper om projekt hantering, med djupgående erfarenhet i Agile, Scrum eller andra repetitiva modeller. Det här teamet är mest effektivt när det hanteras med en plan struktur.
@@ -61,7 +61,7 @@ Det är bäst om dessa team uppfyller dagligen på ett självorganiserat sätt. 
 
 Versions scheman och iteration varaktigheter är unika för varje företag. Ett intervall på en till fyra veckor per iteration förefaller dock vara den genomsnittliga varaktigheten. Oavsett iteration eller release takt, rekommenderar vi att teamet uppfyller alla stöd grupper i slutet av varje version för att kommunicera resultatet av lanseringen och att omprioritera kommande ansträngningar. På samma sätt är det värdefullt att mötas som ett team i slutet av varje Sprint, med [moln Center med expert](./cloud-center-of-excellence.md) -eller [moln styrnings team](./cloud-governance.md) för att hålla sig uppdaterad om vanliga insatser och eventuella behov av support.
 
-Några av de tekniska uppgifter som är kopplade till moln införande kan bli repetitiva. Vi rekommenderar att grupp medlemmar roterar var tredje&ndash;6: a månad för att undvika problem med medarbetarnas belåtenhet och upprätthålla relevanta kunskaper. Ett roterande säte i [moln Center med expert](./cloud-center-of-excellence.md) -eller [moln styrnings team](./cloud-governance.md) kan ge en utmärkt möjlighet att hålla anställda uppdaterade och nya innovationer.
+Några av de tekniska uppgifter som är kopplade till moln införande kan bli repetitiva. Grupp medlemmar bör rotera var tredje&ndash;6 månad för att undvika problem med medarbetarnas belåtenhet och upprätthålla relevanta kunskaper. Ett roterande säte i [moln Center med expert](./cloud-center-of-excellence.md) -eller [moln styrnings team](./cloud-governance.md) kan ge en utmärkt möjlighet att hålla anställda uppdaterade och nya innovationer.
 
 ## <a name="next-steps"></a>Nästa steg
 

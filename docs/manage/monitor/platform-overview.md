@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 4d50025ee6030e07ccb2979fff89ebb6569e0aed
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: d7ff166733f0d4544cb229207278f724ca947319
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564962"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751669"
 ---
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>Övervaknings guide för molnet: översikt över Monitoring Platforms
 
@@ -26,7 +26,7 @@ Den här artikeln innehåller en översikt över våra övervaknings plattformar
 
 ## <a name="the-story-of-system-center-operations-manager"></a>Berättelsen System Center Operations Manager
 
-I 2000 angav vi åtgärds hanterings fältet med Microsoft Operations Manager (MOM) 2000. I 2007 introducerade vi en ny version av produkten som heter System Center Operations Manager. Den har flyttats bortom enkel övervakning av en Windows Server och koncentrerats på robust, fullständig tjänst och program övervakning, inklusive heterogena-plattformar, nätverks enheter och andra program-eller tjänst beroenden. Det är en etablerad övervaknings plattform i företags klass för lokala miljöer i samma klass som IBM Tivoli eller HP Operations Manager i branschen. Den har växt för att stödja övervakning av beräknings-och plattforms resurser som körs i Azure, Amazon Web Services (AWS) och andra moln leverantörer.
+I 2000 angav vi åtgärds hanterings fältet med Microsoft Operations Manager (MOM) 2000. I 2007 introducerade vi en rekonstruerad version av produkten, med namnet System Center Operations Manager. Den har flyttats bortom enkel övervakning av en Windows Server och koncentrerats på robust, fullständig tjänst och program övervakning, inklusive heterogena-plattformar, nätverks enheter och andra program-eller tjänst beroenden. Det är en etablerad övervaknings plattform i företags klass för lokala miljöer i samma klass som IBM Tivoli eller HP Operations Manager i branschen. Den har växt för att stödja övervakning av beräknings-och plattforms resurser som körs i Azure, Amazon Web Services (AWS) och andra moln leverantörer.
 
 ## <a name="the-story-of-azure-monitor"></a>Berättelsen Azure Monitor
 
@@ -34,7 +34,7 @@ När Azure släpptes i 2010 tillhandahölls övervakning av moln tjänster med A
 
 Application Insights har introducerats för att växla till förändringar i branschen där spridning av moln-, mobil-och IoT-enheter växer och införandet av DevOps-metoder. Den har utvecklats från övervakning av program prestanda i Operations Manager till en tjänst i Azure, där den ger omfattande övervakning av webb program som har skrivits på flera olika språk. I 2015 har förhands granskningen av Application Insights för Visual Studio annonser ATS och senare var den känd som bara Application Insights. Den samlar in information om program prestanda, begär Anden och undantag och spår.
 
-I 2015 gjordes Azure Operational Insights allmänt tillgänglig. Den levererade tjänsten Log Analytics Analysis som samlar in och sökte efter data från datorer i Azure, lokalt eller i andra moln miljöer och är anslutna till System Center Operations Manager. Intelligence Pack erbjöds som levererade en mängd olika konfigurationer för hantering och övervakning som innehöll en samling frågor och analys logik, visualiseringar och data insamlings regler för sådana scenarier som säkerhets granskning, hälso bedömningar och aviserings hantering. Senare blev Azure Operational Insights känt som Log Analytics.  
+I 2015 gjordes Azure Operational Insights allmänt tillgänglig. Den levererade tjänsten Log Analytics Analysis som samlar in och sökte efter data från datorer i Azure, lokalt eller i andra moln miljöer och är anslutna till System Center Operations Manager. Intelligence Pack erbjöds som levererade en mängd olika förpackade hanterings-och övervaknings konfigurationer som innehåller en samling frågor och analys logik, visualiseringar och data insamlings regler för sådana scenarier som säkerhets granskning, hälsa utvärderingar och aviserings hantering. Senare blev Azure Operational Insights känt som Log Analytics.  
 
 I 2016 presenterade förhands granskningen av Azure Monitor på Microsoft-antändnings konferensen. Det tillhandahöll ett gemensamt ramverk för att samla in plattforms mått, resurs-diagnostikloggar och aktivitets logg händelser på prenumerations nivå från alla Azure-tjänster som har börjat använda ramverket. Tidigare hade varje Azure-tjänst sin egen övervaknings metod.
 
@@ -51,10 +51,10 @@ Vid 2018-antändningen presenterade vi att Azure Monitor varumärket har utökat
 Från 2015 till och med den 2018 april är Operations Management Suite (OMS) en databunt av följande Azure-hanterings tjänster i licens syfte:
 
 - Application Insights
-- Azure Automation
+- Azure Automatisering
 - Azure Backup
 - Operational Insights (senare ommärkes som Log Analytics)
-- Site Recovery
+- Webbplatsåterställning
 
 Funktionerna i de tjänster som var en del av OMS ändrades inte när OMS skulle upphöra. De justerades under Azure Monitor.
 
@@ -74,6 +74,8 @@ Azure Monitor är en SaaS-tjänst (Software as a Service) där all infrastruktur
 
 ## <a name="data-collection"></a>Datainsamling
 
+<!-- markdownlint-disable MD024 -->
+
 ### <a name="operations-manager"></a>Operations Manager
 
 #### <a name="agents"></a>Agenter
@@ -90,7 +92,7 @@ Operations Manager utför all övervakning med arbets flöden (regler, övervaka
 
 #### <a name="monitoring-configuration"></a>Övervaknings konfiguration
 
-Hanterings paket kan innehålla hundratals regler, övervakare och regler för objekt identifiering. En agent kör alla dessa övervaknings inställningar från alla hanterings paket som gäller, vilket bestäms av identifierings regler. Varje instans av varje övervaknings inställning körs oberoende och fungerar omedelbart på de data som samlas in. Så här kan Operations Manager uppnå aviseringar i nära real tid och det aktuella hälso tillståndet för övervakade resurser.
+Hanterings paket kan innehålla hundratals regler, övervakare och regler för objekt identifiering. En agent kör alla dessa övervaknings inställningar från alla hanterings paket som gäller, vilket bestäms av identifierings regler. Varje instans av varje övervaknings inställning körs oberoende och fungerar omedelbart på de data som samlas in. Så här kan Operations Manager uppnå aviseringar i nästan real tid och det aktuella hälso tillståndet för övervakade resurser.
 
 En övervakare kan till exempel sampla en prestanda räknare med några minuters mellanrum. Om räknaren överskrider ett tröskelvärde anger den omedelbart hälso tillståndet för dess mål objekt, vilket omedelbart utlöser en avisering i hanterings gruppen. En schemalagd regel kan se till att en viss händelse skapas och direkt utlösa en avisering när händelsen skapas i den lokala händelse loggen.
 
@@ -114,7 +116,7 @@ Insikter, till exempel Azure Monitor för behållare och Azure Monitor for VMs, 
 
 Azure Monitor separerar data insamling från åtgärder som vidtagits för dessa data, som stöder distribuerade mikrotjänster i en moln miljö. Den sammanställer data från flera källor till en gemensam data plattform och ger analys-, visualiserings-och aviserings funktioner baserat på insamlade data.
 
-Alla data som samlas in av Azure Monitor lagras som antingen loggar eller mått och olika funktioner i övervakaren förlitar sig på antingen. Mått innehåller numeriska värden i tids serier som lämpar sig väl för aviseringar i nära real tid och snabb identifiering av problem. Loggar innehåller text eller numeriska data och stöds av ett kraftfullt frågespråk som gör dem särskilt användbara för att utföra komplexa analyser.
+Alla data som samlas in av Azure Monitor lagras som antingen loggar eller mått och olika funktioner i övervakaren förlitar sig på antingen. Mått innehåller numeriska värden i tids serier som lämpar sig väl för aviseringar i nästan real tid och snabb identifiering av problem. Loggar innehåller text eller numeriska data och stöds av ett kraftfullt frågespråk som gör dem särskilt användbara för att utföra komplexa analyser.
 
 Eftersom övervakaren separerar data insamling från åtgärder mot dessa data, kanske det inte går att tillhandahålla aviseringar i nästan real tid i många fall. För att varna vid loggdata körs frågor på ett återkommande schema som definierats i aviseringen. Med det här beteendet kan Azure Monitor enkelt korrelera data från alla övervakade källor, och du kan analysera data interaktivt på flera olika sätt. Detta är särskilt användbart för att utföra rotor Saks analys och identifiera var felet kan uppstå.
 
@@ -162,7 +164,7 @@ Hanterings paketen innehåller olika fördefinierade varnings regler för olika 
 
 ### <a name="azure-monitor"></a>Azure Monitor
 
-Med Azure Monitor kan du skapa aviseringar baserat på ett mått som korsar ett tröskelvärde eller baserat på ett schemalagt frågeresultat. Även om aviseringar som baseras på mått kan uppnå nästan real tids resultat, har schemalagda frågor en längre svars tid, beroende på hastigheten på data inhämtning och indexering. I stället för att begränsas till en viss agent kan du med logg frågans aviseringar i Azure Monitor analysera data över alla data som lagras i flera arbets ytor. Dessa aviseringar omfattar även data från en speciell Application Insights-app med hjälp av en fråga mellan arbets ytor.
+Med Azure Monitor kan du skapa aviseringar baserat på ett mått som korsar ett tröskelvärde eller baserat på ett schemalagt frågeresultat. Även om aviseringar som baseras på mått kan uppnå nästan i real tid, har schemalagda frågor en längre svars tid, beroende på hastigheten på data inhämtning och indexering. I stället för att begränsas till en viss agent kan du med logg frågans aviseringar i Azure Monitor analysera data över alla data som lagras i flera arbets ytor. Dessa aviseringar omfattar även data från en speciell Application Insights-app med hjälp av en fråga mellan arbets ytor.
 
 Även om övervaknings lösningar kan innehålla aviserings regler, skapar du vanligt vis dem utifrån dina egna krav.
 

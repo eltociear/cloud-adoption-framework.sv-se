@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 078ba561384c07cee6ce3a174d1663f7590e228c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 85ff0f9fa54542309a814fbca44c38de65805933
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220393"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752659"
 ---
 <!-- markdownlint-disable MD026 -->
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 216614c06f1638bf25149dac99f9bd258e9364aa
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: a6de2681f83eba32400ed0dd214267f0960f5a8a
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548011"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752163"
 ---
 # <a name="understand-the-cloud-security-baseline"></a>Förstå moln säkerhets bas linjen
 
@@ -27,7 +27,7 @@ Det här är en introduktions artikel om allmänna ämnen i en moln säkerhets b
 
 Cloud Security är en förlängning av traditionella informations säkerhets metoder. Traditionell IT-säkerhet omfattar principer och kontroller som styr dator säkerhet, nätverks säkerhet, data skydd, informations användning och så vidare. Samma principer och kontroller krävs i molnet. Under en moln omvandling är det absolut nödvändigt att IT aktivt är inblandat och förstår molnet, för att säkerställa att äldre IT-principer mappas till rätt kontroll nivåer i molnet.
 
-Som minst bör en strategi för moln säkerhet överväga följande ämnen:
+En moln säkerhets strategi bör minst beakta följande ämnen:
 
 - **Klassificera data.** Lämplig data klassificering för att förstå data källor som är privata, skyddade eller mycket konfidentiella. Detta hjälper dig att hantera risker under planeringen.
 - **Planera för ett scenario med hybrid moln.** Att förstå hur äldre, lokala nätverk ansluter till molnet hjälper IT att identifiera och åtgärda risker.

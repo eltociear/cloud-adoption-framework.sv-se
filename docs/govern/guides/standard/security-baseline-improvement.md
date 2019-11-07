@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3ffc0c0707dd8a8631bc7724fd432a2183fea797
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 0875442331a5da3c53c5d6c713c3bdbfcfab6cbf
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058671"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753058"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Standard styrnings guide för företag: förbättra disciplinen för säkerhets bas linjer
 
@@ -71,7 +71,7 @@ Följande ändringar i principen hjälper dig att åtgärda de nya riskerna och 
 
 1. Alla distribuerade till gångar måste kategoriseras efter allvarlighets grad och data klassificering. Klassificeringarna bör granskas av moln styrnings teamet och program ägaren innan distributionen till molnet.
 2. Program som lagrar eller kommer åt skyddade data ska hanteras annorlunda än de som inte är det. De bör minst segmenteras för att undvika oavsiktlig åtkomst till skyddade data.
-3. Alla skyddade data måste krypteras när de är i vilo läge. Även om detta är standard för alla Azure Storage-konton kan ytterligare krypterings strategier behövas, inklusive kryptering av data i lagrings kontot, kryptering av virtuella datorer och kryptering på databas nivå om SQL används i en virtuell dator (TDE och kolumn kryptering).
+3. Alla skyddade data måste krypteras när de är i vilo läge. Även om detta är standard för alla Azure Storage-konton kan ytterligare krypterings strategier behövas, inklusive kryptering av data i lagrings kontot, kryptering av virtuella datorer och kryptering på databas nivå när SQL används i en virtuell dator (TDE och kolumn kryptering ).
 4. Utökade behörigheter i alla segment som innehåller skyddade data ska vara ett undantag. Eventuella sådana undantag kommer att registreras med moln styrnings teamet och granskas regelbundet.
 5. Nätverks under nät som innehåller skyddade data måste isoleras från andra undernät. Nätverks trafik mellan skyddade data under nät kommer att granskas regelbundet.
 6. Det går inte att komma åt ett undernät som innehåller skyddade data direkt via det offentliga Internet eller i flera data Center. Åtkomst till dessa undernät måste dirigeras via mellanliggande undernät. All åtkomst till dessa undernät måste komma via en brand Väggs lösning som kan utföra paket genomsökning och blockera funktioner.

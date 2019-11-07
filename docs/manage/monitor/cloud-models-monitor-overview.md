@@ -1,5 +1,5 @@
 ---
-title: Övervaknings guide för molnet – övervaknings strategi för moln distributions modeller
+title: 'Övervaknings guide för molnet: övervaknings strategi för moln distributions modeller'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Välj när Azure Monitor eller System Center Operations Manager ska användas i Microsoft Azure
 author: MGoedtel
@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 849c6eace1704cababd4fc40f7976f5e1915345e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 98a65f0e65e8c2851a8aa97fe2f0c17ffe2359db
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564979"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752717"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Övervaknings guide för molnet: övervaknings strategi för moln distributions modeller
 
@@ -30,12 +30,13 @@ Vår strategi omfattar stöd för övervakning av infrastruktur (beräknings-, l
 ## <a name="azure-cloud-monitoring"></a>Azure Cloud Monitoring
 
 Azure Monitor är Azure Native Platform service som tillhandahåller en enda källa för övervakning av Azure-resurser. Den är utformad för moln lösningar som:
-* Bygger på Azure.
-* Stöd för en affärs kapacitet som baseras på virtuella dator arbets belastningar eller komplexa arkitekturer som använder mikrotjänster och andra plattforms resurser.
 
-Den övervakar alla skikt i stacken och börjar med klient tjänster, till exempel Azure Active Directory Domain Services och händelser på prenumerations nivå och Azure Service Health. 
+- Bygger på Azure.
+- Stöd för en affärs kapacitet som baseras på virtuella dator arbets belastningar eller komplexa arkitekturer som använder mikrotjänster och andra plattforms resurser.
 
-Den övervakar också infrastruktur resurser, till exempel virtuella datorer, lagring och nätverks resurser. Det översta lagret övervakar ditt program. 
+Den övervakar alla skikt i stacken och börjar med klient tjänster, till exempel Azure Active Directory Domain Services och händelser på prenumerations nivå och Azure Service Health.
+
+Den övervakar också infrastruktur resurser, till exempel virtuella datorer, lagring och nätverks resurser. Det översta lagret övervakar ditt program.
 
 Genom att övervaka var och en av dessa beroenden och samla in rätt signaler som varje kan generera, får du lämplighet för program och den nyckel infrastruktur du behöver.
 
@@ -56,7 +57,7 @@ Azure-klientorganisation | Azure Active Directory || Aktivera diagnostikloggning
 
 ## <a name="hybrid-cloud-monitoring"></a>Övervakning av hybrid moln
 
-För många organisationer måste över gången till molnet gradvis närmas, där hybrid moln modellen är det vanligaste första steget i resan. Du väljer noggrant lämplig delmängd av program och infrastruktur för att påbörja migreringen, samtidigt som du undviker avbrott i verksamheten. Men eftersom vi erbjuder två övervaknings plattformar som har stöd för den här moln modellen kan besluts fattare vara osäker på vilket som är det bästa valet för att stödja verksamheten och drifts målen. 
+För många organisationer måste över gången till molnet gradvis närmas, där hybrid moln modellen är det vanligaste första steget i resan. Du väljer noggrant lämplig delmängd av program och infrastruktur för att påbörja migreringen, samtidigt som du undviker avbrott i verksamheten. Men eftersom vi erbjuder två övervaknings plattformar som har stöd för den här moln modellen kan besluts fattare vara osäker på vilket som är det bästa valet för att stödja verksamheten och drifts målen.
 
 I det här avsnittet tar vi itu med osäkerheten genom att granska flera faktorer och erbjuda en förståelse för vilken plattform du bör tänka på.
 
@@ -74,7 +75,7 @@ I följande tabell sammanfattas de krav som Azure Monitor och System Center Oper
 
 |Krav | Azure Monitor | Operations Manager |
 |:--|:---|:---|
-|Infrastruktur krav | Nej | Ja<br> Kräver minst en hanterings Server och en SQL-Server som är värd för den operativa databasen och informationslager för rapportering databasen. Komplexiteten ökar när hög tillgänglighet och haveri beredskap krävs, och det finns datorer på flera platser, ej betrodda system och andra komplexa design överväganden.|
+|Infrastruktur krav | Nej | Ja<br> Kräver minst en hanterings Server och en SQL-Server som värd för den operativa databasen och informationslager för rapportering databasen. Komplexiteten ökar när hög tillgänglighet och haveri beredskap krävs, och det finns datorer på flera platser, ej betrodda system och andra komplexa design överväganden.|
 |Begränsad anslutning-inget Internet<br> eller isolerat nätverk | Nej | Ja |
 |Begränsad anslutning – styrd Internet åtkomst | Ja | Ja |
 |Begränsad anslutning – ofta frånkopplad | Ja | Ja |
@@ -90,7 +91,7 @@ I följande tabell sammanfattas de krav som Azure Monitor och System Center Oper
 |Övervaka Azure Kubernetes service-behållare | Ja | Nej |
 |Övervaka Docker-eller Windows-behållare | Ja | Nej |
 |Övervakning av nätverks prestanda | Ja | Ja, begränsad<br> Stöder tillgänglighets kontroller och samlar in grundläggande statistik från nätverks enheter med hjälp av Simple Network Management Protocol (SNMP) från företags nätverket.|
-|Interaktiv data analys | Ja | Nej<br> Förlita dig på SQL Server Reporting Services för hands versioner av eller anpassade rapporter, visualiserings lösningar från tredje part eller en anpassad Power BI implementering. Det finns skalnings-och prestanda begränsningar med Operations Manager data lagret. Integrera med Azure Monitor-loggar som ett alternativ för data agg regerings krav. Du uppnår integrering genom att konfigurera Log Analytics anslutningen.|
+|Interaktiv data analys | Ja | Nej<br> Förlita dig på SQL Server Reporting Services konserverade eller anpassade rapporter, visualiserings lösningar från tredje part eller en anpassad Power BI implementering. Det finns skalnings-och prestanda begränsningar med Operations Manager data lagret. Integrera med Azure Monitor-loggar som ett alternativ för data agg regerings krav. Du uppnår integrering genom att konfigurera Log Analytics anslutningen.|
 |Diagnostik från slut punkt till slut punkt, rotor Saks analys och problemlösnings tid | Ja | Ja, begränsad<br> Har stöd för diagnostik och fel sökning från slut punkt till slut punkt för lokal infrastruktur och program. Använder andra System Center-komponenter eller partner lösningar.|
 |Interaktiva visualiseringar (instrument paneler) | Ja | Ja, begränsad<br> Tillhandahåller viktiga instrument paneler med sin HTML5-webb konsol eller en avancerad upplevelse från partner lösningar, till exempel i kvadrat-och Savision. |
 |Integrering med IT-eller DevOps-verktyg | Ja | Ja, begränsad |
@@ -137,7 +138,7 @@ För alla webb program som kan nås externt bör du aktivera en typ av syntetisk
 
 #### <a name="advantages-of-using-operations-manager-with-azure-monitor"></a>Fördelar med att använda Operations Manager med Azure Monitor
 
-- Azure Monitor är ett sätt att komma runt begränsningarna i Operations Manager. Den kompletterar Operations Manager informations lager databasen genom att samla in viktiga prestanda-och loggdata. Azure Monitor ger bättre analyser, prestanda (vid frågor mot stor data volym) och kvarhållning än Operations Manager data lagret. 
+- Azure Monitor är ett sätt att komma runt begränsningarna i Operations Manager. Den kompletterar Operations Manager informations lager databasen genom att samla in viktiga prestanda-och loggdata. Azure Monitor ger bättre analyser, prestanda (vid frågor mot stor data volym) och kvarhållning än Operations Manager data lagret.
 
   Med det Azure Monitor frågespråket kan du skapa mycket mer komplexa och avancerade frågor. Du kan köra frågor i flera terabyte data på några sekunder. Du kan snabbt transformera dina data till cirkel diagram, tids diagram och många andra visualiseringar. För att analysera dessa data är du inte längre begränsade genom att arbeta med Operations Manager rapporter som baseras på SQL Server Reporting Services, anpassade SQL-frågor eller andra lösningar.
 
@@ -150,12 +151,11 @@ För alla webb program som kan nås externt bör du aktivera en typ av syntetisk
 - Med hjälp av kart funktionen i Azure Monitor for VMs kan du övervaka standard anslutnings mått från nätverks anslutningar mellan dina virtuella datorer i Azure och lokala virtuella datorer. Dessa mått omfattar svars tid, begär Anden per minut, trafik data flöde och länkar. Du kan identifiera misslyckade anslutningar, felsöka, utföra migrering av migrering, utföra säkerhets analyser och kontrol lera tjänstens övergripande arkitektur. Kartan kan automatiskt identifiera program komponenter i Windows-och Linux-system och mappa kommunikationen mellan tjänsterna. Den här automationen hjälper dig att identifiera anslutningar och beroenden som du kände till, planera och validera migrering till Azure och minimera spekulation under incident lösning.
 
 - Med hjälp av Övervakare av nätverksprestanda kan du övervaka nätverks anslutningen mellan:
+  - Företagets nätverk och Azure.
+  - Verksamhets kritiska program på flera nivåer och mikrotjänster.
+  - Användar platser och webbaserade program (HTTP/HTTPS).
 
-   - Företagets nätverk och Azure.
-   - Verksamhets kritiska program på flera nivåer och mikrotjänster.
-   - Användar platser och webbaserade program (HTTP/HTTPS).
-
-   Den här strategin ger insyn i nätverks lagret, utan behov av SNMP. Det kan också finnas i en interaktiv topologi, en hopp-och Hopps sto pol Ogin mellan käll-och mål slut punkten. Det är ett bättre alternativ än att försöka utföra samma resultat med nätverks övervakning i Operations Manager eller med andra verktyg för nätverks övervakning som används i din miljö.
+Den här strategin ger insyn i nätverks lagret, utan behov av SNMP. Det kan också finnas i en interaktiv topologi, en hopp-och Hopps sto pol Ogin mellan käll-och mål slut punkten. Det är ett bättre alternativ än att försöka utföra samma resultat med nätverks övervakning i Operations Manager eller med andra verktyg för nätverks övervakning som används i din miljö.
 
 ### <a name="monitor-with-azure-monitor"></a>Övervaka med Azure Monitor
 
@@ -177,7 +177,7 @@ För alla webb program som kan nås externt bör du aktivera en typ av syntetisk
 
 ## <a name="private-cloud-monitoring"></a>Övervakning av privata moln
 
-Du kan få en helhets övervakning av Azure Stack med System Center Operations Manager. Mer specifikt kan du övervaka arbets belastningarna som körs i klienten, resurs nivån, på de virtuella datorerna och infrastrukturen som är värd för Azure Stack (fysiska servrar och nätverks växlar). 
+Du kan få en helhets övervakning av Azure Stack med System Center Operations Manager. Mer specifikt kan du övervaka arbets belastningarna som körs i klienten, resurs nivån, på de virtuella datorerna och infrastrukturen som är värd för Azure Stack (fysiska servrar och nätverks växlar).
 
 Du kan också få en helhets övervakning med en kombination av [infrastruktur övervaknings funktioner](https://docs.microsoft.com/azure/azure-stack/azure-stack-monitor-health) som ingår i Azure Stack. Dessa funktioner hjälper dig att Visa hälso tillstånd och aviseringar för en Azure Stack region och [tjänsten Azure Monitor](https://docs.microsoft.com/azure/azure-stack/user/azure-stack-metrics-azure-data) i Azure Stack, som tillhandahåller infrastruktur mått och loggar på bas nivå för de flesta tjänster.
 

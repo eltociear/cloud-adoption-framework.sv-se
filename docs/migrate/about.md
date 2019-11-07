@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6bbd3ffe401a3e886ee1f91072a715002ab5e836
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: ab28d38aafdddc0206b9fc7abc98cb489bba5d1b
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547249"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751286"
 ---
 # <a name="cloud-migration-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Molnmigrering i Microsoft Cloud Adoption Framework för Azure
 
@@ -44,7 +44,7 @@ Molnarkitekten fungerar som strateg och ledare för att sammanföra dessa målgr
 
 För läsare som vill följa den här guiden från början till slut är det här innehållet en hjälp vid utvecklingen av en robust strategi för molnmigreringen. Vägledningen guidar läsaren genom teori och implementering av denna strategi.
 
-Som ett första steg rekommenderar vi att läsarna använder [Azures migreringsguide](./azure-migration-guide/index.md) för att förstå den standarduppsättning av verktyg och metoder som behövs vid en normal migrering. Därefter kan den grundläggande vägledningen utökas för läsare som behöver [komplexa migreringsscenarier](./expanded-scope/index.md), [metodtips för migrering](./azure-best-practices/index.md) och [migreringsöverväganden](./migration-considerations/index.md).
+Som ett första steg arbetar du med [Azure migration-guiden](./azure-migration-guide/index.md) för att förstå standard uppsättningen verktyg och metoder som behövs för migrering i ett vanligt användnings fall. Därefter kan den grundläggande vägledningen utökas för läsare som behöver [komplexa migreringsscenarier](./expanded-scope/index.md), [metodtips för migrering](./azure-best-practices/index.md) och [migreringsöverväganden](./migration-considerations/index.md).
 
 > [!div class="nextstepaction"]
 > [Guide för Azure-migrering](./azure-migration-guide/index.md)

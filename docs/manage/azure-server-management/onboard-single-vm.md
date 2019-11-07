@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 6dbc0dce4e129a785ddd3ae735115a211bf04dee
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: 7ee8cab09fc5ad875240a10d7fe6f632d91432c9
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656545"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751651"
 ---
 # <a name="enable-server-management-services-on-a-single-vm-for-evaluation"></a>Aktivera server hanterings tjänster på en enskild virtuell dator för utvärdering
 
@@ -35,7 +35,7 @@ Mer information om hur du kan publicera dessa lösningar på enskilda virtuella 
 
 ## <a name="next-steps"></a>Nästa steg
 
-Lär dig hur du använder Azure policy för att publicera virtuella Azure-datorer i stor skala.
+Lär dig hur du använder Azure Policy för att publicera virtuella Azure-datorer i stor skala.
 
 > [!div class="nextstepaction"]
 > [Konfigurera Azure Management Services för en prenumeration](./onboard-at-scale.md)

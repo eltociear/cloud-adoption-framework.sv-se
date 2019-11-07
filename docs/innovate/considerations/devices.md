@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 309ea099eee5fcec5700a48afc4376dbc30805f9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4a1b96a5f29ebac9fd228ab1603d12e08b38ba63
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565656"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752081"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Omgivande upplevelser: interagera med enheter
 
@@ -55,7 +55,7 @@ Lösningar för Mixad verklighet representerar nästa förfallo nivå för omgiv
 > [!IMPORTANT]
 > Om en virtuell verklighet-enhet (VR) krävs och *inte redan är en del av en kunds omedelbara omgivande eller naturliga beteenden*, är utöknings bara eller en virtuell verklighet mer av en alternativ upplevelse och mindre av en omgivande upplevelse.
 
-Blandade verklighets upplevelser är allt vanligare bland fjärran slutna arbets uppgifter. Användningen av dem ökar ännu snabbare i branscher som kräver samarbets-eller special kunskaper som inte är lättillgänglig på den lokala marknaden. Situationer som kräver centraliserad implementering av en komplex produkt för en fjärran sluten arbets kraft är särskilt fertilet underlag för förhöjd verklighet. I dessa scenarier kan det centrala support teamet och fjärranslutna anställda utnyttja utöknings bara verklighet för att arbeta med, felsöka och installera produkten.
+Blandade verklighets upplevelser är allt vanligare bland fjärran slutna arbets uppgifter. Användningen av dem ökar ännu snabbare i branscher som kräver samarbets-eller special kunskaper som inte är lättillgänglig på den lokala marknaden. Situationer som kräver centraliserad implementering av en komplex produkt för en fjärran sluten arbets kraft är särskilt fertilet underlag för förhöjd verklighet. I dessa scenarier kan det centrala support teamet och fjärranslutna anställda använda förstärkt verklighet för att arbeta med, felsöka och installera produkten.
 
 Anta till exempel fallet med avstånds ankare. Med avstånds fäst punkter kan du skapa blandade verklighets upplevelser med objekt som bevarar sina respektive platser på enheter över tid. Genom spatiala ankare kan ett särskilt beteende samlas in, registreras och bevaras, vilket ger en omgivande upplevelse nästa gången användaren arbetar i den förhöjda miljön. Molnbaserade [ankare](https://docs.microsoft.com/azure/spatial-anchors/overview) är en tjänst som flyttar den här logiken till molnet, vilket gör att upplevelsen kan delas mellan enheter och till och med mellan lösningar.
 

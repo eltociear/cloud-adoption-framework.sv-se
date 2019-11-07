@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b62dde42255d1a0e9f484e5bcfcd83bbff1ebf7e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 337eac12b3c01136f611d6a53693de4d29663f46
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565776"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752061"
 ---
 # <a name="engage-through-applications"></a>Delta i program
 

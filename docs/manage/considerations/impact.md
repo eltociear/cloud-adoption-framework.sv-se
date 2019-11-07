@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 356460b8f2952475060c857e0b7999696be0d215
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 0480a03ef488d00625115ded8f03526f959dd203
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565150"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752862"
 ---
 # <a name="business-impact-in-cloud-management"></a>Inverkan på verksamheten i moln hantering
 
@@ -41,7 +41,7 @@ När du vill överväga ytterligare hanterings investeringar är det viktigt att
 
 - **Justerade förluster:** Om ditt företag har drabbats av en stor förlust händelse tidigare, till exempel en orkan eller annan natur katastrof kan en anspråks justering ha beräknat faktiska förluster under avbrottet. De här beräkningarna baseras på försäkrings bransch standarder för förlust beräkning och riskhantering. Genom att använda justerade förluster som det totala antalet förluster inom en bestämd tidsram kan det leda till hög noggrannhets projektion.
 
-- **Historiska förluster:** Om din lokala miljö har lidit tidigare från avbrott till följd av infrastruktur instabilitet, kan det vara en bit svårare att beräkna förluster. Men du kan fortfarande använda justerings formlerna som används internt. Om du vill beräkna historiska förluster kan du jämföra delta i försäljning, brutto intäkter och drifts kostnader över tre tids ramar: före, under och efter avbrott. Genom att undersöka dessa delta kan du identifiera korrekta förluster när inga andra data är tillgängliga.
+- **Historiska förluster:** Om din lokala miljö har lidit tidigare från avbrott till följd av infrastruktur instabilitet, kan det vara en bit svårare att beräkna förluster. Men du kan fortfarande använda de justerings formler som används internt. Om du vill beräkna historiska förluster kan du jämföra delta i försäljning, brutto intäkter och drifts kostnader över tre tids ramar: före, under och efter avbrott. Genom att undersöka dessa delta kan du identifiera korrekta förluster när inga andra data är tillgängliga.
 
 - **Slutför förlust beräkning:** Om inga historiska data är tillgängliga kan du härleda ett värde för jämför ande förlust. I den här modellen fastställer du den genomsnittliga brutto intäkten per timme för affär senheten. När du är klar med att undvika investeringar i förlust, är det inte rimligt att anta att ett fullständigt system avbrott motsvarar 100 procent förlust av intäkter. Men du kan använda detta antagande som en grov grund för att jämföra förlust påverkar och prioritera investeringar.
 

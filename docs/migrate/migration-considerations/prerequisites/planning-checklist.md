@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7a71b5694849533b6a01b98d9e14d5022e7287f8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8815a9089b63fe20d2d79c5ef979ff5d41166192
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564558"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753452"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>Planerings check lista för migrerings miljö: validera miljö beredskap innan migrering
 
@@ -27,7 +27,7 @@ Den här artikeln och checklistan förutsätter en migreringsmetod med _värdbyt
 
 ## <a name="governance-alignment"></a>Styrningsjustering
 
-Det första och viktigaste beslutet om en migreringsklar miljö är valet av styrningsjustering. Har enighet nåtts avseende justering av styrning med migreringsgrunden? Molnimplementeringsteamet bör åtminstone veta om migreringen landar i en enkel miljö med begränsad styrning, en helt styrd miljöfabrik eller något däremellan. Mer alternativ och vägledning om styrningsjustering finns i artikeln om [styrning- och anpassningsefterlevnad](../../expanded-scope/governance-or-compliance.md).
+Det första och viktigaste beslutet om en migreringsklar miljö är valet av styrningsjustering. Har enighet nåtts avseende justering av styrning med migreringsgrunden? Som minst bör moln implementerings gruppen förstå om migreringen hamnar i en enda miljö med begränsad styrning, en helt styrd miljö fabrik eller någon variant i mellan. Mer alternativ och vägledning om styrningsjustering finns i artikeln om [styrning- och anpassningsefterlevnad](../../expanded-scope/governance-or-compliance.md).
 
 ## <a name="cloud-readiness-implementation"></a>Implementering av molnberedskap
 
@@ -52,7 +52,7 @@ En konsekvent metod för att namnge resurser, tillsammans med konsekventa namngi
 
 ### <a name="resource-governance"></a>Resursstyrning
 
-Ett beslut om verktyg för att styra resurser bör fattas innan migreringen. Verktygen behöver inte implementeras fullständigt, men en riktning bör väljas och testas. Vi rekommenderar att molnstyrningsteamet definierar och kräver implementering av en minimal livskraftig produkt (MVP) för styrningsverktyg innan migreringen.
+Ett beslut om verktyg för att styra resurser bör fattas innan migreringen. Verktygen behöver inte implementeras fullständigt, men en riktning bör väljas och testas. Moln styrnings teamet bör definiera och kräva implementering av en minimal livskraftig produkt (MVP) för styrnings verktyg innan migrering.
 
 ## <a name="network"></a>Nätverk
 

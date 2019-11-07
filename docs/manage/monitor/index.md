@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 315ba0898f6a301af6f91614290c51244fbf6eb0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 0920e834bcec0fc5885650ba5cab7ec28eac669f
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564923"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752774"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>Molnövervakningsguide: Introduktion
 
-Molnet innebär en stor förändring när det gäller hur företag förvärvar och använder teknikresurser. Tidigare ägde och ansvarade företagen för alla tekniknivåer, från infrastruktur till programvara. Nu gör molnet att företag kan etablera och förbruka resurser efter behov.
+Molnet ändrar i grunden det sätt på vilket företag anskaffar och använder teknikresurser. Tidigare ägde och ansvarade företagen för alla tekniknivåer, från infrastruktur till programvara. Nu gör molnet att företag kan etablera och förbruka resurser efter behov.
 
 Molnet ger nästan obegränsad flexibilitet när det gäller utformningsalternativ, men företagen efterfrågar ofta beprövade och enhetliga metoder vid övergången till molntekniker. Alla företag har olika mål och tidslinjer för molnimplementeringen, vilket gör det i stort sett omöjligt att ha en enhetlig implementeringsmodell som passar alla.
 

@@ -1,5 +1,5 @@
 ---
-title: Guide för moln övervakning – samla in rätt data
+title: 'Övervaknings guide för molnet: samla in rätt data'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Välj när Azure Monitor eller System Center Operations Manager ska användas i Microsoft Azure
 author: MGoedtel
@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 05596379872fbfa9099297a55d4b75dedc0b672a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 950b767101fea9b33875f1ad0938599a4f371ba9
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564933"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751522"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>Övervaknings guide för molnet: samla in rätt data
 
@@ -45,7 +45,7 @@ Hur du besvarar dessa frågor och kriterierna för aviseringar bestämmer hur du
 - Använd funktioner för instrument panels detalj nivå eller stöd för att anpassa vyn för att förfina den.
 - Om du behöver utförliga loggar bör måtten ha hjälpt att nå Sök kriterierna. Om måtten inte hjälper kan du förbättra dem för nästa incident.
 
-Genom att använda denna GUID-uppsättning principer kan du ge dig nära real tids insikter, samt bättre hantering av tjänsten.
+Genom att använda denna GUID-uppsättning principer kan du ge dig nära insikter i real tid, samt bättre hantering av tjänsten.
 
 ## <a name="next-steps"></a>Nästa steg
 

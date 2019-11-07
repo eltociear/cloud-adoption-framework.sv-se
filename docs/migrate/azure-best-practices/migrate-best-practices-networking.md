@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: df31cb73ec601c52f0f925d09a56f0af7aaf1513
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a7f119dcfd2b7cdfc71b8a4c6f913448cd98e763
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565228"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753608"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Metodtips för att konfigurera nätverk för arbetsbelastningar som migrerats till Azure
 
@@ -85,7 +85,7 @@ För att skapa en isolering inom ett virtuellt undernät ska du segmentera det i
 - Undernätbesluten baseras på dina tekniska och organisatoriska krav.
 - Du skapar undernät med CIDR-notation.
 - När du bestämmer nätverksintervall för undernät är det viktigt att observera att Azure kvarhåller fem IP-adresser från varje undernät som inte kan användas. Om du till exempel skapar det minsta tillgängliga undernätet på/29 (med åtta IP-adresser) kvarhåller Azure fem adresser, så att du bara har tre användbara adresser som kan tilldelas till värdar i undernätet.
-- I de flesta fall rekommenderas att använda /28 som minsta undernät.
+- I de flesta fall använder du/28 som det minsta under nätet.
 
 **Exempel:**
 
@@ -160,8 +160,8 @@ Vid en lyckad migrering är det viktigt att ansluta lokala företagsnätverk til
 
 Om du vill implementera en plats-till-plats-VPN skapar du en VPN-gateway i Azure.
 
-- En VPN-gateway är en viss typ av virtuell nätverksgateway som används till att skicka krypterad trafik mellan ett virtuellt Azure-nätverk och en lokal plats via internet.
-- Du kan också använda en VPN-gateway till att skicka krypterad trafik mellan virtuella Azure-nätverk via Microsofts nätverk.
+- En VPN-gateway är en speciell typ av VNet-gateway som skickar krypterad trafik mellan ett virtuellt Azure-nätverk och en lokal plats via det offentliga Internet.
+- En VPN-gateway kan också skicka krypterad trafik mellan Azure virtuella nätverk över Microsoft-nätverket.
 - Varje virtuellt nätverk kan ha bara en VPN-gateway.
 - Du kan skapa flera anslutningar till samma VPN-gateway. När du skapar flera anslutningar delar alla VPN-tunnlar på den tillgängliga bandbredden.
 - Varje Azure VPN-gateway består av två instanser i en aktiv-standby-konfiguration.
@@ -175,7 +175,7 @@ När du konfigurerar ett plats-till-plats-VPN gör du följande:
 
 - Du behöver ett virtuellt nätverk vars adressintervall inte överlappar med det lokala nätverket som VPN-anslutningen ska ansluta till.
 - Du skapar ett gateway-undernät i nätverket.
-- Du skapar en VPN-gateway, anger Gateway-typ (VPN) och om gatewayen är principbaserad eller routningsbaserad. En routningsbaserad-VPN rekommenderas som mer kapabel och framtidssäkrad.
+- Du skapar en VPN-gateway, anger Gateway-typ (VPN) och om gatewayen är principbaserad eller routningsbaserad. En Route-baserad VPN anses vara mer kapabel och kan granskas i framtiden.
 - Du skapar en lokal nätverksgateway lokalt och konfigurerar den lokala VPN-enheten.
 - Du skapar en redundant plats-till-plats-VPN-anslutning mellan den virtuella nätverksgatewayen och den lokala enheten. Med routningsbaserad VPN kan du antingen använda aktiv-passiv eller aktiv-aktiv anslutning till Azure. Routningsbaserad stöder dessutom både plats-till-plats-anslutning (från valfri dator) och punkt-till-plats-anslutning (from en enda dator) samtidigt.
 - Välj den gateway-SKU som du vill använda. Detta beror på arbetsbelastningskrav, dataflöden, funktioner och serviceavtal.
@@ -301,8 +301,8 @@ Ansvaret för att skydda virtuella nätverk delas mellan Microsoft och dig. Micr
 
 Följande bild visar ett exempel på ett enkelt undernätsperimeternätverk i ett företagsnätverk med två säkerhetsgränser.
 
-![Nätverksdistribution av ](./media/migrate-best-practices-networking/perimeter.png)
-VPN *-perimeter*
+*Nätverksdistribution av ![VPN](./media/migrate-best-practices-networking/perimeter.png)
+-perimeter*
 
 **Läs mer:**
 
@@ -374,7 +374,7 @@ NIC4 | AsgDb
 
 <!--markdownlint-disable MD033 -->
 
-**Regelnamn** | **Syfte** | **Information**
+**Regelnamn** | **Syfte** | **Detaljer**
 --- | --- | ---
 Allow-HTTP-Inbound-Internet | Den här regeln krävs för att tillåta trafik från Internet till webbservrarna. Inkommande trafik från Internet nekas av standardsäkerhetsregeln DenyAllInbound. Därför krävs ingen ytterligare regel för programsäkerhetsgruppen AsgLogic eller AsgDb. | Prioritet: 100<br/><br/> Källa: Internet<br/><br/> Källport: *<br/><br/> Mål: AsgWeb<br/><br/> Målport: 80<br/><br/> Protokoll: TCP<br/><br/> Åtkomst: Tillåt.
 Deny-Database-All | Standardsäkerhetsregeln AllowVNetInBound tillåter all kommunikation mellan resurser i samma virtuella nätverk. Därför krävs den här regeln för att neka trafik från alla resurser. | Prioritet: 120<br/><br/> Källa: *<br/><br/> Källport: *<br/><br/> Mål: AsgDb<br/><br/> Målport: 1433<br/><br/> Protokoll: alla<br/><br/> Åtkomst: neka.
@@ -428,8 +428,8 @@ Azure har plattformsäkerhetsfunktioner som är enkla att använda och ger omfat
 
 Azure Firewall är en hanterad molnbaserad nätverkssäkerhetstjänst som skyddar dina resurser på virtuella nätverk. Det är en helt tillståndskänslig hanterad brandvägg med inbyggd hög tillgänglighet och obegränsad molnskalbarhet.
 
-![Azure Firewall](./media/migrate-best-practices-networking/firewall.png)
- för *tjänstslutpunkter*
+*Azure Firewall* för ![tjänstslutpunkter](./media/migrate-best-practices-networking/firewall.png)
+
 
 - Azure Firewall kan centralt skapa, framtvinga och logga principer för tillämpning och nätverksanslutning över prenumerationer och virtuella nätverk.
 - Azure Firewall använder en statisk offentlig IP-adress för din virtuella nätverksresurser som tillåter att externa brandväggar identifierar trafik som kommer från ditt virtuella nätverk.
@@ -495,7 +495,7 @@ I hubben hanteras perimeternätverket (med åtkomst till Internet) normalt via e
 
 <!--markdownlint-disable MD033 -->
 
-**Brandväggstyp** | **Information**
+**Brandväggstyp** | **Detaljer**
 --- | ---
 Brandvägg för webbaserade program | Webbprogram är vanliga och tenderar att drabbas av sårbarheter och potentiella hot.<br/><br/> Brandväggar för webbaserade program är utformade för att identifiera attacker mot webbprogram (HTTP/HTTPS) mer specifikt än en vanlig brandvägg.<br/><br/> Jämfört med traditionell brandväggsteknik har brandväggar för webbaserade program specifika funktioner som skyddar inre webbservrar mot hot.
 Azure Firewall | Azure Firewall använder likt NVA-brandväggsgrupper en gemensam administrationsmekanism och en uppsättning säkerhetsregler som skyddar arbetsbelastningar i ekernätverk och kontrollerar åtkomst till lokala nätverk.<br/><br/> Azure Firewall har inbyggd skalbarhet.
@@ -517,4 +517,4 @@ Vi rekommenderar att du använder en Azure Firewall (eller NVA) för trafik som 
 Läs andra metodtips:
 
 - [Metodtips](./migrate-best-practices-security-management.md) för säkerhet och hantering efter migrering.
-- [Metodtips](./migrate-best-practices-costs.md) för säkerhet och hantering efter migrering.
+- [Metodtips](./migrate-best-practices-costs.md) för kostnadshantering efter migrering.

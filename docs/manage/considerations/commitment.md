@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f5461ea659ae2363e98ddf45d8623e21f1ce0d90
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 29acef56de414d1a98e5fe11e5e396922b84392d
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565195"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752889"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Affärs engagemang i moln hantering
 
@@ -42,7 +42,7 @@ För att hjälpa dig i besluts processen beskriver resten av den här artikeln v
 
 ## <a name="it-operations-prerequisites"></a>Krav för IT-åtgärder
 
-Hanterings [guiden för Azure](../azure-management-guide/index.md) beskriver de hanterings verktyg som är tillgängliga i Azure. Innan företaget uppnår sitt åtagande bör det fastställas en acceptabel bas linje för hantering av standard nivå som ska tillämpas på alla hanterade arbets belastningar. DEN beräknar sedan en standard hanterings kostnad för var och en av de hanterade arbets belastningarna i IT-portföljen, baserat på antalet processor kärnor, disk utrymme och andra variabler som är relaterade till till gångar. Det skulle också uppskatta ett sammansatt service avtal för varje arbets belastning, baserat på arkitekturen.
+Hanterings [guiden för Azure](../azure-management-guide/index.md) beskriver de hanterings verktyg som är tillgängliga i Azure. Innan företaget uppnår sitt åtagande bör det fastställas en acceptabel hanterings bas linje på standard nivå som ska tillämpas på alla hanterade arbets belastningar. DEN beräknar sedan en standard hanterings kostnad för var och en av de hanterade arbets belastningarna i IT-portföljen, baserat på antalet processor kärnor, disk utrymme och andra variabler som är relaterade till till gångar. Det skulle också uppskatta ett sammansatt service avtal för varje arbets belastning, baserat på arkitekturen.
 
 > [!TIP]
 > IT-avdelningen använder ofta ett minimum av 99,9 procents drift tid för det första sammansatta service avtalet. De kan också välja att normalisera hanterings kostnader baserat på den genomsnittliga arbets belastningen, särskilt för lösningar med minimala loggnings-och lagrings behov. Genomsnitts kostnaden för ett fåtal arbets belastningar med medelhög allvarlighets grad kan ge en start punkt för inledande konversationer.

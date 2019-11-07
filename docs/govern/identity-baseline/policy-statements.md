@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 39742436ab6c4a176e40ce8188c13cca55f23521
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 118a111ae787e58d1f50704216e921a4df43501e
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222126"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753012"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Exempel princip satser för identitets bas linje
 
@@ -67,7 +67,7 @@ Följande exempel på princip satser hanterar vanliga affärs risker för identi
 
 **Princip instruktion:** Distribution av program som kräver kundautentisering måste använda en godkänd identitets leverantör som är kompatibel med den primära identitets leverantören för interna användare.
 
-**Potentiella design alternativ:** Implementera [Federation med Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed) mellan dina interna och kundens identitets leverantörer eller utnyttja [Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b)
+**Potentiella design alternativ:** Implementera [Federation med Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed) mellan dina interna och kundens identitets leverantörer eller Använd [Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b)
 
 ## <a name="identity-reviews"></a>Identitets granskningar
 

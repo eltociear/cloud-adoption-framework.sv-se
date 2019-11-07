@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 2309b56bec38383f9fe80e78e66e01a090701c3c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 6a9d82e0211b36a2d34b54deca50227a62d7298e
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023797"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753122"
 ---
 # <a name="approaches-to-digital-estate-planning"></a>Metoder för att planera för digital egendom
 
@@ -24,7 +24,7 @@ Planering av elektronisk fastighets plan kan ta flera formulär beroende på de 
 
 Den bästa bedömnings metoden utvärderar säkerhets aspekter. Säkerhet omfattar kategorisering av data (hög, medel eller låg inverkan på företaget), efterlevnad, suveränitet och säkerhets risk krav. Den här metoden utvärderar arkitektur komplexitet på hög nivå. Den utvärderar aspekter som autentisering, data struktur, latens krav, beroenden och förväntad för program.
 
-Den uppifrån och ned-metoden mäter också programmets operativa krav, till exempel service nivåer, integrering, underhålls fönster, övervakning och insikter. När alla dessa aspekter har analyser ATS och beaktas, vilket resulterande Poäng som återspeglar det relativa svårigheten att migrera det här programmet till var och en av moln plattformarna: IaaS, PaaS och SaaS.
+Den uppifrån och ned-metoden mäter också programmets operativa krav, till exempel service nivåer, integrering, underhålls fönster, övervakning och insikter. När alla dessa aspekter har analyser ATS och beaktats, vilket resulterande Poäng som återspeglar den relativa svårigheten att migrera det här programmet till varje moln plattform: IaaS, PaaS och SaaS.
 
 Dessutom utvärderar utvärderingen de finansiella fördelarna med programmet, till exempel drift effektivitet, TCO, avkastning på investeringar och andra lämpliga finansiella mått. Utvärderingen undersöker också säsongs beroende för programmet (t. ex. finns det år då efter frågan har uppnåddes?) och total beräknings belastning.
 
@@ -48,7 +48,7 @@ Vi föreslår starkt en stegvis metod, eftersom vi gör för många processer i 
 
 - **Ursprunglig kostnads analys:** Om ekonomisk validering krävs börjar du med en till gångs driven metod, som beskrivs ovan, för att få en inledande kostnads beräkning för hela den digitala fastigheten, utan någon rationalisering. Detta upprättar en benchmark för värsta fall scenario.
 
-- **Migreringsplanering:** När du har monterat ett moln strategi team skapar du en första migrering genom att använda en arbets belastnings driven metod som baseras på deras kollektiva kunskaper och begränsade från intressenter-intervjuer. Den här metoden skapar snabbt en förenklad arbets belastnings utvärdering för att utveckla samarbetet.
+- **Planera migrering:** När du har monterat ett moln strategi team skapar du en första migrering genom att använda en arbets belastnings driven metod som baseras på deras kollektiva kunskaper och begränsade från intressenter-intervjuer. Den här metoden skapar snabbt en förenklad arbets belastnings utvärdering för att utveckla samarbetet.
 
 - **Versions planering:** Vid varje version rensas den återstående migreringen och prioriteras för att fokusera på den mest relevanta företags påverkan. Under den här processen väljs nästa fem till tio arbets belastningar som prioriterade versioner. I det här läget investerar moln strategi teamet tiden för att slutföra en fullständig arbets belastnings driven metod. Den här utvärderingen försenas tills en version justeras bättre på tiden för intressenter. Dessutom försenas investeringen i fullständig analys tills företaget börjar se resultatet från tidigare ansträngningar.
 
