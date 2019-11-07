@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8be46c21a009b7dca11cfc628476ae46315b23e5
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 79102a3664f055489da37fc3de0ec7156c1272ef
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025236"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239826"
 ---
 # <a name="organize-your-azure-resources"></a>Organisera dina Azure-resurser
 
@@ -40,7 +40,7 @@ Du kan tillämpa hanteringsinställningar som principer och rollbaserad åtkomst
 
 Vanligtvis är det bra att tillämpa kritiska inställningar på högre nivåer och projektspecifika krav på lägre nivåer. Till exempel vill du kanske se till att alla resurser för din organisation har distribuerats till vissa regioner. Det gör du med en princip för prenumerationen som anger tillåtna platser. När andra användare i organisationen lägger till nya resursgrupper och resurser framtvingas de tillåtna platserna automatiskt. Läs mer om principer i avsnittet om säkerhet, styrning och efterlevnad i den här guiden.
 
-Om du bara har ett fåtal prenumerationer är det relativt enkelt att hantera dem oberoende av varandra. Men om du har många prenumerationer bör du överväga att skapa en hierarki för hanteringsgrupper för att förenkla hanteringen av dina prenumerationer och resurser. Mer information om hur du hanterar flera prenumerationer finns i [Skalning med flera Azure-prenumerationer](../considerations/scaling-subscriptions.md).
+Om du bara har ett fåtal prenumerationer är det relativt enkelt att hantera dem oberoende av varandra. Men om du har många prenumerationer bör du överväga att skapa en hierarki för hanteringsgrupper för att förenkla hanteringen av dina prenumerationer och resurser. Mer information om hur du hanterar flera prenumerationer finns i [Skalning med flera Azure-prenumerationer](../azure-best-practices/scaling-subscriptions.md).
 
 När du planerar din efterlevnadsstrategi rekommenderar vi att du samarbetar med personer i organisationen med följande roller: säkerhet och efterlevnad, IT-administration, företagsarkitekter, nätverkspersonal och inköp.
 
@@ -79,7 +79,7 @@ Skapa en resursgrupp där du kan lagra resurser som webbappar, databaser och lag
 Du kan läsa mer här:
 
 - [Grunderna i Azure](../considerations/fundamental-concepts.md)
-- [Skalning med flera Azure-prenumerationer](../considerations/scaling-subscriptions.md)
+- [Skalning med flera Azure-prenumerationer](../azure-best-practices/scaling-subscriptions.md)
 - [Förstå åtkomsthantering av resurser i Azure](../../govern/resource-consistency/resource-access-management.md)
 - [Ordna resurser med hanteringsgrupper i Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
 - [Tjänstbegränsningar för prenumerationer](https://docs.microsoft.com/azure/azure-subscription-service-limits)
@@ -130,7 +130,7 @@ Namngivningsreglerna hjälper dig att enkelt identifiera resurser i Azure Portal
 
 - Den operativa sidan bör se till att namnen innehåller den information som IT-teamen behöver. Använd informationen som identifierar arbetsbelastning, program, miljö, prioritet och annan information som är användbar för att hantera resurser.
 
-Olika resurstyper kan ha olika längdgränser och tillåtna tecken, många av dem som anges i Azure-metodtipsartikeln [namngivningskonventioner](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). Mer information och rekommendationer till hjälp för företags molnimplementeringsåtgärder, finns i [vägledning för namngivning och taggning](../considerations/naming-and-tagging.md) Ramverk för molnimplementering.
+Olika resurstyper kan ha olika längdgränser och tillåtna tecken, många av dem som anges i Azure-metodtipsartikeln [namngivningskonventioner](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). Mer information och rekommendationer till hjälp för företags molnimplementeringsåtgärder, finns i [vägledning för namngivning och taggning](../azure-best-practices/naming-and-tagging.md) Ramverk för molnimplementering.
 
 Följande tabell innehåller namngivningsmönster för några exempeltyper av Azure-resurser.
 
@@ -159,9 +159,9 @@ Du kan också använda taggar till mycket annat. Vanliga användningsområden ä
 - **Automation:** Du kan ha skript som körs regelbundet och utför åtgärder baserat på ett taggvärde, som ”ShutdownTime” eller ”DeprovisionDate”.
 - **Fakturering:** Du kan visa taggar på fakturan. Du kan använda dem till att dela in fakturan i områden med taggar som ”CostCenter” eller ”BillTo”.
 
-Varje resurs eller resursgrupp kan innehålla upp till 15 taggnamn-/taggvärdepar. Den här begränsningen gäller dock bara taggar som läggs till direkt för resursgruppen eller resursen.
+Varje resurs eller resursgrupp kan innehålla upp till 50 taggnamn-/taggvärdepar. Den här begränsningen gäller dock bara taggar som läggs till direkt för resursgruppen eller resursen.
 
-Mer taggningsrekommendationer och exempel finns i [vägledningen om taggning](../considerations/naming-and-tagging.md) i Ramverk för molnimplementering.
+Mer taggningsrekommendationer och exempel finns i [vägledningen om taggning](../azure-best-practices/naming-and-tagging.md) i Ramverk för molnimplementering.
 
 ::: zone target="docs"
 

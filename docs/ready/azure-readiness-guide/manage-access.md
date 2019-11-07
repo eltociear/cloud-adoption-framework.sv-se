@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e79966dbcbb00cb59fc88133c3ac62255a395a27
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ced1c366b4eb85c9692e9d65ebdbb034e32bc9b3
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022112"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239877"
 ---
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>Hantera åtkomst till Azure-miljön med rollbaserad åtkomstkontroll
 
@@ -29,7 +29,7 @@ När du planerar din strategi för åtkomstkontroll ska du ge användarna den l�
 
 När du planerar din strategi för åtkomstkontroll rekommenderar vi att du samarbetar med personer i ditt företag som är ansvariga för följande: säkerhet och efterlevnad, IT-administration och företagsarkitektur.
 
-Ramverk för molnimplementering ger ytterligare vägledning om hur [du använder rollbaserad åtkomstkontroll](../azure-best-practices/roles.md) som en del av molnimplementeringen.
+Ramverk för molnimplementering ger ytterligare vägledning om hur [du använder rollbaserad åtkomstkontroll](../considerations/roles.md) som en del av molnimplementeringen.
 
 ::: zone target="chromeless"
 
@@ -88,6 +88,6 @@ Bevilja användaråtkomst till en prenumeration:
 Du kan läsa mer här:
 
 - [Vad är rollbaserad åtkomstkontroll (RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
-- [Ramverk för molnimplementering: Använd rollbaserad åtkomstkontroll](../azure-best-practices/roles.md)
+- [Ramverk för molnimplementering: Använd rollbaserad åtkomstkontroll](../considerations/roles.md)
 
 ::: zone-end

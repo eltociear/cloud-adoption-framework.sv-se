@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: fe7614d29ba6a6baba99cd447d65bc30e3396bec
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 6c1e253d2ff49c331f4f1c153124f2ca06c81c36
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058535"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565552"
 ---
 ::: zone target="docs"
 
@@ -106,10 +106,6 @@ Så här skapar du en dataresurs:
 <!-- markdownlint-enable DOCSMD001 -->
 
 ::: zone-end
-
-Använd [Azure Open Datasets](https://docs.microsoft.com/azure/open-datasets/overview-what-are-open-datasets) för att utöka din analys med data för [helgdagar](https://azure.microsoft.com/services/open-datasets/catalog/public-holidays), [väder](https://azure.microsoft.com/services/open-datasets/catalog/noaa-global-forecast-system) och [rumsliga bilder](https://azure.microsoft.com/services/open-datasets/catalog/hls) i dina modeller.
-
-Nästa steg är att [demokratisera affärsprocesser](https://docs.microsoft.com/business-applications-release-notes/october18/microsoft-flow/democratize-business-processes) och [stärka medborgarutvecklare](https://docs.microsoft.com/business-applications-release-notes/october18/microsoft-flow/empower-citizen-developers).
 
 # <a name="insightstabinsights"></a>[Insikter](#tab/Insights)
 

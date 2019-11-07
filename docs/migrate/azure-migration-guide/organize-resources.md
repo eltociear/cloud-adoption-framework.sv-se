@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: fc0f91ac6c2a4476786935555c4c4305f33a0980
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: e47e7e5f8528580d4aa268fd90e7aa838e5f70ba
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224047"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239953"
 ---
 # <a name="organize-your-azure-resources"></a>Organisera dina Azure-resurser
 
@@ -151,7 +151,7 @@ Du kan också använda taggar till mycket annat. Vanliga användningsområden ä
 
 Varje resurs eller resursgrupp kan innehålla upp till 15 taggnamn-/taggvärdepar. Den här begränsningen gäller dock bara taggar som läggs till direkt för resursgruppen eller resursen.
 
-Mer information om taggar finns i [Azure Architecture Centers namngivningskonventioner för Azure-resurser](../../ready/considerations/naming-and-tagging.md#metadata-tags)
+Mer information om taggar finns i [Azure Architecture Centers namngivningskonventioner för Azure-resurser](../../ready/azure-best-practices/naming-and-tagging.md#metadata-tags)
 
 ::: zone target="docs"
 
