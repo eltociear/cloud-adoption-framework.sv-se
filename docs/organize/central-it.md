@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: dcf98227f6464b71d0e3e3a1bc0bf505c149254b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 25e9ecd4d911766864d81a5ff34f00caf82e86bf
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564281"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753639"
 ---
 # <a name="central-it-capabilities"></a>Centrala IT-funktioner
 
 Som en skalning i molnet kanske moln styrnings funktioner inte räcker till för att reglera antagande ansträngningar. När antagandet är gradvis, tenderar teamen att utveckla de kunskaper och processer som behövs för molnet över tid.
 
-Om ett moln antagande team utnyttjar molnet för att uppnå affärs resultat med hög profil, är det dock sällan fallet. Lyckades efter lyckad. Detta gäller även för moln införande, men det sker i moln skala. När moln införande utökas från ett team till flera team relativt snabbt, krävs ytterligare support från befintlig IT-personal. Dessa personal medlemmar kan dock sakna den utbildning och erfarenhet som krävs för att stödja molnet med molnbaserade IT-verktyg. Detta driver ofta bildande av ett centralt IT-team som styr molnet.
+Men när ett moln antagande team använder molnet för att uppnå affärs resultat med hög profil, är den gradvisa användningen sällan. Lyckades efter lyckad. Detta gäller även för moln införande, men det sker i moln skala. När moln införande utökas från ett team till flera team relativt snabbt, krävs ytterligare support från befintlig IT-personal. Dessa personal medlemmar kan dock sakna den utbildning och erfarenhet som krävs för att stödja molnet med molnbaserade IT-verktyg. Detta driver ofta bildande av ett centralt IT-team som styr molnet.
 
 > [!CAUTION]
 > Även om det här är ett vanligt förfallo steg, kan det utgöra en hög risk för att anta, eventuellt blockera innovationer och migrering av migrering om de inte hanteras effektivt. Se avsnittet risk nedan för att lära dig hur du kan minska risken för att centralisering blir ett kulturellt antimönster.
@@ -105,7 +105,7 @@ Det här exemplet illustrerar den metod som en vuxen central IT-grupp har vidtag
 
 Contoso har LLC infört en central IT-modell för support för företagets moln resurser. För att leverera den här modellen har de implementerat tätt kontroller för olika delade tjänster, t. ex. inkommande nätverks anslutningar. Den här åtgärden förminskar exponeringen för moln miljön och tillhandahöll en enda "Break-glas"-enhet för att blockera all trafik i händelse av en överträdelse. Deras principer för säkerhets bas linjen är att all inkommande trafik måste komma via en delad enhet som hanteras av centrala IT-teamet.
 
-Men en av deras moln antagande team kräver nu en miljö med en dedikerad och särskilt konfigurerad ingångs nätverks anslutning för att utnyttja en viss moln teknik. Ett inmogna central IT-team skulle bara neka begäran och prioritera sina befintliga processer vid implementerings behov. Contosos centrala IT-team är annorlunda. De identifierade snabbt en enkel lösning med fyra delar till denna dilemma: klassificering, förhandling, isolering och automatisering.
+Men en av deras moln antagande team kräver nu en miljö med en dedikerad och särskilt konfigurerad ingångs nätverks anslutning för att använda en viss moln teknik. Ett inmogna central IT-team skulle bara neka begäran och prioritera sina befintliga processer vid implementerings behov. Contosos centrala IT-team är annorlunda. De identifierade snabbt en enkel lösning med fyra delar till denna dilemma: klassificering, förhandling, isolering och automatisering.
 
 **Klassificering:** Eftersom moln implementerings teamet var i det tidiga skedet av att skapa en ny lösning och inte hade några känsliga data eller verksamhets kritiska support behov, klassificeras till gångarna i miljön som låg risk och icke-kritisk. En effektiv klassificering är ett tecken på förfallo tid i Central IT. Att klassificera alla till gångar och miljöer gör det möjligt att göra mer tydligare principer.
 

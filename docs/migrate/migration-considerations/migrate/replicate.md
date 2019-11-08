@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 62c12796abf8921c13cebe471fe555d012bab15c
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: cd76991fc7d8b13302e4614cf9e57da740f650d8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549126"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753699"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -38,7 +38,7 @@ Vid planering för replikeringen av en binär källa till en ny destination finn
 - **Ljusets hastighet.** Vid flytt av stora volymer med data är fiber fortfarande det snabbaste alternativet. Tyvärr sker överföringen i dessa kablar bara med två tredjedelar av ljusets hastighet. Det innebär att det inte finns någon metod för omedelbar eller obegränsad datareplikering.
 - **Hastigheten för WAN-pipeline.** Mer sekventiella än hastigheten på data förflyttning är bandbredden för överordnad länk, som definierar data mängden per sekund som kan överföras till ett företags befintliga WAN till mål data centret.
 - **Utökning av WAN-hastigheten.** Om det finns utrymme i budgeten kan ytterligare bandbredd läggas till i ett företags WAN-lösning. Det kan dock ta flera veckor eller månader att köpa, etablera och integrera ytterligare fiberanslutningar.
-- **Hastigheten för diskar.** Även om data kunde flyttas snabbare och det inte hade funnits någon gräns för bandbredden mellan källbinärkoden och destinationen skulle fysiken ändå utgöra en begränsning. Data kan endast replikeras så snabbt som de kan läsas från källdiskar. Det tar tid att läsa varje etta eller nolla från varje snurrande disk i ett datacenter.
+- **Hastigheten för diskar.** Även om data kunde flyttas snabbare och det inte hade funnits någon gräns för bandbredden mellan källbinärkoden och destinationen skulle fysiken ändå utgöra en begränsning. Data kan bara replikeras så fort de kan läsas från käll diskar. Det tar tid att läsa varje etta eller nolla från varje snurrande disk i ett datacenter.
 - **Hastigheten för mänskliga beräkningar.** Diskar och ljus är snabbare än mänskliga beslutsprocesser. När en grupp människor måste samarbeta och fatta beslut tillsammans sker resultat ännu långsammare. Replikeringen kan aldrig förbigå fördröjningar som rör människors aktiviteter.
 
 Var och en av dessa fysiklagar medför följande risker som ofta påverkar migreringsplaner:

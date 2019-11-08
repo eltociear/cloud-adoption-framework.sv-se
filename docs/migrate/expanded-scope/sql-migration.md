@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 444530a603d7d7e77bb71592a061486db835ea56
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 71632e8f3f995922f4021f216f2090b742141169
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566898"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753534"
 ---
 # <a name="accelerate-migration-by-migrating-an-instance-of-sql-server"></a>Påskynda migreringen genom att migrera en instans av SQL Server
 
@@ -102,7 +102,7 @@ Den föreslagna sökvägen för migrering och synkronisering använder en kombin
 
 ### <a name="guidance-and-tutorials-for-suggested-migration-process"></a>Vägledning och självstudier för föreslagen migreringsprocessen
 
-Att välja den bästa vägledningen för migrering genom att använda Database Migration Service är beroende av den källa och mål plattform som du väljer. Följande tabell länkar till självstudier för var och en av standard metoderna för att migrera en SQL-databas med hjälp av Database Migration Service.
+Att välja den bästa vägledningen för migrering genom att använda Azure Database Migration Service är beroende av den källa och mål plattform som du väljer. Följande tabell länkar till självstudier för var och en av standard metoderna för att migrera en SQL-databas med hjälp av Azure Database Migration Service.
 
 |Källa  |Målinrikta  |Verktyg  |Typ av migrering  |Vägledning  |
 |---------|---------|---------|---------|---------|
@@ -114,7 +114,7 @@ Att välja den bästa vägledningen för migrering genom att använda Database M
 
 ### <a name="guidance-and-tutorials-for-various-services-to-equivalent-paas-solutions"></a>Vägledning och självstudier för olika tjänster till motsvarande PaaS-lösningar
 
-När du har flyttat databaser från en instans av SQL Server till Database Migration Service kan schemat och data vara värd för i ett antal PaaS-lösningar. Andra nödvändiga tjänster kan dock fortfarande köras på den servern. Följande tre självstudier hjälper dig att flytta SSIS, SSAS och SSRS till motsvarande PaaS-tjänster på Azure.
+När du har flyttat databaser från en instans av SQL Server till Azure Database Migration Service kan schemat och data vara värd för i ett antal PaaS-lösningar. Andra nödvändiga tjänster kan dock fortfarande köras på den servern. Följande tre självstudier hjälper dig att flytta SSIS, SSAS och SSRS till motsvarande PaaS-tjänster på Azure.
 
 |Källa  |Målinrikta  |Verktyg  |Typ av migrering  |Vägledning  |
 |---------|---------|---------|---------|---------|

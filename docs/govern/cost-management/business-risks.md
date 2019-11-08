@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 72d97057484ff757c94ab24a886d1232f01e5ee3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 49fcfb3558da82e34f33f54c4e36780606b1e47d
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223618"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753252"
 ---
 # <a name="cost-management-motivations-and-business-risks"></a>Cost Management motivation och affärs risker
 
@@ -45,7 +45,7 @@ Riskerna varierar mellan olika organisationer, men följande fungerar som vanlig
 
 Använd [moln hanterings mal len](./template.md)för att dokumentera affärs risker som sannolikt kommer att introduceras av den aktuella moln implementerings planen.
 
-När en förståelse av realistiska affärs risker har upprättats är nästa steg att dokumentera affärs toleransen för risker och indikatorer och viktiga mått för att övervaka den toleransen.
+När du har fått förståelse för realistiska affärs risker är nästa steg att dokumentera affärs toleransen för risker och indikatorer och viktiga mått för att övervaka den toleransen.
 
 > [!div class="nextstepaction"]
 > [Förstå indikatorer, mått och risk tolerans](./metrics-tolerance.md)

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 34d9cd3252849353b0fe765db4d84f7e9f2e5ea7
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 05b713c2f1f88f50829e38db8a0a0343d3afd32d
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549141"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753509"
 ---
 # <a name="evaluate-workload-readiness"></a>Utvärdera beredskap för arbetsbelastningar
 
@@ -21,7 +21,7 @@ Den här aktiviteten fokuserar på utvärdering av en arbetsbelastnings beredska
 
 ## <a name="evaluation-assumptions"></a>Utvärderingsantaganden
 
-De flesta av de principer som rör innehåll i ramverket för molnimplementering är avsedda att vara molnoberoende. Processen för beredskapsutvärdering måste dock huvudsakligen gälla specifikt för varje enskild molnplattform. Följande vägledning förutsätter en avsikt att migrera till Azure. Den förutsätter även användning av Azure Migrate (som även kallas Azure Site Recovery) för [replikeringsaktiviteter](../migrate/replicate.md). Alternativa verktyg beskrivs i [replikeringsalternativ](../migrate/replicate-options.md).
+De flesta av Contents-principerna i Cloud adoption Framework är Cloud oberoende. Processen för beredskapsutvärdering måste dock huvudsakligen gälla specifikt för varje enskild molnplattform. Följande vägledning förutsätter en avsikt att migrera till Azure. Den förutsätter även användning av Azure Migrate (som även kallas Azure Site Recovery) för [replikeringsaktiviteter](../migrate/replicate.md). Alternativa verktyg beskrivs i [replikeringsalternativ](../migrate/replicate-options.md).
 
 Den här artikeln är inte avsedd att behandla alla tänkbara utvärderingsaktiviteter. Det förutsätts att varje miljö och affärsresultat avgör de specifika kraven. För att påskynda skapandet av dessa krav delar resten av den här artikeln några vanliga utvärderingsaktiviteter som rör utvärdering av [infrastruktur](#common-infrastructure-evaluation-activities), [databaser](#common-database-evaluation-activities) och [nätverk](#common-network-evaluation-activities).
 

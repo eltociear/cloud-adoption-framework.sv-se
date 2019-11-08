@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 842143afbb042ceddee5029a3fa86d0aa8cdd997
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 415e7b456cc342f7a749cd98a55e573a46563bf4
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564554"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753678"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Förbered dig för teknisk komplexitet: smidig förändringsledning
 
@@ -50,7 +50,7 @@ Inledningsvis är det osannolikt att de migreringsuppgifterna uppfyller INVEST-k
 
 *Loggarna för migrering-, lanserings- och iterationsuppgifter spårar olika aktivitetsnivåer under migreringsprocessen.*
 
-I migreringsuppgifterna bör förändringsledningsteamet försöka inhämta följande information för alla arbetsbelastningar i planen. Dessa data bör minst vara tillgängliga för arbetsbelastningar som prioriteras för migrering under de kommande två eller tre lanseringarna.
+I migreringsuppgifterna bör förändringsledningsteamet försöka inhämta följande information för alla arbetsbelastningar i planen. Dessa data bör minst vara tillgängliga för alla arbets belastningar som prioriteras för migrering i de kommande två eller tre versionerna.
 
 ### <a name="migration-backlog-data-points"></a>Datapunkter i migreringsuppgifter
 
@@ -107,7 +107,7 @@ För en liten migrering med ett fristående migreringsteam kan en enda spurt omf
 
 ### <a name="sprint-backlog-data-points"></a>Datapunkter i spurtuppgifter
 
-Efter en spurt inhämtas och dokumenteras ändringarna i arbetsbelastningen vilket stänger förändringsledningscykeln. När det är klart bör som minst följande dokumenteras. Under hela körningen av spurten bör denna dokumentation skapas i fas med de tekniska uppgifterna.
+Efter en spurt inhämtas och dokumenteras ändringarna i arbetsbelastningen vilket stänger förändringsledningscykeln. När det är klart bör följande dokumenteras. Under hela körningen av spurten bör denna dokumentation skapas i fas med de tekniska uppgifterna.
 
 - **Distribuerade tillgångar.** Alla tillgångar som distribueras till molnet som värd för arbetsbelastningen.
 - **Åtgärder.** Eventuella ändringar i tillgångarna för att förbereda för migrering av molnet.

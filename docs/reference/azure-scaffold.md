@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 79d784b65a2006559efc9f074b319ea67de67db0
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: 799ab1ba0d0b99ed5427d2c986c4fae9659a5b05
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656666"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753768"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure Enterprise-Autogenerera: handskriven prenumerations styrning
 
@@ -195,13 +195,13 @@ En av de största blocken till moln implementeringen har traditionellt sett någ
 > [!TIP]
 >Azure Security Center är ett kraftfullt verktyg som förbättras regelbundet med nya funktioner som du kan använda för att identifiera hot och skydda ditt företag. Vi rekommenderar starkt att du alltid aktiverar Azure Security Center.
 
-### <a name="azure-resource-locks"></a>Resurs lås för Azure
+### <a name="locks-for-azure-resources"></a>Lås för Azure-resurser
 
-När din organisation lägger till kärn tjänster för prenumerationer blir det allt viktigt att undvika affärs avbrott. En typ av avbrott som vi ofta ser är oavsiktliga följder av skript och verktyg som arbetar mot en Azure-prenumeration som tar bort resurser av misstag. Med [resurs lås](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources) kan du begränsa åtgärder på resurser med högt värde, där ändringar eller borttagning av dem skulle ha en betydande inverkan. Lås tillämpas på en prenumeration, resurs grupp eller till och med enskilda resurser. Det vanliga användnings fallet är att tillämpa lås till grundläggande resurser, till exempel virtuella nätverk, gatewayer, nätverks säkerhets grupper och nyckel lagrings konton.
+När din organisation lägger till kärn tjänster för prenumerationer blir det allt viktigt att undvika affärs avbrott. Ett vanligt avbrott inträffar när ett skript eller verktyg som körs i en Azure-prenumeration oavsiktligt tar bort en resurs. [Lås](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources) begränsar åtgärder på hög värdes resurser där ändringar eller borttagning av dem skulle ha en betydande inverkan. Du kan använda Lås till prenumerationer, resurs grupper eller enskilda resurser. Använd lås till grundläggande resurser, till exempel virtuella nätverk, gateways, nätverks säkerhets grupper och nyckel lagrings konton.
 
-### <a name="secure-devops-toolkit"></a>Secure DevOps Toolkit
+### <a name="secure-devops-kit-for-azure"></a>Secure DevOps kit för Azure
 
-Secure DevOps kit för Azure (AzSK) är en samling skript, verktyg, tillägg och automatiserings funktioner som ursprungligen har skapats av Microsofts egna IT-team och [lanserats som öppen källkod via GitHub](https://github.com/azsk/DevOpsKit-docs). AzSK fokuserar på Azure-prenumerations-och resurs säkerhets behoven från slut punkt till slut punkt för team som använder omfattande automatisering och smidig integrering av säkerhet i interna DevOps-arbetsflöden som gör det lättare att göra säkra DevOps med de sex fokus områdena:
+Secure DevOps kit för Azure (AzSK) är en samling skript, verktyg, tillägg och automatiserings funktioner som ursprungligen har skapats av Microsofts egna IT-team och [lanserats som öppen källkod via GitHub](https://github.com/azsk/devopskit-docs). AzSK fokuserar på Azure-prenumerations-och resurs säkerhets behoven från slut punkt till slut punkt för team som använder omfattande automatisering och smidig integrering av säkerhet i interna DevOps-arbetsflöden som gör det lättare att göra säkra DevOps med de sex fokus områdena:
 
 - Skydda prenumerationen
 - Aktivera säker utveckling
@@ -210,7 +210,7 @@ Secure DevOps kit för Azure (AzSK) är en samling skript, verktyg, tillägg och
 - Avisering och övervakning
 - Moln risk styrning
 
-![Azure DevOps Toolkit](../_images/reference/secure-devops-kit.png)
+![Översikts diagram över Secure DevOps kit för Azure](../_images/reference/secure-devops-kit.png)
 
 AzSK är en omfattande uppsättning verktyg, skript och information som är en viktig del av en fullständig Azures styrnings plan och som införlivar detta i din Autogenerera är avgörande för att stödja organisationernas risk hanterings mål.
 
@@ -228,7 +228,7 @@ Att samla in och analysera telemetri som ger detaljerad information om aktivitet
 
 Den här informationen kan visas och åtgärdas på flera nivåer och förbättras kontinuerligt. Azure tillhandahåller **delade**, **grundläggande**och **djup** övervaknings funktioner i Azure-resurser genom de tjänster som beskrivs i diagrammet nedan.
 
-![Granska](../_images/reference/monitoring.png)
+![granska](../_images/reference/monitoring.png)
 
 ### <a name="shared-capabilities"></a>Delade funktioner
 

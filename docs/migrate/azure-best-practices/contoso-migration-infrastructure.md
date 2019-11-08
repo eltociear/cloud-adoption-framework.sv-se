@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 9d68aca88d9f2ae992616df4b493bcf3c35fc122
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3eace4b20fac9e22fa8aeaa2d4b7f55a33743e47
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566503"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751841"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Distribuera en migreringsinfrastruktur
 
@@ -654,7 +654,7 @@ Principer innehåller en principdefinition. En principtilldelning anger i vilket
 
 Contoso vill komma igång med ett par principer:
 
-- De vill ha en princip för att säkerställa att resurserna bara kan distribueras i regionerna EUS2 och CUS.
+- Den vill ha en princip för att säkerställa att resurser endast kan distribueras i EUS2 och CUS-regionerna.
 - De vill begränsa SKU:er för virtuella datorer till endast godkända SKU:er. Avsikten är att se till att dyra SKU:er för virtuella datorer inte används.
 
 #### <a name="limit-resources-to-regions"></a>Begränsa resurser till regioner
@@ -780,7 +780,7 @@ Nätverkssäkerhetsgrupperna som är associerade med programsäkerhetsgrupperna 
 
 **Åtgärd** | **Namn** | **Källa** | **Mål** | **Port**
 --- | --- | --- | --- | ---
-Tillåt | AllowiInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
+Tillåt | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
 Tillåt | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
 Tillåt | AllowAppToDB | APP1-APP | APP1-DB | 1433
 Neka | DenyAllInbound | Alla | Alla | Alla

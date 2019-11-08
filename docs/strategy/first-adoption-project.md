@@ -1,5 +1,5 @@
 ---
-title: Första moln införande projekt
+title: Det första molnimplementeringsprojektet
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig mer om hur du implementerar ditt första moln införande projekt.
 author: BrianBlanchard
@@ -8,16 +8,16 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 46c7d77aecc93f5c129f098145bfec97820995a2
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: e0ddf68f959130df11305a9791c553aa48009c01
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378080"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753794"
 ---
 <!-- markdownlint-disable MD026 -->
 
-# <a name="first-cloud-adoption-project"></a>Första moln införande projekt
+# <a name="first-cloud-adoption-project"></a>Det första molnimplementeringsprojektet
 
 Det finns en inlärnings kurva och ett tids åtagande som är kopplat till moln implementerings planeringen. Även för erfarna grupper tar det tid att planera tid: tid för att anpassa intressenter, tid för att samla in och analysera data, tid för att verifiera långsiktiga beslut och tid för att justera personer, processer och teknik. I de flesta effektiva implementerings ansträngningar ökar planeringen parallellt med införande, vilket förbättrar med varje version och med varje migrering till molnet. Det är viktigt att förstå skillnaden mellan en moln implementerings plan och en moln införande strategi. Du behöver en väldefinierad strategi för att under lätta och vägleda implementeringen av en moln implementerings plan.
 
@@ -63,7 +63,7 @@ Ytterligare exempel på första antagande projekt är:
 - **Utveckling/testning:** Ta bort dev/test från lokala miljöer för att ge utvecklare kontroll, flexibilitet och självbetjänings kapacitet.
 - **Enkla appar (mindre än fem):** Modernisera och migrera en enkel app för att snabbt få utvecklare och drifts upplevelser.
 - **Prestanda labb:** När du behöver storskalig prestanda i en labb inställning använder du molnet för att snabbt och kostnads effektivt tillhandahålla dessa labb under en kort tid.
-- **Data plattform:** Skapa en data Lake med skalbar beräkning för analys, rapportering eller Machine Learning-arbetsbelastningar och migrera till hanterade databaser med hjälp av dumpnings-/återställnings metoder eller data flyttnings tjänster.
+- **Data plattform:** Skapa en data Lake med skalbar beräkning för analys, rapportering eller Machine Learning-arbetsbelastningar och migrera till hanterade databaser med hjälp av dump/Restore-metoder eller data migrations tjänster.
 
 ## <a name="next-steps"></a>Nästa steg
 

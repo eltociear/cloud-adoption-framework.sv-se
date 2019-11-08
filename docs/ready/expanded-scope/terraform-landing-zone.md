@@ -8,12 +8,12 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: deebe6db08d573872f67d79f734d1f65a85c6904
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 62f6f8f52d669c2822b822218612986be4503378
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561692"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753751"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Använd terraform för att bygga landnings zoner
 
@@ -33,7 +33,7 @@ Den första landnings zonen distribuerar följande komponenter i din prenumerati
 
 ![Foundation-landnings zon med terraform](../../_images/ready/foundations-terraform-landingzone.png)
 
-## <a name="capabilities"></a>Funktioner
+## <a name="capabilities"></a>Kapacitet
 
 De komponenter som distribueras och deras syfte är följande:
 
@@ -74,7 +74,7 @@ Följande beslut visas i terraform landnings zon:
 | Hanteringsgrupper | Saknas – utformad för en enda produktionsprenumeration. |[Skalanpassa prenumerationer](../azure-best-practices/scaling-subscriptions.md) |
 | Resursgrupper | Saknas – utformad för en enda produktionsprenumeration. | [Skalanpassa prenumerationer](../azure-best-practices/scaling-subscriptions.md) |
 | Data | Gäller inte | [Välj rätt SQL Server alternativ i Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) och [Azure Data Store vägledning](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Storage|Gäller inte|[Riktlinjer för Azure Storage](../considerations/storage-options.md) |
+|Lagring|Gäller inte|[Riktlinjer för Azure Storage](../considerations/storage-options.md) |
 | Namngivningsregler | När miljön skapas skapas även ett unikt prefix. Resurser som kräver ett globalt unikt namn (till exempel lagrings konton) använder det här prefixet. Det anpassade namnet läggs till med ett slumpmässigt suffix. Tagga användningen bestäms enligt beskrivningen i följande tabell. | [Metodtips för namngivning och taggning](../azure-best-practices/naming-and-tagging.md) |
 | Kostnadshantering | Gäller inte | [Spåra kostnader](../azure-best-practices/track-costs.md) |
 | Databearbetning | Gäller inte | [Compute-alternativ](../considerations/compute-options.md) |
@@ -87,7 +87,7 @@ Följande uppsättning med lägsta Taggar måste finnas på alla resurser och re
 |--|--|--|--|
 | Affär senhet | Avdelning på toppnivå för ditt företag som äger prenumerationen eller arbetsbelastningen som resursen tillhör. | BusinessUnit | EKONOMI, marknadsföring, {produkt namn}, CORP, delad |
 | Kostnadsställe | Kostnadsställe som associeras med resursen.| CostCenter | Tal |
-| Haveriberedskap | Programmet, arbetsbelastningen eller tjänstens affärskritiskhet. | AR | DR-AKTIVERAD, ICKE-DR-AKTIVERAD |
+| Katastrofåterställning | Programmet, arbetsbelastningen eller tjänstens affärskritiskhet. | AR | DR-AKTIVERAD, ICKE-DR-AKTIVERAD |
 | Miljö | Programmet, arbetsbelastningen eller tjänstens distributionsmiljö. |  Kuvert | Produktion, utveckling, frågor och svar, Stage, test, utbildning |
 | Ägar namn | Programmet, arbetsbelastningen eller tjänstens ägare.| Ägare | e-post |
 | Distributions typ | Definierar hur resurserna upprätthålls. | deploymentType | Manuell, terraform |
@@ -189,7 +189,7 @@ security_center = {
 }
 ```
 
-## <a name="get-started"></a>Kom igång
+## <a name="get-started"></a>Kom i gång
 
 När du har granskat konfigurationen kan du distribuera konfigurationen på samma sätt som du distribuerar en terraform-miljö. Vi rekommenderar att du använder Rover, som är en Docker-behållare som tillåter distribution från Windows, Linux eller MacOS. Du kan komma igång med [Rover GitHub-lagringsplatsen](https://github.com/aztfmod/rover).
 
@@ -200,9 +200,9 @@ I bas landnings zonen fördelas en komplicerad miljö på ett sammansatt sätt. 
 - Lägga till andra moduler till skissen.
 - Skiktning av ytterligare landnings zoner ovanpå den.
 
-Skiktning av landnings zoner är en bra metod för att koppla från system, versions hantering av varje komponent som du använder och möjliggör snabb innovation och stabilitet för din infrastruktur som kod distribution.
+Att skikta landnings zoner är en bra metod för att koppla från system, versions hantering av varje komponent som du använder och möjliggör snabb innovation och stabilitet för din infrastruktur som kod distribution.
 
-Framtida referens arkitekturer visar det här konceptet för en nav-och-eker-topologi.
+Framtida referens arkitekturer visar det här konceptet för en nav-och eker-topologi.
 
 > [!div class="nextstepaction"]
 > [Granska exemplet för bas zon för terraform-vilplan](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)

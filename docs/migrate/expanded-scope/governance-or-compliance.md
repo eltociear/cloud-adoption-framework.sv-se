@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3367a76be508b61c214210e9e712c8a310932f2e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c363f038b5fed3f2c8636b9b15a09625ca42218f
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566915"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753548"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategi för styrning eller efterlevnad
 
@@ -47,7 +47,7 @@ Under utvärderingen krävs ytterligare beslut för att anpassa lösningen till 
 
 ### <a name="suggested-action-during-the-assess-process"></a>Föreslagna åtgärder under utvärderingsprocessen
 
-Kraven på styrning och bedömning av efterlevnad är för kundspecifika för att kunna ge allmänna riktlinjer för utvärderingsstegen. Det rekommenderas dock att processen omfattar uppgifter och tidstilldelningar för "justeringar i förhållande till efterlevnads-/styrningskrav”. För att förstå dessa krav bättre kan du följa följande länkar:
+Kraven på styrning och bedömning av efterlevnad är för kundspecifika för att kunna ge allmänna riktlinjer för utvärderingsstegen. Processen bör dock innehålla uppgifter och tidsallokeringar för "justering av krav på efterlevnad/styrning". För att förstå dessa krav bättre kan du följa följande länkar:
 
 För en djupare förståelse för styrningen, se [översikten Fem discipliner för molnstyrning](../../govern/governance-disciplines.md). Det här avsnittet av Ramverk för molnimplementering innehåller även mallar för att dokumentera principerna, vägledningen och kraven för var och en av de fem avsnitten:
 
@@ -61,15 +61,15 @@ Vägledning om hur du utvecklar styrningsriktlinjer baserade på styrningsmodell
 
 ## <a name="optimize-and-promote-process-changes"></a>Optimera och höja upp processändringar
 
-Under optimerings- och uppflyttningsprocesserna rekommenderar vi att molnstyrningsteamet investerar tid i att testa och kontrollera överensstämmelse med styrnings- och efterlevnadskrav. Det här steget är också ett lämpligt tillfälle att mata in processer som molnstyrningsteamet kan omvandla till mallar som kan [accelerera distributionen](../../govern/deployment-acceleration/index.md) ytterligare för framtida projekt.
+Under optimerings-och marknadsförings processerna investerar shluld för moln styrning tid för att testa och validera efterlevnad av styrning och efterlevnad. Det här steget är också ett lämpligt tillfälle att mata in processer som molnstyrningsteamet kan omvandla till mallar som kan [accelerera distributionen](../../govern/deployment-acceleration/index.md) ytterligare för framtida projekt.
 
 ### <a name="suggested-action-during-the-optimize-and-promote-process"></a>Föreslagen åtgärd i samband med optimering och uppflyttning
 
-Under den här processen rekommenderar vi att projektplanen avsätter tid molnstyrningsteamet så att de kan utföra en efterlevnadsgranskning för varje arbetsbelastning som flyttas upp.
+Under den här processen bör projekt planen omfatta tidsallokeringar för moln styrnings teamet för att utföra en kompatibilitetskontroll för varje arbets belastning som planeras för produktions befordran.
 
 ## <a name="next-steps"></a>Nästa steg
 
-Den sista punkten på den [utökade checklistan](./index.md) är att gå tillbaka till checklistan och överväga eventuella omfångsbehov som migrationen kan ha.
+Som det sista objektet i den [expanderade check listan](./index.md), gå tillbaka till check listan och utvärdera eventuella ytterligare omfångs krav för migreringen.
 
 > [!div class="nextstepaction"]
 > [Utökad checklista](./index.md)

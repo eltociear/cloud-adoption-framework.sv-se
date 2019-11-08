@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f761f85fa4b21b35e8428985707176624b92a5ec
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b19357bd98858cc227426d2adb03a6e84210b9b3
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027461"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753788"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -41,7 +41,7 @@ Utmaningen med kund beteende mått är att de enkelt kan påverkas av yttre vari
 
 ## <a name="data-innovation"></a>Data innovation
 
-Att ändra en bransch, avbryta marknader eller omvandla produkter/tjänster kan ta flera år. I en molnbaserad data Innovations ansträngning är experimentet viktiga för att mäta framgång. Var transparent genom att dela förutsägelse mått som procent sannolikhet, antal misslyckade experiment och mängden modeller som har tränats. Felen kommer att ackumuleras snabbare än vad som lyckas. De här måtten kan vara discouraging och det är viktigt att ledningen förstår den tid och investering som krävs för att utnyttja data korrekt.
+Att ändra en bransch, avbryta marknader eller omvandla produkter och tjänster kan ta flera år. I en molnbaserad data Innovations ansträngning är experimentet viktiga för att mäta framgång. Var transparent genom att dela förutsägelse mått som procent sannolikhet, antal misslyckade experiment och antalet modeller som har tränats. Felen kommer att ackumuleras snabbare än vad som lyckas. Dessa mått kan vara discouraging och Executive-teamet måste förstå vilken tid och investering som krävs för att kunna använda dessa mått korrekt.
 
 Å andra sidan är en del positiva indikatorer ofta kopplade till data driven inlärning: centralisering av heterogena data uppsättningar, data ingångar och democratization av data. När teamet har lärt oss om kunden i morgon kan du skapa verkliga resultat idag. Stödjande inlärnings mått kan vara:
 
@@ -55,7 +55,7 @@ Ett ännu mer värdefullt mått är antalet instrument paneler som skapats från
 
 ## <a name="next-steps"></a>Nästa steg
 
-När inlärnings måtten har justerats är du redo att börja [utvärdera den digitala fastigheten](../digital-estate/index.md) mot dessa mått. Resultatet blir en omvandling efter [släpning eller](../migrate/migration-considerations/prerequisites/technical-complexity.md)efter släpning för migrering.
+När inlärnings måtten har justerats är du redo att börja [utvärdera den digitala fastigheten](../digital-estate/index.md) mot dessa mått. Resultatet blir en omvandling efter [släpning eller efter släpning för migrering](../migrate/migration-considerations/prerequisites/technical-complexity.md).
 
 > [!div class="nextstepaction"]
 > [Utvärdera den digitala fastigheten](../digital-estate/index.md)

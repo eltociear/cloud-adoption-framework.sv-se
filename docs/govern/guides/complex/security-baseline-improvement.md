@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 99155a4dba7c51c5fc5d1888798275c47f870d5e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a8cf7c6bb09d2f4c505e3edcb97a0354a870a730
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566271"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753203"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Styrnings guide för komplexa företag: förbättra säkerhets bas linje disciplinen
 
@@ -98,7 +98,7 @@ Följande ändringar i principen hjälper dig att åtgärda de nya riskerna och 
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>Stegvis förbättring av bästa praxis
 
-Det här avsnittet av artikeln ändrar designen för styrnings MVP till att inkludera nya Azure-principer och en implementering av Azure Cost Management. Tillsammans kommer dessa två design ändringar att uppfylla de nya företags princip satserna.
+Det här avsnittet ändrar designen för styrnings MVP till att inkludera nya Azure-principer och en implementering av Azure Cost Management. Tillsammans kommer dessa två design ändringar att uppfylla de nya företags princip satserna.
 
 De nya bästa metoderna är i två kategorier: företags IT (hubb) och molnbaserad adoption (eker).
 
@@ -108,7 +108,7 @@ De nya bästa metoderna är i två kategorier: företags IT (hubb) och molnbaser
 2. Mall för hubb och eker:
     1. Rikt linjerna i [topologin hubb och eker med delade tjänster](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) kan användas för att skapa Resource Manager-mallar för de till gångar som krävs i en företags IT-hubb.
     2. Med hjälp av dessa mallar kan den här strukturen göras repeterbar, som en del av en central styrnings strategi.
-    3. Förutom den aktuella referens arkitekturen, rekommenderar vi att du skapar en mall för nätverks säkerhets grupper som fångar in alla port spärrnings-eller vit listning-krav för det virtuella nätverket som värd för brand väggen. Den här nätverks säkerhets gruppen skiljer sig från tidigare grupper, eftersom det är den första nätverks säkerhets gruppen som tillåter offentlig trafik till ett VNet.
+    3. Förutom den aktuella referens arkitekturen bör en mall för nätverks säkerhets grupper skapas för att avbilda alla port spärrnings-eller vit listning-krav för det virtuella nätverket som värd för brand väggen. Den här nätverks säkerhets gruppen skiljer sig från tidigare grupper, eftersom det är den första nätverks säkerhets gruppen som tillåter offentlig trafik till ett VNet.
 3. Skapa Azure-principer. Skapa en princip med namnet `Hub NSG Enforcement` för att genomdriva konfigurationen av den nätverks säkerhets grupp som har tilldelats till ett virtuellt nätverk som skapats i den här prenumerationen. Använd de inbyggda principerna för gäst konfiguration enligt följande:
     1. Granska att Windows-webbservrar använder säkra kommunikations protokoll.
     2. Granska att inställningarna för lösen ords säkerhet är korrekt i Linux-och Windows-datorer.
@@ -118,7 +118,7 @@ De nya bästa metoderna är i två kategorier: företags IT (hubb) och molnbaser
 5. Expanderar den inledande hanterings gruppens hierarki.
     1. För varje hanterings grupp som har begärt stöd för skyddade data tillhandahåller `corporate-it-subscription-blueprint` skissen en accelererad nav lösning.
     2. Eftersom hanterings grupper i det här fiktiva exemplet innehåller en regional hierarki förutom en affär senhets hierarki, kommer den här skissen att distribueras i varje region.
-    3. Skapa en prenumeration med namnet `Corporate IT Subscription`för varje region i hanterings gruppens hierarki.
+    3. Skapa en prenumeration med namnet `Corporate IT Subscription` för varje region i hanterings gruppens hierarki.
     4. Använd `corporate-it-subscription-blueprint` skissen på varje regional instans.
     5. Detta upprättar en hubb för varje affär senhet i varje region. Obs! ytterligare kostnads besparingar kan uppnås, men delnings nav mellan affär senheter i varje region.
 6. Integrera grup princip objekt (GPO) via önskad tillstånds konfiguration (DSC):
@@ -126,7 +126,7 @@ De nya bästa metoderna är i två kategorier: företags IT (hubb) och molnbaser
     2. Distribuera Azure Automation tillstånds konfiguration till alla instanser av företags IT-prenumerationen. Azure Automation kan användas för att tillämpa DSC på virtuella datorer som distribuerats i stödda prenumerationer i hanterings gruppen.
     3. Den aktuella översikten planerar att aktivera anpassade principer för gäst konfiguration. När funktionen släpps krävs inte längre användningen av Azure Automation i den här rekommenderade metoden.
 
-**Använda ytterligare styrning för en moln implementerings prenumeration (eker):** Genom att bygga vidare på `Corporate IT Subscription`kan mindre förbättringar av styrnings MVP: en för varje prenumeration som är avsedd för program archetypes skapa snabb förbättring.
+**Använda ytterligare styrning för en moln implementerings prenumeration (eker):** Genom att bygga vidare på `Corporate IT Subscription` kan mindre förbättringar av styrnings MVP: en för varje prenumeration som är avsedd för program archetypes skapa snabb förbättring.
 
 I tidigare repetitiva ändringar av bästa praxis definierade vi nätverks säkerhets grupper för att blockera offentlig trafik och vit listas intern trafik. Dessutom skapade Azure-skissen tillfälligt DMZ och Active Directory funktioner. I den här iterationen ska vi anpassa dessa till gångar till en bit, vilket skapar en ny version av Azure-skissen.
 
@@ -134,7 +134,7 @@ I tidigare repetitiva ändringar av bästa praxis definierade vi nätverks säke
     1. Referens arkitekturen från föregående avsnitt, [hubb och eker-topologi med delade tjänster](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services), genererade en Resource Manager-mall för att aktivera VNet-peering.
     2. Mallen kan användas som en guide för att ändra DMZ-mallen från föregående styrnings iteration.
     3. Nu lägger vi till VNet-peering i DMZ VNet som tidigare var anslutna till den lokala Edge-enheten via VPN.
-    4. Vi rekommenderar också att du tar bort VPN-adressen från den här mallen även för att se till att ingen trafik dirigeras direkt till det lokala data centret utan att passera genom den lokala IT-prenumerationen och brand Väggs lösningen. Du kan också ange den här VPN-kretsen som en redundansväxling i händelse av en ExpressRoute-krets outge.
+    4. Dessutom bör VPN också tas bort från den här mallen även för att se till att ingen trafik dirigeras direkt till det lokala data centret utan att passera genom den lokala IT-prenumerationen och brand Väggs lösningen. Du kan också ange den här VPN-kretsen som en redundansväxling i händelse av en ExpressRoute-krets outge.
     5. Ytterligare [nätverks konfiguration](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) krävs av Azure Automation att använda DSC för virtuella datorer som är värdar för virtuella datorer.
 2. Ändra nätverks säkerhets gruppen. Blockera all offentlig **och** direkt lokal trafik i nätverks säkerhets gruppen. Den enda inkommande trafiken ska komma via VNet-peer i IT-prenumerationen för företaget.
     1. I den tidigare iterationen skapades en nätverks säkerhets grupp som blockerar all offentlig trafik och vit listning all intern trafik. Nu vill vi byta till den här nätverks säkerhets gruppen en bit.
@@ -165,7 +165,7 @@ I tidigare repetitiva ändringar av bästa praxis definierade vi nätverks säke
     6. Publicera skissen till alla hanterings grupper som ska vara värd för skyddade data.
     7. Använd den nya skissen på varje berörd prenumeration tillsammans med befintliga ritningar.
 
-## <a name="conclusion"></a>Slutsats
+## <a name="conclusion"></a>Sammanfattning
 
 Genom att lägga till dessa processer och ändringar i styrnings MVP: n kan du åtgärda många av de risker som är förknippade med säkerhets styrningen. Tillsammans lägger de till de nätverks-, identitets-och säkerhets övervaknings verktyg som behövs för att skydda data.
 

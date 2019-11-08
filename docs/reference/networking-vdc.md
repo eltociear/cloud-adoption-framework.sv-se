@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: e5729e592fe0e602d24e2e37831c782fada73128
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 526c7846de947b9098f7d9d0b7458a314177a9c8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566691"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753727"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Virtuella Data Center: ett nätverks perspektiv
 
@@ -194,7 +194,7 @@ Föregående diagram visar förhållandet mellan en organisations projekt, anvä
 
 Normalt är en miljö (eller-nivå) ett system där flera program distribueras och körs. Stora företag använder en utvecklings miljö (där ändringar görs och testas) och en produktions miljö (vad slutanvändarna använder). Dessa miljöer är åtskilda, ofta med flera mellanlagrings miljöer mellan dem för att tillåta stegvis distribution (distribution), testning och återställning om det uppstår problem. Distributions arkitekturer varierar kraftigt, men vanligt vis är den grundläggande processen för utveckling (utveckling) och slut vid produktion (PROD) fortfarande.
 
-En gemensam arkitektur för dessa typer av miljöer med flera nivåer består av Azure-DevOps för utveckling och testning, UAT för mellanlagring och produktions miljöer. Organisationer kan utnyttja en eller flera Azure AD-klienter för att definiera åtkomst och rättigheter till dessa miljöer. Föregående diagram visar ett fall där två olika Azure AD-klienter används: ett för Azure-DevOps och UAT och den andra exklusivt för produktion.
+En gemensam arkitektur för dessa typer av miljöer med flera nivåer består av Azure-DevOps för utveckling och testning, UAT för mellanlagring och produktions miljöer. Organisationer kan använda en eller flera Azure AD-klienter för att definiera åtkomst och rättigheter till dessa miljöer. Föregående diagram visar ett fall där två olika Azure AD-klienter används: ett för Azure-DevOps och UAT och den andra exklusivt för produktion.
 
 Förekomsten av olika Azure AD-klienter använder separationen mellan miljöer. Samma grupp med användare, till exempel den centrala IT, måste autentiseras med hjälp av en annan URI för att få åtkomst till en annan Azure AD-klient för att ändra rollerna eller behörigheterna för antingen Azure-DevOps eller produktions miljöerna i ett projekt. Förekomsten av olika användarautentisering för att få åtkomst till olika miljöer minskar eventuella avbrott och andra problem som orsakas av mänskliga fel.
 
@@ -390,7 +390,7 @@ Följande funktioner beskrivs i det här dokumentet. Följ länkarna om du vill 
 |-|-|-|
 |[Azure Virtual Networks][VNet]</br>[Nätverkssäkerhetsgrupper][network-security-groups]</br>[Loggar för nätverks säkerhets grupper][nsg-log]</br>[Användardefinierade vägar][user-defined-routes]</br>[Virtuella nätverks enheter][NVA]</br>[offentliga IP-adresser][PIP]</br>[Azure-DDoS][DDoS]</br>[Azure Firewall][AzFW]</br>[Azure DNS][DNS]|[Azure Front Door][AFD]</br>[Azure Load Balancer (L3)][ALB]</br>[Application Gateway (L7)][AppGW]</br>[Brand vägg för webbaserade program] WAF</br>[Azure Traffic Manager][traffic-manager]</br></br></br></br></br> |[VNet-peering][VNetPeering]</br>[Virtuellt privat nätverk][VPN]</br>[Virtuellt WAN][vWAN]</br>[ExpressRoute][ExR]</br>[ExpressRoute Direct][ExRD]</br></br></br></br></br>
 
-|Identitet</br>|Övervakning</br>|Metodtips</br>|
+|Identitet</br>|Övervakning</br>|Bästa metoder</br>|
 |-|-|-|
 |[Azure Active Directory][azure-ad]</br>[Multi-Factor Authentication][multi-factor-authentication]</br>[Åtkomst kontroller för roll bas][RBAC]</br>[Standard roller för Azure AD][Roles]</br></br></br> |[Network Watcher][NetWatch]</br>[Azure Monitor][Monitor]</br>[Aktivitets loggar][ActLog]</br>[Diagnostikloggar][DiagLog]</br>[Microsoft Operations Management Suite][OMS]</br>[Övervakning av nätverksprestanda][NPM]|[Metod tips för perimeter-nätverk][DMZ]</br>[Prenumerations hantering][SubMgmt]</br>[Hantering av resurs grupper][RGMgmt]</br>[Begränsningar för Azure-prenumeration][limits] </br></br></br>|
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7dcb61b24834caa1da0de414ab5eaa7291711258
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 5e88a87a141adb1170f419db5d410cc31341c230
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048445"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753106"
 ---
 # <a name="innovate-through-cloud-adoption"></a>Förnya genom moln införande
 
@@ -21,7 +21,7 @@ Molnbaserad migrering är ett utmärkt alternativ för dina befintliga arbets be
 
 ## <a name="motivations-behind-innovation"></a>Motivation bakom innovation
 
-Innovation är inte rätt tillämpnings Sök väg för varje arbets belastning. En innovation-sökväg kräver vanligt vis en större investering i anpassad kod och data hantering än andra sökvägar. Innovation tar också längre tid än migrering eller andra former av modernisering. Den här sökvägen rekommenderas när kunderna riktar sig till följande affärs resultat:
+Innovation är inte rätt tillämpnings Sök väg för varje arbets belastning. En innovation-sökväg kräver vanligt vis en större investering i anpassad kod och data hantering än andra sökvägar. Innovation tar också längre tid än migrering eller andra former av modernisering. Följ den här sökvägen när du riktar in dig på följande affärs resultat:
 
 - Förbereda sig för nya tekniska funktioner.
 - Skala för att uppfylla kraven på marknaden.
