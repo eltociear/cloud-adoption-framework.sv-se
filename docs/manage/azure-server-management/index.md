@@ -8,22 +8,20 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c4939464c80668ca175a4d7ac53fe2198610afc1
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 53feb14cab8f2109b86aa5850d856261d132ba19
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565372"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656616"
 ---
 # <a name="overview-of-azure-server-management-services"></a>Översikt över Azures serverhanteringstjänster
 
-Azures serverhanteringstjänster ger kunderna konsekventa funktioner som gör att de kan hantera sina servrar i stor skala. Tjänsterna omfattar både Linux- och Windows-operativsystemen och kan användas i produktion, utveckling och testmiljöer. Dessutom har de stöd för virtuella Azure IaaS-datorer, fysiska servrar och virtuella datorer som antingen körs lokalt eller i andra värdmiljöer.
+Azures serverhanteringstjänster ger konsekventa funktioner för att hantera servrar i stor skala. Dessa tjänster fungerar med både Linux- och Windows-operativsystem. De kan användas i produktions-, utvecklings- och testningsmiljöer. Serverhanteringstjänsterna har stöd för virtuella Azure IaaS-datorer, fysiska servrar och virtuella datorer som körs lokalt eller i andra värdmiljöer.
 
-I diagrammet nedan ser du några av Azure-tjänsterna för serverhantering.
+I diagrammet nedan ser du några av Azure-tjänsterna för serverhantering: ![Diagram över Azure-driftsmodellen](./media/operations-diagram.png)
 
-![Diagram över Azure-driftsmodellen](./media/operations-diagram.png)
-
-Riktlinjerna i det här avsnittet av Microsoft Cloud Adoption Framework är bra exempel på hur du kan distribuera serverhanteringstjänster i din miljö. Syftet med den här planen är att ge en snabb orientering kring tjänsterna, och att guida dig genom en inkrementell uppsättning hanteringssteg för alla miljöer oavsett storlek.
+Det här avsnittet av Microsoft Cloud Adoption Framework innehåller bra exempel på hur du kan distribuera serverhanteringstjänster i din miljö. Den här planen ger en snabb orientering kring tjänsterna och guidar dig genom en inkrementell uppsättning hanteringssteg för alla miljöer oavsett storlek.
 
 För enkelhetens skull har vi kategoriserat den här vägledningen i tre steg:
 
@@ -31,14 +29,14 @@ För enkelhetens skull har vi kategoriserat den här vägledningen i tre steg:
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="why-use-azure-management-services"></a>Varför ska man använda Azures hanteringstjänster?
+## <a name="why-use-azure-server-management-services"></a>Varför ska jag använda Azures serverhanteringstjänster?
 
-Azures hanteringstjänster erbjuder följande fördelar:
+Azures serverhanteringstjänster erbjuder följande fördelar:
 
-- **Ingår i Azure:** Hanteringstjänsterna är inbyggda och integrerade i Azure Resource Manager. De förbättras ständigt med nya funktioner.
+- **Ingår i Azure:** Serverhanteringstjänsterna är inbyggda och integrerade i Azure Resource Manager. De förbättras ständigt med nya funktioner.
 - **Windows och Linux:** Hanteringen sköts likadant på Windows- och Linux-datorer.
-- **Hybrid:** Hanteringstjänsterna omfattar såväl virtuella Azure IaaS-datorer som fysiska och virtuella servrar som körs lokalt eller i andra värdmiljöer.
-- **Säkerhet:** Microsoft ägnar stora resurser åt alla former av säkerhet. Den här investeringen skyddar inte bara Azure molninfrastrukturen, utan även den resulterande tekniken och expertisen när det gäller att skydda kundernas resurser oavsett var de finns.
+- **Hybrid:** Serverhanteringstjänsterna omfattar såväl virtuella Azure IaaS-datorer som fysiska och virtuella servrar som körs lokalt eller i andra värdmiljöer.
+- **Säkerhet:** Microsoft ägnar stora resurser åt alla former av säkerhet. Den här investeringen skyddar inte bara Azure-infrastrukturen, utan även den resulterande tekniken och expertisen när det gäller att skydda kundernas resurser oavsett var de finns.
 
 ## <a name="next-steps"></a>Nästa steg
 
