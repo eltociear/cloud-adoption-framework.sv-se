@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e8a7ae0af3b64a6d7e04555fe64a6189d964b3ff
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 1519adff06d600b9829c9b7ff3ca82a0aa5a0160
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816575"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753376"
 ---
 # <a name="azure-migration-best-practices"></a>Bästa praxis för Azure-migrering
 
@@ -27,4 +27,4 @@ Expandera valfri process i innehållsförteckningen till vänster om du vill se 
 > Planering för digital egendom och tillgångsutvärdering representerar två olika nivåer av migreringsplanering och -utvärdering:
 >
 > - **Planering för digital egendom:** Du planerar eller rationaliserar den digitala egendomen under planering för att upprätta en övergripande uppgiftslista för migrering. Dock baseras den här planen på vissa antaganden och detaljer som behöver valideras innan en arbetsbelastning kan migreras.
-> - **Tillgångsutvärdering:** Du utvärderar en arbetsbelastnings enskilda tillgångar före migrering av arbetsbelastningen i syfte att utvärdera kompatibilitet för molnet samt förstå arkitekturen och storleksbestämma begränsningar. Den här processen validerar inledande antaganden och ger den information som behövs för att migrera enskilda tillgångar.
+> - **Tillgångsutvärdering:** Du utvärderar en arbetsbelastnings enskilda tillgångar innan arbetsbelastningen migreras för att utvärdera kompatibiliteten med molnet och för att förstå arkitektur- och storleksbegränsningar. Den här processen validerar inledande antaganden och ger den information som behövs för att migrera enskilda tillgångar.

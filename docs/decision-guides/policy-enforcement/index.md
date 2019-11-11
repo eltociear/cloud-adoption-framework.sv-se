@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: bc9cc463c50aac532e855ebd93ef1721d9fc38a4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7e3df166c41658b248bc7fb61067b27362a8070c
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564838"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753151"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Beslutsguide för principframtvingande
 
@@ -51,13 +51,13 @@ Allt eftersom din molnegendom växer kan ytterligare verktyg såsom [Azure Secur
 
 I Azure kan du tillämpa konfigurationsinställningar och regler för resursskapande på nivå för hanteringsgrupp, prenumeration eller resursgrupp för att säkerställa principinriktning.
 
-[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) är en Azure-tjänst för att skapa, tilldela och hantera principer. De här principerna tillämpar olika regler och effekter på dina resurser så att resurserna efterlever dina företagsstandarder och serviceavtal. Azure Policy utvärderar dina resurser för bristande efterlevnad med tilldelade principer. Till exempel vill du kanske begränsa SKU-storleken för virtuella datorer i din miljö. När en motsvarande princip har implementerats skulle nya och befintliga resurser utvärderas för efterlevnad. Med rätt princip kan befintliga resurser bli kompatibla.
+[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) är en Azure-tjänst för att skapa, tilldela och hantera principer. De här principerna tillämpar olika regler och effekter på dina resurser så att resurserna efterlever dina företagsstandarder och serviceavtal. Azure Policy utvärderar dina resurser för bristande efterlevnad med tilldelade principer. Till exempel vill du kanske begränsa SKU-storleken för virtuella datorer i din miljö. När du har implementerat en associerad princip utvärderas nya och befintliga resursers efterlevnad. Med rätt princip kan befintliga resurser bli kompatibla.
 
 ## <a name="cross-organization-policy"></a>Organisationsövergripande princip
 
-Allt eftersom din molnegendom växer till att omfatta många prenumerationer som kräver framtvingande behöver du fokusera på en framtvingandestrategi för hela molnegendomen för att säkerställa principefterlevnad.
+I takt med att din molnegendom växer till att omfatta många obligatoriska prenumerationer måste du fokusera på en strategi som omfattar hela molnegendomen för att säkerställa principefterlevnad.
 
-Din [prenumerationsdesign](../subscriptions/index.md) behöver ta med principens relation till din organisationsstruktur i beräkningen. Utöver att stödja komplex organisering i din prenumerationsdesign kan [Azure-hanteringsgrupper](../../ready/azure-best-practices/scaling-subscriptions.md#manage-multiple-subscriptions) användas för att tilldela Azure Policy-regler över flera prenumerationer.
+Din [prenumerationsdesign](../subscriptions/index.md) måste ta hänsyn till förhållandet mellan principer och organisationens struktur. Utöver att stödja komplex organisering i din prenumerationsdesign kan [Azure-hanteringsgrupper](../../ready/azure-best-practices/scaling-subscriptions.md#manage-multiple-subscriptions) användas för att tilldela Azure Policy-regler över flera prenumerationer.
 
 ## <a name="automated-enforcement"></a>Automatiserat framtvingande
 

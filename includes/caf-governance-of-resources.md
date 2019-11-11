@@ -5,7 +5,7 @@
 
 ### <a name="governance-of-resources"></a>Styrning av resurser
 
-En uppsättning med globala principer och RBAC-roller ger en baslinjenivå av styrningsframtvingande. Om du ska uppfylla molnimplementeringsgruppens principkrav så kräver implementeringen av styrnings-MVP att följande uppgifter slutförs:
+En uppsättning med globala principer och RBAC-roller ger en baslinjenivå av styrningsframtvingande. För att uppfylla molnstyrningsteamets principkrav måste följande uppgifter utföras för att implementera styrnings-MVP:n:
 
 1. Identifiera de Azure Policy-definitioner som behövs för att genomdriva affärskrav. Detta kan inkludera användning av inbyggda definitioner och skapandet av nya anpassade definitioner.
 2. Skapa en skissdefinition med hjälp av dessa inbyggda och anpassade principer och rolltilldelningar enligt kraven för styrnings-MVP.
@@ -19,8 +19,8 @@ Anpassade principdefinitioner sparas till antingen en hanteringsgrupp eller en p
 
 Eftersom de principer som krävs för att stödja styrnings-MVP är avsedda att gälla för alla aktuella prenumerationer implementeras följande affärskrav med hjälp av en kombination av inbyggda definitioner och anpassade definitioner som skapats i rothanteringsgruppen:
 
-1. Begränsa listan över tillgängliga rolltilldelningar till en uppsättning inbyggda Azure-roller som auktoriserats av ditt team för molnstyrning. Detta kräver en [anpassad principdefinition](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions).
-2. Kräv användning av följande taggar på alla resurser: *Avdelning/faktureringsenhet*, *Geografi*, *Dataklassificering*, *Allvarlighetsgrad*, *SLA*, *Miljö*, *Programarketyp*, *Program* och *Programägare*. Detta kan hanteras med hjälp av den inbyggda definitionen `Require specified tag`.
+1. Begränsa listan över tillgängliga rolltilldelningar till en uppsättning inbyggda Azure-roller som auktoriserats av teamet för molnstyrning. Detta kräver en [anpassad principdefinition](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions).
+2. Kräv följande taggar för alla resurser: *Avdelning/faktureringsenhet*, *Geografi*, *Dataklassificering*, *Allvarlighetsgrad*, *SLA*, *Miljö*, *Programarketyp*, *Program* och *Programägare*. Detta kan hanteras med hjälp av den inbyggda definitionen `Require specified tag`.
 3. Kräv att taggen `Application` för resurser ska matcha namnet på relevant resursgrupp. Detta kan hanteras med hjälp av den inbyggda definitionen ”Kräv tagg och dess värde”.
 
 Information om hur du definierar anpassade principer finns i [dokumentationen om Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition). Vägledning och exempel på anpassade principer finns på [webbplatsen med Azure Policy-exempel](https://docs.microsoft.com/azure/governance/policy/samples) och den associerade [GitHub-lagringsplatsen](https://github.com/Azure/azure-policy).

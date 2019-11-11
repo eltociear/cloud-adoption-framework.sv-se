@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 7e602ce0c27da5204a51d0a4a790ce65dc7e6871
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: b605aad4400ef531022392ceb786ab5467812f5f
+ms.sourcegitcommit: 5d865c3a3f105986bda83ff84f8cc29def030334
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752740"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "73912512"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Övervaknings guide för molnet: avisering
 
@@ -67,7 +67,7 @@ Azure Monitor har fyra typer av aviseringar som var och en är knutna till den l
 
 - [Aktivitets logg avisering](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log): varningar om objekt i aktivitets logg arkivet, med undantag för service Health data.
 
-- [Service Health avisering](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications?toc=%2fazure%2fservice-health%2ftoc.json): en särskild typ av avisering, bara för service Health problem som kommer från aktivitets logg arkivet.
+- [Service Health avisering](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications?toc=%2fazure%2fservice-health%2ftoc.json): en särskild typ av avisering som endast används för service Health problem som kommer från aktivitets logg arkivet, till exempel avbrott och kommande planerat underhåll. Observera att den här typen av avisering konfigureras via [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview), en Service till Azure Monitor.
 
 ### <a name="enable-alerting-through-partner-tools"></a>Aktivera avisering via partner verktyg
 

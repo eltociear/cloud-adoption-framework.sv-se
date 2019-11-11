@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 27a86947bdcf240f3ea469db10c94b3f63ccb1e8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: ed394c0bd1748a6e3382835cec816b552217bd01
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564882"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753365"
 ---
 # <a name="encryption-decision-guide"></a>Beslutsguide för kryptering
 
@@ -63,7 +63,7 @@ Med en BYOK-metod (Bring Your Own Key) skapar du nycklar på dedikerad HSM-maski
 
 ### <a name="on-premises-hold-your-own-key"></a>Lokalt (Hold Your Own Key)
 
-I vissa fall kan det finnas regelmässiga, principrelaterade eller tekniska anledningar till varför du inte kan lagra nycklar i ett molnbaserat system för nyckelhantering. I dessa fall måste du skapa nycklar med hjälp av lokal maskinvara, lagra och hantera dem med hjälp av ett lokalt nyckelhanteringssystem och upprätta en mekanism för att tillåta molnbaserade resurser att få åtkomst till dessa nycklar för krypteringsändamål. Observera att HYOK (Hold Your Own Key, håll din egen nyckel) kanske inte är kompatibelt med alla Azure-baserade tjänster.
+Vissa scenarier kan ha regler, principer eller tekniska orsaker som förbjuder lagring av nycklar i ett molnbaserat nyckelhanteringssystem. I så fall måste du generera nycklar med lokal maskinvara, lagra och hantera dem med hjälp av ett lokalt nyckelhanteringssystem och upprätta en metod som gör att molnbaserade resurser kan komma åt dessa nycklar i krypteringssyfte. Observera att HYOK (Hold Your Own Key) kanske inte är kompatibelt med alla Azure-baserade tjänster.
 
 **Antaganden gällande lokal nyckelhantering:** Användning av ett lokalt nyckelhanteringssystem inbegriper följande antaganden:
 
@@ -84,7 +84,7 @@ Kom ihåg att olika datatillstånd har olika krypteringsbehov när du planerar k
 
 Data under överföring är data som flyttas mellan resurser i interna nätverk, mellan datacenter eller externa nätverk eller via Internet.
 
-Kryptering av data som överförs sker vanligtvis genom att SSL/TLS-protokoll krävs för trafik. Trafik som överförs mellan dina molnhanterade resurser och externa nätverk eller det offentliga Internet bör alltid krypteras. PaaS-resurser framtvingar även SSL/TLS-kryptering av trafik som standard. Huruvida du framtvingar kryptering för trafik mellan IaaS-resurser som hanteras i dina virtuella nätverk är ett beslut som dina molnimplementeringsteam och arbetsbelastningsägare fattar, och det brukar allmänt rekommenderas.
+För att data som överförs ska krypteras krävs ofta SSL/TLS-protokoll för nätverkstrafiken. Kryptera alltid trafiken mellan dina molnbaserade resurser och externa nätverk eller det offentliga Internet. PaaS-resurser kräver vanligtvis SSL/TLS-kryptering som standard. Dina molnimplementeringsteam och arbetsbelastningsägare bör överväga att kräva kryptering av trafik mellan IaaS-resurser som finns i dina virtuella nätverk.
 
 **Antaganden gällande kryptering av data under överföring:** Implementering av rätt krypteringspolicy för data under överföring förutsätter följande:
 

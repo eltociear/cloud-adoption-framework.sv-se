@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7aac08981375a3fcbbd658d6e14564a07e06795e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6f35ca4e8420100c7455e8fa909fc8b572ee1074
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816303"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753454"
 ---
 # <a name="assess-assets-prior-to-migration"></a>Utvärdera tillgångar före migrering
 
@@ -56,7 +56,7 @@ Utöver det övergripande ansvaret finns det åtgärder som en person eller en g
   - I syfte att undvika överraskningar senare i processen bör minst en representant från företaget delta i godkännandeprocessen.
 
 > [!CAUTION]
-> Den här fullständiga listan över ansvarsområden och åtgärder kan stödja stora och komplexa migreringar som omfattar flera roller med olika ansvarsnivåer och som kräver en detaljerad godkännandeprocess. Mindre och enklare migreringsarbeten kräver kanske inte alla roller och åtgärder som beskrivs här. För att fastställa vilka av dessa aktiviteter som ger värde och vilka som utgör onödigt arbete rekommenderas det att teamet för molnimplementering och teamet för molnstrategi använder den här fullständiga processen som en del av den första arbetsbelastningsmigreringen. När arbetsbelastningen har verifierats och testats kan teamet utvärdera den här processen och välja vilka åtgärder som ska användas därefter.
+> Den här fullständiga listan över ansvarsområden och åtgärder kan stödja stora och komplexa migreringar som omfattar flera roller med olika ansvarsnivåer och som kräver en detaljerad godkännandeprocess. Mindre och enklare migreringsarbeten kräver kanske inte alla roller och åtgärder som beskrivs här. För att fastställa vilka av dessa aktiviteter som ger värde och vilka som är onödiga bör molnimplementeringsteamet och molnstrategiteamet använda den här fullständiga processen som en del av den första arbetsbelastningsmigreringen. När arbetsbelastningen har verifierats och testats kan teamet utvärdera den här processen och välja vilka åtgärder som ska användas därefter.
 
 ## <a name="next-steps"></a>Nästa steg
 

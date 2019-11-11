@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: b772eddfce65fa7a2ce4d67e36b1cc0f82e47ac5
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4328cdf3249b065bf20efd5858254ad9da1dc211
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564879"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753176"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Beslutsguide för loggning och rapportering
 
@@ -26,7 +26,7 @@ Hoppa till: [Planera övervakningsinfrastrukturen](#plan-your-monitoring-infrast
 
 Brytpunkten när du fastställer en strategi för molnloggning och rapportering baseras främst på befintliga investeringar som din organisation har gjort inom driftsprocesser samt till viss del på eventuella krav som du har för att stödja en strategi för flera moln.
 
-Det finns flera sätt att logga och rapportera om aktiviteter i molnet. Molnbaserad och centraliserad loggning är två vanligt alternativ för hanterade tjänster, som drivs av prenumerationsdesignen och antalet prenumerationer.
+Aktiviteter i molnet kan loggas och rapporteras på flera sätt. Molnbaserad och centraliserad loggning är två vanligt alternativ för hanterade tjänster, som drivs av prenumerationsdesignen och antalet prenumerationer.
 
 ## <a name="plan-your-monitoring-infrastructure"></a>Planera övervakningsinfrastrukturen
 
@@ -54,7 +54,7 @@ Anpassade Azure Monitor-baserade loggningslösningar kan implementeras ad hoc f�
 
 ### <a name="on-premises-extension"></a>Lokal utökning
 
-Det kan kräva betydande nyutvecklingsarbete för att program och tjänster som migreras till molnet ska kunna dra nytta av molnbaserade lösningar för loggning och rapportering såsom Azure Monitor. I dessa fall kan det vara klokt att tillåta dessa arbetsbelastningar att fortsätta skicka telemetridata till befintliga lokala system.
+Det kan kräva betydande nyutvecklingsarbete för att program och tjänster som migreras till molnet ska kunna dra nytta av molnbaserade lösningar för loggning och rapportering såsom Azure Monitor. I dessa fall kan du överväga att tillåta att dessa arbetsbelastningar fortsätter att skicka telemetridata till befintliga lokala system.
 
 För att stödja den här metoden behöver dina molnresurser kunna kommunicera direkt med dina lokala system via en kombination av [hybridnätverk](../software-defined-network/hybrid.md) och [molnhanterade domäntjänster](../identity/index.md#cloud-hosted-domain-services). När detta sker fungerar det virtuella molnnätverket som en nätverksutökning av den lokala miljön. Därför kan molnhanterade arbetsbelastningar kommunicera direkt med ditt lokala system för loggning och rapportering.
 

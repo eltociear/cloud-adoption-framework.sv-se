@@ -9,25 +9,25 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3e43c6ac4136a2f8f89446091f9bcea005369fce
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 981752b1e1963dd4f8a646ccc087d445669e6cd3
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564819"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753309"
 ---
 # <a name="azure-regions"></a>Azure-regioner
 
-Azure består av många regioner runtom i världen. Var och en av [Azure-regionerna](https://azure.microsoft.com/global-infrastructure/regions) har en särskild uppsättning egenskaper, vilket gör det ytterst viktigt att välja rätt region.
+Azure består av många regioner runtom i världen. Varje [Azure-region](https://azure.microsoft.com/global-infrastructure/regions) har särskilda egenskaper, som gör valet av region ytterst viktigt.
 
-1. **Tillgängliga tjänster:** Vilka tjänster som distribueras till respektive region varierar beroende på olika faktorer. När du ska distribuera din arbetsbelastning måste du välja en region som innehåller de tjänster som du behöver. Mer information om vilka tjänster som är tillgängliga i vilka regioner finns i [Produkttillgänglighet per region](https://azure.microsoft.com/global-infrastructure/services).
+1. **Tillgängliga tjänster:** Vilka tjänster som distribueras till respektive region varierar beroende på olika faktorer. Välj en region för din arbetsbelastning som innehåller den tjänst du vill använda. Mer information om vilka tjänster som är tillgängliga i respektive region finns i [Produkttillgänglighet per region](https://azure.microsoft.com/global-infrastructure/services).
 1. **Kapacitet:** Varje region har en maximal kapacitet. Även om detta oftast inte påverkar slutanvändaren, kan det påverka vilka typer av prenumerationer som kan distribuera vilka typer av tjänster och under vilka omständigheter. Detta skiljer sig från prenumerationskvoterna. Om du planerar en omfattande datacentermigrering till Azure kanske du vill kontakta ditt lokala Azure-team eller din kontoansvariga för att kontrollera att du kan distribuera i den skala som behövs.
 1. **Villkor:** Distributionen av tjänster är begränsad i vissa regioner. Vissa regioner är till exempel bara tillgängliga som mål för säkerhetskopiering eller redundans. Andra begränsningar som är viktiga att notera är [krav på datasuveränitet](https://azure.microsoft.com/global-infrastructure/geographies).
-1. **Suveränitet:** Det finns särskilda regioner som är dedikerade till särskilda suveräna entiteter. Även om alla regioner är Azure-regioner, är dessa suveräna regioner helt isolerade från resten av Azure. De hanteras inte nödvändigtvis av Microsoft, och kan medföra begränsningar vad gäller typen av kund. Dessa suveräna regioner är:
+1. **Suveränitet:** Vissa regioner är avsedda för specifika suveräna entiteter. Även om alla regioner är Azure-regioner, är dessa suveräna regioner helt isolerade från resten av Azure. De hanteras inte nödvändigtvis av Microsoft, och kan vara begränsade till särskilda typer av kunder. Dessa suveräna regioner är:
     1. [Azure Kina](https://azure.microsoft.com/global-infrastructure/china)
-    1. [Azure Tyskland](https://azure.microsoft.com/global-infrastructure/germany) (som kommer att ersättas av vanliga Azure-regioner i Tyskland (icke-suveräna))
+    1. [Azure Germany](https://azure.microsoft.com/global-infrastructure/germany) (håller på att ersättas med icke-suveräna Azure-regioner i Tyskland)
     1. [Azure för amerikanska myndigheter](https://azure.microsoft.com/global-infrastructure/government)
-    1. Obs! Det finns två regioner i [Australien](https://azure.microsoft.com/global-infrastructure/australia) som hanteras av Microsoft, men som är avsedda för den australiska regeringen och dess kunder och leverantörer, och som därför har liknande klientbegränsningar som de andra suveräna molnen.
+    1. Obs! Två regioner i [Australien](https://azure.microsoft.com/global-infrastructure/australia) hanteras av Microsoft, men är avsedda för den australiska regeringen och dess kunder och leverantörer, och har därför liknande klientbegränsningar som de andra suveräna molnen.
 
 ## <a name="operate-in-multiple-geographic-regions"></a>Arbeta i flera geografiska regioner
 
@@ -54,11 +54,11 @@ En robust molndistribution kräver ett välfungerande nätverk som tar hänsyn t
 
 - Azure Backup och Azure Site Recovery fungerar tillsammans med din nätverksdesign för att underlätta regional återhämtning för dina behov av IaaS- och datasäkerhetskopiering. Kontrollera att nätverket är optimerat så att dataöverföringarna sker i Microsofts stamnät och utnyttja [VNet-peering](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) om möjligt. Vissa större organisationer med globala distributioner kan i stället använda [ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) för att dirigera trafik mellan regioner, vilket kan innebära lägre regionala avgifter för utgående trafik.
 
-- Azures resursgrupper är regionsspecifika konstruktioner. Det är normalt att resurser inom en resursgrupp sträcker sig över flera regioner. Om det uppstår problem i en region så misslyckas åtgärder i kontrollplanet i den berörda regionen, vilket är viktigt att komma ihåg, även om resurserna i andra regioner (i den aktuella resursgruppen) fortsätter fungera. Detta kan påverka både ditt nätverk och din resursgruppsdesign.
+- Azures resursgrupper är regionsspecifika konstruktioner. Det är normalt att resurser inom en resursgrupp sträcker sig över flera regioner. Om det uppstår problem i en region så misslyckas åtgärder i kontrollplanet i den berörda regionen, vilket är viktigt att komma ihåg, även om resurserna i andra regioner (i den aktuella resursgruppen) fortsätter fungera. Detta kan påverka både din nätverksdesign och din resursgruppsdesign.
 
 - Många PaaS-tjänster i Azure har stöd för [tjänstslutpunkter](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) och [Private Link](https://docs.microsoft.com/azure/private-link/private-link-overview). Båda dessa lösningar påverkar dina nätverksstrategier avsevärt med avseende på regional återhämtning, migrering och styrning.
 
-- Många PaaS-tjänster är beroende av egna regionala återhämtningslösningar. Azure SQL Database kan till exempel enkelt replikera till N ytterligare regioner, vilket är fallet med Cosmos DB. Vissa tjänster är regionsoberoende, t.ex. Azure DNS. När du funderar på vilka tjänster du kommer att använda i implementeringen är det viktigt att du förstår redundansfunktionerna och återställningsstegen som krävs för respektive Azure-tjänst.
+- Många PaaS-tjänster är beroende av egna regionala återhämtningslösningar. Med både Azure SQL Database och Cosmos DB kan du till exempel enkelt replikera till _x_ ytterligare regioner. Vissa tjänster är regionsoberoende, t.ex. Azure DNS. När du funderar på vilka tjänster du ska använda i implementeringen är det viktigt att du förstår redundansfunktionerna och återställningsstegen som krävs för respektive Azure-tjänst.
 
 - Förutom att distribuera i flera regioner för att stödja haveriberedskap väljer många organisationer att distribuera i ett ”aktiv-aktiv”-mönster så att ingen redundans krävs. Detta har den extra fördelen med att tillhandahålla global belastningsutjämning, ytterligare feltolerans och bättre nätverksprestanda. För att kunna dra nytta av det här mönstret måste dina program ha stöd för körning av ”aktiv-aktiv” i flera regioner.
 
@@ -80,12 +80,12 @@ Genomför ändringar i migreringsprocessen för att hantera den inledande invent
 
 Följande tabell kan underlätta dokumentationen av resultaten från stegen ovan:
 
-|Region  |Land/region  |Lokala anställda  |Lokala externa användare  |Lokala datacenter eller tillgångar |Krav på datasuveränitet  |
-|---------|---------|---------|---------|---------|---------|
-|Nordamerika     |USA         |Ja         |Partners och kunder         |Ja         |Nej         |
-|Nordamerika     |Kanada         |Nej         |Kunder         |Ja         |Ja         |
-|Europa     |Tyskland         |Ja         |Partners och kunder         |Nej – endast nätverk         |Ja         |
-|Asien och stillahavsområdet     |Sydkorea         |Ja         |Partner         |Ja         |Nej         |
+| Region        | Land/region     | Lokala anställda | Lokala externa användare   | Lokala datacenter eller tillgångar | Krav på datasuveränitet |
+|---------------|-------------|-----------------|------------------------|-----------------------------|-------------------------------|
+| Nordamerika | USA         | Ja             | Partners och kunder | Ja                         | Nej                            |
+| Nordamerika | Kanada      | Nej              | Kunder              | Ja                         | Ja                           |
+| Europa        | Tyskland     | Ja             | Partners och kunder | Nej – endast nätverk           | Ja                           |
+| Asien och stillahavsområdet  | Sydkorea | Ja             | Partner               | Ja                         | Nej                            |
 
 <!-- markdownlint-disable MD026 -->
 
@@ -93,13 +93,13 @@ Följande tabell kan underlätta dokumentationen av resultaten från stegen ovan
 
 Runt om i världen har statliga organisationer börjat fastställa krav på datasuveränitet, som exempelvis GDPR (dataskyddsförordningen). Krav på efterlevnad av denna typ kräver ofta lokalisering inom en specifik region eller till och med ett visst land för att skydda deras medborgare. I vissa fall måste data som rör kunder, anställda eller partners lagras i en molnplattform i samma region som slutanvändaren.
 
-Att hantera denna utmaning har varit en bakomliggande motivering för molnmigrering för företag som opererar globalt. För att upprätthålla kraven på efterlevnad har vissa företag valt att distribuera duplicerade IT-tillgångar till molnleverantörer i regionen. I exemplet ovan är Tyskland ett bra exempel på detta scenario. I detta exempel finns det kunder, partners och anställda i Tyskland, men inga befintliga IT-tillgångar. Företaget kan välja att distribuera en del tillgångar till ett datacenter i GDPR-området, potentiellt även Tyska Azure-datacenter. Förståelse av vilka data som berörs av GDPR hjälper teamet för molnimplementering att välja bäst metod för migrering i detta fall.
+Att hantera denna utmaning har varit en bakomliggande motivering för molnmigrering för företag som opererar globalt. För att upprätthålla kraven på efterlevnad har vissa företag valt att distribuera duplicerade IT-tillgångar till molnleverantörer i regionen. I tabellen ovan är Tyskland ett bra exempel på det här scenariot. I detta exempel finns det kunder, partner och anställda i Tyskland, men inga befintliga IT-tillgångar. Företaget kan välja att distribuera en del tillgångar till ett datacenter i GDPR-området, potentiellt även Tyska Azure-datacenter. Förståelse av vilka data som berörs av GDPR hjälper teamet för molnimplementering att välja bäst metod för migrering i detta fall.
 
 ### <a name="why-is-the-location-of-end-users-relevant"></a>Varför har slutanvändarens placering betydelse?
 
 Företag som arbetar med slutanvändare i flera länder har tagit fram tekniska lösningar för att hantera trafik från slutanvändare. I vissa fall inkluderar detta lokalisering av tillgångar. I andra scenarion kan företaget istället välja att implementera globala WAN-lösningar för att hantera olika användargrupper via nätverksfokuserade lösningar. I samtliga fall kan migreringsstrategin påverkas av dessa olika slutanvändares användningsprofiler.
 
-Eftersom företaget hanterar anställda, partners och kunder i Tyskland men för tillfället inte har datacenter i det landet, är det troligt att företaget implementerat någon form av hyrd nätverkskapacitet för att dirigera trafik till datacenter i andra länder. Denna omdirigering utgör en betydande risk för den upplevda prestandan hos migrerade program. Att infoga ytterligare hopp i ett etablerat och finjusterat WAN kan skapa uppfattningen av att program underpresterar efter migreringen. Att hitta och korrigera dessa problem kan avsevärt försena ett projekt. I var och en av processerna nedan finns vägledning om hur du hanterar denna komplexitet för förutsättningar, utvärdering, migrering och optimering. Att förstå användarprofiler i varje land är avgörande för att hantera den här komplexiteten korrekt.
+Eftersom företaget hanterar anställda, partner och kunder i Tyskland men för tillfället inte har datacenter i det landet, är det troligt att företaget implementerat någon form av hyrd nätverkskapacitet för att dirigera trafik till datacenter i andra länder. Denna omdirigering utgör en betydande risk för den upplevda prestandan hos migrerade program. Att infoga ytterligare hopp i ett etablerat och finjusterat WAN kan skapa uppfattningen av att program underpresterar efter migreringen. Att hitta och korrigera dessa problem kan avsevärt försena ett projekt. I var och en av processerna nedan finns vägledning om hur du hanterar denna komplexitet för förutsättningar, utvärdering, migrering och optimering. Att förstå användarprofiler i varje land är avgörande för att hantera den här komplexiteten korrekt.
 
 ### <a name="why-is-the-location-of-datacenters-relevant"></a>Varför har datacentrens placering betydelse?
 
@@ -115,7 +115,7 @@ Denna metod drivs av kvantifierbar information. Följande metod kommer därför 
 
 När omfånget för en migrering innehåller flera regioner bör följande beredskapsöverväganden utvärderas av teamet för molnimplementering:
 
-- Datasuveränitet kan kräva lokalisering av vissa till gångar, men det finns många till gångar som kanske inte styrs av dessa begränsningar. Saker som loggning, rapportering, nätverksroutning, identitet och andra centrala IT-tjänster kan vara möjliga att hantera som delade tjänster över flera prenumerationer eller till och med flera regioner. Teamet för molnimplementering bör utvärderar en modell för delade tjänster för dessa tjänster, enligt beskrivningen i [referensarkitektur för en nav- och eker-topologi med delade tjänster](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
+- Datasuveränitet kan kräva lokalisering av vissa tillgångar, men det finns många tillgångar som kanske inte styrs av dessa begränsningar. Saker som loggning, rapportering, nätverksroutning, identitet och andra centrala IT-tjänster kan vara möjliga att hantera som delade tjänster över flera prenumerationer eller till och med flera regioner. Molnimplementeringsteamet bör utvärdera användningen av en delad tjänstmodell för dessa tjänster, på det sätt som beskrivs i [referensarkitekturen för en ”nav och eker”-topologi med delade tjänster](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
 - Vid införandet av flera instanser av liknande miljöer kan en miljöfabrik skapa konsekvens, förbättra styrningen och påskynda distributionen. [Styrningsguiden för komplexa företag](../../govern/guides/complex/index.md) fastställer en metod som skapar en miljö som skalar över flera regioner.
 
 När teamet är nöjda med grundmetoden och beredskapen justerats finns det några datadrivna förutsättningar att tänka på:
@@ -129,18 +129,18 @@ När teamet är nöjda med grundmetoden och beredskapen justerats finns det någ
 
 Dessa förutsättningar ger möjlighet att skapa processer som kan hantera denna komplexitet under genomförandet av migreringsstrategin.
 
-## <a name="assess-process-changes"></a>Utvärdera ändringar i processen
+## <a name="assess-process-changes"></a>Utvärdera processändringar
 
-När du hanterar komplexitet relaterad till globala tillgångar och användare finns det några viktiga aktiviteter som ska läggas till i utvärderingen av alla kandidater för migrering. Alla dessa ändringar kommer att ge mer information om påverkan på globala användare och tillgångar med en datadriven metod.
+När du hanterar komplexitet relaterad till globala tillgångar och användare finns det några viktiga aktiviteter som bör läggas till i utvärderingen av alla kandidater för migrering. Alla dessa ändringar kommer att ge mer information om påverkan på globala användare och tillgångar med en datadriven metod.
 
 ### <a name="suggested-action-during-the-assess-process"></a>Föreslagna åtgärder under utvärderingsprocessen
 
-**Utvärdera beroenden mellan datacenter:** [Verktygen för beroendevisualisering i Azure Migrate](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) kan underlätta identifieringen av beroenden. Att använda denna verktygsuppsättning innan migrering är ett bra allmänt regelverk. När det gäller komplexitet på global nivå är det dock ett nödvändigt steg i utvärderingsprocessen. Genom [beroendegruppering](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies) kan visualiseringen underlätta identifieringen av IP-adresser och portar för alla tillgångar som krävs för att hantera arbetsbelastningen.
+**Utvärdera beroenden mellan datacenter:** [Verktygen för beroendevisualisering i Azure Migrate](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) kan underlätta identifieringen av beroenden. Vi rekommenderar att du använder dessa verktyg innan du migrerar. När det gäller komplexitet på global nivå är det dock ett nödvändigt steg i utvärderingsprocessen. Genom [beroendegruppering](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies) kan visualiseringen underlätta identifieringen av IP-adresser och portar för alla tillgångar som krävs för att hantera arbetsbelastningen.
 
 > [!IMPORTANT]
 > Två viktiga kommentarer: Först så krävs en ämnesexpert med förståelse för tillgångsplacering och IP-adresscheman för att identifiera tillgångar som ligger i sekundära datacenter. Sedan är det viktigt att utvärdera både underordnade beroenden och klienter visuellt för att förstå dubbelriktade beroenden.
 
-**Identifiera global användarpåverkan:** Data från de nödvändiga användarprofilanalyserna ska identifiera alla arbetsbelastningar som påverkas av globala användarprofiler. När en migreringskandidat är i listan över påverkade arbetsbelastningar bör arkitekten som förbereder migreringen rådgöra med experter på nätverk och drift för att validera nätverksroutning och prestandaförväntningar. Som minst bör arkitekturen inkludera en ExpressRoute-anslutning mellan närmaste NOC och Azure. [Referensarkitekturen för ExpressRoute](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/expressroute)-anslutningar kan vara till hjälp vid konfigurationen av anslutningen.
+**Identifiera global användarpåverkan:** Data från de nödvändiga användarprofilanalyserna ska identifiera alla arbetsbelastningar som påverkas av globala användarprofiler. När en migreringskandidat är i listan över påverkade arbetsbelastningar bör arkitekten som förbereder migreringen rådgöra med experter på nätverk och drift för att validera nätverksroutning och prestandaförväntningar. Som minst bör arkitekturen inkludera en ExpressRoute-anslutning mellan närmaste nätverksdriftcenter (NOC) och Azure. [Referensarkitekturen för ExpressRoute](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/expressroute)-anslutningar kan vara till hjälp vid konfigurationen av anslutningen.
 
 **Designa för efterlevnad:** Data från de nödvändiga användarprofilanalyserna ska identifiera alla arbetsbelastningar som påverkas av krav på datasuveränitet. Under arkitekturaktiviteterna i utvärderingsprocessen ska den tilldelade arkitekten rådfråga experter på efterlevnad för att förstå eventuella krav för migrering/distribution över flera regioner. Dessa krav kommer ha stor påverkan på designstrategierna. Referensarkitekturer för [webbprogram som används i flera regioner](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/multi-region) och [N-nivåprogram som används i flera regioner](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/multi-region-sql-server) kan vara till hjälp vid designen.
 
@@ -149,7 +149,7 @@ När du hanterar komplexitet relaterad till globala tillgångar och användare f
 
 ## <a name="migrate-process-changes"></a>Ändringar i migreringsprocessen
 
-Vid migrering av ett program som måste distribueras till olika regioner finns det några överväganden som teamet för molnimplementering måste ta hänsyn till. Dessa överväganden gäller design av Azure Site Recovery-valv, design av konfiguration/processerver, design av nätverksbandbredd och datasynkronisering.
+När ett program som ska distribueras till flera regioner migreras finns det vissa saker att ta hänsyn till. Dessa överväganden gäller design av Azure Site Recovery-valv, design av konfiguration/processerver, design av nätverksbandbredd och datasynkronisering.
 
 ### <a name="suggested-action-during-the-migrate-process"></a>Föreslagna åtgärder under migreringsprocessen
 
@@ -162,7 +162,7 @@ Vid migrering av ett program som måste distribueras till olika regioner finns d
 **Datasynkronisering:** Ofta utgör synkronisering av data den största förbrukaren av bandbredd. Som definierat i referensarkitekturer för [webbprogram som används i flera regioner](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/multi-region) och [N-nivåprogram som används i flera regioner](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/multi-region-sql-server) krävs ofta synkronisering för att programmen ska hållas uppdaterade och funktionella. Om detta är det önskade operativa läget för programmet kan det vara klokt att slutföra en synkronisering mellan källdataplattformen och var och en av molnplattformarna innan du migrerar programmet och tillgångar på mellannivå.
 **Datasynkronisering:** Ofta utgör synkronisering av data den största förbrukaren av bandbredd. Som definierat i referensarkitekturer för [webbprogram som används i flera regioner](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/multi-region) och [N-nivåprogram som används i flera regioner](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/multi-region-sql-server) krävs ofta synkronisering för att programmen ska hållas uppdaterade och funktionella. Om detta är det önskade operativa läget för programmet kan det vara klokt att slutföra en synkronisering mellan källdataplattformen och var och en av molnplattformarna innan du migrerar programmet och tillgångar på mellannivå.
 
-**Azure-till-Azure-haveriåterställning:** Det finns ett alternativ som kan minska komplexiteten ytterligare. Om tidslinjer och datasynkronisering närmar sig ett införande i två steg, kan [Azure-till-Azure-haveriåterställning](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-architecture) vara en acceptabel lösning. I detta scenario migreras arbetsbelastningen till det första Azure-datacentret med ett enda Site Recovery-valv och en konfiguration eller processerverdesign. När arbetsbelastningen testats kan den återställas till ett andra Azure-datacenter från de migrerade tillgångarna. Denna metod minskar påverkan på resurserna i det ursprungliga datacentret och utnyttjar de höga hastigheterna för dataöverföring mellan Azure-datacenter.
+**Azure-till-Azure-haveriåterställning:** Ett annat alternativ kan minska komplexiteten ytterligare. Om tidslinjer och datasynkronisering närmar sig ett införande i två steg, kan [Azure-till-Azure-haveriåterställning](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-architecture) vara en acceptabel lösning. I detta scenario migreras arbetsbelastningen till det första Azure-datacentret med ett enda Site Recovery-valv och en konfiguration eller processerverdesign. När arbetsbelastningen testats kan den återställas till ett andra Azure-datacenter från de migrerade tillgångarna. Denna metod minskar påverkan på resurserna i det ursprungliga datacentret och utnyttjar de höga hastigheterna för dataöverföring mellan Azure-datacenter.
 
 > [!NOTE]
 > Den här metoden kan öka den kortsiktiga kostnaden för migrering eftersom det kan leda till ytterligare avgifter för utgående bandbredd.
@@ -175,10 +175,10 @@ Att hantera global komplexitet under optimeringen och befordran kan kräva dubbl
 
 **Optimering innan test:** Inledande automatisk testning kan identifiera möjliga optimeringsmöjligheter, precis som vid all migrering. När det gäller globala arbetsbelastningar är det viktigt att testa arbetsbelastningen i varje region oberoende av varandra, eftersom mindre konfigurationsändringar i nätverket eller Azure-datacenter kan påverka prestandan.
 
-**Planer för verksamhetsändring:** I ett scenario med komplex migrering rekommenderas att en verksamhetsförändringsplan skapas för att säkerställa en tydlig kommunikation om eventuella ändringar i affärsprocesser, användarupplevelser och tidpunkten för de ansträngningar som krävs för att genomföra ändringarna. När det gäller global migrering bör planen innehålla överväganden för slutanvändare i varje berört område.
+**Planer för verksamhetsändring:** I komplexa migreringsscenarier bör en verksamhetsförändringsplan skapas för att säkerställa en tydlig kommunikation kring ändringar i affärsprocesser, användarupplevelsen och tidsplanen för implementeringen av ändringarna. När det gäller global migrering bör planen innehålla överväganden för slutanvändare i varje berört område.
 
 **Verksamhetstestning:** I samband med planen för verksamhetsförändringar kan verksamhetstestning krävas i varje region för att säkerställa tillräcklig prestanda och att de ändrade mönstren för nätverksroutning följs.
 
-**Befordran av förhandsversion:** Ofta sker befordran som en enda aktivitet, med omdirigering av produktionstrafik till de migrerade arbetsbelastningarna. Vid global publicering rekommenderas att befordran sker med förhandsversioner (eller fördefinierade grupper av användare). Det gör att teamet för molnstrategi och molnimplementering bättre kan observera prestandan och förstärka support för användare i varje område. Befordran av förhandsversionen styrs ofta på nätverksnivå genom att ändra routningen för specifika IP-adressintervall från den ursprungliga tillgången till den migrerade tillgången. När en specifik grupp slutanvändare migrerats kan nästa grupp dirigeras om.
+**Befordran av förhandsversion:** Ofta sker befordran som en enda aktivitet, med omdirigering av produktionstrafik till de migrerade arbetsbelastningarna. Globala versioner bör levereras i form av förhandsversioner (eller fördefinierade användargrupper). Det gör att teamet för molnstrategi och molnimplementering bättre kan observera prestandan och förstärka support för användare i varje område. Befordran av förhandsversionen styrs ofta på nätverksnivå genom att ändra routningen för specifika IP-adressintervall från den ursprungliga tillgången till den migrerade tillgången. När en specifik grupp slutanvändare migrerats kan nästa grupp dirigeras om.
 
 **Optimering av förhandsversioner:** En av fördelarna med förhandsversioner är att det ger möjlighet till noggrannare observationer och ytterligare optimering av de distribuerade tillgångarna. Efter en kort tids användning av den första förhandsversionen föreslås ytterligare förbättringar av de migrerade tillgångarna, om så är möjligt med tanke på IT-driften.

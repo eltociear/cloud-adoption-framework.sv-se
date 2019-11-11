@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: d9e26d82dd0332c338567bf962094a39f2ef84b4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: cbd9f8dcea85b22f68ddb0401ef5713491200fdc
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564530"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753673"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Upprätta en driftsmodell för molnet
 
@@ -40,9 +40,9 @@ Det här avsnittet om Cloud Adoption Framework beskriver en praktiskt tillämpba
 
 Molnet och den digitala ekonomin har visat på behovet av att använda flera olika driftsmodeller. Ibland beror det här på att flera olika offentliga moln måste hanteras. Vanligare är att det beror på övergången från en lokal drift till molnet. I båda fallen är det viktigt att anpassa driftsmodellerna efter varandra så att du får bästa möjliga resultat och så lite redundans som möjligt.
 
-Analytikerna förutspår att vi kommer använda flera moln och allt större volymer i framtiden. För många kunder börjar det här redan bli verklighet. Det kan dessvärre uppstå betydande svårigheter när flera olika moln ska hanteras. Dubbletter av resurser, processer, kunskaper och teknik leder till ökade kostnader, inte de besparingar som utlovades i samband med övergången till molnet. För att undvika det här bör du använda en specialiserad driftsmodell. När du anpassar driftsmodeller efter varandra ska du alltid ha en **allmän driftsmodell**. Du kan använda fler **specialiserade driftsmodeller** för specifika scenarier där du måste hantera avvikelser från den allmänna modellen.
+Analytikerna förutspår att vi kommer använda flera moln och allt större volymer i framtiden. För många kunder börjar det här redan bli verklighet. Det kan dessvärre uppstå betydande svårigheter när flera olika moln ska hanteras. Dubbletter av resurser, processer, kunskaper och teknik leder till ökade kostnader, inte de besparingar som utlovades i samband med övergången till molnet. För att undvika den här trenden bör kunderna använda en specialiserad driftsmodell. När driftsmodellerna anpassas bör det alltid finnas en **allmän driftsmodell**. Du kan använda fler **specialiserade driftsmodeller** för specifika scenarier där du måste hantera avvikelser från den allmänna modellen.
 
-- **Allmän driftsmodell:** Den allmänna driftsmodellen är anpassad efter en enda offentlig eller privat molnplattform. I modellen definieras standarder, policyer och processer för den här plattformen. Den här driftsmodellen bör vara central i utvecklingen av molnstrategin. I den här modellen är målet att använda den primära molnleverantören till det mesta av molnimplementeringen.
+- **Allmän driftsmodell:** Den allmänna driftsmodellen är anpassad efter en enda offentlig eller privat molnplattform. I modellen definieras standarder, policyer och processer för den här plattformen. Den här driftsmodellen bör vara central i utvecklingen av molnstrategin. I den här modellen är målet att använda den primära molnleverantören för större delen av molnimplementeringen.
 
 - **Specialiserad driftsmodell:** För vissa affärsresultat kanske en annan molnleverantör passar bättre. När det finns ett relevant användningsfall kan standarder, policyer och processer från den allmänna driftsmodellen användas hos den nya molnleverantören, men justeras så att de passar bättre för det specialiserade användningsfallet.
 

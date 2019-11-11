@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: abbcdd7214673fdad47946ae77f7dd0bdb7c57af
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 1b0ecb840a5378acbabaf94f11e2aa1297c35427
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565493"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751539"
 ---
 ::: zone target="docs"
 
@@ -45,7 +45,7 @@ I den här guiden får du lära dig att etablera verktyg till en baslinje för h
 > - **Skydda och återställa:** Se till att alla hanterade tillgångar är skyddade och kan återställas med hjälp av baslinjen för hanteringen.
 > - **Alternativ för en utökad baslinje:** Utvärdera vanliga tillägg till baslinjen som kan uppfylla affärsbehoven.
 > - **Plattformsdrift:** Utöka baslinjen för hantering med en väldefinierad tjänstkatalog och centralt hanterade plattformar.
-> - **Arbetsbelastningsåtgärder:** Utöka baslinjen för hantering så att den omfattar en inriktning på verksamhetskritiska arbetsbelastningar.
+> - **Arbetsbelastningsåtgärder:** Utöka baslinjen för hantering med fokus på verksamhetskritiska arbetsbelastningar.
 
 ## <a name="management-baseline"></a>Baslinje för hantering
 

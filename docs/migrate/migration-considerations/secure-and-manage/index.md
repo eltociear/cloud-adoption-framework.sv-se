@@ -8,16 +8,16 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 86a88183b7743a4fb326d325e97f90c4f4a5aa24
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 3d99e999d8d083814812b1605d9f0053f186bfc4
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683766"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753426"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>Säkra övervaknings- och hanteringsverktyg
 
-När en migrering är klar ska migrerade tillgångar hanteras av kontrollerade IT-åtgärder. Den här artikeln är inte avsedd att föreslå en avvikelse från bästa praxis för drift. I stället bör följande betraktas som en MVP (Minimum Viable Product) för att skydda och hantera migrerade tillgångar antingen från IT-åtgärder eller oberoende när IT-åtgärderna tas online.
+När en migrering är klar ska migrerade tillgångar hanteras av kontrollerade IT-åtgärder. Den här artikeln motsäger inte metodtipsen för användning. I stället bör följande betraktas som en MVP (Minimum Viable Product) för att skydda och hantera migrerade tillgångar antingen från IT-åtgärder eller oberoende när IT-åtgärderna tas online.
 
 ## <a name="monitoring"></a>Övervakning
 

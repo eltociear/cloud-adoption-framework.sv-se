@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e3dad3c514c4d76a857b6b433b7bf7ee7320e626
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 367480222244c1e4287bebec85743408a10efc19
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565119"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752857"
 ---
 # <a name="it-management-and-operations-in-the-cloud"></a>IT-hantering och drift i molnet
 
@@ -21,7 +21,7 @@ När ett företag övergår till en molnbaserad modell, måste man fokusera på 
 
 ## <a name="brief-history-of-it-management"></a>En kort historik över IT-hanteringen
 
-Innan molnet började IT-hanteringen sakta handla om mer än bara inköp av maskiner. För att köpa in teknisk utrustning till stöd för olika affärsprocesser krävdes teknisk kompetens och ingående kunskap om en specifik grupp leverantörer. Inom IT-hanteringen samlades besluten kring urval, inköp och konfigurering av IT-tillgångarna. De tillgångar som köptes in innefattade i allmänhet lagring, beräkningskraft, nätverk och liknande, vilket behövdes för att kunna köra de önskade affärsfunktionerna. Eftersom de var experter på utrustningen fick IT-avdelningen också i uppgift att sköta driften för att säkerställa bästa möjliga prestanda och minsta möjliga avbrott i verksamheten.
+Före molnet började IT-hanteringen sakta handla om mer än bara inköp av maskiner. För att köpa in teknisk utrustning till stöd för olika affärsprocesser krävdes teknisk kompetens och ingående kunskap om en specifik grupp leverantörer. Inom IT-hanteringen samlades besluten kring urval, inköp och konfigurering av IT-tillgångarna. De tillgångar som köptes in innefattade i allmänhet lagring, beräkningskraft, nätverk och liknande, vilket behövdes för att kunna köra de önskade affärsfunktionerna. Eftersom de var experter på utrustningen fick IT-avdelningen också i uppgift att sköta driften för att säkerställa bästa möjliga prestanda och minsta möjliga avbrott i verksamheten.
 
 Nya tekniska lösningar tas fram som svar på ett tydligt behov hos företaget, och därmed kan de betydande kostnaderna för att köpa in tillgångar, eller till och med skapa kompletta datacenter, motiveras. När lösningar skapas ser företaget inköpskostnaden som en investering i framtiden. När affärsbehovet har uppfyllts ses de här kostnaderna i ett nytt ljus. Kostnader som är kopplade till befintliga lösningar anses vara driftsmässiga hinder som orsakats av tidigare behov. Det är därför som så många företag ser IT-avdelningen som ett kostnadsställe. Det är också därför som många IT-organisationer regelbundet måste se över sina kostnader eller säga upp IT-personal.
 

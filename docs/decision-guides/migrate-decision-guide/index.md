@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: b231df4665e0da46229d6bc87f8ac32bc1985067
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 2129e0f27dd44a32ea0966326cd0c172603783cf
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564853"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753341"
 ---
 # <a name="migration-tools-decision-guide"></a>Beslutsguide för migreringsverktyg
 
@@ -32,7 +32,7 @@ Genom att besvara följande frågor kan du fatta beslut utifrån trädet ovan.
 - **Körs ditt program för närvarande på dedikerade virtuella datorer eller delar det värdhantering med andra program?** Program som körs på dedikerade virtuella datorer kan enklare migreras till PaaS-hanteringsalternativ än program som körs på delade servrar.
 - **Kommer din datamigrering att överskrida nätverksbandbredden?** Nätverkskapaciteten mellan dina lokala datakällor och Azure kan utgöra en flaskhals för datamigrering. Om de data du behöver överföra stöter på bandbreddsbegränsningar som förhindrar effektiv eller tidsenlig migrering kan du behöva överväga alternativa eller offlinebaserade överföringsmekanismer. Cloud Adoption Frameworks [artikel om migreringsreplikering](../../migrate/migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication) går igenom hur replikeringsbegränsningar kan påverka migreringsarbete. Som en del av din migreringsutvärdering bör du diskutera med IT-teamen för att kontrollera om din lokala bandbredd och WAN-bandbredden uppfyller migreringskraven. Se även [migreringsscenariot med utökat omfång för de tillfällen då lagringskrav överstiger nätverkskapaciteten under en migrering](../../migrate/expanded-scope/network-capacity-exceeded.md#suggested-prerequisites).
 - **Använder ditt program en befintlig DevOps-pipeline?** I många fall kan Azure-pipelines enkelt refaktoriseras för distribution av program till molnbaserade värdmiljöer.
-- **Har dina data komplexa krav för datalagring?** Produktionsprogram kräver vanligtvis datalagring som har hög tillgänglighet och erbjuder AlwaysOn-funktion samt liknande funktioner för tjänstens drifttid och kontinuitet. Azure PaaS-baserade alternativ för hanterad databas, till exempel Azure SQL Database, Azure Database for MySQL och Azure Cosmos DB, erbjuder serviceavtal med 99,99 % drifttid. På motsvarande sätt erbjuder IaaS-baserad SQL Server på virtuella Azure-datorer serviceavtal för enskild instans med 99,95 %. Om dina data inte kan moderniseras till att använda PaaS-lagringsalternativ kommer en garanti för högre IaaS-drifttid att omfatta mer komplexa datalagringsscenarier såsom att köra SQL Server AlwaysOn-kluster och kontinuerligt synkronisera data mellan instanser. Detta kan innebära betydande värd- och hanteringskostnader. Därför är det viktigt att balansera krav på drifttid, moderniseringsarbetet och den övergripande budgetinverkan när du överväger alternativ för datamigrering.
+- **Har dina data komplexa krav för datalagring?** Produktionsprogram kräver vanligtvis datalagring som har hög tillgänglighet och erbjuder AlwaysOn-funktion samt liknande funktioner för tjänstens drifttid och kontinuitet. Azure PaaS-baserade alternativ för hanterad databas, till exempel Azure SQL Database, Azure Database for MySQL och Azure Cosmos DB, erbjuder serviceavtal med 99,99 % drifttid. På motsvarande sätt erbjuder IaaS-baserade SQL Server på virtuella Azure-datorer serviceavtal för enskilda instanser med en garanti på 99,95 %. Om dina data inte kan moderniseras till att använda PaaS-lagringsalternativ kommer en garanti för högre IaaS-drifttid att omfatta mer komplexa datalagringsscenarier såsom att köra SQL Server AlwaysOn-kluster och kontinuerligt synkronisera data mellan instanser. Detta kan innebära betydande värd- och hanteringskostnader. Därför är det viktigt att balansera krav på drifttid, moderniseringsarbetet och den övergripande budgetinverkan när du överväger alternativ för datamigrering.
 
 ## <a name="innovation-and-migration"></a>Innovation och migrering
 
