@@ -10,18 +10,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 20dd988f3e79c513647f74ade9edad307e01d839
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: c9a02a6d98929455d8d8f6c163825f69de7996be
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72379160"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73562578"
 ---
 # <a name="manage-costs-and-billing-for-your-azure-resources"></a>Hantera kostnader och fakturering för dina Azure-resurser
 
 Kostnadshantering är den process där du effektivt planerar och styr kostnaderna i företaget. Kostnadshanteringsuppgifter utförs normalt av ekonomi-, hanterings- och appteamen. Azure Cost Management kan hjälpa dig att planera kostnadsmedvetet. Det hjälper även till att effektivt analysera kostnader och vidta åtgärder för att optimera molnutgifter.
 
-Mer information om hur du integrerar molnkostnadshanteringsprocesser i organisationen finns i artikeln [Spåra kostnader mellan affärsenheter, miljöer och projekt](../azure-best-practices/track-costs.md) i Ramverk för molnimplementering.
+Mer information om hur du integrerar molnkostnadshantering i organisationen finns i [Spåra kostnader mellan affärsenheter, miljöer och projekt](../azure-best-practices/track-costs.md) i artikeln om Cloud Adoption Framework.
 
 ## <a name="manage-your-costs-with-azure-cost-management"></a>Hantera dina kostnader med Azure Cost Management
 

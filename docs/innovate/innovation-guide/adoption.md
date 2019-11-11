@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2b2c4768cbe74363cd50b7730c3ba6b4078db14c
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 98db83bf842fe4c293eba482572bffbdb50caed6
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058111"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565566"
 ---
 ::: zone target="docs"
 
@@ -36,7 +36,7 @@ Att skapa en ny innovativ lösning handlar inte om att ge användarna vad de vil
 - **Kvantitativ (testningsfeedback):** Den här feedbacken mäter de åtgärder vi hoppas att se.
 - **Kvalitativ (kundfeedback):** Den här feedbacken säger oss vad de här måtten innebär för kunden.
 
-Innan du integrerar feedbackslingor måste du ha en delad lagringsplats för din lösning. Med en central lagringsplats kan du samla in och agera på all feedback som kommer in om projektet. [GitHub](https://github.com/) är ett nav för programvara med öppen källkod. Det är också en av de mest använda plattformarna för lagringsplatser i kommersiella utvecklingsprojekt. I artikeln om att [skapa GitHub-lagringsplatser](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml) kan du få hjälp att komma igång med din egen lagringsplats.
+Innan du integrerar feedbackslingor måste du ha en delad lagringsplats för din lösning. Med en central lagringsplats kan du samla in och agera på all feedback som kommer in om projektet. [GitHub](https://github.com) är ett nav för programvara med öppen källkod. Det är också en av de mest använda plattformarna för lagringsplatser i kommersiella utvecklingsprojekt. I artikeln om att [skapa GitHub-lagringsplatser](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml) kan du få hjälp att komma igång med din egen lagringsplats.
 
 Alla de här Azure-verktygen kan integreras med (eller är kompatibla med) projekt som lagras i GitHub:
 
@@ -126,7 +126,7 @@ I kvarvarande uppgifter (eller på tavlan) registreras feedback som användarber
 ### <a name="action"></a>Åtgärd
 
 För Azure Board och Azure Pipelines krävs en egen portal separat från GitHub och Azure.
-Om du vill komma igång med något av de här verktygen går du till [Azure DevOps](https://dev.azure.com/).
+Om du vill komma igång med något av de här verktygen går du till [Azure DevOps](https://dev.azure.com).
 
 ::: zone-end
 
@@ -138,11 +138,11 @@ Om du vill komma igång med något av de här verktygen går du till [Azure DevO
 
 Så här skapar du ett DevOps-projekt:
 
-1. Gå till **Azure DevOps-projekt**.
+1. Gå till **Azure DevOps Projects**.
 2. Välj **Skapa DevOps-projekt**.
 3. Välj **Körning, ramverk och tjänst**.
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/microsoft.visualstudio%2Faccount%2Fproject]" submitText="Go to Azure DevOps Project" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/microsoft.visualstudio%2Faccount%2Fproject]" submitText="Go to Azure DevOps Projects" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -152,8 +152,8 @@ Så här skapar du ett DevOps-projekt:
 
 De här artiklarna visar hur du kan centralisera och hantera feedback med hjälp av Azure Boards och GitHub:
 
-- [Kom igång med Azure Boards](https://docs.microsoft.com/azure/devops/boards/boards/kanban-quickstart?view=azure-devops)
-- [Azure Boards och GitHub](https://docs.microsoft.com/azure/devops/boards/boards/kanban-quickstart?view=azure-devops)
+- [Kom igång med Azure Boards](https://docs.microsoft.com/azure/devops/boards/github?view=azure-devops)
+- [Azure Boards och GitHub](https://docs.microsoft.com/azure/devops/boards/get-started/?view=azure-devops)
 
 ## <a name="close-the-loop-with-pipelinestabpipelines"></a>[Stäng loopen med pipelines](#tab/pipelines)
 
@@ -163,7 +163,7 @@ Att agera på feedback behöver inte alltid betyda att du lägger till en funkti
 
 Så här visar du aktuella distributioner i din pipeline:
 
-1. Gå till **App Service**.
+1. Gå till **App Services**.
 2. Välj önskat program i listan.
 3. Välj **Distributionscenter** i avsnittet **Distribution**.
 
@@ -171,7 +171,7 @@ Så här visar du aktuella distributioner i din pipeline:
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2Fsites]" submitText="Go to App Service" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2Fsites]" submitText="Go to App Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

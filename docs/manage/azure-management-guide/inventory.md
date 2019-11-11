@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8b7902910de3df729524b1625fe83b0681eeef5b
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 84efac562647d88235dbcecbb2078e632c1c0341
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72556793"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565468"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Inventering och synlighet i Azure
 
@@ -23,17 +23,17 @@ _Inventering och synlighet_ är den första av tre discipliner i en baslinje fö
 
 ![Baslinje för molnhantering](../../_images/manage/management-baseline.png)
 
-Den här disciplinen kommer först eftersom det är viktigt att rätt driftdata samlas in när du ska fatta beslut om driften. Molnhanteringsteamen måste förstå vad som hanteras och hur bra dessa tillgångar hanteras. Den här artikeln går igenom de olika verktygen som ger både en inventering och insyn i inventeringens körningsstatus.
+Den här disciplinen kommer först eftersom det är viktigt att samla in rätt driftsdata när du fattar beslut om åtgärder. Molnhanteringsteamen måste förstå vad som hanteras och hur bra tillgångarna fungerar. Den här artikeln beskriver olika verktyg som ger både en inventering och insyn i inventeringens körningsstatus.
 
-Följande tabell visar det rekommenderade minimikravet för alla baslinjer för hantering för alla företagsomspännande miljöer.
+I den här tabellen ser du rekommenderade minimikrav för alla typer av miljöer i företagsklass.
 
 |Process  |Verktyg  |Syfte  |
 |---------|---------|---------|
 |Övervaka hälsotillståndet för Azure-tjänster|Azure Service Health|Hälsa, prestanda och diagnostik för tjänster som körs i Azure|
 |Central loggning|Log Analytics|Central loggning för alla synlighetssyften|
 |Central övervakning|Azure Monitor|Central övervakning av driftdata och trender|
-|Inventering och ändringsspårning för virtuell dator|Tjänsten Ändringsspårning och inventering i Azure|Inventera virtuella datorer och övervaka ändringar för gästoperativsystem|
-|Service Health|Azure-aktivitetslogg|Övervaka ändringar på prenumerationsnivå|
+|Inventering av virtuella datorer och ändringsspårning|Ändringsspårning och inventering i Azure|Inventera virtuella datorer och övervaka ändringar för gästoperativsystem|
+|Service Health:|Azure-aktivitetslogg|Övervaka ändringar på prenumerationsnivå|
 |Övervakning av gästoperativsystem|Azure Monitor för virtuella datorer|Övervaka ändringar och prestanda för virtuella datorer|
 |Nätverksövervakning|Azure Network Watcher|Övervaka nätverksändringar och prestanda|
 |DNS-övervakning|DNS-analys|Säkerhet, prestanda och åtgärder för DNS|
@@ -49,15 +49,15 @@ Följande tabell visar det rekommenderade minimikravet för alla baslinjer för 
 
 ::: zone-end
 
-Azure Service Health tillhandahåller en anpassad vy över hälsotillstånden för de Azure-tjänster och Azure-regioner som du använder. Information om aktiva problem publiceras till Service Health för att hjälpa dig att förstå hur de inverkar på dina resurser. Regelbundna uppdateringar håller dig informerad när problemet har lösts.
+Azure Service Health tillhandahåller en anpassad vy över hälsotillstånden för dina Azure-tjänster och Azure-regioner. Information om aktiva problem publiceras till Service Health för att hjälpa dig att förstå hur de inverkar på dina resurser. Regelbundna uppdateringar håller dig uppdaterad allt eftersom problemen åtgärdas.
 
-Vi publicerar också planerade underhållshändelser i Service Health så att du får information om ändringar som kan påverka resursernas tillgänglighet. Konfigurera aviseringar för Service Health som meddelar när problem med tjänsten, planerat underhåll eller andra ändringar kan påverka de Azure-tjänster och -regioner du använder.
+Vi publicerar också planerat underhåll i Service Health så att du får information om ändringar som kan påverka resurstillgängligheten. Konfigurera Service Health-aviseringar så att du meddelas om tjänstproblem, planerat underhåll eller andra ändringar som kan påverka dina Azure-tjänster och Azure-regioner.
 
 I Azure Service Health ingår:
 
 - **Azure-status:** En global vy över Azure-tjänsternas hälsotillstånd.
 - **Service Health:** En anpassad vy över hälsotillståndet hos dina Azure-tjänster.
-- **Resource Health:** En mer ingående vy över hälsotillståndet för varje enskild resurs.
+- **Resource Health:** En mer detaljerad vy över hälsotillståndet för dina enskilda resurser.
 
 ::: zone target="chromeless"
 
@@ -125,13 +125,13 @@ Mer information finns i [dokumentationen om hur du skapar en Log Analytics-arbet
 
 ::: zone-end
 
-Azure Monitor är en enhetlig hubb för alla övervaknings- och diagnostikdata i Azure. Du kan använda den för att få insyn i dina resurser. Med Azure Monitor kan du hitta och åtgärda problem och optimera prestanda. Du kan också förstå kundbeteendet.
+Azure Monitor använder en enda hubb för alla övervaknings- och diagnostikdata i Azure och ger bra insyn i alla dina resurser. Med Azure Monitor kan du hitta och åtgärda problem och optimera prestanda. Dessutom får du hjälp med att förstå kundernas beteende.
 
-- **Övervaka och visualisera mått.** Mått är numeriska värden från Azure-resurser som hjälper dig att förstå dina systems hälsotillstånd. Anpassa diagram för dina instrumentpaneler och använd arbetsböcker för rapportering.
+- **Övervaka och visualisera mått.** Mått är numeriska värden som är tillgängliga från Azure-resurser. De ger information om hälsostatusen i dina system. Anpassa diagram för dina instrumentpaneler och använd arbetsböcker för rapportering.
 
 - **Köra frågor mot och analysera loggar.** Loggarna kan vara aktivitets- och diagnostikloggar från Azure. Samla in ytterligare loggar från andra lösningar för övervakning och hantering som du använder i molnet eller lokalt. Använd Log Analytics som centralt datalager för alla dessa data. Därifrån kan köra du frågor för att felsöka problem eller visualisera data.
 
-- **Konfigurera aviseringar och åtgärder.** Aviseringar kan informera dig om kritiska tillstånd proaktivt. Du kan vidta korrigerande åtgärder baserat på utlösare för mått, loggar eller problem med tjänster. Du kan ställa in olika meddelanden och åtgärder och skicka data till dina hanteringsverktyg för IT-tjänster.
+- **Konfigurera aviseringar och åtgärder.** Aviseringar meddelar dig om kritiska situationer. Du kan vidta korrigerande åtgärder baserat på utlösare för mått, loggar eller problem med tjänster. Du kan ställa in olika aviseringar och åtgärder och kan även skicka data till dina hanteringsverktyg för IT-tjänster.
 
 ::: zone target="chromeless"
 
@@ -178,7 +178,7 @@ Publiceringen kan göras på två sätt:
 - [Enstaka virtuell dator](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-single-vm)
 - [Hel prenumeration](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-at-scale)
 
-Varje artikel vägleder dig genom en rad steg för att publicera följande lösningar:
+Varje artikel vägleder dig genom en rad steg för att implementera dessa lösningar:
 
 - Uppdateringshantering
 - Ändringsspårning och inventering
@@ -188,4 +188,4 @@ Varje artikel vägleder dig genom en rad steg för att publicera följande lösn
 - Azure Monitor för virtuella datorer
 - Azure Security Center
 
-Varje lösning ovan bidrar till att upprätta inventering och synlighet.
+De föregående stegen förklarar hur du etablerar inventeringen och synligheten.
