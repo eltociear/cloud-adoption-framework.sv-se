@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3d8d8007125a0ffa6268132f1d608123c25c9c22
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: bafeecd715ac2c18c9ae744165be249c2b3639e5
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058548"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751551"
 ---
 ::: zone target="docs"
 
@@ -43,7 +43,7 @@ En av fördelarna med molnbaserade lösningar är att du kan samla feedback snab
 
 Azure App Service tillhandahåller en värdmiljö för dina program som gör att du slipper ägna tid och resurser åt infrastrukturhantering och uppdatering av operativsystem. Skalningen sker automatiskt efter användarnas behov, men du anger gränser för att hålla koll på kostnaderna.
 
-Azure App Service har förstklassigt stöd för språk som ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP och Python. Om du behöver vara värd för en annan körningsstack kan du snabbt och enkelt ha en Docker-container i Azure App Service-miljön med Webb App for Containers. Det innebär att du kan vara värd för en egen kodstack i en miljö utan att ha egna servrar.
+Azure App Service har förstklassigt stöd för språk som ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP och Python. Om du behöver vara värd för en annan körningsstack kan du snabbt och enkelt ha en Docker-container i App Service med Webb App for Containers. Det innebär att du kan vara värd för en egen kodstack i en miljö utan att ha egna servrar.
 
 ### <a name="action"></a>Åtgärd
 

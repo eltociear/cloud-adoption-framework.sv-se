@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 92b9988d47dcc8ba4b7a7e3dd02a4ec9ff3ed2e9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 2381a7579fad573abeca6afafd6f6fbaa6310ee4
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565379"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752917"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>Specialisering för arbetsbelastningar för molnhantering
 
@@ -44,9 +44,9 @@ När arbetsbelastningsspecialisering krävs utvecklas driftshanteringen ofta bor
 
 I den här modellen flyttas operativa uppgifter som övervakning, distribution, DevOps och andra innovationsfokuserade funktioner till en programutvecklings- eller affärsenhetsorganisation. Molnplattforms- och molnövervakningsteamen levererar fortfarande i enlighet med baslinjen för hantering i miljön.
 
-Dessa centraliserade team vägleder och instruerar även team som är specialiserade på arbetsbelastningar om hur de ska hantera sina arbetsbelastningar. Men ansvaret för den dagliga driften ligger hos ett molnhanteringsteam som styrs utanför IT-avdelningen. Den här typen av distribuerad kontroll är ett av de viktigaste tecknen på Cloud Center of Excellence-mognad.
+Dessa centraliserade team vägleder och instruerar även team som är specialiserade på arbetsbelastningar om hur de ska hantera sina arbetsbelastningar. Men ansvaret för den dagliga driften ligger hos ett molnhanteringsteam som styrs utanför IT-avdelningen. Den här typen av distribuerad kontroll är ett av de viktigaste tecknen på mognad i Cloud Center of Excellence.
 
-## <a name="beyond-platform-specialization---application-insights"></a>Bortom specialisering för plattformar – Application Insights
+## <a name="beyond-platform-specialization-application-insights"></a>Bortom specialisering för plattformar: Application Insights
 
 Mer information om den specifika arbetsbelastning som krävs för att tillhandahålla en tydlig arbetsbelastningsdrift. Under fasen för kontinuerlig förbättring är Application Insights ett nödvändigt tillägg i verktygskedjan för molnhantering.
 

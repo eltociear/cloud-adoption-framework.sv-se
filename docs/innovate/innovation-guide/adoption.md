@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 98db83bf842fe4c293eba482572bffbdb50caed6
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a6eb791e22d834f51face8819133c0ada6774952
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565566"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752958"
 ---
 ::: zone target="docs"
 
@@ -152,8 +152,8 @@ Så här skapar du ett DevOps-projekt:
 
 De här artiklarna visar hur du kan centralisera och hantera feedback med hjälp av Azure Boards och GitHub:
 
-- [Kom igång med Azure Boards](https://docs.microsoft.com/azure/devops/boards/github?view=azure-devops)
-- [Azure Boards och GitHub](https://docs.microsoft.com/azure/devops/boards/get-started/?view=azure-devops)
+- [Kom igång med Azure Boards](https://docs.microsoft.com/azure/devops/boards/get-started/?view=azure-devops)
+- [Azure Boards och GitHub](https://docs.microsoft.com/azure/devops/boards/github?view=azure-devops)
 
 ## <a name="close-the-loop-with-pipelinestabpipelines"></a>[Stäng loopen med pipelines](#tab/pipelines)
 
