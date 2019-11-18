@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: e02fa26454c4e10af7acae80bbe3b89e8ccaee84
-ms.sourcegitcommit: 617c3f12a3657a8a1393fd08d261dd98eb81b65c
+ms.openlocfilehash: 1142ca43776ab9b147b23ef054d77d76d8aed212
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "74086812"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160246"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>Beslutsguide för namngivning och taggning av resurser
 
@@ -74,7 +74,7 @@ De vanliga taggningsmönster som anges nedan ger exempel på hur taggar kan anv�
 Mer information om namngivning och taggning i Azure finns här:
 
 - [Namngivningskonventioner för Azure-resurser](/azure/architecture/best-practices/resource-naming). Läs den här vägledningen för rekommenderade namnkonventioner för Azure-resurser.
-- [Använd taggar för att organisera Azure-resurser](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags?toc=/azure/billing/TOC.json). Du kan tillämpa taggar i Azure på nivå för såväl resursgrupp som enskild resurs, vilket ger dig flexibilitet vad gäller kornighet för alla redovisningsrapporter baserat på tillämpade taggar.
+- [Använd taggar för att organisera Azure-resurser](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags). Du kan tillämpa taggar i Azure på nivå för såväl resursgrupp som enskild resurs, vilket ger dig flexibilitet vad gäller kornighet för alla redovisningsrapporter baserat på tillämpade taggar.
 
 ## <a name="next-steps"></a>Nästa steg
 
