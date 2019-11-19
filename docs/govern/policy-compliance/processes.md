@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 57f94fde4e7f4863a3ddca710d523d9c027571d0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6671efc087d718a44de97062dcf8c32498cfdb81
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566122"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159834"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -38,15 +38,15 @@ Innan du definierar utlösare för policy för efterlevnad av principer måste d
 
 ### <a name="assign-cloud-governance-team-members"></a>Tilldela team medlemmar för moln styrning
 
-Ditt moln styrnings team ger fort löp ande vägledning om policy efterlevnad och hantering av policy-relaterade problem som uppstår när du distribuerar och hanterar dina moln till gångar. När du skapar det här teamet kan du bjuda in personal från din organisation som har expertis inom områden som omfattas av dina definierade policy-uttryck och identifierade risker.
+Ditt moln styrnings team ger fort löp ande vägledning om policy efterlevnad och hantering av policy-relaterade problem som uppstår när du distribuerar och hanterar dina moln till gångar. När du skapar det här teamet kan du bjuda in personal medlemmar som har expertis inom områden som omfattas av dina definierade policy-uttryck och identifierade risker.
 
-Vid inledande test distributioner kan detta begränsas till några system administratörer som ansvarar för att etablera grunderna för styrning. När dina styrnings processer är vuxen granskar du moln guidens medlemskap regelbundet för att säkerställa att du kan åtgärda nya potentiella risker och princip krav på rätt sätt. Identifiera medlemmar av IT-avdelningen och företags personalen med relevant erfarenhet eller intresse av vissa delar av styrningen och ta med dem i dina team på en permanent eller ad hoc-basis som behövs.
+Vid inledande test distributioner kan detta begränsas till några system administratörer som ansvarar för att etablera grunderna för styrning. När dina styrnings processer är vuxen granskar du moln guidens medlemskap regelbundet för att säkerställa att du kan åtgärda nya potentiella risker och princip krav på rätt sätt. Identifiera medlemmar av IT-avdelningen och företags personalen med relevant erfarenhet eller intresse av vissa delar av styrningen och ta med dem i teamen på ett permanent eller tillfälligt sätt vid behov.
 
 ### <a name="reviews-and-policy-iteration"></a>Recensioner och princip upprepning
 
 När ytterligare resurser och arbets belastningar distribueras måste moln styrnings teamet se till att nya arbets belastningar eller till gångar uppfyller princip kraven. Utvärdera nya krav från arbets belastnings utvecklings grupper för att säkerställa att deras planerade distributioner överensstämmer med dina design guider och uppdatera dina principer för att stödja dessa krav när det är lämpligt.
 
-Planera för att utvärdera nya potentiella risker och uppdatera princip satser och design guider efter behov. Arbeta med IT-personal och arbets belastnings grupper för att utvärdera nya Azure-funktioner och-tjänster kontinuerligt. Du kan också schemalägga regelbundna granskningar, och var och en av de fem styrnings disciplinerna för att säkerställa att principen är uppdaterad och uppfylls.
+Planera för att utvärdera nya potentiella risker och uppdatera princip satser och design guider efter behov. Arbeta med IT-personal och arbets belastnings grupper för att utvärdera nya Azure-funktioner och-tjänster kontinuerligt. Du kan också schemalägga regelbundna granskningar i alla de fem styrnings disciplinerna för att säkerställa att principen är aktuell och att den efterlevs.
 
 ### <a name="education"></a>Utbildning
 
@@ -79,15 +79,15 @@ Några exempel på fel utlösare och åtgärder:
 
 | Moln styrnings disciplin | Exempel utlösare | Exempel åtgärd |
 |-----------------------------|----------------|---------------|
-| Cost Management | Månads moln utgifter är mer än 20% högre än förväntat. | Meddela den fakturerings enhets ledare som ska påbörja en granskning av resursanvändningen. |
-| Grundläggande säkerhet | Identifiera misstänkt användar inloggnings aktivitet. | Meddela IT-säkerhetsteamet och inaktivera misstänkt användar konto. |
-| Resurskonsekvens | PROCESSOR belastningen för arbets belastningen är större än 90%. | Meddela IT-avdelningen och skala ut ytterligare resurser för att hantera belastningen. |
+| Kostnadshantering | Månads moln utgifter är mer än 20% högre än förväntat. | Meddela den fakturerings enhets ledare som ska påbörja en granskning av resursanvändningen. |
+| Grundläggande säkerhet | Identifiera misstänkt användar aktivitet. | Meddela IT-säkerhetsteamet och inaktivera det misstänkta användar kontot. |
+| Resurskonsekvens | PROCESSOR belastningen för en arbets belastning är större än 90%. | Meddela IT-avdelningen och skala ut ytterligare resurser för att hantera belastningen. |
 
 ## <a name="automation-of-monitoring-and-compliance"></a>Automatisering av övervakning och efterlevnad
 
 När du har definierat fel utlösare och åtgärder för regelefterlevnad kan du börja planera hur du ska använda loggnings-och rapporterings verktygen och andra funktioner i moln plattformen för att automatisera strategin för övervakning och policy efterlevnad.
 
-Mer information om hur du väljer det bästa övervaknings mönstret för distributionen finns i avsnittet Cloud adoption- [loggning och rapportering av besluts guide](../../decision-guides/logging-and-reporting/index.md) .
+För hjälp med att välja det bästa övervaknings mönstret för din distribution, se [loggning och rapportering av besluts guide](../../decision-guides/logging-and-reporting/index.md).
 
 ## <a name="next-steps"></a>Nästa steg
 

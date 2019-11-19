@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c623d7c537d19f700fed4d28523f60c4fd03d4ea
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: a2a695af758ae7e99a7c2257f3adf4ce5058ae3d
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058636"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160317"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>Byta värd för en lokal Linux-app till virtuella Azure-datorer och Azure Database for MySQL
 
@@ -247,10 +247,10 @@ Contosos administratörer gör detta på följande sätt:
 
 8. Verktyget utför vissa konfigurationsåtgärder och startar sedan om datorn.
 9. De loggar in på datorn igen och guiden Konfigurera serverhantering startar automatiskt.
-10. I guiden väljer de det nätverkskort som ska ta emot replikeringstrafiken. Det går inte att ändra den här inställningen när den har konfigurerats.
+10. I guiden väljer de det nätverkskort som ska ta emot replikeringstrafik. Det går inte att ändra den här inställningen när den har konfigurerats.
 11. De väljer den prenumeration, den resursgrupp och det valv som konfigurationsservern ska registreras i.
 
-    ![valv](./media/contoso-migration-rehost-linux-vm-mysql/cswiz1.png)
+    ![Välja Recovery Services-valv](./media/contoso-migration-rehost-linux-vm-mysql/cswiz1.png)
 
 12. Nu laddar de ned och installerar MySQL Server och VMware PowerCLI.
 13. Efter verifieringen anger de FQDN eller IP-adressen för vCenter-servern eller vSphere-värden. De lämnar standardporten och anger ett användarvänligt namn för vCenter-servern.
@@ -265,7 +265,7 @@ Contosos administratörer gör detta på följande sätt:
 
 Nu anger Contosos administratörer inställningar för målreplikeringen.
 
-1. De klickar på **Förbered infrastrukturen** > **Mål** och väljer målinställningarna.
+1. De klickar på **Förbered infrastruktur** > **Mål** och välj målinställningarna.
 2. Site Recovery kontrollerar att det finns ett Azure-lagringskonto och nätverk på det angivna målet.
 
 ### <a name="create-a-replication-policy"></a>Skapa replikeringsprincip

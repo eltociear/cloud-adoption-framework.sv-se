@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 356d6c463e97553cb56d132c4f94e812a5b1c656
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: acfae57b1073d0205619f81b9caea72b5dc6d57d
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752791"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160280"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>Skydda och återställa i moln hantering
 
@@ -31,7 +31,7 @@ Som minst bör varje till gång som har stöd för en viss arbets belastning ha 
 
 ### <a name="recovery-time-objectives-rto"></a>Mål för återställnings tid (RTO)
 
-När haveriet inträffar är ett återställnings tids mål den tid det tar att återställa systemet till dess för katastrof tillstånd. För varje arbets belastning omfattar det den tid som krävs för att återställa minimi kraven för de virtuella datorerna och apparna. Den innehåller också den tid som krävs för att återställa de data som krävs av programmen.
+När haveriet inträffar är ett återställnings tids mål den tid det tar att återställa systemet till sitt tillstånd före haveriet. För varje arbets belastning omfattar det den tid som krävs för att återställa minimi kraven för de virtuella datorerna och apparna. Den innehåller också den tid som krävs för att återställa de data som krävs av programmen.
 
 I affärs villkor representerar RTO den tid som affärs processen kommer att vara ur drift. För verksamhets kritiska arbets belastningar bör den här variabeln vara relativt låg, vilket gör det möjligt för affärs processerna att återupptas snabbt. För arbets belastningar med lägre prioritet kanske en standard nivå av RTO inte har en märkbar inverkan på företagets prestanda.
 

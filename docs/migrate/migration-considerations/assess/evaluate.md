@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 05b713c2f1f88f50829e38db8a0a0343d3afd32d
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 7df4792fda1436d822108dc20d422e6912a0709f
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753509"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159869"
 ---
 # <a name="evaluate-workload-readiness"></a>Utvärdera beredskap för arbetsbelastningar
 
@@ -23,7 +23,7 @@ Den här aktiviteten fokuserar på utvärdering av en arbetsbelastnings beredska
 
 De flesta av Contents-principerna i Cloud adoption Framework är Cloud oberoende. Processen för beredskapsutvärdering måste dock huvudsakligen gälla specifikt för varje enskild molnplattform. Följande vägledning förutsätter en avsikt att migrera till Azure. Den förutsätter även användning av Azure Migrate (som även kallas Azure Site Recovery) för [replikeringsaktiviteter](../migrate/replicate.md). Alternativa verktyg beskrivs i [replikeringsalternativ](../migrate/replicate-options.md).
 
-Den här artikeln är inte avsedd att behandla alla tänkbara utvärderingsaktiviteter. Det förutsätts att varje miljö och affärsresultat avgör de specifika kraven. För att påskynda skapandet av dessa krav delar resten av den här artikeln några vanliga utvärderingsaktiviteter som rör utvärdering av [infrastruktur](#common-infrastructure-evaluation-activities), [databaser](#common-database-evaluation-activities) och [nätverk](#common-network-evaluation-activities).
+Den här artikeln fångar inte alla möjliga utvärderings aktiviteter. Det förutsätts att varje miljö och affärsresultat avgör de specifika kraven. För att påskynda skapandet av dessa krav delar resten av den här artikeln några vanliga utvärderingsaktiviteter som rör utvärdering av [infrastruktur](#common-infrastructure-evaluation-activities), [databaser](#common-database-evaluation-activities) och [nätverk](#common-network-evaluation-activities).
 
 ## <a name="common-infrastructure-evaluation-activities"></a>Vanliga aktiviteter för utvärdering av infrastruktur
 

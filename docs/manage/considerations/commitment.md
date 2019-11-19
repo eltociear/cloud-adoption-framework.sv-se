@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 29acef56de414d1a98e5fe11e5e396922b84392d
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 02a4b4debf11507f557951652f362c02e4ae0ecc
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752889"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160389"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Affärs engagemang i moln hantering
 
@@ -60,7 +60,7 @@ I en traditionell lokal miljö förutsätts kostnaden för att hantera miljön o
 
 Organisationer kan också välja att [hantera några av de kontinuerliga hanterings funktionerna till en tjänst leverantör](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage). Dessa tjänst leverantörer kan använda [Azure-Lighthouse](https://azure.com/lighthouse) för att ge organisationer mer exakt kontroll över att bevilja åtkomst till sina resurser, tillsammans med större insyn i de åtgärder som utförs av tjänst leverantörerna.
 
-- **Delegerat ansvar:** Eftersom det inte finns något behov av att centralisera och ta hänsyn till drifts hanterings kostnader, kommer IT-avdelningen för många organisationer att ta upp nya metoder. Ett vanligt sätt kallas _delegerat ansvar_. I ett moln Center med en expert modell tillhandahåller plattforms åtgärder och plattforms automatisering självbetjänings hanterings verktyg som kan användas av affärs LED ande drifts grupper, oberoende av en central IT-grupp. Den här metoden ger affärs intressenter fullständig kontroll över förvaltnings-relaterade budgetar. Det gör det också möjligt för CCOE-teamet (Cloud Center of expert) att se till att en minsta uppsättning guardrails har implementerats korrekt. I den här modellen fungerar det som en Service Broker och en guide för att hjälpa verksamheten fatta beslut. Affärs åtgärder övervakar dagliga åtgärder för beroende arbets belastningar.
+- **Delegerat ansvar:** Eftersom det inte finns något behov av att centralisera och ta hänsyn till drifts hanterings kostnader, kommer IT-avdelningen för många organisationer att ta upp nya metoder. Ett vanligt sätt kallas _delegerat ansvar_. I ett moln Center med en expert modell tillhandahåller plattforms åtgärder och plattforms automatisering självbetjänings hanterings verktyg som kan användas av affärs LED ande drifts grupper, oberoende av en central IT-grupp. Den här metoden ger affärs intressenter fullständig kontroll över förvaltnings-relaterade budgetar. Det gör det också möjligt för CCoE-teamet (Cloud Center of expert) att se till att en minsta uppsättning guardrails har implementerats korrekt. I den här modellen fungerar det som en Service Broker och en guide för att hjälpa verksamheten fatta beslut. Affärs åtgärder övervakar dagliga åtgärder för beroende arbets belastningar.
 
 - **Centraliserat ansvar:** Krav på efterlevnad, tekniska komplexitet och vissa delade tjänst modeller kan kräva en _Central IT_ -modell. I den här modellen fortsätter den att utöva sitt ansvar för drifts hantering. Miljö design, hanterings kontroller och styrnings verktyg kan hanteras centralt och kontrol leras, vilket begränsar rollen hos affärs intressenter i syfte att hantera åtaganden. Men insynen i moln metodernas kostnad och arkitektur gör det mycket enklare för dig att centralisera IT-kostnaden och hanterings nivån för varje arbets belastning.
 

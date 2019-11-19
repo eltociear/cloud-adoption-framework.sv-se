@@ -8,16 +8,16 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1742f794f12501a1506cc6228241435adc5fba52
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 219c5b402c9cdc4b6214e8a5ed38b85ba7a2e203
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565160"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160350"
 ---
 # <a name="business-criticality-in-cloud-management"></a>Affärs kritiskhet i moln hantering
 
-För alla företag finns det ett litet antal arbets belastningar som är för viktiga för att kunna fungera. De anses vara verksamhets kritiska. När dessa arbets belastningar drabbas av avbrott eller prestanda försämringar kan den negativa påverkan på intäkter och lönsamhet tas ur drift över hela företaget.
+För alla företag finns det ett litet antal arbets belastningar som är för viktiga för att kunna fungera. Dessa arbets belastningar betraktas som verksamhets kritiska. När dessa arbets belastningar drabbas av avbrott eller prestanda försämringar kan den negativa påverkan på intäkter och lönsamhet tas ur drift över hela företaget.
 
 I andra änden av spektrumet kan vissa arbets belastningar gå i månader i taget utan att användas. Dåliga prestanda eller avbrott för dessa arbets belastningar är inte önskvärda, men påverkan är isolerad och begränsad.
 
@@ -35,7 +35,7 @@ Det första steget i alla affärs kritiska anpassningar är att skapa en kritisk
 | Verksamhetskritiskt |  Påverkar företagets uppdrag och kan påverka företagets vinst-och förlust rapporter märkbart. |
 | Enhets kritisk | Påverkar uppdraget för en speciell affär senhet och dess vinst-och förlust uttryck. |
 | Hög | Kanske inte hindrar uppdraget, utan påverkar processer med hög prioritet. Mätbara förluster kan kvantifieras i händelse av avbrott. |
-| Medel | Påverkan på processer är förmodligen. Förlusten är låg eller immeasurable, men varumärkes skada eller uppströms förlust är troligt vis. |
+| Medium | Påverkan på processer är förmodligen. Förlusten är låg eller immeasurable, men varumärkes skada eller uppströms förlust är troligt vis. |
 | Låg | Påverkan på affärs processer är inte mätbart. Varken varumärkes skada eller överordnad förlust är troligt vis. En lokaliserad inverkan på ett enda team är förmodligen. |
 | Stöd saknas | Ingen företags ägare, grupp eller process som är associerad med den här arbets belastningen kan motivera alla investeringar i den pågående hanteringen av arbets belastningen. |
 

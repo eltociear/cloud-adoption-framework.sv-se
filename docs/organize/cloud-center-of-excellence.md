@@ -9,20 +9,20 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: c1819bafaed5e75e6667754d598b075eb3204925
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 1bd332898140d032525935cd8cfc96cb1d46e54e
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564302"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160487"
 ---
 # <a name="cloud-center-of-excellence"></a>Molncenter för utmärkthet
 
-Företags-och teknisk rörlighet är grund mål för de flesta IT-organisationer. CCoE (Cloud Center of expert) är en funktion som skapar balans mellan hastighet och stabilitet.
+Företags-och teknisk rörlighet är grund mål för de flesta IT-organisationer. Ett CCoE (Cloud Center of expert) är en funktion som skapar balans mellan hastighet och stabilitet.
 
 ## <a name="function-structure"></a>Funktions struktur
 
-CCoE kräver samarbete mellan var och en av följande funktioner:
+En CCoE-modell kräver samarbete mellan var och en av följande funktioner:
 
 - Moln införande (särskilt lösnings arkitekter)
 - Moln strategi (särskilt program-och projektledare)
@@ -132,7 +132,7 @@ Dessutom rekommenderar vi att affärs intressenterna håller sig informerad om d
 
 ## <a name="next-steps"></a>Nästa steg
 
-I moln Center med hög kvalitet krävs både [moln plattforms funktioner](./cloud-platform.md) och [moln automatiserings funktioner](./cloud-automation.md). Nästa steg är att justera [moln plattformens funktioner](./cloud-platform.md).
+En CCoE-modell kräver både en [moln plattform](./cloud-platform.md) och funktioner för [moln automatisering](./cloud-automation.md). Nästa steg är att justera [moln plattformens funktioner](./cloud-platform.md).
 
 > [!div class="nextstepaction"]
 > [Justera en moln plattforms kapacitet](./cloud-platform.md)

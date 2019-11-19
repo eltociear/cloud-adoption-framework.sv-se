@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 799ab1ba0d0b99ed5427d2c986c4fae9659a5b05
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 3ad84a52b35a98744f59b0d719e61f2c83a61af0
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753768"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160455"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure Enterprise-Autogenerera: handskriven prenumerations styrning
 
@@ -40,7 +40,7 @@ När du skapar en byggnad används ramverk för att skapa en grund för en struk
 
 Autogenerera bygger på praxis som vi har samlat in från många engagemang med klienter av olika storlekar. Dessa klienter sträcker sig från små organisationer som utvecklar lösningar i molnet till stora multinationella företag och oberoende program varu leverantörer som migrerar arbets belastningar och utvecklar molnbaserade lösningar. Enterprise-Autogenerera är "Purpose-byggd" för att vara flexibel för att stödja både traditionella IT-arbetsbelastningar och Agile-arbetsbelastningar, till exempel utvecklare som skapar program vara som en tjänst (SaaS) som baseras på Azures plattforms funktioner.
 
-Enterprise-Autogenerera är avsedd att vara grunden för varje ny prenumeration i Azure. Det gör det möjligt för administratörer att se till att arbets belastningarna uppfyller minimi kraven för styrning av en organisation utan att hindra affärs grupper och utvecklare från att snabbt möta sina egna mål. Vår erfarenhet visar att detta ökar avsevärt, i stället för att hindra den offentliga moln tillväxten.
+Företags-Autogenerera kan fungera som grund för varje ny prenumeration i Azure. Det gör det möjligt för administratörer att se till att arbets belastningarna uppfyller minimi kraven för styrning av en organisation utan att hindra affärs grupper och utvecklare från att snabbt möta sina egna mål. Vår erfarenhet visar att det här ökar avsevärt, i stället för att förhindra att offentliga moln växer.
 
 > [!NOTE]
 > Microsoft har lanserat en ny funktion som kallas [Azure-ritningar](https://docs.microsoft.com/azure/governance/blueprints/overview) som gör att du kan paketera, hantera och distribuera vanliga bilder, mallar, principer och skript över prenumerationer och hanterings grupper. Den här funktionen är bryggan mellan Autogenerera-syftet som referens modell och distribution av modellen till din organisation.
@@ -53,7 +53,7 @@ Följande bild visar komponenterna i Autogenerera. Stiftelsen förlitar sig på 
 
 Grunden för Autogenerera är hierarkin och relationen för Azure Enterprise-registrering via prenumerationer och resurs grupper. Företags registreringen definierar formen och användningen av Azure-tjänster i företaget från en avtals punkt. I Enterprise-avtal kan du ytterligare dela upp miljön i avdelningar, konton, prenumerationer och resurs grupper för att matcha organisationens struktur.
 
-![hierarki](../_images/reference/agreement.png)
+![Hierarki](../_images/reference/agreement.png)
 
 En Azure-prenumeration är den grundläggande enheten där alla resurser finns. Den definierar också flera gränser i Azure, till exempel antal kärnor, virtuella nätverk och andra resurser. Resurs grupper används för att ytterligare förfina prenumerations modellen och möjliggör en mer naturlig gruppering av resurser.
 
@@ -228,7 +228,7 @@ Att samla in och analysera telemetri som ger detaljerad information om aktivitet
 
 Den här informationen kan visas och åtgärdas på flera nivåer och förbättras kontinuerligt. Azure tillhandahåller **delade**, **grundläggande**och **djup** övervaknings funktioner i Azure-resurser genom de tjänster som beskrivs i diagrammet nedan.
 
-![granska](../_images/reference/monitoring.png)
+![Övervakning](../_images/reference/monitoring.png)
 
 ### <a name="shared-capabilities"></a>Delade funktioner
 
@@ -344,4 +344,4 @@ Azure ger dig både interna och tredje parts funktioner från vårt omfattande p
 
 Styrning är avgörande för att Azure ska lyckas. Den här artikeln är riktad mot den tekniska implementeringen av en Enterprise-Autogenerera, men är bara touch på den bredare processen och relationerna mellan komponenterna. Princip styrningen flödar från toppen och bestäms av vad företaget vill uppnå. I naturlig grad har skapandet av en styrnings modell för Azure en företrädare från IT, men viktigare bör ha stark åter givning från affärs grupps ledare och säkerhets-och riskhanterings hantering. I slutet av företaget är ett företags Autogenerera om att minska affärs risken för att under lätta organisationens uppdrag och mål.
 
-Nu när du har lärt dig om prenumerations styrning är det dags att se dessa rekommendationer i praktiken. Se [exempel på hur du implementerar Azures prenumerations styrning](./azure-scaffold-examples.md).
+Nu när du har lärt dig om prenumerations styrning är det dags att se dessa rekommendationer i praktiken. Mer information finns i [metod tips för Azure-beredskap](../ready/azure-best-practices/index.md).

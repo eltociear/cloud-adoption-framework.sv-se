@@ -8,12 +8,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 34659cb5cd3a223fe084ba8975f0f7a39b2b74f6
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: e2fb2587b5e6e0914c6a9facc062d817a508897e
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656712"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160048"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Metodtips för att skydda och hantera arbetsbelastningar som migreras till Azure
 
@@ -38,10 +38,10 @@ Efter migreringen är den mest kritiska uppgiften att skydda migrerade arbetsbel
 
 Microsoft arbetar hårt för att säkerställa att Azure-klientorganisationsadministratörer har den information som behövs för att aktivera säkerhetsfunktioner som skyddar arbetsbelastningar mot attacker. Azure Security Center tillhandahåller enhetlig säkerhetshantering. Från Security Center kan du tillämpa säkerhetsprinciper i arbetsbelastningar, begränsa hotexponering samt identifiera och åtgärda attacker. Security Center analyserar resurser och konfigurationer i Azure-klientorganisationer och ger säkerhetsrekommendationer, inklusive:
 
-- **Centraliserad principhantering** – Säkerställ att företagets eller reglerade säkerhetskrav följer standarden genom att hantera principer centralt i alla dina arbetsbelastningar i hybridmoln.
-- **Kontinuerlig säkerhetsbedömning** – Övervaka säkerheten i datorer, nätverk, lagring, datatjänster och program så att du kan identifiera potentiella säkerhetsproblem.
-- **Rekommendationer som kan åtgärdas** – Åtgärda säkerhetsproblem innan de kan utnyttjas av angripare med hjälp av rangordnade säkerhetsrekommendationer.
-- **Rangordnade aviseringar och incidenter** – Fokusera på de mest kritiska hoten först med rangordnade säkerhetsaviseringar och incidenter.
+- **Centraliserad princip hantering:** Se till att företagets eller regelns säkerhets krav efterlevs genom att centralt hantera säkerhets principer i alla dina hybrid moln arbets belastningar.
+- **Kontinuerlig säkerhets utvärdering:** Övervaka säkerhets position för datorer, nätverk, lagrings-och data tjänster och program för att identifiera potentiella säkerhets problem.
+- **Rekommendationer som rekommenderas:** Åtgärda säkerhets risker innan de kan utnyttjas av angripare med prioriterade och åtgärdade säkerhets rekommendationer.
+- **Prioriterade aviseringar och incidenter:** Fokusera på de mest kritiska hoten först med prioriterade säkerhets aviseringar och incidenter.
 
 Förutom utvärderingar och rekommendationer innehåller Azure Security Center andra säkerhetsfunktioner som kan aktiveras för specifika resurser.
 
@@ -135,8 +135,7 @@ Azure tillhandahåller ett par lösningar:
   - Den skyddar flera webbappar samtidigt bakom en programgateway.
   - En brandvägg för webbaserade program kan övervakas med hjälp av Azure Monitor och integreras i Azure Security Center.
 
-![Skydda webbappar](./media/migrate-best-practices-security-management/web-apps.png)
-
+![säker Web Apps](./media/migrate-best-practices-security-management/web-apps.png)
 *Azure Key Vault*
 
 **Läs mer:**
@@ -174,9 +173,8 @@ Azure Active Directory (Azure AD) tillhandahåller aktivitetsloggar som visas i 
 - Du kan dirigera aktivitetsloggar till olika slutpunkter för långsiktig kvarhållning och datainsikter.
 - Gör det till en vana att granska loggarna eller integrera SIEM-verktygen (Security Information and Event Management) för att automatiskt granska avvikelser. Om du inte använder Premium 1 eller 2 måste du göra mycket analys själv eller med SIEM-systemet. Analys innefattar att söka efter riskfyllda inloggningar och händelser, och andra mönster för användarangrepp.
 
-![Användare och grupper](./media/migrate-best-practices-security-management/azure-ad.png)
-
-*Azure AD-användare och -grupper*
+![användare och grupper](./media/migrate-best-practices-security-management/azure-ad.png)
+*Azure AD-användare och-grupper*
 
 **Läs mer:**
 
@@ -213,9 +211,8 @@ Om resursgrupperna har beskrivande namn som administratörer och medlemmar i sup
 - Vi rekommenderar att du följer Azures namngivningskonventioner.
 - Om du synkroniserar din lokala Active Directory till Azure AD med hjälp av Azure AD Connect bör du överväga att matcha namnen på säkerhetsgrupper lokalt mot namnen på resursgrupper i Azure.
 
-![Namngivning](./media/migrate-best-practices-security-management/naming.png)
-
-*Namngivning av resursgrupper*
+![namngivning](./media/migrate-best-practices-security-management/naming.png)
+*resurs grupp namn*
 
 **Läs mer:**
 
@@ -225,9 +222,8 @@ Om resursgrupperna har beskrivande namn som administratörer och medlemmar i sup
 
 Det sista du behöver är att en resursgrupp försvinner eftersom den tagits bort av misstag. Vi rekommenderar att du implementerar borttagningslås så att det inte sker.
 
-![Borttagningslås](./media/migrate-best-practices-security-management/locks.png)
-
-*Borttagningslås*
+![ta bort lås](./media/migrate-best-practices-security-management/locks.png)
+*ta bort lås*
 
 **Läs mer:**
 
@@ -359,7 +355,7 @@ Du kan använda Azure Backup för att säkerhetskopiera virtuella datorer på et
 - **Direkt säkerhetskopiering i ett Recovery Services-valv.** Du kan säkerhetskopiera virtuella IaaS-datorer genom att distribuera ett Azure Backup Recovery Services-valv. Det ger en enda plats för att spåra och hantera säkerhetskopior samt detaljerade alternativ för säkerhetskopiering och återställning. Säkerhetskopieringen sker upp till tre gånger per dag, på fil-/mappnivå. Den är inte appmedveten och Linux stöds inte. Installera MARS-agenten (Microsoft Azure Recovery Services) på varje virtuell dator som du vill säkerhetskopiera med den här metoden.
 - **Skydda den virtuella datorn med Azure Backup Server.** Azure Backup Server tillhandahålls utan kostnad med Azure Backup. Den virtuella datorn säkerhetskopieras till lokal Azure Backup Server-lagring. Sedan säkerhetskopierar du Azure Backup Server till Azure i ett valv. Säkerhetskopieringen är appmedveten, med fullständig kornighet för säkerhetskopieringsfrekvens och -kvarhållning. Du kan säkerhetskopiera på appnivå, till exempel genom att säkerhetskopiera SQL Server eller SharePoint.
 
-Av säkerhetsskäl krypterar Azure Backup rörliga data med AES 256 och skickar dem via HTTPS till Azure. Säkerhetskopierade vilande data i Azure krypteras med hjälp av [kryptering för lagringstjänst (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), och data för överföring och lagring.
+Av säkerhetsskäl krypterar Azure Backup rörliga data med AES 256 och skickar dem via HTTPS till Azure. Säkerhetskopierade vilande data i Azure krypteras med hjälp av [kryptering för lagringstjänst (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=/azure/storage/queues/toc.json), och data för överföring och lagring.
 
 ![Azure Backup](./media/migrate-best-practices-security-management/iaas-backup.png)
 *Azure Backup*
@@ -401,7 +397,6 @@ Azure Site Recovery är den primära Azure-tjänsten för att se till att virtue
 Site Recovery replikerar virtuella datorer från en primär till en sekundär Azure-region. När ett haveri inträffar redundansväxlar du virtuella datorer från den primära regionen och fortsätter att komma åt dem som vanligt i den sekundära regionen. När driften återgår till det normala kan du återställa virtuella datorer till den primära regionen.
 
 ![Azure Site Recovery](./media/migrate-best-practices-security-management/site-recovery.png)
-
 *Site Recovery*
 
 **Läs mer:**
@@ -419,9 +414,8 @@ Hanterade Azure-diskar förenklar diskhantering för virtuella Azure IaaS-datore
 - Du kan konvertera befintliga diskar till hanterade.
 - Du bör skapa virtuella datorer i tillgänglighetsuppsättningar för hög återhämtning och tillgänglighet. Vid planerade eller oplanerade avbrott säkerställer tillgänglighetsuppsättningar att minst en av dina virtuella datorer i uppsättningen fortfarande är tillgänglig.
 
-![Managed Disks](./media/migrate-best-practices-security-management/managed-disks.png)
-
-*Hanterade diskar*
+![Managed disks](./media/migrate-best-practices-security-management/managed-disks.png)
+*Managed disks*
 
 **Läs mer:**
 

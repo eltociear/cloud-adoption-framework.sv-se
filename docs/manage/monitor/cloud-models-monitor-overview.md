@@ -9,21 +9,21 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 98a65f0e65e8c2851a8aa97fe2f0c17ffe2359db
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 81bb5775f2d83a0784e360440b52112427acf243
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752717"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160259"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Övervaknings guide för molnet: övervaknings strategi för moln distributions modeller
 
 Den här artikeln innehåller vår rekommenderade övervaknings strategi för varje moln distributions modell, baserat på följande kriterier:
 
 - Du måste underhålla ditt åtagande att Operations Manager eller en annan företags övervaknings plattform, eftersom den är integrerad med IT-arbetsprocesser, kunskap och expertis, eller att vissa funktioner inte är tillgängliga ännu i Azure Monitor.
-- Du behöver övervaka arbets belastningar både lokalt och i det offentliga molnet, eller bara i molnet.
+- Du måste övervaka arbets belastningar både lokalt och i det offentliga molnet, eller bara i molnet.
 - Din strategi för moln migrering innehåller en modern IT-verksamhet och flyttar till våra moln övervaknings tjänster och-lösningar.
-- Du kan ha kritiska system som är Air-gapped eller fysiskt isolerade, som finns i ett privat moln eller på fysisk maskin vara. Och systemen måste övervakas.
+- Du kan ha kritiska system som är gapped eller fysiskt isolerade, eller som finns i ett privat moln eller på fysisk maskin vara, och dessa system måste övervakas.
 
 Vår strategi omfattar stöd för övervakning av infrastruktur (beräknings-, lagrings-och Server arbets belastningar), program (slutanvändare, undantag och klient) och nätverks resurser. Det ger ett komplett, service-orienterad övervaknings perspektiv.
 
@@ -104,7 +104,7 @@ Om du vill samla in mått och loggar från Azure-infrastrukturen och plattforms 
 
 ### <a name="monitor-with-system-center-operations-manager"></a>Övervaka med System Center Operations Manager
 
-Även om System Center Operations Manager ursprungligen skapades som en lokal lösning för att övervaka program, arbets belastningar och infrastrukturer som körs i din IT-miljö, utvecklades det för att omfatta funktioner för moln övervakning. Den integreras med Azure, Office 365 och Amazon Web Services (AWS). Den kan övervaka över dessa olika miljöer med hanterings paket som är utformade och uppdaterade för att stödja dem.  
+Även om System Center Operations Manager ursprungligen konstruerades som en lokal lösning för övervakning av program, arbets belastningar och infrastruktur komponenter som körs i din IT-miljö, har den utvecklats för att omfatta moln övervakning trådlösa. Den integreras med Azure, Office 365 och Amazon Web Services (AWS). Den kan övervaka över dessa olika miljöer med hanterings paket som är utformade och uppdaterade för att stödja dem.  
 
 För kunder som har gjort betydande investeringar i Operations Manager för att uppnå omfattande övervakning som är nära integrerad med deras Hantering av IT-tjänster (ITSM) processer och verktyg, eller för kunder som är nya i Azure, är det lättare att fråga följande några
 
@@ -132,7 +132,7 @@ För alla webb program som kan nås externt bör du aktivera en typ av syntetisk
 
 #### <a name="disadvantages-of-using-operations-manager-by-itself"></a>Nack delar med att använda Operations Manager av sig själv
 
-- Analys av övervaknings data i Operations Manager utförs ofta med hjälp av fördefinierade vyer som tillhandahålls av hanterings paket som nås från-konsolen, från SQL Server Reporting Services-rapporter (SSRS) eller från anpassade vyer som slutanvändarna har skapat. Det går inte att utföra ad hoc-dataanalyser. Operations Manager rapportering är inflexibelt. Informations lagret som tillhandahåller långsiktig kvarhållning av övervaknings data skalar inte eller fungerar bra. Och expertis i skriva T-SQL-uttryck, utveckla en Power BI-lösning eller använda lösningar från tredje part krävs för att stödja kraven för de olika personer i IT-organisationen.
+- Analys av övervaknings data i Operations Manager utförs ofta med hjälp av fördefinierade vyer som tillhandahålls av hanterings paket som nås från-konsolen, från SQL Server Reporting Services-rapporter (SSRS) eller från anpassade vyer som slutanvändarna har skapat. Det går inte att utföra ad hoc-dataanalysen. Operations Manager rapportering är inflexibelt. Informations lagret som tillhandahåller långsiktig kvarhållning av övervaknings data skalar inte eller fungerar bra. Och expertis i skriva T-SQL-uttryck, utveckla en Power BI-lösning eller använda lösningar från tredje part krävs för att stödja kraven för de olika personer i IT-organisationen.
 
 - Aviseringar i Operations Manager stöder inte komplexa uttryck eller innehåller korrelations logik. För att minska bruset grupperas aviseringar för att Visa relationerna mellan dem och för att identifiera deras orsaker.
 
@@ -181,7 +181,7 @@ Du kan få en helhets övervakning av Azure Stack med System Center Operations M
 
 Du kan också få en helhets övervakning med en kombination av [infrastruktur övervaknings funktioner](https://docs.microsoft.com/azure/azure-stack/azure-stack-monitor-health) som ingår i Azure Stack. Dessa funktioner hjälper dig att Visa hälso tillstånd och aviseringar för en Azure Stack region och [tjänsten Azure Monitor](https://docs.microsoft.com/azure/azure-stack/user/azure-stack-metrics-azure-data) i Azure Stack, som tillhandahåller infrastruktur mått och loggar på bas nivå för de flesta tjänster.
 
-Om du redan har investerat i Operations Manager använder du Azure Stack hanterings paketet för att övervaka tillgängligheten och hälso tillståndet för Azure Stack-distributioner. Detta inkluderar regioner, resurs leverantörer, uppdateringar, uppdaterings körningar, skalnings enheter, Unit-noder, infrastruktur roller och deras instanser (logiska entiteter som består av maskin varu resurserna). Det använder REST-API: erna för hälso-och uppdaterings resurs leverantörer för att kommunicera med Azure Stack. Om du vill övervaka fysiska servrar och lagrings enheter använder du OEM-leverantörens hanterings paket (till exempel, som tillhandahålls av Lenovo, Hewlett Packard eller Dell). Operations Manager kan internt övervaka nätverks växlarna för att samla in grundläggande statistik med hjälp av SNMP. Det går att övervaka klient arbets belastningarna med Azures hanterings paket genom att följa två grundläggande steg. Konfigurera den prenumeration som du vill övervaka och Lägg sedan till övervakarna för den prenumerationen.
+Om du redan har investerat i Operations Manager använder du Azure Stack hanterings paketet för att övervaka tillgängligheten och hälso tillståndet för Azure Stack distributioner, inklusive regioner, resurs leverantörer, uppdateringar, uppdaterings körningar, skalnings enheter, enhets noder, infrastruktur roller och deras instanser (logiska entiteter som består av maskin varu resurserna). Det här hanterings paketet använder REST-API: er för hälso-och uppdaterings resurs leverantörer för att kommunicera med Azure Stack. Om du vill övervaka fysiska servrar och lagrings enheter använder du OEM-leverantörens hanterings paket (till exempel, som tillhandahålls av Lenovo, Hewlett Packard eller Dell). Operations Manager kan internt övervaka nätverks växlarna för att samla in grundläggande statistik med hjälp av SNMP. Det går att övervaka klient arbets belastningarna med Azures hanterings paket genom att följa två grundläggande steg. Konfigurera den prenumeration som du vill övervaka och Lägg sedan till övervakarna för den prenumerationen.
 
 ## <a name="next-steps"></a>Nästa steg
 

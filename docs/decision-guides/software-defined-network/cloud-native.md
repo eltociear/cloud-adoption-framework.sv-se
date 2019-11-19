@@ -1,5 +1,5 @@
 ---
-title: 'Program varu definitions nätverk: Molnbaserat'
+title: 'Program varu definition nätverk: Cloud-Native'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Diskussion om Cloud-interna virtuella nätverks tjänster.
 author: rotycenh
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: d9dda8b5cb91b97da2da50bc747cb3bd6b31947e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bf585f923a4c8abddeeb56bab4a3a4b8eb370f8d
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023582"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160202"
 ---
-# <a name="software-defined-networking-cloud-native"></a>Program varu definitions nätverk: Molnbaserat
+# <a name="software-defined-networking-cloud-native"></a>Program varu definition nätverk: Cloud-Native
 
 Ett Cloud-inbyggt virtuellt nätverk krävs när du distribuerar IaaS-resurser, till exempel virtuella datorer till en moln plattform. Åtkomst till virtuella nätverk från externa källor, på samma sätt som på webben, måste uttryckligen tillhandahållas. De här typerna av virtuella nätverk har stöd för att skapa undernät, routningsregler och virtuella brand väggar och Traffic Management-enheter.
 
@@ -41,5 +41,5 @@ Ytterligare problem ditt moln implementerings team bör tänka på när du disku
 
 Mer information om Cloud-inbyggda virtuella nätverk i Azure finns i:
 
-- [Azure-Virtual Network: Instruktions guider](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm). Nyligen skapade virtuella Azure-nätverk är Cloud-Native som standard. Använd dessa guider för att planera designen och distributionen av dina virtuella nätverk.
-- [Prenumerations begränsningar: Nätverk](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=%2fazure%2fvirtual-network%2ftoc.json#networking-limits). Alla enskilda virtuella nätverk och anslutna resurser kan bara finnas i en enda prenumeration och är bundna av prenumerations gränserna.
+- [Azure Virtual Network: instruktions guider](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm). Nyligen skapade virtuella Azure-nätverk är Cloud-Native som standard. Använd dessa guider för att planera designen och distributionen av dina virtuella nätverk.
+- [Prenumerations begränsningar: nätverk](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits). Alla enskilda virtuella nätverk och anslutna resurser kan bara finnas i en enda prenumeration och är bundna av prenumerations gränserna.

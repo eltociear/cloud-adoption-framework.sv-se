@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7383f07f4d52cef640bcb1e617de60697a20b248
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 9834778e7aaddc616d595e874459fa7bd3eb61e3
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753484"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159908"
 ---
 # <a name="balance-the-portfolio"></a>Balansera portföljen
 
@@ -95,7 +95,7 @@ För att minska komplexiteten bör du följa en traditionell metod för portföl
   - Om en arbetsbelastning inte är strategisk men är kompatibel med moderna, molnbaserade programvärdplattformar kan det vara klokt att utföra mindre refaktorisering av programmet för att distribuera det som en modern app. Detta kan bidra till övergripande besparingar genom att molnmigreringens allmänna krav för IaaS- och operativsystemlicensiering minskas.
   - Om en arbetsbelastning är ett program från tredje part, och den arbetsbelastningens data inte planeras för användning i senare innovation, kan det vara bäst att låta den vara kvar som ett alternativ för värdbyte i listan över kvarvarande uppgifter.
 
-Dessa frågor bör inte utgöra hela den kvalitativa analys som slutförs för varje arbetsbelastning, utan är tänkta att vägleda ett samtal som berör komplexiteten i en obalanserad portfölj.
+Dessa frågor bör inte vara omfattningen av den kvalitativa analysen som slutförts för varje arbets belastning, men de hjälper dig att hjälpa en konversation om att hantera komplexiteten i en balanserad portfölj.
 
 ## <a name="migrate-process-changes"></a>Ändringar i migreringsprocessen
 
@@ -128,4 +128,4 @@ Inga ytterligare ändringar krävs i processerna för skydd och hantering under 
 Gå tillbaka till [checklistan för utökat omfång](./index.md) och se till att din migreringsmetod är helt anpassad till kraven.
 
 > [!div class="nextstepaction"]
-> [Utökad checklista](./index.md)
+> [Checklista för utökat omfång](./index.md)

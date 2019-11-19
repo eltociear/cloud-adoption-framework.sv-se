@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 95a2bf325615c7eb765ad747d0aad16f008e015d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 08e2998e6e9f561189562f65b463aa1e0ffbe5b4
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564022"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160517"
 ---
 # <a name="perimeter-networks"></a>Perimeternätverk
 
@@ -38,7 +38,7 @@ Perimeternätverket använder följande Azure-funktioner och -tjänster:
 > Referensarkitekturen för Azure innehåller exempelmallar som du kan använda för att implementera dina egna perimeternätverk:
 >
 > - [Implementera en DMZ mellan Azure och ditt lokala datacenter](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid)
-> - [Implementera en DMZ mellan Azure och Internet](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
+> - [Implementera en DMZ mellan Azure och Internet](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 
 Vanligtvis ansvarar dina centrala IT- och säkerhetsteam för att definiera krav för att använda perimeternätverket.
 

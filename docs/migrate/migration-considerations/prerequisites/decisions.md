@@ -1,5 +1,5 @@
 ---
-title: Beslut som påverkar migreringen
+title: Beslut som påverkar migrering
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Viktiga beslut att fatta om migreringsprocessen.
 author: BrianBlanchard
@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4bd04de2bd773e3fc02fbab5264ae60f275a8e7d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6f809003c1181c925a5b86abfb162a6032614f53
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564584"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159864"
 ---
-# <a name="decisions-that-affect-migration"></a>Beslut som påverkar migreringen
+# <a name="decisions-that-affect-migration"></a>Beslut som påverkar migrering
 
 Under migreringen finns det vissa faktorer som påverkar beslut och körning. Den här artikeln förklarar det centrala temat för dessa beslut och utforskar några frågor som är genomgående för alla diskussioner om migreringsprinciper i det här avsnittet av Ramverk för molnimplementering.
 
@@ -80,8 +80,8 @@ Ofta motiveras migreringar av en viktig händelse för verksamheten som är tids
 Innan du fortsätter måste du dokumentera följande antaganden och dela dem med molnstrategiteamet och molnimplementeringsteamet:
 
 - Affärsresultat.
-- Roller. Detta kommer att dokumenteras och finjusteras för att användas i migreringsprocesserna *Utvärdering*, *Migrering*, *Optimering* och *Säkerhet och hantering*.
-- Definitionen av klar. Detta kommer att dokumenteras och finjusteras separat för att användas i migreringsprocesserna *Utvärdering*, *Migrering*, *Optimering* och *Säkerhet och hantering*.
+- Roller, dokumenterade och raffinerade för att *utvärdera*, *migrera*, *optimera*och *skydda och hantera* migreringsprocessen.
+- Definition av färdig, dokumenterad och raffinerad separat för *utvärderingen*, *migrera*, *optimera*och *skydda och hantera* migreringsprocessen.
 - Typ av projekt.
 - Projektets skala.
 - Tidsramar för projektet.

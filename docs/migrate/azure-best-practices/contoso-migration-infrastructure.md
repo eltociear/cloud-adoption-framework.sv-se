@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 3eace4b20fac9e22fa8aeaa2d4b7f55a33743e47
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 44fb2e8d7fc71dfa676f5711ab50c2201d67f260
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751841"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160375"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Distribuera en migreringsinfrastruktur
 
@@ -299,7 +299,7 @@ Med Azure Backup kan du säkerhetskopiera och återställa virtuella Azure-diska
 - Säkerhetskopieringarna är konsekventa mellan olika appar och säkerställer att säkerhetskopierade data är konsekventa och att programmen startar efter återställning.
 - Azure Backup har stöd för lokalt redundant lagring (LRS) för att replikera flera kopior av dina säkerhetskopieringsdata inom ett datacenter i händelse av lokala maskinvarufel.
 - I händelse av ett regionalt avbrott stöder Azure Backup också geo-redundant lagring (GRS) som replikerar dina säkerhetskopierade data till en sekundär, kopplad region.
-- Azure Backup krypterar data under överföring med AES 256. Säkerhetskopiering av data i vila krypteras med hjälp av [kryptering för lagringstjänst (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json).
+- Azure Backup krypterar data under överföring med AES 256. Säkerhetskopiering av data i vila krypteras med hjälp av [kryptering för lagringstjänst (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption).
 
 Contoso använder Azure Backup med GRS på alla virtuella produktionsdatorer för att säkerställa att arbetsbelastningsdata säkerhetskopieras och kan återställas snabbt i händelse av driftstopp eller annat avbrott. [Läs mer](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup).
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e4203944d6ab5de891f637034d60381290a31c46
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: cd8dc50480480766ec4b4413d0dddfaeafc69f7f
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222186"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160113"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>Motiveringar och affärs risker för identitets bas
 
@@ -24,7 +24,7 @@ I den här artikeln beskrivs orsakerna till att kunderna vanligt vis antar en id
 
 ## <a name="identity-baseline-relevancy"></a>Identitets bas linje relevanta
 
-Traditionella lokala kataloger är utformade för att tillåta företag att strikt kontrol lera behörigheter och principer för användare, grupper och roller i sina interna nätverk och data Center. Detta är vanligt vis avsett att stödja en enda klient implementering, med tjänster som endast gäller inom den lokala miljön.
+Traditionella lokala kataloger är utformade för att tillåta företag att strikt kontrol lera behörigheter och principer för användare, grupper och roller i sina interna nätverk och data Center. Dessa kataloger har normalt stöd för implementeringar av en klient, med tjänster som är tillämpliga endast inom den lokala miljön.
 
 Cloud Identity Services utökar en organisations funktioner för autentisering och åtkomst kontroll till Internet. De stöder flera innehavare och kan användas för att hantera användare och åtkomst principer i moln program och distributioner. Offentliga moln plattformar har molnbaserade identitets tjänster som stöder hanterings-och distributions uppgifter och som kan [variera mellan olika integrerings nivåer](../../decision-guides/identity/index.md) med dina befintliga lokala identitets lösningar. Alla dessa funktioner kan resultera i att moln identitets principer är mer komplicerade än dina traditionella lokala lösningar kräver.
 

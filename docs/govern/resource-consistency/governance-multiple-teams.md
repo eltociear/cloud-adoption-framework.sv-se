@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: caa9d3ced70ce15eacf37b4bcbb653efae9da1ef
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: 59b60af79d81316726ffed1dcf326641af059cb0
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656694"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160476"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Styrningsdesign för flera team
 
@@ -82,6 +82,7 @@ Därför måste du bestämma vilka åtgärder en viss typ av användare får ta 
 Vi tar en titt på två exempel på behörighets modeller för att förstå det här konceptet lite bättre. I det första exemplet har modellen bara förtroende för tjänst administratören som skapar resurs grupper. I det andra exemplet tilldelar modellen den inbyggda ägar rollen till varje arbets belastnings ägare i prenumerations omfånget.
 
 I båda exemplen finns en prenumerations tjänst administratör som har tilldelats den inbyggda ägar rollen i prenumerations omfånget. Kom ihåg att den inbyggda ägar rollen beviljar alla behörigheter, inklusive hantering av åtkomst till resurser.
+
 ![prenumerations tjänst administratör med ägar rollen](../../_images/govern/design/governance-2-1.png)
 *bild 3 – en prenumeration med en tjänst administratör som har tilldelats den inbyggda ägar rollen.*
 

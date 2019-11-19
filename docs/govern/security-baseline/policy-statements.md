@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f92f3846f0282123fab8049dd47227db0843d955
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 312a3f4e6577b0a0db525e6428bf7e1b2616b625
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221650"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160529"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Exempel princip satser för säkerhets bas linje
 
@@ -56,9 +56,9 @@ Följande exempel på princip satser riktar sig mot vanliga säkerhets-relaterad
 
 **Princip instruktion:** Det går inte att komma åt ett undernät som innehåller skyddade data direkt via offentlig Internet eller mellan data Center. Åtkomst till dessa undernät måste dirigeras via mellanliggande undernät. All åtkomst till dessa undernät måste komma via en brand Väggs lösning som kan utföra paket genomsökning och blockera funktioner.
 
-**Alternativ för potentiell design:** I Azure, säkra offentliga slut punkter genom att distribuera en [DMZ mellan det offentliga Internet och ditt molnbaserade nätverk](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz). Överväg distribution, konfiguration och automatisering av [Azure-brandväggen](https://docs.microsoft.com/azure/firewall).
+**Alternativ för potentiell design:** I Azure, säkra offentliga slut punkter genom att distribuera en [DMZ mellan det offentliga Internet och ditt molnbaserade nätverk](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Överväg distribution, konfiguration och automatisering av [Azure-brandväggen](https://docs.microsoft.com/azure/firewall).
 
-## <a name="ddos-protection"></a>DDoS-skydd
+## <a name="ddos-protection"></a>DDOS-skydd
 
 **Teknisk risk:** DDoS-attacker (distributed denial of Service) kan leda till ett affärs avbrott.
 
