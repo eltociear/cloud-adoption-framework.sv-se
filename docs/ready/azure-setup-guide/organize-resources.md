@@ -5,17 +5,17 @@ description: Metodtips för att effektivt organisera dina Azure-resurser för en
 author: laraaleite
 ms.author: kfollis
 ms.date: 04/09/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: be2cb79383748050e2b3b4506da53c42320847f6
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 393c80c684de13cf27cba738a8e539533de57d38
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239814"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251399"
 ---
 # <a name="organize-your-azure-resources"></a>Organisera dina Azure-resurser
 
@@ -29,7 +29,7 @@ Azure har fyra hanteringsnivåer: hanteringsgrupper, prenumerationer, resursgrup
 
    ![Diagram som visar relationer i hanteringshierarkin](./media/organize-resources/scope-levels.png)
 
-- **Hanteringsgrupper:** Dessa grupper är behållare som hjälper dig att hantera åtkomst, principer och efterlevnad för flera prenumerationer. Alla prenumerationer i en hanteringsgrupp ärver automatiskt de villkor som tillämpas för hanteringsgruppen.
+- **Hanteringsgrupper:** Dessa grupper är containrar som hjälper dig att hantera åtkomst, principer och efterlevnad för flera prenumerationer. Alla prenumerationer i en hanteringsgrupp ärver automatiskt de villkor som tillämpas för hanteringsgruppen.
 - **Prenumerationer:** I en prenumeration grupperas användarkonton och de resurser som kontona har skapat. För varje prenumeration finns gränser eller kvoter för mängden resurser som kan skapas och användas. Organisationer kan använda prenumerationer till att hantera kostnader och de resurser som skapas av användare, grupper och projekt.
 - **Resursgrupper:** En resursgrupp är en logisk container som Azure-resurser (t.ex. webbappar, databaser och lagringskonton) distribueras och hanteras i.
 - **Resurser:** Resurser är instanser av tjänster du skapar som virtuella datorer, lagring och SQL-databaser.

@@ -5,17 +5,17 @@ description: Lär dig hur du konfigurerar övervakning, rapportering och aviseri
 author: timleyden
 ms.author: tileyden
 ms.date: 04/09/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5cb88bba1b82bf4255fb13f9ac9d415018316dec
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: f2ce0c108152f4dcd6d94a095a96a2a0a1b6a361
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548898"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251745"
 ---
 # <a name="monitoring-and-reporting-in-azure"></a>Övervakning och rapportering i Azure
 
@@ -139,7 +139,7 @@ Azure Security Center är tillgängligt på två nivåer – kostnadsfri och sta
 
 **Prova Standard-nivån kostnadsfritt i 30 dagar.**
 
-När du aktiverar och ställer in säkerhetsprinciper för prenumerationens resurser kan du se säkerhetstillståndet för dina resurser och eventuella problem i avsnittet **Skydd**. Problemen visas även i en lista på panelen **Recommendations (Rekommendationer)** .
+När du aktiverar och ställer in säkerhetspolicyer för prenumerationens resurser kan du se säkerhetstillståndet för dina resurser och eventuella problem i avsnittet **Skydd**. Problemen visas även i en lista på panelen **Recommendations (Rekommendationer)** .
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0]" submitText="Explore Azure Security Center" :::
 
