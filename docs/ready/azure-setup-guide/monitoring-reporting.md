@@ -5,17 +5,17 @@ description: Lär dig hur du konfigurerar övervakning, rapportering och aviseri
 author: timleyden
 ms.author: tileyden
 ms.date: 04/09/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 1be663168815af9067268cd18d9db51cfe10291c
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0ed9f9c1739fc73f4d28bf532bd52bd0a182b2fc
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548876"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251355"
 ---
 # <a name="monitoring-and-reporting-in-azure"></a>Övervakning och rapportering i Azure
 
@@ -98,12 +98,13 @@ Läs mer i [Azure Service Health-dokumentationen](https://docs.microsoft.com/azu
 
 # <a name="azure-advisortabazureadvisor"></a>[Azure Advisor](#tab/AzureAdvisor)
 
-Azure Advisor är en anpassad och kostnadsfri molnkonsult som hjälper dig att följa bästa praxis för Azure-distributioner. Tjänsten analyserar din resurskonfiguration och användningstelemetri och rekommenderar lösningar som kan optimera din miljö. Rekommendationerna är indelade i fyra kategorier:
+Azure Advisor är en anpassad och kostnadsfri molnkonsult som hjälper dig att följa bästa praxis för Azure-distributioner. Tjänsten analyserar din resurskonfiguration och användningstelemetri och rekommenderar lösningar som kan optimera din miljö. Rekommendationerna är indelade i följande kategorier:
 
 - **Hög tillgänglighet:** Förbättra kontinuiteten i dina verksamhetskritiska appar. Rekommendationerna kan gälla att lägga till virtuella datorer i en tillgänglighetsuppsättning eller att lägga till geo-redundanta slutpunkter.
 - **Säkerhet:** Identifiera hot och sårbarheter som kan leda till säkerhetsproblem. Rekommendationerna kan gälla att använda diskkryptering eller nätverkssäkerhetsgrupper.
 - **Prestanda:** Gör dina appar snabbare. Rekommendationerna kan gälla att förbättra svarstiden för SQL-frågor genom att skapa index eller konfigurera om dina Traffic Manager-inställningar.
 - **Kostnad:** Optimera och minska din totalkostnad för Azure. Rekommendationerna kan gälla att ändra storlek på eller stänga av virtuella datorer som används för lite eller att byta till Azure-reservationer för att minska den totala ägandekostnaden.
+- **Utmärkt driftseffektivitet:** Förbättra effektivitet och hanterbarhet för process och arbetsflöde. Rekommendationer kan bland annat vara att konfigurera och verkställa Azure Policy-regler, reparera ogiltiga loggvarningsregler och konfigurera Azure Service Health-aviseringar.
 
 Rekommendationerna i Advisor baseras på de resurser du distribuerar och de åtgärder du utför i Azure. Du kan kontrollera Advisor regelbundet så att du får aktuella rekommendationer.
 
