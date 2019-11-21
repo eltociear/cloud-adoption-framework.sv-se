@@ -5,17 +5,17 @@ description: Migrera tillgångar
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 22a9f9f3a6c39932b50f58512e015eed41d30068
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 7e464b93dd9cc46526ab5f72bd8cf4fbf15f31f3
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753555"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251824"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrera tillgångar (infrastruktur, appar och data)
 
@@ -265,7 +265,7 @@ Det finns även fler verktyg utöver dessa. Många andra verktyg från tredje pa
 
 När du migrerar till molntekniker ger detta en bra möjlighet att förbereda organisationen för DevOps och CI/CD. Även om din organisation endast hanterar infrastrukturen kan du, när du börjar hantera infrastrukturen som kod samt använder branschmönstren och -metoderna för DevOps, börja öka agiliteten med hjälp av CI/CD-pipelines. Därmed kan du snabbare anpassa dig till scenarier för ändring, tillväxt, lanseringar och även återställning.
 
-[Azure DevOps](https://dev.azure.com) tillhandahåller alla nödvändiga funktioner och integrering med Azure, lokalt eller till och med andra moln. Mer information finns [här](https://azure.microsoft.com/services/devops). Vägledd utbildning finns i [CI och CD med Azure DevOps – snabbstart](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html).
+Azure DevOps tillhandahåller alla nödvändiga funktioner och integrering med Azure, lokala miljöer eller till och med andra moln. Mer information finns i [Azure DevOps](https://azure.microsoft.com/services/devops). Vägledd utbildning finns i [CI och CD med Azure DevOps – snabbstart](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html).
 
 # <a name="cost-managementtabmanagecost"></a>[Kostnadshantering](#tab/ManageCost)
 
