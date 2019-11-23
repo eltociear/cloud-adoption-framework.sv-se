@@ -20,7 +20,7 @@ ms.locfileid: "73753608"
 När du planerar och utformar din migrering är ett av de viktigaste stegen, utöver själva migreringen, utformningen och implementeringen av Azure-nätverk. Den här artikeln innehåller metodtips för nätverk när du migrerar till IaaS- och PaaS-implementeringar i Azure.
 
 > [!IMPORTANT]
-> De metodtips och åsikter som beskrivs i den här artikeln baseras på de tillgängliga funktionerna i Azure-plattformen och -tjänsten när den skrevs. Funktioner förändras över tid. Vissa rekommendationer kan kanske inte tillämpas på din distribution så välj vad som passar dig bäst.
+> De metodtips och åsikter som beskrivs i den här artikeln baseras på de tillgängliga funktionerna i Azure-plattformen och -tjänsten när den skrevs. Funktioner förändras ständigt. Vissa rekommendationer kan kanske inte tillämpas på din distribution så välj vad som passar dig bäst.
 
 ## <a name="design-virtual-networks"></a>Utforma virtuella nätverk
 
@@ -37,7 +37,7 @@ Azure tillhandahåller virtuella nätverk:
 
 När du planerar din topologi för det virtuella nätverket bör du fundera på hur du vill organisera IP-adressutrymme, implementera ett nav- och ekernätverk, segmentera virtuella nätverk i undernät, konfigurera DNS och implementera Azure-åtkomstzoner.
 
-## <a name="best-practice-plan-ip-addressing"></a>Bästa praxis: planera IP-adressering
+## <a name="best-practice-plan-ip-addressing"></a>Bästa praxis: Planera IP-adressering
 
 När du skapar virtuella nätverk som en del av migreringen är det viktigt att planera det virtuella nätverkets IP-adressutrymme.
 
@@ -102,7 +102,7 @@ DEV-DB-EUS2 | 10.245.24.0/23 | 507 | Virtuella databasdatorer
 - [Lär dig](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm#segmentation) mer om att utforma undernät.
 - [Läs](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure) hur ett fiktivt företag (Contoso) förberedde sin nätverksinfrastruktur för migrering.
 
-## <a name="best-practice-set-up-a-dns-server"></a>Bästa praxis: Konfigurera en DNS-Server
+## <a name="best-practice-set-up-a-dns-server"></a>Bästa praxis: Konfigurera en DNS-server
 
 Azure lägger till en DNS-server som standard när du distribuerar ett virtuellt nätverk. På så sätt kan du snabbt bygga virtuella nätverk och distribuera resurser. Den här DNS-servern tillhandahåller dock endast tjänster till resurserna i det virtuella nätverket. Om du vill ansluta flera virtuella nätverk till varandra eller ansluta till en lokal server från virtuella nätverk behöver du ytterligare namnmatchningsfunktioner. Du kan till exempel behöva Active Directory för att matcha DNS-namn mellan virtuella nätverk. För att göra detta distribuerar du din egen anpassade DNS-server i Azure.
 
@@ -122,7 +122,7 @@ Azure lägger till en DNS-server som standard när du distribuerar ett virtuellt
 - [Lär dig](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure) mer om namnmatchning när du använder en egen DNS-server.
 - [Läs mer om](../../ready/azure-best-practices/naming-and-tagging.md) namngivningsregler och begränsningar för DNS.
 
-## <a name="best-practice-set-up-availability-zones"></a>Bästa praxis: Konfigurera tillgänglighets zoner
+## <a name="best-practice-set-up-availability-zones"></a>Bästa praxis: Konfigurera tillgänglighetszoner
 
 Tillgänglighetszoner ökar hög tillgänglighet för att skydda dina appar och data från datacenterfel.
 
@@ -135,8 +135,8 @@ Tillgänglighetszoner ökar hög tillgänglighet för att skydda dina appar och 
     ![Tillgänglighetszon](./media/migrate-best-practices-networking/availability-zone.png) *Tillgänglighetszon*
 
 - Du kan planera och bygga hög tillgänglighet i din migrationsarkitektur genom att placera beräknings-, lagrings-, nätverks- och dataresurser inom en zon och replikera dem i andra zoner. Azuretjänster som har stöd för tillgänglighetszoner kan delas in i två kategorier:
-  - Zonindelade Services: du kopplar en resurs till en speciell zon. Till exempel virtuella datorer, hanterade diskar, IP-adresser).
-  - Zoner – redundanta tjänster: resursen replikeras automatiskt mellan zoner. Till exempel, zonredundant lagring, Azure SQL Database.
+  - Zonindelade tjänster: du kan associera en resurs med en viss zon. Till exempel virtuella datorer, hanterade diskar, IP-adresser).
+  - Zonredundant tjänster: resursen replikerar automatiskt i olika zoner. Till exempel, zonredundant lagring, Azure SQL Database.
 - Du kan distribuera en standardiserad Azure-belastning som utjämnas med internetriktade arbetsbelastningar eller appnivåer för att skapa en zonindelad feltolerans.
 
     ![Belastningsutjämnare](./media/migrate-best-practices-networking/load-balancer.png) *Belastningsutjämnare*
@@ -149,14 +149,14 @@ Tillgänglighetszoner ökar hög tillgänglighet för att skydda dina appar och 
 
 Vid en lyckad migrering är det viktigt att ansluta lokala företagsnätverk till Azure. Detta skapar ett så kallat hybridmolnnätverk, där tjänsterna tillhandahålls från Azuremolnet till företagsanvändare. Det finns två alternativ för att skapa den här typen av nätverk:
 
-- **VPN för plats-till-plats:** Du upprättar en plats-till-plats-anslutning mellan din kompatibla lokala VPN-enhet och en Azure VPN-gateway som har distribuerats i ett VNet. Alla auktoriserade lokala resurser kan komma åt virtuella nätverk. Plats-till-platskommunikation skickas via en krypterad tunnel via Internet.
-- **Azure-ExpressRoute:** Du upprättar en Azure ExpressRoute-anslutning mellan ditt lokala nätverk och Azure via en ExpressRoute-partner. Den här anslutningen är privat och trafiken går inte via Internet.
+- **Plats-till-plats-VPN:** upprättar du en plats-till-plats-anslutning mellan kompatibla lokala VPN-enheten och en Azure VPN-gateway som distribueras i ett virtuellt nätverk. Alla auktoriserade lokala resurser kan komma åt virtuella nätverk. Plats-till-platskommunikation skickas via en krypterad tunnel via Internet.
+- **Azure ExpressRoute:** du upprätta en Azure ExpressRoute-anslutning mellan ditt lokala nätverk och Azure, via en ExpressRoute-partner. Den här anslutningen är privat och trafiken går inte via Internet.
 
 **Läs mer:**
 
 - [Lär dig](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn) mer om nätverk med hybridmoln.
 
-## <a name="best-practice-implement-a-highly-available-site-to-site-vpn"></a>Bästa praxis: implementera en plats-till-plats-VPN med hög tillgänglighet
+## <a name="best-practice-implement-a-highly-available-site-to-site-vpn"></a>Bästa praxis: Implementera en högtillgänglig plats-till-plats-VPN
 
 Om du vill implementera en plats-till-plats-VPN skapar du en VPN-gateway i Azure.
 
@@ -207,7 +207,7 @@ När du skapar en VPN-gateway i Azure måste du använda ett särskilt undernät
 
 - [Använd det här verktyget](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed) för att fastställa IP-adressutrymmet.
 
-## <a name="best-practice-implement-azure-virtual-wan-for-branch-offices"></a>Bästa praxis: implementera Azure Virtual WAN för avdelnings kontor
+## <a name="best-practice-implement-azure-virtual-wan-for-branch-offices"></a>Bästa praxis: Implementera Azure virtuellt WAN-nätverk för avdelningskontor
 
 För flera VPN-anslutningar är Azure Virtual WAN en nätverkstjänst som tillhandahåller optimerade och automatiserade anslutningar mellan olika platser via Azure.
 
@@ -235,7 +235,7 @@ Att distribuera ExpressRoute-anslutningar innebär vanligtvis att man registrera
 - [Läs en översikt](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) över ExpressRoute.
 - [Lär dig mer](https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about) om ExpressRoute Direct.
 
-### <a name="best-practice-optimize-expressroute-routing-with-bgp-communities"></a>Bästa praxis: optimera ExpressRoute-routning med BGP-communities
+### <a name="best-practice-optimize-expressroute-routing-with-bgp-communities"></a>Bästa praxis: Optimera ExpressRoute-routning med BGP-communities
 
 När du har flera ExpressRoute-kretsar måste ha du mer än en sökväg för att ansluta till Microsoft. Därför kan en icke-optimal routning inträffa – vilket innebär att din trafik får en längre sökväg till Microsoft och Microsoft till nätverket. Ju längre nätverkssökvägen är, desto längre svarstid. Svarstiden har direkt inverkan på programmens prestanda och användarupplevelse.
 
@@ -287,7 +287,7 @@ Ansvaret för att skydda virtuella nätverk delas mellan Microsoft och dig. Micr
 - [Få en översikt över](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices) metodtips för nätverkssäkerhet.
 - [Lär dig](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm#security) utforma säkra nätverk.
 
-## <a name="best-practice-implement-an-azure-perimeter-network"></a>Bästa praxis: implementera ett Azure-perimeternätverk
+## <a name="best-practice-implement-an-azure-perimeter-network"></a>Bästa praxis: Implementera en Azure perimeternätverk
 
 Även om Microsoft investerar mycket i att skydda molninfrastrukturen måste du också skydda dina molntjänster och resursgrupper. En säkerhetsmetod med flera lager ger det bästa skyddet. Att upprätta ett perimeternätverk är en viktig del av den försvarsstrategin.
 
@@ -301,14 +301,14 @@ Ansvaret för att skydda virtuella nätverk delas mellan Microsoft och dig. Micr
 
 Följande bild visar ett exempel på ett enkelt undernätsperimeternätverk i ett företagsnätverk med två säkerhetsgränser.
 
-*Nätverksdistribution av ![VPN](./media/migrate-best-practices-networking/perimeter.png)
--perimeter*
+![Nätverksdistribution av ](./media/migrate-best-practices-networking/perimeter.png)
+VPN *-perimeter*
 
 **Läs mer:**
 
 - [Lär dig](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) mer om att distribuera ett perimeternätverk mellan Azure och ditt lokala datacenter.
 
-## <a name="best-practice-filter-vnet-traffic-with-nsgs"></a>Bästa praxis: filtrera VNet-trafik med NSG: er
+## <a name="best-practice-filter-vnet-traffic-with-nsgs"></a>Bästa praxis: Filter VNet-trafik med NSG: er
 
 Nätverkssäkerhetsgrupper (NSG) innehåller flera inkommande och utgående säkerhetsregler som filtrerar trafik som går till och från resurser. Filtrering kan bero på källan och målets IP-adress, port och protokoll.
 
@@ -320,7 +320,7 @@ Nätverkssäkerhetsgrupper (NSG) innehåller flera inkommande och utgående säk
 - Befintliga anslutningar avbryts inte när du tar bort en säkerhetsregel som aktiverade flödet. Trafikflöden avbryts när anslutningar har stoppats och ingen trafik passerar i endera riktning under minst ett par minuter.
 - När du skapar NSG:er skapar du så få som möjligt men så många som behövs.
 
-### <a name="best-practice-secure-northsouth-and-eastwest-traffic"></a>Bästa praxis: skydda Nord-/Syd-och östra/västra trafik
+### <a name="best-practice-secure-northsouth-and-eastwest-traffic"></a>Bästa praxis: skydda Nord-Syd och öst-väst-trafik
 
 När du skyddar virtuella nätverk är det viktigt att tänka på angreppsvektorer.
 
@@ -349,7 +349,7 @@ Tjänsttaggar avlastar det manuella arbetet med att tilldela en regel till grupp
 - [Läs mer om](https://docs.microsoft.com/azure/virtual-network/security-overview) nätverkssäkerhetsgrupper.
 - [Granska](https://docs.microsoft.com/azure/virtual-network/security-overview#service-tags) tjänsttaggarna som är tillgängliga för nätverkssäkerhetsgrupper.
 
-## <a name="best-practice-use-application-security-groups"></a>Bästa praxis: använda program säkerhets grupper
+## <a name="best-practice-use-application-security-groups"></a>Bästa praxis: använda programsäkerhetsgrupper
 
 Med programsäkerhetsgrupper kan du konfigurera nätverkssäkerhet som ett naturligt tillägg av en appstruktur.
 
@@ -374,7 +374,7 @@ NIC4 | AsgDb
 
 <!--markdownlint-disable MD033 -->
 
-**Regelnamn** | **Syfte** | **Detaljer**
+**Regelnamn** | **Syfte** | **Information**
 --- | --- | ---
 Allow-HTTP-Inbound-Internet | Den här regeln krävs för att tillåta trafik från Internet till webbservrarna. Inkommande trafik från Internet nekas av standardsäkerhetsregeln DenyAllInbound. Därför krävs ingen ytterligare regel för programsäkerhetsgruppen AsgLogic eller AsgDb. | Prioritet: 100<br/><br/> Källa: Internet<br/><br/> Källport: *<br/><br/> Mål: AsgWeb<br/><br/> Målport: 80<br/><br/> Protokoll: TCP<br/><br/> Åtkomst: Tillåt.
 Deny-Database-All | Standardsäkerhetsregeln AllowVNetInBound tillåter all kommunikation mellan resurser i samma virtuella nätverk. Därför krävs den här regeln för att neka trafik från alla resurser. | Prioritet: 120<br/><br/> Källa: *<br/><br/> Källport: *<br/><br/> Mål: AsgDb<br/><br/> Målport: 1433<br/><br/> Protokoll: alla<br/><br/> Åtkomst: neka.
@@ -388,7 +388,7 @@ Allow-Database-BusinessLogic | Tillåt trafik från programsäkerhetsgruppen Asg
 
 - [Lär dig mer om](https://docs.microsoft.com/azure/virtual-network/security-overview#application-security-groups) programsäkerhetsgrupper.
 
-### <a name="best-practice-secure-access-to-paas-using-vnet-service-endpoints"></a>Bästa praxis: säker åtkomst till PaaS med hjälp av VNet-tjänstens slut punkter
+### <a name="best-practice-secure-access-to-paas-using-vnet-service-endpoints"></a>Bästa praxis: säker åtkomst till PaaS som använder tjänstslutpunkter för virtuellt nätverk
 
 Med tjänstslutpunkter för Virtual Network får du ett utökat privat adressutrymme för det virtuella nätverket och identiteten för ditt VNet till Azure-tjänsterna, via en direktanslutning.
 
@@ -403,7 +403,7 @@ Med tjänstslutpunkter för Virtual Network får du ett utökat privat adressutr
 
 - [Läs mer om](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) tjänstslutpunkter för virtuella nätverk.
 
-## <a name="best-practice-control-public-ip-addresses"></a>Bästa praxis: kontrol lera offentliga IP-adresser
+## <a name="best-practice-control-public-ip-addresses"></a>Bästa praxis: Kontrollera offentliga IP-adresser
 
 Offentliga IP-adresser i Azure kan associeras med virtuella datorer, belastningsutjämnare, programgatewayer och VPN-gatewayer.
 
@@ -428,8 +428,8 @@ Azure har plattformsäkerhetsfunktioner som är enkla att använda och ger omfat
 
 Azure Firewall är en hanterad molnbaserad nätverkssäkerhetstjänst som skyddar dina resurser på virtuella nätverk. Det är en helt tillståndskänslig hanterad brandvägg med inbyggd hög tillgänglighet och obegränsad molnskalbarhet.
 
-*Azure Firewall* för ![tjänstslutpunkter](./media/migrate-best-practices-networking/firewall.png)
-
+![Azure Firewall](./media/migrate-best-practices-networking/firewall.png)
+ för *tjänstslutpunkter*
 
 - Azure Firewall kan centralt skapa, framtvinga och logga principer för tillämpning och nätverksanslutning över prenumerationer och virtuella nätverk.
 - Azure Firewall använder en statisk offentlig IP-adress för din virtuella nätverksresurser som tillåter att externa brandväggar identifierar trafik som kommer från ditt virtuella nätverk.
@@ -462,7 +462,7 @@ Brandväggen för webbaserade program (WAF) är en funktion i Azure Application 
 - [Läs mer om](https://docs.microsoft.com/azure/application-gateway/waf-overview) brandvägg för webbaserade program.
 - [Granska](https://docs.microsoft.com/azure/application-gateway/application-gateway-waf-configuration) begränsningar och undantag för brandväggen för webbaserade program.
 
-## <a name="best-practice-implement-azure-network-watcher"></a>Bästa praxis: implementera Azure Network Watcher
+## <a name="best-practice-implement-azure-network-watcher"></a>Bästa praxis: Implementera Azure Network Watcher
 
 Azure Network Watcher innehåller verktyg för att övervaka resurser och kommunikation i ett virtuellt Azure-nätverk. Du kan till exempel övervaka kommunikation mellan en virtuell dator och en slutpunkt, till exempel en annan virtuell dator eller FQDN, visa resurser och resursrelationer i ett virtuellt nätverk eller diagnostisera problem hos nätverkstrafiken.
 
@@ -489,13 +489,13 @@ För mer komplexa nätverkstopologier kan du använda säkerhetsprodukter från 
 - NVA stärker säkerheten och nätverksfunktionerna på virtuella nätverk. De kan distribueras för att tillhandahålla brandväggar med hög tillgänglighet, skydd mot intrång, intrångsidentifiering, brandväggar för webbaserade program (WAF), WAN-optimering, routning, belastningsutjämning, VPN, certifikathantering, Active Directory och multifaktorautentisering.
 - NVA är tillgängligt från flera leverantörer på [Azure Marketplace.](https://azuremarketplace.microsoft.com)
 
-## <a name="best-practice-implement-firewalls-and-nvas-in-hub-networks"></a>Bästa praxis: implementera brand väggar och NVA i hubb nätverk
+## <a name="best-practice-implement-firewalls-and-nvas-in-hub-networks"></a>Bästa praxis: Implementera brandväggar och nva: er i hubben nätverk
 
 I hubben hanteras perimeternätverket (med åtkomst till Internet) normalt via en Azure-brandvägg, en brandväggsgrupp eller en brandvägg för webbaserade program (WAF). Ta följande jämförelser som exempel.
 
 <!--markdownlint-disable MD033 -->
 
-**Brandväggstyp** | **Detaljer**
+**Brandväggstyp** | **Information**
 --- | ---
 Brandvägg för webbaserade program | Webbprogram är vanliga och tenderar att drabbas av sårbarheter och potentiella hot.<br/><br/> Brandväggar för webbaserade program är utformade för att identifiera attacker mot webbprogram (HTTP/HTTPS) mer specifikt än en vanlig brandvägg.<br/><br/> Jämfört med traditionell brandväggsteknik har brandväggar för webbaserade program specifika funktioner som skyddar inre webbservrar mot hot.
 Azure Firewall | Azure Firewall använder likt NVA-brandväggsgrupper en gemensam administrationsmekanism och en uppsättning säkerhetsregler som skyddar arbetsbelastningar i ekernätverk och kontrollerar åtkomst till lokala nätverk.<br/><br/> Azure Firewall har inbyggd skalbarhet.
@@ -517,4 +517,4 @@ Vi rekommenderar att du använder en Azure Firewall (eller NVA) för trafik som 
 Läs andra metodtips:
 
 - [Metodtips](./migrate-best-practices-security-management.md) för säkerhet och hantering efter migrering.
-- [Metodtips](./migrate-best-practices-costs.md) för kostnadshantering efter migrering.
+- [Metodtips](./migrate-best-practices-costs.md) för säkerhet och hantering efter migrering.

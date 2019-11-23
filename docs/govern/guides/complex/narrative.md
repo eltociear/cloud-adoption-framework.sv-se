@@ -1,5 +1,5 @@
 ---
-title: 'Styrnings guide för komplexa företag: De underordnade'
+title: 'Styrnings guide för komplexa företag: de understödjande behållningarna'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Detta upprättar ett användnings fall för styrning under ett komplext företags moln införande resa.
 author: BrianBlanchard
@@ -16,7 +16,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 10/04/2019
 ms.locfileid: "71967674"
 ---
-# <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>Styrnings guide för komplexa företag: De underordnade
+# <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>Styrnings guide för komplexa företag: de understödjande behållningarna
 
 Följande bevarar upprättar ett användnings fall för [styrning under komplex företagets moln införande resa](./index.md). Innan du följer rekommendationerna i guiden är det viktigt att förstå de antaganden och den anledning som visas i den här informationen. Sedan kan du bättre justera styrnings strategin till din organisations moln införande resa.
 
@@ -36,7 +36,7 @@ Företaget har följande affärs profil:
 - Verksamheten är i drift genom förvärv och fungerar över tre affär senheter baserat på mål kund basen. Budgetering är en komplex matris över affär senheter och-funktioner.
 - De flesta affärsvyer som en kapital dränering eller ett kostnads ställe.
 
-## <a name="current-state"></a>Aktuellt tillstånd
+## <a name="current-state"></a>Nuvarande tillstånd
 
 Här är det aktuella läget för företagets IT-och moln åtgärder:
 
@@ -58,7 +58,7 @@ Följande ändringar förväntas under de närmaste åren:
 - Informations chefen vill använda en molnbaserad migrering som en tvingande funktion för att förbättra konsekvens och stabilitet mellan affär senheter och geografiska områden. Det framtida läget måste dock respektera eventuella externa krav som kräver avvikelse från standard metoder av särskilda IT-team.
 - Om de tidiga experimenten i app dev och BI visar ledande indikatorer för framgång, skulle de var som helst för att frigöra produktions lösningar för små skala till molnet under de närmaste 24 månaderna.
 - Informations chefen och ekonomi chefen har tilldelat en arkitekt och vice VD för infrastrukturen för att skapa en kostnads analys och genomförbarhets studie. Dessa ansträngningar avgör om företaget kan och bör flytta 5 000-till gångar till molnet under de kommande 36 månaderna. En lyckad migrering skulle göra det möjligt för IT-chef att eliminera två Data Center och minska kostnaderna med över $100 miljoner USD under fem års planen. Om tre till fyra Data Center kan uppleva liknande resultat, kommer budgeten att vara tillbaka i svart, vilket ger CHEFs budgeten stöd för fler innovativa initiativ.
-    ![On-kostnader jämfört med Azure-kostnader som demonstrerar en avkastning på $100 miljoner USD under de kommande fem åren @ no__t-1
+    ![lokala kostnader jämfört med Azure-kostnader som demonstrerar en avkastning på $100 miljoner USD under de kommande fem åren](../../../_images/govern/calculator-enterprise.png)
 - Tillsammans med den här kostnads besparingarna planerar företaget att ändra hanteringen av vissa IT-investeringar genom att flytta in den utbetalade kapital kostnaden som en drifts kostnad i den. Den här ändringen ger bättre kostnads kontroll som kan användas för att påskynda andra planerade insatser.
 
 ## <a name="next-steps"></a>Nästa steg
