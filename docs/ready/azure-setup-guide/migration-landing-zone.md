@@ -18,7 +18,7 @@ ms.locfileid: "74251700"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Distribuera en landningszon för migrering
 
-Termen *landingszon för migrering* används för att beskriva en miljö som har etablerats och förberetts för att fungera som värd för arbetsbelastningar som migreras från en lokal miljö till Azure. A migration landing zone is the final deliverable of the Azure setup guide. Den här artikeln förenar beredskapsämnen som har beskrivits i den här handboken och tillämpar de beslut som har fattats vid distributionen av landnings zonen för den första migreringen.
+Termen *landingszon för migrering* används för att beskriva en miljö som har etablerats och förberetts för att fungera som värd för arbetsbelastningar som migreras från en lokal miljö till Azure. En landnings zon för migrering är den sista slut produkten i installations guiden för Azure. Den här artikeln förenar beredskapsämnen som har beskrivits i den här handboken och tillämpar de beslut som har fattats vid distributionen av landnings zonen för den första migreringen.
 
 I följande avsnitt beskrivs en landningszon som ofta används för att etablera en miljö som är lämplig för användning under en migrering. Miljön eller landningszonen som beskrivs i den här artikeln beskrivs också i en Azure-skiss. Du kan använda landningszonskissen från Cloud Adaption Framework för att distribuera den definierade miljön med ett enda klick.
 
@@ -44,10 +44,10 @@ Innan du använder Ramverk för molnimplementering-skissen för migrering av lan
 
 Följande antaganden eller begränsningar användes när den inledande landningszonen definierades. Om dessa antaganden överensstämmer med dina begränsningar kan du använda skissen för att skapa din första landningszon. Skissen kan också utökas för att skapa en landningszonskiss som uppfyller dina unika begränsningar.
 
-- **Subscription limits:** This adoption effort isn't expected to exceed [subscription limits](https://docs.microsoft.com/azure/azure-subscription-service-limits). Två vanliga indikatorer är ett överskott på 25 000 virtuella datorer eller 10 000 virtuella processorer.
-- **Compliance:** No third-party compliance requirements are needed in this landing zone.
-- **Architectural complexity:** Architectural complexity doesn't require additional production subscriptions.
-- **Shared services:** There are no existing shared services in Azure that require this subscription to be treated like a spoke in a hub and spoke architecture.
+- **Prenumerations begränsningar:** Den här antagande ansträngningen förväntas inte överskrida [prenumerations gränserna](https://docs.microsoft.com/azure/azure-subscription-service-limits). Två vanliga indikatorer är ett överskott på 25 000 virtuella datorer eller 10 000 virtuella processorer.
+- **Kompatibilitet:** Det behövs inga krav från tredje part för efterlevnad i denna landnings zon.
+- **Arkitektur komplexitet:** Arkitektur komplexitet kräver inte ytterligare produktions prenumerationer.
+- **Delade tjänster:** Det finns inga befintliga delade tjänster i Azure som kräver att den här prenumerationen behandlas som en eker i en hubb och eker-arkitektur.
 
 Om dessa antaganden verkar stämma överens med din nuvarande miljö kan den här skissen vara lämplig för att börja bygga din landningszon.
 
@@ -65,17 +65,17 @@ Följande beslut speglas i skissen för landningszonen.
 |Prenumerationsdesign|Saknas – utformad för en enda produktionsprenumeration.|[Skalanpassa prenumerationer](../azure-best-practices/scaling-subscriptions.md)|
 |Hanteringsgrupper|Saknas – utformad för en enda produktionsprenumeration.|[Skalanpassa prenumerationer](../azure-best-practices/scaling-subscriptions.md)         |
 |Resursgrupper|Saknas – utformad för en enda produktionsprenumeration.|[Skalanpassa prenumerationer](../azure-best-practices/scaling-subscriptions.md)         |
-|Data|Gäller inte|[Choose the correct SQL Server option in Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) and [Azure Data Store guidance](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Lagring|Gäller inte|[Riktlinjer för Azure Storage](../considerations/storage-options.md)         |
+|Data|Gäller inte|[Välj rätt SQL Server alternativ i Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) och [Azure Data Store vägledning](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+|Storage|Gäller inte|[Riktlinjer för Azure Storage](../considerations/storage-options.md)         |
 |Standarder för namngivning och taggning|Gäller inte|[Metodtips för namngivning och taggning](../azure-best-practices/naming-and-tagging.md)         |
 |Kostnadshantering|Gäller inte|[Spåra kostnader](../azure-best-practices/track-costs.md)|
-|Databearbetning|Gäller inte|[Compute-alternativ](../considerations/compute-options.md)|
+|Compute|Gäller inte|[Compute-alternativ](../considerations/compute-options.md)|
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>Anpassa eller distribuera en landningszon från den här skissen
 
-Learn more and download a reference sample of the Cloud Adoption Framework migrate landing zone blueprint for deployment or customization from [Azure Blueprints samples](https://docs.microsoft.com/azure/governance/blueprints/samples).
+Lär dig mer och ladda ned ett referens exempel för moln införande ramverk migrera landnings zon skiss för distribution eller anpassning från [Azure-exempel](https://docs.microsoft.com/azure/governance/blueprints/samples).
 
-Skissexemplen finns också i portalen. For details of how to create a blueprint, see [Azure Blueprints](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
+Skissexemplen finns också i portalen. Mer information om hur du skapar en skiss finns i [Azure-ritningar](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
 
 Information om anpassning av den här skissen eller den resulterande landningszonen finns artiklarna [Landingzon – att tänka på](../considerations/index.md).
 
