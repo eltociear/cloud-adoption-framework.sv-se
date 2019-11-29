@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 887d2e2ec410b761fdc81b87d83f3a471c3bf99e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3c87bfbd8fe920d0469da8b3e60da59da07158ed
+ms.sourcegitcommit: 0b6939f65a1e5653149301e9aa14db9a1f67825f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566559"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74557031"
 ---
 # <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Omstrukturera en Team Foundation Server-distribution till Azure DevOps Services
 
@@ -51,7 +51,7 @@ Contosos molnteam har fastställt mål för migreringen till Azure DevOps Servic
 
 ![Scenariots arkitektur](./media/contoso-migration-tfs-vsts/architecture.png)
 
-## <a name="migration-process"></a>Migreringsprocess
+## <a name="migration-process"></a>Migreringsprocessen
 
 Så här genomför Contoso migreringen:
 
@@ -61,7 +61,7 @@ Så här genomför Contoso migreringen:
 4. Contoso kör sedan en full migrering som inkluderar arbetsobjekt, fel, sprintar och kod.
 5. Efter migreringen flyttar Contoso sin kod från TFVC till Git.
 
-![Migreringsprocess](./media/contoso-migration-tfs-vsts/migration-process.png)
+![Migreringsprocessen](./media/contoso-migration-tfs-vsts/migration-process.png)
 
 ## <a name="prerequisites"></a>Krav
 
@@ -69,13 +69,13 @@ Det här behöver Contoso för att köra detta scenario.
 
 <!-- markdownlint-disable MD033 -->
 
-**Krav** | **Information**
+**Krav** | **Detaljer**
 --- | ---
 **Azure-prenumeration** | Contoso skapade prenumerationer i en tidigare artikel i den här serien. Om du inte har någon Azure-prenumeration kan du skapa ett [kostnadsfritt konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Om du skapar ett kostnadsfritt konto är du administratör för din prenumeration och kan utföra alla åtgärder.<br/><br/> Om du använder en befintlig prenumeration och inte är administratör måste du be administratören att ge dig ägar- eller deltagarbehörighet.<br/><br/> Om du behöver mer detaljerade behörigheter läser du [den här artikeln](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Azure-infrastruktur** | Contoso konfigurerar Azure-infrastrukturen enligt beskrivningen i [Azure-infrastruktur för migrering.](./contoso-migration-infrastructure.md)
+**Azure-infrastruktur** | Contoso konfigurerar Azure-infrastrukturen enligt beskrivningen i [Azure-infrastrukturen för migrering.](./contoso-migration-infrastructure.md)
 **Lokal TFS-server** | Den lokala servern måste köra TFS 2018 uppgradering 2 eller uppdateras till detta som en del av denna process.
 
-## <a name="scenario-steps"></a>Scenariosteg
+## <a name="scenario-steps"></a>Steg i scenariot
 
 Så här slutför Contoso migreringen:
 
@@ -86,7 +86,7 @@ Så här slutför Contoso migreringen:
 > - **Steg 3: validera samlingen.** Contoso kommer att validera TFS-samlingen för att förbereda migreringen.
 > - **Steg 4: Bygg förberedelse filen.** Contoso kommer att skapa migreringsfilerna med TFS migreringsverktyg.
 
-## <a name="step-1-create-a-storage-account"></a>Steg 1: Skapa ett lagringskonto
+## <a name="step-1-create-a-storage-account"></a>Steg 1: skapa ett lagrings konto
 
 1. I Azure-portalen skapar Contosos administratörer ett lagringskonto (**contosodevmigration**).
 2. De placerar kontot i den sekundära region de använder för redundans – USA, centrala. De använder ett allmänt standardkonto med lokalt redundant lagring.
@@ -103,7 +103,7 @@ Så här slutför Contoso migreringen:
 Contosos administratörer uppgraderar TFS-servern till TFS 2018 uppdatering 2. Innan de börjar:
 
 - De laddar ned [TFS 2018 uppdatering 2](https://visualstudio.microsoft.com/downloads)
-- De kontrollerar [maskinvarukraven](https://docs.microsoft.com/tfs/server/requirements) och läser igenom [viktig information](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes) och [potentiella uppgraderingsproblem](https://docs.microsoft.com/tfs/server/upgrade/get-started#before-you-upgrade-to-tfs-2018).
+- De kontrollerar [maskinvarukraven](/azure/devops/server/requirements) och läser igenom [viktig information](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes) och [potentiella uppgraderingsproblem](/azure/devops/server/upgrade/get-started#before-you-upgrade-to-tfs-2018).
 
 De uppgraderar så här:
 
@@ -132,7 +132,7 @@ De uppgraderar så här:
 
 **Behöver du mer hjälp?**
 
-Lär dig om [uppgradering av TFS](https://docs.microsoft.com/tfs/server/upgrade/get-started).
+Lär dig om [uppgradering av TFS](/azure/devops/server/upgrade/get-started).
 
 ## <a name="step-3-validate-the-tfs-collection"></a>Steg 3: verifiera TFS-samlingen
 
@@ -182,7 +182,7 @@ Nu när valideringen är slutförd kan Contosos administratörer använda TFS-mi
 
     `TfsMigrator prepare /collection:http://contosotfs:8080/tfs/ContosoDev /tenantDomainName:contosomigration.onmicrosoft.com /accountRegion:cus`
 
-     ![Förbereda](./media/contoso-migration-tfs-vsts/prep1.png)
+     ![Förbered dig](./media/contoso-migration-tfs-vsts/prep1.png)
 
     Förbereda gör följande:
     - Söker igenom samlingen för att hitta en lista på alla användare och fyller i identitetsloggen (**IdentityMapLog.csv**).
@@ -191,19 +191,19 @@ Nu när valideringen är slutförd kan Contosos administratörer använda TFS-mi
 
 2. Skärmen för inloggning till Azure AD visas och de anger autentiseringsuppgifterna för en global administratör.
 
-    ![Förbereda](./media/contoso-migration-tfs-vsts/prep2.png)
+    ![Förbered dig](./media/contoso-migration-tfs-vsts/prep2.png)
 
 3. Förbereda slutförs och verktyget rapporterar att importfilerna skapats korrekt.
 
-    ![Förbereda](./media/contoso-migration-tfs-vsts/prep3.png)
+    ![Förbered dig](./media/contoso-migration-tfs-vsts/prep3.png)
 
 4. De kan nu se att både filerna IdentityMapLog.csv och import.json skapats i en ny mapp.
 
-    ![Förbereda](./media/contoso-migration-tfs-vsts/prep4.png)
+    ![Förbered dig](./media/contoso-migration-tfs-vsts/prep4.png)
 
 5. Filen import.json innehåller importinställningar. Den innehåller information som önskat organisationsnamn och information om lagringskonto. De flesta fälten fylls i automatiskt. Vissa fält måste fyllas i av användaren. Contoso öppnar filen och lägger till organisationsnamnet som ska skapas för Azure DevOps Services: **contosodevmigration**. Med detta namn kommer deras URL för Azure DevOps Services att vara **contosodevmigration.visualstudio.com**.
 
-    ![Förbereda](./media/contoso-migration-tfs-vsts/prep5.png)
+    ![Förbered dig](./media/contoso-migration-tfs-vsts/prep5.png)
 
     > [!NOTE]
     > Organisationen måste skapas innan migreringen men kan ändras efter migreringen.
@@ -214,7 +214,7 @@ Nu när valideringen är slutförd kan Contosos administratörer använda TFS-mi
     - I Azure DevOps Services kommer dessa identiteter att vara licensierade och visas som en användare i organisationen efter migrering.
     - Dessa identiteter är markerade som **Aktiv** i kolumnen **Förväntad importstatus** i filen.
 
-    ![Förbereda](./media/contoso-migration-tfs-vsts/prep6.png)
+    ![Förbered dig](./media/contoso-migration-tfs-vsts/prep6.png)
 
 ## <a name="step-5-migrate-to-azure-devops-services"></a>Steg 5: migrera till Azure DevOps Services
 
