@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3d99e999d8d083814812b1605d9f0053f186bfc4
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: c03e6d25734a487c317fa9c6904a799dfd53f631
+ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753426"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74681790"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>Säkra övervaknings- och hanteringsverktyg
 
@@ -71,3 +71,11 @@ Azure Advisor är din anpassade guide för bästa praxis i Azure. Tjänsten anal
 - **Aviseringar om nya rekommendationer.** Håll dig informerad om nya rekommendationer, till exempel hur du kan optimera storleken för virtuella datorer och spara pengar.
 
 Läs mer om [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) och hur du kan optimera dina migrerade resurser.
+
+## <a name="suggested-skills"></a>Föreslagna färdigheter
+
+Microsoft Learn är en ny metod för inlärning. Det är inte helt enkelt att förbereda sig för de nya ansvarsområdena som medföljer vid en övergång till molnet. Microsoft Learn erbjuder en mer givande metod för konkret inlärning som hjälper er att uppnå era mål snabbare. Tjäna poäng och nivåer och uträtta mer!
+
+Här är ett exempel på en skräddarsydd utbildningsväg på Microsoft Learn för den som vill lära sig mer om säkerhet och hantering i Cloud Adoption Framework: 
+
+[Skydda dina molndata](https://docs.microsoft.com/learn/paths/secure-your-cloud-data/): Azure är utformat för säkerhet och efterlevnad. Lär dig hur du drar nytta av de inbyggda tjänsterna för att lagra dina appdata på ett säkert sätt så att endast auktoriserade tjänster och klienter kan komma åt dem.
