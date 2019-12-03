@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 6a7c27e1c2e4bf0bdf4a4ef9104bf13bf221f4e0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: b00b007f9fb223312aa7baf99f54d32a8a08ce70
+ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566598"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74681807"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Bygga om en lokal app i Azure
 
@@ -143,34 +143,45 @@ Contosos administratörer kör ett distributionsskript för att skapa det hanter
 
 Contosos administratörer etablerar enligt följande:
 
-1. de öppnar mappen med Visual Studio Code och flyttar till katalogen **/Deploy/K8s** som innehåller skriptet **gen-AKS-ENV. ps1**.
+1. De öppnar mappen med Visual Studio Code och flyttar till katalogen **/Deploy/K8s** som innehåller skriptet **gen-AKS-ENV. ps1**.
+
 2. De kör skriptet för att skapa det hanterade Kubernetes-klustret med hjälp av AKS och ACR.
-    ![AKS](./media/contoso-migration-rebuild/aks1.png)
+
+   ![AKS](./media/contoso-migration-rebuild/aks1.png)
+
 3. När filen är öppen uppdaterar de $location-parametern till **eastus2**och sparar filen.
-    ![AKS](./media/contoso-migration-rebuild/aks2.png)
+
+   ![AKS](./media/contoso-migration-rebuild/aks2.png)
+
 4. De väljer **Visa** > **Integrerad terminal** för att öppna den integrerade terminalen i Visual Studio Code.
-    ![AKS](./media/contoso-migration-rebuild/aks3.png)
+
+   ![AKS](./media/contoso-migration-rebuild/aks3.png)
+
 5. I den PowerShell-integrerade terminalen loggar de in i Azure med kommandot Connect-AzureRmAccount. [Lär dig mer](https://docs.microsoft.com/powershell/azure/get-started-azureps) om hur du kommer igång med PowerShell.
-    ![AKS](./media/contoso-migration-rebuild/aks4.png)
-6. De autentiserar Azure CLI genom att köra kommandot `az login` och följa instruktionerna för att autentisera med hjälp av webbläsaren. [Lär dig mer](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest) om hur du loggar in med Azure CLI.
-    ![AKS](./media/contoso-migration-rebuild/aks5.png)
+
+   ![AKS](./media/contoso-migration-rebuild/aks4.png)
+
+6. De autentiserar Azure CLI genom att först köra kommandot **az login** och sedan följa instruktionerna för att autentisera med hjälp av webbläsaren. [Lär dig mer](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) om hur du loggar in med Azure CLI.
+
+   ![AKS](./media/contoso-migration-rebuild/aks5.png)
+
 7. De kör följande kommando och skickar resursgruppens namn, ContosoRG, namnet på AKS-klustret, smarthotel-aks-eus2, och det nya registernamnet.
 
-    ```PowerShell
-    .\gen-aks-env.ps1  -resourceGroupName ContosoRg -orchestratorName smarthotelakseus2 -registryName smarthotelacreus2
-    ```
+   ```PowerShell
+   .\gen-aks-env.ps1  -resourceGroupName ContosoRg -orchestratorName smarthotelakseus2 -registryName smarthotelacreus2
+   ```
 
-    ![AKS](./media/contoso-migration-rebuild/aks6.png)
+   ![AKS](./media/contoso-migration-rebuild/aks6.png)
 
 8. Azure skapar en annan resursgrupp som innehåller resurserna för AKS-klustret.
 
-    ![AKS](./media/contoso-migration-rebuild/aks7.png)
+   ![AKS](./media/contoso-migration-rebuild/aks7.png)
 
 9. När distributionen är färdig installerar de kommandoradsverktyget **kubectl**. Verktyget är redan installerat i Azure CloudShell.
 
-    ```console
-    az aks install-cli
-    ```
+   ```console
+   az aks install-cli
+   ```
 
 10. De verifierar anslutningen till klustret genom att köra kommandot **kubectl get nodes**. Noden har samma namn som den virtuella datorn i den automatiskt skapade resursgruppen.
 
@@ -416,11 +427,11 @@ Contosos administratörer etablerar funktionsappen på Azure-portalen.
 
 1. De väljer **Funktionsapp**.
 
-    ![Skapa funktionsappen](./media/contoso-migration-rebuild/function-app1.png)
+   ![Skapa funktionsappen](./media/contoso-migration-rebuild/function-app1.png)
 
 2. De anger ett namn för appen (**smarthotelpetchecker**). De placerar appen i produktionsresursgruppen **ContosoRG**. De anger värdplatsen till **Consumption Plan** (Förbrukningsplan) och placerar appen i regionen USA, östra 2. Ett nytt lagringskonto skapas, tillsammans med en Application Insights-instans för övervakning.
 
-    ![Funktionsappinställningar](./media/contoso-migration-rebuild/function-app2.png)
+   ![Funktionsappinställningar](./media/contoso-migration-rebuild/function-app2.png)
 
 3. När appen har distribuerats bläddrar de till appens adress för att kontrollera att appen har skapats.
 
@@ -430,9 +441,10 @@ Contosos administratörer skapar två olika projekt för klientsidan.
 
 1. I Azure DevOps skapar de projektet **SmartHotelFrontend**.
 
-    ![Projektet på klientsidan](./media/contoso-migration-rebuild/function-app1.png)
+   ![Projektet på klientsidan](./media/contoso-migration-rebuild/function-app1.png)
 
 2. De importerar Git-lagringsplatsen för [SmartHotel360-klientdelen](https://github.com/Microsoft/SmartHotel360-public-web.git) till det nya projektet.
+
 3. För funktionsappen skapar de ett annat Azure DevOps-projekt (SmartHotelPetChecker) och importerar Git-lagringsplatsen [PetChecker](https://github.com/Microsoft/SmartHotel360-PetCheckerFunction ) till det här projektet.
 
 ### <a name="configure-the-web-app"></a>Konfigurera webbappen
@@ -572,14 +584,21 @@ Contosos administratörer distribuerar appen på följande sätt.
 14. När funktionen har distribuerats visas den på Azure-portalen med statusen **Körs**.
 
     ![Distribuera funktionsappen](./media/contoso-migration-rebuild/function6.png)
-
+    
 15. De bläddrar till appen för att testa att PetChecker-appen fungerar som förväntat på [http://smarthotel360public.azurewebsites.net/Pets](http://smarthotel360public.azurewebsites.net/Pets).
+
 16. De väljer avataren för att ladda upp en bild.
-    ![Distribuera funktionen](./media/contoso-migration-rebuild/function7.png)
+
+    ![Distribuera funktionsappen](./media/contoso-migration-rebuild/function7.png)
+    
 17. Den första bilden som de vill kontrollera är av en liten hund.
-    ![Distribuera funktionen](./media/contoso-migration-rebuild/function8.png)
+
+    ![Distribuera funktionsappen](./media/contoso-migration-rebuild/function8.png)
+    
 18. Appen returnerar ett meddelande om godkännande.
-    ![Distribuera funktionen](./media/contoso-migration-rebuild/function9.png)
+
+    ![Distribuera funktionsappen](./media/contoso-migration-rebuild/function9.png)
+    
 
 ## <a name="review-the-deployment"></a>Granska distributionen
 
@@ -607,3 +626,14 @@ Med de migrerade resurserna i Azure måste Contoso fullständigt operationaliser
 ## <a name="conclusion"></a>Sammanfattning
 
 I den här artikeln bygger Contoso upp SmartHotel360-appen i Azure. Den virtuella datorn för den lokala appen på klientsidan återskapas till Azure App Service-webbappar. Serverdelen för programmet skapas med mikrotjänster som distribueras till containrar som hanteras av Azure Kubernetes Service (AKS). Contoso förbättrade appfunktionerna med en app för husdjursbilder.
+
+## <a name="suggested-skills"></a>Föreslagna färdigheter
+
+Microsoft Learn är en ny metod för inlärning. Det är lätt att komma igång med nya kunskaper och ansvars områden som medföljer moln införande. Microsoft Learn erbjuder en mer givande metod för konkret inlärning som hjälper er att uppnå era mål snabbare. Tjäna poäng och nivåer och få mer!
+
+Här följer några exempel på skräddarsydda utbildnings vägar på Microsoft Learn som överensstämmer med contoso SmartHotel360-appen i Azure.
+
+[Distribuera en webbplats till Azure med Azure App Service](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service/): med webbappar i Azure kan du enkelt publicera och hantera din webbplats utan att behöva arbeta med de underliggande servrarna, lagrings enheterna eller nätverks resurserna. Fokusera istället på webbplatsens funktioner och låt den robusta Azure-plattformen ge säker åtkomst till din webbplats.
+
+[Bearbeta och klassificera avbildningar med Azure kognitiv vision Services](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services/): Azure Cognitive Services erbjuder inbyggda funktioner för att aktivera funktioner för dator funktioner i dina program. Lär dig hur du använder kognitiv vision Services för att identifiera ansikten, tagga och klassificera bilder och identifiera objekt.
+
