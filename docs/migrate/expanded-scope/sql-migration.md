@@ -8,14 +8,14 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 71632e8f3f995922f4021f216f2090b742141169
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: e499e499cf1639bf9ce1118dcb93254268e9cb54
+ms.sourcegitcommit: 3c325764ad8229b205d793593ff344dca3a0579b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753534"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "75328930"
 ---
-# <a name="accelerate-migration-by-migrating-an-instance-of-sql-server"></a>Påskynda migreringen genom att migrera en instans av SQL Server
+# <a name="accelerate-migration-by-migrating-multiple-databases-or-entire-sql-servers"></a>Påskynda migrering genom att migrera flera databaser eller hela SQL-servrar
 
 Migrering av hela SQL Server instanser kan påskynda migreringen av arbetsbelastningar. Följande rikt linjer utökar omfånget för [Azure migration guide](../azure-migration-guide/index.md) genom att migrera en instans av SQL Server utanför en migrering för arbets belastnings fokus. Den här metoden kan dirigera migreringen av flera arbets belastningar med en enda data plattforms migrering. De flesta insatser som krävs i denna omfattnings expansion sker under förutsättningarna, utvärderingen, migreringen och optimerings processen för en migrering.
 
@@ -25,9 +25,9 @@ Migrering av hela SQL Server instanser kan påskynda migreringen av arbetsbelast
 
 Den metod som rekommenderas i [Azure migration guide](../azure-migration-guide/index.md) är att migrera varje data struktur tillsammans med associerade arbets belastningar som en del av en enda migrering. Den iterativa metoden för migrering minskar identifieringen, utvärderingen och andra uppgifter som kan skapa Blocker och långsamma affärs värdes returer.
 
-Vissa data strukturer kan dock migreras effektivare genom en separat migrering av data plattform. Detta är några exempel:
+Vissa data strukturer kan dock migreras effektivare genom en separat migrering av data plattform. Följande är några exempel:
 
-- **Tjänstens slut:** Att snabbt flytta en SQL Server-instans för att undvika problem med tjänstens slut för ande av tjänster kan motivera användningen av den här guiden utanför standardmigreringen.
+- **Tjänstens slut:** Att snabbt flytta en SQL Server-instans som en isolerad iteration inom en större migrerings ansträngning kan undvika tjänst utmaningarna. Den här guiden hjälper dig att integrera migreringen av en SQL Server i den bredare migreringsprocessen. Men om du migrerar eller uppgraderar en SQL Server oberoende av någon annan moln användnings ansträngning, kan det [SQL Server översikt över livs längd](/sql/sql-server/end-of-support/sql-server-end-of-life-overview) eller [SQL Server migrering av dokumentations](/sql/sql-server/migrate/index) artiklar som ger tydligare vägledning.
 - **SQL Server tjänster:** Data strukturen är en del av en bredare lösning som kräver SQL Server som körs på en virtuell dator. Detta är vanligt för lösningar som använder SQL Server tjänster som SQL Server Reporting Services, SQL Server Integration Services eller SQL Server Analysis Services.
 - **Databaser med hög densitet och låg användning:** Instansen av SQL Server har hög densitet av databaser. Var och en av dessa databaser har låga transaktions volymer och kräver en liten beräknings resurs. Du bör överväga andra, fler moderna lösningar, men en infrastruktur som en tjänst (IaaS) kan leda till betydligt lägre drifts kostnader.
 - **Total ägande kostnad:** När det är tillämpligt kan du använda [Azure Hybrid-förmåner](https://azure.microsoft.com/pricing/hybrid-benefit) för List priset för att skapa den lägsta ägande kostnaden för instanser av SQL Server. Detta är särskilt vanligt för kunder som är värdar för SQL Server i multimolns scenarier.
@@ -42,7 +42,7 @@ Om den här guiden överensstämmer med dina kriterier fortsätter du med den h�
 
 Innan du utför en SQL Server migrering börjar du med en expansion av den digitala fastigheten genom att inkludera en datafastighet. Datafastigheten registrerar en inventering av de data till gångar som du överväger för migrering. Följande tabeller beskriver en metod för att registrera datafastigheten.
 
-### <a name="server-inventory"></a>Server lager
+### <a name="server-inventory"></a>Serverlager
 
 Följande är ett exempel på en server inventering:
 
@@ -51,8 +51,8 @@ Följande är ett exempel på en server inventering:
 |SQL-01|Kärn appar|2016|Verksamhetskritiskt|Mycket konfidentiellt|40|Gäller inte|Gäller inte|Gäller inte|Ja|3|
 |SQL-02|Kärn appar|2016|Verksamhetskritiskt|Mycket konfidentiellt|40|Gäller inte|Gäller inte|Gäller inte|Ja|3|
 |SQL-03|Kärn appar|2016|Verksamhetskritiskt|Mycket konfidentiellt|40|Gäller inte|Gäller inte|Gäller inte|Ja|3|
-|SQL-04|BI|2012|Hög|XX|6|Gäller inte|Sekretesskydd|Ja – flerdimensionell kub|Nej|1|
-|SQL-05|Integrering|2008 R2|Låg|Allmänt|20|Ja|Gäller inte|Gäller inte|Nej|1|
+|SQL-04|BI|2012|Hög|XX|6|Gäller inte|Konfidentiellt|Ja – flerdimensionell kub|Inga|1|
+|SQL-05|Integrering|2008 R2|Låg|Allmänt|20|Ja|Gäller inte|Gäller inte|Inga|1|
 
 ### <a name="database-inventory"></a>Databas inventering
 
@@ -60,12 +60,12 @@ Följande är ett exempel på en databas inventering för en av servrarna ovan:
 
 |Server|Databas|[Allvarlighets grad](../../manage/considerations/criticality.md)|[Normal](../../govern/policy-compliance/data-classification.md)|Data Migration Assistant resultat (DMA)|DMA-reparation|Mål plattform|
 |---------|---------|---------|---------|---------|---------|---------|
-|SQL-01|DB-1|Verksamhetskritiskt|Mycket konfidentiellt|Överensstämmelse|Gäller inte|Azure SQL Database|
-|SQL-01|DB-2|Hög|Sekretesskydd|Schema ändring krävs|Genomförda ändringar|Azure SQL Database|
-|SQL-01|DB-1|Hög|Allmänt|Överensstämmelse|Gäller inte|Azure SQL-hanterad instans|
-|SQL-01|DB-1|Låg|Mycket konfidentiellt|Schema ändring krävs|Schemalagda ändringar|Azure SQL-hanterad instans|
-|SQL-01|DB-1|Verksamhetskritiskt|Allmänt|Överensstämmelse|Gäller inte|Azure SQL-hanterad instans|
-|SQL-01|DB-2|Hög|Sekretesskydd|Överensstämmelse|Gäller inte|Azure SQL Database|
+|SQL-01|DB-1|Verksamhetskritiskt|Strikt konfidentiellt|Överensstämmelse|Gäller inte|Azure SQL Database|
+|SQL-01|DB-2|Hög|Konfidentiellt|Schema ändring krävs|Genomförda ändringar|Azure SQL Database|
+|SQL-01|DB-3|Hög|Allmänt|Överensstämmelse|Gäller inte|Azure SQL-hanterad instans|
+|SQL-01|DB-4|Låg|Strikt konfidentiellt|Schema ändring krävs|Schemalagda ändringar|Azure SQL-hanterad instans|
+|SQL-01|DB-5|Verksamhetskritiskt|Allmänt|Överensstämmelse|Gäller inte|Azure SQL-hanterad instans|
+|SQL-01|DB-6|Hög|Konfidentiellt|Överensstämmelse|Gäller inte|Azure SQL Database|
 
 ### <a name="integration-with-the-cloud-adoption-plan"></a>Integrering med moln implementerings planen
 
@@ -94,7 +94,7 @@ Målet och källan för data strukturen och tjänsterna kan göra dessa två ste
 
 Den föreslagna sökvägen för migrering och synkronisering använder en kombination av följande tre verktyg. I följande avsnitt beskrivs mer komplexa alternativ för migrering och synkronisering som möjliggör en bredare mängd olika mål-och käll lösningar.
 
-|Migrations alternativ|Syfte|
+|Migreringsalternativ|Syfte|
 |---------|---------|
 |[Azure Database Migration Service](https://docs.microsoft.com/sql/dma/dma-overview)|Har stöd för online (minimal nedtid) och offline (en gång) migreringar i skala till en Azure SQL Database Hanterad instans. Stöder migrering från: SQL Server 2005, SQL Server 2008 och SQL Server 2008 R2, SQL Server 2012, SQL Server 2014, SQL Server 2016 och SQL Server 2017.|
 |[Transaktionsreplikering](https://docs.microsoft.com/sql/relational-databases/replication/administration/enhance-transactional-replication-performance)|Transaktionsreplikering till en Azure SQL Database Hanterad instans stöds för migreringar från: SQL Server 2012 (SP2 CU8, SP3 eller senare), SQL Server 2014 (RTM CU10 eller senare eller SP1 CU3 eller senare), SQL Server 2016, SQL Server 2017.|
@@ -106,10 +106,10 @@ Att välja den bästa vägledningen för migrering genom att använda Azure Data
 
 |Källa  |Målinrikta  |Verktyg  |Typ av migrering  |Vägledning  |
 |---------|---------|---------|---------|---------|
-|SQL Server|Azure SQL Database|Database Migration Service|Anslutningen|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
+|SQL Server|Azure SQL Database|Database Migration Service|Offline|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
 |SQL Server|Azure SQL Database|Database Migration Service|Online|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
-|SQL Server|Hanterad Azure SQL Database-instans|Database Migration Service|Anslutningen|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
-|SQL Server|Hanterad Azure SQL Database-instans|Database Migration Service|Online|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
+|SQL Server|Azure SQL Database Managed Instance|Database Migration Service|Offline|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
+|SQL Server|Azure SQL Database Managed Instance|Database Migration Service|Online|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
 |RDS-SQL Server|Azure SQL Database (eller hanterad instans)|Database Migration Service|Online|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online)|
 
 ### <a name="guidance-and-tutorials-for-various-services-to-equivalent-paas-solutions"></a>Vägledning och självstudier för olika tjänster till motsvarande PaaS-lösningar
@@ -118,9 +118,9 @@ När du har flyttat databaser från en instans av SQL Server till Azure Database
 
 |Källa  |Målinrikta  |Verktyg  |Typ av migrering  |Vägledning  |
 |---------|---------|---------|---------|---------|
-|SQL Server Integration Services|Azure Data Factory integration runtime|Azure Data Factory|Anslutningen|[Självstudie](https://docs.microsoft.com/azure/data-factory/create-azure-ssis-integration-runtime)|
-|SQL Server Analysis Services tabell modell|Azure Analysis Services|SQL Server Data Tools|Anslutningen|[Självstudie](https://docs.microsoft.com/azure/analysis-services/analysis-services-deploy)|
-|SQL Server Reporting Services|Power BI-rapportserver|Power BI|Anslutningen|[Självstudie](https://docs.microsoft.com/power-bi/report-server/migrate-report-server)|
+|SQL Server Integration Services|Azure Data Factory integration runtime|Azure Data Factory|Offline|[Självstudie](https://docs.microsoft.com/azure/data-factory/create-azure-ssis-integration-runtime)|
+|SQL Server Analysis Services tabell modell|Azure Analysis Services|SQL Server Data Tools|Offline|[Självstudie](https://docs.microsoft.com/azure/analysis-services/analysis-services-deploy)|
+|SQL Server Reporting Services|Power BI-rapportserver|Power BI|Offline|[Självstudie](https://docs.microsoft.com/power-bi/report-server/migrate-report-server)|
 
 ### <a name="guidance-and-tutorials-for-migration-from-sql-server-to-an-iaas-instance-of-sql-server"></a>Vägledning och självstudier för migrering från SQL Server till en IaaS-instans av SQL Server
 
@@ -130,7 +130,7 @@ Använd den här metoden för att migrera databaser eller andra tjänster på in
 
 |Källa  |Målinrikta  |Verktyg  |Typ av migrering  |Vägledning  |
 |---------|---------|---------|---------|---------|
-|Enskild instans SQL Server|SQL Server på IaaS|Anpassa|Anslutningen|[Självstudie](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)|
+|Enskild instans SQL Server|SQL Server på IaaS|Anpassa|Offline|[Självstudie](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)|
 
 ## <a name="optimization-process-changes"></a>Ändringar i optimerings processen
 
