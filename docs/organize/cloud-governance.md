@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: bf68bc17d5e94ae4c35e0a88d3ca73bd42935a5b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 38fa6133c9a4f823d4347b3c1b4db5dd81f24ceb
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566794"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781462"
 ---
 # <a name="cloud-governance-capabilities"></a>Funktioner för moln styrning
 
@@ -26,6 +26,7 @@ Beroende på de önskade affärs behoven kan de kunskaper som krävs för att ti
 
 - IT-styrning
 - Företags arkitektur
+- Säkerhet
 - IT-åtgärder
 - IT-infrastruktur
 - Nätverk
@@ -33,6 +34,7 @@ Beroende på de önskade affärs behoven kan de kunskaper som krävs för att ti
 - Virtualisering
 - Affärskontinuitet och haveriberedskap
 - Program ägare i det
+- Ekonomi ägare
 
 Moln styrnings funktionen identifierar risker relaterade till aktuella och framtida versioner. Den här funktionen visas i ansträngningarna att utvärdera risker, förstå de potentiella konsekvenserna och fatta beslut om risk tolerans. I detta syfte kan planer snabbt uppdateras för att avspegla de föränderliga behoven i [moln implementerings funktionen](./cloud-adoption.md).
 
@@ -69,7 +71,7 @@ Följande representerar deltagare som ofta kommer att delta i moln styrnings akt
 
 ## <a name="maturation-of-cloud-governance-capability"></a>Lagring av moln styrnings funktioner
 
-Vissa stora organisationer har befintliga, dedikerade team som fokuserar på IT-styrning. Dessa team specialiserar sig på riskhantering i IT-portföljen genom metoder som ITIL eller ITSM. När dessa team finns kan följande förfallo modeller accelereras snabbt. IT-styrningen uppmuntras dock att granska moln styrnings modellen för att förstå hur styrningen växlar något i molnet. Viktiga artiklar är [att utöka företags policyn till molnet](../govern/corporate-policy.md) och de [fem disciplinerna i moln styrning](../govern/governance-disciplines.md).
+Vissa stora organisationer har befintliga, dedikerade team som fokuserar på IT-styrning. Dessa team specialiserar sig på risk hantering i IT-portföljen. När dessa team finns kan följande förfallo modeller accelereras snabbt. IT-styrningen uppmuntras dock att granska moln styrnings modellen för att förstå hur styrningen växlar något i molnet. Viktiga artiklar är [att utöka företags policyn till molnet](../govern/corporate-policy.md) och de [fem disciplinerna i moln styrning](../govern/governance-disciplines.md).
 
 **Ingen styrning:** Det är vanligt för organisationer att gå över till molnet utan att klara planer för styrning. Före lång tid gäller säkerhet, kostnad, skalning och åtgärder för att utlösa konversationer om behovet av en styrnings modell och personer att bemanna de processer som är kopplade till den modellen. Att starta dessa konversationer innan de börjar gälla är alltid ett lämpligt första steg för att lösa antimönstret "ingen styrning". Avsnittet om hur du [definierar företags principer](../govern/corporate-policy.md) kan hjälpa dem att under lätta dessa konversationer.
 

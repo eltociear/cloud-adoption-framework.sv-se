@@ -8,12 +8,12 @@ ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 122f1e451c8b83de3d020c58426d8b897013aa8d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c8ed34cccdcd108d17554f103bcfb0ce864ccf55
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564898"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781699"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Etablera granskning av driftslämplighet
 
@@ -24,7 +24,7 @@ Det finns fem viktiga kategorier av icke-funktionella krav, som kallas för [pel
 - Skalbarhet
 - Tillgänglighet
 - Återhämtning, inklusive affärs kontinuitet och haveri beredskap
-- Hantering
+- Förvaltning
 - Säkerhet
 
 En process för granskning av operativa krav garanterar att dina verksamhets kritiska arbets belastningar uppfyller förväntningarna för din verksamhet med avseende på kvalitets pelaren.
@@ -130,3 +130,5 @@ Anpassa informationen om processen och mötet så att den passar just dina behov
     Den här guiden börjar med en definition av termen _återhämtning_ och relaterade begrepp. Sedan beskriver den en process för att uppnå återhämtning genom att använda en strukturerad metod under ett programs livs längd, från design och implementering till distribution och drift.
 - [Design mönster för molnet](https://docs.microsoft.com/azure/architecture/patterns).
     De här design mönstren är användbara för teknik grupper när du skapar program i grund stenarna för program varu kvalitet.
+- [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/).
+    Advisor ger rekommendationer som anpassas baserat på användning och konfigurationer som hjälper dig att optimera dina resurser för hög tillgänglighet, säkerhet, prestanda och kostnader. 

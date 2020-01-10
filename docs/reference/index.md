@@ -9,30 +9,30 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 layout: LandingPage
-ms.openlocfilehash: 977a1f58d59a182df6451b27f15747477a1a1de9
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 40bce7ec1a68463c9ece51188170d94a274507c3
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683754"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781529"
 ---
-# <a name="microsoft-cloud-adoption-framework-for-azure"></a>Microsoft Cloud Adoption Framework för Azure
+# <a name="cloud-adoption-framework-roadmap"></a>Översikt över Cloud Adoption Framework
 
 Molnet ändrar i grunden det sätt på vilket företag anskaffar och använder teknikresurser. Tidigare antog företag ägarskap och ansvar för alla teknikaspekter, från infrastruktur till programvara. Molnet gör det möjligt för företag att etablera och förbruka resurser enbart när det behövs. Molnimplementering är dock bara ett verktyg och inte ett mål i sig. Företag implementerar molnet när de inser att det kan hantera alla dessa affärsmöjligheter:
 
 - Företag är motiverade att **migrera** till molnet för att:
-  - Optimera verksamheten.
-  - Förenkla tekniken.
-  - Öka affärsflexibiliteten.
-  - Minska kostnaderna.
-  - Förbereda sig för nya tekniska funktioner.
-  - Skala efter marknadens efterfrågan eller geografiska områden.
+  - Optimera operativa åtgärder
+  - Förenkla tekniken
+  - Öka affärsflexibiliteten
+  - Minska kostnaderna
+  - Förbered för nya tekniska funktioner
+  - Skala baserat på efterfrågan eller nya geografiska regioner
 - Företag är motiverade att **skapa innovationer** med hjälp av molnet för att:
-  - Förbättra kundupplevelsen.
-  - Öka kundengagemanget.
-  - Förändra produkterna.
-  - Förbereda sig för och bygga nya tekniska funktioner.
-  - Skala efter marknadens efterfrågan eller geografiska områden.
+  - Förbättra kundupplevelsen
+  - Öka kundengagemanget
+  - Förändra produkter
+  - Förbered för och utveckla nya tekniska funktioner
+  - Skala baserat på efterfrågan eller nya geografiska regioner
 
 ## <a name="vision-and-objectives"></a>Vision och mål
 
@@ -46,7 +46,7 @@ Det krävs mer än bara vägledning för implementering för att ta bort större
 
 Cloud Adoption Framework är ett övergripande ramverk som omfattar faserna Planera, Redo och Implementera för motiveringarna Migrering och Innovation för molnimplementering, med stöd av vägledningarna Styrning och Verksamhet.
 
-Microsoft bygger aktivt det här ambitiösa ramverket i samarbete med kunder, partner och interna team. För att uppmuntra samarbetet släpps innehållet som offentlig förhandsversion när det blir tillgängligt. Dessa offentliga förhandsversioner möjliggör testning, validering och stegvis finjustering av vägledningen. Ramverket uppnår allmän tillgänglighet (GA) när dess mål har uppnåtts.
+Nu är ramverket allmänt tillgängligt (GA). Vi fortsätter dock att utveckla ramverket i samarbete med kunder, partner och interna team. För att uppmuntra partnerskap publiceras innehåll när det blir tillgängligt. Dessa offentliga versioner möjliggör testning, validering och stegvis finjustering av vägledningen. 
 
 För en lyckad implementering av molnet måste kunden förbereda personal, teknik och processer för den digitala omvandlingen. Cloud Adoption Framework innehåller ett avsnitt som beskriver de övergripande implementeringarna, både Migrering och Innovation, som en översikt för kunderna. Avsnittet består av följande implementeringsfaser:
 

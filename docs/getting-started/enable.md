@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: cb5ba007c18643efe3b0c83b8ff247844cbbe7b2
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: f24227cbbb06630810f7f6b48e7acdf842c171b3
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753287"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781597"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Aktivera lyckad under en moln införande resa
 
@@ -29,6 +29,8 @@ I det här ramverket är aktivering ett kärn tema. Följande check lista specif
   - **Styr:** Justera lämpliga [styrnings discipliner](../govern/index.md) för att konsekvent tillämpa kostnads hantering, risk minskning, efterlevnad och säkerhets bas linjer i alla moln införande.
   - **Hantera:** Kontinuerlig [drift hantering](../manage/index.md) av IT-portföljen för att minimera avbrott i affärs processer och säkerställa stabiliteten hos IT-portföljen.
   - **Support:** Justera lämpliga [alternativ för partnerskap och support](../migrate/migration-considerations/assess/partnership-options.md).
+
+Ett annat kärn tema är säkerhet, vilket är ett kritiskt Quality-attribut för ett framgångs rik moln införande. Säkerhet är integrerat i det här ramverket för att tillhandahålla integrerad vägledning om att upprätthålla sekretess, integritet och tillgänglighets garantier för dina moln arbets belastningar. 
 
 ## <a name="additional-tools"></a>Ytterligare verktyg
 
@@ -143,7 +145,7 @@ Utöver moln implementerings ramverket täcker Microsoft ytterligare ämnen som 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Azure priskalkylator</h3>
+                        <h3>Priskalkylator för Azure</h3>
                         <p>Beräkna kostnaden för de olika Azure-komponenter som krävs för att skapa eller migrera en vald lösning.</p>
                     </div>
                 </div>

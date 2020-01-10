@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 1bd332898140d032525935cd8cfc96cb1d46e54e
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 1f25b3debed6110f7a45933fa3d4f724ff8390a5
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160487"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781835"
 ---
 # <a name="cloud-center-of-excellence"></a>Molncenter för utmärkthet
 
@@ -135,4 +135,4 @@ Dessutom rekommenderar vi att affärs intressenterna håller sig informerad om d
 En CCoE-modell kräver både en [moln plattform](./cloud-platform.md) och funktioner för [moln automatisering](./cloud-automation.md). Nästa steg är att justera [moln plattformens funktioner](./cloud-platform.md).
 
 > [!div class="nextstepaction"]
-> [Justera en moln plattforms kapacitet](./cloud-platform.md)
+> [Justera moln plattforms funktioner](./cloud-platform.md)
