@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 86082985a252e4724f237806669814d41ac29173
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: f4cc7aaa9a937327a4dd2ede4bf1c3c619cc632a
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781444"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868041"
 ---
 # <a name="landing-zone-considerations"></a>Landingzon – att tänka på
 
@@ -37,7 +37,7 @@ Alla landningszoner tillhandahåller en struktur för olika värdalternativ. Str
 Varje landningszon är en del av en bredare lösning för att ordna resurser i en molnmiljö. Grunderna i Azure är organisationens grundläggande byggstenar.
 
 - **[Grundläggande koncept för Azure](./fundamental-concepts.md)** . Lär dig grundläggande begrepp och termer som används när du ska organisera resurser i Azure och hur begreppen är relaterade till varandra.
-- **[Beslutsguide för resurskonsekvens](../../decision-guides/resource-consistency/)** . När du förstår grunderna så kan du få hjälp att fatta beslut som kommer att forma landningszonen i den här guiden till resursorganisering.
+- **[Beslutsguide för resurskonsekvens](../../decision-guides/resource-consistency/index.md)** . När du förstår grunderna så kan du få hjälp att fatta beslut som kommer att forma landningszonen i den här guiden till resursorganisering.
 
 ## <a name="governance-considerations"></a>Saker att tänka på i samband med styrning
 

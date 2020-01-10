@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: 758cd3285ed7f9f1b3542b54af7d275dccf1662d
-ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
+ms.openlocfilehash: 06110380d848cdab37f7bc6109869be07faa9265
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74681775"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868066"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Molninnovation i Cloud Adoption Framework
 
@@ -22,7 +22,7 @@ Alla IT-portföljer har ett par arbetsbelastningar och idéer som avsevärt skul
 
 Det här avsnittet av Cloud Adoption Framework är inriktat på den del av portföljen som genererar störst avkastning på investeringen.
 
-## <a name="get-started"></a>Komma igång
+## <a name="get-started"></a>Kom igång
 
 Om du vill förbereda dig för den här fasen av molnimplementeringens livscykel rekommenderar ramverket följande övningar:
 
@@ -123,9 +123,9 @@ Microsoft Learn är en ny metod för inlärning. Det är inte helt enkelt att f�
 
 Här är några exempel på rollspecifika utbildningsvägar på Microsoft Learn för den som vill innovera i Cloud Adoption Framework.
 
-[Administrera containrar i Azure](https://docs.microsoft.com/learn/paths/administer-containers-in-azure/): Azure Container Instances (ACI) är det snabbaste och enklaste sättet att köra containrar i Azure. Den här utbildningsvägen visar hur du skapar och hanterar dina containrar och hur du kan använda ACI för att tillhandahålla elastisk skalning för Kubernetes.
+[Administrera containrar i Azure](https://docs.microsoft.com/learn/paths/administer-containers-in-azure): Azure Container Instances (ACI) är det snabbaste och enklaste sättet att köra containrar i Azure. Den här utbildningsvägen visar hur du skapar och hanterar dina containrar och hur du kan använda ACI för att tillhandahålla elastisk skalning för Kubernetes.
 
-[Skapa serverlösa program](https://docs.microsoft.com/learn/paths/create-serverless-applications/): Med Azure Functions kan du skapa händelsestyrda system med beräkning på begäran som kan utlösas av olika externa händelser. Lär dig hur du drar nytta av funktioner för att köra logik på serversidan och bygga serverlösa arkitekturer.
+[Skapa serverlösa program](https://docs.microsoft.com/learn/paths/create-serverless-applications): Med Azure Functions kan du skapa händelsestyrda system med beräkning på begäran som kan utlösas av olika externa händelser. Lär dig hur du drar nytta av funktioner för att köra logik på serversidan och bygga serverlösa arkitekturer.
 
 Om du vill utforska fler utbildningsvägar bläddrar du igenom [Learn-katalogen](/learn/browse). Använd filtret **Roller** för att anpassa utbildningsvägarna till din roll.
 
@@ -134,4 +134,3 @@ Om du vill utforska fler utbildningsvägar bläddrar du igenom [Learn-katalogen]
 Den första övningen för molninnovation är att:
 > [!div class="nextstepaction"]
 > [Skapa konsensus kring affärsvärdet för innovationen](./business-value.md)
-
