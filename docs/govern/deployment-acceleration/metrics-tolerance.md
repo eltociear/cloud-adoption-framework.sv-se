@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d7a7965acb7b1ace74983c7d0e1e65c3d47b2cc5
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: af2ce9e70dbc694679538b1910912febb552f695
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220705"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75867959"
 ---
 # <a name="deployment-acceleration-metrics-indicators-and-risk-tolerance"></a>Distributions accelerations mått, indikatorer och risk tolerans
 
@@ -34,14 +34,14 @@ Risker som rör distributions acceleration är i stort sett relaterade till anta
 
 <!-- "en-us" location is required for the URL below. -->
 
-Traditionella företags IT-organisationer har ofta silon för drift-, säkerhets-och utvecklings grupper som ofta inte samarbetar eller som är till och med adversariala eller som är farliga mot varandra. Att identifiera de här utmaningarna tidigt och integrera viktiga intressenter från var och en av teamen kan hjälpa till att se över din moln användning samtidigt som den är skyddad och väl styrd. Därför bör man överväga att anta en DevOps-eller [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops) organisations kultur tidigt i molnets införande resa. 
+Traditionella företags IT-organisationer har ofta silon för drift-, säkerhets-och utvecklings grupper som ofta inte samarbetar eller som är till och med adversariala eller som är farliga mot varandra. Att identifiera de här utmaningarna tidigt och integrera viktiga intressenter från var och en av teamen kan hjälpa till att se över din moln användning samtidigt som den är skyddad och väl styrd. Därför bör man överväga att anta en DevOps-eller [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops) organisations kultur tidigt i molnets införande resa.
 
 Arbeta med ditt DevSecOps-team och affärs intressenter för att identifiera [affärs risker](./business-risks.md) som är relaterade till konfigurationen och bestäm sedan en acceptabel bas linje för konfigurations risk tolerans. Det här avsnittet i vägledningen för moln implementerings ramverket innehåller exempel, men de detaljerade riskerna och bas linjerna för ditt företag eller distributioner är förmodligen annorlunda.
 
 När du har en bas linje kan du fastställa de lägsta benchmark-värden som representerar en oacceptabel ökning av dina identifierade risker. Dessa riktmärken fungerar som utlösare för när du behöver vidta åtgärder för att åtgärda dessa risker. Nedan följer några exempel på hur konfigurations relaterade mått, till exempel de som beskrivs ovan, kan motivera en ökad investering i distributions accelerations disciplinen.
 
 - **Konfigurations avvikelse utlösare:** Ett företag som har oväntade ändringar i konfigurationen av viktiga system komponenter, eller fel vid distribution av eller uppdateringar av sina system, bör investera i distributions accelerations disciplinen för att identifiera Rotors Aker och steg för reparation.
-- **Utlösare som inte uppfyller kraven:** Om antalet lediga resurser överskrider en definierad tröskel (antingen som ett totalt antal resurser eller en procent andel av det totala antalet resurser) bör ett företag investera i förbättringar av distributions accelerations disciplin för att säkerställa att varje resurs konfigurationen förblir kompatibel i hela resursens livs cykel.
+- **Utlösare som inte uppfyller kraven:** Om antalet lediga resurser överskrider en definierad tröskel (antingen som ett totalt antal resurser eller en procent andel av det totala antalet resurser), bör ett företag investera i förbättringar av distributions accelerations disciplin för att säkerställa att varje resurs konfiguration förblir i överensstämmelse med hela resursens livs cykel.
 - **Projekt schema utlösare:** Om tiden för att distribuera ett företags resurser och program ofta överskrider ett definierat tröskelvärde, bör ett företag investera i sina distributions accelerations processer för att införa eller förbättra automatiserade distributioner för konsekvens och förutsägbarhet. Distributions tider som mäts i dagar eller till och med veckor indikerar vanligt vis en underoptimerad distributions accelerations strategi.
 
 ## <a name="next-steps"></a>Nästa steg

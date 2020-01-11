@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: 6268fc8a272cd173b95707d19eee5e784a2a0c25
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: 657f0fd43b65b0d1122ae275e41370c9ddc5bbd0
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781563"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868083"
 ---
 # <a name="ready-recommended-naming-and-tagging-conventions"></a>Klar: rekommenderade namngivnings-och taggnings konventioner
 
@@ -52,7 +52,7 @@ Ett virtuellt nätverk har till exempel en resursgrupps omfång, vilket innebär
 
 Vissa resursnamn, till exempel PaaS-tjänster med offentliga slutpunkter eller DNS-taggar för virtuella datorer har globala omfång, vilket innebär att de måste vara unika för hela Azure-plattformen.
 
-Resursnamnen har längdbegränsningar. Det är viktigt att avväga innehållet i ett namn med dess omgång och längd när du utformar din namngivningskonvention. Mer information om namngivningsregler för tillåtna tecken, omfattningar och namnlängder för resurstyper finns i [Namngivningskonventioner för Azure-resurser.](/azure/architecture/best-practices/resource-naming)
+Resursnamnen har längdbegränsningar. Det är viktigt att avväga innehållet i ett namn med dess omgång och längd när du utformar din namngivningskonvention. Mer information om namngivningsregler för tillåtna tecken, omfattningar och namnlängder för resurstyper finns i [Namngivningskonventioner för Azure-resurser.](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)
 
 #### <a name="recommended-naming-components"></a>Rekommenderade namndelar
 

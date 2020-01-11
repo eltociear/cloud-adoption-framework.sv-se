@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3c87bfbd8fe920d0469da8b3e60da59da07158ed
-ms.sourcegitcommit: 0b6939f65a1e5653149301e9aa14db9a1f67825f
+ms.openlocfilehash: 48ceb3581f72f6fed72360ecf4e30596b4d2eb72
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74557031"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868109"
 ---
 # <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Omstrukturera en Team Foundation Server-distribution till Azure DevOps Services
 
@@ -75,7 +75,7 @@ Det här behöver Contoso för att köra detta scenario.
 **Azure-infrastruktur** | Contoso konfigurerar Azure-infrastrukturen enligt beskrivningen i [Azure-infrastrukturen för migrering.](./contoso-migration-infrastructure.md)
 **Lokal TFS-server** | Den lokala servern måste köra TFS 2018 uppgradering 2 eller uppdateras till detta som en del av denna process.
 
-## <a name="scenario-steps"></a>Steg i scenariot
+## <a name="scenario-steps"></a>Scenariosteg
 
 Så här slutför Contoso migreringen:
 
@@ -86,7 +86,7 @@ Så här slutför Contoso migreringen:
 > - **Steg 3: validera samlingen.** Contoso kommer att validera TFS-samlingen för att förbereda migreringen.
 > - **Steg 4: Bygg förberedelse filen.** Contoso kommer att skapa migreringsfilerna med TFS migreringsverktyg.
 
-## <a name="step-1-create-a-storage-account"></a>Steg 1: skapa ett lagrings konto
+## <a name="step-1-create-a-storage-account"></a>Steg 1: Skapa ett lagringskonto
 
 1. I Azure-portalen skapar Contosos administratörer ett lagringskonto (**contosodevmigration**).
 2. De placerar kontot i den sekundära region de använder för redundans – USA, centrala. De använder ett allmänt standardkonto med lokalt redundant lagring.
@@ -102,8 +102,8 @@ Så här slutför Contoso migreringen:
 
 Contosos administratörer uppgraderar TFS-servern till TFS 2018 uppdatering 2. Innan de börjar:
 
-- De laddar ned [TFS 2018 uppdatering 2](https://visualstudio.microsoft.com/downloads)
-- De kontrollerar [maskinvarukraven](/azure/devops/server/requirements) och läser igenom [viktig information](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes) och [potentiella uppgraderingsproblem](/azure/devops/server/upgrade/get-started#before-you-upgrade-to-tfs-2018).
+- De hämtar [TFS 2018 uppdatering 2](https://visualstudio.microsoft.com/downloads).
+- De kontrollerar [maskinvarukraven](https://docs.microsoft.com/azure/devops/server/requirements) och läser igenom [viktig information](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes) och [potentiella uppgraderingsproblem](https://docs.microsoft.com/azure/devops/server/upgrade/get-started#before-you-upgrade-to-tfs-2018).
 
 De uppgraderar så här:
 
@@ -132,7 +132,7 @@ De uppgraderar så här:
 
 **Behöver du mer hjälp?**
 
-Lär dig om [uppgradering av TFS](/azure/devops/server/upgrade/get-started).
+Lär dig om [uppgradering av TFS](https://docs.microsoft.com/azure/devops/server/upgrade/get-started).
 
 ## <a name="step-3-validate-the-tfs-collection"></a>Steg 3: verifiera TFS-samlingen
 
@@ -266,7 +266,7 @@ Innan de börjar gör Contosos administratörer en lokal SQL Server-säkerhetsko
 Contoso skapar en säkerhetskopia (DACPAC) för import till Azure DevOps Services.
 
 - SqlPackage.exe i SQL Server Data Tools används för att skapa DACPAC. Flera versioner av SqlPackage.exe installeras med SQL Server Data Tools, under mappar med namn som 120, 130 och 140. Det är viktigt att välja rätt version för att skapa DACPAC.
-- TFS 2018-importer måste använda SqlPackage.exe från mappen 140 eller högre. För CONTOSOTFS finns den här filen i mappen: **C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140**.
+- TFS 2018-importer måste använda SqlPackage.exe från mappen 140 eller högre. För CONTOSOTFS finns den här filen i mappen: C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140
 
 Contosos administratörer skapar DACPAC så här:
 

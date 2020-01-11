@@ -8,12 +8,12 @@ ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c8ed34cccdcd108d17554f103bcfb0ce864ccf55
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: 9607bf217d8638f2337fa337a4cb57c7ba919608
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781699"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868053"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Etablera granskning av driftslämplighet
 
@@ -130,5 +130,5 @@ Anpassa informationen om processen och mötet så att den passar just dina behov
     Den här guiden börjar med en definition av termen _återhämtning_ och relaterade begrepp. Sedan beskriver den en process för att uppnå återhämtning genom att använda en strukturerad metod under ett programs livs längd, från design och implementering till distribution och drift.
 - [Design mönster för molnet](https://docs.microsoft.com/azure/architecture/patterns).
     De här design mönstren är användbara för teknik grupper när du skapar program i grund stenarna för program varu kvalitet.
-- [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/).
-    Advisor ger rekommendationer som anpassas baserat på användning och konfigurationer som hjälper dig att optimera dina resurser för hög tillgänglighet, säkerhet, prestanda och kostnader. 
+- [Azure Advisor](https://docs.microsoft.com/azure/advisor).
+    Advisor ger rekommendationer som anpassas baserat på användning och konfigurationer som hjälper dig att optimera dina resurser för hög tillgänglighet, säkerhet, prestanda och kostnader.
