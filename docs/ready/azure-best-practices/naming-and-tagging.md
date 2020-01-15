@@ -9,25 +9,25 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: 657f0fd43b65b0d1122ae275e41370c9ddc5bbd0
-ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
+ms.openlocfilehash: 3a99398d5ae180efe9dca4cadf0554d92c6380b2
+ms.sourcegitcommit: 91ece6ba373a4d0d573cca7e616f0b67337b0d1b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75868083"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76023358"
 ---
-# <a name="ready-recommended-naming-and-tagging-conventions"></a>Klar: rekommenderade namngivnings-och taggnings konventioner
+# <a name="recommended-naming-and-tagging-conventions"></a>Rekommenderade regler för namngivning och taggar
 
-Omorganisation av molnbaserade resurser på sätt som bidrar till driftsstyrning och som kan hantera redovisningskrav är en utmaning som är vanlig vid en övergång till molnet. Genom att använda väldefinierade system för namngivning och metadatataggar för molnbaserade resurser kan IT-personal snabbt hitta och hantera resurser. Väldefinierade namn och taggar bidrar också till att samordna molnkostnaderna med företagets team genom att använda redovisningsmekanismer som debiterar eller visar utgifter för avdelningar.
+Att organisera molnbaserade till gångar på ett sätt som hjälper till att hantera krav på drifts hantering och support, är en vanlig utmaning i stora moln implementerings ansträngningar. Genom att använda väldefinierade system för namngivning och metadatataggar för molnbaserade resurser kan IT-personal snabbt hitta och hantera resurser. Väldefinierade namn och taggar bidrar också till att samordna molnkostnaderna med företagets team genom att använda redovisningsmekanismer som debiterar eller visar utgifter för avdelningar.
 
-Azure Architecture Center [namngivnings regler och begränsningar för Azures resurs](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) vägledning ger allmänna rekommendationer och plattforms begränsningar. Följande diskussion utökar den allmänna vägledningen med mer detaljerade rekommendationer som syftar till att ge stöd för företags molnimplementeringar.
+Azure Architecture Centerens vägledning om [namngivnings regler och begränsningar för Azure-resurser](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) ger allmänna rekommendationer och plattforms begränsningar. Följande diskussion utökar den här vägledningen med mer detaljerade rekommendationer som syftar till att ge stöd för besluts ansträngningar i företags moln.
 
-Resursnamn kan vara svåra att ändra. Be dina molnimplementeringsteam att prioritera att etablera en omfattande namngivningskonvention innan du påbörjar en omfattande molndistribution.
+Resursnamn kan vara svåra att ändra. Prioritera att upprätta en omfattande namngivnings konvention innan du påbörjar en stor moln distribution.
 
 > [!NOTE]
-> Alla företag har olika organisations- och hanteringskrav. Rekommendationerna i den här artikeln fungerar som en utgångspunkt för diskussioner i dina molnimplementeringsteam.
+> Alla företag har olika organisations- och hanteringskrav. Dessa rekommendationer ger en utgångs punkt för diskussioner i dina moln implementerings team.
 >
-> Medan dessa diskussioner pågår kan du använda följande mall för att avbilda namngivnings- och etikettbesluten du fattar när du anpassar dessa rekommendationer till dina specifika företagsbehov.
+> När dessa diskussioner fortsätter använder du följande mall för att avbilda namngivnings-och taggnings besluten som du gör när du justerar rekommendationerna till dina specifika affärs behov.
 >
 > Ladda ned [mall för namngivnings- och etikettkonventionspårning](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/CAF%20Readiness%20Naming%20and%20Tagging%20tracking%20template.xlsx).
 
@@ -35,7 +35,7 @@ Resursnamn kan vara svåra att ändra. Be dina molnimplementeringsteam att prior
 
 En namngivnings- och etikettstrategi omfattar information om företaget och verksamheten, såsom delar av resursnamn och metadatataggar:
 
-- Den affärsrelaterade sidan av denna strategi säkerställer att resursnamn och taggar innehåller den organisatoriska information som krävs för att identifiera teamen. Använd en resurs tillsammans med företagsägare som ansvarar för resurskostnader.
+- Affärs sidan av denna strategi säkerställer att resurs namn och taggar innehåller den organisatoriska information som krävs för att identifiera teamen. Använd en resurs tillsammans med företagsägare som ansvarar för resurskostnader.
 - Den driftrelaterade sidan garanterar att namn och taggar innehåller information som IT-teamet använder för att identifiera arbetsbelastning, program, miljö, allvarsgrad och annan information som är användbar för att hantera resurser.
 
 ### <a name="resource-naming"></a>Resursnamngivning
