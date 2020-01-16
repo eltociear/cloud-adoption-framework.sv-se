@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 84efac562647d88235dbcecbb2078e632c1c0341
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4969681cbc6fbb71da70f3ced09b5e4616c773b5
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565468"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781784"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Inventering och synlighet i Azure
 
@@ -33,7 +33,7 @@ I den här tabellen ser du rekommenderade minimikrav för alla typer av miljöer
 |Central loggning|Log Analytics|Central loggning för alla synlighetssyften|
 |Central övervakning|Azure Monitor|Central övervakning av driftdata och trender|
 |Inventering av virtuella datorer och ändringsspårning|Ändringsspårning och inventering i Azure|Inventera virtuella datorer och övervaka ändringar för gästoperativsystem|
-|Service Health:|Azure-aktivitetslogg|Övervaka ändringar på prenumerationsnivå|
+|Prenumerationsövervakning|Azure-aktivitetslogg|Övervaka ändringar på prenumerationsnivå|
 |Övervakning av gästoperativsystem|Azure Monitor för virtuella datorer|Övervaka ändringar och prestanda för virtuella datorer|
 |Nätverksövervakning|Azure Network Watcher|Övervaka nätverksändringar och prestanda|
 |DNS-övervakning|DNS-analys|Säkerhet, prestanda och åtgärder för DNS|

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b5a94ab41bff26371621acc5e62ae19d9fd02e5c
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 9109a51a85627f3c8d0cee8b72baa0936d56c98e
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565489"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781818"
 ---
 # <a name="operational-compliance-in-azure"></a>Driftsmässig efterlevnad i Azure
 
@@ -32,6 +32,7 @@ Den här tabellen beskriver det föreslagna minimikravet för en hanteringsbasli
 |Uppdateringshantering|Uppdateringshantering|Hantering och schemaläggning av uppdateringar|
 |Policyframtvingande|Azure Policy|Principtillämpning för att säkerställa miljö- och gästefterlevnad|
 |Miljökonfiguration|Azure Blueprint|Automatisk efterlevnad för kärntjänster|
+|Resurskonfiguration|Önskad tillståndskonfiguration|Automatiserad konfiguration på gästoperativsystemet och vissa aspekter av miljön|
 
 ::: zone target="docs"
 
