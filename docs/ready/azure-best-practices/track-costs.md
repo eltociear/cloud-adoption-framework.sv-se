@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8a632f9632c1ad5bf6abbfeb60096e2cfadce141
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: b9bc3a5c2b2bf62c49726a29cedbac81d1d1a96e
+ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240136"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76520182"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Spåra kostnader för affärsenheter, miljöer och projekt
 
@@ -126,7 +126,7 @@ Mer information om att komma igång med Azure Cost Management finns i [Optimera 
 
 ### <a name="use-azure-cost-management-to-govern-aws-costs"></a>Använd Azure Cost Management för att styra AWS-kostnader
 
-- [Integrering av kostnads- och användningsrapporter från AWS](https://docs.microsoft.com/azure/cost-management/aws-integration-set-up-configure)
+- [Integrering av kostnads- och användningsrapporter från AWS](https://docs.microsoft.com/azure/cost-management-billing/costs/aws-integration-set-up-configure)
 - [Hantera AWS-kostnader](https://docs.microsoft.com/azure/cost-management/aws-integration-manage)
 
 ### <a name="establish-access-roles-and-scope"></a>Etablera åtkomst, roller och omfång

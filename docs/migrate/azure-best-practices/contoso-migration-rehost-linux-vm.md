@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: c1d7549a820b8f830fc577ce82ebc4d2f1dbfcb2
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 078749474b13074d9196a80c10768da468e423bc
+ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566536"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76520216"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>Byta värd för en lokal Linux-app till virtuella Azure-datorer
 
@@ -27,7 +27,7 @@ osTicket, supportappen som används i det här exemplet, är tillgänglig som ö
 IT-ledningsgruppen har arbetat tillsammans med affärspartner för att komma fram till vad man vill uppnå med migreringen:
 
 - **Hantera företagets tillväxt.** Contoso växer, vilket leder till tryck på lokala system och infrastruktur.
-- **Begränsa risker.** Supportappen är viktig för Contosos verksamhet. Contoso vill flytta den till Azure utan några risker.
+- **Begränsa risken.** Supportappen är viktig för Contosos verksamhet. Contoso vill flytta den till Azure utan några risker.
 - **Utöka.** Contoso vill inte ändra appen just nu. De vill bara vara säkra på att appen är stabil.
 
 ## <a name="migration-goals"></a>Migreringsmål
@@ -57,11 +57,11 @@ När de har fastställt målen och kraven utformar och utvärderar Contoso en di
 - De virtuella datorerna migreras till den primära regionen (USA, östra 2) och placeras i produktionsnätverket (VNET-PROD-EUS2):
   - Den virtuella webbdatorn placeras i undernätet för klientdelen (PROD-FE-EUS2).
   - Den virtuella databasen placeras i databasens undernät (PROD-DB-EUS2).
-- De lokala, virtuella datorerna i Contoso-datacentret kommer att inaktiveras när migreringen är färdig.
+- De lokala, virtuella datorerna i Contosos datacentret inaktiveras när migreringen är färdig.
 
 ![Scenariots arkitektur](./media/contoso-migration-rehost-linux-vm/architecture.png)
 
-### <a name="solution-review"></a>Lösningsgranskning
+### <a name="solution-review"></a>Utvärdering av lösningen
 
 Contoso utvärderar den föreslagna designen genom att skapa en lista med för- och nackdelar.
 
@@ -70,7 +70,7 @@ Contoso utvärderar den föreslagna designen genom att skapa en lista med för- 
 **Övervägande** | **Detaljer**
 --- | ---
 **Fördelar** | Båda appens virtuella datorer flyttas till Azure utan ändringar, vilket gör migreringen enkel.<br/><br/> Eftersom Contoso använder en hiss och Skift-metod för både virtuella app-datorer behövs inga särskilda konfigurations-eller Migreringsverktyg för app-databasen.<br/><br/> Contoso har fortfarande full kontroll över appens virtuella datorer i Azure. <br/><br/> Appens virtuella datorer kör Ubuntu 16.04-TLS, som är en godkänd Linux-distribution. [Läs mer](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros).
-**Nackdelar** | Appens webb- och datanivå förblir en enskild felpunkt. <br/><br/> Contoso måste fortsätta att hantera appen som virtuella Azure-datorer i stället för att flytta till en hanterad tjänst, till exempel Azure App Service och Azure Database for MySQL.<br/><br/> Contoso är medveten om att det är enkelt att göra saker med en hiss och Shift VM-migrering, de har inte fullständig nytta av de funktioner som tillhandahålls av [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) (inbyggd hög tillgänglighet, förutsägbar prestanda, enkel skalning, automatisk säkerhets kopiering och inbyggd säkerhet).
+**Nackdelar** | Appens webb- och datanivå förblir en enskild felpunkt. <br/><br/> Contoso måste fortsätta att hantera appen som virtuella Azure-datorer i stället för att flytta till en hanterad tjänst, till exempel Azure App Service och Azure Database for MySQL.<br/><br/> Contoso är medveten om att det är enkelt att göra saker med en hiss och flytta VM-migreringen, men de utnyttjar inte de funktioner som tillhandahålls av [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) (inbyggd hög tillgänglighet, förutsägbar prestanda, enkel skalning, automatiska säkerhets kopieringar och inbyggd säkerhet).
 
 <!-- markdownlint-enable MD033 -->
 
@@ -89,7 +89,7 @@ Contoso migrerar på följande sätt:
 
 **Tjänst** | **Beskrivning** | **Kostnad**
 --- | --- | ---
-[Azure Migrate-servermigrering](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm) | Tjänsten samordnar och styr migreringen av dina lokala appar och arbetsbelastningar, samt virtuella AWS/GCP-datorinstanser. | Vid replikering till Azure debiteras Azure Storage-avgifter. Virtuella Azure-datorer skapas och medför kostnader i samband med en redundansväxling. [Läs mer](https://azure.microsoft.com/pricing/details/azure-migrate) om avgifter och priser.
+[Azure Migrate-servermigrering](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm) | Tjänsten samordnar och styr migreringen av dina lokala appar och arbetsbelastningar, samt virtuella AWS/GCP-datorinstanser. | Under replikeringen till Azure debiteras Azure Storage-avgifter. Virtuella Azure-datorer skapas och medför kostnader i samband med en redundansväxling. [Läs mer](https://azure.microsoft.com/pricing/details/azure-migrate) om avgifter och priser.
 
 ## <a name="prerequisites"></a>Krav
 
@@ -100,13 +100,13 @@ Det här är vad Contoso behöver i det här scenariot.
 **Krav** | **Detaljer**
 --- | ---
 **Azure-prenumeration** | Contoso skapade prenumerationer i en tidigare artikel i den här serien. Om du inte har någon Azure-prenumeration kan du skapa ett [kostnadsfritt konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Om du skapar ett kostnadsfritt konto är du administratör för din prenumeration och kan utföra alla åtgärder.<br/><br/> Om du använder en befintlig prenumeration och inte är administratör måste du be administratören att ge dig ägar- eller deltagarbehörighet.<br/><br/> Om du behöver mer detaljerade behörigheter läser du [den här artikeln](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Azure-infrastruktur** |  [Läs om hur](./contoso-migration-infrastructure.md) Contoso konfigurerar en Azure-infrastruktur.<br/><br/> Läs mer om specifika [krav](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prerequisites) för Azure Migrate-servermigrering.
+**Azure-infrastruktur** |  [Läs om](./contoso-migration-infrastructure.md) hur Contoso konfigurerar en Azure-infrastruktur.<br/><br/> Läs mer om specifika [krav](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prerequisites) för Azure Migrate-servermigrering.
 **Lokala servrar** | Den lokala vCenter-servern bör köra version 5.5, 6.0 eller 6.5<br/><br/> En ESXi-värd som kör version 5.5, 6.0 eller 6.5<br/><br/> En eller flera virtuella VMware-datorer som körs på ESXi-värden.
 **Lokala virtuella datorer** | [Granska Linux-datorer](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros) som ska köras i Azure.
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="scenario-steps"></a>Steg i scenariot
+## <a name="scenario-steps"></a>Scenariosteg
 
 Så här slutför Contoso migreringen:
 
@@ -185,7 +185,7 @@ När identifieringen är klar kan du påbörja replikeringen av virtuella VMware
     - Välj **Nej** om du inte vill använda Azure Hybrid-förmånen. Klicka sedan på **Nästa**.
     - Välj **Ja** om du har Windows Server-datorer som omfattas av aktiva Software Assurance- eller Windows Server-prenumerationer och du vill tillämpa förmånen på de datorer som du migrerar. Klicka sedan på **Nästa**.
 
-8. I **Compute** granskar du namnet på den virtuella datorn, storlek, disktyp för operativsystemet och tillgänglighetsuppsättningen. De virtuella datorerna måste följa [Azures krav](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#agentless-migration-vmware-vm-requirements).
+8. I **Compute** granskar du namnet på den virtuella datorn, storlek, disktyp för operativsystemet och tillgänglighetsuppsättningen. De virtuella datorerna måste följa [Azures krav](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#vmware-requirements).
 
     - **VM-storlek:** Om du använder bedömnings rekommendationer kommer List rutan VM-storlek att innehålla den rekommenderade storleken. Annars väljer Azure Migrate en storlek baserat på den närmaste matchningen i Azure-prenumerationen. Du kan också välja en storlek manuellt i **Storlek på virtuell Azure-dator**.
     - **OS-disk:** Ange OS-disken (start) för den virtuella datorn. Operativsystemdisken är den disk där operativsystemets bootloader och installationsprogram finns.
@@ -206,7 +206,7 @@ Contosos administratörer kör en snabb testning av redundans och sedan en fulls
 
 ### <a name="run-a-test-failover"></a>Köra ett redundanstest
 
-1. I **mål för migrering**  > **servrar**  > **Azure Migrate: Server migrering**klickar du på **test migrerade servrar**.
+1. I **mål för migrering** > **servrar** > **Azure Migrate: Server migrering**klickar du på **test migrerade servrar**.
 
      ![Testmigrerade servrar](./media/contoso-migration-rehost-linux-vm/test-migrated-servers.png)
 
@@ -225,7 +225,7 @@ Contosos administratörer kör en snabb testning av redundans och sedan en fulls
 
 Contosos administratörer kör nu en fullständig redundansväxling för att slutföra migreringen.
 
-1. I Azure Migrate Project >- **servrar**  > **Azure Migrate: Server-migrering**klickar du på **Replikera servrar**.
+1. I Azure Migrate Project >- **servrar** > **Azure Migrate: Server-migrering**klickar du på **Replikera servrar**.
 
     ![Servrarna replikeras](./media/contoso-migration-rehost-linux-vm/replicating-servers.png)
 
