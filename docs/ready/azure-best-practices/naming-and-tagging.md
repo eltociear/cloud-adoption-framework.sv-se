@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: 3a99398d5ae180efe9dca4cadf0554d92c6380b2
-ms.sourcegitcommit: 91ece6ba373a4d0d573cca7e616f0b67337b0d1b
+ms.openlocfilehash: e1958d48eec112d11838835b853430c04601ab8b
+ms.sourcegitcommit: f53e8620adfca7bb5660ef23cac1dab069998e0e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76023358"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76726323"
 ---
 # <a name="recommended-naming-and-tagging-conventions"></a>Rekommenderade regler för namngivning och taggar
 
@@ -40,13 +40,13 @@ En namngivnings- och etikettstrategi omfattar information om företaget och verk
 
 ### <a name="resource-naming"></a>Resursnamngivning
 
-En lämplig namngivningskonvention sätter samman resursnamn genom att använda viktig resursinformation som delar av resursens namn. Med de rekommenderade namngivningskonventionerna som beskrivs [längre fram i den här artikeln](#sample-naming-convention) har en offentlig IP-resurs för en SharePoint-arbetsbelastning följande namn: `pip-sharepoint-prod-westus-001`.
+En lämplig namngivningskonvention sätter samman resursnamn genom att använda viktig resursinformation som delar av resursens namn. Med dessa [rekommenderade namngivnings konventioner](#sample-naming-convention)heter en offentlig IP-resurs för en produktion av SharePoint-arbetsbelastning som detta: `pip-sharepoint-prod-westus-001`.
 
 Från namnet kan du snabbt identifiera resurstypen, dess associerade arbetsbelastning, distributionsmiljön och den Azure-region som är värd för den.
 
 #### <a name="naming-scope"></a>Namngivningsomfång
 
-Alla typer av Azure-resurser har en omfattning som definierar nivån som resurs namn måste vara unika. En resurs måste ha ett unikt namn inom sitt omfång.
+Alla typer av Azure-resurser har ett omfång som definierar nivån som resurs namn måste vara unika. En resurs måste ha ett unikt namn inom sitt omfång.
 
 Ett virtuellt nätverk har till exempel en resursgrupps omfång, vilket innebär att det bara kan finnas ett nätverk med namnet `vnet-prod-westus-001` i en specifik resursgrupp. Andra resursgrupper kan ha sitt eget virtuella nätverk med namnet `vnet-prod-westus-001`. Ett annat exempel är undernät, som är begränsade till virtuella nätverk. Det innebär att varje undernät inom ett virtuellt nätverk måste ha ett unikt namn.
 
@@ -62,11 +62,11 @@ Se till att namndelarnas längd inte överskrider gränsen för resursnamn.
 
 | Namndel | Beskrivning | Exempel |
 | --- | --- | --- |
-| Affärsenhet | Avdelning på toppnivå för ditt företag som äger prenumerationen eller arbetsbelastningen som resursen tillhör. I mindre organisationer kan den här komponenten representera en enskild avdelning. | *fin*, *mktg*, *product*, *it*, *corp* |
-| Prenumerationstyp | Sammanfattande beskrivning av syftet med den prenumeration som innehåller resursen. Delas ofta upp enligt typ av distributionsmiljö eller specifika arbetsbelastningar. | *Prod,* s*hared, client* |
-| Namn på program eller tjänst | Namnet på programmet, arbetsbelastningen eller tjänsten som resursen ingår i. | *navigator*, *emissions*, *sharepoint*, *hadoop* |
-| Distributionsmiljö | Stadiet i utvecklingslivscykeln för arbetsbelastningen som stöds av resursen. | *prod, dev, qa, stage, test* |
-| Region | Den Azure-region där resursen har distribuerats. | *westus, eastus2, westeurope, usgovia* |
+| Affärsenhet | Avdelning på toppnivå för ditt företag som äger prenumerationen eller arbetsbelastningen som resursen tillhör. I mindre organisationer kan den här komponenten representera en enskild avdelning. | _fin_, _mktg_, _product_, _it_, _corp_ |
+| Prenumerationstyp | Sammanfattande beskrivning av syftet med den prenumeration som innehåller resursen. Delas ofta upp enligt typ av distributionsmiljö eller specifika arbetsbelastningar. | _Prod_, _delad_, _klient_ |
+| Namn på program eller tjänst | Namnet på programmet, arbetsbelastningen eller tjänsten som resursen ingår i. | _navigator_, _emissions_, _sharepoint_, _hadoop_ |
+| Distributionsmiljö | Stadiet i utvecklingslivscykeln för arbetsbelastningen som stöds av resursen. | _Prod_, _dev_, _frågor och svar_, _fas_, _test_ |
+| Region | Den Azure-region där resursen har distribuerats. | _väst_, _eastus2_, _westeurope_, _usgovia_ |
 
 #### <a name="recommended-resource-type-prefixes"></a>Rekommenderade prefix för resurstyp
 
@@ -77,35 +77,38 @@ I följande lista visas rekommenderade prefix för Azure-resurstyper som du kan 
 | Resurstyp                       | Resursnamnprefix |
 | ----------------------------------- | -------------------- |
 | Resursgrupp                      | rg-                  |
-| Azure Virtual Network               | vnet-                |
+| Tillgänglighetsuppsättning                    | låta               |
+| API Management-tjänst              | Application                 |
+| Virtuellt nätverk                     | vnet-                |
 | Virtuell nätverksgateway             | vnetgw-              |
 | Gateway-anslutning                  | cn-                  |
 | Undernät                              | snet-                |
 | Nätverkssäkerhetsgrupp              | nsg-                 |
 | Routningstabell                         | styra               |
-| Azure Virtual Machines              | vm-                  |
+| Virtuell dator                     | vm                   |
 | Lagringskonto för virtuell dator                  | stvm                 |
 | Offentlig IP-adress                           | pip-                 |
-| Azure Load Balancer                 | lb-                  |
+| Load Balancer                       | lb-                  |
 | NIC                                 | nic-                 |
-| Azure Key Vault                     | 3,0                  |
-| Azure Kubernetes Service            | AKS                 |
-| Azure Service Bus                   | sb-                  |
-| Azure Service Bus-köer            | sbq-                 |
-| Azure Service Bus ämnen            | sbt-                 |
-| Azure App Services planer             | projektplan                |
-| Azure Web Apps                      | mobilappar                 |
-| Azure Functions                     | FUNC                |
-| Azure Cloud Services                | gör                 |
+| Nyckelvalv                           | 3,0                  |
+| AKS-kluster                         | AKS                 |
+| AKS-behållare                       | CON                 |
+| Service Bus                         | sb-                  |
+| Service Bus kö                   | sbq-                 |
+| Service Bus ämne                   | sbt-                 |
+| App Service-plan                    | projektplan                |
+| Webbapp                             | mobilappar                 |
+| Funktionsapp                        | FUNC                |
+| Molntjänst                       | gör                 |
 | Azure SQL Database Server           | SQL                 |
-| Azure SQL Database                  | sqldb-               |
-| Azure Cosmos DB                     | Cosmos              |
-| Azure Cache for Redis               | redis-               |
-| Azure-databas för MySQL            | mysql-               |
-| Azure-databas för PostgreSQL       | psql                |
+| Azure SQL-databas                  | sqldb-               |
+| Cosmos DB databas                  | Cosmos              |
+| Azure cache för Redis-cache         | redis-               |
+| MySQL-databas                      | mysql-               |
+| PostgreSQL-databas                 | psql                |
 | Azure SQL Data Warehouse            | sqldw-               |
 | SQL Server Stretch Database         | sqlstrdb-            |
-| Azure Storage                       | St                   |
+| Lagringskonto                     | St                   |
 | Azure StorSimple                    | ssimp                |
 | Azure Search                        | srch-                |
 | Azure Cognitive Services            | kugg hjuls                 |
@@ -119,10 +122,10 @@ I följande lista visas rekommenderade prefix för Azure-resurstyper som du kan 
 | Power BI Embedded                   | PBI                 |
 | Azure Stream Analytics              | asa-                 |
 | Azure Data Factory                  | automatisk                 |
-| Azure Event Hubs                    | evh-                 |
-| Azure IoT Hub                       | IoT                 |
-| Azure Notification Hubs             | ntf-                 |
-| Azure Notification Hubs-namnområde   | ntfns-               |
+| Händelsehubb                           | evh-                 |
+| IoT Hub                             | IoT                 |
+| Notification Hub                   | ntf-                 |
+| Notification Hubs namnrymd         | ntfns-               |
 
 ### <a name="metadata-tags"></a>Metadatataggar
 
@@ -132,18 +135,18 @@ De taggar som du fäster på resurser och de taggar som behövs eller är valfri
 
 | Taggnamn                  | Beskrivning                                                                                                                                                                                                    | Nyckel               | Exempelvärde                                   |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|-------------------------------------------------|
-| Programnamn          | Namnet på programmet, tjänsten eller arbetsbelastningen som resursen är associerad med.                                                                                                                                 | *ApplicationName* | *{appnamn}*                                    |
-| Godkännarens namn             | Person som ansvarar för att godkänna kostnader relaterade till den här resursen.                                                                                                                                               | *Approver*        | *{e-post}*                                       |
-| Budget krävs/godkänd  | Pengar som har tilldelats programmet, tjänsten eller arbetsbelastningen.                                                                                                                                                    | *BudgetAmount*    | *{\$}*                                          |
-| Affärsenhet             | Avdelning på toppnivå för ditt företag som äger prenumerationen eller arbetsbelastningen som resursen tillhör. I mindre organisationer kan den här taggen representera en enskild avdelning. | *BusinessUnit*    | *EKONOMI, MARKNADSFÖRING, {produktnamn}, CORP, DELAD* |
-| Kostnadsställe               | Kostnadsställe som associeras med resursen.                                                                                                                                                          | *CostCenter*      | *{värde}*                                      |
-| Haveriberedskap         | Programmet, arbetsbelastningen eller tjänstens affärskritiskhet.                                                                                                                                                | *DR*              | *Verksamhetskritisk, Kritisk, Viktig*         |
-| Projektets slutdatum   | Datum då programmet, arbetsbelastningen eller tjänsten har schemalagts för utsättning.                                                                                                                                  | *EndDate*         | *{datum}*                                        |
-| Miljö               | Programmet, arbetsbelastningen eller tjänstens distributionsmiljö.                                                                                                                                              | *Env*             | *Prod, Dev, QA, Stage, Test*                    |
-| Ägarens namn                | Programmet, arbetsbelastningen eller tjänstens ägare.                                                                                                                                                                | *Ägare*           | *{e-post}*                                       |
-| Beställarens namn            | Användare som beställde utvecklingen av det här programmet.                                                                                                                                                          | *Requestor*       | *{e-post}*                                       |
-| Tjänsteklass             | Serviceavtalsnivå för programmet, arbetsbelastningen eller tjänsten.                                                                                                                                       | *ServiceClass*    | *Dev, Brons, Silver, Guld*                     |
-| Projektets startdatum | Datum då programmet, arbetsbelastningen eller tjänsten först distribuerades.                                                                                                                                           | *StartDate*       | *{datum}*                                        |
+| Programnamn          | Namnet på programmet, tjänsten eller arbetsbelastningen som resursen är associerad med.                                                                                                                                 | _ApplicationName_ | _{appnamn}_                                    |
+| Godkännarens namn             | Person som ansvarar för att godkänna kostnader relaterade till den här resursen.                                                                                                                                               | _Approver_        | _{e-post}_                                       |
+| Budget krävs/godkänd  | Pengar som har tilldelats programmet, tjänsten eller arbetsbelastningen.                                                                                                                                                    | _BudgetAmount_    | _{\$}_                                          |
+| Affärsenhet             | Avdelning på toppnivå för ditt företag som äger prenumerationen eller arbetsbelastningen som resursen tillhör. I mindre organisationer kan den här taggen representera en enskild avdelning. | _BusinessUnit_    | _Ekonomi_, _marknadsföring_, _{produkt namn}_ , _Corp_, _delad_ |
+| Kostnadsställe               | Kostnadsställe som associeras med resursen.                                                                                                                                                          | _CostCenter_      | _{värde}_                                      |
+| Haveriberedskap         | Programmet, arbetsbelastningen eller tjänstens affärskritiskhet.                                                                                                                                                | _DR_              | _Verksamhets kritisk_, _kritisk_, _viktig_         |
+| Projektets slutdatum   | Datum då programmet, arbetsbelastningen eller tjänsten har schemalagts för utsättning.                                                                                                                                  | _EndDate_         | _{datum}_                                        |
+| Miljö               | Programmet, arbetsbelastningen eller tjänstens distributionsmiljö.                                                                                                                                              | _Env_             | _Prod_, _dev_, _frågor och svar_, _fas_, _test_                    |
+| Ägarens namn                | Programmet, arbetsbelastningen eller tjänstens ägare.                                                                                                                                                                | _Ägare_           | _{e-post}_                                       |
+| Beställarens namn            | Användare som beställde utvecklingen av det här programmet.                                                                                                                                                          | _Requestor_       | _{e-post}_                                       |
+| Tjänsteklass             | Serviceavtalsnivå för programmet, arbetsbelastningen eller tjänsten.                                                                                                                                       | _ServiceClass_    | _Dev_, _brons_, _silver_, _guld_                     |
+| Projektets startdatum | Datum då programmet, arbetsbelastningen eller tjänsten först distribuerades.                                                                                                                                           | _StartDate_       | _{datum}_                                        |
 
 ## <a name="sample-naming-convention"></a>Exempel på namngivningskonvention
 
@@ -168,8 +171,8 @@ I följande avsnitt finns exempel på namngivningssystem för vanliga typer av A
 | Tillgångstyp               | Omfång           | Format                                                                | Exempel                                                                                              |
 |--------------------------|-----------------|-----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
 | Azure Virtual Network          | Resursgrupp  | vnet-\<Subscription type\>-\<Region\>-\<\#\#\#\>                      | <ul><li>vnet-shared-eastus2-001 </li><li>vnet-prod-westus-001 </li><li>vnet-client-eastus2-001</li></ul>                                  |
-| Virtuell gateway för virtuellt nätverk     | Virtuellt nätverk | vnetgw-v-\<prenumerations typ\>-\<region\>-\<\#\#\#\>                 | <ul><li>vnet-gw-v-shared-eastus2-001 </li><li>vnet-gw-v-prod-westus-001 </li><li>vnet-gw-v-client-eastus2-001</li></ul>                   |
-| Virtuell lokal nätverksgateway       | Virtuell gateway | vnetgw-l-\<prenumerations typ\>-\<region\>-\<\#\#\#\>                 | <ul><li>vnet-gw-l-shared-eastus2-001 </li><li>vnet-gw-l-prod-westus-001 </li><li>vnet-gw-l-client-eastus2-001</li></ul>                   |
+| Virtuell gateway för virtuellt nätverk     | Virtuellt nätverk | vnetgw-v-\<prenumerations typ\>-\<region\>-\<\#\#\#\>                 | <ul><li>vnetgw-v-Shared-eastus2-001 </li><li>vnetgw-v-Prod-väst-001 </li><li>vnetgw-v-client-eastus2-001</li></ul>                   |
+| Virtuell lokal nätverksgateway       | Virtuell gateway | vnetgw-l-\<prenumerations typ\>-\<region\>-\<\#\#\#\>                 | <ul><li>vnetgw-l-Shared-eastus2-001 </li><li>vnetgw-l-Prod-väst-001 </li><li>vnetgw-l-client-eastus2-001</li></ul>                   |
 | Plats-till-plats-anslutningar | Resursgrupp  | cn-\<local gateway name\>-to-\<virtual gateway name\>                 | <ul><li>cn-l-gw-shared-eastus2-001-to-v-gw-shared-eastus2-001 </li><li>cn-l-gw-shared-eastus2-001-to-shared-westus-001</li></ul> |
 | Anslutningar till virtuellt nätverk         | Resursgrupp  | cn-\<prenumeration1\>\<region1\>-till-\<prenumeration2\>\<region2\>-      | <ul><li>cn-shared-eastus2-to-shared-westus </li><li>cn-shared-eastus2-to-shared-westus</li></ul>                                     |
 | Undernät                   | Virtuellt nätverk | snet-\<subscription\>-\<subregion\>-\<\#\#\#\>                       | <ul><li>snet-shared-eastus2-001 </li><li>snet-prod-westus-001 </li><li>snet-client-eastus2-001</li></ul>                                  |
@@ -190,9 +193,9 @@ I följande avsnitt finns exempel på namngivningssystem för vanliga typer av A
 
 | Tillgångstyp           | Omfång  | Format                                                              | Exempel                                                                                 |
 |----------------------|--------|---------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| Azure Web Apps       | Globalt | app-\<app-namn\>-\<miljö\>-\<\#\#\#\>. [{azurewebsites.net}] | <ul><li>azapp-navigator-prod-001.azurewebsites.net </li><li>app-accountlookup-dev-001.azurewebsites.net</li></ul> |
-| Azure Functions      | Globalt | FUNC-\<app-namn\>-\<miljö\>-\<\#\#\#\>. [{azurewebsites.net}] | <ul><li>azfun-navigator-prod-001.azurewebsites.net </li><li>func-accountlookup-dev-001.azurewebsites.net</li></ul> |
-| Azure Cloud Services | Globalt | \<app-namn\>-\<miljö\>-\<\#\#\#\>. [{cloudapp.net}]       | <ul><li>azcs-navigator-prod-001.azurewebsites.net </li><li>could-accountlookup-dev-001.azurewebsites.net</li></ul>   |
+| Azure Web Apps       | Globalt | app-\<app-namn\>-\<miljö\>-\<\#\#\#\>. [{azurewebsites.net}] | <ul><li>app-navigator-prod-001.azurewebsites.net </li><li>app-accountlookup-dev-001.azurewebsites.net</li></ul> |
+| Azure Functions      | Globalt | FUNC-\<app-namn\>-\<miljö\>-\<\#\#\#\>. [{azurewebsites.net}] | <ul><li>func-navigator-prod-001.azurewebsites.net </li><li>func-accountlookup-dev-001.azurewebsites.net</li></ul> |
+| Azure Cloud Services | Globalt | \<app-namn\>-\<miljö\>-\<\#\#\#\>. [{cloudapp.net}]       | <ul><li>could-navigator-prod-001.azurewebsites.net </li><li>could-accountlookup-dev-001.azurewebsites.net</li></ul>   |
 
 ### <a name="azure-service-bus"></a>Azure Service Bus
 
@@ -208,14 +211,14 @@ I följande avsnitt finns exempel på namngivningssystem för vanliga typer av A
 |-------------------------------------|--------------------|---------------------------------------|------------------------------------------------|
 | Azure SQL Database Server           | Globalt             | SQL-\<app-namn\>-\<miljö\>      | <ul><li>SQL-Navigator-Prod </li><li>SQL-utsläpp – utveckling</li></ul>           |
 | Azure SQL Database                  | Azure SQL Database | SQLDB-\<databas namn >-\<miljö\>| <ul><li>SQLDB – användare-Prod </li><li>SQLDB – användare – dev</li></ul>               |
-| Azure Cosmos DB                     | Globalt             | Cosmos-\<app-namn\>-\<miljö\>   | <ul><li>cosdb-navigator-prod </li><li>cosdb-emissions-dev</li></ul>       |
+| Azure Cosmos DB                     | Globalt             | Cosmos-\<app-namn\>-\<miljö\>   | <ul><li>Cosmos – Navigator-Prod </li><li>Cosmos-utsläpp – dev</li></ul>       |
 | Azure Cache for Redis               | Globalt             | redis-\<App Name\>-\<Environment\>    | <ul><li>redis-navigator-prod </li><li>redis-emissions-dev</li></ul>       |
 | Azure-databas för MySQL            | Globalt             | mysql-\<App Name\>-\<Environment\>    | <ul><li>mysql-navigator-prod </li><li>mysql-emissions-dev</li></ul>       |
 | Azure-databas för PostgreSQL       | Globalt             | psql-\<app-namn\>-\<miljö\>     | <ul><li>psql – Navigator-Prod </li><li>psql-utsläpp – dev</li></ul>         |
 | Azure SQL Data Warehouse            | Globalt             | sqldw-\<App Name\>-\<Environment\>    | <ul><li>sqldw-navigator-prod </li><li>sqldw-emissions-dev</li></ul>       |
 | SQL Server Stretch Database         | Azure SQL Database | -\<App Name\>-\<Environment\> | <ul><li>sqlstrdb-navigator-prod </li><li>sqlstrdb-emissions-dev</li></ul> |
 
-### <a name="storage"></a>Lagring
+### <a name="storage"></a>Storage
 
 | Tillgångstyp                              | Omfång  | Format                                                                        | Exempel                                   |
 |-----------------------------------------|--------|-------------------------------------------------------------------------------|--------------------------------------------|

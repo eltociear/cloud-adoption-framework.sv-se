@@ -69,7 +69,7 @@
       items:
         - name: Översikt
           href: plan/plan-intro.md
-        - name: Nödvändiga komponenter
+        - name: Krav
           href: plan/prerequisites.md
         - name: Distribuera mallen till Azure DevOps
           href: plan/template.md
@@ -283,7 +283,7 @@
               items:
                 - name: Översikt
                   href: migrate/azure-best-practices/vmware-host.md
-                - name: Nödvändiga komponenter
+                - name: Krav
                   items:
                     - name: Skydda din miljö
                       href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/private-cloud-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
@@ -471,7 +471,7 @@
           items:
             - name: Översikt
               href: migrate/migration-considerations/index.md
-            - name: Nödvändiga komponenter
+            - name: Krav
               items:
                 - name: Översikt
                   href: migrate/migration-considerations/prerequisites/index.md
@@ -817,8 +817,8 @@
                       href: 'https://docs.microsoft.com/azure/iot-fundamentals/iot-security-architecture?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Kom igång med Azure Sphere
                       href: 'https://azure.microsoft.com/services/azure-sphere/get-started/'
-                    - name: Distribuera appar trådlöst med Azure Sphere
-                      href: 'https://docs.microsoft.com/azure-sphere/deployment/application-deployment-steps?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Skapa en distribution med Azure Sphere
+                      href: 'https://docs.microsoft.com/azure-sphere/deployment/create-a-deployment?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Kom igång med Azure Kinect DK
                       href: 'https://docs.microsoft.com/azure/Kinect-dk/about-azure-kinect-dk?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Skapa din första Azure Kinect DK-app
@@ -857,8 +857,6 @@
                   items:
                     - name: Azure Machine Learning från experiment till driftsklara tjänster
                       href: 'https://docs.microsoft.com/azure/machine-learning/studio/model-progression-experiment-to-web-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: Azure Machine Learning och publicering till webbtjänster för användning i appar
-                      href: 'https://docs.microsoft.com/azure/machine-learning/studio/publish-a-machine-learning-web-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Göra ML-tjänster driftsklara i Azure HDInsight
                       href: 'https://docs.microsoft.com/azure/hdinsight/r-server/r-server-operationalize?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
 - name: Styrning
