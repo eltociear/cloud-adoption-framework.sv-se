@@ -1,6 +1,5 @@
 ---
 title: 'Utveckling av molnet: öka implementeringen'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Introduktion till utveckling av molnet – ge ett förstärknings beslut
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e4c09cb67872cec6fca8ab395f7ab88e2e0f2064
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: a3c726443e62140dba997ae4a1ff89593f72e6e6
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752098"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808523"
 ---
 # <a name="empower-adoption"></a>Underlätta implementeringen
 

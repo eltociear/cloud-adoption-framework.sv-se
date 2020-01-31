@@ -1,6 +1,5 @@
 ---
 title: Specialisering för arbetsbelastningar för molnhantering i Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Förbättra arbetsbelastningsspecifika molnhanteringsåtgärder
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2381a7579fad573abeca6afafd6f6fbaa6310ee4
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: ee41e95a8481cd7caeb91d05d4b1420e357aa0f5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752917"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808149"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>Specialisering för arbetsbelastningar för molnhantering
 

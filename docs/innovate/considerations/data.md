@@ -1,6 +1,5 @@
 ---
 title: 'Utveckling av moln: demokratisera identifieringen av data'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Introduktion till Cloud innovation – demokratisera identifieringen av data
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 242985f57cc377b78328e2277ba76f15abaec8b8
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 158c3e25bac2124312a8ceaf3ac5500a58246f48
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753034"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808506"
 ---
 # <a name="democratize-data"></a>Demokratisera data
 
@@ -44,7 +43,7 @@ De primära verktygen för att dela data direkt med data konsumenter är självb
 
 Genom att dela data kan du snabbt skapa en MVP som du kan använda i kund samtal. Men för att kunna aktivera delade data i användbar och användbar kunskap, krävs en bit som är mer allmänt nödvändig. När en hypotes har verifierats genom data delning är nästa fas i utvecklingen vanligt vis data styrning.
 
-Data styrning är ett brett ämne som kan kräva att det är ett eget dedikerat ramverk. Den graden av granularitet ligger utanför omfattningen av [moln införande ramverket](../../index.md). Det finns dock flera aspekter av data styrning som du bör ta hänsyn till när kund hypotesen verifieras. Exempel:
+Data styrning är ett brett ämne som kan kräva att det är ett eget dedikerat ramverk. Den graden av granularitet ligger utanför omfattningen av [moln införande ramverket](../../index.md). Det finns dock flera aspekter av data styrning som du bör ta hänsyn till när kund hypotesen verifieras. Ett exempel:
 
 - **Är de delade data känsliga?** [Data bör klassificeras](../../govern/policy-compliance/data-classification.md) innan de delas offentligt för att skydda kundernas och företagets intresse.
 - **Om data är känsliga, har de skyddats?** Skydd av känsliga data bör vara ett krav för alla democratized-data. Exempel arbets belastningen som fokuserar på att [skydda data lösningar](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions) är några referenser för att skydda data.

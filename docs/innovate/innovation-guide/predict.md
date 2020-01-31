@@ -1,6 +1,5 @@
 ---
 title: 'Guide till Azure-innovation: Förutspå och påverka'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig att förutspå och påverka användningen av Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 506387c87a714964692dde7c082fa31c981b0c6f
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 00bd41050d469c8bab6ee0c6a8c4e68facd92ca9
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251841"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808268"
 ---
 ::: zone target="docs"
 
@@ -35,8 +34,8 @@ Använd den här tabellen till att hitta den bästa lösningen sett till just di
 
 |Tjänst  |Fördefinierade modeller  |Skapa och experimentera  |Träna och skapa med Python|Nödvändiga kunskaper|
 |---------|---------|---------|---------|---------|
-|Azure Cognitive Services|Ja|Nej|Nej|Kunskaper om API:er och utveckling|
-|Azure Machine Learning Studio|Ja|Ja|Nej|Allmän förståelse för prediktiva algoritmer|
+|Azure Cognitive Services|Ja|Inga|Inga|Kunskaper om API:er och utveckling|
+|Azure Machine Learning Studio|Ja|Ja|Inga|Allmän förståelse för prediktiva algoritmer|
 |Azure Machine Learning-tjänst|Ja|Ja|Ja|Data Scientist|
 
 ## <a name="azure-cognitive-servicestabcognitiveservices"></a>[Azure Cognitive Services](#tab/CognitiveServices)

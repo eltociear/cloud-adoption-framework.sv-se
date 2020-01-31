@@ -1,6 +1,5 @@
 ---
 title: Beslutsguide för loggning och rapportering
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig om loggning, rapportering och övervakning som centrala tjänster i Azure-migreringar.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4328cdf3249b065bf20efd5858254ad9da1dc211
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 038137088abe02160fd199cef468ecc5d5756281
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753176"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806772"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Beslutsguide för loggning och rapportering
 
@@ -34,10 +33,10 @@ När du planerar distributionen behöver du tänka på var loggningsdata lagras 
 
 | Fråga | Molnbaserat | Lokal utökning | Hybridövervakning | Gateway-sammansättning |
 |-----|-----|-----|-----|-----|
-| Har du en befintlig lokal övervakningsinfrastruktur? | Nej | Ja | Ja |  Nej |
-| Har du krav som förhindrar lagring av loggdata på externa lagringsplatser? | Nej | Ja | Nej | Nej |
-| Behöver du integrera molnövervakning med lokala system? | Nej | Nej | Ja | Nej |
-Behöver du bearbeta eller filtrera telemetridata innan de skickas till dina övervakningssystem? | Nej | Nej | Nej | Ja |
+| Har du en befintlig lokal övervakningsinfrastruktur? | Inga | Ja | Ja |  Inga |
+| Har du krav som förhindrar lagring av loggdata på externa lagringsplatser? | Inga | Ja | Inga | Inga |
+| Behöver du integrera molnövervakning med lokala system? | Inga | Inga | Ja | Inga |
+Behöver du bearbeta eller filtrera telemetridata innan de skickas till dina övervakningssystem? | Inga | Inga | Inga | Ja |
 
 ### <a name="cloud-native"></a>Molnbaserat
 

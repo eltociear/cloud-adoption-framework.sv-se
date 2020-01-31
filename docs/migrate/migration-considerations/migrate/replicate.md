@@ -1,19 +1,18 @@
 ---
 title: Vilken roll spelar replikering och synkronisering under migreringsprocessen?
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: En process inom molnmigreringen som fokuserar på att överföra arbetsbelastningar till molnet.
+description: En process inom molnmigreringen som fokuserar uppgifterna för att migrera arbetsbelastningar till molnet.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cd76991fc7d8b13302e4614cf9e57da740f650d8
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 6b37cea7b912cb4d65f9b1b119787e96b2f698d6
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753699"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802029"
 ---
 <!-- markdownlint-disable MD026 -->
 

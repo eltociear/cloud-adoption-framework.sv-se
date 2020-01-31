@@ -1,6 +1,5 @@
 ---
 title: Introduktion till regelefterlevnad
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Introduktion till regelefterlevnad
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b38b52fc6899000bf5f452425a8b6f26070af7dc
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: bd48f3080c1cf516121f9afe2e8c31bbc799e3a5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222023"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806126"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Introduktion till regelefterlevnad
 
@@ -46,7 +45,7 @@ En av de viktigaste fördelarna med det här området är allmän dataskyddsför
 
 ## <a name="compliant-foundation-in-azure"></a>Kompatibel grund i Azure
 
-För att hjälpa kunderna att uppfylla sina egna krav på efterlevnad i reglerade branscher och marknader över hela världen, upprätthåller Azure&mdash;den största portföljen för regelefterlevnad i branschen i bredd (totalt antal erbjudanden) och djup (antal kund tjänster i utvärderings omfattning. Azure Compliance-erbjudanden grupperas i fyra segment: globalt tillämpligt, amerikanska myndigheter, branschspecifika och region/landsspecifika.
+För att hjälpa kunderna att uppfylla sina egna krav på efterlevnad i reglerade branscher och marknader över hela världen, upprätthåller Azure den största portföljen i branschen&mdash;i bredd (totalt antal erbjudanden) och djup (antalet kund tjänster i utvärderings området). Azure Compliance-erbjudanden grupperas i fyra segment: globalt tillämpligt, amerikanska myndigheter, branschspecifika och region/landsspecifika.
 
 Azure Compliance-erbjudanden baseras på olika typer av garantier, inklusive formella certifieringar, attesteringar, godkännanden och bedömningar som produceras av oberoende gransknings företag från tredje part, samt avtals ändringar. själv bedömningar och kund väglednings dokument som skapats av Microsoft. Varje erbjudande beskrivning i det här dokumentet innehåller en uppdaterad omfattnings instruktion som visar vilka Azure Customer-tjänster som omfattas av utvärderingen, samt länkar till nedladdnings bara resurser för att hjälpa kunderna med sin egen efterlevnad plikt.
 

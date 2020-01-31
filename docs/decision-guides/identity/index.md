@@ -1,6 +1,5 @@
 ---
 title: Beslutsguide för identitet
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig om identitet som en central tjänst i Azure-migreringar.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: b071fc546f615679bf712e9caa7725e767b73ad9
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: b447330368823947bfe027036b14c3a6c1fb94f1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753185"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807112"
 ---
 # <a name="identity-decision-guide"></a>Beslutsguide för identitet
 
@@ -34,10 +33,10 @@ Molnbaserad identitetshantering är en iterativ process. Du kan börja med en mo
 
 | Fråga | Molnbaslinje | Katalogsynkronisering | Molnbaserade domäntjänster | Active Directory Federation Services |
 |------|------|------|------|------|
-| Saknar du för närvarande en lokal katalogtjänst? | Ja | Nej | Nej | Nej |
-| Behöver dina arbetsbelastningar använda en gemensam uppsättning användare och grupper mellan den molnbaserade miljön och den lokala miljön? | Nej | Ja | Nej | Nej |
-| Är dina arbetsbelastningar beroende av äldre autentiseringsmekanismer såsom Kerberos eller NTLM? | Nej | Nej | Ja | Ja |
-| Kräver du enkel inloggning över flera identitetsprovidrar? | Nej | Nej | Nej | Ja |
+| Saknar du för närvarande en lokal katalogtjänst? | Ja | Inga | Inga | Inga |
+| Behöver dina arbetsbelastningar använda en gemensam uppsättning användare och grupper mellan den molnbaserade miljön och den lokala miljön? | Inga | Ja | Inga | Inga |
+| Är dina arbetsbelastningar beroende av äldre autentiseringsmekanismer såsom Kerberos eller NTLM? | Inga | Inga | Ja | Ja |
+| Kräver du enkel inloggning över flera identitetsprovidrar? | Inga | Inga | Inga | Ja |
 
 Som en del i att planera din migrering till Azure behöver du bestämma det bästa sättet att integrerar dina befintliga tjänster för identitetshantering och molnidentitet. Följande är vanliga integreringsscenerier.
 

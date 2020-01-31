@@ -1,6 +1,5 @@
 ---
 title: 'Förbered för kulturell komplexitet: justera roller och ansvarsområden'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Förbered dig för kulturell komplexitet genom att justera roller och ansvars områden.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: bc880e3bb27492b18a8e577911527978c7a4e0d2
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 186772796694d6ef60a923c5098760a573d8db6d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548349"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801502"
 ---
 # <a name="prepare-for-cultural-complexity-aligning-roles-and-responsibilities"></a>Förbered för kulturell komplexitet: justera roller och ansvarsområden
 

@@ -1,6 +1,5 @@
 ---
 title: Mall för resurs konsekvens
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Mall för resurs konsekvens
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 831c40b2bf8f7e8fb64fc6cddcf8d6817376be00
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: f500245b80b0100f075e11b6a796d9acb05458ce
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221919"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805123"
 ---
 # <a name="resource-consistency-template"></a>Mall för resurs konsekvens
 

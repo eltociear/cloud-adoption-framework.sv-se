@@ -1,6 +1,5 @@
 ---
 title: Övervakning och rapportering i Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig hur du konfigurerar övervakning, rapportering och aviseringar för din Azure-miljö.
 author: timleyden
 ms.author: tileyden
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0ed9f9c1739fc73f4d28bf532bd52bd0a182b2fc
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 0b37500652606e3a1018b3b93c03aae546827eff
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251355"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799411"
 ---
 # <a name="monitoring-and-reporting-in-azure"></a>Övervakning och rapportering i Azure
 

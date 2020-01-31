@@ -1,6 +1,5 @@
 ---
 title: Strategi för styrning eller efterlevnad
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Strategi för styrning eller efterlevnad
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c363f038b5fed3f2c8636b9b15a09625ca42218f
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 17952dc4c3ff28f2fcfe1a378a9efb969d65925b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753548"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803134"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategi för styrning eller efterlevnad
 
@@ -27,7 +26,7 @@ Obligatoriska åtgärder påverkas mest när styrning eller efterlevnad krävs. 
 
 Konfigurationen av den grundläggande Azure-miljön kan ändras avsevärt vid integrering av styrnings- och efterlevnadskrav. För att förstå hur dessa förutsättningar ändras är det viktigt att förstå kravens beskaffenhet. Innan du påbörjar en migrering som kräver styrning eller efterlevnad bör du välja och implementera en metod i molnmiljön. De följande är ett avancerade metoder som ofta används vid migrering:
 
-**Gemensam styrnings metod:** För de flesta organisationer är det en bra metod för att [utforma modellen för moln införande ramverk](../../govern/guides/index.md) som består av en minimal implementering av produkt (MVP), följt av riktade iterationer av styrnings period för att lösa konkreta risker identifieras i implementerings planen. Den här metoder har minsta nödvändiga verktyg för att etablera en konsekvent styrning så att teamet kan förstå verktygen. Därefter utvecklas verktygen för att bemöta vanliga styrningsproblem.
+**Gemensam styrnings metod:** För de flesta organisationer är [styrnings modellen för moln införande i ramverket](../../govern/guides/index.md) ett tillräckligt tillvägagångs sätt som består av en minimal implementering av en praktisk produkt (MVP), följt av riktade iterationer av styrnings period för att åtgärda konkreta risker som identifieras i implementerings planen. Den här metoder har minsta nödvändiga verktyg för att etablera en konsekvent styrning så att teamet kan förstå verktygen. Därefter utvecklas verktygen för att bemöta vanliga styrningsproblem.
 
 **ISO 27001-överensstämmelse ritningar:** För kunder som måste följa ISO-standardkompatibiliteten kan de [skiss exempel för delade tjänster i iso 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared/index) fungera som en effektivare MVP för att ge bättre styrnings styrnings begränsningar tidigare i den iterativa processen. [Exemplet ISO 27001 App Service Environment/SQL Database](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload) utvecklar skissen och kartlägger kontroller samt distribuerar en gemensam arkitektur för en programmiljö. Efter hand som ytterligare skisser publiceras kommer de att visas här också.
 
@@ -59,7 +58,7 @@ För en djupare förståelse för styrningen, se [översikten Fem discipliner f�
 
 Vägledning om hur du utvecklar styrningsriktlinjer baserade på styrningsmodellen för Ramverk för molnimplementering finns i [Implementera en strategi för molnstyrning](../../govern/corporate-policy.md).
 
-## <a name="optimize-and-promote-process-changes"></a>Optimera och höja upp processändringar
+## <a name="optimize-and-promote-process-changes"></a>Optimera och flytta upp processändringar
 
 Under optimerings-och marknadsförings processerna investerar shluld för moln styrning tid för att testa och validera efterlevnad av styrning och efterlevnad. Det här steget är också ett lämpligt tillfälle att mata in processer som molnstyrningsteamet kan omvandla till mallar som kan [accelerera distributionen](../../govern/deployment-acceleration/index.md) ytterligare för framtida projekt.
 

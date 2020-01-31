@@ -1,6 +1,5 @@
 ---
 title: Exempel på smidiga resultat
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Exempel på smidiga resultat
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 79c6c10d924781d494cd8dbd7cc104d42f168083
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6f865eb0a5f81aa005239dbafd5437dc93797f94
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566632"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798510"
 ---
 # <a name="examples-of-agility-outcomes"></a>Exempel på smidiga resultat
 
@@ -25,7 +24,7 @@ Traditionellt sett är chefs chefer (CIO: er) och IT-teamen en stabilitets käll
 
 ## <a name="why-is-agility-so-important"></a>Varför är det viktigt att flexibiliteten?
 
-Marknader ändras till en snabbare takt idag än någonsin tidigare. Från och med 2015 var endast 57-företag fortfarande i Fortune 500 61 år senare &mdash;an 88,6 procent av omsättnings taxan. Detta innebär en marknads förändring på en tidigare tillhörad avgift. IT-smidighet eller till och med Business agilities är osannolikt att påverka en organisations lista på Fortune 500, men dessa siffror hjälper oss att förstå i vilken takt marknaderna fortsätter att ändra.
+Marknader ändras till en snabbare takt idag än någonsin tidigare. Från och med 2015 var endast 57-företag fortfarande i Fortune 500 61 år senare&mdash;en omsättning på 88,6 procent. Detta innebär en marknads förändring på en tidigare tillhörad avgift. IT-smidighet eller till och med Business agilities är osannolikt att påverka en organisations lista på Fortune 500, men dessa siffror hjälper oss att förstå i vilken takt marknaderna fortsätter att ändra.
 
 För de som är både etablerade och utgångs rik kan företags flexibilitet vara skillnaden mellan lyckade eller misslyckade affärs initiativ. Att snabbt anpassa till marknads förändringar kan hjälpa dig att ringa ut befintliga kunder eller anspråks marknads andelar från konkurrenter. De smidiga resultat som är relaterade i nästa avsnitt kan hjälpa till att kommunicera molnets värde under en omvandling.
 

@@ -1,6 +1,5 @@
 ---
 title: Procedurer för efterlevnad av distributions accelerations principer
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Procedurer för efterlevnad av distributions accelerations principer
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: de64b03c6c6113261426beed5de729eb6927a440
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 157f43baa7de8aabfcf3d3823caf962ac6bc2306
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566384"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806381"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>Procedurer för efterlevnad av distributions accelerations principer
 

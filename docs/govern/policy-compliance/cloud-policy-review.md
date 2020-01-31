@@ -1,6 +1,5 @@
 ---
 title: Genomför en granskning av moln principen
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig hur du utför en granskning av en moln princip.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7ce392797cf21d9f69ae791eb2db6a6d38c38dfc
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 48e4e759435178e346e08233afeca95ab065711e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223847"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805072"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -28,7 +27,7 @@ De flesta företag hanterar det genom att köra processer som är av samma juste
 
 Som företag mogna IT-principer har beroenden för tidigare tekniska beslut en tendens att seep i principer för principer. Till exempel är det gemensamt för att se haveri beredskaps processer en princip som bestämmer externa band säkerhets kopieringar. Detta förutsätter ett beroende på en typ av teknik (band säkerhets kopiering) som kanske inte längre är den mest relevanta lösningen.
 
-Moln omvandlingar skapar en naturlig Bryt punkt för att se över de tidigare princip besluten tidigare. Tekniska funktioner och standard processer förändras avsevärt i molnet, precis som de ärver risker. I föregående exempel har säkerhets kopierings principen för band som har samlats in från risken för en enskild felpunkt genom att lagra data på en plats och företaget behöver minimera risk profilen genom att begränsa risken. I en moln distribution finns det flera alternativ som ger samma risk minskning, med mycket lägre återställnings tid (RTO). Exempel:
+Moln omvandlingar skapar en naturlig Bryt punkt för att se över de tidigare princip besluten tidigare. Tekniska funktioner och standard processer förändras avsevärt i molnet, precis som de ärver risker. I föregående exempel har säkerhets kopierings principen för band som har samlats in från risken för en enskild felpunkt genom att lagra data på en plats och företaget behöver minimera risk profilen genom att begränsa risken. I en moln distribution finns det flera alternativ som ger samma risk minskning, med mycket lägre återställnings tid (RTO). Ett exempel:
 
 - En molnbaserad lösning kan möjliggöra geo-replikering av Azure SQL Database.
 - En hybrid lösning kan använda Azure Site Recovery för att replikera en IaaS-arbetsbelastning till Azure.
@@ -37,12 +36,12 @@ När en moln omvandling körs, styr principerna ofta många av de verktyg, tjän
 
 ## <a name="the-cloud-policy-review-process"></a>Moln princip gransknings processen
 
-Moln princip granskningar justerar befintlig IT-styrning och IT-säkerhetsprinciper med [fem ämnes områden i moln styrning](../index.md): [Cost Management](../cost-management/index.md), [säkerhets bas linje](../security-baseline/index.md), [identitets bas](../identity-baseline/index.md)linje, [resurs konsekvens](../resource-consistency/index.md)och [distributions acceleration](../deployment-acceleration/index.md).
+Moln princip granskningar justerar befintliga IT-styrning och IT-säkerhetsprinciper med de [fem disciplinerna i moln styrning](../index.md): [Cost Management](../cost-management/index.md), [säkerhets bas linje](../security-baseline/index.md), [identitets bas](../identity-baseline/index.md)linje, [resurs konsekvens](../resource-consistency/index.md)och [distributions acceleration](../deployment-acceleration/index.md).
 
 För var och en av dessa ämnes områden följer gransknings processen följande steg:
 
 1. Granska befintliga lokala principer som är relaterade till den specifika disciplinen, och leta efter två viktiga data punkter: äldre beroenden och identifierade affärs risker.
-2. Utvärdera varje affärs risk genom att fråga en enkel fråga: "Finns affärs risken kvar i en moln modell?"
+2. Utvärdera varje affärs risk genom att ställa en enkel fråga: "kommer affärs risken fortfarande att finnas i en moln modell?"
 3. Om risken fortfarande finns skriver du om den genom att dokumentera nödvändig affärs minskning, inte den tekniska lösningen.
 4. Granska den uppdaterade principen med moln implementerings teamen för att förstå potentiella tekniska lösningar på den nödvändiga lösningen.
 

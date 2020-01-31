@@ -1,6 +1,5 @@
 ---
 title: Skalning med flera Azure-prenumerationer
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig att skala med flera Azure-prenumerationer.
 author: alexbuckgit
 ms.author: abuck
@@ -8,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 4910309817d348874ec7eed75640bd0407f1ffcf
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6a893ce6f8620b31fcf23d8c3e8581e95035bdcf
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73563997"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799802"
 ---
 # <a name="scale-with-multiple-azure-subscriptions"></a>Skala med flera Azure-prenumerationer
 
@@ -65,7 +64,7 @@ Du kan flytta många typer av resurser från en prenumeration till en annan elle
 
 Om du bara har ett fåtal prenumerationer är det relativt enkelt att hantera dem oberoende av varandra. Men om du har många prenumerationer bör du överväga att skapa en hierarki för hanteringsgrupper för att förenkla hanteringen av dina prenumerationer och resurser.
 
-Hanterings grupper möjliggör effektiv hantering av åtkomst, principer och efterlevnad för en organisations prenumerationer. Varje hanteringsgrupp är en behållare för en eller flera prenumerationer.
+Hanterings grupper möjliggör effektiv hantering av åtkomst, principer och efterlevnad för en organisations prenumerationer. Varje hanteringsgrupp är en container för en eller flera prenumerationer.
 
 Hanterings grupper är ordnade i en enkel hierarki. Du definierar den här hierarkin i din Azure Active Directory (Azure AD)-klient organisation så att den överensstämmer med organisationens struktur och behov. Den översta nivån kallas för *rothanteringsgruppen.* Du kan definiera upp till sex nivåer av hanteringsgrupper i hierarkin. Varje prenumeration finns bara i en hanteringsgrupp.
 

@@ -1,6 +1,5 @@
 ---
 title: Färdighetsberedskapsväg
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Översikt över färdighetsberedskapsväg
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 1a2da8e65e6b1fda5995fa5fb207239e36b7d8a7
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8116c653656d2b5f20150aaf447225616e2657a6
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566712"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798782"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>Färdighetsberedskapsvägen under fasen Klar under en migreringsresa
 
@@ -61,7 +60,7 @@ Omvandla dina kunskaper om Azure till ett officiellt erkännande med vår [certi
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-Microsoft Learn är en ny metod för inlärning. Det är lätt att komma igång med nya kunskaper och ansvars områden som medföljer moln införande. Microsoft Learn erbjuder en mer givande metod för konkret inlärning som hjälper er att uppnå era mål snabbare. Tjäna poäng och nivåer och uträtta mer.
+Microsoft Learn är en ny metod för inlärning. Det är inte helt enkelt att förbereda sig för de nya ansvarsområdena som medföljer vid en övergång till molnet. Microsoft Learn erbjuder en mer givande metod för konkret inlärning som hjälper er att uppnå era mål snabbare. Tjäna poäng och nivåer och uträtta mer.
 
 Följande exempel är några skräddarsydda utbildnings vägar på Microsoft Learn som stämmer överens med den färdiga delen av moln implementerings ramverket:
 

@@ -1,6 +1,5 @@
 ---
 title: Förbättringar av identitets bas linje disciplin
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Förbättringar av identitets bas linje disciplin
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1a1f7d21d1291b567d1ec1b1a2d4305bcb202b99
-ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
+ms.openlocfilehash: 6adb2e0d6edaacd45e41b8ac3eadb57969cad160
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915058"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807197"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Förbättringar av identitets bas linje disciplin
 
-Identitets bas disciplinen fokuserar på sätt att etablera principer som garanterar konsekvens och kontinuitet i användar identiteter oavsett vilken moln leverantör som är värd för programmet eller arbets belastningen. Inom fem ämnes områden i moln styrning innehåller identitets bas linjer beslut om [hybrid identitets strategi](../../decision-guides/identity/index.md), utvärdering och tillägg av identitets lager, implementering av enkel inloggning (samma inloggning), granskning och övervakning av obehörig användning eller skadliga aktörer. I vissa fall kan det också innebära beslut att modernisera, konsolidera eller integrera flera identitets leverantörer.
+Identitets bas disciplinen fokuserar på sätt att etablera principer som garanterar konsekvens och kontinuitet i användar identiteter oavsett vilken moln leverantör som är värd för programmet eller arbets belastningen. I den fem ämnes gruppen i moln styrning innehåller identitets bas linjer beslut om [hybrid identitets strategi](../../decision-guides/identity/index.md), utvärdering och tillägg av identitets lager, implementering av enkel inloggning (samma inloggning), granskning och övervakning av obehörig användning eller skadliga aktörer. I vissa fall kan det också innebära beslut att modernisera, konsolidera eller integrera flera identitets leverantörer.
 
 I den här artikeln beskrivs några potentiella uppgifter som företaget kan använda för att utveckla och ta del av identitets bas disciplinen bättre. Dessa uppgifter kan delas upp i planering, uppbyggnad, införande och drifts faser för implementering av en moln lösning, som sedan upprepas på att tillåta utveckling av en [stegvis metod för moln styrning](../guides/index.md#an-incremental-approach-to-cloud-governance).
 

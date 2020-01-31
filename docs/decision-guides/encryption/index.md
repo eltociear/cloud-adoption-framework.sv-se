@@ -1,6 +1,5 @@
 ---
 title: Beslutsguide för kryptering
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig om kryptering som en central tjänst i Azure-migreringar.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ed394c0bd1748a6e3382835cec816b552217bd01
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 7df170713e10460d9e928837a99287be0afd5805
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753365"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807061"
 ---
 # <a name="encryption-decision-guide"></a>Beslutsguide för kryptering
 
@@ -38,9 +37,9 @@ Vid planering av en molnmigrering kan följande tabell hjälpa dig att bestämma
 
 | Fråga | Molnbaserat | Bring your own key | Hold your own key |
 |---------------------------------------------------------------------------------------------------------------------------------------|--------------|--------|-------------|
-| Saknar din organisation centraliserad nyckel- och hemlighetshantering?                                                                    | Ja          | Nej     | Nej          |
-| Kommer du att behöva begränsa skapandet av nycklar och hemligheter till enheter till din lokala maskinvara när dessa nycklar används i molnet? | Nej           | Ja    | Nej          |
-| Har organisationen regler eller principer som kan förhindra att nycklar lagras på annan plats?                | Nej           | Nej     | Ja         |
+| Saknar din organisation centraliserad nyckel- och hemlighetshantering?                                                                    | Ja          | Inga     | Inga          |
+| Kommer du att behöva begränsa skapandet av nycklar och hemligheter till enheter till din lokala maskinvara när dessa nycklar används i molnet? | Inga           | Ja    | Inga          |
+| Har organisationen regler eller principer som kan förhindra att nycklar lagras på annan plats?                | Inga           | Inga     | Ja         |
 
 ### <a name="cloud-native"></a>Molnbaserat
 

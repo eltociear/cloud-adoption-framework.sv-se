@@ -1,6 +1,5 @@
 ---
 title: Exempel princip satser för säkerhets bas linje
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Exempel princip satser för säkerhets bas linje
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 312a3f4e6577b0a0db525e6428bf7e1b2616b625
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: ba0887b93664ac77fc2933c24631110dfab14be0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160529"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808880"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Exempel princip satser för säkerhets bas linje
 

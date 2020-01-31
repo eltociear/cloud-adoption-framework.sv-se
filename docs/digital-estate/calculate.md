@@ -1,6 +1,5 @@
 ---
 title: Justera kostnads modeller med den digitala fastigheten
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Justera kostnads modeller med den digitala fastigheten för att prognostisera moln kostnader.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: afac61c918f90c21e8d96032199d5e8c1cdfa50c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 30eee82d3afab32890ab00ad82b38106576f33ee
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222620"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804715"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>Anpassa kostnads modeller med den digitala fastigheten till prognos moln kostnader
 
@@ -24,8 +23,8 @@ Med pris verktygen för Azure kan du hantera moln utgifter med genomskinlighet o
 
 - [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview): Azure Migrate är kanske det mest kostnads effektiva sättet att justera kostnads modellen. Med det här verktyget kan du använda digitala fastighets [lager](./inventory.md), [begränsade rationalisering](./rationalize.md)och kostnads beräkningar i ett verktyg.
 
-- [Kalkylator för total ägande kostnad (TCO)](https://azure.microsoft.com/pricing/tco/calculator): Sänk den totala ägande kostnaden för din lokala infrastruktur med Azure Cloud Platform. Använd Azures TCO-kalkylator för att beräkna de kostnads besparingar du kan inse genom att migrera dina program arbets belastningar till Azure. Ge en kort beskrivning av din lokala miljö för att få en snabb rapport.
+- [Totalkostnad för ägande kostnad (TCO)](https://azure.microsoft.com/pricing/tco/calculator): Sänk den totala ägande kostnaden för din lokala infrastruktur med Azure Cloud Platform. Använd Azures TCO-kalkylator för att beräkna de kostnads besparingar du kan inse genom att migrera dina program arbets belastningar till Azure. Ge en kort beskrivning av din lokala miljö för att få en snabb rapport.
 
-- [Pris kalkylator för Azure](https://azure.microsoft.com/pricing): Beräkna din förväntade månads faktura med hjälp av vår pris kalkylator. Spåra din faktiska konto användning och faktura när som helst med hjälp av fakturerings portalen. Konfigurera automatiska fakturerings aviseringar för e-post för att meddela dig om dina utgifter går över en mängd som du konfigurerar.
+- [Pris kalkylator för Azure](https://azure.microsoft.com/pricing): beräkna din förväntade månads faktura med hjälp av vår pris kalkylator. Spåra din faktiska konto användning och faktura när som helst med hjälp av fakturerings portalen. Konfigurera automatiska fakturerings aviseringar för e-post för att meddela dig om dina utgifter går över en mängd som du konfigurerar.
 
-- [Azure Cost Management](https://azure.microsoft.com/services/cost-management): Azure Cost Management, som licensierats av Microsofts dotter bolag Cloudyn, är en kostnads hanterings lösning med flera moln som hjälper dig att använda och hantera Azure och andra moln resurser effektivt. Samla in moln användning och fakturerings data via API: er (Application program interface) från Azure, Amazon Web Services och Google Cloud Platform. Med dessa data kan du få full insyn i resursförbrukning och kostnader på molnplattformarna i en enda enhetlig vy. Övervaka kontinuerligt molnförbrukning och kostnadstrender. Spåra faktiska moln utgifter mot din budget för att undvika överförbrukning. Upptäck utgiftsavvikelser och ineffektiv användning. Använd historiska data för att förbättra prognos precisionen för moln användning och utgifter.
+- [Azure Cost Management](https://azure.microsoft.com/services/cost-management): Azure Cost Management, som licensierats av Microsoft dotter Cloudyn, är en kostnads hanterings lösning med flera moln som hjälper dig att använda och hantera Azure och andra moln resurser effektivt. Samla in moln användning och fakturerings data via API: er (Application program interface) från Azure, Amazon Web Services och Google Cloud Platform. Med dessa data kan du få full insyn i resursförbrukning och kostnader på molnplattformarna i en enda enhetlig vy. Övervaka kontinuerligt molnförbrukning och kostnadstrender. Spåra faktiska moln utgifter mot din budget för att undvika överförbrukning. Upptäck utgiftsavvikelser och ineffektiv användning. Använd historiska data för att förbättra prognos precisionen för moln användning och utgifter.

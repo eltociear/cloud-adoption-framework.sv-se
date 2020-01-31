@@ -1,6 +1,5 @@
 ---
 title: Hantera åtkomsten till Azure-miljön
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig hur du ställer in åtkomstkontroll för din Azure-miljö med rollbaserad åtkomstkontroll (RBAC).
 author: LijuKodicheraJayadevan
 ms.author: kfollis
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 033d9b254523562c30022a75a97dc10e649a45df
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 83f9461302af6710464b8c7e81a866cfc25d5852
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251364"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799598"
 ---
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>Hantera åtkomst till Azure-miljön med rollbaserad åtkomstkontroll
 

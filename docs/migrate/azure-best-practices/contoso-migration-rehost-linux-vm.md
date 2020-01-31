@@ -1,6 +1,5 @@
 ---
 title: Byta värd för en lokal Linux-app till virtuella Azure-datorer
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Se hur Contoso byter värd för en lokal Linux-app genom att migrera till virtuella Azure-datorer.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 078749474b13074d9196a80c10768da468e423bc
-ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
+ms.openlocfilehash: b629cc932b54b7ef7c633cefc847ac3263477674
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76520216"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807350"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>Byta värd för en lokal Linux-app till virtuella Azure-datorer
 
@@ -89,7 +88,7 @@ Contoso migrerar på följande sätt:
 
 **Tjänst** | **Beskrivning** | **Kostnad**
 --- | --- | ---
-[Azure Migrate-servermigrering](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm) | Tjänsten samordnar och styr migreringen av dina lokala appar och arbetsbelastningar, samt virtuella AWS/GCP-datorinstanser. | Under replikeringen till Azure debiteras Azure Storage-avgifter. Virtuella Azure-datorer skapas och medför kostnader i samband med en redundansväxling. [Läs mer](https://azure.microsoft.com/pricing/details/azure-migrate) om avgifter och priser.
+[Azure Migrate-servermigrering](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm) | Tjänsten samordnar och styr migreringen av dina lokala appar och arbetsbelastningar, samt virtuella AWS/GCP-datorinstanser. | Vid replikering till Azure debiteras Azure Storage-avgifter. Virtuella Azure-datorer skapas och medför kostnader i samband med en redundansväxling. [Läs mer](https://azure.microsoft.com/pricing/details/azure-migrate) om avgifter och priser.
 
 ## <a name="prerequisites"></a>Krav
 
@@ -100,7 +99,7 @@ Det här är vad Contoso behöver i det här scenariot.
 **Krav** | **Detaljer**
 --- | ---
 **Azure-prenumeration** | Contoso skapade prenumerationer i en tidigare artikel i den här serien. Om du inte har någon Azure-prenumeration kan du skapa ett [kostnadsfritt konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Om du skapar ett kostnadsfritt konto är du administratör för din prenumeration och kan utföra alla åtgärder.<br/><br/> Om du använder en befintlig prenumeration och inte är administratör måste du be administratören att ge dig ägar- eller deltagarbehörighet.<br/><br/> Om du behöver mer detaljerade behörigheter läser du [den här artikeln](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Azure-infrastruktur** |  [Läs om](./contoso-migration-infrastructure.md) hur Contoso konfigurerar en Azure-infrastruktur.<br/><br/> Läs mer om specifika [krav](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prerequisites) för Azure Migrate-servermigrering.
+**Azure-infrastruktur** |  [Läs om](./contoso-migration-infrastructure.md) hur Contoso konfigurerade en Azure-infrastruktur.<br/><br/> Läs mer om specifika [krav](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prerequisites) för Azure Migrate-servermigrering.
 **Lokala servrar** | Den lokala vCenter-servern bör köra version 5.5, 6.0 eller 6.5<br/><br/> En ESXi-värd som kör version 5.5, 6.0 eller 6.5<br/><br/> En eller flera virtuella VMware-datorer som körs på ESXi-värden.
 **Lokala virtuella datorer** | [Granska Linux-datorer](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros) som ska köras i Azure.
 
@@ -300,7 +299,7 @@ Mer information finns i [rekommenderade säkerhets metoder för IaaS-arbetsbelas
 
 För affärskontinuitet och haveriberedskap vidtar Contoso följande åtgärder:
 
-- **Skydda data.** Contoso säkerhetskopierar data på de virtuella datorerna med hjälp av Azure Backup-tjänsten. [Läs mer](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
+- **Skydda data.** Contoso säkerhetskopierar data på de virtuella datorerna med hjälp av tjänsten Azure Backup. [Läs mer](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
 - **Undvika avbrott i apparna.** Contoso replikerar de virtuella datorerna för appen i Azure till en sekundär region med hjälp av Site Recovery. [Läs mer](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 
 ### <a name="licensing-and-cost-optimization"></a>Licensierings- och kostnadsoptimering

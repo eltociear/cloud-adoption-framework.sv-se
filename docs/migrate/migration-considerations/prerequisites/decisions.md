@@ -1,6 +1,5 @@
 ---
 title: Beslut som påverkar migrering
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Viktiga beslut att fatta om migreringsprocessen.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6f809003c1181c925a5b86abfb162a6032614f53
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: aee856c1e9c0a509aecda8ad4d6cf642de0e0fe2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74159864"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801485"
 ---
 # <a name="decisions-that-affect-migration"></a>Beslut som påverkar migrering
 
@@ -57,7 +56,7 @@ Innan du fattar beslut som kan ha en långsiktig inverkan på det aktuella migre
 
 Vid all migrering av stor skala (> 250 virtuella datorer) migreras till gångar med en mängd olika över gångs alternativ, som beskrivs i fem *RS-rationalisering*: *Rehost*, *rekonstruktör, rekonstruktion, återskapa*och *Ersätt*.
 
-Vissa arbetsbelastningar moderniseras genom att *återskapa* eller *omarbeta arkitekturen*, vilket skapar modernare program med nya funktioner och teknisk kapacitet. Andra tillgångar genomgår en *omstrukturering*, till exempel en övergång till behållare eller andra modernare värd- och driftmetoder som inte påverkar lösningarnas kodbas. Vanligtvis genomgår virtuella datorer och andra tillgångar som är mer väletablerade ett *värdbyte* så att tillgångarna överförs från datacentret till molnet. Vissa arbetsbelastningar kan eventuellt migreras till molnet, men ska istället *ersättas* med tjänstbaserade (SaaS-baserade) molntjänster som uppfyller samma verksamhetsbehov, till exempel genom att använda Office 365 som ett alternativ till att migrera Exchange Server-instanser.
+Vissa arbetsbelastningar moderniseras genom att *återskapa* eller *omarbeta arkitekturen*, vilket skapar modernare program med nya funktioner och teknisk kapacitet. Andra tillgångar genomgår en *omstrukturering*, till exempel en övergång till containrar eller andra modernare värd- och driftmetoder som inte påverkar lösningarnas kodbas. Vanligtvis genomgår virtuella datorer och andra tillgångar som är mer väletablerade ett *värdbyte* så att tillgångarna överförs från datacentret till molnet. Vissa arbetsbelastningar kan eventuellt migreras till molnet, men ska istället *ersättas* med tjänstbaserade (SaaS-baserade) molntjänster som uppfyller samma verksamhetsbehov, till exempel genom att använda Office 365 som ett alternativ till att migrera Exchange Server-instanser.
 
 I de flesta scenarier skapar vissa företagshändelser en tvingande funktion som gör att en hög procentandel av tillgångarna tillfälligt migreras med *värdbyte*, följt av en mer betydande sekundär övergång med en av de andra migreringsstrategierna när de väl är i molnet. Den här processen kallas ofta för en *molnövergång*.
 

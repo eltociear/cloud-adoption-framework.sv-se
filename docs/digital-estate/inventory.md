@@ -1,6 +1,5 @@
 ---
 title: Samla in inventerings data för en digital egendom
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Så här samlar du in inventering för en digital egendom.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 5ecf69235c27fbb45ad109609d8fd733dfc6187c
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 013a47725113ee76a7ba64b54a70cce714829290
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753282"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804579"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>Samla in inventerings data för en digital egendom
 

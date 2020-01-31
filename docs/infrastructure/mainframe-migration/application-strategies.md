@@ -1,6 +1,5 @@
 ---
 title: 'Stordator-migrering: stordator program migrering'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Migrera program från stordatormiljöer till Azure, en beprövad och skalbar infrastruktur med hög tillgänglighet för system som för närvarande körs på stordatorer.
 author: njray
 ms.author: v-nanra
@@ -8,14 +7,14 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9eb8c85c2355ae06e63d58e3078f1101bf7e3412
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: a662edd4ae7c6a854014b37cac2ccb0fab4c474e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239443"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808829"
 ---
-# <a name="mainframe-application-migration"></a>Migrering av stordator program
+# <a name="mainframe-application-migration"></a>Migrering av program från stordatorer
 
 När du migrerar program från stordator miljöer till Azure följer de flesta team en Pragmatic-metod: Återanvänd var och när det är möjligt och starta sedan en stegvis distribution där program skrivs om eller ersätts.
 
@@ -65,7 +64,7 @@ TP-övervakare är tillgängliga från olika leverantörer och körs på virtuel
 
 I Azure används emuleringsklienter för att köra TP Manager och de batch-jobb som använder JCL. I data skiktet ersätts DB2 av [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview), även om Microsoft SQL Server, DB2 LUW eller Oracle Database också kan användas. En emulator stöder IMS, VSAM och SEQ. Stordator system hanterings verktyg ersätts av Azure-tjänster och program vara från andra leverantörer som körs i virtuella datorer.
 
-Funktionerna för skärm hantering och formulär inmatning implementeras ofta med hjälp av webb servrar, som kan kombineras med databas-API: er, till exempel ADO, ODBC och JDBC för data åtkomst och transaktioner. Exakt vilken rad med Azure IaaS-komponenter som ska användas beror på vilket operativ system du föredrar. Exempel:
+Funktionerna för skärm hantering och formulär inmatning implementeras ofta med hjälp av webb servrar, som kan kombineras med databas-API: er, till exempel ADO, ODBC och JDBC för data åtkomst och transaktioner. Exakt vilken rad med Azure IaaS-komponenter som ska användas beror på vilket operativ system du föredrar. Ett exempel:
 
 - Windows-baserade virtuella datorer: IIS (Internet Information Server) tillsammans med ASP.NET för skärm hantering och affärs logik. Använd ADO.NET för data åtkomst och transaktioner.
 
@@ -89,7 +88,7 @@ Använd
 
 - Parallell bearbetning kan i Azure skalas enkelt för parallell bearbetning, vilket ger mer beräknings kraft för en batch-körning.
 
-### <a name="storage"></a>Lagring
+### <a name="storage"></a>Storage
 
 Använd
 
@@ -115,7 +114,7 @@ Molnets distribuerade arkitekturer förlitar sig på en annan uppsättning utvec
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | z/OS             | Windows, Linux eller UNIX                                                                                                                      |
 | CICS             | Azure-tjänster som erbjuds av Micro Focus, Oracle, GT Software (Fujitsu), TmaxSoft, Raincode och NTT data eller omskrivning med Kubernetes |
-| SNABB              | Azure-tjänster som erbjuds av Micro Focus och Oracle                                                                                  |
+| IMS              | Azure-tjänster som erbjuds av Micro Focus och Oracle                                                                                  |
 | Assembler        | Azure-tjänster från Raincode och TmaxSoft; eller COBOL, C eller Java, eller mappa till operativ system funktioner               |
 | JCL              | JCL, PowerShell eller andra skript verktyg                                                                                                   |
 | COBOL            | COBOL, C eller Java                                                                                                                            |
@@ -125,7 +124,7 @@ Molnets distribuerade arkitekturer förlitar sig på en annan uppsättning utvec
 
 ## <a name="migrate-databases-and-data"></a>Migrera databaser och data
 
-Programmigreringen innebär vanligt vis att vara värd för data nivån. Du kan migrera SQL Server, öppen källkod och andra Relations databaser till fullständigt hanterade lösningar i Azure, till exempel [Azure SQL Database Hanterad instans](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance), [Azure Database Service för postgresql](https://docs.microsoft.com/azure/postgresql/overview)och [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) med [ Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
+Programmigreringen innebär vanligt vis att vara värd för data nivån. Du kan migrera SQL Server, öppen källkod och andra Relations databaser till fullständigt hanterade lösningar i Azure, till exempel [Azure SQL Database Hanterad instans](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance), [Azure Database Service för postgresql](https://docs.microsoft.com/azure/postgresql/overview)och [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) med [Azure Database migration service](https://docs.microsoft.com/azure/dms/dms-overview).
 
 Du kan till exempel migrera om data nivån stordator använder:
 

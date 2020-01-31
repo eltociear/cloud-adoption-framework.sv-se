@@ -1,6 +1,5 @@
 ---
 title: Ordna dina Azure-resurser effektivt
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Metodtips för att effektivt organisera dina Azure-resurser för enkel hantering.
 author: laraaleite
 ms.author: kfollis
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 393c80c684de13cf27cba738a8e539533de57d38
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 790bb68a862343452aa5481e20596a839bb7b93c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251399"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799343"
 ---
 # <a name="organize-your-azure-resources"></a>Organisera dina Azure-resurser
 

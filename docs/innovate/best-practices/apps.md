@@ -1,6 +1,5 @@
 ---
 title: 'Moln innovation: verktyg för att delta via appar i Azure'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Verktyg för att kommunicera via appar i Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 96450c838ce6833d77803428272e96d2327747de
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: cf37b3555244db05ecd22f9c4421a35e8a0f758e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565879"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808727"
 ---
 # <a name="tools-to-engage-via-apps-in-azure"></a>Verktyg för att kommunicera via appar i Azure
 
@@ -39,7 +38,7 @@ Varje sökväg resulterar i fördelar och nack delar som är både kortsiktiga o
 
 Beroende på den väg som moln implementerings teamet tar, erbjuder Azure verktyg för att påskynda teamets möjlighet att bygga med kund empati. Följande lista över Azure-erbjudanden grupperas baserat på föregående besluts Sök vägar. Dessa erbjudanden är:
 
-- Azure App Service
+- Azure Apptjänst
 - Azure Kubernetes Service (AKS)
 - Azure Migrate
 - Azure Stack
@@ -47,7 +46,7 @@ Beroende på den väg som moln implementerings teamet tar, erbjuder Azure verkty
 - Microsoft Flow
 - Power BI
 
-## <a name="get-started"></a>Kom igång
+## <a name="get-started"></a>Kom i gång
 
 I innehålls förteckningen till vänster på den här sidan finns många artiklar. De här artiklarna hjälper dig att komma igång med var och en av verktygen i verktygskedjan.
 

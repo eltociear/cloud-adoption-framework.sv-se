@@ -1,6 +1,5 @@
 ---
 title: 'Konfigurationsguide för Azure: Innan du börjar'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig att konfigurera Azure effektivt för din organisation med stegvisa anvisningar.
 author: timleyden
 ms.author: kfollis
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 31228f9bd4aefc9c5163b5c85b00425589a2c1d3
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 12535137cc00d349a0228ba56d6221f3280884b0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251720"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799564"
 ---
 ::: zone target="docs"
 

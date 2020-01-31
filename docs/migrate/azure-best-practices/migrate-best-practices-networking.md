@@ -1,6 +1,5 @@
 ---
 title: Metodtips för att konfigurera nätverk för arbetsbelastningar som migrerats till Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: När du har migrerat till Azure kan du få metodtips om nätverk för migrerade arbetsbelastningar.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,19 +7,19 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a7f119dcfd2b7cdfc71b8a4c6f913448cd98e763
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: a8a4bc504c085f461cb70f561670fe55a20a544b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753608"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803882"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Metodtips för att konfigurera nätverk för arbetsbelastningar som migrerats till Azure
 
 När du planerar och utformar din migrering är ett av de viktigaste stegen, utöver själva migreringen, utformningen och implementeringen av Azure-nätverk. Den här artikeln innehåller metodtips för nätverk när du migrerar till IaaS- och PaaS-implementeringar i Azure.
 
 > [!IMPORTANT]
-> De metodtips och åsikter som beskrivs i den här artikeln baseras på de tillgängliga funktionerna i Azure-plattformen och -tjänsten när den skrevs. Funktioner förändras ständigt. Vissa rekommendationer kan kanske inte tillämpas på din distribution så välj vad som passar dig bäst.
+> De metodtips och åsikter som beskrivs i den här artikeln baseras på de tillgängliga funktionerna i Azure-plattformen och -tjänsten när den skrevs. Funktioner förändras över tid. Vissa rekommendationer kan kanske inte tillämpas på din distribution så välj vad som passar dig bäst.
 
 ## <a name="design-virtual-networks"></a>Utforma virtuella nätverk
 
@@ -115,7 +114,7 @@ Azure lägger till en DNS-server som standard när du distribuerar ett virtuellt
 - DNS-servrar som angetts för ett nätverksgränssnitt eller en molntjänst prioriteras framför DNS-servrar som angetts för det virtuella nätverket.
 - I Azure Resource Manager-distributionsmodellen kan du ange DNS-servrar för ett virtuellt nätverk och ett nätverksgränssnitt. Den rekommenderade metoden är att endast använda inställningen på virtuella nätverk.
 
-    ![DNS-servrar](./media/migrate-best-practices-networking/dns2.png) *DNS-servrar för virtuella nätverk*
+    ![DNS-servrar](./media/migrate-best-practices-networking/dns2.png) *DNS-servrar för det virtuella nätverket*
 
 **Läs mer:**
 
@@ -132,14 +131,14 @@ Tillgänglighetszoner ökar hög tillgänglighet för att skydda dina appar och 
 - Den fysiska avgränsningen av tillgänglighetszonerna inom en region skyddar program och data mot datacenterfel.
 - Zonredundanta tjänster replikerar dina program och data över tillgänglighetszoner för att skydda mot enskilda felpunkter. - - Med tillgänglighetszonerna kan Azure erbjuda branschens bästa serviceavtal med en drifttid på 99,99 % för virtuella datorer.
 
-    ![Tillgänglighetszon](./media/migrate-best-practices-networking/availability-zone.png) *Tillgänglighetszon*
+    ![Tillgänglighetszon](./media/migrate-best-practices-networking/availability-zone.png) *tillgänglighetszon*
 
 - Du kan planera och bygga hög tillgänglighet i din migrationsarkitektur genom att placera beräknings-, lagrings-, nätverks- och dataresurser inom en zon och replikera dem i andra zoner. Azuretjänster som har stöd för tillgänglighetszoner kan delas in i två kategorier:
   - Zonindelade tjänster: du kan associera en resurs med en viss zon. Till exempel virtuella datorer, hanterade diskar, IP-adresser).
   - Zonredundant tjänster: resursen replikerar automatiskt i olika zoner. Till exempel, zonredundant lagring, Azure SQL Database.
 - Du kan distribuera en standardiserad Azure-belastning som utjämnas med internetriktade arbetsbelastningar eller appnivåer för att skapa en zonindelad feltolerans.
 
-    ![Belastningsutjämnare](./media/migrate-best-practices-networking/load-balancer.png) *Belastningsutjämnare*
+    ![Belastningsutjämnare](./media/migrate-best-practices-networking/load-balancer.png) *belastningsutjämnare*
 
 **Läs mer:**
 
@@ -301,8 +300,8 @@ Ansvaret för att skydda virtuella nätverk delas mellan Microsoft och dig. Micr
 
 Följande bild visar ett exempel på ett enkelt undernätsperimeternätverk i ett företagsnätverk med två säkerhetsgränser.
 
-![Nätverksdistribution av ](./media/migrate-best-practices-networking/perimeter.png)
-VPN *-perimeter*
+*Nätverksdistribution av ![VPN](./media/migrate-best-practices-networking/perimeter.png)
+-perimeter*
 
 **Läs mer:**
 
@@ -374,7 +373,7 @@ NIC4 | AsgDb
 
 <!--markdownlint-disable MD033 -->
 
-**Regelnamn** | **Syfte** | **Information**
+**Regelnamn** | **Syfte** | **Detaljer**
 --- | --- | ---
 Allow-HTTP-Inbound-Internet | Den här regeln krävs för att tillåta trafik från Internet till webbservrarna. Inkommande trafik från Internet nekas av standardsäkerhetsregeln DenyAllInbound. Därför krävs ingen ytterligare regel för programsäkerhetsgruppen AsgLogic eller AsgDb. | Prioritet: 100<br/><br/> Källa: Internet<br/><br/> Källport: *<br/><br/> Mål: AsgWeb<br/><br/> Målport: 80<br/><br/> Protokoll: TCP<br/><br/> Åtkomst: Tillåt.
 Deny-Database-All | Standardsäkerhetsregeln AllowVNetInBound tillåter all kommunikation mellan resurser i samma virtuella nätverk. Därför krävs den här regeln för att neka trafik från alla resurser. | Prioritet: 120<br/><br/> Källa: *<br/><br/> Källport: *<br/><br/> Mål: AsgDb<br/><br/> Målport: 1433<br/><br/> Protokoll: alla<br/><br/> Åtkomst: neka.
@@ -428,8 +427,8 @@ Azure har plattformsäkerhetsfunktioner som är enkla att använda och ger omfat
 
 Azure Firewall är en hanterad molnbaserad nätverkssäkerhetstjänst som skyddar dina resurser på virtuella nätverk. Det är en helt tillståndskänslig hanterad brandvägg med inbyggd hög tillgänglighet och obegränsad molnskalbarhet.
 
-![Azure Firewall](./media/migrate-best-practices-networking/firewall.png)
- för *tjänstslutpunkter*
+*Azure Firewall* för ![tjänstslutpunkter](./media/migrate-best-practices-networking/firewall.png)
+
 
 - Azure Firewall kan centralt skapa, framtvinga och logga principer för tillämpning och nätverksanslutning över prenumerationer och virtuella nätverk.
 - Azure Firewall använder en statisk offentlig IP-adress för din virtuella nätverksresurser som tillåter att externa brandväggar identifierar trafik som kommer från ditt virtuella nätverk.
@@ -495,7 +494,7 @@ I hubben hanteras perimeternätverket (med åtkomst till Internet) normalt via e
 
 <!--markdownlint-disable MD033 -->
 
-**Brandväggstyp** | **Information**
+**Brandväggstyp** | **Detaljer**
 --- | ---
 Brandvägg för webbaserade program | Webbprogram är vanliga och tenderar att drabbas av sårbarheter och potentiella hot.<br/><br/> Brandväggar för webbaserade program är utformade för att identifiera attacker mot webbprogram (HTTP/HTTPS) mer specifikt än en vanlig brandvägg.<br/><br/> Jämfört med traditionell brandväggsteknik har brandväggar för webbaserade program specifika funktioner som skyddar inre webbservrar mot hot.
 Azure Firewall | Azure Firewall använder likt NVA-brandväggsgrupper en gemensam administrationsmekanism och en uppsättning säkerhetsregler som skyddar arbetsbelastningar i ekernätverk och kontrollerar åtkomst till lokala nätverk.<br/><br/> Azure Firewall har inbyggd skalbarhet.
@@ -517,4 +516,4 @@ Vi rekommenderar att du använder en Azure Firewall (eller NVA) för trafik som 
 Läs andra metodtips:
 
 - [Metodtips](./migrate-best-practices-security-management.md) för säkerhet och hantering efter migrering.
-- [Metodtips](./migrate-best-practices-costs.md) för säkerhet och hantering efter migrering.
+- [Metodtips](./migrate-best-practices-costs.md) för kostnadshantering efter migrering.

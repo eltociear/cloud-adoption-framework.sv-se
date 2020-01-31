@@ -1,6 +1,5 @@
 ---
 title: Automatisera onboarding
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Automatisera onboarding
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 83e1cd80bcb821ba1b815291f7f25f875ba66284
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 0c1c06c8e30a61993c9127838de59d070f714c3a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751597"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808030"
 ---
 # <a name="automate-onboarding"></a>Automatisera onboarding
 
@@ -40,11 +39,11 @@ Filerna som beskrivs i följande tabell används i det här exemplet. Du kan anp
 | Filnamn | Beskrivning |
 |-----------|-------------|
 | New-AMSDeployment. ps1 | Huvud-och Dirigerings skript som automatiserar onboarding. Det skapar resurs grupper, plats, arbets yta och Automation-konton, om de inte redan finns. Det här PowerShell-skriptet kräver en befintlig prenumeration. |
-| Arbets yta-AutomationAccount. JSON | En Resource Manager-mall som distribuerar arbets ytans och automations konto resurser. |
-| WorkspaceSolutions. JSON | En Resource Manager-mall som aktiverar de lösningar som du vill använda i arbets ytan Log Analytics. |
-| ScopeConfig. JSON | En Resource Manager-mall som använder opt-in-modellen för lokala servrar med Ändringsspårning-lösningen. Att använda opt-in-modellen är valfritt. |
-| Enable-VMInsightsPerfCounters. ps1 | Ett PowerShell-skript som möjliggör VM-insikter för servrar och konfigurerar prestanda räknare. |
-| ChangeTracking-filelist. JSON | En Resource Manager-mall som definierar en lista över filer som ska övervakas av Ändringsspårning. |
+| Workspace-AutomationAccount.json | En Resource Manager-mall som distribuerar arbets ytans och automations konto resurser. |
+| WorkspaceSolutions.json | En Resource Manager-mall som aktiverar de lösningar som du vill använda i arbets ytan Log Analytics. |
+| ScopeConfig.json | En Resource Manager-mall som använder opt-in-modellen för lokala servrar med Ändringsspårning-lösningen. Att använda opt-in-modellen är valfritt. |
+| Enable-VMInsightsPerfCounters.ps1 | Ett PowerShell-skript som möjliggör VM-insikter för servrar och konfigurerar prestanda räknare. |
+| ChangeTracking-Filelist.json | En Resource Manager-mall som definierar en lista över filer som ska övervakas av Ändringsspårning. |
 
 Använd följande kommando för att köra New-AMSDeployment. ps1:
 

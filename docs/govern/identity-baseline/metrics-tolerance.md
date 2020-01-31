@@ -1,6 +1,5 @@
 ---
 title: Identitets bas mått, indikatorer och risk tolerans
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Identitets bas mått, indikatorer och risk tolerans
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bf929fe5f1addbb27da77b865dfbdc71253c62a3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: f5002d278e833873a2077538c848bc5e7f47131d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220428"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806041"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Identitets bas mått, indikatorer och risk tolerans
 
@@ -49,12 +48,12 @@ När du har en bas linje kan du fastställa de lägsta benchmark-värden som rep
 
 - **Utlösare för användar konto nummer.** Ett företag med mer än _x_ -användare, grupper eller andra objekt som hanteras i dina identitets system kan dra nytta av investeringar i identitets bas disciplinen för att säkerställa en effektiv styrning över ett stort antal konton.
 - **Lokal identitet beroende utlösare.** Ett företag som planerar att migrera arbets belastningar till molnet som kräver äldre autentiserings-eller multifaktorautentisering bör investera i identitets bas linjen för att minska riskerna som rör omfabriker eller ytterligare moln infrastruktur distribution.
-- **Katalog tjänsters komplexitets utlösare.** Ett företag som underhåller mer än _x_ -nummer of_ enskilda skogar, domäner eller katalog klienter bör investera i identitets bas linjen för att minska riskerna med konto hantering och de effektivitets problem som rör flera användare autentiseringsuppgifterna sprids över flera system.
-- **Utlösare för molnbaserade katalog tjänster.** Ett företag som är värd för _x_ -Active Directory Server (virtuella datorer) som finns i molnet, eller har _x_ organisationsenheter (OU) som hanteras på dessa molnbaserade servrar, kan dra nytta av investeringar i identitets bas disciplinen för att optimera integrering med alla lokala eller andra externa identitets tjänster.
+- **Katalog tjänsters komplexitets utlösare.** Ett företag som underhåller mer än _x_ -nummer of_ enskilda skogar, domäner eller katalog klienter bör investera i identitets bas linjen för att minska riskerna med konto hantering och de effektivitets problem som rör flera användarautentiseringsuppgifter som är spridda över flera system.
+- **Utlösare för molnbaserade katalog tjänster.** Ett företag som är värd för _x_ Active Directory Server (virtuella datorer) som finns i molnet, eller som har _x_ organisationsenheter (OU) som hanteras på dessa molnbaserade servrar, kan dra nytta av investeringar i identitets bas disciplinen för att optimera integrering med alla lokala eller andra externa identitets tjänster.
 - **Federations utlösare.** Ett företag som implementerar identitets Federation med _x_ externa identitets bas linje system kan dra nytta av investeringar i identitets bas disciplinen för att säkerställa konsekvent organisations policy över Federations medlemmar.
 - **Utökad åtkomst utlösare.** Ett företag med mer än _x%_ av användare med förhöjd behörighet till hanterings verktyg och resurser bör överväga att investera i identitets bas disciplinen för att minimera risken för oavsiktlig överetablering av åtkomst till användare.
 - **RBAC-utlösare.** Ett företag med under _x%_ av resurser som använder rollbaserad åtkomst kontroll metoder bör överväga att investera i identitets bas disciplinen för att identifiera optimerade sätt att tilldela användar åtkomst till resurser.
-- **Autentiserings haveri utlösare.** Ett företag där autentiseringsfel representerar mer än _x%_ av försöken bör investera i identitets bas punkten för att säkerställa att autentiseringsmetoder inte är under externa angrepp och att användarna kan använda autentiseringsmetoderna Bra.
+- **Autentiserings haveri utlösare.** Ett företag där autentiseringsfel representerar mer än _x%_ av försöken bör investera i identitets bas disciplinen för att säkerställa att autentiseringsmetoder inte är under externa angrepp och att användarna kan använda autentiseringsmetoderna på rätt sätt.
 - **Utlösa auktoriseringsfel.** Ett företag där åtkomst försök nekas mer än _x%_ av tiden bör investera i identitets bas punkten för att förbättra programmet och uppdatering av åtkomst kontroller och identifiera potentiellt skadliga åtkomst försök.
 - **Komprometterad konto utlösare.** Ett företag med mer än 1 komprometterat konto bör investera i identitets bas punkten för att förbättra hållfastheten och säkerheten för autentiseringsmekanismer och förbättra mekanismer för att åtgärda risker som rör komprometterade konton.
 

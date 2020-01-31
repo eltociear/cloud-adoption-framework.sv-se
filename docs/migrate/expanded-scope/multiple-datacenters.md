@@ -1,6 +1,5 @@
 ---
 title: Flera datacenter
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Flera datacenter
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b2491d349628d2c9640097ddd2c94b79505a0921
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9156df0b76f6edf1d249d5d724e0a5d0f4fd8e15
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024795"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803083"
 ---
 # <a name="multiple-datacenters"></a>Flera datacenter
 
@@ -31,18 +30,18 @@ Inom varje epos hanteras de arbetsbelastningar som ska utvärderas som funktione
 
 Sprintar eller iterationer skulle sedan bestå av en serie uppgifter som krävs för att migrera tillgångarna och användarberättelserna som fastställts av teamet för molnimplementering. Versioner skulle sedan bestå av en eller flera arbetsbelastningar eller funktioner som kan befordras till produktionsanvändning.
 
-## <a name="assess-process-changes"></a>Utvärdera ändringar i processen
+## <a name="assess-process-changes"></a>Utvärdera processändringar
 
 Den största ändringen av utvärderingsprocessen vid en utökning för att hantera flera datacenter rör den korrekta registreringen och prioriteringen av arbetsbelastningar och beroenden mellan datacenter.
 
 ### <a name="suggested-action-during-the-assess-process"></a>Föreslagna åtgärder under utvärderingsprocessen
 
-**Utvärdera beroenden mellan datacenter:** [Verktygen för beroendevisualisering i Azure Migrate](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) kan underlätta identifieringen av beroenden. Att använda denna verktygsuppsättning innan migrering är ett bra allmänt regelverk. När det gäller komplexitet på global nivå är det dock ett nödvändigt steg i utvärderingsprocessen. Genom [beroendegruppering](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies) kan visualiseringen underlätta identifieringen av IP-adresser och portar för alla tillgångar som krävs för att hantera arbetsbelastningen.
+**Utvärdera kors Data Center beroenden:** De [beroende visualiserings verktygen i Azure Migrate](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) kan hjälpa dig att hitta beroenden. Att använda denna verktygsuppsättning innan migrering är ett bra allmänt regelverk. När det gäller komplexitet på global nivå är det dock ett nödvändigt steg i utvärderingsprocessen. Genom [beroendegruppering](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies) kan visualiseringen underlätta identifieringen av IP-adresser och portar för alla tillgångar som krävs för att hantera arbetsbelastningen.
 
 > [!IMPORTANT]
-> Två viktiga kommentarer: Först så krävs en ämnesexpert med förståelse för tillgångsplacering och IP-adresscheman för att identifiera tillgångar som ligger i sekundära datacenter. Sedan är det viktigt att utvärdera både underordnade beroenden och klienter visuellt för att förstå dubbelriktade beroenden.
+> Två viktiga anmärkningar: först är det en sak expert med förståelse av till gångs placering och IP-adress scheman som krävs för att identifiera till gångar som finns i ett sekundärt Data Center. Sedan är det viktigt att utvärdera både underordnade beroenden och klienter visuellt för att förstå dubbelriktade beroenden.
 
-## <a name="migrate-process-changes"></a>Migrering av processändringar
+## <a name="migrate-process-changes"></a>Ändringar i migreringsprocessen
 
 Migrering av flera datacenter liknar processen för att slå samman datacenter. Efter migreringen blir molnet den enhetliga datacenterlösningen för flera olika tillgångar. Den troligaste omfattningsutökningen under migreringsprocessen är valideringen och tilldelningen av IP-adresser.
 
@@ -50,14 +49,14 @@ Migrering av flera datacenter liknar processen för att slå samman datacenter. 
 
 Följande aktiviteter har stor påverkan på framgången för en molnmigrering:
 
-- **Utvärdera nätverkskonflikter:** Vid konsolidering av datacenter till en molnleverantör är det sannolikt att det skapas nätverks-, DNS- eller andra konflikter. Under migreringen är det viktigt att testa för att upptäcka konflikter och undvika avbrott i produktionssystem som körs i molnet.
-- **Uppdatera routingtabeller:** Ofta krävs ändringar i routingtabellerna vid konsolidering av nätverk eller datacenter.
+- **Utvärdera nätverks konflikter:** Vid konsolidering av data Center till en enda moln leverantör, finns det sannolikheten att skapa nätverks-, DNS-eller andra konflikter. Under migreringen är det viktigt att testa för att upptäcka konflikter och undvika avbrott i produktionssystem som körs i molnet.
+- **Uppdatera vägvals tabeller:** Ofta krävs ändringar i vägvals tabeller vid konsolidering av nätverk eller data Center.
 
 ## <a name="optimize-and-promote-process-changes"></a>Optimera och flytta upp processändringar
 
 Under optimering kan ytterligare testning krävas.
 
-### <a name="suggested-action-during-the-optimize-and-promote-process"></a>Föreslagna åtgärder i samband med optimering och befordran
+### <a name="suggested-action-during-the-optimize-and-promote-process"></a>Föreslagen åtgärd i samband med optimering och uppflyttning
 
 Innan befordran är det viktigt att tillhandahålla ytterligare nivåer av testning under omfångsutökningen. Under testning är det viktigt att testa för att upptäcka routingproblem och andra konflikter. Det är även viktigt att isolera det överförda programmet och testa om för att validera att alla beroenden migrerats till molnet. I detta fall innebär isolering att den överförda miljön separeras från produktionsnätverken. Det kan avslöja förbisedda tillgångar som fortfarande körs lokalt.
 
@@ -70,4 +69,4 @@ Processer för att skydda och hantera processändringar påverkas inte av denna 
 Gå tillbaka till [checklistan för utökat omfång](./index.md) och se till att din migreringsmetod är helt anpassad till kraven.
 
 > [!div class="nextstepaction"]
-> [Checklista för utökat omfång](./index.md)
+> [Utökad checklista](./index.md)

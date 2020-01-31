@@ -1,6 +1,5 @@
 ---
 title: Komma igång med en färdighets beredskaps väg
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Komma igång med en färdighets beredskaps väg
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e025b46c99e36340afd777e06b3a493c9f65c5dd
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 88de7ae19e3853bf132b58d0c3cbeb16d278a28f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564202"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800159"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Komma igång med en färdighets beredskaps väg
 
@@ -40,7 +39,7 @@ Var och en av de tidigare inlärnings vägarna delar affärs möjligheter över 
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-Microsoft Learn är en ny metod för inlärning. Det är lätt att komma igång med nya kunskaper och ansvars områden som medföljer moln införande. Microsoft Learn erbjuder en mer givande metod för konkret inlärning som hjälper er att uppnå era mål snabbare. Tjäna poäng och nivåer och få mer!
+Microsoft Learn är en ny metod för inlärning. Det är inte helt enkelt att förbereda sig för de nya ansvarsområdena som medföljer vid en övergång till molnet. Microsoft Learn erbjuder en mer givande metod för konkret inlärning som hjälper er att uppnå era mål snabbare. Tjäna poäng och nivåer och uträtta mer!
 Här följer några exempel på skräddarsydda utbildnings vägar på Microsoft Learn som anpassas till plan-avsnittet i Cloud adoption Framework:
 
 [Utveckla dina DevOps-metoder](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices):D evops är en union av personer, processer och produkter för att möjliggöra kontinuerlig leverans av värde till dina slutanvändare. Azure DevOps är en uppsättning tjänster som ger dig de verktyg du behöver för att göra just det. Med Azure DevOps kan du bygga, testa och distribuera valfritt program, antingen till molnet eller lokalt.

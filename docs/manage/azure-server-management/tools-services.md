@@ -1,6 +1,5 @@
 ---
 title: Verktyg och tjänster för Azure Server Management
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Verktyg och tjänster för Azure Server Management
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 51564add9bfe50ab494b39344eb24d3079fce000
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: dbb2d190fcbe787cd3ee26cc0803566b398e945d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565285"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807945"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Verktyg och tjänster för Azure Server Management
 
@@ -85,7 +84,7 @@ Att införa och flytta till molnet skapar nya hanterings utmaningar. Det krävs 
 
 Styrnings utformningen för standard organisationer skiljer sig ofta från styrnings design för komplexa företag. Mer information om styrnings metod tips för en standard organisation finns i [standard styrnings guiden för Enterprise](../../govern/guides/standard/index.md). Mer information om styrning av bästa praxis för ett komplext företag finns i [styrnings hand boken för komplexa företag](../../govern/guides/complex/index.md).
 
-## <a name="billing-information"></a>Fakturerings information
+## <a name="billing-information"></a>Faktureringsinformation
 
 Om du vill veta mer om priser för Azure Management Services går du till följande sidor:
 

@@ -1,6 +1,5 @@
 ---
 title: Reparation av tillgångar före migrering
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Reparation av inkompatibla tillgångar före migrering
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5fede95558e32b4cbc07be3ef60635e8c13eda97
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 23045cf48dd26400bbad07bbde927e29c3189f8d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058855"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802114"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>Reparera tillgångar före migrering
 
@@ -21,7 +20,7 @@ Under utvärderingsprocessen i migreringen vill teamet identifiera alla konfigur
 
 ## <a name="common-remediation-tasks"></a>Vanliga reparationsåtgärder
 
-I företagsmiljöer finns det tekniska skulder. En del av dessa är att förvänta och är inte tecken på att något är fel. Arkitekturbeslut som passade bra för en lokal miljö är kanske inte helt lämpliga på en molnplattform. I endera fallet kan det krävs vanliga reparationsåtgärder för att förbereda tillgångarna för migrering. Detta är några exempel:
+I företagsmiljöer finns det tekniska skulder. En del av dessa är att förvänta och är inte tecken på att något är fel. Arkitekturbeslut som passade bra för en lokal miljö är kanske inte helt lämpliga på en molnplattform. I endera fallet kan det krävs vanliga reparationsåtgärder för att förbereda tillgångarna för migrering. Följande är några exempel:
 
 - **Mindre uppgraderingar av värd.** Ibland behöver en föråldrad värd uppgraderas före replikering.
 - **Mindre uppgraderingar av gäst-OS.** Det är mer troligt att ett operativsystem behöver korrigeras eller uppgraderas före replikering.

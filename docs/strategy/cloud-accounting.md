@@ -1,6 +1,5 @@
 ---
 title: Vad är molnredovisning?
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Förklaring av begreppet moln redovisning
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 834beb021b394e2d6ffe58723caced7519923b59
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 008958e0542a52f022bbf2ba3183fbfb8c78b9ee
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031013"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806823"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -35,7 +34,7 @@ Oberoende av intäkts modellen är centrala IT-modeller unika på grund av hur I
 
 I en central IT-källmodell, markerar IT-teamet de tjänster som tillhandahålls för att redovisa kostnader för till gång, hantering och andra beräknade kostnader. Sedan faktureras konkurrerande affär senheter för de markerade tjänsterna. I den här modellen förväntas informations chef att hantera de P & L som är kopplade till försäljningen av dessa tjänster. Detta kan skapa inflata IT-kostnader och konkurrens mellan centrala IT-och affär senheter, särskilt när det behövs för att minska kostnaderna eller inte uppfyller de överenskomna service avtal. När en teknik eller marknads förändring skulle uppstå skulle en ny teknik orsaka avbrott i Central IT s & L, vilket gör transformeringen svår.
 
-## <a name="chargeback"></a>Återbetalning
+## <a name="chargeback"></a>Betalningar
 
 Ett av de vanliga första stegen för att ändra dess rykte som ett kostnads ställe är att implementera en åter betalnings modell för redovisning. Den här modellen är särskilt vanlig i mindre företag eller mycket effektiva IT-organisationer. I åter betalnings modellen behandlas eventuella IT-kostnader som är associerade med en speciell affär senhet som en drifts kostnad i affär senhetens budget. Den här metoden minskar den ackumulerade kostnaden för den, vilket gör att affärs värden kan visas tydligare.
 

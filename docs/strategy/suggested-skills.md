@@ -1,6 +1,5 @@
 ---
 title: Sökväg för kompetens beredskap under planering
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Översikt över sökväg för kompetens beredskap under plan fasen för migreringen.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 62152049578d1bd1f433cc4d2070504363cffef1
-ms.sourcegitcommit: 2efd4715294189bcea7aada8a1cbbc85c72f6264
+ms.openlocfilehash: 36e7957f8bcdcc7edc12f3a2e5309eac3d551fb5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75943449"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798119"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Sökväg för kompetens beredskap under plan fasen för en migrerings resa
 
@@ -56,7 +55,7 @@ Konvertera affärs fallet och den rationella digitala egendomen till en plan med
 Under den färdiga fasen skapar teknisk personal en landnings zon för migrering som kan vara värd för, drift och styrning av arbets belastningar som har migrerats till molnet. Dessa utbildnings vägar kan hjälpa dig att utveckla de kunskaper som krävs:
 
 - [Skapa ett Azure-konto](https://docs.microsoft.com/learn/modules/create-an-azure-account). Det första steget i att använda Azure är att skapa ett konto. Ditt konto innehåller de Azure-tjänster som du etablerar och hanterar dina personliga inställningar, t. ex. identitet, fakturering och preferenser.
-- [Azure-portalen](https://docs.microsoft.com/learn/modules/tour-azure-portal). Ta en titt på funktionerna och tjänsterna i Azure-portalen och se hur du anpassar portalen.
+- [Azure Portal](https://docs.microsoft.com/learn/modules/tour-azure-portal). Ta en titt på funktionerna och tjänsterna i Azure-portalen och se hur du anpassar portalen.
 - [Introduktion till Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure). Kom igång med Azure genom att skapa och konfigurera din första virtuella dator i molnet.
 - [Introduktion till säkerhet i Azure](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure). Lär dig om de grundläggande begreppen för att skydda din infrastruktur och dina data när du arbetar i molnet. Ta reda på vad som är ditt ansvar och vad Azure tar hand om åt dig.
 - [Hantera resurser i Azure](https://docs.microsoft.com/learn/paths/manage-resources-in-azure). Lär dig hur du använder kommandoraden och webbportalen i Azure till att skapa, hantera och styra molnbaserade resurser.
@@ -91,7 +90,7 @@ Microsoft Learn är en ny metod för inlärning. Det är inte helt enkelt att f�
 
 Här är ett exempel på en skräddarsydd inlärnings väg som överensstämmer med strategin Potion i moln införande ramverket.
 
-[Lär dig Microsoft Azure](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure): den här inlärningen tar dig på en resa som börjar genom att visa hur den digitala omvandlingen och kraften i molnet kan förändra ditt företag. Vi beskriver t.e.x. hur Microsoft Azure-molntjänster kan stärka din organisation på en betrodd molnplattform. Slutligen visar vi hur du kan göra för att förverkliga denna resa i din organisation.
+[Lär dig Microsoft Azure](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure): den här inlärningen tar dig på en resa som börjar genom att visa hur den digitala omvandlingen och kraften i molnet kan förändra ditt företag. Vi kommer att gå igenom hur Microsoft Azure Cloud Services kan driva din organisation på en betrodd moln plattform. Slutligen kommer vi att figursättas genom att illustrera hur du gör den här resan för din organisation.
 
 ## <a name="learn-more"></a>Läs mer
 

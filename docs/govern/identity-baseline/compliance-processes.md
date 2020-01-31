@@ -1,6 +1,5 @@
 ---
 title: Principer för regelefterlevnad för identitetens bas linje
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Principer för regelefterlevnad för identitetens bas linje
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6b92072ed182eefc596ab446638a87b4fd560080
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 937bf6c4dae8d134b4f140e0a0023d82e5f9e3f9
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566219"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807163"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>Principer för regelefterlevnad för identitetens bas linje
 
@@ -32,7 +31,7 @@ Med identitets hanterings verktyg får du till gång till funktioner som underl�
 
 **Årlig planering:** På årsbasis bör du utföra en övergripande granskning av identitets hanterings strategin. Utforska de planerade ändringarna i Identity Services-miljön och uppdaterade moln implementerings strategier för att identifiera eventuell risk ökning eller behöver ändra aktuella identitets infrastruktur mönster. Använd även den här tiden för att granska de senaste metod tipsen för identitets hantering och integrera dem i dina principer och gransknings processer.
 
-**Kvartals vis planering:** En gång i kvartalet utför en allmän granskning av gransknings data för identitets-och åtkomst kontroll och följer moln implementerings teamen för att identifiera eventuella nya risker eller drifts krav som kräver uppdateringar av identitets principen eller ändringar i åtkomst kontrollen strategi.
+**Kvartals vis planering:** En gång i kvartalet utför en allmän granskning av gransknings data för identitets-och åtkomst kontroll och följer moln implementerings teamen för att identifiera eventuella nya risker eller drift krav som skulle kräva uppdateringar av identitets principen eller ändringar i strategin för åtkomst kontroll.
 
 Den här planerings processen är också en lämplig tid att utvärdera det aktuella medlemskapet i moln styrnings teamet för kunskaps luckor som rör nya eller föränderliga principer och risker som rör identiteten. Bjud in relevant IT-personal för att delta i granskningar och planering som antingen tillfälliga tekniska rådgivare eller permanenta medlemmar i teamet.
 

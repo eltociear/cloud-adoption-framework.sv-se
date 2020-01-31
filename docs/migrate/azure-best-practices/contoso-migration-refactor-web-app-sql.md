@@ -1,6 +1,5 @@
 ---
 title: Omstrukturera en app genom att migrera den till Azure App Service och Azure SQL Database
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig hur Contoso kan vara värd för en lokal app genom att migrera den till en Azure App Service-webbapp och Azure SQL Server-databas.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d0d0fa87d424cbdf33e2b8516dd43b5156b55756
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 35a64b9f42df3737e186d25a43ecad457010607d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566564"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807452"
 ---
 # <a name="refactor-an-on-premises-app-to-an-azure-app-service-web-app-and-azure-sql-database"></a>Omstrukturera en lokal app till en Azure App Service-webbapp och Azure SQL-databas
 
@@ -40,7 +39,7 @@ Contosos molnteam har fastställt mål för migreringen. Målen användes för a
 
 **Krav** | **Detaljer**
 --- | ---
-**App** | Appen i Azure kommer att vara lika kritisk som den är i dag.<br/><br/> Den bör ha samma prestandafunktioner som den för närvarande har i VMware.<br/><br/> Teamet vill inte investera i appen. Tills vidare nöjer sig administratörerna med att flytta appen säkert till molnet.<br/><br/> Teamet vill avbryta stödet för Windows Server 2008 R2, där appen körs för närvarande.<br/><br/> Teamet vill också övergå från SQL Server 2008 R2 till en modern PaaS-databasplattform, vilket minimerar behovet av hantering.<br/><br/> Contoso vill dra nytta av sina investeringar i SQL Server-licensiering och Software Assurance där det är möjligt.<br/><br/> Contoso vill dessutom minimera den felkritiska systemdelen på webbnivån.
+**App** | Appen i Azure kommer att vara lika avgörande som den är i dag.<br/><br/> Den bör ha samma prestandafunktioner som den för närvarande har i VMware.<br/><br/> Teamet vill inte investera i appen. Tills vidare nöjer sig administratörerna med att flytta appen säkert till molnet.<br/><br/> Teamet vill avbryta stödet för Windows Server 2008 R2, där appen körs för närvarande.<br/><br/> Teamet vill också övergå från SQL Server 2008 R2 till en modern PaaS-databasplattform, vilket minimerar behovet av hantering.<br/><br/> Contoso vill dra nytta av sina investeringar i SQL Server-licensiering och Software Assurance där det är möjligt.<br/><br/> Contoso vill dessutom minimera den felkritiska systemdelen på webbnivån.
 **Begränsningar** | Appen består av en ASP.NET-app och en WCF-tjänst som körs på samma virtuella dator. De vill dela upp detta i två webbappar med hjälp av Azure App Service.
 **Azure** | Contoso vill flytta appen till Azure, men vill inte köra den på virtuella datorer. Contoso vill använda Azure PaaS-tjänster för både webb- och data nivåerna.
 **DevOps** | Contoso vill flytta till en DevOps-modell med Azure DevOps för sina Build and Release-pipelines.
@@ -57,7 +56,7 @@ Efter att ha fastställt målen och kraven kan Contoso utforma och granska en di
 - De virtuella datorerna finns på VMware ESXi-värden **contosohost1.contoso.com** (version 6.5)
 - VMware-miljön hanteras av vCenter Server 6.5 (**vcenter.contoso.com**), som körs på en virtuell dator.
 - Contoso har ett lokalt datacenter (contoso-datacenter) med en lokal domänkontrollant (**contosodc1**).
-- De lokala, virtuella datorerna i Contoso-datacentret kommer att inaktiveras när migreringen är färdig.
+- De lokala, virtuella datorerna i Contosos datacentret inaktiveras när migreringen är färdig.
 
 ### <a name="proposed-solution"></a>Föreslagen lösning
 
@@ -69,7 +68,7 @@ Efter att ha fastställt målen och kraven kan Contoso utforma och granska en di
 - För appens webbnivå har Contoso beslutat att använda Azure App Service. Med den här PaaS-tjänsten kan du distribuera appen med bara några få konfigurationsändringar. Contoso kommer att använda Visual Studio för att genomföra ändringen och distribuera två webbappar. En för webbplatsen och en för WCF-tjänsten.
 - För att uppfylla kraven för en DevOps-pipeline har Contoso valt att använda Azure DevOps för källkodshantering med Git-databaser. Automatiserade versioner och lansering används för att bygga koden och distribuera den till Azure App Service.
 
-### <a name="solution-review"></a>Lösningsgranskning
+### <a name="solution-review"></a>Utvärdering av lösningen
 
 Contoso utvärderar den föreslagna designen genom att sätta samman en lista med för- och nackdelar.
 
@@ -99,7 +98,7 @@ Contoso utvärderar den föreslagna designen genom att sätta samman en lista me
 --- | --- | ---
 [Data Migration Assistant (DMA)](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso kommer att använda DMA för att utvärdera och identifiera kompatibilitetsproblem som kan påverka deras databasfunktioner i Azure. DMA utvärderar funktionsparitet mellan SQL-källor och -mål och rekommenderar förbättringar av prestanda och tillförlitlighet. | Det här verktyget kan laddas ned utan kostnad.
 [Azure SQL Database](https://azure.microsoft.com/services/sql-database) | En intelligent, fullständigt hanterad och molnbaserad relationsdatabastjänst. | Kostnaden baseras på funktioner, dataflöde och storlek. [Läs mer](https://azure.microsoft.com/pricing/details/sql-database/managed).
-[Azure Apptjänst](https://docs.microsoft.com/azure/app-service/overview) | Skapa kraftfulla molnappar med en fullständigt hanterad plattform | Kostnaden baseras på storlek, plats och användningstid. [Läs mer](https://azure.microsoft.com/pricing/details/app-service/windows).
+[Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | Skapa kraftfulla molnappar med en fullständigt hanterad plattform | Kostnaden baseras på storlek, plats och användningstid. [Läs mer](https://azure.microsoft.com/pricing/details/app-service/windows).
 [Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | Tillhandahåller en pipeline för kontinuerlig integrering och distribution (CI/CD) för utveckling av appar. Pipelinen börjar med en Git-lagringsplats för hantering av app-kod, ett build-system för att skapa paket och andra build-artefakter och ett versionshanteringssystem för att distribuera ändringar i utvecklings-, test- och produktionsmiljöer.
 
 ## <a name="prerequisites"></a>Krav
@@ -111,11 +110,11 @@ Här måste Contoso måste köra följande scenario:
 **Krav** | **Detaljer**
 --- | ---
 **Azure-prenumeration** | Contoso skapade prenumerationer i en tidigare artikel. Om du inte har någon Azure-prenumeration kan du skapa ett [kostnadsfritt konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Om du skapar ett kostnadsfritt konto är du administratör för din prenumeration och kan utföra alla åtgärder.<br/><br/> Om du använder en befintlig prenumeration och inte är administratör måste du be administratören att ge dig ägar- eller deltagarbehörighet.
-**Azure-infrastruktur** | [Läs om hur](./contoso-migration-infrastructure.md) Contoso konfigurerar en Azure-infrastruktur.
+**Azure-infrastruktur** | [Läs om](./contoso-migration-infrastructure.md) hur Contoso konfigurerade en Azure-infrastruktur.
 
 <!--markdownlint-enable MD033 -->
 
-## <a name="scenario-steps"></a>Steg i scenariot
+## <a name="scenario-steps"></a>Scenariosteg
 
 Contoso genomför migreringen på följande sätt:
 
@@ -337,7 +336,7 @@ Contoso-administratörerna konfigurerar nu Azure DevOps för att utföra Build- 
 
     ![Spara WCF](./media/contoso-migration-refactor-web-app-sql/pipeline16.png)
 
-17. De väljer **Pipeline** > **Steg** **+Lägg till** för att lägga till en miljö för **SHWEB-EUS2**. De väljer en annan Azure App Service-distribution.
+17. De väljer **pipeline** > **steg** **+ Lägg**till för att lägga till en miljö för **SHWEB-EUS2**. De väljer en annan Azure App Service-distribution.
 
     ![Lägga till miljö](./media/contoso-migration-refactor-web-app-sql/pipeline17.png)
 
@@ -398,6 +397,6 @@ Med de migrerade resurserna i Azure måste Contoso fullständigt operationaliser
 - All licensiering är inbyggd i kostnaden för de PaaS-tjänster som Contoso använder. Detta kommer att dras av från Enterprise-avtalet.
 - Contoso aktiverar Azure Cost Management som licensieras av Cloudyn, ett Microsoft-dotterbolag. Det är en kostnadshanteringslösning med flera moln som hjälper dig att använda och hantera Azure och andra molnresurser. [Läs mer](https://docs.microsoft.com/azure/cost-management/overview) om Azure Cost Management.
 
-## <a name="conclusion"></a>Sammanfattning
+## <a name="conclusion"></a>Slutsats
 
-I den här artikeln omstrukturerade Contoso SmartHotel360-appen i Azure genom att migrera appens frontend-VM till två Azure App Service-webbappar. App-databasen migrerades till en Azure SQL-databas.
+I den här artikeln omstrukturerade Contoso SmartHotel360-appen i Azure genom att migrera appens frontend-VM till två Azure App Service-webbappar. Appdatabasen migrerades till en Azure SQL-databas.

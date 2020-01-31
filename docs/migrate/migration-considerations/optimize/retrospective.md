@@ -1,19 +1,18 @@
 ---
 title: Hur bidrar utvärderingar till att utveckla ett tillväxtorienterat tänkesätt?
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: En process inom molnmigreringen som fokuserar på att överföra arbetsbelastningar till molnet.
+description: En process inom molnmigreringen som fokuserar uppgifterna för att migrera arbetsbelastningar till molnet.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 881f8f396d40ca189267d6dbf50eac65abf0b56d
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 759bd75a134b1f5a5992f038a33693f632b86b03
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548366"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801519"
 ---
 <!-- markdownlint-disable MD026 -->
 

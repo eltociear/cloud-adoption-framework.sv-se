@@ -1,6 +1,5 @@
 ---
 title: Använd terraform för att bygga landnings zoner
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig att använda terraform för att bygga landnings zoner.
 author: arnaudlh
 ms.author: arnaul
@@ -8,12 +7,12 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 62f6f8f52d669c2822b822218612986be4503378
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 54fa496c7b97231a8ad8cc7150717bb942bf07a2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753751"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798986"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Använd terraform för att bygga landnings zoner
 
@@ -74,7 +73,7 @@ Följande beslut visas i terraform landnings zon:
 | Hanteringsgrupper | Saknas – utformad för en enda produktionsprenumeration. |[Skalanpassa prenumerationer](../azure-best-practices/scaling-subscriptions.md) |
 | Resursgrupper | Saknas – utformad för en enda produktionsprenumeration. | [Skalanpassa prenumerationer](../azure-best-practices/scaling-subscriptions.md) |
 | Data | Gäller inte | [Välj rätt SQL Server alternativ i Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) och [Azure Data Store vägledning](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Lagring|Gäller inte|[Riktlinjer för Azure Storage](../considerations/storage-options.md) |
+|Storage|Gäller inte|[Riktlinjer för Azure Storage](../considerations/storage-options.md) |
 | Namngivningsregler | När miljön skapas skapas även ett unikt prefix. Resurser som kräver ett globalt unikt namn (till exempel lagrings konton) använder det här prefixet. Det anpassade namnet läggs till med ett slumpmässigt suffix. Tagga användningen bestäms enligt beskrivningen i följande tabell. | [Metodtips för namngivning och taggning](../azure-best-practices/naming-and-tagging.md) |
 | Kostnadshantering | Gäller inte | [Spåra kostnader](../azure-best-practices/track-costs.md) |
 | Databearbetning | Gäller inte | [Compute-alternativ](../considerations/compute-options.md) |
@@ -83,16 +82,16 @@ Följande beslut visas i terraform landnings zon:
 
 Följande uppsättning med lägsta Taggar måste finnas på alla resurser och resurs grupper:
 
-| Taggnamn | Beskrivning | Nyckel | Exempelvärde |
+| taggnamn | Beskrivning | Nyckel | Exempelvärde |
 |--|--|--|--|
 | Affär senhet | Avdelning på toppnivå för ditt företag som äger prenumerationen eller arbetsbelastningen som resursen tillhör. | BusinessUnit | EKONOMI, marknadsföring, {produkt namn}, CORP, delad |
 | Kostnadsställe | Kostnadsställe som associeras med resursen.| CostCenter | Tal |
 | Katastrofåterställning | Programmet, arbetsbelastningen eller tjänstens affärskritiskhet. | AR | DR-AKTIVERAD, ICKE-DR-AKTIVERAD |
 | Miljö | Programmet, arbetsbelastningen eller tjänstens distributionsmiljö. |  Kuvert | Produktion, utveckling, frågor och svar, Stage, test, utbildning |
-| Ägar namn | Programmet, arbetsbelastningen eller tjänstens ägare.| Ägare | e-post |
+| Namn på ägare | Programmet, arbetsbelastningen eller tjänstens ägare.| Ägare | e-post |
 | Distributions typ | Definierar hur resurserna upprätthålls. | deploymentType | Manuell, terraform |
 | Version | Ritningens version har distribuerats. | version | v-0,1 |
-| Programnamn | Namnet på det associerade programmet, tjänsten eller arbets belastningen som är associerad med resursen. | applicationName | "app-namn" |
+| Programnamn | Namnet på det associerade programmet, tjänsten eller arbets belastningen som är associerad med resursen. | ApplicationName | "app-namn" |
 
 ## <a name="customize-and-deploy-your-first-landing-zone"></a>Anpassa och distribuera din första landnings zon
 
@@ -131,7 +130,7 @@ azure_activity_logs_retention = 365
 azure_diagnostics_logs_retention = 60
 ```
 
-I tags_hub anger vi den minsta uppsättningen taggar som används för alla resurser som skapats.
+I tags_hub anger vi den minsta uppsättning taggar som används för alla resurser som skapats.
 
 ```hcl
 tags_hub = {

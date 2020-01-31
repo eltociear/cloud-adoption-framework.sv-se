@@ -1,6 +1,5 @@
 ---
 title: Förstå effekten av globala marknads beslut
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Förklaring av begreppet globala marknader
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 36f0d5ccf826746370054ed213b83968babdee6b
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: af3c9d8b155d2c6a5e861e64b6472effbafcbb6d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548615"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798170"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -21,7 +20,7 @@ ms.locfileid: "72548615"
 
 Molnet öppnar nya möjligheter att utföra en global skala. Hinder för globala åtgärder minskar avsevärt genom att ge företagen möjlighet att distribuera till gångar på marknaden, utan att behöva investera kraftigt i nya data Center. Detta ger dig också en fantastisk komplexitet från tekniska och juridiska perspektiv.
 
-## <a name="data-sovereignty"></a>Data suveränitet
+## <a name="data-sovereignty"></a>Datasuveränitet
 
 Många politiska regioner har upprättat data suveränitets bestämmelser. Dessa regler begränsar var data kan lagras, vilka data som kan lämna ursprungslandet och vilka data som kan samlas in om medborgare i regionen. Innan du använder en molnbaserad lösning i en utländsk geografi bör du förstå hur moln leverantören hanterar data suveränitet. Mer information om Azures metod för varje geografi finns [här](https://azure.microsoft.com/global-infrastructure/geographies). Mer information om kompatibilitet i Azure finns i [sekretess på Microsoft](https://www.microsoft.com/trustcenter/privacy) i Microsoft säkerhets Center.
 

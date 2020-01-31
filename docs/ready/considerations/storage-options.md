@@ -1,6 +1,5 @@
 ---
 title: Granska dina lagrings alternativ
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Granska dina lagrings alternativ för Azure-arbetsbelastningar.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 37b99c367df1e77bcd32223d5d8a8ac8e1ee20d1
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: d6e15d465982c02e34ce1bbc89bd2289297d402a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561733"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799037"
 ---
 # <a name="review-your-storage-options"></a>Granska dina lagrings alternativ
 
@@ -58,7 +57,7 @@ Azure erbjuder flera produkter och tjänster som har olika lagringskapaciteter. 
 | Jag har klusterservrar med hög tillgänglighet (till exempel SQL Server FCI eller Windows Server-redundanskluster). | [Azure Files (Premium)](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers)<br/> [Azure-disklagring (Premium eller Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Klustrade arbetsbelastningar kräver flera noder för att montera samma underliggande delade lagring för redundans eller HA. Premiumfilresurser erbjuder delad lagring som kan monteras via SMB. Delad blocklagring kan också konfigureras på Premium SSD eller Ultra SSD med hjälp av [partnerlösningar](https://azuremarketplace.microsoft.com/marketplace/apps/sios_datakeeper.sios-datakeeper-8?tab=Overview). |
 | Jag har en relationsdatabas eller en datalagerarbetsbelastning (till exempel SQL Server eller Oracle). | [Azure-disklagring Premium eller Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Valet av Premium SSD och Ultra SSD är beroende av krav på maxlatens, IOPS och skalbarhet. Ultra SSD minskar också komplexiteten genom att ta bort behovet av att konfigurera lagringspoolen för skalbarhet (se [information](https://azure.microsoft.com/blog/mission-critical-performance-with-ultra-ssd-for-sql-server-on-azure-vm)). |
 | Jag har ett NoSQL-kluster (till exempel Cassandra eller MongoDB). | [Azure-disklagring (Premium SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types#premium-ssd) | Azure Disk Storage Premium SSD ger konsekvent låg latens tillsammans med högt IOPS och dataflöde. |
-| Jag kör behållare med beständiga volymer. | [Azure Files (Standard eller Premium)](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br/><br/> [Azure-disklagring (Standard, Premium eller Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Drivrutinsalternativ för fil (RWX) och block (RWO) är tillgängliga för både Azure Kubernetes Service (AKS) och anpassade Kubernetes-distributioner. Beständiga volymer kan mappas till antingen en Azure-disklagring eller en hanterad Azure Files-resurs. Välj mellan premium och standard baserat på krav på arbetsbelastning för beständiga volymer. |
+| Jag kör containrar med beständiga volymer. | [Azure Files (Standard eller Premium)](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br/><br/> [Azure-disklagring (Standard, Premium eller Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Drivrutinsalternativ för fil (RWX) och block (RWO) är tillgängliga för både Azure Kubernetes Service (AKS) och anpassade Kubernetes-distributioner. Beständiga volymer kan mappas till antingen en Azure-disklagring eller en hanterad Azure Files-resurs. Välj mellan premium och standard baserat på krav på arbetsbelastning för beständiga volymer. |
 | Jag har en datasjö (till exempel ett Hadoop-kluster för HDFS-data). | [Azure Data Lake Storage Gen 2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) <br/><br/> [Azure-disklagring (Standard eller Premium SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Funktionen Data Lake Storage gen 2 i Azure Blob Storage är HDFS-kompatibel på serversidan och tillhandahåller petabyteskalning för parallellanalys. Den erbjuder även hög tillgänglighet och tillförlitlighet. Programvara som Cloudera kan använda Premium eller Standard SSD på Master-/Worker-noder om det behövs. |
 | Jag har en SAP- eller SAP HANA-distribution. | [Azure-disklagring (Premium eller Ultra SSD)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Ultra SSD har optimerats för att erbjuda svarstider under millisekunden för SAP-arbetsbelastningar på nivå 1. Nu är Ultra SSD tillgänglig som förhandsversion. Premium SSD tillsammans med M-serien erbjuder alternativet allmän tillgänglighet (GA). |
 | Jag har en webbplats för haveriberedskap med en strikt RPO/RTO som synkroniserar från mina primära servrar. | [Azure-sidblobbar](https://docs.microsoft.com/azure/storage/blobs/storage-blob-pageblob-overview) | Azure-sidblobbar används av replikeringsprogram för att möjliggöra replikering till Azure till låg kostnad utan att behöva beräkna virtuella datorer förrän redundansväxlingen sker. Mer information finns i [dokumentationen om Azure-disklagring](https://docs.microsoft.com/azure/virtual-machines/windows/backup-and-disaster-recovery-for-azure-iaas-disks). **Obs:** Page blobbar stöder högst 8 TB. |
@@ -89,7 +88,7 @@ Azure erbjuder flera produkter och tjänster som har olika lagringskapaciteter. 
 | Jag måste flytta fildata till molnet men jag hämtar i första hand dessa data lokalt. | [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br/><br/> [Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning) | |
 | Jag behöver stöd för ”plötsliga beräkningsvolymer” – lästunga, filbaserade NFS/SMB-arbetsbelastningar med datatillgångar som lagras lokalt medan beräkningen sker i molnet. | [Avere vFXT för Azure](https://docs.microsoft.com/azure/avere-vfxt/avere-vfxt-overview) | IaaS skalbar NFS/SMB-filcache |
 | Jag behöver flytta ett lokalt program som använder en lokal disk eller iSCSI. | [Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) | |
-| Jag behöver migrera ett behållarbaserat program som har beständiga volymer. | [Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) <br/><br/> [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning) | |
+| Jag behöver migrera ett containerbaserat program som har beständiga volymer. | [Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) <br/><br/> [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning) | |
 | Jag behöver flytta filresurser som inte är Windows Server- eller NetApp till molnet. | [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br/><br/> [Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-introduction) | Ögonblicksbild för protokollstöd för regionaltillgänglighetsprestandakrav och priskänslighet för klonkapacitet |
 | Jag behöver överföra terabyte till petabyte data från lokala enheter till Azure. | [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview) | |
 | Jag behöver bearbeta data innan de överförs till Azure. | [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview) | |

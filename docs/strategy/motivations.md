@@ -1,6 +1,5 @@
 ---
 title: 'Motivation: Varför flyttar vi till molnet?'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Moln redovisning och flytt till molnet
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 65ef12ca476ca624ae1e71cce2e62d41141873a9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6c774da4fa90c8a6806021b96d0519edebecfc61
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561611"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798153"
 ---
 <!-- markdownlint-disable MD026 -->
 

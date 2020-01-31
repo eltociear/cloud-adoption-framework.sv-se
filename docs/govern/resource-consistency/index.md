@@ -1,6 +1,5 @@
 ---
 title: Översikt över området resurskonsekvens
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Översikt över området resurskonsekvens
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: d4fc79c7829a0cc9058b07dd386e626a19cabb1b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 864a5d3679d80663337b1b73748ab2af6628ef7d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565999"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806109"
 ---
 # <a name="resource-consistency-discipline-overview"></a>Översikt över området resurskonsekvens
 

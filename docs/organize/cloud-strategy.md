@@ -1,6 +1,5 @@
 ---
 title: Moln strategi funktioner
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Beskriver bildande av moln strategi funktioner
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 022afb976a807d1e178bcc5788885bcabc3f1b59
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 17ef8a6b84e16b2baf7a69918051c7f6a8257396
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028610"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800856"
 ---
 # <a name="cloud-strategy-capabilities"></a>Moln strategi funktioner
 
@@ -26,10 +25,10 @@ Om det inte finns något definierat moln strategi team, måste någon fortfarand
 
 Den här funktionen tillhandahålls ofta av följande typer av roller. När ett moln strategi team definieras bör det omfatta flera av följande roller:
 
-- Finans
+- Ekonomi
 - Verksamhets linje
-- Personalfrågor
-- Åtgärder
+- Personal resurser
+- Operations
 - Företags arkitektur
 - IT-infrastruktur
 - Program grupper
@@ -63,9 +62,9 @@ Huvud fokus i moln strategin är att validera och upprätthålla justeringen mel
 
 Aktiviteterna som anges i föregående avsnitt kan vara tids krävande i tidigt planerings faserna. Här följer några rekommendationer för fördelningen av tid för moln strategi grupp medlemmar:
 
-- Under tidiga planerings åtgärder fördelar du en timme varje vecka för att uppfylla teamet. När implementerings planen är solidified (vanligt vis inom&ndash;4 6 veckor) kan tids kraven minskas.
-- Under alla antaganden fördelar du 1&ndash;2 timmar varje månad för att granska förloppet och validera fortsatta prioriteringar.
-- Ytterligare tid krävs troligt vis från delegerade medlemmar i chefens team vid behov. Varje medlem i moln strategi teamet bör utse ett ombud som kan allokera 5&ndash;10 timmar per vecka för att stödja kontinuerliga prioriterings frågor och rapportera om brådskande behov.
+- Under tidiga planerings åtgärder fördelar du en timme varje vecka för att uppfylla teamet. När implementerings planen är solidified (vanligt vis inom 4&ndash;6 veckor) kan tids kraven minskas.
+- Under antagandet, allokera 1&ndash;2 timmar varje månad för att granska förloppet och validera fortsatta prioriteringar.
+- Ytterligare tid krävs troligt vis från delegerade medlemmar i chefens team vid behov. Varje medlem i moln strategi teamet bör utse ett ombud som kan tilldela fem&ndash;10 timmar per vecka för att stödja kontinuerliga prioriterings frågor och rapportera om brådskande behov.
 
 ## <a name="next-steps"></a>Nästa steg
 

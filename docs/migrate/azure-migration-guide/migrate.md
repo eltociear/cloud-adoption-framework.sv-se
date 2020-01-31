@@ -1,6 +1,5 @@
 ---
 title: Migrera tillgångar
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Migrera tillgångar
 author: matticusau
 ms.author: mlavery
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2f00fca7cc5d21221faed2a56d0a25dba2e82258
-ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
+ms.openlocfilehash: 81c55ee4ac3605c04d583df21182c4d5c44f8380
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74681763"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807027"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrera tillgångar (infrastruktur, appar och data)
 
@@ -222,7 +221,7 @@ Cloudamize är en ISV-tjänst som omfattar alla faser av migrationsstrategin.
 
 Zerto tillhandahåller virtuell replikering som hanterar miljöer för både Microsoft Hyper-V-och VMware vSphere.
 
-[Läs mer](https://www.zerto.com/solutions/use-cases/data-center-migration-software)
+[Läs mer](https://www.zerto.com/modernize)
 
 ## <a name="carbonite"></a>Carbonite
 
@@ -271,9 +270,9 @@ Azure DevOps tillhandahåller alla nödvändiga funktioner och integrering med A
 
 Microsoft Learn är en ny metod för inlärning. Det är inte helt enkelt att förbereda sig för de nya ansvarsområdena som medföljer vid en övergång till molnet. Microsoft Learn erbjuder en mer givande metod för konkret inlärning som hjälper er att uppnå era mål snabbare. Tjäna poäng och nivåer och uträtta mer!
 
-Här är ett exempel på en skräddarsydd utbildningsväg på Microsoft Learn som kompletterar DevOps-vägledningen i Cloud Adoption Framework. 
+Här är ett exempel på en skräddarsydd utbildningsväg på Microsoft Learn som kompletterar DevOps-vägledningen i Cloud Adoption Framework.
 
-[Skapa program med Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/): Samarbeta med andra och skapa program med Azure Pipelines och GitHub. Kör automatiserade tester i din pipeline för att verifiera kodkvalitet. Sök igenom källkoden och komponenter från tredje part efter potentiella sårbarheter. Skapa ditt program genom att definiera flera pipelines som fungerar tillsammans. Skapa program med hjälp av både Microsoft-baserade agenter och dina egna skapandeagenter. 
+[Skapa program med Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/): Samarbeta med andra och skapa program med Azure Pipelines och GitHub. Kör automatiserade tester i din pipeline för att verifiera kodkvalitet. Sök igenom källkoden och komponenter från tredje part efter potentiella sårbarheter. Skapa ditt program genom att definiera flera pipelines som fungerar tillsammans. Skapa program med hjälp av både Microsoft-baserade agenter och dina egna skapandeagenter.
 
 # <a name="cost-managementtabmanagecost"></a>[Kostnadshantering](#tab/ManageCost)
 

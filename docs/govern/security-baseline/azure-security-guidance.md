@@ -1,6 +1,5 @@
 ---
 title: Vägledning – säkerheten i Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vilka säkerhets guider tillhandahåller Microsoft?
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 18fce98055f72e43ea7ecc2565ab859845cea356
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: cc57de575b7ad208748595a82b9726ebf85fa3fd
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058814"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804919"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -32,7 +31,7 @@ Dessa verktyg är utformade för att hjälpa organisationer att uppfylla komplex
 
 **STP (service Trust Platform)** ger detaljerad information och verktyg som hjälper dig att uppfylla dina behov av att använda Microsoft Cloud tjänster, inklusive Azure, Office 365, Dynamics 365 och Windows. STP är en enda arbets affär för säkerhet, regler, efterlevnad och sekretess information som är relaterad till Microsoft Cloud. Det är här som vi publicerar den information och de resurser som krävs för att utföra självbetjänings riskbedömning av moln tjänster och verktyg. STP skapades för att hjälpa till att spåra regelefterlevnad-aktiviteter i Azure, inklusive:
 
-- **Compliance Manager:** Compliance Manager, ett arbets flödes verktyg för riskbedömning på Microsofts plattform för tjänst förtroende, gör att du kan spåra, tilldela och kontrol lera din organisations aktiviteter för regelefterlevnad som rör Microsoft Cloud tjänster, till exempel Office 365, Dynamics 365 och Azure. Du hittar mer information i nästa avsnitt.
+- **Compliance Manager:** Compliance Manager, ett arbets flödes verktyg för riskbedömning på Microsofts plattform för tjänst förtroende, gör att du kan spåra, tilldela och verifiera din organisations aktiviteter för regelefterlevnad som rör Microsoft Cloud tjänster, till exempel Office 365, Dynamics 365 och Azure. Du hittar mer information i nästa avsnitt.
 - **Betrodda dokument:** För närvarande finns det tre typer av guider som ger dig många resurser för att utvärdera Microsoft Cloud. Lär dig mer om Microsoft-åtgärder i säkerhet, efterlevnad och sekretess. och hjälper dig att arbeta med att förbättra dina data skydds funktioner. Dessa är:
 - **Gransknings rapporter:** Med gransknings rapporter kan du hålla dig uppdaterad om den senaste sekretess-, säkerhets-och efterlevnad-relaterad informationen för Microsoft Cloud Services. Detta omfattar ISO, SOC, FedRAMP och andra gransknings rapporter, broar och material som rör oberoende revisioner från tredje part av Microsoft Cloud tjänster som Azure, Office 365, Dynamics 365 och andra.
 - **Data skydds guider:** Data skydds guider ger information om hur Microsoft Cloud Services skyddar dina data och hur du kan hantera data säkerhet och efterlevnad i molnet för din organisation. Detta omfattar djupgående fakta blad som innehåller information om hur Microsoft utformar och arbetar med moln tjänster, vanliga frågor och svar, rapporter om säkerhets utvärderingar, inträngande test resultat och rikt linjer som hjälper dig att utföra riskbedömning och förbättra dina data skydds funktioner.
@@ -47,7 +46,7 @@ Dessa verktyg är utformade för att hjälpa organisationer att uppfylla komplex
   - **Begär Anden om data subjekt:** GDPR beviljar individer (eller data ämnen) vissa rättigheter i samband med bearbetningen av sina person uppgifter. Detta innefattar rätten att korrigera felaktiga data, radera data eller begränsa dess bearbetning, samt ta emot data och utföra en begäran om att överföra sina data till en annan kontrollant.
   - **Data intrång:** GDPR bestämmer meddelande kraven för datakontrollanter och processorer i händelse av överträdelse av person uppgifter. STP ger dig information om hur Microsoft försöker förhindra överträdelser på den första platsen, hur Microsoft upptäcker en överträdelse och hur Microsoft kommer att svara i händelse av en överträdelse och meddela dig som en data kontroll.
   - **Utvärdering av data skydds påverkan:** Microsoft hjälper kontrollanter att slutföra GDPR av data skydds påverkan. GDPR tillhandahåller en komplett lista över fall där DPIAs måste utföras, till exempel automatisk bearbetning för profilering och liknande aktiviteter. bearbetning i stor skala av särskilda kategorier av person uppgifter och systematisk övervakning av ett offentligt tillgängligt utrymme i stor skala.
-  - **Andra resurser:** Förutom de verktyg som beskrivs i ovanstående avsnitt ger STP också andra resurser, inklusive regional efterlevnad, ytterligare resurser för säkerhets-och efterlevnads Center och vanliga frågor om tjänsten Trust Platform, Compliance Manager, och sekretess-/GDPR.
+  - **Andra resurser:** Förutom de verktyg som beskrivs i ovanstående avsnitt ger STP också andra resurser, inklusive regional efterlevnad, ytterligare resurser för Security and Compliance Center och vanliga frågor om tjänsten Trust Platform, Compliance Manager och Privacy/GDPR.
 - **Regional efterlevnad:** STP innehåller ett stort antal dokument och vägledning för Microsoft onlinetjänster för att uppfylla kraven för efterlevnad för olika regioner, inklusive Tjeckiska republiken, Polen och Rumänien.
 
 ## <a name="unique-intelligent-insights"></a>Unika intelligenta insikter

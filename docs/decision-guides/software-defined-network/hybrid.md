@@ -1,6 +1,5 @@
 ---
-title: 'Program varu definitions nätverk: Hybridnätverk'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
+title: 'Program varu definition nätverk: hybrid nätverk'
 description: Diskussion om hur hybrid nätverk gör det möjligt för dina virtuella moln nätverk att ansluta till lokala resurser.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 94e285f59442b6632209e1cd6a76c39cfccd337b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 61ce3447a852ec8aa1caa0737b0f3757f0f26450
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829493"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806619"
 ---
-# <a name="software-defined-networking-hybrid-network"></a>Program varu definitions nätverk: Hybridnätverk
+# <a name="software-defined-networking-hybrid-network"></a>Program varu definition nätverk: hybrid nätverk
 
 Nätverks arkitekturen i hybrid molnet gör det möjligt för virtuella nätverk att komma åt dina lokala resurser och tjänster och vice versa, med hjälp av en särskild WAN-anslutning som ExpressRoute eller annan anslutnings metod för att ansluta nätverken direkt.
 
@@ -42,7 +41,7 @@ Dina moln implementerings team bör ta hänsyn till följande problem när du ti
 - Skalning av antalet och storleken för arbets belastningar i en hybrid moln miljö kan öka komplexiteten för Routning och trafik hantering.
 - Du måste utveckla kompatibla principer för hantering och åtkomst kontroll för att upprätthålla konsekvent styrning i hela organisationen.
 
-## <a name="learn-more"></a>Lär dig mer
+## <a name="learn-more"></a>Läs mer
 
 Mer information om hybrid nätverk i Azure finns i:
 

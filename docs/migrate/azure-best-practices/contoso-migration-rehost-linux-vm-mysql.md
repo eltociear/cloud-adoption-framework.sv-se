@@ -1,6 +1,5 @@
 ---
 title: Byta värd för en Linux-supportapp till Azure och Azure Database for MySQL
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Se hur Contoso byter värd för en lokal Linux-app genom att migrera den till virtuella Azure-datorer och Azure Database for MySQL.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a2a695af758ae7e99a7c2257f3adf4ce5058ae3d
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: d6f812c8f32ec9481942f697151e7ed803654a1b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160317"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807418"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>Byta värd för en lokal Linux-app till virtuella Azure-datorer och Azure Database for MySQL
 
@@ -26,7 +25,7 @@ osTicket, supportappen som används i det här exemplet, är tillgänglig som ö
 IT-ledningsgruppen har arbetat tillsammans med affärspartner för att komma fram till vad man vill uppnå:
 
 - **Hantera företagets tillväxt.** Contoso växer, vilket leder till tryck på lokala system och infrastruktur.
-- **Begränsa risker.** Supportappen är viktig för verksamheten. Contoso vill flytta den till Azure utan några risker.
+- **Begränsa risken.** Supportappen är viktig för verksamheten. Contoso vill flytta den till Azure utan några risker.
 - **Utöka.** Contoso vill inte ändra appen just nu. Det vill bara hålla appen stabil.
 
 ## <a name="migration-goals"></a>Migreringsmål
@@ -53,7 +52,7 @@ I det här scenariot:
   - Den virtuella webbdatorn placeras i undernätet på klientsidan (`PROD-FE-EUS2`).
   - Databasinstansen placeras i databasundernätet (`PROD-DB-EUS2`).
 - Appdatabasen migreras till Azure Database for MySQL med MySQL-verktyg.
-- De lokala, virtuella datorerna i Contoso-datacentret kommer att inaktiveras när migreringen är färdig.
+- De lokala, virtuella datorerna i Contosos datacentret inaktiveras när migreringen är färdig.
 
 ![Scenariots arkitektur](./media/contoso-migration-rehost-linux-vm-mysql/architecture.png)
 
@@ -97,7 +96,7 @@ Det här är vad Contoso behöver i det här scenariot.
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="scenario-steps"></a>Steg i scenariot
+## <a name="scenario-steps"></a>Scenariosteg
 
 Contosos administratörer utför migreringen på följande sätt:
 
@@ -253,7 +252,7 @@ Contosos administratörer gör detta på följande sätt:
     ![Välja Recovery Services-valv](./media/contoso-migration-rehost-linux-vm-mysql/cswiz1.png)
 
 12. Nu laddar de ned och installerar MySQL Server och VMware PowerCLI.
-13. Efter verifieringen anger de FQDN eller IP-adressen för vCenter-servern eller vSphere-värden. De lämnar standardporten och anger ett användarvänligt namn för vCenter-servern.
+13. Efter verifieringen anger de FQDN eller IP-adressen för vCenter-servern eller vSphere-värden. De lämnar standardporten och anger ett eget namn för vCenter-servern.
 14. De anger kontot som de skapade för automatisk identifiering och de autentiseringsuppgifter som Site Recovery ska använda för att installera Mobility Service automatiskt.
 
     ![vCenter](./media/contoso-migration-rehost-linux-vm-mysql/cswiz2.png)
@@ -352,7 +351,7 @@ Slutligen kör Contosos administratörer en snabb testning av redundansen och mi
 Genom att köra ett redundanstest kan de vara säkra på att allt fungerar som förväntat innan de genomför migreringen.
 
 1. De kör ett redundanstest till den senaste tillgängliga tidpunkten (**Senast bearbetade**).
-2. De väljer **Stäng datorn innan du påbörjar redundans**, så att Site Recovery försöker stänga av den virtuella källdatorn innan redundansväxlingen utlöses. Redundansen fortsätter även om avstängningen misslyckas.
+2. De väljer **Stäng datorn innan du påbörjar redundans**, så att Site Recovery försöker stänga av den virtuella källdatorn innan redundansväxlingen utlöses. Redundansväxlingen fortsätter även om avstängningen misslyckas.
 3. Redundanstest:
 
     - En kravkontroll körs för att säkerställa att alla villkor som krävs för migreringen är uppfyllda.

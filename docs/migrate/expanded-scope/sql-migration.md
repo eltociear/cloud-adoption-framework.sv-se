@@ -1,6 +1,5 @@
 ---
 title: Påskynda migreringen genom att migrera en instans av SQL Server
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Migrering av hela SQL Server instanser kan påskynda migreringen av arbetsbelastningar.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e499e499cf1639bf9ce1118dcb93254268e9cb54
-ms.sourcegitcommit: 3c325764ad8229b205d793593ff344dca3a0579b
+ms.openlocfilehash: 5b2190456e63c0e1da39f064e34d63eebbf4d998
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/23/2019
-ms.locfileid: "75328930"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802998"
 ---
 # <a name="accelerate-migration-by-migrating-multiple-databases-or-entire-sql-servers"></a>Påskynda migrering genom att migrera flera databaser eller hela SQL-servrar
 
@@ -42,7 +41,7 @@ Om den här guiden överensstämmer med dina kriterier fortsätter du med den h�
 
 Innan du utför en SQL Server migrering börjar du med en expansion av den digitala fastigheten genom att inkludera en datafastighet. Datafastigheten registrerar en inventering av de data till gångar som du överväger för migrering. Följande tabeller beskriver en metod för att registrera datafastigheten.
 
-### <a name="server-inventory"></a>Serverlager
+### <a name="server-inventory"></a>Server lager
 
 Följande är ett exempel på en server inventering:
 
@@ -60,10 +59,10 @@ Följande är ett exempel på en databas inventering för en av servrarna ovan:
 
 |Server|Databas|[Allvarlighets grad](../../manage/considerations/criticality.md)|[Normal](../../govern/policy-compliance/data-classification.md)|Data Migration Assistant resultat (DMA)|DMA-reparation|Mål plattform|
 |---------|---------|---------|---------|---------|---------|---------|
-|SQL-01|DB-1|Verksamhetskritiskt|Strikt konfidentiellt|Överensstämmelse|Gäller inte|Azure SQL Database|
+|SQL-01|DB-1|Verksamhetskritiskt|Mycket konfidentiellt|Överensstämmelse|Gäller inte|Azure SQL Database|
 |SQL-01|DB-2|Hög|Konfidentiellt|Schema ändring krävs|Genomförda ändringar|Azure SQL Database|
 |SQL-01|DB-3|Hög|Allmänt|Överensstämmelse|Gäller inte|Azure SQL-hanterad instans|
-|SQL-01|DB-4|Låg|Strikt konfidentiellt|Schema ändring krävs|Schemalagda ändringar|Azure SQL-hanterad instans|
+|SQL-01|DB-4|Låg|Mycket konfidentiellt|Schema ändring krävs|Schemalagda ändringar|Azure SQL-hanterad instans|
 |SQL-01|DB-5|Verksamhetskritiskt|Allmänt|Överensstämmelse|Gäller inte|Azure SQL-hanterad instans|
 |SQL-01|DB-6|Hög|Konfidentiellt|Överensstämmelse|Gäller inte|Azure SQL Database|
 
@@ -94,7 +93,7 @@ Målet och källan för data strukturen och tjänsterna kan göra dessa två ste
 
 Den föreslagna sökvägen för migrering och synkronisering använder en kombination av följande tre verktyg. I följande avsnitt beskrivs mer komplexa alternativ för migrering och synkronisering som möjliggör en bredare mängd olika mål-och käll lösningar.
 
-|Migreringsalternativ|Syfte|
+|Migrations alternativ|Syfte|
 |---------|---------|
 |[Azure Database Migration Service](https://docs.microsoft.com/sql/dma/dma-overview)|Har stöd för online (minimal nedtid) och offline (en gång) migreringar i skala till en Azure SQL Database Hanterad instans. Stöder migrering från: SQL Server 2005, SQL Server 2008 och SQL Server 2008 R2, SQL Server 2012, SQL Server 2014, SQL Server 2016 och SQL Server 2017.|
 |[Transaktionsreplikering](https://docs.microsoft.com/sql/relational-databases/replication/administration/enhance-transactional-replication-performance)|Transaktionsreplikering till en Azure SQL Database Hanterad instans stöds för migreringar från: SQL Server 2012 (SP2 CU8, SP3 eller senare), SQL Server 2014 (RTM CU10 eller senare eller SP1 CU3 eller senare), SQL Server 2016, SQL Server 2017.|

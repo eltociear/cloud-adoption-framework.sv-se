@@ -1,6 +1,5 @@
 ---
 title: Utvärdera din omvandlings resa
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Utvärdera din omvandlings resa
 author: alexbuckgit
 ms.author: abuck
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 413a7023738f510f5b08692a3f88a88cd3333632
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a25e7c9149c14d25f86f7095db8404b85cc95b48
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027434"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806534"
 ---
 # <a name="assess-your-transformation-journey"></a>Utvärdera din omvandlings resa
 

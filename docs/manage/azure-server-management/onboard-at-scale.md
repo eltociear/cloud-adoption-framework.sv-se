@@ -1,6 +1,5 @@
 ---
 title: Konfigurera Azure Server Management Services för en prenumeration
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Konfigurera Azure Server Management Services för en prenumeration
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c4a0964ed8ec28ead844e1fd15275422adf8f081
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: c3c44f3c53049f29be989616e1d5af041907e497
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656639"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808098"
 ---
 # <a name="configure-azure-server-management-services-at-scale"></a>Konfigurera Azure Server Management Services i stor skala
 
@@ -48,7 +47,7 @@ Azure Policy har ett inbyggt [princip initiativ](https://docs.microsoft.com/azur
 
 Så här tilldelar du de principer som beskrivs i föregående avsnitt:
 
-1. I Azure Portal går du till **Azure Policy**  > **tilldelningar**  > **tilldela initiativ**.
+1. I Azure Portal går du till **Azure Policy** > **tilldelningar** > **tilldela initiativ**.
 
     ![Skärm bild av portalens princip gränssnitt](./media/onboarding-at-scale1.png)
 
@@ -140,7 +139,7 @@ Följ dessa steg om du vill skapa eller ändra den sparade sökningen:
 
 För att implementera den här lösningen:
 
-1. I Azure Portal öppnar du **alla tjänster** och väljer **hantering + styrning**  > **lösningar**.
+1. I Azure Portal öppnar du **alla tjänster** och väljer **hantering + styrning** > **lösningar**.
 2. I vyn **lösningar** väljer du **Lägg till**.
 3. Sök efter **Aktivitetslogganalys** och markera det.
 4. Välj **Skapa**.
@@ -153,14 +152,14 @@ Azure Log Analytics Agenthälsa-lösningen rapporterar om hälsa, prestanda och 
 
 För att implementera den här lösningen:
 
-1. I Azure Portal öppnar du **alla tjänster** och väljer **hantering + styrning**  > **lösningar**.
+1. I Azure Portal öppnar du **alla tjänster** och väljer **hantering + styrning** > **lösningar**.
 2. I vyn **lösningar** väljer du **Lägg till**.
 3. Sök efter **hälso tillstånd för Azure-Log Analytics agent** och markera det.
 4. Välj **Skapa**.
 
 Du måste ange **arbets ytans namn** på arbets ytan som du skapade i föregående avsnitt där lösningen är aktive rad.
 
-När du har skapat en arbets yta visas **AgentHealthAssessment** när du väljer **Visa**  > -**lösningar**på arbets ytans resurs instans.
+När du har skapat en arbets yta visas **AgentHealthAssessment** när du väljer **Visa** > - **lösningar**på arbets ytans resurs instans.
 
 ### <a name="antimalware-assessment"></a>Utvärdering av program mot skadlig kod
 
@@ -168,14 +167,14 @@ Lösningen för utvärdering av program mot skadlig kod hjälper dig att identif
 
 För att implementera den här lösningen:
 
-1. I Azure Portal öppnar du **alla tjänster** och väljer **hantering + styrning**  > **lösningar**.
+1. I Azure Portal öppnar du **alla tjänster** och väljer **hantering + styrning** > **lösningar**.
 2. I vyn **lösningar** väljer du **Lägg till**.
 3. Sök efter och välj **utvärdering av program mot skadlig kod**.
 4. Välj **Skapa**.
 
 Du måste ange **arbets ytans namn** på arbets ytan som du skapade i föregående avsnitt där lösningen är aktive rad.
 
-När du har skapat den här arbets ytan visar resurs instansen **program mot skadlig kod** när du väljer **Visa**  > -**lösningar**.
+När du har skapat den här arbets ytan visar resurs instansen **program mot skadlig kod** när du väljer **Visa** > - **lösningar**.
 
 ### <a name="azure-monitor-for-vms"></a>Azure Monitor för virtuella datorer
 

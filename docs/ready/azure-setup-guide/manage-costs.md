@@ -1,6 +1,5 @@
 ---
 title: Hantera kostnader och fakturering för dina Azure-resurser
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig hur du ställer in budgetar, betalningar och få bättre förståelse kring faktureringen av dina Azure-resurser.
 author: dchimes
 ms.author: kfollis
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 51d2ae124089ee1afa07e64b2e72bb1eb608bebb
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 4f0f0d900f75338a33b1873b8d0eac6d91835256
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251690"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799530"
 ---
 # <a name="manage-costs-and-billing-for-your-azure-resources"></a>Hantera kostnader och fakturering för dina Azure-resurser
 
