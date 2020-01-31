@@ -1,6 +1,5 @@
 ---
 title: IT Cloud readiness guide
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Hur kan en IT förberedas för molnet
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 5675d611979c992f41f03d362f0110aaeb3b9b24
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: ea86e0b35dd61cb65a5396a6c9f2e604abe6d9a5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547380"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805004"
 ---
 # <a name="ciso-cloud-readiness-guide"></a>IT Cloud readiness guide
 
@@ -57,7 +56,7 @@ Sekretess och kontroller:
 
 Fastställ
 
-- [Microsoft säkerhets Center](https://www.microsoft.com/trustcenter/default.aspx)
+- [Microsoft Säkerhetscenter](https://www.microsoft.com/trustcenter/default.aspx)
 - [Hubb för vanliga kontroller](https://www.microsoft.com/trustcenter/Common-Controls-Hub)
 - [Check lista för Cloud Services noggrannhet](https://www.microsoft.com/trustcenter/Compliance/Due-Diligence-Checklist)
 - [Efterlevnad av tjänst, plats och bransch](https://www.microsoft.com/trustcenter/Compliance/default.aspx)

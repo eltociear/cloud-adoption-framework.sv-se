@@ -1,6 +1,5 @@
 ---
 title: 'Cloud innovation: Lär dig'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Introduktion till utveckling av moln – lär dig innehåll
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b960bbd4382a14f254038397f3843d7ad7b65f8c
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 3f15407d78517d588e9f98ac6bbbb779574a7afd
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752994"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808438"
 ---
 # <a name="learn-with-customers"></a>Lär dig med kunderna
 
@@ -56,4 +55,4 @@ Som nästa steg för att förstå den här metoden kan [vanliga blockerare och u
 > [!div class="nextstepaction"]
 > [Förstå vanliga blockerare och utmaningar](./challenges.md)
 
-Några av begreppen i den här artikeln bygger vidare på ämnen som beskrivs i [den Lean-starten](https://theleanstartup.com/book), skrivet av Eric Återställ inställningar.
+Några av begreppen i den här artikeln bygger vidare på ämnen som beskrivs i [den Lean-starten](http://theleanstartup.com/book), skrivet av Eric Återställ inställningar.

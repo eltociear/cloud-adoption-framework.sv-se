@@ -1,6 +1,5 @@
 ---
 title: Ange en ny värd för en lokal app genom att migrera till virtuella Azure-datorer och Azure SQL Database Managed Instance
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig hur Contoso anger en ny värd för en lokal app på virtuella Azure-datorer genom att använda Azure SQL Database Managed Instance.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b594283b4787cb9b369f018264098fd052ec638e
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: 5850b9d3da33babd4c44145fbca8f81da7dd8ff5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781869"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807367"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Ange en ny värd för en lokal app på en virtuell Azure-dator och SQL Database Managed Instance
 
@@ -110,7 +109,7 @@ Tjänst | Beskrivning | Kostnad
 --- | --- | ---
 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Med Azure Database Migration Service kan du migrera sömlöst från flera databaskällor till Azure-dataplattformar med minsta möjliga stilleståndstid. | Lär dig mer om [regioner som stöds](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) och [Database Migration Service- prissättning](https://azure.microsoft.com/pricing/details/database-migration).
 [Azure SQL Database Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | Managed Instance är en hanterad databastjänst som representerar en fullständigt hanterad SQL Server-instans i Azure-molnet. Den använder samma kod som den senaste versionen av SQL Server Database Engine och innehåller de senaste funktionerna, prestandaförbättringar och säkerhetskorrigeringar. | Om du använder en SQL Database Managed Instance som körs i Azure, debiteras avgifter baserat på kapacitet. Läs mer om [prissättning av Managed Instance](https://azure.microsoft.com/pricing/details/sql-database/managed).
-[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | Site Recovery-tjänsten dirigerar samt hanterar migrering och haveriberedskap för virtuella Azure-datorer, lokala virtuella datorer och fysiska servrar. | Under replikeringen till Azure debiteras Azure Storage-avgifter. Virtuella Azure-datorer skapas och debiteras när redundans sker. Läs mer om [debitering och prissättning för Site Recovery](https://azure.microsoft.com/pricing/details/site-recovery).
+[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | Site Recovery-tjänsten dirigerar samt hanterar migrering och haveriberedskap för virtuella Azure-datorer, lokala virtuella datorer och fysiska servrar. | Vid replikering till Azure debiteras Azure Storage-avgifter. Virtuella Azure-datorer skapas och debiteras när redundans sker. Läs mer om [debitering och prissättning för Site Recovery](https://azure.microsoft.com/pricing/details/site-recovery).
 
 ## <a name="prerequisites"></a>Krav
 
@@ -529,7 +528,7 @@ Innan de migrerar WEBVM kan ett redundanstest hjälpa dem att se att allt funger
 
     ![växling vid fel](./media/contoso-migration-rehost-vm-sql-managed-instance/failover1.png)
 
-3. Efter redundansväxlingen kontrollerar de att den virtuella Azure-datorn visas som förväntat på Azure-portalen.
+3. Efter redundansen kontrollerar de att den virtuella Azure-datorn visas som förväntat i Azure-portalen.
 
    ![Information om återställningsplan](./media/contoso-migration-rehost-vm-sql-managed-instance/failover2.png)
 

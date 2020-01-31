@@ -1,6 +1,5 @@
 ---
 title: Distribuera en landningszon i Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig att distribuera en landningszon i Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, setup
-ms.openlocfilehash: 59b57467eeae47b73fa24ce672d9e7e4f0ed4478
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 42e7064a6d3b125a01f6fca9ce041b473fb1b7f6
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251700"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799496"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Distribuera en landningszon för migrering
 
@@ -69,7 +68,7 @@ Följande beslut speglas i skissen för landningszonen.
 |Storage|Gäller inte|[Riktlinjer för Azure Storage](../considerations/storage-options.md)         |
 |Standarder för namngivning och taggning|Gäller inte|[Metodtips för namngivning och taggning](../azure-best-practices/naming-and-tagging.md)         |
 |Kostnadshantering|Gäller inte|[Spåra kostnader](../azure-best-practices/track-costs.md)|
-|Compute|Gäller inte|[Compute-alternativ](../considerations/compute-options.md)|
+|Databearbetning|Gäller inte|[Compute-alternativ](../considerations/compute-options.md)|
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>Anpassa eller distribuera en landningszon från den här skissen
 

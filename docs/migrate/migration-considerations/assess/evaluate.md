@@ -1,19 +1,18 @@
 ---
 title: Utvärdera beredskap för arbetsbelastningar
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: En process inom molnmigreringen som fokuserar på att överföra arbetsbelastningar till molnet.
+description: En process inom molnmigreringen som fokuserar uppgifterna för att migrera arbetsbelastningar till molnet.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7df4792fda1436d822108dc20d422e6912a0709f
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: c695d83c4e04b3cd837ff5916e47c128f17a1d34
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74159869"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802556"
 ---
 # <a name="evaluate-workload-readiness"></a>Utvärdera beredskap för arbetsbelastningar
 

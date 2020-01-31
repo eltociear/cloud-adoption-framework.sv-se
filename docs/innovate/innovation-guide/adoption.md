@@ -1,6 +1,5 @@
 ---
 title: 'Guide till Azure-innovation: Förbereda för kundfeedback'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Förbereda för kundfeedback
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7bf52b9be08ae2122b6a7f20a19d99f5621fb0e4
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: c78eae75bca30cac541a997fa9d4901b03b277c0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251946"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808370"
 ---
 ::: zone target="docs"
 
@@ -29,7 +28,7 @@ ms.locfileid: "74251946"
 
 ::: zone-end
 
-Nyckeln till en lyckad innovation ligger i att göra det enkelt för användarna att ta till sig den, engagera sig i den och vilja fortsätta använda den. Varför?
+Nyckeln till en lyckad innovation ligger i att göra det enkelt för användarna att ta till sig den, engagera sig i den och vilja fortsätta använda den. Varför det?
 
 Att skapa en ny innovativ lösning handlar inte om att ge användarna vad de vill ha, eller vad de tror att de vill ha. Det handlar om att formulera en hypotes som kan testas och sedan förbättras. Testningen kan göras på två sätt:
 

@@ -1,6 +1,5 @@
 ---
 title: Resurs konsekvens statistik, indikatorer och risk tolerans
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Resurs konsekvens statistik, indikatorer och risk tolerans
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2a6f59c09533fc400871d549e32c9b7d56024551
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: e6947ce39cc713f969ee658f7c0d0c269fb358d7
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548066"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805157"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>Resurs konsekvens statistik, indikatorer och risk tolerans
 
@@ -55,10 +54,10 @@ I det tidiga skedet av moln införande arbetar du med IT-avdelningen och affärs
 
 När du har en bas linje kan du fastställa de lägsta benchmark-värden som representerar en oacceptabel ökning av dina identifierade risker. Dessa riktmärken fungerar som utlösare för när du behöver vidta åtgärder för att åtgärda dessa risker. Nedan följer några exempel på hur drifts mått, till exempel de som beskrivs ovan, kan motivera en ökad investering i disciplinen för resurs konsekvens.
 
-- **Tagga och namngivnings utlösare.** Ett företag med fler än _x_ resurser som saknar obligatorisk taggnings information eller som inte uppfyller namngivnings standarder bör överväga att investera i resurs konsekvens disciplinen för att förfina dessa standarder och säkerställa konsekvent tillämpning av dem i moln-distribuerade till gångar.
+- **Tagga och namngivnings utlösare.** Ett företag med fler än _x_ resurser som saknar obligatorisk taggnings information eller som inte följer namngivnings standarder bör överväga att investera i resurs konsekvens disciplinen för att förfina dessa standarder och säkerställa konsekvent tillämpning av dem på molnbaserade till gångar.
 - **Överetablerade resurser utlösare.** Om ett företag har mer än _x%_ av till gångar som regelbundet använder små mängder av sina tillgängliga minnes-, processor-eller nätverks funktioner, föreslås investeringen i disciplinen för resurs konsekvens för att hjälpa till att optimera resursernas användning för dessa objekt.
-- **Utlösare av underetablerad resurser.** Om ett företag har mer än _x%_ av till gångar som regelbundet förbrukar de flesta av de tillgängliga funktionerna för minne, processor eller nätverk, föreslås investeringen i disciplinen för resurs konsekvens för att säkerställa att dessa till gångar har de resurser som krävs för att förhindra tjänst avbrott.
-- **Resurs ålders utlösare.** Ett företag med fler än _x_ resurser som inte har uppdaterats på över _y_ -månader kan dra nytta av investeringar i resurs konsekvens disciplinen som syftar till att säkerställa att aktiva resurser korrigeras och är felfria, samtidigt som de tar ur bruk eller outnyttjade till gångar.
+- **Utlösare av underetablerad resurser.** Om ett företag har mer än _x%_ av till gångar som regelbundet förbrukar de flesta av sina tillgängliga minnes-, processor-eller nätverksfunktioner, föreslås investeringen i disciplinen för resurs konsekvens för att säkerställa att dessa till gångar har de resurser som krävs för att förhindra avbrott i tjänsten.
+- **Resurs ålders utlösare.** Ett företag med fler än _x_ resurser som inte har uppdaterats på över _y_ -månader kan dra nytta av investeringar i resurs konsekvens disciplinen som syftar till att säkerställa att aktiva resurser korrigeras och är felfria, samtidigt som du tar bort föråldrade eller outnyttjade till gångar.
 - **Utlösare på service nivå avtal.** Ett företag som inte kan uppfylla sina service avtals avtal till sina externa kunder eller interna partner bör investera i distributions accelerations disciplinen för att minska system stillestånds tiden.
 - **Utlösare för återställnings tid.** Om ett företag överskrider de tröskelvärden som krävs för återställnings tiden efter ett systemfel, bör det investera i att förbättra dess spridnings-och system design för att minska eller eliminera problem eller påverka enskilda komponenters drift stopp.
 - **Hälso utlösare för virtuell dator.** Ett företag som har mer än _x%_ av de virtuella datorer som har ett kritiskt hälso problem bör investera i resurs konsekvens disciplinen för att identifiera problem och förbättra VM-stabiliteten.

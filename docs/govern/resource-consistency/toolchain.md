@@ -1,6 +1,5 @@
 ---
 title: Resurs konsekvens verktyg i Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Resurs konsekvens verktyg i Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a09e4748dd805757d9f78e8dd927737ca9a91f7f
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: a2f553285f9d44085cc816c2db34f76fcb02235d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222939"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805191"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Resurs konsekvens verktyg i Azure
 
@@ -22,40 +21,40 @@ ms.locfileid: "71222939"
 
 Följande är en lista över Azure-verktyg som kan hjälpa mogna för de principer och processer som har stöd för den här styrnings disciplinen.
 
-| Verktyg | [Azure Portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
+| Verktyg | [Azure-portalen](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
 |---------|---------|---------|---------|---------|---------|---------|---------|
-| Distribuera resurser                             | Ja | Ja | Ja | Ja | Nej  | Nej | Nej |
-| Hantera resurser                             | Ja | Ja | Ja | Ja | Nej  | Nej | Nej |
-| Distribuera resurser med hjälp av mallar             | Nej  | Ja | Nej  | Ja | Nej  | Nej | Nej |
-| Distribution av dirigerad miljö          | Nej  | Nej  | Ja | Nej  | Nej  | Nej | Nej |
-| Definiera resurs grupper                       | Ja | Ja | Ja | Nej  | Nej  | Nej | Nej |
-| Hantera arbets belastning och konto ägare           | Ja | Ja | Ja | Nej  | Nej  | Nej | Nej |
-| Hantera villkorlig åtkomst till resurser       | Ja | Ja | Ja | Nej  | Nej  | Nej | Nej |
-| Konfigurera RBAC-användare                         | Ja | Nej  | Nej  | Nej  | Ja | Nej | Nej |
-| Tilldela roller och behörigheter till resurser | Ja | Ja | Ja | Nej  | Ja | Nej | Nej |
-| Definiera beroenden mellan resurser        | Nej  | Ja | Ja | Nej  | Nej  | Nej | Nej |
-| Använd åtkomst kontroll                         | Ja | Ja | Ja | Nej  | Ja | Nej | Nej |
-| Utvärdera tillgänglighet och skalbarhet          | Nej  | Nej  | Nej  | Ja | Nej  | Nej | Nej |
-| Använd taggar för resurser                      | Ja | Ja | Ja | Nej  | Nej  | Nej | Nej |
-| Tilldela Azure Policy regler                    | Ja | Ja | Ja | Nej  | Nej  | Nej | Nej |
-| Använd automatiserad reparation                  | Nej  | Nej  | Nej  | Ja | Nej  | Nej | Nej |
-| Hantera fakturering                               | Ja | Nej  | Nej  | Nej  | Nej  | Nej | Nej |
-| Planera resurser för haveri beredskap         | Ja | Ja | Ja | Nej  | Nej  | Ja | Ja |
-|Återställa data under ett avbrott eller SLA-överträdelse     | Nej | Nej  | Nej  | Nej  | Nej  | Ja | Ja |
-|Återställa program och data under ett avbrott eller SLA-överträdelse     | Nej | Nej  | Nej  | Nej  | Nej  | Ja | Ja |
+| Distribuera resurser                             | Ja | Ja | Ja | Ja | Inga  | Inga | Inga |
+| Hantera resurser                             | Ja | Ja | Ja | Ja | Inga  | Inga | Inga |
+| Distribuera resurser med hjälp av mallar             | Inga  | Ja | Inga  | Ja | Inga  | Inga | Inga |
+| Distribution av dirigerad miljö          | Inga  | Inga  | Ja | Inga  | Inga  | Inga | Inga |
+| Definiera resurs grupper                       | Ja | Ja | Ja | Inga  | Inga  | Inga | Inga |
+| Hantera arbets belastning och konto ägare           | Ja | Ja | Ja | Inga  | Inga  | Inga | Inga |
+| Hantera villkorlig åtkomst till resurser       | Ja | Ja | Ja | Inga  | Inga  | Inga | Inga |
+| Konfigurera RBAC-användare                         | Ja | Inga  | Inga  | Inga  | Ja | Inga | Inga |
+| Tilldela roller och behörigheter till resurser | Ja | Ja | Ja | Inga  | Ja | Inga | Inga |
+| Definiera beroenden mellan resurser        | Inga  | Ja | Ja | Inga  | Inga  | Inga | Inga |
+| Använd åtkomst kontroll                         | Ja | Ja | Ja | Inga  | Ja | Inga | Inga |
+| Utvärdera tillgänglighet och skalbarhet          | Inga  | Inga  | Inga  | Ja | Inga  | Inga | Inga |
+| Använd taggar för resurser                      | Ja | Ja | Ja | Inga  | Inga  | Inga | Inga |
+| Tilldela Azure Policy regler                    | Ja | Ja | Ja | Inga  | Inga  | Inga | Inga |
+| Använd automatiserad reparation                  | Inga  | Inga  | Inga  | Ja | Inga  | Inga | Inga |
+| Hantera fakturering                               | Ja | Inga  | Inga  | Inga  | Inga  | Inga | Inga |
+| Planera resurser för haveri beredskap         | Ja | Ja | Ja | Inga  | Inga  | Ja | Ja |
+|Återställa data under ett avbrott eller SLA-överträdelse     | Inga | Inga  | Inga  | Inga  | Inga  | Ja | Ja |
+|Återställa program och data under ett avbrott eller SLA-överträdelse     | Inga | Inga  | Inga  | Inga  | Inga  | Ja | Ja |
 
 Tillsammans med dessa resurs konsekvens verktyg och funktioner måste du övervaka dina distribuerade resurser för prestanda-och hälso problem. [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) är standard lösningen för övervakning och rapportering i Azure. Azure Monitor tillhandahåller funktioner för att övervaka dina moln resurser. Den här listan visar vilken funktion som behandlar vanliga övervaknings krav.
 
-| Verktyg | [Azure Portal](https://azure.microsoft.com/features/azure-portal) | [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview) | [Log Analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview) | [Azure Monitor REST API](https://docs.microsoft.com/rest/api/monitor) |
+| Verktyg | [Azure-portalen](https://azure.microsoft.com/features/azure-portal) | [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview) | [Log Analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview) | [Azure Monitor REST API](https://docs.microsoft.com/rest/api/monitor) |
 |----------------------------------------------------|--------------|----------------------|---------------|------------------------|
-| Logga data för telemetri för virtuell dator                 | Nej           | Nej                   | Ja           | Nej                     |
-| Logga data för telemetri för virtuella nätverk              | Nej           | Nej                   | Ja           | Nej                     |
-| Logga PaaS Services telemetridata                   | Nej           | Nej                   | Ja           | Nej                     |
-| Information om log Application-telemetri                     | Nej           | Ja                  | Nej            | Nej                     |
-| Konfigurera rapporter och aviseringar                       | Ja          | Nej                   | Nej            | Ja                    |
-| Schemalägga vanliga rapporter eller anpassade analyser        | Nej           | Nej                   | Nej            | Nej                     |
-| Visualisera och analysera logg-och prestanda data     | Ja          | Nej                   | Nej            | Nej                     |
-| Integrera med en lokal eller tredje parts övervaknings lösning     | Nej           | Nej                   | Nej            | Ja                    |
+| Logga data för telemetri för virtuell dator                 | Inga           | Inga                   | Ja           | Inga                     |
+| Logga data för telemetri för virtuella nätverk              | Inga           | Inga                   | Ja           | Inga                     |
+| Logga PaaS Services telemetridata                   | Inga           | Inga                   | Ja           | Inga                     |
+| Information om log Application-telemetri                     | Inga           | Ja                  | Inga            | Inga                     |
+| Konfigurera rapporter och aviseringar                       | Ja          | Inga                   | Inga            | Ja                    |
+| Schemalägga vanliga rapporter eller anpassade analyser        | Inga           | Inga                   | Inga            | Inga                     |
+| Visualisera och analysera logg-och prestanda data     | Ja          | Inga                   | Inga            | Inga                     |
+| Integrera med en lokal eller tredje parts övervaknings lösning     | Inga           | Inga                   | Inga            | Ja                    |
 
 När du planerar distributionen måste du fundera över var loggnings data lagras och hur du integrerar molnbaserade [rapporterings-och övervaknings tjänster](../../decision-guides/logging-and-reporting/index.md) med dina befintliga processer och verktyg.
 

@@ -1,6 +1,5 @@
 ---
 title: 'Moln innovation: verktyg för att demokratisera identifieringen av data i Azure'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Verktyg för att demokratisera identifieringen av data i Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d86bebc3a993443c4dded4b1a0f23ff518147bd4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3fed47eb3a5bb7a3b51f19f2d103395ede848e9d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565842"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808693"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>Verktyg för att demokratisera identifieringen av data i Azure
 
@@ -63,7 +62,7 @@ I Azure används följande verktyg ofta för att påskynda digitala uppfinningar
 
 När de uppfinnings metoder som används i skalan kräver olika aspekter av varje lösning förfining och teknisk mognad. Som det händer är det troligt att mer av dessa tjänster krävs. Använd innehålls förteckningen till vänster på den här sidan för Azure tools-vägledningen som är relevant för processen för hypotes testning.
 
-## <a name="get-started"></a>Kom igång
+## <a name="get-started"></a>Kom i gång
 
 I innehålls förteckningen till vänster på den här sidan finns många artiklar. De här artiklarna hjälper dig att komma igång med var och en av verktygen i verktygskedjan.
 

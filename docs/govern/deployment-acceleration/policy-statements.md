@@ -1,6 +1,5 @@
 ---
 title: Exempel princip satser för distributions acceleration
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Exempel princip satser för distributions acceleration
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9a879f2957f1fd7c1d92a9a01381c64cff320d27
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: c582b0a6e836f5198724e5675840f3f8085f55dc
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752683"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803950"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Exempel princip satser för distributions acceleration
 

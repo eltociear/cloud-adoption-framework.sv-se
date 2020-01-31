@@ -1,6 +1,5 @@
 ---
 title: Balansera portföljen
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lean för att balansera din moln portfölj.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9834778e7aaddc616d595e874459fa7bd3eb61e3
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: e93d5144a361aa3d6fb328c1d6f47eb3c069e11c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74159908"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803304"
 ---
 # <a name="balance-the-portfolio"></a>Balansera portföljen
 
@@ -115,7 +114,7 @@ Dessa skilda ansträngningar bör delas upp i två eller flera moln antagande te
 
 Under migreringen ska ansträngningarna segmenteras på de tre sätt som anges ovan och utföras av lämpligt team i lämplig iteration. Även om du skulle kunna förstå portföljen bör du också se till att ansträngningarna är mycket fokuserade och åtskiljda.
 
-## <a name="optimize-and-promote-process-changes"></a>Optimera och höja upp processändringar
+## <a name="optimize-and-promote-process-changes"></a>Optimera och flytta upp processändringar
 
 Inga ytterligare ändringar krävs i processerna för optimering och upphöjning under migreringsarbetet.
 
@@ -128,4 +127,4 @@ Inga ytterligare ändringar krävs i processerna för skydd och hantering under 
 Gå tillbaka till [checklistan för utökat omfång](./index.md) och se till att din migreringsmetod är helt anpassad till kraven.
 
 > [!div class="nextstepaction"]
-> [Checklista för utökat omfång](./index.md)
+> [Utökad checklista](./index.md)

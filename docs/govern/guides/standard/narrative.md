@@ -1,6 +1,5 @@
 ---
 title: 'Standard styrnings guide för företag: de som står bakom styrnings strategin'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Detta upprättar ett användnings fall för styrning under ett standard företags moln införande resa.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8bf9b65c71defd57c319f46a83b5d4540967b012
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1e6edb6db4663c9a3b78394dc715376f697e6f5e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547439"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805531"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Standard styrnings guide för företag: de som står bakom styrnings strategin
 
@@ -52,7 +51,7 @@ Följande ändringar förväntas under de närmaste åren:
 - INFORMATIONS gruppen är att granska principen om personliga data och finansiella data för att tillåta framtida tillstånds mål.
 - Program utvecklingen och BI-teamen vill frisläppa molnbaserade lösningar för produktion under de närmaste 24 månaderna, baserat på vad som krävs för kund engagemang och nya produkter.
 - Det här året kommer IT-teamet att avsluta arbets belastningarna för haveri beredskap i DR-datacenter genom att migrera 2 000-VM: ar till molnet. Detta förväntas ge en uppskattad kostnad på $25M USD under de kommande fem åren.
-    ![On-anläggnings kostnader jämfört med Azure-kostnader som demonstrerar en avkastning på $25M USD under de kommande fem åren ](../../../_images/govern/calculator-small-to-medium-enterprise.png)
+    ![lokala kostnader jämfört med Azure-kostnader som demonstrerar en avkastning på $25M USD under de kommande fem åren](../../../_images/govern/calculator-small-to-medium-enterprise.png)
 - Företaget planerar att ändra hur det gör IT-investeringar genom att flytta in den utbetalade kapital kostnaden som en drifts kostnad i den. Den här ändringen ger bättre kostnads kontroll och gör det möjligt för IT att påskynda andra planerade insatser.
 
 ## <a name="next-steps"></a>Nästa steg

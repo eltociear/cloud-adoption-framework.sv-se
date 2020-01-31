@@ -1,6 +1,5 @@
 ---
 title: Påbörja en migrering av molnet i Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Påbörja en migrering av molnet i Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,18 +7,18 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: c902c2a3f564bd2fcc575c8eb885b52da068826e
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: e5ef9aecfe30cc9b401e9b4ffabe56e50f3afad2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781689"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804460"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Påbörja en migrering av molnet i Azure
 
 Använd Microsoft Cloud implementerings ramverk för Azure för att påbörja en migrering av moln migrering. Det här ramverket innehåller omfattande vägledning för över gång av äldre program arbets belastningar till molnet med hjälp av innovativa molnbaserade tekniker.
 
-## <a name="executive-summary"></a>Sammanfattning
+## <a name="executive-summary"></a>Sammanfattning av chefer
 
 Ramverket för moln införande hjälper kunder att åta sig en förenklad moln implementering. Det här ramverket innehåller detaljerad information om en moln implementering från slut punkt till slut punkt som börjar med riktade företags resultat och sedan justerar moln beredskap och-utvärderingar med tydliga definierade affärs mål. Dessa resultat uppnås via en definierad sökväg för moln införande. Med migration-baserad implementering fokuserar den definierade sökvägen i stor utsträckning på migreringen av lokala arbets belastningar till molnet. Ibland omfattar den här resan modernisering av arbets belastningar för att öka avkastningen på investeringar från migreringens ansträngning.
 
@@ -36,7 +35,7 @@ Moln migreringar kan hjälpa företag att uppnå sina önskade affärs resultat.
 
 |Kritiska affärs händelser | Motivation vid migrering | Nyskapande motivation |
 |---------|---------|---------|
-| Avsluta data Center<br/><br/>Sammanslagningar, förvärv eller Divestiture<br/><br/>Minskning av kapital utgifter<br/><br/>Slut på support för verksamhets kritiska tekniker<br/><br/>Svar på ändringar i regelefterlevnad<br/><br/>Möta nya krav för data suveränitet<br/><br/>Minska störningar och förbättra IT-stabiliteten|Kostnadsbesparingar<br/><br/>Minskning av leverantör eller teknisk komplexitet<br/><br/>Optimering av interna åtgärder<br/><br/>Öka affärsflexibiliteten<br/><br/>Förbered dig för nya tekniska funktioner<br/><br/>Skala för att uppfylla marknadens krav<br/><br/>Skala för att uppfylla geografiska eller marknadsmässiga krav|Förbered dig för nya tekniska funktioner<br/><br/>Bygg nya tekniska funktioner<br/><br/>Modernisera säkerhets position och kontroller<br/><br/>Skala för att uppfylla geografiska eller marknadsmässiga krav<br/><br/>Förbättra kund upplevelsen och engagemang<br/><br/>Omvandla produkter eller tjänster<br/><br/>Störa marknaden med nya produkter eller tjänster|
+| Avsluta data Center<br/><br/>Sammanslagningar, förvärv eller Divestiture<br/><br/>Minskning av kapital utgifter<br/><br/>Slut på support för verksamhets kritiska tekniker<br/><br/>Svar på ändringar i regelefterlevnad<br/><br/>Möta nya krav för data suveränitet<br/><br/>Minska störningar och förbättra IT-stabiliteten|Kostnadsbesparingar<br/><br/>Minskning av leverantör eller teknisk komplexitet<br/><br/>Optimering av interna åtgärder<br/><br/>Öka affärsflexibiliteten<br/><br/>Förbered för nya tekniska funktioner<br/><br/>Skala för att uppfylla marknadens krav<br/><br/>Skala för att uppfylla geografiska eller marknadsmässiga krav|Förbered för nya tekniska funktioner<br/><br/>Bygg nya tekniska funktioner<br/><br/>Modernisera säkerhets position och kontroller<br/><br/>Skala för att uppfylla geografiska eller marknadsmässiga krav<br/><br/>Förbättra kund upplevelsen och engagemang<br/><br/>Omvandla produkter eller tjänster<br/><br/>Störa marknaden med nya produkter eller tjänster|
 
 <!-- markdownlint-enable MD033 -->
 
@@ -144,7 +143,7 @@ Ramverket för moln införande är en livs cykel lösning. Den är utformad för
 >
 > [Utveckla](../innovate/index.md)
 >
-> [Styr](../govern/index.md)
+> [Styras](../govern/index.md)
 >
 > [Hantera](../manage/index.md)
 >

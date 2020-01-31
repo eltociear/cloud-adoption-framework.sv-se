@@ -1,7 +1,6 @@
 ---
-title: 'Styrnings guide för komplexa företag: Styrning i flera lager'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Styrnings guide för komplexa företag: Styrning i flera lager'
+title: 'Styrnings guide för komplexa företag: flera olika styrnings nivåer'
+description: 'Styrnings guide för komplexa företag: flera olika styrnings nivåer'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4efd5b3de5551297a6ef5813a5108f3ad039472c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5aa48d6561f6d6122c74dcb60e82425b64071304
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222296"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806262"
 ---
-# <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>Styrnings guide för komplexa företag: Styrning i flera lager
+# <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>Styrnings guide för komplexa företag: flera olika styrnings nivåer
 
 När stora företag behöver flera olika styrnings nivåer finns det större komplexitets nivåer som måste delas in i styrnings MVP och senare styrnings förbättringar.
 

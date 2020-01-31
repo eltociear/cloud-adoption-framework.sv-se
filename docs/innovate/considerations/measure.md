@@ -1,6 +1,5 @@
 ---
 title: 'Cloud innovation: mått'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Introduktion till moln innovation – Mät innehåll
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 99e2f126c518da72e95a166d203a3c4fdbb546aa
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: d6e29f159059da9c219006a69a63484b546a4488
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752121"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808421"
 ---
 # <a name="measure-for-customer-impact"></a>Mät kundernas påverkan
 
@@ -23,7 +22,7 @@ Det finns flera sätt att mäta för kund påverkan. Den här artikeln hjälper 
 
 Under [strategi fasen](../../strategy/index.md) i moln implementeringens livs cykel, granskar vi [motivation](../../strategy/motivations.md) och [affärs resultat](../../strategy/business-outcomes/index.md). Dessa metoder tillhandahåller en uppsättning mått som du kan använda för att testa kund påverkan. När innovationen är klar brukar du se resultaten som är justerade med dina strategiska mål.
 
-Innan du etablerar inlärnings statistik definierar du ett litet antal strategiska mått som du vill att innovationen ska påverka. Vanligt vis överensstämmer dessa strategiska mått med en eller flera av följande resultat områden: [affärs smidighet](../../strategy/business-outcomes/agility-outcomes.md), [kund engagemang](../../strategy/business-outcomes/engagement-outcomes.md), [kunds täckning](../../strategy/business-outcomes/reach-outcomes.md), [finansiell påverkan](../../strategy/business-outcomes/fiscal-outcomes.md)eller i händelse av drifts innovation: [lösning prestanda](../../strategy/business-outcomes/fiscal-outcomes.md).
+Innan du etablerar inlärnings statistik definierar du ett litet antal strategiska mått som du vill att innovationen ska påverka. Vanligt vis överensstämmer dessa strategiska mått med en eller flera av följande resultat områden: [affärs smidighet](../../strategy/business-outcomes/agility-outcomes.md), [kund engagemang](../../strategy/business-outcomes/engagement-outcomes.md), [kund täckning](../../strategy/business-outcomes/reach-outcomes.md), [finansiell påverkan](../../strategy/business-outcomes/fiscal-outcomes.md)eller i händelse av drifts innovation: [lösnings prestanda](../../strategy/business-outcomes/fiscal-outcomes.md).
 
 Dokumentera de överenskomna måtten och spåra deras inverkan ofta. Men det förväntar sig inte att något av dessa mått visas för flera iterationer. Mer information om hur du ställer in och justerar förväntningar för de berörda parterna finns i [åtagande till iteration](./index.md#commitment-to-iteration).
 

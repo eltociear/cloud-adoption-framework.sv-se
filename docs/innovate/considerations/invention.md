@@ -1,6 +1,5 @@
 ---
 title: 'Utveckling av molnet: utveckla digitala uppfinningar'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Introduktion till utveckling av moln – utveckla digitala uppfinningar
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 6eaad06105ed6078f462082855378f72bc25d6a7
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4011f34f61ec41d4ec30be8b9ee8c5cb203f930a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565669"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808455"
 ---
 # <a name="develop-digital-inventions"></a>Utveckla digital innovation
 

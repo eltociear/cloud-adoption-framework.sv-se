@@ -1,6 +1,5 @@
 ---
 title: 'Styrnings guide för komplexa företag: förbättringar i multimolnet'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Styrnings guide för komplexa företag: förbättringar i multimolnet'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4279f088dd985b26c87d28a580b8351d45d9384e
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3da91b65c282e9eba8248645b18cec65763b429b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547652"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805599"
 ---
 # <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>Styrnings guide för komplexa företag: förbättringar i multimolnet
 
@@ -64,7 +63,7 @@ Det här avsnittet av artikeln förbättrar designen för styrnings MVP till att
 
 1. Anslut nätverken. Utföras av nätverk och IT-säkerhet, stöds av styrning.
     1. Om du lägger till en anslutning från MPLS eller lånad rad leverantör till det nya molnet integreras nätverk. Genom att lägga till routningstabeller och brand Väggs konfigurationer styr du åtkomst och trafik mellan miljöerna.
-2. Konsolidera identitets leverantörer. Beroende på vilka arbets belastningar som finns i det sekundära molnet finns det en mängd olika alternativ för konsolidering av identitets leverantörer. Detta är några exempel:
+2. Konsolidera identitets leverantörer. Beroende på vilka arbets belastningar som finns i det sekundära molnet finns det en mängd olika alternativ för konsolidering av identitets leverantörer. Följande är några exempel:
     1. För program som autentiserar med OAuth 2 kan användare i Active Directory i det sekundära molnet enkelt replikeras till den befintliga Azure AD-klienten.
     2. På den andra extrema, kan federationen mellan de två lokala identitets leverantörerna tillåta användare från de nya Active Directory-domänerna att replikeras till Azure.
 3. Lägg till till gångar till Azure Site Recovery.

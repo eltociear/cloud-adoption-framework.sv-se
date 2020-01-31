@@ -1,6 +1,5 @@
 ---
 title: Upprätta team strukturer
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Upprätta team strukturer
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 8000847a46082be6116abb22e52def03243c69b0
-ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
+ms.openlocfilehash: 1d4cb3873767988fc7f5538e2023a6b2ca0a6586
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71811092"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800924"
 ---
 # <a name="establish-team-structures"></a>Upprätta team strukturer
 
@@ -44,13 +43,13 @@ Nucleus av alla moln införande ansträngningar är moln implementerings teamet.
 För användnings ansträngningar i små eller tidiga faser kan det här teamet vara så litet som en person. I större skala eller i sena steg är det vanligt att ha flera moln implementerings grupper, var och en med runt sex tekniker. Oavsett storlek eller uppgifter är den konsekventa aspekten av alla moln antagande team att det ger möjlighet att integrera lösningar i molnet. För vissa organisationer kan det vara en tillräckligt organisations struktur. I artikeln om [moln antagande teamet](./cloud-adoption.md) får du mer information om strukturen, sammansättningen och funktionerna i moln implementerings teamet.
 
 > [!WARNING]
-> *Endast* ett moln antagande team (eller flera moln antagande team) betraktas som ett antimönster och bör undvikas. Överväg att minst använda [bästa praxis för MVP](#best-practice-minimum-viable-product-mvp).
+> *Endast* ett moln antagande team (eller flera moln antagande team) betraktas som ett *antimönster* och bör undvikas. Överväg att minst använda [bästa praxis för MVP](#best-practice-minimum-viable-product-mvp).
 
 ## <a name="best-practice-minimum-viable-product-mvp"></a>Bästa praxis: minimal livskraftig produkt (MVP)
 
 Vi rekommenderar att du har två team för att skapa balans mellan moln införande aktiviteter. De här två teamen är ansvariga för olika funktioner under implementerings arbetet.
 
-- **Molnimplementeringsteamet:** Det här teamet är ett konto för tekniska lösningar, affärs anpassning, projekt hantering och åtgärder för lösningar som antas.
+- **Moln antagande team:** Det här teamet är ett konto för tekniska lösningar, affärs anpassning, projekt hantering och åtgärder för lösningar som antas.
 - **Team för moln styrning:** För att balansera moln implementerings teamet är ett moln styrnings team dedikerat för att säkerställa en expert i de lösningar som antas. Moln styrnings teamet är ett konto för plattforms förfallo tid, plattforms åtgärder, styrning och automatisering.
 
 ![Moln införande med moln styrning counterbalance](../_images/ready/org-ready-best-practice.png)

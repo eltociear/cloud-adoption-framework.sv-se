@@ -1,6 +1,5 @@
 ---
 title: Motiveringar och affärs risker för säkerhets bas linjer
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Motiveringar och affärs risker för säkerhets bas linjer
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 937eb35c07996e57bc51f85090f8e1fd136848f8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9d1bf5ef10ec3acd936ba4e66cca374e8365018a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222279"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808965"
 ---
 # <a name="security-baseline-motivations-and-business-risks"></a>Motiveringar och affärs risker för säkerhets bas linjer
 
@@ -33,7 +32,7 @@ Det belopp som du investerar i säkerhets policyn och processerna är beroende a
 Säkerhets bas linje disciplinen täcker företagets principer och manuella processer som du kan vidta för att skydda din moln distribution mot säkerhets risker.
 
 > [!NOTE]
->Även om det är viktigt att förstå [identitets bas](../identity-baseline/index.md) linjen i kontexten för säkerhets bas linjen och hur det är relaterat till Access Control, kan de [fem disciplinerna i moln styrningen](../index.md) ringa ut [identitets bas linjer](../identity-baseline/index.md) som en egen disciplin, separat från säkerhets bas linje.
+>Även om det är viktigt att förstå [identitets bas](../identity-baseline/index.md) linjen i kontexten för säkerhets bas linjen och hur det är relaterat till Access Control, kan de [fem disciplinerna i moln styrningen](../index.md) ringa ut [identitets bas linjen](../identity-baseline/index.md) som en egen disciplin, separat från säkerhets bas linjen.
 
 ## <a name="business-risk"></a>Affärs risk
 

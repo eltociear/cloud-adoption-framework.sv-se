@@ -1,6 +1,5 @@
 ---
 title: Beslutsguide för regioner
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig mer om hur du väljer region för molnplattformen.
 author: doodlemania2
 ms.author: dermar
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 981752b1e1963dd4f8a646ccc087d445669e6cd3
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: aff6a3129bd93df434737a861f0b5f0daad24bcc
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753309"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806721"
 ---
 # <a name="azure-regions"></a>Azure-regioner
 
@@ -82,10 +81,10 @@ Följande tabell kan underlätta dokumentationen av resultaten från stegen ovan
 
 | Region        | Land/region     | Lokala anställda | Lokala externa användare   | Lokala datacenter eller tillgångar | Krav på datasuveränitet |
 |---------------|-------------|-----------------|------------------------|-----------------------------|-------------------------------|
-| Nordamerika | USA         | Ja             | Partners och kunder | Ja                         | Nej                            |
-| Nordamerika | Kanada      | Nej              | Kunder              | Ja                         | Ja                           |
+| Nordamerika | USA         | Ja             | Partners och kunder | Ja                         | Inga                            |
+| Nordamerika | Kanada      | Inga              | Kunder              | Ja                         | Ja                           |
 | Europa        | Tyskland     | Ja             | Partners och kunder | Nej – endast nätverk           | Ja                           |
-| Asien och stillahavsområdet  | Sydkorea | Ja             | Partner               | Ja                         | Nej                            |
+| Asien och stillahavsområdet  | Sydkorea | Ja             | Partner               | Ja                         | Inga                            |
 
 <!-- markdownlint-disable MD026 -->
 
@@ -167,7 +166,7 @@ När ett program som ska distribueras till flera regioner migreras finns det vis
 > [!NOTE]
 > Den här metoden kan öka den kortsiktiga kostnaden för migrering eftersom det kan leda till ytterligare avgifter för utgående bandbredd.
 
-## <a name="optimize-and-promote-process-changes"></a>Optimera och flytta upp processändringar
+## <a name="optimize-and-promote-process-changes"></a>Optimera och höja upp processändringar
 
 Att hantera global komplexitet under optimeringen och befordran kan kräva dubbla ansträngningar i varje ytterligare region. När en enskild distribution är godtagbar kan duplicering av planer för verksamhetstestning och verksamhetsändring ändå krävas.
 

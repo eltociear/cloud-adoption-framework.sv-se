@@ -1,6 +1,5 @@
 ---
 title: Utvärdera lokala arbetsbelastningar för migrering till Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Läs om hur Contoso utvärderar sina lokala datorer inför migrering till Azure genom att använda Azure Migrate och Data Migration Assistant.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3fe54994ac99a86bcb0a6c84c37b7b8612a129fa
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 051e52bee9b83160860234f953b19439b64eed97
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566480"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807486"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Utvärdera lokala arbetsbelastningar för migrering till Azure
 
@@ -516,7 +515,7 @@ Den här vyn visar total beräknings- och lagringskostnad för att köra de virt
 - Contoso lagrar **Contoso Migration**-projektet i Azure. Projektet är för närvarande distribuerat i **resursgruppen ContosoFailoverRG** i Azure-regionen USA, östra.
 - Den virtuella insamlaren har en utvärderingslicens på 180 dagar. Om den här gränsen går ut måste Contoso ladda ned insamlaren och konfigurera den igen.
 
-## <a name="conclusion"></a>Sammanfattning
+## <a name="conclusion"></a>Slutsats
 
 I det här scenariot utvärderar Contoso sin SmartHotel360 app-databas med hjälp av utvärderingsverktyget för Data Migration. De lokala virtuella datorerna utvärderas med hjälp av tjänsten Azure Migrate. Contoso granskar utvärderingarna för att säkerställa att lokala resurser är klara för migrering till Azure.
 

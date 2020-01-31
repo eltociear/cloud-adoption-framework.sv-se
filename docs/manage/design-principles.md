@@ -1,6 +1,5 @@
 ---
 title: Tillämpa design principer och avancerade åtgärder
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Tillämpa design principer och avancerade åtgärder
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f2e6aabec18d309aaae0a3a3d3cfd43ac6216a85
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 16762a0eae366c3bf1cd578faaf52df60e6c97b1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752759"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807690"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Tillämpa design principer och avancerade åtgärder
 
@@ -110,6 +109,6 @@ Information om hur du publicerar till en tjänst katalog finns i serien om [publ
 
 Plattformsspecialiseringen och plattformsdriften är båda beroende av starka feedbackslingor mellan införande-, plattforms-, automatiserings- och hanteringsteamen. Genom att lägga till dessa feedbackslingor i data får varje team möjlighet att fatta kloka beslut. För plattforms åtgärder för långsiktiga affärs åtaganden är det viktigt att dra nytta av insikter som är specifika för den centrala plattformen. Eftersom behållare och SQL Server är de två vanligaste centralt hanterade plattformarna bör du tänka på att komma igång med data insamling för kontinuerlig förbättring genom att läsa följande artiklar:
 
-- [Prestanda för behållare](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview)
-- [PaaS Database-prestanda](https://docs.microsoft.com/azure/azure-monitor/insights/azure-sql)
-- [IaaS Database-prestanda](https://docs.microsoft.com/azure/azure-monitor/insights/sql-assessment)
+- [Prestanda för containrar](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview)
+- [Prestanda för PaaS-databaser](https://docs.microsoft.com/azure/azure-monitor/insights/azure-sql)
+- [Prestanda för IaaS-databaser](https://docs.microsoft.com/azure/azure-monitor/insights/sql-assessment)

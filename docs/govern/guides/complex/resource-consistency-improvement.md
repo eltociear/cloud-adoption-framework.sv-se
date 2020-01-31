@@ -1,6 +1,5 @@
 ---
 title: 'Styrnings guide för komplexa företag: förbättra disciplinen för resurs konsekvens'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Styrnings guide för komplexa företag: förbättra disciplinen för resurs konsekvens'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 66b1d5e414ecf7b1512cb408947bc519e460c471
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 35a77b0837da1b3364516a95b2baaa32e4e2fe6f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683548"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805548"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Styrnings guide för komplexa företag: förbättra disciplinen för resurs konsekvens
 
@@ -105,7 +104,7 @@ Efter erfarenheten av det här fiktiva exemplet antas det att ändringar av skyd
     2. Lägg till de nya Azure-principerna i skissen.
     3. Använd skissen på alla prenumerationer som förväntas vara värd för ett verksamhets kritiskt program.
 
-## <a name="conclusion"></a>Sammanfattning
+## <a name="conclusion"></a>Slutsats
 
 Genom att lägga till dessa processer och ändringar i styrnings MVP: n kan du åtgärda många av de risker som är kopplade till resurs styrningen. Tillsammans lägger de till de kontroller för återställning, storlek och övervakning som krävs för att ge moln medveten verksamhet.
 

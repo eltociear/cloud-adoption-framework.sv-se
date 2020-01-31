@@ -1,6 +1,5 @@
 ---
 title: Centrala IT-funktioner
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig mer om bildande av centrala IT-funktioner.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 25e9ecd4d911766864d81a5ff34f00caf82e86bf
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 17f2395a435d8a29202595caec17932b406a1303
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753639"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806942"
 ---
 # <a name="central-it-capabilities"></a>Centrala IT-funktioner
 

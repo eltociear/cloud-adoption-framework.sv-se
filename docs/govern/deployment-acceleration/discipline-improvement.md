@@ -1,6 +1,5 @@
 ---
 title: Förbättringar av distributions accelerations disciplin
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Förbättringar av distributions accelerations disciplin
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b1b4395efd909a0f4456a39a6b2b933d25e4f002
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: c5f07137ac1ca8c3ddbc4717dba5622096551862
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547780"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805939"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>Förbättringar av distributions accelerations disciplin
 

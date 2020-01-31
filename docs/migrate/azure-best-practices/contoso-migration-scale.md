@@ -1,6 +1,5 @@
 ---
 title: Skala en migrering till Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Läs om hur Contoso hanterar en skalad migrering till Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: ab5e8cdb7058a773b4085f01a6be64b4521e6b69
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8a807bfc20289339221056b9b0798260aaddbfd8
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566453"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807316"
 ---
 # <a name="scale-a-migration-to-azure"></a>Skala en migrering till Azure
 
@@ -361,6 +360,6 @@ Contoso behöver en strategi för affärskontinuitet och haveriberedskap (BCDR) 
   - Contoso distribuerar Azure Backup som en kostnadseffektiv lösning för säkerhetskopiering av Azure-resurser. Eftersom den är inbyggd kan Contoso konfigurera moln säkerhets kopieringar i några enkla steg.
   - Contoso kommer att konfigurera haveriberedskap för virtuella Azure-datorer som använder Azure Site Recovery för replikering, redundans och återställning efter fel mellan de Azure-regioner som de anger. Detta säkerställer att appar som körs på virtuella Azure-datorer är tillgängliga i en sekundär region som Contosos väljer om ett avbrott inträffar i den primära regionen. [Läs mer](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 
-## <a name="conclusion"></a>Sammanfattning
+## <a name="conclusion"></a>Slutsats
 
 I den här artikeln planerade Contoso en Azure-migrering i stor skala. De delade in migreringsprocessen i fyra stadier. Från utvärdering och migrering till optimering, säkerhet och hantering efter att migreringen hade slutförts. Vanligtvis är det viktigt att planera ett migreringsprojekt som en fullständig process men att utföra själva migreringen inom organisationen genom att bryta ner det i klassificeringar och mängder som passar företaget. Genom att utvärdera data och tillämpa klassificeringar kan projektet delas upp i en serie mindre migreringar som kan köras på ett säkert och snabbt sätt. Summan av dessa mindre migreringar omvandlas snabbt till en stor lyckad migrering till Azure.

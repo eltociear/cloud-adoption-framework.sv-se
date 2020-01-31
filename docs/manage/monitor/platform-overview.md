@@ -1,6 +1,5 @@
 ---
 title: 'Övervaknings guide för molnet: översikt över Monitoring Platforms'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Välj när Azure Monitor eller System Center Operations Manager ska användas i Microsoft Azure.
 author: mgoedtel
 ms.author: magoedte
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: d7ff166733f0d4544cb229207278f724ca947319
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: ea8317bb7490ef7e8aa69950232191f123da4dd8
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751669"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807605"
 ---
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>Övervaknings guide för molnet: översikt över Monitoring Platforms
 
@@ -54,11 +53,11 @@ Från 2015 till och med den 2018 april är Operations Management Suite (OMS) en 
 - Azure Automatisering
 - Azure Backup
 - Operational Insights (senare ommärkes som Log Analytics)
-- Webbplatsåterställning
+- Site Recovery
 
 Funktionerna i de tjänster som var en del av OMS ändrades inte när OMS skulle upphöra. De justerades under Azure Monitor.
 
-## <a name="infrastructure-requirements"></a>Infrastruktur krav
+## <a name="infrastructure-requirements"></a>Krav på infrastruktur
 
 ### <a name="operations-manager"></a>Operations Manager
 
@@ -134,7 +133,7 @@ Azure Monitor ger inte en användar medveten metod för att implementera en tjä
 
 - **Azure Monitor for VMS:** Ger en hälso övervakning för virtuella gäst datorer i Azure, ungefär som Operations Manager, när de övervakar virtuella Windows-och Linux-datorer. Den utvärderar hälso tillståndet för viktiga operativ Systems komponenter från tillgänglighets-och prestanda perspektivet för att fastställa det aktuella hälso tillståndet. När den bestämmer sig för att den virtuella gäst datorn drabbas av resursutnyttjande, disk utrymmes kapacitet eller ett problem som rör kärn funktioner i operativ systemet, genererar den en avisering för att få det här läget.
 
-- **Azure Monitor för behållare:** Övervakar prestanda och hälsa för Azure Kubernetes-tjänsten eller Azure Container Instances. Den samlar in minnes-och processor mått från styrenheter, noder och behållare som är tillgängliga i Kubernetes via Metrics-API: et. Den samlar även in behållar loggar och inventerings data om behållare och avbildningar. Fördefinierade hälso kriterier som baseras på insamlade prestanda data hjälper dig att identifiera om det finns en resurs Flask hals eller kapacitets problem. Du kan också förstå den övergripande prestandan eller prestandan från en speciell Kubernetes objekt typ (pod, Node, Controller eller container).
+- **Azure Monitor för behållare:** Övervakar prestanda och hälsa för Azure Kubernetes-tjänsten eller Azure Container Instances. Den samlar in minne och mått från domänkontrollanter, noder och behållare som är tillgängliga i Kubernetes via mått-API. Den samlar även in behållar loggar och inventerings data om behållare och avbildningar. Fördefinierade hälso kriterier som baseras på insamlade prestanda data hjälper dig att identifiera om det finns en resurs Flask hals eller kapacitets problem. Du kan också förstå den övergripande prestandan eller prestandan från en speciell Kubernetes objekt typ (pod, Node, Controller eller container).
 
 ## <a name="analyze-data"></a>Analysera data
 

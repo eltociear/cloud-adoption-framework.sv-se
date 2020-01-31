@@ -1,6 +1,5 @@
 ---
 title: 'Standard styrnings guide för företag: förbättra disciplinen för säkerhets bas linjer'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Standard styrnings guide för företag: förbättra disciplinen för säkerhets bas linjer'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0875442331a5da3c53c5d6c713c3bdbfcfab6cbf
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: ef4d58cb871ea290f8489e806a4b78f32a9d8b3d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753058"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807129"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Standard styrnings guide för företag: förbättra disciplinen för säkerhets bas linjer
 
@@ -123,7 +122,7 @@ Designen styrning MVP kommer att ändras till att inkludera nya Azure-principer 
     4. Publicera skissen till alla hanterings grupper som för närvarande planerar att vara värd för skyddade data.
     5. Tillämpa den nya skissen på varje berörd prenumeration, förutom befintliga ritningar.
 
-## <a name="conclusion"></a>Sammanfattning
+## <a name="conclusion"></a>Slutsats
 
 Att lägga till ovanstående processer och ändringar i styrnings MVP: n hjälper till att åtgärda många av de risker som är förknippade med säkerhets styrning. Tillsammans lägger de till de nätverks-, identitets-och säkerhets övervaknings verktyg som behövs för att skydda data.
 

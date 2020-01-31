@@ -1,6 +1,5 @@
 ---
 title: 'Moln innovation: verktyg för att interagera med enheter i Azure'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Verktyg för att interagera med enheter i Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c649ef695e74dce0ae2ec21e1e0d666abc2a65e9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 83aa06b897c510b90993d77a119063c3fe5f1af1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565828"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808659"
 ---
 # <a name="tools-to-interact-with-devices-in-azure"></a>Verktyg för att interagera med enheter i Azure
 
@@ -39,7 +38,7 @@ I Azure använder du vanligt vis följande verktyg för att påskynda digitala u
 - Integrerad verklighet: Azure IoT Hub, Azure Sphere, Azure Kinect DK
 - Justerad verklighet: IoT-moln till enhet, Azure Digitals, dubblare + HoloLens
 
-## <a name="get-started"></a>Kom igång
+## <a name="get-started"></a>Kom i gång
 
 I innehålls förteckningen till vänster på den här sidan finns många artiklar. De här artiklarna hjälper dig att komma igång med var och en av verktygen i verktygskedjan.
 

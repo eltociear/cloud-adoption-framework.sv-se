@@ -1,6 +1,5 @@
 ---
 title: Förstå moln säkerhets bas linjen
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig mer om moln säkerhets bas linjen.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a6de2681f83eba32400ed0dd214267f0960f5a8a
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: abd222cd3fd29f2150a18fafaae82393aa54e98b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752163"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808897"
 ---
 # <a name="understand-the-cloud-security-baseline"></a>Förstå moln säkerhets bas linjen
 
@@ -36,7 +35,7 @@ En moln säkerhets strategi bör minst beakta följande ämnen:
 
 ## <a name="protecting-data-and-privacy"></a>Skydda data och sekretess
 
-För organisationer i hela världen &mdash;whether myndigheter, ideella eller företag &mdash;cloud data behandling har blivit en viktig del av sin pågående IT-strategi. Cloud Services ger organisationer av alla storlekar åtkomst till praktiskt taget obegränsade data lagring samtidigt som du frigör dem från behovet av att köpa, underhålla och uppdatera sina egna nätverk och dator system. Microsoft och andra moln leverantörer erbjuder IT-infrastruktur, plattform och program vara som en tjänst (SaaS), vilket gör det möjligt för kunder att snabbt skala upp eller ned efter behov och bara betala för den data behandlings kraft och lagrings enhet de använder.
+För organisationer i hela världen&mdash;om myndigheter, icke-vinster eller företag&mdash;molnbaserad data behandling har blivit en viktig del av den pågående IT-strategin. Cloud Services ger organisationer av alla storlekar åtkomst till praktiskt taget obegränsade data lagring samtidigt som du frigör dem från behovet av att köpa, underhålla och uppdatera sina egna nätverk och dator system. Microsoft och andra moln leverantörer erbjuder IT-infrastruktur, plattform och program vara som en tjänst (SaaS), vilket gör det möjligt för kunder att snabbt skala upp eller ned efter behov och bara betala för den data behandlings kraft och lagrings enhet de använder.
 
 Eftersom organisationer fortsätter att dra nytta av fördelarna med moln tjänster, t. ex. ökad valmöjligheter, flexibilitet och flexibilitet samtidigt som du ökar effektiviteten och sänker IT-kostnaderna, måste de överväga hur introduktionen av moln tjänster påverkar deras sekretess-, säkerhets-och position. Microsoft har arbetat med att göra sina moln erbjudanden inte bara skalbara, tillförlitliga och hanterbara, utan också att se till att våra kunders data skyddas och används på ett transparent sätt.
 

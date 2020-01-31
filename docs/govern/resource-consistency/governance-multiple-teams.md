@@ -1,6 +1,5 @@
 ---
 title: Styrnings design i Azure för flera team
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vägledning för att konfigurera Azures styrnings kontroller för flera team, flera arbets belastningar och flera miljöer.
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 59b60af79d81316726ffed1dcf326641af059cb0
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 7bfceb1a7fe68869dabec7eda813cd3fdc121b49
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160476"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804307"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Styrningsdesign för flera team
 
@@ -140,7 +139,7 @@ Nu när du har utformat en behörighets modell med minsta behörighet kan vi gå
 2. **Produktions miljö:** Flera grupper med resurser som representerar flera produktions arbets belastningar. Dessa resurser används för att vara värd för privata och offentliga program artefakter. Dessa resurser har vanligt vis de tätt flesta styrnings-och säkerhets modeller som skyddar resurserna, program koden och data från obehörig åtkomst.
 3. För **produktions miljö:** Flera grupper med resurser som representerar flera färdiga arbets belastningar som inte är produktion. Dessa resurser används för utveckling och testning av dessa resurser kan ha en mer avslappnad styrnings modell för att ge ökad flexibilitet i utvecklare. Säkerheten i dessa grupper bör öka närmare "produktion" för att få en program utvecklings process.
 
-För var och en av dessa tre miljöer finns det ett krav för att spåra kostnads data efter **arbets belastnings ägare**, **miljö**eller både och. Det innebär att du vill veta den kontinuerliga kostnaden för den **delade infrastrukturen**, kostnaderna för enskilda användare i både för produktions-och **produktions** miljöerna och slutligen den totala **kostnaden för för** **produktion och**  **produktions** miljöer.
+För var och en av dessa tre miljöer finns det ett krav för att spåra kostnads data efter **arbets belastnings ägare**, **miljö**eller både och. Det innebär att du vill veta den kontinuerliga kostnaden för den **delade infrastrukturen**, **kostnaderna för enskilda** användare i både för produktions-och **produktions** miljöerna och slutligen den totala kostnaden för för produktions **-och** **produktions** miljöer.
 
 Du har redan lärt dig att resurserna är begränsade till två nivåer: **prenumeration** och **resurs grupp**. Det första beslutet är därför att organisera miljöer efter **prenumeration**. Det finns bara två möjligheter: en enda prenumeration eller flera prenumerationer.
 
@@ -216,7 +215,7 @@ Den resulterande hanterings modellen liknar det första exemplet, med flera vikt
 
 Nu ska vi titta på en resurs hanterings modell med flera prenumerationer. I den här modellen kommer du att justera var och en av de tre miljöerna till en separat prenumeration: en prenumeration på **delade tjänster** , **produktions** prenumeration och slutligen en **utvecklings** prenumeration. Övervägandena för den här modellen liknar en modell som använder en enda prenumeration i som du måste bestämma för att justera resurs grupper till arbets belastningar. Redan fastställt är att skapa en resurs grupp för varje arbets belastning uppfyller kraven för arbets belastnings isolering, så du kommer att se den modellen i det här exemplet.
 
-1. I den här modellen finns tre *prenumerationer*: *delad infrastruktur*, *produktion*och *utveckling*. Var och en av dessa tre prenumerationer kräver en *prenumerations ägare*, och i det enkla exemplet använder du samma användar konto för alla tre. Resurserna för *delad infrastruktur* hanteras på samma sätt som de två första exemplen ovan, och den första arbets belastningen är kopplad till *APP1-RG* i *produktions* miljön och samma resurs grupp med samma namn i *utvecklingen* miljö. *APP1 arbets belastnings ägare* läggs till i varje resurs grupp med *deltagar* rollen.
+1. I den här modellen finns tre *prenumerationer*: *delad infrastruktur*, *produktion*och *utveckling*. Var och en av dessa tre prenumerationer kräver en *prenumerations ägare*, och i det enkla exemplet använder du samma användar konto för alla tre. Resurserna för *delad infrastruktur* hanteras på samma sätt som de två första exemplen ovan, och den första arbets belastningen är kopplad till *APP1-RG* i *produktions* miljön och samma resurs grupp med samma namn i *utvecklings* miljön. *APP1 arbets belastnings ägare* läggs till i varje resurs grupp med *deltagar* rollen.
     ![lägger till bidrags givare](../../_images/govern/design/governance-3-17.png)
 2. Som i de tidigare exemplen skapar *APP1 arbets belastnings ägare* resurserna och begär peering-anslutningen till det virtuella nätverket för *delad infrastruktur* . *APP1-arbetsbelastnings ägare* lägger bara till *managedBy* -taggen eftersom det inte längre behövs någon av *miljö* tag gen. Det innebär att resurserna är för varje miljö grupperade nu i samma *prenumeration* och att *miljö* tag gen är redundant. Begränsnings räknaren minskas till 999 virtuella nätverk kvar.
     ![att skapa en peering-anslutning](../../_images/govern/design/governance-3-18.png)
@@ -259,8 +258,8 @@ Följ de här stegen:
 5. Azure-konto administratören [lägger till prenumerations tjänstens ägare i varje prenumeration](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#to-assign-a-user-as-an-administrator).
 6. Skapa en godkännande process för **arbets belastnings ägare** för att begära att resurs grupper skapas. Godkännande processen kan implementeras på många sätt, t. ex. via e-post, eller så kan du använda ett process hanterings verktyg som [SharePoint-arbetsflöden](https://support.office.com/article/introduction-to-sharepoint-workflow-07982276-54e8-4e17-8699-5056eff4d9e3). Godkännande processen kan följa dessa steg:
     - **Ägaren av arbets belastningen** förbereder en struktur för nödvändiga Azure-resurser i antingen **utvecklings** miljön, **produktions** miljön eller både och skickar den till **prenumerations ägaren**.
-    - **Prenumerations ägaren** granskar struktur listan och validerar de begärda resurserna för att säkerställa att de begärda resurserna är lämpliga för planerad användning, t. ex. för att kontrol lera att de begärda [storlekarna för virtuella datorer](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) är eventuella.
-    - Om begäran inte godkänns, meddelas **arbets Belastningens ägare** . Om begäran godkänns skapar **prenumerations ägaren** [den begärda resurs gruppen](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups) enligt organisationens [namn konventioner](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming), och [lägger till **arbets belastnings ägaren** ](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment) med [rollen **deltagare** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) och skickar ett meddelande till den **arbets belastnings ägare** som resurs gruppen har skapats.
+    - **Prenumerations ägaren** granskar struktur listan och validerar de begärda resurserna för att säkerställa att de begärda resurserna är lämpliga för den planerade användningen, till exempel att kontrol lera att de begärda [storlekarna för virtuella datorer](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) är korrekta.
+    - Om begäran inte godkänns, meddelas **arbets Belastningens ägare** . Om begäran godkänns skapar **prenumerations ägaren** [den begärda resurs gruppen](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups) enligt organisationens [namn konventioner](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming), [lägger till **arbets belastnings ägaren** ](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment) med [ **deltagar** rollen](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) och skickar ett meddelande till den **arbets belastnings ägare** som resurs gruppen har skapats.
 7. Skapa en godkännande process för arbets belastnings ägare för att begära en virtuell nätverks-peering-anslutning från ägaren till den delade infrastrukturen. Som i föregående steg kan denna godkännande process implementeras med hjälp av e-post eller ett process hanterings verktyg.
 
 Nu när du har implementerat styrnings modellen kan du distribuera dina delade infrastruktur tjänster.

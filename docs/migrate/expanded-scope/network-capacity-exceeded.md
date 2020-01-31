@@ -1,6 +1,5 @@
 ---
 title: Nätverkskapaciteten har överskridits
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Data kraven överskrider nätverks kapaciteten under en migrering.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 402628da8fb5af7526c33d6c4900298eb42bced5
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 2d7ae4989251c0c3022c1044280d433e4dc920ad
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753489"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803100"
 ---
 # <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>Data kraven överskrider nätverks kapaciteten under en migrering
 
@@ -68,7 +67,7 @@ Det finns även [lösningar från tredje part](https://azuremarketplace.microsof
 
 **Synkronisering:** Om synkronisering av drivgarn är ett krav för en migrerad till gång, kan en av [partner lösningarna från tredje part](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box) användas för att synkronisera filerna tills till gången återställs.
 
-## <a name="optimize-and-promote-process-changes"></a>Optimera och höja upp processändringar
+## <a name="optimize-and-promote-process-changes"></a>Optimera och flytta upp processändringar
 
 Optimeringsaktiviteterna påverkas troligen inte av denna förändring i omfattning.
 

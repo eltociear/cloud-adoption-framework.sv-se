@@ -1,6 +1,5 @@
 ---
 title: Cost Management verktyg i Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Cost Management verktyg i Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3b301f8dfcc50539f4325901cd32553368a0da55
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: e35530fbf3a858c000cb78c0c076d7d56d5fbd86
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222648"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806415"
 ---
 # <a name="cost-management-tools-in-azure"></a>Cost Management verktyg i Azure
 
@@ -22,15 +21,15 @@ ms.locfileid: "71222648"
 
 Följande är en lista över inbyggda Azure-verktyg som hjälper dig att mogna de principer och processer som har stöd för den här styrnings disciplinen.
 
-| Verktyg | [Azure Portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Cost Management](https://docs.microsoft.com/azure/cost-management/overview-cost-mgt)  | [Innehålls paket för Azure EA](https://docs.microsoft.com/power-bi/service-connect-to-azure-enterprise)  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) |
+| Verktyg | [Azure-portalen](https://azure.microsoft.com/features/azure-portal)  | [Azure Cost Management](https://docs.microsoft.com/azure/cost-management/overview-cost-mgt)  | [Innehålls paket för Azure EA](https://docs.microsoft.com/power-bi/service-connect-to-azure-enterprise)  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) |
 |---------|---------|---------|---------|---------|
-|Enterprise-avtal krävs.     | Nej         | Nej         | Ja         | Nej         |
-|Budget kontroll     | Nej         | Ja         | Nej         | Ja         |
-|Övervaka utgifter på en enskild resurs    | Ja         | Ja         | Ja         | Nej         |
-|Övervaka utgifter mellan flera resurser    | Nej         | Ja        | Ja         | Nej         |
-|Kontroll utgifter på en enskild resurs     | Ja – manuell storlek         | Ja         | Nej         | Ja         |
-|Framtvinga utgifter för flera resurser    | Nej         | Ja         | Nej         | Ja         |
-|Framtvinga redovisnings-metadata för resurser    | Nej         | Nej         | Nej         | Ja         |
-|Övervaka och identifiera trender     | Ja          | Ja        | Ja         | Nej         |
-|Identifiera utgifts avvikelser     | Nej         | Ja        | Ja         | Nej        |
-|Socialize avvikelser     | Nej        | Ja        | Ja        | Nej        |
+|Enterprise-avtal krävs.     | Inga         | Inga         | Ja         | Inga         |
+|Budget kontroll     | Inga         | Ja         | Inga         | Ja         |
+|Övervaka utgifter på en enskild resurs    | Ja         | Ja         | Ja         | Inga         |
+|Övervaka utgifter mellan flera resurser    | Inga         | Ja        | Ja         | Inga         |
+|Kontroll utgifter på en enskild resurs     | Ja – manuell storlek         | Ja         | Inga         | Ja         |
+|Framtvinga utgifter för flera resurser    | Inga         | Ja         | Inga         | Ja         |
+|Framtvinga redovisnings-metadata för resurser    | Inga         | Inga         | Inga         | Ja         |
+|Övervaka och identifiera trender     | Ja          | Ja        | Ja         | Inga         |
+|Identifiera utgifts avvikelser     | Inga         | Ja        | Ja         | Inga        |
+|Socialize avvikelser     | Inga        | Ja        | Ja        | Inga        |

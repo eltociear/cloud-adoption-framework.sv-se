@@ -1,6 +1,5 @@
 ---
 title: Beslutsguide för programvarudefinierade nätverk
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Läs mer om programvarudefinierade nätverk som en central tjänst i Azure-migreringar.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 46d01d6685b4cac55db7ed313b70891b4f9c029f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7eb03b01dfab3627117b4d07727f09669e6b0924
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564791"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806602"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Beslutsguide för programvarudefinierade nätverk
 
@@ -42,12 +41,12 @@ När du planerar vilken arkitektur för virtuella nätverk eller kombination av 
 
 | Fråga | Endast PaaS | Molnbaserat | DMZ i molnet | Hybrid | Nav och ekrar |
 |-----|-----|-----|-----|-----|-----|
-| Kommer din arbetsbelastning endast använda PaaS-tjänster och inte kräva nätverksfunktioner utöver dem som tillhandahålls av själva tjänsterna? | Ja | Nej | Nej | Nej | Nej |
-| Kräver arbetsbelastningen integrering med lokala program? | Nej | Nej | Ja | Ja | Ja |
-| Har du upprättat mogna säkerhetsprinciper och säkra anslutningar mellan dina lokala nätverk och molnbaserade nätverk? | Nej | Nej | Nej | Ja | Ja |
-| Kräver arbetsbelastningen autentiseringstjänster som inte stöds via molnidentitetstjänster eller behöver du direkt åtkomst till lokala domänkontrollanter? | Nej | Nej | Nej | Ja | Ja |
-| Kommer du att behöva distribuera och hantera många virtuella datorer och arbetsbelastningar? | Nej | Nej | Nej | Nej | Ja |
-| Kommer du behöva tillhandahålla centraliserad hantering och lokal anslutning och samtidigt delegera kontroll av resurser till enskilda arbetsbelastningsteam? | Nej | Nej | Nej | Nej | Ja |
+| Kommer din arbetsbelastning endast använda PaaS-tjänster och inte kräva nätverksfunktioner utöver dem som tillhandahålls av själva tjänsterna? | Ja | Inga | Inga | Inga | Inga |
+| Kräver arbetsbelastningen integrering med lokala program? | Inga | Inga | Ja | Ja | Ja |
+| Har du upprättat mogna säkerhetsprinciper och säkra anslutningar mellan dina lokala nätverk och molnbaserade nätverk? | Inga | Inga | Inga | Ja | Ja |
+| Kräver arbetsbelastningen autentiseringstjänster som inte stöds via molnidentitetstjänster eller behöver du direkt åtkomst till lokala domänkontrollanter? | Inga | Inga | Inga | Ja | Ja |
+| Kommer du att behöva distribuera och hantera många virtuella datorer och arbetsbelastningar? | Inga | Inga | Inga | Inga | Ja |
+| Kommer du behöva tillhandahålla centraliserad hantering och lokal anslutning och samtidigt delegera kontroll av resurser till enskilda arbetsbelastningsteam? | Inga | Inga | Inga | Inga | Ja |
 
 ## <a name="virtual-networking-architectures"></a>Arkitekturer för virtuella nätverk
 

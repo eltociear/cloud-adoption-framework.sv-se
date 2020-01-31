@@ -1,6 +1,5 @@
 ---
 title: 'Moln innovation: delta i program'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Introduktion till moln innovation – delta i program.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 337eac12b3c01136f611d6a53693de4d29663f46
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 77921ce7c683ff5bfc32c711719ae58ae049f039
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752061"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808574"
 ---
 # <a name="engage-through-applications"></a>Delta i program
 
@@ -36,7 +35,7 @@ För att vara redo för innovation bör all program utveckling börja med en del
 
 Professionella utvecklare är en viktig del av innovationen. När en hypotes bevisar sig korrekt i skala, krävs professionella utvecklare för att stabilisera och förbereda lösningen för skalning. De flesta principer som hänvisas till i den här artikeln kräver support från professionella utvecklare. De nuvarande trenderna föreslår tyvärr att det finns en större efter frågan för professionella utvecklare än utvecklare. Dessutom kan det vara mindre fördelaktigt att den här innovationen är tillräcklig när en professionell utveckling bedöms vara nödvändig. Som svar på de här utmaningarna ger medborgarna av medborgarna ett sätt att skala utvecklings insatser och påskynda tidigt hypotes testning.
 
-Användningen av medborgarna kan vara livskraftig och effektiv när tidig Hypotheses kan val IDE ras via verktyg som [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) for app Interfaces, [AI Builder](https://docs.microsoft.com/powerapps/use-ai-builder) för processer och förutsägelser, [Microsoft Flow](https://docs.microsoft.com/flow) för arbets flöden och [ström BI](https://docs.microsoft.com/power-bi) för data konsumtion.
+Användningen av medborgarna kan vara livskraftig och effektiv när tidig Hypotheses kan val IDE ras via verktyg som [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) for app Interfaces, [AI Builder](https://docs.microsoft.com/powerapps/use-ai-builder) för processer och förutsägelser, [Microsoft Flow](https://docs.microsoft.com/flow) för arbets flöden och [Power BI](https://docs.microsoft.com/power-bi) för data förbrukning.
 
 > [!NOTE]
 > När du använder medborgare-utvecklare för att testa Hypotheses, är det tillrådligt att ha några professionella utvecklare som vill ha support, granskning och vägledning. När en hypotes har validerats i skala kommer en process för att överföra programmet till en mer robust programmerings modell att påskynda återställningen av innovationen. Genom att involvera professionella utvecklare i process definitionerna tidigt på, kan du inse renare över gångar senare.

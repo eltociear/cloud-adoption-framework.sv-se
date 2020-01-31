@@ -1,6 +1,5 @@
 ---
 title: Omstrukturera en Linux Service Desk-app till Azure App Service och Azure Database for MySQL
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Läs om hur Contosos omstrukturerar sin lokala Linux-app genom att migrera den till Azure App Service med hjälp GitHub på webbnivå och Azure SQL Database.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e504d4032fc019af43ec7cb1e8513504196559a2
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2e47647b06da12b9b595f4330767f629121e00a0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024216"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807469"
 ---
 # <a name="refactor-a-linux-app-to-multiple-regions-using-azure-app-service-traffic-manager-and-azure-database-for-mysql"></a>Omstrukturera en Linux-app till flera regioner med Azure App Service, Traffic Manager och Azure Database for MySQL
 
@@ -55,7 +54,7 @@ När man har fastställt målen och kraven utformar och granskar Contoso en dist
 
 Här är den föreslagna arkitekturen:
 
-- Webbnivå-appen på OSTICKETWEB kommer att migreras genom att kompilera en Azure App Service i två Azure-regioner. Azure App Service för Linux implementeras med hjälp av Docker-behållaren PHP 7.0.
+- Webbnivå-appen på OSTICKETWEB kommer att migreras genom att kompilera en Azure App Service i två Azure-regioner. Azure App Service för Linux implementeras med hjälp av Docker-containern PHP 7.0.
 - Appens kod kommer att flyttas till GitHub. Azure App Service-webbappen konfigureras för kontinuerlig leverans med GitHub.
 - Azure App-servrar kommer att distribueras i både den primära (USA, östra 2) och den sekundära regionen (centrala USA).
 - Traffic Manager kommer att konfigureras framför de två webbapparna i båda regionerna.
@@ -65,21 +64,21 @@ Här är den föreslagna arkitekturen:
 - Databasen kommer att ligga i den primära regionen USA, östra2, i databasundernätet (PROD-DB-EUS2) i produktionsnätverket (VNET-PROD-EUS2):
 - Eftersom de migrerar en produktionsarbetsbelastning placeras Azure-resurserna i produktionsresursgruppen **ContosoRG**.
 - Traffic Managerresursen kommer att distribueras i Contosos infrastrukturresursgrupp **ContosoInfraRG**.
-- De lokala, virtuella datorerna i Contoso-datacentret kommer att inaktiveras när migreringen är färdig.
+- De lokala, virtuella datorerna i Contosos datacentret inaktiveras när migreringen är färdig.
 
 ![Scenariots arkitektur](./media/contoso-migration-refactor-linux-app-service-mysql/proposed-architecture.png)
 
-## <a name="migration-process"></a>Migreringsprocess
+## <a name="migration-process"></a>Migreringsprocessen
 
 Så här genomför Contoso migreringen:
 
 1. Som ett första steg konfigurerar Contosos administratörer Azure-infrastrukturen. Detta inbegriper att etablera Azure App Service, installera Traffic Manager och etablera av en instans av Azure Database for MySQL.
 2. När Azure har förberetts migrerar de databasen med MySQL Workbench.
 3. När databasen är igång i Azure konfigurerar de en privat GitHub-lagringsplats för Azure App Service med kontinuerlig leverans och läser in den med appen osTicket.
-4. I Azure Portal läser de in appen från GitHub till Docker-behållaren som kör Azure App Service.
+4. I Azure Portal läser de in appen från GitHub till Docker-containern som kör Azure App Service.
 5. De kan justerar DNS-inställningarna och konfigurerar automatiskskalning för appen.
 
-![Migreringsprocess](./media/contoso-migration-refactor-linux-app-service-mysql/migration-process.png)
+![Migreringsprocessen](./media/contoso-migration-refactor-linux-app-service-mysql/migration-process.png)
 
 ### <a name="azure-services"></a>Azure-tjänster
 
@@ -89,7 +88,7 @@ Så här genomför Contoso migreringen:
 [Traffic Manager](https://azure.microsoft.com/services/traffic-manager) | En belastningsutjämnare som använder DNS för att dirigera användare till Azure eller externa webbplatser och tjänster. | Priset baseras på antalet mottagna DNS-frågor och antalet övervakade slutpunkter. | [Läs mer](https://azure.microsoft.com/pricing/details/traffic-manager).
 [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql) | Databasen baseras på MySQL-servermotorn med öppen källkod. Den innehåller en fullständigt hanterad, företagsklar community-version av en MySQL-databas som en apputvecklings- och appdistributionstjänst. | Priset baseras på kraven på processorstyrka, lagring och säkerhetskopiering. [Läs mer](https://azure.microsoft.com/pricing/details/mysql).
 
-## <a name="prerequisites"></a>Förutsättningar
+## <a name="prerequisites"></a>Krav
 
 Det här behöver Contoso för att köra detta scenario.
 
@@ -108,14 +107,14 @@ Så här slutför Contoso migreringen:
 
 > [!div class="checklist"]
 >
-> - **Steg 1: Etablera Azure App Service.** Contosos administratörer etablerar webbappar i de primära och sekundära regionerna.
-> - **Steg 2: Konfigurera Azure Traffic Manager.** De konfigurerar Traffic Manager framför webbapparna för att dirigera och belastingsutjämna trafik.
-> - **Steg 3: Etablera MySQL.** I Azure etablerar de en instans av Azure Database for MySQL.
+> - **Steg 1: etablera Azure App Service.** Contosos administratörer etablerar webbappar i de primära och sekundära regionerna.
+> - **Steg 2: Konfigurera Traffic Manager.** De konfigurerar Traffic Manager framför webbapparna för att dirigera och belastingsutjämna trafik.
+> - **Steg 3: etablera MySQL.** I Azure etablerar de en instans av Azure Database for MySQL.
 > - **Steg 4: Migrera databasen.** De migrerar databasen med MySQL Workbench.
 > - **Steg 5: Konfigurera GitHub.** De konfigurerar en lokal GitHub-lagringsplats för appens webbplatser/kod.
 > - **Steg 6: Distribuera webbapparna.** De distribuerar webbapparna från GitHub.
 
-## <a name="step-1-provision-azure-app-service"></a>Steg 1: Etablera Azure App Service
+## <a name="step-1-provision-azure-app-service"></a>Steg 1: etablera Azure App Service
 
 Contosos administratörer etablerar två webbappar (en i varje region) med hjälp av Azure App Service.
 
@@ -128,7 +127,7 @@ Contosos administratörer etablerar två webbappar (en i varje region) med hjäl
 
      ![Azure App](./media/contoso-migration-refactor-linux-app-service-mysql/azure-app2.png)
 
-4. De väljer ett Linux-operativsystem med PHP 7.0 Runtime-stack, som är en Docker-behållare.
+4. De väljer ett Linux-operativsystem med PHP 7.0 Runtime-stack, som är en Docker-container.
 
     ![Azure App](./media/contoso-migration-refactor-linux-app-service-mysql/azure-app3.png)
 
@@ -162,7 +161,7 @@ Contosos administratörer konfigurerar Traffic Manager för att dirigera inkomma
 - Läs mer om [Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).
 - Läs mer om att [dirigera trafik till en prioriterad slutpunkt](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-configure-priority-routing-method).
 
-## <a name="step-3-provision-azure-database-for-mysql"></a>Steg 3: Etablera Azure Database for MySQL
+## <a name="step-3-provision-azure-database-for-mysql"></a>Steg 3: etablera Azure Database for MySQL
 
 Contosos administratörer etablerar en MySQL-databasinstans i den primära regionen USA, östra 2.
 
@@ -279,7 +278,7 @@ Som det sista steget i migreringsprocessen konfigurerar Contosos administratöre
 
     ![Konfigurera app](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app3.png)
 
-4. När konfigurationen har uppdaterats och osTicket-webbappen har lästs in från GitHub till Docket-behållaren som kör Azure App Service visas platsen som aktiv.
+4. När konfigurationen har uppdaterats och osTicket-webbappen har lästs in från GitHub till Docket-containern som kör Azure App Service visas platsen som aktiv.
 
     ![Konfigurera app](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app4.png)
 
@@ -309,7 +308,7 @@ Slutligen ställer de in automatisk skalning för appen. Detta innebär att appi
 
    ![Automatisk skalning](./media/contoso-migration-refactor-linux-app-service-mysql/autoscale2.png)
 
-## <a name="clean-up-after-migration"></a>Rensa efter migreringen
+## <a name="clean-up-after-migration"></a>Rensa efter migrering
 
 När migreringen är klar omstruktureras osTicket-appen för att köras i en Azure App Service webbapp med kontinuerlig leverans med hjälp av en privat GitHub-lagringsplats. Appen körs i två regioner för ökad elasticitet. OsTicket-databasen körs i Azure Database for MySQL efter migrering till PaaS-plattformen.
 

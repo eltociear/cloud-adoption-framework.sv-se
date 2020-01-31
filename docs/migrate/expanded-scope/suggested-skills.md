@@ -1,6 +1,5 @@
 ---
 title: Kunskapsberedskap för molnmigrering
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Kunskapsberedskap för molnmigrering
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ffef26fd2ff6261133f5b63a8c13b5f4cd4364f5
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: d6768f3944699fdde483fb25f47bcb22be2484f1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240261"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802947"
 ---
 # <a name="skills-readiness-for-cloud-migration"></a>Kunskapsberedskap för molnmigrering
 
@@ -50,7 +49,7 @@ Följande självstudie kan förbereda teamet för migreringsaktiviteter:
 - [Migrera fysiska och virtuella servrar till Azure](https://app.pluralsight.com/library/courses/microsoft-azure-migrating-physical-virtual-servers/table-of-contents): PluralSight kurs för att migrera servrar till Azure
 - [Importera och exportera data till Azure](https://app.pluralsight.com/library/courses/microsoft-azure-import-export-data/table-of-contents): PluralSight kurs om data flödet till och från Azure
 
-## <a name="optimize-and-promote-process-changes"></a>Optimera och höja upp processändringar
+## <a name="optimize-and-promote-process-changes"></a>Optimera och flytta upp processändringar
 
 Följande verktyg kan hjälpa teamet att optimera resurser och höja upp till produktion:
 
@@ -68,4 +67,4 @@ Följande verktyg kan hjälpa teamet att hitta sätt att skydda och hantera migr
 Gå tillbaka till [checklistan för utökat omfång](./index.md) och se till att din migreringsmetod är helt anpassad till kraven.
 
 > [!div class="nextstepaction"]
-> [Checklista för utökat omfång](./index.md)
+> [Utökad checklista](./index.md)

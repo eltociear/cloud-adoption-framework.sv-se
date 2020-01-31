@@ -1,6 +1,5 @@
 ---
 title: De fem teorierna om molnstyrning
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig mer om de fem disciplinerna i moln styrning i ramverket för moln införande.
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: f072870caf18eb460ccc3a34e02d7d1f44872406
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 022fafd48ae9c03ef8c2b19f7b966a73cab70081
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223159"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806347"
 ---
 # <a name="the-five-disciplines-of-cloud-governance"></a>De fem teorierna om molnstyrning
 
@@ -70,7 +69,7 @@ Med valfri moln plattform finns det gemensamma styrnings discipliner som hjälpe
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Cost Management</h3>
+                        <h3>Kostnadshantering</h3>
                         <p>Kostnaden är ett primärt problem för moln användare. Utveckla principer för kostnads kontroll för alla moln plattformar.</p>
                     </div>
                 </div>

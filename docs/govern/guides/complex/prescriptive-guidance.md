@@ -1,6 +1,5 @@
 ---
 title: 'Styrnings guide för komplexa företag: bästa praxis förklaras'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig mer om metod tips för styrning i komplexa företag.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 543f4e59645fb389b00508fbd9d6426ded6f41f9
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: e733db73ce5a77d4b1e81f052804b7a49da4aad5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547642"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806279"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>Styrnings guide för komplexa företag: bästa praxis förklaras
 

@@ -1,6 +1,5 @@
 ---
 title: Distribuera en migreringsinfrastruktur
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Se hur Contoso konfigurerar en Azure-infrastruktur för migrering till Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 44fb2e8d7fc71dfa676f5711ab50c2201d67f260
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 4d8a7b53722de4b356753626d0cc695fa1a77596
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160375"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807520"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Distribuera en migreringsinfrastruktur
 
@@ -716,7 +715,7 @@ ServiceManager | E-postalias för ITIL Service Manager för resursen.
 COBPriority | Prioritet som har angetts av företaget för affärskontinuitet och haveriberedskap. Värden från 1 till 5.
 ENV | DEV, STG, PROD är möjliga värden. De står för utveckling, mellanlagring och produktion.
 
-Exempel:
+Ett exempel:
 
  ![Azure-taggar](./media/contoso-migration-infrastructure/azure-tag.png)
 
@@ -792,7 +791,7 @@ Azure Disk Encryption integreras med Azure Key Vault så att du kan kontrollera 
 - Contoso har avgjort att vissa virtuella datorer behöver kryptering.
 - Contoso kommer att använda kryptering på virtuella datorer med kunddata, konfidentiella data eller PPI-data.
 
-## <a name="conclusion"></a>Sammanfattning
+## <a name="conclusion"></a>Slutsats
 
 I den här artikeln konfigurerade Contoso en Azure-infrastruktur och -policy för Azure-prenumeration, hybrididentifiering, haveriberedskap, nätverk, styrning och säkerhet.
 

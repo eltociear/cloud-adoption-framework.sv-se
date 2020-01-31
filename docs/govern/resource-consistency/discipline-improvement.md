@@ -1,6 +1,5 @@
 ---
 title: Disciplin förbättring av resurs konsekvens
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Disciplin förbättring av resurs konsekvens
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9d465716784d125edebaf44d8a1bae2f369b9d5a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0113c37aaca23374021d6790bcbb1db751ffcf4a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548078"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807248"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>Disciplin förbättring av resurs konsekvens
 
@@ -127,9 +126,9 @@ När omvandlingen är klar måste styrning och åtgärder vara aktiva för den n
 
 ## <a name="next-steps"></a>Nästa steg
 
-Nu när du förstår begreppet moln resurs styrning kan du gå vidare till Lär dig mer om [hur resurs åtkomst hanteras](./resource-access-management.md) i Azure för att lära dig hur du utformar en styrnings modell för en [enkel arbets belastning](./governance-simple-workload.md) eller [flera team](./governance-multiple-teams.md) .
+Nu när du förstår begreppet moln resurs styrning kan du gå vidare till Lär dig mer om [hur resurs åtkomst hanteras](./resource-access-management.md) i Azure för att lära dig hur du utformar en styrnings modell för en [enkel arbets belastning](./governance-simple-workload.md) eller [flera team](./governance-multiple-teams.md).
 
 > [!div class="nextstepaction"]
-> Lär dig mer om [resurs åtkomst hantering i azure](./resource-access-management.md) 
-> [Lär dig mer om service nivå avtal för Azure](https://azure.microsoft.com/support/legal/sla) 
+> Lär dig mer om [resurs åtkomst hantering i azure](./resource-access-management.md)
+> [Lär dig mer om service nivå avtal för Azure](https://azure.microsoft.com/support/legal/sla)
 > [Lär dig mer om loggning, rapportering och övervakning](../../decision-guides/logging-and-reporting/index.md)

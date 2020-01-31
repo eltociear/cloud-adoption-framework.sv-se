@@ -1,6 +1,5 @@
 ---
 title: Specialisering för plattformar för molnhantering i Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Förbättra plattformsspecifika molnhanteringsåtgärder.
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8c3954627ee991f43c2b8d3a94dbd77746d3d4b2
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 9c4f18c4c81dce2caa41b1dab5dddc394042f390
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752937"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808183"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>Specialisering för plattformar för molnhantering
 
@@ -33,7 +32,7 @@ I följande tabell beskrivs några processer, verktyg och potentiella effekter s
 
 |Process  |Verktyg  |Syfte  |Förslag på hanteringsnivå  |
 |---------|---------|---------|---------|
-|Förbättra systemdesignen|Azure-arkitekturramverk|Förbättra driften genom att förbättra plattformens arkitekturdesign|Saknas|
+|Förbättra systemdesignen|Azure-arkitekturramverk|Förbättra driften genom att förbättra plattformens arkitekturdesign|Ej tillämpligt|
 |Automatisera reparationer|Azure Automation|Svara på avancerade plattformsdata med plattformsspecifik automatisering|Plattformsdrift|
 |Tjänstkatalog|Center för hanterade program|Tillhandahålla en självbetjäningskatalog för godkända lösningar som uppfyller organisationsstandarder|Plattformsdrift|
 |Prestanda för containrar|Azure Monitor för containrar|Övervakning och diagnostik för containrar|Plattformsdrift|

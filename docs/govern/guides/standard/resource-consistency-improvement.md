@@ -1,7 +1,6 @@
 ---
-title: 'Standard styrnings guide för företag: Förbättra resurs konsekvensen'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Standard styrnings guide för företag: Förbättra resurs konsekvensen'
+title: 'Standard styrnings guide för företag: förbättra resurs konsekvens'
+description: 'Standard styrnings guide för företag: förbättra resurs konsekvens'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d501f976613eae869228dfd75e4612f974997558
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: aa752e83dd5e83da101600c756fe7b878015c1db
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967452"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806007"
 ---
-# <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Standard styrnings guide för företag: Förbättra resurs konsekvensen
+# <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Standard styrnings guide för företag: förbättra resurs konsekvens
 
 Den här artikeln går vidare genom att lägga till resurs konsekvens kontroller för att stödja verksamhets kritiska appar.
 
@@ -110,7 +109,7 @@ Det här avsnittet av artikeln ändrar designen för styrnings MVP till att inkl
     4. Publicera skissen till alla hanterings grupper som ska vara värd för verksamhets kritiska program.
     5. Använd den nya skissen för varje berörd prenumeration samt befintliga ritningar.
 
-## <a name="conclusion"></a>Sammanfattning
+## <a name="conclusion"></a>Slutsats
 
 Dessa ytterligare processer och ändringar i styrnings-MVP: n hjälper till att åtgärda många av de risker som är kopplade till resurs styrning. Tillsammans ger de till gång till återställnings-, storleks-och övervaknings kontroller som ger moln medveten drift.
 
