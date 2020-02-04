@@ -1,18 +1,18 @@
 ---
 title: Balansera portföljen
-description: Lean för att balansera din moln portfölj.
+description: Upptäck strategier för att balansera migrering, innovation och experiment för att få ut mesta möjliga av dina moln migreringar.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e93d5144a361aa3d6fb328c1d6f47eb3c069e11c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d317ea1af4dae3d09d62eb39ebd057ab953341bd
+ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803304"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76994202"
 ---
 # <a name="balance-the-portfolio"></a>Balansera portföljen
 
@@ -67,7 +67,7 @@ Om svaret på endera frågan är ”nej” kan det vara klokt att upprätta en p
 
 De förutsättningar som anges i baslinjeguiden bör fortfarande vara tillräckliga för att behandla det här komplexitetsämnet. Dock bör till gångs lagret och den digitala fastigheten markeras och fetstilas bland dessa krav, eftersom dessa data kommer att driva följande aktiviteter.
 
-## <a name="assess-process-changes"></a>Utvärdera processändringar
+## <a name="assess-process-changes"></a>Utvärdera ändringar i processen
 
 Balansering av portföljen kräver ytterligare kvalitativ analys under utvärderingsprocessen, vilket hjälper till att öka enkel rationalisering av portföljen.
 
