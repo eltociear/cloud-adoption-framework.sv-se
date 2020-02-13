@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 152f8c13184ae367f982b6188d21f3dca2849cd1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5eb0dc016bcfe7778727b5a61e392e3dd3581539
+ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799088"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173377"
 ---
 # <a name="landing-zone-considerations"></a>Landingzon – att tänka på
 
@@ -28,12 +28,12 @@ Alla landningszoner tillhandahåller en struktur för olika värdalternativ. Str
 
 - **[Beräkningsbeslut](./compute-options.md)** . Du kan göra driften mindre komplicerad genom att anpassa beräkningsalternativen till landningszonens syfte. Det här beslutet kan tillämpas med hjälp av verktygskedjor för automation som Azure Policy-initiativ och skisser för landningszoner.
 - **[Lagringsbeslut](./storage-options.md)** . Välj den Azure Storage-lösning som passar för arbetsbelastningens krav.
-- **[Nätverksbeslut](./networking-options.md)** . Välj de nätverkstjänster, verktyg och arkitekturer som behövs för organisationens arbetsbelastning, styrningen och behovet av anslutningar.
+- **[Nätverksbeslut](./networking-options.md)** . Välj de nätverkstjänster, verktyg och arkitekturer som krävs för organisationens arbetsbelastning, styrning och anslutningsbehov.
 - **[Databasbeslut](./data-options.md)** . Avgör vilken databasteknik som passar bäst för dina arbetsbelastningskrav.
 
 ## <a name="azure-fundamentals"></a>Grunderna i Azure
 
-Varje landningszon är en del av en bredare lösning för att ordna resurser i en molnmiljö. Grunderna i Azure är organisationens grundläggande byggstenar.
+Varje landningszon är en del av en bredare lösning för att ordna resurser i en molnmiljö. Grunderna i Azure är en organisations grundläggande byggstenar.
 
 - **[Grundläggande koncept för Azure](./fundamental-concepts.md)** . Lär dig grundläggande begrepp och termer som används när du ska organisera resurser i Azure och hur begreppen är relaterade till varandra.
 - **[Beslutsguide för resurskonsekvens](../../decision-guides/resource-consistency/index.md)** . När du förstår grunderna så kan du få hjälp att fatta beslut som kommer att forma landningszonen i den här guiden till resursorganisering.
