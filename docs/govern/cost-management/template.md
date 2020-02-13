@@ -1,6 +1,6 @@
 ---
 title: Cost Management mall
-description: Cost Management mall
+description: Använd den här mallen som en modell för att samla in affärs risker, risk toleranser, efterföljandekrav och verktyg som behövs för att definiera organisationens Cost Management princips instruktioner.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4920a8f1d9cc2d1e1753eb61b2bcc2b1ad6525a6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a44912caaf2a79c505f0f6825471baaa7888e957
+ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806432"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173261"
 ---
 # <a name="cost-management-template"></a>Cost Management mall
 
