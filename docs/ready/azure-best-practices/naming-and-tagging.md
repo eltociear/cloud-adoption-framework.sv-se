@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: b61c9a9ffd778e657854b4da1269eebdb762c73b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c85f4423ea61346e8692fd19ced0d53242733284
+ms.sourcegitcommit: 35d01bccc8ecbec38f6247a065a309ec691ca810
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799853"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77213600"
 ---
 # <a name="recommended-naming-and-tagging-conventions"></a>Rekommenderade regler för namngivning och taggar
 
@@ -87,7 +87,7 @@ I följande lista visas rekommenderade prefix för Azure-resurstyper som du kan 
 | Virtuell dator                     | vm                   |
 | Lagringskonto för virtuell dator                  | stvm                 |
 | Offentlig IP-adress                           | pip-                 |
-| Load Balancer                       | lb-                  |
+| Lastbalanserare                       | lb-                  |
 | NIC                                 | nic-                 |
 | Nyckelvalv                           | 3,0                  |
 | AKS-kluster                         | AKS                 |
@@ -144,7 +144,7 @@ De taggar som du fäster på resurser och de taggar som behövs eller är valfri
 | Miljö               | Programmet, arbetsbelastningen eller tjänstens distributionsmiljö.                                                                                                                                              | _Env_             | _Prod_, _dev_, _frågor och svar_, _fas_, _test_                    |
 | Ägarens namn                | Programmet, arbetsbelastningen eller tjänstens ägare.                                                                                                                                                                | _Ägare_           | _{e-post}_                                       |
 | Beställarens namn            | Användare som beställde utvecklingen av det här programmet.                                                                                                                                                          | _Requestor_       | _{e-post}_                                       |
-| Tjänsteklass             | Serviceavtalsnivå för programmet, arbetsbelastningen eller tjänsten.                                                                                                                                       | _ServiceClass_    | _Dev_, _brons_, _silver_, _guld_                     |
+| Tjänsteklass             | Serviceavtalsnivå för programmet, arbetsbelastningen eller tjänsten.                                                                                                                                       | _ServiceClass_    | _Dev_, _brons_, _silver_, git _guld_                     |
 | Projektets startdatum | Datum då programmet, arbetsbelastningen eller tjänsten först distribuerades.                                                                                                                                           | _StartDate_       | _{datum}_                                        |
 
 ## <a name="sample-naming-convention"></a>Exempel på namngivningskonvention
@@ -183,8 +183,8 @@ I följande avsnitt finns exempel på namngivningssystem för vanliga typer av A
 | Tillgångstyp         | Omfång          | Format                                                              | Exempel                                                                             |
 |--------------------|----------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | Azure Virtual Machines    | Resursgrupp | vm\<policy name or appname\>\<\#\#\#\>                              | <ul><li>vmnavigator001 </li><li>vmsharepoint001 </li><li>vmsqlnode001 </li><li>vmhadoop001</li></ul>                              |
-| Lagringskonto för virtuell dator | Globalt         | stvm\<performance type\>\<appname or prodname\>\<region\>\<\#\#\#\> | <ul><li>stvmstcoreeastus2001 </li><li>stvmpmcoreeastus2001 </li><li>stvmstplmeastus2001 </li><li>stvmsthadoopeastus2001</li></ul> |
-| DNS-etikett          | Globalt         | \<En post för en virtuell dator\>.[\<region\>.cloudapp.azure.com]                  | <ul><li>dc1.westus.cloudapp.azure.com </li><li>web1.eastus2.cloudapp.azure.com</li></ul>                        |
+| Lagringskonto för virtuell dator | Global         | stvm\<performance type\>\<appname or prodname\>\<region\>\<\#\#\#\> | <ul><li>stvmstcoreeastus2001 </li><li>stvmpmcoreeastus2001 </li><li>stvmstplmeastus2001 </li><li>stvmsthadoopeastus2001</li></ul> |
+| DNS-etikett          | Global         | \<En post för en virtuell dator\>.[\<region\>.cloudapp.azure.com]                  | <ul><li>dc1.westus.cloudapp.azure.com </li><li>web1.eastus2.cloudapp.azure.com</li></ul>                        |
 | Azure Load Balancer      | Resursgrupp | lb-\<app name or role\>\<Environment\>\<\#\#\#\>                    | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-dev-001</li></ul>                                          |
 | NIC                | Resursgrupp | nic-\<\#\#\>-\<vmname\>-\<subscription\>\<\#\#\#\>                  | <ul><li>nic-01-dc1-shared-001 </li><li>nic-02-vmhadoop1-prod-001 </li><li>nic-02-vmtest1-client-001</li></ul>            |
 
@@ -192,15 +192,15 @@ I följande avsnitt finns exempel på namngivningssystem för vanliga typer av A
 
 | Tillgångstyp           | Omfång  | Format                                                              | Exempel                                                                                 |
 |----------------------|--------|---------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| Azure Web Apps       | Globalt | app-\<app-namn\>-\<miljö\>-\<\#\#\#\>. [{azurewebsites.net}] | <ul><li>app-navigator-prod-001.azurewebsites.net </li><li>app-accountlookup-dev-001.azurewebsites.net</li></ul> |
-| Azure Functions      | Globalt | FUNC-\<app-namn\>-\<miljö\>-\<\#\#\#\>. [{azurewebsites.net}] | <ul><li>func-navigator-prod-001.azurewebsites.net </li><li>func-accountlookup-dev-001.azurewebsites.net</li></ul> |
-| Azure Cloud Services | Globalt | \<app-namn\>-\<miljö\>-\<\#\#\#\>. [{cloudapp.net}]       | <ul><li>could-navigator-prod-001.azurewebsites.net </li><li>could-accountlookup-dev-001.azurewebsites.net</li></ul>   |
+| Azure Web Apps       | Global | app-\<app-namn\>-\<miljö\>-\<\#\#\#\>. [{azurewebsites.net}] | <ul><li>app-navigator-prod-001.azurewebsites.net </li><li>app-accountlookup-dev-001.azurewebsites.net</li></ul> |
+| Azure Functions      | Global | FUNC-\<app-namn\>-\<miljö\>-\<\#\#\#\>. [{azurewebsites.net}] | <ul><li>func-navigator-prod-001.azurewebsites.net </li><li>func-accountlookup-dev-001.azurewebsites.net</li></ul> |
+| Azure Cloud Services | Global | \<app-namn\>-\<miljö\>-\<\#\#\#\>. [{cloudapp.net}]       | <ul><li>could-navigator-prod-001.azurewebsites.net </li><li>could-accountlookup-dev-001.azurewebsites.net</li></ul>   |
 
 ### <a name="azure-service-bus"></a>Azure Service Bus
 
 | Tillgångstyp         | Omfång       | Format                                                     | Exempel                           |
 |--------------------|-------------|------------------------------------------------------------|------------------------------------|
-| Azure Service Bus        | Globalt      | sb-\<App Name\>-\<Environment\>.[{servicebus.windows.net}] | <ul><li>sb-navigator-prod </li><li>sb-emissions-dev</li></ul> |
+| Azure Service Bus        | Global      | sb-\<App Name\>-\<Environment\>.[{servicebus.windows.net}] | <ul><li>sb-navigator-prod </li><li>sb-emissions-dev</li></ul> |
 | Azure Service Bus-köer | Service Bus | sbq-\<query descriptor\>                                   | <ul><li>sbq-messagequery</li></ul>                   |
 | Azure Service Bus ämnen | Service Bus | SBT –\<frågans beskrivare\>                                   | <ul><li>sbt-messagequery</li></ul>                   |
 
@@ -208,50 +208,50 @@ I följande avsnitt finns exempel på namngivningssystem för vanliga typer av A
 
 | Tillgångstyp                          | Omfång              | Format                                | Exempel                                       |
 |-------------------------------------|--------------------|---------------------------------------|------------------------------------------------|
-| Azure SQL Database Server           | Globalt             | SQL-\<app-namn\>-\<miljö\>      | <ul><li>SQL-Navigator-Prod </li><li>SQL-utsläpp – utveckling</li></ul>           |
+| Azure SQL Database Server           | Global             | SQL-\<app-namn\>-\<miljö\>      | <ul><li>SQL-Navigator-Prod </li><li>SQL-utsläpp – utveckling</li></ul>           |
 | Azure SQL Database                  | Azure SQL Database | SQLDB-\<databas namn >-\<miljö\>| <ul><li>SQLDB – användare-Prod </li><li>SQLDB – användare – dev</li></ul>               |
-| Azure Cosmos DB                     | Globalt             | Cosmos-\<app-namn\>-\<miljö\>   | <ul><li>Cosmos – Navigator-Prod </li><li>Cosmos-utsläpp – dev</li></ul>       |
-| Azure Cache for Redis               | Globalt             | redis-\<App Name\>-\<Environment\>    | <ul><li>redis-navigator-prod </li><li>redis-emissions-dev</li></ul>       |
-| Azure-databas för MySQL            | Globalt             | mysql-\<App Name\>-\<Environment\>    | <ul><li>mysql-navigator-prod </li><li>mysql-emissions-dev</li></ul>       |
-| Azure-databas för PostgreSQL       | Globalt             | psql-\<app-namn\>-\<miljö\>     | <ul><li>psql – Navigator-Prod </li><li>psql-utsläpp – dev</li></ul>         |
-| Azure SQL Data Warehouse            | Globalt             | sqldw-\<App Name\>-\<Environment\>    | <ul><li>sqldw-navigator-prod </li><li>sqldw-emissions-dev</li></ul>       |
+| Azure Cosmos DB                     | Global             | Cosmos-\<app-namn\>-\<miljö\>   | <ul><li>Cosmos – Navigator-Prod </li><li>Cosmos-utsläpp – dev</li></ul>       |
+| Azure Cache for Redis               | Global             | redis-\<App Name\>-\<Environment\>    | <ul><li>redis-navigator-prod </li><li>redis-emissions-dev</li></ul>       |
+| Azure Database for MySQL            | Global             | mysql-\<App Name\>-\<Environment\>    | <ul><li>mysql-navigator-prod </li><li>mysql-emissions-dev</li></ul>       |
+| Azure Database for PostgreSQL       | Global             | psql-\<app-namn\>-\<miljö\>     | <ul><li>psql – Navigator-Prod </li><li>psql-utsläpp – dev</li></ul>         |
+| Azure SQL Data Warehouse            | Global             | sqldw-\<App Name\>-\<Environment\>    | <ul><li>sqldw-navigator-prod </li><li>sqldw-emissions-dev</li></ul>       |
 | SQL Server Stretch Database         | Azure SQL Database | -\<App Name\>-\<Environment\> | <ul><li>sqlstrdb-navigator-prod </li><li>sqlstrdb-emissions-dev</li></ul> |
 
 ### <a name="storage"></a>Storage
 
 | Tillgångstyp                              | Omfång  | Format                                                                        | Exempel                                   |
 |-----------------------------------------|--------|-------------------------------------------------------------------------------|--------------------------------------------|
-| Azure Storage-konto – allmän användning     | Globalt | st\<storage name\>\<\#\#\#\>                                                  | <ul><li>stnavigatordata001 </li><li>stemissionsoutput001</li></ul>    |
-| Azure Storage-konto – diagnostikloggar | Globalt | stdiag\<första två bokstäverna i prenumerationsnamnet och numret\>\<region\>\<\#\#\#\> | <ul><li>stdiagsh001eastus2001 </li><li>stdiagsh001westus001</li></ul> |
-| Azure StorSimple                        | Globalt | ssimp\<App Name\>\<Environment\>                                              | <ul><li>ssimpnavigatorprod </li><li>ssimpemissionsdev</li></ul>       |
+| Azure Storage-konto – allmän användning     | Global | st\<storage name\>\<\#\#\#\>                                                  | <ul><li>stnavigatordata001 </li><li>stemissionsoutput001</li></ul>    |
+| Azure Storage-konto – diagnostikloggar | Global | stdiag\<första två bokstäverna i prenumerationsnamnet och numret\>\<region\>\<\#\#\#\> | <ul><li>stdiagsh001eastus2001 </li><li>stdiagsh001westus001</li></ul> |
+| Azure StorSimple                        | Global | ssimp\<App Name\>\<Environment\>                                              | <ul><li>ssimpnavigatorprod </li><li>ssimpemissionsdev</li></ul>       |
 
-### <a name="ai--machine-learning"></a>AI + maskininlärning
+### <a name="ai--machine-learning"></a>AI + Machine Learning
 
 | Tillgångstyp                       | Omfång          | Format                            | Exempel                               |
 |----------------------------------|----------------|-----------------------------------|----------------------------------------|
-| Azure Search                     | Globalt         | srch-\<App Name\>-\<Environment\> | <ul><li>srch-navigator-prod </li><li>srch-emissions-dev</li></ul> |
+| Azure Search                     | Global         | srch-\<App Name\>-\<Environment\> | <ul><li>srch-navigator-prod </li><li>srch-emissions-dev</li></ul> |
 | Azure Cognitive Services         | Resursgrupp | kugg hjuls-\<app-namn\>-\<miljö\>   | <ul><li>kugg hjuls – Navigator-Prod </li><li>kugg hjuls-utsläpp – dev</li></ul>     |
 | Azure Machine Learning-arbetsyta | Resursgrupp | mlw-\<app-namn\>-\<miljö\>   | <ul><li>mlw – Navigator-Prod </li><li>mlw-utsläpp – dev</li></ul>     |
 
-### <a name="analytics"></a>Analyser
+### <a name="analytics"></a>Analytics
 
 | Tillgångstyp                | Omfång  | Format                             | Exempel                                 |
 |---------------------------|--------|------------------------------------|------------------------------------------|
-| Azure Data Factory        | Globalt | ADF –\<app-namn\>\<miljö\>    | <ul><li>ADF – Navigator – Prod </li><li>ADF – utsläpp – dev</li></ul>     |
-| Azure Data Lake Storage   | Globalt | dls\<App Name\>\<Environment\>     | <ul><li>dlsnavigatorprod </li><li>dlsemissionsdev</li></ul>         |
-| Azure Data Lake Analytics | Globalt | dla\<App Name\>\<Environment\>     | <ul><li>dlanavigatorprod </li><li>dlaemissionsdev</li></ul>         |
-| Azure HDInsight – Spark   | Globalt | hdis-\<App Name\>-\<Environment\>  | <ul><li>hdis-navigator-prod </li><li>hdis-emissions-dev </li></ul>  |
-| Azure HDInsight – Hadoop  | Globalt | hdihd-\<App Name\>-\<Environment\> | <ul><li>hdihd-hadoop-prod </li><li>hdihd-emissions-dev</li></ul>    |
-| Azure HDInsight – R Server| Globalt | hdir-\<App Name\>-\<Environment\>  | <ul><li>hdir-navigator-prod </li><li>hdir-emissions-dev</li></ul>   |
-| Azure HDInsight – HBase   | Globalt | hdihb-\<App Name\>-\<Environment\> | <ul><li>hdihb-navigator-prod </li><li>hdihb-emissions-dev</li></ul> |
-| Power BI Embedded         | Globalt | PBI-\<app-namn\>\<miljö\>    | <ul><li>PBI – Navigator-Prod </li><li>PBI-utsläpp – dev</li></ul> |
+| Azure Data Factory        | Global | ADF –\<app-namn\>\<miljö\>    | <ul><li>ADF – Navigator – Prod </li><li>ADF – utsläpp – dev</li></ul>     |
+| Azure Data Lake Storage   | Global | dls\<App Name\>\<Environment\>     | <ul><li>dlsnavigatorprod </li><li>dlsemissionsdev</li></ul>         |
+| Azure Data Lake Analytics | Global | dla\<App Name\>\<Environment\>     | <ul><li>dlanavigatorprod </li><li>dlaemissionsdev</li></ul>         |
+| Azure HDInsight – Spark   | Global | hdis-\<App Name\>-\<Environment\>  | <ul><li>hdis-navigator-prod </li><li>hdis-emissions-dev </li></ul>  |
+| Azure HDInsight – Hadoop  | Global | hdihd-\<App Name\>-\<Environment\> | <ul><li>hdihd-hadoop-prod </li><li>hdihd-emissions-dev</li></ul>    |
+| Azure HDInsight – R Server| Global | hdir-\<App Name\>-\<Environment\>  | <ul><li>hdir-navigator-prod </li><li>hdir-emissions-dev</li></ul>   |
+| Azure HDInsight – HBase   | Global | hdihb-\<App Name\>-\<Environment\> | <ul><li>hdihb-navigator-prod </li><li>hdihb-emissions-dev</li></ul> |
+| Power BI Embedded         | Global | PBI-\<app-namn\>\<miljö\>    | <ul><li>PBI – Navigator-Prod </li><li>PBI-utsläpp – dev</li></ul> |
 
 ### <a name="data-streams--internet-of-things-iot"></a>Data strömmar/Sakernas Internet (IoT)
 
 | Tillgångstyp                         | Omfång          | Format                             | Exempel                                 |
 |------------------------------------|----------------|------------------------------------|------------------------------------------|
 | Azure Stream Analytics             | Resursgrupp | asa-\<App Name\>-\<Environment\>   | <ul><li>asa-navigator-prod </li><li>asa-emissions-dev</li></ul>     |
-| Azure IoT Hub                      | Globalt         | IoT-\<app-namn\>-\<miljö\>   | <ul><li>IoT-Navigator-Prod </li><li>IoT – utsläpp – dev</li></ul>     |
-| Azure Event Hubs                   | Globalt         | evh-\<App Name\>-\<Environment\>   | <ul><li>evh-navigator-prod </li><li>evh-emissions-dev</li></ul>     |
+| Azure IoT Hub                      | Global         | IoT-\<app-namn\>-\<miljö\>   | <ul><li>IoT-Navigator-Prod </li><li>IoT – utsläpp – dev</li></ul>     |
+| Azure Event Hubs                   | Global         | evh-\<App Name\>-\<Environment\>   | <ul><li>evh-navigator-prod </li><li>evh-emissions-dev</li></ul>     |
 | Azure Notification Hubs            | Resursgrupp | NTF-\<app-namn\>-\<miljö\>   | <ul><li>NTF – Navigator-Prod </li><li>NTF-utsläpp – dev</li></ul>     |
-| Azure Notification Hubs-namnområde  | Globalt         | ntfns-\<app-namn\>-\<miljö\> | <ul><li>ntfns – Navigator-Prod </li><li>ntfns-utsläpp – dev</li></ul> |
+| Azure Notification Hubs-namnområde  | Global         | ntfns-\<app-namn\>-\<miljö\> | <ul><li>ntfns – Navigator-Prod </li><li>ntfns-utsläpp – dev</li></ul> |
