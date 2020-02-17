@@ -18,7 +18,7 @@ ms.locfileid: "77173391"
 ---
 # <a name="assess-the-digital-estate"></a>Utvärdera den digitala egendomen
 
-Vid en idealisk migrering skulle varje tillgång (infrastruktur, app eller data) vara kompatibel med en molnplattform och vara redo för migrering. I verkligheten är det inte allting som bör migreras till molnet. Dessutom är inte alla tillgångar kompatibla med molnplattformarna. Innan du migrerar en arbetsbelastning till molnet är det viktigt att utvärdera arbetsbelastningen och varje relaterad tillgång (infrastruktur, appar och data).
+Vid en idealisk migrering skulle varje tillgång (infrastruktur, app eller data) vara kompatibel med en molnplattform och redo för migrering. I verkligheten är det inte allting som bör migreras till molnet. Dessutom är inte alla tillgångar kompatibla med molnplattformarna. Innan du migrerar en arbetsbelastning till molnet är det viktigt att utvärdera arbetsbelastningen och varje relaterad tillgång (infrastruktur, appar och data).
 
 Resurserna i det här avsnittet hjälper dig att utvärdera din miljö och avgöra om den är lämplig att migrera, samt vilka metoder som skulle kunna användas.
 
@@ -96,7 +96,7 @@ Den här guiden fokuserar på följande scenarier:
 - **Äldre maskinvara:** Du migrerar för att ta bort ett beroende på äldre maskinvara där supporten eller livscykeln snart upphör.
 - **Kapacitetstillväxt:** Du måste öka kapaciteten för tillgångar (infrastruktur, appar och data) som den aktuella infrastrukturen inte kan tillhandahålla.
 - **Modernisering av datacenter:** Du måste utöka eller modernisera ditt datacenter med molnteknik för att säkerställa att verksamheten förblir aktuell och konkurrenskraftig.
-- **Program- eller tjänstmodernisering:** Du vill uppdatera dina program så att de utnyttjar molnets inbyggda funktioner. Även om en strategi för en ny värd var ditt ursprungliga mål, är möjligheten att skapa planer för program- eller tjänstgranskning och potentiell modernisering en vanlig process vid all migrering.
+- **Program- eller tjänstmodernisering:** Du vill uppdatera dina program så att de utnyttjar molnets inbyggda funktioner. Även om du valt att genomföra en migreringsstrategi som innebär byte av värd i första hand är det brukligt att se till att det finns möjligheter att skapa planer för granskning av program och tjänster, samt eventuell modernisering i migreringen.
 
 ### <a name="organizational-alignment-and-stakeholders"></a>Organisatorisk anpassning och intressenter
 
@@ -120,7 +120,7 @@ Några viktiga faktorer att tänka på när man utvärderar tidslinjen för migr
 
 # <a name="cost-managementtabmanagecost"></a>[Kostnadshantering](#tab/ManageCost)
 
-När du utvärderar din miljö är det en perfekt möjlighet att inkludera ett kostnadsanalyssteg. Med hjälp av de data som samlats in vid utvärderingen bör du kunna analysera och förutse kostnaderna. Den här kostnadsförutsägelsen bör innehålla både förbrukningskostnader för tjänsten samt eventuella engångskostnader (till exempel ökad mängd inkommande data).
+Utvärderingen av din miljö bjuder på ett perfekt tillfälle att inkludera ett kostnadsanalyssteg. Med hjälp av de data som samlats in vid utvärderingen bör du kunna analysera och förutse kostnaderna. Den här kostnadsförutsägelsen bör innehålla både förbrukningskostnader för tjänsten samt eventuella engångskostnader (till exempel ökad mängd inkommande data).
 
 Under migreringen finns det vissa faktorer som påverkar beslut och körning:
 
