@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 603e26d5fc8405e29d163bc0585bc0ce3cd5093f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 34b67422ad8f32cf8d6bae141db05956a1b41e22
+ms.sourcegitcommit: 6a22ac00549eb9964f25d3dfd63730e17f7eefe1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804494"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413192"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Aktivera lyckad under en moln införande resa
 
@@ -69,7 +69,7 @@ Utöver moln implementerings ramverket täcker Microsoft ytterligare ämnen som 
                     </div>
                     <div class="cardText">
                         <h3>Tillförlitlig arkitektur (återhämtning)</h3>
-                        <p>Att skapa ett tillförlitligt program i molnet skiljer sig från traditionell programutveckling. Tidigare har du kanske skött uppskalning genom att köpa in maskinvara med bättre specifikationer, men i en molnmiljö skalar du ut i stället för att skala upp. Målet är att minimera effekten av en enda komponent som havererar snarare än att förhindra fel helt och hållet.</p>
+                        <p>Att skapa ett tillförlitligt program i molnet skiljer sig från traditionell programutveckling. Förut kan du ha köpt nivåer av redundant högre maskin vara för att minimera risken för att en hel program plattform Miss lyckas. I molnet bekräftar vi att vi kommer fram till att felen inträffar. Målet är att minimera effekten av en enda komponent som havererar snarare än att förhindra fel helt och hållet.</p>
                     </div>
                 </div>
             </div>
@@ -125,7 +125,7 @@ Utöver moln implementerings ramverket täcker Microsoft ytterligare ämnen som 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Azure arkitekturcenter</h3>
+                        <h3>Azure Architecture Center</h3>
                         <p>Arkitektur lösningar, referens arkitekturer, exempel scenarier, metod tips och moln design mönster för att hjälpa till med arkitekturen i lösningar som körs på Azure.</p>
                     </div>
                 </div>
@@ -144,7 +144,7 @@ Utöver moln implementerings ramverket täcker Microsoft ytterligare ämnen som 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Priskalkylator för Azure</h3>
+                        <h3>Azure priskalkylator</h3>
                         <p>Beräkna kostnaden för de olika Azure-komponenter som krävs för att skapa eller migrera en vald lösning.</p>
                     </div>
                 </div>
