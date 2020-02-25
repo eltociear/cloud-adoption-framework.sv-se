@@ -1,6 +1,6 @@
 ---
-title: 'Standard styrnings guide för företag: förbättra resurs konsekvens'
-description: 'Standard styrnings guide för företag: förbättra resurs konsekvens'
+title: 'Standard företags styrning: förbättra resurs konsekvens'
+description: Förbättra styrnings bas linjen och åtgärda resurs styrnings risker genom att lägga till återställnings-, storleks-och övervaknings kontroller i Microsoft Cloud implementerings ramverk för Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: aa752e83dd5e83da101600c756fe7b878015c1db
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 366f5034a89529e65325a8afd2cf0275dcec02e4
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806007"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567681"
 ---
 # <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Standard styrnings guide för företag: förbättra resurs konsekvens
 
@@ -109,7 +109,7 @@ Det här avsnittet av artikeln ändrar designen för styrnings MVP till att inkl
     4. Publicera skissen till alla hanterings grupper som ska vara värd för verksamhets kritiska program.
     5. Använd den nya skissen för varje berörd prenumeration samt befintliga ritningar.
 
-## <a name="conclusion"></a>Slutsats
+## <a name="conclusion"></a>Sammanfattning
 
 Dessa ytterligare processer och ändringar i styrnings-MVP: n hjälper till att åtgärda många av de risker som är kopplade till resurs styrning. Tillsammans ger de till gång till återställnings-, storleks-och övervaknings kontroller som ger moln medveten drift.
 
