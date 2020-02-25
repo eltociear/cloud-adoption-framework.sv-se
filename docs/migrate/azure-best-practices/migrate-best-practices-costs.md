@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 03fb8ab37657ea500c342884e2ae2ca1c1290fca
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 30783e760f85324116e0a9a968a1c5aa486eb6f7
+ms.sourcegitcommit: 41cb36f58cc48950da1a2aa2032cc34ba5b16a0b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803729"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77599964"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Metodtips för kostnad och storleksändring av arbetsbelastningar som migreras till Azure
 
@@ -24,7 +24,7 @@ När du planerar och utformar en migrering ger ett fokus på kostnader den bäst
 Den här artikeln beskriver metodtips för kostnads- och storleksuppskattning före och efter migreringen.
 
 > [!IMPORTANT]
-> Metodtipsen och åsikter i den här artikeln baseras på de plattformar och tjänster som är tillgängliga för Azure vid tidpunkten på den skrevs. Funktioner förändras över tid. Vissa rekommendationer kan kanske inte tillämpas på din distribution så välj vad som passar dig bäst.
+> Metodtipsen och åsikter i den här artikeln baseras på de plattformar och tjänster som är tillgängliga för Azure vid tidpunkten på den skrevs. Funktioner förändras ständigt. Vissa rekommendationer kan kanske inte tillämpas på din distribution så välj vad som passar dig bäst.
 
 ## <a name="before-migration"></a>Före migreringen
 
@@ -38,7 +38,7 @@ Det finns flera verktyg som du kan använda för att beräkna din månadsfaktura
 
 - **Pris kalkylator för Azure:** Du väljer de produkter som du vill beräkna, till exempel virtuella datorer och lagrings enheter. Mata in kostnaderna i priskalkylatorn för att skapa en uppskattning.
 
- ![Azures priskalkylator](./media/migrate-best-practices-costs/pricing.png) *Azures priskalkylator*
+ ![pris Kalkylatorn för Azure](./media/migrate-best-practices-costs/pricing.png) *pris Kalkylatorn för Azure*
 
 - **Azure Migrate:** För att beräkna kostnaderna måste du granska och ta hänsyn till alla resurser som krävs för att köra dina arbets belastningar i Azure. För att hämta dessa data skapar du en förteckning över dina tillgångar, inklusive servrar, virtuella datorer, databaser och lagringsutrymmen. Du kan använda Azure Migrate för att samla in den här informationen.
 
@@ -67,7 +67,7 @@ Du kan välja olika alternativ när du distribuerar virtuella Azure-datorer för
 **Generellt syfte** | Balanserat förhållande mellan processor och minne. | Bra för testning och utveckling, små till medelstora databaser och webbservrar med låg till medelhög trafik.
 **Beräkningsoptimerad** | Högt förhållande mellan processor och minne. | Bra för webbservrar med medelhög trafik, nätverkstillämpningar, batchprocesser och programservrar.
 **Minnesoptimerad** | Högt minne-till-CPU. | Bra för relationsdatabaser, mellanstora till stora cacheminnen och minnesinterna analyser.
-**Lagringsoptimerad** | Högt diskdataflöde och I/O. | Bra för stordata-, SQL- och NoSQL-databaser.
+**Lagringsoptimerad** | Högt diskgenomflöde och I/O. | Bra för stordata-, SQL- och NoSQL-databaser.
 **GPU-optimerad** | Specialiserade virtuella datorer. En eller flera GPU:er. | Tung grafik- och videoredigering.
 **Höga prestanda** | Den snabbaste och mest kraftfulla processorn. Virtuella datorer med valfritt nätverksgränssnitt för stora dataflöden (RDMA) | Kritiska appar som kräver hög prestanda.
 
@@ -152,7 +152,7 @@ Lagringskonton kan använda olika typer av redundans för återhämtning och hö
 - [Jämför](https://docs.microsoft.com/azure/storage/common/storage-decide-blobs-files-disks?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) blobbar, filer och datatyper för disklagring.
 - [Läs mer](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) om åtkomstnivåer.
 - [Se](https://docs.microsoft.com/azure/storage/common/storage-account-overview?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) olika typer av lagringskonton.
-- Lär dig mer om [lagringsredundans](https://docs.microsoft.com/azure/storage/common/storage-redundancy), [LRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-lrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [ZRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-zrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json) och [GRS med läsåtkomst](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#read-access-geo-redundant-storage).
+- Lär dig mer om [lagringsredundans](https://docs.microsoft.com/azure/storage/common/storage-redundancy), [LRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-lrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [ZRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-zrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json) och [GRS med läsåtkomst](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#read-access-to-data-in-the-secondary-region).
 - [Läs mer](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) om Azure Files.
 
 ## <a name="best-practice-take-advantage-of-azure-hybrid-benefits"></a>Bästa praxis: dra nytta av Azure Hybrid-förmåner
