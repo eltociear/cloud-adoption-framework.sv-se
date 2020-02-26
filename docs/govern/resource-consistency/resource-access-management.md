@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 825c220bda1c560c5d7bf07bcae649017525ff53
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e32151fc39f22e4dcb2a9ab40b24f351b11775e7
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805633"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629308"
 ---
 # <a name="resource-access-management-in-azure"></a>Åtkomsthantering av resurser i Azure
 
@@ -58,7 +58,7 @@ Följande bild visar tre klienter: [PowerShell](https://docs.microsoft.com/power
 ![diagram över Azure-klienter som ansluter till Azure Resource Manager API](../../_images/govern/design/governance-1-13.png)
 *bild 5 – Azure-klienter ansluter till Azure Resource Manager RESTful-API: et.*
 
-Även om dessa klienter ansluter till Azure Resource Manager med RESTful-API: et omfattar inte Azure Resource Manager funktioner för att hantera resurser direkt. I stället har de flesta resurs typer i Azure sin egen [**resurs leverantör**](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#terminology).
+Även om dessa klienter ansluter till Azure Resource Manager med RESTful-API: et omfattar inte Azure Resource Manager funktioner för att hantera resurser direkt. I stället har de flesta resurs typer i Azure sin egen [resurs leverantör](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#terminology).
 
 ![Azure Resource providers](../../_images/govern/design/governance-1-14.png)
 *figur 6 – Azure Resource providers.*

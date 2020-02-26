@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 3cbce52809c191ec6bacf30454bd2e9a48d57c1b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: dd4f60eafed3281d5d4e67285c413b9f969793e3
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798799"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629257"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure Enterprise-Autogenerera: handskriven prenumerations styrning
 
@@ -77,7 +77,7 @@ De tre vanligaste mönstren för Azure-registreringar är:
 
 Även om var och en av dessa mönster har sitt ställe, är **affär senhets** mönstret allt vanligare för att utforma en organisations kostnads modell och återspegla kontroll. Microsoft Core Engineering och Operations Group har skapat en effektiv delmängd av **affär senhets** mönstret som modelleras på **federala**, **delstatliga**och **lokalt**. Mer information finns i [ordna prenumerationer och resurs grupper i företaget](https://azure.microsoft.com/blog/organizing-subscriptions-and-resource-groups-within-the-enterprise).
 
-### <a name="azure-management-groups"></a>Hanteringsgrupper i Azure
+### <a name="azure-management-groups"></a>Azure-hanteringsgrupper
 
 Microsoft erbjuder nu ett annat sätt att modellera din hierarki: [Azure-hanterings grupper](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview). Hanterings grupper är mycket mer flexibla än avdelningar och konton, och de kan kapslas upp till sex nivåer. Med hanterings grupper kan du skapa en hierarki som är separat från din fakturerings-hierarki, endast för effektiv hantering av resurser. Hanterings grupper kan spegla din fakturerings-hierarki och ofta företag startar på det sättet. Kraften i hanterings grupper är dock när du använder dem för att modellera din organisation, gruppera relaterade prenumerationer (oavsett var de befinner sig i hierarkin) och tilldela gemensamma roller, principer och initiativ. Några exempel är:
 
@@ -338,7 +338,7 @@ Den sista delen av referens modellen för Azure-Autogenerera är kärnan till hu
 
 ### <a name="azure-virtual-datacenter"></a>Azure Virtual Datacenter
 
-Azure ger dig både interna och tredje parts funktioner från vårt omfattande partner nätverk som gör det möjligt att ha en effektiv säkerhets virtualiseringsprodukter från. Det är viktigt att Microsoft tillhandahåller bästa praxis och vägledning i form av [Azure Virtual Data Center (VDC)](./networking-vdc.md). När du flyttar från en enskild arbets belastning till flera arbets belastningar som använder Hybrid funktioner, ger VDC vägledningen "recept" för att möjliggöra ett flexibelt nätverk som kommer att växa när dina arbets belastningar i Azure växer.
+Azure tillhandahåller både interna och tredje parts funktioner från vårt omfattande partner nätverk som ger dig en effektiv säkerhets virtualiseringsprodukter från. Det är viktigt att Microsoft tillhandahåller bästa praxis och vägledning i form av [Azure Virtual Data Center (VDC)](./networking-vdc.md). När du flyttar från en enskild arbets belastning till flera arbets belastningar som använder Hybrid funktioner, ger VDC vägledningen "recept" för att möjliggöra ett flexibelt nätverk som kommer att växa när dina arbets belastningar i Azure växer.
 
 ## <a name="next-steps"></a>Nästa steg
 

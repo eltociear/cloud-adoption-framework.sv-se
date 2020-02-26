@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: 4e13c064cb449e3f8fca9573b44d214bb644b927
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: bc20624beb0d3a088d119bf0f75c1e1881d37fce
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566680"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629223"
 ---
 # <a name="azure-virtual-datacenter"></a>Azure Virtual Datacenter
 
@@ -36,8 +36,8 @@ ms.locfileid: "73566680"
 <tr>
     <td style="width: 64px; vertical-align: middle;"><a href="./networking-vdc.md"><img src="../_images/vdc/vdc-network.png" alt="Network Perspective" /></a></td>
     <td>
-        <h3><a href="./networking-vdc.md">Azure Virtual Datacenter: Ett nätverksperspektiv</a></h3>
-        <p>Den här onlineartikeln innehåller en översikt över nätverksmönster och -designer som kan användas för att lösa arkitekturproblemen med skala, prestanda och säkerhet som många kunder står inför när de överväger att flytta helt till molnet.</p>
+        <h3><a href="./networking-vdc.md">Virtuellt Data Center: ett nätverks perspektiv</a></h3>
+        <p>I den här översikten över nätverks mönster och designer får du de arkitektur skalnings-, prestanda-och säkerhets problem som kunderna möter när man planerar en storskalig molnbaserad migrering.</p>
     </td>
 </tr>
 <tr>
