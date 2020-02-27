@@ -9,22 +9,22 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9c4d5bac8046cc27399b2be7bc0b8ce82ea65769
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 20f71083a7a200fd4b45fbdda24ad6bbd24a397a
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173391"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567749"
 ---
 # <a name="assess-the-digital-estate"></a>Utvärdera den digitala egendomen
 
-Vid en idealisk migrering skulle varje tillgång (infrastruktur, app eller data) vara kompatibel med en molnplattform och redo för migrering. I verkligheten är det inte allting som bör migreras till molnet. Dessutom är inte alla tillgångar kompatibla med molnplattformarna. Innan du migrerar en arbetsbelastning till molnet är det viktigt att utvärdera arbetsbelastningen och varje relaterad tillgång (infrastruktur, appar och data).
+Vid en idealisk migrering skulle varje tillgång (infrastruktur, app eller data) vara kompatibel med en molnplattform och vara redo för migrering. I verkligheten är det inte allting som bör migreras till molnet. Dessutom är inte alla tillgångar kompatibla med molnplattformarna. Innan du migrerar en arbetsbelastning till molnet är det viktigt att utvärdera arbetsbelastningen och varje relaterad tillgång (infrastruktur, appar och data).
 
 Resurserna i det här avsnittet hjälper dig att utvärdera din miljö och avgöra om den är lämplig att migrera, samt vilka metoder som skulle kunna användas.
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="toolstabtools"></a>[Verktyg](#tab/Tools)
+# <a name="tools"></a>[Verktyg](#tab/Tools)
 
 Följande verktyg hjälper dig att utvärdera din miljö för att avgöra lämpligheten för en migrering och den bästa metoden att använda. Information om hur du väljer rätt verktyg för migreringen finns i [Cloud Adoption Frameworks beslutsguide för migreringsverktyg](../../decision-guides/migrate-decision-guide/index.md).
 
@@ -52,7 +52,7 @@ granskar du inställningarna och klickar på **Lägg till verktyg**
 
 ::: zone target="chromeless"
 
-::: form action="Blade[#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview]" submitText="Assess and migrate servers" :::
+::: form action="OpenBlade[#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview]" submitText="Assess and migrate servers" :::
 
 ::: zone-end
 
@@ -87,7 +87,7 @@ Om du vill använda beroendevisualisering måste du ladda ned och installera age
 - [Använda lösningen Tjänstkarta i Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate och Tjänstkarta: Visualisering av beroenden](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
 
-# <a name="scenarios-and-stakeholderstabscenarios"></a>[Scenarier och intressenter](#tab/Scenarios)
+# <a name="scenarios-and-stakeholders"></a>[Scenarier och intressenter](#tab/Scenarios)
 
 ## <a name="scenarios"></a>Scenarier
 
@@ -96,7 +96,7 @@ Den här guiden fokuserar på följande scenarier:
 - **Äldre maskinvara:** Du migrerar för att ta bort ett beroende på äldre maskinvara där supporten eller livscykeln snart upphör.
 - **Kapacitetstillväxt:** Du måste öka kapaciteten för tillgångar (infrastruktur, appar och data) som den aktuella infrastrukturen inte kan tillhandahålla.
 - **Modernisering av datacenter:** Du måste utöka eller modernisera ditt datacenter med molnteknik för att säkerställa att verksamheten förblir aktuell och konkurrenskraftig.
-- **Program- eller tjänstmodernisering:** Du vill uppdatera dina program så att de utnyttjar molnets inbyggda funktioner. Även om du valt att genomföra en migreringsstrategi som innebär byte av värd i första hand är det brukligt att se till att det finns möjligheter att skapa planer för granskning av program och tjänster, samt eventuell modernisering i migreringen.
+- **Program- eller tjänstmodernisering:** Du vill uppdatera dina program så att de utnyttjar molnets inbyggda funktioner. Även om en strategi för en ny värd var ditt ursprungliga mål, är möjligheten att skapa planer för program- eller tjänstgranskning och potentiell modernisering en vanlig process vid all migrering.
 
 ### <a name="organizational-alignment-and-stakeholders"></a>Organisatorisk anpassning och intressenter
 
@@ -106,7 +106,7 @@ Att upprätta ett kärnteam för molnstrategin med dessa viktiga intressenter p�
 
 Mer information om hur du förbereder din organisation på molnmigreringen finns i Cloud Adoption Framework-artikeln om den [inledande organisatoriska anpassningen](../../plan/initial-org-alignment.md).
 
-# <a name="timelinestabtimelines"></a>[Tidslinjer](#tab/Timelines)
+# <a name="timelines"></a>[Tidslinjer](#tab/Timelines)
 
 I allmänhet ser kunderna att migreringsscenariot i den här guiden kan slutföras inom en till sex månader.
 
@@ -118,9 +118,9 @@ Några viktiga faktorer att tänka på när man utvärderar tidslinjen för migr
 - **Ändringshantering:** Har företaget specifika krav angående ändringsimplementering och godkännande?
 - **Segmentföreskrifter:** Måste du följa segment- eller branschföreskrifter?
 
-# <a name="cost-managementtabmanagecost"></a>[Kostnadshantering](#tab/ManageCost)
+# <a name="cost-management"></a>[Kostnadshantering](#tab/ManageCost)
 
-Utvärderingen av din miljö bjuder på ett perfekt tillfälle att inkludera ett kostnadsanalyssteg. Med hjälp av de data som samlats in vid utvärderingen bör du kunna analysera och förutse kostnaderna. Den här kostnadsförutsägelsen bör innehålla både förbrukningskostnader för tjänsten samt eventuella engångskostnader (till exempel ökad mängd inkommande data).
+När du utvärderar din miljö är det en perfekt möjlighet att inkludera ett kostnadsanalyssteg. Med hjälp av de data som samlats in vid utvärderingen bör du kunna analysera och förutse kostnaderna. Den här kostnadsförutsägelsen bör innehålla både förbrukningskostnader för tjänsten samt eventuella engångskostnader (till exempel ökad mängd inkommande data).
 
 Under migreringen finns det vissa faktorer som påverkar beslut och körning:
 
