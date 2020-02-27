@@ -1,6 +1,6 @@
 ---
-title: Utvärdera företagsprinciper
-description: Utvärdera företags policyn som en del av din strategi för moln styrning.
+title: Utvärdera och definiera företags princip
+description: Identifiera företags policy affärs risk, risk tolerans och policy-och efterlevnadsprinciper som en del av en strategi för moln styrning.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 59c4ac9c637d0c243d58cb93866ddfa8b9986de5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 8e634d4e471995d569f21aacccdb0b535d9c0b5b
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804358"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708928"
 ---
 # <a name="evaluate-corporate-policy"></a>Utvärdera företagsprinciper
 

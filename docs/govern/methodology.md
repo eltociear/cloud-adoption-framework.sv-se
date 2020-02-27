@@ -1,6 +1,6 @@
 ---
 title: Metod för moln styrning
-description: Upprätta grundläggande förståelse för de metoder som används för molnstyrning i Cloud Adoption Framework.
+description: Använd en stegvis styrnings metod som baseras på en minimal livskraftig produkt (MVP) för att stödja företags principer och snabbt förflytta sig mot moln införande.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/04/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 402ebf52583ae5e94de52057133990656d8009b5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 828f9c85366f3e73ddb804a2622784ba0a0ccb65
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807095"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709098"
 ---
 # <a name="cloud-governance-methodology"></a>Metod för moln styrning
 
@@ -37,7 +37,7 @@ Cloud Adoption Framework-styrningsmodellen identifierar områden som är viktiga
 
 **Fem ämnes områden i moln styrning:** Dessa ämnes områden har stöd för företags principer. Varje område skyddar företaget mot potentiella fallgropar:
 
-- Kostnadshantering
+- Cost Management
 - Grundläggande säkerhet
 - Resurskonsekvens
 - Grundläggande identitet

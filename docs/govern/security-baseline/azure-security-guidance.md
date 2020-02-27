@@ -1,6 +1,6 @@
 ---
-title: Vägledning – säkerheten i Azure
-description: Vilka säkerhets guider tillhandahåller Microsoft?
+title: Vägledning för Azure-säkerhet
+description: Använd Microsoft-tjänsten Trust Platform och Compliance Manager för att uppfylla komplexa krav på efterlevnad och förbättra data skyddet.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: cc57de575b7ad208748595a82b9726ebf85fa3fd
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ab126c3638edd18d76c579bbf4d1958621546a76
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804919"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709540"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -32,7 +32,7 @@ Dessa verktyg är utformade för att hjälpa organisationer att uppfylla komplex
 **STP (service Trust Platform)** ger detaljerad information och verktyg som hjälper dig att uppfylla dina behov av att använda Microsoft Cloud tjänster, inklusive Azure, Office 365, Dynamics 365 och Windows. STP är en enda arbets affär för säkerhet, regler, efterlevnad och sekretess information som är relaterad till Microsoft Cloud. Det är här som vi publicerar den information och de resurser som krävs för att utföra självbetjänings riskbedömning av moln tjänster och verktyg. STP skapades för att hjälpa till att spåra regelefterlevnad-aktiviteter i Azure, inklusive:
 
 - **Compliance Manager:** Compliance Manager, ett arbets flödes verktyg för riskbedömning på Microsofts plattform för tjänst förtroende, gör att du kan spåra, tilldela och verifiera din organisations aktiviteter för regelefterlevnad som rör Microsoft Cloud tjänster, till exempel Office 365, Dynamics 365 och Azure. Du hittar mer information i nästa avsnitt.
-- **Betrodda dokument:** För närvarande finns det tre typer av guider som ger dig många resurser för att utvärdera Microsoft Cloud. Lär dig mer om Microsoft-åtgärder i säkerhet, efterlevnad och sekretess. och hjälper dig att arbeta med att förbättra dina data skydds funktioner. Dessa är:
+- **Betrodda dokument:** För närvarande finns det tre typer av guider som ger dig många resurser för att utvärdera Microsoft Cloud. Lär dig mer om Microsoft-åtgärder i säkerhet, efterlevnad och sekretess. och hjälper dig att arbeta med att förbättra dina data skydds funktioner. Exempel på dessa är:
 - **Gransknings rapporter:** Med gransknings rapporter kan du hålla dig uppdaterad om den senaste sekretess-, säkerhets-och efterlevnad-relaterad informationen för Microsoft Cloud Services. Detta omfattar ISO, SOC, FedRAMP och andra gransknings rapporter, broar och material som rör oberoende revisioner från tredje part av Microsoft Cloud tjänster som Azure, Office 365, Dynamics 365 och andra.
 - **Data skydds guider:** Data skydds guider ger information om hur Microsoft Cloud Services skyddar dina data och hur du kan hantera data säkerhet och efterlevnad i molnet för din organisation. Detta omfattar djupgående fakta blad som innehåller information om hur Microsoft utformar och arbetar med moln tjänster, vanliga frågor och svar, rapporter om säkerhets utvärderingar, inträngande test resultat och rikt linjer som hjälper dig att utföra riskbedömning och förbättra dina data skydds funktioner.
 - **Utkast till Azure-säkerhet och efterlevnad:** Med ritningar får du till gång till resurser som hjälper dig att skapa och lansera moln drivna program som hjälper dig att efterleva strängare bestämmelser och standarder. Med fler certifieringar än någon annan moln leverantör kan du tryggt distribuera kritiska arbets belastningar till Azure, med ritningar som innehåller:

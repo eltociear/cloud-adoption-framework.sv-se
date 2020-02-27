@@ -1,6 +1,6 @@
 ---
 title: 'Program varu definitions nätverk: PaaS – endast'
-description: Diskussion av PaaS-modellen för program varu definierade nätverk i molnet.
+description: Lär dig mer om fördelarna och begränsningarna i en PaaS arkitektur modell i det program som definierats i molnet.
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: d61c9562b34453e6a0026a15a2674e3e19854810
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 14b1a068f4f1011fe10a61dd8f9a7738f7b35f07
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804834"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707976"
 ---
 # <a name="software-defined-networking-paas-only"></a>Program varu definitions nätverk: PaaS – endast
 

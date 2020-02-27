@@ -1,6 +1,6 @@
 ---
-title: 'Styrnings guide för komplexa företag: förbättra disciplinen för identitets bas linjer'
-description: 'Styrnings guide för komplexa företag: förbättra disciplinen för identitets bas linjer'
+title: 'Komplex företags styrning: förbättra identitets bas linje disciplin'
+description: Använd ramverket för moln införande för Azure för att lära dig mer om att lägga till identitets bas kontroller till en minimal och livskraftig styrnings produkt (MVP).
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/06/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7f975f948bc078a80ead4207d755ff67cd5e4f2f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 05a3ce3eb018a9b15f66b90749782def260c66d7
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806296"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707619"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Styrnings guide för komplexa företag: förbättra disciplinen för identitets bas linjer
 
@@ -87,7 +87,7 @@ Här är de nya bästa metoderna:
     4. Använd skissen för alla prenumerationer som kräver äldre autentisering med flera företag eller andra leverantörer.
     5. Instansen av Active Directory som körs i Azure kan nu användas som en utökning av den lokala Active Directory-lösningen, så att den kan integreras med det befintliga Multi-Factor Authentication-verktyget och tillhandahålla anspråksbaserad autentisering, både via befintliga Active Directory-funktioner.
 
-## <a name="conclusion"></a>Slutsats
+## <a name="conclusion"></a>Sammanfattning
 
 Genom att lägga till dessa ändringar i styrnings MVP: n kan du åtgärda många av riskerna i den här artikeln, så att varje moln antagande team snabbt kan gå förbi den här Roadblock.
 

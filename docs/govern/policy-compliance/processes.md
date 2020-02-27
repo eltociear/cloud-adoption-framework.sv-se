@@ -1,6 +1,6 @@
 ---
 title: Etablera processer för policyefterlevnad
-description: Upprätta processer för att säkerställa efterlevnaden av företags principer.
+description: Skapa en strategi och processer för att säkerställa att moln distributionen följer dina princip krav. 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bf69c13d80063e44a49d945908e2cc319b90ce3e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 760015fc72cd893cb14dd39d9a9b3078d304da97
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807180"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709472"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -78,7 +78,7 @@ Några exempel på fel utlösare och åtgärder:
 
 | Moln styrnings disciplin | Exempel utlösare | Exempel åtgärd |
 |-----------------------------|----------------|---------------|
-| Kostnadshantering | Månads moln utgifter är mer än 20% högre än förväntat. | Meddela den fakturerings enhets ledare som ska påbörja en granskning av resursanvändningen. |
+| Cost Management | Månads moln utgifter är mer än 20% högre än förväntat. | Meddela den fakturerings enhets ledare som ska påbörja en granskning av resursanvändningen. |
 | Grundläggande säkerhet | Identifiera misstänkt användar aktivitet. | Meddela IT-säkerhetsteamet och inaktivera det misstänkta användar kontot. |
 | Resurskonsekvens | PROCESSOR belastningen för en arbets belastning är större än 90%. | Meddela IT-avdelningen och skala ut ytterligare resurser för att hantera belastningen. |
 

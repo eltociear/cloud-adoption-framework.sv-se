@@ -1,6 +1,6 @@
 ---
 title: Förbättringar av identitets bas linje disciplin
-description: Förbättringar av identitets bas linje disciplin
+description: Förstå de potentiella aktiviteter som ett företag utför för att utveckla och mogna sin identitets bas linje disciplin i varje fas av moln införande.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6adb2e0d6edaacd45e41b8ac3eadb57969cad160
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f1ee4e64e86ccb3648badad38d2118be11b76cc7
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807197"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709370"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Förbättringar av identitets bas linje disciplin
 

@@ -1,6 +1,6 @@
 ---
 title: 'Program varu definition nätverk: Cloud-Native'
-description: Diskussion om Cloud-interna virtuella nätverks tjänster.
+description: Använd ramverket för moln införande för Azure för att lära dig mer om molnbaserade virtuella nätverk, vilket krävs för att distribuera virtuella datorer till molnet.
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8b5983ace8d56fa219d88e921fa6da7263d486fb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9d8bf9a5188eae55c14a22a8007aa6e9cc01b02c
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806653"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708605"
 ---
 # <a name="software-defined-networking-cloud-native"></a>Program varu definition nätverk: Cloud-Native
 

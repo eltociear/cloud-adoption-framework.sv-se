@@ -1,6 +1,6 @@
 ---
 title: Cost Management disciplin förbättring
-description: Cost Management disciplin förbättring
+description: Förstå de potentiella aktiviteter som ett företag utför för att utveckla och mogna sitt Cost Management disciplin i varje fas av moln införande.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ebd297f4fbebd451f47bbb6b88be56e1ccc489be
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1d32b70c2c07ee341e03a020cd0010c8763d4cdc
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806483"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708843"
 ---
 # <a name="cost-management-discipline-improvement"></a>Cost Management disciplin förbättring
 

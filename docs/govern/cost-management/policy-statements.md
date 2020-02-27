@@ -1,6 +1,6 @@
 ---
 title: Cost Management exempel på princip satser
-description: Cost Management exempel på princip satser
+description: Använd ramverket för moln införande för Azure för att hämta exempel Cost Management princip satser som hjälper dig att skapa ett utkast till princip satser.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e9ec4024033d71ca15c34d33beb0cb52967f6d4a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3f9b7076cb50d9526beccfe4faabaa043b010841
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806449"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708894"
 ---
 # <a name="cost-management-sample-policy-statements"></a>Cost Management exempel på princip satser
 

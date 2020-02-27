@@ -1,6 +1,6 @@
 ---
-title: 'Standard Enterprise-guide: förbättra Cost Management disciplin'
-description: 'Standard Enterprise-guide: förbättra Cost Management disciplin'
+title: 'Standard företags styrning: förbättra Cost Management disciplin'
+description: Använd ramverket för moln införande för Azure för att lära dig mer om att lägga till kostnads kontroller i en minimal och livskraftig styrnings produkt (MVP).
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 83fe35135b37fe96a95f7335639aec65538ee829
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 81140a69d3d024159c62b499de2e69cd57eb3d1f
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806211"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709251"
 ---
 # <a name="standard-enterprise-guide-improve-the-cost-management-discipline"></a>Standard Enterprise-guide: förbättra Cost Management disciplin
 
@@ -74,7 +74,7 @@ Det här avsnittet av artikeln ändrar designen för styrnings MVP till att inkl
     1. Granska värdena för taggning, hanterings grupp, prenumeration och resurs grupp för att identifiera eventuella avvikelser.
     1. Upprätta alternativ för SKU-storlek för att begränsa distributioner till SKU: er som anges i dokumentation om distributions planering.
 
-## <a name="conclusion"></a>Slutsats
+## <a name="conclusion"></a>Sammanfattning
 
 Genom att lägga till dessa processer och ändringar i styrnings MVP: n kan du åtgärda många av de risker som är förknippade med kostnads styrning. Tillsammans skapar de insyn, ansvar och optimering som krävs för att kontrol lera kostnaderna.
 

@@ -1,6 +1,6 @@
 ---
 title: Förbättra din första moln styrnings grund
-description: Lär dig hur du stegvis förbättrar din första moln styrnings grund.
+description: Använd ramverket för moln införande för Azure för att lära dig hur du stegvis förbättrar din första moln styrnings grund.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/13/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 1b46157e134967095cff9ff84bcfb5b826a22bae
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 050d9cdfd2069a4d7da2e411233f6a60f270eb10
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805820"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706616"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>Förbättra din första moln styrnings grund
 
@@ -33,8 +33,8 @@ När som helst kan följande metod tips användas för den inledande styrnings g
 |Verksamhets kritiska appar i molnet|[Disciplin förbättringar](./guides/standard/resource-consistency-improvement.md)|[Disciplin förbättringar](./guides/complex/resource-consistency-improvement.md)|
 |Hantering av moln kostnader|[Disciplin förbättringar](./guides/standard/cost-management-improvement.md)|[Disciplin förbättringar](./guides/complex/cost-management-improvement.md)|
 |Flera moln|[Disciplin förbättringar](./guides/standard/multicloud-improvement.md)|[Disciplin förbättringar](./guides/complex/multicloud-improvement.md)|
-|Komplex/äldre identitets hantering|Gäller inte|[Disciplin förbättringar](./guides/complex/identity-baseline-improvement.md)|
-|Styrning i flera lager|Gäller inte|[Disciplin förbättringar](./guides/complex/multiple-layers-of-governance.md)|
+|Komplex/äldre identitets hantering|Saknas|[Disciplin förbättringar](./guides/complex/identity-baseline-improvement.md)|
+|Styrning i flera lager|Saknas|[Disciplin förbättringar](./guides/complex/multiple-layers-of-governance.md)|
 
 ## <a name="next-steps"></a>Nästa steg
 

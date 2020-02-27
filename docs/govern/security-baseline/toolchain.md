@@ -1,6 +1,6 @@
 ---
 title: Säkerhets bas linje verktyg i Azure
-description: Förklaring till de verktyg som kan under lätta förbättrad säkerhets bas linje i Azure.
+description: Se hur Azures inbyggda verktyg kan hjälpa mogna principer och processer som stöder ämnes linjen för styrning av säkerhets bas linjer.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 122e0774912fdc65cd9c8daff0bd48b679634868
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 85b0d88d4a275c7215a498b95e0af6717bfac169
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808812"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707075"
 ---
 # <a name="security-baseline-tools-in-azure"></a>Säkerhets bas linje verktyg i Azure
 
@@ -23,17 +23,17 @@ Följande lista över Azure-verktyg kan användas för att mogna de principer oc
 
 | Verktyg | [Azure Portal](https://azure.microsoft.com/features/azure-portal) och [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Azure Key Vault](https://docs.microsoft.com/azure/key-vault)  | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) | [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) |
 |------------------------------------------------------------|---------------------------------|-----------------|----------|--------------|-----------------------|---------------|
-| Tillämpa åtkomst kontroller på resurser och skapa resurser   | Ja                             | Inga              | Ja      | Inga           | Inga                    | Inga            |
-| Säkra virtuella nätverk                                    | Ja                             | Inga              | Inga       | Ja          | Inga                    | Inga            |
-| Kryptera virtuella enheter                                     | Inga                              | Ja             | Inga       | Inga           | Inga                    | Inga            |
-| Kryptera PaaS-lagring och databaser                         | Inga                              | Ja             | Inga       | Inga           | Inga                    | Inga            |
-| Hantera hybrid identitets tjänster                            | Inga                              | Inga              | Ja      | Inga           | Inga                    | Inga            |
-| Begränsa tillåtna resurs typer                         | Inga                              | Inga              | Inga       | Ja          | Inga                    | Inga            |
-| Framtvinga geo-regionala begränsningar                          | Inga                              | Inga              | Inga       | Ja          | Inga                    | Inga            |
-| Övervaka säkerhets hälsa för nätverk och resurser          | Inga                              | Inga              | Inga       | Inga           | Ja                   | Ja           |
-| Identifiera skadlig aktivitet                                  | Inga                              | Inga              | Inga       | Inga           | Ja                   | Ja           |
-| Förebyggande syfte identifiera sårbarheter                        | Inga                              | Inga              | Inga       | Inga           | Ja                   | Inga            |
-| Konfigurera säkerhets kopiering och haveri beredskap                     | Ja                             | Inga              | Inga       | Inga           | Inga                    | Inga            |
+| Tillämpa åtkomst kontroller på resurser och skapa resurser   | Ja                             | Nej              | Ja      | Nej           | Nej                    | Nej            |
+| Säkra virtuella nätverk                                    | Ja                             | Nej              | Nej       | Ja          | Nej                    | Nej            |
+| Kryptera virtuella enheter                                     | Nej                              | Ja             | Nej       | Nej           | Nej                    | Nej            |
+| Kryptera PaaS-lagring och databaser                         | Nej                              | Ja             | Nej       | Nej           | Nej                    | Nej            |
+| Hantera hybrid identitets tjänster                            | Nej                              | Nej              | Ja      | Nej           | Nej                    | Nej            |
+| Begränsa tillåtna resurs typer                         | Nej                              | Nej              | Nej       | Ja          | Nej                    | Nej            |
+| Framtvinga geo-regionala begränsningar                          | Nej                              | Nej              | Nej       | Ja          | Nej                    | Nej            |
+| Övervaka säkerhets hälsa för nätverk och resurser          | Nej                              | Nej              | Nej       | Nej           | Ja                   | Ja           |
+| Identifiera skadlig aktivitet                                  | Nej                              | Nej              | Nej       | Nej           | Ja                   | Ja           |
+| Förebyggande syfte identifiera sårbarheter                        | Nej                              | Nej              | Nej       | Nej           | Ja                   | Nej            |
+| Konfigurera säkerhets kopiering och haveri beredskap                     | Ja                             | Nej              | Nej       | Nej           | Nej                    | Nej            |
 
 En fullständig lista över Azures säkerhets verktyg och tjänster finns i [säkerhets tjänster och tekniker som är tillgängliga i Azure](https://docs.microsoft.com/azure/security/azure-security-services-technologies).
 

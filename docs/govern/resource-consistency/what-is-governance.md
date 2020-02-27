@@ -1,18 +1,18 @@
 ---
 title: Vad är styrning av molnresurser?
-description: Förklaring moln resurs styrning på Azure
+description: Lär dig mer om processen för att hantera, övervaka och granska Azure-resurser för att uppfylla målen och kraven i din organisation.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 9277bf82d9034108b478536a699f96918c38ae0d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: fdf63fd86b69a1c42276e5847d53deb71fcd2530
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807282"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706582"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -20,7 +20,7 @@ ms.locfileid: "76807282"
 
 I [Hur fungerar Azure?](../../getting-started/what-is-azure.md)och du har lärt dig att Azure är en samling servrar och nätverks maskin vara som kör virtualiserad maskin vara och program vara för användarens räkning. Azure gör det möjligt för din organisations program utveckling och IT-avdelningar att bli flexibla genom att göra det enkelt att skapa, läsa, uppdatera och ta bort resurser efter behov.
 
-Men även om obegränsad till resurser kan göra utvecklare mer flexibla kan det leda till oväntade kostnader. Till exempel kan ett utvecklings team godkännas för att distribuera en uppsättning resurser för testning men glömma att ta bort dem när testningen är klar. De här resurserna fortsätter att Periodisera kostnader trots att de inte längre är godkända eller nödvändiga.
+Men även om obegränsade resurser kan göra utvecklare mer flexibla, kan det också leda till oväntade kostnader. Till exempel kan ett utvecklings team godkännas för att distribuera en uppsättning resurser för testning men glömma att ta bort dem när testningen är klar. De här resurserna fortsätter att Periodisera kostnader trots att de inte längre är godkända eller nödvändiga.
 
 Lösningen är resurs åtkomst styrning. **Styrning** är den ständiga processen för att hantera, övervaka och granska användningen av Azure-resurser för att uppfylla målen och kraven i din organisation.
 

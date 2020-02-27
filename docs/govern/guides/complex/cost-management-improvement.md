@@ -1,6 +1,6 @@
 ---
-title: 'Styrnings guide för komplexa företag: förbättra Cost Management disciplin'
-description: 'Styrnings guide för komplexa företag: förbättra Cost Management disciplin'
+title: 'Komplex företags styrning: förbättra Cost Management disciplin'
+description: Använd ramverket för moln införande för Azure för att lära dig mer om att lägga till kostnads kontroller i en minimal och livskraftig styrnings produkt (MVP).
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2b66894ca215156aa9688ca1ab458910e8f496f8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: b44f153c9e14f1425aa3bb1374c60243c9a3c326
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805735"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709047"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Styrnings guide för komplexa företag: förbättra Cost Management disciplin
 
@@ -74,13 +74,13 @@ I det här avsnittet av artikeln får du förbättra designen för styrnings MVP
     1. Granska taggar, hanterings grupp, prenumeration och resurs grupps värden för att identifiera eventuella avvikelser.
     2. Upprätta alternativ för SKU-storlek för att begränsa distributioner till SKU: er som anges i dokumentation om distributions planering.
 
-## <a name="conclusion"></a>Slutsats
+## <a name="conclusion"></a>Sammanfattning
 
 Genom att lägga till ovanstående processer och ändringar i styrnings MVP: n kan du åtgärda många av de risker som är förknippade med kostnads styrning. Tillsammans skapar de insyn, ansvar och optimering som krävs för att kontrol lera kostnaderna.
 
 ## <a name="next-steps"></a>Nästa steg
 
-Eftersom moln införande växer och levererar ytterligare affärs värde, kommer risker och moln styrnings behov också att förändras. For this fictional company, the next step is using this governance investment to manage multiple clouds.
+Eftersom moln införande växer och levererar ytterligare affärs värde, kommer risker och moln styrnings behov också att förändras. För det här fiktiva företaget använder nästa steg denna styrnings investering för att hantera flera moln.
 
 > [!div class="nextstepaction"]
-> [Multicloud improvement](./multicloud-improvement.md)
+> [Förbättringar i multimolnet](./multicloud-improvement.md)

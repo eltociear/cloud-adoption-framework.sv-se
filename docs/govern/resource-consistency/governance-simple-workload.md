@@ -1,6 +1,6 @@
 ---
 title: Styrningsdesign för en enkel arbetsbelastning
-description: Vägledning för att konfigurera Azure styrnings kontroller så att en användare kan distribuera en enkel arbets belastning.
+description: Lär dig hur du utformar en resurs styrnings modell i Azure som stöd för ett enda team och en enkel arbets belastning. 
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a1edb7395751f8a91899fc8ef88f53bc056914ac
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 868f62856c68c516c384d44cd7fa0e1857ade0e8
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803865"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709574"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Styrningsdesign för en enkel arbetsbelastning
 

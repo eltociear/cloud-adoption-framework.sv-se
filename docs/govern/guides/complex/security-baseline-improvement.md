@@ -1,6 +1,6 @@
 ---
-title: 'Styrnings guide för komplexa företag: förbättra säkerhets bas linje disciplinen'
-description: 'Styrnings guide för komplexa företag: förbättra säkerhets bas linje disciplinen'
+title: 'Komplex företags styrning: förbättra disciplinen för säkerhets bas linjer'
+description: Använd ramverket för moln införande för Azure för att lära dig mer om att lägga till säkerhets kontroller som stöder flytt av skyddade data till molnet.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 41fba8029eabb570a40d5692374f1cb7e7d7c9b5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 6501871e909beba8d32cee0c5dd8c3dbe091f252
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806245"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706820"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Styrnings guide för komplexa företag: förbättra säkerhets bas linje disciplinen
 
@@ -164,7 +164,7 @@ I tidigare repetitiva ändringar av bästa praxis definierade vi nätverks säke
     6. Publicera skissen till alla hanterings grupper som ska vara värd för skyddade data.
     7. Använd den nya skissen på varje berörd prenumeration tillsammans med befintliga ritningar.
 
-## <a name="conclusion"></a>Slutsats
+## <a name="conclusion"></a>Sammanfattning
 
 Genom att lägga till dessa processer och ändringar i styrnings MVP: n kan du åtgärda många av de risker som är förknippade med säkerhets styrningen. Tillsammans lägger de till de nätverks-, identitets-och säkerhets övervaknings verktyg som behövs för att skydda data.
 

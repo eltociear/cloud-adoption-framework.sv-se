@@ -1,6 +1,6 @@
 ---
-title: Upprätta en grund för en första molnbaserad styrning
-description: Kom igång med moln styrning genom att etablera en första grundläggande Cloud styrnings grund.
+title: Upprätta inledande Cloud styrnings bas
+description: Använd ramverket för moln införande för Azure för att komma igång med moln styrning genom att etablera en första grundläggande Cloud styrnings grund.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 290bffadc608d8ff9d593e5231242e3555732bf3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4de35756be83e02817c4ce8e7a20dd1444007e87
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803797"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708367"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>Upprätta en grund för en första molnbaserad styrning
 

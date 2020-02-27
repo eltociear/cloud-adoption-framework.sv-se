@@ -1,6 +1,6 @@
 ---
 title: Processer för efterlevnad av resurs konsekvens principer
-description: Processer för efterlevnad av resurs konsekvens principer
+description: Använd ramverket för moln införande för Azure för att lära dig hur du skapar processer som stöder en disciplin för resurs konsekvens styrning.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7fbb2d7b121c011005c4f900bf66cafb8977ffeb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 17796b5ebe081f6e7ff14ba951db4db0d187d630
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805990"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709523"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>Processer för efterlevnad av resurs konsekvens principer
 

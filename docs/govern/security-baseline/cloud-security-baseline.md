@@ -1,6 +1,6 @@
 ---
 title: Förstå moln säkerhets bas linjen
-description: Lär dig mer om moln säkerhets bas linjen.
+description: Lär dig mer om en moln säkerhets bas linje som bygger på de fem disciplinerna i moln styrning för att upprätta ett styrnings ramverk.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: abd222cd3fd29f2150a18fafaae82393aa54e98b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 36aa64e35c5858e41d7cb4d29885289ca0c5435a
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808897"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707585"
 ---
 # <a name="understand-the-cloud-security-baseline"></a>Förstå moln säkerhets bas linjen
 
@@ -22,7 +22,7 @@ Det här är en introduktions artikel om allmänna ämnen i en moln säkerhets b
 > [!NOTE]
 > Den här artikeln förväntas inte tillhandahålla tillräckligt med kontext för att låta läsaren implementera en säkerhets strategi. Det är endast för allmän medvetenhet.
 
-## <a name="cloud-security"></a>Molnsäkerhet
+## <a name="cloud-security"></a>Cloud Security
 
 Cloud Security är en förlängning av traditionella informations säkerhets metoder. Traditionell IT-säkerhet omfattar principer och kontroller som styr dator säkerhet, nätverks säkerhet, data skydd, informations användning och så vidare. Samma principer och kontroller krävs i molnet. Under en moln omvandling är det absolut nödvändigt att IT aktivt är inblandat och förstår molnet, för att säkerställa att äldre IT-principer mappas till rätt kontroll nivåer i molnet.
 
@@ -41,7 +41,7 @@ Eftersom organisationer fortsätter att dra nytta av fördelarna med moln tjäns
 
 Säkerhet är en viktig komponent i starka data skydd i alla onlinebaserade data behandlings miljöer. Men säkerheten är inte tillräcklig. Konsumenter och företag som är villiga att använda en viss molnbaserad data behandlings produkt beror också på deras förmåga att lita på att sekretessen för informationen kommer att skyddas och att deras data endast kommer att användas på ett sätt som är konsekvent med kund förväntningarna . Lär dig mer om Microsofts metod för att [skydda data och sekretess i molnet](https://go.microsoft.com/fwlink/?LinkId=808242&clcid=0x409)
 
-## <a name="risk-mitigation"></a>Riskreducering
+## <a name="risk-mitigation"></a>Risk minskning
 
 De två största riskerna i ett Data Center kan grupperas i två källor: ålders system och mänskligt fel. Att skydda mot dessa två risker är ett minimum när du definierar en IT-säkerhetsstrategi. Samma sak gäller i molnet. Nedan följer några exempel på kontroller som kan användas för att åtgärda risker och förbättra din moln säkerhets strategi.
 

@@ -1,6 +1,6 @@
 ---
 title: Exempel princip satser för säkerhets bas linje
-description: Exempel princip satser för säkerhets bas linje
+description: Se dessa policys för exempel på säkerhets bas linjer för att hjälpa till att hantera organisationens behov.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ba0887b93664ac77fc2933c24631110dfab14be0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 02a1c18a73b784cb9245ed7c83d86c21c0690148
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808880"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707228"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Exempel princip satser för säkerhets bas linje
 
@@ -57,7 +57,7 @@ Följande exempel på princip satser riktar sig mot vanliga säkerhets-relaterad
 
 **Alternativ för potentiell design:** I Azure, säkra offentliga slut punkter genom att distribuera en [DMZ mellan det offentliga Internet och ditt molnbaserade nätverk](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Överväg distribution, konfiguration och automatisering av [Azure-brandväggen](https://docs.microsoft.com/azure/firewall).
 
-## <a name="ddos-protection"></a>DDOS-skydd
+## <a name="ddos-protection"></a>DDoS-skydd
 
 **Teknisk risk:** DDoS-attacker (distributed denial of Service) kan leda till ett affärs avbrott.
 

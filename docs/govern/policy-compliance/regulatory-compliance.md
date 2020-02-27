@@ -1,6 +1,6 @@
 ---
 title: Introduktion till regelefterlevnad
-description: Introduktion till regelefterlevnad
+description: Lär dig mer om regler för efterlevnad i olika branscher och geografiska områden som kan påverka moln styrningen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bd48f3080c1cf516121f9afe2e8c31bbc799e3a5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 2e5cfa035efe2fd3dd45b29edec53bfff2c7914f
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806126"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709387"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Introduktion till regelefterlevnad
 
@@ -35,7 +35,7 @@ Ett sjukvårds program som bearbetar skyddad hälso information (fi) omfattas av
 
 Payment Card Industry Data Security Standard (PCI DSS) är en tillverkarspecifik informations säkerhets standard för organisationer som hanterar anpassade kredit kort från de stora kort scheman, inklusive Visa, MasterCard, American Express, Discover och JCB. PCI-standarden bestäms av kort som ingår i och administreras av rådet för betalnings kortet bransch säkerhet. Standarden har skapats för att öka kontrollerna kring korts data för att minska ditt kredit korts bedrägerier. Verifieringen av efterlevnad utförs årligen, antingen av en extern uppfyller kraven enligt eller av en fast intern säkerhets bedömare (ISA) som skapar en rapport om efterlevnad (ROC) för organisationer som hanterar stora volymer av transaktioner, eller av en SAQ (Self-Assessment enkät) för företag.
 
-## <a name="personal-data"></a>Person uppgifter
+## <a name="personal-data"></a>Personliga data
 
 Person uppgifter är information som kan användas för att identifiera en konsument, anställd, partner eller annan boende eller juridisk person. Många nya lagar, särskilt de som behandlar sekretess och person uppgifter, kräver att företagen själva följer och rapporterar om efterlevnad och eventuella överträdelser som kan uppstå.
 

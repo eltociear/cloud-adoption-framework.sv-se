@@ -1,6 +1,6 @@
 ---
 title: Principer för regelefterlevnad för Cost Management
-description: Principer för regelefterlevnad för Cost Management
+description: Använd ramverket för moln införande för Azure för att lära dig hur du skapar processer som stöder en Cost Management styrnings disciplin.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6a6f5c5d13a98b6c210fececb2d6372e7f95626b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 290f2fb23b4c79f97c6009505493c1c59ac17355
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804154"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708860"
 ---
 # <a name="cost-management-policy-compliance-processes"></a>Principer för regelefterlevnad för Cost Management
 

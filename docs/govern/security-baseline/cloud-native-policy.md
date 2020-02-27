@@ -1,6 +1,6 @@
 ---
 title: Cloud – ursprunglig säkerhets bas linje princip
-description: Cloud – ursprunglig säkerhets bas linje princip
+description: Se ett exempel på en molnbaserad princip för säkerhets bas linje disciplin, där Azure-verktyg och plattformar räcker för att hantera affärs risker.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9921e04f0b066023842c2ff9009d9e159b759315
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: adf14719f4d4d4c50194eb7b85ccfed7cd0df855
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808948"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707500"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Cloud – ursprunglig säkerhets bas linje princip
 

@@ -1,6 +1,6 @@
 ---
-title: Cost Management mått, indikatorer och risk tolerans
-description: Förklaring av kostnadshantering i förhållande till molnstyrning
+title: Mått och indikatorer för Cost Management risk tolerans
+description: Använd ramverket för moln införande för Azure för att kvantifiera Cost Management risk tolerans mått och indikatorer i förhållande till moln styrning.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: aee529f6065e35645805a7f3d6577447eb48cf3f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c44fc6974be69ff684089c65aa23da5eefbfd814
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806466"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708826"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Cost Management mått, indikatorer och risk tolerans
 
