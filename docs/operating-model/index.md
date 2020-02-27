@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: a04be99cfa3a37c9627b4384f240dac865d63da3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 093f404ce4e8a5a9c5f60b5ee3bb81064ba5b3f8
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806959"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629291"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Upprätta en driftsmodell för molnet
 
@@ -23,7 +23,7 @@ De här implementeringsåtgärderna är relativt enkla att spåra och mäta, äv
 
 **Om implementeringen beskriver vad som görs så definierar driftsmodellen den underliggande strukturen för vem som gör det och hur det ska genomföras.**
 
-Satya Nadella sa, **”Kultur slår strategi med hästlängder”** . Driftsmodellen är i praktiken IT-kulturens essens indelad i ett antal mätbara processer. När molnet underbyggs av en kraftfull driftsmodell kommer kulturen att bidra till strategin och skynda på implementeringen så att affärsvärdena kan realiseras i verksamheten. Om implementeringen å andra sidan lyckas utan någon driftsmodell så kan resultatet vara imponerande, men tyvärr mycket kortvarigt. Om implementeringen ska lyckas i längden måste den utvecklas parallellt med driftsmodellen.
+”Kultur slår strategi med hästlängder”. Driftsmodellen är i praktiken IT-kulturens essens indelad i ett antal mätbara processer. När molnet underbyggs av en kraftfull driftsmodell kommer kulturen att bidra till strategin och skynda på implementeringen så att affärsvärdena kan realiseras i verksamheten. Om implementeringen å andra sidan lyckas utan någon driftsmodell så kan resultatet vara imponerande, men tyvärr mycket kortvarigt. Om implementeringen ska lyckas i längden måste den utvecklas parallellt med driftsmodellen.
 
 ## <a name="establish-your-operating-model"></a>Upprätta din driftsmodell
 

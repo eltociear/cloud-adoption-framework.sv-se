@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 790bb68a862343452aa5481e20596a839bb7b93c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: eb2564239548f77084fbc38d93003346a07e8e84
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799343"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567766"
 ---
 # <a name="organize-your-azure-resources"></a>Organisera dina Azure-resurser
 
@@ -22,7 +22,7 @@ Det är viktigt att organisera molnbaserade resurser för att skydda, hantera oc
 
 <!-- markdownlint-disable MD024 MD025 -->
 
-# <a name="azure-management-groups-and-hierarchytabazuremanagmentgroupsandhierarchy"></a>[Hanteringsgrupper och hierarkier i Azure](#tab/AzureManagmentGroupsAndHierarchy)
+# <a name="azure-management-groups-and-hierarchy"></a>[Hanteringsgrupper och hierarkier i Azure](#tab/AzureManagmentGroupsAndHierarchy)
 
 Azure har fyra hanteringsnivåer: hanteringsgrupper, prenumerationer, resursgrupper och resurser. I den här bilden visas förhållandet mellan dessa nivåer.
 
@@ -121,7 +121,7 @@ Skapa en resursgrupp där du kan lagra resurser som webbappar, databaser och lag
 
 ::: zone-end
 
-# <a name="naming-standardstabnamingstandards"></a>[Namngivningsregler](#tab/NamingStandards)
+# <a name="naming-standards"></a>[Namngivningsregler](#tab/NamingStandards)
 
 Namngivningsreglerna hjälper dig att enkelt identifiera resurser i Azure Portal, på en faktura och i skript. En namngivnings- och etikettstrategi omfattar information om företaget och verksamheten, såsom delar av resursnamn:
 
@@ -146,7 +146,7 @@ Följande tabell innehåller namngivningsmönster för några exempeltyper av Az
 |Tillgänglighetsuppsättning |Resursgrupp |1–80 |Skiftlägesokänsligt |Alfanumeriskt, understreck och bindestreck |`<service-short-name>-<context>-as` |`profx-sql-as` |
 |Tagga |Associerad entitet |512 (namn), 256 (värde) |Skiftlägesokänsligt |Alfanumeriskt |`"key" : "value"` |`"department" : "Central IT"` |
 
-# <a name="resource-tagstabresourcetags"></a>[Resurstaggar](#tab/ResourceTags)
+# <a name="resource-tags"></a>[Resurstaggar](#tab/ResourceTags)
 
 Taggar är användbara för att snabbt identifiera dina resurser och resursgrupper. Du kan ordna Azure-resurser i kategorier genom att lägga till taggar. Varje tagg består av ett namn och ett värde. Du kan till exempel använda namnet ”Miljö” och värdet ”Produktion” för alla resurser i produktionsmiljön. Taggar ska innehålla sammanhang om resursens associerade arbetsbelastning eller program, driftkrav och ägarskapsinformation.
 
@@ -156,7 +156,7 @@ Du kan också använda taggar till mycket annat. Vanliga användningsområden ä
 
 - **Metadata och dokumentation:** Administratörer kan enkelt se detaljer om de resurser som de arbetar med genom att använda en tagg, till exempel ”ProjectOwner”.
 - **Automation:** Du kan ha skript som körs regelbundet och utför åtgärder baserat på ett taggvärde, som ”ShutdownTime” eller ”DeprovisionDate”.
-- **Fakturering:** Du kan visa taggar på fakturan. Du kan använda dem till att dela in fakturan i områden med taggar som ”CostCenter” eller ”BillTo”.
+- **Kostnadsoptimering:** Du kan allokera resurser till de team och resurser som är ansvariga för kostnaden. I Azure Cost Management kan du använda kostnadsställetaggen som ett filter för att rapportera avgifter baserat på en grupp- eller avdelningsanvändning.
 
 Varje resurs eller resursgrupp kan innehålla upp till 50 taggnamn-/taggvärdepar. Den här begränsningen gäller dock bara taggar som läggs till direkt för resursgruppen eller resursen.
 
