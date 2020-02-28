@@ -1,6 +1,6 @@
 ---
 title: Styrning i Microsoft Cloud Adoption Framework för Azure
-description: Lär dig om styrning i Microsoft Cloud Adoption Framework för Azure.
+description: Använd Cloud Adoption Framework för Azure för att lära dig att utvärdera befintliga principer, skapa en första styrningsgrund och lägga till styrningsverktyg iterativt.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/11/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 60f1672f314c37dda35c19668f3df17b2c54f7db
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 75b2269c4db348ab6a110309490187ef44b55f6c
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223693"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706939"
 ---
 # <a name="governance-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Styrning i Microsoft Cloud Adoption Framework för Azure
 

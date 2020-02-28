@@ -1,6 +1,6 @@
 ---
 title: Molnstyrningsguider
-description: Lär dig mer om de användbara styrningsguiderna som finns i Cloud Adoption Framework.
+description: Granska molnstyrningsguider som visar regelverk för en inkrementell metod för alla styrningsscenarier.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: de76ec738e6a2fe8493b12c7c510aa68d1bfe0a2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 51f24653998ab3cd4cf7fd043b487e4d7c1ccc5b
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805497"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709234"
 ---
 # <a name="cloud-governance-guides"></a>Molnstyrningsguider
 

@@ -1,6 +1,6 @@
 ---
 title: Standardguide för styrning av företag
-description: Standardguide för styrning av företag
+description: Följ ett fiktivt standardföretag genom olika styrningsstadier som definierar en MVP (minimum viable product) som bygger på regelverk.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dc52ce58bf6ecb62723674c1c4ecfb12f72d07ca
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 481a617d3a09ae1f81fe313dd557314aed8f4f29
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806228"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706854"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Standardguide för styrning av företag
 

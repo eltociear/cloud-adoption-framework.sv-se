@@ -1,18 +1,18 @@
 ---
 title: Beslutsguide för migreringsverktyg
-description: Beslutsguide för migreringsverktyg
+description: Använd det här beslutsträdet som ett hjälpmedel på hög nivå för valet av de bästa verktygen att använda enligt dina migreringsbeslut.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: 38c0e6b56a51155be10501328d68c08bd500847e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f3d16455e3babc075bce671cfe867fedb2b4b6c7
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806755"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708248"
 ---
 # <a name="migration-tools-decision-guide"></a>Beslutsguide för migreringsverktyg
 

@@ -1,6 +1,6 @@
 ---
 title: Beslutsguide för prenumerationer
-description: Lär dig om molnplattformsprenumerationer som en central tjänst i Azure-migreringar.
+description: Förstå utformningsmönster för prenumerationer och hanteringsgrupper som en viktig tjänst för att skapa en struktur för tillgångar under Azure-migreringar.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 10/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 327077f912e916975eef08ad6613f3806a759bca
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f00377f4da5a3c95114571af36e4a759a26c63f3
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806585"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707959"
 ---
 # <a name="subscription-decision-guide"></a>Beslutsguide för prenumerationer
 
