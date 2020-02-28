@@ -1,18 +1,18 @@
 ---
-title: 'Cloud innovation: mått'
-description: Introduktion till moln innovation – Mät innehåll
+title: Mät kund påverkan
+description: Definiera det önskade kund flödet och upprätta utbildnings mått för att mäta kundens beteende och införande.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d6e29f159059da9c219006a69a63484b546a4488
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1b60f1b9cadb20ae516946fe09299fb3af2f895c
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808421"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171148"
 ---
 # <a name="measure-for-customer-impact"></a>Mät kundernas påverkan
 

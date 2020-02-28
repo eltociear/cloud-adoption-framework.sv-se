@@ -1,6 +1,6 @@
 ---
 title: Cloud rationalisering
-description: Granska de tillgängliga alternativen för att rationalisera en digital egendom.
+description: Lär dig om Cloud rationalisering, processen för att utvärdera till gångar för att fastställa det bästa sättet att migrera eller modernisera varje till gång i molnet.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/16/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 1a74487a77388e6260c177096d9563dbe6646cf2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 74a384cd3bf5688979a848423e0740ff15f08a34
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806568"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170162"
 ---
 # <a name="cloud-rationalization"></a>Cloud rationalisering
 
@@ -35,7 +35,7 @@ Granska nu följande fem RS-rationalisering för att bekanta dig med den långsi
 
 De fem RS-rationalisering som visas här beskriver de vanligaste alternativen för rationalisering.
 
-## <a name="rehost"></a>Byta värd
+## <a name="rehost"></a>Rehost
 
 En Rehost-migrering kallas även för en _hiss och Shift_ -migrering och flyttar en aktuell tillstånds till gång till den valda moln leverantören, med minimal förändring i den övergripande arkitekturen.
 
@@ -84,7 +84,7 @@ Kvalitativa analys faktorer:
 - Alternativ/tids linjer för burst
 - Affärs process beroenden
 
-## <a name="rearchitect"></a>Ändra utformning
+## <a name="rearchitect"></a>Omforma
 
 Vissa ålders program är inte kompatibla med moln leverantörer på grund av de arkitektoniska beslut som har fattats när programmet byggdes. I dessa fall kan programmet behöva återskapas före omvandling.
 
@@ -116,8 +116,8 @@ I vissa fall kan delta som måste lösas för att kunna skicka ett program vara 
 
 Vanliga driv rutiner kan vara:
 
-- Förbättra utvecklingsprocessen
-- Skapa appar snabbare
+- Påskynda innovation
+- Bygg appar snabbare
 - Minska drifts kostnaderna
 
 Kvantitativa analys faktorer:

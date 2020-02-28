@@ -1,6 +1,6 @@
 ---
 title: Rationalisera den digitala egendomen
-description: Utvärdera dina digitala till gångar och ta reda på hur det är bäst att vara värd för dem i molnet.
+description: Använd Cloud rationalisering för att utvärdera dina digitala till gångar och Fastställ den bästa metoden för att vara värd för dem i molnet.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: c618e6c1cf83199ae55df44397e07f3755fbb1f8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 38d574735dbc7854a03b98aee9d3e7012b939ff8
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804562"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170145"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationalisera den digitala egendomen
 

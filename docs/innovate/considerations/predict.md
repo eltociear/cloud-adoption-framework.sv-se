@@ -1,18 +1,18 @@
 ---
-title: 'Utveckling av molnet: förutsäga och påverka'
-description: Introduktion till utveckling av moln – predict och inflytande
+title: Förutse och påverka kund beteendet
+description: Använd förutsägande modellering för att utveckla förutsägande funktioner genom data, insikter, mönster, förutsägelser och interaktioner.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f55325b46ee9b2e45dd539c08f426d49357f5ba3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e299025afcbf1066411f8d4792fe739663d46c74
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808404"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171114"
 ---
 # <a name="predict-and-influence"></a>Förutspå och påverka
 

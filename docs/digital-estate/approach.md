@@ -1,6 +1,6 @@
 ---
 title: Metoder för att planera för digital egendom
-description: Lär dig mer om olika metoder för planering av digital auktion.
+description: Förstå egenskaperna och kraven för top-down arbets belastnings driven, till gångs driven eller stegvisa metoder för planering av digital egendom.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 453ac12e8c86aed46675c710395101ff3a121195
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f2a589844b4564bb787db0efe4d796b7e5576309
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806551"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170045"
 ---
 # <a name="approaches-to-digital-estate-planning"></a>Metoder för att planera för digital egendom
 

@@ -1,18 +1,18 @@
 ---
-title: 'Moln innovation: Azure Database Migration Service'
-description: Cloud innovation – Azure Database Migration Service
+title: Nyskapande verktyg för att migrera data
+description: Lär dig mer om Azure Database Migration Service och andra verktyg som migrerar och moderniserar data för att förbereda för moln uppfinningar och innovationer.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 44ebe7e28eea56d1b7e61b5926a9588f4c985ae1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: cd4009e8201cf6267e9da297ce13987cb025139e
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808676"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171284"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Samla in data genom migreringen och modernisering av befintliga data källor
 
@@ -46,16 +46,16 @@ Med en offlinemigrering startar programmets frånkopplade tillstånd när migrer
 
 Vi rekommenderar att du bestämmer dig för den acceptabla stillestånds tiden för verksamheten och testar en migrering offline. Det gör du för att kontrol lera om återställnings tiden uppfyller de acceptabla stillestånds tiden. Om återställnings tiden är oacceptabelt gör du en online-migrering.
 
-|Källa  |Målinrikta  |Verktyg  |Typ av migrering  |Vägledning  |
+|Källa  |Mål  |Verktyg  |Typ av migrering  |Riktlinjer  |
 |---------|---------|---------|---------|---------|
 |SQL Server|Azure SQL Database|Database Migration Service|Offline|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
-|SQL Server|Azure SQL Database|Database Migration Service|Online|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
-|SQL Server|Azure SQL Database Managed Instance|Database Migration Service|Offline|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
-|SQL Server|Azure SQL Database Managed Instance|Database Migration Service|Online|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
-|RDS-SQL Server|Azure SQL Database eller Azure SQL Database Hanterad instans|Database Migration Service|Online|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online)|
-|MySQL|Azure-databas för MySQL|Database Migration Service|Online|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online)|
-|PostgreSQL|Azure-databas för PostgreSQL|Database Migration Service|Online|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)|
+|SQL Server|Azure SQL Database|Database Migration Service|Onlinemallar|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
+|SQL Server|Hanterad Azure SQL Database-instans|Database Migration Service|Offline|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
+|SQL Server|Hanterad Azure SQL Database-instans|Database Migration Service|Onlinemallar|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
+|RDS-SQL Server|Azure SQL Database eller Azure SQL Database Hanterad instans|Database Migration Service|Onlinemallar|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online)|
+|MySQL|Azure Database for MySQL|Database Migration Service|Onlinemallar|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online)|
+|PostgreSQL|Azure Database for PostgreSQL|Database Migration Service|Onlinemallar|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)|
 |MongoDB|Azure Cosmos DB Mongo-API|Database Migration Service|Offline|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db)|
-|MongoDB|Azure Cosmos DB Mongo-API|Database Migration Service|Online|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online)|
+|MongoDB|Azure Cosmos DB Mongo-API|Database Migration Service|Onlinemallar|[Självstudie](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online)|
 |Oracle|Olika plattform som en tjänst (PaaS) och IaaS-alternativ|En partners verktyg eller Azure Migrate|Offline eller online|[Besluts träd](../../migrate/expanded-scope/data-oracle-migration.md)|
 |Olika NoSQL DB-alternativ|Alternativ för Cosmo DB eller IaaS|Stegvisa migreringar eller Azure Migrate|Offline eller online|[Besluts träd](../../migrate/expanded-scope/data-no-sql-migration.md)|

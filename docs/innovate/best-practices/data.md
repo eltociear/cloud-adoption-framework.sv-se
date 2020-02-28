@@ -1,18 +1,18 @@
 ---
-title: 'Moln innovation: verktyg för att demokratisera identifieringen av data i Azure'
-description: Verktyg för att demokratisera identifieringen av data i Azure
+title: Nyskapande verktyg för att demokratisera identifieringen av data
+description: Lär dig mer om Azure Data Catalog och andra tjänster som hjälper dig att snabbt testa en hypotes innan du utökar till bredare, mer dyra digitala uppfinningar.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3fed47eb3a5bb7a3b51f19f2d103395ede848e9d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e505b7794c9eeff94d746286e0d8cbb9f0cea86e
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808693"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171267"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>Verktyg för att demokratisera identifieringen av data i Azure
 
@@ -43,8 +43,8 @@ I Azure används följande verktyg ofta för att påskynda digitala uppfinningar
 - Azure Data Catalog
 - Azure SQL Data Warehouse
 - Azure Cosmos DB
-- Azure-databas för PostgreSQL
-- Azure-databas för MySQL
+- Azure Database for PostgreSQL
+- Azure Database for MySQL
 - Azure-databas för MariaDB
 - Azure Database for PostgreSQL storskalig
 - Azure Data Lake
@@ -62,7 +62,7 @@ I Azure används följande verktyg ofta för att påskynda digitala uppfinningar
 
 När de uppfinnings metoder som används i skalan kräver olika aspekter av varje lösning förfining och teknisk mognad. Som det händer är det troligt att mer av dessa tjänster krävs. Använd innehålls förteckningen till vänster på den här sidan för Azure tools-vägledningen som är relevant för processen för hypotes testning.
 
-## <a name="get-started"></a>Kom i gång
+## <a name="get-started"></a>Kom igång
 
 I innehålls förteckningen till vänster på den här sidan finns många artiklar. De här artiklarna hjälper dig att komma igång med var och en av verktygen i verktygskedjan.
 

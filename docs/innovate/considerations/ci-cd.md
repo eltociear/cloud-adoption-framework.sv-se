@@ -1,18 +1,18 @@
 ---
-title: 'Utveckling av molnet: öka implementeringen'
-description: Introduktion till utveckling av molnet – ge ett förstärknings beslut
+title: Förbättra implementeringen med digital uppfinning
+description: Använd förfalls modellen för den innovativa metoden för att minska friktionen som gör att det tar längre tid att vidta, samtidigt som du behåller bästa praxis.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a3c726443e62140dba997ae4a1ff89593f72e6e6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: bfaacd1f07b24a3d88b03aa577e1f1ca38493423
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808523"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170570"
 ---
 # <a name="empower-adoption"></a>Underlätta implementeringen
 

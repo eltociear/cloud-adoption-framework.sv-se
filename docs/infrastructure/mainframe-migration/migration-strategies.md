@@ -1,18 +1,18 @@
 ---
-title: 'Stordator-migrering: gör växeln från stordatorer till Azure'
-description: Migrera program från stordator miljöer till Azure för system som körs i stordatorer.
+title: Migrera appar från stordatorer till Azure
+description: Få teknisk vägledning för att göra switchen från en stordator plattform till Azure storskalig data behandling och lagring i en miljö med hög tillgänglighet.
 author: njray
 ms.author: v-nanra
 ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f68dbd309264b0cef189346096ce3dc797ae7d08
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: fb3465345b45f2a7c71dac3c519e4daa7702dd47
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808778"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171352"
 ---
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Gör växeln från stordatorer till Azure
 

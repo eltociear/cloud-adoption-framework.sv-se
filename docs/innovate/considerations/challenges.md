@@ -1,18 +1,18 @@
 ---
-title: 'Moln innovation: utmaningar och blockerare'
-description: Introduktion till utveckling av moln – utmaningar och blockerare
+title: Kund implementerings utmaningar och blockerare
+description: Använd ramverket för moln införande för Azure för att förstå vanliga implementerings-och uppfinnings problem för innovation.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3ab4311ca8d5ccaf6cdf7b9bcf91e55d2a7d5929
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5fa02af8464a63488e77b69226cb02d38ceca5d7
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808540"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170621"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>Vanliga blockerare och utmaningar för innovation
 

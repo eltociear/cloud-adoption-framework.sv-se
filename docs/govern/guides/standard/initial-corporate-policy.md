@@ -1,6 +1,6 @@
 ---
 title: 'Standard företags styrning: ursprunglig företags policy'
-description: Använd ramverket för moln införande för Azure för att definiera en inledande styrnings position, tidiga risker, inledande princip satser och tidiga tvångs processer.
+description: Använd ramverket för moln införande för Azure för att definiera inledande styrnings position, tidiga risker, initiala princip satser och tidiga tvångs processer.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f3afbeb33904473fbfd0d1590437cee68b80a7e4
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 64f04fe32445f79f36fe3846f16e3296e9424130
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709064"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170944"
 ---
 # <a name="standard-enterprise-governance-guide-initial-corporate-policy-behind-the-governance-strategy"></a>Standard styrnings guide för företag: första företags principen bakom styrnings strategin
 

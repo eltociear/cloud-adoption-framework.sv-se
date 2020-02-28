@@ -1,18 +1,18 @@
 ---
-title: 'Utveckling av molnet: verktyg för att förbättra implementeringen i Azure'
-description: Verktyg för att förbättra implementeringen i Azure
+title: Nyskapande verktyg som gör det möjligt att vidta
+description: Lär dig mer om Azure-verktyg som använder metoden för att ta bort friktion och förbättra användningen stegvis som Hypotheses vuxen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 01961b514f5640d73150504ea65ee9af2fec17b2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 20dc6aa263e8f7a381809335b4af9b4f4de84dc6
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808710"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171301"
 ---
 # <a name="tools-to-empower-adoption-in-azure"></a>Verktyg för att förbättra implementeringen i Azure
 
@@ -44,7 +44,7 @@ I takt med att dina behov växer kan du utöka den här grunden för att använd
 
 Innehålls förteckningen till vänster på den här sidan visar vägledning för varje verktyg och överensstämmer med den tidigare beskrivna förfallo modellen.
 
-## <a name="get-started"></a>Kom i gång
+## <a name="get-started"></a>Kom igång
 
 I innehålls förteckningen till vänster på den här sidan finns många artiklar. De här artiklarna hjälper dig att komma igång med var och en av verktygen i verktygskedjan.
 

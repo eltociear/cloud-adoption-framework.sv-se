@@ -1,24 +1,24 @@
 ---
 title: Påbörja en migrering av molnet i Azure
-description: Påbörja en migrering av molnet i Azure.
+description: Få omfattande vägledning för att överföra äldre program arbets belastningar till molnet med hjälp av innovativa molnbaserade tekniker.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: e5ef9aecfe30cc9b401e9b4ffabe56e50f3afad2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: eeb7cc566a373296fdf290dced4c82e038c11d17
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804460"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170196"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Påbörja en migrering av molnet i Azure
 
 Använd Microsoft Cloud implementerings ramverk för Azure för att påbörja en migrering av moln migrering. Det här ramverket innehåller omfattande vägledning för över gång av äldre program arbets belastningar till molnet med hjälp av innovativa molnbaserade tekniker.
 
-## <a name="executive-summary"></a>Sammanfattning av chefer
+## <a name="executive-summary"></a>Sammanfattning
 
 Ramverket för moln införande hjälper kunder att åta sig en förenklad moln implementering. Det här ramverket innehåller detaljerad information om en moln implementering från slut punkt till slut punkt som börjar med riktade företags resultat och sedan justerar moln beredskap och-utvärderingar med tydliga definierade affärs mål. Dessa resultat uppnås via en definierad sökväg för moln införande. Med migration-baserad implementering fokuserar den definierade sökvägen i stor utsträckning på migreringen av lokala arbets belastningar till molnet. Ibland omfattar den här resan modernisering av arbets belastningar för att öka avkastningen på investeringar från migreringens ansträngning.
 
@@ -109,7 +109,7 @@ Under implementeringen av moln strategin och planerar IT-teamet kommer att fokus
 
 ### <a name="common-workload-examples"></a>Vanliga arbets belastnings exempel
 
-Moln strategi och planering riktar ofta sig till en bred samling arbets belastningar och program. I portföljen migreras vanligt vis vanliga program eller arbets belastnings typer. Följande är några exempel:
+Moln strategi och planering riktar ofta sig till en bred samling arbets belastningar och program. I portföljen migreras vanligt vis vanliga program eller arbets belastnings typer. Detta är några exempel:
 
 - Line-of-business-program
 - Program som riktas mot kund

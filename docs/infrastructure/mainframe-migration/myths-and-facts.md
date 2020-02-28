@@ -1,18 +1,18 @@
 ---
-title: 'Stordator-migrering: myths och fakta'
-description: Migrera program från stordatormiljöer till Azure, en beprövad och skalbar infrastruktur med hög tillgänglighet för system som för närvarande körs på stordatorer.
+title: Myths och fakta för stordator migrering
+description: Lär dig att skilja myths från verkligheten om stordatorer och utvärdera de stordatorer som passar bäst för Azure.
 author: njray
 ms.author: v-nanra
 ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e3e14bca45f8e5531e663c76b346f295ccb64319
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 101ce6ef12ca9f9c686075c6e839a8353bc93da8
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808761"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171318"
 ---
 # <a name="mainframe-myths-and-facts"></a>Stordator myths och fakta
 

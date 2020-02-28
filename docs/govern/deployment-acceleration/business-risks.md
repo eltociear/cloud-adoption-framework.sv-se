@@ -1,6 +1,6 @@
 ---
 title: Affärs risker för distributions acceleration
-description: Förstå affärs risker med distributions accelerations disciplin, som kan användas i styrnings strategin i Microsoft Cloud implementerings ramverk för Azure.
+description: Använd ramverket för moln införande för Azure för att förstå affärs risker med distributions accelerations disciplin, som kan användas i styrnings strategin.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b7f56bc9181226b0f0fe03fbcf08a061af33099f
-ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
+ms.openlocfilehash: dc80f889442fd7139e9f3930da1304d1a25e3e98
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567699"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171437"
 ---
 # <a name="deployment-acceleration-motivations-and-business-risks"></a>Drift sättnings motivation och affärs risker
 

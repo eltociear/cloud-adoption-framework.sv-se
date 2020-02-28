@@ -1,18 +1,18 @@
 ---
-title: 'Cloud innovation: Lär dig'
-description: Introduktion till utveckling av moln – lär dig innehåll
+title: Lär dig med kunder för att driva innovation
+description: Lär dig med och från kund partners för att skapa en minimal produkt för livsduglig produkt (MVP) med empati och generera mått för kund påverkan.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3f15407d78517d588e9f98ac6bbbb779574a7afd
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4166f55c3878266a06f1da4b907eaab5baa6e473
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808438"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171165"
 ---
 # <a name="learn-with-customers"></a>Lär dig med kunderna
 
