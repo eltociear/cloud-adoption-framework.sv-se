@@ -1,18 +1,18 @@
 ---
 title: Översikt över stordatormigrering
-description: Migrera program från stordatormiljöer till Azure, en beprövad och skalbar infrastruktur med hög tillgänglighet för system som för närvarande körs på stordatorer.
+description: Migrera arbetsbelastningar, appar och databaser för stordatorer till Azure för att få en pålitlig och skalbar infrastruktur med hög tillgänglighet utan många av de nackdelar som kommer med stordatorer.
 author: njray
 ms.author: v-nanra
 ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 899e1575fa4e8c3bd83ebec38f0a38cb1e02d314
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 04058077ed9fc739a063e75d0da4effb4c784436
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808795"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171386"
 ---
 # <a name="mainframe-migration-overview"></a>Översikt över stordatormigrering
 
