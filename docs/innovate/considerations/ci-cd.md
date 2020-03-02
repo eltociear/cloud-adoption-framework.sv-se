@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: bfaacd1f07b24a3d88b03aa577e1f1ca38493423
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 59ef9ad61c9e3545fbcdbd62e05711e20de38a29
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170570"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223485"
 ---
 # <a name="empower-adoption"></a>Underlätta implementeringen
 
@@ -45,7 +45,7 @@ Som det beskrivs i [mått för kund påverkan](./measure.md), kräver positiv ve
 
 När du skalar innovation finns det inget värdefullt verktyg än en delad kodbas för lösningen. Tyvärr finns det inget tillförlitligt sätt att förutsäga vilken iteration eller vilken MVP som ger den vinnande kombinationen. Därför är det aldrig för tidigt att upprätta en delad kodbas eller lagrings plats. Detta är den [tekniska insamling](./build.md#reduce-complexity-and-delay-technical-spikes) som aldrig ska förskjutas. När teamet itererar genom olika MVP-lösningar möjliggör en delad lagrings platsen enkel samarbete och snabbare utveckling. När du gör ändringar i lösningen och drar nedåt inlärnings mått kan du återställa till en tidigare, mer effektiv version av lösningen.
 
-Det vanligaste verktyget för att hantera kod databaser är [GitHub](https://guides.github.com), vilket gör att du kan skapa en delad kod lagring med bara några få klick. Dessutom kan [Azure databaser](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) -funktionen i Azure DevOps användas för att skapa en [git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) -eller [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) -lagringsplats.
+Det vanligaste verktyget för att hantera kod databaser är [GitHub](https://guides.github.com), vilket gör att du kan skapa en delad kod lagring på bara några få steg. Dessutom kan [Azure databaser](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) -funktionen i Azure DevOps användas för att skapa en [git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) -eller [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) -lagringsplats.
 
 ## <a name="feedback-loops"></a>Feedbackslingor
 
@@ -61,7 +61,7 @@ Eftersom antaganden skalas och en hypotes är närmare den sanna innovationen i 
 
 I kontinuerlig integrering slås kod ändringar ofta samman i huvud grenen. Automatiserade bygg-och test processer se till att koden i huvud grenen alltid är produktions kvalitet. Detta säkerställer att utvecklare arbetar tillsammans för att utveckla delade lösningar som ger korrekta och tillförlitliga feedback-slingor.
 
-Azure-DevOps och [Azure-pipeliner](https://docs.microsoft.com/azure/devops/pipelines) ger kontinuerlig integrering med bara några få klick i GitHub eller flera andra lagrings platser.
+Azure-DevOps och [Azure-pipeliner](https://docs.microsoft.com/azure/devops/pipelines) ger kontinuerlig integrering med bara några få steg i GitHub eller en mängd olika andra databaser.
 Läs mer om [kontinuerlig integrering](https://docs.microsoft.com/azure/devops/learn/what-is-continuous-integration)eller mer information finns i [praktiska labb övningar](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration). Det finns även lösnings arkitekturer för att påskynda skapandet av dina [CI/CD-pipeliner via Azure DevOps](https://azure.microsoft.com/solutions/devops).
 
 ## <a name="reliable-testing"></a>Tillförlitlig testning

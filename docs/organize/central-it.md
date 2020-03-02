@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 17f2395a435d8a29202595caec17932b406a1303
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c5dc7212fc20914fddaa7bd8777a5fec5f49e811
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806942"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225408"
 ---
 # <a name="central-it-capabilities"></a>Centrala IT-funktioner
 
@@ -108,7 +108,7 @@ Men en av deras moln antagande team kräver nu en miljö med en dedikerad och s�
 
 **Klassificering:** Eftersom moln implementerings teamet var i det tidiga skedet av att skapa en ny lösning och inte hade några känsliga data eller verksamhets kritiska support behov, klassificeras till gångarna i miljön som låg risk och icke-kritisk. En effektiv klassificering är ett tecken på förfallo tid i Central IT. Att klassificera alla till gångar och miljöer gör det möjligt att göra mer tydligare principer.
 
-**Förhandling:** Enbart klassificeringen räcker inte. Delade tjänster implementerades för att konsekvent hantera känsliga och verksamhets kritiska till gångar. Att ändra reglerna skulle påverka styrnings-och efterlevnadsprinciper som har utformats för till gångar som behöver mer skydd. En bättre införande kan inte ske med kostnaden för stabilitet, säkerhet eller styrning. Detta ledde till en förhandling med antagande teamet för att svara på vissa frågor. Skulle ett företags LED DevOps-team kunna tillhandahålla drifts hantering för den här miljön? Behöver den här lösningen direkt åtkomst till andra interna resurser? Om moln implementerings teamet är bekväm med dessa kompromisser kan ingångs trafiken vara möjlig.
+**Förhandling:** Enbart klassificeringen räcker inte. Delade tjänster implementerades för att konsekvent hantera känsliga och verksamhets kritiska till gångar. Att ändra reglerna skulle påverka styrnings-och efterlevnadsprinciper som har utformats för till gångar som behöver mer skydd. En bättre införande kan inte ske med kostnaden för stabilitet, säkerhet eller styrning. Detta ledde till en förhandling med antagande teamet för att svara på vissa frågor. Kan ett företags LED DevOps-team tillhandahålla drifts hantering för den här miljön? Behöver den här lösningen direkt åtkomst till andra interna resurser? Om moln implementerings teamet är bekväm med dessa kompromisser kan ingångs trafiken vara möjlig.
 
 **Isolering:** Eftersom företaget kan ge sin egen pågående drift hantering, och eftersom lösningen inte förlitar sig på direkt trafik till andra interna till gångar, kan det vara avspärradet i en ny prenumeration. Den prenumerationen läggs också till i en separat nod i den nya hanterings gruppens hierarki.
 

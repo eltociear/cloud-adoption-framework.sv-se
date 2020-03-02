@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 8a807bfc20289339221056b9b0798260aaddbfd8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c4d5e151d5ea4badd3c6c5fab25f4a6be9ee60c5
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807316"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222820"
 ---
 # <a name="scale-a-migration-to-azure"></a>Skala en migrering till Azure
 
@@ -57,7 +57,7 @@ När Contoso har planerat och konfigurerat en [Azure-infrastruktur](./contoso-mi
 
 <!--markdownlint-enable MD033 -->
 
-## <a name="migration-process"></a>Migreringsprocessen
+## <a name="migration-process"></a>Migreringsprocess
 
 Nu när Contoso har identifierat sina affärsincitament och migreringsmål bestämmer de sig för en fyrdelad metod för migreringsprocessen:
 
@@ -102,7 +102,7 @@ Säkerhetsproblem | Ja/nej | Har programmet kända säkerhetsproblem?  Använder
 Som en del av bedömningsprocessen måste Contoso identifiera var appar körs och identifiera beroenden och anslutningar mellan programservrar. Contoso kartlägger miljön stegvis.
 
 1. Det första steget går ut på att Contoso upptäcker hur servrar och datorer mappas till enskilda appar, nätverksplatser och grupper.
-2. Med den här informationen kan Contoso tydligt identifiera appar som har få beroende och därför är lämpliga för en snabb migrering.
+2. Med den här informationen kan Contoso tydligt identifiera appar som har några beroenden och som lämpar sig för en snabb migrering.
 3. Contoso kan använda mappning för att hjälpa dem att identifiera mer komplexa beroenden och kommunikation mellan appservrar. Contoso kan sedan gruppera servrarna logiskt för att representera appar och planera en migreringsstrategi baserat på dessa grupper.
 
 När mappningen är klar kan Contoso se till att alla appkomponenter identifieras och redovisas när du skapar migreringsprocessen.
@@ -196,9 +196,9 @@ Det finns fyra huvudsakliga migreringsstrategier som Contoso kan överväga.
 **Strategi** | **Detaljer** | **Användning**
 --- | --- | ---
 **Värdbyte** | Kallas ofta för en _hiss och Shift_ -migrering. det här är ett alternativ utan kod för att migrera befintliga appar till Azure snabbt.<br/><br/> En app migreras i befintligt skick för att dra nytta av molnets fördelar utan de risker och kostnader som är förknippade med kodändringar. | Contoso kan vara värd för mindre strategiska appar, vilket innebär att inga kodändringar krävs.
-**Refaktorisering** | Den här strategin kallas även "ompaketering" och kräver minimal kod för appar eller konfigurationsändringar som krävs för att ansluta appen till Azure PaaS och för att utnyttja molnfunktionerna bättre. | Contoso kan omstrukturera strategiska appar för att behålla samma grundläggande funktioner men flytta dem till att köras på en Azure-plattform som Azure App Service.<br/><br/> Detta kräver minimala kodändringar.<br/><br/> Å andra sidan måste contoso underhålla en VM-plattform eftersom den inte hanteras av Microsoft.
+**Omstrukturera** | Den här strategin kallas även "ompaketering" och kräver minimal kod för appar eller konfigurationsändringar som krävs för att ansluta appen till Azure PaaS och för att utnyttja molnfunktionerna bättre. | Contoso kan omstrukturera strategiska appar för att behålla samma grundläggande funktioner men flytta dem till att köras på en Azure-plattform som Azure App Service.<br/><br/> Detta kräver minimala kodändringar.<br/><br/> Å andra sidan måste contoso underhålla en VM-plattform eftersom den inte hanteras av Microsoft.
 **Arkitekturomarbetning** | Den här strategin ändrar eller utökar en apps kodbas för att optimera appens arkitektur för molnfunktioner och skalning.<br/><br/> Den moderniserar en app till en elastisk och mycket skalbar arkitektur som kan distribueras självständigt.<br/><br/> Använd Azure-tjänster om du vill accelerera processen, skala ut program säkert och hantera dina appar utan problem.
-**Återskapande** | Den här strategin återskapa en app från grunden med hjälp av inbyggd molnteknik.<br/><br/> Azure PaaS (plattform som tjänst) levererar en fullständig miljö för utveckling och distribution i molnet. Vissa av kostnaderna samt komplexiteten programvarulicenserna minskar och underliggande appinfrastruktur, mellanprogram och andra resurser behövs inte. | Contoso kan skriva om viktiga appar från grunden för att utnyttja molnteknik, till exempel en serverlös dator eller mikrotjänster.<br/><br/> Contoso hanterar sin app och tjänst medan Azure hanterar allt annat.
+**Återskapa** | Den här strategin återskapa en app från grunden med hjälp av inbyggd molnteknik.<br/><br/> Azure PaaS (plattform som tjänst) levererar en fullständig miljö för utveckling och distribution i molnet. Vissa av kostnaderna samt komplexiteten programvarulicenserna minskar och underliggande appinfrastruktur, mellanprogram och andra resurser behövs inte. | Contoso kan skriva om viktiga appar från grunden för att utnyttja molnteknik, till exempel en serverlös dator eller mikrotjänster.<br/><br/> Contoso hanterar sin app och tjänst medan Azure hanterar allt annat.
 
 <!--markdownlint-enable MD033 -->
 
@@ -206,7 +206,7 @@ Data måste övervägas, särskilt med Contosos stora databaser. Contosos standa
 
 ### <a name="evaluate-migration-tools"></a>Utvärdera migreringsverktyg
 
-Contoso använder i första hand ett par Azure-tjänster och -verktyg för migreringen:
+Contoso använder främst ett par Azure-tjänster och-verktyg för migreringen:
 
 - [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview): dirigerar haveri beredskap och migrerar lokala virtuella datorer till Azure.
 - [Azure Database migration service](https://docs.microsoft.com/azure/dms/dms-overview): migrerar lokala databaser som SQL Server, MySQL och Oracle till Azure.
@@ -360,6 +360,6 @@ Contoso behöver en strategi för affärskontinuitet och haveriberedskap (BCDR) 
   - Contoso distribuerar Azure Backup som en kostnadseffektiv lösning för säkerhetskopiering av Azure-resurser. Eftersom den är inbyggd kan Contoso konfigurera moln säkerhets kopieringar i några enkla steg.
   - Contoso kommer att konfigurera haveriberedskap för virtuella Azure-datorer som använder Azure Site Recovery för replikering, redundans och återställning efter fel mellan de Azure-regioner som de anger. Detta säkerställer att appar som körs på virtuella Azure-datorer är tillgängliga i en sekundär region som Contosos väljer om ett avbrott inträffar i den primära regionen. [Läs mer](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 
-## <a name="conclusion"></a>Slutsats
+## <a name="conclusion"></a>Sammanfattning
 
 I den här artikeln planerade Contoso en Azure-migrering i stor skala. De delade in migreringsprocessen i fyra stadier. Från utvärdering och migrering till optimering, säkerhet och hantering efter att migreringen hade slutförts. Vanligtvis är det viktigt att planera ett migreringsprojekt som en fullständig process men att utföra själva migreringen inom organisationen genom att bryta ner det i klassificeringar och mängder som passar företaget. Genom att utvärdera data och tillämpa klassificeringar kan projektet delas upp i en serie mindre migreringar som kan köras på ett säkert och snabbt sätt. Summan av dessa mindre migreringar omvandlas snabbt till en stor lyckad migrering till Azure.

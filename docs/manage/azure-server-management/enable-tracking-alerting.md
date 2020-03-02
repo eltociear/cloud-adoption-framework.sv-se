@@ -7,18 +7,18 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0cd8776c71eae22fdb7a7894b656a3dc1948e45c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4581c865f3dd928df91e7e1eef97a0ea341e4ccb
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808115"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223501"
 ---
 # <a name="enable-tracking-and-alerting-for-critical-changes"></a>Aktivera spårning och avisering för viktiga ändringar
 
 Azure Ändringsspårning och Inventory tillhandahåller aviseringar om konfigurations status för din hybrid miljö och ändringar i den miljön. Den kan rapportera viktiga fil-, tjänst-, program varu-och register ändringar som kan påverka dina distribuerade servrar.
 
-Som standard övervakar inte Azure Automation inventerings tjänsten filer eller register inställningar. Lösningen innehåller en lista över register nycklar som vi rekommenderar för övervakning. Om du vill se den här listan går du till ditt Automation-konto i Azure Portal och väljer **lager** > **Redigera inställningar**.
+Som standard övervakar inte Azure Automation inventerings tjänsten filer eller register inställningar. Lösningen innehåller en lista över register nycklar som vi rekommenderar för övervakning. Om du vill se den här listan går du till ditt Automation-konto i Azure Portal och väljer sedan **inventering** > **Redigera inställningar**.
 
 ![Skärm bild av vyn Azure Automation lager i Azure Portal](./media/change-tracking1.png)
 

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 8a8c3b471787e1bc189a0d1f0abe2e2d84447e7c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 8810b4ab2ce78dd2add8a424518717392305346a
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806840"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222092"
 ---
 # <a name="examples-of-performance-outcomes"></a>Exempel på prestanda resultat
 
@@ -22,13 +22,13 @@ I dagens tekniska samhälle antar kunderna att programmen kommer att fungera vä
 
 ## <a name="performance"></a>Prestanda
 
-De största tjänsterna inom molnbaserad databehandling körs i ett globalt nätverk av säkra datacenter, som regelbundet uppgraderas till den senaste generationen av snabb och effektiv maskinvara för databehandling. Detta ger flera fördelar jämfört med ett enda företags data Center, till exempel minskad nätverks fördröjning för program och större stor drifts för delar.
+De största tjänsterna för molnbaserad data behandling körs i ett globalt nätverk av säkra data Center, som regelbundet uppgraderas till den senaste generationens snabba och effektiva dator maskin vara. Detta ger flera fördelar jämfört med ett enda företags data Center, till exempel minskad nätverks fördröjning för program och större stor drifts för delar.
 
 Transformera ditt företag och minska kostnaderna med en energi effektiv infrastruktur som omfattar mer än 100 mycket säkra resurser i hela världen, länkade av ett av de största nätverken på jorden. Azure har fler globala regioner än någon annan moln leverantör. Detta översätter till den skala som krävs för att hämta program närmare användare runtom i världen, bevara data placering och tillhandahålla omfattande alternativ för efterlevnad och återhämtning för kunder.
 
 - **Exempel 1:** Ett tjänste företag arbetade med en värd leverantör som är värd för flera drift infrastruktur till gångar. Dessa system drabbades av frekventa avbrott och dåliga prestanda. Företaget migrerade sina till gångar till Azure för att dra nytta av molnets SLA-och prestanda kontroller. Avbrotts tiden som den lidit kostar den cirka 15 000 USD per minut för avbrott. Med fyra till åtta timmars avbrott per månad var det enkelt att motivera den här organisations omvandlingen.
 
-- **Exempel 2:** Ett konsument investerings företag var i det tidiga skedet av en moln aktive rad program Innovations ansträngning. Agile-processer och DevOps förföll sig väl, men program prestanda var höga. Som en mer mogen omvandling startade företaget ett program för att övervaka och automatisera storleks ändringar baserat på användnings krav. Företaget kunde eliminera storleks problem genom att använda Azures verktyg för prestanda hantering, vilket resulterar i en överraskande på 5 procent i transaktioner.
+- **Exempel 2:** Ett konsument investerings företag var i det tidiga skedet av en moln aktive rad program Innovations ansträngning. Agile-processer och DevOps förföll sig väl, men program prestanda var höga. Som en mer mogen omvandling startade företaget ett program för att övervaka och automatisera storleks ändringar baserat på användnings krav. Företaget har eliminerat storleks problem med hjälp av Azures verktyg för prestanda hantering, vilket resulterar i en överraskande fem procents ökning i transaktioner.
 
 ## <a name="reliability"></a>Tillförlitlighet
 
@@ -40,7 +40,7 @@ Azure Backup är en enkel lösning som minskar infrastruktur kostnaderna samtidi
 
 Azure Site Recovery gör det enkelt att testa haveri beredskap genom att replikera program mellan Azure-regioner. Du kan också replikera lokala virtuella VMware-och Hyper-V-datorer och fysiska servrar till Azure för att vara tillgängliga om den primära platsen slutar fungera. Och du kan återställa arbets belastningar till den primära platsen när den är igång igen.
 
-- **Exempel:** Ett olje-och gas företag använde Azure-teknik för att implementera en fullständig webbplats återställning. Företaget valde att inte helt utnyttja molnet för dagliga åtgärder, men molnets funktioner för haveri beredskap och affärs kontinuitet (DRBC) har fortfarande skyddat sitt Data Center. När en orkan är utformad hundratals mil påbörjade deras implementerings partner att återskapa platsen till Azure. Innan Storm är intryckt körs alla verksamhets kritiska till gångar i Azure, vilket förhindrar avbrott.
+- **Exempel:** Ett olje-och gas företag använde Azure-teknik för att implementera en fullständig webbplats återställning. Företaget valde att inte helt utnyttja molnet för dagliga åtgärder, men molnets funktioner för affärs kontinuitet och haveri beredskap (BCDR) har fortfarande skyddat sitt Data Center. När en orkan är utformad hundratals mil påbörjade deras implementerings partner att återskapa platsen till Azure. Innan Storm är intryckt körs alla verksamhets kritiska till gångar i Azure, vilket förhindrar avbrott.
 
 ## <a name="next-steps"></a>Nästa steg
 

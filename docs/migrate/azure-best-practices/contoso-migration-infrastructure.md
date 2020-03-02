@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 4d8a7b53722de4b356753626d0cc695fa1a77596
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 314cd954332907f9bf1bf63eb52ed5d88cfab121
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807520"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223127"
 ---
+<!-- cspell:ignore CSPs domainname IPAM CIDR Untrust RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
+
 # <a name="deploy-a-migration-infrastructure"></a>Distribuera en migreringsinfrastruktur
 
 Den här artikeln visar hur det fiktiva företaget Contoso förbereder den lokala infrastrukturen för migrering, konfigurerar en Azure-infrastruktur inför migreringen och kör verksamheten i en hybridmiljö. Tänk på följande när du använder det här exemplet för att planera dina egna åtgärder för infrastrukturmigrering:
@@ -52,11 +54,11 @@ Här är ett diagram som visar Contosos aktuella lokala infrastruktur.
 
 - Contoso har ett huvudsakligt datacenter finns i New York i östra USA.
 - Det finns ytterligare tre lokala avdelningar i USA.
-- Huvuddatacentret är anslutet till Internet med en Metro Ethernet-anslutning för fiber (500 Mbit/s).
+- Huvud data centret är anslutet till Internet med en Ethernet-anslutning för fiber tunnelbane linje (500 Mbit/s).
 - Varje avdelning ansluts lokalt till Internet med hjälp av anslutningar i företagsklass med IPsec VPN-tunnlar tillbaka till huvuddatacentret. Konfigurationen innebär att hela nätverket är permanent anslutet och optimerar Internet-anslutningen.
 - Huvuddatacentret är helt virtualiserat med VMware. Contoso har två ESXi 6.5-virtualiseringsvärdar som hanteras av vCenter Server 6.5.
 - Contoso använder Active Directory för identitetshantering och DNS-servrar i det interna nätverket.
-- Domänkontrollanterna i datacentret körs på virtuella VMware-datorer. Domänkontrollanterna på de lokala avdelningarna körs på fysiska servrar.
+- Domän kontrol Lanterna i data centret körs på virtuella VMware-datorer. Domänkontrollanterna på de lokala avdelningarna körs på fysiska servrar.
 
 ## <a name="step-1-buy-and-subscribe-to-azure"></a>Steg 1: Köp och prenumerera på Azure
 
@@ -76,7 +78,7 @@ Contoso satsar på med ett [Enterprise-avtal (EA).](https://azure.microsoft.com/
 När Contoso har betalat för Azure måste de bestämma hur de ska hantera Azure-prenumerationer. Contoso har ett EA och därmed finns det ingen gräns för hur många Azure-prenumerationer de kan konfigurera.
 
 - En Azure Enterprise-registrering definierar hur företaget utformar och använder Azure-tjänsterna och definierar en grundläggande styrningsstruktur.
-- Contoso börjar med att definiera ett kodskelett för Enterprise-registrering. Contoso använde [den här artikeln](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-subscription-governance) för att lära sig om och utforma ett kodskelett.
+- Contoso börjar med att definiera ett kodskelett för Enterprise-registrering. Contoso använde [Azure Enterprise Autogenerera-vägledningen](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-subscription-governance) för att hjälpa till att förstå och utforma en Autogenerera.
 - För tillfället har Contoso bestämt sig för att använda en funktionell metod för att hantera prenumerationer.
   - Inom företaget kommer Contoso att använda en enda IT-avdelning som kontrollerar Azure-budgeten. Detta är den enda gruppen med prenumerationer.
   - Contoso kommer att utöka modellen i framtiden så att andra företagsgrupper kan registrera sig som avdelningar i Enterprise-registreringen.
@@ -87,7 +89,7 @@ När Contoso har betalat för Azure måste de bestämma hur de ska hantera Azure
 
 ### <a name="examine-licensing"></a>Granska licensieringen
 
-När prenumerationerna har konfigurerats kan Contoso titta på Microsoft-licensieringen. Licensieringsstrategin beror på vilka resurser som Contoso vill migrera till Azure och hur virtuella Azure-datorer och -tjänster är valda och distribuerade.
+När prenumerationerna har konfigurerats kan Contoso titta på Microsoft-licensieringen. Licens strategin beror på vilka resurser som Contoso vill migrera till Azure och hur virtuella datorer och tjänster i Azure är markerade och distribuerade.
 
 #### <a name="azure-hybrid-benefit"></a>Azure Hybrid-förmån
 
@@ -95,7 +97,7 @@ När Contoso distribuerar virtuella datorer i Azure innehåller standardavbildni
 
 Azure Hybrid Benefit låter Contoso spara pengar på migreringen, genom att låta företaget omvandla eller återanvända licenser för Windows Server Datacenter och Standard Edition som omfattas av Software Assurance för virtuella Azure-datorer och SQL Server-arbetsbelastningar. Detta gör det möjligt för Contoso att betala ett lägre beräkningspris för virtuella datorer och SQL Server. [Läs mer](https://azure.microsoft.com/pricing/hybrid-benefit).
 
-#### <a name="license-mobility"></a>Licensmobilitet
+#### <a name="license-mobility"></a>License Mobility
 
 Med License Mobility genom Software Assurance kan Microsofts volymlicensieringskunder som Contoso distribuera berättigade serverprogram med aktiv Software Assurance på Azure. Därmed behöver de inte köpa nya licenser. Utan tillkommande rörlighetsavgifter är det lätt att distribuera befintliga licenser i Azure. [Läs mer](https://azure.microsoft.com/pricing/license-mobility).
 
@@ -255,11 +257,11 @@ Azureresurser distribueras i regioner.
 - Varje Azure-region är kopplad till en annan region av säkerhetsskäl.
 - Läs om [Azure-](https://azure.microsoft.com/global-infrastructure/regions)regioner och lär dig [hur regioner paras ihop](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
 
-Contoso har beslutat att gå med USA, östra 2 (finns i Virginia) som den primära regionen och centrala USA (finns i Iowa) som den sekundära regionen. Det finns ett par orsaker till detta:
+Contoso har beslutat att gå med USA, östra 2 (finns i Virginia) som den primära regionen och USA, centrala (finns i Iowa) som den sekundära regionen. Det finns ett par orsaker till detta:
 
 - Contosos datacenter ligger i New York och Contoso tänkte på svarstiden till den närmaste datacentret.
 - Regionen USA, östra 2 har alla tjänster och produkter som Contoso måste använda. Alla Azure-regioner är inte samma i fråga om vilka produkter och tjänster som finns tillgängliga. Du kan titta på [Azure-produkter efter region](https://azure.microsoft.com/global-infrastructure/services).
-- Azure-regionen centrala USA är parkopplad med USA, östra 2.
+- Azure-regionen USA, centrala är parkopplad med USA, östra 2.
 
 Eftersom Contoso funderar på att använda en hybridmiljö måste de tänka på hur de ska bygga in motståndskraft och en katastrofberedskapsplan i sin regionsdesign. Strategier sträcker sig i stort sett från en distribution med en region, som förlitar sig på Azures plattformsfunktioner såsom feldomäner och regional parkoppling, till en fullskalig aktiv/aktiv-modell där molntjänster och databaser distribueras och används av användare från två regioner.
 
@@ -332,7 +334,7 @@ Som en påminnelse består den lokala nätverksinfrastrukturen i Contoso för n�
 
 Så här har Contoso valt att implementera hybridanslutningar:
 
-1. De konfigurerade en ny plats-till-plats-VPN-anslutning mellan Contosos datacenter i New York och de två Azure-regionerna i USA, östra 2 och centrala USA.
+1. De konfigurerade en ny plats-till-plats-VPN-anslutning mellan Contosos datacenter i New York och de två Azure-regionerna i USA, östra 2 och USA, centrala.
 2. Trafik från det lokala kontoret på väg till Azures virtuella nätverk kommer att dirigeras via Contosos huvuddatacenter.
 3. När Contoso skalar upp Azure-distributionen kommer de att upprätta en ExpressRoute-anslutning mellan datacentret och Azure-regionerna. När detta sker behåller Contoso endast plats-till-plats-VPN-anslutningen för redundans.
     - [Lär dig](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations) mer om att välja mellan VPN och ExpressRoute for hybridlösningar.
@@ -348,16 +350,16 @@ Så här har Contoso valt att implementera hybridanslutningar:
 
 ### <a name="design-the-azure-network-infrastructure"></a>Utforma en Azure-nätverksinfrastruktur
 
-Det är viktigt att Contoso etablerar ett nätverk på ett sätt som gör hybriddistributionen säker och skalbar. Därför väljer Contoso en långsiktig metod och utformar motståndskraftiga virtuella nätverk i företagsklass. [Läs mer](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm) om att planera virtuella nätverk.
+Contosos nätverks konfiguration måste göra hybrid distributionen säker och skalbar. Contoso tar en långsiktig metod för detta, och designar virtuella nätverk (virtuella nätverk) för att bli elastiska och klara för företag. [Läs mer](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm) om att planera virtuella nätverk.
 
-Contoso har valt att implementera en nätverksmodell från hubb till hubb för att ansluta de två regionerna:
+Contoso använder en nav-till-hubb-nätverks modell för att ansluta de två regionerna:
 
 - I varje region använder Contoso en hubb och navmodell.
 - Contoso använder Azures nätverkspeering för att ansluta nätverken och hubbarna.
 
 #### <a name="network-peering"></a>Nätverkspeering
 
-Azure tillhandahåller nätverkspeering för att ansluta virtuella nätverk och hubbar. Global peering tillåter anslutningar mellan virtuella nätverk/hubbar i olika regioner. Lokal peering ansluter virtuella nätverk i samma region. VNet-peering har flera fördelar:
+Azures nätverks-peering ansluter virtuella nätverk och hubbar. Global peering tillåter anslutningar mellan virtuella nätverk eller hubbar i olika regioner. Lokal peering ansluter virtuella nätverk i samma region. Peering av virtuella nätverk ger flera fördelar:
 
 - Nätverkstrafiken mellan peerkopplade virtuella nätverk är privat.
 - Trafiken mellan de virtuella nätverken finns i Microsoft-stamnätverket. Vid kommunikation mellan virtuella nätverk krävs inget offentligt Internet, inga gatewayer eller ingen kryptering.
@@ -380,7 +382,7 @@ I varje region kommer Contoso att distribuera virtuella nätverk för olika syft
 
 #### <a name="design-the-hub-network"></a>Utforma hubbnätverket
 
-I Contosos hubb- och ekermodell måste de överväga hur trafik ska dirigeras från det lokala datacentret och Internet. Så här har Contoso valt att hantera dirigering för såväl USA, östra 2 och centrala USA:
+I Contosos hubb- och ekermodell måste de överväga hur trafik ska dirigeras från det lokala datacentret och Internet. Så här har Contoso valt att hantera dirigering för såväl USA, östra 2 och USA, centrala:
 
 - Contoso utformar ett nätverk som kallas "reverse c", eftersom det här är den sökväg som paketen följer från det inkommande till det utgående nätverket.
 - Nätverksarkitekturen har två gränser, en icke betrodd zon för klientdelen och en betrodd zon för serverdelen.
@@ -402,7 +404,7 @@ Nu när Contosos har en topologi för nätverk och trafikdirigering är de redo 
 
 - Contoso implementerar ett privat nätverk i Klass A på Azure (0.0.0.0 till 127.255.255.255). Detta fungerar, eftersom de för närvarande har ett lokalt privat adressutrymme av klass B 172.160.0/16, så Contoso kan vara säkra på att adresserna inte överlappar.
 - De kommer att distribuera virtuella nätverk i de primära och sekundära regionerna.
-- Contoso kommer att använda en namngivningskonvention som innehåller prefixet **VNet** och regionförkortningen **EUS2** eller **CUS**. Med den här standarden heter hubbnätverken **VNet-Hub-EUS2** (USA, östra 2) och **VNet-Hub-CUS** (centrala USA).
+- Contoso kommer att använda en namngivningskonvention som innehåller prefixet **VNet** och regionförkortningen **EUS2** eller **CUS**. Med den här standarden heter hubbnätverken **VNet-Hub-EUS2** (USA, östra 2) och **VNet-Hub-CUS** (USA, centrala).
 - Contoso har ingen [IPAM-lösning](https://docs.microsoft.com/windows-server/networking/technologies/ipam/ipam-top) så de måste planera en nätverksroutning utan NAT.
 
 #### <a name="virtual-networks-in-east-us-2"></a>Virtuella nätverk i USA, östra 2
@@ -462,18 +464,18 @@ Azure IaaS-komponenter ligger i produktionsnätverket. Varje appnivå har sitt e
 
 ![Hubbnätverksarkitektur](./media/contoso-migration-infrastructure/azure-networks-eus2.png)
 
-#### <a name="virtual-networks-in-central-us-secondary-region"></a>Virtuella nätverk i centrala USA (sekundär region)
+#### <a name="virtual-networks-in-central-us-secondary-region"></a>Virtuella nätverk i USA, centrala (sekundär region)
 
-Centrala USA är Contosos sekundära region. Så här kommer Contoso att utforma sina nätverk:
+USA, centrala är Contosos sekundära region. Så här kommer Contoso att utforma sina nätverk:
 
 - **Hubb:** Hubb-VNet i östra USA 2 är den centrala punkten för anslutning till det lokala data centret och eker-virtuella nätverk i östra USA 2 kan användas för att isolera arbets belastningar om det behövs, som hanteras separat från andra ekrar.
 - **Virtuella nätverk:** Contoso kommer att ha två virtuella nätverk i centrala USA:
   - VNET-PROD-CUS. Det här virtuella nätverket är ett produktionsnätverk som liknar VNET-PROD_EUS2.
   - VNET-ASR-CUS. Det här virtuella nätverket fungerar som en plats där virtuella datorer skapas efter redundansväxling från det lokala datacentret eller som en plats för virtuella Azure-datorer som har redundansväxlats från den primära till den sekundära regionen. Det här nätverket liknar produktionsnätverken men har inga domänkontrollanter.
   - Varje virtuella nätverk i regionen har sin egen adressyta utan att överlappa varandra. Contoso konfigurerar routning utan NAT.
-- **Undernät:** Under näten kommer att konstrueras på ett liknande sätt som i USA, östra 2. Undantaget är att Contoso inte behöver ett undernät för domänkontrollanter.
+- **Undernät:** Under näten kommer att utformas på ett liknande sätt som i USA, östra 2. Undantaget är att Contoso inte behöver ett undernät för domänkontrollanter.
 
-De virtuella nätverken i centrala USA sammanfattas i tabellen nedan.
+De virtuella nätverken i USA, centrala sammanfattas i tabellen nedan.
 
 **VNet** | **Område** | **Peer**
 --- | --- | ---
@@ -483,7 +485,7 @@ De virtuella nätverken i centrala USA sammanfattas i tabellen nedan.
 
 ![Hubb- och ekermodell i en kopplad region](./media/contoso-migration-infrastructure/paired-hub-peer.png)
 
-#### <a name="subnets-in-the-central-us-hub-network-vnet-hub-cus"></a>Undernät i hubbnätverket för centrala USA (VNET-HUB-CUS)
+#### <a name="subnets-in-the-central-us-hub-network-vnet-hub-cus"></a>Undernät i hubbnätverket för USA, centrala (VNET-HUB-CUS)
 
 **Undernät** | **CIDR** | **Användbara IP-adresser**
 --- | --- | ---
@@ -493,7 +495,7 @@ De virtuella nätverken i centrala USA sammanfattas i tabellen nedan.
 **OB-TrustZone** | 10.250.3.0/24 | 251
 **GatewaySubnet** | 10.250.2.0/24 | 251
 
-#### <a name="subnets-in-the-central-us-production-network-vnet-prod-cus"></a>Undernät i produktionsnät i centrala USA (VNET-PROD-CUS2)
+#### <a name="subnets-in-the-central-us-production-network-vnet-prod-cus"></a>Undernät i produktionsnät i USA, centrala (VNET-PROD-CUS2)
 
 Parallellt med produktions nätverket i den primära regionen USA, östra 2, finns det ett produktions nätverk i den sekundära centrala regionen.
 
@@ -504,7 +506,7 @@ Parallellt med produktions nätverket i den primära regionen USA, östra 2, fin
 **PROD-DB-CUS** | 10.255.40.0/23 | 507 | Virtuella databasdatorer
 **PROD-DC-CUS** | 10.255.42.0/24 | 251 | Virtuella datorer för domänkontrollant
 
-#### <a name="subnets-in-the-central-us-failoverrecovery-network-in-central-us-vnet-asr-cus"></a>Undernät i det redundans för centrala USA/återställningsnätverk i centrala USA (VNET-ASR-CUS)
+#### <a name="subnets-in-the-central-us-failoverrecovery-network-in-central-us-vnet-asr-cus"></a>Undernät i det redundans för USA, centrala/återställningsnätverk i USA, centrala (VNET-ASR-CUS)
 
 VNET-ASR-CUS-nätverket används för redundans mellan regioner. Site Recovery kommer att användas för att replikera och redundansväxla virtuella Azure-datorer mellan regionerna. Det fungerar också som ett Contoso-datacenter för Azure-nätverket för skyddade arbetsbelastningar som är kvar lokalt, men som redundansväxlas till Azure för haveriberedskap.
 
@@ -557,14 +559,14 @@ När du distribuerar resurser i virtuella nätverk har du ett par alternativ fö
 
 Contosos administratörer har beslutat att tjänsten Azure DNS inte är lämplig för hybridmiljön. I stället kommer de att använda lokala DNS-servrar.
 
-- Eftersom det här är ett hybridnätverk måste alla lokala virtuella datorer och virtuella Azure-datorer kunna matcha namn. Det innebär att anpassade DNS-inställningar måste tillämpas på alla virtuella nätverk.
+- Eftersom det här är ett hybrid nätverk måste alla virtuella datorer lokalt och i Azure kunna matcha namn för att fungera korrekt. Det innebär att anpassade DNS-inställningar måste tillämpas på alla virtuella nätverk.
 - Contoso har för närvarande domänkontrollanter i Contosos datacenter och på de lokala kontoren. De primära DNS-servrarna är CONTOSODC1 (172.16.0.10) och CONTOSODC2 (172.16.0.1)
 - När virtuella nätverk distribueras kommer de lokala domänkontrollanterna att ställas in så att de används som DNS-servrar i nätverken.
 - Om du vill konfigurera detta när du använder anpassat DNS i virtuella nätverk måste en IP-adress för Azures rekursiva matchare (till exempel 168.63.129.16) läggas till i DNS-listan. För att göra detta konfigurerar Contoso DNS-serverinställningar på varje virtuella nätverk. Till exempel skulle anpassade DNS-inställningar för VNET-HUB-EUS2-nätverket vara följande:
 
     ![Anpassad DNS](./media/contoso-migration-infrastructure/custom-dns.png)
 
-Utöver de lokala domänkontrollanterna ska Contoso implementera ytterligare fyra för Azure-nätverken, två för varje region. Det här är vad Contoso planerar att distribuera i Azure.
+Förutom de lokala domän kontrol Lanterna kommer contoso att implementera fyra fler domänkontrollanter för att stödja Azure-nätverken, två för varje region. Det här är vad Contoso planerar att distribuera i Azure.
 
 **Region** | **Domänkontrollant** | **VNet** | **Undernät** | **IP-adress**
 --- | --- | --- | --- | ---
@@ -715,7 +717,7 @@ ServiceManager | E-postalias för ITIL Service Manager för resursen.
 COBPriority | Prioritet som har angetts av företaget för affärskontinuitet och haveriberedskap. Värden från 1 till 5.
 ENV | DEV, STG, PROD är möjliga värden. De står för utveckling, mellanlagring och produktion.
 
-Ett exempel:
+Exempel:
 
  ![Azure-taggar](./media/contoso-migration-infrastructure/azure-tag.png)
 
@@ -791,13 +793,13 @@ Azure Disk Encryption integreras med Azure Key Vault så att du kan kontrollera 
 - Contoso har avgjort att vissa virtuella datorer behöver kryptering.
 - Contoso kommer att använda kryptering på virtuella datorer med kunddata, konfidentiella data eller PPI-data.
 
-## <a name="conclusion"></a>Slutsats
+## <a name="conclusion"></a>Sammanfattning
 
 I den här artikeln konfigurerade Contoso en Azure-infrastruktur och -policy för Azure-prenumeration, hybrididentifiering, haveriberedskap, nätverk, styrning och säkerhet.
 
-Alla steg som utfördes av Contoso krävs inte för en migrering till molnet. I det här fallet ville man planera en nätverksinfrastruktur som kan användas för alla typer av migreringar och som är säker, elastisk och skalbar.
+Alla steg som tas här krävs inte för en molnbaserad migrering. I det här fallet har contoso planerat en nätverks infrastruktur som kan hantera alla typer av migreringar samtidigt som de är säkra, elastiska och skalbara.
 
-Med den här infrastrukturen på plats är Contoso redo att gå vidare och testa migreringen.
+Med den här infrastrukturen är contoso redo att gå vidare och testa migreringen.
 
 ## <a name="next-steps"></a>Nästa steg
 

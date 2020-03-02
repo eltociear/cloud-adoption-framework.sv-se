@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: c374ef690a28e1b7e0e8fd6f7fff3106c35e543f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 90e21047f8d64f15ef3c94ebe82e31ba615c4d38
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798187"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225246"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -54,7 +54,7 @@ Den här listan innehåller ett exempel på ett första projekt för varje motiv
 
 Ytterligare exempel på första antagande projekt är:
 
-- **Haveri beredskap och affärs kontinuitet (DRBC):** Utöver Azure Site Recovery kan du implementera flera DRBC-strategier som ett första projekt.
+- **Verksamhets kontinuitet och haveri beredskap (BCDR):** Utöver Azure Site Recovery kan du implementera flera BCDR-strategier som ett första projekt.
 - **Inproduktion:** Distribuera en inproduktion instans av en arbets belastning.
 - **Arkiv:** Kall lagring kan belasta Data Center resurser. Att flytta data till molnet är en solid Quick Win.
 - **Slut på support (EOS):** Att migrera till gångar som har nått slutet av support är en annan snabb chans som bygger tekniska kunskaper. Det kan också vara ett kostnads fritt sätt att undvika dyra support avtal eller licens kostnader.

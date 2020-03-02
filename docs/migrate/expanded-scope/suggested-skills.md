@@ -3,16 +3,16 @@ title: Kunskapsberedskap för molnmigrering
 description: Kunskapsberedskap för molnmigrering
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 05/19/2019
+ms.date: 02/25/2020
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d6768f3944699fdde483fb25f47bcb22be2484f1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f24d619106674cedf12bc650cd0807e0f766e3c6
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802947"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222319"
 ---
 # <a name="skills-readiness-for-cloud-migration"></a>Kunskapsberedskap för molnmigrering
 
@@ -28,7 +28,7 @@ Implementering av ”migrera-processer” kommer att bygga på de kunskaper som 
 
 Följande verktyg kan hjälpa teamet vid utförandet av utvärderingsaktiviteter:
 
-- [Balansera portföljen](./balance-the-portfolio.md): se till att balansera och rätt investerings tilldelningar i en program portfölj.
+- [Balansera portföljen](../../strategy/balance-the-portfolio.md): se till att balansera och rätt investerings tilldelningar i en program portfölj.
 - Skapa [en affärs justering](../../strategy/cloud-migration-business-case.md): skapa och förstå affärs justeringen för att köra moln migreringen.
 - [Rationalisera den digitala egendomen](../../digital-estate/rationalize.md): rationalisera-tillgångar i den digitala fastigheten.
 - [Utvärdering av program portfölj](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization): kriterier för att fatta beslut om migrerings-eller Innovations alternativ i program portföljen.
@@ -49,7 +49,7 @@ Följande självstudie kan förbereda teamet för migreringsaktiviteter:
 - [Migrera fysiska och virtuella servrar till Azure](https://app.pluralsight.com/library/courses/microsoft-azure-migrating-physical-virtual-servers/table-of-contents): PluralSight kurs för att migrera servrar till Azure
 - [Importera och exportera data till Azure](https://app.pluralsight.com/library/courses/microsoft-azure-import-export-data/table-of-contents): PluralSight kurs om data flödet till och från Azure
 
-## <a name="optimize-and-promote-process-changes"></a>Optimera och flytta upp processändringar
+## <a name="optimize-and-promote-process-changes"></a>Optimera och höja upp processändringar
 
 Följande verktyg kan hjälpa teamet att optimera resurser och höja upp till produktion:
 
@@ -67,4 +67,4 @@ Följande verktyg kan hjälpa teamet att hitta sätt att skydda och hantera migr
 Gå tillbaka till [checklistan för utökat omfång](./index.md) och se till att din migreringsmetod är helt anpassad till kraven.
 
 > [!div class="nextstepaction"]
-> [Utökad checklista](./index.md)
+> [Checklista för utökat omfång](./index.md)

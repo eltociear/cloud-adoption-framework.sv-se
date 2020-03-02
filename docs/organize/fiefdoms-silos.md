@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 41f23244119358a3356f65f6050572e4a8c787c1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a430f988282a89bb4aea7e07689310309d5b971c
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800822"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222302"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Organisatoriska antimönster: silor och fiefdoms
 
@@ -59,7 +59,7 @@ Som tidigare nämnts kan friska IT-team skapa naturliga motstånd och positiv fr
 
 ## <a name="it-silos"></a>IT-silor
 
-Team medlemmar i en IT-silo kan förmodligen definiera sig själva genom sin justering till ett litet antal IT-leverantörer eller ett tekniskt specialisering. Du kan dock inte förväxla IT-silorna med IT-fiefdoms. IT-silorna tenderar att drivas av bekvämlighets-och passion, och är i allmänhet lättare att lösa än de frukt drivna fordonen bakom fiefdoms.
+Team medlemmar i en IT-silo kan förmodligen definiera sig själva genom sin justering till ett litet antal IT-leverantörer eller ett tekniskt specialisering. Men inte förvirrande silor med IT-fiefdoms. Silor tenderar att drivas av bekvämlighets-och passion, och silor är ofta enklare att lösa än de frukt drivna fordonen bakom fiefdoms.
 
 Det här antimönstret uppstår ofta från en gemensam passion för en speciell lösning. IT-silon förstärks sedan av teamets avancerade kunskaper som ett resultat av investeringen i denna speciella lösning. Den här överlägsna kompetensen kan vara en Accelerator för moln implementerings ansträngningar om resistens mot ändring kan lösas. Det kan också bli en större Blocker om silorna är uppdelade eller om grupp medlemmarna inte kan utvärdera alternativ korrekt. I tur och ordning kan IT-silo ofta lösas utan betydande ändringar i organisations diagrammet.
 
@@ -77,9 +77,9 @@ Experimentering och exponering är kraftfulla verktyg för att bryta ned hinder 
 
 Under granskningen av konkurrerande lösning använder du de metoder som beskrivs i [Definiera företags princip](../govern/corporate-policy.md) för att dokumentera påtagliga risker för experimentet och upprätta principer som hjälper det att hjälpa det silonde teamet att bli mer bekvämare i framtiden. Detta utsätter gruppen till nya lösningar och skärper den framtida lösningen.
 
-**Vara "boundaryless":** De team som driver Cloud-införandet hittar det enkelt att dra gränser genom att utforska spännande och nya molnbaserade lösningar. Det här är en hälft av metoden att ta bort gränser. Det kan dock ytterligare förstärka IT-silorna. Att överföra för att ändra för snabbt och utan att respektera befintliga kulturer kan skapa felaktig friktion och leda till naturlig resistens.
+**Vara "mindre gränser":** De team som driver Cloud-införandet hittar det enkelt att dra gränser genom att utforska spännande och nya molnbaserade lösningar. Det här är en hälft av metoden att ta bort gränser. Det kan dock ytterligare förstärka IT-silorna. Att överföra för att ändra för snabbt och utan att respektera befintliga kulturer kan skapa felaktig friktion och leda till naturlig resistens.
 
-När silorna börjar motstå, är det viktigt att vara boundaryless i dina egna lösningar. Vara mindful av en enkel sanningen: Cloud-Native är inte alltid den bästa lösningen. Överväg hybrid lösningar som kan ge en möjlighet att utöka de befintliga investeringarna av IT-silon till framtiden.
+När silorna börjar motstå, är det viktigt att vara "helt mindre" i dina egna lösningar. Vara mindful av en enkel sanningen: Cloud-Native är inte alltid den bästa lösningen. Överväg hybrid lösningar som kan ge en möjlighet att utöka de befintliga investeringarna av IT-silon till framtiden.
 
 Överväg också molnbaserade versioner av lösningen som IT-silon använder nu. Experimentera med de här lösningarna och visa dig själv i vilken synvinkel du bor i IT-silon. Du får minst ett nytt perspektiv. I många situationer kanske du får tillräckligt mycket av IT-silon avseende minska motstånds kraft.
 

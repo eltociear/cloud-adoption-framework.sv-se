@@ -7,31 +7,31 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fd0d65910b3a62170ce1f0d50ae73af1d4c99899
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: cef5746f8ab3368150ddcc328a8d929853dfb253
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803848"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222694"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Metodtips för att skydda och hantera arbetsbelastningar som migreras till Azure
 
 När du planerar och utformar inför migreringen måste du, förutom att fundera över själva migreringen, ta hänsyn till din säkerhets- och hanteringsmodell i Azure efter migreringen. I den här artikeln beskrivs planering och metodtips för att skydda din Azure-distribution efter migreringen, och för pågående aktiviteter för att köra distributionen på en optimal nivå.
 
 > [!IMPORTANT]
-> De metodtips och åsikter som beskrivs i den här artikeln baseras på de tillgängliga funktionerna i Azure-plattformen och -tjänsten när den skrevs. Funktioner förändras över tid.
+> De metodtips och åsikter som beskrivs i den här artikeln baseras på de tillgängliga funktionerna i Azure-plattformen och -tjänsten när den skrevs. Funktioner förändras ständigt.
 
 ## <a name="secure-migrated-workloads"></a>Skydda migrerade arbetsbelastningar
 
 Efter migreringen är den mest kritiska uppgiften att skydda migrerade arbetsbelastningar mot interna och externa hot. Dessa metodtips hjälper dig att göra det:
 
 - [Arbeta med Azure Security Center](#best-practice-follow-azure-security-center-recommendations): Lär dig hur du arbetar med övervakning, utvärderingar och rekommendationer från Azure Security Center.
-- [Kryptera dina data](#best-practice-encrypt-data): få metodtips för att kryptera dina data i Azure.
+- [Kryptera dina data](#best-practice-encrypt-data): få bästa metoder för att kryptera dina data i Azure.
 - [Konfigurera program mot skadlig kod](#best-practice-protect-vms-with-antimalware): skydda dina virtuella datorer mot skadlig kod och skadliga attacker.
-- [Skydda webbappar](#best-practice-secure-web-apps): Behåll känslig information säker migreras webbappar.
-- [Granska prenumerationer](#best-practice-review-subscriptions-and-resource-permissions): Kontrollera vem som kan komma åt din Azure-prenumerationer och resurser efter migreringen.
-- [Arbeta med loggar](#best-practice-review-audit-and-security-logs): granska dina Azure-granskningen och security loggar regelbundet.
-- [Granska andra säkerhetsfunktioner](#best-practice-evaluate-other-security-features): Förstå och utvärdera avancerade säkerhetsfunktioner som Azure erbjuder.
+- [Säkra webbappar](#best-practice-secure-web-apps): Håll känslig information säker i migrerade webb program.
+- [Granska prenumerationer](#best-practice-review-subscriptions-and-resource-permissions): kontrol lera vem som har åtkomst till dina Azure-prenumerationer och-resurser efter migreringen.
+- [Arbeta med loggar](#best-practice-review-audit-and-security-logs): granska dina Azures gransknings-och säkerhets loggar med jämna mellanrum.
+- [Granska andra säkerhetsfunktioner](#best-practice-evaluate-other-security-features): förstå och utvärdera avancerade säkerhetsfunktioner som Azure erbjuder.
 
 ## <a name="best-practice-follow-azure-security-center-recommendations"></a>Bästa praxis: Följ Azure Security Center-rekommendationer
 
@@ -132,9 +132,9 @@ Azure tillhandahåller ett par lösningar:
 - **Brand vägg för webbaserade program:** En funktion i Azure Application Gateway som tillhandahåller centraliserat skydd för Web Apps.
   - Den skyddar webbappar utan att kräva ändringar i serverdelskoden.
   - Den skyddar flera webbappar samtidigt bakom en programgateway.
-  - En brandvägg för webbaserade program kan övervakas med hjälp av Azure Monitor och integreras i Azure Security Center.
+  - En brand vägg för webbaserade program kan övervakas med hjälp av Azure Monitor och integreras i Azure Security Center.
 
-![Skydda webbappar](./media/migrate-best-practices-security-management/web-apps.png)
+![säker Web Apps](./media/migrate-best-practices-security-management/web-apps.png)
 *Azure Key Vault*
 
 **Läs mer:**
@@ -172,8 +172,8 @@ Azure Active Directory (Azure AD) tillhandahåller aktivitetsloggar som visas i 
 - Du kan dirigera aktivitetsloggar till olika slutpunkter för långsiktig kvarhållning och datainsikter.
 - Gör det till en vana att granska loggarna eller integrera SIEM-verktygen (Security Information and Event Management) för att automatiskt granska avvikelser. Om du inte använder Premium 1 eller 2 måste du göra mycket analys själv eller med SIEM-systemet. Analys innefattar att söka efter riskfyllda inloggningar och händelser, och andra mönster för användarangrepp.
 
-![Användare och grupper](./media/migrate-best-practices-security-management/azure-ad.png)
-*Azure AD-användare och grupper*
+![användare och grupper](./media/migrate-best-practices-security-management/azure-ad.png)
+*Azure AD-användare och-grupper*
 
 **Läs mer:**
 
@@ -193,15 +193,15 @@ Azure innehåller andra säkerhetsfunktioner som tillhandahåller avancerade sä
 
 I det här avsnittet rekommenderar vi några metodtips för Azure-hantering, inklusive:
 
-- [Hantera resurser](#best-practice-name-resource-groups): Metodtips för Azure-resursgrupper och resurser, inklusive smart namngivning, förhindrar oavsiktlig borttagning, hantera resursbehörighet och effektiva resurstaggning.
-- [Använda skisser](#best-practice-implement-blueprints): få en snabb översikt om hur du använder skisser för att skapa och hantera dina distributionsmiljöer.
-- [Granska arkitekturer](#best-practice-review-azure-reference-architectures): granska exempel på Azure-arkitekturer att lära sig från när du skapar distributionen efter migreringen.
-- [Konfigurera hanteringsgrupper](#best-practice-manage-resources-with-azure-management-groups): Om du har flera prenumerationer kan du samla in dem i hanteringsgrupper och tillämpa inställningar för styrning i dessa grupper.
-- [Konfigurera åtkomstprinciper](#best-practice-deploy-azure-policy): tillämpa efterlevnadsprinciper för dina Azure-resurser.
-- [Implementera en BCDR-strategi](#best-practice-implement-a-bcdr-strategy): sätta ihop en disaster recovery (BCDR) strategi för affärskontinuitet och att skydda data, din miljö som är elastiska, och resurser upp och körs vid avbrott.
-- [Hantera virtuella datorer](#best-practice-use-managed-disks-and-availability-sets): gruppera virtuella datorer i Tillgänglighetsgrupper för ökad flexibilitet och hög tillgänglighet. Använd hanterade diskar för enkel disk- och lagringshantering för virtuella datorer.
-- [Övervaka Resursanvändning](#best-practice-monitor-resource-usage-and-performance): aktivera Diagnostisk loggning för Azure-resurser, skapa aviseringar och spelböcker för proaktiv felsökning och använda instrumentpanelen för Azure för en enhetlig vy över din distribution hälsa och status.
-- [Hantera support och uppdateringar](#best-practice-manage-updates): Förstå din Azure-supportplan och hur du implementerar den, få metodtips för att hålla datorer uppdaterade och put processer för ändringshantering.
+- [Hantera resurser](#best-practice-name-resource-groups): metod tips för Azures resurs grupper och resurser, inklusive Smart namngivning, förhindra oavsiktlig borttagning, hantering av resurs behörigheter och effektiv resurs markering.
+- [Använd skisser](#best-practice-implement-blueprints): få en snabb översikt över hur du använder ritningar för att skapa och hantera dina distributions miljöer.
+- [Granska arkitekturer](#best-practice-review-azure-reference-architectures): se exempel på Azure-arkitekturer för att lära dig av när du skapar distributioner efter migreringen.
+- [Konfigurera hanterings grupper](#best-practice-manage-resources-with-azure-management-groups): om du har flera prenumerationer kan du samla in dem i hanterings grupper och använda styrnings inställningar för dessa grupper.
+- [Konfigurera åtkomst principer](#best-practice-deploy-azure-policy): tillämpa efterlevnadsprinciper på dina Azure-resurser.
+- [Implementera en BCDR-strategi](#best-practice-implement-a-bcdr-strategy): samla in en strategi för affärs kontinuitet och haveri beredskap (BCDR) för att skydda data, din miljö och få resurser igång när avbrott uppstår.
+- [Hantera virtuella datorer](#best-practice-use-managed-disks-and-availability-sets): gruppera virtuella datorer i tillgänglighets grupper för återhämtning och hög tillgänglighet. Använd hanterade diskar för enkel disk- och lagringshantering för virtuella datorer.
+- [Övervaka resursanvändning](#best-practice-monitor-resource-usage-and-performance): Aktivera diagnostikloggning för Azure-resurser, skapa aviseringar och spel böcker för proaktiv fel sökning och Använd Azure-instrumentpanelen för en enhetlig vy över din distributions hälsa och status.
+- [Hantera support och uppdateringar](#best-practice-manage-updates): förstå ditt support avtal för Azure och hur du implementerar det, få bästa praxis för att hålla virtuella datorer uppdaterade och placera processer i stället för ändrings hantering.
 
 ## <a name="best-practice-name-resource-groups"></a>Bästa praxis: namnge resursgrupper
 
@@ -210,8 +210,8 @@ Om resursgrupperna har beskrivande namn som administratörer och medlemmar i sup
 - Vi rekommenderar att du följer Azures namngivningskonventioner.
 - Om du synkroniserar din lokala Active Directory till Azure AD med hjälp av Azure AD Connect bör du överväga att matcha namnen på säkerhetsgrupper lokalt mot namnen på resursgrupper i Azure.
 
-![Namnge](./media/migrate-best-practices-security-management/naming.png)
-*namngivning av resurs-grupp*
+![namngivning](./media/migrate-best-practices-security-management/naming.png)
+*resurs grupp namn*
 
 **Läs mer:**
 
@@ -221,7 +221,7 @@ Om resursgrupperna har beskrivande namn som administratörer och medlemmar i sup
 
 Det sista du behöver är att en resursgrupp försvinner eftersom den tagits bort av misstag. Vi rekommenderar att du implementerar borttagningslås så att det inte sker.
 
-![Ta bort lås](./media/migrate-best-practices-security-management/locks.png)
+![ta bort lås](./media/migrate-best-practices-security-management/locks.png)
 *ta bort lås*
 
 **Läs mer:**
@@ -405,16 +405,16 @@ Site Recovery replikerar virtuella datorer från en primär till en sekundär Az
 
 ## <a name="best-practice-use-managed-disks-and-availability-sets"></a>Bästa praxis: Använd hanterade diskar och tillgänglighetsuppsättningar
 
-Azure använder tillgänglighetsuppsättningar för att gruppera virtuella datorer logiskt och för att isolera virtuella datorer i en uppsättning från andra resurser. Virtuella datorer i en tillgänglighetsuppsättning sprids över flera feldomäner med separata undersystem, för att skydda mot lokala fel, och de sprids också över flera uppdateringsdomäner så att inte alla virtuella datorer i en uppsättning startas om på samma gång.
+Azure använder tillgänglighetsuppsättningar för att gruppera virtuella datorer logiskt och för att isolera virtuella datorer i en uppsättning från andra resurser. Virtuella datorer i en tillgänglighets uppsättning sprids över flera fel domäner med separata under system, vilket skyddar mot lokala fel. De virtuella datorerna sprids också över flera uppdaterings domäner, vilket förhindrar en samtidig omstart av alla virtuella datorer i uppsättningen.
 
-Hanterade Azure-diskar förenklar diskhantering för virtuella Azure IaaS-datorer genom att hantera de lagringskonton som är associerade med VM-diskarna.
+Azure Managed disks fören klar disk hanteringen för virtuella Azure-datorer genom att hantera lagrings konton som är kopplade till de virtuella dator diskarna.
 
-- Vi rekommenderar att du använder hanterade diskar där det är möjligt. Du behöver bara ange vilken typ av lagring du vill använda och vilken diskstorlek du behöver och sedan skapar och hanterar Azure disken, i bakgrunden.
-- Du kan konvertera befintliga diskar till hanterade.
-- Du bör skapa virtuella datorer i tillgänglighetsuppsättningar för hög återhämtning och tillgänglighet. Vid planerade eller oplanerade avbrott säkerställer tillgänglighetsuppsättningar att minst en av dina virtuella datorer i uppsättningen fortfarande är tillgänglig.
+- Använd Managed disks när det är möjligt. Du behöver bara ange vilken typ av lagring som du vill använda och storleken på den disk du behöver, så skapar och hanterar Azure disken åt dig.
+- Du kan konvertera befintliga diskar till hanterade diskar.
+- Du bör skapa virtuella datorer i tillgänglighetsuppsättningar för hög återhämtning och tillgänglighet. När planerade eller oplanerade avbrott uppstår kontrollerar tillgänglighets uppsättningar att minst en virtuell dator i uppsättningen är tillgänglig.
 
-![Hanterade diskar](./media/migrate-best-practices-security-management/managed-disks.png)
-*hanterade diskar*
+![Managed disks](./media/migrate-best-practices-security-management/managed-disks.png)
+*Managed disks*
 
 **Läs mer:**
 
@@ -553,4 +553,4 @@ Azure har en lösning för ändringsspårning i Azure Automation:
 Läs andra metodtips:
 
 - [Metodtips](./migrate-best-practices-networking.md) för nätverk efter migrering.
-- [Metodtips](./migrate-best-practices-costs.md) för kostnadshantering efter migrering.
+- [Metodtips](./migrate-best-practices-costs.md) för säkerhet och hantering efter migrering.

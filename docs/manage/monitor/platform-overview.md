@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: ea8317bb7490ef7e8aa69950232191f123da4dd8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 99faaa30d67b404e9a9aa1a45d434fd7ec3f2c31
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807605"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223024"
 ---
+<!-- cspell:ignore opsman ITSM -->
+
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>Övervaknings guide för molnet: översikt över Monitoring Platforms
 
 Microsoft tillhandahåller ett antal övervaknings funktioner från två produkter: System Center Operations Manager, som har utformats för lokalt och sedan utökats till molnet, och Azure Monitor som har utformats för molnet, men som även kan övervaka lokala flerprocessorsystem. Dessa två erbjudanden levererar grundläggande övervaknings tjänster, t. ex. avisering, service drift tids spårning, övervakning av program och infrastruktur hälsa, diagnostik och analys.
@@ -50,10 +52,10 @@ Vid 2018-antändningen presenterade vi att Azure Monitor varumärket har utökat
 Från 2015 till och med den 2018 april är Operations Management Suite (OMS) en databunt av följande Azure-hanterings tjänster i licens syfte:
 
 - Application Insights
-- Azure Automatisering
+- Azure Automation
 - Azure Backup
 - Operational Insights (senare ommärkes som Log Analytics)
-- Site Recovery
+- Webbplatsåterställning
 
 Funktionerna i de tjänster som var en del av OMS ändrades inte när OMS skulle upphöra. De justerades under Azure Monitor.
 
@@ -67,7 +69,7 @@ Operations Manager kräver betydande infrastruktur och underhåll för att stöd
 
 ### <a name="azure-monitor"></a>Azure Monitor
 
-Azure Monitor är en SaaS-tjänst (Software as a Service) där all infrastruktur som stöder den körs i Azure och hanteras av Microsoft. Den är utformad för att utföra övervakning, analys och diagnostik i skala och är tillgänglig i alla nationella moln. Kärn delar av infrastrukturen (insamlare, mått och loggar och-analys) som är nödvändiga för att stödja Azure Monitor underhålls av Microsoft.  
+Azure Monitor är ett SaaS-erbjudande (Software as a Service), så att dess stödjande infrastruktur körs i Azure och hanteras av Microsoft. Den utför övervakning, analys och diagnostik i stor skala. Den är tillgänglig i alla nationella moln. Kärn delar av infrastrukturen (insamlare, mått och loggar och analys) som har stöd för Azure Monitor underhålls av Microsoft.  
 
 ![Diagram över Azure Monitor](./media/monitoring-management-guidance-cloud-and-on-premises/azure-monitor-greyed-optimized.svg)
 
@@ -115,9 +117,9 @@ Insikter, till exempel Azure Monitor för behållare och Azure Monitor for VMs, 
 
 Azure Monitor separerar data insamling från åtgärder som vidtagits för dessa data, som stöder distribuerade mikrotjänster i en moln miljö. Den sammanställer data från flera källor till en gemensam data plattform och ger analys-, visualiserings-och aviserings funktioner baserat på insamlade data.
 
-Alla data som samlas in av Azure Monitor lagras som antingen loggar eller mått och olika funktioner i övervakaren förlitar sig på antingen. Mått innehåller numeriska värden i tids serier som lämpar sig väl för aviseringar i nästan real tid och snabb identifiering av problem. Loggar innehåller text eller numeriska data och stöds av ett kraftfullt frågespråk som gör dem särskilt användbara för att utföra komplexa analyser.
+Data som samlas in av Azure Monitor lagras som antingen loggar eller mått, och olika funktioner i Azure Monitor förlitar sig på antingen. Måtten innehåller numeriska värden i tids serier som lämpar sig väl för aviseringar i real tid och snabb identifiering av problem. Loggar innehåller text eller numeriska data och kan frågas med ett kraftfullt språk som är särskilt användbart för att utföra komplexa analyser.
 
-Eftersom övervakaren separerar data insamling från åtgärder mot dessa data, kanske det inte går att tillhandahålla aviseringar i nästan real tid i många fall. För att varna vid loggdata körs frågor på ett återkommande schema som definierats i aviseringen. Med det här beteendet kan Azure Monitor enkelt korrelera data från alla övervakade källor, och du kan analysera data interaktivt på flera olika sätt. Detta är särskilt användbart för att utföra rotor Saks analys och identifiera var felet kan uppstå.
+Eftersom Azure Monitor separerar data insamling från åtgärder mot dessa data, kan det hända att det inte går att tillhandahålla aviseringar i nästan real tid i många fall. För att varna vid loggdata körs frågor på ett återkommande schema som definierats i aviseringen. Med det här beteendet kan Azure Monitor enkelt korrelera data från alla övervakade källor, och du kan analysera data interaktivt på flera olika sätt. Detta är särskilt användbart för att utföra rotor Saks analys och identifiera var felet kan uppstå.
 
 ## <a name="health-monitoring"></a>Hälsoövervakning
 

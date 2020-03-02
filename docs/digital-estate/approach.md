@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: f2a589844b4564bb787db0efe4d796b7e5576309
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 13fef27afdc4ca7622924f3890b72d1847e833c0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170045"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222644"
 ---
 # <a name="approaches-to-digital-estate-planning"></a>Metoder för att planera för digital egendom
 
@@ -23,7 +23,7 @@ Planering av elektronisk fastighets plan kan ta flera formulär beroende på de 
 
 Den bästa bedömnings metoden utvärderar säkerhets aspekter. Säkerhet omfattar kategorisering av data (hög, medel eller låg inverkan på företaget), efterlevnad, suveränitet och säkerhets risk krav. Den här metoden utvärderar arkitektur komplexitet på hög nivå. Den utvärderar aspekter som autentisering, data struktur, latens krav, beroenden och förväntad för program.
 
-Den uppifrån och ned-metoden mäter också programmets operativa krav, till exempel service nivåer, integrering, underhålls fönster, övervakning och insikter. När alla dessa aspekter har analyser ATS och beaktats, vilket resulterande Poäng som återspeglar den relativa svårigheten att migrera det här programmet till varje moln plattform: IaaS, PaaS och SaaS.
+Den uppifrån och ned-metoden mäter också programmets operativa krav, till exempel service nivåer, integrering, underhålls fönster, övervakning och insikter. När de här aspekterna har analyser ATS och övervägts, visar resultatet de relativa svårigheten att migrera det här programmet till varje moln plattform: IaaS, PaaS och SaaS.
 
 Dessutom utvärderar utvärderingen de finansiella fördelarna med programmet, till exempel drift effektivitet, TCO, avkastning på investeringar och andra lämpliga finansiella mått. Utvärderingen undersöker också säsongs beroende för programmet (t. ex. finns det år då efter frågan har uppnåddes?) och total beräknings belastning.
 

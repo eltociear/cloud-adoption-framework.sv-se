@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 326ffa486c07da907ad9e532d5794545ef2dbd9f
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 0aeaa665370c612e89a0d4ce72a2b38b2bb05e2b
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173401"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222234"
 ---
+<!-- cSpell:ignore ccoe -->
+
 # <a name="establish-team-structures"></a>Upprätta team strukturer
 
 Alla moln funktioner tillhandahålls av någon under varje moln implementerings ansträngning. Dessa tilldelningar och team strukturer kan utvecklas ekologiskt, eller så kan de avsiktligt konstrueras för att matcha en definierad team struktur.
@@ -60,7 +62,7 @@ I följande avsnitt beskrivs en fullständigt bemannad, beprövad organisations 
 
 ## <a name="central-it"></a>Central IT
 
-I takt med att implementeringen skalas kan moln styrnings teamet ha svårt att hålla jämna steg med Innovations flödet från flera moln antagande team. Detta gäller särskilt i miljöer som har tung efterlevnad, åtgärder eller säkerhets krav. I det här skedet är det vanligt för företag att flytta moln ansvar till en befintlig central IT-grupp. Om teamet kan utvärdera verktyg, processer och personer för att få bättre stöd för moln användning i stor skala, och det centrala IT-teamet kan lägga till betydande värde. Att samla in experter från åtgärder, automatisering, säkerhet och administration till modernisera central IT kan driva effektiva operativa innovationer.
+I takt med att implementeringen skalas kan moln styrnings teamet ha svårt att hålla jämna steg med Innovations flödet från flera moln antagande team. Detta gäller särskilt i miljöer som har tung efterlevnad, åtgärder eller säkerhets krav. I det här skedet är det vanligt för företag att flytta moln ansvar till en befintlig central IT-grupp. Om det teamet kan utvärdera verktyg, processer och personer för att bättre stödja moln införande i stor skala, och det centrala IT-teamet kan lägga till betydande värde. Att samla in experter från åtgärder, automatisering, säkerhet och administration till modernisera central IT kan driva effektiva operativa innovationer.
 
 ![Moln införande med en central IT-modell](../_images/ready/org-ready-central-it.png)
 

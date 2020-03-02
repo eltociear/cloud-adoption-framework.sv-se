@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c148e62aee2ce7bcd78aa19248b3df8f5cf56129
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 9d50e40ba5877eab0f2aa904f2bcc1e984c309ca
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709353"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223880"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Identitets bas mått, indikatorer och risk tolerans
 
@@ -53,7 +53,7 @@ När du har en bas linje kan du fastställa de lägsta benchmark-värden som rep
 - **Federations utlösare.** Ett företag som implementerar identitets Federation med _x_ externa identitets bas linje system kan dra nytta av investeringar i identitets bas disciplinen för att säkerställa konsekvent organisations policy över Federations medlemmar.
 - **Utökad åtkomst utlösare.** Ett företag med mer än _x%_ av användare med förhöjd behörighet till hanterings verktyg och resurser bör överväga att investera i identitets bas disciplinen för att minimera risken för oavsiktlig överetablering av åtkomst till användare.
 - **RBAC-utlösare.** Ett företag med under _x%_ av resurser som använder rollbaserad åtkomst kontroll metoder bör överväga att investera i identitets bas disciplinen för att identifiera optimerade sätt att tilldela användar åtkomst till resurser.
-- **Autentiserings haveri utlösare.** Ett företag där autentiseringsfel representerar mer än _x%_ av försöken bör investera i identitets bas disciplinen för att säkerställa att autentiseringsmetoder inte är under externa angrepp och att användarna kan använda autentiseringsmetoderna på rätt sätt.
+- **Autentiserings haveri utlösare.** Ett företag där autentiseringsfel representerar mer än _x%_ av försöken bör investera i identitets bas punkten för att säkerställa att autentiseringsmetoder inte är under externa angrepp och att användarna kan autentisera sig på rätt sätt.
 - **Utlösa auktoriseringsfel.** Ett företag där åtkomst försök nekas mer än _x%_ av tiden bör investera i identitets bas punkten för att förbättra programmet och uppdatering av åtkomst kontroller och identifiera potentiellt skadliga åtkomst försök.
 - **Komprometterad konto utlösare.** Ett företag med mer än 1 komprometterat konto bör investera i identitets bas punkten för att förbättra hållfastheten och säkerheten för autentiseringsmekanismer och förbättra mekanismer för att åtgärda risker som rör komprometterade konton.
 

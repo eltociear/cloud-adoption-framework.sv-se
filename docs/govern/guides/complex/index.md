@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 99f4a240f186af763c64f06aab580e5aecc4acc4
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 4729e8e82cfa6674586cbeb8577fe8c3316423f0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709149"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223948"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Styrningsguide för komplexa företag
 
@@ -39,10 +39,14 @@ Följande diagram visar MVP-styrningshierarkin för att organisera resurser.
 Varje program bör distribueras i korrekt område i hierarkin för hanteringsgrupp, prenumeration och resursgrupp. Under distributionsplaneringen skapar teamet för molnstyrning nödvändiga noder i hierarkin för att stödja molnimplementeringsteamen.
 
 1. Definiera en hanteringsgrupp för varje affärsenhet med en detaljerad hierarki som återspeglar det geografiska området först och sedan miljötypen (till exempel produktionsmiljö eller icke-produktionsmiljö).
-2. Skapa en prenumeration för produktionsmiljön och en som inte är avsedd för produktionsmiljön för varje unik kombination med en diskret affärsenhet eller ett geografiskt område. Att skapa flera prenumerationer kräver noggrant övervägande. Mer information finns i guiden [Prenumerationsbeslut](../../../decision-guides/subscriptions/index.md).
-3. Tillämpa [konsekvent terminologi](../../../ready/azure-best-practices/naming-and-tagging.md) på varje nivå i den här grupperingshierarkin.
-4. Resursgrupper bör distribueras på ett sätt som tar hänsyn till innehållets livslängd. Resurser som utvecklas tillsammans, hanteras tillsammans och dras tillbaka tillsammans tillhör samma resursgrupp. Mer information om metodtips för att använda resursgrupper finns [här](../../../decision-guides/resource-consistency/index.md).
-5. [Valet av region](../../../decision-guides/regions/index.md) är otroligt viktigt. Du måste se till att nätverk, övervakning och granskning är tillgängligt för redundans/återställning och att [nödvändiga SKU:er är tillgängliga i de önskade regionerna](https://azure.microsoft.com/global-infrastructure/services).
+
+1. Skapa en prenumeration för produktionsmiljön och en som inte är avsedd för produktionsmiljön för varje unik kombination med en diskret affärsenhet eller ett geografiskt område. Att skapa flera prenumerationer kräver noggrant övervägande. Mer information finns i guiden [Prenumerationsbeslut](../../../decision-guides/subscriptions/index.md).
+
+1. Tillämpa [konsekvent terminologi](../../../ready/azure-best-practices/naming-and-tagging.md) på varje nivå i den här grupperingshierarkin.
+
+1. Resursgrupper bör distribueras på ett sätt som tar hänsyn till innehållets livslängd. Resurser som utvecklas tillsammans, hanteras tillsammans och dras tillbaka tillsammans tillhör samma resursgrupp. Mer information om metodtips för att använda resursgrupper finns [här](../../../decision-guides/resource-consistency/index.md).
+
+1. [Valet av region](../../../decision-guides/regions/index.md) är otroligt viktigt. Du måste se till att nätverk, övervakning och granskning är tillgängligt för redundans/återställning och att [nödvändiga SKU:er är tillgängliga i de önskade regionerna](https://azure.microsoft.com/global-infrastructure/services).
 
 ![Diagram över resursorganisering för stort företag](../../../_images/govern/large-enterprise-resource-organization.png)
 

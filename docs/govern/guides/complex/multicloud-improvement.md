@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 07126e67dbe76562e664e35a4817d0e51733236f
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 9f4b11023e8b345283054c0ddede132f10664632
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709183"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223931"
 ---
 # <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>Styrnings guide för komplexa företag: förbättringar i multimolnet
 
@@ -31,7 +31,7 @@ Sedan dess har vissa saker ändrats som påverkar styrning:
 
 - Identiteten styrs av en lokal instans av Active Directory. Hybrid identitet under lättas genom replikering till Azure Active Directory.
 - IT-åtgärder eller moln åtgärder hanteras i stor utsträckning av Azure Monitor och relaterade automatiserings funktioner.
-- Haveri beredskap och affärs kontinuitet (DRBC) styrs av Azure Vault instances.
+- Verksamhets kontinuitet och haveri beredskap (BCDR) styrs av Azure Vault instances.
 - Azure Security Center används för att övervaka säkerhets överträdelser och attacker.
 - Azure Security Center och Azure Monitor används båda för att övervaka styrning av molnet.
 - Azure-ritningar, Azure Policy-och hanterings grupper används för att automatisera efterlevnaden av principen.

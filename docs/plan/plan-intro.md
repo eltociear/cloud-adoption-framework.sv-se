@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a900ca61f957f941728829208cf72bc8f2aba601
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 36d87caae344414e7bb311fb032d28f58bc5ea6c
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800329"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222166"
 ---
 # <a name="plan-for-cloud-adoption"></a>Planera för moln införande
 
@@ -22,7 +22,7 @@ En plan är ett grundläggande krav för ett framgångs rik moln införande. En 
 
 Moln införande planer börjar med en väldefinierad strategi. Strategin bör minst sammanfatta motiveringarna, företags resultatet och affärs motiveringar för moln införande. Dessa positiva returer bal anse ras sedan av den insats som krävs för att realisera dem.
 
-Ansträngningen börjar med den digitala egendomen (föreslagen eller befintlig), vilket översätter strategin till mer materiella arbets belastningar och till gångar. Du kan sedan mappa dessa materiella element till teknisk verksamhet. Därifrån kan personer i en lämplig organisations struktur köra det tekniska arbetet. Moln implementerings planen kombinerar alla dessa ämnen till en plan som kan bedömas, budgeteras, implementeras och hanteras med hjälp av smidiga projekt hanterings metoder. Den här artikel serien hjälper dig att skapa planen och innehåller några mallar som gör det enklare att utföra jobbet.
+Ansträngningen börjar med den digitala egendomen (föreslagen eller befintlig), vilket översätter strategin till mer materiella arbets belastningar och till gångar. Du kan sedan mappa dessa materiella element till teknisk verksamhet. Därifrån kan personer i en lämplig organisations struktur köra det tekniska arbetet. I moln implementerings planen kombineras dessa ämnen till en plan som kan bedömas, budgeteras, implementeras och hanteras med hjälp av smidiga projekt hanterings metoder. Den här artikel serien hjälper dig att skapa planen och innehåller några mallar som gör det enklare att utföra jobbet.
 
 ## <a name="transition-from-sequential-to-iterative-planning"></a>Över gång från sekventiell till iterativ planering
 

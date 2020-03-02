@@ -7,19 +7,19 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dbb2d190fcbe787cd3ee26cc0803566b398e945d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: df6851ff628c0abcb38ee9139fcf24f31e2117cf
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807945"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223276"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Verktyg och tjänster för Azure Server Management
 
 Som beskrivs i [översikten](./index.md) över den här vägledningen täcker sviten för Azure Server Management Services följande områden:
 
 - Migrera
-- Säkert
+- Skydda
 - Skydda
 - Övervaka
 - Konfigurera
@@ -31,13 +31,13 @@ I följande avsnitt beskrivs kortfattat dessa hanterings områden och länkar ti
 
 Migration Services kan hjälpa dig att migrera dina arbets belastningar till Azure. För att tillhandahålla den bästa vägledningen börjar Azure Migrate tjänsten genom att mäta lokala server prestanda och utvärdera lämplighet för migrering. När Azure Migrate har slutfört utvärderingen kan du använda [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) och [Azure Database migration service](https://docs.microsoft.com/azure/dms/dms-overview) för att migrera dina lokala datorer till Azure.
 
-## <a name="secure"></a>Säkert
+## <a name="secure"></a>Skydda
 
 [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) är ett omfattande säkerhets hanterings program. Genom att registrera dig på Security Center kan du snabbt få en bedömning av miljöns status för säkerhet och regelefterlevnad. Instruktioner för hur du registrerar dina servrar på Azure Security Center finns i [Konfigurera Azure Management Services för en prenumeration](./onboard-at-scale.md#azure-security-center).
 
 ## <a name="protect"></a>Skydda
 
-För att skydda dina data måste du planera för säkerhets kopiering, hög tillgänglighet, kryptering, auktorisering och relaterade drifts problem. De här avsnitten är mycket omfattande online, så här fokuserar vi på att skapa en plan för affärs kontinuitets haveri beredskap (BCDR). Vi innehåller referenser till dokumentation som beskriver i detalj hur du implementerar och distribuerar den här typen av plan.
+För att skydda dina data måste du planera för säkerhets kopiering, hög tillgänglighet, kryptering, auktorisering och relaterade drifts problem. De här avsnitten är mycket omfattande online, så här fokuserar vi på att skapa en plan för affärs kontinuitet och haveri beredskap (BCDR). Vi innehåller referenser till dokumentation som beskriver i detalj hur du implementerar och distribuerar den här typen av plan.
 
 När du skapar data skydds strategier bör du först överväga att dela upp dina arbets belastnings program i olika nivåer. Den här metoden hjälper eftersom varje nivå vanligt vis kräver en egen unik skydds plan. Mer information om hur du skapar program som ska vara elastiska finns i [utforma elastiska program för Azure](https://docs.microsoft.com/azure/architecture/resiliency).
 

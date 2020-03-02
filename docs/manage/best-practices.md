@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9fbdeccc3ed1c1acb516f9aceadc3d8dc8732030
-ms.sourcegitcommit: 35d01bccc8ecbec38f6247a065a309ec691ca810
+ms.openlocfilehash: b426acdc4ae88a88acd295758be4e2d4a6b85dc0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77213617"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223272"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>Upprätta operativa hanterings metoder i molnet
 
@@ -39,7 +39,7 @@ Båda dessa metod tips bygger på en metod för framtida tillstånd för Operati
 - **Operativa krav:** Regelbunden hantering av konfiguration, storlek, kostnad och prestanda för till gångar är nyckeln till att bibehålla prestanda förväntningarna.
 - **Skydda och återställa:** Att minimera drift avbrott och påskynda återställningen hjälper företaget att undvika prestanda förluster och negativ inkomst påverkan. Identifiering och återställning är viktiga aspekter inom det här området.
 - **Plattforms åtgärder:** Alla IT-miljöer innehåller en uppsättning ofta använda plattformar. Dessa plattformar kan omfatta data lager som SQL Server eller Azure HDInsight. Andra vanliga plattformar kan omfatta behållar lösningar som Azure Kubernetes service (AKS). Oavsett plattform, fokuserar plattforms drifts förfallo tiden på att anpassa åtgärder baserat på hur de gemensamma plattformarna distribueras, konfigureras och används av arbets belastningar.
-- **Arbets belastnings åtgärder:** På den högsta nivån av drifts förfallo tid kan moln drifts grupper justera åtgärder för arbets belastningar som är viktiga för företagets framgång. För dessa arbets belastningar med hög allvarlighets grad kan tillgängliga data hjälpa till med automatisering av reparation, storlek eller skydd av arbets belastningar baserat på deras användning.
+- **Arbets belastnings åtgärder:** På den högsta nivån av drifts förfallo tid kan moln drifts grupper finjustera åtgärder för kritiska arbets belastningar. För dessa arbets belastningar kan tillgängliga data hjälpa till med automatisering av reparation, storleks ändring eller skydd av arbets belastningar baserat på deras användning.
 
 Ytterligare vägledning, till exempel [ramverket för design granskning (kod namn: principer för moln design)](https://docs.microsoft.com/azure/architecture/framework/resiliency/overview), kan hjälpa dig att fatta detaljerade arkitektoniska beslut om varje arbets belastning, inom de tidigare beskrivna ämnes områden.
 

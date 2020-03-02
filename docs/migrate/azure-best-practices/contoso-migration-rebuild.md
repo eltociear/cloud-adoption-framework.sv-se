@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: e2904356871eec65b516b7a02c356c679ab86b33
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1b8afc8da78d171d0d420730f05d5583b231ddd1
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807503"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223100"
 ---
+<!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel smarthotelcontoso smarthotelakseus smarthotelacreus smarthotelpets smarthotelpetchecker smarthotelsettingsurl vcenter WEBVM SQLVM eastus kubectl contosodevops visualstudio azuredeploy cloudapp publishfront petchecker appsettings -->
+
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Bygga om en lokal app i Azure
 
 Den här artikeln beskriver hur det fiktiva företaget Contoso bygger om en Windows .NET-app med två nivåer som körs på virtuella VMware-datorer som en del av en migrering till Azure. Contoso migrerar appens virtuella dator på klientsidan till en Azure App Service-webbapp. Serverdelen för appen skapas med mikrotjänster som distribueras till containrar som hanteras av Azure Kubernetes Service (AKS). Webbplatsen interagerar med Azure Functions för att tillhandahålla en funktion för bilder på husdjur.
@@ -27,7 +29,7 @@ IT-ledningsgruppen har arbetat tillsammans med affärspartner för att komma fra
 
 - **Hantera företagets tillväxt.** Contoso växer och vill erbjuda differentierade upplevelser för kunder på Contosos webbplatser.
 - **Öka flexibiliteten.** Contoso måste kunna reagera snabbare än förändringarna på marknaden för att företaget ska lyckas i en global ekonomi.
-- **Skala.** När företagets verksamhet växer måste Contosos IT-team tillhandahålla system som kan växa i samma takt.
+- **Skala.** När verksamheten växer måste Contosos IT-team tillhandahålla system som kan växa i samma takt.
 - **Minska kostnaderna.** Contoso vill minimera licenskostnaderna.
 
 ## <a name="migration-goals"></a>Migreringsmål
@@ -53,7 +55,7 @@ Efter att ha fastställt målen och kraven kan Contoso utforma och utvärdera en
 - De virtuella datorerna finns på VMware ESXi-värden **contosohost1.contoso.com** (version 6.5)
 - VMware-miljön hanteras av vCenter Server 6.5 (**vcenter.contoso.com**), som körs på en virtuell dator.
 - Contoso har ett lokalt datacenter (contoso-datacenter) med en lokal domänkontrollant (**contosodc1**).
-- De lokala, virtuella datorerna i Contosos datacentret inaktiveras när migreringen är färdig.
+- De lokala, virtuella datorerna i Contosos datacenter inaktiveras när migreringen är färdig.
 
 ### <a name="proposed-architecture"></a>Föreslagen arkitektur
 
@@ -67,7 +69,7 @@ Efter att ha fastställt målen och kraven kan Contoso utforma och utvärdera en
 
     ![Scenariots arkitektur](./media/contoso-migration-rebuild/architecture.png)
 
-### <a name="solution-review"></a>Utvärdering av lösningen
+### <a name="solution-review"></a>Lösningsgranskning
 
 Contoso utvärderar den föreslagna designen genom att skapa en lista med för- och nackdelar.
 
@@ -75,12 +77,12 @@ Contoso utvärderar den föreslagna designen genom att skapa en lista med för- 
 
 **Övervägande** | **Detaljer**
 --- | ---
-**Fördelar** | Användningen av PaaS och serverlösa lösningar för distribution från slutpunkt till slutpunkt minskar avsevärt hanteringstiden för Contoso.<br/><br/> Genom att flytta till en arkitektur för mikrotjänster kan Contoso enkelt utöka lösningen med tiden.<br/><br/> Nya funktioner kan tas online utan att kodbasen för befintliga lösningar påverkas.<br/><br/> Webbappen konfigureras med flera instanser utan någon enskild felpunkt.<br/><br/> Autoskalning aktiveras så att appen kan hantera olika trafikvolymer.<br/><br/> Med flytten till PaaS Services kan Contoso ta bort inaktuella lösningar som körs på Windows Server 2008 R2-operativsystem.<br/><br/> Cosmos DB har inbyggd feltolerans, vilket inte kräver någon konfiguration av Contoso. Detta innebär att datanivån inte längre är en felkritisk systemdel.
+**Fördelar** | Användningen av PaaS och serverlösa lösningar för distribution från slutpunkt till slutpunkt minskar avsevärt hanteringstiden för Contoso.<br/><br/> Genom att flytta till en arkitektur för mikrotjänster kan Contoso enkelt utöka lösningen över tid.<br/><br/> Nya funktioner kan tas online utan att kodbasen för befintliga lösningar påverkas.<br/><br/> Webbappen konfigureras med flera instanser utan någon enskild felpunkt.<br/><br/> Autoskalning aktiveras så att appen kan hantera olika trafikvolymer.<br/><br/> Med flytten till PaaS Services kan Contoso ta bort inaktuella lösningar som körs på Windows Server 2008 R2-operativsystem.<br/><br/> Cosmos DB har inbyggd feltolerans, vilket inte kräver någon konfiguration av Contoso. Detta innebär att datanivån inte längre är en felkritisk systemdel.
 **Nackdelar** | Containrar är mer komplexa än andra migreringsalternativ. Inlärningskurvan kan vara ett problem för Contoso. De medför komplexitet på en ny nivå, som ger stort värde trots kurvan.<br/><br/> Driftteamet på Contoso måste lära sig mer om Azure, containrar och mikrotjänster för appen.<br/><br/> Contoso har inte helt implementerat DevOps för hela lösningen. Contoso måste överväga det för distributionen av tjänster till AKS, Azure Functions och Azure App Service.
 
 <!-- markdownlint-enable MD033 -->
 
-### <a name="migration-process"></a>Migreringsprocessen
+### <a name="migration-process"></a>Migreringsprocess
 
 1. Contoso etablerar ACR, AKS och Cosmos DB.
 2. De etablerar infrastrukturen för distributionen, inklusive webbappen, lagringskontot, funktionen och API:et för Azure App Service.
@@ -88,7 +90,7 @@ Contoso utvärderar den föreslagna designen genom att skapa en lista med för- 
 4. Contoso distribuerar dessa mikrotjänster till AKS med hjälp av ett PowerShell-skript.
 5. Slutligen distribuerar de funktionen och webbappen.
 
-    ![Migreringsprocessen](./media/contoso-migration-rebuild/migration-process.png)
+    ![Migreringsprocess](./media/contoso-migration-rebuild/migration-process.png)
 
 ### <a name="azure-services"></a>Azure-tjänster
 
@@ -97,9 +99,9 @@ Contoso utvärderar den föreslagna designen genom att skapa en lista med för- 
 [AKS](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Förenklar hanteringen, distributionen och åtgärderna för Kubernetes. Tillhandahåller en fullständigt hanterad orkestreringstjänst för Kubernetes-containrar. | AKS är en kostnadsfri tjänst. Betala bara för de virtuella datorerna och de associerade lagrings- och nätverksresurser som förbrukas. [Läs mer](https://azure.microsoft.com/pricing/details/kubernetes-service).
 [Azure Functions](https://azure.microsoft.com/services/functions) | Utveckla snabbare med en händelsedriven miljö för databearbetning utan server. Skala på begäran. | Betala endast för de resurser du använder. Planen faktureras baserat på resursanvändning och körningar per sekund. [Läs mer](https://azure.microsoft.com/pricing/details/functions).
 [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | Lagrar avbildningar för alla typer av containerdistributioner. | Kostnad baserad på funktioner, lagring och användningstid. [Läs mer](https://azure.microsoft.com/pricing/details/container-registry).
-[Azure App Service](https://azure.microsoft.com/services/app-service/containers) | Skapa, distribuera och skala snabbt webb-, mobil- och API-appar i företagsklass som körs på valfri plattform. | App Service-planer faktureras per sekund. [Läs mer](https://azure.microsoft.com/pricing/details/app-service/windows).
+[Azure Apptjänst](https://azure.microsoft.com/services/app-service/containers) | Skapa, distribuera och skala snabbt webb-, mobil- och API-appar i företagsklass som körs på valfri plattform. | App Service-planer faktureras per sekund. [Läs mer](https://azure.microsoft.com/pricing/details/app-service/windows).
 
-## <a name="prerequisites"></a>Krav
+## <a name="prerequisites"></a>Förutsättningar
 
 Det här är vad Contoso behöver i det här scenariot:
 
@@ -108,12 +110,12 @@ Det här är vad Contoso behöver i det här scenariot:
 **Krav** | **Detaljer**
 --- | ---
 **Azure-prenumeration** | Contoso skapade prenumerationer i en tidigare artikel. Om du inte har någon Azure-prenumeration kan du skapa ett [kostnadsfritt konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Om du skapar ett kostnadsfritt konto är du administratör för din prenumeration och kan utföra alla åtgärder.<br/><br/> Om du använder en befintlig prenumeration och inte är administratör måste du be administratören att ge dig ägar- eller deltagarbehörighet.
-**Azure-infrastruktur** | [Läs om](./contoso-migration-infrastructure.md) hur Contoso konfigurerade en Azure-infrastruktur.
+**Azure-infrastruktur** | [Läs om hur](./contoso-migration-infrastructure.md) Contoso konfigurerar en Azure-infrastruktur.
 **Krav för utvecklare** | Contoso behöver följande verktyg på en arbetsstation för utvecklare:<br/><br/> - [Visual Studio 2017 Community Edition: Version 15,5](https://www.visualstudio.com)<br/><br/> .NET-arbetsbelastning aktiverad.<br/><br/> [Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> [Docker CE (Windows 10) eller Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) konfigurerat att använda Windows-containrar.
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="scenario-steps"></a>Scenariosteg
+## <a name="scenario-steps"></a>Steg i scenariot
 
 Contoso genomför migreringen på följande sätt:
 
@@ -178,7 +180,7 @@ Contosos administratörer etablerar enligt följande:
 
 9. När distributionen är färdig installerar de kommandoradsverktyget **kubectl**. Verktyget är redan installerat i Azure CloudShell.
 
-   ```console
+   ```azurecli
    az aks install-cli
    ```
 
@@ -188,7 +190,7 @@ Contosos administratörer etablerar enligt följande:
 
 11. De kör följande kommando för att starta Kubernetes-instrumentpanelen:
 
-    ```console
+    ```azurecli
     az aks browse --resource-group ContosoRG --name smarthotelakseus2
     ```
 
@@ -244,7 +246,7 @@ Contoso skapar ett Azure DevOps-projekt och konfigurerar ett CI-bygge för att s
 
     ![Azure DevOps](./media/contoso-migration-rebuild/vsts10.png)
 
-12. Återigen anger de filen till docker-compose. yaml-filen, väljer **Push service images** (Push-överför tjänstavbildningar) och lägger till den senaste taggen. När åtgärden ändras till **Push service images** (Push-överför tjänstavbildningar) ändras namnet på Azure DevOps-aktiviteten till **Push services automatically** (Push-överför tjänster automatiskt).
+12. Återigen anger de filen till Docker-Compose. yaml-filen och väljer sedan **push service-avbildningar** och inkluderar den senaste taggen. När åtgärden ändras till **Push service images** (Push-överför tjänstavbildningar) ändras namnet på Azure DevOps-aktiviteten till **Push services automatically** (Push-överför tjänster automatiskt).
 
     ![Azure DevOps](./media/contoso-migration-rebuild/vsts11.png)
 
@@ -269,10 +271,11 @@ När AKS-klustret har skapats och Docker-avbildningarna har byggts distribuerar 
 
 De distribueras på följande sätt:
 
-1. De öppnar en kommandotolk för utvecklare och använder kommandot az login för Azure-prenumerationen.
+1. De öppnar en kommando tolk för utvecklare och använder kommandot `az login` för Azure-prenumerationen.
+
 2. De använder filen deploy.cmd för att distribuera Azure-resurser i resursgruppen ContoRG och regionen EUS2 genom att skriva följande kommando:
 
-    ```console
+    ```azurecli
     .\deploy.cmd azuredeploy ContosoRG -c eastus2
     ```
 
@@ -353,7 +356,7 @@ I anvisningarna i det här avsnittet används lagringsplatsen [SmartHotel360-pub
 
 ### <a name="create-blob-storage-containers"></a>Skapa bloblagringscontainrar
 
-1. På Azure-portalen öppnar de lagringskontot som skapades och väljer **Blobar**.
+1. I Azure Portal öppnar de det lagrings konto som skapades och väljer sedan **blobbar**.
 2. De skapar en ny behållare, **Pets** (Husdjur), med den offentliga åtkomstnivån inställd på container. Användarna kommer att överföra bilderna på sina husdjur till den här containern.
 
     ![Lagringsblob](./media/contoso-migration-rebuild/blob1.png)
@@ -374,7 +377,7 @@ Contosos administratörer etablerar en Cosmos-databas som ska användas för inf
 
     ![Cosmos DB](./media/contoso-migration-rebuild/cosmos1.png)
 
-2. De anger ett namn (**contosomarthotel**), väljer SQL-API:et och placerar det i produktionsresursgruppen ContosoRG i huvudregionen USA, östra 2.
+2. De anger ett namn (**contososmarthotel**), väljer SQL-API och placerar det i produktions resurs gruppen conto sorg i huvud regionen USA, östra 2.
 
     ![Cosmos DB](./media/contoso-migration-rebuild/cosmos2.png)
 
@@ -520,7 +523,7 @@ Nu kan Contosos administratörer publicera webbplatsen.
     ![Ny miljö](./media/contoso-migration-rebuild/vsts-publishfront8.png)
 
 14. De väljer **Azure App Service deployment with slot** (Azure App Service-distribution med plats) och ger miljön namnet **Prod** (produktion).
-15. De väljer **1 jobb, 2 aktiviteter** och väljer prenumerationen, apptjänstnamnet och **mellanlagringsplatsen**.
+15. De väljer **1 jobb, 2 aktiviteter**och väljer sedan prenumerationen, App Service-namnet och **mellanlagrings** platsen.
 
     ![Miljönamn](./media/contoso-migration-rebuild/vsts-publishfront10.png)
 
@@ -565,12 +568,12 @@ Contosos administratörer distribuerar appen på följande sätt.
     ![Distribuera funktionsappen](./media/contoso-migration-rebuild/function5.png)
 
 4. De checkar in koden och synkroniserar den med Azure-DevOps så att ändringarna överförs.
-5. De lägger till en ny bygg-pipeline och väljer **Git-lagringsplatsen för Azure DevOps** som källa.
+5. De lägger till en ny versions pipeline och väljer sedan **Azure DevOps git** för källan.
 6. De väljer mallen **ASP.NET Core (.NET Framework)** .
 7. De accepterar standardvärdena för mallen.
-8. I **Utlösare** väljer de att **aktivera kontinuerlig integrering** och väljer **Spara och köa** för att starta ett bygge.
+8. I **utlösare**väljer du att **aktivera kontinuerlig integrering**och väljer sedan **Spara & kö** för att starta en version.
 9. När bygget är klart skapar de en bygg-pipeline och väljer **Azure App Service deployment with slot** (Azure App Service-distribution med plats).
-10. De ger miljön namnet **Prod** (produktion) och väljer prenumerationen. De anger **apptypen** till **Funktionsapp** och apptjänstnamnet till **smarthotelpetchecker**.
+10. De **namnger miljön och**väljer sedan prenumerationen. De anger **apptypen** till **Funktionsapp** och apptjänstnamnet till **smarthotelpetchecker**.
 
     ![Funktionsapp](./media/contoso-migration-rebuild/petchecker2.png)
 
@@ -578,7 +581,7 @@ Contosos administratörer distribuerar appen på följande sätt.
 
     ![Artefakt](./media/contoso-migration-rebuild/petchecker3.png)
 
-12. De aktiverar **utlösare av kontinuerlig distribution** och väljer **Spara**.
+12. De aktiverar **kontinuerlig distributions utlösare**och väljer sedan **Spara**.
 13. De väljer **Köa ny version** för att köra hela CI/CD-pipelinen.
 14. När funktionen har distribuerats visas den på Azure-portalen med statusen **Körs**.
 
@@ -621,7 +624,7 @@ Med de migrerade resurserna i Azure måste Contoso fullständigt operationaliser
 - All licensiering är inbyggd i kostnaden för de PaaS-tjänster som Contoso använder. Detta kommer att dras av från Enterprise-avtalet.
 - Contoso aktiverar Azure Cost Management som licensieras av Cloudyn, ett Microsoft-dotterbolag. Det är en kostnadshanteringslösning med flera moln som hjälper dig att använda och hantera Azure och andra molnresurser. [Läs mer](https://docs.microsoft.com/azure/cost-management/overview) om Azure Cost Management.
 
-## <a name="conclusion"></a>Slutsats
+## <a name="conclusion"></a>Sammanfattning
 
 I den här artikeln bygger Contoso upp SmartHotel360-appen i Azure. Den virtuella datorn för den lokala appen på klientsidan återskapas till Azure App Service-webbappar. Serverdelen för programmet skapas med mikrotjänster som distribueras till containrar som hanteras av Azure Kubernetes Service (AKS). Contoso förbättrade appfunktionerna med en app för husdjursbilder.
 
@@ -633,4 +636,4 @@ Här följer några exempel på skräddarsydda utbildnings vägar på Microsoft 
 
 [Distribuera en webbplats till Azure med Azure App Service](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service/): med webbappar i Azure kan du enkelt publicera och hantera din webbplats utan att behöva arbeta med de underliggande servrarna, lagrings enheterna eller nätverks resurserna. Fokusera istället på webbplatsens funktioner och låt den robusta Azure-plattformen ge säker åtkomst till din webbplats.
 
-[Bearbeta och klassificera avbildningar med Azure kognitiv vision Services](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services/): Azure Cognitive Services erbjuder inbyggda funktioner för att aktivera funktioner för dator funktioner i dina program. Lär dig hur du använder kognitiv vision Services för att identifiera ansikten, tagga och klassificera bilder och identifiera objekt.
+[Bearbeta och klassificera avbildningar med Azure-funktionen vision Services](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services/): Azure Cognitive Services erbjuder inbyggda funktioner för att aktivera funktioner för dator vision i dina program. Lär dig hur du använder kognitiv vision Services för att identifiera ansikten, tagga och klassificera bilder och identifiera objekt.

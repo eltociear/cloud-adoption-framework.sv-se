@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 7ecf2ed4b9d66f6f1ccc7d65c1c0e9146a4046da
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a406d0c05594cff736265b0b69e24dcc8bc0f695
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807622"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223239"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>Övervaknings guide för molnet: samla in rätt data
 
@@ -23,7 +23,7 @@ Om du vill kontrol lera moln lösningens hälso tillstånd och tillgänglighet m
 
 Planera för övervakning och migrering omsorgsfullt. Börja med att ta med övervaknings tjänstens ägare, verksamhets chefen och annan relaterad personal under planerings fasen och fortsätt att engagera dem i utvecklings-och lanserings cykeln. Fokus är att utveckla en övervaknings konfiguration som baseras på följande kriterier:
 
-- Vad är tjänstens sammansättning och vilka beroenden som övervakas idag? I så fall, finns det flera verktyg som ingår? Finns det någon möjlighet att konsolidera, utan att introducera risker?
+- Vad är tjänstens sammansättning? Övervakas dessa beroenden idag? I så fall, finns det flera verktyg som ingår? Finns det någon möjlighet att konsolidera, utan att introducera risker?
 - Vad är service avtalet och hur ska jag mäta och rapportera det?
 - Vad ska instrument panelen för tjänsten se ut när en incident höjs? Vad ska instrument panelen se ut för tjänstens ägare och för teamet som stöder tjänsten?
 - Vilka mått ger resursen som jag behöver övervaka?  

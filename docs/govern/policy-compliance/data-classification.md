@@ -1,6 +1,6 @@
 ---
 title: Vad är dataklassificering?
-description: Använd data klassificering som utgångs punkt för moln styrning genom att fastställa och tilldela värde till din organisations data.
+description: Med data klassificering kan du fastställa och tilldela ett värde till din organisations data och en gemensam utgångs punkt för styrning.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e956f2c4690d2020770d4da3e50bb163994c4c66
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 1680a78af449731ea7e15525d3e276998a73c0d4
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706701"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223790"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-is-data-classification"></a>Vad är dataklassificering?
 
-Med data klassificering kan du fastställa och tilldela ett värde till din organisations data och det är en gemensam utgångs punkt för styrning. Data klassificerings processen kategoriserar data efter känslighet och affärs påverkan för att identifiera risker. När data klassificeras kan du hantera dem på ett sätt som skyddar känsliga eller viktiga data från stöld eller förlust.
+Med data klassificering kan du fastställa och tilldela ett värde till din organisations data och en gemensam utgångs punkt för styrning. Data klassificerings processen kategoriserar data efter känslighet och affärs påverkan för att identifiera risker. När data klassificeras kan du hantera dem på ett sätt som skyddar känsliga eller viktiga data från stöld eller förlust.
 
 ## <a name="understand-data-risks-then-manage-them"></a>Förstå data risker och hantera dem
 

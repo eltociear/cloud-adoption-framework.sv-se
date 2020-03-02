@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 5ad76f9d1b5b34772396f28cd5c5ba829785f76c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1c2bab06607147f5d0fe40ff714e6adb81e2a013
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798374"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225122"
 ---
+<!-- cSpell:ignore Exak -->
+
 # <a name="examples-of-customer-engagement-outcomes"></a>Exempel på resultat från kund engagemang
 
 Som det beskrivs i [översikten över företags resultat](./index.md)kan flera potentiella affärs resultat fungera som grund för alla omvandlings resor i samtal med verksamheten. Den här artikeln fokuserar på ett gemensamt verksamhets mått: kund engagemang. Att förstå kundernas behov och eko systemet bidrar till att leda affärs resultat som är mål för ett företags omvandlings resa.
@@ -28,7 +30,7 @@ Följande är exempel och resultat relaterade till kund engagemang:
 
 Vid Obsessed omvandlingar, som en molnbaserad program Innovations ansträngning, svarar kunder från direkt engagemang och möjligheten att snabbt se att de behöver uppfyllas av utvecklings teamet. Cykel tiden är en Six Sigma-term som refererar till varaktigheten från början till slut för en funktion. För företags ledare som är kund-Obsessed och som investerar kraftigt i att förbättra kund engagemang kan cykel tiden vara ett starkt affärs resultat.
 
-- **Exempel:** Ett tjänste företag som tillhandahåller B2B-tjänster (Business-to-Business) försöker hålla på marknads andelar på en konkurrens kraftig marknad. Kunder som har lämnat en konkurrerande tjänst leverantör har angett att deras komplexa tekniska lösningar stör sina affärs processer och är den främsta anledningen till att de lämnar. I det här fallet är cykel tiden absolut nödvändig. Idag tar det 12 månader innan en funktion skickas från begäran till version. Om den prioriteras av Executive-teamet kan den cykeln minskas till sex till nio månader. Genom en molnbaserad program Innovations ansträngning, molnbaserade program modeller och Azure DevOps-integrering har teamet möjlighet att ta bort cykel tiden till en månad, vilket gör det möjligt för affärs-och program utvecklings team att interagera mer direkt med kunden.
+- **Exempel:** Ett tjänste företag som tillhandahåller B2B-tjänster (Business-to-Business) försöker behålla marknads andelar på en konkurrensutsatt marknad. Kunder som har lämnat en konkurrerande tjänst leverantör upptäckte att deras komplexa tekniska lösningar stör sina affärs processer och är den främsta orsaken till att de lämnar. I det här fallet är cykel tiden absolut nödvändig. Idag tar det 12 månader innan en funktion kan fortsätta att lanseras. Om den prioriteras av Executive-teamet kan den cykeln minskas till sex till nio månader. Genom en molnbaserad program Innovations ansträngning, molnbaserade program modeller och Azure DevOps-integrering, tar teamets avskurna cykel tid nedåt till en månad, vilket gör det möjligt för affärs-och program utvecklings team att interagera mer direkt med kunderna.
 
 > **ExakTime**
 >

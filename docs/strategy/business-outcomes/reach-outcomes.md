@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6e9a791507a67ddbd53988f1adadd46c4689cd00
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 94129d863d524b6ff618835c271c14756487e587
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798357"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225233"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>Exempel på globala räckvidds resultat
 
@@ -28,11 +28,11 @@ Att utöka till en ny marknad kan vara en av de mest värdefulla affärs resulta
 
 - **Exempel:** En kosmetik-tillverkare har identifierat en trend. Vissa produkter levereras till den Asien och stillahavsområdet regionen även om inga försäljnings team körs i den regionen. Minimi kraven för de system som krävs av en fjärran sluten Sälj kraft är små, men latens förhindrar en lösning för fjärråtkomst. För att göra den här trenden i den här trenden vill försäljnings avdelningen experimentera med sälj team i Japan och Korea. Eftersom företaget har genomgått en molnbaserad migrering, kunde det distribuera de nödvändiga systemen i både Japan och Korea inom några dagar. Detta tillåter försäljnings direktör att öka intäkterna i regionen med _x procent_ inom tre månader. Dessa två marknader fortsätter att avsevärt andra delar av världen, vilket leder till försäljnings åtgärder inom hela regionen.
 
-## <a name="data-sovereignty"></a>Datasuveränitet
+## <a name="data-sovereignty"></a>Data suveränitet
 
 Vid drift på nya marknader införs ytterligare styrnings begränsningar. GDPR är ett exempel på styrnings kriterier som kan orsaka betydande ekonomiska återkurs. Azure tillhandahåller erbjudanden för regelefterlevnad som hjälper kunderna att uppfylla efterlevnaden av efterlevnaden för reglerade branscher och globala marknader. Mer information finns i [Översikt över Microsoft Azure efterlevnad](https://aka.ms/AzureCompliance).
 
-- **Exempel:** En leverantör av USA-baserade verktyg har tilldelats ett avtal för att tillhandahålla verktyg i Kanada. Kanadensisk data suveränitets lagstiftning kräver att kanadensiska data hålls i Kanada. Det här företaget hade arbetat med en moln aktive rad program innovation i flera år. Det innebär att deras program vara kunde distribueras genom fullständigt skriptbaserade DevOps-processer. Med några mindre ändringar i kodbasen kunde de distribuera en fungerande kopia av koden till ett Azure-datacenter i Kanada, uppfylla data suveränitets efterlevnad och hålla kunden.
+- **Exempel:** En leverantör av USA-baserade verktyg har tilldelats ett avtal för att tillhandahålla verktyg i Kanada. Kanadensisk data suveränitets lagstiftning kräver att kanadensiska data hålls i Kanada. Det här företaget hade arbetat med en moln aktive rad program innovation i flera år. Det innebär att deras program vara kan distribueras via fullständigt skriptbaserade DevOps-processer. Med några mindre ändringar i kodbasen kunde de distribuera en fungerande kopia av koden till ett Azure-datacenter i Kanada, uppfylla data suveränitets efterlevnad och hålla kunden.
 
 ## <a name="next-steps"></a>Nästa steg
 

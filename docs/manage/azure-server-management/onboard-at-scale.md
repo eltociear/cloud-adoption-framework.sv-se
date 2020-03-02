@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c3c44f3c53049f29be989616e1d5af041907e497
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: dd3cbd9deda4d0325f014be4bc793b59aa973788
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808098"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223375"
 ---
 # <a name="configure-azure-server-management-services-at-scale"></a>Konfigurera Azure Server Management Services i stor skala
 
@@ -74,7 +74,7 @@ När du har slutfört guiden kommer princip tilldelningen att distribueras till 
 > [!NOTE]
 > Skapa den nödvändiga [Log Analytics arbets ytan och Azure Automation kontot](./prerequisites.md#create-a-workspace-and-automation-account) innan du hanterar Azure Server Management-tjänster till servrar.
 
-För lokala servrar måste du ladda ned och installera [Log Analytics agenten och Microsofts beroende agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) manuellt och konfigurera dem för att ansluta till rätt arbets yta. Du måste ange arbetsyte-ID och viktig information. För att hämta den informationen går du till arbets ytan Log Analytics i Azure Portal och väljer **inställningar** > **Avancerade inställningar**.
+För lokala servrar måste du ladda ned och installera [Log Analytics agenten och Microsofts beroende agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) manuellt och konfigurera dem för att ansluta till rätt arbets yta. Du måste ange arbetsyte-ID och viktig information. För att hämta den informationen går du till arbets ytan Log Analytics i Azure Portal och väljer sedan **inställningar** > **Avancerade inställningar**.
 
 ![Skärm bild av Log Analytics avancerade inställningar för arbets ytan i Azure Portal](./media/onboarding-on-premises.png)
 
@@ -82,7 +82,7 @@ För lokala servrar måste du ladda ned och installera [Log Analytics agenten oc
 
 För att kunna aktivera lösningar måste du konfigurera Log Analytics-arbetsytan. Virtuella Azure-datorer och lokala servrar kommer att hämta lösningar från Log Analytics arbets ytor som de är anslutna till.
 
-### <a name="update-management"></a>Hantering av uppdateringar
+### <a name="update-management"></a>Uppdateringshantering
 
 Uppdateringshantering-, Ändringsspårning-och inventerings lösningar kräver både en Log Analytics arbets yta och ett Automation-konto. För att säkerställa att dessa resurser är korrekt konfigurerade rekommenderar vi att du går igenom ditt Automation-konto. Mer information finns i [uppdateringshantering-, ändringsspårning-och inventerings lösningar](https://docs.microsoft.com/azure/automation/automation-onboard-solutions-from-automation-account).
 
@@ -139,7 +139,7 @@ Följ dessa steg om du vill skapa eller ändra den sparade sökningen:
 
 För att implementera den här lösningen:
 
-1. I Azure Portal öppnar du **alla tjänster** och väljer **hantering + styrning** > **lösningar**.
+1. I Azure Portal öppnar du **alla tjänster**och väljer sedan **hanterings-och styrnings** > **lösningar**.
 2. I vyn **lösningar** väljer du **Lägg till**.
 3. Sök efter **Aktivitetslogganalys** och markera det.
 4. Välj **Skapa**.
@@ -152,7 +152,7 @@ Azure Log Analytics Agenthälsa-lösningen rapporterar om hälsa, prestanda och 
 
 För att implementera den här lösningen:
 
-1. I Azure Portal öppnar du **alla tjänster** och väljer **hantering + styrning** > **lösningar**.
+1. I Azure Portal öppnar du **alla tjänster**och väljer sedan **hanterings-och styrnings** > **lösningar**.
 2. I vyn **lösningar** väljer du **Lägg till**.
 3. Sök efter **hälso tillstånd för Azure-Log Analytics agent** och markera det.
 4. Välj **Skapa**.
@@ -167,7 +167,7 @@ Lösningen för utvärdering av program mot skadlig kod hjälper dig att identif
 
 För att implementera den här lösningen:
 
-1. I Azure Portal öppnar du **alla tjänster** och väljer **hantering + styrning** > **lösningar**.
+1. I Azure Portal öppnar du **alla tjänster**och väljer Välj **hantering + styrning** > **lösningar**.
 2. I vyn **lösningar** väljer du **Lägg till**.
 3. Sök efter och välj **utvärdering av program mot skadlig kod**.
 4. Välj **Skapa**.
@@ -187,7 +187,7 @@ Vi rekommenderar att du registrerar alla dina servrar minst på den Azure Securi
 Följ dessa steg om du vill aktivera Azure Security Center kostnads fri nivå:
 
 1. Gå till sidan **Security Center** Portal.
-2. Under **princip & efterlevnad**väljer du **säkerhets princip**.
+2. Under **princip &AMP; efterlevnad**väljer du **säkerhets princip**.
 3. Hitta Log Analytics arbets ytans resurs som du skapade i fönstret till höger.
 4. Välj **Redigera inställningar** för arbets ytan.
 5. Välj **Prisnivå**.

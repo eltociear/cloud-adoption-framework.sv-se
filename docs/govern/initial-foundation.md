@@ -1,30 +1,30 @@
 ---
-title: Upprätta inledande Cloud styrnings bas
+title: Upprätta en grund för en första molnbaserad styrning
 description: Använd ramverket för moln införande för Azure för att komma igång med moln styrning genom att etablera en första grundläggande Cloud styrnings grund.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/05/2019
+ms.date: 02/25/2020
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 4de35756be83e02817c4ce8e7a20dd1444007e87
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 3e7d19fbce96528252e297855a1de41b09492c81
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708367"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223812"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>Upprätta en grund för en första molnbaserad styrning
 
-Att upprätta moln styrning är en bred iterativ ansträngning. Det är svårt att träffa en effektiv balans mellan hastighet och kontroll, särskilt under tidiga faser av moln införande. Vägledningen för styrning i moln implementerings ramverket hjälper till att ge detta saldo via en smidig metod för att anta.
+Att upprätta moln styrning är en bred iterativ ansträngning. Det är svårt att träffa en effektiv balans mellan hastighet och kontroll, särskilt vid körning av tidiga metoder i molnet. Vägledningen för styrning i moln implementerings ramverket hjälper till att ge detta saldo via en smidig metod för att anta.
 
 Den här artikeln innehåller två alternativ för att upprätta en första grund för styrning. Antingen säkerställer du att styrnings begränsningar kan skalas och expanderas när implementerings planen implementeras och kraven blir tydligare definierade. Som standard förutsätter den inledande grunden en isolerad och kontroll position. Det fokuserar också mer på resurs organisation än på resurs styrningen. Den här lätta start punkten kallas för en _minsta livskraftig produkt (MVP)_ för styrning. Målet med MVP: en minskar barriärer för att upprätta en inledande styrnings position och aktiverar snabbt lagring av lösningen för att lösa en mängd olika typer av konkreta risker.
 
 ## <a name="already-using-the-cloud-adoption-framework"></a>Använder redan moln införande ramverket
 
-Om du har följt med ramverket för moln införande kanske du redan har distribuerat en styrnings MVP. Vägledning är en grundläggande aspekt av alla operativ modeller. Den finns under varje fas i moln implementeringens livs cykel. Därför ger moln implementerings [ramverket](../index.md) vägledning för att mata in styrning i aktiviteter relaterade till implementeringen av din [moln](../plan/index.md)implementerings plan. Ett exempel på den här styrnings integrationen är att använda skisser för att distribuera en eller flera landnings zoner som finns i den [färdiga](../ready/index.md) vägledningen. Ett annat exempel är vägledning för att [skala ut prenumerationer](../ready/azure-best-practices/scaling-subscriptions.md). Om du har följt någon av dessa rekommendationer är följande MVP-avsnitt helt enkelt en granskning av dina befintliga distributions beslut. När du har en snabb granskning kan du gå vidare till [den första styrnings lösningen och tillämpa bästa praxis kontroller](./foundation-improvements.md).
+Om du har följt med ramverket för moln införande kanske du redan har distribuerat en styrnings MVP. Styrning är en grundläggande aspekt av alla operativ modeller. Den finns i alla metoder i moln implementeringens livs cykel. Därför ger moln implementerings [ramverket](../index.md) vägledning för att mata in styrning i aktiviteter relaterade till implementeringen av din [moln](../plan/index.md)implementerings plan. Ett exempel på den här styrnings integrationen är att använda skisser för att distribuera en eller flera landnings zoner som finns i den [färdiga](../ready/index.md) vägledningen. Ett annat exempel är vägledning för att [skala ut prenumerationer](../ready/azure-best-practices/scaling-subscriptions.md). Om du har följt någon av dessa rekommendationer är följande MVP-avsnitt helt enkelt en granskning av dina befintliga distributions beslut. När du har en snabb granskning kan du gå vidare till [den första styrnings lösningen och tillämpa bästa praxis kontroller](./foundation-improvements.md).
 
 ## <a name="establish-an-initial-governance-foundation"></a>Upprätta en grund för inledande styrning
 

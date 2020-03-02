@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ba1776affc2bd4f0ca090603ca969c21090d9252
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 62c47f8d4b3c386129c6a6a9eeb966393573ea16
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709591"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223892"
 ---
+<!-- cSpell:ignore netops -->
+
 # <a name="governance-design-for-multiple-teams"></a>Styrningsdesign för flera team
 
 Målet med den här vägledningen är att hjälpa dig att lära dig att utforma en resurs styrnings modell i Azure som stöd för flera team, flera arbets belastningar och flera miljöer. Först ska du titta på en uppsättning hypotetiska styrnings krav och sedan gå igenom flera exempel på implementeringar som uppfyller dessa krav.
@@ -127,7 +129,7 @@ Observera att i den här modellen utförde **tjänst administratören** färre �
 ![prenumeration med resurs grupper A och B](../../_images/govern/design/governance-2-16.png)
 *figur 5 – en prenumeration med en tjänst administratör och två arbets belastnings ägare, som alla tilldelats den inbyggda ägar rollen.*
 
-Men eftersom både **arbets belastnings ägare A** och **arbets belastnings ägare B** tilldelas den inbyggda ägar rollen i prenumerations omfånget, har de alla ärvda inbyggda ägar roller för var och en av resurs grupperna. Det innebär att inte bara har full åtkomst till en annans resurser, de kan också delegera hanterings åtkomst till var och en av resurs grupperna. Till exempel har **arbets Belastningens ägare B** behörighet att lägga till andra användare i **resurs gruppen A** och kan tilldela dem en roll, inklusive den inbyggda ägar rollen.
+Men eftersom både **arbets belastnings ägare A** och **arbets belastnings ägare B** tilldelas den inbyggda ägar rollen i prenumerations omfånget, har de alla ärvda inbyggda ägar roller för var och en av resurs grupperna. Det innebär att inte bara har full åtkomst till var och en av resurserna, men de kan också delegera hanterings åtkomst till var and ras resurs grupper. Till exempel har **arbets Belastningens ägare B** behörighet att lägga till andra användare i **resurs gruppen A** och kan tilldela dem en roll, inklusive den inbyggda ägar rollen.
 
 Om du jämför varje exempel med kraven ser du att båda exemplen har stöd för en enda betrodd användare i prenumerations omfånget med behörighet att bevilja resurs åtkomst behörighet till de två arbets belastnings ägarna. Var och en av de två arbets belastnings ägarna hade inte åtkomst till resurs hantering som standard och kräver att **tjänst administratören** uttryckligen tilldelar dem behörigheter. Men endast det första exemplet stöder kravet att de resurser som är kopplade till varje arbets belastning isoleras från varandra, så att ingen arbets belastnings ägare har åtkomst till resurserna för någon annan arbets belastning.
 
@@ -185,7 +187,7 @@ Vi börjar med att utvärdera det första alternativet. Du använder den behöri
 10. Den andra **arbets belastnings ägaren** skapar ett undernät **i det virtuella** nätverket för virtuella nätverk och lägger sedan till två virtuella datorer. Den andra **arbets belastnings ägaren** använder *miljö* -och *managedBy* -taggarna för varje resurs.
     ![att skapa undernät](../../_images/govern/design/governance-3-8.png)
 
-I den här exempel resurs hanterings modellen kan vi hantera resurser i de tre nödvändiga miljöerna. Resurserna för delad infrastruktur skyddas eftersom det bara finns en enda användare i prenumerationen med behörighet att komma åt dessa resurser. Var och en av arbets belastnings ägarna kan använda delade infrastruktur resurser utan att ha några behörigheter för själva delade resurser. Den här hanterings modellen uppfyller dock inte kraven för arbets belastnings isolering – var och en av de två **arbets belastnings ägarna** kan komma åt resurserna för den andra arbets belastningen.
+I den här exempel resurs hanterings modellen kan vi hantera resurser i de tre nödvändiga miljöerna. Resurserna för delad infrastruktur skyddas eftersom endast en användare i prenumerationen har behörighet att komma åt dessa resurser. Var och en av arbets belastnings ägarna kan använda delade infrastruktur resurser utan att ha några behörigheter för de delade resurserna själva. Den här hanterings modellen uppfyller dock inte kraven för arbets belastnings isolering, eftersom båda **arbets belastnings ägarna** kan komma åt resurserna för var and ras arbets belastning.
 
 Det finns ett annat viktigt övervägande för den här modellen som kanske inte är direkt uppenbar. I det här exemplet var det **APP1 arbets belastnings ägare** som begärde nätverks-peering **-anslutningen med hubb-VNet** för att tillhandahålla anslutning till lokalt. **Nätverks åtgärder** som användaren har utvärderat som begäran baserat på de resurser som distribueras med den arbets belastningen. När **prenumerations ägaren** har lagt till **APP2 arbets belastnings ägare** med **deltagar** rollen, hade den användaren hanterings behörighet för alla resurser i resurs gruppen **Prod-RG** .
 

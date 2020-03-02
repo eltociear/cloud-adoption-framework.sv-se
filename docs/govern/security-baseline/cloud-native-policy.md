@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: adf14719f4d4d4c50194eb7b85ccfed7cd0df855
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: ce5b1a77396479b2621afab5cac025b983f14469
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707500"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223732"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Cloud – ursprunglig säkerhets bas linje princip
 
@@ -90,7 +90,7 @@ Att använda molnet kan minska en del av säkerhets belastningen. Microsoft till
 - **Skydda innehållet i den virtuella datorn.** Det är viktigt att konfigurera vanliga automatiserade säkerhets kopieringar för att skydda mot användar fel. Detta är inte tillräckligt för, men. Du måste också se till att säkerhets kopiorna är säkra från cyberattacker och är tillgängliga när du behöver dem.
 - **Övervaka program.** Det här mönstret omfattar flera aktiviteter, inklusive inblick i hälso tillståndet för dina virtuella datorer, förståelse för samverkan mellan dem och hur du kan övervaka de program som de virtuella datorerna körs på. Alla dessa aktiviteter är viktiga för att hålla dina program igång dygnet runt.
 - **Skydda och granska data åtkomst.** Organisationer bör granska all data åtkomst och använda avancerade funktioner för maskin inlärning för att anropa avvikelser från vanliga åtkomst mönster.
-- **Praxis för redundans.** Moln åtgärder som har låg tolerans för fel måste kunna redundansväxla eller återställa från en cybersäkerhet eller plattforms incident. Dessa procedurer får inte bara dokumenteras, utan bör användas i kvartal.
+- **Praxis för redundans.** Moln åtgärder som har låg tolerans för misslyckande måste kunna redundansväxla eller återställa från en cybersäkerhet eller plattforms incident. Dessa procedurer får inte bara dokumenteras, utan bör användas i kvartal.
 
 ## <a name="next-steps"></a>Nästa steg
 

@@ -3,17 +3,19 @@ title: Beslut som påverkar migrering
 description: Viktiga beslut att fatta om migreringsprocessen.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: aee856c1e9c0a509aecda8ad4d6cf642de0e0fe2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3281f7a14c5af58e435be9e3a412fc5285da1b47
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801485"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225476"
 ---
+<!-- cSpell:ignore migrateable -->
+
 # <a name="decisions-that-affect-migration"></a>Beslut som påverkar migrering
 
 Under migreringen finns det vissa faktorer som påverkar beslut och körning. Den här artikeln förklarar det centrala temat för dessa beslut och utforskar några frågor som är genomgående för alla diskussioner om migreringsprinciper i det här avsnittet av Ramverk för molnimplementering.
@@ -24,7 +26,7 @@ Målet eller syftet med en implementering kan ha en avgörande betydelse för de
 
 - **Migrering.** Brådskande affärsdrivande faktorer, implementeringshastighet eller kostnadsöverväganden är exempel på verksamhetsresultat. Dessa resultat är avgörande för projekt som skapar affärsvärde från övergångar hos IT eller driftmodeller. Migreringsavsnittet i Ramverk för molnimplementering fokuserar starkt på migreringsrelaterade verksamhetsresultat.
 - **Programinnovation.** Exempel på stegvisa resultat är förbättringen av kundupplevelsen och en större marknadsandel. Resultaten kommer från många olika stegvisa ändringar som fokuserar på de aktuella kundernas behov och önskemål.
-- **Datadriven innovation.** Nya produkter eller tjänster, särskilt sådana som kommer från data, är exempel på banbrytande resultat. Dessa resultat är resultatet av experimentering och förutsägelser som använder data för att bryta ny mark på marknaden.
+- **Datadriven innovation.** Nya produkter eller tjänster, särskilt de som kommer från data styrkan, är exempel på störande resultat. Dessa resultat är resultatet av experimentering och förutsägelser som använder data för att bryta ny mark på marknaden.
 
 Det finns inget företag som endast satsar på ett av dessa resultat. Utan verksamheten finns det inga kunder och vice versa. Molnimplementeringen är inget undantag. Företag arbetar ofta för att uppnå var och ett av dessa resultat, men om du fokuserar på alla samtidigt riskerar du att fördela dina resurser för brett och så att de viktigaste framstegen för din verksamhet sker långsammare.
 
@@ -32,31 +34,27 @@ Den här förutsättningen är inte ett krav för att du ska kunna välja något
 
 ### <a name="act-on-migration-outcomes"></a>Vidta åtgärder vid migreringen
 
-Om verksamhetsresultaten är viktigast på listan kommer det här avsnittet i Ramverk för molnimplementering fungera bra för ditt team. I det här avsnittet förutsätter vi att du behöver prioritera hastighets- och kostnadsbesparingar som primära nyckeltal (KPI: er), vilket innebär att en migreringsmodell för implementering ska vara anpassad till dessa resultat. En migrerings modell är kraftigt predikat på hissen och Shift-migreringen av infrastruktur som en tjänst (IaaS) till gångar som tar slut på ett Data Center och ger kostnads besparingar. I en sådan modell kan modernisering ske, men detta är av mindre betydelse tills den primära migreringsprioriteten har uppnåtts.
+Om drift resultatet är högst rangordnat i listan passar det här avsnittet av ramverket för moln införande bättre. I det här avsnittet förutsätter vi att du behöver prioritera hastighets- och kostnadsbesparingar som primära nyckeltal (KPI: er), vilket innebär att en migreringsmodell för implementering ska vara anpassad till dessa resultat. En migrerings modell är kraftigt predikat på hissen och Shift-migreringen av infrastruktur som en tjänst (IaaS) till gångar som tar slut på ett Data Center och ger kostnads besparingar. I en sådan modell kan modernisering ske, men detta är av mindre betydelse tills den primära migreringsprioriteten har uppnåtts.
 
 ### <a name="act-on-application-innovations"></a>Agera på program innovationer
 
-Om marknadsandelar och kundupplevelsen är era primära drivkrafter är detta kanske inte den viktigaste vägledningen i Ramverk för molnimplementering för dina team. Programinnovation kräver en plan som fokuserar på modernisering och övergång av arbetsbelastningar, oavsett vilken underliggande infrastruktur som används. I sådana fall kan riktlinjerna i det här avsnittet vara informativa men utgör inte det bästa sättet att fatta grundläggande beslut.
+Om marknads andelar och kund upplevelser är dina primära driv rutiner kanske det här avsnittet inte är det bästa avsnittet i moln implementerings ramverket för att vägleda dina Teams ansträngningar. Programinnovation kräver en plan som fokuserar på modernisering och övergång av arbetsbelastningar, oavsett vilken underliggande infrastruktur som används. I sådana fall kan riktlinjerna i det här avsnittet vara informativa men utgör inte det bästa sättet att fatta grundläggande beslut.
 
 ### <a name="act-on-data-innovations"></a>Agera på data innovationer
 
-Om data, experimentering, forskning och utveckling (FoU) eller nya produkter är din huvudsakliga prioritet för de kommande sex månaderna eller så är detta kanske inte den viktigaste vägledningen i Ramverk för molnimplementering för dina team. All datainnovation gynnas av vägledning om migrering av befintliga källdata. Men projektets huvudsakliga fokus ska ligga på ingående data och integration av fler datakällor. Att utöka den här vägledningen med förutsägelser och nya upplevelser är mycket viktigare än migreringen av IaaS-tillgångar.
-
-## <a name="balance-the-portfolio"></a>Balansera portföljen
-
-I det här avsnittet i Ramverk för molnimplementering beskrivs en teori för att hjälpa läsare förstå olika metoder för att hantera förändring inom en balanserad portfölj. Artikeln om att [Balansera portföljen](../../expanded-scope/balance-the-portfolio.md) är ett exempel på en utökad vägledning vars syfte är att underlätta åtgärder som bygger på den här teorin.
+Om data, experimentering, forskning och utveckling (R & D) eller nya produkter är din prioritet under de kommande sex månaderna eller så är det här avsnittet inte det bästa avsnittet i moln implementerings ramverket som vägleder dina Teams ansträngningar. All datainnovation gynnas av vägledning om migrering av befintliga källdata. Men projektets huvudsakliga fokus ska ligga på ingående data och integration av fler datakällor. Att utöka den här vägledningen med förutsägelser och nya upplevelser är mycket viktigare än migreringen av IaaS-tillgångar.
 
 ## <a name="effort"></a>Projektet
 
-Migreringen kan variera beroende på de berörda arbetsbelastningarnas storlek och komplexitet. En mindre migrering av arbetsbelastningar som omfattar ett par hundra virtuella datorer är en taktisk process som kan genomföras med automatiserade verktyg såsom[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview). Å andra sidan kräver en storskalig företagsmigrering med tiotusentals arbetsbelastningar en mycket strategisk process som kan inbegripa omfattande omstrukturering, återuppbyggnad och ersättning av befintliga program för att integrera kapacitet för plattform som en tjänst (PaaS) och programvara som en tjänst (SaaS). [Det är viktigt att identifiera och balansera omfattningen](../../expanded-scope/balance-the-portfolio.md) av dina planerade migreringar.
+Migreringen kan variera beroende på de berörda arbetsbelastningarnas storlek och komplexitet. En mindre migrering av arbetsbelastningar som omfattar ett par hundra virtuella datorer är en taktisk process som kan genomföras med automatiserade verktyg såsom[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview). Å andra sidan kräver en storskalig företagsmigrering med tiotusentals arbetsbelastningar en mycket strategisk process som kan inbegripa omfattande omstrukturering, återuppbyggnad och ersättning av befintliga program för att integrera kapacitet för plattform som en tjänst (PaaS) och programvara som en tjänst (SaaS). [Det är viktigt att identifiera och balansera omfattningen](../../../strategy/balance-the-portfolio.md) av dina planerade migreringar.
 
 Innan du fattar beslut som kan ha en långsiktig inverkan på det aktuella migreringsprogrammet är det viktigt att du skapar samförstånd om följande beslut.
 
 ### <a name="effort-type"></a>Typ av projekt
 
-Vid all migrering av stor skala (> 250 virtuella datorer) migreras till gångar med en mängd olika över gångs alternativ, som beskrivs i fem *RS-rationalisering*: *Rehost*, *rekonstruktör, rekonstruktion, återskapa*och *Ersätt*.
+Vid all migrering av stor skala (mer än 250 virtuella datorer) migreras till gångar med hjälp av en mängd olika över gångs alternativ, som diskuteras i de femRS-rationalisering: *Rehost*, *rekonstruktör, rekonstruktion, återskapa*och *Ersätt*.
 
-Vissa arbetsbelastningar moderniseras genom att *återskapa* eller *omarbeta arkitekturen*, vilket skapar modernare program med nya funktioner och teknisk kapacitet. Andra tillgångar genomgår en *omstrukturering*, till exempel en övergång till containrar eller andra modernare värd- och driftmetoder som inte påverkar lösningarnas kodbas. Vanligtvis genomgår virtuella datorer och andra tillgångar som är mer väletablerade ett *värdbyte* så att tillgångarna överförs från datacentret till molnet. Vissa arbetsbelastningar kan eventuellt migreras till molnet, men ska istället *ersättas* med tjänstbaserade (SaaS-baserade) molntjänster som uppfyller samma verksamhetsbehov, till exempel genom att använda Office 365 som ett alternativ till att migrera Exchange Server-instanser.
+Vissa arbetsbelastningar moderniseras genom att *återskapa* eller *omarbeta arkitekturen*, vilket skapar modernare program med nya funktioner och teknisk kapacitet. Andra tillgångar genomgår en *omstrukturering*, till exempel en övergång till containrar eller andra modernare värd- och driftmetoder som inte påverkar lösningarnas kodbas. Vanliga virtuella datorer och andra till gångar som är mer väl etablerade går genom en *Rehost* -process och över de till gångarna från data centret till molnet. Vissa arbets belastningar kan eventuellt migreras till molnet, men ska i stället *ersättas* med service-baserade (SaaS) moln tjänster som uppfyller samma affärs behov&mdash;exempelvis genom att använda Office 365 som ett alternativ till att migrera Exchange Server-instanser.
 
 I de flesta scenarier skapar vissa företagshändelser en tvingande funktion som gör att en hög procentandel av tillgångarna tillfälligt migreras med *värdbyte*, följt av en mer betydande sekundär övergång med en av de andra migreringsstrategierna när de väl är i molnet. Den här processen kallas ofta för en *molnövergång*.
 
@@ -64,15 +62,15 @@ Under processen med att [rationalisera den digitala egendomen](../../../digital-
 
 ### <a name="effort-scale"></a>Projektets skala
 
-Migreringens skala är nästa viktiga förhandsbeslut. De processer som krävs för att migrera 1 000 tillgångar skiljer sig från processen som krävs för att flytta 10 000 tillgångar. Innan du påbörjar en migrering är det viktigt att besvara följande frågor:
+Migreringens skala är nästa viktiga förhandsbeslut. De processer som krävs för att migrera 1 000-till gångar skiljer sig från de processer som krävs för att flytta 10 000-till gångar. Innan du påbörjar en migrering är det viktigt att besvara följande frågor:
 
 - **Hur många tillgångar som stöder arbetsbelastningarna som ska migreras har jag i dag?** Tillgångar omfattar datastrukturer, program, virtuella datorer och nödvändiga IT-enheter. Vi rekommenderar att du väljer en relativt liten arbetsbelastning för din första migrering.
 - **Av dessa till gångar hur många ska migreras?** Det är vanligt att avsluta en del av tillgångarna under migreringen, på grund av att slutanvändarberoendet inte längre upprätthålls.
-- **Vilka övergripande uppskattningar gäller för skalan på tillgångarna som ska migreras?** Beräkna antalet stödtillgångar, till exempel program, virtuella datorer, datakällor och IT-enheter för arbetsbelastningarna som ingår i migreringen. Se avsnittet om [digital egendom](../../../digital-estate/index.md) i Cloud Adoption Framwork för vägledning om att identifiera relevanta tillgångar.
+- **Vilka uppskattningar är uppifrån och ned för skalan av de migrerade till gångarna?** Beräkna antalet stödtillgångar, till exempel program, virtuella datorer, datakällor och IT-enheter för arbetsbelastningarna som ingår i migreringen. Se avsnittet om [digital egendom](../../../digital-estate/index.md) i Cloud Adoption Framwork för vägledning om att identifiera relevanta tillgångar.
 
 ### <a name="effort-timing"></a>Tidsramar för projektet
 
-Ofta motiveras migreringar av en viktig händelse för verksamheten som är tidskänslig. En vanlig drivkraft är slutet eller början på ett värdkontrakt med tredje part. Även om det finns många potentiella händelser som kräver en migrering har de en sak gemensamt: ett slutdatum. Det är viktigt att förstå tidsschemat för kommande verksamhetshändelser så att åtgärder och hastigheter kan planeras och verifieras ordentligt.
+Ofta motiveras migreringar av en viktig händelse för verksamheten som är tidskänslig. En vanlig drivkraft är slutet eller början på ett värdkontrakt med tredje part. Även om det finns många potentiella affärs händelser som kräver en migrering, delar de en gemensam faktor: ett slutdatum. Det är viktigt att förstå tidsschemat för kommande verksamhetshändelser så att åtgärder och hastigheter kan planeras och verifieras ordentligt.
 
 ## <a name="recap"></a>Sammanfattning
 

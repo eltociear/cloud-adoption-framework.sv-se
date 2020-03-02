@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 9d8bf9a5188eae55c14a22a8007aa6e9cc01b02c
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 250f78bb0287e30615aee4b2cfb1234823197f56
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708605"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222662"
 ---
 # <a name="software-defined-networking-cloud-native"></a>Program varu definition nätverk: Cloud-Native
 
@@ -41,4 +41,4 @@ Ytterligare problem ditt moln implementerings team bör tänka på när du disku
 Mer information om Cloud-inbyggda virtuella nätverk i Azure finns i:
 
 - [Azure Virtual Network: instruktions guider](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm). Nyligen skapade virtuella Azure-nätverk är Cloud-Native som standard. Använd dessa guider för att planera designen och distributionen av dina virtuella nätverk.
-- [Prenumerations begränsningar: nätverk](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits). Alla enskilda virtuella nätverk och anslutna resurser kan bara finnas i en enda prenumeration och är bundna av prenumerations gränserna.
+- [Prenumerations begränsningar: nätverk](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits). Varje virtuellt nätverk och anslutna resurser finns i en enda prenumeration. De här resurserna är kopplade till prenumerations begränsningar.

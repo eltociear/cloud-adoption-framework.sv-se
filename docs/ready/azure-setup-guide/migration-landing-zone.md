@@ -8,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, setup
-ms.openlocfilehash: 42e7064a6d3b125a01f6fca9ce041b473fb1b7f6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: cac594b7acd3764e6e5663ad28a77f292f7d440b
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799496"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225338"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Distribuera en landningszon för migrering
 
 Termen *landingszon för migrering* används för att beskriva en miljö som har etablerats och förberetts för att fungera som värd för arbetsbelastningar som migreras från en lokal miljö till Azure. En landnings zon för migrering är den sista slut produkten i installations guiden för Azure. Den här artikeln förenar beredskapsämnen som har beskrivits i den här handboken och tillämpar de beslut som har fattats vid distributionen av landnings zonen för den första migreringen.
 
-I följande avsnitt beskrivs en landningszon som ofta används för att etablera en miljö som är lämplig för användning under en migrering. Miljön eller landningszonen som beskrivs i den här artikeln beskrivs också i en Azure-skiss. Du kan använda landningszonskissen från Cloud Adaption Framework för att distribuera den definierade miljön med ett enda klick.
+I följande avsnitt beskrivs en landningszon som ofta används för att etablera en miljö som är lämplig för användning under en migrering. Miljön eller landningszonen som beskrivs i den här artikeln beskrivs också i en Azure-skiss. Du kan använda moln antagande ramverket migrera landnings zon skissen för att distribuera den definierade miljön via ett enda steg.
 
 ## <a name="purpose-of-the-blueprint"></a>Syftet med skissen
 
@@ -64,11 +64,11 @@ Följande beslut speglas i skissen för landningszonen.
 |Prenumerationsdesign|Saknas – utformad för en enda produktionsprenumeration.|[Skalanpassa prenumerationer](../azure-best-practices/scaling-subscriptions.md)|
 |Hanteringsgrupper|Saknas – utformad för en enda produktionsprenumeration.|[Skalanpassa prenumerationer](../azure-best-practices/scaling-subscriptions.md)         |
 |Resursgrupper|Saknas – utformad för en enda produktionsprenumeration.|[Skalanpassa prenumerationer](../azure-best-practices/scaling-subscriptions.md)         |
-|Data|Gäller inte|[Välj rätt SQL Server alternativ i Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) och [Azure Data Store vägledning](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Storage|Gäller inte|[Riktlinjer för Azure Storage](../considerations/storage-options.md)         |
-|Standarder för namngivning och taggning|Gäller inte|[Metodtips för namngivning och taggning](../azure-best-practices/naming-and-tagging.md)         |
-|Kostnadshantering|Gäller inte|[Spåra kostnader](../azure-best-practices/track-costs.md)|
-|Databearbetning|Gäller inte|[Compute-alternativ](../considerations/compute-options.md)|
+|Data|Ej tillämpligt|[Välj rätt SQL Server alternativ i Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) och [Azure Data Store vägledning](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+|Storage|Ej tillämpligt|[Riktlinjer för Azure Storage](../considerations/storage-options.md)         |
+|Standarder för namngivning och taggning|Ej tillämpligt|[Metodtips för namngivning och taggning](../azure-best-practices/naming-and-tagging.md)         |
+|Kostnadshantering|Ej tillämpligt|[Spåra kostnader](../azure-best-practices/track-costs.md)|
+|Compute|Ej tillämpligt|[Compute-alternativ](../considerations/compute-options.md)|
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>Anpassa eller distribuera en landningszon från den här skissen
 

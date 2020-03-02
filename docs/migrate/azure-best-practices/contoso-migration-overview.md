@@ -3,16 +3,16 @@ title: Översikt med exempel på programmigrering för Azure
 description: Innehåller en översikt med de exempel på programmigrering som ingår i migreringsavsnittet för ramverket för molnimplementering.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/11/2018
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c2e0a27e432141feee526d4cb5fe54380fcde583
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 639d90285c1500a661e872931456f63c188daafc
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807384"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222975"
 ---
 # <a name="application-migration-patterns-and-examples"></a>Programmigrering – mönster och exempel
 
@@ -28,22 +28,22 @@ Som en del av hybridmolnstrategin tillhandahåller Azure allt fler lösningar f�
 
 ## <a name="migration-patterns"></a>Migrationsmönster
 
-Strategier för migrering till molnet kan delas in i fyra allmänna mönster: värdbyte, refaktorisering, arkitekturomarbetning och återskapande. Den strategi du väljer beror på dina affärsdrivande faktorer och mål med migrering. Du kan införa flera mönster. Du kan till exempel välja att byta värd för enkla appar eller appar som inte är kritiskt viktiga för verksamheten, men utföra arkitekturomarbetning för dem som är mer komplexa och affärskritiska. Nu ska vi titta på de här mönstren.
+Strategier för migrering till molnet kan delas in i fyra allmänna mönster: värdbyte, refaktorisering, arkitekturomarbetning och återskapande. Den strategi du väljer beror på dina affärsdrivande faktorer och mål med migrering. Du kan införa flera mönster. Du kan till exempel välja att revara värd för enkla appar eller appar som inte är viktiga för ditt företag, utan att bygga om appar som är mer komplexa och verksamhets kritiska. Nu ska vi titta på de här mönstren.
 
 <!-- markdownlint-disable MD033 -->
 
 **Mönster** | **Definition** | **När det bör användas**
 --- | --- | ---
 **Värdbyte** | Kallas ofta för en _hiss och Shift_ -migrering. Det här alternativet kräver inte kodändringar och gör att du snabbt kan migrera dina befintliga appar till Azure. Varje app migreras i befintligt skick för att dra nytta av molnets fördelar utan de risker och kostnader som är förknippade med kodändringar. | När du behöver flytta appar till molnet snabbt.<br/><br/> När du vill flytta en app utan att ändra den.<br/><br/> När dina appar konstrueras så att de kan dra nytta av [Azure IaaS](https://azure.microsoft.com/overview/what-is-iaas)-skalbarhet efter migreringen.<br/><br/> När appar är viktiga för verksamheten men du inte behöver omedelbara ändringar av appfunktioner.
-**Refaktorisering** | Refaktorisering kallas ofta ”ompaketering” och kräver minimala ändringar i appar så att de kan ansluta till [Azure-PaaS](https://azure.microsoft.com/overview/what-is-paas) och använda molnerbjudanden.<br/><br/> Du skulle till exempel kunna migrera befintliga appar till Azure App Service eller Azure Kubernetes Service (AKS).<br/><br/> Du skull även kunna refaktorisera relationsdatabaser och icke-relationella databaser till alternativ såsom Azure SQL Database Managed Instance, Azure Database for MySQL, Azure Database for PostgreSQL samt Azure Cosmos DB. | Om din app enkelt kan paketeras om till att fungera i Azure.<br/><br/> Om du vill använda innovativa DevOps-metoder som tillhandahålls av Azure, eller om du överväger DevOps med en containerstrategi för arbetsbelastningar.<br/><br/> För refaktorisering behöver du tänka på portabiliteten i din befintliga kodbas samt tillgängliga utvecklingskunskaper.
-**Arkitekturomarbetning** | Arkitekturomarbetning för migrering fokuserar på att ändra och utöka appfunktionaliteten och kodbasen för att optimera apparkitekturen för molnskalbarhet.<br/><br/> Du kan till exempel dela upp ett monolitiskt program i en grupp med mikrotjänster som fungerar tillsammans och skalas enkelt.<br/><br/> Eller så kan du utföra arkitekturomarbetning för relationsdatabaser och icke-relationella databaser till fullständigt hanterade hanterad Azure SQL Database-instans, Azure Database for MySQL, Azure Database for PostgreSQL samt Azure Cosmos DB. | När dina appar kräver större revideringar för att införliva nya funktioner eller för att fungera effektivt på en molnplattform.<br/><br/> När du vill använda befintliga programinvesteringar, uppfylla skalbarhetskrav, använda innovativa Azure DevOps-metoder och minimera användningen av virtuella datorer.
-**Återskapande** | Återskapande går ett steg längre genom att återskapa en app från grunden med hjälp av Azure-molntekniker.<br/><br/> Till exempel kan du skapa helt nya appar med [molnbaserade](https://azure.com/cloudnative) tekniker såsom Azure Functions, Azure AI, hanterad Azure SQL Database-instans samt Azure Cosmos DB. | När du vill utveckla snabbt, och befintliga appar har begränsad funktionalitet och livslängd.<br/><br/> När du är redo att påskynda företagsinnovationen (däribland DevOps-metoder som tillhandahålls av Azure) kan du skapa nya program med hjälp av molnbaserade tekniker och dra nytta av framsteg inom AI, blockkedjan och IoT.
+**Omstrukturera** | Refaktorisering kallas ofta ”ompaketering” och kräver minimala ändringar i appar så att de kan ansluta till [Azure-PaaS](https://azure.microsoft.com/overview/what-is-paas) och använda molnerbjudanden.<br/><br/> Du skulle till exempel kunna migrera befintliga appar till Azure App Service eller Azure Kubernetes Service (AKS).<br/><br/> Du skull även kunna refaktorisera relationsdatabaser och icke-relationella databaser till alternativ såsom Azure SQL Database Managed Instance, Azure Database for MySQL, Azure Database for PostgreSQL samt Azure Cosmos DB. | Om din app enkelt kan paketeras om till att fungera i Azure.<br/><br/> Om du vill använda innovativa DevOps-metoder som tillhandahålls av Azure, eller om du överväger DevOps med en containerstrategi för arbetsbelastningar.<br/><br/> För refaktorisering behöver du tänka på portabiliteten i din befintliga kodbas samt tillgängliga utvecklingskunskaper.
+**Arkitekturomarbetning** | Arkitekturomarbetning för migrering fokuserar på att ändra och utöka appfunktionaliteten och kodbasen för att optimera apparkitekturen för molnskalbarhet.<br/><br/> Du kan till exempel dela upp ett monolitiskt program i en grupp med mikrotjänster som fungerar tillsammans och skalas enkelt.<br/><br/> Eller så kan du utföra arkitekturomarbetning för relationsdatabaser och icke-relationella databaser till fullständigt hanterade hanterad Azure SQL Database-instans, Azure Database for MySQL, Azure Database for PostgreSQL samt Azure Cosmos DB. | När dina appar kräver större revideringar för att införliva nya funktioner eller för att fungera effektivt på en molnplattform.<br/><br/> När du vill använda befintliga program investeringar, uppfylla skalbarhets kraven, använda innovativa DevOps-metoder och minimera användningen av virtuella datorer.
+**Återskapa** | Återskapande går ett steg längre genom att återskapa en app från grunden med hjälp av Azure-molntekniker.<br/><br/> Du kan till exempel bygga gröna appar med [molnbaserade](https://azure.com/cloudnative) tekniker som Azure Functions, Azure AI, Azure SQL Database Hanterad instans och Azure Cosmos dB. | När du vill utveckla snabbt, och befintliga appar har begränsad funktionalitet och livslängd.<br/><br/> När du är redo att påskynda företagsinnovationen (däribland DevOps-metoder som tillhandahålls av Azure) kan du skapa nya program med hjälp av molnbaserade tekniker och dra nytta av framsteg inom AI, blockkedjan och IoT.
 
 <!-- markdownlint-enable MD033 -->
 
 ## <a name="migration-example-articles"></a>Artiklar med migreringsexempel
 
-Artiklarna i det här avsnittet innehåller exempel på flera vanliga migreringsscenarier. Vart och ett av dessa exempel innehåller bakgrundsinformation och detaljerade distributionsscenarier som illustrerar hur du konfigurerar en infrastruktur för migrering och utvärderar lokala resursers lämplighet med avseende på migrering. Fler artiklar kommer att läggas till i det här avsnittet med tiden.
+Det här avsnittet innehåller exempel på flera vanliga migrerings scenarier. I varje exempel finns bakgrunds information och detaljerade distributions scenarier som illustrerar hur du konfigurerar en infrastruktur för migrering och bedömer att lokala resurser är lämpliga för migrering. Fler artiklar kommer att läggas till i det här avsnittet med tiden.
 
 ![Vanliga projekt för migrering/modernisering](./media/migration-patterns.png)
 
@@ -58,7 +58,7 @@ Artiklarna i serien sammanfattas nedan.
 
 **Artikel** | **Detaljer**
 --- | ---
-[Utvärdera lokala resurser för migrering till Azure](./contoso-migration-assessment.md) | Den här artikeln visar hur du kör en utvärdering av en lokal app som körs på VMware. I exemplet utvärderar en exempelorganisation virtuella appdatorer med hjälp av Azure Migrate-tjänsten och SQL Server-appdatabasen med hjälp av Data Migration Assistant.
+[Utvärdera lokala resurser för migrering till Azure](../../plan/contoso-migration-assessment.md) | Den här bästa övnings artikeln i plan metodiken beskriver hur du kör en utvärdering av en lokal app som körs på VMware. I artikeln utvärderar en exempel organisation virtuella datorer i appar med hjälp av tjänsten Azure Migrate och appen SQL Server databasen med hjälp av Data Migration Assistant.
 
 ### <a name="infrastructure"></a>Infrastruktur
 
@@ -84,7 +84,7 @@ Artiklarna i serien sammanfattas nedan.
 
 **Artikel** | **Detaljer**
 --- | ---
-[Byta värd för en app på en virtuell Azure-dator och hanterad SQL Database-instans](./contoso-migration-rehost-vm-sql-managed-instance.md) | Den här artikeln innehåller ett exempel på en hiss och Shift-migrering till Azure för en lokal app. Detta inbegriper migrering av appens virtuella klientdatorn med hjälp av [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) och appdatabasen till en hanterad Azure SQL Database-instans med hjälp av [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
+[Byta värd för en app på en virtuell Azure-dator och hanterad SQL Database-instans](./contoso-migration-rehost-vm-sql-managed-instance.md) | Den här artikeln innehåller ett exempel på en hiss och Shift-migrering till Azure för en lokal app. Den här ansträngningen omfattar migrering av den virtuella datorns klient dator med [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)och app-databasen till en Azure SQL Database Hanterad instans med hjälp av [Azure Database migration service](https://docs.microsoft.com/azure/dms/dms-overview).
 [Byta värd för en app på virtuella Azure-datorer och i en SQL Server AlwaysOn-tillgänglighetsgrupp](./contoso-migration-rehost-vm-sql-ag.md) | Det här exemplet visar hur du migrerar en app och data med hjälp av Azure-värdhanterade virtuella SQL Server-datorer. Det använder Site Recovery för att migrera de virtuella appdatorerna och Azure Database Migration Service för att migrera appdatabasen till ett SQL Server-kluster som skyddas av en AlwaysOn-tillgänglighetsgrupp.
 
 ### <a name="aspnet-php-and-java-apps"></a>ASP.NET-, PHP-och Java-appar

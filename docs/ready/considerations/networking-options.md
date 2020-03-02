@@ -7,13 +7,15 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b4450f3f1e151e8234c7b2b5f91c2709270cbcdc
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 199eedb6c9365f273588fae79b134298e8b60c6e
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799139"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225369"
 ---
+<!-- cSpell:ignore paas NVAs VPNs -->
+
 # <a name="review-your-network-options"></a>Granska dina nätverks alternativ
 
 Att designa och implementera funktioner i Azure-nätverk är en viktig del av molnimplementeringen. Du måste fatta designbeslut för nätverket för att korrekt stödja arbetsbelastningar och tjänster som kommer att finnas i molnet. Azures nätverksprodukter och tjänster har stöd för många olika nätverksfunktioner. Strukturen för dessa tjänster och nätverksarkitekturen beror på organisationens arbetsbelastning, styrningen och behovet av anslutningar.
@@ -72,14 +74,14 @@ När du har identifierat de Azure Networking-tjänster som du behöver för att 
 
 I följande tabell sammanfattas de huvudsakliga scenarier som dessa mönster stöder:
 
-| **Scenario** | **Föreslagen nätverksarkitektur**
-| --- | --- |
-| Alla Azure-värdbaserade arbetsbelastningar som distribueras till din landningszon är helt PaaS-baserade, kräver inte ett virtuellt nätverk och är inte en del av en större molnimplementering som omfattar IaaS-resurser. | [Endast PaaS](../../decision-guides/software-defined-network/paas-only.md) |
-| Dina Azure-värdbaserade arbetsbelastningar distribuerar IaaS-baserade resurser som virtuella datorer eller behöver annars ett virtuellt nätverk, men de behöver inte anslutas till din lokala miljö. | [Molnbaserat](../../decision-guides/software-defined-network/cloud-native.md) |
-| Dina Azure-värdbaserade arbetsbelastningar kräver begränsad åtkomst till lokala resurser, men du är tvungen att hantera molnanslutningar som ej betrodda. | [Cloud DMZ](../../decision-guides/software-defined-network/cloud-dmz.md) |
-| Dina Azure-värdbaserade arbetsbelastningar kräver begränsad åtkomst till lokala resurser och du planerar att implementera äldre säkerhetsprinciper och säker anslutning mellan molnet och den lokala miljön. | [Hybrid](../../decision-guides/software-defined-network/hybrid.md) |
-| Du behöver distribuera och hantera ett stort antal virtuella datorer och arbetsbelastningar, vilket kan överskrida gränserna för [Azure-prenumerationer](https://docs.microsoft.com/azure/azure-subscription-service-limits), du behöver dela tjänster över prenumerationer eller så behöver du en mer segmenterad struktur för roll, program eller behörighetsåtskillnad. | [Hubb och ekrar](../../decision-guides/software-defined-network/hub-spoke.md) |
-| Du har många avdelningskontor som behöver anslutas till varandra och till Azure. | [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) |
+| **Scenario**                                                                                                                                                                                                                                                                                                                        | **Föreslagen nätverksarkitektur**                                                  |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| Alla Azure-värdbaserade arbets belastningar som distribueras till din landnings zon är helt PaaS-baserade, kräver inte ett virtuellt nätverk och är inte en del av en större moln implementerings ansträngning som innehåller IaaS-resurser.                                                                                                                        | [Endast PaaS](../../decision-guides/software-defined-network/paas-only.md)            |
+| Dina Azure-värdbaserade arbetsbelastningar distribuerar IaaS-baserade resurser som virtuella datorer eller behöver annars ett virtuellt nätverk, men de behöver inte anslutas till din lokala miljö.                                                                                                                                          | [Molnbaserat](../../decision-guides/software-defined-network/cloud-native.md)      |
+| Dina Azure-värdbaserade arbetsbelastningar kräver begränsad åtkomst till lokala resurser, men du är tvungen att hantera molnanslutningar som ej betrodda.                                                                                                                                                                                           | [Cloud DMZ](../../decision-guides/software-defined-network/cloud-dmz.md)            |
+| Dina Azure-värdbaserade arbetsbelastningar kräver begränsad åtkomst till lokala resurser och du planerar att implementera äldre säkerhetsprinciper och säker anslutning mellan molnet och den lokala miljön.                                                                                                                         | [Hybrid](../../decision-guides/software-defined-network/hybrid.md)                  |
+| Du behöver distribuera och hantera ett stort antal virtuella datorer och arbetsbelastningar, vilket kan överskrida gränserna för [Azure-prenumerationer](https://docs.microsoft.com/azure/azure-subscription-service-limits), du behöver dela tjänster över prenumerationer eller så behöver du en mer segmenterad struktur för roll, program eller behörighetsåtskillnad. | [Hubb och ekrar](../../decision-guides/software-defined-network/hub-spoke.md)        |
+| Du har många avdelningskontor som behöver anslutas till varandra och till Azure.                                                                                                                                                                                                                                                       | [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) |
 
 ### <a name="azure-virtual-datacenter"></a>Azure Virtual Datacenter
 

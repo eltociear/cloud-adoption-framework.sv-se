@@ -3,17 +3,17 @@ title: Rationalisera den digitala egendomen
 description: Använd Cloud rationalisering för att utvärdera dina digitala till gångar och Fastställ den bästa metoden för att vara värd för dem i molnet.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 12/10/2018
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 38d574735dbc7854a03b98aee9d3e7012b939ff8
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 14f96dde6558588c092a181aa2b7a2e57220cf5f
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170145"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225297"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationalisera den digitala egendomen
 
@@ -83,7 +83,7 @@ I en traditionell lokal miljö är värd för små, oanvända till gångar säll
 
 Men när du flyttar till en moln redovisnings modell kan du ta bort till gångar för att få betydande besparingar i årliga drifts kostnader och åtgärder för att flytta fram och tillbaka.
 
-Det är inte ovanligt att organisationerna drar tillbaka 20% eller mer av sin digitala egendom när en kvantitativ analys har slutförts. Vi rekommenderar att du utför ytterligare kvalitativ analys innan du bestämmer dig för en sådan åtgärd. När den har bekräftats kan indragningen av dessa till gångar producera den första ROI-Victory i moln migreringen. I många fall är detta en av de största kostnads besparingarna. Därför rekommenderar vi att moln strategi teamet övervakar valideringen och pensionering av till gångar, parallellt med build-fasen av migreringsprocessen, för att möjliggöra en tidig ekonomisk vinst.
+Det är inte ovanligt att organisationerna drar tillbaka 20% eller mer av sin digitala egendom när en kvantitativ analys har slutförts. Vi rekommenderar att du utför ytterligare kvalitativa analyser innan du vidtar åtgärder. När den har bekräftats kan du ta bort dessa till gångar och få den första ROI-Victory i moln migreringen. Detta är ofta en av de största kostnads besparingarna. Därför bör moln strategi teamet övervaka valideringen och pensionering av till gångar, parallellt med körning av metoden för [migrering](../migrate/index.md), för att uppnå en tidig ekonomisk vinst.
 
 ### <a name="program-adjustments"></a>Program justeringar
 

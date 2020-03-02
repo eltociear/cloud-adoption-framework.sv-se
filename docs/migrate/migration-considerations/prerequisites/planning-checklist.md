@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2660c6f09924c907591c8c8635b943125d0ac9a1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: acf6c3b8dacd94c51a6fa9a857efad48eda727a0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801417"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222254"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>Planerings check lista för migrerings miljö: validera miljö beredskap innan migrering
 
@@ -26,7 +26,11 @@ Den här artikeln och checklistan förutsätter en migreringsmetod med _värdbyt
 
 ## <a name="governance-alignment"></a>Styrningsjustering
 
-Det första och viktigaste beslutet om en migreringsklar miljö är valet av styrningsjustering. Har enighet nåtts avseende justering av styrning med migreringsgrunden? Som minst bör moln implementerings gruppen förstå om migreringen hamnar i en enda miljö med begränsad styrning, en helt styrd miljö fabrik eller någon variant i mellan. Mer alternativ och vägledning om styrningsjustering finns i artikeln om [styrning- och anpassningsefterlevnad](../../expanded-scope/governance-or-compliance.md).
+Det första och viktigaste beslutet om en migreringsklar miljö är valet av styrningsjustering. Har enighet nåtts avseende justering av styrning med migreringsgrunden? Som minst bör moln implementerings gruppen förstå om migreringen hamnar i en enda miljö med begränsad styrning, en helt styrd miljö fabrik eller någon variant i mellan. För ytterligare vägledning om styrnings justering, se [metoden regler](../../../govern/index.md).
+
+## <a name="operations-management-alignment"></a>Justering av Operations Management
+
+Innan du migrerar till gångar till molnet är det viktigt att förstå eventuella krav eller begränsningar avseende drift hantering. Som minst bör migreringen omfatta alla implementeringar som krävs för att uppfylla drifts bas linjen. Mer information om åtgärds justering finns i avsnittet [Hantera metod](../../../manage/index.md).
 
 ## <a name="cloud-readiness-implementation"></a>Implementering av molnberedskap
 

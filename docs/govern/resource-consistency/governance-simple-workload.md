@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 868f62856c68c516c384d44cd7fa0e1857ade0e8
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: efdca4c5848e8815166fd2ddf308d40ae62f75a1
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709574"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223716"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Styrningsdesign för en enkel arbetsbelastning
 

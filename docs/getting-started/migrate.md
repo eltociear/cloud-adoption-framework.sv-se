@@ -3,16 +3,16 @@ title: Påbörja en migrering av molnet i Azure
 description: Få omfattande vägledning för att överföra äldre program arbets belastningar till molnet med hjälp av innovativa molnbaserade tekniker.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/10/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: eeb7cc566a373296fdf290dced4c82e038c11d17
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: ef04a867614c6597268269421ef1d341f5252f3b
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170196"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223973"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Påbörja en migrering av molnet i Azure
 
@@ -55,7 +55,7 @@ Den här metoden består av två metoder eller fokus områden: moln strategi & p
 
 ## <a name="cloud-implementation"></a>Moln implementering
 
-Cloud implementation är en iterativ process för att migrera och ställa av den digitala fastigheten i justering med riktade företags resultat och ändrings hanterings kontroller. Under varje iteration migreras eller förvaras arbets belastningar i justeringen med strategin och planen. Beslut om IaaS, PaaS eller hybrider görs under utvärderings fasen till optimerad kontroll och körning. Dessa beslut kommer att driva de verktyg som används under migreringen. Den här modellen kan användas med minimal strategi och planering. Men för att säkerställa bästa möjliga affärs avkastning, rekommenderar vi att både IT och verksamheten justeras på en tydlig strategi och planerar att hjälpa implementerings aktiviteterna.
+Cloud implementation är en iterativ process för att migrera och modernisera den digitala fastigheten, justerad mot riktade företags resultat och ändrings hanterings kontroller. Under varje iteration migreras eller förvaras arbets belastningar i justeringen med strategin och planen. Beslut om IaaS, PaaS eller hybrider görs under utvärderings fasen [av metoden för att optimera](../migrate/index.md) kontroll och körning. Dessa beslut kommer att driva de verktyg som används under varje iteration av migrations fasen inom samma metod. Den här modellen kan användas med minimal strategi och planering. Men för att se till att det bästa företaget returnerar, bör både IT och verksamheten anpassas efter en tydlig strategi och planera för att hjälpa implementerings aktiviteter.
 
 ![Moln implementerings ramverkets moln implementerings metod](../_images/operational-transformation-migrate.png)
 
@@ -124,7 +124,7 @@ Tekniken som migreras till molnet ökar ständigt när moln leverantörer lägge
 
 - Windows och SQL Server
 - Linux-databaser och databaser med öppen källkod (OSS)
-- Ostrukturera/NoSQL-databaser
+- Ostrukturerade och NoSQL databaser
 - SAP på Azure
 - Analys (informations lager, Data Lake)
 

@@ -7,13 +7,15 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fb3465345b45f2a7c71dac3c519e4daa7702dd47
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: f869716c907aa6c03adfb81a4f698dab42b9e387
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171352"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223641"
 ---
+<!-- cspell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
+
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Gör växeln från stordatorer till Azure
 
 Som en alternativ plattform för att köra traditionella stordator program erbjuder Azure storskalig beräkning och lagring i en miljö med hög tillgänglighet. Du får värde och flexibilitet för en modern, molnbaserad plattform utan kostnader som är kopplade till en stordator miljö.
@@ -59,7 +61,7 @@ En CF erbjuder också nära sammansatta beräkningar, medan de skalbara funktion
 
 Stordator kunder bevarar vanligt vis katastrof återställnings webbplatser eller använder eller en oberoende stordator leverantör för katastrof beredskap. Synkronisering med en haveri beredskaps plats sker vanligt vis genom offline-kopior av data. Båda alternativen innebär höga kostnader.
 
-Automatisk geo-redundans är också tillgängligt via stordator kopplings funktionen, med stor kostnad och är vanligt vis reserverad för verksamhets kritiska system. Azure har däremot enkla och kostnads effektiva alternativ för [säkerhets kopiering](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup), [återställning](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)och [redundans](https://docs.microsoft.com/azure/storage/common/storage-redundancy) på lokala eller regionala nivåer eller via GEO-redundans.
+Automatisk geo-redundans är också tillgängligt via anslutning till stordator-funktionen. Den här metoden är kostsam och är vanligt vis reserverad för verksamhets kritiska system. Azure har däremot enkla och kostnads effektiva alternativ för [säkerhets kopiering](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup), [återställning](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)och [redundans](https://docs.microsoft.com/azure/storage/common/storage-redundancy) på lokala eller regionala nivåer eller via GEO-redundans.
 
 ## <a name="storage"></a>Storage
 

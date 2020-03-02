@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 30783e760f85324116e0a9a968a1c5aa486eb6f7
-ms.sourcegitcommit: 41cb36f58cc48950da1a2aa2032cc34ba5b16a0b
+ms.openlocfilehash: 0616b2721a903be369192a47fcd888247fd6cad6
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77599964"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222614"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Metodtips för kostnad och storleksändring av arbetsbelastningar som migreras till Azure
 
@@ -85,7 +85,7 @@ Du kan välja olika alternativ när du distribuerar virtuella Azure-datorer för
 
 Det kan vara kostsamt och tidskrävande att justera och underhålla lokalt lagringsutrymme (SAN eller NAS) och nätverken som de ligger på. Fildata migreras vanligtvis till molnet för att förenkla driften och hanteringen. Microsoft erbjuder flera alternativ för att flytta data till Azure och du måste fatta beslut om dessa alternativ. Om du väljer rätt lagringstyp för data kan din organisation spara tusentals kronor varje månad. Några saker att tänka på:
 
-- Data som inte används mycket och som inte är verksamhetskritiska behöver inte placeras på den dyraste lagringen.
+- Data som inte används mycket och som inte är affärs kritiska behöver inte placeras på den dyraste lagringen.
 - Å andra sidan bör verksamhetskritiska data förvaras på högre nivå.
 - När du planerar migreringen bör du inventera dina data och organisera dem efter prioritet så att de kan placeras på den lämpligaste lagringen. Överväg både budget och kostnader, samt prestanda. Kostnaden bör inte nödvändigtvis vara den huvudsakliga beslutsfaktorn. Om du väljer det billigaste alternativet kan du exponera arbetsbelastningen för prestanda- och tillgänglighetsrisker.
 

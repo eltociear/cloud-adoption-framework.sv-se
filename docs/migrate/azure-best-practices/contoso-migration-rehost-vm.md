@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: cb6bb11ee8d87f5ca6069979894de6549bb4a33b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 8b704c88b2e6a161c49082301df6e6a3d7d77154
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807333"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222898"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms"></a>Vara värd för en lokal app på virtuella Azure-datorer
 
@@ -26,7 +26,7 @@ SmartHotel360-appen som används i det här exemplet tillhandahålls som öppen 
 IT-ledningsgruppen har arbetat tillsammans med affärspartner för att komma fram till vad man vill uppnå med migreringen:
 
 - **Hantera företagets tillväxt.** Contoso växer, vilket leder till tryck på lokala system och infrastruktur.
-- **Begränsa risken.** SmartHotel360-appen är viktig för Contosos verksamhet. De vill flytta appen till Azure utan några risker.
+- **Begränsa risker.** SmartHotel360-appen är viktig för Contosos verksamhet. De vill flytta appen till Azure utan några risker.
 - **Utöka.** Contoso vill inte ändra appen, men måste vara säkra på att den är stabil.
 
 ## <a name="migration-goals"></a>Migreringsmål
@@ -55,7 +55,7 @@ När de har fastställt målen och kraven utformar och utvärderar Contoso en di
 - De virtuella datorerna för appen migreras till den primära Azure-regionen (USA, östra 2) och placeras i produktionsnätverket (VNET-PROD-EUS2).
 - Den virtuella webbklienten placeras i undernätet för klientdelen (PROD-FE-EUS2) i produktionsnätverket.
 - Den virtuella datorn för databasen placeras i undernätet för databaser (PROD-DB-EUS2) i produktionsnätverket.
-- De lokala, virtuella datorerna i Contosos datacentret inaktiveras när migreringen är färdig.
+- De lokala, virtuella datorerna i Contosos datacenter inaktiveras när migreringen är färdig.
 
 ![Scenariots arkitektur](./media/contoso-migration-rehost-vm/architecture.png)
 
@@ -66,7 +66,7 @@ Som en del av processen för lösningsdesign gjorde Contoso en funktionsjämför
 - Användning av en virtuell Azure-dator som kör SQL Server verkar vara en optimal lösning om Contoso behöver anpassa operativsystemet eller databasservern, eller om de vill samlokalisera och köra appar från tredje part på samma virtuella dator.
 - Med Software Assurance kan Contoso i framtiden byta ut befintliga licenser till rabatterade priser för en SQL-databas, hanterad instans med hjälp av Azure Hybrid-förmånen för SQL Server. Detta kan spara upp till 30 % på hanterad instans.
 
-### <a name="solution-review"></a>Utvärdering av lösningen
+### <a name="solution-review"></a>Lösningsgranskning
 
 Contoso utvärderar den föreslagna designen genom att skapa en lista med för- och nackdelar.
 
@@ -79,7 +79,7 @@ Contoso utvärderar den föreslagna designen genom att skapa en lista med för- 
 
 <!-- markdownlint-enable MD033 -->
 
-### <a name="migration-process"></a>Migreringsprocessen
+### <a name="migration-process"></a>Migreringsprocess
 
 Contoso kommer att migrera appens klientdel och virtuella databaser till virtuella Azure-datorer med den agentlösa metoden för Azure Migrate-servermigrering.
 
@@ -88,15 +88,15 @@ Contoso kommer att migrera appens klientdel och virtuella databaser till virtuel
 - När allt är förberett kan Contoso börja replikera de virtuella datorerna.
 - När replikeringen har aktiverats och fungerar migrerar Contoso den virtuella datorn genom att redundansväxla till Azure.
 
-![Migreringsprocessen](./media/contoso-migration-rehost-vm/migration-process-az-migrate.png)
+![Migreringsprocess](./media/contoso-migration-rehost-vm/migration-process-az-migrate.png)
 
 ### <a name="azure-services"></a>Azure-tjänster
 
 **Tjänst** | **Beskrivning** | **Kostnad**
 --- | --- | ---
-[Azure Migrate-servermigrering](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm) | Tjänsten samordnar och styr migreringen av dina lokala appar och arbetsbelastningar, samt virtuella AWS/GCP-datorinstanser. | Vid replikering till Azure debiteras Azure Storage-avgifter. Virtuella Azure-datorer skapas och medför kostnader i samband med en redundansväxling. [Läs mer](https://azure.microsoft.com/pricing/details/azure-migrate) om avgifter och priser.
+[Azure Migrate-servermigrering](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm) | Tjänsten samordnar och styr migreringen av dina lokala appar och arbetsbelastningar, samt virtuella AWS/GCP-datorinstanser. | Under replikeringen till Azure debiteras Azure Storage-avgifter. Virtuella Azure-datorer skapas och medför kostnader i samband med en redundansväxling. [Läs mer](https://azure.microsoft.com/pricing/details/azure-migrate) om avgifter och priser.
 
-## <a name="prerequisites"></a>Krav
+## <a name="prerequisites"></a>Förutsättningar
 
 Det här behöver Contoso för att köra detta scenario.
 
@@ -105,12 +105,12 @@ Det här behöver Contoso för att köra detta scenario.
 **Krav** | **Detaljer**
 --- | ---
 **Azure-prenumeration** | Contoso skapade prenumerationer i en tidigare artikel i den här serien. Om du inte har någon Azure-prenumeration kan du skapa ett [kostnadsfritt konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Om du skapar ett kostnadsfritt konto är du administratör för din prenumeration och kan utföra alla åtgärder.<br/><br/> Om du använder en befintlig prenumeration och inte är administratör måste du be administratören att ge dig ägar- eller deltagarbehörighet.<br/><br/> Om du behöver mer detaljerade behörigheter läser du [den här artikeln](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Azure-infrastruktur** | [Läs om](./contoso-migration-infrastructure.md) hur Contoso konfigurerade en Azure-infrastruktur.<br/><br/> Läs mer om specifika [krav](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prerequisites) för Azure Migrate-servermigrering.
+**Azure-infrastruktur** | [Läs om hur](./contoso-migration-infrastructure.md) Contoso konfigurerar en Azure-infrastruktur.<br/><br/> Läs mer om specifika [krav](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prerequisites) för Azure Migrate-servermigrering.
 **Lokala servrar** | De lokala vCenter-servrarna bör köra version 5.5, 6.0 eller 6.5<br/><br/> ESXi-värdar bör köra version 5.5, 6.0 eller 6.5<br/><br/> En eller flera virtuella VMware-datorer ska köras på ESXi-värden.
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="scenario-steps"></a>Scenariosteg
+## <a name="scenario-steps"></a>Steg i scenariot
 
 Contosos administratörer genomför migreringen på följande sätt:
 
@@ -176,7 +176,7 @@ Innan Contosos administratörer kan köra en migrering till Azure måste de konf
 
 När identifieringen är klar kan du påbörja replikeringen av virtuella VMware-datorer till Azure.
 
-1. I Azure Migrate Project >- **servrar** **Azure Migrate: Server-migrering**klickar du på **Replikera**.
+1. I Azure Migrate Project >- **servrar** **Azure Migrate: Server migrering**väljer du **Replikera**.
 
     ![Replikera virtuella datorer](./media/contoso-migration-rehost-vm/select-replicate.png)
 
@@ -193,14 +193,14 @@ När identifieringen är klar kan du påbörja replikeringen av virtuella VMware
 
     ![Välj utvärdering](./media/contoso-migration-rehost-vm/select-assessment.png)
 
-5. I **Virtuella datorer** söker du efter önskade datorer och markerar varje virtuell dator som du vill migrera. Klicka sedan på **Nästa: mål inställningar**.
+5. I **Virtuella datorer** söker du efter önskade datorer och markerar varje virtuell dator som du vill migrera. Välj sedan **Nästa: mål inställningar**.
 
 6. I **Målinställningar** väljer du prenumeration och den målregion som du vill migrera till. Ange sedan den resursgrupp där du vill att de virtuella Azure-datorerna ska finnas efter migreringen. I **Virtuellt nätverk** väljer du det Azure VNet/undernät som de virtuella Azure-datorerna ska anslutas till efter migreringen.
 
 7. I **Azure Hybrid-förmån**väljer du följande:
 
-    - Välj **Nej** om du inte vill använda Azure Hybrid-förmånen. Klicka sedan på **Nästa**.
-    - Välj **Ja** om du har Windows Server-datorer som omfattas av aktiva Software Assurance- eller Windows Server-prenumerationer och du vill tillämpa förmånen på de datorer som du migrerar. Klicka sedan på **Nästa**.
+    - Välj **Nej** om du inte vill använda Azure Hybrid-förmånen. Välj sedan **Nästa**.
+    - Välj **Ja** om du har Windows Server-datorer som omfattas av aktiva Software Assurance- eller Windows Server-prenumerationer och du vill tillämpa förmånen på de datorer som du migrerar. Välj sedan **Nästa**.
 
 8. I **Compute** granskar du namnet på den virtuella datorn, storlek, disktyp för operativsystemet och tillgänglighetsuppsättningen. De virtuella datorerna måste följa [Azures krav](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#vmware-requirements).
 
@@ -208,11 +208,11 @@ När identifieringen är klar kan du påbörja replikeringen av virtuella VMware
     - **OS-disk:** Ange OS-disken (start) för den virtuella datorn. Operativsystemdisken är den disk där operativsystemets bootloader och installationsprogram finns.
     - **Tillgänglighets uppsättning:** Om den virtuella datorn ska finnas i en Azure-tillgänglighets uppsättning efter migreringen anger du uppsättningen. Uppsättningen måste finnas i målets resursgrupp som du anger för migreringen.
 
-9. I **Diskar** anger du om VM-diskarna ska replikeras till Azure och disktypen (standard SSD/HDD eller premiumhanterade diskar) i Azure. Klicka sedan på **Nästa**.
+9. I **Diskar** anger du om VM-diskarna ska replikeras till Azure och disktypen (standard SSD/HDD eller premiumhanterade diskar) i Azure. Välj sedan **Nästa**.
     - Du kan undanta diskar från replikering.
     - Om du undantar diskar kommer de inte att synas i den virtuella Azure-datorn efter migreringen.
 
-10. I **Granska och starta replikering** kontrollerar du inställningarna och klickar på **Replikera** för att påbörja den första replikeringen för servrarna.
+10. Granska inställningarna i **Granska och starta replikering och**Välj sedan **Replikera** för att starta den inledande replikeringen för servrarna.
 
 > [!NOTE]
 > Du kan uppdatera replikeringsinställningarna när du vill innan replikeringen startar i **Hantera** > **Replikera datorer**. Det går inte att ändra inställningarna efter att replikeringen har startat.
@@ -223,18 +223,18 @@ Contosos administratörer kör en snabb testning av redundans och sedan en fulls
 
 ### <a name="run-a-test-failover"></a>Köra ett redundanstest
 
-1. I **mål för migrering** > **servrar** > **Azure Migrate: Server migrering**klickar du på **test migrerade servrar**.
+1. I **mål för migrering** > **servrar** > **Azure Migrate: Server migrering**väljer du **testa migrerade servrar**.
 
      ![Testmigrerade servrar](./media/contoso-migration-rehost-vm/test-migrated-servers.png)
 
-2. Högerklicka på den virtuella dator som ska testas och klicka på **Testmigrera**.
+2. Högerklicka på den virtuella dator som du vill testa och välj sedan **testa migrering**.
 
     ![Testmigrera](./media/contoso-migration-rehost-vm/test-migrate.png)
 
 3. I **Testmigrera** väljer du det Azure VNet där den virtuella Azure-datorn kommer att finnas efter migreringen. Vi rekommenderar att du använder ett virtuellt nätverk som inte är för produktion.
 4. **Testmigreringen** startas. Övervaka jobbet i portalmeddelanden.
 5. När migreringen är klar kan du se den migrerade virtuella Azure-datorn i **Virtual Machines** i Azure Portal. Datornamnet har suffixet **-Test**.
-6. När testet är klart högerklickar du på den virtuella Azure-datorn i **Replikera datorer** och klickar på **Rensa upp i testmigreringen**.
+6. När testet är klar högerklickar du på den virtuella Azure-datorn i **Replikera datorer**och väljer sedan **Rensa testning av migrering**.
 
     ![Rensa migrering](./media/contoso-migration-rehost-vm/clean-up.png)
 
@@ -242,7 +242,7 @@ Contosos administratörer kör en snabb testning av redundans och sedan en fulls
 
 Contosos administratörer kör nu en fullständig redundansväxling för att slutföra migreringen.
 
-1. I Azure Migrate Project >- **servrar** > **Azure Migrate: Server-migrering**klickar du på **Replikera servrar**.
+1. I Azure Migrate Project >- **servrar** > **Azure Migrate: Server-migrering**och välj sedan **Replikera servrar**.
 
     ![Servrarna replikeras](./media/contoso-migration-rehost-vm/replicating-servers.png)
 
@@ -258,7 +258,7 @@ Contosos administratörer kör nu en fullständig redundansväxling för att slu
 - [Lär dig](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration) hur du kör ett redundanstest.
 - [Läs mer](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms) om migrering av virtuella datorer till Azure.
 
-## <a name="clean-up-after-migration"></a>Rensa efter migrering
+## <a name="clean-up-after-migration"></a>Rensa efter migreringen
 
 När migreringen är klar körs SmartHotel360-appens nivåer på virtuella Azure-datorer.
 
@@ -296,6 +296,6 @@ För affärskontinuitet och haveriberedskap (BCDR) vidtar Contoso följande åtg
 1. Contoso har befintlig licensiering för sina virtuella datorer och drar nytta av Azure Hybrid-förmånen. Contoso konverterar befintliga virtuella Azure-datorer för att dra nytta av denna prissättning.
 2. Contoso aktiverar Azure Cost Management som licensieras av Cloudyn, ett Microsoft-dotterbolag. Det är en kostnadshanteringslösning för flera moln som hjälper till att använda och hantera Azure och andra molnresurser. [Läs mer](https://docs.microsoft.com/azure/cost-management/overview) om Azure Cost Management.
 
-## <a name="conclusion"></a>Slutsats
+## <a name="conclusion"></a>Sammanfattning
 
 I den här artikeln har Contoso angett en ny värd för SmartHotel360-appen i Azure, genom att migrera appens virtuella datorer till virtuella Azure-datorer med hjälp av Azure Migrate-servermigreringsverktyget.
