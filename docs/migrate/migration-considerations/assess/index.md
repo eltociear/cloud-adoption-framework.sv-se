@@ -1,20 +1,20 @@
 ---
-title: Utvärdera tillgångar före migrering
-description: Utvärdera tillgångar före migrering
+title: Validera antaganden för utvärderingen före migrering
+description: Validera antaganden för utvärderingen före migrering
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 76862bfbc4a88d34edb3dddb6281b5c435e6be73
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e370ef47b27449a3a46965dc309403a09fb3829d
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802505"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222285"
 ---
-# <a name="assess-assets-prior-to-migration"></a>Utvärdera tillgångar före migrering
+# <a name="validate-assessment-assumptions-before-migration"></a>Validera antaganden för utvärderingen före migrering
 
 Många av dina befintliga arbetsbelastningar är utmärkta kandidater för molnmigrering, men inte alla tillgångar är kompatibla med molnplattformar och inte alla arbetsbelastningar kan dra nytta av värdhantering i molnet. Med [Planering för digital egendom](../../../digital-estate/index.md) kan du skapa en övergripande [uppgiftslista för migrering](../prerequisites/technical-complexity.md#migration-backlog-aligning-business-priorities-and-timing) för potentiella arbetsbelastningar som kan migreras. Det här planeringsarbetet sker dock på hög nivå. Det förlitar sig på antaganden som gjordes av teamet för molnstrategi och går inte in på djupet i tekniska frågor.
 
@@ -44,11 +44,14 @@ Utöver det övergripande ansvaret finns det åtgärder som en person eller en g
 - **Affärsprioritet.** Teamet förstår syftet med att migrera den här arbetsbelastningen, inbegripet alla avsedda effekter på verksamheten.
   - En medlem i molnstrategiteamet ska ha det slutliga ansvaret för den här aktiviteten under ledning av molnimplementeringsteamet.
 - **Inriktning med intressenter.** Teamet riktar in förväntningar och prioriteringar med interna intressenter och identifierar framgångskriterier för migreringen. Hur ser framgång ut efter migrering?
+- **Förfinad rationalisering.** Utvärdera de första antagandena om rationalisering. Bör en annan [rationaliseringsmetod](../../../digital-estate/rationalize.md) användas för att migrera den här speciella arbetsbelastningen?
+- **Moderniseringsbeslut.** Om du inte använder rationaliseringsbeslutet bör olika tillgångar i arbetsbelastningen moderniseras för att utnyttja PaaS-baserade lösningar?
 - **Kostnad.** Kostnaden för målarkitekturen har beräknats, och den övergripande budgeten har justerats.
 - **Migreringsstöd.** Teamet har beslutat hur det tekniska arbetet med migreringen ska genomföras, däribland beslut om partner- eller Microsoft-support.
 - **Utvärdering.** Arbetsbelastningen utvärderas för kompatibilitet och beroenden.
   - Den här aktiviteten ska ges till en ämnesexpert som är bekant med arkitekturen och driften av kandidatarbetsbelastningen.
 - **Arkitektur.** Teamet har kommit överens om sluttillståndsarkitekturen för den migrerade arbetsbelastningen.
+- **Migreringsverktyg.** Beroende på metoder för modernisering och arkitektur kan olika migreringsverktyg användas för att automatisera migreringen. Kommer migreringen att använda de bästa [migreringsverktygen](../../../decision-guides/migrate-decision-guide/index.md)?
 - **Inriktning med uppgiftslista.** Molnimplementeringsteamet granskar krav och beslutar om migreringen av kandidatarbetsbelastningen. Efter beslutet ska lanseringens uppgiftslista och iterationens uppgiftslista uppdateras därefter.
 - **Uppdelad arbetsstruktur eller bakåtplanerat arbetsschema.** Teamet upprättar ett schema för huvudmilstolpar och identifierar mål för då processer för planering, implementering och granskning har slutförts.
 - **Slutligt godkännande.** Alla nödvändiga godkännare har granskat planen och godkänt metoden för migrering av tillgången.

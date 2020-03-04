@@ -8,19 +8,19 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: d8545d000d817aa8d6bcaa40a67a157ca5e57669
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 00dfa6c1caed189d9d9b1d27525344b5101c2af0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708503"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222606"
 ---
 # <a name="azure-regions"></a>Azure-regioner
 
 Azure består av många regioner runtom i världen. Varje [Azure-region](https://azure.microsoft.com/global-infrastructure/regions) har särskilda egenskaper, som gör valet av region ytterst viktigt.
 
 1. **Tillgängliga tjänster:** Vilka tjänster som distribueras till respektive region varierar beroende på olika faktorer. Välj en region för din arbetsbelastning som innehåller den tjänst du vill använda. Mer information om vilka tjänster som är tillgängliga i respektive region finns i [Produkttillgänglighet per region](https://azure.microsoft.com/global-infrastructure/services).
-1. **Kapacitet:** Varje region har en maximal kapacitet. Även om detta oftast inte påverkar slutanvändaren, kan det påverka vilka typer av prenumerationer som kan distribuera vilka typer av tjänster och under vilka omständigheter. Detta skiljer sig från prenumerationskvoterna. Om du planerar en omfattande datacentermigrering till Azure kanske du vill kontakta ditt lokala Azure-team eller din kontoansvariga för att kontrollera att du kan distribuera i den skala som behövs.
+1. **Kapacitet:** Varje region har en maximal kapacitet. Även om detta oftast inte påverkar slutanvändaren kan det påverka vilka typer av prenumerationer som kan distribuera vilka typer av tjänster och under vilka omständigheter. Detta skiljer sig från prenumerationskvoterna. Om du planerar en omfattande datacentermigrering till Azure kanske du vill kontakta ditt lokala Azure-team eller din kontoansvariga för att kontrollera att du kan distribuera i den skala som behövs.
 1. **Villkor:** Distributionen av tjänster är begränsad i vissa regioner. Vissa regioner är till exempel bara tillgängliga som mål för säkerhetskopiering eller redundans. Andra begränsningar som är viktiga att notera är [krav på datasuveränitet](https://azure.microsoft.com/global-infrastructure/geographies).
 1. **Suveränitet:** Vissa regioner är avsedda för specifika suveräna entiteter. Även om alla regioner är Azure-regioner, är dessa suveräna regioner helt isolerade från resten av Azure. De hanteras inte nödvändigtvis av Microsoft, och kan vara begränsade till särskilda typer av kunder. Dessa suveräna regioner är:
     1. [Azure Kina](https://azure.microsoft.com/global-infrastructure/china)

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: c81096576934aa55bd0381e7ac26dd8666b827ea
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: bc80c33569cdb0980885ebba9c87d52e0aa87b7d
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707993"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222593"
 ---
 # <a name="encryption-decision-guide"></a>Beslutsguide för kryptering
 
@@ -54,7 +54,7 @@ Användning av ett molnbaserat nyckelhanteringssystem inbegriper följande antag
 
 Med en BYOK-metod (Bring Your Own Key) skapar du nycklar på dedikerad HSM-maskinvara i din lokala miljö och överför sedan dessa nycklar på ett säkert sätt till ett molnbaserat hanteringssystem såsom Azure Key Vault för användning med dina molnhanterade resurser.
 
-**Antaganden gällande Bring Your Own Key:** Skapande av nycklar lokalt och användning av nycklarna med ett molnbaserat system för nyckelhantering inbegriper följande antaganden:
+**Antaganden för bring-your-own-key:** Skapande av nycklar lokalt och användning av nycklarna med ett molnbaserat system för nyckelhantering inbegriper följande antaganden:
 
 - Du litar på att den underliggande infrastrukturen för säkerhet och åtkomstkontroll på molnplattformen är värd för och använder dina nycklar och hemligheter.
 - Dina molnbaserade program eller tjänster kan komma åt och använda nycklar och hemligheter på ett robust och säkert sätt.

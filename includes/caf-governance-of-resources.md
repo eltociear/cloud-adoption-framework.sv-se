@@ -29,7 +29,7 @@ Information om hur du definierar anpassade principer finns i [dokumentationen om
 
 Azure-principer kan tilldelas på resursgrupps-, prenumerations- och hanteringsgruppsnivå och kan tas med i [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview)-definitioner. Även om de principkrav som definieras i denna styrnings-MVP gäller för alla aktuella prenumerationer är det mycket troligt att framtida distributioner kommer att kräva undantag eller alternativa principer. Därför är det inte säkert att tilldelning av principer med hjälp av hanteringsgrupper, där alla underordnade prenumerationer ärver dessa tilldelningar, är flexibelt nog att stödja dessa scenarier.
 
-Azure Blueprints möjliggör konsekvent tilldelning av principer och roller, tillämpning av Resource Manager-mallar och distribution av resursgrupper över flera prenumerationer. Som med principdefinitioner sparas skissdefinitioner till hanteringsgrupper eller prenumerationer och är tillgängliga via arv till alla underordnade objekt i hanteringsgruppshierarkin.
+Azure Blueprints möjliggör konsekvent tilldelning av principer och roller, tillämpning av Resource Manager-mallar och distribution av resursgrupper över flera prenumerationer. Precis som principdefinitioner sparas skissdefinitioner till hanteringsgrupper eller prenumerationer. Principdefinitionerna är tillgängliga genom arv till alla underordnade i hanteringsgruppens hierarki.
 
 Teamet för molnstyrning har beslutat att framtvingande av den Azure Policy och de RBAC-tilldelningar som krävs mellan prenumerationer kommer att implementeras via Azure Blueprints och associerade artefakter:
 

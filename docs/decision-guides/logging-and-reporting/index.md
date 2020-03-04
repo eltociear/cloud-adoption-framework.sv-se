@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: e87c64be282f91716bdb8d803681c1f0f8a1f722
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: a6229013dcbc56ff39fd4d41a5b81f13b446e625
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707670"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222776"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Beslutsguide för loggning och rapportering
 
@@ -44,7 +44,7 @@ Om din organisation för närvarande saknar etablerade loggnings- och rapporteri
 
 I det här scenariot registreras och lagras alla loggdata i molnet medan de verktyg för loggning och rapportering som bearbetar och visar information för IT-personalen tillhandahålls av Azure-plattformen och Azure Monitor.
 
-Anpassade Azure Monitor-baserade loggningslösningar kan implementeras ad hoc för varje prenumeration eller arbetsbelastning i mindre eller experimentella distributioner, samt organiseras på ett centraliserat sätt för att övervaka loggdata i hela din molnmiljö.
+Anpassade loggningslösningar som baseras på Azure Monitor kan implementeras efter behov för varje prenumeration eller arbetsbelastning i mindre eller experimentella distributioner. Dessa lösningar är ordnade centralt för att övervaka loggdata i hela din molnegendom.
 
 **Molnautentiska antaganden:** Användning av ett molnbaserat system för loggning och rapportering förutsätter följande:
 

@@ -7,13 +7,15 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 04058077ed9fc739a063e75d0da4effb4c784436
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: b38408033231a4ac1d8debe889117c2f5220c676
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171386"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223665"
 ---
+<!-- cspell:ignore nanra njray dbspaces dbextents VSAM RACF LPARS ASSGN DLBL EXTENT LIBDEF EXEC IPLs -->
+
 # <a name="mainframe-migration-overview"></a>Översikt över stordatormigrering
 
 Många företag och organisationer drar nytta av att flytta några eller alla sina stordatorer, program och databaser till molnet. Azure tillhandahåller stordatorfunktioner i molnskala utan många av de nackdelar som är kopplade till stordatorer.
@@ -40,7 +42,7 @@ Stordatorer har ett rykte om sig att vara mycket tillförlitliga och tillgängli
 
 En typisk IBM-stordatorarkitektur innehåller följande vanliga komponenter:
 
-- **Klientdelssystem:** Användare kan initiera transaktioner från terminaler, webbsidor eller fjärrdatorer. Stordatorprogram har ofta anpassade användargränssnitt som kan bevaras efter en migrering till Azure. Terminalemulatorer används fortfarande för att få åtkomst till stordatorprogram och kallas även för grönskärmsanslutningar.
+- **Klientdelssystem:** Användare kan initiera transaktioner från terminaler, webbsidor eller fjärrdatorer. Stordatorprogram har ofta anpassade användargränssnitt som kan bevaras efter en migrering till Azure. Terminalemulatorer (kallas även för grönskärmsanslutningar) används fortfarande för att få åtkomst till stordatorprogram.
 
 - **Programnivå:** Stordatorer innehåller vanligt vis ett CICS (Customer information Control System), ett ledande transaktionshanteringspaket för IBM z/OS-stordatorn som ofta används med IBM Information Management System (IMS) som är en meddelandebaserad transaktionshanterare. Batchsystem hanterar datauppdateringar med stora dataflöden för stora volymer med kontoposter.
 

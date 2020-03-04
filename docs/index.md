@@ -7,13 +7,13 @@ ms.custom: homepage
 layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
-ms.date: 10/14/2019
-ms.openlocfilehash: 280445bda3f95694fec5f1b5cc2659021a8ffc20
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.date: 02/28/2020
+ms.openlocfilehash: 7bbdcdbdad1e00947d20f701ff6a81a465a09248
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170927"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223760"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Microsoft Cloud Adoption Framework för Azure
 
@@ -159,7 +159,7 @@ Drift hantering för moln- och hybridlösningar.
 
 ## <a name="understand-the-lifecycle"></a>Förstå livscykeln
 
-Var och en av faserna som beskrivs ovan ingår i molnimplementeringens livscykel. I den här bilden försöker vi skildra hela livscykeln genom att koppla samman faserna. Cloud Adoption Framework är ett ramverk för hela livscykeln där kunderna ges stöd under var och en av faserna.
+Var och en av metoderna som beskrivs ovan ingår i molnimplementeringens livscykel. I den här bilden försöker vi skildra hela livscykeln genom att koppla samman metoderna. Cloud Adoption Framework är ett fullständigt livscykelramverk som ger support åt kunderna i varje steg i varje fas av anpassningen genom att tillhandahålla metoder som vissa sätt att komma över vanliga blockerare.
 
 ![Översikt över Cloud Adoption Framework](./_images/caf-overview.png)
 

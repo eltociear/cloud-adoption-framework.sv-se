@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 67e1b0fefeeab9e95fb001b162efaa5c0f247c59
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 5eb0ab5c264e8abf842f37e03b5c61b43ade9936
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708010"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222796"
 ---
 # <a name="identity-decision-guide"></a>Beslutsguide för identitet
 

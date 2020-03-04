@@ -3,16 +3,16 @@ title: Checklista för molnmigrering med utökat omfång
 description: Checklista för molnmigrering med utökat omfång
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/10/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6a7a59ba62204d43b7085ab3dbd6b934d6aaccc1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ba6c768f98e3b74b0478fef0a86e6d8ac5537f1c
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803117"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222336"
 ---
 # <a name="expanded-scope-for-cloud-migration"></a>Utökat omfång för molnmigrering
 
@@ -26,7 +26,6 @@ I följande checklista visas vanliga komplexitetsområden som kan kräva att mig
 
 ### <a name="business-driven-scope-expansion"></a>En utökning av omfånget baserad på verksamheten
 
-- **[Balansera portföljen](./balance-the-portfolio.md):** Teamet för molnstrategi är intresserade av att investera mer i migrering (värdbyte av befintliga arbetsbelastningar och program med minimala ändringar) eller innovation (refaktorisering eller återskapande av de arbetsbelastningar eller program som använder modern molnteknik). Ofta är balans mellan de två prioriteringarna nyckeln till framgång. I den här guiden balansering av portföljen för molnimplementering ett övergripande ämne som behandlas i varje migreringsprocess.
 - **[Stöd för globala marknader](../../decision-guides/regions/index.md):** Verksamheten verkar i flera geografiska områden med olika krav för datasuveränitet. För att uppfylla de kraven bör ytterligare överväganden tas med i beräkningen för granskningen av förutsättningar och distributionen av tillgångar under migrering.
 
 ### <a name="technology-driven-scope-expansion"></a>En utökning av omfånget baserad på tekniken
@@ -43,7 +42,7 @@ Vart och ett av de här scenarierna behandlas av de olika artiklarna i det här 
 
 ## <a name="next-steps"></a>Nästa steg
 
-Bläddra i innehållsförteckningen till vänster för att åtgärda specifika behov eller omfångsändringar. Alternativt kan den första omfångsförbättringen i listan, [Balansera portföljen](./balance-the-portfolio.md), vara en bra utgångspunkt när du granskar de här scenarierna.
+Bläddra i innehållsförteckningen till vänster för att åtgärda specifika behov eller omfångsändringar. Alternativt kan den första omfångsförbättringen i listan, [Stöd för globala marknader](../../decision-guides/regions/index.md), vara en bra utgångspunkt när du granskar de här scenarierna.
 
 > [!div class="nextstepaction"]
-> [Balansera portföljen](./balance-the-portfolio.md)
+> [Stöd för globala marknader](../../decision-guides/regions/index.md)
