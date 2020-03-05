@@ -7,13 +7,13 @@ ms.date: 04/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: readiness
-ms.openlocfilehash: c85f4423ea61346e8692fd19ced0d53242733284
-ms.sourcegitcommit: 35d01bccc8ecbec38f6247a065a309ec691ca810
+ms.custom: readiness, fasttrack-edit
+ms.openlocfilehash: 5e168659c5120ded6b5cfde116699ced61390bdd
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77213600"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337874"
 ---
 # <a name="recommended-naming-and-tagging-conventions"></a>Rekommenderade regler för namngivning och taggar
 
@@ -85,9 +85,11 @@ I följande lista visas rekommenderade prefix för Azure-resurstyper som du kan 
 | Nätverkssäkerhetsgrupp              | nsg-                 |
 | Routningstabell                         | styra               |
 | Virtuell dator                     | vm                   |
+| Azure Arc-anslutna datorer        | arcm-                |
 | Lagringskonto för virtuell dator                  | stvm                 |
 | Offentlig IP-adress                           | pip-                 |
-| Lastbalanserare                       | lb-                  |
+| Belastningsutjämnare (intern)            | ILB                 |
+| Belastningsutjämnare (extern)            | Elb                 |
 | NIC                                 | nic-                 |
 | Nyckelvalv                           | 3,0                  |
 | AKS-kluster                         | AKS                 |
@@ -98,6 +100,7 @@ I följande lista visas rekommenderade prefix för Azure-resurstyper som du kan 
 | App Service-plan                    | projektplan                |
 | Webbapp                             | mobilappar                 |
 | Funktionsapp                        | FUNC                |
+| Logikapp                           | logiskt               |
 | Molntjänst                       | gör                 |
 | Azure SQL Database Server           | SQL                 |
 | Azure SQL-databas                  | sqldb-               |
@@ -125,6 +128,9 @@ I följande lista visas rekommenderade prefix för Azure-resurstyper som du kan 
 | IoT Hub                             | IoT                 |
 | Notification Hub                   | ntf-                 |
 | Notification Hubs namnrymd         | ntfns-               |
+| Log Analytics-arbetsyta             | kvorumloggen                 |
+| Application Insights                | appi-                |
+| Recovery Services valv             | rsv-                 |
 
 ### <a name="metadata-tags"></a>Metadatataggar
 

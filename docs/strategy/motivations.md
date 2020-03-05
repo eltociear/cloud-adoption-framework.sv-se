@@ -1,18 +1,18 @@
 ---
-title: 'Motivation: Varför flyttar vi till molnet?'
-description: Moln redovisning och flytt till molnet
+title: Varför flyttar vi till molnet?
+description: Använd ramverket för moln införande för Azure för att förstå motivationen bakom migreringen av molnet som kan hjälpa dig att producera fler lyckade affärs resultat.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6c774da4fa90c8a6806021b96d0519edebecfc61
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: cb5de82fab4e5a1c9f93b82ce8c7065d741ca292
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798153"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337854"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -28,7 +28,7 @@ Verksamhets omvandlingar som stöds av moln införande kan drivas av olika motiv
 
 <!-- markdownlint-disable MD033 -->
 
-| Kritiska affärs händelser | Migrering | Innovation |
+| Kritiska affärs händelser | Migrering | Verksamhet |
 |---|---|---|
 | Avsluta data Center<br/><br/>Sammanslagning, förvärv eller Divestiture<br/><br/>Minskning av kapital kostnader<br/><br/>Slut på support för verksamhets kritiska tekniker<br/><br/>Svar på ändringar i regelefterlevnad<br/><br/>Nya krav för data suveränitet<br/><br/>Nedsättning av avbrott och förbättringar av IT-stabiliteten | Kostnadsbesparingar<br/><br/>Minskning av leverantör eller teknisk komplexitet<br/><br/>Optimering av interna åtgärder<br/><br/>Öka flexibiliteten i verksamheten<br/><br/>Förberedelser för nya tekniska funktioner<br/><br/>Skalning för att uppfylla kraven på marknaden<br/><br/>Skalning för att uppfylla geografiska krav | Förberedelser för nya tekniska funktioner<br/><br/>Skapa nya tekniska funktioner<br/><br/>Skalning för att uppfylla kraven på marknaden<br/><br/>Skalning för att uppfylla geografiska krav<br/><br/>Förbättrade kund upplevelser och engagemang<br/><br/>Omvandling av produkter eller tjänster<br/><br/>Störningar i marknaden med nya produkter eller tjänster |
 
@@ -62,7 +62,7 @@ Vissa motiverar bra med en migrerings strategi. De fordonsbaserade miljöerna ö
 - Skalning för att uppfylla kraven på marknaden.
 - Skalning för att uppfylla geografiska krav.
 
-### <a name="innovation"></a>Innovation
+### <a name="innovation"></a>Verksamhet
 
 Data är den nya råvaran. Moderna appar är den leverans kedja som driver data i olika upplevelser. I dagens affärs marknad är det svårt att hitta en transformativa-produkt eller-tjänst som inte bygger på data, insikter och kund upplevelser. De motivation som visas i listan över *innovationer* överensstämmer med en teknisk strategi som anges i det här ramverket som [innovation](../getting-started/innovate.md).
 

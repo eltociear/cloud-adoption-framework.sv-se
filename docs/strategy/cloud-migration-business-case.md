@@ -1,6 +1,6 @@
 ---
-title: Utforma en affärsmotivering för molnmigrering
-description: Att tänka på när du skapar en affärs justering för molnbaserad migrering.
+title: Affärs justering för molnbaserad migrering
+description: Använd ramverket för moln införande för Azure för att lära dig att börja utveckla en affärs justering för molnbaserad migrering.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
@@ -8,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 36306ab50f4158741f1ff4334c43900c2f657920
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 28762d3540124b40bd3db4d7bd431033a1c25b5f
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798595"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337962"
 ---
-# <a name="build-a-business-justification-for-cloud-migration"></a>Utforma en affärsmotivering för molnmigrering
+# <a name="build-a-business-justification-for-cloud-migration"></a>Bygg en affärs justering för molnbaserad migrering
 
 Genom att migrera molnet kan du generera en ny avkastning på investeringen (ROI) från moln omvandlings ansträngningar. Men att utveckla en tydlig affärs motivering med materiella, relevanta kostnader och returer kan vara en komplicerad process. Den här artikeln hjälper dig att tänka på vilka data du behöver för att skapa en finansiell modell som anpassas med molnets migrerings resultat. Först ska vi dispel några myths om migrering av molnet, så att din organisation kan undvika några vanliga misstag.
 

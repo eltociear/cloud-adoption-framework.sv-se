@@ -1,6 +1,6 @@
 ---
-title: Skapa en finansiell modell för molnomvandling
-description: Så här skapar du en finans modell för moln omvandling.
+title: Finansiell modell för molnbaserad migrering
+description: Lär dig vad du behöver för att skapa en finansiell modell som korrekt representerar det fullständiga affärs värdet för en moln omvandling.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 49cce1f4ade76350a820dae2f638edeacb380aa6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ebc85c5a76d9f53b0117567fc79de51488e9b51d
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798612"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337992"
 ---
 # <a name="create-a-financial-model-for-cloud-transformation"></a>Skapa en finansiell modell för molnomvandling
 
