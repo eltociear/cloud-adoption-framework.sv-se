@@ -1,6 +1,6 @@
 ---
-title: Distribuera en landningszon i Azure
-description: Lär dig att distribuera en landningszon i Azure.
+title: Distribuera en landnings zon för Azure migration
+description: Använd ramverket för moln införande för Azure för att lära dig hur du använder en landnings zon skiss för att distribuera en definierad miljö.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, setup
-ms.openlocfilehash: cac594b7acd3764e6e5663ad28a77f292f7d440b
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: ba20999ecaf3b0abbde371fb965618fc24ee2479
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225338"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341902"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Distribuera en landningszon för migrering
 

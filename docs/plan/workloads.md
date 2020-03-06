@@ -1,18 +1,18 @@
 ---
-title: Prioritera och definiera arbets belastningar för en moln implementerings plan
-description: Prioritera och definiera arbets belastningar för en moln implementerings plan
+title: Prioritera och definiera arbets belastningar för moln införande
+description: Använd ramverket för moln införande för Azure för att lära dig hur du prioriterar och definierar arbets belastningar för en moln implementerings plan.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 78abd15ae06918e913f520d96b29e29f1a253856
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 42f55a866b3ac8f044861ef2bc738e128b3c9f38
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799989"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341920"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Prioritera och definiera arbets belastningar för en moln implementerings plan
 
@@ -26,7 +26,7 @@ Genom att begränsa planen till 10 arbets belastningar uppmuntrar du flexibilite
 
 I samband med ett moln införande är en arbets belastning en samling IT-tillgångar (servrar, virtuella datorer, program, data eller apparater) som gemensamt stöder en definierad process. Arbets belastningar kan ha stöd för mer än en process. Arbets belastningar kan också vara beroende av andra delade till gångar eller större plattformar. En arbets belastning bör dock ha definierade gränser för beroende till gångar och de processer som är beroende av arbets belastningen. Ofta kan arbets belastningar visualiseras genom att övervaka nätverks trafiken mellan IT-tillgångar.
 
-## <a name="prerequisites"></a>Krav
+## <a name="prerequisites"></a>Förutsättningar
 
 De strategiska inmatningarna från krav listan gör följande uppgifter mycket enklare att utföra. Om du behöver hjälp med att samla in data som beskrivs i den här artikeln granskar du [kraven](./prerequisites.md).
 
@@ -70,7 +70,7 @@ När de ursprungliga prioriteterna har definierats och arbets belastningar har l
 | Antagande motivation | Vilken av de här arbets belastningarna för moln införande påverkas? |         |
 | Primär sponsor | Av dessa intressenter påverkas, vilket är den primära sponsor som begär föregående motivation? |         |
 | Affärsenhet | Vilken affär senhet ansvarar för kostnaden för den här arbets belastningen? |         |
-| Företagsprocesser | Vilka affärs processer kommer att påverkas av ändringar i arbets belastningen? |         |
+| Affärs processer | Vilka affärs processer kommer att påverkas av ändringar i arbets belastningen? |         |
 | Företags team | Vilka affärs team kommer att påverkas av ändringar? |         |
 | Affärs intressenter | Finns det några chefer vars verksamhet kommer att påverkas av ändringar? |         |
 | Affärsresultat | Hur mäter företaget resultatet av den här ansträngningen? |         |
@@ -78,7 +78,7 @@ När de ursprungliga prioriteterna har definierats och arbets belastningar har l
 | Efterlevnad | Finns det några krav på tredje parts efterlevnad för den här arbets belastningen? |         |
 | Program ägare | Vem är det som är konto för påverkan på program som är kopplade till den här arbets belastningen? |         |
 | Låsnings perioder för företag | Finns det några tillfällen då företaget inte tillåter ändringar? |         |
-| Geografi | Påverkas de geografiska områden som påverkas av den här arbets belastningen? |         |
+| Geografiska områden | Påverkas de geografiska områden som påverkas av den här arbets belastningen? |         |
 
 ### <a name="technical-inputs"></a>Tekniska inmatningar
 
@@ -90,7 +90,7 @@ När de ursprungliga prioriteterna har definierats och arbets belastningar har l
 | Allvarlighets grad | Visa en lista över den aktuella program kritiskheten. |         |
 | Dataklassificering | Ange klassificeringen av data känslighet. |         |
 | Drifts geografiska områden | Lista de geografiska områden där arbets belastningen är eller bör vara värd. |         |
-| Appar | Ange en inledande lista eller ett antal program som ingår i den här arbets belastningen. |         |
+| Program | Ange en inledande lista eller ett antal program som ingår i den här arbets belastningen. |         |
 | Virtuella datorer | Ange en inledande lista eller antal virtuella datorer eller servrar som ingår i arbets belastningen. |         |
 | Datakällor | Ange en inledande lista eller ett antal data källor som ingår i arbets belastningen. |         |
 | Beroenden | Lista de till gångs beroenden som inte ingår i arbets belastningen. |         |
