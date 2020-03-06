@@ -1,18 +1,18 @@
 ---
-title: Hantering och drift i molnet – grundprinciper
-description: Hantering och drift i molnet – grundprinciper
+title: Grundprinciper för molnhantering
+description: Använd Cloud Adoption Framework för Azure för information om driftsmodell, processer och verktyg som har visat sig fungera i molnet.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 88ff7f7f068eeb2c516717930f3633ac1473281f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: b08e35ce2ac2d1bfd4a962b9bf5d29654c652c0a
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807792"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341172"
 ---
 # <a name="it-management-and-operations-in-the-cloud"></a>IT-hantering och drift i molnet
 

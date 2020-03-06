@@ -1,6 +1,6 @@
 ---
-title: 'Guide till Azure-hantering: Innan du börjar'
-description: Lär dig hur du hanterar dina Azure-åtgärder med stegvis vägledning.
+title: Översikt över Azure-hantering
+description: Lär dig mer om Cloud Adoption Framework för Azure med den här informationen om de grundläggande verktyg som behövs för att hantera Azures produktionsmiljöer.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,16 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a6f136f3a9aeae8b9ffe6f7e51dbb65da04e81ea
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 37d49948772ca0912dc574ccb299c050eae4aeb4
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223473"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341767"
 ---
+# <a name="azure-management-guide-before-you-start"></a>Guide till Azure-hantering: Innan du börjar
+
+
 ::: zone target="docs"
 
-# <a name="azure-management-guide-before-you-start"></a>Guide till Azure-hantering: Innan du börjar
 
 > [!NOTE]
 > Den här guiden är en utgångspunkt för vägledningen kring innovation i Cloud Adoption Framework. Du hittar den även i Azures snabbstartscenter. I tipset senare i artikeln finns en länk till Azures snabbstartscenter.
