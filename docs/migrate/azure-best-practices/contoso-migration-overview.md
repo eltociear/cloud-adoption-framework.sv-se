@@ -8,11 +8,11 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: 639d90285c1500a661e872931456f63c188daafc
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222975"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337463"
 ---
 # <a name="application-migration-patterns-and-examples"></a>Programmigrering – mönster och exempel
 
