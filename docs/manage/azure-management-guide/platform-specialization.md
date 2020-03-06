@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9c4f18c4c81dce2caa41b1dab5dddc394042f390
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 91d800c3f3575cc16d239106805fdfaef8a29e14
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808183"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223527"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>Specialisering för plattformar för molnhantering
 
@@ -55,7 +55,7 @@ Specialisering av plattformar består av en disciplinerad körning av följande 
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="improve-system-designtabsystemsdesign"></a>[Förbättra systemdesignen](#tab/SystemsDesign)
+## <a name="improve-system-design"></a>[Förbättra systemdesignen](#tab/SystemsDesign)
 
 ::: zone-end
 
@@ -86,7 +86,7 @@ När systemdesignen har förbättrats kan du komma tillbaka till den här artike
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="automated-remediationtabautomatedremediation"></a>[Automatiserad reparation](#tab/AutomatedRemediation)
+## <a name="automated-remediation"></a>[Automatiserad reparation](#tab/AutomatedRemediation)
 
 ::: zone-end
 
@@ -103,7 +103,7 @@ Vägledning om automatiserad reparation finns i [Azure Automation och aviseringa
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="scale-the-solution-with-a-service-catalogtabservicecatalog"></a>[Skala lösningen med en tjänstkatalog](#tab/ServiceCatalog)
+## <a name="scale-the-solution-with-a-service-catalog"></a>[Skala lösningen med en tjänstkatalog](#tab/ServiceCatalog)
 
 ::: zone-end
 
@@ -119,7 +119,7 @@ Anvisningar om hur du publicerar till en tjänstkatalog finns i artikelserien om
 
 1. Gå till **Center för hanterade program (förhandsversion)** på Azure-portalen.
 2. Välj **Tjänstkatalogprogram** i rutan **Bläddra**.
-3. Klicka på **+ Lägg till** och välj en programdefinition från ditt företags tjänstkatalog.
+3. Välj **+ Lägg till** och välj en programdefinition från ditt företags tjänstkatalog.
 
 Alla hanterade program som du underhåller visas.
 
@@ -153,7 +153,7 @@ Alla hanterade program som du underhåller visas.
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="continuous-improvementtabcontinuousimprovement"></a>[Kontinuerlig förbättring](#tab/ContinuousImprovement)
+## <a name="continuous-improvement"></a>[Kontinuerlig förbättring](#tab/ContinuousImprovement)
 
 ::: zone-end
 

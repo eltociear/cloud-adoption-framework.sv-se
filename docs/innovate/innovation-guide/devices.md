@@ -1,6 +1,6 @@
 ---
-title: 'Guide till Azure-innovation: Interagera via enheter'
-description: Guide till Azure-innovation – interagera via enheter
+title: 'Azure-innovation: Interagera via enheter'
+description: Lär dig mer om hur Azure ger ett ramverk för att skapa avancerade och effektiva affärslösningar via anslutna och perceptiva gränsenheter.
 author: umarmohamedusman
 ms.author: umarm
 ms.date: 10/10/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4744a1a019a8454f9a454c5eb75192a6d97b6998
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5063d22cee1a2711bc3dd4c2d052df2870b61c5a
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808319"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171029"
 ---
 ::: zone target="docs"
 
@@ -44,7 +44,7 @@ Azure-kunder använder en ständigt expanderande uppsättning med anslutna syste
 
 <!-- markdownlint-disable MD025 -->
 
-## <a name="global-scale-iot-servicetabiothub"></a>[IoT-tjänst i global skala](#tab/IoTHub)
+## <a name="global-scale-iot-service"></a>[IoT-tjänst i global skala](#tab/IoTHub)
 
 <!-- markdownlint-enable MD025 -->
 
@@ -101,7 +101,7 @@ Så här skapar du IoT Hub Device Provisioning Services:
 
 <!-- markdownlint-disable MD025 -->
 
-## <a name="azure-digital-twinstabdigitaltwins"></a>[Azure Digital Twins](#tab/DigitalTwins)
+## <a name="azure-digital-twins"></a>[Azure Digital Twins](#tab/DigitalTwins)
 
 Skapa återanvändningsbara, mycket skalbara, rumsligt medvetna upplevelser som länkar strömmande data i hela den digitala och fysiska världen. Förbättra kundengagemanget med hjälp av omfattande modeller av fysiska miljöer. Generera diagram för rumslig intelligens för att modellera relationer och interaktioner mellan människor, platser och enheter. Skicka dataförfrågningar från ett fysiskt utrymme i stället för olika sensorer.
 
@@ -136,7 +136,7 @@ Så här skapar du Azure Digital Twins:
 
 <!-- markdownlint-disable MD025 -->
 
-## <a name="location-intelligencetabazuremaps"></a>[Platsintelligens](#tab/AzureMaps)
+## <a name="location-intelligence"></a>[Platsintelligens](#tab/AzureMaps)
 
 Förutom traditionella platsfunktioner som platser i närheten, trafik och routning kan företag använda tjänsten Azure Maps för att skapa lösningar med platsintelligens i realtid som drivs av våra partner **TomTom** och **Moovit** som erbjuder mobilteknik i världsklass. Integrera enkelt avancerade plats- och mobilitetsfunktioner i dina appar med geospatiala tjänster.
 
@@ -169,7 +169,7 @@ Så här använder du platsintelligens:
 
 ::: zone-end
 
-## <a name="spatial-experiencestabspatial"></a>[Rumsupplevelser](#tab/spatial)
+## <a name="spatial-experiences"></a>[Rumsupplevelser](#tab/spatial)
 
 Azure Spatial Anchors gör det möjligt för utvecklare att arbeta med plattformar för mixad verklighet för att uppfatta utrymmen, ange exakta platser av intresse och återkalla de platserna av intresse från enheter som stöds.
 
@@ -204,7 +204,7 @@ Så här använder du rumsupplevelser:
 
 ::: zone-end
 
-## <a name="azure-remote-renderingtabremoterender"></a>[Azure Remote Rendering](#tab/RemoteRender)
+## <a name="azure-remote-rendering"></a>[Azure Remote Rendering](#tab/RemoteRender)
 
 Rendera interaktivt 3D-innehåll av hög kvalitet i molnet och strömma det till dina enheter i realtid. Renderingsarbetsbelastningar används ofta för specialeffekter (VFX) inom media och nöjesbranschen. Rendering används också inom flera andra branscher som marknadsföring, detaljhandel, olja och gas samt tillverkning.
 

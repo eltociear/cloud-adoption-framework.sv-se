@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9df0d1e36cbd926725ec5622087b57a2b8eae9ce
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 991c0f8423053b1a79f437b452b64c789c867c3e
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808200"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223550"
 ---
+<!-- cSpell:ignore WSUS -->
+
 # <a name="operational-compliance-in-azure"></a>Driftsmässig efterlevnad i Azure
 
 _Driftsmässig efterlevnad_ är den andra disciplinen i varje baslinje för molnhantering.
@@ -40,7 +42,7 @@ Den här tabellen beskriver det föreslagna minimikravet för en hanteringsbasli
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="update-managementtabupdatemanagement"></a>[Hantering av uppdateringar](#tab/UpdateManagement)
+## <a name="update-management"></a>[Hantering av uppdateringar](#tab/UpdateManagement)
 
 ::: zone-end
 
@@ -89,7 +91,7 @@ Gör följande om du vill tillämpa en princip för en resursgrupp:
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-policytabazurepolicy"></a>[Azure Policy](#tab/AzurePolicy)
+## <a name="azure-policy"></a>[Azure Policy](#tab/AzurePolicy)
 
 ::: zone-end
 
@@ -133,7 +135,7 @@ Du kan läsa mer här:
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
+## <a name="azure-blueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
 
 ::: zone-end
 
@@ -188,7 +190,7 @@ Så här publicerar du skissartefakter till din prenumeration:
 
 1. Gå till **Skisser – Skissdefinitioner**.
 1. Välj skissen som du skapade i föregående steg.
-1. Granska skissdefinitionen och välj **Publicera skiss.**
+1. Granska skissdefinitionen och välj sedan **Publicera skiss.**
 1. Ange en version, t.ex. ”1.0”, i rutan **Version**.
 1. Skriv dina anteckningar i rutan **Ändra anteckningar**.
 1. Välj **Publicera**.
@@ -201,7 +203,7 @@ Så här publicerar du skissartefakter till din prenumeration:
 
 1. Gå till [Skisser – Skissdefinitioner](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Välj skissen som du skapade i föregående steg.
-1. Granska skissdefinitionen och välj **Publicera skiss.**
+1. Granska skissdefinitionen och välj sedan **Publicera skiss.**
 1. Ange en version, t.ex. ”1.0”, i rutan **Version**.
 1. Skriv dina anteckningar i rutan **Ändra anteckningar**.
 1. Välj **Publicera**.

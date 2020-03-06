@@ -1,28 +1,34 @@
 ---
-title: Optimera och transformera
+title: Optimera och flytta upp
 description: Den här delen av Azure-migreringsguiden omfattar optimeringsområden, till exempel granskning av lösningens design, anpassning av tjänsternas storlek och kostnadsanalys.
 author: matticusau
 ms.author: mlavery
-ms.date: 04/04/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5173dc348ee0c9251b4c5e41aaa2b193da6ea890
-ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
+ms.openlocfilehash: bcd49a2168db862c3e1a0d948e4948abccbfe7c7
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76994167"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222506"
 ---
-# <a name="optimize-and-transform"></a>Optimera och transformera
+<!-- cSpell:ignore Fservers Fdatabases -->
+
+<!-- markdownlint-disable MD025 DOCSMD001 -->
+
+# <a name="test-optimize-and-promote"></a>Testa, optimera och flytta upp
 
 Nu när du har migrerat dina tjänster till Azure, tar nästa fas vid där du ska granska lösningen för möjliga optimeringsområden. Det kan till exempel innebära granskning av lösningens design, anpassning av tjänsternas storlek och kostnadsanalys.
 
 Den här fasen är också en möjlighet att optimera din miljö och genomföra eventuella omvandlingar av miljön. Till exempel kanske du har utfört en migrering av typen ”rehost”, och när dina tjänster nu körs på Azure kan du gå tillbaka till lösningskonfigurationen eller de förbrukade tjänsterna och eventuellt utföra viss ”omstrukturering”, i syfte att modernisera och förbättra lösningens funktioner.
 
-# <a name="right-size-assetstaboptimize"></a>[Rätt storlek på tillgångarna](#tab/optimize)
+Resten av den här artikeln fokuserar på verktyg för att optimera den migrerade arbetsbelastningen. När balansen mellan prestanda och kostnad har uppnåtts är en arbetsbelastning redo att uppgraderas till produktion. Vägledning om kampanjalternativ finns i avsnittet om processförbättringar på [Optimera och flytta upp](../migration-considerations/optimize/index.md).
+
+# <a name="right-size-assets"></a>[Rätt storlek på tillgångarna](#tab/optimize)
 
 Storleken på alla Azure-tjänster som tillhandahåller en förbrukningsbaserad kostnadsmodell kan ändras via Azure Portal, CLI eller PowerShell. Det första steget för att korrigera storleken på en tjänst är att granska användningsstatistiken. Tjänsten Azure Monitor ger till gång till statistiken. Du kan behöva konfigurera insamlingen av mätvärden för tjänsten som du analyserar, och tillåta en lämplig tid för insamling av meningsfulla data baserat på mönstren i arbetsbelastningen.
 
@@ -48,8 +54,7 @@ För virtuella datorer som skapas eller migreras med andra metoder, eller i fall
 1. Välj **Storlek** och önskad ny storlek i listan. Du kan behöva justera filtren för att hitta den storlek du behöver.
 1. Välj **Ändra storlek**.
 
-Observera att ändring av storleken på virtuella datorer för produktion kan orsaka avbrott i tjänsten. Försök att välja rätt storlek för dina virtuella datorer innan du flyttar upp dem till produktion.
-
+Ändringar av storleken på virtuella datorer för produktion kan orsaka avbrott i tjänsten. Försök att välja rätt storlek för dina virtuella datorer innan du flyttar upp dem till produktion.
 
 ::: zone target="chromeless"
 
@@ -95,7 +100,7 @@ Partner kan använda Partner Center för att granska användningen.
 
 ::: zone-end
 
-# <a name="cost-managementtabmanagecost"></a>[Kostnadshantering](#tab/ManageCost)
+# <a name="cost-management"></a>[Kostnadshantering](#tab/ManageCost)
 
 Det är viktigt att utföra löpande kostnadsanalys och granskning. Det ger dig möjlighet att ändra storlek på resurserna efter behov för att balansera kostnad och arbetsbelastning.
 

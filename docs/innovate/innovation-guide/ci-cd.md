@@ -1,6 +1,6 @@
 ---
-title: 'Guide till Azure-innovation: Underlätta implementeringen'
-description: Lär dig hur du kan underlätta implementeringen med hjälp av Azure
+title: 'Azure-innovation: Underlätta implementeringen'
+description: Hjälpa utvecklare att bygga produktivt, utveckla säkra globala samarbeten och ta bort hinder för att innovativ skalning i Azure.
 author: absheik
 ms.author: absheik
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 907d4745e86f63eef2a59bea8120395ea33bd1d6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 748825e01646b687f49e66ccb975f866312c9310
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808336"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171063"
 ---
 ::: zone target="docs"
 
@@ -44,7 +44,7 @@ Organisationer som har lyckats med det här ser visioner, strategi, kultur, unik
 
 Innovation uppnås när organisationer hjälper sin personal att skapa det värde de söker. En grupp i personalen som är särskilt drivande när det gäller innovation är utvecklarna. De spelar en allt viktigare roll när det gäller att skapa värde och tillväxt i alla typer av branscher. Utvecklarna är vår tids konstruktörer. De skriver kod som bygger upp världen och är navet i innovationsarbetet. Innovativa organisationer skapar en kultur som hjälper utvecklarna att uträtta mer.
 
-# <a name="developer-productivitytabdeveloperproductivity"></a>[Utvecklarnas produktivitet](#tab/DeveloperProductivity)
+# <a name="developer-productivity"></a>[Utvecklarnas produktivitet](#tab/DeveloperProductivity)
 
 ## <a name="developer-velocity"></a>Effektivitet i utvecklingen
 
@@ -93,7 +93,7 @@ Så här skapar du ett DevOps-projekt:
 
 ::: zone-end
 
-# <a name="innovate-collaborativelytabcollaboration"></a>[Samarbete och innovation](#tab/Collaboration)
+# <a name="innovate-collaboratively"></a>[Samarbete och innovation](#tab/Collaboration)
 
 ## <a name="innovate-through-collaboration"></a>Innovation genom samarbete
 
@@ -111,7 +111,7 @@ Många utvecklare använder öppen källkod. 80 till 90 procent av ny programutv
 
 **Gå till [dokumentationen för Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams)**
 
-# <a name="innovation-characteristicstabcharacteristics"></a>[Innovationens egenskaper](#tab/Characteristics)
+# <a name="innovation-characteristics"></a>[Innovationens egenskaper](#tab/Characteristics)
 
 ## <a name="innovate-by-using-azure-devops"></a>Skapa nya innovationer med Azure DevOps
 
@@ -127,7 +127,7 @@ Alla affärsledare strävar efter att skapa nya innovationer i sina affärsappar
 
 Azure har ett unikt erbjudande som hjälper dig att underlätta och skala ut innovationen i din organisation. Ni kan öka innovationstakten genom att professionella utvecklare skapar program och byggstenar som andra experter i organisationen kan använda till att skapa egna appar på en tillförlitlig grund. Med Azure får de säkerhetsfunktioner redan från grunden som garanteras av experterna, och proaktiv efterlevnad som stora bolag, myndigheter och nystartade företag förlitar sig på.
 
-# <a name="liveops-innovationtabliveops"></a>[Innovation med LiveOps](#tab/LiveOps)
+# <a name="liveops-innovation"></a>[Innovation med LiveOps](#tab/LiveOps)
 
 ## <a name="future-ready-liveops"></a>Redo för framtiden: LiveOps
 

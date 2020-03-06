@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8486d4de8b6055d6d0741d008c10a405c27b8f92
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 82c801abee32e0399eb124440868bc455034a018
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803525"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222654"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mekanismer för migreringsfokuserad kostnadskontroll
 
@@ -34,7 +34,7 @@ Processerna som beskrivs i den här artikeln kan också kräva ett partnerskap m
 
 <!-- markdownlint-disable MD024 MD025 -->
 
-# <a name="estimate-vm-costs-prior-to-migrationtabestimatevmcosts"></a>[Beräkna molnkostnader för virtuella datorer före migreringen](#tab/EstimateVMCosts)
+# <a name="estimate-vm-costs-prior-to-migration"></a>[Beräkna molnkostnader för virtuella datorer före migreringen](#tab/EstimateVMCosts)
 
 Före migreringen av en tillgång (infrastruktur, app eller data) finns det en möjlighet att uppskatta kostnader och begränsa storleken utifrån observerade prestandakriterier för dessa tillgångar. Uppskattning av kostnader har två syften: det tillåter kostnadskontroll och ger en kontrollpunkt för att säkerställa att den aktuella budgeten tar hänsyn till nödvändiga prestandakrav.
 
@@ -54,13 +54,13 @@ Dessa manuella kostnadskalkylatorer kan användas fristående för att beräkna 
 Azure Migrate beräknar **månatliga kostnader** baserat på data som samlas in av insamlaren och tjänstkartan. Följande steg läser in kostnadsuppskattningarna:
 
 1. Gå till Azure Migrate-utvärdering i portalen.
-2. På projektsidan **Översikt** klickar du på **+Skapa utvärdering**.
-3. Klicka på **Visa alla** för att granska utvärderingsegenskaperna.
-4. Skapa gruppen och ange ett gruppnamn.
-5. Välj de datorer som du vill lägga till i gruppen.
-6. Klicka på **Skapa utvärdering** för att skapa gruppen och utvärderingen.
-7. När utvärderingen har skapats kan du se den i Översikt > Instrumentpanel.
-8. I området Bedömningsinformation väljer du **Kostnadsinformation**.
+1. På projektsidan **Översikt** klickar du på **+Skapa utvärdering**.
+1. Välj **Visa alla** för att granska utvärderingsegenskaperna.
+1. Skapa gruppen och ange ett gruppnamn.
+1. Välj de datorer som du vill lägga till i gruppen.
+1. Välj **Skapa utvärdering** för att skapa gruppen och utvärderingen.
+1. När utvärderingen har skapats kan du se den i Översikt > Instrumentpanel.
+1. I området Bedömningsinformation väljer du **Kostnadsinformation**.
 
 Beräkningen som skapas och som visas nedan identifierar de månatliga kostnaderna för beräkning och lagring, vilket ofta utgör den största delen av molnkostnaderna.
 
@@ -72,7 +72,7 @@ Beräkningen som skapas och som visas nedan identifierar de månatliga kostnader
 - [Ställa in och granska en utvärdering med Azure Migrate](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
 - En mer omfattande plan om kostnadshantering över ett större antal tillgångar (infrastruktur, appar och data) finns i [styrningsmodellen i Ramverk för molnimplementering](../../govern/guides/index.md). I synnerhet riktlinjerna för [Cost Management-disciplin](../../govern/cost-management/index.md) och [förbättringar av Cost Management i styrningshandboken för komplexa företag](../../govern/guides/complex/cost-management-improvement.md).
 
-# <a name="estimate-and-optimize-vm-costs-during-and-after-migrationtabestimateoptimize"></a>[Beräkna och optimera kostnader för virtuella datorer under och efter migrering](#tab/EstimateOptimize)
+# <a name="estimate-and-optimize-vm-costs-during-and-after-migration"></a>[Beräkna och optimera kostnader för virtuella datorer under och efter migrering](#tab/EstimateOptimize)
 
 Om du uppskattar kostnaden före migrering får du ett konkret mål för kostnadsförväntningarna. Det ger också möjlighet att överväga prestanda- och kostnadsbehoven för varje tillgång (infrastruktur, appar och data) som ska migreras. Men det är fortfarande en uppskattning. När du har migrerat och belastat tillgången kan mer exakta kostnadsberäkningar utföras baserat på den faktiska eller syntetiska belastningen.
 
@@ -94,7 +94,7 @@ Krav: Resten av den här fliken förutsätter att läsaren har slutfört install
 
 Följande steg läser in kostnadsanalysdata för Azure Cost Management för dina prenumerationer:
 
-1. Navigera till **Kostnadshantering + Fakturering** i portalen. Om du inte ser Cost Management + Fakturering i den vänstra rutan klickar du på **Alla tjänster**. I tjänstmenyfönstret under **Övervakning och hantering** väljer du **Cost Management + Fakturering**.
+1. Navigera till **Kostnadshantering + Fakturering** i portalen. Om du inte ser Cost Management + Fakturering i den vänstra rutan väljer du **Alla tjänster**. I tjänstmenyfönstret under **Övervakning och hantering** väljer du **Cost Management + Fakturering**.
 2. I Cost Management + Fakturering väljer du **Cost Management** i det vänstra navigeringsfönstret för att börja analysera och optimera molnkostnaderna.
 3. I Cost Management väljer du **Kostnadsanalys**.
     a. Använd reglaget **Omfång** för att växla till ett annat omfång i kostnadsanalysen.
@@ -107,7 +107,7 @@ Med den här analysen kan du granska totala kostnader, budget (om tillgängligt)
 - Mer information om Azure Advisor finns i [Sänk tjänstekostnaderna med Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations).
 - Mer information om Azure Cost Management finns i [Förstå och arbeta med omfattningar](https://docs.microsoft.com/azure/cost-management/understand-work-scopes) och [Utforska och analysera kostnader med kostnadsanalys](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis).
 
-# <a name="tips-and-tricks-to-optimize-coststabtipstricks"></a>[Tips och knep för att optimera kostnader](#tab/TipsTricks)
+# <a name="tips-and-tricks-to-optimize-costs"></a>[Tips och knep för att optimera kostnader](#tab/TipsTricks)
 
 Utöver de verktyg som beskrivs i den här artikeln finns det några tips och knep som kan hjälpa dig att snabbt minska de övergripande molnkostnaderna. Här följer några tips på hög nivå som du bör känna till:
 

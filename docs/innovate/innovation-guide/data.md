@@ -1,6 +1,6 @@
 ---
-title: 'Guide till Azure-innovation: Demokratisera data'
-description: Lär dig hur du kan demokratisera data med hjälp av Azure.
+title: 'Azure-innovation: Demokratisera data'
+description: Lär dig mer om Azure Data Catalog, Azure Data Share och andra verktyg som förbättrar dataidentifiering och förståelse.
 author: absheik
 ms.author: absheik
 ms.date: 10/17/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 481430ca45d2d4a63f4d1777bd2c34409a2e7851
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f7f3ca7d99d4a1d553c888a8d3fd58a2616b64e8
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808302"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223450"
 ---
+<!-- cspell:ignore Fcatalogs Faccounts FEnvironments -->
+
 ::: zone target="docs"
 
 # <a name="azure-innovation-guide-democratize-data"></a>Guide till Azure-innovation: Demokratisera data
@@ -32,7 +34,7 @@ Ett av de första stegen för att demokratisera data är att förbättra datasyn
 
 Azure-tjänster som tillhandahåller databehandling som Azure Time Series Insights och Stream Analytics är andra funktioner som kunder och partner kan använda för sina innovationsbehov.
 
-# <a name="catalogtabcatalog"></a>[Katalog](#tab/Catalog)
+# <a name="catalog"></a>[Katalog](#tab/Catalog)
 
 ## <a name="azure-data-catalog"></a>Azure Data Catalog
 
@@ -69,11 +71,11 @@ Så här skapar du en Azure Data Catalog för din organisation:
 
 ::: zone-end
 
-# <a name="sharetabshare"></a>[Dela](#tab/Share)
+# <a name="share"></a>[Dela](#tab/Share)
 
 ## <a name="azure-data-share"></a>Azure Data Share
 
-Att uppnå balans mellan att öppet dela data och ha kontroll över vilka data som delas och med vem är en viktig faktor för innovation. När organisationer försöker demokratisera data är det lätt att de blir överväldigade av den enorma volymen, takten och livscykeln för dessa data. Med hjälp av Azure Data Share kan leverantörer ha kontroll över hur data hanteras genom att ange användningsvillkor för dataresursen. Datakonsumenten måste acceptera dessa villkor innan de kan ta emot data. Dataleverantörer kan ange hur ofta datakonsumenter får uppdateringar. Åtkomsten till nya uppdateringar kan när som helst återkallas av dataleverantören.
+Att uppnå balans mellan att öppet dela data och ha kontroll över vilka data som delas och med vem är en viktig faktor för innovation. När organisationer försöker demokratisera data är det lätt att de blir överväldigade av den enorma volymen, takten och livscykeln för dessa data. Med hjälp av Azure Data Share kan leverantörer ha kontroll över hur data hanteras genom att ange användningsvillkor för dataresursen. Datakonsumenter måste acceptera dessa villkor innan de kan ta emot data. Dataleverantörer kan ange hur ofta datakonsumenter får uppdateringar. Åtkomsten till nya uppdateringar kan när som helst återkallas av dataleverantören.
 
 > [!div class="checklist"]
 >
@@ -106,7 +108,7 @@ Så här skapar du en dataresurs:
 
 ::: zone-end
 
-# <a name="insightstabinsights"></a>[Insikter](#tab/Insights)
+# <a name="insights"></a>[Insikter](#tab/Insights)
 
 ## <a name="azure-time-series-insights"></a>Azure Time Series Insights
 

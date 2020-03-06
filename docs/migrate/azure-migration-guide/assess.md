@@ -1,53 +1,57 @@
 ---
-title: Utvärdera den digitala egendomen
+title: Utvärdera varje arbetsbelastning och förfina planer
 description: Det här avsnittet i Azures migreringsguide hjälper dig att utvärdera din miljö för att avgöra vad som ska migreras och vilka migreringsmetoder som ska beaktas.
 author: matticusau
 ms.author: mlavery
-ms.date: 08/08/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 20f71083a7a200fd4b45fbdda24ad6bbd24a397a
-ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
+ms.openlocfilehash: 40e62a05101e14fcd7507011d521521e58920ffc
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567749"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225538"
 ---
-# <a name="assess-the-digital-estate"></a>Utvärdera den digitala egendomen
+# <a name="assess-each-workload-and-refine-plans"></a>Utvärdera varje arbetsbelastning och förfina planer
 
-Vid en idealisk migrering skulle varje tillgång (infrastruktur, app eller data) vara kompatibel med en molnplattform och vara redo för migrering. I verkligheten är det inte allting som bör migreras till molnet. Dessutom är inte alla tillgångar kompatibla med molnplattformarna. Innan du migrerar en arbetsbelastning till molnet är det viktigt att utvärdera arbetsbelastningen och varje relaterad tillgång (infrastruktur, appar och data).
-
-Resurserna i det här avsnittet hjälper dig att utvärdera din miljö och avgöra om den är lämplig att migrera, samt vilka metoder som skulle kunna användas.
+Resurserna i den här guiden hjälper dig att utvärdera varje arbetsbelastning, utmaningsantaganden för varje arbetsbelastnings lämplighet för migrering och att slutföra arkitektoniska beslut om migreringsalternativ.
 
 <!-- markdownlint-disable MD025 -->
 
 # <a name="tools"></a>[Verktyg](#tab/Tools)
 
-Följande verktyg hjälper dig att utvärdera din miljö för att avgöra lämpligheten för en migrering och den bästa metoden att använda. Information om hur du väljer rätt verktyg för migreringen finns i [Cloud Adoption Frameworks beslutsguide för migreringsverktyg](../../decision-guides/migrate-decision-guide/index.md).
+Om du inte följer anvisningarna i länkarna ovan behöver du troligtvis data och ett utvärderingsverktyg för att fatta välgrundade beslut om migrering. Azure Migrate är det inbyggda verktyget för att utvärdera **och** migrera till Azure. Om du inte redan har gjort det kan du använda de här stegen för att skapa ett nytt servermigreringsverktyg för samla in nödvändiga data.
 
 ## <a name="azure-migrate"></a>Azure Migrate
 
-Azure Migrate-tjänsten utvärderar lokal infrastruktur, program och data för migrering till Azure. Tjänsten utvärderar de lokala resursernas migreringslämplighet, utför prestandabaserad storleksanpassning och tillhandahåller uppskattningar av vad det kostar att köra lokala resurser i Azure. Om du överväger ”Lift and Shift”-migreringar eller om du är i ett tidigt utvärderingsskede av migreringen är den här tjänsten något för dig. När du har slutfört utvärderingen kan du utföra migreringen med Azure Migrate.
+Azure Migrate utvärderar lokal infrastruktur, program och data för migrering till Azure. Den här tjänsten:
 
-![Översikt över Azure Migrate](./media/assess/azuremigrate-overview-1.png)
+- Utvärderar migreringens lämplighet för lokala tillgångar.
+- Utför prestandabaserad storleksbestämning.
+- Tillhandahåller kostnadsuppskattningar för att köra lokala tillgångar i Azure.
+
+Om du överväger en ”Lift and Shift”-metod eller om du är i ett tidigt utvärderingsskede av migreringen är den här tjänsten något för dig. När du har slutfört utvärderingen kan du utföra migreringen med Azure Migrate.
+
+![Översikt över Azure Migrate](./media/assess/azure-migrate-overview-1.png)
 
 ### <a name="create-a-new-server-migration-project"></a>Skapa ett nytt servermigreringsprojekt
 
-Följ stegen nedan för att komma igång med en utvärdering av servermigrering med Azure Migrate:
+Påbörja en utvärdering av servermigrering med Azure Migrate med följande steg:
 
 1. Välj **Azure Migrate**.
-1. I **översikten** klickar du på **Utvärdera och migrera servrar**.
+1. I **översikten** väljer du **Utvärdera och migrera servrar**.
 1. Välj **Lägg till verktyg**.
-1. I **Discover, assess and migrate servers** (Identifiera, utvärdera och migrera servrar) klickar du på **Lägg till verktyg**.
+1. I **Identifiera, utvärdera och migrera servrar** väljer du **Lägg till verktyg**.
 1. I **Migrera projekt** väljer du din Azure-prenumeration och skapar en resursgrupp om du inte har någon.
-1. I **Projektinformation** anger du projektnamnet och geografin där du vill skapa projektet och klickar på **Nästa**.
+1. I **Projektinformation** anger du projektnamnet och geografin där du vill skapa projektet och klickar sedan på **Nästa**.
 1. I **Välj utvärderingsverktyg** väljer du **Hoppa över att lägga till ett utvärderingsverktyg just nu** > Nästa.
 1. I **Välj migreringsverktyg** väljer du  **Azure Migrate: Servermigrering > Nästa**.
-1. I **Review + add tools** (Granska + lägg till verktyg)
-granskar du inställningarna och klickar på **Lägg till verktyg**
+1. I **Granska + lägg till verktyg**
+granskar du inställningarna och väljer sedan **Lägg till verktyg**.
 1. När du har lagt till verktyget visas det i **Azure Migrate-projekt > Servrar > Migreringsverktyg**.
 
 ::: zone target="chromeless"
@@ -78,7 +82,7 @@ Om du vill använda beroendevisualisering måste du ladda ned och installera age
 
 - [Microsoft Monitoring Agent (MMA)](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) måste vara installerad på varje dator.
 - [Microsofts beroendeagent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) måste vara installerad på varje dator.
-- Om du har datorer utan Internetanslutning måste du dessutom ladda ned och installera Log Analytics-gatewayen på dem.
+- Om du har datorer utan Internetanslutning ska du ladda ned och installera Log Analytics-gatewayen på dem.
 
 <!-- markdownlint-disable MD024 -->
 
@@ -87,16 +91,48 @@ Om du vill använda beroendevisualisering måste du ladda ned och installera age
 - [Använda lösningen Tjänstkarta i Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate och Tjänstkarta: Visualisering av beroenden](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
 
+# <a name="challenge-assumptions"></a>[Utmaningsantaganden](#tab/Challenge-Assumptions)
+
+Vid en idealisk migrering skulle varje tillgång (infrastruktur, app eller data) vara kompatibel med en molnplattform och redo för migrering eller modernisering. I verkligheten bör inte alla arbetsbelastningar migreras till molnet. Alla tillgångar är inte kompatibla med molnplattformarna. Innan du migrerar en arbetsbelastning till molnet ska du utvärdera varje arbetsbelastning och alla beroende tillgångar (infrastruktur, appar och data).
+
+[Planmetodiken för Cloud Adoption Framework](../../plan/index.md) råder läsarna att använda [stegvis rationalisering](../../digital-estate/rationalize.md#incremental-rationalization) och metoder för att [prioritera tio](../../digital-estate/rationalize.md#release-planning) för att utvärdera och planera för migreringen. Den här guiden innehåller också detaljerade metodtips för [att använda Azure Migrate för att utvärdera din digitala egendom](../../plan/contoso-migration-assessment.md).
+
+Länkarna ovan pekar på att antaganden är acceptabla och ofta uppmuntras under planeringsstegen för migreringen. Men nu är det dags att vidta åtgärder. De här antagandena bör begränsas för varje arbetsbelastnings grund innan du migrerar till molnet.
+
+## <a name="two-steps-of-incremental-rationalization"></a>Två steg för stegvis rationalisering
+
+Två lika stora steg krävs för att du ska kunna leverera [stegvis rationalisering](../../digital-estate/rationalize.md#incremental-rationalization). Båda stegen kräver data och insikter i miljön. Men varje metod tar hänsyn till mängden tid detaljerad information som krävs för att lyckas med migreringen.
+
+- **[Lanseringsplanering utifrån ”prioritera 10”-metoden ](../../digital-estate/rationalize.md#release-planning):** Under den inledande rationaliseringen och versionsplaneringen ska endast en av de [fem punkterna för rationalisering](../../digital-estate/5-rs-of-rationalization.md) användas i utvärderingen. Beräkna och planera baserat på det rationaliseringsalternativ som bäst överensstämmer med de övergripande motiveringarna som definieras i [dokumentet om molnimplementeringsstrategier](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
+
+- **Detaljerad utvärdering av varje arbetsbelastning:** De antaganden som är kopplade till lanseringsplanering utifrån ”prioritera 10”-metoden tillräckliga för att skapa en plan. Men samma antaganden kan orsaka betydande problem om de inte utvärderas innan migreringen.
+
+## <a name="challenge-assumptions-and-update-the-plan"></a>Utmaningsantaganden och uppdatering av planen
+
+Granska utvärderingsdata i Azure Migrate eller det valda utvärderingsverktyget. Dessa data ger insikter om kompatibilitetsproblem, reparationskrav, storleksförslag och andra överväganden.
+
+Innan du migrerar bör du använda dessa data tillsammans med identifieringskonversationer med produktägaren, utvecklingsteamet, administratörer och andra för att utvärdera möjligheten att migrera denna speciella arbetsbelastning. Använd den här identifieringen för att utmana grundantaganden om den här arbetsbelastningen. Om resultatet ändrar migrerings- eller implementeringsplanen uppdaterar du planen enligt detta.
+
+Det första steget i att utmana dessa antaganden är en [granskning av alla 5 punkter](../../digital-estate/rationalize.md).
+
+    - Fungerar den antagna rationaliseringsmetoden för den här arbetsbelastningen? Är det det bästa sättet?
+    - Kommer [replikeringens funktion](../migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication) påverka migreringen av arbetsbelastningen?
+    - Kräver den här arbetsbelastningen [åtgärdsaktiviteter](../migration-considerations/assess/evaluate.md) innan migreringen?
+
+Sådana här typer av frågor hjälper till att utmana antaganden och leder till den bästa metoden för varje arbetsbelastning.
+
+En utökad lista över frågor och en definierad process för att validera antaganden finns i [översikten över förbättringar av utvärderingsprocessen](../migration-considerations/assess/index.md).
+
 # <a name="scenarios-and-stakeholders"></a>[Scenarier och intressenter](#tab/Scenarios)
 
 ## <a name="scenarios"></a>Scenarier
 
-Den här guiden fokuserar på följande scenarier:
+Den här guiden beskriver följande scenarier:
 
-- **Äldre maskinvara:** Du migrerar för att ta bort ett beroende på äldre maskinvara där supporten eller livscykeln snart upphör.
-- **Kapacitetstillväxt:** Du måste öka kapaciteten för tillgångar (infrastruktur, appar och data) som den aktuella infrastrukturen inte kan tillhandahålla.
-- **Modernisering av datacenter:** Du måste utöka eller modernisera ditt datacenter med molnteknik för att säkerställa att verksamheten förblir aktuell och konkurrenskraftig.
-- **Program- eller tjänstmodernisering:** Du vill uppdatera dina program så att de utnyttjar molnets inbyggda funktioner. Även om en strategi för en ny värd var ditt ursprungliga mål, är möjligheten att skapa planer för program- eller tjänstgranskning och potentiell modernisering en vanlig process vid all migrering.
+- **Äldre maskinvara:** Migrera för att ta bort ett beroende på äldre maskinvara där supporten eller livscykeln snart upphör.
+- **Kapacitetstillväxt:** Öka kapaciteten för tillgångar (infrastruktur, appar och data) som den aktuella infrastrukturen inte kan tillhandahålla.
+- **Modernisering av datacenter:** Utöka eller modernisera ditt datacenter med molnteknik för att säkerställa att verksamheten förblir aktuell och konkurrenskraftig.
+- **Program- eller tjänstmodernisering:** Uppdatera dina program så att de utnyttjar molnets inbyggda funktioner. Även om du valt att genomföra en migreringsstrategi som innebär byte av värd i första hand är det brukligt att se till att det finns möjligheter att skapa planer för granskning av program och tjänster, samt eventuell modernisering i migreringen.
 
 ### <a name="organizational-alignment-and-stakeholders"></a>Organisatorisk anpassning och intressenter
 
@@ -104,13 +140,13 @@ Den fullständiga listan med intressenter kan variera mellan migreringsprojekten
 
 Att upprätta ett kärnteam för molnstrategin med dessa viktiga intressenter på hög nivå, kan vara till hjälp när du förbereder din organisation på molnimplementeringen och dina övergripande åtgärder för molnmigreringen. Det här teamet ansvarar för att förstå molnteknikerna och migreringsprocesserna, identifiera affärsmotiveringen för migreringar och fastställa de bästa lösningarna för migreringen. De hjälper också till att identifiera och arbeta med specifika program- och affärsintressenter för att säkerställa en lyckad migrering.
 
-Mer information om hur du förbereder din organisation på molnmigreringen finns i Cloud Adoption Framework-artikeln om den [inledande organisatoriska anpassningen](../../plan/initial-org-alignment.md).
+Mer information om hur du förbereder din organisation för molnmigreringen finns i Cloud Adoption Framework-guiden om den [inledande organisatoriska anpassningen](../../plan/initial-org-alignment.md).
 
 # <a name="timelines"></a>[Tidslinjer](#tab/Timelines)
 
-I allmänhet ser kunderna att migreringsscenariot i den här guiden kan slutföras inom en till sex månader.
+Kunderna tycker vanligen att migreringsscenariot i den här guiden kan slutföras inom en till sex månader.
 
-Några viktiga faktorer att tänka på när man utvärderar tidslinjen för migreringen är:
+När du utvärderar tidslinjen för migreringen bör du överväga:
 
 - **Tillgångar (infrastruktur, appar och data) som ska migreras:** Antalet och mångfalden av tillgångar.
 - **Personalens beredskap:** Är personalen redo att hantera den nya miljön eller behöver de utbildning?
@@ -120,7 +156,7 @@ Några viktiga faktorer att tänka på när man utvärderar tidslinjen för migr
 
 # <a name="cost-management"></a>[Kostnadshantering](#tab/ManageCost)
 
-När du utvärderar din miljö är det en perfekt möjlighet att inkludera ett kostnadsanalyssteg. Med hjälp av de data som samlats in vid utvärderingen bör du kunna analysera och förutse kostnaderna. Den här kostnadsförutsägelsen bör innehålla både förbrukningskostnader för tjänsten samt eventuella engångskostnader (till exempel ökad mängd inkommande data).
+Att utvärdera din miljö ger en bra möjlighet att inkludera ett kostnadsanalyssteg. Med hjälp av de data som samlats in vid utvärderingen bör du kunna analysera och förutse kostnaderna. Den här kostnadsförutsägelsen bör innehålla både förbrukningskostnader för tjänsten samt eventuella engångskostnader (till exempel ökad mängd inkommande data).
 
 Under migreringen finns det vissa faktorer som påverkar beslut och körning:
 

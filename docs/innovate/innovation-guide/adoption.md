@@ -1,6 +1,6 @@
 ---
-title: 'Guide till Azure-innovation: Förbereda för kundfeedback'
-description: Förbereda för kundfeedback
+title: 'Azure-innovation: Förbereda för feedback'
+description: Lär dig hur du använder Azure-verktyg för att samla in kvantitativa och kvalitativa synpunkter på webbappar och API:er i GitHub.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c78eae75bca30cac541a997fa9d4901b03b277c0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 58d1e420f9f1b76ea37a5ba7edc5c71aba9d0049
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808370"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171097"
 ---
 ::: zone target="docs"
 
@@ -39,7 +39,7 @@ Innan du integrerar feedbackslingor måste du ha en delad lagringsplats för din
 
 Alla de här Azure-verktygen kan integreras med (eller är kompatibla med) projekt som lagras i GitHub:
 
-## <a name="quantitative-feedback-for-web-appstabquantitative-apps"></a>[Kvantitativ feedback för webbappar](#tab/Quantitative-Apps)
+## <a name="quantitative-feedback-for-web-apps"></a>[Kvantitativ feedback för webbappar](#tab/Quantitative-Apps)
 
 Application Insights är ett övervakningsverktyg som gör att du kan få kvantitativ feedback om hur din app används, praktiskt taget i realtid. Den här feedbacken kan vara till hjälp när du ska testa och validera den nuvarande hypotesen och forma nästa funktion eller användarberättelse i de kvarvarande uppgifterna.
 
@@ -74,7 +74,7 @@ Om du vill visa data om dina appar går du till [Azure-portalen](https://ms.port
 - [Kom igång med Azure Monitor Application Insights](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-users)
 - [Skapa en instrumentpanel för telemetri](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-app-dashboards)
 
-## <a name="quantitative-feedback-for-apistabquantitative-apis"></a>[Kvantitativ feedback för API:er](#tab/Quantitative-APIs)
+## <a name="quantitative-feedback-for-apis"></a>[Kvantitativ feedback för API:er](#tab/Quantitative-APIs)
 
 Den anslutna ekonomin förändrar hur företagen skapar nya innovationer. Marknader och branscher utvecklas snabbare än någonsin. De här förändringarna kan ta sig många olika uttryck, och företagen måste lära sig hantera _”innovatörens dilemma”_ : att kunna hålla en snabb förändringstakt utan att det stör den pågående verksamheten.
 
@@ -116,7 +116,7 @@ Du öppnar API Management-tjänster via [Azure-portalen](https://ms.portal.azure
 
 - [Använd Azure Monitor till att få feedback från API:er](https://docs.microsoft.com/azure/api-management/api-management-howto-use-azure-monitor)
 
-## <a name="qualitative-feedbacktabqualitative"></a>[Kvalitativ feedback](#tab/Qualitative)
+## <a name="qualitative-feedback"></a>[Kvalitativ feedback](#tab/Qualitative)
 
 I kvarvarande uppgifter (eller på tavlan) registreras feedback som användarberättelser. Det är också här som det relaterade arbetet spåras som åtgärder att utföra. Azure Boards kan integreras direkt i GitHub så att hanteringen av feedback och eventuell källkod kan skötas enhetligt.
 
@@ -154,7 +154,7 @@ De här artiklarna visar hur du kan centralisera och hantera feedback med hjälp
 - [Kom igång med Azure Boards](https://docs.microsoft.com/azure/devops/boards/get-started/?view=azure-devops)
 - [Azure Boards och GitHub](https://docs.microsoft.com/azure/devops/boards/github?view=azure-devops)
 
-## <a name="close-the-loop-with-pipelinestabpipelines"></a>[Stäng loopen med pipelines](#tab/pipelines)
+## <a name="close-the-loop-with-pipelines"></a>[Stäng loopen med pipelines](#tab/pipelines)
 
 Att agera på feedback behöver inte alltid betyda att du lägger till en funktion som kunden efterfrågar. Men alla datapunkter bör dock resultera i någon ändring. En ändring kan till exempel vara att du ändrar åsikt om något. Eller så kan du behöva hitta en annan teknisk lösning än den som begärts. Oavsett så kan du använda pipelines för distribution och verktyg som Azure Pipelines till att snabbt publicera ändringarna, så att de kan delas med kunden ofta.
 

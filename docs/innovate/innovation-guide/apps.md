@@ -1,6 +1,6 @@
 ---
-title: 'Guide till Azure-innovation: Engagera kunder via appar'
-description: Lär dig att förnya genom att engagera kunder via appar med Azure
+title: 'Azure-innovation: Engagera via appar'
+description: Lär dig om Azure-tjänster som hjälper dig att enkelt modernisera dina befintliga webb- och API-appar och bygga appar i molnet.
 author: billyclaymyersmsft
 ms.author: wimyers
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7b6a94830f35f7dde577ba4b7122cdec7e4a711d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ad638c667a75561dfbdb9827413249ebc93fd9dc
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808353"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171080"
 ---
 ::: zone target="docs"
 
@@ -34,7 +34,7 @@ Med en containermodell med öppen standard är det enkelt att skapa mikrotjänst
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="deliver-value-fastertabdelivervaluefaster"></a>[Leverera värde snabbare](#tab/DeliverValueFaster)
+# <a name="deliver-value-faster"></a>[Leverera värde snabbare](#tab/DeliverValueFaster)
 
 En av fördelarna med molnbaserade lösningar är att du kan samla feedback snabbare och börja leverera värde till dina användare. Oavsett om användaren är en extern kund eller en användare i ditt företag är det bättre ju snabbare du kan få feedback om dina program.
 
@@ -131,7 +131,7 @@ Visual Studio App Center har också en meddelandetjänst som gör att du kan ski
 - [Dokumentation om Azure SDK för Go](https://docs.microsoft.com/azure/go)
 - [DevOps-lösningar](https://azure.microsoft.com/solutions/devops)
 
-# <a name="create-cloud-native-appstabcloudnative"></a>[Skapa molnbaserade program](#tab/CloudNative)
+# <a name="create-cloud-native-apps"></a>[Skapa molnbaserade program](#tab/CloudNative)
 
 <!-- markdownlint-disable MD026 -->
 
@@ -287,7 +287,7 @@ Med Azure Red Hat OpenShift kan du på egen hand flexibelt distribuera helt hant
 
 **Gå till [Azure Red Hat OpenShift](https://docs.microsoft.com/azure/openshift/intro-openshift)**
 
-# <a name="isolate-points-of-failuretabisolatepointsoffailure"></a>[Isolera felpunkter](#tab/IsolatePointsOfFailure)
+# <a name="isolate-points-of-failure"></a>[Isolera felpunkter](#tab/IsolatePointsOfFailure)
 
 När du börjar övergå från den första testfasen kan du utvärdera hur du kan isolera och ta bort felpunkter. Eftersom Azure-molnplattformen har en distribuerad karaktär kan du utforma ditt program för att minimera fel och öka prestanda.
 

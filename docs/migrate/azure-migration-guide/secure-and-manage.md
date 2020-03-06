@@ -9,18 +9,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 1af3ed5ea3b9291263a5ad8da43c65d51570651e
-ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
+ms.openlocfilehash: ec67108e90fb367535298ba7fab3b8ac32705255
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76994105"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222481"
 ---
+<!-- markdownlint-disable MD024 MD025 DOCSMD001 -->
+
 # <a name="secure-and-manage"></a>Skydda och hantera
 
 När du har migrerat miljön till Azure är det viktigt att tänka på vilken säkerhet och vilka metoder som används för att hantera miljön. Azure tillhandahåller många funktioner för att uppfylla de här behoven i din lösning.
 
-# <a name="azure-monitortabmonitor"></a>[Azure Monitor](#tab/monitor)
+# <a name="azure-monitor"></a>[Azure Monitor](#tab/monitor)
 
 Azure Monitor maximerar programmens tillgänglighet och prestanda genom att leverera en heltäckande lösning för att samla in, analysera och arbeta med telemetri från dina molnmiljöer och lokala miljöer. Det hjälper dig att förstå hur dina program fungerar och identifierar proaktivt problem som påverkar dem och de resurser som de förlitar sig på.
 
@@ -44,7 +46,7 @@ Azure Monitor maximerar programmens tillgänglighet och prestanda genom att leve
 
 ::: zone-end
 
-# <a name="azure-service-healthtabservicehealth"></a>[Azure Service Health](#tab/servicehealth)
+# <a name="azure-service-health"></a>[Azure Service Health](#tab/servicehealth)
 
 Med Azure Service Health får du anpassad vägledning och support när problem med Azure-tjänsterna påverkar dig. Tjänsten kan meddela dig, hjälpa dig att förstå hur olika problem påverkar dig och hålla dig uppdaterad under tiden att problemen blir lösta. Dessutom får du hjälp med förberedelser inför planerat underhåll och ändringar som kan påverka tillgängligheten för dina resurser.
 
@@ -75,7 +77,7 @@ Läs mer i [Azure Service Health-dokumentationen](https://docs.microsoft.com/azu
 
 ::: zone-end
 
-# <a name="azure-advisortabadvisor"></a>[Azure Advisor](#tab/advisor)
+# <a name="azure-advisor"></a>[Azure Advisor](#tab/advisor)
 
 Azure Advisor är en anpassad molnkonsult som hjälper dig att följa bästa praxis för att optimera dina Azure-distributioner. Den analyserar din resurskonfiguration och användningstelemetri. Den rekommenderar sedan lösningar för att förbättra prestanda, säkerhet och hög tillgänglighet för dina resurser samtidigt som den söker efter möjligheter att minska de totala Azure-kostnaderna.
 
@@ -98,7 +100,7 @@ Azure Advisor är en anpassad molnkonsult som hjälper dig att följa bästa pra
 
 ::: zone-end
 
-# <a name="azure-security-centertabsecurity"></a>[Azure Security Center](#tab/security)
+# <a name="azure-security-center"></a>[Azure Security Center](#tab/security)
 
 Azure Security Center är ett enhetligt system för hantering av infrastruktursäkerhet som stärker dina datacentras säkerhetstillstånd och tillhandahåller avancerat skydd för dina hybridarbetsbelastningar såväl i molnet, oavsett om de finns i Azure eller inte, som lokalt.
 
@@ -121,7 +123,7 @@ Azure Security Center är ett enhetligt system för hantering av infrastrukturs�
 
 ::: zone-end
 
-# <a name="azure-backuptabbackup"></a>[Azure Backup](#tab/backup)
+# <a name="azure-backup"></a>[Azure Backup](#tab/backup)
 
 Azure Backup är en Azure-baserad tjänst som du använder för att säkerhetskopiera (eller skydda) och återställa data i Microsoft-molnet. Azure Backup ersätter din befintliga lokala eller externa säkerhetskopieringslösning med en tillförlitlig och säker molnbaserad lösning med ett konkurrenskraftigt pris.
 
@@ -147,7 +149,7 @@ Azure Backup är en Azure-baserad tjänst som du använder för att säkerhetsko
 
 ::: zone-end
 
-# <a name="azure-site-recoverytabsiterecovery"></a>[Azure Site Recovery](#tab/siterecovery)
+# <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siterecovery)
 
 Tidigare i den här guiden diskuterade vi hur Azure Site Recovery kan användas som en del av migreringskörningen. Men den utgör också en viktig komponent i din strategi för haveriberedskap när migreringen är klar.
 
