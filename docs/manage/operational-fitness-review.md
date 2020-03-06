@@ -1,18 +1,18 @@
 ---
 title: Etablera granskning av driftslämplighet
-description: Vägledning om operativa grunderna
+description: Upprätta en process för drifts granskning för att helt förstå de problem som uppstår när arbets belastningar körs i en produktions miljö.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: df13e7bf3622c7062c3da1fc30a6a3fee9d28c90
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9bc4e2bb9b39a83ab8829ea4a12cd1bb019bf0c3
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807571"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341818"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Etablera granskning av driftslämplighet
 
@@ -23,7 +23,7 @@ Det finns fem viktiga kategorier av icke-funktionella krav, som kallas för [pel
 - Skalbarhet
 - Tillgänglighet
 - Återhämtning, inklusive affärs kontinuitet och haveri beredskap
-- Förvaltning
+- Hantering
 - Säkerhet
 
 En process för granskning av operativa krav garanterar att dina verksamhets kritiska arbets belastningar uppfyller förväntningarna för din verksamhet med avseende på kvalitets pelaren.

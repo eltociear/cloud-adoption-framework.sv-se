@@ -1,18 +1,18 @@
 ---
-title: Verksamhets påverkan – moln hantering och drift
-description: Verksamhets påverkan – moln hantering och drift
+title: Inverkan på verksamheten i moln hantering
+description: Använd ramverket för moln införande för Azure för att lära dig hur du kan fastställa och förstå vilken effekt som uppstår eller prestanda försämringen kan ha på din verksamhet.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 3447fcf081af559dd778bf342b0ec95b02fc7562
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: bdd45861141b8fe69f8c13a49bdb6d387acd12ba
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807809"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341189"
 ---
 # <a name="business-impact-in-cloud-management"></a>Inverkan på verksamheten i moln hantering
 
@@ -50,7 +50,7 @@ Innan du gör vissa antaganden om potentiella förluster som är kopplade till a
 
 När du beräknar förluster genom att använda historiska data kan du ha tillräckligt med information för att tydligt avgöra bidraget för varje arbets belastning till dessa förluster. Om du utför den här utvärderingen är partnerskap i verksamheten absolut viktiga. När den totala påverkan har beräknats måste påverkan vara tilldelad för varje arbets belastning. Den distributionen av påverkan bör komma från affärs intressenterna, som bör enas om den relativa och ackumulerade påverkan av varje arbets belastning. Därför bör ditt team be om feedback från affärs chefer för att validera justering. Sådan feedback är ofta detsamma som känslo och ämnes expert kunskaper. Det är viktigt att den här övningen representerar logik och övertygelse för de affärs intressenter som bör ha ett par i budgetallokeringen.
 
-## <a name="use-the-template"></a>Använda mallen
+## <a name="use-the-template"></a>Använd mallen
 
 Om du använder [arbets boken för Operations Management](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) för att planera för moln hantering kan du göra följande:
 

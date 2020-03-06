@@ -1,18 +1,18 @@
 ---
-title: Aktivera server hanterings tjänster på en enskild virtuell dator för utvärdering
-description: Aktivera server hanterings tjänster på en enskild virtuell dator för utvärdering
+title: Aktivera server hanterings tjänster på en virtuell dator
+description: Använd ramverket för moln införande för Azure för att lära dig hur du aktiverar Azure Server Management-tjänster på en enda virtuell dator.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d73b9f5a13150b0c3b13feff3f21a765a36ac4a8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d79539e6708a46a905e1b69a4d6bd186eaff2d0f
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808047"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341699"
 ---
 # <a name="enable-server-management-services-on-a-single-vm-for-evaluation"></a>Aktivera server hanterings tjänster på en enskild virtuell dator för utvärdering
 

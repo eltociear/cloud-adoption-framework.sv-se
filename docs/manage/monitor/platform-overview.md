@@ -1,6 +1,6 @@
 ---
-title: 'Övervaknings guide för molnet: översikt över Monitoring Platforms'
-description: Välj när Azure Monitor eller System Center Operations Manager ska användas i Microsoft Azure.
+title: Översikt över Cloud Monitoring Platforms
+description: Få en översikt över två övervaknings plattformar som hjälper dig att förstå hur var och en ger grundläggande övervaknings funktioner.
 author: mgoedtel
 ms.author: magoedte
 ms.date: 07/31/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 99faaa30d67b404e9a9aa1a45d434fd7ec3f2c31
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: fba1f50b71f664c3d7bbb4a4498c3e067f45923d
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223024"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341206"
 ---
 <!-- cspell:ignore opsman ITSM -->
 

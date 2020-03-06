@@ -1,6 +1,6 @@
 ---
-title: Cloud Opera ting Model är nu Microsoft Cloud implementerings ramverk för Azure
-description: Lär dig mer om att använda metoder för att använda moln drifts modeller i moln införande ramverket.
+title: Cloud Opera ting Model är nu moln implementerings ramverket för Azure
+description: Använd ramverket för moln införande för Azure för att lära dig vad, varför och hur du påskyndar ditt moln.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 8408b657a3896cbb9376d0364dbd752ed90b9306
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: dc6a9244b16c0de69a870323d0099e37f85c075a
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048126"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78342005"
 ---
 # <a name="cloud-operating-model-is-now-part-of-the-microsoft-cloud-adoption-framework-for-azure"></a>Cloud Opera ting Model är nu en del av Microsoft Cloud implementerings ramverk för Azure
 
 I början av 2018 släppte Microsoft Cloud Operating Model (COM). COM var en guide som hjälpte kunderna att förstå **vad** och **varför** i den digitala omvandlingen. Detta hjälpte kunderna att få en uppfattning om alla områden som behövde åtgärdas: affärs strategi, kultur strategi och teknik strategi. Vad som inte ingår i COM var den speciella _instruktionen_, som lämnade kunder undrar "var vill vi gå hit?"
 
-I oktober 2018 påbörjade vi en granskning av alla modeller som hade blivit spridda över Microsoft-communityn, men vi hittade ungefär 60 olika modeller för moln införande. Ett cross-Microsoft-team upprättades för att samla allt tillsammans som en särskild konstruktions produkt med definierade implementeringar mellan tjänster, försäljning och marknadsföring. Den här ansträngningen culminated för att skapa en enskild modell, Microsoft Cloud implementerings ramverk för Azure som hjälper kunderna att förstå **vad** och **varför** och ger enhetlig vägledning om **hur** de kan hjälpa dem att påskynda sin moln införande. Målet med det här projektet är att skapa ett ett Microsoft-tillvägagångs sätt för moln införande.
+I oktober 2018 påbörjade vi en granskning av alla modeller som hade blivit spridda över Microsoft-communityn, men vi hittade ungefär 60 olika modeller för moln införande. Ett cross-Microsoft-team upprättades för att samla allt tillsammans som en särskild konstruktions produkt med definierade implementeringar mellan tjänster, försäljning och marknadsföring. Den här ansträngningen culminated för att skapa en enskild modell, Microsoft Cloud implementerings ramverk för Azure som hjälper kunderna att förstå **vad** och **varför** och ger enhetlig vägledning om **hur** de kan hjälpa dem att påskynda sitt moln införande. Målet med det här projektet är att skapa ett ett Microsoft-tillvägagångs sätt för moln införande.
 
 ## <a name="using-cloud-operating-model-practices-within-the-cloud-adoption-framework"></a>Använda metoder för att använda moln drifts modeller i moln införande ramverk
 
@@ -47,7 +47,7 @@ De övergripande omfattningarna i moln operativ modellen och moln införande ram
 > [!NOTE]
 > Moln implementerings ramverkets omfattning har två viktiga punkter i klarhet. I moln integrerings ramverket går affärs strategin bortom dokumentation av moln kostnader&mdash;det är en uppfattning om motivation, önskade resultat, avkastning och moln kostnader för att skapa åtgärds bara planer och ta bort affärs skäl. I ramverket för moln införande går det utöver utbildning att ta med metoder för att skapa en påvisbar kultur mognad. Några områden i översikten innehåller demonstrationer av effekten av smidig hantering, DevOps-integrering, empati och besatthet samt Lean produkt utvecklings metoder.
 
-## <a name="structure"></a>hierarkistruktur
+## <a name="structure"></a>Struktur
 
 COM inkluderar ett informations grafiken som beskriver de olika beslut och åtgärder som krävs under en moln implementering. Bilden gav en tydlig metod för att kommunicera nästa steg och beroende beslut.
 

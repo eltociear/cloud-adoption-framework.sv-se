@@ -1,6 +1,6 @@
 ---
-title: 'Övervaknings guide för molnet: övervaknings strategi för moln distributions modeller'
-description: Välj när Azure Monitor eller System Center Operations Manager ska användas i Microsoft Azure
+title: Övervaknings strategi för moln distributions modeller
+description: Använd ramverket för moln införande för Azure för att lära dig vilken övervaknings strategi för moln hantering som ska användas.
 author: MGoedtel
 ms.author: magoedte
 ms.date: 10/04/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: abb9395a739d4e32cab85367d4de822dc47939ac
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3b6434937816255269bda41c422099a07a25f5bc
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807639"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341835"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Övervaknings guide för molnet: övervaknings strategi för moln distributions modeller
 
@@ -74,23 +74,23 @@ I följande tabell sammanfattas de krav som Azure Monitor och System Center Oper
 
 |Krav | Azure Monitor | Operations Manager |
 |:--|:---|:---|
-|Krav på infrastruktur | Inga | Ja<br> Kräver minst en hanterings Server och en SQL-Server som värd för den operativa databasen och informationslager för rapportering databasen. Komplexiteten ökar när hög tillgänglighet och haveri beredskap krävs, och det finns datorer på flera platser, ej betrodda system och andra komplexa design överväganden.|
-|Begränsad anslutning-inget Internet<br> eller isolerat nätverk | Inga | Ja |
+|Krav på infrastruktur | Nej | Ja<br> Kräver minst en hanterings Server och en SQL-Server som värd för den operativa databasen och informationslager för rapportering databasen. Komplexiteten ökar när hög tillgänglighet och haveri beredskap krävs, och det finns datorer på flera platser, ej betrodda system och andra komplexa design överväganden.|
+|Begränsad anslutning-inget Internet<br> eller isolerat nätverk | Nej | Ja |
 |Begränsad anslutning – styrd Internet åtkomst | Ja | Ja |
 |Begränsad anslutning – ofta frånkopplad | Ja | Ja |
-|Konfigurerbar hälso övervakning | Inga | Ja |
+|Konfigurerbar hälso övervakning | Nej | Ja |
 | Tillgänglighets test för webb program (isolerat nätverk) | Ja, begränsad<br> Azure Monitor har begränsat stöd i det här avsnittet och kräver anpassade brand Väggs undantag. | Ja |
-| Tillgänglighets test för webb program (globalt distribuerat) | Inga | Ja |
+| Tillgänglighets test för webb program (globalt distribuerat) | Nej | Ja |
 |Övervaka VM-arbetsbelastningar | Ja, begränsad<br> Kan samla in IIS-och SQL Server fel loggar, Windows-händelser och prestanda räknare. Kräver att du skapar anpassade frågor, aviseringar och visualiseringar. | Ja<br> Stöder övervakning av de flesta Server arbets belastningar med tillgängliga hanterings paket. Kräver antingen Log Analytics Windows-agent eller Operations Manager agent på den virtuella datorn som rapporterar tillbaka till hanterings gruppen på företags nätverket.|
 |Övervaka Azure-IaaS | Ja | Ja<br> Har stöd för övervakning av det mesta av infrastrukturen från företags nätverket. Spårar tillgänglighets tillstånd, mått och aviseringar för virtuella Azure-datorer, SQL och lagring via Azures hanterings paket.|
 |Övervaka Azure-PaaS | Ja | Ja, begränsad<br> Baserat på vad som stöds i Azures hanterings paket. |
 |Övervakning av Azure-tjänst | Ja<br> | Ja<br> Även om det inte finns någon inbyggd övervakning av Azure Service Health som tillhandahålls idag via ett hanterings paket kan du skapa anpassade arbets flöden för att fråga aviseringar om Azure-tjänstehälsa. Använd Azure-REST API för att få aviseringar via dina befintliga meddelanden.|
-|Övervakning av moderna webb program | Ja | Inga |
+|Övervakning av moderna webb program | Ja | Nej |
 |Övervakning av äldre webb program | Ja, begränsad, varierar beroende på SDK<br> Har stöd för övervakning av äldre versioner av .NET och Java-webbprogram. | Ja, begränsad |
-|Övervaka Azure Kubernetes service-behållare | Ja | Inga |
-|Övervaka Docker-eller Windows-behållare | Ja | Inga |
+|Övervaka Azure Kubernetes service-behållare | Ja | Nej |
+|Övervaka Docker-eller Windows-behållare | Ja | Nej |
 |Övervakning av nätverks prestanda | Ja | Ja, begränsad<br> Stöder tillgänglighets kontroller och samlar in grundläggande statistik från nätverks enheter med hjälp av Simple Network Management Protocol (SNMP) från företags nätverket.|
-|Interaktiv data analys | Ja | Inga<br> Förlita dig på SQL Server Reporting Services konserverade eller anpassade rapporter, visualiserings lösningar från tredje part eller en anpassad Power BI implementering. Det finns skalnings-och prestanda begränsningar med Operations Manager data lagret. Integrera med Azure Monitor-loggar som ett alternativ för data agg regerings krav. Du uppnår integrering genom att konfigurera Log Analytics anslutningen.|
+|Interaktiv data analys | Ja | Nej<br> Förlita dig på SQL Server Reporting Services konserverade eller anpassade rapporter, visualiserings lösningar från tredje part eller en anpassad Power BI implementering. Det finns skalnings-och prestanda begränsningar med Operations Manager data lagret. Integrera med Azure Monitor-loggar som ett alternativ för data agg regerings krav. Du uppnår integrering genom att konfigurera Log Analytics anslutningen.|
 |Diagnostik från slut punkt till slut punkt, rotor Saks analys och problemlösnings tid | Ja | Ja, begränsad<br> Har stöd för diagnostik och fel sökning från slut punkt till slut punkt för lokal infrastruktur och program. Använder andra System Center-komponenter eller partner lösningar.|
 |Interaktiva visualiseringar (instrument paneler) | Ja | Ja, begränsad<br> Tillhandahåller viktiga instrument paneler med sin HTML5-webb konsol eller en avancerad upplevelse från partner lösningar, till exempel i kvadrat-och Savision. |
 |Integrering med IT-eller DevOps-verktyg | Ja | Ja, begränsad |

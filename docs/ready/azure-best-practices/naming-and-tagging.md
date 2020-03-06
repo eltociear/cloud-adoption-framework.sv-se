@@ -1,6 +1,6 @@
 ---
 title: Rekommenderade regler för namngivning och taggar
-description: Den här artikeln innehåller detaljerad information om resursnamn och taggar som bidrar till molnimplementeringen för företag.
+description: Lär dig mer om resurs namns-och taggnings rekommendationer som syftar till att stödja företagets moln införande ansträngningar.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/01/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 5e168659c5120ded6b5cfde116699ced61390bdd
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: 915e974e3968e873c8cf23ec7696f66469f01c82
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337874"
+ms.locfileid: "78342022"
 ---
 # <a name="recommended-naming-and-tagging-conventions"></a>Rekommenderade regler för namngivning och taggar
 

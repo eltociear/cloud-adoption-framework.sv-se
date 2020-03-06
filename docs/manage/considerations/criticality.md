@@ -1,18 +1,18 @@
 ---
-title: 'Verksamhets kritiskhet: moln hantering och åtgärder'
-description: 'Verksamhets kritiskhet: moln hantering och åtgärder'
+title: Affärs kritiskhet i moln hantering
+description: Använd ramverket för moln införande för Azure för att förstå arbets Belastningens kritiskahet och förhindra negativ inverkan på intäkter och lönsamhet.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 3232d0544f0382c6277e3a2898a95aa0c2f11ddd
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 2c3d5a71025e821b9554e2a8d99223c7e6b0712b
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807843"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341461"
 ---
 # <a name="business-criticality-in-cloud-management"></a>Affärs kritiskhet i moln hantering
 
@@ -34,7 +34,7 @@ Det första steget i alla affärs kritiska anpassningar är att skapa en kritisk
 | Verksamhetskritiskt |  Påverkar företagets uppdrag och kan påverka företagets vinst-och förlust rapporter märkbart. |
 | Enhets kritisk | Påverkar uppdraget för en speciell affär senhet och dess vinst-och förlust uttryck. |
 | Hög | Kanske inte hindrar uppdraget, utan påverkar processer med hög prioritet. Mätbara förluster kan kvantifieras i händelse av avbrott. |
-| Medium | Påverkan på processer är förmodligen. Förlusten är låg eller immeasurable, men varumärkes skada eller uppströms förlust är troligt vis. |
+| Medel | Påverkan på processer är förmodligen. Förlusten är låg eller immeasurable, men varumärkes skada eller uppströms förlust är troligt vis. |
 | Låg | Påverkan på affärs processer är inte mätbart. Varken varumärkes skada eller överordnad förlust är troligt vis. En lokaliserad inverkan på ett enda team är förmodligen. |
 | Stöd saknas | Ingen företags ägare, grupp eller process som är associerad med den här arbets belastningen kan motivera alla investeringar i den pågående hanteringen av arbets belastningen. |
 
@@ -56,7 +56,7 @@ En inledande granskning av alla arbets belastningar i portföljen kan ta lång t
 
 Baserat på föregående kritiskt skalnings tabell, rekommenderar vi att du antar *medelhög* allvarlighets grad som standard. På så sätt kan moln strategi teamet snabbt identifiera arbets belastningar som kräver en högre viktighets grad.
 
-## <a name="use-the-template"></a>Använda mallen
+## <a name="use-the-template"></a>Använd mallen
 
 Följande steg gäller om du använder [arbets boken för OPS-hantering](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) för att planera för moln hantering.
 

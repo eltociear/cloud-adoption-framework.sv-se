@@ -1,18 +1,18 @@
 ---
-title: Krav för en effektiv moln införande plan
-description: Förstå kraven för en effektiv moln införande plan.
+title: Krav för en moln införande plan
+description: Använd ramverket för moln införande för Azure för att förstå kraven för en effektiv moln införande plan.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 391abf359cd1da0af1d243c1a220b34a746642eb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f229515b39c69fa0e9e6c840810720bca4e12dc6
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800210"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78342056"
 ---
 # <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>Krav för en effektiv moln införande plan
 
