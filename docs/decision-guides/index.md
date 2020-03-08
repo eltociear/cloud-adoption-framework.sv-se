@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 6fcd5892eb9d13b61cbaa697731718e1ca8ce3eb
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 66ff53f203a07f5f61ae2ba448f56d6531ffaa94
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708163"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892454"
 ---
 # <a name="architectural-decision-guides"></a>Beslutsguider för arkitektur
 
@@ -42,8 +42,6 @@ Var och en av följande kategorier representerar en grundläggande teknik för a
 [Kryptering](./encryption/index.md): Skydda känsliga data med hjälp av kryptering för att uppfylla organisationens krav på efterlevnad och säkerhetsprinciper.
 
 [Loggning och rapportering](./logging-and-reporting/index.md): Övervaka loggdata som genereras av molnbaserade resurser. Analys av data ger hälsorelaterade insikter om åtgärder, underhåll och efterlevnadsstatus för arbetsbelastningar.
-
-[Regional vägledning](./regions/index.md): En diskussion om lämpliga beslutskriterier för regional placering av resurser på Azure-plattformen.
 
 ## <a name="next-steps"></a>Nästa steg
 

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 481a617d3a09ae1f81fe313dd557314aed8f4f29
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 2ab2fa1cce7e779538137302a326ca49a291ad28
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706854"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892112"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Standardguide för styrning av företag
 
@@ -42,7 +42,7 @@ Varje program bör distribueras i korrekt område i hierarkin för hanteringsgru
 2. Två prenumerationer, en för produktionsarbetsbelastningar och en annan för icke-produktionsarbetsbelastningar.
 3. [Konsekvent terminologi](../../../ready/azure-best-practices/naming-and-tagging.md) ska tillämpas på varje nivå i den här grupperingshierarkin.
 4. Resursgrupper bör distribueras på ett sätt som tar hänsyn till innehållets livslängd: allt som utvecklas tillsammans hanteras tillsammans och dras tillbaka tillsammans. Mer information om metodtips för resursgrupper finns [här](../../../decision-guides/resource-consistency/index.md).
-5. [Valet av region](../../../decision-guides/regions/index.md) är otroligt viktigt. Du måste se till att nätverk, övervakning och granskning är tillgängligt för redundans/återställning och att [nödvändiga SKU:er är tillgängliga i de önskade regionerna](https://azure.microsoft.com/global-infrastructure/services).
+5. [Valet av region](../../../migrate/azure-best-practices/multiple-regions.md) är otroligt viktigt. Du måste se till att nätverk, övervakning och granskning är tillgängligt för redundans/återställning och att [nödvändiga SKU:er är tillgängliga i de önskade regionerna](https://azure.microsoft.com/global-infrastructure/services).
 
 Här är ett exempel på hur det här mönstret används:
 

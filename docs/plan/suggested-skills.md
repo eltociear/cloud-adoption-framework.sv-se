@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a14d6338489fa873b1f78951ca34400819d71c0b
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 3fdfbcbaabb79876d32fa8ea172b2c426ada9464
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342039"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892692"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Komma igång med en färdighets beredskaps väg
 
@@ -28,7 +28,7 @@ Moln implementerings ramverket hjälper till att läsa igenom hela livs cykeln f
 - **[Klart](../ready/suggested-skills.md):** Utveckla de kunskaper som krävs för att förbereda företaget, kulturen, människor och miljön för att komma till gång till ändringar.
 
 - **Anta:** Antagande kunskaper anpassas till olika tekniska ansträngningar:
-  - **[Migrera](../migrate/expanded-scope/suggested-skills.md):** Få de kunskaper som krävs för att implementera moln migrerings planen.
+  - **[Migrera](../migrate/suggested-skills.md):** Få de kunskaper som krävs för att implementera moln migrerings planen.
   - **Förnya:** Få de kunskaper som behövs för att leverera innovativa nya lösningar.
 
 - **Arbeta:** Kunskaper som rör drifts modellen för moln införande är justerade med olika möjligheter att få kunskaper:

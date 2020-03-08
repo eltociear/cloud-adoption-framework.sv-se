@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: bfd8fd5d227ea0329137015a41cd9f3cb8d8c19b
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
-ms.translationtype: HT
+ms.openlocfilehash: 946183aca25ec2a150d6b1f2896e87ea58ad5ef6
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78383922"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892926"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Spåra kostnader för affärsenheter, miljöer och projekt
 
@@ -114,14 +114,14 @@ Azure Cost Management är ett väldokumenterat verktyg för att ställa in budge
 
 ### <a name="get-started-with-azure-cost-management"></a>Kom igång med Azure Cost Management
 
-Mer information om att komma igång med Azure Cost Management finns i [Optimera din molninvestering med Azure Cost Management](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json).
+Mer information om att komma igång med Azure Cost Management finns i [Optimera din molninvestering med Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json).
 
 ### <a name="use-azure-cost-management"></a>Använd Azure Cost Management
 
-- [Skapa och hantera budgetar](https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets)
-- [Exportera kostnadsdata](https://docs.microsoft.com/azure/cost-management/tutorial-export-acm-data)
-- [Optimera kostnader baserat på rekommendationer](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations)
-- [Övervaka användning och utgifter med hjälp av kostnadsaviseringar](https://docs.microsoft.com/azure/cost-management/cost-mgt-alerts-monitor-usage-spending)
+- [Skapa och hantera budgetar](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets)
+- [Exportera kostnadsdata](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-export-acm-data)
+- [Optimera kostnader baserat på rekommendationer](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
+- [Övervaka användning och utgifter med hjälp av kostnadsaviseringar](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending)
 
 ### <a name="use-azure-cost-management-to-govern-aws-costs"></a>Använd Azure Cost Management för att styra AWS-kostnader
 

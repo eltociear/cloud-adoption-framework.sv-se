@@ -8,19 +8,19 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: d94db62c907599720c8f29408c6b3e5ee5cfde5e
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: e0c1486dbb498686fe532ecf02b6dcb5e56c7336
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225302"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892522"
 ---
 <!-- cSpell:ignore rodend subscope ITSM -->
 
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure Enterprise-Autogenerera: handskriven prenumerations styrning
 
 > [!NOTE]
-> Azure Enterprise-ramverk har integrerats i Microsoft Cloud adoptions ramverket. Innehållet i den här artikeln visas nu i avsnittet [klart](../ready/index.md) i det nya ramverket. Den här artikeln är inaktuell i början av 2020. För att börja använda den nya processen, se [färdig översikt](../ready/index.md), [skapa din första landnings zon](../ready/azure-setup-guide/migration-landing-zone.md)och [överväganden vid landnings zon](../ready/considerations/index.md).
+> Azure Enterprise-ramverk har integrerats i Microsoft Cloud adoptions ramverket. Innehållet i den här artikeln visas nu i avsnittet [klart](../ready/index.md) i det nya ramverket. Den här artikeln är inaktuell i början av 2020. För att börja använda den nya processen, se [färdig översikt](../ready/index.md), [skapa din första landnings zon](../ready/landing-zone/migrate-landing-zone.md)och [överväganden vid landnings zon](../ready/considerations/index.md).
 
 Företag kan i allt större utsträckning använda det offentliga molnet för att bli flexibelt och flexibelt. De förlitar sig på molnets hållfasthet för att skapa intäkter och optimera resursanvändningen för verksamheten. Microsoft Azure tillhandahåller en mängd tjänster och funktioner som företag sätter samman som bygg stenar för att hantera en mängd olika arbets belastningar och program.
 
@@ -77,7 +77,7 @@ De tre vanligaste mönstren för Azure-registreringar är:
 
   ![Det geografiska mönstret](../_images/reference/geographic.png)
 
-Även om var och en av dessa mönster har sitt ställe, är **affär senhets** mönstret allt vanligare för att utforma en organisations kostnads modell och återspegla kontroll. Microsoft Core Engineering och Operations Group har skapat en effektiv delmängd av **affär senhets** mönstret som modelleras på **federala**, **delstatliga**och **lokalt**. Mer information finns i [ordna prenumerationer och resurs grupper i företaget](https://azure.microsoft.com/blog/organizing-subscriptions-and-resource-groups-within-the-enterprise).
+Även om var och en av dessa mönster har sitt ställe, är **affär senhets** mönstret allt vanligare för att utforma en organisations kostnads modell och återspegla kontroll. Microsoft Core Engineering och Operations Group har skapat en effektiv delmängd av **affär senhets** mönstret som modelleras på **federala**, **delstatliga**och **lokalt**. Mer information finns i [ordna prenumerationer och resurs grupper i företaget](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/scaling-subscriptions).
 
 ### <a name="azure-management-groups"></a>Azure-hanteringsgrupper
 

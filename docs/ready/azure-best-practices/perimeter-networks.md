@@ -1,6 +1,6 @@
 ---
 title: Perimeternätverk
-description: Lär dig mer om hur perimeter-nätverk, även kallade demilitariserad Zones (DMZs), använder Azure-funktioner och-tjänster.
+description: Lär dig hur perimeternätverk (kallas även DMZs) använder Azure-funktioner och-tjänster.
 author: tracsman
 ms.author: jonor
 ms.date: 05/10/2019
@@ -10,13 +10,15 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 2aa561a7ffdcf43ffc56ad89849e933ea8abf186
-ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
+ms.openlocfilehash: c2af34fce6f86ed4aafe432d37e8def9a82d4705
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76994211"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892675"
 ---
+<!-- cSpell:ignore tracsman jonor rossort NVAs WAFs -->
+
 # <a name="perimeter-networks"></a>Perimeternätverk
 
 [Perimeternätverk][perimeter-network] aktiverar säkra anslutningar mellan dina molnnätverk och lokala eller fysiska datacenternätverk, tillsammans med någon anslutning till och från Internet. De kallas även för demilitariserade zoner (DMZs).
@@ -41,9 +43,9 @@ Perimeternätverket använder följande Azure-funktioner och -tjänster:
 
 Vanligtvis ansvarar dina centrala IT- och säkerhetsteam för att definiera krav för att använda perimeternätverket.
 
-![Exempel på en nätverkstopologi för nav och ekrar][7]
+![Exempel på en nätverkstopologi för nav och ekrar](../../_images/azure-best-practices/network-high-level-perimeter-networks.png)
 
-Föregående diagram visar ett exempel på [hubb och eker](./hub-spoke-network-topology.md) -nätverkstopologi som implementerar tvingande av två perimeter med åtkomst till Internet och ett lokalt nätverk. Båda perimeterna finns i DMZ-hubben. I DMZ-hubben kan perimeternätverket till Internet skala upp för att stödja många affärsapplikationer (LOBs) genom att använda flera grupper av WAF och Azure Firewall-instanser som skyddar de virtuella ekernätverken. Hubben tillåter också anslutning via VPN eller Azure-ExpressRoute efter behov.
+Diagrammet ovan visar ett exempel på [hubb och eker](./hub-spoke-network-topology.md) -nätverkstopologi som implementerar tvingande av två perimeter med åtkomst till Internet och ett lokalt nätverk. Båda perimeterna finns i DMZ-hubben. I DMZ-hubben kan perimeternätverket till Internet skala upp för att stödja många affärsapplikationer (LOBs) genom att använda flera grupper av WAF och Azure Firewall-instanser som skyddar de virtuella ekernätverken. Hubben tillåter också anslutning via VPN eller Azure-ExpressRoute efter behov.
 
 ## <a name="virtual-networks"></a>Virtuella nätverk
 
@@ -107,40 +109,13 @@ Du kan justera skyddsprinciperna genom dedikerad trafikövervakning och algoritm
 
 Telemetri i realtid är tillgängligt via Azure Monitor-vyer, såväl under pågående angrepp som i efterhand. Du kan lägga till skydd på programnivå med Azure Application Gateway-brandvägg för webbaserade program. Skydd finns för offentliga IP-adresser med IPv4-protokoll i Azure.
 
-<!-- images -->
-
-[0]: ../../_images/azure-best-practices/network-redundant-equipment.png "Exempel på komponentöverlappning"
-[1]: ../../_images/azure-best-practices/network-hub-spoke-high-level.png "Exempel på en hög nivå med hubb och eker"
-[2]: ../../_images/azure-best-practices/network-hub-spokes-cluster.png "Kluster med hubbar och ekrar"
-[3]: ../../_images/azure-best-practices/network-spoke-to-spoke.png "Eker-till-eker"
-[4]: ../../_images/azure-best-practices/network-hub-spoke-block-level-diagram.png "Blocknivådiagram för hubb-eker"
-[5]: ../../_images/azure-best-practices/network-users-groups-subscriptions.png "Användare, grupper, prenumerationer och projekt"
-[6]: ../../_images/azure-best-practices/network-infrastructure-high-level.png "Infrastrukturdiagram på hög nivå"
-[7]: ../../_images/azure-best-practices/network-high-level-perimeter-networks.png "Infrastrukturdiagram på hög nivå"
-[8]: ../../_images/azure-best-practices/network-vnet-peering-perimeter-networks.png "VNet-peering och perimeternätverk"
-[9]: ../../_images/azure-best-practices/network-high-level-diagram-monitoring.png "Diagram på hög nivå för övervakning"
-[10]: ../../_images/azure-best-practices/network-high-level-workloads.png "Diagram på hög nivå för arbetsbelastning"
-
 <!-- links -->
 
-[Limits]: https://docs.microsoft.com/azure/azure-subscription-service-limits
-[Roles]: https://docs.microsoft.com/azure/role-based-access-control/built-in-roles
 [virtual-networks]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview
 [network-security-groups]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg
-[DNS]: https://docs.microsoft.com/azure/dns/dns-overview
-[PrivateDNS]: https://docs.microsoft.com/azure/dns/private-dns-overview
-[VNetPeering]: https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview
 [user-defined-routes]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview
-[RBAC]: https://docs.microsoft.com/azure/role-based-access-control/overview
-[azure-ad]: https://docs.microsoft.com/azure/active-directory/active-directory-whatis
-[VPN]: https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways
-[ExR]: https://docs.microsoft.com/azure/expressroute/expressroute-introduction
-[ExRD]: https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about
-[vWAN]: https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about
 [NVA]: https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha
 [AzFW]: https://docs.microsoft.com/azure/firewall/overview
-[SubMgmt]: https://docs.microsoft.com/azure/architecture/cloud-adoption/reference/azure-scaffold
-[RGMgmt]: https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview
 [perimeter-network]: https://docs.microsoft.com/azure/best-practices-network-security
 [ALB]: https://docs.microsoft.com/azure/load-balancer/load-balancer-overview
 [DDoS]: https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview
@@ -149,15 +124,3 @@ Telemetri i realtid är tillgängligt via Azure Monitor-vyer, såväl under påg
 [AFDWAF]: https://docs.microsoft.com/azure/frontdoor/waf-overview
 [AppGW]: https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction
 [AppGWWAF]: https://docs.microsoft.com/azure/application-gateway/application-gateway-web-application-firewall-overview
-[Monitor]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/
-[ActLog]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-activity-logs
-[DiagLog]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs
-[nsg-log]: https://docs.microsoft.com/azure/virtual-network/virtual-network-nsg-manage-log
-[OMS]: https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview
-[NPM]: https://docs.microsoft.com/azure/log-analytics/log-analytics-network-performance-monitor
-[NetWatch]: https://docs.microsoft.com/azure/network-watcher/network-watcher-monitoring-overview
-[WebApps]: https://docs.microsoft.com/azure/app-service/
-[HDI]: https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-introduction
-[EventHubs]: https://docs.microsoft.com/azure/event-hubs/event-hubs-what-is-event-hubs
-[ServiceBus]: https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview
-[traffic-manager]: https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview

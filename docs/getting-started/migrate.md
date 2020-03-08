@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: ef04a867614c6597268269421ef1d341f5252f3b
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: dcc5706e365e3761f236bb5a1c896eb213a1bf5f
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223973"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892165"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Påbörja en migrering av molnet i Azure
 
@@ -63,7 +63,7 @@ Fokus på den här ansträngningen är migreringen eller modernisering av arbets
 
 Migrering av moln betraktas ofta som ett enda projekt i ett bredare program för att effektivisera IT-verksamheten, kostnader och komplexitet. Moln implementerings metodiken hjälper till att justera de tekniska ansträngningarna i en serie arbets belastnings migreringar till affärs värden på högre nivå som beskrivs i moln strategin och planen.
 
-**Komma igång:** För att komma igång med en moln implementering kan du använda [Azure migration guide](../migrate/azure-migration-guide/index.md) och [Azures installations guide](../ready/azure-setup-guide/index.md) för att hantera de verktyg och hög nivå processer som krävs för att genomföra en moln implementering. Genom att migrera din första arbets belastning med hjälp av de här guiderna får du hjälp att lösa inledande inlärnings kurvor tidigt i planerings processen. Därefter bör ytterligare överväganden ges till den [expanderade omfångs check listan](../migrate/expanded-scope/index.md), [metod tips för migrering](../migrate/azure-best-practices/index.md) och [migrering](../migrate/migration-considerations/index.md), för att justera rikt linjerna med din ansträngnings unika begränsningar, processer, team strukturer och mål.
+**Komma igång:** Påbörja en moln implementering med hjälp av [Azure migration guide](../migrate/azure-migration-guide/index.md) och [Azures installations guide](../ready/azure-setup-guide/index.md), som innehåller de verktyg och hög nivå processer som krävs för att köra en moln implementering. Genom att migrera din första arbets belastning med hjälp av de här guiderna får du hjälp att lösa inledande inlärnings kurvor tidigt i planerings processen. Därefter bör ytterligare överväganden ges till [bästa praxis för migrering](../migrate/azure-best-practices/index.md) och att [tänka på vid migreringen](../migrate/migration-considerations/index.md) för att justera rikt linjerna för din ansträngning med unika begränsningar, processer, team strukturer och mål.
 
 ## <a name="cloud-strategy-and-planning"></a>Moln strategi och planering
 

@@ -1,18 +1,18 @@
 ---
 title: Hur bidrar utvärderingar till att utveckla ett tillväxtorienterat tänkesätt?
-description: En process inom molnmigreringen som fokuserar uppgifterna för att migrera arbetsbelastningar till molnet.
+description: En process inom molnmigreringen som fokuserar på att överföra arbetsbelastningar till molnet.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 759bd75a134b1f5a5992f038a33693f632b86b03
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1bf3c79b95c748880e5d560003aa65acb1949c48
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801519"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78891911"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -47,10 +47,3 @@ Högeffektiva team har inte bara utvärderingsmöten. De skapar levande utvärde
 Den nya tillväxten syns tydligast i ändringarna i de kvarvarande uppgifterna för lansering och upprepningar.
 
 Utvärderingen markerar slutet på en lansering eller upprepning. Teamen drar lärdomar och erfarenheter och de kan ändra [de kvarvarande uppgifterna för lanseringen eller upprepningen](../assess/release-iteration-backlog.md) så att de nya processerna och experimenten kan testas. Detta startar nästa iteration genom migrationsprocesserna.
-
-## <a name="next-steps"></a>Nästa steg
-
-Avsnittet [Skydda och hantera](../secure-and-manage/index.md) i denna text kan hjälpa läsaren att förbereda sig för övergången från migrering till drift.
-
-> [!div class="nextstepaction"]
-> [Säkra övervaknings- och hanteringsverktyg](../secure-and-manage/index.md)

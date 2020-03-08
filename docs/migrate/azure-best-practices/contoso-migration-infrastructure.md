@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 314cd954332907f9bf1bf63eb52ed5d88cfab121
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: ee12255b7cadf0c8cfc70948f22c47d6c58fbb9c
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223127"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892317"
 ---
 <!-- cspell:ignore CSPs domainname IPAM CIDR Untrust RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
@@ -653,7 +653,7 @@ Azure Policy kör en utvärdering av resurserna och söker efter sådana som int
 
 Principer innehåller en principdefinition. En principtilldelning anger i vilket omfång en princip ska tillämpas. Omfånget kan vara allt från en hanteringsgrupp till en resursgrupp. [Läs mer](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage) om att skapa och hantera principer.
 
-Contoso vill komma igång med ett par principer:
+Contoso vill påbörja ett par principer:
 
 - Den vill ha en princip för att säkerställa att resurser endast kan distribueras i EUS2 och CUS-regionerna.
 - De vill begränsa SKU:er för virtuella datorer till endast godkända SKU:er. Avsikten är att se till att dyra SKU:er för virtuella datorer inte används.

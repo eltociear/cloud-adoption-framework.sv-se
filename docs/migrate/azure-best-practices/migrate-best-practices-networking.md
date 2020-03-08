@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 66694a9e1781f7d12d74e767b812b0831a371377
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 7bdfe3108c2ccdfd2661d45cc234978c784232f9
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225570"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892709"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Metodtips för att konfigurera nätverk för arbetsbelastningar som migrerats till Azure
 
@@ -40,7 +40,7 @@ När du planerar din topologi för det virtuella nätverket bör du fundera på 
 
 När du skapar virtuella nätverk som en del av migreringen är det viktigt att planera det virtuella nätverkets IP-adressutrymme.
 
-- Du bör tilldela ett adressutrymme som inte är större än CIDR-intervallet på /16 för varje virtuellt nätverk. Virtuella nätverk tillåter att IP-adresser med 65536 används och om du tilldelar ett mindre prefix än /16 går IP-adresserna förlorade. Det är viktigt att inte slösa IP-adresser även om de ligger i de privata intervall som definieras av RFC 1918.
+- Du bör tilldela ett adressutrymme som inte är större än CIDR-intervallet på /16 för varje virtuellt nätverk. Virtuella nätverk gör det möjligt att använda 65 536 IP-adresser och tilldela ett mindre prefix än/16, till exempel en/15 som har 131 072-adresser, vilket leder till att de överskjutande IP-adresserna blir unusuable andra. Det är viktigt att inte slösa IP-adresser även om de ligger i de privata intervall som definieras av RFC 1918.
 - Det virtuella nätverkets adressutrymme bör inte överlappa de lokala nätverksintervallen.
 - Network Address Translation (NAT) bör inte användas.
 - Överlappande adresser kan leda till att nätverk inte kan anslutas och att routning inte fungerar som det ska. Om nätverket överlappar måste du ändra dess utformning eller använda Network Address Translation (NAT).

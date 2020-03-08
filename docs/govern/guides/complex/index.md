@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4729e8e82cfa6674586cbeb8577fe8c3316423f0
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 04f8c5e53eea03c0a25c84c03a09c4fa0ec60bff
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223948"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892107"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Styrningsguide för komplexa företag
 
@@ -46,7 +46,7 @@ Varje program bör distribueras i korrekt område i hierarkin för hanteringsgru
 
 1. Resursgrupper bör distribueras på ett sätt som tar hänsyn till innehållets livslängd. Resurser som utvecklas tillsammans, hanteras tillsammans och dras tillbaka tillsammans tillhör samma resursgrupp. Mer information om metodtips för att använda resursgrupper finns [här](../../../decision-guides/resource-consistency/index.md).
 
-1. [Valet av region](../../../decision-guides/regions/index.md) är otroligt viktigt. Du måste se till att nätverk, övervakning och granskning är tillgängligt för redundans/återställning och att [nödvändiga SKU:er är tillgängliga i de önskade regionerna](https://azure.microsoft.com/global-infrastructure/services).
+1. [Valet av region](../../../migrate/azure-best-practices/multiple-regions.md) är otroligt viktigt. Du måste se till att nätverk, övervakning och granskning är tillgängligt för redundans/återställning och att [nödvändiga SKU:er är tillgängliga i de önskade regionerna](https://azure.microsoft.com/global-infrastructure/services).
 
 ![Diagram över resursorganisering för stort företag](../../../_images/govern/large-enterprise-resource-organization.png)
 

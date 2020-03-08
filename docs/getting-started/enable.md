@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 4abfaa8622db86fefb2c7c99589d3ef81a5ed489
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: c9e33b32590cd3b73e5bc42a662abf5ef6de36da
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170179"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892250"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Aktivera lyckad under en moln införande resa
 
@@ -22,7 +22,7 @@ Ramverket för moln införande är ett kostnads fritt självbetjänings verktyg 
 I det här ramverket är aktivering ett kärn tema. Följande check lista specificerar grundläggande principer för införande av moln som garanterar att en implementerings resa betraktas som lyckad av både IT och verksamheten:
 
 - **Plan:** Upprätta tydliga [affärs resultat](../strategy/business-outcomes/index.md), en tydligt definierad plan för [digital plan](../digital-estate/index.md)och välförståde [implementerings loggar](../migrate/migration-considerations/prerequisites/migration-backlog-review.md).
-- **Klart:** Se till att personalen har beredskap genom [kunskaper och utbildnings planer](../ready/technical-skills.md).
+- **Klart:** Se till att personalen har beredskap genom [kunskaper och utbildnings planer](../ready/suggested-skills.md).
 - **Arbeta:** Definiera en hanterbar drifts modell för att hantera aktiviteter under och länge efter införandet.
   - **[Organisera](../organize/index.md):** Justera människor och team för att leverera rätt moln drift och införande.
   - **Styr:** Justera lämpliga [styrnings discipliner](../govern/index.md) för att konsekvent tillämpa kostnads hantering, risk minskning, efterlevnad och säkerhets bas linjer i alla moln införande.
@@ -77,7 +77,7 @@ Utöver moln implementerings ramverket täcker Microsoft ytterligare ämnen som 
     </a>
 </li>
 <li style="display: flex; flex-direction: column;">
-    <a href="../ready/technical-skills.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
+    <a href="../ready/suggested-skills.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
         <div class="cardSize" style="flex: 1 0 auto; display: flex;">
             <div class="cardPadding" style="display: flex;">
                 <div class="card">

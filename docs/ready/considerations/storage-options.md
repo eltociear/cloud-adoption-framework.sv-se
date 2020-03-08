@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a6fb28316b55d92d0dc7c130d3e3c86bab942149
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 054537d4d1b9a83700ed0c6a1a8840682f04faa1
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341971"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892505"
 ---
 # <a name="review-your-storage-options"></a>Granska dina lagrings alternativ
 
@@ -128,7 +128,7 @@ För att hjälpa dig att skydda dina data i molnet erbjuder Azure Storage flera 
 - Bevilja delegerad åtkomst till dataobjekt i Azure Storage med hjälp av signaturer för delad åtkomst.
 - Använda analysverktyg för att spåra den autentiseringsmetod som någon använder när de får åtkomst till lagring i Azure.
 
-Dessa säkerhetsfunktioner gäller för Azure Blob Storage (block och sida) och för Azure Files. Få detaljerad vägledning för lagringssäkerhet [i säkerhetsguiden](https://docs.microsoft.com/azure/storage/common/storage-security-guide)för Azure Storage.
+Dessa säkerhetsfunktioner gäller för Azure Blob Storage (block och sida) och för Azure Files. Få detaljerad vägledning för lagringssäkerhet [i säkerhetsguiden](https://docs.microsoft.com/azure/storage/blobs/security-recommendations)för Azure Storage.
 
 [Storage Service-kryptering](https://docs.microsoft.com/azure/storage/storage-service-encryption) ger kryptering vid vila och skyddar dina data så att du uppfyller organisationens och olika myndigheters krav på säkerhet och regelefterlevnad. Storage Service-kryptering är aktiverat som standard för alla hanterade diskar, ögonblicksbilder och avbildningar i alla Azure-regioner. Från och med den 10 juni 10, 2017 krypteras alla nya hanterade diskar, ögonblicksbilder, avbildningar och nya data som skrivs till befintliga hanterade diskar automatiskt vid vila med nycklar som hanteras av Microsoft. Mer information finns på sidan med [vanliga frågor och svar](https://docs.microsoft.com/azure/virtual-machines/windows/faq-for-disks#managed-disks-and-storage-service-encryption).
 
