@@ -7,18 +7,18 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 52abb490ed3364945bef887a8ed7f144f7dca14a
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: e6cfe951c3b499d101ed29208b2beba0c9867c48
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228540"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023889"
 ---
-<!-- cSpell:ignore arnaudlh arnaul Arnaud Hashicorp's vCPUs eastasia southeastasia lalogs tfvars -->
+<!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
 
 # <a name="use-terraform-to-build-your-landing-zones"></a>Använd terraform för att bygga landnings zoner
 
-Azure tillhandahåller inbyggda tjänster för att distribuera landnings zoner. Andra verktyg från tredje part kan också hjälpa dig med den här ansträngningen. Ett sådant verktyg som kunder och partners ofta använder för att distribuera landnings zoner är Hashicorp-terraform. Det här avsnittet visar hur du använder en prototyp zon för att distribuera grundläggande loggnings-, redovisnings-och säkerhets funktioner för en Azure-prenumeration.
+Azure tillhandahåller inbyggda tjänster för att distribuera landnings zoner. Andra verktyg från tredje part kan också hjälpa dig med den här ansträngningen. Ett sådant verktyg som kunder och partners ofta använder för att distribuera landnings zoner är HashiCorp-terraform. Det här avsnittet visar hur du använder en prototyp zon för att distribuera grundläggande loggnings-, redovisnings-och säkerhets funktioner för en Azure-prenumeration.
 
 ## <a name="purpose-of-the-landing-zone"></a>Syftet med landnings zonen
 

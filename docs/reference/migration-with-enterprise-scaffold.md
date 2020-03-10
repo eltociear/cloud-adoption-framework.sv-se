@@ -8,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: e0c1486dbb498686fe532ecf02b6dcb5e56c7336
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 8291b48d2955d623b643c944f4307613bcf22f47
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892522"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023951"
 ---
-<!-- cSpell:ignore rodend subscope ITSM -->
+<!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure Enterprise-Autogenerera: handskriven prenumerations styrning
 
@@ -314,7 +314,7 @@ Automation är ett heltids jobb och det kommer snabbt bli en av de viktigaste dr
 
 ## <a name="templates-and-devops"></a>Mallar och DevOps
 
-Som det är markerat i avsnittet automatisera, bör målet som en organisation vara att etablera resurser via källentiteter och skript och minimera den interaktiva konfigurationen av dina miljöer. Den här metoden för "infrastruktur som kod" tillsammans med en disciplinen DevOps-process för kontinuerlig distribution kan garantera konsekvens och minska driften i dina miljöer. Nästan alla Azure-resurser kan distribueras via [Azure Resource Manager JSON-mallar](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy) tillsammans med PowerShell eller Azures plattforms oberoende CLI och verktyg som terraform från Hashicorp (som har första klass support och integrerad i Azure Cloud Shell).
+Som det är markerat i avsnittet automatisera, bör målet som en organisation vara att etablera resurser via källentiteter och skript och minimera den interaktiva konfigurationen av dina miljöer. Den här metoden för "infrastruktur som kod" tillsammans med en disciplinen DevOps-process för kontinuerlig distribution kan garantera konsekvens och minska driften i dina miljöer. Nästan alla Azure-resurser kan distribueras via [Azure Resource Manager JSON-mallar](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy) tillsammans med PowerShell eller Azures plattforms oberoende CLI och verktyg som terraform från HashiCorp (som har första klass support och integrerad i Azure Cloud Shell).
 
 I artikeln, till exempel [metod tips för att använda Azure Resource Manager mallar](https://blogs.msdn.microsoft.com/mvpawardprogram/2018/05/01/azure-resource-manager) , får du en bra diskussion om bästa praxis och lektioner som har lärts att använda en DevOps metod för att Azure Resource Manager mallar med [Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/?view=vsts) -verktygskedjan. Ta tid och kraft för att utveckla en Core-uppsättning av mallar som är specifikt för din organisations krav och utveckla kontinuerliga leverans pipeliner med DevOps verktygs kedjor (till exempel Azure DevOps, Jenkins, Bamboo, TeamCity och kurser), särskilt för din produktions-och frågor och svars miljöer. Det finns ett stort bibliotek med [Azure snabb starts mallar](https://github.com/Azure/azure-quickstart-templates) på GitHub som du kan använda som utgångs punkt för mallar, och du kan snabbt skapa molnbaserade leverans pipeliner med Azure DevOps.
 

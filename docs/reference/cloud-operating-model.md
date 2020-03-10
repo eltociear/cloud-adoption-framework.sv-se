@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: dc6a9244b16c0de69a870323d0099e37f85c075a
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: d1ba5e26214a0b60a4fe9fefb23d1dffaf8fa4ed
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342005"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023853"
 ---
 # <a name="cloud-operating-model-is-now-part-of-the-microsoft-cloud-adoption-framework-for-azure"></a>Cloud Opera ting Model är nu en del av Microsoft Cloud implementerings ramverk för Azure
 
-I början av 2018 släppte Microsoft Cloud Operating Model (COM). COM var en guide som hjälpte kunderna att förstå **vad** och **varför** i den digitala omvandlingen. Detta hjälpte kunderna att få en uppfattning om alla områden som behövde åtgärdas: affärs strategi, kultur strategi och teknik strategi. Vad som inte ingår i COM var den speciella _instruktionen_, som lämnade kunder undrar "var vill vi gå hit?"
+I början av 2018 släppte Microsoft Cloud Operating Model (COM). COM var en guide som hjälpte kunderna att förstå **vad** och **varför** i den digitala omvandlingen. Detta hjälpte kunderna att få en uppfattning om alla områden som behövde åtgärdas: affärs strategi, kultur strategi och teknik strategi. Vad som inte inkluderades i COM var _de instruktioner som_ lämnade kunderna undrar "var vill vi gå hit?"
 
 I oktober 2018 påbörjade vi en granskning av alla modeller som hade blivit spridda över Microsoft-communityn, men vi hittade ungefär 60 olika modeller för moln införande. Ett cross-Microsoft-team upprättades för att samla allt tillsammans som en särskild konstruktions produkt med definierade implementeringar mellan tjänster, försäljning och marknadsföring. Den här ansträngningen culminated för att skapa en enskild modell, Microsoft Cloud implementerings ramverk för Azure som hjälper kunderna att förstå **vad** och **varför** och ger enhetlig vägledning om **hur** de kan hjälpa dem att påskynda sitt moln införande. Målet med det här projektet är att skapa ett ett Microsoft-tillvägagångs sätt för moln införande.
 

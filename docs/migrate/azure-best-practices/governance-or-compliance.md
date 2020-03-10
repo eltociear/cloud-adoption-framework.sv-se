@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 17952dc4c3ff28f2fcfe1a378a9efb969d65925b
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: b0aea9b1b69a659511e9a788e22a0e88e23e9047
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78897984"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023749"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategi för styrning eller efterlevnad
 
@@ -52,8 +52,8 @@ För en djupare förståelse för styrningen, se [översikten Fem discipliner f�
 
 - [Kostnadshantering](../../govern/cost-management/template.md)
 - [Säkerhetsbaslinje](../../govern/security-baseline/template.md)
-- [Resurs konsekvens].. /.. /govern/resource-consistency/template.md)
-- [Identitets bas linje].. /.. /govern/identity-baseline/template.md)
+- [Resurskonsekvens](../../govern/resource-consistency/template.md)
+- [Identitetsbaslinje](../../govern/identity-baseline/template.md)
 - [Distributionsacceleration](../../govern/deployment-acceleration/template.md)
 
 Vägledning om hur du utvecklar styrningsriktlinjer baserade på styrningsmodellen för Ramverk för molnimplementering finns i [Implementera en strategi för molnstyrning](../../govern/corporate-policy.md).

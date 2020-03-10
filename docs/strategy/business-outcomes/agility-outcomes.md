@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6f865eb0a5f81aa005239dbafd5437dc93797f94
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 524fce58c6592ece46eedec0aea3cc6bbacb6f61
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798510"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023925"
 ---
 # <a name="examples-of-agility-outcomes"></a>Exempel på smidiga resultat
 
 Som det beskrivs i [översikten över företags resultat](./index.md)kan flera potentiella affärs resultat fungera som grund för alla omvandlings resor i samtal med verksamheten. Den här artikeln fokuserar på timeliest affärs mått: affärs flexibilitet. Att förstå ditt företags marknads läge och ett konkurrens kraftig landskap kan hjälpa dig att tydliggör affärs resultat som är målet för företagets omvandlings resa.
 
-Traditionellt sett är chefs chefer (CIO: er) och IT-teamen en stabilitets källa för viktiga verksamhets kritiska processer. Detta är fortfarande sant. Få företag kan fungera bra när deras IT-plattform är instabil. I dagens affärs värld förväntas dock mycket mer. DEN kan utökas bortom ett enkelt kostnads ställe genom att samar beta med verksamheten för att tillhandahålla marknads för delar. Många CIO: er och chefer förutsätter att stabiliteten bara är en bas linje för IT. För de här ledarna är affärs flexibilitet att det är ett bidrag till verksamheten.
+Våra investerings chefer och IT-team ansåg traditionellt vara en stabilitets källa för viktiga verksamhets kritiska processer. Detta är fortfarande sant. Få företag kan fungera bra när deras IT-plattform är instabil. I dagens affärs värld förväntas dock mycket mer. DEN kan utökas bortom ett enkelt kostnads ställe genom att samar beta med verksamheten för att tillhandahålla marknads för delar. Många chefs chefer och chefer antar att stabiliteten bara är en bas linje för IT. För de här ledarna är affärs flexibilitet att det är ett bidrag till verksamheten.
 
 <!-- markdownlint-disable MD026 -->
 
@@ -39,6 +39,8 @@ Vid molnbaserade Innovations insatser är tiden till marknaden ett viktigt mått
 ### <a name="aurora-health-care"></a>Aurora Health Care
 
 Hälso vårds systemet omvandlar onlinetjänster till en egen digital upplevelse. För att omvandla sina digitala tjänster har Aurora Health Care migrerat sina webbplatser till Microsoft Azure-plattformen och infört en strategi för kontinuerlig innovation.
+
+<!-- cSpell:ignore Jamey Shiels -->
 
 > "Som ett team fokuserar vi på lösningar med hög kvalitet och hastighet. Att välja Azure var ett mycket transformativa beslut för oss. "  
 > Jamey Shiels  

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 84102816304188bf1b22534938fb6aea267f0d8c
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 119a0b64fe81e593404735e5ce6bc0c656ab23e2
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892658"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023730"
 ---
 <!-- cSpell:ignore eastus westus westeurope usgovia accountlookup messagequery -->
 
@@ -75,6 +75,8 @@ Varje arbetsbelastning kan bestå av många enskilda resurser och tjänster. Om 
 
 I följande lista visas rekommenderade prefix för Azure-resurstyper som du kan använda när du definierar namnkonventionerna.
 
+<!-- cSpell:disable -->
+
 ### <a name="general"></a>Allmänt
 
 | Tillgångstyp                      | Namn-prefix |
@@ -100,6 +102,7 @@ I följande lista visas rekommenderade prefix för Azure-resurstyper som du kan 
 | VPN-anslutning                   | cn-         |
 | Programgateway              | agw-        |
 | Routningstabell                      | styra      |
+| Traffic Manager-profil          | traf-       |
 
 ### <a name="compute-and-web"></a>Compute och Web
 
@@ -149,7 +152,7 @@ I följande lista visas rekommenderade prefix för Azure-resurstyper som du kan 
 | Azure Cognitive Services         | kugg hjuls        |
 | Azure Machine Learning-arbetsyta | mlw-        |
 
-## <a name="analytics-and-iot"></a>Analys och IoT
+### <a name="analytics-and-iot"></a>Analys och IoT
 
 | Tillgångstyp                      | Namn-prefix |
 |---------------------------------|-------------|
@@ -196,6 +199,8 @@ I följande lista visas rekommenderade prefix för Azure-resurstyper som du kan 
 | Database Migration Service instans | DMS        |
 | Recovery Services-valv             | rsv-        |
 
+<!-- cSpell:enable -->
+
 ## <a name="metadata-tags"></a>Metadatataggar
 
 Om du använder metadatataggar med i dina molnresurser kan du inkludera information om tillgångar som inte kunde inkluderas i resursnamnet. Du kan använda den informationen till att utföra mer avancerad filtrering och rapportering av resurser. Du vill att dessa taggar ska innehålla sammanhang om resursens associerade arbetsbelastning eller program, driftkrav och ägarskapsinformation. Den här informationen kan användas av IT-avdelningen eller affärsteam för att hitta resurser eller generera rapporter om resursanvändning och fakturering.
@@ -220,6 +225,8 @@ De taggar som du fäster på resurser och de taggar som behövs eller är valfri
 ## <a name="example-names"></a>Exempel namn
 
 I följande avsnitt finns några exempel namn för vanliga typer av Azure-resurser i en distribution av företags moln.
+
+<!-- cSpell:disable -->
 
 <!-- markdownlint-disable MD024 MD033 -->
 

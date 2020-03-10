@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 43cd9dd0d155849c8ed5dda277252e445507f6d8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7ee0451bd356cfc3fb4c7648f0bbf6b10ab0145f
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806857"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023843"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Exempel på finansiella resultat
 
@@ -55,6 +55,8 @@ Med molnbaserad data behandling kan du minska kapital kostnader för maskin-och 
 - **Exempel #1:** Ett företags data Center förbrukar en stor del av den årliga IT-budgeten. DET väljer att genomföra en molnbaserad migrering och över gångar i data centret till infrastruktur som en tjänst (IaaS) lösningar, vilket skapar en kostnads nedsättning på tre år.
 - **Exempel #2:** Ett Holding bolag förvärvade nyligen ett nytt företag. I anskaffningen anger villkoren att den nya entiteten ska tas bort från de aktuella data centren inom sex månader. Om du inte gör det kommer det att resultera i en fin på 1 000 000 USD per månad till företaget. Att flytta de digitala resurserna till molnet i en molnbaserad migrering kan göra det möjligt för en snabbt avställning av de gamla till gångarna.
 - **Exempel #3:** Ett inkomst skatte företag som betjänar konsumenterna har 70 procent av sina årliga intäkter under de tre första månaderna av året. Resten av året är dess stora IT-investeringar relativt vilande. En molnbaserad migrering kan göra det möjligt att distribuera beräknings-/värd kapaciteten som krävs för dessa tre månader. Under de återstående nio månaderna skulle IaaS-kostnaderna minska avsevärt genom att minska beräknings utrymmet.
+
+<!-- cSpell:ignore Coverdell Coverdell's Sorensen -->
 
 ### <a name="example-coverdell"></a>Exempel: Coverdell
 
