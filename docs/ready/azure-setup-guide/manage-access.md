@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 83f9461302af6710464b8c7e81a866cfc25d5852
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 86988a83b0c68bea60d0cceff5a168e2b2b08fd5
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799598"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024064"
 ---
+<!-- cSpell:ignore LijuKodicheraJayadevan Fsubscriptions Fresource -->
+
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>Hantera åtkomst till Azure-miljön med rollbaserad åtkomstkontroll
 
 En viktig del av din styrningsstrategi i Azure är att hantera vem som ska ha åtkomst till Azure-resurser och prenumerationer. Du rekommenderas att tilldela gruppbaserade åtkomstbehörigheter. Att hantera grupper i stället för enskilda användare förenklar underhållet av åtkomstprinciper, ger konsekvent åtkomsthantering för team och minskar eventuella konfigurationsfel. Rollbaserad åtkomstkontroll i Azure (RBAC) är den primära metoden för att hantera åtkomst i Azure.

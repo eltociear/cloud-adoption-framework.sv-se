@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 46689512ec799ff8b5aa47ea095d34d8c25dd83a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: baeac7d27ff7aa71c011a2578968811820ebe22e
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802437"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094740"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>Cloud Adoption Framework-migreringsmodellen
 
@@ -50,7 +50,7 @@ Molnmigreringsverktyg som [Azure Site Recovery](https://docs.microsoft.com/azure
 
 Principerna bakom den här inkrementella modellen baseras på genomförandet av processer och förutsättningar som refereras till i följande infografik.
 
-![Cloud Adoption Framework-migreringsmodellen](../../_images/operational-transformation-migrate.png)
+![Cloud Adoption Framework-migreringsmodellen](../../_images/migrate/methodology.png)
 
 Konsekvent tillämpning av dessa principer representerar ett slutmål för dina molnmigreringsprocesser och ska inte betraktas som en obligatorisk startpunkt. När ditt migreringsarbete mognar kan du läsa vägledningen i det här avsnittet för att definiera de bästa processerna som stöder organisationens behov.
 

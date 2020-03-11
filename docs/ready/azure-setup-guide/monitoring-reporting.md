@@ -9,18 +9,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0b37500652606e3a1018b3b93c03aae546827eff
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 762c302bf52473ae917ab5c59c589225f1c5f0ac
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799411"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024002"
 ---
+<!-- cSpell:ignore timleyden tileyden -->
+
 # <a name="monitoring-and-reporting-in-azure"></a>Övervakning och rapportering i Azure
 
 Azure har en serie tjänster som tillsammans utgör en heltäckande lösning för att samla in, analysera och agera utifrån telemetrin i din app och de Azure-resurser den använder. Tjänsterna kan dessutom utökas så att de övervakar kritiska lokala resurser så att du får en hybridövervakningsmiljö.
 
-# <a name="azure-monitortabazuremonitor"></a>[Azure Monitor](#tab/AzureMonitor)
+# <a name="azure-monitor"></a>[Azure Monitor](#tab/AzureMonitor)
 
 Azure Monitor är en enhetlig hubb för alla övervaknings- och diagnostikdata i Azure. Du kan använda den för att få insyn i dina resurser. Med Azure Monitor kan du hitta och åtgärda problem och optimera prestanda. Du kan också förstå kundbeteendet.
 
@@ -51,13 +53,15 @@ Mer information finns i [dokumentationen om Azure Monitor](https://docs.microsof
 
 ::: zone target="chromeless"
 
+<!-- markdownlint-disable DOCSMD001 -->
+
 ## <a name="action"></a>Åtgärd
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/overview]" submitText="Explore Azure Monitor" :::
 
 ::: zone-end
 
-# <a name="azure-service-healthtabazureservicehealth"></a>[Azure Service Health](#tab/AzureServiceHealth)
+# <a name="azure-service-health"></a>[Azure Service Health](#tab/AzureServiceHealth)
 
 Azure Service Health tillhandahåller en anpassad vy över hälsotillstånden för de Azure-tjänster och Azure-regioner som du använder. Information om aktiva problem publiceras till Service Health för att hjälpa dig att förstå hur de inverkar på dina resurser. Regelbundna uppdateringar håller dig informerad när problemet har lösts.
 
@@ -95,7 +99,7 @@ Läs mer i [Azure Service Health-dokumentationen](https://docs.microsoft.com/azu
 
 ::: zone-end
 
-# <a name="azure-advisortabazureadvisor"></a>[Azure Advisor](#tab/AzureAdvisor)
+# <a name="azure-advisor"></a>[Azure Advisor](#tab/AzureAdvisor)
 
 Azure Advisor är en anpassad och kostnadsfri molnkonsult som hjälper dig att följa bästa praxis för Azure-distributioner. Tjänsten analyserar din resurskonfiguration och användningstelemetri och rekommenderar lösningar som kan optimera din miljö. Rekommendationerna är indelade i följande kategorier:
 
@@ -125,7 +129,7 @@ Mer information finns i [dokumentationen om Azure Advisor](https://docs.microsof
 
 ::: zone-end
 
-# <a name="azure-security-centertabazuresecuritycenter"></a>[Azure Security Center](#tab/AzureSecurityCenter)
+# <a name="azure-security-center"></a>[Azure Security Center](#tab/AzureSecurityCenter)
 
 Azure Security Center är också en viktig del i din övervakningsstrategi. Där kan du övervaka säkerheten för dina datorer, nätverk, lagringsutrymmen, datatjänster och appar. Security Center en avancerad hotidentifiering via maskininlärning och beteendeanalys som hjälper dig att identifiera aktiva hot mot dina Azure-resurser. Dessutom får du ett skydd som blockerar skadlig kod och annan oönskad kod, och minskar den yta som är exponerad för brute force-attacker och andra nätverksattacker.
 
