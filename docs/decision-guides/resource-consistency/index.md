@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: df1299c091c994e143fdc8102590c823f2974ac2
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: bb84d0f7ce6c29d52b1aebb54a456634cb942182
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708724"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892403"
 ---
 # <a name="resource-consistency-decision-guide"></a>Beslutsguide för resurskonsekvens
 
@@ -40,7 +40,7 @@ Resursgrupper fungerar som containrar för resurser med en gemensam livscykel, e
 Om du svarar _nej_ på någon av ovanstående frågor bör resursen i fråga placeras någon annanstans, i en annan resursgrupp.
 
 > [!IMPORTANT]
-> Resursgrupper är även regionspecifika, men det är vanligt att resurserna finns i olika regioner i samma resursgrupp eftersom de hanteras tillsammans på det sätt som beskrivs ovan. Mer information om val av regioner finns i [Beslutsguide för regioner](../regions/index.md).
+> Resursgrupper är även regionspecifika, men det är vanligt att resurserna finns i olika regioner i samma resursgrupp eftersom de hanteras tillsammans på det sätt som beskrivs ovan. Mer information om val av region finns i [Flera regioner](../../migrate/azure-best-practices/multiple-regions.md).
 
 ## <a name="deployment-consistency"></a>Distributionskonsekvens
 
