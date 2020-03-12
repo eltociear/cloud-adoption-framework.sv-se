@@ -1,18 +1,18 @@
 ---
 title: Sökväg för kompetens beredskap under planering
-description: Översikt över sökväg för kompetens beredskap under plan fasen för migreringen.
+description: Använd ramverket för moln införande för Azure om du vill veta mer om sökvägen för kompetens beredskap under planerings fasen av migreringen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 36e7957f8bcdcc7edc12f3a2e5309eac3d551fb5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c138a81de0fd92c1a079c7a2f52255d5c7959526
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798119"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092827"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Sökväg för kompetens beredskap under plan fasen för en migrerings resa
 
@@ -57,7 +57,7 @@ Under den färdiga fasen skapar teknisk personal en landnings zon för migrering
 - [Skapa ett Azure-konto](https://docs.microsoft.com/learn/modules/create-an-azure-account). Det första steget i att använda Azure är att skapa ett konto. Ditt konto innehåller de Azure-tjänster som du etablerar och hanterar dina personliga inställningar, t. ex. identitet, fakturering och preferenser.
 - [Azure Portal](https://docs.microsoft.com/learn/modules/tour-azure-portal). Ta en titt på funktionerna och tjänsterna i Azure-portalen och se hur du anpassar portalen.
 - [Introduktion till Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure). Kom igång med Azure genom att skapa och konfigurera din första virtuella dator i molnet.
-- [Introduktion till säkerhet i Azure](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure). Lär dig om de grundläggande begreppen för att skydda din infrastruktur och dina data när du arbetar i molnet. Ta reda på vad som är ditt ansvar och vad Azure tar hand om åt dig.
+- [Introduktion till säkerhet i Azure](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure). Lär dig grunderna för att skydda din infrastruktur och dina data när du arbetar i molnet. Ta reda på vad som är ditt ansvar och vad Azure tar hand om åt dig.
 - [Hantera resurser i Azure](https://docs.microsoft.com/learn/paths/manage-resources-in-azure). Lär dig hur du använder kommandoraden och webbportalen i Azure till att skapa, hantera och styra molnbaserade resurser.
 - [Skapa en virtuell dator](https://docs.microsoft.com/learn/modules/create-windows-virtual-machine-in-azure). Skapa en virtuell dator med hjälp av Azure Portal.
 - [Azure-nätverk](https://docs.microsoft.com/learn/modules/intro-to-azure-networking). Lär dig grunderna i Azure-nätverk och hur Azure-nätverk hjälper dig att förbättra återhämtningen och minska svars tiden.

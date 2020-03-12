@@ -1,18 +1,18 @@
 ---
 title: Konfigurera grundläggande aviseringar
-description: Lär dig hur du använder Azure Server Management Services för att ställa in aviseringar och meddelanden som hjälper dina IT-team att vara medvetna om eventuella problem.
+description: Lär dig hur du använder Azure Server Management Services för att konfigurera aviseringar och meddelanden som hjälper dina IT-team att vara medvetna om eventuella problem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e24932b074f69f83aff583d560399d884c6c5b0e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3525b8d84ee6dd54072a4fed401114578de7fcb3
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807962"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094472"
 ---
 # <a name="set-up-basic-alerts"></a>Konfigurera grundläggande aviseringar
 

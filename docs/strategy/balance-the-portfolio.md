@@ -3,22 +3,22 @@ title: Balansera portföljen
 description: Upptäck strategier för att balansera migrering, innovation och experiment för att få ut mesta möjliga av dina moln migreringar.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/25/2020
+ms.date: 03/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
-ms.subservice: migrate
-ms.openlocfilehash: b41a550583628c1246a0663c99509498f0786d70
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.subservice: strategy
+ms.openlocfilehash: 938250f20725540049bca831ff4c12b975b134a5
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228475"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092400"
 ---
 <!-- cSpell:ignore CSAT -->
 
 # <a name="balance-the-portfolio"></a>Balansera portföljen
 
-Molnimplementering handlar om portföljhantering förklädd som en teknisk implementering. I likhet med portfölj hanterings övningen är det viktigt att balansera portföljen. På strategisk nivå innebär detta att balansera migrering, innovation och experimentering för att få ut det mesta möjliga av molnet. När arbetet med molnimplementering går för långt i en viss riktning ökar komplexiteten i migreringsarbetet. Den här artikeln vägleder läsaren genom metoder för att uppnå balans i portföljen.
+Moln införande är en portfölj hanterings ansträngning som cleverly förklädnader som teknisk implementering. I likhet med portfölj hanterings övningen är det viktigt att balansera portföljen. På strategisk nivå innebär detta att balansera migrering, innovation och experimentering för att få ut det mesta möjliga av molnet. När moln implementerings ansträngningen är för långt i en riktning, hittar komplexitet sitt sätt i implementerings ansträngningarna. Den här artikeln vägleder läsaren genom metoder för att uppnå balans i portföljen.
 
 ## <a name="general-scope-expansion"></a>Allmän omfångsutökning
 
@@ -26,9 +26,7 @@ Att balansera portföljen är strategiskt i natur. Därför är den metod som an
 
 ### <a name="document-business-outcomes"></a>Dokumentera affärs resultat
 
-Innan portföljen balanseras är det viktigt att dokumentera och dela de affärsresultat som driver arbetet med molnmigrering. Några exempel på generella affärsresultat som är relaterade till molnmigreringar finns i [sammanfattningen av molnmigrering](../getting-started/migrate.md).
-
-Följande tabell kan hjälpa dig att dokumentera och dela önskade affärsresultat. Det är viktigt att notera att de flesta företag arbetar mot flera resultat samtidigt. Vikten av den här övningen är att klargöra de resultat som är närmast relaterade till arbetet med molnmigrering:
+Innan du utjämnar portföljen är det viktigt att dokumentera och dela affärs resultat för att driva moln migreringen. Följande tabell kan hjälpa dig att dokumentera och dela önskade affärsresultat. Det är viktigt att notera att de flesta företag arbetar mot flera resultat samtidigt. Vikten av den här övningen är att klargöra de resultat som är närmast relaterade till arbetet med molnmigrering:
 
 |Resultat  |Mätt enligt  |Mål  |Tidsram  |Prioritet för det här arbetet  |
 |---------|---------|---------|---------|---------|
@@ -38,9 +36,9 @@ Följande tabell kan hjälpa dig att dokumentera och dela önskade affärsresult
 |Förbättra kundupplevelsen     |Kundtillfredsställelse (CSAT)         |10 % förbättring         |12 månader         |Nr 4         |
 
 > [!IMPORTANT]
-> Tabellen ovan är ett fiktivt exempel och ska inte användas för att välja prioriteringar. I många fall kan den här tabellen betraktas som ett antimönster genom att kostnadsbesparingar prioriteras högre än kundupplevelser.
+> Tabellen ovan är ett fiktivt exempel och ska inte användas för att välja prioriteringar. I många fall kan den här tabellen betraktas som ett antimönster genom att spara kostnads besparingar över kund upplevelserna.
 
-Tabellen ovan skulle kunna korrekt representera prioriteringarna i de team för molnstrategi och molnimplementering som övervakar en molnmigrering. På grund av kortsiktiga begränsningar lägger det här teamet starkare betoning på minskning av IT-kostnader och prioriterar en datacenterutgång som ett medel för att uppnå önskade minskningar av IT-kostnader. Genom att dokumentera de konkurrerande prioriteringarna i den här tabellen är det dock möjligt att hjälpa molnstrategiteamet att identifiera möjligheter att bättre anpassa implementeringen av den övergripande portföljstrategin.
+Tabellen ovan kan korrekt representera prioriteringarna i moln strategi teamet och moln implementerings teamet. På grund av kortsiktiga begränsningar lägger det här teamet starkare betoning på minskning av IT-kostnader och prioriterar en datacenterutgång som ett medel för att uppnå önskade minskningar av IT-kostnader. Genom att dokumentera de konkurrerande prioriteringarna i den här tabellen är det dock möjligt att hjälpa molnstrategiteamet att identifiera möjligheter att bättre anpassa implementeringen av den övergripande portföljstrategin.
 
 ### <a name="move-fast-while-maintaining-balance"></a>Flytta snabbt samtidigt som balansen upprätthålls
 
@@ -65,15 +63,9 @@ Om svaret på båda dessa frågor är ”ja” är det klokt att överväga att 
 
 Om svaret på endera frågan är ”nej” kan det vara klokt att upprätta en plan för värdhantering av arbetsbelastningen tills den kan dras tillbaka. Den här planen kan omfatta flyttning av tillgångar till ett datacenter med lägre kostnader eller ett alternativt datacenter, vilket även skulle uppfylla målen med kostnadsbesparingar och datacenterutgång.
 
-## <a name="suggested-prerequisites"></a>Föreslagna förutsättningar
+## <a name="adopt-process-changes"></a>Införa process ändringar
 
-De förutsättningar som anges i baslinjeguiden bör fortfarande vara tillräckliga för att behandla det här komplexitetsämnet. Dock bör till gångs lagret och den digitala fastigheten markeras och fetstilas bland dessa krav, eftersom dessa data kommer att driva följande aktiviteter.
-
-## <a name="assess-process-changes"></a>Utvärdera ändringar i processen
-
-Balansering av portföljen kräver ytterligare kvalitativ analys under utvärderingsprocessen, vilket hjälper till att öka enkel rationalisering av portföljen.
-
-### <a name="suggested-action-during-the-assess-process"></a>Föreslagna åtgärder under utvärderingsprocessen
+För att balansera portföljen krävs ytterligare kvalitativ analys under implementeringen, vilket gör det enklare att rationalisering för portföljen.
 
 Baserat på data från tabellen i avsnittet [Dokumentera affärsresultat](#document-business-outcomes) ovan finns det en sannolik risk för att portföljen inriktar sig för mycket på en migreringsfokuserad genomförandemodell. Om kundupplevelsen vore den främsta prioriteten skulle en innovationsinriktad portfölj vara mer trolig. Ingen av dessa är rätt eller fel, men om fokuset riktas för starkt åt ett håll avtar ofta nyttan, onödig komplexitet införs och genomförandetiden vid arbete med molnimplementering ökar.
 
@@ -102,8 +94,6 @@ Dessa frågor bör inte vara omfattningen av den kvalitativa analysen som slutf�
 
 Under migreringen kan aktiviteter för portföljbalansering ha en negativ inverkan på migreringens hastighet (den hastighet med vilken tillgångar migreras). Följande riktlinjer går närmare in på varför och hur arbete bör anpassas så att störningar i migreringsarbetet undviks.
 
-### <a name="suggested-action-during-the-migrate-process"></a>Föreslagna åtgärder under migreringsprocessen
-
 Portföljrationalisering kräver tekniskt arbete av olika slag. Det är lockande för molnimplementeringsteam att matcha den portföljvariationen i migreringsarbetet. Affärsintressenter kan uppmana ett enda molnimplementeringsteam att hantera hela migreringslistan. Detta är sällan en lämplig metod, och i många fall kan den vara direkt kontraproduktiv.
 
 Dessa skilda ansträngningar bör delas upp i två eller flera moln antagande team. Med hjälp av en modell med två team som ett exempel för genomförande är Team 1 migreringsteamet, och Team 2 är innovationsteamet. För större arbeten kan dessa team delas upp ytterligare för att hantera andra metoder såsom ersättning/PaaS eller mindre refaktorisering. Följande beskriver de kunskaper och roller som behövs för metoderna för värdbyte, omstrukturering eller mindre refaktorisering:
@@ -115,18 +105,3 @@ Dessa skilda ansträngningar bör delas upp i två eller flera moln antagande te
 **Mindre omfabriker:** Vissa program kan förvaras med mindre omfaktor på data-eller program nivå. Detta arbete kräver att teammedlemmar distribuerar data till molnbaserade dataplattformar eller gör mindre konfigurationsändringar i programmet. Detta kan kräva visst stöd från ämnesexperter inom data- eller programutveckling. Detta arbete liknar dock det arbete som utförs av IT-implementatörer vid distribution av appar från tredje part. Detta arbete kan enkelt anpassas till teamet för molnmigrering eller molnstrategi. Detta arbete är inte alls lika snabbt som en migrering med värdbyte, men det tar ändå mindre tid att genomföra än arbete med refaktorisering.
 
 Under migreringen ska ansträngningarna segmenteras på de tre sätt som anges ovan och utföras av lämpligt team i lämplig iteration. Även om du skulle kunna förstå portföljen bör du också se till att ansträngningarna är mycket fokuserade och åtskiljda.
-
-## <a name="optimize-and-promote-process-changes"></a>Optimera och höja upp processändringar
-
-Inga ytterligare ändringar krävs i processerna för optimering och upphöjning under migreringsarbetet.
-
-## <a name="secure-and-manage-process-changes"></a>Skydda och hantera processändringar
-
-Inga ytterligare ändringar krävs i processerna för skydd och hantering under migreringsarbetet.
-
-## <a name="next-steps"></a>Nästa steg
-
-Gå tillbaka till [checklistan för utökat omfång](./index.md) och se till att din migreringsmetod är helt anpassad till kraven.
-
-> [!div class="nextstepaction"]
-> [Checklista för utökat omfång](./index.md)

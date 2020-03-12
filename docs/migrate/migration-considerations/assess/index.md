@@ -1,18 +1,18 @@
 ---
 title: Validera antaganden för utvärderingen före migrering
-description: Validera antaganden för utvärderingen före migrering
+description: Använd Cloud Adoption Framework för Azure för att lära dig hur du verifierar antaganden för utvärdering innan du påbörjar migreringen till molnet.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e370ef47b27449a3a46965dc309403a09fb3829d
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 30cc06e28477c70987c7e8dc23300e3e0a184dd2
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222285"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094116"
 ---
 # <a name="validate-assessment-assumptions-before-migration"></a>Validera antaganden för utvärderingen före migrering
 
@@ -62,7 +62,7 @@ Utöver det övergripande ansvaret finns det åtgärder som en person eller en g
 
 ## <a name="next-steps"></a>Nästa steg
 
-Nu när du har en allmän förståelse för utvärderingsprocessen är du redo att påbörja processen genom att [rikta in affärsprioriteringar](./business-priorities.md).
+Nu när du har en allmän förståelse för utvärderingsprocessen är du redo att påbörja processen genom att [klassificera arbetsbelastningar](./classify.md).
 
 > [!div class="nextstepaction"]
-> [Rikta in affärsprioriteringar](./business-priorities.md)
+> [Klassificera arbetsbelastningar](./classify.md)

@@ -42,12 +42,14 @@ items:
             href: strategy/financial-models.md
           - name: Förstå molnredovisning
             href: strategy/cloud-accounting.md
-          - name: Balansera portföljen
-            href: strategy/balance-the-portfolio.md
       - name: Det första molnimplementeringsprojektet
         href: strategy/first-adoption-project.md
       - name: Annat som är bra att tänka på
         items:
+          - name: Balansera konkurrerande prioriteringar
+            href: strategy/balance-competing-priorities.md
+          - name: Balansera portföljen
+            href: strategy/balance-the-portfolio.md
           - name: Globala marknader
             href: strategy/global-markets.md
       - name: Färdigheter som är relevanta för strategin
@@ -256,7 +258,7 @@ items:
                     href: migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md
               - name: VMware-värdar
                 items:
-                  - name: Översikt
+                  - name: Att tänka på när du byter värd för VMWare
                     href: migrate/azure-best-practices/vmware-host.md
                   - name: Krav
                     items:
@@ -496,6 +498,8 @@ items:
                 items:
                   - name: Validera antaganden för utvärderingen före migrering – lägga till R-förfining
                     href: migrate/migration-considerations/assess/index.md
+                  - name: Klassificera arbetsbelastningar
+                    href: migrate/migration-considerations/assess/classify.md
                   - name: Se till att prioriteringar upprätthålls
                     href: migrate/migration-considerations/assess/business-priorities.md
                   - name: Utvärdera beredskap för arbetsbelastningar
@@ -524,7 +528,7 @@ items:
                     href: migrate/migration-considerations/migrate/replicate-options.md
                   - name: Mellanlagra arbetsbelastningar
                     href: migrate/migration-considerations/migrate/stage.md
-              - name: 'Testning, optimering och befordran av processer'
+              - name: Kampanjprocesser
                 items:
                   - name: Översikt
                     href: migrate/migration-considerations/optimize/index.md
@@ -1194,6 +1198,8 @@ items:
     items:
       - name: Översikt över Cloud Adoption Framework
         href: reference/index.md
+      - name: Nyheter
+        href: reference/whats-new.md
       - name: Driftsmodell
         items:
           - name: Översikt

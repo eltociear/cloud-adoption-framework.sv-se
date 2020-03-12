@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2d7ae4989251c0c3022c1044280d433e4dc920ad
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 854e22b70250496704cade4d7465c217705c928d
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78898010"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094822"
 ---
+<!-- cSpell:ignore HDFS databox VHDX -->
+
 # <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>Data kraven överskrider nätverks kapaciteten under en migrering
 
 Under en molnmigrering replikeras och synkroniseras tillgångar över nätverket mellan det befintliga datacentret och molnet. Det är inte ovanligt att datakraven för olika arbetsbelastningar överskrider nätverkskapaciteten. Om så är fallet kan migreringen gå mycket långsammare eller i vissa fall stoppas helt. Följande riktlinjer utökar [migrationsguiden för Azure](../azure-migration-guide/index.md) med en lösning som kringgår nätverksbegränsningar.
@@ -28,7 +30,7 @@ Det mesta av arbetet som krävs för denna utökning sker under förutsättnings
 
 **Offline-överföring av oberoende data lager:** Bilden i diagrammet nedan är exempel på data överföringar online och offline med Azure Data Box. Dessa metoder kan användas för att överföra stora datavolymer till molnet innan migreringen av arbetsbelastningen. Vid en offline-dataöverföring kopieras källdata till Azure Data Box, som sedan skickas fysiskt till Microsoft för överföring till ett Azure storage-konto som en fil eller blob. Denna process kan användas för att överföra data som inte hör direkt till en viss arbetsbelastning innan migreringen sker. Det minskar mängden data som behöver överföras över nätverket för att kunna genomföra migreringen med de tillgängliga nätverksresurserna.
 
-Denna metod kan användas för att överfara data-HDFS, säkerhetskopior, arkiv, filservrar, program osv. Befintlig teknisk vägledning förklarar hur du använder denna metod för att överföra data från [ett HDFS-lager](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) eller från diskar med [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) eller en [datakopieringstjänst](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) till Data Box.
+Den här metoden kan användas för att överföra data från HDFS, säkerhets kopior, arkiv, fil servrar och program. Befintlig teknisk vägledning förklarar hur du använder denna metod för att överföra data från [ett HDFS-lager](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) eller från diskar med [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) eller en [datakopieringstjänst](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) till Data Box.
 
 Det finns även [lösningar från tredje part](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box) som använder Azure Data Box för en typ av migrering där stora datavolymer överförs offline och sedan synkroniseras över nätverket.
 

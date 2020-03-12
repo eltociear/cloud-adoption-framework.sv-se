@@ -1,18 +1,18 @@
 ---
 title: Reparation av tillgångar före migrering
-description: Reparation av inkompatibla tillgångar före migrering
+description: Lär dig hur du kan åtgärda eventuella till gångar som du anser är inkompatibla med den valda moln leverantören innan migreringen börjar.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 23045cf48dd26400bbad07bbde927e29c3189f8d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f092bb99cb16a6dd3c79c04d29fa7aac318c913f
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802114"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092796"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>Reparera tillgångar före migrering
 
@@ -20,7 +20,7 @@ Under utvärderingsprocessen i migreringen vill teamet identifiera alla konfigur
 
 ## <a name="common-remediation-tasks"></a>Vanliga reparationsåtgärder
 
-I företagsmiljöer finns det tekniska skulder. En del av dessa är att förvänta och är inte tecken på att något är fel. Arkitekturbeslut som passade bra för en lokal miljö är kanske inte helt lämpliga på en molnplattform. I endera fallet kan det krävs vanliga reparationsåtgärder för att förbereda tillgångarna för migrering. Följande är några exempel:
+I företagsmiljöer finns det tekniska skulder. En del av dessa är att förvänta och är inte tecken på att något är fel. Arkitekturbeslut som passade bra för en lokal miljö är kanske inte helt lämpliga på en molnplattform. I endera fallet kan det krävs vanliga reparationsåtgärder för att förbereda tillgångarna för migrering. Detta är några exempel:
 
 - **Mindre uppgraderingar av värd.** Ibland behöver en föråldrad värd uppgraderas före replikering.
 - **Mindre uppgraderingar av gäst-OS.** Det är mer troligt att ett operativsystem behöver korrigeras eller uppgraderas före replikering.

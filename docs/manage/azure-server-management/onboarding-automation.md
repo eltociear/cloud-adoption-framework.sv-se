@@ -1,18 +1,18 @@
 ---
 title: Automatisera onboarding
-description: Automatisera onboarding
+description: Använd exempel filen onboarding för att hjälpa dig att automatisera distributionen av Azure Server Management Services för att förbättra effektiviteten.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0c1c06c8e30a61993c9127838de59d070f714c3a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 85f545b8703291819ece3562c0501ba9f0bcdead
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808030"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094655"
 ---
 # <a name="automate-onboarding"></a>Automatisera onboarding
 

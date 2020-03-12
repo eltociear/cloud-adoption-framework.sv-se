@@ -1,6 +1,6 @@
 ---
 title: Molncenter för utmärkthet
-description: Beskriver bildande av en expert på ett moln Center (CCoE).
+description: Använd ramverket för moln införande för Azure för att lära dig hur du etablerar en expert på ett moln Center (CCoE).
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: ca5e016ac07702711d38b671d767969cd4280bd3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ab3ff18d25d8a4e6ee9403236d101f98a9a6dd04
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801128"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092662"
 ---
 # <a name="cloud-center-of-excellence"></a>Molncenter för utmärkthet
 

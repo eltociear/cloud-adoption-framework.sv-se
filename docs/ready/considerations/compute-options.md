@@ -1,18 +1,18 @@
 ---
 title: Granska dina beräknings alternativ
-description: Granska dina beräknings alternativ för Azure-arbetsbelastningar.
+description: Använd ramverket för moln införande för Azure för att lära dig hur du avgör vilka beräknings krav som är värd för dina arbets belastningar.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d4b1d5728a8cba06900bfe67e288f15b042b8106
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: b2712867c8b5dbdf79e5f235ebd45fe02ae4bf20
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799192"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092551"
 ---
 # <a name="review-your-compute-options"></a>Granska dina beräknings alternativ
 
@@ -34,7 +34,7 @@ För varje program eller tjänst som du distribuerar till din landningszonmiljö
 Besvara följande frågor om dina arbetsbelastningar för att skapa ett beslutsunderlag baserat på beslutsträdet för Azure-processortjänster:
 
 - **Skapar du helt nya program och tjänster eller migrerar du från befintliga lokala arbetsbelastningar?** Genom att utveckla nya program som en del av din molnimplementering kan du dra full nytta av modern molnbaserad värdteknik redan från utvecklingsfasen.
-- **Om du migrerar befintliga arbetsbelastningar, kan de använda modern molnteknik?** Migrering av lokala arbets belastningar kräver analys: kan du enkelt optimera befintliga program och tjänster för att dra nytta av modern moln teknik eller kommer att fungera bättre för dina arbets belastningar?
+- **Om du migrerar befintliga arbetsbelastningar, kan de använda modern molnteknik?** Migrering av lokala arbets belastningar kräver analys: kan du enkelt optimera befintliga program och tjänster för att dra nytta av modern moln teknik eller kommer _lift and shift_ att fungera bättre för dina arbets belastningar?
 - **Kan dina program eller tjänster använda containrar?** Om dina program är bra kandidater för behållarvärdtjänster kan du utnyttja resurseffektiviteten, skalbarheten och samordningskapaciteten hos [Azure Container Services](https://azure.microsoft.com/product-categories/containers). Både [Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) och[Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) kan användas för beständig lagring för program i container.
 - **Är dina program webbaserade eller API-baserade och använder de PHP, ASP.NET, Node. js eller liknande teknik?** Webbappar kan distribueras till hanterade [Azure App Service](https://docs.microsoft.com/azure/app-service/overview)-instanser så att du inte behöver underhålla virtuella datorer som servrar.
 - **Behöver du fullständig kontroll över operativsystemet och värdmiljön för din arbetsbelastning?** Om du behöver kontrollera värd miljön, inklusive operativsystemet, diskar, lokal programvara och andra konfigurationer kan du använda [virtuella Azure-datorer](https://azure.microsoft.com/services/virtual-machines) som värd för dina program och tjänster. Utöver valet av storlek på de virtuella datorerna och prestandanivåer påverkar dina beslut om virtuellt diskutrymme prestanda och serviceavtal för dina IaaS-baserade (infrastruktur som en tjänst) arbetsbelastningar. Mer information finns i [dokumentationen om Azure-disklagring](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview).
@@ -55,7 +55,7 @@ I följande tabell visas några vanliga användningsscenarier och rekommenderade
 | Jag vill förenkla distributionen, hanteringen och driften av Kubernetes. | [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service) |
 | Jag behöver påskynda utvecklingen av appar med hjälp av en händelsedriven serverlös arkitektur. | [Azure Functions](https://azure.microsoft.com/services/functions) |
 | Jag behöver utveckla mikrotjänster och dirigera containrar i Windows och Linux. | [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric) |
-| Jag vill snabbt skapa molnappar för webben och mobilt med en helt hanterad plattform. | [Azure App Service](https://azure.microsoft.com/services/app-service) |
+| Jag vill snabbt skapa molnappar för webben och mobilt med en helt hanterad plattform. | [Azure Apptjänst](https://azure.microsoft.com/services/app-service) |
 | Jag vill köra appar i containrar och köra containrarna enkelt med ett enda kommando. | [Azure Container Instances](https://azure.microsoft.com/services/container-instances) |
 | Jag behöver jobbschemaläggning och processorhantering i molnskala med möjlighet att skala till tiotals, hundratals eller tusentals virtuella datorer. | [Azure Batch](https://azure.microsoft.com/services/batch) |
 | Jag behöver skapa högtillgängliga, skalbara molnprogram och API:er som kan hjälpa mig att fokusera på appar istället för maskinvara. | [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services) |

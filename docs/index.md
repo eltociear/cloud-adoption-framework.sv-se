@@ -8,12 +8,12 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 02/28/2020
-ms.openlocfilehash: 7bbdcdbdad1e00947d20f701ff6a81a465a09248
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 4a6bd2f6a14d4726695f76a776c01a421931005c
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223760"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79091970"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Microsoft Cloud Adoption Framework för Azure
 
@@ -169,7 +169,7 @@ Molnet ändrar i grunden hur företag anskaffar, använder och skyddar teknikres
 
 Molnimplementeringen är dock bara ett verktyg och inte ett mål i sig. Lyckat molnimplementering börjar långt före valet av molnplattformsleverantör. Det börjar när företag och IT-beslutsfattare inser att molnet kan påskynda ett specifikt mål för affärsomvandling. Cloud Adoption Framework hjälper dem att anpassa strategierna för förändringar inom företag, kultur och teknik för att uppnå önskade affärsresultat.
 
-Cloud Adoption Framework ger teknisk vägledning för Microsoft Azure. Eftersom företagskunder kanske inte har valt molnleverantör än, eller kanske har en bestämd flermolnsstrategi, ger ramverket molnoberoende vägledning för strategiska beslut när det är möjligt.
+Cloud Adoption Framework ger teknisk vägledning för Microsoft Azure. Ramverket ger molnoberoende vägledning för strategiska beslut när det är möjligt eftersom företagskunder kanske har en bestämd strategi för flera moln eller kanske inte har valt molnleverantör än.
 
 ## <a name="intended-audience"></a>Målgrupp
 

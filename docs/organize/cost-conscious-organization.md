@@ -1,18 +1,18 @@
 ---
 title: Skapa en kostnads medveten organisation
-description: Lär dig metod tips för att skapa en kostnads medveten organisation.
+description: Använd ramverket för moln införande för Azure för att lära dig metod tips för att skapa en kostnads medveten organisation.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: 9c4b6e89d3593bebad491cb967d39be529de8989
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 57205533f8ae9b2da39ba7cc94e1071b0bde8c4f
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225393"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093842"
 ---
 # <a name="build-a-cost-conscious-organization"></a>Bygg en kostnads medveten organisation
 

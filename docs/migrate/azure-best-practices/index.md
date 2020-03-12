@@ -1,29 +1,46 @@
 ---
 title: Bästa praxis för Azure-migrering
-description: Introduktion till bästa praxis för Azure-migrering
+description: Använd Cloud Adoption Framework för Azure för att lära dig hur du implementerar de verktyg som behövs för att följa regelverket för migrering till molnet.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5cc4a0cfdfe605fdd374055e782db2f0ce47c13f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 90ec573d59c88187081fd640d9eb769977b787cf
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807299"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79091431"
 ---
-# <a name="azure-migration-best-practices"></a>Bästa praxis för Azure-migrering
+# <a name="best-practices-for-cloud-migration"></a>Regelverk för migrering till molnet
 
-Azure innehåller flera verktyg som underlättar genomförandet av migrering. Det här avsnittet av Cloud Adoption Framework är utformat för att hjälpa läsarna att implementera dessa verktyg i linje med bästa praxis för migrering. Denna bästa praxis överensstämmer med en av processerna i den Cloud Adoption Framework-migreringsmodell som visas nedan.
+[Azure-migreringsguiden](../azure-migration-guide/index.md) i Cloud Adoption Framework är den rekommenderade startpunkten om du är intresserad av migrering till Azure. Guiden vägleder dig genom ett antal verktyg och grundläggande metoder för att migrera virtuella datorer till molnet. Det här avsnittet av Cloud Adoption Framework beskriver många regelverk som går utöver de grundläggande molnbaserade verktygen.
 
-Expandera valfri process i innehållsförteckningen till vänster om du vill se den bästa praxis som vanligtvis krävs under den processen.
+## <a name="cloud-migration-best-practice-checklist"></a>Checklista för regelverk för migrering till molnet
 
-![Cloud Adoption Framework-migreringsmodellen](../../_images/operational-transformation-migrate.png)
+I följande checklista visas vanliga komplexitetsområden som kan kräva att migreringens omfång utökas bortom [Azure-migreringsguiden](../azure-migration-guide/index.md).
 
-> [!NOTE]
-> Planering för digital egendom och tillgångsutvärdering representerar två olika nivåer av migreringsplanering och -utvärdering:
->
-> - **Planering för digital egendom:** Du planerar eller rationaliserar den digitala egendomen under planering för att upprätta en övergripande uppgiftslista för migrering. Dock baseras den här planen på vissa antaganden och detaljer som behöver valideras innan en arbetsbelastning kan migreras.
-> - **Tillgångsutvärdering:** Du utvärderar en arbetsbelastnings enskilda tillgångar innan arbetsbelastningen migreras för att utvärdera kompatibiliteten med molnet och för att förstå arkitektur- och storleksbegränsningar. Den här processen validerar inledande antaganden och ger den information som behövs för att migrera enskilda tillgångar.
+### <a name="business-driven-scope-expansion"></a>En utökning av omfånget baserad på verksamheten
+
+- **[Stöd för globala marknader](./multiple-regions.md):** Verksamheten verkar i flera geografiska områden med olika krav för datasuveränitet. För att uppfylla de kraven bör ytterligare överväganden tas med i beräkningen för granskningen av förutsättningar och distributionen av tillgångar under migrering.
+
+### <a name="technology-driven-scope-expansion"></a>En utökning av omfånget baserad på tekniken
+
+- **[VMware-migrering](./vmware-host.md):** Migrering av VMware-värdar kan effektivisera migreringsprocessen. Varje migrerad VMware-värd kan flytta flera arbetsbelastningar till molnet med metoden ”lift and shift”. Efter migreringen kan de virtuella datorerna och arbetsbelastningarna stanna kvar i VMware eller migreras till modernare molnfunktioner.
+- **[SQL Server-migrering](./sql-migration.md):** Migrering av SQL-servrar kan effektivisera migreringsprocessen. Varje migrerad SQL-server kan flytta flera databaser och tjänster, vilket kan effektivisera flytten av arbetsbelastningarna.
+- **[Flera datacenter](./multiple-datacenters.md):** Att migrera flera datacenter ökar komplexiteten avsevärt. Under processerna för utvärdering, optimering och hantering måste ytterligare överväganden diskuteras så att de mer komplicerade miljöerna tas med i beräkningen.
+- **[Datakraven överskrider nätverkskapaciteten](./network-capacity-exceeded.md):** Företag väljer ofta att migrera till molnet eftersom kapaciteten, hastigheten och stabiliteten hos ett befintligt datacenter inte längre räcker till. Tyvärr ökar dessa begränsningar komplexiteten i migreringsprocessen, vilket gör att ytterligare planering krävs under processerna för utvärdering och migrering.
+- **[Strategi för styrning eller efterlevnad](./governance-or-compliance.md):** När styrning och efterlevnad är viktiga för att en migrering ska lyckas krävs ytterligare samarbete mellan IT-styrningsteamen och teamen för molnimplementering.
+
+Om någon av dessa svårigheter förekommer i ditt scenario kommer det här Cloud Adoption Framework-avsnittet sannolikt att ge den typ av vägledning du behöver för att anpassa omfånget i migreringsprocesserna på rätt sätt.
+
+Vart och ett av de här scenarierna behandlas av de olika artiklarna i det här Cloud Adoption Framework-avsnittet.
+
+## <a name="next-steps"></a>Nästa steg
+
+Bläddra i innehållsförteckningen till vänster för att åtgärda specifika behov eller omfångsändringar. Alternativt kan den första omfångsförbättringen i listan, [Stöd för globala marknader](./multiple-regions.md), vara en bra utgångspunkt när du granskar de här scenarierna.
+
+> [!div class="nextstepaction"]
+> [Stöd för globala marknader](./multiple-regions.md)

@@ -1,6 +1,6 @@
 ---
 title: Moln strategi funktioner
-description: Beskriver bildande av moln strategi funktioner
+description: Använd ramverket för moln införande för Azure för att lära dig hur du anpassar tekniska aktiviteter till affärs resultat.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 17ef8a6b84e16b2baf7a69918051c7f6a8257396
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 43973a5199f0c5f15e31381cddba56efab1ecb14
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800856"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093818"
 ---
 # <a name="cloud-strategy-capabilities"></a>Moln strategi funktioner
 
@@ -28,7 +28,7 @@ Den här funktionen tillhandahålls ofta av följande typer av roller. När ett 
 - Ekonomi
 - Verksamhets linje
 - Personal resurser
-- Operations
+- Åtgärder
 - Företags arkitektur
 - IT-infrastruktur
 - Program grupper

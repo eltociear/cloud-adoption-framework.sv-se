@@ -1,6 +1,6 @@
 ---
 title: Förbereda för molnimplementering
-description: Förbereda miljön för den kommande molnimplementeringen
+description: Lär dig att skapa en landningszon för de arbetsbelastningar du tänker skapa i eller migrera till molnet.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 layout: LandingPage
-ms.openlocfilehash: cd4b29823636cfaa758d0568d3298bc146a00eb8
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 11ab187c24bcd288834cf3c4823e508096e69492
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892488"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092524"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -48,7 +48,7 @@ Studera konfigurationsguiden för Azure och bekanta dig med de verktyg och metod
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./landing-zone/migrate-landing-zone.md">
+        <a href="./landing-zone/first-landing-zone.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -59,7 +59,7 @@ Studera konfigurationsguiden för Azure och bekanta dig med de verktyg och metod
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Den första landningszonen</h3>
-Utvärdera Cloud Adoption Framework-skissen för migrering av landningszoner. Använd den här skissen till att skapa din första migreringsklara landningszon som du kan experimentera och lära dig med.
+Välj det lämpligaste landningszonsalternativet för att etablera en kodbaserad startpunkt för din miljö.
                         </div>
                     </div>
                 </div>
@@ -77,8 +77,8 @@ Utvärdera Cloud Adoption Framework-skissen för migrering av landningszoner. An
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Expandera skissen</h3>
-Använd övervägningarna kring landningszoner till att identifiera och genomföra de ändringar som behövs i skissmallen.
+                            <h3>Expandera landningszonen</h3>
+Uppfyll plattformskraven i din molnimplementeringsplan genom att expandera den första landningszonen.
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ Använd övervägningarna kring landningszoner till att identifiera och genomfö
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Bästa praxis</h3>
-Kontrollera ändringarna av landningszonen mot avsnitten med metodtips så att dina nuvarande och framtida landningszoner får en lämplig konfiguration.
+Verifiera landningszonens ändringar mot regelverket så att du kan säkerställa korrekt konfiguration av dina nuvarande och framtida landningszoner.
                         </div>
                     </div>
                 </div>

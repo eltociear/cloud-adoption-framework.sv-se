@@ -8,12 +8,12 @@ ms.date: 02/25/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b451ec6f58a684bd4fb5998f1915dc79761b7a44
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 04293b0e0d30ae1eaa85f4c86c6c7d70b2cfac82
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228449"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092969"
 ---
 # <a name="first-landing-zone"></a>Den första landningszonen
 
@@ -33,7 +33,8 @@ C. Vissa moln införande planer styrs av externa krav på efterlevnad. Azure inn
 
 D. När en partner tillhandahåller kontinuerliga hanterade tjänster eller som ingår i implementerings planen, kommer de normalt att tillhandahålla sin egen landnings zon. Genom att använda en partner landnings zon kan du påskynda implementeringen och säkerställa konsekventa drifts hanterings krav. Men du får ytterligare hänsyn till interna styrnings-och säkerhets krav för att säkerställa justering.
 
-E. Antagande team som har ett midterm-mål (inom 24 månader) som **värd för fler än 1 000-tillgångar (appar, infrastruktur eller data till gångar) i molnet**, bör titta på Northstar för moln införande i molnet som en vägledning för plattforms arkitektur och landnings zoner. Northstar är en mer avancerad översikt, inklusive plattforms arkitektur och referens implementeringar i mål tillstånd. Den här översikten omfattar aspekter av parallella metoder som styrning och åtgärder för att bättre förbereda för verksamhets kritiska, säkra, komplexa och efterlevnads regler.
+> [!NOTE]
+> Innan du fortsätter med en kod för första och omfactoring-fokuserad metod bör läsarna vara bekant med de [konkurrerande prioriteringarna bakom det här beslutet](../../strategy/balance-competing-priorities.md#balance-during-ready). När du väljer en landnings zon metod är det viktigt att förstå den nödvändiga balansen mellan "tid för införande" och "långsiktiga åtgärder".
 
 ## <a name="choosing-a-first-landing-zone"></a>Välja en första landnings zon
 
@@ -46,10 +47,10 @@ Valet av den första landnings zonen beror på ett antal variabler. Följande ru
 
 I följande tabell visas samma landnings zoner från ett något annorlunda perspektiv till vägledning för fler tekniska besluts processer.
 
-| Landnings zon                                 | Hubb                          | Spoke    | Moln modell | Teknologi      |
+| Landnings zon                                 | Hub                          | Spoke    | Moln modell | Teknologi      |
 |----------------------------------------------|------------------------------|----------|-------------|-----------------|--|--|--|
 | [Migrera CAF](./migrate-landing-zone.md)     | Omuppgift krävs            | Ingår | Endast Azure  | Azure Blueprint |
-| [CAF terraform](./terraform-landing-zone.md) | Ingår i NorthStar-modulen | Ingår | Flera moln  | Terraform       |
+| [CAF terraform](./terraform-landing-zone.md) | Ingår i VDC-modulen       | Ingår | Flera moln  | Terraform       |
 
 ## <a name="next-steps"></a>Nästa steg
 

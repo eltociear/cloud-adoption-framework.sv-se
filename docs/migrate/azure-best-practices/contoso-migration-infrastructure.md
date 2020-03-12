@@ -1,6 +1,6 @@
 ---
 title: Distribuera en migreringsinfrastruktur
-description: Se hur Contoso konfigurerar en Azure-infrastruktur för migrering till Azure.
+description: Använd moln implementerings ramverket för Azure för att lära dig mer om hur du konfigurerar en Azure-infrastruktur för migrering till Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/1/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: ee12255b7cadf0c8cfc70948f22c47d6c58fbb9c
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 34d2c96adeb476b3129464566a315c2ada9eab67
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892317"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092437"
 ---
 <!-- cspell:ignore CSPs domainname IPAM CIDR Untrust RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 

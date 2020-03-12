@@ -1,6 +1,6 @@
 ---
 title: Definiera en molnimplementeringsplan
-description: Guida det tekniska arbetet med en definierad molnimplementeringsplan
+description: Använd Cloud Adoption Framework för Azure för att lära dig hur du vägleder det tekniska arbetet med en definierad molnimplementeringsplan.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 layout: LandingPage
-ms.openlocfilehash: 3e4c32ae4168a1558ca2384b70596d07d915f734
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e22c8332a02b985d733fd8e2e36f6873bd435c77
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800482"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092606"
 ---
 <!-- markdownlint-disable MD026 -->
 

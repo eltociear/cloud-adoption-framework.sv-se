@@ -1,18 +1,18 @@
 ---
 title: Vad är molnredovisning?
-description: Förklaring av begreppet moln redovisning
+description: Använd ramverket för moln införande för Azure för att förstå vanliga modeller för moln redovisning för den när du påbörjar din moln migrerings resa.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 016f0502108fa771490293bd6588f3fe7193fb07
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: 0ccff095f78442f583bcd526ee624161276c0db3
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79023819"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092866"
 ---
 <!-- markdownlint-disable MD026 -->
 

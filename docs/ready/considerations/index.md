@@ -1,18 +1,18 @@
 ---
 title: Azure-landingzon – att tänka på
-description: Lär dig hur en landningszon fungerar som den grundläggande byggstenen i alla typer av miljöer för molnimplementering.
+description: Använd Cloud Adoption Framework för Azure för att lära dig hur en landningszon fungerar som en grundläggande byggsten i alla typer av miljöer för molnimplementering.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/20/2019
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5eb0dc016bcfe7778727b5a61e392e3dd3581539
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: c08efda381eeaf713f79393f2959127d8a96970b
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173377"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092542"
 ---
 # <a name="landing-zone-considerations"></a>Landingzon – att tänka på
 

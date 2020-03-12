@@ -1,18 +1,18 @@
 ---
 title: Beslut som påverkar migrering
-description: Viktiga beslut att fatta om migreringsprocessen.
+description: Använd ramverket för moln införande för Azure för att fatta lämpliga beslut och välja körnings aktiviteter som har stöd för en lyckad migrering.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3281f7a14c5af58e435be9e3a412fc5285da1b47
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 07856662f95a588f252c78e8a3dd67eba6e8163c
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225476"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094067"
 ---
 <!-- cSpell:ignore migrateable -->
 

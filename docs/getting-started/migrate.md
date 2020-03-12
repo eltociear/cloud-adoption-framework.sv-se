@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: dcc5706e365e3761f236bb5a1c896eb213a1bf5f
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 85f5cf55bb089bd347383bedf58b054cf2a7351c
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892165"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094447"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Påbörja en migrering av molnet i Azure
 
@@ -57,7 +57,7 @@ Den här metoden består av två metoder eller fokus områden: moln strategi & p
 
 Cloud implementation är en iterativ process för att migrera och modernisera den digitala fastigheten, justerad mot riktade företags resultat och ändrings hanterings kontroller. Under varje iteration migreras eller förvaras arbets belastningar i justeringen med strategin och planen. Beslut om IaaS, PaaS eller hybrider görs under utvärderings fasen [av metoden för att optimera](../migrate/index.md) kontroll och körning. Dessa beslut kommer att driva de verktyg som används under varje iteration av migrations fasen inom samma metod. Den här modellen kan användas med minimal strategi och planering. Men för att se till att det bästa företaget returnerar, bör både IT och verksamheten anpassas efter en tydlig strategi och planera för att hjälpa implementerings aktiviteter.
 
-![Moln implementerings ramverkets moln implementerings metod](../_images/operational-transformation-migrate.png)
+![Moln implementerings ramverkets moln implementerings metod](../_images/migrate/methodology.png)
 
 Fokus på den här ansträngningen är migreringen eller modernisering av arbets belastningar. En arbets belastning är en samling infrastruktur, program och data som gemensamt stöder ett gemensamt affärs mål, eller körning av en gemensam affärs process. Exempel på arbets belastningar kan innefatta saker som ett branschspecifika program, en HR-löne lösning, en CRM-lösning, ett arbets flöde för godkännande av affärs dokument eller en Business Intelligence lösning. Arbets belastningar kan också innehålla delade tekniska resurser som ett informations lager som stöder flera andra lösningar. I vissa fall kan en arbets belastning representeras av en enda till gång som en fristående server, program eller data plattform.
 

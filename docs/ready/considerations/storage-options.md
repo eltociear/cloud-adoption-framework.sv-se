@@ -1,19 +1,21 @@
 ---
 title: Granska dina lagrings alternativ
-description: Granska dina lagrings alternativ för Azure-arbetsbelastningar.
+description: Använd ramverket för moln införande för Azure för att lära dig hur du granskar dina lagrings alternativ för Azure-arbetsbelastningar.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 054537d4d1b9a83700ed0c6a1a8840682f04faa1
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 28c5fbb7a95edd2ad32ccc3489f81cd99dc6c088
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892505"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093013"
 ---
+<!-- cSpell:ignore HDFS databox Avere HANA ACLs Isilon DFSR Cloudera -->
+
 # <a name="review-your-storage-options"></a>Granska dina lagrings alternativ
 
 Lagringsutrymmen är viktiga för att stödja arbetsbelastningar och tjänster som finns i molnet. Som del av din beredskapsplan för molnimplementeringen bör du läsa den här artikeln som hjälper dig att planera för och hantera dina lagringsbehov.

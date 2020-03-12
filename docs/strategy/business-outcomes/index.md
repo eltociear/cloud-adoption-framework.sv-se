@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 1b0104767c58e31f6ae31cae511d2aa1dc60dd73
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: 0fc60c8d2ca4c0725d114f6bf618e1a02934b2b5
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337935"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092392"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>Vilka affärsresultat är associerade med omvandlingsresor?
 
-De mest framgångsrika omvandlingsresor börjar med ett affärsmål. Molnimplementering kan vara ett kostsamt och tidskrävande projekt. Att främja rätt stöd från IT och andra verksamhetsområden är avgörande för framgång. Microsofts [Business Outcome Framework](../index.md) har utformats för att hjälpa kunder att identifiera verksamhetsresultat som är koncisa och väldefinierade samt ger konkreta resultat eller ändringar i företagsprestanda och som stöds av en specifik åtgärd.
+De mest framgångsrika omvandlingsresor börjar med ett affärsmål. Molnimplementering kan vara ett kostsamt och tidskrävande projekt. Att främja rätt stöd från IT och andra verksamhetsområden är avgörande för framgång. Den här artikelserien har utformats för att hjälpa kunder att identifiera verksamhetsresultat som är koncisa och väldefinierade samt ger konkreta resultat eller ändringar i företagsprestanda och som stöds av en specifik åtgärd.
 
 Under molnomvandlingen är förmågan att kommunicera utifrån affärsresultat viktig för transparensen och tvärfunktionella samarbeten. Ramverket för affärsresultat börjar med en enkel mall som hjälper tekniskt inriktade personer att dokumentera och nå konsensus. Den här mallen kan användas med flera företagsintressenter till att samla in en mängd olika affärsresultat som vart och ett kan påverkas av ett företags omvandlingsresa. Du kan använda mallen elektroniskt eller, ännu bättre, rita den på en whiteboard för att engagera företagsledare och intressenter i resultatfokuserade diskussioner.
 
