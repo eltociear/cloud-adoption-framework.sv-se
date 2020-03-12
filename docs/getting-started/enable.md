@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: c9e33b32590cd3b73e5bc42a662abf5ef6de36da
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 5f611494bb395a06a763a500d7b94377177d3c71
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892250"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140277"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Aktivera lyckad under en moln införande resa
 
@@ -29,7 +29,7 @@ I det här ramverket är aktivering ett kärn tema. Följande check lista specif
   - **Hantera:** Kontinuerlig [drift hantering](../manage/index.md) av IT-portföljen för att minimera avbrott i affärs processer och säkerställa stabiliteten hos IT-portföljen.
   - **Support:** Justera lämpliga [alternativ för partnerskap och support](../migrate/migration-considerations/assess/partnership-options.md).
 
-Ett annat kärn tema är säkerhet, vilket är ett kritiskt Quality-attribut för ett framgångs rik moln införande. Säkerhet är integrerat i det här ramverket för att tillhandahålla integrerad vägledning om att upprätthålla sekretess, integritet och tillgänglighets garantier för dina moln arbets belastningar. 
+Ett annat kärn tema är säkerhet, vilket är ett kritiskt Quality-attribut för ett framgångs rik moln införande. Säkerhet är integrerat i det här ramverket för att tillhandahålla integrerad vägledning om att upprätthålla sekretess, integritet och tillgänglighets garantier för dina moln arbets belastningar.
 
 ## <a name="additional-tools"></a>Ytterligare verktyg
 

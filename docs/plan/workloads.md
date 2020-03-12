@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 42f55a866b3ac8f044861ef2bc738e128b3c9f38
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 9f374bbe149e132fde4c44a8c0ecd9246615bac0
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341920"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140628"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Prioritera och definiera arbets belastningar för en moln implementerings plan
 
@@ -21,6 +21,8 @@ Att upprätta tydliga, åtgärds bara prioriteringar är en av hemligheterna fö
 I stället rekommenderar vi att ditt team fokuserar på att noggrant prioritera och dokumentera de första 10 arbets belastningarna. När implementeringen av implementerings planen har påbörjats kan teamet underhålla en lista över de näst 10 högsta prioritets arbets belastningarna. Den här metoden ger tillräckligt med information för att planera för kommande iterationer.
 
 Genom att begränsa planen till 10 arbets belastningar uppmuntrar du flexibiliteten och justeringen av prioriteringar när affärs villkoren ändras. Den här metoden gör det också utrymme för moln implementerings teamet att lära sig och förfina uppskattningar. Viktigast är att det tar bort omfattande planering som en barriär för effektiv affärs förändring.
+
+<!-- markdownlint-disable MD026 -->
 
 ## <a name="what-is-a-workload"></a>Vad är en arbets belastning?
 

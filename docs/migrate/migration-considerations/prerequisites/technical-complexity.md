@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 73cbd084e79589de68e359ad4dc88b639d92f9df
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4ecd18a226a36497cf3b23669bf17f323c196382
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801349"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140645"
 ---
+<!-- cSpell:ignore ITSM TOGAF -->
+
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Förbered dig för teknisk komplexitet: smidig förändringsledning
 
 När ett helt datacenter avetableras och återskapas med en enda kodrad är det svårt för traditionella processer att hänga med. Vägledningen i Ramverk för molnimplementering bygger på metoder som Hantering av IT-tjänster (ITSM), Open Group Architecture Framework (TOGAF) med mera. För att säkerställa förändringarnas rörlighet och svarstider omvandlar det här ramverket dessa metoder så att de passar flexibla metodsystem DevOps-metoder.
@@ -76,7 +78,7 @@ Ett samarbete mellan molnstrategiteamet och molnimplementeringsteamet lägger ti
 
 - **Förfinat lager.** Verifiering av nödvändiga till gångar som ska migreras. Dessa verifieras ofta via loggning eller övervakning av data på värd-, nätverks- eller operativsystemnivå för att bilda en korrekt förståelse för nätverket och maskinvarans beroende för varje tillgång under normal belastning.
 - **Användningsmönster.** En förståelse av slutanvändarnas användningsmönster. Dessa mönster innehåller ofta en analys av geografisk distribution för slutanvändare, nätverksvägar, säsongsbundna användningstoppar, användnings toppar i dag/per timme och slutanvändarsammansättning (interna jämfört med externa).
-- **Prestandaförväntningar.** Analys av tillgängliga dataflöden för loggdata, sidvisningar, nätverksvägar och andra prestandadata som krävs för att replikera slutanvändarupplevelsen.
+- **Prestandaförväntningar.** Analys av tillgängliga data flöde för loggdata, sid visningar, nätverks vägar och andra prestanda data som krävs för att replikera slut användar upplevelsen.
 - **Beroenden.** Analys av mönster för nätverkstrafik och programanvändning för att identifiera eventuella ytterligare arbetsbelastningsberoenden som räknas med i sekvenseringen och miljöberedskapen. Ta inte med en arbetsbelastning i en lansering förrän något av följande villkor kan uppfyllas:
   - Alla beroende arbetsbelastningar har migrerats.
   - Nätverks- och säkerhetskonfigurationerna har implementerats för att ge arbetsbelastningen åtkomst till alla beroenden i förhållande till befintliga prestandaförväntningar.

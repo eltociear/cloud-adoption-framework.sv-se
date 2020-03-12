@@ -9,18 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 37d49948772ca0912dc574ccb299c050eae4aeb4
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: b6d17a410c1903d984b5a1c756f51f7c5145ff9c
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341767"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140294"
 ---
-# <a name="azure-management-guide-before-you-start"></a>Guide till Azure-hantering: Innan du börjar
-
-
 ::: zone target="docs"
 
+# <a name="azure-management-guide-before-you-start"></a>Guide till Azure-hantering: Innan du börjar
 
 > [!NOTE]
 > Den här guiden är en utgångspunkt för vägledningen kring innovation i Cloud Adoption Framework. Du hittar den även i Azures snabbstartscenter. I tipset senare i artikeln finns en länk till Azures snabbstartscenter.

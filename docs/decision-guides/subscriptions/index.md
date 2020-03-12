@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 99bcfee8f72250c156178117b368af62eb8a68c9
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 32b1e8933add7f2c786d424e6faabf58f9218ead
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892420"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140696"
 ---
 # <a name="subscription-decision-guide"></a>Beslutsguide för prenumerationer
 
@@ -55,7 +55,7 @@ När du är redo att distribuera en arbetsbelastning till en produktionsmiljö b
 
 När en organisation lägger till nya arbetsbelastningar i molnet kan olika ägarskap till prenumerationer eller grundläggande ansvarsseparation resultera i flera prenumerationer i hanteringsgrupper för såväl produktion som icke-produktion. Även om den här metoden ger grundläggande arbetsbelastningsseparation, så drar den inga större fördelar av arvsmodellen för att automatiskt tillämpa principer på en delmängd av dina prenumerationer.
 
-![Mönster för arbetsbelastningsuppdelning](../../_images/ready/management-group-hierarchy.png)
+![Mönster för arbetsbelastningsuppdelning](../../_images/ready/management-group-hierarchy-v2.png)
 
 ### <a name="application-category-pattern"></a>Mönster för programkategori
 

@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 layout: LandingPage
-ms.openlocfilehash: d43097c940bcb6afb6b816dc4f8a533021d304fb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7c808e02b0f1d759fcb37acd0a6b6a24d2087950
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798663"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140577"
 ---
 # <a name="cloud-adoption-framework-roadmap"></a>Översikt över Cloud Adoption Framework
 
@@ -45,7 +45,7 @@ Det krävs mer än bara vägledning för implementering för att ta bort större
 
 Cloud Adoption Framework är ett övergripande ramverk som omfattar faserna Planera, Redo och Implementera för motiveringarna Migrering och Innovation för molnimplementering, med stöd av vägledningarna Styrning och Verksamhet.
 
-Nu är ramverket allmänt tillgängligt (GA). Vi fortsätter dock att utveckla ramverket i samarbete med kunder, partner och interna team. För att uppmuntra partnerskap publiceras innehåll när det blir tillgängligt. Dessa offentliga versioner möjliggör testning, validering och stegvis finjustering av vägledningen. 
+Nu är ramverket allmänt tillgängligt (GA). Vi fortsätter dock att utveckla ramverket i samarbete med kunder, partner och interna team. För att uppmuntra partnerskap publiceras innehåll när det blir tillgängligt. Dessa offentliga versioner möjliggör testning, validering och stegvis finjustering av vägledningen.
 
 För en lyckad implementering av molnet måste kunden förbereda personal, teknik och processer för den digitala omvandlingen. Cloud Adoption Framework innehåller ett avsnitt som beskriver de övergripande implementeringarna, både Migrering och Innovation, som en översikt för kunderna. Avsnittet består av följande implementeringsfaser:
 
