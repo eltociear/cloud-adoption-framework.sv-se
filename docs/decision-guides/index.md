@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 66ff53f203a07f5f61ae2ba448f56d6531ffaa94
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 9552ba8b168e79f247916ae86f8e7721282baddb
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892454"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140243"
 ---
 # <a name="architectural-decision-guides"></a>Beslutsguider för arkitektur
 
@@ -37,7 +37,7 @@ Var och en av följande kategorier representerar en grundläggande teknik för a
 
 [Resurstaggning](./resource-tagging/index.md): Organisera dina molnbaserade resurser för att stödja faktureringsmodeller, metoder för molnredovisning och hantering samt för att optimera resursutnyttjande och kostnader. Resurstaggning kräver ett konsekvent och välorganiserat schema för namngivning och metadata.
 
-[Programvarudefinierade nätverk](./software-defined-network/index.md): Distribuera säkra arbetsbelastningar till molnet med hjälp av snabb distribution och ändring av virtualiserade nätverksfunktioner. Programvarudefinierade nätverk (SDN) kan stödja agila arbetsflöden, isolera resurser och integrera molnbaserade system med din befintliga IT-infrastruktur.
+[Programvarudefinierade nätverk](./software-defined-network/index.md): Distribuera säkra arbetsbelastningar till molnet med hjälp av snabb distribution och ändring av virtualiserade nätverksfunktioner. Programvarudefinierade nätverk kan stödja agila arbetsflöden, isolera resurser och integrera molnbaserade system med din befintliga IT-infrastruktur.
 
 [Kryptering](./encryption/index.md): Skydda känsliga data med hjälp av kryptering för att uppfylla organisationens krav på efterlevnad och säkerhetsprinciper.
 
