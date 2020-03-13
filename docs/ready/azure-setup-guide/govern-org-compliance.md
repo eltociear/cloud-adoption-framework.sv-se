@@ -1,6 +1,6 @@
 ---
 title: Styrning, säkerhet och efterlevnad i Azure
-description: Lär dig hur du ställer in styrning, säkerhet och efterlevnad i Azure-miljön.
+description: Använd Cloud Adoption Framework för Azure för att lära dig hur du ställer in styrning, säkerhet och efterlevnad i Azure-miljön.
 author: tvuylsteke
 ms.author: kfollis
 ms.date: 09/27/2019
@@ -9,18 +9,22 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: c38edb9a5723d99974f5f472453bf4b88ee07bb3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 89de72cb85cc4c763d443ae9cc1114b648ab72c4
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799615"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024080"
 ---
+<!-- cSpell:ignore tvuylsteke >
+
+<!-- markdownlint-disable MD024 MD025 -->
+
 # <a name="governance-security-and-compliance-in-azure"></a>Styrning, säkerhet och efterlevnad i Azure
 
 När du skapar en företagsprincip och planerar dina styrningsstrategier kan du använda verktyg och tjänster som Azure Policy, Azure Blueprints och Azure Security Center för att genomföra och automatisera organisationens styrningsbeslut. Innan du börjar planera styrningen bör du använda [verktyget Governance Benchmark](https://cafbaseline.com) för att identifiera eventuella brister i din organisations metod för molnstyrning. Mer information om hur du utvecklar styrningsprocesser finns i [vägledningen Ramverk för molnimplementering för styrning i Azure](../../govern/index.md).
 
-# <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
+# <a name="azure-blueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
 
 Azure Blueprint gör det möjligt för molnarkitekter och centrala IT-grupper att definiera en upprepningsbar uppsättning med Azure-resurser som implementerar och tillämpar en organisations standarder, mönster och krav. Med Azure Blueprint kan utvecklingsteam snabbt skapa nya miljöer med vetskapen om att de är skapade med organisatorisk efterlevnad och innehåller en uppsättning inbyggda komponenter – som nätverk – för att påskynda utveckling och leverans.
 
@@ -40,9 +44,9 @@ Så här skapar du en skiss:
 1. Gå till **Skisser – komma igång**.
 1. I området **Skapa en skiss** väljer du **Skapa**.
 1. Filtrera listan över skisser och välj lämplig skiss.
-1. Ange **Namn på skiss** och välj **Definitionens plats**.
-1. Klicka på **Nästa: Artefakter >>** och granska artefakterna som ingår i skissen.
-1. Klicka på **Spara utkast**.
+1. Ange **Namn på skiss** och välj sedan **Definitionens plats**.
+1. Välj **Nästa: Artefakter >>** och granska därefter artefakterna som ingår i skissen.
+1. Välj **Spara utkast**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted]" submitText="Create a blueprint" :::
 
@@ -53,9 +57,9 @@ Så här skapar du en skiss:
 1. Gå till [Skisser – komma igång](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted).
 1. I området **Skapa en skiss** väljer du **Skapa**.
 1. Filtrera listan över skisser och välj lämplig skiss.
-1. Ange **Namn på skiss** och välj **Definitionens plats**.
-1. Klicka på **Nästa: Artefakter >>** och granska artefakterna som ingår i skissen.
-1. Klicka på **Spara utkast**.
+1. Ange **Namn på skiss** och välj sedan **Definitionens plats**.
+1. Välj **Nästa: Artefakter >>** och granska därefter artefakterna som ingår i skissen.
+1. Välj **Spara utkast**.
 
 ::: zone-end
 
@@ -67,7 +71,7 @@ Så här publicerar du skissartefakter till din prenumeration:
 
 1. Gå till **Skisser – Skissdefinitioner**.
 1. Välj skissen som du skapade i föregående steg.
-1. Granska skissdefinitionen och välj **Publicera skiss.**
+1. Granska skissdefinitionen och välj sedan **Publicera skiss.**
 1. Ange en **version** (t.ex. _1.0_) och eventuella **ändringsanmärkningar** och välj sedan **Publicera**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints]" submitText="Blueprint definitions" :::
@@ -78,7 +82,7 @@ Så här publicerar du skissartefakter till din prenumeration:
 
 1. Gå till [Skisser – Skissdefinitioner](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Välj skissdefinitionen som du skapade i föregående steg.
-1. Granska skissdefinitionen och välj **Publicera skiss.**
+1. Granska skissdefinitionen och välj sedan **Publicera skiss.**
 1. Ange en **version** (t.ex. _1.0_) och eventuella **ändringsanmärkningar** och välj sedan **Publicera**.
 
 ::: zone-end
@@ -95,7 +99,7 @@ Du kan läsa mer här:
 
 ::: zone-end
 
-# <a name="azure-policytabazurepolicy"></a>[Azure Policy](#tab/AzurePolicy)
+# <a name="azure-policy"></a>[Azure Policy](#tab/AzurePolicy)
 
 Azure Policy är en tjänst som används till att skapa, tilldela och hantera principer. De här principerna tillämpar regler för dina resurser så att resurserna efterlever dina företagsstandarder och serviceavtal. Azure Policy söker igenom dina resurser och identifierar resurser som inte är kompatibla med principerna du tillämpar. Du kan till exempel ha en princip som endast tillåter körning av en viss typ av virtuell dator i miljön. När du implementerar den här principen utvärderas alla befintliga virtuella datorer i miljön och de nya virtuella datorer som distribueras. Vid utvärderingen genereras efterlevnadshändelser som du kan använda i övervakning och rapportering.
 
@@ -129,12 +133,12 @@ Gör följande om du vill tillämpa en princip för en resursgrupp:
 
 Du kan läsa mer här:
 
-- [Azure Policy](https://docs.microsoft.com/azure/azure-policy)
+- [Azure Policy](https://docs.microsoft.com/azure/governance/policy)
 - [Ramverk för molnimplementering: Beslutsguide för principframtvingande](../../decision-guides/policy-enforcement/index.md)
 
 ::: zone-end
 
-# <a name="azure-security-centertabazuresecuritycenter"></a>[Azure Security Center](#tab/AzureSecurityCenter)
+# <a name="azure-security-center"></a>[Azure Security Center](#tab/AzureSecurityCenter)
 
 Azure Security Center är en viktig del i din styrningsstrategi. Det hjälper dig att hålla koll på säkerheten eftersom det:
 

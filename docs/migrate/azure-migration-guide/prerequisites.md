@@ -1,6 +1,6 @@
 ---
 title: Nödvändiga komponenter för att migrera till Azure
-description: Nödvändiga komponenter för att migrera till Azure
+description: Använd Cloud Adoption Framework för Azure för att förstå hur du förbereder för migrering till Azure och vilka krav du behöver uppfylla för en lyckad migrering.
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9baf2c9fdd307125e80fa77d8b2be54bec15b931
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 777b68bcd7faa613681f2d9ebbdf6cffe4accc3f
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806993"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094802"
 ---
 ::: zone target="chromeless"
 
@@ -30,7 +30,7 @@ ms.locfileid: "76806993"
 
 Resurserna i det här avsnittet hjälper dig att förbereda den aktuella miljön för migrering till Azure.
 
-# <a name="overviewtaboverview"></a>[Översikt](#tab/Overview)
+# <a name="overview"></a>[Översikt](#tab/Overview)
 
 Exempel på orsaker till att migrera till Azure är att ta bort risker som är kopplade till äldre maskinvara, minska kapitalkostnaden, frigöra datacenterutrymme och snabbt realisera avkastning (ROI).
 
@@ -58,7 +58,7 @@ Fokus för migreringen är att uppnå:
 > - [Windows Server 2008 och Windows Server 2008 R2](https://www.microsoft.com/cloud-platform/windows-server-2008).
 > - [SQL Server 2008 och SQL Server 2008 R2](https://www.microsoft.com/sql-server/sql-server-2008).
 
-# <a name="understand-migration-approachestabapproach"></a>[Förstå migreringsmetoder](#tab/Approach)
+# <a name="understand-migration-approaches"></a>[Förstå migreringsmetoder](#tab/Approach)
 
 Den strategi och de verktyg som du använder för att migrera ett program till Azure beror huvudsakligen på dina affärsmål, teknikkrav och tidslinjer samt på en djup förståelse för den faktiska arbetsbelastning och de tillgångar (infrastruktur, appar och data) som migreras.
 
@@ -73,7 +73,7 @@ När du utvärderar arbetsbelastningar för migrering identifierar du program so
 - [Cloud Adoption Frameworks beslutsguide för migreringsverktyg](../../decision-guides/migrate-decision-guide/index.md)
 - [Rationalisering – fem punkter](../../digital-estate/5-rs-of-rationalization.md)
 
-# <a name="planning-checklisttabchecklist"></a>[Checklista för planering](#tab/Checklist)
+# <a name="planning-checklist"></a>[Checklista för planering](#tab/Checklist)
 
 Innan du påbörjar en migrering måste du uppfylla vissa förutsättningar. De exakta detaljerna för de här aktiviteterna varierar beroende på miljön som migreras. I allmänhet gäller följande checklista:
 

@@ -1,6 +1,6 @@
 ---
 title: Utvärdera varje arbetsbelastning och förfina planer
-description: Det här avsnittet i Azures migreringsguide hjälper dig att utvärdera din miljö för att avgöra vad som ska migreras och vilka migreringsmetoder som ska beaktas.
+description: Använd Cloud Adoption Framework för Azure för att utvärdera om din miljö är lämplig att migrera, samt vilka metoder som skulle kunna användas.
 author: matticusau
 ms.author: mlavery
 ms.date: 02/25/2020
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 40e62a05101e14fcd7507011d521521e58920ffc
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 47cfc7bdbf823ad8a785705e361ba8fa1a44894f
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225538"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094323"
 ---
 # <a name="assess-each-workload-and-refine-plans"></a>Utvärdera varje arbetsbelastning och förfina planer
 

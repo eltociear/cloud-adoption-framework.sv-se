@@ -1,6 +1,6 @@
 ---
-title: Ordna dina Azure-resurser effektivt
-description: Metodtips för att effektivt organisera dina Azure-resurser för enkel hantering.
+title: Organisera Azure-resurser effektivt
+description: Förstå regelverken du behöver för att effektivt organisera dina Azure-resurser för enkel hantering.
 author: laraaleite
 ms.author: kfollis
 ms.date: 04/09/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: eb2564239548f77084fbc38d93003346a07e8e84
-ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
+ms.openlocfilehash: 67e22ff4831d6bca4bb0054b544bf2efba02a93e
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567766"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024014"
 ---
+<!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
+
 # <a name="organize-your-azure-resources"></a>Organisera dina Azure-resurser
 
 Det är viktigt att organisera molnbaserade resurser för att skydda, hantera och spåra kostnader som rör dina arbetsbelastningar. Om du vill organisera dina resurser använder du hanteringshierarkierna i Azure-plattformen, inför genomtänkta namnkonventioner och tillämpar resurstaggning.
@@ -156,7 +158,7 @@ Du kan också använda taggar till mycket annat. Vanliga användningsområden ä
 
 - **Metadata och dokumentation:** Administratörer kan enkelt se detaljer om de resurser som de arbetar med genom att använda en tagg, till exempel ”ProjectOwner”.
 - **Automation:** Du kan ha skript som körs regelbundet och utför åtgärder baserat på ett taggvärde, som ”ShutdownTime” eller ”DeprovisionDate”.
-- **Kostnadsoptimering:** Du kan allokera resurser till de team och resurser som är ansvariga för kostnaden. I Azure Cost Management kan du använda kostnadsställetaggen som ett filter för att rapportera avgifter baserat på en grupp- eller avdelningsanvändning.
+- **Kostnadsoptimering:** I Azure Cost Management kan du använda taggen för kostnadsställe som ett filter för att rapportera avgifter baserat på en grupp- eller avdelningsanvändning.
 
 Varje resurs eller resursgrupp kan innehålla upp till 50 taggnamn-/taggvärdepar. Den här begränsningen gäller dock bara taggar som läggs till direkt för resursgruppen eller resursen.
 

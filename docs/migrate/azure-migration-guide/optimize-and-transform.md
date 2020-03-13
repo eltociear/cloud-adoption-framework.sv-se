@@ -1,6 +1,6 @@
 ---
 title: Optimera och flytta upp
-description: Den här delen av Azure-migreringsguiden omfattar optimeringsområden, till exempel granskning av lösningens design, anpassning av tjänsternas storlek och kostnadsanalys.
+description: Lär dig hur du granskar lösningen för möjliga optimeringsområden, till exempel lösningens design, anpassning av tjänsternas storlek och kostnadsanalys.
 author: matticusau
 ms.author: mlavery
 ms.date: 02/25/2020
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bcd49a2168db862c3e1a0d948e4948abccbfe7c7
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: ab8ff4d3b73e38a0d88455fa675870da6a7f22ef
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222506"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094812"
 ---
 <!-- cSpell:ignore Fservers Fdatabases -->
 
@@ -130,7 +130,7 @@ Du kan också använda **Advisor** och välja fliken **Kostnader** för att iden
 
 ::: zone target="docs"
 
-- [Självstudier: Optimera kostnader utifrån rekommendationer](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations)
+- [Självstudier: Optimera kostnader utifrån rekommendationer](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
 - [Förhindra oväntade avgifter med Azure-fakturering och kostnadshantering](https://docs.microsoft.com/azure/billing/billing-getting-started)
 - [Utforska och analysera kostnader med kostnadsanalys](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)
 

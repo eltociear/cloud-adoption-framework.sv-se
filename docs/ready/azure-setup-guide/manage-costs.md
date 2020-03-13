@@ -1,6 +1,6 @@
 ---
-title: Hantera kostnader och fakturering för dina Azure-resurser
-description: Lär dig hur du ställer in budgetar, betalningar och få bättre förståelse kring faktureringen av dina Azure-resurser.
+title: Hantera kostnader och fakturering för Azure-resurser
+description: Använd Cloud Adoption Framework för att lära dig hur du ställer in budgetar, betalningar och får bättre förståelse om faktureringen av dina Azure-resurser.
 author: dchimes
 ms.author: kfollis
 ms.date: 04/09/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 4f0f0d900f75338a33b1873b8d0eac6d91835256
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 0f91ed2c09b2511304a59bc8768507f737ec6c76
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799530"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024034"
 ---
+<!-- cSpell:ignore dchimes -->
+
 # <a name="manage-costs-and-billing-for-your-azure-resources"></a>Hantera kostnader och fakturering för dina Azure-resurser
 
 Kostnadshantering är den process där du effektivt planerar och styr kostnaderna i företaget. Kostnadshanteringsuppgifter utförs normalt av ekonomi-, hanterings- och appteamen. Azure Cost Management kan hjälpa dig att planera kostnadsmedvetet. Det hjälper även till att effektivt analysera kostnader och vidta åtgärder för att optimera molnutgifter.

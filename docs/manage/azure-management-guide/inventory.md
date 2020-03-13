@@ -1,6 +1,6 @@
 ---
 title: Inventering och synlighet i Azure
-description: Lär dig hur du konfigurerar inventering, övervakning, rapportering och aviseringar för din Azure-miljö.
+description: Lär dig verktygen som både kan användas för inventering och insyn i inventeringens körningsstatus så att du kan samla in driftdata.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 42c7ea0b9647015f8ac049710905c8349d073093
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: da3675484c04c9c02384fcbbc0337accff2aaffe
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808217"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092127"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Inventering och synlighet i Azure
 
@@ -44,7 +44,7 @@ I den här tabellen ser du rekommenderade minimikrav för alla typer av miljöer
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-service-healthtabazureservicehealth"></a>[Azure Service Health](#tab/AzureServiceHealth)
+## <a name="azure-service-health"></a>[Azure Service Health](#tab/AzureServiceHealth)
 
 ::: zone-end
 
@@ -91,7 +91,7 @@ Läs mer i [Azure Service Health-dokumentationen](https://docs.microsoft.com/azu
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="log-analyticstablog-analytics"></a>[Log Analytics](#tab/Log-Analytics)
+## <a name="log-analytics"></a>[Log Analytics](#tab/Log-Analytics)
 
 ::: zone-end
 
@@ -120,7 +120,7 @@ Mer information finns i [dokumentationen om hur du skapar en Log Analytics-arbet
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-monitortabazure-monitor"></a>[Azure Monitor](#tab/Azure-Monitor)
+## <a name="azure-monitor"></a>[Azure Monitor](#tab/Azure-Monitor)
 
 ::: zone-end
 
@@ -166,7 +166,7 @@ Mer information finns i [dokumentationen om Azure Monitor](https://docs.microsof
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="onboard-solutionstabconfigure-solutions"></a>[Publicera lösningar](#tab/Configure-solutions)
+## <a name="onboard-solutions"></a>[Publicera lösningar](#tab/Configure-solutions)
 
 ::: zone-end
 

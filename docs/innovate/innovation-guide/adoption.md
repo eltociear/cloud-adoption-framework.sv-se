@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 58d1e420f9f1b76ea37a5ba7edc5c71aba9d0049
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 95087aeda19eb87759bc09f605c42c706d79aac2
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171097"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78891961"
 ---
 ::: zone target="docs"
 
@@ -76,7 +76,7 @@ Om du vill visa data om dina appar går du till [Azure-portalen](https://ms.port
 
 ## <a name="quantitative-feedback-for-apis"></a>[Kvantitativ feedback för API:er](#tab/Quantitative-APIs)
 
-Den anslutna ekonomin förändrar hur företagen skapar nya innovationer. Marknader och branscher utvecklas snabbare än någonsin. De här förändringarna kan ta sig många olika uttryck, och företagen måste lära sig hantera _”innovatörens dilemma”_ : att kunna hålla en snabb förändringstakt utan att det stör den pågående verksamheten.
+Den anslutna ekonomin förändrar hur företagen skapar nya innovationer. Marknader och branscher utvecklas snabbare än någonsin. De här förändringarna kan ta sig många olika uttryck, och företagen måste lära sig att hantera _”innovatörens dilemma”_ : att kunna hålla en snabb förändringstakt utan att det stör den pågående verksamheten.
 
 Företag använder API:er externt till att ändra hur de interagerar med kunder och samarbetspartner. Internt används API:er till att smidigt ansluta olika delar av verksamheten. API-ekonomin baseras på fyra byggstenar: sociala funktioner, mobila enheter, analyser och molnet. Appar och tjänster kan snabbt och kostnadseffektivt länkas samman för att skapa mervärde.
 
@@ -124,8 +124,7 @@ I kvarvarande uppgifter (eller på tavlan) registreras feedback som användarber
 
 ### <a name="action"></a>Åtgärd
 
-För Azure Board och Azure Pipelines krävs en egen portal separat från GitHub och Azure.
-Om du vill komma igång med något av de här verktygen går du till [Azure DevOps](https://dev.azure.com).
+För Azure Board och Azure Pipelines krävs en egen portal separat från GitHub och Azure. Kom igång med [Azure DevOps](https://dev.azure.com).
 
 ::: zone-end
 
