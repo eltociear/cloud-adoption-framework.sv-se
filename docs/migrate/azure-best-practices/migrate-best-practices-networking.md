@@ -1,18 +1,18 @@
 ---
-title: Metodtips för att konfigurera nätverk för arbetsbelastningar som migrerats till Azure
-description: När du har migrerat till Azure kan du få metodtips om nätverk för migrerade arbetsbelastningar.
+title: Konfigurera nätverk för arbets belastningar som migrerats till Azure
+description: Använd ramverket för moln införande för Azure för att lära dig hur du konfigurerar nätverk för migrerade arbets belastningar.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7bdfe3108c2ccdfd2661d45cc234978c784232f9
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 84ece22173c921f1a4de5701988b9fffcaedaaf7
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892709"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312160"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Metodtips för att konfigurera nätverk för arbetsbelastningar som migrerats till Azure
 

@@ -1,18 +1,18 @@
 ---
-title: Översikt med exempel på programmigrering för Azure
-description: Innehåller en översikt med de exempel på programmigrering som ingår i migreringsavsnittet för ramverket för molnimplementering.
+title: Exempel på program migrering för Azure
+description: Använd ramverket för moln införande för Azure för att lära dig hur du kan migrera lokal infrastruktur till Microsoft Azure molnet.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 639d90285c1500a661e872931456f63c188daafc
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: ecb6cfc10b88490269b50a5fe6bec7d2c3277d7b
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337463"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312585"
 ---
 # <a name="application-migration-patterns-and-examples"></a>Programmigrering – mönster och exempel
 

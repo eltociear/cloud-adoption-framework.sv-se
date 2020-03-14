@@ -1,18 +1,18 @@
 ---
 title: Förbereda ett migrerat program för produktionsbefordran
-description: En process inom molnmigreringen som fokuserar uppgifterna för att migrera arbetsbelastningar till molnet.
+description: Använd ramverket för moln införande för Azure för att förstå validering som är engagerade i att förbereda ett migrerat program för produktions befordran.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f3aad7a2b7c592478f9d48a50dc96d5fee607dc8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4b48a4ceea5d322e4a993cdba474269d73fbc7e3
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801621"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312024"
 ---
 # <a name="prepare-a-migrated-application-for-production-promotion"></a>Förbereda ett migrerat program för produktionsbefordran
 

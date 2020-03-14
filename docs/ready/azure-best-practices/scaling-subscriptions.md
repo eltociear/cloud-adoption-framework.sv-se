@@ -1,22 +1,22 @@
 ---
-title: Skalning med flera Azure-prenumerationer
-description: Lär dig att skala med flera Azure-prenumerationer.
+title: Skalning med Azure-prenumerationer
+description: Använd ramverket för moln införande för Azure för att lära dig hur du utvecklar en strategi för skalning med flera Azure-prenumerationer.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6a893ce6f8620b31fcf23d8c3e8581e95035bdcf
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 96564a10bc8dda4ed1966cf5dd41c5ea233f2327
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799802"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312663"
 ---
 # <a name="scale-with-multiple-azure-subscriptions"></a>Skala med flera Azure-prenumerationer
 
-Organisationer behöver ofta mer än en Azure-prenumeration till följd av resurs begränsningar och andra styrnings överväganden. Det är viktigt att ha en strategi för att skala dina prenumerationer.
+Organisationer behöver vanligt vis flera Azure-prenumerationer till följd av resurs begränsningar och andra styrnings överväganden. Det är viktigt att definiera en strategi för att skala dina prenumerationer.
 
 ## <a name="production-and-nonproduction-workloads"></a>Arbets belastningar för produktion och inte produktion
 
@@ -62,7 +62,7 @@ Du kan flytta många typer av resurser från en prenumeration till en annan elle
 
 ## <a name="manage-multiple-subscriptions"></a>Hantera flera prenumerationer
 
-Om du bara har ett fåtal prenumerationer är det relativt enkelt att hantera dem oberoende av varandra. Men om du har många prenumerationer bör du överväga att skapa en hierarki för hanteringsgrupper för att förenkla hanteringen av dina prenumerationer och resurser.
+Om du bara har ett fåtal prenumerationer är det relativt enkelt att hantera dem oberoende av varandra. Men om du har många prenumerationer kan du skapa en hierarki för hanterings grupper för att förenkla hanteringen av dina prenumerationer och resurser.
 
 Hanterings grupper möjliggör effektiv hantering av åtkomst, principer och efterlevnad för en organisations prenumerationer. Varje hanteringsgrupp är en container för en eller flera prenumerationer.
 
@@ -71,7 +71,7 @@ Hanterings grupper är ordnade i en enkel hierarki. Du definierar den här hiera
 Azure har fyra hanteringsnivåer: hanteringsgrupper, prenumerationer, resursgrupper och resurser. Åtkomst eller principer som tillämpas på en nivå i hierarkin tillämpas också på nivåerna under denna. En resursägare eller en prenumerationsägare kan inte ändra en nedärvd princip. Den här begränsningen förbättrar styrningen.
 
 > [!NOTE]
-> Observera att tagg arv inte är tillgängligt för tillfället, men blir snart tillgängligt.
+> Observera att tagg arv inte stöds för närvarande, men kommer snart att vara tillgängligt.
 
 Genom att förlita dig på den här arvsmodellen kan du ordna prenumerationerna i hierarkin så att varje prenumeration följer lämpliga principer och säkerhetskontroller.
 
@@ -79,11 +79,11 @@ Genom att förlita dig på den här arvsmodellen kan du ordna prenumerationerna 
 
 Alla tilldelningar av användaråtkomst eller principtilldelning för rothanteringsgruppen gäller för alla resurser inom katalogen. Tänk efter noga vilka objekt du definierar i det här omfånget. Inkludera endast de tilldelningar som du måste ha.
 
-När du ursprungligen definierar din hanteringsgrupphierarki skapar du först rothanteringsgruppen. Sedan flyttar du alla befintliga prenumerationer i katalogen till rothanteringsgruppen. Nya prenumerationer skapas alltid i rothanteringsgruppen. Du kan senare flytta dem till en annan hanterings grupp.
+När du definierar hierarkin för hanterings grupper skapar du först rot hanterings gruppen. Sedan flyttar du alla befintliga prenumerationer i katalogen till rothanteringsgruppen. Nya prenumerationer skapas alltid i rothanteringsgruppen. Du kan senare flytta dem till en annan hanterings grupp.
 
-När du flyttar en prenumeration till en befintlig hanteringsgrupp ärver den principerna och rolltilldelningarna från hanteringsgruppshierarkin ovanför den. När du har etablerat flera prenumerationer för dina Azure-arbetsbelastningar bör du skapa ytterligare prenumerationer som innehåller Azure-tjänster som andra prenumerationer delar.
+När du flyttar en prenumeration till en befintlig hanterings grupp ärver den principerna och roll tilldelningarna från hanterings gruppens hierarki ovanför den. När du har etablerat flera prenumerationer för dina Azure-arbetsbelastningar bör du skapa ytterligare prenumerationer som innehåller Azure-tjänster som andra prenumerationer delar.
 
-![Exempel på ett hierarkiträd för hanteringsgrupp](../../_images/ready/management-group-hierarchy.png)
+![Exempel på en hierarki för hanterings grupper](../../_images/ready/management-group-hierarchy-v2.png)
 
 Mer information finns i [Organisera dina resurser med hanteringsgrupper i Azure](https://docs.microsoft.com/azure/governance/management-groups).
 

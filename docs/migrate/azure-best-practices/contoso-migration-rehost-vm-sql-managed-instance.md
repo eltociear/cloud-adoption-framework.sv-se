@@ -1,6 +1,6 @@
 ---
-title: Ange en ny värd för en lokal app genom att migrera till virtuella Azure-datorer och Azure SQL Database Managed Instance
-description: Lär dig hur Contoso anger en ny värd för en lokal app på virtuella Azure-datorer genom att använda Azure SQL Database Managed Instance.
+title: Rehost på Azure och Azure SQL Database Hanterad instans
+description: Använd moln implementerings ramverket för Azure för att lära dig hur du kan vara värd för en lokal app på virtuella Azure-datorer med hjälp av Azure SQL Database Hanterad instans.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 7ec95c75d81b93852a59ef137a02cc35d83a1cd3
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 0308308ab098f7cc7fe7c05094549b01f36c2d61
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223085"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311973"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Ange en ny värd för en lokal app på en virtuell Azure-dator och SQL Database Managed Instance
 

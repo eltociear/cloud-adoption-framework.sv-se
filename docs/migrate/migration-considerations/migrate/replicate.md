@@ -1,18 +1,18 @@
 ---
-title: Vilken roll spelar replikering och synkronisering under migreringsprocessen?
-description: En process inom molnmigreringen som fokuserar på att överföra arbetsbelastningar till molnet.
+title: Replikering och migreringsprocessen
+description: Förstå den roll som replikeringen spelar i migreringsprocessen, samt hur du planerar för nödvändiga komponenter och risker med replikering.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5eaea53e65951cb5fee3d36b2eba472e1048feb2
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 31930cfef32d4a02b3892405e2c5b462e0039566
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222268"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312611"
 ---
 <!-- markdownlint-disable MD026 -->
 

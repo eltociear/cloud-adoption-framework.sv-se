@@ -1,18 +1,18 @@
 ---
-title: Byta värd för en Linux-supportapp till Azure och Azure Database for MySQL
-description: Se hur Contoso byter värd för en lokal Linux-app genom att migrera den till virtuella Azure-datorer och Azure Database for MySQL.
+title: Vara värd för en Linux Service Desk-app på Azure och Azure Database for MySQL
+description: Använd ramverket för moln införande för Azure för att lära dig hur du kan vara värd för en lokal Linux-app genom att migrera den till virtuella Azure-datorer och Azure Database for MySQL.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a5043e3d42b843cfb714823fcb476e7bfdc0a2fd
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 89ba67d795f03a424a22fbf834f07f9d45241449
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223007"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311480"
 ---
 <!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL contosohost contosodc contosovmsacc contosoosticket vcenter cswiz osticket NSGs systemctl -->
 

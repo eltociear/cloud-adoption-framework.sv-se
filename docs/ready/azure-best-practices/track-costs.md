@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 946183aca25ec2a150d6b1f2896e87ea58ad5ef6
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: b363d43568617d7c58003c2bd278008583870664
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892926"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312689"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Spåra kostnader för affärsenheter, miljöer och projekt
 
@@ -98,6 +98,8 @@ Följande omfång- och rollinställningar kommer att skapa den insyn som krävs 
 - [Team för molnstyrning](../../organize/cloud-governance.md). Ansvar för att hantera kostnader, anpassa budgeten och rapportera för alla implementeringar kräver Cost Management-deltagaråtkomst på hanteringsgrupphierarkins rotnivå.
 
   - I en välhanterad miljö har molnstyrningsteamet förmodligen redan en högre åtkomstnivå, vilket gör ytterligare omfångstilldelning för [Cost Management-deltagare](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) överflödigt.
+
+<!-- cSpell:ignore automations -->
 
 - [Molncenter för utmärkthet](../../organize/cloud-center-of-excellence.md). Ansvaret för att hantera kostnader som rör delade tjänster kräver Cost Management-deltagaråtkomst på prenumerationsnivå. Dessutom kan detta team behöva Cost Management-deltagaråtkomst till resursgrupper eller prenumerationer som innehåller tillgångar som distribuerats av CCoE-automatiseringar för att förstå hur dessa automatiseringar påverkar kostnaderna.
 

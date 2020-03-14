@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7e64edb1f009d2fe7a522a9716c3b8ba2d52ef12
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 97d4b52b50f943dfd0e146e84d4e5fc5a1d97711
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341613"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312624"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Fas 1: planering för Azure Server Management Services som krävs
 
@@ -97,7 +97,7 @@ Om du vill skapa en Log Analytics-arbetsyta med hjälp av Azure Portal går du t
 > [!NOTE]
 > När du skapar ett Automation-konto med hjälp av Azure Portal försöker portalen som standard att skapa kör som-konton för både Azure Resource Manager och de klassiska distributions modell resurserna. Om du inte har klassiska virtuella datorer i din miljö och du inte är medadministratör i prenumerationen skapar portalen ett Kör som-konto för Resource Manager, men genererar ett fel när du distribuerar det klassiska kör som-kontot. Om du inte tänker använda klassiska resurser kan du ignorera det här felet.
 >
-> Du kan också skapa kör som-konton med hjälp av [PowerShell](https://docs.microsoft.com/azure/automation/manage-runas-account#create-run-as-account-using-powershell).
+> Du kan också skapa kör som-konton med hjälp av [PowerShell](https://docs.microsoft.com/azure/automation/manage-runas-account#creating-a-run-as-account-using-powershell).
 
 ## <a name="next-steps"></a>Nästa steg
 

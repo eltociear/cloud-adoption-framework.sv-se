@@ -1,6 +1,6 @@
 ---
-title: Utvärdera lokala arbetsbelastningar för migrering till Azure
-description: Läs om hur Contoso utvärderar sina lokala datorer inför migrering till Azure genom att använda Azure Migrate och Data Migration Assistant.
+title: Utvärdera lokala arbets belastningar för Azure-migrering
+description: Lär dig mer om ett exempel på hur du kan utvärdera ett lokalt program för migrering till Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 78d33031879a49bd70a6dcfb01be604ca4371e49
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 6fc2992f98c16171173a3313fe19411c05883fa2
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228423"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312109"
 ---
 <!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL CONTOSODC contosohost vcenter prereqs ctypes ctypeslib smarthotelapp -->
 

@@ -1,18 +1,18 @@
 ---
-title: 'Förbered för kulturell komplexitet: justera roller och ansvarsområden'
-description: Förbered dig för kulturell komplexitet genom att justera roller och ansvars områden.
+title: Kulturell komplexitet för att justera roller och ansvars områden
+description: Använd ramverket för moln införande för Azure för att förbereda kulturell komplexitet genom att justera roller och ansvars områden för att öka skärpan under migreringsprocessen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 186772796694d6ef60a923c5098760a573d8db6d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 56956443bc681cc0c7e00ea13babb55a26280192
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801502"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311803"
 ---
 # <a name="prepare-for-cultural-complexity-aligning-roles-and-responsibilities"></a>Förbered för kulturell komplexitet: justera roller och ansvarsområden
 
@@ -53,7 +53,7 @@ Varje process i diskussionen om ramprinciperna för molnimplementering inkludera
 | Utvärdera | Godkännande | Godkänn den föreslagna arkitekturen. | molnstrategiteamet |
 | Migrera | Replikeringsåtkomst | Åtkomst till befintliga lokala värdar och tillgångar för att upprätta replikeringsprocesser. | molnimplementeringsteamet |
 | Optimera | Redo | Kontrollera att systemet uppfyller prestanda- och kostnadskraven inför upphöjning. | molnimplementeringsteamet |
-| Optimera | Höj upp | Behörigheter för att höja upp en arbetsbelastning till produktion och dirigera om produktionstrafiken. | molnimplementeringsteamet |
+| Optimera | Befordra | Behörigheter för att höja upp en arbetsbelastning till produktion och dirigera om produktionstrafiken. | molnimplementeringsteamet |
 | Skydda och hantera | Åtgärdsövergång | Dokumentera produktionssystem inför produktionsåtgärder. | molnimplementeringsteamet |
 
 > [!CAUTION]

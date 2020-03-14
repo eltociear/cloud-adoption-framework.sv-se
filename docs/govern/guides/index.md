@@ -10,11 +10,11 @@ ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
 ms.openlocfilehash: 51f24653998ab3cd4cf7fd043b487e4d7c1ccc5b
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
-ms.translationtype: MT
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337734"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312211"
 ---
 # <a name="cloud-governance-guides"></a>Molnstyrningsguider
 

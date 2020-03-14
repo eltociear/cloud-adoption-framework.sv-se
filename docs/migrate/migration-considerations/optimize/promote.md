@@ -1,18 +1,18 @@
 ---
-title: Vad krävs för att befordra en migrerad resurs till produktion?
-description: En process inom molnmigreringen som fokuserar uppgifterna för att migrera arbetsbelastningar till molnet.
+title: Krav för att befordra en migrerad resurs till produktion
+description: Använd ramverket för moln införande för Azure för att förstå vanliga uppgifter och standard krav för att befordra en migrerad resurs till produktion.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a357d4d5024d7671d2018276be06532134a1f137
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e2f0a0d92dfa63e0eb3f438fcc155854dfd61f8c
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801689"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311820"
 ---
 <!-- markdownlint-disable MD026 -->
 

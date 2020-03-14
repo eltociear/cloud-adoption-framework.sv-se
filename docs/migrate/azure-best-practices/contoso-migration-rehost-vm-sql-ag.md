@@ -1,6 +1,6 @@
 ---
-title: Revara värd för en app genom att migrera den till virtuella Azure-datorer och SQL Server Always on-tillgänglighetsgrupper
-description: Läs om hur Contoso byter värd för en lokal app genom att migrera den till virtuella Azure-datorer och SQL Server AlwaysOn-tillgänglighetsgrupper.
+title: Rehost på Azure och SQL Server Always on-tillgänglighetsgrupper
+description: Använd ramverket för moln införande för Azure för att lära dig hur du kan vara värd för en lokal app genom att migrera den till virtuella Azure-datorer och SQL Server Always on-tillgänglighetsgrupper.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b52b1fad33a9868682ddcd7cf905c7f8ab9b3612
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: bc530c3f97b26a519198ef7b9ddc1fce967fbed6
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222957"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311548"
 ---
 # <a name="rehost-an-on-premises-app-with-azure-virtual-machines-and-sql-server-always-on-availability-groups"></a>Vara värd för en lokal app med Azure Virtual Machines och SQL Server Always on-tillgänglighetsgrupper
 

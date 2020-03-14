@@ -7,16 +7,19 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: cb34f026b5161b20fc6e3a20bf4993b6b44ede4f
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: efd387f2f3a1c11d518e8e51d06977efdd07609c
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341612"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312481"
 ---
+<!-- cSpell:ignore VMUUID kusto -->
+
 # <a name="configure-azure-server-management-services-at-scale"></a>Konfigurera Azure Server Management Services i stor skala
 
 Du måste utföra dessa två uppgifter för att kunna publicera Azure Server Management Services till dina servrar:
+
 - Distribuera tjänst agenter till dina servrar
 - Aktivera hanterings lösningar
 
@@ -178,7 +181,7 @@ När du har skapat den här arbets ytan visar resurs instansen **program mot ska
 
 ### <a name="azure-monitor-for-vms"></a>Azure Monitor för virtuella datorer
 
-Du kan aktivera [Azure Monitor for VMS](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview) via sidan Visa för VM-instansen, enligt beskrivningen i [Aktivera hanterings tjänster på en enskild virtuell dator för utvärdering](./onboard-single-vm.md). Du bör inte aktivera lösningar direkt från **lösnings** sidan för de andra lösningarna som beskrivs i den här artikeln. För storskaliga distributioner kan det vara lättare att använda [Automation](./onboarding-automation.md) för att aktivera rätt lösningar i arbets ytan. 
+Du kan aktivera [Azure Monitor for VMS](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview) via sidan Visa för VM-instansen, enligt beskrivningen i [Aktivera hanterings tjänster på en enskild virtuell dator för utvärdering](./onboard-single-vm.md). Du bör inte aktivera lösningar direkt från **lösnings** sidan för de andra lösningarna som beskrivs i den här artikeln. För storskaliga distributioner kan det vara lättare att använda [Automation](./onboarding-automation.md) för att aktivera rätt lösningar i arbets ytan.
 
 ### <a name="azure-security-center"></a>Azure Security Center
 

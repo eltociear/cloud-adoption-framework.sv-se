@@ -1,6 +1,6 @@
 ---
 title: Innovation i den digitala ekonomin
-description: Fokusera på att förstå kundernas behov och skapa moln innovationer snabbt som formar hur dina kunder interagerar med dina produkter.
+description: Fokusera på att förstå kundernas behov och att snabbt skapa molninnovationer som formar hur kunderna interagerar med dina produkter.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
@@ -8,11 +8,11 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: b0d08b4f5ac822acd1d2a2574a9bd3d240175ca1
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
-ms.translationtype: MT
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337483"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312279"
 ---
 # <a name="innovation-in-the-digital-economy"></a>Innovation i den digitala ekonomin
 
@@ -35,7 +35,7 @@ I följande avsnitt beskrivs innovationsmetoden och vilka åtaganden som krävs 
 
 ## <a name="formula-for-innovation"></a>Formel för innovation
 
-Lyckad innovation handlar inte om någon stor, omvälvande händelse eller något magiskt under. Framgång i innovation är mer av en balanserings åtgärd, som illustreras med en enkel ekvation: **innovation = uppfinning + adoption**.
+Lyckad innovation handlar inte om någon stor, omvälvande händelse eller något magiskt under. Framgång inom innovation är mer av ett balansnummer, vilket vi kan visa med en enkel ekvation: **Innovation = uppfinning + implementering**.
 
 Innovationen sker i skärningspunkten mellan uppfinning och införande. Den verkliga innovationen är resultatet av att långsamt justera den mänskliga upplevelsen med hjälp av nya metoder, nya processer och ny teknik. Här handlar uppfinningar om att skapa en ny lösning som uppfyller ett kundbehov. Implementeringen handlar om att börja använda den nya lösningen så att det mänskliga beteendet och interaktionen formas. Det krävs flera iterationer, datadrivna beslut, konstant inlärning och utvecklingsfokus för att hitta rätt balans mellan uppfinning och implementering. Dessutom krävs det teknik som kan hålla jämna steg med de obegränsade möjligheterna till att lära sig nya saker i dagens digitala samhälle.
 

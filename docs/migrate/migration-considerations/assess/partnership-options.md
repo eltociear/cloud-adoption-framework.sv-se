@@ -1,18 +1,18 @@
 ---
 title: Förstå partnerskaps- och supportalternativ
-description: Beskriver alternativ och metoder som stödjer migrering
+description: Använd ramverket för moln införande för Azure för att förstå kopplings alternativ och metoder för att stödja kostnader för migrering.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9a525ab1c87f1cbb4c662c6f902e73de93c0204c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 0504148cd9eddce66645891527baa2ac0e98ea17
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802471"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311871"
 ---
 # <a name="understand-partnership-options"></a>Förstå partnerskapsalternativ
 
@@ -54,12 +54,12 @@ Med [FastTrack för Azure](https://azure.microsoft.com/roadmap/fasttrack-for-azu
 - Analys i molnskala**
 - Smarta appar
 - Intelligenta agenter**
-- Datamodernisering till Azure
+- Datamodernisering i Azure
 - Säkerhet och hantering
 - Globalt distribuerade data
 - IoT***
 
-*Begränsad förhandsversion i Kanada, Storbritannien, USA och Västeuropa
+*Begränsad förhandsversion i USA, Kanada, Storbritannien och Västeuropa
 
 **Begränsad förhandsversion i Storbritannien och Västeuropa
 

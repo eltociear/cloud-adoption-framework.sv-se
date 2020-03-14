@@ -1,6 +1,6 @@
 ---
 title: Azure Enterprise-kodskelett
-description: Beskriver ett företags-Autogenerera som kan hjälpa till att säkerställa en säker och hanterbar miljö.
+description: Azure Enterprise-Autogenerera är nu Microsoft Cloud implementerings ramverk för Azure. Lär dig att åtgärda behovet av styrning och balansera det med behovet av smidighet.
 author: rdendtler
 ms.author: rodend
 ms.date: 09/22/2018
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 8291b48d2955d623b643c944f4307613bcf22f47
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: c545f147ba374fe1150573b060c600269eb628b1
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79023951"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311616"
 ---
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
