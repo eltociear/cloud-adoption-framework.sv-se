@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 32b1e8933add7f2c786d424e6faabf58f9218ead
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 1420906faadb966585346aeafe0a8e7efa9aaf09
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140696"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508040"
 ---
 # <a name="subscription-decision-guide"></a>Beslutsguide för prenumerationer
 
@@ -49,7 +49,7 @@ En enstaka prenumeration per konto räcker kanske för organisationer som behöv
 
 När du är redo att distribuera en arbetsbelastning till en produktionsmiljö bör du lägga till ytterligare en prenumeration. Detta hjälper dig att hålla dina produktionsdata och andra tillgångar utanför dina utvecklings- och testningsmiljöer. Du kan också enkelt använda två olika principuppsättningar för resurser i två prenumerationer.
 
-![Mönster för produktions- och icke-produktionsprenumeration](../../_images/ready/basic-subscription-model.png)
+![Mönster för produktions- och icke-produktionsprenumeration](../../_images/ready/initial-subscription-model.png)
 
 ### <a name="workload-separation-pattern"></a>Mönster för arbetsbelastningsuppdelning
 
