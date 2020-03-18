@@ -1,6 +1,6 @@
 ---
 title: Molnmigrering
-description: Molnmigrering i Cloud Adoption Framework
+description: Lär dig att upprätta iterativa processer för att utvärdera, migrera, optimera, skydda och hantera de arbetsbelastningar du vill migrera till molnet.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: 90a9c69b311f1d4687d2691af13c3b51a7b6f813
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: c4ee7491fb5fbfa549dfe82c82e720f51188a25c
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337807"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312313"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Molnmigrering i Cloud Adoption Framework
 
@@ -21,12 +21,12 @@ Alla [molnimplementeringsplaner](../plan/index.md) i företagsskala inkluderar a
 
 ## <a name="getting-started"></a>Komma igång
 
-Om du vill förbereda dig för den här fasen av molnimplementeringens livscykel, föreslår ramverket följande fem övningar:
+Om du vill förbereda dig för den här fasen av molnimplementeringens livscykel rekommenderar ramverket följande övningar:
 
 <!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsF">
     <li style="display: flex; flex-direction: column;">
-        <a href="./azure-migration-guide/prerequisites.md?tabs=Checklist">
+        <a href="./azure-migration-guide/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -36,27 +36,8 @@ Om du vill förbereda dig för den här fasen av molnimplementeringens livscykel
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Förhandskrav för migrering</h3>
-Verifiera att en landningszon har distribuerats och är redo att vara värd för de första arbetsbelastningarna som ska migreras till Azure. Om någon molnimplementeringsstrategi eller molnimplementeringsplan inte har skapats, så kontrollera att båda dessa är på gång.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./azure-migration-guide/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
                             <h3>Migrera din första arbetsbelastning</h3>
-Ta hjälp av Azure-migreringsguiden när du migrerar din första arbetsbelastning. Detta kan du bekanta dig med verktyg och metoder som krävs för implementeringen.
+Använd Azure-migreringsguiden och bekanta dig med de inbyggda verktygen i Azure och migreringsmetoderna.
                         </div>
                     </div>
                 </div>
@@ -70,12 +51,12 @@ Ta hjälp av Azure-migreringsguiden när du migrerar din första arbetsbelastnin
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
+                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Utökade migreringsscenarier</h3>
-Utnyttja den utökade områdeschecklistan när du ska identifiera scenarier som kräver ändringar i din framtida tillståndsarkitektur, migreringsprocesser, landningszonskonfigurationer eller migreringverktygsbeslut.
+                            <h3>Migreringsscenarier</h3>
+Använd ytterligare verktyg och metoder för migrering för att ta dig an ytterligare migreringsscenarier.
                         </div>
                     </div>
                 </div>
@@ -89,12 +70,12 @@ Utnyttja den utökade områdeschecklistan när du ska identifiera scenarier som 
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
+                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Metodtips</h3>
-Verifiera alla ändringar gentemot metodtipsavsnittet så att du säkerställer korrekt implementering av utökad omfattning eller arbetsbelastings-/arkitekturspecifika migreringstyper.
+                            <h3>Bästa praxis</h3>
+Hantera vanliga migreringsbehov genom att använda bästa praxis.
                         </div>
                     </div>
                 </div>
@@ -108,12 +89,12 @@ Verifiera alla ändringar gentemot metodtipsavsnittet så att du säkerställer 
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img alt="" src="../_images/icons/5.png" data-linktype="external">
+                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Processförbättringar</h3>
-Migration är en högaktivitetsprocess. När migreringsarbetet skalas kan du använda avsnittet om migreringsöverväganden för att utvärdera och reflektera över olika aspekter av dina processer.
+Migration är en högaktivitetsprocess. När migreringsarbetet skalas kan du använda de här processförbättringarna för att utvärdera och utveckla olika aspekter av migreringen.
                         </div>
                     </div>
                 </div>
@@ -123,11 +104,16 @@ Migration är en högaktivitetsprocess. När migreringsarbetet skalas kan du anv
 </ul>
 <!-- markdownlint-enable MD033 -->
 
+Den här metodiken och stegen ovan bygger på följande antaganden:
+
+- Innan arbetsbelastningar migreras har minst en [landningszon](../ready/index.md) identifierats, konfigurerats och distribuerats för att uppfylla behoven för molnimplementeringsplanen för den nära framtiden.
+- Migrering associeras ofta med termerna _Lift and Shift_ eller _Rehost_ (värdbyte). Den här metodiken och stegen ovan bygger på tanken att inga datacenter (och mycket få arbetsbelastningar) ska migreras med en metod för endast värdbyte. Fastän värdbyte kan användas för många arbetsbelastningar brukar kunderna välja att modernisera vissa tillgångar inom varje arbetsbelastning. Under den här iterativa processen är balansen mellan hastighet och modernisering ett vanligt diskussionsämne.
+
 ## <a name="iterative-migration-process"></a>Iterativ migreringsprocess
 
 I grunden kan migrering till molnet delas in i fyra enkla faser: Utvärdera, migrera, optimera samt skydda och hantera. I det här avsnittet om Cloud Adoption Framework lär du dig att maximera avkastningen från varje fas av processen och anpassa dessa faser till din molnimplementeringsplan. Följande bild illustrerar dessa faser ur ett iterativt perspektiv:
 
-![Cloud Adoption Framework-migreringsmodellen](../_images/operational-transformation-migrate.png)
+![Cloud Adoption Framework-migreringsmodellen](../_images/migrate/methodology.png)
 
 ## <a name="create-a-balanced-cloud-portfolio"></a>Skapa en balanserad molnportfölj
 
@@ -143,7 +129,7 @@ En effektiv resa behöver ett mål. Formulera en övergripande vision av slutres
 
 De här artiklarna beskriver två resor, var och en med ett liknande mål – att migrera en stor andel av befintliga resurser till Azure. Dock påverkar affärsresultatet och det aktuella tillståndet avsevärt de processer som krävs för att nå dit. Dessa mindre avvikelser resulterar i två mycket olika tillvägagångssätt för att nå ett liknande sluttillstånd.
 
-![Cloud Adoption Framework-migreringsmodellen](../_images/operational-transformation-migrate.png)
+![Cloud Adoption Framework-migreringsmodellen](../_images/migrate/methodology.png)
 
 För att vägleda det inkrementella genomförandet under övergången till sluttillståndet separerar den här modellen migrering i två fokusområden.
 
@@ -173,48 +159,9 @@ En inkrementell migreringsmetod krävs dock fortfarande. I de flesta miljöer m�
 
 Den inkrementella migreringsmetoden i Cloud Adoption Framework underlättar skapandet av en inkrementell plan som speglar och dokumenterar tekniska och kulturella begränsningar. Målet med den här modellen är att maximera migreringshastigheten och minimera merarbete för både IT och företaget. Nedan ges två exempel på ett inkrementellt migreringsgenomförande som baseras på uppgiftslistan för migrering.
 
-<!-- markdownlint-disable MD033 -->
-
-<ul class="panelContent cardsZ">
-<li style="display: flex; flex-direction: column;">
-    <a href="./azure-migration-guide/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Guide för Azure-migrering</h3>
-                        <p><b>Sammanfattning av berättelse:</b> Den här kunden migrerar färre än 1 000 virtuella datorer. Färre än tio program som stöds ägs av en programägare som inte är i IT-organisationen. Återstående program, virtuella datorer och associerade data ägs och stöds av medlemmar i teamet för molnimplementering. Medlemmar i teamet för molnimplementering har administrativ åtkomst till produktionsmiljöerna i det befintliga datacentret.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./expanded-scope/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Guide för komplext scenario</h3>
-                        <p><b>Sammanfattning av berättelse:</b> Den här kundens migrering har komplexitet inom verksamheten, kulturen och tekniken. Den här guiden innehåller flera utmaningar med specifik komplexitet och metoder för att övervinna dessa utmaningar.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-</ul>
-
-<!-- markdownlint-enable MD033 -->
-
-Dessa två resor representerar två extremlägen av upplevelsen för kunder som investerar i migrering. De flesta företag har en kombination av de två scenarierna ovan. När du har granskat resan använder du Cloud Adoption Framework-migreringsmodellen för att påbörja migreringskonversationen och ändra baslinjeresorna för att bättre uppfylla dina behov.
-
 ## <a name="next-steps"></a>Nästa steg
 
-Välj någon av dessa resor:
+Kom igång genom att bekanta dig med [Azure-migreringsguiden](./azure-migration-guide/index.md)
 
 > [!div class="nextstepaction"]
 > [Guide för Azure-migrering](./azure-migration-guide/index.md)
->
-> [Guiden för utökat omfång](./expanded-scope/index.md)
