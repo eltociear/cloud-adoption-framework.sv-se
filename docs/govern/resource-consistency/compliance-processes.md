@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 17796b5ebe081f6e7ff14ba951db4db0d187d630
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 6751de6d448be8119dceaed86339e1c27ccc40f3
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709523"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508108"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>Processer för efterlevnad av resurs konsekvens principer
 
@@ -59,7 +59,7 @@ Följande utlösare och tvingande åtgärder innehåller exempel som du kan refe
 - **Underetablerad resurs har identifierats.** Resurser som har identifierats med mer än 80% processor-eller minnes kapacitet bör automatiskt skala upp eller att etablering av ytterligare resurser för att ge ytterligare kapacitet.
 - **Ingen Taggad resurs skapas.** Alla begär Anden om att skapa en resurs utan obligatoriska meta-taggar kommer att avvisas automatiskt.
 - **Kritiskt resurs avbrott identifierat.** IT-personal meddelas på alla identifierade avbrott i verksamhets kritiska avbrott. Om avbrott inte kan matchas omedelbart, kommer personalen att eskalera problemet och meddela arbets belastnings ägare och moln styrnings teamet. Moln styrnings teamet spårar problemet fram till lösning och uppdaterings vägledning om princip revision är nödvändig för att förhindra framtida incidenter.
-- **Konfigurations avvikelse.** Resurser som identifieras som inte uppfyller de etablerade bas linjerna bör utlösa aviseringar och åtgärdas automatiskt med hjälp av konfigurations hanterings verktyg som Azure Automation, chef, Puppet, Ansible osv.
+- **Konfigurations avvikelse.** Resurser som identifieras som inte följer etablerade bas linjer bör utlösa aviseringar och automatiskt åtgärdas med hjälp av konfigurations hanterings verktyg som Azure Automation, chef, Puppet eller Ansible.
 
 ## <a name="next-steps"></a>Nästa steg
 

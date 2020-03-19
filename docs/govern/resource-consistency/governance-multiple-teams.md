@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 62c47f8d4b3c386129c6a6a9eeb966393573ea16
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 614c43a59d7fab493aa97eca47dcd43a73987fa9
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223892"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508142"
 ---
 <!-- cSpell:ignore netops -->
 
@@ -30,7 +30,7 @@ Kraven är:
 - Stöd för flera **miljöer**. En miljö är en logisk gruppering av resurser, t. ex. virtuella datorer, virtuella nätverk och nätverks trafik tjänster för routning. Dessa resurs grupper har liknande hanterings-och säkerhets krav och används vanligt vis för ett särskilt ändamål, till exempel testning eller produktion. I det här exemplet är kravet för fyra miljöer:
   - En **delad infrastruktur miljö** som innehåller resurser som delas av arbets belastningar i andra miljöer. Till exempel ett virtuellt nätverk med ett Gateway-undernät som ger anslutning till lokalt.
   - En **produktions miljö** med de mest restriktiva säkerhets principerna. Kan omfatta interna eller externa riktade arbets belastningar.
-  - En för **produktions miljö** för utveckling och testning. Den här miljön har säkerhets-, efterlevnads-och kostnads principer som skiljer sig från dem i produktions miljön. I Azure tar detta en Enterprise Dev/Test prenumerations form.
+  - En **miljö** utan produktions miljö för utveckling och testning. Den här miljön har säkerhets-, efterlevnads-och kostnads principer som skiljer sig från dem i produktions miljön. I Azure tar detta en Enterprise Dev/Test prenumerations form.
   - En **sand Box miljö** för koncept bevis-och utbildnings syfte. Den här miljön tilldelas vanligt vis per medarbetare som deltar i utvecklings aktiviteter och har strikt procedur-och drift säkerhets kontroller på plats för att förhindra att företags data Informas här. I Azure har dessa formen av Visual Studio-prenumerationer. Dessa prenumerationer bör _inte_ heller vara knutna till företagets Azure Active Directory.
 - En **behörighets modell med minst privilegium** där användare saknar behörighet som standard. Modellen måste ha stöd för följande:
   - En enda betrodd användare (som behandlas som ett tjänst konto) i prenumerations omfånget med behörighet att tilldela resurs åtkomst rättigheter.
@@ -141,7 +141,7 @@ Nu när du har utformat en behörighets modell med minsta behörighet kan vi gå
 2. **Produktions miljö:** Flera grupper med resurser som representerar flera produktions arbets belastningar. Dessa resurser används för att vara värd för privata och offentliga program artefakter. Dessa resurser har vanligt vis de tätt flesta styrnings-och säkerhets modeller som skyddar resurserna, program koden och data från obehörig åtkomst.
 3. För **produktions miljö:** Flera grupper med resurser som representerar flera färdiga arbets belastningar som inte är produktion. Dessa resurser används för utveckling och testning av dessa resurser kan ha en mer avslappnad styrnings modell för att ge ökad flexibilitet i utvecklare. Säkerheten i dessa grupper bör öka närmare "produktion" för att få en program utvecklings process.
 
-För var och en av dessa tre miljöer finns det ett krav för att spåra kostnads data efter **arbets belastnings ägare**, **miljö**eller både och. Det innebär att du vill veta den kontinuerliga kostnaden för den **delade infrastrukturen**, **kostnaderna för enskilda** användare i både för produktions-och **produktions** miljöerna och slutligen den totala kostnaden för för produktions **-och** **produktions** miljöer.
+För var och en av dessa tre miljöer finns det ett krav för att spåra kostnads data efter **arbets belastnings ägare**, **miljö**eller både och. Det innebär att du vill veta den kontinuerliga kostnaden för den **delade infrastrukturen**, kostnaderna för enskilda personer i både ej **produktions** -och **produktions** miljöer och slutligen den totala kostnaden för **produkter** som inte är produktion och **produktions** miljöer.
 
 Du har redan lärt dig att resurserna är begränsade till två nivåer: **prenumeration** och **resurs grupp**. Det första beslutet är därför att organisera miljöer efter **prenumeration**. Det finns bara två möjligheter: en enda prenumeration eller flera prenumerationer.
 

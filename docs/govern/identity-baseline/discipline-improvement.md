@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f1ee4e64e86ccb3648badad38d2118be11b76cc7
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: cc8f2396e379180d213bd042d65f36e9eaef2828
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709370"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508125"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Förbättringar av identitets bas linje disciplin
 
@@ -119,7 +119,7 @@ När omvandlingen är klar måste styrning och åtgärder vara aktiva för den n
 **Potentiella aktiviteter:**
 
 - Genomför regelbunden granskning av identitets principer och praxis.
-- Se till att känsliga användar konton (VD, VD, VD osv.) alltid är aktiverade för Multi-Factor Authentication och avvikande inloggnings identifiering.
+- Se till att känsliga användar konton (till exempel konton för företags chefer) alltid är aktiverade för Multi-Factor Authentication och avvikande inloggnings identifiering.
 - Sök efter skadliga aktörer och data överträdelser regelbundet, särskilt sådana som rör identitets bedrägeri, till exempel potentiella administratörs konto övertag Ande.
 - Konfigurera ett övervaknings-och rapporterings verktyg.
 - Överväg att integrera mer tätt med säkerhets-och bedrägeri skydds system.

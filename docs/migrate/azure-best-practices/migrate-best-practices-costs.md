@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 89ac6886756c304d8acae5a4180a9715d336a92e
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: dd8030c884b6c5b66c733080d26f29bb8319740e
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311922"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508414"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Metodtips för kostnad och storleksändring av arbetsbelastningar som migreras till Azure
 
@@ -191,7 +191,7 @@ Med reserverade instanser för virtuell dator med Azure kan du förskottsbetala 
 
 Det är oundvikligt att du kommer att ha fler än en Azure-prenumeration. Du kan till exempel behöva ytterligare en prenumeration för att skapa en gräns mellan utveckling och produktion, eller du kanske har en plattform där varje kund måste ha en separat prenumeration. Att kunna samla in datarapporter över alla prenumerationer på en enda plattform är en värdefull funktion.
 
-Du kan göra detta med Azure Cost Management-API:er. Därefter, när du har sammanställt data i en enda källa, till exempel Azure SQL, kan du använda verktyg som Power BI för att tolka dina data. Du kan skapa sammanställda prenumerationsrapporter och detaljerade rapporter. För användare som behöver proaktiva insikter om kostnads hantering kan du till exempel skapa särskilda vyer av kostnader baserat på avdelning, resurs grupp osv. Du behöver inte ge dem fullständig åtkomst till Azures fakturerings data.
+Du kan göra detta med Azure Cost Management-API:er. Därefter, när du har sammanställt data i en enda källa, till exempel Azure SQL, kan du använda verktyg som Power BI för att tolka dina data. Du kan skapa sammanställda prenumerationsrapporter och detaljerade rapporter. För användare som behöver proaktiva insikter om kostnads hantering kan du till exempel skapa särskilda vyer av kostnader baserat på avdelning, resurs grupp eller annan information. Du behöver inte ge dem fullständig åtkomst till faktureringsdata för Azure.
 
 **Läs mer:**
 

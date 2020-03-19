@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 854e22b70250496704cade4d7465c217705c928d
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 565cb0d97fc764375f708d8e3db8f2a1c0a852e4
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094822"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508380"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -59,7 +59,7 @@ Vid användning av överföring offline krävs oftast inte [replikeringsprocesse
 
 ### <a name="suggested-action-during-the-migrate-process"></a>Föreslagna åtgärder under migreringsprocessen
 
-**Kopierings lagring:** Den här metoden kan användas för att överföra data HDFS, säkerhets kopior, arkiv, fil servrar, program osv... Befintlig teknisk vägledning förklarar hur du använder denna metod för att överföra data från [ett HDFS-lager](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) eller från diskar med [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) eller en [datakopieringstjänst](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) till Data Box.
+**Kopierings lagring:** Den här metoden kan användas för att överföra data från HDFS, säkerhets kopior, arkiv, fil servrar eller program. Befintlig teknisk vägledning förklarar hur du använder denna metod för att överföra data från [ett HDFS-lager](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) eller från diskar med [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) eller en [datakopieringstjänst](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) till Data Box.
 
 Det finns även [lösningar från tredje part](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box) som använder Azure Data Box för en typ av migrering där stora datavolymer överförs offline och sedan synkroniseras över nätverket.
 
