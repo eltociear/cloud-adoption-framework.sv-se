@@ -2,6 +2,8 @@ items:
   - name: Cloud Adoption Framework
     href: index.md
     pdf_name: Microsoft Cloud Adoption Framework for Azure
+  - name: Nyheter
+    href: getting-started/whats-new.md
   - name: Komma igång
     items:
       - name: Påbörja en molnmigrering
@@ -124,7 +126,7 @@ items:
             href: ready/azure-setup-guide/staying-current.md
       - name: Den första landningszonen
         items:
-          - name: Vad är en landningszon
+          - name: Vad är en landningszon?
             href: ready/landing-zone/index.md
           - name: Välj din första landningszon
             href: ready/landing-zone/first-landing-zone.md
@@ -608,7 +610,7 @@ items:
                         href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/data/enterprise-bi-synapse?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Hantera företagets stordata med Azure Data Lake Storage
                         href: 'https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Vad är en datasjö
+                      - name: Vad är en datasjö?
                         href: 'https://docs.microsoft.com/azure/architecture/data-guide/scenarios/data-lake?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                   - name: Samla in data
                     items:

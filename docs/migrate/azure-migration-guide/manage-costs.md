@@ -1,6 +1,6 @@
 ---
 title: Mekanismer för migreringsfokuserad kostnadskontroll
-description: Lär dig hur du ställer in budgetar, betalningar och få bättre förståelse kring faktureringen av dina Azure-resurser.
+description: Använd Cloud Adoption Framework för Azure för att lära dig hur du ställer in budgetar, betalningar och får bättre förståelse om faktureringen av dina Azure-resurser.
 author: bandersmsft
 ms.author: banders
 ms.date: 08/08/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 82c801abee32e0399eb124440868bc455034a018
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: b220929fd6348909b8f06f7a537e1052c459d24d
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222654"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312126"
 ---
+<!-- cSpell:ignore bandersmsft -->
+
 # <a name="migration-focused-cost-control-mechanisms"></a>Mekanismer för migreringsfokuserad kostnadskontroll
 
 Molnet medför ett par förändringar i hur vi arbetar, oavsett vår roll i det tekniska teamet. Kostnaden är ett bra exempel på den här ändringen. Tidigare behövde ekonomiavdelningen och IT-ledningen endast fundera på kostnaden för IT-tillgångar (infrastruktur, appar och data). Molnet ger varje medlem i den möjlighet att fatta och agera på beslut som bättre stöder slutanvändaren. Den möjligheten medför ett ansvar för att vara kostnadsmedveten när dessa beslut fattas.
@@ -45,7 +47,7 @@ För manuella kostnadsberäkningar finns det två smidiga kalkylatorer som kan g
 - [Priskalkylatorn](https://azure.microsoft.com/pricing/calculator) för Azure ger kostnadsberäkningar baserat på manuella registrerade Azure-produkter.
 - Beslut kräver ibland en jämförelse av framtida molnkostnader och de aktuella lokala kostnaderna. [Kalkylatorn för total ägandekostnad (TCO)](https://azure.microsoft.com/pricing/tco/calculator) kan ge en sådan jämförelse.
 
-Dessa manuella kostnadskalkylatorer kan användas fristående för att beräkna potentiella utgifter och besparingar. De kan också användas tillsammans med Azure Migrate kostnadsprognosverktyg för att justera kostnadsförväntningarna så att de passar alternativa arkitektur- eller prestandabegränsningar.
+Dessa manuella kostnadskalkylatorer kan användas fristående för att beräkna potentiella utgifter och besparingar. De kan också användas tillsammans med kostnadsprognosverktyg i Azure Migrate för att justera kostnadsförväntningarna så att de passar alternativa arkitektur- eller prestandabegränsningar.
 
 ## <a name="azure-migrate-calculations"></a>Azure Migrate-beräkningar
 

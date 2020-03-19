@@ -1,6 +1,6 @@
 ---
 title: Migrera tillgångar
-description: Den här guiden hjälper dig att initiera din miljömigrering genom att identifiera lämpliga verktyg för att nå ”färdigt tillstånd”, däribland inbyggda verktyg, verktyg från tredje part samt verktyg för projekthantering.
+description: Initiera migreringen till Azure genom att identifiera lämpliga verktyg att använda, däribland inbyggda verktyg, verktyg från tredje part samt verktyg för projekthantering.
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9da81d0f9c51343b7d31fbc5591607fdfd36a1aa
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
-ms.translationtype: MT
+ms.openlocfilehash: d5be29caa69a2b9a0f1e22cfb6ff704b7e17233c
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892865"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312347"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -46,8 +46,8 @@ Följ dessa steg om du vill utföra en migrering med Azure Migrate:
 1. Sök efter Azure Migrate under **Alla tjänster**. Välj **Azure Migrate** för att fortsätta.
 1. Välj **Lägg till ett verktyg** för att starta migreringsprojektet.
 1. Välj den prenumeration, resursgrupp och geografi som ska vara värd för migreringen.
-1. Välj **Välj utvärderings verktyg** > **Azure Migrate: Server utvärdering** >  **Nästa**.
-1. Välj **Granska + lägg till verktyg** och verifiera konfigurationen. Välj **Lägg till verktyg** för att starta jobbet för att skapa migreringsjobbet och registrera de valda lösningarna.
+1. Välj **Välj utvärderingsverktyg** > **Azure Migrate: Serverutvärdering** >  **Nästa**.
+1. Välj **Granska + lägg till verktyg** och verifiera konfigurationen. Välj **Lägg till verktyg** för att starta jobbet med att skapa migreringsprojektet och registrera de valda lösningarna.
 
 ### <a name="learn-more"></a>Läs mer
 
@@ -68,15 +68,15 @@ Följande steg beskriver processen med att använda Site Recovery för att migre
 1. Om du ännu inte har skapat ett återställningsvalv slutför du guiden för att skapa en resurs för **Recovery Services-valv**.
 1. I menyn **Resurs** väljer du **Site Recovery > Förbered infrastruktur > Skyddsmål**.
 1. I **Skyddsmål** väljer du vad du vill migrera.
-    1. **VMware:** Välj **Azure > Ja, med VMware vSphere hypervisor**.
-    1. **Fysisk dator:** Välj **till Azure > inte virtualiserad/övrigt**.
-    1. **Hyper-V:** Välj **Azure > Ja, med Hyper-V**. Om de virtuella Hyper-V-datorerna hanteras av VMM väljer du **Ja**.
+    1. **VMware:** Välj **Till Azure > Ja, med VMware vSphere Hypervisor**.
+    1. **Fysisk dator:** Välj **Till Azure > Inte virtualiserad/övrigt**.
+    1. **Hyper-V:** Välj **Till Azure > Ja, med Hyper-V**. Om de virtuella Hyper-V-datorerna hanteras av VMM väljer du **Ja**.
 
 ### <a name="configure-migration-settings"></a>Konfigurera migreringsinställningar
 
 1. Konfigurera källmiljön enligt vad som är lämpligt.
 1. Konfigurera målmiljön.
-    1. Välj **Förbered infrastruktur > mål**och välj sedan den Azure-prenumeration som du vill använda.
+    1. Välj **Förbered infrastruktur > Mål** och välj den Azure-prenumeration som du vill använda.
     1. Ange Resource Manager-distributionsmodellen.
     1. Site Recovery kontrollerar att du har ett eller flera kompatibla Azure-lagringskonton och Azure-nätverk.
 1. Konfigurera en replikeringsprincip.
@@ -128,7 +128,7 @@ Om det här är första gången du använder Azure Database Migration Service be
 När du har registrerat resursprovidern kan du skapa en instans av Azure Database Migration Service.
 
 1. Välj **+Skapa en resurs** och sök på marknadsplatsen efter **Azure Database Migration Service**.
-1. Slutför guiden **skapa migrations tjänst** och välj sedan **skapa**.
+1. Slutför guiden **Skapa migreringstjänst** och välj sedan **Skapa**.
 
 Tjänsten är nu redo att migrera de källdatabaser som stöds (till exempel SQL Server, MySQL, PostgreSQL eller MongoDB).
 
@@ -145,7 +145,7 @@ Mer information finns i:
 - [Översikt över Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview)
 - [Skapa en instans av Azure Database Migration Service](https://docs.microsoft.com/azure/dms/quickstart-create-data-migration-service-portal)
 - [Azure Migrate i Azure-portalen](https://portal.azure.com/#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade)
-- [Azure Portal: skapa ett migreringsjobb](https://portal.azure.com/#create/Microsoft.AzureMigrate)
+- [Azure-portalen: Skapa ett migreringsprojekt](https://portal.azure.com/#create/Microsoft.AzureMigrate)
 
 ::: zone-end
 
@@ -157,11 +157,11 @@ Med Data Migration Assistant (DMA) kan du uppgradera till en modern dataplattfor
 > För stora migreringar (vad gäller antal och storlek på databaser) rekommenderar vi att du använder Azure Database Migration Service, som kan migrera databaser i stor skala.
 >
 
-Börja använda Data Migration Assistant med följande steg:
+Följ dessa steg för att börja använda Data Migration Assistant:
 
-1. Hämta och installera Data Migration Assistant från [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53595).
-1. Skapa en utvärdering genom att välja ikonen **ny (+)** och välj sedan **bedömnings** projekt typ.
-1. Ange käll-och mål server typ och välj sedan **skapa**.
+1. Ladda ned och installera Data Migration Assistant från [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53595).
+1. Skapa en utvärdering genom att välja ikonen **Ny ( +)** och välja projekttypen **Utvärdering**.
+1. Ange typ av källserver och målserver och välj sedan **Skapa**.
 1. Konfigurera utvärderingsalternativen efter behov (standardvärden för alla rekommenderas).
 1. Lägg till de databaser som ska utvärderas.
 1. Välj **Nästa** för att starta utvärderingen.
@@ -189,9 +189,9 @@ Database Experimentation Assistant (DEA) är en ny A/B-testlösning för SQL Ser
 
 Database Experimentation Assistant innehåller följande arbetsflödesaktiviteter:
 
-- **Avbildning:** Det första steget i SQL Server A/B-testning är att avbilda en spårning på käll servern. Källservern är vanligtvis produktionsservern.
-- **Spela upp igen:** Det andra steget i SQL Server A/B-test är att spela upp spårnings filen som har registrerats på mål servrarna. Samla sedan in omfattande spårningar från återuppspelningarna för analys.
-- **Analys:** Det sista steget är att generera en analys rapport med hjälp av uppspelnings spåren. Analysrapporten kan hjälpa dig att få insikt om prestandakonsekvenserna för den föreslagna ändringen.
+- **Capture:** Det första steget i A/B-testning för SQL Server är att registrera en spårning på källservern. Källservern är vanligtvis produktionsservern.
+- **Replay:** Det andra steget i A/B-testning för SQL Server är att på nytt spela upp den spårningsfil som registrerades till målservrarna. Samla sedan in omfattande spårningar från återuppspelningarna för analys.
+- **Analysis:** Det sista steget är att generera en analysrapport med hjälp av återuppspelningsspårningarna. Analysrapporten kan hjälpa dig att få insikt om prestandakonsekvenserna för den föreslagna ändringen.
 
 Mer information finns i:
 
@@ -213,7 +213,7 @@ Det finns flera migreringsverktyg från tredje part och ISV-tjänster som kan hj
 
 ## <a name="unifycloud"></a>UnifyCloud
 
-UnifyCloud är en ISV-tjänst som tillhandahåller verktyg för bedömning, migrering och modernisering Automation.
+UnifyCloud är en ISV-tjänst som tillhandahåller automatiserade verktyg för utvärdering, migrering och modernisering.
 
 [Läs mer](https://www.unifycloud.com/)
 
@@ -259,10 +259,10 @@ Azure DevOps är det rekommenderade verktyget för projekthantering vid en molnb
 
 Microsoft erbjuder även följande verktyg för projekthantering, som kan fungera tillsammans för att tillhandahålla bredare funktioner:
 
-- [Microsoft Planner](https://tasks.office.com): ett enkelt, visuellt sätt att organisera lag arbete.
-- [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software): projekt-och portfölj hantering, hantering av resurs kapacitet, ekonomisk hantering, tid rapport och schema hantering.
-- [Microsoft Teams](https://products.office.com/microsoft-teams): Team samarbete och kommunikations verktyg. Teams integrerar även Planner och andra verktyg för att förbättra samarbetet.
-- [Azure-DevOps](https://dev.azure.com): planerings mal len för moln införande ramverk krävs inte för att använda Azure DevOps. Du kan använda tjänsten utan mallen för att hantera din infrastruktur som kod eller använda arbetsobjekt och paneler för att hantera projekt. När dina kunskaper växer kan din organisation dra nytta av CI/CD-funktionerna.
+- [Microsoft Planner](https://tasks.office.com): Ett enkelt, visuellt sätt att organisera arbete i team.
+- [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software): Projekt- och portföljhantering, hantering av resurskapacitet, ekonomihantering samt hantering av tidrapporter och scheman.
+- [Microsoft Teams](https://products.office.com/microsoft-teams): Verktyg för samarbete och kommunikation i team. Teams integrerar även Planner och andra verktyg för att förbättra samarbetet.
+- [Azure DevOps](https://dev.azure.com): Planeringsmallen för Cloud Adoption Framework krävs inte för att använda Azure DevOps. Du kan använda tjänsten utan mallen för att hantera din infrastruktur som kod eller använda arbetsobjekt och paneler för att hantera projekt. När dina kunskaper växer kan din organisation dra nytta av CI/CD-funktionerna.
 
 Det finns även fler verktyg utöver dessa. Många andra verktyg från tredje part används ofta inom projekthantering.
 
@@ -278,8 +278,8 @@ Microsoft Learn är en ny metod för inlärning. Det är inte helt enkelt att f�
 
 Här är ett exempel på en skräddarsydd utbildningsväg på Microsoft Learn som kompletterar DevOps-vägledningen i Cloud Adoption Framework.
 
-[Bygg program med Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/): samar beta med andra för att bygga dina program med hjälp av Azure-pipeliner och GitHub. Kör automatiserade tester i din pipeline för att verifiera kodkvalitet. Sök igenom källkoden och komponenter från tredje part efter potentiella sårbarheter. Skapa ditt program genom att definiera flera pipelines som fungerar tillsammans. Skapa program med hjälp av både Microsoft-baserade agenter och dina egna skapandeagenter.
+[Skapa program med Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/): Samarbeta med andra och skapa program med Azure Pipelines och GitHub. Kör automatiserade tester i din pipeline för att verifiera kodkvalitet. Sök igenom källkoden och komponenter från tredje part efter potentiella sårbarheter. Skapa ditt program genom att definiera flera pipelines som fungerar tillsammans. Skapa program med hjälp av både Microsoft-baserade agenter och dina egna skapandeagenter.
 
 # <a name="cost-management"></a>[Kostnadshantering](#tab/ManageCost)
 
-När du migrerar resurser till din molnmiljö är det viktigt att utföra regelbunden kostnadsanalys. Detta hjälper dig att undvika oväntade användningsavgifter eftersom migreringsprocessen kan ålägga dina tjänster ytterligare användningskrav. Du kan också ändra storlek på resurser efter behov för att balansera kostnader och arbets belastningar (beskrivs mer detaljerat i avsnittet **[optimera och transformera](./optimize-and-transform.md)** ).
+När du migrerar resurser till din molnmiljö är det viktigt att utföra regelbunden kostnadsanalys. Detta hjälper dig att undvika oväntade användningsavgifter eftersom migreringsprocessen kan ålägga dina tjänster ytterligare användningskrav. Du kan även ändra storlek på resurser efter behov för att balansera kostnader och arbetsbelastningar (detta beskrivs mer detaljerat i avsnittet **[Optimera och transformera](./optimize-and-transform.md)** ).
