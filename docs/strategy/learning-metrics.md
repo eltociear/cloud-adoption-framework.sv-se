@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: b7a6081f37899f11716eca07b7e6a371bcefcc94
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: a27ef0d432fc0aad64211e9b2228d4f82387f854
+ms.sourcegitcommit: 5d7e93540a679252f1c7207e62cb2ee7213a6ae9
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337876"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80069815"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -54,7 +54,7 @@ Ett ännu mer värdefullt mått är antalet instrument paneler som skapats från
 
 ## <a name="next-steps"></a>Nästa steg
 
-När inlärnings måtten har justerats är du redo att börja [utvärdera den digitala fastigheten](../digital-estate/index.md) mot dessa mått. Resultatet blir en omvandling efter [släpning eller efter släpning för migrering](../migrate/migration-considerations/prerequisites/technical-complexity.md).
+När inlärnings måtten har justerats är du redo att börja [bygga affärs ärendet](cloud-migration-business-case.md) för att leverera mot dessa mått. 
 
 > [!div class="nextstepaction"]
-> [Utvärdera den digitala fastigheten](../digital-estate/index.md)
+> [Bygg affärs väska för molnet](cloud-migration-business-case.md)
