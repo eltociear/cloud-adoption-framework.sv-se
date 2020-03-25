@@ -3,16 +3,16 @@ title: Kom igång med en färdighets beredskaps väg
 description: Leda till att moln tjänster införs genom att hjälpa organisationen att förstå och ta hänsyn till de associerade ändringarna genom att komma igång med en färdighets beredskaps väg.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 07/01/2019
+ms.date: 03/23/2020
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 3fdfbcbaabb79876d32fa8ea172b2c426ada9464
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 29c4f2aac24c80fcec877e5645dbe61363af5983
+ms.sourcegitcommit: a1209c9dab369171e1fe0cdc6a58e3f6ae6a8f22
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892692"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80261478"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Komma igång med en färdighets beredskaps väg
 
@@ -34,6 +34,7 @@ Moln implementerings ramverket hjälper till att läsa igenom hela livs cykeln f
 - **Arbeta:** Kunskaper som rör drifts modellen för moln införande är justerade med olika möjligheter att få kunskaper:
   - **Styr:** Få de kunskaper som krävs för att styra moln miljön.
   - **Hantera:** Få de kunskaper som krävs för att hantera en moln miljö.
+  - **[Övervakare](../manage/monitor/suggested-skills.md):** Få de kunskaper som krävs för att övervaka en moln miljö.
 
 Var och en av de tidigare inlärnings vägarna delar affärs möjligheter över flera medie typer för att maximera kunskaps förvärvet.
 
