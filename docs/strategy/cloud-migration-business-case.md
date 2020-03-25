@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 28762d3540124b40bd3db4d7bd431033a1c25b5f
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: 2b255d85b8df33f712238d0457a0e78a5481801d
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337962"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225725"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>Bygg en affärs justering för molnbaserad migrering
 
@@ -68,7 +68,7 @@ Vi kan packa upp den här ekvationen för att få en migrering som är speciell 
 
 ## <a name="migration-specific-initial-investment"></a>Migrering-bestämd första investering
 
-- Moln leverantörer som Azure-erbjudande kalkylatorer för att beräkna moln investeringar. [Pris Kalkylatorn för Azure](https://azure.microsoft.com/pricing) är ett exempel.
+- Moln leverantörer som Azure-erbjudande kalkylatorer för att beräkna moln investeringar. [Pris Kalkylatorn för Azure](https://azure.com/calculator) är ett exempel.
 - Vissa moln leverantörer tillhandahåller även kostnads förändrings kalkylatorer. [Kostnaden för total ägande kostnad (TCO) för Azure](https://azure.com/tco) är ett exempel.
 - Om du vill ha mer förfinade kostnads strukturer bör du överväga att [Planera en digital fastighets planering](../digital-estate/index.md) .
 - Uppskatta kostnaden för migrering.

@@ -7,12 +7,12 @@ ms.date: 03/09/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 1ec13eca60f8e3ed4f2d30b9c4c1b6b0138905a3
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: c7b3a4d946eac1b5296f4d37d50872105ce756ea
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79510814"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225963"
 ---
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Vad är nytt i Microsoft Cloud implementerings ramverk för Azure
 
@@ -20,7 +20,19 @@ Här är en lista över de senaste ändringarna som gjorts i moln införande ram
 
 Det här ramverket är byggt i samarbete med kunder, partner och interna Microsoft-team. Nytt och uppdaterat innehåll släpps när det blir tillgängligt. Med dessa versioner kan du testa, validera och förfina vägledningen tillsammans med oss. Vi rekommenderar att du samarbetar med oss för att bygga ramverket för moln införande för Azure.
 
-## <a name="march-2020"></a>Mars 2020
+## <a name="march-20-2020"></a>20 mars 2020
+
+Vi har lagt till vägledning som innehåller verktyg, program och innehåll kategoriserade av persona för att driva en lyckad distribution av program på Kubernetes, från koncept bevis till produktion, följt av skalning och optimering.
+
+### <a name="kubernetes"></a>Kubernetes
+
+| Artikel                                                                                     | Beskrivning                                                                                                                                                                           |
+|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Program utveckling och-distribution](../innovate/kubernetes/application-development.md) | **Ny artikel** Innehåller check listor, resurser och bästa metoder för att planera program utveckling, konfigurera DevOps-pipelines och implementera site pålitlighet för Kubernetes. |
+| [Kluster design och-åtgärder](../innovate/kubernetes/cluster-design-operations.md) | **Ny artikel** Innehåller check listor, resurser och metod tips för kluster konfiguration, nätverks design, framtida skalbarhet, affärs kontinuitet och haveri beredskap för Kubernetes. |
+| [Kluster-och program säkerhet](../innovate/kubernetes/cluster-application-security.md) | **Ny artikel** Innehåller check listor, resurser och metod tips för Kubernetes säkerhets planering, produktion och skalning. |
+
+## <a name="march-2-2020"></a>2 mars 2020
 
 Som svar på feedback om kontinuitet i migrations metoden genom flera delar av moln implementerings ramverket, inklusive strategi, planera, redo och migrering, har vi gjort följande uppdateringar. Dessa uppdateringar är utformade för att göra det enklare för dig att förstå planering och införande av fin justeringar när du fortsätter med migreringen.
 
