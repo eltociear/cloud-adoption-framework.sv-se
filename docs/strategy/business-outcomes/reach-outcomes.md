@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: c4fa1d608f62497869c0498ba82cbdce649af1e2
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 43cec9da3a49bb755f6fa35c757f5e7aaf342db1
+ms.sourcegitcommit: e21e70a5ad7bff2f2009a2da8e91a54fccd6d38f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092461"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80299117"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>Exempel på globala räckvidds resultat
 
@@ -30,7 +30,7 @@ Att utöka till en ny marknad kan vara en av de mest värdefulla affärs resulta
 
 ## <a name="data-sovereignty"></a>Data suveränitet
 
-Vid drift på nya marknader införs ytterligare styrnings begränsningar. GDPR är ett exempel på styrnings kriterier som kan orsaka betydande ekonomiska återkurs. Azure tillhandahåller erbjudanden för regelefterlevnad som hjälper kunderna att uppfylla efterlevnaden av efterlevnaden för reglerade branscher och globala marknader. Mer information finns i [Översikt över Microsoft Azure efterlevnad](https://aka.ms/AzureCompliance).
+Vid drift på nya marknader införs ytterligare styrnings begränsningar. GDPR är ett exempel på styrnings kriterier som kan orsaka betydande ekonomiska återkurs. Azure tillhandahåller erbjudanden för regelefterlevnad som hjälper kunderna att uppfylla efterlevnaden av efterlevnaden för reglerade branscher och globala marknader. Mer information finns i [Översikt över Microsoft Azure efterlevnad](https://azure.microsoft.com/overview/trusted-cloud/compliance/).
 
 - **Exempel:** En leverantör av USA-baserade verktyg har tilldelats ett avtal för att tillhandahålla verktyg i Kanada. Kanadensisk data suveränitets lagstiftning kräver att kanadensiska data hålls i Kanada. Det här företaget hade arbetat med en moln aktive rad program innovation i flera år. Det innebär att deras program vara kan distribueras via fullständigt skriptbaserade DevOps-processer. Med några mindre ändringar i kodbasen kunde de distribuera en fungerande kopia av koden till ett Azure-datacenter i Kanada, uppfylla data suveränitets efterlevnad och hålla kunden.
 
