@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: ad8b6259aaa0808e2628fed9b88f0f806c46e655
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: a75c014401a8a45eee0d0e301cf209ad3eda690b
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341988"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225810"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Håll dig uppdaterad med Microsoft Azure
 
@@ -51,11 +51,15 @@ Följande resurser kan hjälpa dig att hålla dig uppdaterad med Azure:
 
 Ta en titt på de resurser som anges här för djupare innehåll som du kan använda för att hålla dig uppdaterad med Azure:
 
-- [Azure Charts](https://azurecharts.com/)
-  - Den här inofficiella visualiseringen visar alla Azure-uppdateringar som gjorts under de senaste sex månaderna. Den innehåller andra användbara diagram och verktyg som hjälper dig att spåra Azure-ändringar.
 - [Azure Friday](https://channel9.msdn.com/Shows/Azure-Friday)
   - Veckovis med videor med de tekniker som utgör grunden för Azure. De visar demonstrationer, svarar på frågor och delar med sig av insikter.
   - Prenumerera via [RSS](https://channel9.msdn.com/Shows/Azure-Friday/feed).
-- [Azure Weekly](https://azureweekly.info)
-  - Det här nyhets brevet är en inofficiell resurs som produceras av [endjin](https://endjin.com). Den innehåller en sammanfattning av veckans viktigaste nyheter om Microsoft Azure. Den innehåller också intressant historiskt innehåll.
+- [Azure Charts](https://azurecharts.com/)*
+  - Den här visualiseringen visar alla Azure-uppdateringar som gjorts under de senaste sex månaderna. Den innehåller andra användbara diagram och verktyg som hjälper dig att spåra Azure-ändringar.
+- [AzAdvertizer](https://www.azadvertizer.net/)*
+  - Lanserings- och ändringsspårning av Azure-styrningsfunktioner (t.ex. Azure Policy, principinitiativ, principalias och RBAC).
+- [Azure Weekly](https://azureweekly.info)*
+  - Detta nyhetsbrev tillhandahålls av [endjin](https://endjin.com) och innehåller en sammanfattning av veckans viktigaste nyheter om Microsoft Azure. Den innehåller också intressant historiskt innehåll.
   - Prenumerera via [e-post](https://azureweekly.info).
+
+\* *Dessa resurser tillhandahålls av communityn och hanteras inte officiellt av Microsoft.*

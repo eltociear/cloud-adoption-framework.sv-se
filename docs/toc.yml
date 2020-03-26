@@ -1140,6 +1140,8 @@ items:
                 href: manage/monitor/alerting.md
               - name: Översikt över övervakningsplattformar
                 href: manage/monitor/platform-overview.md
+              - name: Färdigheter som är relevanta för övervakning
+                href: manage/monitor/suggested-skills.md
           - name: Centralisera hanteringsåtgärder
             href: manage/centralize-operations.md
           - name: Etablera granskning av driftslämplighet
