@@ -7,13 +7,15 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: ec888ba0c21187e71e825ff24aaadf068dc2a191
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: dc82f4d8ad21bcbb9d36b00fbdad1f91d6d4ec2c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709421"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356947"
 ---
+<!-- cSpell:ignore CISO -->
+
 # <a name="ciso-cloud-readiness-guide"></a>IT Cloud readiness guide
 
 Microsofts vägledning som ramverket för moln införande är inte placerad för att fastställa eller vägleda de unika säkerhets begränsningarna i tusentals företag som stöds av den här dokumentationen. När du flyttar till molnet är rollen som säkerhets tjänsteman eller IT (Chief information Security) inte supplanted av moln teknik. Det stämmer att IT och kontoret i IT blir mer kornigt och integrerat. Den här guiden förutsätter att läsaren är bekant med IT-processer och försöker att modernisera dessa processer för att aktivera moln omvandling.

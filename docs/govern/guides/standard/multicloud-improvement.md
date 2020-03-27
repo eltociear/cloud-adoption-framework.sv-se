@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a83e2b8a0892e216106890e0bed0066be527e974
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: a9c09aaf915a7f008cde80ebdc050ee95bbf7430
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709268"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357017"
 ---
+<!-- cSpell:ignore MPLS -->
+
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>Standard styrnings guide för företag: multicloud-förbättringar
 
 Den här artikeln går vidare genom att lägga till kontroller för att införa ett moln.
@@ -32,7 +34,7 @@ I föregående fas av den här delen hade företaget börjat aktivt skicka produ
 Sedan dess har vissa saker ändrats som påverkar styrning:
 
 - Identiteten styrs av en lokal instans av Active Directory. Hybrid identitet under lättas genom replikering till Azure Active Directory.
-- IT-åtgärder eller moln åtgärder hanteras i stor utsträckning av Azure Monitor och relaterade automatiseringar.
+- IT-åtgärder eller moln åtgärder hanteras i stor utsträckning av Azure Monitor och relaterade automatiserade processer.
 - Haveri beredskap och affärs kontinuitet styrs av Azure Vault-instanser.
 - Azure Security Center används för att övervaka säkerhets överträdelser och attacker.
 - Azure Security Center och Azure Monitor används båda för att övervaka styrning av molnet.

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 3e7d19fbce96528252e297855a1de41b09492c81
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 5cd0a9f4a9ec7d32b2aced903f2689884c32e97c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223812"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356978"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>Upprätta en grund för en första molnbaserad styrning
 
@@ -24,7 +24,9 @@ Den här artikeln innehåller två alternativ för att upprätta en första grun
 
 ## <a name="already-using-the-cloud-adoption-framework"></a>Använder redan moln införande ramverket
 
-Om du har följt med ramverket för moln införande kanske du redan har distribuerat en styrnings MVP. Styrning är en grundläggande aspekt av alla operativ modeller. Den finns i alla metoder i moln implementeringens livs cykel. Därför ger moln implementerings [ramverket](../index.md) vägledning för att mata in styrning i aktiviteter relaterade till implementeringen av din [moln](../plan/index.md)implementerings plan. Ett exempel på den här styrnings integrationen är att använda skisser för att distribuera en eller flera landnings zoner som finns i den [färdiga](../ready/index.md) vägledningen. Ett annat exempel är vägledning för att [skala ut prenumerationer](../ready/azure-best-practices/scaling-subscriptions.md). Om du har följt någon av dessa rekommendationer är följande MVP-avsnitt helt enkelt en granskning av dina befintliga distributions beslut. När du har en snabb granskning kan du gå vidare till [den första styrnings lösningen och tillämpa bästa praxis kontroller](./foundation-improvements.md).
+Om du har följt med ramverket för moln införande kanske du redan har distribuerat en styrnings MVP. Styrning är en grundläggande aspekt av alla operativ modeller. Den finns i alla metoder i moln implementeringens livs cykel. Därför ger moln implementerings [ramverket](../index.md) vägledning för att mata in styrning i aktiviteter relaterade till implementeringen av din [moln](../plan/index.md)implementerings plan.
+
+Ett exempel på den här styrnings integrationen är att använda skisser för att distribuera en eller flera landnings zoner som finns i den [färdiga](../ready/index.md) vägledningen. Ett annat exempel är vägledning för att [organisera och hantera dina prenumerationer](../ready/azure-best-practices/organize-subscriptions.md). Om du har följt någon av dessa rekommendationer är följande MVP-avsnitt helt enkelt en granskning av dina befintliga distributions beslut. När du har en snabb granskning kan du gå vidare till [den första styrnings lösningen och tillämpa bästa praxis kontroller](./foundation-improvements.md).
 
 ## <a name="establish-an-initial-governance-foundation"></a>Upprätta en grund för inledande styrning
 
@@ -40,7 +42,7 @@ Följande är två exempel på inledande styrnings stiftelser (kallas även för
                 <div class="card">
                     <div class="cardText">
                         <h3>Standardguide för styrning</h3>
-                        <p>En guide för de flesta organisationer baserat på den rekommenderade modellen med två prenumerationer, som är utformat för distributioner i flera regioner men som inte omfattar offentliga och nationella/myndighetsbaserade moln.</p>
+                        <p>En guide för de flesta organisationer, baserat på den rekommenderade inledande två prenumerations modellen, som är utformad för distributioner i flera regioner, men som inte sträcker sig över offentliga och suveräna/offentliga moln.</p>
                     </div>
                 </div>
             </div>

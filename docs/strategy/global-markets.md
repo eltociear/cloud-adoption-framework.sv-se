@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 267408d4634bbed9c6bb9c8884e2af395f5df4d9
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: e2e0399f227f69ef1ae27b6b23a847a6508650d4
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337839"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353495"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -42,8 +42,7 @@ Det är lika viktigt att förstå användnings mönstren för externa användare
 
 ## <a name="next-steps"></a>Nästa steg
 
-När globala marknads beslut har fattats och meddelats är teamet redo att börja [upprätta tekniska standarder](../digital-estate/index.md) mot dessa mått.
-Resultatet blir en omvandling efter [släpning eller efter släpning för migrering](..//migrate/migration-considerations/prerequisites/technical-complexity.md).
+Lär dig mer om de [kunskaper som krävs under strategi fasen](./suggested-skills.md) i din moln implementerings resa.
 
 > [!div class="nextstepaction"]
-> [Utvärdera den digitala fastigheten](../digital-estate/index.md)
+> [Färdigheter som är relevanta för strategin](./suggested-skills.md)

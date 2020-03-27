@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 8c3ee0a75efa74aa1599399358bac267c5ffe1de
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: b1fceb8a7b54ce88917f6feaef6ea70f5aa2f023
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79091927"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355631"
 ---
+<!-- cSpell:ignore Hanu Scalr VHDs autosnooze unsnooze -->
+
 # <a name="scale-a-migration-to-azure"></a>Skala en migrering till Azure
 
 Den här artikeln visar hur det fiktiva företaget Contoso utför en migrering i stor skala till Azure. De funderar på hur de ska planera och utföra en migrering av fler än 3000 arbetsbelastningar, 8000-databaser och över 10 000-virtuella datorer.
@@ -306,7 +308,7 @@ När Contoso har flyttat resurser till Azure måste de effektivisera dem för at
 För att få ut så mycket som möjligt av sin molninvestering använder Contoso det kostnadsfria verktyget Azure Cost Management.
 
 - Med den här licensierade lösningen som har skapats av Cloudyn, ett dotterbolag till Microsoft, kan Contoso hantera molnutgifter med insyn och precision. Den innehåller verktyg för att övervaka, allokera och minska molnkostnader.
-- Azure Cost Management innehåller enkla rapportpaneler som hjälper med kostnadsallokering, kostnadsvisning och debitering baserat på faktisk förbrukning.
+- Azure Cost Management innehåller enkla instrument panels rapporter som hjälper dig med kostnadsallokering, showbacks och åter betalningar.
 - Cost Management optimerar molnutgifterna genom att identifiera underutnyttjade resurser som Contoso sedan kan hantera och anpassa.
 - [Läs mer](https://docs.microsoft.com/azure/cost-management/overview) om Azure Cost Management.
 

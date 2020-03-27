@@ -8,12 +8,12 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 02/28/2020
-ms.openlocfilehash: 4a6bd2f6a14d4726695f76a776c01a421931005c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 7e98461d0cba205f05400d0ffd8b9ae64c0b69d5
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79091970"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356859"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Microsoft Cloud Adoption Framework för Azure
 
@@ -182,6 +182,8 @@ Avsnitt av Cloud Adoption Framework representerar olika specialiseringar eller v
 ## <a name="how-to-use-the-microsoft-cloud-adoption-framework-for-azure"></a>Så använder du Microsoft Cloud Adoption Framework för Azure
 
 Om Azure är nytt för ditt företag kan du börja med att läsa avsnittet [Kom igång med Cloud Adoption Framework](./getting-started/migrate.md). Den här översikten ger riktlinjer för företagets digitala omvandling, och du får vägledning genom varje steg i processen.
+
+<!-- test:ignoreNextStep -->
 
 > [!div class="nextstepaction"]
 > [Komma igång](./getting-started/migrate.md)

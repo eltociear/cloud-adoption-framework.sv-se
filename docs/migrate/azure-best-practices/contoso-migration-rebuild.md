@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 1b8afc8da78d171d0d420730f05d5583b231ddd1
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 45d5a27e6d7ba933c82bc41825e76cf8f7830767
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223100"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356348"
 ---
 <!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel smarthotelcontoso smarthotelakseus smarthotelacreus smarthotelpets smarthotelpetchecker smarthotelsettingsurl vcenter WEBVM SQLVM eastus kubectl contosodevops visualstudio azuredeploy cloudapp publishfront petchecker appsettings -->
 
@@ -634,6 +634,6 @@ Microsoft Learn är en ny metod för inlärning. Det är inte helt enkelt att f�
 
 Här följer några exempel på skräddarsydda utbildnings vägar på Microsoft Learn som överensstämmer med contoso SmartHotel360-appen i Azure.
 
-[Distribuera en webbplats till Azure med Azure App Service](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service/): med webbappar i Azure kan du enkelt publicera och hantera din webbplats utan att behöva arbeta med de underliggande servrarna, lagrings enheterna eller nätverks resurserna. Fokusera istället på webbplatsens funktioner och låt den robusta Azure-plattformen ge säker åtkomst till din webbplats.
+[Distribuera en webbplats till Azure med Azure App Service](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service): med webbappar i Azure kan du enkelt publicera och hantera din webbplats utan att behöva arbeta med de underliggande servrarna, lagrings enheterna eller nätverks resurserna. Fokusera istället på webbplatsens funktioner och låt den robusta Azure-plattformen ge säker åtkomst till din webbplats.
 
-[Bearbeta och klassificera avbildningar med Azure-funktionen vision Services](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services/): Azure Cognitive Services erbjuder inbyggda funktioner för att aktivera funktioner för dator vision i dina program. Lär dig hur du använder kognitiv vision Services för att identifiera ansikten, tagga och klassificera bilder och identifiera objekt.
+[Bearbeta och klassificera avbildningar med Azure-funktionen vision Services](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services): Azure Cognitive Services erbjuder inbyggda funktioner för att aktivera funktioner för dator vision i dina program. Lär dig hur du använder kognitiv vision Services för att identifiera ansikten, tagga och klassificera bilder och identifiera objekt.

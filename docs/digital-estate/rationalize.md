@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 14f96dde6558588c092a181aa2b7a2e57220cf5f
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 042487ce2c579f581547e4942785cbbba659ad5e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312429"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357258"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationalisera den digitala egendomen
 
@@ -124,8 +124,8 @@ Parallellt med fortsatt rationalisering kan moln implementerings teamet börja m
 - Förbättra färdigheterna med moln leverantörens plattform.
 - Definiera de kärn tjänster (och Azure-standarder) som behövs för att passa den långsiktiga visionen.
 - Bättre förståelse för hur åtgärder kan behöva ändras senare i omvandlingen.
-- Förstå eventuella affärs risker och affärs tolerans för dessa risker.
-- Upprätta en bas linje eller en minimal livskraftig produkt (MVP) för styrning baserat på affärs risk tolerans.
+- Förstå eventuella affärs risker och företagets tolerans för dessa risker.
+- Upprätta en bas linje eller en minimal livskraftig produkt (MVP) för styrning baserat på företagets risk tolerans.
 
 ## <a name="release-planning"></a>Versions planering
 

@@ -7,13 +7,15 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 84ece22173c921f1a4de5701988b9fffcaedaaf7
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 7cdb1e56b38615e7878352d6e336e0f01261f6ce
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312160"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354115"
 ---
+<!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
+
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Metodtips för att konfigurera nätverk för arbetsbelastningar som migrerats till Azure
 
 När du planerar och utformar din migrering är ett av de viktigaste stegen, utöver själva migreringen, utformningen och implementeringen av Azure-nätverk. Den här artikeln innehåller metodtips för nätverk när du migrerar till IaaS- och PaaS-implementeringar i Azure.
@@ -40,7 +42,7 @@ När du planerar din topologi för det virtuella nätverket bör du fundera på 
 
 När du skapar virtuella nätverk som en del av migreringen är det viktigt att planera det virtuella nätverkets IP-adressutrymme.
 
-- Du bör tilldela ett adressutrymme som inte är större än CIDR-intervallet på /16 för varje virtuellt nätverk. Virtuella nätverk gör det möjligt att använda 65 536 IP-adresser och tilldela ett mindre prefix än/16, till exempel en/15 som har 131 072-adresser, vilket leder till att de överskjutande IP-adresserna blir unusuable andra. Det är viktigt att inte slösa IP-adresser även om de ligger i de privata intervall som definieras av RFC 1918.
+- Du bör tilldela ett adressutrymme som inte är större än CIDR-intervallet på /16 för varje virtuellt nätverk. Virtuella nätverk tillåter att IP-adresser med 65 536 används och tilldelar ett mindre prefix än/16, t. ex. a/15, som har 131 072-adresser, vilket leder till att de överskjutande IP-adresserna blir oanvändbara någon annan stans. Det är viktigt att inte slösa IP-adresser även om de ligger i de privata intervall som definieras av RFC 1918.
 - Det virtuella nätverkets adressutrymme bör inte överlappa de lokala nätverksintervallen.
 - Network Address Translation (NAT) bör inte användas.
 - Överlappande adresser kan leda till att nätverk inte kan anslutas och att routning inte fungerar som det ska. Om nätverket överlappar måste du ändra dess utformning eller använda Network Address Translation (NAT).
@@ -177,7 +179,7 @@ När du konfigurerar ett plats-till-plats-VPN gör du följande:
 - Du skapar en VPN-gateway, anger Gateway-typ (VPN) och om gatewayen är principbaserad eller routningsbaserad. En Route-baserad VPN anses vara mer kapabel och kan granskas i framtiden.
 - Du skapar en lokal nätverksgateway lokalt och konfigurerar den lokala VPN-enheten.
 - Du skapar en redundant plats-till-plats-VPN-anslutning mellan den virtuella nätverksgatewayen och den lokala enheten. Med routningsbaserad VPN kan du antingen använda aktiv-passiv eller aktiv-aktiv anslutning till Azure. Routningsbaserad stöder dessutom både plats-till-plats-anslutning (från valfri dator) och punkt-till-plats-anslutning (from en enda dator) samtidigt.
-- Välj den gateway-SKU som du vill använda. Detta beror på arbetsbelastningskrav, dataflöden, funktioner och serviceavtal.
+- Välj den gateway-SKU som du vill använda. Detta beror på dina arbets belastnings krav, data flöde, funktioner och service avtal.
 - BGP (Border Gateway Protocol) är en valfri funktion som du kan använda med Azure ExpressRoute och routningsbaserade VPN-gatewayer för att sprida dina lokala BGP-vägar till dina virtuella nätverk.
 
 ![VPN](./media/migrate-best-practices-networking/vpn.png)

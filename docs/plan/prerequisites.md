@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: f229515b39c69fa0e9e6c840810720bca4e12dc6
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: f1c35b41f267887c62b2568583b929657517c87e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342056"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354844"
 ---
 # <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>Krav för en effektiv moln införande plan
 
@@ -40,7 +40,7 @@ Dessa frågor är nödvändiga för att planera implementeringen av molnet. Som 
 
 ## <a name="next-steps"></a>Nästa steg
 
-När teamet är bekanta med de strategiska inmatningarna och inmatningarna för digital egendom rationalisering, kan nästa steg i [arbets belastnings prioriteringen](./workloads.md) börja.
+[Distribuera mallen för moln implementerings planen](./template.md) till Azure-DevOps.
 
 > [!div class="nextstepaction"]
-> [Prioritera och definiera arbets belastningar](./workloads.md)
+> [Distribuera mallen till Azure-DevOps](./template.md)

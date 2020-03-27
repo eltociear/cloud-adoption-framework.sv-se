@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b44a5d9c8e0447488abd500afeaa70fb87a819b1
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 3130494f151897d005a5ded28268d056f15bd15c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311956"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355950"
 ---
 <!-- cSpell:ignore SQLVM OSTICKETWEB OSTICKETMYSQL contosohost contosodc vcenter WEBVM systemctl NSGs -->
 
@@ -290,7 +290,7 @@ Nu när appen körs måste Contoso operationalisera och säkra den nya infrastru
 
 ### <a name="security"></a>Säkerhet
 
-Contosos säkerhetsteam granskar de virtuella datorerna OSTICKETWEB och OSTICKETMYSQL för att identifiera eventuella säkerhetsproblem.
+Contoso-säkerhetsgruppen granskar OSTICKETWEB-och OSTICKETMYSQL-VM: ar för att fastställa säkerhets problem.
 
 - Teamet granskar nätverkssäkerhetsgrupperna (NSG:er) för de virtuella datorerna för åtkomstkontroll. Nätverkssäkerhetsgrupper används för att säkerställa att endast trafik som tillåts för programmet kan passera.
 - Teamet överväger också att skydda data på de virtuella datordiskarna med diskkryptering och Azure Key Vault.
@@ -301,8 +301,8 @@ Mer information finns i [rekommenderade säkerhets metoder för IaaS-arbetsbelas
 
 För affärskontinuitet och haveriberedskap vidtar Contoso följande åtgärder:
 
-- **Skydda data.** Contoso säkerhetskopierar data på de virtuella datorerna med hjälp av Azure Backup-tjänsten. [Läs mer](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
-- **Undvik avbrott i apparna.** Contoso replikerar appens virtuella datorer i Azure till en sekundär region med hjälp av Site Recovery. [Läs mer](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
+- **Skydda data.** Contoso säkerhetskopierar data på de virtuella datorerna med hjälp av tjänsten Azure Backup. [Läs mer](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
+- **Undvik avbrott i apparna.** Contoso replikerar de virtuella datorerna för appen i Azure till en sekundär region med hjälp av Site Recovery. [Läs mer](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 
 ### <a name="licensing-and-cost-optimization"></a>Licensierings- och kostnadsoptimering
 

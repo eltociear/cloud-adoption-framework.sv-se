@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 7569d0718f7b25625cc40887af81edda53ff0b1e
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: be9d5e49fe4c03335fc28636616f97812d1d2312
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093891"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355006"
 ---
 # <a name="cloud-governance-capabilities"></a>Funktioner för moln styrning
 
@@ -90,7 +90,7 @@ Skillnaden är diskret, men det är en viktig skillnad när du skapar en styrnin
 
 Moln skydd börjar använda mer avancerade styrnings metoder för att påskynda plattforms distributionen och hjälpa team att själv underhålla sina miljö behov, så att de kan gå snabbare. Exempel på dessa mer avancerade funktioner finns i de stegvisa förbättringarna av styrnings-MVP: t, till exempel [förbättring av säkerhets bas linjen](../govern/guides/complex/security-baseline-improvement.md).
 
-**Moln acceleratorer:** Moln skydd och moln förmyndare komponenter naturlig skördad skript och automatiseringar som påskyndar distributionen av miljöer, plattformar eller till och med komponenter i olika program. Att granska och dela dessa skript förutom centraliserade styrnings ansvars områden utvecklar en hög grad av respekt för dessa arkitekter inom IT.
+**Moln acceleratorer:** Moln skydd och moln förmyndare komponenter naturlig skörding av skript och automatiserade processer som påskyndar distributionen av miljöer, plattformar eller till och med komponenter i olika program. Att granska och dela dessa skript förutom centraliserade styrnings ansvars områden utvecklar en hög grad av respekt för dessa arkitekter inom IT.
 
 De som arbetar med att dela med sig av sina granskade skript hjälper till att leverera teknik projekt snabbare och inbäddad styrning i arbets Belastningens arkitektur. Den här arbets belastnings påverkan och stöd för väldesignade mönster ökar moln acceleratorerna till en högre rangordning av styrnings specialisten.
 

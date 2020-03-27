@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 652c980c1a9c389b7a305ab8f948a0c2073e5d0f
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: f873e95e70fbc9afb06a4603d4be6f9e757d869f
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80225922"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355544"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Beslutsguide för principframtvingande
 
@@ -56,7 +56,7 @@ I Azure kan du tillämpa konfigurationsinställningar och regler för resursskap
 
 I takt med att din molnegendom växer till att omfatta många obligatoriska prenumerationer måste du fokusera på en strategi som omfattar hela molnegendomen för att säkerställa principefterlevnad.
 
-Din [prenumerationsdesign](../subscriptions/index.md) måste ta hänsyn till förhållandet mellan principer och organisationens struktur. Utöver att stödja komplex organisering i din prenumerationsdesign kan [Azure-hanteringsgrupper](../../ready/azure-best-practices/scaling-subscriptions.md#manage-multiple-subscriptions) användas för att tilldela Azure Policy-regler över flera prenumerationer.
+Din [prenumerationsdesign](../subscriptions/index.md) måste ta hänsyn till förhållandet mellan principer och organisationens struktur. Utöver att stödja komplex organisering i din prenumerationsdesign kan [Azure-hanteringsgrupper](../../ready/azure-best-practices/organize-subscriptions.md) användas för att tilldela Azure Policy-regler över flera prenumerationer.
 
 ## <a name="automated-enforcement"></a>Automatiserat framtvingande
 

@@ -7,16 +7,16 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: c7e90c1536b2911f8301b1a97f8731139976b4f1
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 7cefe7d64dbda13321b362f298c1ac45aa99ebcc
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342073"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354933"
 ---
 # <a name="align-assets-to-prioritized-workloads"></a>Justera till gångar till prioriterade arbets belastningar
 
-Arbets belastning är en konceptuell Beskrivning av en samling till gångar: virtuella datorer, program och data källor. Föregående artikel, [prioritera och definiera arbets belastningar](./workloads.md)och ger vägledning om hur du samlar in de data som ska definiera arbets belastningen. Innan migreringen kräver några av de tekniska inmatningarna i listan ytterligare verifiering. Den här artikeln hjälper till med verifiering av följande indata:
+Arbets belastning är en konceptuell Beskrivning av en samling till gångar: virtuella datorer, program och data källor. Föregående artikel, [definiera och prioritera](./workloads.md)den vägledning som hjälper dig att samla in data som definierar arbets belastningen. Innan migreringen kräver några av de tekniska inmatningarna i listan ytterligare verifiering. Den här artikeln hjälper till med verifiering av följande indata:
 
 - **Program:** Visa en lista över program som ingår i den här arbets belastningen.
 - **Virtuella datorer och servrar:** Lista över virtuella datorer eller servrar som ingår i arbets belastningen.

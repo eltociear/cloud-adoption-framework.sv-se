@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 85f545b8703291819ece3562c0501ba9f0bcdead
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 4281638b7badf9b672ba3a38d2daa847b7604e7e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094655"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356376"
 ---
 # <a name="automate-onboarding"></a>Automatisera onboarding
 
@@ -43,7 +43,7 @@ Filerna som beskrivs i följande tabell används i det här exemplet. Du kan anp
 | WorkspaceSolutions.json | En Resource Manager-mall som aktiverar de lösningar som du vill använda i arbets ytan Log Analytics. |
 | ScopeConfig.json | En Resource Manager-mall som använder opt-in-modellen för lokala servrar med Ändringsspårning-lösningen. Att använda opt-in-modellen är valfritt. |
 | Enable-VMInsightsPerfCounters.ps1 | Ett PowerShell-skript som möjliggör VM-insikter för servrar och konfigurerar prestanda räknare. |
-| ChangeTracking-Filelist.json | En Resource Manager-mall som definierar en lista över filer som ska övervakas av Ändringsspårning. |
+| ChangeTracking-FileList. JSON | En Resource Manager-mall som definierar en lista över filer som ska övervakas av Ändringsspårning. |
 
 Använd följande kommando för att köra New-AMSDeployment. ps1:
 

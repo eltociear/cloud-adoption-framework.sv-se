@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c44fc6974be69ff684089c65aa23da5eefbfd814
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 221a29db7eb68acc6ffd5b52a0b01c1769e00222
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708826"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357187"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Cost Management mått, indikatorer och risk tolerans
 
@@ -34,7 +34,7 @@ Följande är exempel på användbara mått som du bör samla för att utvärder
 
 ## <a name="risk-tolerance-indicators"></a>Risk tolerans indikatorer
 
-Vid tidiga storskaliga distributioner, t. ex. utveckling/testning eller experimentella första arbets belastningar, kommer Cost Management troligen vara av relativt låg risk. När fler till gångar distribueras ökar risken och affärs toleransen för risk är sannolikt att avböja. I takt med att fler moln implementerings grupper ges möjlighet att konfigurera eller distribuera till gångar till molnet, ökar risken och toleranserna minskar. I takt med att utveckla en Cost Managements disciplin tar människor från moln införande fasen att distribuera mer nya nya tekniker.
+Vid tidiga storskaliga distributioner, t. ex. utveckling/testning eller experimentella första arbets belastningar, kommer Cost Management troligen vara av relativt låg risk. När fler till gångar distribueras växer risken och affärs toleransen för risk är sannolikt att avböja. I takt med att fler moln implementerings grupper ges möjlighet att konfigurera eller distribuera till gångar till molnet, ökar risken och toleranserna minskar. I takt med att utveckla en Cost Managements disciplin tar människor från moln införande fasen att distribuera mer nya nya tekniker.
 
 I det tidiga skedet av moln implementeringen kommer du att arbeta med din verksamhet för att fastställa en risk tolerans bas linje. När du har en bas linje måste du bestämma vilka kriterier som skulle utlösa en investering i Cost Management disciplinen. Dessa kriterier är förmodligen olika för alla organisationer.
 

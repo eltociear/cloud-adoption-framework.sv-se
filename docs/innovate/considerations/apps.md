@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: cede336255183abec06311137abfe4e023116c03
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: c482c6a9642e1de3f28bbe650da6fa43cf9229be
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341784"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356779"
 ---
 # <a name="engage-through-applications"></a>Delta i program
 
@@ -105,7 +105,7 @@ Det är bara att underhålla i en lösning, desto längre tid kommer lösningen 
 
 För att förbereda för många iterationer som krävs för att leverera en innovativ lösning är det viktigt att tänka på. Minimera till exempel drift belastningar tidigt i processen genom att prioritera Server alternativ. I Azure kan program utan Server alternativ innehålla [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) eller [behållare](https://docs.microsoft.com/azure/architecture/cloud-adoption/migrate/azure-best-practices/contoso-migration-rearchitect-container-sql).
 
-I parallellt tillhandahåller Azure Data alternativ utan server, vilket också minskar kostnaderna. [Listan databas produkter](/azure/) innehåller alternativ för att vara värd för data utan att det behövs någon fullständig data plattform.
+I parallellt tillhandahåller Azure Data alternativ utan server, vilket också minskar kostnaderna. I [Azures produkt katalog](https://docs.microsoft.com/azure) finns databas alternativ som är värdar för data utan behov av en fullständig data plattform.
 
 ## <a name="next-steps"></a>Nästa steg
 

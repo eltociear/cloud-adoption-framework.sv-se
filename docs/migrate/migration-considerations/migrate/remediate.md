@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f092bb99cb16a6dd3c79c04d29fa7aac318c913f
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 0805868195912807c50a49d781928865f2f82ca9
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092796"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355224"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>Reparera tillgångar före migrering
 
@@ -36,7 +36,7 @@ I företagsmiljöer finns det tekniska skulder. En del av dessa är att förvän
 
 När ett datacenter är underhålls, korrigeras och uppdateras på rätt sätt finns det troligtvis inte mycket behov av reparation. Reparationsrika miljöer tenderar att vara gemensamma för stora företag, organisationer som har gjort omfattande nedskärningar inom IT, vissa äldre hanterade tjänstmiljöer samt förvärvsrika miljöer. I alla dessa typer av miljöer kan reparation uppta en stor del av migreringsarbetet. När följande reparationsuppgifter förekommer ofta och påverkar migreringens hastighet eller konsekvens negativt kan det vara bra att dela upp reparationen i ett parallellt arbete och team (på ett liknande sätt som parallell körning av molnimplementering och molnstyrning).
 
-- **Frekventa uppgraderingar av värd.** När ett stort antal värdar måste uppgraderas för att slutföra migreringen av en arbetsbelastning är det troligt att migreringsteamet drabbas av fördröjningar. Det kan vara bra att dela upp berörda program och åtgärda reparationerna innan berörda program inkluderas i planerade lanseringar.
+- **Frekventa uppgraderingar av värd.** När ett stort antal värdar måste uppgraderas för att slutföra migreringen av en arbetsbelastning är det troligt att migreringsteamet drabbas av fördröjningar. Det kan vara bra att dela ut berörda program och åtgärda stegen innan du inkluderar berörda program i alla planerade versioner.
 - **Frekventa uppgraderingar av gäst-OS.** Stora företag har ofta servrar som körs på inaktuella versioner av Linux eller Windows. Utöver de tydliga säkerhetsriskerna med att använda ett inaktuellt operativsystem finns det även kompatibilitetsproblem som förhindrar att berörda arbetsbelastningar migreras. När ett stort antal virtuella datorer kräver OS-reparation kan det vara klokt att dela upp dessa arbeten i en parallell iteration.
 - **Stora kodändringar.** Äldre anpassade program kan kräva betydligt fler ändringar för att förberedas för PaaS-distribution. I så fall kan det vara bra att ta bort dem fullständigt från kvarvarande uppgifter för migrering och i stället hantera dem i ett helt separat program.
 

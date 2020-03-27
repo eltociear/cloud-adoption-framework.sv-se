@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 90eed8109627298c8e6a044eff3333154bb17f1d
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 8c30f859d90e2fca26fbcd6c70db3c662d56b8a1
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092575"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353650"
 ---
 # <a name="azure-fundamental-concepts"></a>Grundläggande koncept för Azure
 
@@ -29,7 +29,7 @@ Det är bra att känna till följande definitioner när du påbörjar arbetet me
 - **Azure Active Directory (Azure AD):** Microsoft Cloud-baserad identitets-och åtkomst hanterings tjänst. Azure AD gör att dina medarbetare kan logga in och få åtkomst till resurser.
 - **Azure AD-klient:** En dedikerad och betrodd instans av Azure AD. En Azure AD-klientorganisation som skapas automatiskt när organisationen för första gången registrerar sig för en Microsoft-molntjänstprenumeration som Microsoft Azure, Microsoft Intune eller Office 365. En Azure-klientorganisation representerar en enskild organisation.
 - **Azure AD-katalog:** Varje Azure AD-klient har en enda, dedikerad och betrodd katalog. Katalogen innehåller klientorganisationens användare, grupper och appar. Katalogen används för att utföra funktioner för identitet och åtkomsthantering för klientorganisationsresurser. En katalog kan associeras med flera prenumerationer, men varje prenumeration är bara associerad med en enskild katalog.
-- **Resurs grupper:** Logiska behållare som du använder för att gruppera relaterade resurser i en prenumeration. Varje resurs kan endast finnas i en resursgrupp. Resurs grupper tillåter mer detaljerad gruppering i en prenumeration. Används ofta för att representera en samling till gångar som krävs för att stödja en arbets belastning, ett program eller en specifik funktion i en prenumeration.
+- **Resurs grupper:** Logiska behållare som du använder för att gruppera relaterade resurser i en prenumeration. Varje resurs kan endast finnas i en resursgrupp. Resurs grupper tillåter mer detaljerad gruppering i en prenumeration och används ofta för att representera en samling till gångar som krävs för att stödja en arbets belastning, ett program eller en specifik funktion i en prenumeration.
 - **Hanterings grupper:** Logiska behållare som du använder för en eller flera prenumerationer. Du kan definiera en hierarki för hanteringsgrupper, prenumerationer, resursgrupper och resurser för att effektivt hantera åtkomst, principer och efterlevnad genom arv.
 - **Region:** En uppsättning Azure-datacenter som distribueras inuti en latens-definierad perimeter. Datacentren är anslutna via ett dedikerat, regionalt nätverk med låg svarstid. De flesta Azure-resurser körs i en specifik Azure-region.
 
@@ -94,7 +94,7 @@ Följande resurser innehåller detaljerad information om de begrepp som beskrivs
 
 ## <a name="next-steps"></a>Nästa steg
 
-Nu när du förstår de grundläggande Azure-begreppen kan du lära dig hur du [skalar med flera Azure-prenumerationer](../azure-best-practices/scaling-subscriptions.md).
+Nu när du förstår de grundläggande Azure-begreppen kan du lära dig hur du [skalar med flera Azure-prenumerationer](../azure-best-practices/scale-subscriptions.md).
 
 > [!div class="nextstepaction"]
-> [Skala med flera Azure-prenumerationer](../azure-best-practices/scaling-subscriptions.md)
+> [Skala med flera Azure-prenumerationer](../azure-best-practices/scale-subscriptions.md)

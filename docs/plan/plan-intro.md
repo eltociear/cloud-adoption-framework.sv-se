@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: d02dfda3b44155b7208e9caf00e979553fe97ff3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 3b91a6beaa04a74b03282394da7c8c3ab26587cb
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093545"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354869"
 ---
 # <a name="plan-for-cloud-adoption"></a>Planera för moln införande
 
@@ -36,9 +36,9 @@ Den här artikel serien går igenom varje steg i översättning av strategi och 
 
 1. **Krav:** Bekräfta att alla nödvändiga steg har slutförts innan du skapar din plan.
 2. **Definiera och prioritera arbets belastningar:** Prioritera dina första 10 arbets belastningar för att upprätta en första implementerings efter släpning.
-3. **Justera till gångar:** Identifiera vilka till gångar (föreslagna eller befintliga) som krävs för att stödja prioriterade arbets belastningar.
-4. **Granska rationalisering:** Granska rationalisering beslut för att förfina antaganden om Sök vägs beslut: migrera eller förnya.
-5. **Definiera iterationer och versioner:** *iterationer* är de tids block som tilldelas för arbete. *Versioner* är definitionen av arbetet som ska utföras innan en ändring av produktions processerna utlöses.
+3. **Justera till gångar till arbets belastningar:** Identifiera vilka till gångar (föreslagna eller befintliga) som krävs för att stödja prioriterade arbets belastningar.
+4. **Granska rationalisering-beslut:** Granska rationalisering beslut för att förfina antaganden om Sök vägs beslut: migrera eller förnya.
+5. **Upprätta iterationer och publicerings planer:** *iterationer* är de tids block som tilldelas för arbete. *Versioner* är definitionen av arbetet som ska utföras innan en ändring av produktions processerna utlöses.
 6. **Uppskatta tids linjer:** Skapa grova tids linjer för versions planering, baserat på inledande uppskattningar.
 
 ## <a name="next-steps"></a>Nästa steg

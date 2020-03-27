@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4ddc8c0e479aaf0feee928249919edf9899ce40f
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: f9303adc183596f93c822224e5098549a533a153
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171199"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356745"
 ---
 # <a name="develop-digital-inventions"></a>Utveckla digital innovation
 
@@ -22,7 +22,7 @@ Som det beskrivs i [innovation i den digitala ekonomin](./index.md), kräver inn
 
 ## <a name="summary-of-each-discipline-of-digital-invention"></a>Sammanfattning av varje ämnes område med digital uppfinning
 
-Följande ämnes områden är inte *allt* nödvändiga för att öka innovationen i ett specifikt fall. Genom att följa rikt linjerna i [build med kund empati](./build.md), är målet att testa en hypotes i varje iteration. Genom att definiera utdata från varje iteration som en [minsta livskraftig produkt (MVP)](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/policy-compliance#minimum-viable-product-mvp-for-policy), så bör det här alternativet göra det möjligt att involvera minsta möjliga antal ämnes områden.
+Följande ämnes områden är inte *allt* nödvändiga för att öka innovationen i ett specifikt fall. Genom att följa rikt linjerna i [build med kund empati](./build.md), är målet att testa en hypotes i varje iteration. Genom att definiera utdata från varje iteration som en [minsta livskraftig produkt (MVP)](../../govern/policy-compliance/index.md), så bör det här alternativet göra det möjligt att involvera minsta möjliga antal ämnes områden.
 
 - **[Demokratisera identifieringen av-data](./data.md):** Genom att hämta data till händerna på kunder, partners och anställda uppmuntrar du innovativa observationer. Mata in, centralisera, styra och dela data.
 - **[Delta i appar](./apps.md):** Personer ansluter till kunskap via appar och upplevelser. Ge professionella och medborgarna möjlighet att snabbt skapa appar.

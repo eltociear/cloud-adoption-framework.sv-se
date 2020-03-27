@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3e2b9139fa4774549f68ccf3762234bc755fd458
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 56c7d171d46813d7175e93759be10ce1423115b0
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311837"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355158"
 ---
 <!-- cSpell:ignore ITSM TOGAF -->
 
@@ -43,7 +43,7 @@ Den här förkortningen är inte avsedd som en stel pekpinne men kan vägleda de
 
 ## <a name="migration-backlog-aligning-business-priorities-and-timing"></a>Efter släpning för migrering: justera affärs prioriteringar och tids inställningar
 
-Migreringsuppgifterna låter dig spåra din portfölj med arbetsbelastningar som ska migreras på högsta nivå. Innan migreringen uppmuntras molnstrategiteamet och molnimplementeringsteamet att göra en granskning av den aktuella [digitala egendomen](../../../digital-estate/index.md) och komma överens om en prioriteringslista för arbetsbelastningar som ska migreras. Den här listan utgör grunden för den första listan med migreringsuppgifter.
+Med övergången av migreringen kan du spåra den högsta portföljen av arbets belastningar som kan migreras. Innan migreringen uppmuntras molnstrategiteamet och molnimplementeringsteamet att göra en granskning av den aktuella [digitala egendomen](../../../digital-estate/index.md) och komma överens om en prioriteringslista för arbetsbelastningar som ska migreras. Den här listan utgör grunden för den första listan med migreringsuppgifter.
 
 Inledningsvis är det osannolikt att de migreringsuppgifterna uppfyller INVEST-kriterierna som beskrivs i föregående avsnitt. De fungerar istället som en logisk gruppering av tillgångar från en preliminär inventering och som platshållare för framtida arbete. Platshållarna är kanske inte tekniskt korrekta men de fungerar för att samordna med verksamheten.
 

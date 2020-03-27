@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 39373c0f2c4c7d96613fd10d5734a2826b6f1933
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 6cc61ff3b6dee171983ceef94c77d3aab715b2c7
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892072"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357170"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -41,7 +41,7 @@ Azure är alltså en enorm samling av servrar och nätverks maskin vara som kör
 
 ## <a name="next-steps"></a>Nästa steg
 
-Lär dig mer om moln införande med [Microsoft Cloud implementerings ramverk för Azure](https://docs.microsoft.com/azure/cloud-adoption-framework).
+Lär dig mer om moln införande med [Microsoft Cloud implementerings ramverk för Azure](../index.md).
 
 > [!div class="nextstepaction"]
-> [Lär dig mer om Microsoft Cloud implementerings ramverk för Azure](https://docs.microsoft.com/azure/cloud-adoption-framework)
+> [Lär dig mer om Microsoft Cloud implementerings ramverk för Azure](../index.md)

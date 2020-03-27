@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: c6f48ae433746906d64023bd72f34c21a3163373
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: bb74e869b2fab2142a8c0ffd8c7396268e2231ed
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79091286"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356311"
 ---
+<!-- cSpell:ignore kusto multiresource multisignal -->
+
 # <a name="cloud-monitoring-guide-alerting"></a>Övervaknings guide för molnet: avisering
 
 För år har IT-organisationerna svårt att bekämpa den aviserings utmattning som har skapats av de övervaknings verktyg som distribueras i företaget. Många system genererar en stor mängd aviseringar ofta som meningslösa, medan andra aviseringar är relevanta, men antingen förbises eller ignoreras. Det innebär att IT-och utvecklarnas åtgärder har fått problem att uppfylla den utlovade kvaliteten på service nivån för interna eller externa kunder. För att säkerställa tillförlitligheten är det viktigt att förstå statusen för din infrastruktur och dina program. För att minimera tjänstens försämring och avbrott, eller minska antalet incidenter, måste du snabbt identifiera orsaker.

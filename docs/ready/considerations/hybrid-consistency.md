@@ -7,13 +7,15 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7b2433b787683cf8ecaaf4a1f7a858aa18bf682c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 68b360af15f6a2537fb077202373c846365266d2
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093037"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353654"
 ---
+<!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers Pointnext -->
+
 # <a name="create-hybrid-cloud-consistency"></a>Skapa hybridmolnskonsekvens
 
 Den här artikeln vägleder dig genom de övergripande metoderna för att skapa hybrid molnets konsekvens.
@@ -51,7 +53,7 @@ Azure och Azure Stack öppna nya hybrid användnings fall för både kund-och in
 
 - **Kant-och frånkopplade lösningar.** För att lösa svars tid och anslutnings krav kan kunderna bearbeta data lokalt i Azure Stack och sedan samla in dem i Azure för ytterligare analys. De kan använda vanliga program logik i båda. Många kunder är intresserade av det här gräns scenariot för olika kontexter, till exempel fabriks golv, kryssnings-fartyg och mina axlar.
 - **Moln program som uppfyller olika regler.** Kunder kan utveckla och distribuera program i Azure, med fullständig flexibilitet för att distribuera lokalt på Azure Stack för att uppfylla reglernas eller princip kraven. Inga kod ändringar behövs. Exempel på program är global granskning, ekonomisk rapportering, extern Exchange-handel, onlinespel och utgifts rapportering. Kunder kan ibland titta på att distribuera olika instanser av samma program till Azure eller Azure Stack, baserat på affärs-och tekniska krav. Azure uppfyller de flesta krav, Azure Stack kompletterar distributions metoden vid behov.
-- **Moln programs modell lokalt.** Kunder kan använda Azure-webbtjänster, behållare, Server lös och mikrotjänst-arkitekturer för att uppdatera och utöka befintliga program eller bygga nya. Du kan använda konsekventa DevOps processer i Azure i molnet och Azure Stack lokalt. Det finns ett växande intresse i Application modernisering, även för viktiga verksamhets kritiska program.
+- **Moln programs modell lokalt.** Kunder kan använda Azure-webbtjänster, behållare, mikrotjänster och serverbaserade arkitekturer för att uppdatera och utöka befintliga program eller bygga nya. Du kan använda konsekventa DevOps processer i Azure i molnet och Azure Stack lokalt. Det finns ett växande intresse i Application modernisering, även för viktiga verksamhets kritiska program.
 
 Azure Stack erbjuds via två distributions alternativ:
 
@@ -61,6 +63,8 @@ Azure Stack erbjuds via två distributions alternativ:
 ## <a name="azure-stack-one-cloud-ecosystem"></a>Azure Stack ett eko system med ett moln
 
 Du kan påskynda Azure Stack initiativ genom att använda det fullständiga Azure-eko systemet:
+
+<!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers -->
 
 - Azure säkerställer att de flesta program och tjänster som är certifierade för Azure fungerar på Azure Stack. Flera ISV: er utökar lösningar till Azure Stack. Dessa ISV: er omfattar Bitnami, Docker, Kemp: Technologies, pivotal Cloud Foundry, Red Hat Enterprise Linux och SUSE Linux.
 - Du kan välja att låta Azure Stack levereras och hanteras som en fullständigt hanterad tjänst. Flera partners kommer att ha hanterade tjänst erbjudanden i Azure och Azure Stack strax. Dessa partner omfattar Tieto, Yourhosting, Revera, fram och NTT. Dessa partners levererar hanterade tjänster för Azure via Cloud Solution Provider (CSP)-programmet. De utökar sina erbjudanden för att inkludera hybrid lösningar.

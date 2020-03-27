@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 07856662f95a588f252c78e8a3dd67eba6e8163c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: d90e1fa73029d87d1f699e1a0651a63368bf3b21
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094067"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355185"
 ---
 <!-- cSpell:ignore migrateable -->
 
@@ -54,7 +54,7 @@ Innan du fattar beslut som kan ha en långsiktig inverkan på det aktuella migre
 
 Vid all migrering av stor skala (mer än 250 virtuella datorer) migreras till gångar med hjälp av en mängd olika över gångs alternativ, som diskuteras i de femRS-rationalisering: *Rehost*, *rekonstruktör, rekonstruktion, återskapa*och *Ersätt*.
 
-Vissa arbetsbelastningar moderniseras genom att *återskapa* eller *omarbeta arkitekturen*, vilket skapar modernare program med nya funktioner och teknisk kapacitet. Andra tillgångar genomgår en *omstrukturering*, till exempel en övergång till containrar eller andra modernare värd- och driftmetoder som inte påverkar lösningarnas kodbas. Vanliga virtuella datorer och andra till gångar som är mer väl etablerade går genom en *Rehost* -process och över de till gångarna från data centret till molnet. Vissa arbets belastningar kan eventuellt migreras till molnet, men ska i stället *ersättas* med service-baserade (SaaS) moln tjänster som uppfyller samma affärs behov&mdash;exempelvis genom att använda Office 365 som ett alternativ till att migrera Exchange Server-instanser.
+Vissa arbetsbelastningar moderniseras genom att *återskapa* eller *omarbeta arkitekturen*, vilket skapar modernare program med nya funktioner och teknisk kapacitet. Andra till gångar går igenom en återställnings process, till *exempel en flytta* till behållare eller andra moderna värd-och drift metoder som inte nödvändigt vis påverkar lösningens kodbas. Vanliga virtuella datorer och andra till gångar som är mer väl etablerade går genom en *Rehost* -process och över de till gångarna från data centret till molnet. Vissa arbets belastningar kan eventuellt migreras till molnet, men ska i stället *ersättas* med service-baserade (SaaS) moln tjänster som uppfyller samma affärs behov&mdash;exempelvis genom att använda Office 365 som ett alternativ till att migrera Exchange Server-instanser.
 
 I de flesta scenarier skapar vissa företagshändelser en tvingande funktion som gör att en hög procentandel av tillgångarna tillfälligt migreras med *värdbyte*, följt av en mer betydande sekundär övergång med en av de andra migreringsstrategierna när de väl är i molnet. Den här processen kallas ofta för en *molnövergång*.
 

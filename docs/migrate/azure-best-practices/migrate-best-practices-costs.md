@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: dd8030c884b6c5b66c733080d26f29bb8319740e
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: 6e5296ac6350df0d6894ad740a70e49a5ee7eae0
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508414"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354169"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Metodtips för kostnad och storleksändring av arbetsbelastningar som migreras till Azure
 
@@ -243,7 +243,7 @@ I Cost Management kan du:
 - [Hämta en översikt](https://docs.microsoft.com/azure/cost-management/overview) över Azure Cost Management.
 - [Lär dig att](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices) optimera din molninvestering med Azure Cost Management.
 - [Lär dig att](https://docs.microsoft.com/azure/cost-management/use-reports) använda Azure Cost Management-rapporter.
-- [Hämta en](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json) självstudiekurs om att optimera kostnader med hjälp av rekommendationer.
+- [Hämta en](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/toc.json) självstudiekurs om att optimera kostnader med hjälp av rekommendationer.
 - [Granska](https://docs.microsoft.com/rest/api/consumption/budgets) Azure Consumption-API:et.
 
 ## <a name="best-practice-monitor-resource-utilization"></a>Bästa praxis: övervaka resursutnyttjandet
@@ -260,7 +260,7 @@ I Azure betalar du för det du använder när resurser förbrukas och endast då
 
 - Få en översikt över [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) och [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview).
 - [Få](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations) kostnadsrekommendationer från Advisor.
-- [Lär dig [optimera kostnader baserat på rekommendationer](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json) och [undvika oväntade avgifter](https://docs.microsoft.com/azure/billing/billing-getting-started).
+- [Lär dig [optimera kostnader baserat på rekommendationer](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/toc.json) och [undvika oväntade avgifter](https://docs.microsoft.com/azure/billing/billing-getting-started).
 - Lär dig mer om [Azure Resource Optimization (ARO) Toolkit](https://github.com/Azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit).
 
 ## <a name="best-practice-implement-resource-group-budgets"></a>Bästa praxis: Implementera resource group budgetar
@@ -273,7 +273,7 @@ Resursgrupper används ofta för att representera kostnadsgränser. Tillsammans 
 **Läs mer:**
 
 - [Läs mer om att ](https://docs.microsoft.com/azure/billing/billing-cost-management-budget-scenario)hantera kostnader med Azure Budgets.
-- [Följ en självstudie](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/billing/TOC.json) för att skapa och hantera en budget med Azure.
+- [Följ en självstudie](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/billing/toc.json) för att skapa och hantera en budget med Azure.
 
 ## <a name="best-practice-optimize-azure-monitor-retention"></a>Bästa praxis: Optimera Azure Monitor kvarhållning
 

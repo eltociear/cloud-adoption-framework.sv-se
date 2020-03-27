@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: ef9291d07a9de6067ae6d47477c47b2d57449feb
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: d77ecb0dbd7fbcd606c73a11f4a8c4db4aac5428
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170111"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357213"
 ---
 # <a name="innovate-through-cloud-adoption"></a>Förnya genom moln införande
 
@@ -46,3 +46,5 @@ Påbörja din Innovations resa med hjälp av [förnyelse metoden](../innovate/in
 
 > [!div class="nextstepaction"]
 > [Påbörja din Innovations resa](../innovate/index.md)
+
+<!-- test:ignoreNextStep -->

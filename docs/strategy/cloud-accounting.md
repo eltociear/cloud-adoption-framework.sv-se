@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 0ccff095f78442f583bcd526ee624161276c0db3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 4458cdb4cf5b63a6ed8bb6cb2d17020c948d0702
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092866"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354066"
 ---
+<!-- cSpell:ignore CIOs -->
+
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-is-cloud-accounting"></a>Vad är molnredovisning?
@@ -58,7 +60,7 @@ Den här modellen ger balans mellan en sann åter betalnings modell och mer trad
 
 Valet av redovisnings modeller är avgörande i system design. Valet av redovisnings modell kan påverka prenumerations strategier, namngivnings standarder, tagga standarder och utformning av principer och skisser.
 
-När du har arbetat med företaget för att fatta beslut om en moln redovisnings modell och [globala marknader](./global-markets.md)har du tillräckligt med information för att [utveckla en Azure Foundation](../ready/index.md).
+När du har arbetat med företaget för att fatta beslut om en moln redovisnings modell och [globala marknader](./global-markets.md)har du tillräckligt med information för att [välja ditt första moln införande projekt](./first-adoption-project.md).
 
 > [!div class="nextstepaction"]
-> [Utveckla en Azure Foundation](../ready/index.md)
+> [Välj ditt första moln införande projekt](./first-adoption-project.md)

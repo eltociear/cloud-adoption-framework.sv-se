@@ -7,13 +7,15 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 59ef9ad61c9e3545fbcdbd62e05711e20de38a29
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 9b355fa346373d1fcca069e2e47e23d1ee3a86b2
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223485"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356764"
 ---
+<!-- cSpell:ignore deprioritize -->
+
 # <a name="empower-adoption"></a>Underlätta implementeringen
 
 Det ultimata testet av innovation är att kunden reagera på din uppfinning. Skulle hypotesen visa sig vara sann? Använder kunderna lösningen? Skalar den för att uppfylla behoven för den önskade procent andelen av användarna? Viktigast av detta ska de fortsätta att komma tillbaka? Ingen av dessa frågor kan tillfrågas förrän den lägsta produkt-och MVP-lösningen har distribuerats. I den här artikeln ska vi fokusera på disciplinen för att fatta beslut.

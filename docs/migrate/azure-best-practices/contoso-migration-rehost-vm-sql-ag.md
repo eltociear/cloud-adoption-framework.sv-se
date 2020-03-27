@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: bc530c3f97b26a519198ef7b9ddc1fce967fbed6
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 67b0db7d1f85ef38972df273c1fa722f426d208d
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311548"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356220"
 ---
+<!-- cSpell:ignore NSGs WEBVM SQLVM contosoadmin contosohost contosodc contosovmsacc cswiz vcenter iisreset inetpub SQLAOG shaog sourcedb SQLAOGAVSET contosocloudwitness BEPOOL MSSQLSERVER alwayson -->
+
 # <a name="rehost-an-on-premises-app-with-azure-virtual-machines-and-sql-server-always-on-availability-groups"></a>Vara värd för en lokal app med Azure Virtual Machines och SQL Server Always on-tillgänglighetsgrupper
 
 Den här artikeln visar hur det fiktiva företaget contoso reagerar en Windows .NET-app på två nivåer som körs på virtuella VMware-datorer som en del av en migrering till Azure. Contoso migrerar appens klientdels-VM till en virtuell Azure-dator och appdatabasen till en Azure SQL Server VM, som körs i ett Windows Server-redundanskluster med SQL Server AlwaysOn-tillgänglighetsgrupper.
@@ -335,7 +337,7 @@ Contosos administratörer konfigurerar dessa så här:
 
 **Behöver du mer hjälp?**
 
-[Lär dig](https://docs.microsoft.com/azure/site-recovery/tutorial-prepare-azure) hur du konfigurerar Azure för Site Recovery.
+[Lär dig hur du](https://docs.microsoft.com/azure/site-recovery/tutorial-prepare-azure) konfigurerar Azure för Site Recovery.
 
 ## <a name="step-5-prepare-on-premises-vmware-for-site-recovery"></a>Steg 5: Förbered lokala VMware för Site Recovery
 
@@ -436,7 +438,7 @@ Contosos administratörer utför följande steg:
 
 7. Verktyget utför vissa konfigurationsåtgärder och startar sedan om datorn.
 8. De loggar in på datorn igen och guiden Konfigurera serverhantering startar automatiskt.
-9. I guiden väljer de det nätverkskort som ska ta emot replikeringstrafiken. Det går inte att ändra den här inställningen när den har konfigurerats.
+9. I guiden väljer de det nätverkskort som ska ta emot replikeringstrafik. Det går inte att ändra den här inställningen när den har konfigurerats.
 10. De väljer den prenumeration, den resursgrupp och det valv som konfigurationsservern ska registreras i.
         ![Välj Recovery Services valv](./media/contoso-migration-rehost-vm-sql-ag/cswiz1.png)
 
@@ -497,7 +499,7 @@ Contosos administratörer kan nu börja replikera WebVM.
 **Behöver du mer hjälp?**
 
 - En fullständig genomgång av de här stegen finns i [Konfigurera haveriberedskap för lokala virtuella VMware-datorer](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial).
-- Detaljerade instruktioner finns tillgängliga som hjälper dig att [konfigurera källmiljön](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-source), [distribuera konfigurationsservern](https://docs.microsoft.com/azure/site-recovery/vmware-azure-deploy-configuration-server) och [konfigurera replikeringsinställningar](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-replication).
+- Där finns detaljerade anvisningar som hjälper dig att [konfigurera källmiljön](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-source), [distribuera konfigurationsservern](https://docs.microsoft.com/azure/site-recovery/vmware-azure-deploy-configuration-server) och [konfigurera replikeringsinställningar](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-replication).
 - Du kan läsa mer om hur du [aktiverar replikering](https://docs.microsoft.com/azure/site-recovery/vmware-azure-enable-replication).
 
 ## <a name="step-7-install-the-data-migration-assistant-dma"></a>Steg 7: installera Data Migration Assistant (DMA)

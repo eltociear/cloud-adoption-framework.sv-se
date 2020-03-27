@@ -7,13 +7,15 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 52dbbd594a95f86c1bdb49ac76a7b178d8a71b13
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 9390ca37087f463ae547d97caaedbf8376ee2f7b
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171420"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356847"
 ---
+<!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
+
 # <a name="mainframe-application-migration"></a>Migrering av program från stordatorer
 
 När du migrerar program från stordator miljöer till Azure följer de flesta team en Pragmatic-metod: Återanvänd var och när det är möjligt och starta sedan en stegvis distribution där program skrivs om eller ersätts.
@@ -30,7 +32,7 @@ Programmigreringen omfattar vanligt vis en eller flera av följande strategier:
 
 - **Ersätt:** Den här metoden ersätter stordator funktioner med motsvarande funktioner i molnet. Program vara som en tjänst (SaaS) är ett alternativ, som använder en lösning som skapats specifikt för ett företags problem, till exempel ekonomi, personal, produktion eller företags resurs planering. Dessutom är många branschspecifika appar tillgängliga för att lösa problem med anpassade stordator lösningar som används för att lösa problemet tidigare.
 
-Du bör börja med att planera de arbets belastningar som du vill migrera och sedan ta reda på dessa krav för att flytta associerade program, befintliga kodbaser och databaser.
+Du bör börja med att planera de arbets belastningar som du vill migrera och sedan fastställa dessa krav för att flytta associerade program, äldre kod baser och databaser.
 
 ## <a name="mainframe-emulation-in-azure"></a>Stordator emulering i Azure
 

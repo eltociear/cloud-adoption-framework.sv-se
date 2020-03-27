@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 18b247665b8a371a9949ebaf838d3833a56067a3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 063fc4074a7b5972b6b2938abdcb90937412e832
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092489"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353551"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -66,7 +66,7 @@ Ytterligare exempel på första antagande projekt är:
 
 ## <a name="next-steps"></a>Nästa steg
 
-När det första projektet för att införa moln har påbörjats kan moln strategi teamet förvandla sin uppmärksamhet till den långsiktiga [moln implementerings planen](../plan/index.md).
+Lär dig mer om strategier för att [balansera konkurrerande prioriteringar](./balance-competing-priorities.md).
 
 > [!div class="nextstepaction"]
-> [Bygg din moln införande plan](../plan/index.md)
+> [Balansera konkurrerande prioriteringar](./balance-competing-priorities.md)

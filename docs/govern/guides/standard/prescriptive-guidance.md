@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f82dc3d12aa325c3239060a904cc5d3111a056d4
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 1d0c6d30e7bba864fb52b14fb82e1e88231e9a3c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709319"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357050"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>Standard styrnings guide för företag: bästa praxis förklaras
 
@@ -50,7 +50,7 @@ Moln styrnings teamet ansvarar för följande beslut och implementeringar. Mång
 
 ### <a name="subscription-design"></a>Prenumerationsdesign
 
-Beslutet om vilken prenumerations design som används avgör hur Azure-prenumerationer blir strukturerade och hur Azure-hanteringsportalen används för att effektivt hantera åtkomst, principer och efterlevnad för den här prenumerationen. I den här rapporten har styrnings teamet valt design mönster för prenumerationen [produktion och ej](../../../decision-guides/subscriptions/index.md#production-and-nonproduction-pattern) produktion.
+Beslutet om vilken prenumerations design som används avgör hur Azure-prenumerationer blir strukturerade och hur Azure-hanteringsportalen används för att effektivt hantera åtkomst, principer och efterlevnad för den här prenumerationen. I den här gruppen har styrnings teamet upprättat prenumerationer för produktions-och produktions arbets belastningar, [samt](../../../ready/azure-best-practices/initial-subscriptions.md) design mönster för prenumerationer på andra delar.
 
 - Avdelningar är inte troligt vis nödvändiga för det aktuella fokuset. Distributioner förväntas vara begränsade inom en enda fakturerings enhet. Vid antagandet är det inte ens ett företags avtal att centralisera faktureringen. Det är sannolikt att den här nivån av införande hanteras av en enda Azure-prenumeration med betala per användning.
 - Oavsett om du använder EA-portalen eller om det finns ett Enterprise-avtal, bör en prenumerations modell fortfarande definieras och överenskommas för att minimera den administrativa administratören över bara faktureringen.

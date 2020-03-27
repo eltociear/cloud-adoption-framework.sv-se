@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: ab3ff18d25d8a4e6ee9403236d101f98a9a6dd04
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: cfd554aaa2252e9a7569fd2a56af05c3c40e8163
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092662"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355039"
 ---
+<!-- cSpell:ignore ccoe deprioritize -->
+
 # <a name="cloud-center-of-excellence"></a>Molncenter för utmärkthet
 
 Företags-och teknisk rörlighet är grund mål för de flesta IT-organisationer. Ett CCoE (Cloud Center of expert) är en funktion som skapar balans mellan hastighet och stabilitet.
@@ -59,7 +61,7 @@ CCoE är en funktion som bemannas av fyra grupper med hög efter frågan. Det ä
 
 ## <a name="solutions-and-controls"></a>Lösningar och kontroller
 
-Varje medlem i CCoE har kunskaper om nödvändiga begränsningar, risker och skydd som ledde till den aktuella uppsättningen av IT-kontroller. CCoE gemensamma ansträngningar bör göra det möjligt att förstå de molnbaserade (eller hybrid lösningar) lösningar eller kontroller som möjliggör önskade affärs resultat. När lösningar skapas delas de med olika team i form av kontroller eller automatiseringar som fungerar som guardrails för olika ansträngningar. Dessa guardrails hjälper till att dirigera de kostnads fria aktiviteterna i olika team, samtidigt som du delegerar ansvaret till deltagarna i olika migrerings-eller Innovations arbete.
+Varje medlem i CCoE har kunskaper om nödvändiga begränsningar, risker och skydd som ledde till den aktuella uppsättningen av IT-kontroller. CCoE gemensamma ansträngningar bör göra det möjligt att förstå de molnbaserade (eller hybrid lösningar) lösningar eller kontroller som möjliggör önskade affärs resultat. När lösningar skapas delas de med olika team i form av kontroller eller automatiserade processer som fungerar som guardrails för olika ansträngningar. Dessa guardrails hjälper till att dirigera de kostnads fria aktiviteterna i olika team, samtidigt som du delegerar ansvaret till deltagarna i olika migrerings-eller Innovations arbete.
 
 Exempel på den här över gången:
 

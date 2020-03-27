@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d6cf92c2cb08e59196bc9c24aadf1fa2c812db0d
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 67ea91e503290c8fee37f3d36770fbbea1b336b4
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312533"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356787"
 ---
 # <a name="build-with-customer-empathy"></a>Skapa med empati för kunderna
 
@@ -102,6 +102,8 @@ När kund empati är starkt bör ett tydligt befintligt problem vara lätt att i
 Det finns många juridiska krav, efterlevnads krav och bransch krav som kan kräva en alternativ metod. Om offentliga versioner av en utvecklings lösning skapar risk för patent tider, immateriell egendoms skydd, kundens data läckor eller brott mot fastställda krav, är det inte säkert att den här metoden är lämplig. När det gäller risker som dessa finns bör du kontakta juridisk rådgivning innan du inför en guidad metod för versions hantering.
 
 ## <a name="references"></a>Referenser
+
+<!-- cSpell:ignore Ries -->
 
 Några av begreppen i den här artikeln bygger på ämnen som beskrivs i [*Lean-starten*](http://theleanstartup.com/book) (Eric-återställre, kronor-verksamhet, 2011).
 

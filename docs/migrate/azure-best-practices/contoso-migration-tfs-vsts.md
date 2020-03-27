@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 36a12a676a9bb48584c9914f93642b1ccbcad406
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 28cc70af615aa8df17ad7b4047f23b0df324b2db
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311633"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356274"
 ---
 <!-- cSpell:ignore contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME azuredevopsmigration validateonly -->
 
@@ -37,7 +37,7 @@ Contosos molnteam har fastställt mål för migreringen till Azure DevOps Servic
 - Arbetsobjekt och historik för det senaste året måste migreras.
 - De vill inte behöva skapa nya användarnamn och lösenord. Alla aktuella systemtilldelningar måste bibehållas.
 - De vill gå från versionskontroll med Team Foundation (TFVC) till Git.
-- Över gången till git är en "Tip-migrering" som endast importerar den senaste versionen av käll koden. Det kommer att ske under stilleståndstid när allt arbete kommer att stoppas under övergången. De förstår att endast den aktuella huvudgrenens historik kommer att vara tillgänglig efter flytten.
+- Över gången till git är en "Tip-migrering" som endast importerar den senaste versionen av käll koden. Det sker under en stillestånds tid när allt arbete kommer att stoppas som kodbas-växlar. De förstår att endast den aktuella huvudgrenens historik kommer att vara tillgänglig efter flytten.
 - De är bekymrade över ändringen och vill testa den innan de flyttar allt. De vill ha kvar tillgång till TFS även efter övergången till Azure DevOps Services.
 - De har flera samlingar och vill börja med en som bara har några få projekt för att bättre förstå processen.
 - De förstår att TFS-samlingar har ett ”ett till ett”-förhållande med Azure DevOps Services organisationer så de kommer att ha flera URL:er. Detta överensstämmer dock med deras aktuella separationsmodell för kodbas och projekt.
@@ -276,15 +276,15 @@ Contosos administratörer skapar DACPAC så här:
 
     `SqlPackage.exe /sourceconnectionstring:"Data Source=SQLSERVERNAME\INSTANCENAME;Initial Catalog=Tfs_ContosoDev;Integrated Security=True" /targetFile:C:\TFSMigrator\Tfs_ContosoDev.dacpac /action:extract /p:ExtractAllTableData=true /p:IgnoreUserLoginMappings=true /p:IgnorePermissions=true /p:Storage=Memory`
 
-    ![Säkerhetskopiering](./media/contoso-migration-tfs-vsts/backup1.png)
+    ![Backup](./media/contoso-migration-tfs-vsts/backup1.png)
 
 2. Följande meddelande visas när kommandot körts.
 
-    ![Säkerhetskopiering](./media/contoso-migration-tfs-vsts/backup2.png)
+    ![Backup](./media/contoso-migration-tfs-vsts/backup2.png)
 
 3. De verifierar DACPAC-filens egenskaper
 
-    ![Säkerhetskopiering](./media/contoso-migration-tfs-vsts/backup3.png)
+    ![Backup](./media/contoso-migration-tfs-vsts/backup3.png)
 
 ### <a name="update-the-file-to-storage"></a>Ladda upp filen till lagringsplatsen
 

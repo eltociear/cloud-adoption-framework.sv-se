@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ecb6cfc10b88490269b50a5fe6bec7d2c3277d7b
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: b7ea46fb1723e0603aa7251f135caa51b9f998ad
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312585"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356037"
 ---
 # <a name="application-migration-patterns-and-examples"></a>Programmigrering – mönster och exempel
 
@@ -34,7 +34,7 @@ Strategier för migrering till molnet kan delas in i fyra allmänna mönster: v�
 
 **Mönster** | **Definition** | **När det bör användas**
 --- | --- | ---
-**Värdbyte** | Kallas ofta för en _hiss och Shift_ -migrering. Det här alternativet kräver inte kodändringar och gör att du snabbt kan migrera dina befintliga appar till Azure. Varje app migreras i befintligt skick för att dra nytta av molnets fördelar utan de risker och kostnader som är förknippade med kodändringar. | När du behöver flytta appar till molnet snabbt.<br/><br/> När du vill flytta en app utan att ändra den.<br/><br/> När dina appar konstrueras så att de kan dra nytta av [Azure IaaS](https://azure.microsoft.com/overview/what-is-iaas)-skalbarhet efter migreringen.<br/><br/> När appar är viktiga för verksamheten men du inte behöver omedelbara ändringar av appfunktioner.
+**Värdbyte** | Kallas ofta för en _hiss och Shift_ -migrering. Det här alternativet kräver inte kodändringar och gör att du snabbt kan migrera dina befintliga appar till Azure. Varje app migreras i befintligt skick för att dra nytta av molnets fördelar utan de risker och kostnader som är förknippade med kodändringar. | När du behöver flytta appar till molnet snabbt.<br/><br/> När du vill flytta en app utan att ändra den.<br/><br/> När dina appar är utformade så att de kan dra nytta av [Azure IaaS](https://azure.microsoft.com/overview/what-is-iaas) -skalbarhet efter migreringen.<br/><br/> När appar är viktiga för verksamheten men du inte behöver omedelbara ändringar av appfunktioner.
 **Omstrukturera** | Refaktorisering kallas ofta ”ompaketering” och kräver minimala ändringar i appar så att de kan ansluta till [Azure-PaaS](https://azure.microsoft.com/overview/what-is-paas) och använda molnerbjudanden.<br/><br/> Du skulle till exempel kunna migrera befintliga appar till Azure App Service eller Azure Kubernetes Service (AKS).<br/><br/> Du skull även kunna refaktorisera relationsdatabaser och icke-relationella databaser till alternativ såsom Azure SQL Database Managed Instance, Azure Database for MySQL, Azure Database for PostgreSQL samt Azure Cosmos DB. | Om din app enkelt kan paketeras om till att fungera i Azure.<br/><br/> Om du vill använda innovativa DevOps-metoder som tillhandahålls av Azure, eller om du överväger DevOps med en containerstrategi för arbetsbelastningar.<br/><br/> För refaktorisering behöver du tänka på portabiliteten i din befintliga kodbas samt tillgängliga utvecklingskunskaper.
 **Arkitekturomarbetning** | Arkitekturomarbetning för migrering fokuserar på att ändra och utöka appfunktionaliteten och kodbasen för att optimera apparkitekturen för molnskalbarhet.<br/><br/> Du kan till exempel dela upp ett monolitiskt program i en grupp med mikrotjänster som fungerar tillsammans och skalas enkelt.<br/><br/> Eller så kan du utföra arkitekturomarbetning för relationsdatabaser och icke-relationella databaser till fullständigt hanterade hanterad Azure SQL Database-instans, Azure Database for MySQL, Azure Database for PostgreSQL samt Azure Cosmos DB. | När dina appar kräver större revideringar för att införliva nya funktioner eller för att fungera effektivt på en molnplattform.<br/><br/> När du vill använda befintliga program investeringar, uppfylla skalbarhets kraven, använda innovativa DevOps-metoder och minimera användningen av virtuella datorer.
 **Återskapa** | Återskapande går ett steg längre genom att återskapa en app från grunden med hjälp av Azure-molntekniker.<br/><br/> Du kan till exempel bygga gröna appar med [molnbaserade](https://azure.com/cloudnative) tekniker som Azure Functions, Azure AI, Azure SQL Database Hanterad instans och Azure Cosmos dB. | När du vill utveckla snabbt, och befintliga appar har begränsad funktionalitet och livslängd.<br/><br/> När du är redo att påskynda företagsinnovationen (däribland DevOps-metoder som tillhandahålls av Azure) kan du skapa nya program med hjälp av molnbaserade tekniker och dra nytta av framsteg inom AI, blockkedjan och IoT.

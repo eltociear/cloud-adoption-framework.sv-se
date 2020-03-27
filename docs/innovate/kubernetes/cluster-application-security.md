@@ -8,13 +8,15 @@ ms.topic: guide
 ms.date: 03/20/2020
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a8f94e2b559f2f0e373c4ae1c2f05c9b90fa57fb
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 17450c59ff257e78a8f5603638eca35fe72e3abd
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80226560"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356574"
 ---
+<!-- cSpell:ignore asabbour sabbour kured -->
+
 # <a name="cluster-and-application-security"></a>Kluster-och program säkerhet
 
 Bekanta dig med Kubernetes Security Essentials och granska den säkra konfigurationen för kluster och program säkerhets vägledning.

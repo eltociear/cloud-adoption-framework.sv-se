@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: cc8f2396e379180d213bd042d65f36e9eaef2828
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: 44b6c2dc910068f70645e54c372e3f4290d02669
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508125"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356991"
 ---
+<!-- cSpell:ignore offboarding preintegration -->
+
 # <a name="identity-baseline-discipline-improvement"></a>Förbättringar av identitets bas linje disciplin
 
 Identitets bas disciplinen fokuserar på sätt att etablera principer som garanterar konsekvens och kontinuitet i användar identiteter oavsett vilken moln leverantör som är värd för programmet eller arbets belastningen. I den fem ämnes gruppen i moln styrning innehåller identitets bas linjer beslut om [hybrid identitets strategi](../../decision-guides/identity/index.md), utvärdering och tillägg av identitets lager, implementering av enkel inloggning (samma inloggning), granskning och övervakning av obehörig användning eller skadliga aktörer. I vissa fall kan det också innebära beslut att modernisera, konsolidera eller integrera flera identitets leverantörer.

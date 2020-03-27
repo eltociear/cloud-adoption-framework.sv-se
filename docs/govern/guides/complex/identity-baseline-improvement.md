@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 05a3ce3eb018a9b15f66b90749782def260c66d7
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 6210750d5c11d4ebca55d4c96c7a87d03ca87355
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707619"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357129"
 ---
+<!-- cSpell:ignore CFO's MPLS -->
+
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Styrnings guide för komplexa företag: förbättra disciplinen för identitets bas linjer
 
 Den här artikeln går vidare genom att lägga till identitets bas kontroller i styrnings MVP.

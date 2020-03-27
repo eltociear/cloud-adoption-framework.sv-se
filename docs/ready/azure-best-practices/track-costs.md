@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b363d43568617d7c58003c2bd278008583870664
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: ce9ce90d429064eeb8e848fd203aec11d042e539
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312689"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354524"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Spåra kostnader för affärsenheter, miljöer och projekt
 
@@ -24,7 +24,7 @@ ms.locfileid: "79312689"
 
 Kostnadskontroll, ungefär som styrning och andra hanteringsstrukturer, är beroende av en välhanterad miljö. Att upprätta en sådan miljö (särskilt en komplex sådan) kräver konsekventa processer när tillgångar klassificeras och organiseras.
 
-Till gångar (även kallade resurser) inkluderar alla virtuella datorer, datakällor och program som distribueras till molnet. Azure tillhandahåller flera mekanismer för att klassificera och organisera tillgångar. [Skalning med flera Azure-prenumerationer](../azure-best-practices/scaling-subscriptions.md) beskriver alternativ för att organisera resurser baserat på flera kriterier och därmed skapa en välhanterad miljö. Den här artikeln fokuserar på Azures grundläggande koncept för insyn i molnkostnader.
+Till gångar (även kallade resurser) inkluderar alla virtuella datorer, datakällor och program som distribueras till molnet. Azure tillhandahåller flera mekanismer för att klassificera och organisera tillgångar. [Organisera och hantera dina Azure-prenumerationer](../azure-best-practices/organize-subscriptions.md) information alternativ för att organisera resurser baserat på flera kriterier för att upprätta en väl hanterad miljö. Den här artikeln fokuserar på Azures grundläggande koncept för insyn i molnkostnader.
 
 ### <a name="classification"></a>Klassificering
 
@@ -58,15 +58,16 @@ Diagrammet visar metodtips men omfattar inte följande alternativ:
 
 Resten av den här artikeln förutsätter att du använder metodtipsen i föregående diagram. Följande artiklar kan dock hjälpa dig att tillämpa metoden på en resursorganisation som passar ditt företag bäst:
 
-- [Skalning med flera Azure-prenumerationer](../azure-best-practices/scaling-subscriptions.md)
-- [Distribuera en styrningsMVP för att styra standarder för välhanterad miljö](../../govern/guides/complex/index.md)
+- [Skala din Azure-miljö med flera prenumerationer](../azure-best-practices/scale-subscriptions.md)
+- [Organisera och hantera dina Azure-prenumerationer](../azure-best-practices/organize-subscriptions.md))
+- [Distribuera en styrnings MVP för att reglera välhanterade miljö standarder](../../govern/guides/complex/index.md)
 
 ## <a name="provide-the-right-level-of-cost-access"></a>Ange rätt nivå för kostnadsåtkomst
 
 Kostnadshantering är en lagaktivitet. Avsnittet om organisationsberedskap i Ramverk för molnimplementering beskriver ett litet antal kärnteam och beskriver hur dessa team möjliggör molnimplementeringen. Den här artikeln expanderar gruppdefinitionerna för att definiera omfången och rollerna som ska tilldelas medlemmar i varje team för att ge rätt nivå av insyn i kostnadshanteringsinformationen.
 
-- *Roller* definierar vad en användare kan göra med olika tillgångar.
-- *Omfång* definierar vilka tillgångar (användare, grupp, tjänsthuvudnamn eller hanterad identitet) där användaren får göra dessa saker.
+- **Roller** definierar vad en användare kan göra med olika tillgångar.
+- **Omfång** definierar vilka tillgångar (användare, grupp, tjänsthuvudnamn eller hanterad identitet) där användaren får göra dessa saker.
 
 Som tumregel föreslår vi en modell med lägsta möjliga behörighet när du tilldelar personer till roller och omfång.
 

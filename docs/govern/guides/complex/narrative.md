@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7c2cfcc76153e999b2ca9d50b63cf0a72cfb2c14
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: cb514ea2395deef91e6eca802de630ad77926823
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706922"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357090"
 ---
+<!-- cSpell:ignore CDO's CIO's -->
+
 # <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>Styrnings guide för komplexa företag: de understödjande behållningarna
 
 Följande bevarar upprättar ett användnings fall för [styrning under komplex företagets moln införande resa](./index.md). Innan du följer rekommendationerna i guiden är det viktigt att förstå de antaganden och den anledning som visas i den här informationen. Sedan kan du bättre justera styrnings strategin till din organisations moln införande resa.

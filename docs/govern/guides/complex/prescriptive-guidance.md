@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 74f81e139e7eacc7445321592eab4027a40a8c56
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: bbd50e5e2ddda9489f0fc7a90a546ef41fd86ade
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312390"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357120"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>Styrnings guide för komplexa företag: bästa praxis förklaras
 
@@ -50,7 +50,7 @@ Moln styrnings teamet kommer att ansvara för följande beslut och implementerin
 
 ### <a name="subscription-design"></a>Prenumerationsdesign
 
-Beslutet om vilken prenumerations design som används avgör hur Azure-prenumerationer blir strukturerade och hur Azure-hanteringsportalen används för att effektivt hantera åtkomst, principer och efterlevnad för den här prenumerationen. I den här gruppen har styrnings teamet valt design mönstret **[blandad](../../../decision-guides/subscriptions/index.md#mixed-patterns)** prenumeration.
+Beslutet om vilken prenumerations design som används avgör hur Azure-prenumerationer blir strukturerade och hur Azure-hanteringsportalen används för att effektivt hantera åtkomst, principer och efterlevnad för den här prenumerationen. I den här gruppen har styrnings teamet valt en **[strategi för blandade prenumerationer](../../../decision-guides/subscriptions/index.md#mixing-subscription-strategies)** .
 
 - När nya begär Anden för Azure-resurser uppstår, ska en "avdelning" upprättas för varje större affär senhet i varje operativ geografi. I varje avdelning bör prenumerationer skapas för varje program archetype.
 - Ett program archetype är ett sätt att gruppera program med liknande behov. Vanliga exempel är: program med skyddade data, styrda program (t. ex. HIPAA eller FedRAMP), låg risk program, program med lokala beroenden, SAP eller andra stordator program i Azure eller program som utökar lokala SAP-eller stordator program. Varje organisation har unika behov baserat på data klassificeringar och de typer av program som stöder verksamheten. Beroende mappning av den digitala fastigheten kan hjälpa till att definiera programmet archetypes i en organisation.

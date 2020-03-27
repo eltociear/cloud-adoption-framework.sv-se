@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e505b7794c9eeff94d746286e0d8cbb9f0cea86e
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: a22742755f9336fd1cbbae3bb4417314228a432d
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171267"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356809"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>Verktyg för att demokratisera identifieringen av data i Azure
 
@@ -39,26 +39,26 @@ Alla rikt linjer mappar till de fyra föregående processerna. Vägledning från
 
 I Azure används följande verktyg ofta för att påskynda digitala uppfinningar i föregående steg:
 
-- Power BI
-- Azure Data Catalog
-- Azure SQL Data Warehouse
-- Azure Cosmos DB
-- Azure Database for PostgreSQL
-- Azure Database for MySQL
-- Azure-databas för MariaDB
-- Azure Database for PostgreSQL storskalig
-- Azure Data Lake
-- Azure Database Migration Service
-- Azure SQL Database, med eller utan hanterade instanser
-- Azure Data Factory
-- Azure Stream Analytics
-- SQL Server Integration Services
-- Azure Stack
-- SQL Server Stretch Database
-- Microsoft Azure StorSimple
-- Azure Files
-- Azure File Sync
-- PolyBase
+- [Power BI](https://docs.microsoft.com/power-bi)
+- [Azure Data Catalog](https://docs.microsoft.com/azure/data-catalog)
+- [Azure Synapse-analys](https://docs.microsoft.com/azure/synapse-analytics)
+- [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db)
+- [Azure Database for PostgreSQL](https://docs.microsoft.com/azure/postgresql)
+- [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql)
+- [Azure Database för MariaDB](https://docs.microsoft.com/azure/mariadb)
+- [Azure Database for PostgreSQL storskalig](https://docs.microsoft.com/azure/postgresql/concepts-hyperscale-nodes)
+- [Azure Data Lake](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)
+- [Azure Database Migration Service](https://docs.microsoft.com/azure/dms)
+- [Azure SQL Database, med eller utan hanterade instanser](https://docs.microsoft.com/azure/sql-database)
+- [Azure Data Factory](https://docs.microsoft.com/azure/data-factory)
+- [Azure Stream Analytics](https://docs.microsoft.com/azure/stream-analytics)
+- [SQL Server Integration Services](https://docs.microsoft.com/sql/integration-services)
+- [Azure Stack](https://docs.microsoft.com/azure-stack)
+- [SQL Server Stretch Database](https://docs.microsoft.com/sql/sql-server/stretch-database)
+- [Microsoft Azure StorSimple](https://docs.microsoft.com/azure/storsimple)
+- [Azure Files](https://docs.microsoft.com/azure/storage/files)
+- [Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning)
+- [PolyBase](https://docs.microsoft.com/sql/relational-databases/polybase)
 
 När de uppfinnings metoder som används i skalan kräver olika aspekter av varje lösning förfining och teknisk mognad. Som det händer är det troligt att mer av dessa tjänster krävs. Använd innehålls förteckningen till vänster på den här sidan för Azure tools-vägledningen som är relevant för processen för hypotes testning.
 

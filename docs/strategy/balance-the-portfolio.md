@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: bb278c284a0f72a530eb4b84ecd3137b997933ac
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: fc0c52932b15a0987f78e853c3b3756d27629ae0
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508363"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353479"
 ---
 <!-- cSpell:ignore CSAT -->
 
@@ -105,3 +105,10 @@ Dessa skilda ansträngningar bör delas upp i två eller flera moln antagande te
 **Mindre omfabriker:** Vissa program kan förvaras med mindre omfaktor på data-eller program nivå. Detta arbete kräver att teammedlemmar distribuerar data till molnbaserade dataplattformar eller gör mindre konfigurationsändringar i programmet. Detta kan kräva visst stöd från ämnesexperter inom data- eller programutveckling. Detta arbete liknar dock det arbete som utförs av IT-implementatörer vid distribution av appar från tredje part. Detta arbete kan enkelt anpassas till teamet för molnmigrering eller molnstrategi. Detta arbete är inte alls lika snabbt som en migrering med värdbyte, men det tar ändå mindre tid att genomföra än arbete med refaktorisering.
 
 Under migreringen ska ansträngningarna segmenteras på de tre sätt som anges ovan och utföras av lämpligt team i lämplig iteration. Även om du skulle kunna förstå portföljen bör du också se till att ansträngningarna är mycket fokuserade och åtskiljda.
+
+## <a name="next-steps"></a>Nästa steg
+
+Förstå hur [globala marknads beslut](./global-markets.md) kan påverka omvandlings resan.
+
+> [!div class="nextstepaction"]
+> [Förstå globala marknader](./global-markets.md)

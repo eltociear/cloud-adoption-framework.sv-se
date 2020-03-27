@@ -7,18 +7,18 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: cbde932d0e4a91a80c4bde6a5b9604b43ee30441
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: c96039183f50d0ff189dab04defda4fd1ba2e4fc
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709506"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356926"
 ---
 # <a name="evaluate-risk-tolerance"></a>Utvärdera risktolerans
 
 Varje affärs beslut skapar nya risker. Att göra en investering i något skapar risk för förluster. Nya produkter eller tjänster skapar risker för marknads haverit. Ändringar av aktuella produkter eller tjänster kan minska marknads andelen. Moln omvandling tillhandahåller inte en Magical-lösning för vardagliga affärs risker. Till skillnad från anslutna lösningar (molnet eller lokalt) införs nya risker. När du distribuerar till gångar till en nätverksansluten anslutning expanderas även den potentiella hot profilen genom att exponera säkerhets svagheter för en mycket bredare, global community. Som tur är moln leverantörer medvetna om förändringar, ökningar och tillägg av risker. De investerar kraftigt för att minska och hantera riskerna för kundernas räkning.
 
-Den här artikeln fokuserar inte på moln risker. I stället beskrivs de affärs risker som är kopplade till olika former av moln omvandling. Längre fram i artikeln byter diskussions fokus för att diskutera olika sätt att förstå affärs toleransen för risk.
+Den här artikeln fokuserar inte på moln risker. I stället beskrivs de affärs risker som är kopplade till olika former av moln omvandling. Längre fram i artikeln flyttas diskussions fokus för att diskutera olika sätt att förstå affärs toleransen för risk.
 
 <!-- markdownlint-disable MD026 -->
 

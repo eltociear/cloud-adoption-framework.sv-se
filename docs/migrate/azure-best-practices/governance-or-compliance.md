@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b0aea9b1b69a659511e9a788e22a0e88e23e9047
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: 0526b85e52e203163942050716e5cabd4fc84ff3
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79023749"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355558"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategi för styrning eller efterlevnad
 
@@ -60,9 +60,9 @@ Vägledning om hur du utvecklar styrningsriktlinjer baserade på styrningsmodell
 
 ## <a name="optimize-and-promote-process-changes"></a>Optimera och höja upp processändringar
 
-Under optimerings-och marknadsförings processerna investerar shluld för moln styrning tid för att testa och validera efterlevnad av styrning och efterlevnad. Det här steget är också ett lämpligt tillfälle att mata in processer som molnstyrningsteamet kan omvandla till mallar som kan [accelerera distributionen](../../govern/deployment-acceleration/index.md) ytterligare för framtida projekt.
+Under optimerings-och kampanj processerna bör moln styrnings teamet investera tid för att testa och validera efterlevnad av styrning och efterlevnad. Det här steget är också ett lämpligt tillfälle att mata in processer som molnstyrningsteamet kan omvandla till mallar som kan [accelerera distributionen](../../govern/deployment-acceleration/index.md) ytterligare för framtida projekt.
 
-### <a name="suggested-action-during-the-optimize-and-promote-process"></a>Föreslagna åtgärder i samband med optimering och befordran
+### <a name="suggested-action-during-the-optimize-and-promote-process"></a>Föreslagen åtgärd i samband med optimering och uppflyttning
 
 Under den här processen bör projekt planen omfatta tidsallokeringar för moln styrnings teamet för att utföra en kompatibilitetskontroll för varje arbets belastning som planeras för produktions befordran.
 

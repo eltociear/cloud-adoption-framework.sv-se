@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 064016bddcf8c78e1b722397a9f18c71a0485776
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: a1201c3e1bf05f7fc704b1a12744d8f031607169
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170774"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356817"
 ---
 # <a name="tools-to-predict-and-influence-data-in-azure"></a>Verktyg för att förutsäga och påverka data i Azure
 
@@ -34,10 +34,10 @@ I föregående bild justeras data och insikter med de bästa metoderna som beskr
 
 I Azure används följande verktyg ofta för att påskynda digitala uppfinningar i vart och ett av de föregående faserna:
 
-- Azure Machine Learning
-- Azure HDInsight
-- Hadoop R-skala
-- Azure SQL Data Warehouse
+- [Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning)
+- [Azure HDInsight](https://docs.microsoft.com/azure/hdinsight)
+- [Hadoop R-skala](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr)
+- [Azure Synapse-analys](https://docs.microsoft.com/azure/synapse-analytics)
 
 Hur varje verktyg hjälper med varje fas av förutsägelse och påverkan visas i rikt linjerna i innehålls förteckningen till vänster på den här sidan.
 

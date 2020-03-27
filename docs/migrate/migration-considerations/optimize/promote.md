@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e2f0a0d92dfa63e0eb3f438fcc155854dfd61f8c
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 34444c31aa977e6088c7aabbb916a27c008c2b04
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311820"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355213"
 ---
+<!-- cSpell:ignore CISO prepromotion -->
+
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-is-required-to-promote-a-migrated-resource-to-production"></a>Vad krävs för att befordra en migrerad resurs till produktion?
@@ -27,7 +29,7 @@ Befordringsprocessen varierar beroende på arbetsbelastningens arkitektur. Det f
 Var och en av följande processer bör utföras, dokumenteras och verifieras före produktionsdistributionen:
 
 - **[Utvärdera](../assess/index.md):** Arbets belastningen har utvärderats för molnbaserad kompatibilitet.
-- **[Arkitekt](../assess/architect.md):** Arbets Belastningens struktur har konstruerats korrekt för att passa den valda moln leverantören.
+- **[Arkitekt](../assess/architect.md):** Arbets Belastningens struktur har utformats korrekt för att passa den valda moln leverantören.
 - **[Replikera](../migrate/replicate.md):** Till gångarna har repliker ATS till moln miljön.
 - **[Steg](../migrate/stage.md):** De replikerade till gångarna har återställts i en mellanlagrad instans av moln miljön.
 - **[Företags testning](./business-test.md):** Arbets belastningen har testats fullständigt och godkänts av företags användare.

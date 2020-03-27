@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 06e1bafa4a4a4c1ed88bb29d6787fec95fbd956b
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: ffe9e81eb0bdd2d3a859885d6b01bd61abd9f719
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170128"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355386"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>Anpassa kostnads modeller med den digitala fastigheten till prognos moln kostnader
 
@@ -25,6 +25,6 @@ Med pris verktygen för Azure kan du hantera moln utgifter med genomskinlighet o
 
 - [Totalkostnad för ägande kostnad (TCO)](https://azure.microsoft.com/pricing/tco/calculator): Sänk den totala ägande kostnaden för din lokala infrastruktur med Azure Cloud Platform. Använd Azures TCO-kalkylator för att beräkna de kostnads besparingar du kan inse genom att migrera dina program arbets belastningar till Azure. Ge en kort beskrivning av din lokala miljö för att få en snabb rapport.
 
-- [Pris kalkylator för Azure](https://azure.microsoft.com/pricing): beräkna din förväntade månads faktura med hjälp av vår pris kalkylator. Spåra din faktiska konto användning och faktura när som helst med hjälp av fakturerings portalen. Konfigurera automatiska fakturerings aviseringar för e-post för att meddela dig om dina utgifter går över en mängd som du konfigurerar.
+- [Pris kalkylator för Azure](https://azure.microsoft.com/pricing/calculator): beräkna din förväntade månads faktura med hjälp av vår pris kalkylator. Spåra din faktiska konto användning och faktura när som helst med hjälp av fakturerings portalen. Konfigurera automatiska fakturerings aviseringar för e-post för att meddela dig om dina utgifter går över en mängd som du konfigurerar.
 
 - [Azure Cost Management](https://azure.microsoft.com/services/cost-management): Azure Cost Management, som licensierats av Microsoft dotter Cloudyn, är en kostnads hanterings lösning med flera moln som hjälper dig att använda och hantera Azure och andra moln resurser effektivt. Samla in moln användning och fakturerings data via API: er (Application program interface) från Azure, Amazon Web Services och Google Cloud Platform. Med dessa data får du fullständig insyn i resursanvändningen och kostnaderna för moln plattformarna i en enda enhetlig vy. Övervaka moln förbrukning och kostnads trender kontinuerligt. Spåra faktiska moln utgifter mot din budget för att undvika överförbrukning. Identifiera utgifts avvikelser och användnings ineffektivitet. Använd historiska data för att förbättra prognos precisionen för moln användning och utgifter.

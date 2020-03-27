@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 85f5cf55bb089bd347383bedf58b054cf2a7351c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 8555770721a1c00f40ca66a6f7c65adc635cec59
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094447"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357231"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Påbörja en migrering av molnet i Azure
 
@@ -25,7 +25,7 @@ Ramverket för moln införande hjälper kunder att åta sig en förenklad moln i
 Det här ramverket är främst utformat för moln arkitekter och moln strategi team som leder till moln implementerings ansträngningar. Många ämnen i det här ramverket är dock relevanta för andra roller i företaget och det. Cloud Architects fungerar ofta som underlättare för att engagera var och en av de relevanta rollerna. Den här exekutiva sammanfattningen är utformad för att förbereda de olika rollerna innan du underlätterar konversationer.
 
 > [!NOTE]
-> Den här vägledningen är för närvarande en offentlig för hands version. Terminologi, metoder och vägledning testas grundligt med kunder, partner och Microsoft Teams under för hands versionen. Därför kan innehålls förteckningen och vägledningen ändras något över tid.
+> Den här vägledningen är för närvarande en offentlig för hands version. Terminologi, metoder och vägledning testas grundligt med kunder, partner och Microsoft Teams under för hands versionen. Därför kan innehålls förteckningen och rikt linjerna ändras något med tiden.
 
 ## <a name="motivations"></a>Motiveringar
 
@@ -148,3 +148,5 @@ Ramverket för moln införande är en livs cykel lösning. Den är utformad för
 > [Hantera](../manage/index.md)
 >
 > [Externa](../organize/index.md)
+
+<!-- test:ignoreNextStep -->

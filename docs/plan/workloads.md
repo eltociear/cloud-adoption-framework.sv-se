@@ -1,20 +1,20 @@
 ---
-title: Prioritera och definiera arbets belastningar för moln införande
-description: Använd ramverket för moln införande för Azure för att lära dig hur du prioriterar och definierar arbets belastningar för en moln implementerings plan.
+title: Definiera och prioritera arbets belastningar för moln införande
+description: Använd ramverket för moln införande för Azure för att lära dig hur du definierar och prioriterar arbets belastningar för en moln implementerings plan.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9f374bbe149e132fde4c44a8c0ecd9246615bac0
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 8d9297534f04b6656b584fa82d565e9119599f26
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140628"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354705"
 ---
-# <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Prioritera och definiera arbets belastningar för en moln implementerings plan
+# <a name="define-and-prioritize-workloads-for-a-cloud-adoption-plan"></a>Definiera och prioritera arbets belastningar för en moln implementerings plan
 
 Att upprätta tydliga, åtgärds bara prioriteringar är en av hemligheterna för att genomföra molnet. Det naturliga frestelsen är att investera tid i att definiera alla arbets belastningar som kan påverkas under moln införande. Men det är counterproductive, särskilt tidigt i införande processen.
 

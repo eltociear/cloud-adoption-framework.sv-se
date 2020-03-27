@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2e9dbaf3bb92893e4eb737964da3f1b0c3a056ad
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: f34938fc6690949d017ee538c444a4ccef389aef
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707721"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357020"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Standard styrnings guide för företag: förbättra disciplinen för säkerhets bas linjer
 
@@ -37,7 +37,7 @@ Sedan dess har vissa saker ändrats som påverkar styrning:
 
 - Program utvecklings teamet har implementerat en CI/CD-pipeline för att distribuera ett internt program i molnet med en bättre användar upplevelse. Appen har ännu inte interagerat med skyddade data, så det är inte produktions klart.
 - Business Intelligence-teamet i IT kan aktivt granska data i molnet från logistik, inventering och tredje parts källor. Dessa data används för att driva nya förutsägelser, vilket kan forma affärs processer. Dessa förutsägelser och insikter är dock inte åtgärdade förrän kund-och finans data kan integreras i data plattformen.
-- IT-teamet fortlöper i informations chefs-och ekonomi planerna för att dra tillbaka DR-datacenter. Mer än 1 000 av 2 000-till gångarna i DR-datacenter har dragits tillbaka eller migrerats.
+- IT-teamet fortlöper i informations chefen och ekonomi chefen för att dra tillbaka DR-datacenter. Mer än 1 000 av 2 000-till gångarna i DR-datacenter har dragits tillbaka eller migrerats.
 - De lösta definierade principerna angående person uppgifter och ekonomiska data har förberetts. De nya företags principerna är dock knutna till implementeringen av relaterade säkerhets-och styrnings principer. Team har fortfarande stoppats.
 
 ### <a name="incrementally-improve-the-future-state"></a>Förbättra framtida tillstånd stegvis

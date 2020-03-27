@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 0308308ab098f7cc7fe7c05094549b01f36c2d61
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 6b479ac5bd347cda081dc55dbabdc4fbd46d5b11
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311973"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356169"
 ---
+<!-- cSpell:ignore IISRESET WEBVM SQLVM SQLMI contosodc contosohost contosovmsacc cswiz vcenter WEBMV sourcedb -->
+
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Ange en ny värd för en lokal app på en virtuell Azure-dator och SQL Database Managed Instance
 
 Den här artikeln visar hur det fiktiva företaget Contoso migrerar en klientdelsapp i Windows .NET på två nivåer som körs på virtuella VMware-datorer, till en virtuell Azure-dator med hjälp av tjänsten Azure Site Recovery. Den visar också hur Contoso migrerar appens databas till Azure SQL Database Managed Instance.
@@ -387,12 +389,12 @@ Contosos administratörer gör följande för att konfigurera källmiljön:
     ![Registrera konfigurationsservern](./media/contoso-migration-rehost-vm-sql-managed-instance/config-server-register2.png)
 
 7. Verktyget utför vissa konfigurationsåtgärder och startar sedan om datorn. De loggar in på datorn igen. Guiden för konfiguration av hanteringsservrar startar automatiskt.
-8. I guiden väljer de det nätverkskort som ska ta emot replikeringstrafiken. Det går inte att ändra den här inställningen när den har konfigurerats.
+8. I guiden väljer de det nätverkskort som ska ta emot replikeringstrafik. Det går inte att ändra den här inställningen när den har konfigurerats.
 9. De väljer prenumeration, resursgrupp och Recovery Services-valv där konfigurationsservern ska registreras.
 
     ![Välja Recovery Services-valv](./media/contoso-migration-rehost-vm-sql-managed-instance/cswiz1.png)
 
-10. De laddar ned och installerar MySQL-servern och VMware PowerCLI. Därefter verifierar de serverinställningarna.
+10. De hämtar och installerar MySQL server och VMware PowerCLI. Därefter verifierar de serverinställningarna.
 11. Efter verifieringen anger de det fullständiga domännamnet eller IP-adressen för vCenter Server-instansen eller vSphere-värden. De lämnar standardporten och anger ett visningsnamn för vCenter Server-instansen i Azure.
 12. De anger det konto som skapades tidigare så att Site Recovery automatiskt kan identifiera virtuella VMware-datorer som är tillgängliga för replikering.
 13. De anger autentiseringsuppgifter så Mobility Service installeras automatiskt när replikering är aktiverad. I Windows-datorer måste kontot ha lokal administratörsbehörighet på de virtuella datorerna.
@@ -428,7 +430,7 @@ När källan och målet har konfigurerats skapar Contosos administratörer en re
 **Behöver du mer hjälp?**
 
 - Du kan läsa en fullständig genomgång av de här stegen i [Konfigurera haveriberedskap för lokala virtuella VMware-datorer](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial).
-- Detaljerade instruktioner finns tillgängliga som hjälper dig att [konfigurera källmiljön](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-source), [distribuera konfigurationsservern](https://docs.microsoft.com/azure/site-recovery/vmware-azure-deploy-configuration-server) och [konfigurera replikeringsinställningar](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-replication).
+- Där finns detaljerade anvisningar som hjälper dig att [konfigurera källmiljön](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-source), [distribuera konfigurationsservern](https://docs.microsoft.com/azure/site-recovery/vmware-azure-deploy-configuration-server) och [konfigurera replikeringsinställningar](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-replication).
 
 ### <a name="enable-replication"></a>Aktivera replikering
 
@@ -513,7 +515,7 @@ Innan de migrerar WEBVM kan ett redundanstest hjälpa dem att se att allt funger
 1. De kör ett redundanstest till den senaste tillgängliga tidpunkten (**Senast bearbetad**).
 2. De väljer **Stäng datorn innan du påbörjar redundans**. När det här alternativet är valt försöker Site Recovery stänga av den virtuella källdatorn innan redundansen utlöses. Redundansen fortsätter även om avstängningen misslyckas.
 3. Redundanstestet kör: a. En kravkontroll körs för att säkerställa att alla de villkor som krävs vid migreringen är uppfyllda.
-    b. Redundansen bearbetar data så att du kan skapa en virtuell Azure-dator. Om den senaste återställningspunkten väljs, skapas en återställningspunkt från datan.
+    b. Redundansen bearbetar data så att du kan skapa en virtuell Azure-dator. Om den senaste återställningspunkten väljs, skapas en återställningspunkt från dessa data.
     c. En virtuell Azure-dator skapas med hjälp av de data som bearbetades i föregående steg.
 4. När redundansen är klar visas repliken av den virtuella Azure-datorn i Azure-portalen. De kontrollerar att allt fungerar som det ska: att den virtuella datorn har rätt storlek, att den är ansluten till rätt nätverk och att den körs.
 5. När de har verifierat redundanstestet rensar de redundansen och registrerar eventuella observationer.

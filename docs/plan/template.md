@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 243094da7b92a374124474eaaf0c955b5fdb85ed
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: fb35c059f3c3c6c9485d70a78a2c3fa1b49dc10d
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140611"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354774"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Moln implementerings plan och Azure-DevOps
 
@@ -30,7 +30,7 @@ Om du vill distribuera implementerings planen för molnet öppnar du [Azure DevO
 4. Välj **skapa projekt** om du vill skapa ett nytt projekt i din klient organisation, baserat på plan mal len. I förlopps indikatorn visas hur du distribuerar projektet.
 5. När distributionen är färdig väljer du **navigera till projekt** för att se det nya projektet.
 
-När projektet har skapats kan du fortsätta med den här artikel serien och se hur du kan ändra mallen så att den passar din moln implementerings plan.
+När projektet har skapats fortsätter du till den här artikel serien och lär dig hur du ändrar mallen så att den passar din moln implementerings plan.
 
 Ytterligare support och vägledning för det här verktyget finns i [demo generator för Azure DevOps Services](https://docs.microsoft.com/azure/devops/demo-gen/?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json&view=azure-devops).
 

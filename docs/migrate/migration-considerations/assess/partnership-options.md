@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0504148cd9eddce66645891527baa2ac0e98ea17
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 0d7207ce5073d1e3e67e2164774ee0da0eddc784
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311871"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355308"
 ---
+<!-- cSpell:ignore CSPs MSPs -->
+
 # <a name="understand-partnership-options"></a>Förstå partnerskapsalternativ
 
 Under migreringen utför teamet för molnimplementering den faktiska migreringen av arbetsbelastningar till molnet. Till skillnad från de samarbets- och problemlösningsuppgifter som du utför när du definierar [digital egendom](../../../digital-estate/index.md) eller skapar kärninfrastruktur i molnet, brukar migreringen vara en serie repetitiva körningsuppgifter. Utöver de repetitiva aspekterna utförs sannolikt testning och justering som kräver djupgående kunskap hos den valda molnleverantören. Repetitiva typer av processer hanteras ibland bäst av en partner, vilket minskar belastningen på personalen. Dessutom är det ibland enklare för partners att använda djupgående teknisk expertis när de repetitiva processerna ställs inför körningsavvikelser.
@@ -96,7 +98,7 @@ Microsofts certifierade lösningsleverantörer är specialister på de senaste l
 Få hjälp av partners med färdiga eller anpassade Azure-lösningar, samt av partners som kan hjälpa dig att distribuera och hantera dessa lösningar:
 
 - **[Hitta en partner för molnlösningar](https://www.microsoft.com/solution-providers/home).** En certifierad leverantör av molnlösningar kan hjälpa dig att dra full nytta av molnet genom att utvärdera affärsmålen för molnimplementering, identifiera rätt molnlösning för dina affärsbehov och hjälpa företaget att bli mer flexibelt och effektivt.
-- **[Hitta en partner för hanterade tjänster](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca).** En Azure-partner för hanterade tjänster hjälper dig att överföra företaget till Azure genom att vägleda dig genom alla delar av processen. Partners för hanterade molntjänster hjälper kunderna från konsulttjänster till migrering och driftshantering och visar alla fördelar som en molnimplementering kan innebära. De agerar också som en enda kontaktpunkt för vanlig support, etablering och fakturering med en flexibel affärsmodell där du betalar per användning.
+- **[Hitta en partner för hanterade tjänster](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca).** En Azure-partner för hanterade tjänster hjälper dig att överföra företaget till Azure genom att vägleda dig genom alla delar av processen. Partners för hanterade molntjänster hjälper kunderna från konsulttjänster till migrering och driftshantering och visar alla fördelar som en molnimplementering kan innebära. De fungerar också som en enda-enda-butik för vanlig support, etablering och fakturerings upplevelsen, allt med en flexibel affärs modell enligt principen betala per användning.
 
 ## <a name="next-steps"></a>Nästa steg
 

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: c545f147ba374fe1150573b060c600269eb628b1
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 4e6daee6f5f69599fc8346cf6414b2dff14ae7a9
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311616"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353739"
 ---
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
@@ -77,7 +77,7 @@ De tre vanligaste mönstren för Azure-registreringar är:
 
   ![Det geografiska mönstret](../_images/reference/geographic.png)
 
-Även om var och en av dessa mönster har sitt ställe, är **affär senhets** mönstret allt vanligare för att utforma en organisations kostnads modell och återspegla kontroll. Microsoft Core Engineering och Operations Group har skapat en effektiv delmängd av **affär senhets** mönstret som modelleras på **federala**, **delstatliga**och **lokalt**. Mer information finns i [ordna prenumerationer och resurs grupper i företaget](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/scaling-subscriptions).
+Även om var och en av dessa mönster har sitt ställe, är **affär senhets** mönstret allt vanligare för att utforma en organisations kostnads modell och återspegla kontroll. Microsoft Core Engineering och Operations Group har skapat en effektiv delmängd av **affär senhets** mönstret som modelleras på **federala**, **delstatliga**och **lokalt**. Mer information finns i [organisera dina prenumerationer och resurs grupper](../ready/azure-best-practices/organize-subscriptions.md).
 
 ### <a name="azure-management-groups"></a>Azure-hanteringsgrupper
 
@@ -216,7 +216,7 @@ Secure DevOps kit för Azure (AzSK) är en samling skript, verktyg, tillägg och
 
 AzSK är en omfattande uppsättning verktyg, skript och information som är en viktig del av en fullständig Azures styrnings plan och som införlivar detta i din Autogenerera är avgörande för att stödja organisationernas risk hanterings mål.
 
-### <a name="azure-update-management"></a>Azure-Uppdateringshantering
+### <a name="azure-update-management"></a>Uppdateringshantering i Azure
 
 En av de viktigaste uppgifterna du kan göra för att skydda din miljö är att se till att dina servrar korrigeras med de senaste uppdateringarna. Även om det finns många verktyg för att åstadkomma detta tillhandahåller Azure [azure uppdateringshantering](https://docs.microsoft.com/azure/automation/automation-update-management) -lösningen för att lösa identifieringen och distributionen av viktiga OS-korrigeringsfiler. Den använder Azure Automation, som beskrivs i avsnittet [Automatisera](#automate) senare i den här hand boken.
 

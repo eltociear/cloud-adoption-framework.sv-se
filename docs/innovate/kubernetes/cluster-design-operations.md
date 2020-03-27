@@ -8,13 +8,15 @@ ms.topic: guide
 ms.date: 12/16/2019
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5b5aafd1c9470b566395201a46c75d96581306bd
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 94288e4dd6e9bde1113c6343067dfaec9e7f3c62
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80226573"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356555"
 ---
+<!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
+
 # <a name="cluster-design-and-operations"></a>Kluster design och-åtgärder
 
 Identifiera för kluster konfiguration och nätverks design. Framtida korrektur skalbarhet genom att automatisera infrastruktur etableringen. Behåll hög tillgänglighet genom att planera för verksamhets kontinuitet och haveri beredskap.
@@ -22,6 +24,8 @@ Identifiera för kluster konfiguration och nätverks design. Framtida korrektur 
 ## <a name="plan-train-and-proof"></a>Plan, träna och korrektur
 
 När du kommer igång hjälper check listan och resurserna nedan dig att planera kluster designen. Du bör kunna besvara dessa frågor:
+
+<!-- markdownlint-disable MD033 -->
 
 > [!div class="checklist"]
 >
@@ -34,7 +38,7 @@ När du kommer igång hjälper check listan och resurserna nedan dig att planera
 >
 > | Checklista  | Resurser |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
-> | **Identifiera nätverks design överväganden.** Förstå nätverks design överväganden för kluster, jämför nätverks modeller och välj den Kubernetes nätverk-plugin som passar dina behov.    | [Kubernetes och Azure Container Network Interface (CNI)](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) <br/> [Använda Kubernetes-nätverk med dina egna IP-adressintervall i Azure Kubernetes service (AKS)](https://docs.microsoft.com/azure/aks/configure-kubenet) <br/> [Konfigurera Azure CNI Networking i Azure Kubernetes service (AKS)](https://docs.microsoft.com/azure/aks/configure-azure-cni) <br/> [Säker nätverks design för ett AKS-kluster]] (https://github.com/Azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md)|
+> | **Identifiera nätverks design överväganden.** Förstå nätverks design överväganden för kluster, jämför nätverks modeller och välj den Kubernetes nätverk-plugin som passar dina behov.    | [Kubernetes och Azure Container Network Interface (CNI)](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) <br/> [Använda Kubernetes-nätverk med dina egna IP-adressintervall i Azure Kubernetes service (AKS)](https://docs.microsoft.com/azure/aks/configure-kubenet) <br/> [Konfigurera Azure CNI Networking i Azure Kubernetes service (AKS)](https://docs.microsoft.com/azure/aks/configure-azure-cni) <br/> [Säker nätverks design för ett AKS-kluster](https://github.com/Azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md)|
 > | **Skapa flera Node-pooler.** Om du vill stödja program som har olika beräknings-eller lagrings krav kan du konfigurera klustret med flera noder. Du kan till exempel använda ytterligare resurspooler för att tillhandahålla GPU: er för beräknings intensiva program eller åtkomst till SSD-lagring med höga prestanda.   | [Skapa och hantera flera Node-pooler för ett kluster i Azure Kubernetes-tjänsten](https://docs.microsoft.com/azure/aks/use-multiple-node-pools) |
 > | **Bestäm tillgänglighets krav.** För att tillhandahålla en högre tillgänglighets nivå för dina program kan kluster distribueras mellan tillgänglighets zoner. Dessa zoner är fysiskt separata data Center inom en specifik region. När kluster komponenterna distribueras över flera zoner kan klustret tolerera ett fel i någon av dessa zoner. Dina program och hanterings åtgärder fortsätter att vara tillgängliga även om ett helt data Center har problem.   | [Skapa ett Azure Kubernetes service-kluster (AKS) som använder tillgänglighets zoner](https://docs.microsoft.com/azure/aks/availability-zones) |
 

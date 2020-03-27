@@ -3,22 +3,36 @@ title: Nyheter
 description: Lär dig mer om de senaste uppdateringarna i Microsoft Cloud adoption Framework för Azure.
 author: JanetCThomas
 ms.author: janet
-ms.date: 03/09/2020
+ms.date: 03/27/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: c7b3a4d946eac1b5296f4d37d50872105ce756ea
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 6bde40ffaa84955811b2687b2b518d93d0c21589
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80225963"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357196"
 ---
+<!-- markdownlint-disable MD024 -->
+
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Vad är nytt i Microsoft Cloud implementerings ramverk för Azure
 
 Här är en lista över de senaste ändringarna som gjorts i moln införande ramverket.
 
 Det här ramverket är byggt i samarbete med kunder, partner och interna Microsoft-team. Nytt och uppdaterat innehåll släpps när det blir tillgängligt. Med dessa versioner kan du testa, validera och förfina vägledningen tillsammans med oss. Vi rekommenderar att du samarbetar med oss för att bygga ramverket för moln införande för Azure.
+
+## <a name="march-27-2020"></a>27 mars 2020
+
+Vi har lagt till vägledning om de första prenumerationer som du bör skapa när du inför Azure.
+
+### <a name="ready-updates"></a>Klara uppdateringar
+
+| Artikel                                                                                                                 | Beskrivning                                                                                                                                                                                |
+|-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Skapa dina första Azure-prenumerationer](../ready/azure-best-practices/initial-subscriptions.md)                       | **Ny artikel:** Skapa dina första produktions-och ej produktions prenumerationer och bestäm om du vill skapa sandbox-prenumerationer, samt en prenumeration som innehåller delade tjänster. |
+| [Skapa ytterligare prenumerationer för att skala din Azure-miljö](../ready/azure-best-practices/scale-subscriptions.md) | Läs om varför du kan skapa ytterligare prenumerationer, flytta resurser mellan prenumerationer och tips för att skapa nya prenumerationer.                                                   |
+| [Organisera och hantera flera Azure-prenumerationer](../ready/azure-best-practices/organize-subscriptions.md)             | Skapa en hierarki för hanterings grupper som hjälper dig att organisera, hantera och styra dina Azure-prenumerationer.                                                                                         |
 
 ## <a name="march-20-2020"></a>20 mars 2020
 
@@ -28,9 +42,9 @@ Vi har lagt till vägledning som innehåller verktyg, program och innehåll kate
 
 | Artikel                                                                                     | Beskrivning                                                                                                                                                                           |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Program utveckling och-distribution](../innovate/kubernetes/application-development.md) | **Ny artikel** Innehåller check listor, resurser och bästa metoder för att planera program utveckling, konfigurera DevOps-pipelines och implementera site pålitlighet för Kubernetes. |
-| [Kluster design och-åtgärder](../innovate/kubernetes/cluster-design-operations.md) | **Ny artikel** Innehåller check listor, resurser och metod tips för kluster konfiguration, nätverks design, framtida skalbarhet, affärs kontinuitet och haveri beredskap för Kubernetes. |
-| [Kluster-och program säkerhet](../innovate/kubernetes/cluster-application-security.md) | **Ny artikel** Innehåller check listor, resurser och metod tips för Kubernetes säkerhets planering, produktion och skalning. |
+| [Program utveckling och-distribution](../innovate/kubernetes/application-development.md) | **Ny artikel:** Innehåller check listor, resurser och bästa metoder för att planera program utveckling, konfigurera DevOps-pipelines och implementera site pålitlighet för Kubernetes. |
+| [Kluster design och-åtgärder](../innovate/kubernetes/cluster-design-operations.md) | **Ny artikel:** Innehåller check listor, resurser och metod tips för kluster konfiguration, nätverks design, framtida skalbarhet, affärs kontinuitet och haveri beredskap för Kubernetes. |
+| [Kluster-och program säkerhet](../innovate/kubernetes/cluster-application-security.md) | **Ny artikel:** Innehåller check listor, resurser och metod tips för Kubernetes säkerhets planering, produktion och skalning. |
 
 ## <a name="march-2-2020"></a>2 mars 2020
 
@@ -41,7 +55,7 @@ Som svar på feedback om kontinuitet i migrations metoden genom flera delar av m
 | Artikel                                                                       | Beskrivning                                                                                                                                    |
 |-------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Balansera portföljen](../strategy/balance-the-portfolio.md)                 | Flyttade den här artikeln till tidigare i strategi metoden. Detta ger dig insyn i tanke processen tidigare i livs cykeln. |
-| [Balansera&nbsp;konkurrerande&nbsp;prioriteringar](../strategy/balance-competing-priorities.md) | **Ny artikel**: beskriver balansen mellan metoder för att under lätta din strategi.                                         |
+| [Balansera&nbsp;konkurrerande&nbsp;prioriteringar](../strategy/balance-competing-priorities.md) | **Ny artikel:** Beskriver balansen mellan metoder för att under lätta din strategi.                                         |
 
 ### <a name="plan-updates"></a>Planera uppdateringar
 
@@ -53,8 +67,8 @@ Som svar på feedback om kontinuitet i migrations metoden genom flera delar av m
 
 | Artikel                                                                   | Beskrivning                                                                                                              |
 |---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| [Vad&nbsp;&nbsp;en&nbsp;landning&nbsp;zon?](../ready/landing-zone/index.md)                 | **Ny artikel**: definierar periodens landnings zon.                                                                          |
-| [Första landnings zon](../ready/landing-zone/first-landing-zone.md)         | **Ny artikel**: expanderar jämförelsen av olika landnings zoner.                                                     |
+| [Vad&nbsp;&nbsp;en&nbsp;landning&nbsp;zon?](../ready/landing-zone/index.md)                 | **Ny artikel:** Definierar periodens landnings zon.                                                                          |
+| [Första landnings zon](../ready/landing-zone/first-landing-zone.md)         | **Ny artikel:** Expanderar jämförelsen av olika landnings zoner.                                                     |
 | [Migrera landnings zon](../ready/landing-zone/migrate-landing-zone.md)     | Separera definitionen av moln antagande ramverkets skiss från valet av den första landnings zonen.         |
 | [Terraform landnings zon](../ready/landing-zone/terraform-landing-zone.md) | Flyttas till den nya avsnittet landnings zon i den färdiga metoden, för att höja terraform i landnings zon konversationen. |
 
@@ -64,8 +78,10 @@ Som svar på feedback om kontinuitet i migrations metoden genom flera delar av m
 |--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Översikt](../migrate/azure-migration-guide/index.md)                                            | Uppdaterad med en tydligare Beskrivning av guiden och färre steg.                                                                                                        |
 | [Beräknas](../migrate/azure-migration-guide/assess.md)                                             | Avsnittet "utmanande antaganden" har lagts till för att demonstrera hur den här utvärderings nivån fungerar med den stegvisa utvärderings metoden som anges i plan metodiken. |
-| [Klassificering under utvärderings processer](../migrate/migration-considerations/assess/classify.md) | **Ny artikel**: beskriver vikten av att klassificera varje till gång och arbets belastning innan migreringen.                                                                    |
+| [Klassificering under utvärderings processer](../migrate/migration-considerations/assess/classify.md) | **Ny artikel:** Beskriver vikten av att klassificera varje till gång och arbets belastning innan migreringen.                                                                    |
 | [Migrera](../migrate/azure-migration-guide/migrate.md)                                           | Lade till en referens till UnifyCloud i verktyg från tredje part, som svar på feedback på nivå 1-konferenser.                                                         |
 | [Testa,&nbsp;optimera,&nbsp;och&nbsp;befordra](../migrate/azure-migration-guide/optimize-and-transform.md)        | Justera rubriken för den här artikeln med andra förslag på förbättringar av processen.                                                                                           |
 | [Utvärderings översikt](../migrate/migration-considerations/assess/index.md)                           | Uppdaterat för att illustrera att utvärderingen i den här fasen fokuserar på att utvärdera den tekniska anpassningen av en speciell arbets belastning och relaterade till gångar.                               |
 | [Checklista för planering](../migrate/migration-considerations/prerequisites/planning-checklist.md)    | Uppdaterat för att klargöra vikten av åtgärds justering under planeringen för migreringen för att säkerställa en väl hanterad arbets belastning efter migreringen.                  |
+
+<!-- test:ignoreNextStep -->

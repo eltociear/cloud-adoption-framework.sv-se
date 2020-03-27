@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6501871e909beba8d32cee0c5dd8c3dbe091f252
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: de9fd12afe7445c5cdd3b4ae8c1eba9c7cb07f19
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706820"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357066"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Styrnings guide för komplexa företag: förbättra säkerhets bas linje disciplinen
 
@@ -40,7 +40,7 @@ Sedan dess har vissa saker ändrats som påverkar styrning:
 - Tusentals IT-och företags till gångar har distribuerats till molnet.
 - Program utvecklings teamet har implementerat en pipeline för kontinuerlig integrering och distribution (CI/CD) för att distribuera ett moln internt program med en förbättrad användar upplevelse. Programmet interagerar inte med skyddade data ännu, så det är inte produktions klart.
 - Business Intelligence-teamet i IT kan aktivt granska data i molnet från logistik, inventering och data från tredje part. Dessa data används för att driva nya förutsägelser, vilket kan forma affärs processer. Dessa förutsägelser och insikter är dock inte åtgärdade förrän kund-och finans data kan integreras i data plattformen.
-- IT-teamet fortlöper i informations chefs-och ekonomi planerna för att dra tillbaka två Data Center. Nästan 3 500 av till gångarna i de två data centren har dragits tillbaka eller migrerats.
+- IT-teamet gör framsteg på CIO-och ekonomi planerna för att dra tillbaka två Data Center. Nästan 3 500 av till gångarna i de två data centren har dragits tillbaka eller migrerats.
 - Principerna angående känsliga personliga och finansiella data har förberetts. De nya företags principerna är dock knutna till implementeringen av relaterade säkerhets-och styrnings principer. Team har fortfarande stoppats.
 
 ### <a name="incrementally-improve-the-future-state"></a>Förbättra framtida tillstånd stegvis
@@ -133,7 +133,7 @@ I tidigare repetitiva ändringar av bästa praxis definierade vi nätverks säke
     1. Referens arkitekturen från föregående avsnitt, [hubb och eker-topologi med delade tjänster](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services), genererade en Resource Manager-mall för att aktivera VNet-peering.
     2. Mallen kan användas som en guide för att ändra DMZ-mallen från föregående styrnings iteration.
     3. Nu lägger vi till VNet-peering i DMZ VNet som tidigare var anslutna till den lokala Edge-enheten via VPN.
-    4. Dessutom bör VPN också tas bort från den här mallen även för att se till att ingen trafik dirigeras direkt till det lokala data centret utan att passera genom den lokala IT-prenumerationen och brand Väggs lösningen. Du kan också ange den här VPN-kretsen som en redundansväxling i händelse av en ExpressRoute-krets outge.
+    4. Dessutom bör VPN också tas bort från den här mallen även för att se till att ingen trafik dirigeras direkt till det lokala data centret utan att passera genom den lokala IT-prenumerationen och brand Väggs lösningen. Du kan också ställa in det här VPN-nätverket som en redundansväxling om det uppstår ett avbrott i ExpressRoute-kretsen.
     5. Ytterligare [nätverks konfiguration](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) krävs av Azure Automation att använda DSC för virtuella datorer som är värdar för virtuella datorer.
 2. Ändra nätverks säkerhets gruppen. Blockera all offentlig **och** direkt lokal trafik i nätverks säkerhets gruppen. Den enda inkommande trafiken ska komma via VNet-peer i IT-prenumerationen för företaget.
     1. I den tidigare iterationen skapades en nätverks säkerhets grupp som blockerar all offentlig trafik och vit listning all intern trafik. Nu vill vi byta till den här nätverks säkerhets gruppen en bit.

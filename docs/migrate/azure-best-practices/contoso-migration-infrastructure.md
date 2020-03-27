@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: a5eb582f994aee6869f9bec0a340b2a966cf1413
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 8520295a1496d1c44f6372d766ea766c7ba1973c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140679"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356298"
 ---
-<!-- cSpell:ignore CSPs domainname IPAM CIDR Untrust RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
+<!-- cSpell:ignore CSPs domainname IPAM CIDR untrust RRAS contosodc sysvol ITIL NSGs ASGs -->
 
 # <a name="deploy-a-migration-infrastructure"></a>Distribuera en migreringsinfrastruktur
 
@@ -717,7 +717,7 @@ ServiceManager | E-postalias för ITIL Service Manager för resursen.
 COBPriority | Prioritet som har angetts av företaget för affärskontinuitet och haveriberedskap. Värden från 1 till 5.
 ENV | DEV, STG, PROD är möjliga värden. De står för utveckling, mellanlagring och produktion.
 
-Exempel:
+Några exempel:
 
  ![Azure-taggar](./media/contoso-migration-infrastructure/azure-tag.png)
 

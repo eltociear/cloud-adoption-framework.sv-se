@@ -7,13 +7,15 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3a4ebcb2264ff863200071363b8369d8a76549d3
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 988d7524941b49821cd96546cc3adafe317dff8a
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311497"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356243"
 ---
+<!-- cSpell:ignore contosohost contosodc vcenter DBHOST DBUSER WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL osticket contosoosticket trafficmanager CNAME -->
+
 # <a name="refactor-a-linux-app-to-multiple-regions-using-azure-app-service-traffic-manager-and-azure-database-for-mysql"></a>Omstrukturera en Linux-app till flera regioner med Azure App Service, Traffic Manager och Azure Database for MySQL
 
 Den här artikeln beskriver hur det fiktiva företaget Contoso omstrukturerar en Linux-baserad Apache/MySQL/PHP-app (LAMP) med två nivåer och migrerar den från den lokala miljön till Azure med hjälp av Azure App Service med GitHub och Azure Database for MySQL.
@@ -72,7 +74,7 @@ Här är den föreslagna arkitekturen:
 
 Så här genomför Contoso migreringen:
 
-1. Som ett första steg konfigurerar Contosos administratörer Azure-infrastrukturen. Detta inbegriper att etablera Azure App Service, installera Traffic Manager och etablera av en instans av Azure Database for MySQL.
+1. Som ett första steg konfigurerar contoso-administratörer Azure-infrastrukturen, inklusive etablering Azure App Service, installation av Traffic Manager och etablering av en Azure Database for MySQL-instans.
 2. När Azure har förberetts migrerar de databasen med MySQL Workbench.
 3. När databasen är igång i Azure konfigurerar de en privat GitHub-lagringsplats för Azure App Service med kontinuerlig leverans och läser in den med appen osTicket.
 4. I Azure Portal läser de in appen från GitHub till Docker-containern som kör Azure App Service.
@@ -291,7 +293,7 @@ Som det sista steget i migreringsprocessen konfigurerar Contosos administratöre
 
     ![Konfigurera app](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app6.png)
 
-8. De konfigurerar båda webbapparna (**osTicket-eus2** och **osTicket-CUS**) webbappar så att anpassade värdnamn tillåts.
+8. De konfigurerar både **osTicket-eus2** och **osTicket-CUS** -webbappar för att tillåta de anpassade värd namnen.
 
     ![Konfigurera app](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app7.png)
 

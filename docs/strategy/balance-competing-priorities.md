@@ -1,22 +1,22 @@
 ---
 title: Balansera konkurrerande prioriteringar
-description: Identifiera strategier för att balansera konkurrerande prioriteringar
+description: Identifiera strategier för att balansera konkurrerande prioriteringar.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 03/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: ba70687627e81b58eb76cd69838abf1ebcdb6489
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: a0524d8e7cd48f3b93191d9633bb57b10fb2261b
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312416"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353701"
 ---
 # <a name="balance-competing-priorities"></a>Balansera konkurrerande prioriteringar
 
-Att kräva en digital omvandlings resa fungerar som en tvingande funktion för intressenter, i affärs-och teknik teamet. Sökvägen till framgång dirigeras ordentligt i organisationernas möjlighet att balansera konkurrerande prioriteringar.
+Att kräva en digital omvandlings resa fungerar som en tvingande funktion för intressenter, i affärs-och teknik teamet. Sökvägen till framgång är ordentligt rotad i organisationens möjlighet att balansera konkurrerande prioriteringar.
 
 I likhet med andra digitala transformationer, kommer moln införande att exponera konkurrerande prioriteringar under hela livs cykeln för införande. Liksom andra former av omvandling, kommer möjligheten att hitta balans i dessa prioriteringar att ha en betydande inverkan på affärs värdets realisering. Att balansera dessa konkurrerande prioriteringar kräver öppen (och ibland svåra) konversationer mellan intressenter (och vid tillfällen med enskilda deltagare).
 
@@ -40,8 +40,8 @@ Kärn målet med strategi metodik är att utveckla anpassningar mellan intressen
 
 **Konkurrerande prioriteringar:**
 
-- **Motiverings djup**: intressenter vill ofta ha en djup finansiell analys och fullständig affärs motivering för att vara bekväm att justera till en strategisk riktning. Den analys nivån kan tyvärr kräva en längre tids period för att tillåta insamling och analys av data.
-- **Tiden för att påverka verksamheten**: i motsatt grad är intressenter ofta konto för att leverera affärs resultat inom bestämda tids ramar. Tids krävande analyser och bedömningar kan leda till risker innan det tekniska arbetet börjar.
+- **Motiverings djup:** Intressenter vill ofta ha en djup finansiell analys och fullständig affärs motivering för att vara bekväm att justera till en strategisk riktning. Den analys nivån kan tyvärr kräva en längre tids period för att tillåta insamling och analys av data.
+- **Tid till företags påverkan:** Omvänt är intressenter ofta övergående för att leverera affärs resultat inom bestämda tids ramar. Tids krävande analyser och bedömningar kan leda till risker innan det tekniska arbetet börjar.
 
 **Minsta omfattning:** Att hitta den här balansen kräver diskussioner mellan intressenter tidigt i processen. Strategi metoden rekommenderar att du begränsar justerings omfånget under den här tidiga ansträngningen. I den föreslagna metoden fokuserar intressenter på att justera runt en uppsättning viktiga motivation, mätbara resultat och en övergripande affärs justering. Vi rekommenderar att intressenter sedan snabbt genomför ett litet antal inledande projekt eller pilot för att driva nödvändiga inlärnings möjligheter.
 
@@ -137,3 +137,10 @@ De konkurrerande prioriteringarna i den här artikeln är reflekterande av IT-en
 **Minsta omfattning:** De flesta organisationer kommer att gå igenom en naturlig uppsättning utvecklingar över tid. Metoden organisera beskriver de vanligaste utvecklings serierna. Den föreslagna vägledningen är för lag för att sträva efter att gå över till ett moln Center med hög expert struktur för att leverera delegerade kontroll metoder.
 
 **Exempel på utökad omfattning:** Det finns många situationer som skulle utlösa behovet av centraliserad kontroll. Krav på efterlevnad av tredje part och temporär säkerhets exponering är två exempel på utlösare för centraliserad kontroll. I sådana fall finns det ofta ett behov av att fastställa begränsade principer och fasta och fasta kontroller. Men för att möjliggöra innovation och införande för att fortsätta, rekommenderar vi att centrala IT-team levererar kontrollerna baserat på allvarlighets grad och känslighet för varje arbets belastning. Att tillhandahålla miljöer med mindre kontroll, men en reducerad omfattning eller risk profil, ger flexibilitet även om kontroll krävs.
+
+## <a name="next-steps"></a>Nästa steg
+
+Lär dig att [balansera migrering, innovation och experimentering](./balance-the-portfolio.md) för att maximera värdet för ditt moln migrerings ansträngningar.
+
+> [!div class="nextstepaction"]
+> [Balansera portföljen](./balance-the-portfolio.md)

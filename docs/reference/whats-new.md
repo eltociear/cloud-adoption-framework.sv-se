@@ -7,12 +7,12 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 0e93f0279ba210be594b3b5af40cf16657f224e3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: a3e316d49acaaee00d5ecd10efac9aa15c2dbd49
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79095314"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353686"
 ---
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework"></a>Nyheter i Microsoft Cloud adoption Framework
 
@@ -39,7 +39,7 @@ Den första landnings zonen har tagits bort från beredskaps guiden för att fun
 - [Första landnings zon](../ready/landing-zone/first-landing-zone.md): expanderar jämförelsen av olika landnings zoner
 - [Migrera landnings zon](../ready/landing-zone/migrate-landing-zone.md): flyttad den tidigare zon utkasts artikeln, för att separera definitionen av CAF-skissen från valet av den första landnings zonen, för att tillåta fler alternativ för landnings zoner.
 - Artikel i [terraform vilplan](../ready/landing-zone/terraform-landing-zone.md) : flyttad från avsnittet "expanderat område" i den färdiga metoden till den nya avsnittet "landnings zon" i klar metodik, för att behandla terraform som en första klass medborgare i landnings zon konversationen.
-- Gruppera grundläggande överväganden i landnings zoner tillsammans i innehålls förteckningen under "grundläggande landnings zoner".
+- Gruppera grundläggande överväganden för landnings zoner tillsammans i innehålls förteckningen under "grundläggande landnings zoner".
 - De rekommenderade säkerhets metoderna från metoden för migrering till ett nytt avsnitt med landnings zoner "förbättra landnings zonens säkerhet (känsliga data)" för att Visa läsarna till den här vägledningen tidigare i livs cykeln.
 
 ### <a name="refinements-to-the-azure-migration-guide"></a>Fin justering av Azure migration guide

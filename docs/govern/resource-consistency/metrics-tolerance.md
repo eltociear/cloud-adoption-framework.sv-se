@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 98413117b3eb6abf1e826fcf14f765c6cd461d65
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 75a0e1f06b2a5a2734cc386e02200ec06d707d7b
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171369"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356901"
 ---
+<!-- cSpell:ignore MTBF MTTR -->
+
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>Resurs konsekvens statistik, indikatorer och risk tolerans
 
 I den här artikeln får du hjälp med att kvantifiera affärs risk toleransen när det gäller resurs konsekvens. Genom att definiera mått och indikatorer får du hjälp att skapa ett affärs ärende för att göra en investering som förfaller i disciplinen för resurs konsekvens.

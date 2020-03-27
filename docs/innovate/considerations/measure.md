@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3ba4cc99b210784c7503085234c25c1d9a0ae634
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: fe1bed4da302041998ec09efd2224be3d94fe3aa
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508006"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356725"
 ---
 # <a name="measure-for-customer-impact"></a>Mät kundernas påverkan
 
@@ -70,5 +70,7 @@ När inlärnings måtten ackumuleras kan teamet börja [lära sig kunderna](./le
 
 > [!div class="nextstepaction"]
 > [Lär dig med kunder](./learn.md)
+
+<!-- cSpell:ignore Ries -->
 
 Några av begreppen i den här artikeln bygger vidare på ämnen som beskrivs i [den Lean-starten](http://theleanstartup.com/book), skrivet av Eric Återställ inställningar.

@@ -7,13 +7,15 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 101ce6ef12ca9f9c686075c6e839a8353bc93da8
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 35cd68a317ae3c4d49c961d020d6e803f387741d
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171318"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356874"
 ---
+<!-- cSpell:ignore njray nanra chargebacks IPLs -->
+
 # <a name="mainframe-myths-and-facts"></a>Stordator myths och fakta
 
 Stordatorer är på ett framträdande sätt i dator historiken och fortsätter att vara livskraftiga för mycket speciella arbets belastningar. De flesta enas om att stordatorer är en beprövad plattform med långvariga drift procedurer som gör dem tillförlitliga, robusta miljöer. Program varan körs baserat på användning, mätt i miljon instruktioner per sekund (MIPS) och omfattande användnings rapporter är tillgängliga för åter betalningar.
