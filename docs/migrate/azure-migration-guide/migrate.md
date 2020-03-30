@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d5be29caa69a2b9a0f1e22cfb6ff704b7e17233c
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 697e42d16918960f97bc534bad93a854af963a49
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312347"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353894"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -215,7 +215,7 @@ Det finns flera migreringsverktyg från tredje part och ISV-tjänster som kan hj
 
 UnifyCloud är en ISV-tjänst som tillhandahåller automatiserade verktyg för utvärdering, migrering och modernisering.
 
-[Läs mer](https://www.unifycloud.com/)
+[Läs mer](https://www.unifycloud.com)
 
 ## <a name="cloudamize"></a>Cloudamize
 
@@ -278,7 +278,7 @@ Microsoft Learn är en ny metod för inlärning. Det är inte helt enkelt att f�
 
 Här är ett exempel på en skräddarsydd utbildningsväg på Microsoft Learn som kompletterar DevOps-vägledningen i Cloud Adoption Framework.
 
-[Skapa program med Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/): Samarbeta med andra och skapa program med Azure Pipelines och GitHub. Kör automatiserade tester i din pipeline för att verifiera kodkvalitet. Sök igenom källkoden och komponenter från tredje part efter potentiella sårbarheter. Skapa ditt program genom att definiera flera pipelines som fungerar tillsammans. Skapa program med hjälp av både Microsoft-baserade agenter och dina egna skapandeagenter.
+[Skapa program med Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops): Samarbeta med andra och skapa program med Azure Pipelines och GitHub. Kör automatiserade tester i din pipeline för att verifiera kodkvalitet. Sök igenom källkoden och komponenter från tredje part efter potentiella sårbarheter. Skapa ditt program genom att definiera flera pipelines som fungerar tillsammans. Skapa program med hjälp av både Microsoft-baserade agenter och dina egna skapandeagenter.
 
 # <a name="cost-management"></a>[Kostnadshantering](#tab/ManageCost)
 

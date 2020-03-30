@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a76ca679b8c61e96b8bc8552b8ffbcaa0822e46a
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 18c3c81fdd756e90e729387c7030c64e8a87a056
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094733"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356445"
 ---
 <!-- cSpell:ignore WSUS -->
 
@@ -60,8 +60,8 @@ Mer information finns i avsnittet om [Uppdateringshantering](https://docs.micros
 >
 > Publiceringen kan göras på två sätt:
 >
-> - [Enstaka virtuell dator](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-single-vm)
-> - [Hel prenumeration](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-at-scale)
+> - [Enstaka virtuell dator](../../manage/azure-server-management/onboard-single-vm.md)
+> - [Hel prenumeration](../../manage/azure-server-management/onboard-at-scale.md)
 >
 > Du bör ha en innan du fortsätter med Uppdateringshantering.
 
@@ -69,7 +69,7 @@ Mer information finns i avsnittet om [Uppdateringshantering](https://docs.micros
 
 Gör följande om du vill tillämpa en princip för en resursgrupp:
 
-1. Gå till [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts).
+1. Gå till [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts).
 1. Välj **Automation-konton** och välj ett av kontona i listan.
 1. Gå till **Konfigurationshantering**.
 1. **Inventering**, **Ändringshantering** och **Tillståndskonfiguration** kan användas för att kontrollera status och efterlevnad för de hanterade virtuella datorerna.
@@ -78,7 +78,7 @@ Gör följande om du vill tillämpa en princip för en resursgrupp:
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1a6b859de12681e93912f934f6aa5e55c42fcfb9
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: c5d7da3d1dd447063879c786d59840f256c418e1
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171403"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392594"
 ---
 # <a name="deployment-acceleration-template"></a>Mall för distributions acceleration
 
@@ -24,11 +24,7 @@ Använd den här mallens struktur som en modell för att samla in affärs risker
 > [!IMPORTANT]
 > Den här mallen är ett begränsat exempel. Innan du uppdaterar den här mallen så att den återspeglar dina krav bör du gå igenom de efterföljande stegen för att definiera en effektiv distributions accelerations disciplin i din strategi för moln styrning.
 
-<!-- markdownlint-disable MD033 -->
-
- <a href="https://archcenter.blob.core.windows.net/cdn/fusion/governance/Deployment%20Acceleration%20Discipline%20Template.docx">Hämta mall för styrnings disciplin</a>
-
-<!-- markdownlint-enable MD033 -->
+[Ladda ned mallen för styrnings disciplin](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Deployment%20Acceleration%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>Nästa steg
 

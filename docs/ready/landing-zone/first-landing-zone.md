@@ -1,23 +1,22 @@
 ---
 title: Azure-landingzon – att tänka på
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig hur en landningszon fungerar som den grundläggande byggstenen i alla typer av miljöer för molnimplementering.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
-ms.topic: overview
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 04293b0e0d30ae1eaa85f4c86c6c7d70b2cfac82
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 594f10968e45477895fcc5dcd1b2a95d16d7c861
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092969"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392653"
 ---
 # <a name="first-landing-zone"></a>Den första landningszonen
 
-Infrastruktur som kod är en naturlig över gång under de flesta moln införande åtgärder. Distribution av dina första landnings zoner i molnet är en gemensam start punkt för att flytta till en kod driven miljö. Den här artikeln hjälper dig att förstå termen _landnings zon_ och bestämma vilken landnings zon som passar bäst för dina befintliga implementerings behov.
+Infrastruktur som kod är en naturlig övergång under de flesta molnimplementeringsåtgärder. Distribution av dina första landnings zoner i molnet är en gemensam start punkt för att flytta till en kod driven miljö. Den här artikeln hjälper dig att förstå termen _landnings zon_ och bestämma vilken landnings zon som passar bäst för dina befintliga implementerings behov.
 
 ## <a name="code-first-approach-to-landing-zones"></a>Kod-första metod till landnings zoner
 

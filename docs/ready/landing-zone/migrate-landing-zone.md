@@ -1,6 +1,5 @@
 ---
 title: Distribuera en landningszon i Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lär dig att distribuera en landningszon i Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b38d0f17b0b8e96adec4ac461e0dbf8337dc0089
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: ed7e64e2c18187621f2c7703b5b1d9f2056997ea
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354130"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392635"
 ---
 <!-- cSpell:ignore vCPUs jumpbox -->
 
@@ -54,11 +53,11 @@ Följande beslut speglas i skissen för landningszonen.
 | Prenumerationsdesign          | Saknas – utformad för en enda produktionsprenumeration.                                              | [Skapa första prenumerationer](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                                      |
 | Resursgrupper              | Saknas – utformad för en enda produktionsprenumeration.                                              | [Skala prenumerationer](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                                                 |
 | Hanteringsgrupper            | Saknas – utformad för en enda produktionsprenumeration.                                              | [Organisera och hantera prenumerationer](../azure-best-practices/organize-subscriptions.md)                                                                                                                                                                                                |
-| Data                         | Saknas                                                                                               | [Välj rätt SQL Server alternativ i Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) och [Azure Data Store vägledning](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)                       |
-| Storage                      | Saknas                                                                                               | [Riktlinjer för Azure Storage](../considerations/storage-options.md)                                                                                                                                                                                                                        |
-| Standarder för namngivning och taggning | Saknas                                                                                               | [Metodtips för namngivning och taggning](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                                                    |
-| Kostnadshantering              | Saknas                                                                                               | [Spåra kostnader](../azure-best-practices/track-costs.md)                                                                                                                                                                                                                              |
-| Compute                      | Saknas                                                                                               | [Compute-alternativ](../considerations/compute-options.md)                                                                                                                                                                                                                               |
+| Data                         | Ej tillämpligt                                                                                               | [Välj rätt SQL Server alternativ i Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) och [Azure Data Store vägledning](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)                       |
+| Storage                      | Ej tillämpligt                                                                                               | [Riktlinjer för Azure Storage](../considerations/storage-options.md)                                                                                                                                                                                                                        |
+| Standarder för namngivning och taggning | Ej tillämpligt                                                                                               | [Metodtips för namngivning och taggning](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                                                    |
+| Kostnadshantering              | Ej tillämpligt                                                                                               | [Spåra kostnader](../azure-best-practices/track-costs.md)                                                                                                                                                                                                                              |
+| Compute                      | Ej tillämpligt                                                                                               | [Compute-alternativ](../considerations/compute-options.md)                                                                                                                                                                                                                               |
 
 ## <a name="customize-or-deploy-a-landing-zone"></a>Anpassa eller distribuera en landnings zon
 

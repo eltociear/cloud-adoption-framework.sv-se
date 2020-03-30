@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: a75c014401a8a45eee0d0e301cf209ad3eda690b
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 94e5dfb8f6a7d38f844c490a649bd35cf0887685
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80225810"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353816"
 ---
+<!-- cSpell:ignore jelledruyts andym endjin -->
+
 # <a name="stay-current-with-microsoft-azure"></a>Håll dig uppdaterad med Microsoft Azure
 
 Molnplattformar som Microsoft Azure ändras snabbare än vad många organisationer är vana vid. Denna acceleration innebär att organisationer måste se till att människor och processer anpassas i enlighet med det. Om du är ansvarig för att hjälpa din organisation att komma igång med ändringar kan det kännas tungt ibland. Resurserna som anges i det här avsnittet kan hjälpa dig att hålla dig uppdaterad.
@@ -54,9 +56,9 @@ Ta en titt på de resurser som anges här för djupare innehåll som du kan anv�
 - [Azure Friday](https://channel9.msdn.com/Shows/Azure-Friday)
   - Veckovis med videor med de tekniker som utgör grunden för Azure. De visar demonstrationer, svarar på frågor och delar med sig av insikter.
   - Prenumerera via [RSS](https://channel9.msdn.com/Shows/Azure-Friday/feed).
-- [Azure Charts](https://azurecharts.com/)*
+- [Azure Charts](https://azurecharts.com)*
   - Den här visualiseringen visar alla Azure-uppdateringar som gjorts under de senaste sex månaderna. Den innehåller andra användbara diagram och verktyg som hjälper dig att spåra Azure-ändringar.
-- [AzAdvertizer](https://www.azadvertizer.net/)*
+- [AzAdvertizer](https://www.azadvertizer.net)*
   - Lanserings- och ändringsspårning av Azure-styrningsfunktioner (t.ex. Azure Policy, principinitiativ, principalias och RBAC).
 - [Azure Weekly](https://azureweekly.info)*
   - Detta nyhetsbrev tillhandahålls av [endjin](https://endjin.com) och innehåller en sammanfattning av veckans viktigaste nyheter om Microsoft Azure. Den innehåller också intressant historiskt innehåll.

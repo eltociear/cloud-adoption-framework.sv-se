@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 42cf4ffb65456bf1519a0f2bb0f017bb078687d9
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: adb39a25cfb232b19bd983e5d4e0ab7d7370add1
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170978"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356598"
 ---
 ::: zone target="docs"
 
@@ -48,7 +48,7 @@ Du hittar en lista med tillgängliga tjänster och hur mycket utbildning som kr�
 
 Så här använder du ett API för kognitiva tjänster:
 
-1. Gå till **Cognitive Services** i [Azure-portalen](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2Faccounts).
+1. Gå till **Cognitive Services** i [Azure-portalen](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.CognitiveServices%2FAccounts).
 2. Välj **Lägg till** för att leta reda på ett API för kognitiva tjänster i Azure Marketplace.
 3. Gör något av följande:
    - Om du vet namnet på tjänsten du vill använda kan du ange det i rutan **Sök på Marketplace**.
@@ -58,7 +58,7 @@ Så här använder du ett API för kognitiva tjänster:
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2Faccounts]" submitText="Go to Cognitive Services" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2FAccounts]" submitText="Go to Cognitive Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -66,7 +66,7 @@ Så här använder du ett API för kognitiva tjänster:
 
 ::: zone target="docs"
 
-Gå direkt till Cognitive Services i [Azure-portalen](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2Faccounts).
+Gå direkt till Cognitive Services i [Azure-portalen](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2FAccounts).
 
 ::: zone-end
 
@@ -80,7 +80,7 @@ Om de befintliga modellerna i de kognitiva tjänsterna inte överensstämmer med
 
 Så här kan du skapa en modell och experimentera med den i Azure Machine Learning Studio:
 
-1. Gå till **Azure Machine Learning Studio** i [Azure-portalen](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2Fworkspaces).
+1. Gå till **Azure Machine Learning Studio** i [Azure-portalen](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2FWorkspaces).
 2. Välj **Skapa en Machine Learning Studio-arbetsyta** och följ sedan anvisningarna för att skapa en arbetsyta.
 
    Den nya arbetsytan har ett gränssnitt med dra-och-släpp-funktion där du kan skapa och experimentera med modellen, som ett alternativ till djupinlärning.
@@ -89,7 +89,7 @@ Så här kan du skapa en modell och experimentera med den i Azure Machine Learni
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2Fworkspaces]" submitText="Go to Azure Machine Learning Studio" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2FWorkspaces]" submitText="Go to Azure Machine Learning Studio" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -97,7 +97,7 @@ Så här kan du skapa en modell och experimentera med den i Azure Machine Learni
 
 ::: zone target="docs"
 
-Gå direkt till Azure Machine Learning Studio i [Azure-portalen](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2Fworkspaces).
+Gå direkt till Azure Machine Learning Studio i [Azure-portalen](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2FWorkspaces).
 
 ::: zone-end
 
@@ -117,7 +117,7 @@ En data scientist kan använda en Azure Machine Learning-tjänst till att träna
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2Fworkspaces]" submitText="Go to Azure Machine Learning service" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2FWorkspaces]" submitText="Go to Azure Machine Learning service" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -125,7 +125,7 @@ En data scientist kan använda en Azure Machine Learning-tjänst till att träna
 
 ::: zone target="docs"
 
-Gå direkt till Azure Machine Learning Studio i [Azure-portalen](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2Fworkspaces).
+Gå direkt till Azure Machine Learning Studio i [Azure-portalen](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2FWorkspaces).
 
 ::: zone-end
 

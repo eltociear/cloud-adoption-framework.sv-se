@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5341abc29fffdfebca60acc3db44bb846aada0d9
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: ed3e9a193a33ab89ac7a421dcbc1a89a55ffc9b6
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707177"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392778"
 ---
 # <a name="security-baseline-template"></a>Mall för säkerhets bas linje
 
@@ -24,11 +24,7 @@ Använd den här mallens struktur som en modell för att samla in affärs risker
 > [!IMPORTANT]
 > Den här mallen är ett begränsat exempel. Innan du uppdaterar den här mallen så att den återspeglar dina krav bör du gå igenom de efterföljande stegen för att definiera en effektiv disciplin för säkerhets bas linjer i din strategi för moln styrning.
 
-<!-- markdownlint-disable MD033 -->
-
- <a href="https://archcenter.blob.core.windows.net/cdn/fusion/governance/Security%20Baseline%20Discipline%20Template.docx">Hämta mall för styrnings disciplin</a>
-
-<!-- markdownlint-enable MD033 -->
+[Ladda ned mallen för styrnings disciplin](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Security%20Baseline%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>Nästa steg
 

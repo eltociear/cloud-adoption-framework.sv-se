@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0ff06bb935a55c45c12748903c83d976bcbb14e0
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 223d6bf040987b7266d284d9175b588d08806c9f
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092330"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356516"
 ---
+<!-- cSpell:ignore ITSMC -->
+
 # <a name="enhanced-management-baseline-in-azure"></a>Förbättrad baslinje för hantering i Azure
 
 De tre första molnhanteringsdisciplinerna beskriver en baslinje för hantering. I de tidigare artiklarna i den här guiden beskrevs en MVP (minsta fungerande produkt) för molnhanteringstjänster, kallad en hanteringsbaslinje. I den här artikeln beskrivs ett par förbättringar i baslinjen.
@@ -74,7 +76,7 @@ Den grundläggande kodenheten för att leverera automatiserad reparation är en 
 
 Så här skapar eller hanterar du runbook-flöden:
 
-1. Gå till [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts).
+1. Gå till [Azure Automation](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts).
 1. Välj **Automation-konton** och välj ett av kontona i listan.
 1. Gå till **Processautomatisering**.
 1. Med de alternativ som visas kan du skapa eller hantera runbooks, scheman och andra automatiska reparationsfunktioner.
@@ -83,7 +85,7 @@ Så här skapar eller hanterar du runbook-flöden:
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

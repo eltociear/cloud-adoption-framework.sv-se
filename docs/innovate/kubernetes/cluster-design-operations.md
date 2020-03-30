@@ -1,6 +1,5 @@
 ---
-title: Kluster design och-åtgärder
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
+title: Klusterdesign och klusteråtgärder
 description: Lär dig mer om Kubernetes i moln implementerings ramverket för kluster design och-åtgärder.
 author: sabbour
 ms.author: asabbour
@@ -8,18 +7,18 @@ ms.topic: guide
 ms.date: 12/16/2019
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 94288e4dd6e9bde1113c6343067dfaec9e7f3c62
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 1a4bcb42ec8fdcdbdb53d918c8348c22c2606649
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356555"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392739"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
 
-# <a name="cluster-design-and-operations"></a>Kluster design och-åtgärder
+# <a name="cluster-design-and-operations"></a>Klusterdesign och klusteråtgärder
 
-Identifiera för kluster konfiguration och nätverks design. Framtida korrektur skalbarhet genom att automatisera infrastruktur etableringen. Behåll hög tillgänglighet genom att planera för verksamhets kontinuitet och haveri beredskap.
+Tänk igenom klusterkonfigurationen och nätverksdesignen. Framtida korrektur skalbarhet genom att automatisera infrastruktur etableringen. Säkerställ hög tillgänglighet genom att planera för verksamhetskontinuitet och haveriberedskap.
 
 ## <a name="plan-train-and-proof"></a>Plan, träna och korrektur
 

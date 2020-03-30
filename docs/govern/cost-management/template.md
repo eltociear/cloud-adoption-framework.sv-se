@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4b4f3f9e8be48f96abf9471738a50491ac80d317
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: ce937c6e3c173d829a311b838e33ede754a0f173
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708809"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392485"
 ---
 # <a name="cost-management-template"></a>Cost Management mall
 
@@ -24,11 +24,7 @@ Använd den här mallens struktur som en modell för att samla in affärs risker
 > [!IMPORTANT]
 > Den här mallen är ett begränsat exempel. Innan du uppdaterar den här mallen så att den återspeglar dina krav bör du gå igenom de efterföljande stegen för att definiera en effektiv Cost Management disciplin i din strategi för moln styrning.
 
-<!-- markdownlint-disable MD033 -->
-
- <a href="https://archcenter.blob.core.windows.net/cdn/fusion/governance/Cost%20Management%20Discipline%20Template.docx">Hämta mall för styrnings disciplin</a>
-
-<!-- markdownlint-enable MD033 -->
+[Ladda ned mallen för styrnings disciplin](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Cost%20Management%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>Nästa steg
 

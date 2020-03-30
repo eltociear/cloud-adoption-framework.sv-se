@@ -1,6 +1,5 @@
 ---
-title: Kluster-och program säkerhet
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
+title: Kluster- och programsäkerhet
 description: Lär dig mer om Kubernetes i moln implementerings ramverket för kluster-och program säkerhet.
 author: sabbour
 ms.author: asabbour
@@ -8,16 +7,16 @@ ms.topic: guide
 ms.date: 03/20/2020
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 17450c59ff257e78a8f5603638eca35fe72e3abd
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 64a7f4097a75b54ef4f91b5889fa31fc3b98d61a
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356574"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392754"
 ---
 <!-- cSpell:ignore asabbour sabbour kured -->
 
-# <a name="cluster-and-application-security"></a>Kluster-och program säkerhet
+# <a name="cluster-and-application-security"></a>Kluster- och programsäkerhet
 
 Bekanta dig med Kubernetes Security Essentials och granska den säkra konfigurationen för kluster och program säkerhets vägledning.
 
