@@ -9,19 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b6d17a410c1903d984b5a1c756f51f7c5145ff9c
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 6e9b83784d2fdaaca7ae4a55ccd977d266b6193d
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140294"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356485"
 ---
 ::: zone target="docs"
 
 # <a name="azure-management-guide-before-you-start"></a>Guide till Azure-hantering: Innan du börjar
-
-> [!NOTE]
-> Den här guiden är en utgångspunkt för vägledningen kring innovation i Cloud Adoption Framework. Du hittar den även i Azures snabbstartscenter. I tipset senare i artikeln finns en länk till Azures snabbstartscenter.
 
 ::: zone-end
 
@@ -51,9 +48,6 @@ I den här guiden får du lära dig att etablera verktyg till en baslinje för h
 En baslinje för hanteringen är den minsta uppsättning verktyg och processer som ska användas för alla tillgångar i miljön. Du kan ta med flera ytterligare alternativ i hanteringsbaslinjen. I de kommande artiklarna effektiviserar vi molnhanteringen genom att fokusera på den minsta uppsättning alternativ som krävs, i stället för alla tillgängliga alternativ.
 
 ::: zone target="docs"
-
-> [!TIP]
-> Visa den här guiden i Azure-portalen om du vill ha en interaktiv upplevelse. Gå till [Azures snabbstartcenter](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) i Azure-portalen och välj **Azures hanteringsguide**. Följ sedan instruktionerna.
 
 Nästa steg är [Inventering och synlighet](./inventory.md).
 

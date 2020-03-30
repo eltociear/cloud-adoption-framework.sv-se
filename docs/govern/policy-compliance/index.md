@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e42cd5f8f551ddb4d68b19eab5e15c28cbe539ad
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 4bb736dc232ae4c1d1989da5c0b31c19e0c07672
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312177"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356952"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -46,7 +46,7 @@ I bilden ovan börjar styrningsstrategin (risk, policy och efterlevnad samt öve
 
 ## <a name="an-incremental-approach-to-cloud-governance"></a>En inkrementell molnstyrningsstrategi
 
-En inkrementell molnstyrningsstrategi förutsätter att det är oacceptabelt att överskrida [företagets risktolerans](./risk-tolerance.md). I stället förutsätter den att styrningens roll innebär att påskynda företagsändring, hjälpa ingenjörer att förstå riktlinjer för arkitektur samt säkerställa att [affärsrisker](./business-risk.md) regelbundet kommuniceras och åtgärdas. Alternativt kan den traditionella styrningsrollen bli ett hinder för implementering av ingenjörer eller av företaget som helhet.
+I en inkrementell molnstyrningsstrategi accepteras inte överträdelser av [företagets risktoleransnivå](./risk-tolerance.md). I stället förutsätter den att styrningens roll innebär att påskynda företagsändring, hjälpa ingenjörer att förstå riktlinjer för arkitektur samt säkerställa att [affärsrisker](./business-risk.md) regelbundet kommuniceras och åtgärdas. Alternativt kan den traditionella styrningsrollen bli ett hinder för implementering av ingenjörer eller av företaget som helhet.
 
 Med en inkrementell molnstyrningsstrategi förekommer det ibland vissa naturliga motsättningar mellan team som skapar nya företagslösningar och team som skyddar företaget från risker. I den här modellen kan dock dessa två team bli samarbetspartner i arbetet med inkrement eller sprints. Som samarbetspartner börjar molnstyrningsteamet och molnimplementeringsteamet att tillsammans exponera, utvärdera och åtgärda affärsrisker. Detta arbete kan utgöra ett naturligt sätt att minska motsättningarna skapa samstämmighet mellan teamen.
 

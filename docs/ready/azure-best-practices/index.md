@@ -1,31 +1,32 @@
 ---
 title: Metodtips för Azure-beredskap
-description: Lär dig hur du tillhandahåller metodtips och ytterligare vägledning som hjälper din grupp att upprätta och förbereda Azure-miljön.
+description: Lär dig om metodtips och ytterligare vägledning som hjälper ditt team att etablera och förbereda Azure-miljön.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8d44d3981824c9599151391cd3b7e3550ac31cd6
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: aecef0bbbdc88b2f95d6a93efeb496cf2d787a45
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093573"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354648"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Metodtips för Azure-beredskap
 
-En stor del av molnberedskapen handlar om att förse personalen med de tekniska kunskaper som krävs för att påbörja en molnimplementering och förbereda din migreringsmålmiljö för de tillgångar och arbetsbelastningar som du ska flytta till molnet. Läs dessa regelverk och ytterligare vägledning som hjälper din grupp att förbereda din Azure-miljö.
+Molnberedskap handlar om att förse personalen med de tekniska kunskaper som krävs för att påbörja en molnimplementering och förbereda målmiljön för migreringen för de resurser och arbetsbelastningar som ska flyttas till molnet. Läs dessa regelverk och ytterligare vägledning som hjälper din grupp att förbereda din Azure-miljö.
 
 ## <a name="azure-fundamentals"></a>Grunderna i Azure
 
 Organisera och distribuera dina tillgångar i Azure-miljön.
 
 - [Grundläggande koncept för Azure](../considerations/fundamental-concepts.md). Lär dig viktiga begrepp och termer som används i Azure samt hur begreppen är relaterade till varandra.
-- [Rekommenderade regler för namngivning och etiketter](../azure-best-practices/naming-and-tagging.md). Läs detaljerade rekommendationer för att namnge och märka upp dina resurser. De här rekommendationerna är lämpliga när företag flyttar till molnet.
-- [Skalning med flera Azure-prenumerationer](../azure-best-practices/scaling-subscriptions.md). Förstå strategier för skalning med flera Azure-prenumerationer.
-- [Organisera dina resurser i Azure-hanteringsgrupper](https://docs.microsoft.com/azure/governance/management-groups/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Lär dig hur Azure-hanteringsgrupper kan hantera resurser, roller, principer och distribution över flera prenumerationer.
+- [Skapa dina första prenumerationer](./initial-subscriptions.md). Skapa en första uppsättning Azure-prenumerationer för att påbörja molnimplementeringen.
+- [Skala Azure-miljön med flera prenumerationer](../azure-best-practices/scale-subscriptions.md). Lär dig varför och hur du kan skapa fler prenumerationer för att skala din Azure-miljö.
+- [Organisera dina resurser i Azure-hanteringsgrupper](../azure-best-practices/organize-subscriptions.md). Lär dig hur Azure-hanteringsgrupper kan hantera resurser, roller, principer och distribution över flera prenumerationer.
+- [Följ rekommenderade regler för namngivning och taggar](../azure-best-practices/naming-and-tagging.md). Läs detaljerade rekommendationer för att namnge och märka upp dina resurser. De här rekommendationerna är lämpliga när företag flyttar till molnet.
 - [Skapa konsekventa hybridmoln](../considerations/hybrid-consistency.md). Skapa hybridmolnlösningar som tillhandahåller fördelarna med molnskapande samtidigt som många av fördelarna med lokal hantering bibehålls.
 
 ## <a name="networking"></a>Nätverk

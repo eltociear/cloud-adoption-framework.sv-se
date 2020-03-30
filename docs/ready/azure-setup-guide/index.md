@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: e17ab7acd3813929fc05915908108b1cd634d5f0
-ms.sourcegitcommit: e21e70a5ad7bff2f2009a2da8e91a54fccd6d38f
+ms.openlocfilehash: 8b55a99194ef6032905c7495206adeb8fa72ebfb
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80299060"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354480"
 ---
 <!-- cSpell:ignore timleyden -->
 
@@ -41,10 +41,10 @@ Du lär dig följande:
 >
 > - **Organisera resurser:** Ordna en hanteringshierarki för åtkomstkontroll, principer och efterlevnad för grupper av resurser och använd märkning till att spåra relaterade resurser.
 > - **Hantera åtkomst:** Använd rollbaserad åtkomstkontroll för att se till att användarna bara har de behörigheter som verkligen behövs.
-> - **Hantera kostnader och fakturering:** Identifiera din prenumerationstyp, förstå hur faktureringen fungerar och se hur du kan kontrollera dina kostnader.
+> - **Hantera kostnader och fakturering:** Identifiera din prenumerationstyp, lär dig hur faktureringen fungerar och se hur du kan kontrollera dina kostnader.
 > - **Planera styrning, säkerhet och efterlevnad:** Tillämpa och automatisera principer och säkerhetsinställningar som hjälper dig att följa gällande lagstiftning.
-> - **Använd övervakning och rapportering:** Få en överblick över dina resurser så att du kan identifiera och åtgärda problem, optimera prestanda och få insikt i kundernas beteende.
-> - **Håll dig uppdaterad med Azure:** Håll koll på produktuppdateringar så att du kan hantera eventuella ändringar proaktivt.
+> - **Använd övervakning och rapportering:** Få bra insyn i dina resurser så att du kan identifiera och åtgärda problem, optimera prestanda och få inblick i kundens beteende.
+> - **Håll dig uppdaterad med Azure:** Spåra produktuppdateringar och hantera ändringar proaktivt.
 
 ::: zone target="docs"
 

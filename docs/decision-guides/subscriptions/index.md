@@ -1,6 +1,6 @@
 ---
 title: Beslutsguide för prenumerationer
-description: Förstå utformningsmönster för prenumerationer och hanteringsgrupper som en viktig tjänst för att skapa en struktur för tillgångar under Azure-migreringar.
+description: Organisera dina Azure-resurser med effektiva strategier för prenumerationsdesign och en hierarki för hanteringsgrupper.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 10/17/2019
@@ -8,29 +8,26 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 1420906faadb966585346aeafe0a8e7efa9aaf09
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: e733280147a16287e92ab93334111950a2583497
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508040"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355470"
 ---
 # <a name="subscription-decision-guide"></a>Beslutsguide för prenumerationer
 
-En effektiv prenumerationsdesign hjälper organisationer att upprätta en struktur för att organisera resurser i Azure under en molnanpassning.
+En effektiv prenumerationsdesign hjälper organisationer att på ett strukturerat sätt organisera och hantera resurser i Azure under övergången till molnet. Den här guiden hjälper dig att avgöra när du behöver skapa ytterligare prenumerationer och expandera hierarkin för hanteringsgrupper för att uppfylla dina affärsbehov.
 
-Varje resurs i Azure, t.ex. en virtuell dator eller en databas, är kopplad till en prenumeration. Du börjar använda Azure när du skapar en Azure-prenumeration, kopplar den till ett konto och distribuerar resurser till prenumerationen. En översikt av de här koncepten finns i [Grundläggande Azure-begrepp](../../ready/considerations/fundamental-concepts.md).
+## <a name="prerequisites"></a>Krav
 
-När din digitala egendom i Azure växer, så behöver du förmodligen skapa ytterligare prenumerationer för att uppfylla dina krav. Med Azure kan du definiera en hierarki av hanteringsgrupper för att organisera dina prenumerationer och enkelt tillämpa rätt princip till rätt resurser. Mer information finns i [Skalning med flera Azure-prenumerationer](../../ready/azure-best-practices/scaling-subscriptions.md).
+När du implementerar Azure börjar du med att skapa en Azure-prenumeration, associera den med ett konto och distribuera resurser såsom virtuella datorer och databaser till prenumerationen. En översikt av de här koncepten finns i [Grundläggande Azure-begrepp](../../ready/considerations/fundamental-concepts.md).
 
-Vissa grundläggande exempel på hur du kan använda hanteringsgrupper för att separera olika arbetsbelastningar:
+- [Skapa dina första prenumerationer.](../../ready/azure-best-practices/initial-subscriptions.md)
+- [Skapa ytterligare prenumerationer](../../ready/azure-best-practices/scale-subscriptions.md) för att skala din Azure-miljö.
+- [Organisera och hantera dina prenumerationer](../../ready/azure-best-practices/organize-subscriptions.md) med hjälp av Azure-hanteringsgrupper.
 
-- **Arbetsbelastningar för produktion kontra icke-produktion:** Vissa företag skapar hanteringsgrupper för att separera sina produktions- och icke-produktionsprenumerationer. Med hanteringsgrupper blir det enklare för dessa kunder att hantera roller och principer. Till exempel kan en icke-produktionsprenumeration ge utvecklare **deltagaråtkomst**, men i produktion har de bara **läsaråtkomst**.
-- **Interna tjänster kontra externa tjänster:** Liksom med produktions- respektive icke-produktionsarbetsbelastningar har företag ofta olika krav, principer och roller för interna tjänster jämfört med externa, kundriktade tjänster.
-
-Den här beslutsguiden hjälper dig att överväga olika sätt att ordna din hanteringsgruppshierarki på.
-
-## <a name="subscription-design-patterns"></a>Mönster för prenumerationsdesign
+## <a name="modeling-your-organization"></a>Modellera din organisation
 
 Eftersom alla organisationer är olika, så är Azure-hanteringsgrupperna utformade för att vara flexibla. Modellera ditt molninnehåll så att det återspeglar organisationens hierarki och hjälper dig att definiera och tillämpa principer på högre nivåer i hierarkin, och förlita dig på arv när det gäller att se till att dessa principer tillämpas automatiskt på hanteringsgrupper lägre ned i hierarkin. Även om prenumerationer kan flyttas mellan olika hanteringsgrupper, är det bra att designa en grupphierarki för en initial hanteringsgruppshierarki som återspeglar dina förväntade organisationsbehov.
 
@@ -39,53 +36,45 @@ Innan du slutför din prenumerationsdesign kan du även överväga hur överväg
 > [!NOTE]
 > Med Azure Enterprise-avtal (EA) kan du definiera en annan organisationshierarki i faktureringssyfte. Den här hierarkin skiljer sig från din hanteringsgruppshierarki, vilken fokuserar på att tillhandahålla en arvsmodell för att underlätta tillämpning av lämpliga principer och åtkomstkontroller på dina resurser.
 
-Följande prenumerationsalternativ avspeglar en initial förbättring av prenumerationsdesignen, följt av flera mer avancerade hierarkier som kan anpassas till din organisation:
+## <a name="subscription-design-strategies"></a>Strategier för prenumerationsdesign
 
-### <a name="single-subscription"></a>Enstaka prenumeration
+Överväg att använda följande strategier för prenumerationsdesign för att uppfylla dina affärsbehov.
 
-En enstaka prenumeration per konto räcker kanske för organisationer som behöver distribuera ett litet antal molnhanterade tillgångar. Detta är det första prenumerationsmönster du implementerar i början av molnimplementeringaprocessen för att möjliggöra småskaliga experimentella eller koncepttestbaserade distributioner som hjälper dig att utforska molnets funktioner.
-
-### <a name="production-and-nonproduction-pattern"></a>Mönster för produktion och icke-produktion
-
-När du är redo att distribuera en arbetsbelastning till en produktionsmiljö bör du lägga till ytterligare en prenumeration. Detta hjälper dig att hålla dina produktionsdata och andra tillgångar utanför dina utvecklings- och testningsmiljöer. Du kan också enkelt använda två olika principuppsättningar för resurser i två prenumerationer.
-
-![Mönster för produktions- och icke-produktionsprenumeration](../../_images/ready/initial-subscription-model.png)
-
-### <a name="workload-separation-pattern"></a>Mönster för arbetsbelastningsuppdelning
+### <a name="workload-separation-strategy"></a>Strategi för separata arbetsbelastningar
 
 När en organisation lägger till nya arbetsbelastningar i molnet kan olika ägarskap till prenumerationer eller grundläggande ansvarsseparation resultera i flera prenumerationer i hanteringsgrupper för såväl produktion som icke-produktion. Även om den här metoden ger grundläggande arbetsbelastningsseparation, så drar den inga större fördelar av arvsmodellen för att automatiskt tillämpa principer på en delmängd av dina prenumerationer.
 
-![Mönster för arbetsbelastningsuppdelning](../../_images/ready/management-group-hierarchy-v2.png)
+![Strategi för separata arbetsbelastningar](../../_images/ready/management-group-hierarchy-v2.png)
 
-### <a name="application-category-pattern"></a>Mönster för programkategori
+### <a name="application-category-strategy"></a>Strategi för programkategorier
 
-I takt med att en organisations molnfotavtryck växer så skapas normalt ytterligare prenumerationer för att stödja program som har fundamentala skillnader vad gäller affärskritiskhet, efterlevnadskrav, åtkomstkontroller och dataskyddsbehov. Utifrån prenumerationsmönster för produktion och icke-produktion ordnas de prenumerationer som stöder dessa programkategorier under tillämpliga hanteringsgrupper för produktion eller icke-produktion. De här prenumerationerna ägs och hanteras vanligtvis av central IT-personalstyrka.
+I takt med att en organisations molnfotavtryck växer så skapas normalt ytterligare prenumerationer för att stödja program som har fundamentala skillnader vad gäller affärskritiskhet, efterlevnadskrav, åtkomstkontroller och dataskyddsbehov. Utifrån de ursprungliga prenumerationerna för produktion och icke-produktion ordnas de prenumerationer som stöder dessa programkategorier under tillämpliga hanteringsgrupper för produktion eller icke-produktion. De här prenumerationerna ägs och hanteras vanligtvis av central IT-personalstyrka.
 
-![Mönster för programkategori](../../_images/infra-subscriptions/application.png)
+![Strategi för programkategorier](../../_images/infra-subscriptions/application.png)
 
-Varje organisation kategoriserar sina program på olika sätt och separerar ofta prenumerationer baserat på specifika program eller tjänster eller utefter programarketyper. Den här kategoriseringen är ofta utformad för att stödja arbetsbelastningar som förväntas förbruka de flesta av resursgränserna för en prenumeration, eller för att separera verksamhetskritiska arbetsbelastningar så att de inte konkurrerar med andra arbetsbelastningar under dessa begränsningar. Några arbetsbelastningar som kan motivera en separat prenumeration under det här mönstret är:
+Varje organisation kategoriserar sina program på olika sätt och separerar ofta prenumerationer baserat på specifika program eller tjänster eller utefter programarketyper. Den här kategoriseringen är ofta utformad för att stödja arbetsbelastningar som förväntas förbruka de flesta av resursgränserna för en prenumeration, eller för att separera verksamhetskritiska arbetsbelastningar så att de inte konkurrerar med andra arbetsbelastningar under dessa begränsningar. Exempel på arbetsbelastningar som kan motivera en separat prenumeration:
 
 - Verksamhetskritiska arbetsbelastningar.
 - Program som är en del av ”kostnader för sålda varor” (KSV) i företaget. Exempel: Varje instans av företagets X-widget innehåller en Azure IoT-modul som skickar telemetri. Detta kan kräva en dedikerad prenumeration för redovisnings-/styrningsändamål som en del av KSV.
 - Program som omfattas av regelkrav, till exempel HIPAA eller FedRAMP.
 
-### <a name="functional-pattern"></a>Funktionsmönster
+### <a name="functional-strategy"></a>Funktionell strategi
 
-Det funktionella mönstret organiserar prenumerationer och konton längs funktionella rader, t.ex. ekonomi, försäljning eller IT-support, med hjälp av en hanteringsgruppshierarki.
+I en funktionell strategi organiseras prenumerationer och konton längs en funktionell linje, t.ex. för ekonomi, försäljning eller IT-support, med hjälp av en hanteringsgruppshierarki.
 
-### <a name="business-unit-pattern"></a>Affärsenhetsmönster
+### <a name="business-unit-strategy"></a>Affärsenhetsstrategi
 
-Affärsenhetsmönstret grupperar prenumerationer och konton baserat på vinst- och förlustkategori, affärsenhet, division, resultatenheter eller liknande affärsstruktur med hjälp av en hanteringsgrupphierarki.
+I en affärsenhetsstrategi grupperas prenumerationer och konton baserat på vinst- och förlustkategori, affärsenhet, division, resultatenheter eller liknande affärsstrukturer med hjälp av en hanteringsgruppshierarki.
 
-### <a name="geographic-pattern"></a>Geografiskt mönster
+### <a name="geographic-strategy"></a>Geografisk strategi
 
-För organisationer med global verksamhet grupperar det geografiska mönstret prenumerationer och konton baserat på geografiska regioner med hjälp av en hanteringsgruppshierarki.
+Organisationer med global verksamhet kan använda en geografisk strategi som grupperar prenumerationer och konton utifrån geografiska regioner med hjälp av en hanteringsgruppshierarki.
 
-## <a name="mixed-patterns"></a>Blandade mönster
+## <a name="mixing-subscription-strategies"></a>Blanda prenumerationsstrategier
 
-Hanteringsgruppshierarkier kan ha ett djup på upp till sex nivåer. Detta ger dig flexibiliteten att skapa en hierarki som kombinerar flera av dessa mönster för att uppfylla organisationens behov. Diagrammet nedan visar exempelvis en organisationshierarki som kombinerar ett affärsenhetsmönster med en geografisk mönster.
+Hanteringsgruppshierarkier kan ha ett djup på upp till sex nivåer. Detta ger dig flexibiliteten att skapa en hierarki som kombinerar flera av dessa strategier för att uppfylla organisationens behov. Diagrammet nedan visar exempelvis en organisationshierarki som kombinerar en affärsenhetsstrategi med en geografisk strategi.
 
-![Mönster för blandad prenumeration](../../_images/infra-subscriptions/mixed.png)
+![Blandad prenumerationsstrategi](../../_images/infra-subscriptions/mixed.png)
 
 ## <a name="related-resources"></a>Relaterade resurser
 
@@ -95,7 +84,7 @@ Hanteringsgruppshierarkier kan ha ett djup på upp till sex nivåer. Detta ger d
 
 ## <a name="next-steps"></a>Nästa steg
 
-Prenumerationsdesign är bara en av huvudkomponenterna för infrastruktur som kräver arkitektoniska beslut under en process för att implementera moln. Gå till [översikten över beslutsguider](../index.md) om vill veta mer om alternativa mönster eller modeller som används vid utformningsbeslut för andra typer av infrastrukturer.
+Prenumerationsdesign är bara en av huvudkomponenterna för infrastruktur som kräver arkitektoniska beslut under en process för att implementera moln. Gå till [översikten över beslutsguider](../index.md) och lär dig mer om ytterligare strategier som används för att fatta designbeslut för andra typer av infrastrukturer.
 
 > [!div class="nextstepaction"]
 > [Beslutsguider för arkitektur](../index.md)

@@ -84,7 +84,7 @@ items:
             href: plan/prerequisites.md
           - name: Distribuera mallen till Azure DevOps
             href: plan/template.md
-          - name: Rangordna och definiera arbetsbelastningar
+          - name: Definiera och prioritera arbetsbelastningar
             href: plan/workloads.md
           - name: Anpassa tillgångar till arbetsbelastningar
             href: plan/assets.md
@@ -170,8 +170,12 @@ items:
             href: ready/azure-best-practices/index.md
           - name: Resursorganisering
             items:
-              - name: Skalning med flera prenumerationer
-                href: ready/azure-best-practices/scaling-subscriptions.md
+              - name: Skapa dina första prenumerationer
+                href: ready/azure-best-practices/initial-subscriptions.md
+              - name: Skala med flera prenumerationer
+                href: ready/azure-best-practices/scale-subscriptions.md
+              - name: Organisera dina prenumerationer
+                href: ready/azure-best-practices/organize-subscriptions.md
               - name: Namngivning och taggning
                 href: ready/azure-best-practices/naming-and-tagging.md
           - name: Nätverk

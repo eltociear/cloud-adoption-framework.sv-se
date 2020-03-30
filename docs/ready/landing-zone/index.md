@@ -8,12 +8,12 @@ ms.date: 02/25/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fe53435fe09873a619b2860a63e7bf67fe7bca93
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: 77c64f23770e2f3eccc74142e186c887f9444dbe
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508327"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354247"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -27,7 +27,7 @@ En landningszon är den grundläggande byggstenen i alla typer av miljöer för 
 
 **Omfång:** En fullt fungerande landningszon tar hänsyn till alla plattformsresurser som krävs för att stödja kundens implementeringsbehov.
 
-**Refaktorisering:** En fullt fungerande landningszon är den sista slutprodukten för alla iterationer av Cloud Adoption Framework-beredskapsmetoden. Under varje iteration kommer den kodbas som definierar landningszonen att omstruktureras eller expanderas. Efter omstrukturering kan landningszonen ändras eller omdistribueras för att möjliggöra nya behov för molnimplementering.
+**Refaktorisering:** En fullt fungerande landningszon är den sista slutprodukten för alla iterationer av Cloud Adoption Framework-beredskapsmetoden. I varje iteration omstruktureras eller expanderas kodbasen som definierar landningszonen. Efter omstrukturering kan landningszonen ändras eller omdistribueras för att möjliggöra nya behov för molnimplementering.
 
 **Mål:** Målet med landningszonmetoden är att skapa en gemensam uppsättning konsekventa plattformsimplementeringar. De konsekventa implementeringarna måste finnas för att dina program ska få åtkomst till nödvändiga komponenter när de distribueras. Varje landningszoniteration måste därför utformas och distribueras i enlighet med kraven i molnimplementeringsplanen och strategin för prenumerationens design.
 
