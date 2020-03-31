@@ -9,29 +9,30 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 67e22ff4831d6bca4bb0054b544bf2efba02a93e
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: 6ed6e547156a2fa9f07a49460fedd94a8ceb152b
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79024014"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354349"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
 # <a name="organize-your-azure-resources"></a>Organisera dina Azure-resurser
 
-Det är viktigt att organisera molnbaserade resurser för att skydda, hantera och spåra kostnader som rör dina arbetsbelastningar. Om du vill organisera dina resurser använder du hanteringshierarkierna i Azure-plattformen, inför genomtänkta namnkonventioner och tillämpar resurstaggning.
+Det är viktigt att organisera molnbaserade resurser för att skydda, hantera och spåra kostnader som rör dina arbetsbelastningar. Definiera en hierarki för hanteringsgrupper, följ en vanlig namngivningskonvention och tillämpa taggning av resurser för att organisera dina resurser.
 
 <!-- markdownlint-disable MD024 MD025 -->
 
+<!-- cSpell:disable-next-line -->
 # <a name="azure-management-groups-and-hierarchy"></a>[Hanteringsgrupper och hierarkier i Azure](#tab/AzureManagmentGroupsAndHierarchy)
 
 Azure har fyra hanteringsnivåer: hanteringsgrupper, prenumerationer, resursgrupper och resurser. I den här bilden visas förhållandet mellan dessa nivåer.
 
-   ![Diagram som visar relationer i hanteringshierarkin](./media/organize-resources/scope-levels.png)
+   ![Diagram som visar relationen mellan nivåer i hanteringshierarkin](./media/organize-resources/scope-levels.png)
 
 - **Hanteringsgrupper:** Dessa grupper är containrar som hjälper dig att hantera åtkomst, principer och efterlevnad för flera prenumerationer. Alla prenumerationer i en hanteringsgrupp ärver automatiskt de villkor som tillämpas för hanteringsgruppen.
-- **Prenumerationer:** I en prenumeration grupperas användarkonton och de resurser som kontona har skapat. För varje prenumeration finns gränser eller kvoter för mängden resurser som kan skapas och användas. Organisationer kan använda prenumerationer till att hantera kostnader och de resurser som skapas av användare, grupper och projekt.
+- **Prenumerationer:** En prenumeration associerar användarkonton och de resurser som kontona har skapat med varandra på ett logiskt sätt. För varje prenumeration finns gränser eller kvoter för mängden resurser som kan skapas och användas. Organisationer kan använda prenumerationer till att hantera kostnader och de resurser som skapas av användare, grupper och projekt.
 - **Resursgrupper:** En resursgrupp är en logisk container som Azure-resurser (t.ex. webbappar, databaser och lagringskonton) distribueras och hanteras i.
 - **Resurser:** Resurser är instanser av tjänster du skapar som virtuella datorer, lagring och SQL-databaser.
 
@@ -41,7 +42,7 @@ Du kan tillämpa hanteringsinställningar som principer och rollbaserad åtkomst
 
 Vanligtvis är det bra att tillämpa kritiska inställningar på högre nivåer och projektspecifika krav på lägre nivåer. Till exempel vill du kanske se till att alla resurser för din organisation har distribuerats till vissa regioner. Det gör du med en princip för prenumerationen som anger tillåtna platser. När andra användare i organisationen lägger till nya resursgrupper och resurser framtvingas de tillåtna platserna automatiskt. Läs mer om principer i avsnittet om säkerhet, styrning och efterlevnad i den här guiden.
 
-Om du bara har ett fåtal prenumerationer är det relativt enkelt att hantera dem oberoende av varandra. Men om du har många prenumerationer bör du överväga att skapa en hierarki för hanteringsgrupper för att förenkla hanteringen av dina prenumerationer och resurser. Mer information om hur du hanterar flera prenumerationer finns i [Skalning med flera Azure-prenumerationer](../azure-best-practices/scaling-subscriptions.md).
+Om du bara har ett fåtal prenumerationer är det relativt enkelt att hantera dem oberoende av varandra. Men om du har många prenumerationer bör du överväga att skapa en hierarki för hanteringsgrupper för att förenkla hanteringen av dina prenumerationer och resurser. Mer information finns i [Organisera och hantera dina Azure-prenumerationer](../azure-best-practices/organize-subscriptions.md).
 
 När du planerar din efterlevnadsstrategi rekommenderar vi att du samarbetar med personer i organisationen med följande roller: säkerhet och efterlevnad, IT-administration, företagsarkitekter, nätverkspersonal och inköp.
 
@@ -80,9 +81,11 @@ Skapa en resursgrupp där du kan lagra resurser som webbappar, databaser och lag
 Du kan läsa mer här:
 
 - [Grunderna i Azure](../considerations/fundamental-concepts.md)
-- [Skalning med flera Azure-prenumerationer](../azure-best-practices/scaling-subscriptions.md)
-- [Förstå åtkomsthantering av resurser i Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Skapa dina första prenumerationer](../azure-best-practices/initial-subscriptions.md)
+- [Skapa ytterligare Azure-prenumerationer för att skala din Azure-miljö](../azure-best-practices/scale-subscriptions.md)
+- [Organisera och hantera dina Azure-prenumerationer](../azure-best-practices/organize-subscriptions.md)
 - [Ordna resurser med hanteringsgrupper i Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [Förstå åtkomsthantering av resurser i Azure](../../govern/resource-consistency/resource-access-management.md)
 - [Tjänstbegränsningar för prenumerationer](https://docs.microsoft.com/azure/azure-subscription-service-limits)
 
 ::: zone-end
@@ -125,13 +128,13 @@ Skapa en resursgrupp där du kan lagra resurser som webbappar, databaser och lag
 
 # <a name="naming-standards"></a>[Namngivningsregler](#tab/NamingStandards)
 
-Namngivningsreglerna hjälper dig att enkelt identifiera resurser i Azure Portal, på en faktura och i skript. En namngivnings- och etikettstrategi omfattar information om företaget och verksamheten, såsom delar av resursnamn:
+Namngivningsreglerna hjälper dig att enkelt identifiera resurser i Microsoft Azure-portalen, på en faktura och i skript för automatisering. En namngivnings- och etikettstrategi omfattar information om företaget och verksamheten, såsom delar av resursnamn:
 
 - Den affärsrelaterade sidan av denna strategi säkerställer att resursnamn innehåller den organisatoriska information som krävs för att identifiera teamen. Använd en resurs tillsammans med företagsägare som ansvarar för resurskostnader.
 
 - Den operativa sidan bör se till att namnen innehåller den information som IT-teamen behöver. Använd informationen som identifierar arbetsbelastning, program, miljö, prioritet och annan information som är användbar för att hantera resurser.
 
-Olika resurstyper kan ha olika längdgränser och tillåtna tecken, många av dem som anges i Azure-metodtipsartikeln [namngivningskonventioner](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). Mer information och rekommendationer till hjälp för företags molnimplementeringsåtgärder, finns i [vägledning för namngivning och taggning](../azure-best-practices/naming-and-tagging.md) Ramverk för molnimplementering.
+Olika resurstyper har olika [namngivningsregler och begränsningar](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules). Mer information och rekommendationer till hjälp för företags molnimplementeringsåtgärder, finns i [vägledning för namngivning och taggning](../azure-best-practices/naming-and-tagging.md) Ramverk för molnimplementering.
 
 Följande tabell innehåller namngivningsmönster för några exempeltyper av Azure-resurser.
 
@@ -170,7 +173,7 @@ Mer taggningsrekommendationer och exempel finns i [vägledningen om taggning](..
 
 Så här lägger du till en tagg för en resursgrupp:
 
-1. Gå till [Resursgrupper](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups).
+1. Gå till [Resursgrupper](https://ms.portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2fSubscriptions%2fResourceGroups).
 1. Välj en resursgrupp.
 1. Välj **Tilldela taggar**.
 1. Ange ett nytt namn och värde eller välj ett befintligt namn och värde från listrutan.
@@ -194,6 +197,6 @@ Så här lägger du till en tagg för en resursgrupp:
 1. Välj **Taggar**.
 1. Ange ett nytt namn och värde eller välj ett befintligt namn och värde.
 
-::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups]" submitText="Go to resource groups" :::
+::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups]" submitText="Go to resource groups" :::
 
 ::: zone-end

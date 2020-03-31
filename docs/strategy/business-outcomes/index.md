@@ -3,16 +3,16 @@ title: Affärsresultat från omvandlingsresor
 description: Använd Cloud Adoption Framework för Azure för att förstå affärsresultat som är associerade med molnomvandlingar.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
-ms.topic: guide
+ms.date: 03/27/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 0fc60c8d2ca4c0725d114f6bf618e1a02934b2b5
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 646ac9da914939a63b9bd4a5cb73ae2899263823
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092392"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392505"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -35,7 +35,7 @@ Här följer några affärsresultat som brukar leda till konversationer mellan o
 
 ## <a name="sample-outcomes-by-category"></a>Exempelresultat efter kategori
 
-Att tala med affärsresultat som utgångspunkt kan kännas som ett främmande språk för många teknikinriktade personer. Microsoft organiserar en uppsättning exempel på affärsresultat i [Business Outcome Framework](../index.md) som gör översättningen till detta språk enklare. Använd de här exemplen för att inspirera och demonstrera affärsresultat baserat på faktiska omvandlingar.
+Att tala med affärsresultat som utgångspunkt kan kännas som ett främmande språk för många teknikinriktade personer. Vi organiserar en uppsättning exempel på affärsresultat som gör översättningen enklare. Du kan använda de här exemplen för att inspirera och demonstrera affärsresultat baserat på faktiska omvandlingar.
 
 Som hjälp för dig att lättare hitta affärsresultat har vi delat upp dem i följande kategorier. Den här metoden brukar främja diskussioner mellan olika affärsenheter som hjälp att skapa konsensus.
 
