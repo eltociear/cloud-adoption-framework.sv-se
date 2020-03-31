@@ -4,15 +4,15 @@ description: Använd ramverket för moln införande för Azure för att lära di
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: 57205533f8ae9b2da39ba7cc94e1071b0bde8c4f
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 714bd0d26a38a1ee3a3cb2bfc2d336d1ffd4f45c
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093842"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80428508"
 ---
 # <a name="build-a-cost-conscious-organization"></a>Bygg en kostnads medveten organisation
 

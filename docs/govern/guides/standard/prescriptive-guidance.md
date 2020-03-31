@@ -4,16 +4,16 @@ description: Använd ramverket för moln införande för Azure för att upprätt
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1d0c6d30e7bba864fb52b14fb82e1e88231e9a3c
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 4c39ddfed1a96cc6ee8433ceab1a00622a319986
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80357050"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434250"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>Standard styrnings guide för företag: bästa praxis förklaras
 

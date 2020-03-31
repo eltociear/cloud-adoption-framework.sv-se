@@ -4,16 +4,16 @@ description: Lär dig hur du modernisera befintliga företags IT-principer för 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e4235830eee8e57581214f3eabb46c32ebcf975b
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 3027b2195363499a2f3b383b8bb4f0eaf3b64da8
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709132"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80430887"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -27,7 +27,7 @@ De flesta företag hanterar det genom att köra processer som är av samma juste
 
 Som företag mogna IT-principer har beroenden för tidigare tekniska beslut en tendens att seep i principer för principer. Till exempel är det gemensamt för att se haveri beredskaps processer en princip som bestämmer externa band säkerhets kopieringar. Detta förutsätter ett beroende på en typ av teknik (band säkerhets kopiering) som kanske inte längre är den mest relevanta lösningen.
 
-Moln omvandlingar skapar en naturlig Bryt punkt för att se över de tidigare princip besluten tidigare. Tekniska funktioner och standard processer förändras avsevärt i molnet, precis som de ärver risker. I föregående exempel har säkerhets kopierings principen för band som har samlats in från risken för en enskild felpunkt genom att lagra data på en plats och företaget behöver minimera risk profilen genom att begränsa risken. I en moln distribution finns det flera alternativ som ger samma risk minskning, med mycket lägre återställnings tid (RTO). Några exempel:
+Moln omvandlingar skapar en naturlig Bryt punkt för att se över de tidigare princip besluten tidigare. Tekniska funktioner och standard processer förändras avsevärt i molnet, precis som de ärver risker. I föregående exempel har säkerhets kopierings principen för band som har samlats in från risken för en enskild felpunkt genom att lagra data på en plats och företaget behöver minimera risk profilen genom att begränsa risken. I en moln distribution finns det flera alternativ som ger samma risk minskning, med mycket lägre återställnings tid (RTO). Exempel:
 
 - En molnbaserad lösning kan möjliggöra geo-replikering av Azure SQL Database.
 - En hybrid lösning kan använda Azure Site Recovery för att replikera en IaaS-arbetsbelastning till Azure.

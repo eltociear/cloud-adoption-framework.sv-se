@@ -4,15 +4,15 @@ description: Lär dig mer om Azure Data Catalog och andra tjänster som hjälper
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a22742755f9336fd1cbbae3bb4417314228a432d
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 613e1ebaa3341b9aa96af659d0eb03cbc21a1303
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356809"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80425614"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>Verktyg för att demokratisera identifieringen av data i Azure
 

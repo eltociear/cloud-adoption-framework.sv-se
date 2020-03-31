@@ -4,16 +4,16 @@ description: Använd ramverket för moln införande för Azure för att lära di
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: be9d5e49fe4c03335fc28636616f97812d1d2312
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: cd6e80330f0de1108ded7a0e57e49c54380fb59b
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80355006"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80428640"
 ---
 # <a name="cloud-governance-capabilities"></a>Funktioner för moln styrning
 

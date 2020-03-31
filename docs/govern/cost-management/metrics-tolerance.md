@@ -4,16 +4,16 @@ description: Använd ramverket för moln införande för Azure för att kvantifi
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 221a29db7eb68acc6ffd5b52a0b01c1769e00222
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 15b54e847ff5dd6b2d18d4d8c83db5ad7283d803
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80357187"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434667"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Cost Management mått, indikatorer och risk tolerans
 

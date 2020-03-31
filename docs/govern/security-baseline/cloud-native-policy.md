@@ -4,16 +4,16 @@ description: Se ett exempel på en molnbaserad princip för säkerhets bas linje
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 121e2a04eee6f9f977f4bb826fcb7ff712794cd3
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: 4d9638f123da72ec10f0f68f91a5daf69f727ba7
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508057"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80426005"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Cloud – ursprunglig säkerhets bas linje princip
 

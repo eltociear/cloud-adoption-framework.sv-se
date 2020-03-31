@@ -4,15 +4,15 @@ description: Använd ramverket för moln införande för Azure för att lära di
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: aa544540c0bebb001f9256527a5f0ba388801c3c
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 90a6718c028023e1bae101b35fff873dd47e4ab2
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354804"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80427961"
 ---
 # <a name="review-rationalization-decisions"></a>Granska rationaliseringbeslut
 

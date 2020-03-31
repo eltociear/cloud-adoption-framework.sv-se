@@ -4,15 +4,15 @@ description: Kunskapsberedskap för molnmigrering
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ab7b0e80a360c214aae418e3383ced59ec06c268
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: a491bf0c5530898e229c5f87e3ef09a55b100382
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78898062"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80428934"
 ---
 # <a name="skills-readiness-for-cloud-migration"></a>Kunskapsberedskap för molnmigrering
 
@@ -67,4 +67,4 @@ Följande verktyg kan hjälpa teamet att hitta sätt att skydda och hantera migr
 Gå tillbaka till [checklistan för utökat omfång](./index.md) och se till att din migreringsmetod är helt anpassad till kraven.
 
 > [!div class="nextstepaction"]
-> [Checklista för utökat omfång](./index.md)
+> [Utökad checklista](./index.md)

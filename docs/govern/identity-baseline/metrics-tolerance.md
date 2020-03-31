@@ -4,16 +4,16 @@ description: Använd ramverket för moln införande för Azure för att lära di
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9d50e40ba5877eab0f2aa904f2bcc1e984c309ca
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 5af612501dd2fb8bb73ada0e9dfcd4f3ee784e35
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223880"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433533"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Identitets bas mått, indikatorer och risk tolerans
 

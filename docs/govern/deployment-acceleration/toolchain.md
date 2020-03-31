@@ -4,16 +4,16 @@ description: Se hur Azures inbyggda verktyg kan hjälpa mogna principer och proc
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ee1c81fe5bada0fa435a598db2f79dc0b23b4392
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: b6fac6af93c68f22561b578cfe598bc9d847c902
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709013"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434497"
 ---
 # <a name="deployment-acceleration-tools-in-azure"></a>Verktyg för distributions acceleration i Azure
 

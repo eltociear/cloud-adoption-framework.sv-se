@@ -1,19 +1,20 @@
 ---
 title: Microsoft Cloud Adoption Framework för Azure
 description: Få verktyg, vägledning och berättelser som hjälper dig att utforma strategier och få önskade affärsresultat i alla faser av molnimplementeringen.
+author: BrianBlanchard
+ms.author: brblanch
+ms.date: 02/28/2020
+ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
 layout: LandingPage
-ms.topic: landing-page
-author: BrianBlanchard
-ms.date: 02/28/2020
-ms.openlocfilehash: 7e98461d0cba205f05400d0ffd8b9ae64c0b69d5
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: a2bfb5458355c1efecb1785504b1a5398a4f01b9
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356859"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80425981"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Microsoft Cloud Adoption Framework för Azure
 

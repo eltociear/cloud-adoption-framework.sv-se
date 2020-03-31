@@ -4,16 +4,16 @@ description: Använd de här exemplen på vanliga team strukturer för att hitta
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 0aeaa665370c612e89a0d4ce72a2b38b2bb05e2b
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 09f85e383623f52212eb9621b34342d54ad747b7
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222234"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80428385"
 ---
 <!-- cSpell:ignore ccoe -->
 

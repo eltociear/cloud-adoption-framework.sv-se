@@ -4,16 +4,16 @@ description: Använd ramverket för moln införande för Azure för att lära di
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: ebcc6d1a2ed45ad199c0b0da880d72d253f21c3e
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 9ef3c108d330cd52b470c590a48f79c65502a7e6
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354101"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80431619"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>Bygg en affärs justering för molnbaserad migrering
 

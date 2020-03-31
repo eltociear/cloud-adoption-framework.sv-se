@@ -4,16 +4,16 @@ description: Se dessa policys för exempel på säkerhets bas linjer för att hj
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 02a1c18a73b784cb9245ed7c83d86c21c0690148
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 34135a7bb0a6fb97895bde3b002426f37c0f53fd
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707228"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80425949"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Exempel princip satser för säkerhets bas linje
 
@@ -41,7 +41,7 @@ Följande exempel på princip satser riktar sig mot vanliga säkerhets-relaterad
 
 **Alternativ för potentiell design:** I artikeln [Översikt över Azure-kryptering](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) finns en beskrivning av hur data i rest-kryptering utförs på Azure-plattformen. Ytterligare kontroller, till exempel vid kryptering av konto data och kontroll över hur lagrings konto inställningar kan ändras bör också beaktas.
 
-## <a name="network-isolation"></a>Nätverks isolering
+## <a name="network-isolation"></a>Nätverksisolering
 
 **Teknisk risk:** Anslutning mellan nätverk och undernät i nätverk medför potentiella sårbarheter som kan leda till data läckor eller avbrott i verksamhets kritiska tjänster.
 

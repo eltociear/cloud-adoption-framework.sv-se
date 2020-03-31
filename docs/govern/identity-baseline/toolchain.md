@@ -4,16 +4,16 @@ description: Se hur Azures inbyggda verktyg kan hjälpa mogna principer och proc
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0aa9525a42e62012e1aa5913d9f806cc2a40e2f0
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 368d2811bb54ef373be8df036d96452023891b83
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709404"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434958"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Identitets bas verktyg i Azure
 
@@ -46,7 +46,7 @@ När du väljer den här metoden hanterar Azure AD användarnas inloggnings proc
 
 När du väljer den här metoden skickar Azure AD autentiseringsprocessen till ett separat betrott autentiserings system, till exempel lokala Active Directory Federation Services (AD FS) (AD FS) eller en betrodd tredjeparts Federations leverantör för att verifiera användarens lösen ord.
 
-Artikeln att [välja rätt autentiseringsmetod för Azure Active Directory](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) innehåller ett besluts träd som hjälper dig att välja den bästa lösningen för din organisation.
+Artikeln att [välja rätt autentiseringsmetod för Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) innehåller ett besluts träd som hjälper dig att välja den bästa lösningen för din organisation.
 
 I följande tabell visas de inbyggda verktyg som kan hjälpa mogna de principer och processer som har stöd för den här styrnings disciplinen.
 

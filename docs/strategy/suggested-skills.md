@@ -4,15 +4,15 @@ description: Använd ramverket för moln införande för Azure om du vill veta m
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: c138a81de0fd92c1a079c7a2f52255d5c7959526
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 81ac405667bb12f61ec324388e81e38543efb690
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092827"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433706"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Sökväg för kompetens beredskap under plan fasen för en migrerings resa
 

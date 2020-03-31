@@ -4,16 +4,16 @@ description: Se hur Azures inbyggda verktyg kan hjälpa mogna principer och proc
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 002b9d1fc559d87ef84614a6f1c085e08c6b9842
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 5bfe095bdd7d269be71ee2d112a3d3d1a4bb5dd4
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708180"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434945"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Resurs konsekvens verktyg i Azure
 

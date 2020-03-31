@@ -4,16 +4,16 @@ description: Lär dig om Cloud rationalisering, processen för att utvärdera ti
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/16/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 74a384cd3bf5688979a848423e0740ff15f08a34
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 6a6ebbfc94dbe3b3fe031210f55f51635228013f
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170162"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80431068"
 ---
 # <a name="cloud-rationalization"></a>Cloud rationalisering
 

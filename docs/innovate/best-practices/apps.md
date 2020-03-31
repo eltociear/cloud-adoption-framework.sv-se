@@ -4,15 +4,15 @@ description: Lär dig mer om Azure-verktyg för att påskynda utvecklingen av ap
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 701c4634aab8e2a9abb06356a929ae90c1b5a864
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 8ff62f3a508fa033f882101b13fd85f90526bab3
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171335"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80425578"
 ---
 # <a name="tools-to-engage-via-apps-in-azure"></a>Verktyg för att kommunicera via appar i Azure
 
@@ -38,7 +38,7 @@ Varje sökväg resulterar i fördelar och nack delar som är både kortsiktiga o
 
 Beroende på den väg som moln implementerings teamet tar, erbjuder Azure verktyg för att påskynda teamets möjlighet att bygga med kund empati. Följande lista över Azure-erbjudanden grupperas baserat på föregående besluts Sök vägar. Dessa erbjudanden är:
 
-- Azure App Service
+- Azure Apptjänst
 - Azure Kubernetes Service (AKS)
 - Azure Migrate
 - Azure Stack

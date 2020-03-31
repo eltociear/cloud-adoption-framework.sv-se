@@ -4,16 +4,16 @@ description: Använd ramverket för moln införande för Azure för att kvantifi
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 83772d82d6f439bcd25382e21738ed01ef411596
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 14ae08de4bb0ce82e4ba0d5ce0225c0597ee67b4
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170961"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434531"
 ---
 # <a name="deployment-acceleration-metrics-indicators-and-risk-tolerance"></a>Distributions accelerations mått, indikatorer och risk tolerans
 

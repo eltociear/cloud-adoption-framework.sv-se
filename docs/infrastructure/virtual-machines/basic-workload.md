@@ -4,15 +4,15 @@ description: Lär dig mer om kärn molnets infrastruktur komponenter och grundl�
 author: alexbuckgit
 ms.author: abuck
 ms.date: 12/31/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e720fb698e0eecb53942bb5d7be99df5e923451e
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 015999a9852625abe4ad02a60ad37fc162dd4861
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170706"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80425414"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>Distribuera en grundläggande arbets belastning i Azure
 

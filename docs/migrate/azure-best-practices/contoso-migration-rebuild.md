@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 45d5a27e6d7ba933c82bc41825e76cf8f7830767
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 2713ce102d115c4f5cd16ef37baaaa22a06acfc8
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356348"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80431085"
 ---
 <!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel smarthotelcontoso smarthotelakseus smarthotelacreus smarthotelpets smarthotelpetchecker smarthotelsettingsurl vcenter WEBVM SQLVM eastus kubectl contosodevops visualstudio azuredeploy cloudapp publishfront petchecker appsettings -->
 
@@ -162,7 +162,7 @@ Contosos administratörer etablerar enligt följande:
 
    ![AKS](./media/contoso-migration-rebuild/aks4.png)
 
-6. De autentiserar Azure CLI genom att först köra kommandot **az login** och sedan följa instruktionerna för att autentisera med hjälp av webbläsaren. [Lär dig mer](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) om hur du loggar in med Azure CLI.
+6. De autentiserar Azure CLI genom att först köra kommandot **az login** och sedan följa instruktionerna för att autentisera med hjälp av webbläsaren. [Lär dig mer](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest) om hur du loggar in med Azure CLI.
 
    ![AKS](./media/contoso-migration-rebuild/aks5.png)
 
@@ -512,7 +512,7 @@ Nu kan Contosos administratörer publicera webbplatsen.
 
 10. De väljer blixtikonen på artefakten och aktiverar kontinuerlig distribution.
 
-    ![Kontinuerlig distribution](./media/contoso-migration-rebuild/vsts-publishfront6.png)
+    ![Löpande distribution](./media/contoso-migration-rebuild/vsts-publishfront6.png)
 11. I **Miljö** väljer de **1 jobb, 1 uppgift** under **staging** (mellanlagring).
 12. När de har valt prenumerationen och appens namn öppnar de aktiviteten **Distribuera Azure App Service**. Distributionen har konfigurerats att använda distributionsplatsen **staging** (mellanlagring). Det innebär att kod för granskning och godkännande skapas automatiskt på den här platsen.
 

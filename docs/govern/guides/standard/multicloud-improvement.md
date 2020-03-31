@@ -4,16 +4,16 @@ description: Använd ramverket för moln införande för Azure för att lära di
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a9c09aaf915a7f008cde80ebdc050ee95bbf7430
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 27ee8420a1d610705b76c80590229ee1a7c454da
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80357017"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434259"
 ---
 <!-- cSpell:ignore MPLS -->
 
@@ -66,7 +66,7 @@ Följande ändringar i principen hjälper dig att åtgärda de nya riskerna och 
 Det här avsnittet av artikeln ändrar designen för styrnings MVP till att inkludera nya Azure-principer och en implementering av Azure Cost Management. Tillsammans uppfyller dessa design ändringar de nya företags princip uttrycken.
 
 1. Anslut nätverken. Det här steget utförs av nätverkets och IT-säkerhetsteamen och stöds av moln styrnings teamet. Om du lägger till en anslutning från MPLS/lånad rad leverantör till det nya molnet integreras nätverk. Genom att lägga till routningstabeller och brand Väggs konfigurationer styr du åtkomst och trafik mellan miljöerna.
-2. Konsolidera identitets leverantörer. Beroende på vilka arbets belastningar som finns i det sekundära molnet finns det en mängd olika alternativ för konsolidering av identitets leverantörer. Detta är några exempel:
+2. Konsolidera identitets leverantörer. Beroende på vilka arbets belastningar som finns i det sekundära molnet finns det en mängd olika alternativ för konsolidering av identitets leverantörer. Följande är några exempel:
     1. För program som autentiserar med OAuth 2 kan användare från Active Directory i det sekundära molnet bara replikeras till den befintliga Azure AD-klienten. Detta säkerställer att alla användare kan autentiseras i klienten.
     2. I den andra extrema federationen tillåter Federation att ou flödar till Active Directory lokalt, sedan till Azure AD-instansen.
 3. Lägg till till gångar till Azure Site Recovery.

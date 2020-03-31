@@ -4,16 +4,16 @@ description: Använd ramverket för moln införande för Azure för att hämta e
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d4c69bafe9bf0dc0bfdb060455c82d3b3a638a47
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 8594d37e41475ca26f96b89fe50591fbd0ecfc04
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223843"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434186"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Exempel princip satser för identitets bas linje
 

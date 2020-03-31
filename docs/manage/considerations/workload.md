@@ -4,15 +4,15 @@ description: Förstå en metod för att investera i fortsatta drift av dessa arb
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 43399d4d84d824f03a7fb19da493223f3baea717
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 92453f3323a2479160bd7bd45e6ef5101c1d9f1b
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341257"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80430123"
 ---
 # <a name="workload-operations-in-cloud-management"></a>Arbets belastnings åtgärder i moln hantering
 

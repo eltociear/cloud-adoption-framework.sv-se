@@ -4,15 +4,15 @@ description: Lär dig hur retroaktivt hjälper till att skapa en växande tänke
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d56330f1a4dcfd2057a945d53f7a0f7365b0b600
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 00f6b12994b11d0bc1930c71cfa44f64769e3105
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311786"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80429086"
 ---
 <!-- markdownlint-disable MD026 -->
 

@@ -4,18 +4,18 @@ description: Använd ramverket för moln införande för Azure för att lära di
 author: tracsman
 ms.author: jonor
 ms.date: 05/10/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: cbf77bad65753d219e3a0a53f300aee3690b001d
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: d5e906caf5f0b9c2c241520a96311c48df565234
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093231"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433241"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs WAFs -->
 

@@ -4,15 +4,15 @@ description: Data kraven överskrider nätverks kapaciteten under en migrering.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 565cb0d97fc764375f708d8e3db8f2a1c0a852e4
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: 5c410527182d7185a052bc99826ea06154fdae5f
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508380"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80429638"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -36,7 +36,7 @@ Det finns även [lösningar från tredje part](https://azuremarketplace.microsof
 
 ![Dataöverföring offline och online med Azure Data Box](../../_images/migrate/databox.png)
 
-## <a name="assess-process-changes"></a>Utvärdera ändringar i processen
+## <a name="assess-process-changes"></a>Utvärdera processändringar
 
 Om lagringsbehovet för en arbetsbelastning (eller flera arbetsbelastningar) överskrider nätverkskapaciteten kan Azure Data Box fortfarande användas vid en dataöverföring offline.
 
@@ -82,4 +82,4 @@ Aktiviteterna för att skydda och hantera påverkas troligen inte av denna för�
 Gå tillbaka till [checklistan för utökat omfång](./index.md) och se till att din migreringsmetod är helt anpassad till kraven.
 
 > [!div class="nextstepaction"]
-> [Checklista för utökat omfång](./index.md)
+> [Utökad checklista](./index.md)

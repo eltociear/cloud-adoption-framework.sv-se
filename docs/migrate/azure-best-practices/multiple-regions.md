@@ -4,23 +4,23 @@ description: Lär dig mer om regioner för molnplattformar och de faktorer och e
 author: doodlemania2
 ms.author: dermar
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 65e2331dca7756306c875dae092faaaf41030765
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: 7592494f3fd38721cc16015f3f8d5b33ad9132e0
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508346"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433026"
 ---
 # <a name="azure-regions"></a>Azure-regioner
 
 Azure består av många regioner runtom i världen. Varje [Azure-region](https://azure.microsoft.com/global-infrastructure/regions) har särskilda egenskaper, som gör valet av region ytterst viktigt.
 
 1. **Tillgängliga tjänster:** Tjänster som distribueras till varje region varierar beroende på olika faktorer. Välj en region för din arbetsbelastning som innehåller den tjänst du vill använda. Mer information om vilka tjänster som är tillgängliga i respektive region finns i [Produkttillgänglighet per region](https://azure.microsoft.com/global-infrastructure/services).
-1. **Kapacitet:** Varje region har maximal kapacitet. Det här är vanligt vis abstraktat från slutanvändaren, men det kan påverka vilka typer av prenumerationer som kan distribuera vilka typer av tjänster och under vilka omständigheter. Detta skiljer sig från prenumerationskvoterna. Om du planerar en omfattande data Center-migrering till Azure kanske du vill kontakta ditt lokala Azure-fälts team eller konto ansvarig för att bekräfta att du kan distribuera vid nödvändig skala.
+1. **Kapacitet:** Varje region har maximal kapacitet. Även om detta oftast inte påverkar slutanvändaren kan det påverka vilka typer av prenumerationer som kan distribuera vilka typer av tjänster och under vilka omständigheter. Detta skiljer sig från prenumerationskvoterna. Om du planerar en omfattande datacentermigrering till Azure kanske du vill kontakta ditt lokala Azure-team eller din kontoansvariga för att kontrollera att du kan distribuera i den skala som behövs.
 1. **Begränsningar:** Vissa begränsningar placeras på distributionen av tjänster i vissa regioner. Vissa regioner är till exempel bara tillgängliga som mål för säkerhetskopiering eller redundans. Andra begränsningar som är viktiga att notera är [krav på datasuveränitet](https://azure.microsoft.com/global-infrastructure/geographies).
 1. **Suveränitet:** Vissa regioner är avsedda för specifika suveräna enheter. Även om alla regioner är Azure-regioner, är dessa suveräna regioner helt isolerade från resten av Azure. De hanteras inte nödvändigtvis av Microsoft, och kan vara begränsade till särskilda typer av kunder. Dessa suveräna regioner är:
     1. [Azure Kina](https://azure.microsoft.com/global-infrastructure/china)
@@ -128,7 +128,7 @@ När teamet är nöjda med grundmetoden och beredskapen justerats finns det någ
 
 Dessa förutsättningar ger möjlighet att skapa processer som kan hantera denna komplexitet under genomförandet av migreringsstrategin.
 
-## <a name="assess-process-changes"></a>Utvärdera ändringar i processen
+## <a name="assess-process-changes"></a>Utvärdera processändringar
 
 När du hanterar komplexitet relaterad till globala tillgångar och användare finns det några viktiga aktiviteter som bör läggas till i utvärderingen av alla kandidater för migrering. Alla dessa ändringar kommer att ge mer information om påverkan på globala användare och tillgångar med en datadriven metod.
 
@@ -170,7 +170,7 @@ När ett program som ska distribueras till flera regioner migreras finns det vis
 
 Att hantera global komplexitet under optimeringen och befordran kan kräva dubbla ansträngningar i varje ytterligare region. När en enskild distribution är godtagbar kan duplicering av planer för verksamhetstestning och verksamhetsändring ändå krävas.
 
-### <a name="suggested-action-during-the-optimize-and-promote-process"></a>Föreslagna åtgärder i samband med optimering och befordran
+### <a name="suggested-action-during-the-optimize-and-promote-process"></a>Föreslagen åtgärd i samband med optimering och uppflyttning
 
 **Optimering av för testning:** Inledande Automation-testning kan identifiera möjliga optimerings möjligheter, precis som med all migrering. När det gäller globala arbetsbelastningar är det viktigt att testa arbetsbelastningen i varje region oberoende av varandra, eftersom mindre konfigurationsändringar i nätverket eller Azure-datacenter kan påverka prestandan.
 

@@ -4,15 +4,15 @@ description: Lär dig strategier som att byta värd för, ta bort, återskapa el
 author: njray
 ms.author: v-nanra
 ms.date: 12/26/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9390ca37087f463ae547d97caaedbf8376ee2f7b
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: e0823eef01a2966459a10293c25d877b1c732c64
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356847"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80425815"
 ---
 <!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
 
@@ -66,7 +66,7 @@ TP-övervakare är tillgängliga från olika leverantörer och körs på virtuel
 
 I Azure används emuleringsklienter för att köra TP Manager och de batch-jobb som använder JCL. I data skiktet ersätts DB2 av [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview), även om Microsoft SQL Server, DB2 LUW eller Oracle Database också kan användas. En emulator stöder IMS, VSAM och SEQ. Stordator system hanterings verktyg ersätts av Azure-tjänster och program vara från andra leverantörer som körs i virtuella datorer.
 
-Funktionerna för skärm hantering och formulär inmatning implementeras ofta med hjälp av webb servrar, som kan kombineras med databas-API: er, till exempel ADO, ODBC och JDBC för data åtkomst och transaktioner. Exakt vilken rad med Azure IaaS-komponenter som ska användas beror på vilket operativ system du föredrar. Några exempel:
+Funktionerna för skärm hantering och formulär inmatning implementeras ofta med hjälp av webb servrar, som kan kombineras med databas-API: er, till exempel ADO, ODBC och JDBC för data åtkomst och transaktioner. Exakt vilken rad med Azure IaaS-komponenter som ska användas beror på vilket operativ system du föredrar. Exempel:
 
 - Windows-baserade virtuella datorer: IIS (Internet Information Server) tillsammans med ASP.NET för skärm hantering och affärs logik. Använd ADO.NET för data åtkomst och transaktioner.
 

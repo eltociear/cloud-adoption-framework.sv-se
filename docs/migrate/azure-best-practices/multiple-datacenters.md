@@ -4,15 +4,15 @@ description: Flera datacenter
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9156df0b76f6edf1d249d5d724e0a5d0f4fd8e15
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 1a9e9082e4ceca7b83a4491c49e0932a3caaa9d7
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78898075"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80429648"
 ---
 # <a name="multiple-datacenters"></a>Flera datacenter
 
@@ -30,7 +30,7 @@ Inom varje epos hanteras de arbetsbelastningar som ska utvärderas som funktione
 
 Sprintar eller iterationer skulle sedan bestå av en serie uppgifter som krävs för att migrera tillgångarna och användarberättelserna som fastställts av teamet för molnimplementering. Versioner skulle sedan bestå av en eller flera arbetsbelastningar eller funktioner som kan befordras till produktionsanvändning.
 
-## <a name="assess-process-changes"></a>Utvärdera ändringar i processen
+## <a name="assess-process-changes"></a>Utvärdera processändringar
 
 Den största ändringen av utvärderingsprocessen vid en utökning för att hantera flera datacenter rör den korrekta registreringen och prioriteringen av arbetsbelastningar och beroenden mellan datacenter.
 
@@ -56,7 +56,7 @@ Följande aktiviteter har stor påverkan på framgången för en molnmigrering:
 
 Under optimering kan ytterligare testning krävas.
 
-### <a name="suggested-action-during-the-optimize-and-promote-process"></a>Föreslagna åtgärder i samband med optimering och befordran
+### <a name="suggested-action-during-the-optimize-and-promote-process"></a>Föreslagen åtgärd i samband med optimering och uppflyttning
 
 Innan befordran är det viktigt att tillhandahålla ytterligare nivåer av testning under omfångsutökningen. Under testning är det viktigt att testa för att upptäcka routingproblem och andra konflikter. Det är även viktigt att isolera det överförda programmet och testa om för att validera att alla beroenden migrerats till molnet. I detta fall innebär isolering att den överförda miljön separeras från produktionsnätverken. Det kan avslöja förbisedda tillgångar som fortfarande körs lokalt.
 
@@ -69,4 +69,4 @@ Processer för att skydda och hantera processändringar påverkas inte av denna 
 Gå tillbaka till [checklistan för utökat omfång](./index.md) och se till att din migreringsmetod är helt anpassad till kraven.
 
 > [!div class="nextstepaction"]
-> [Checklista för utökat omfång](./index.md)
+> [Utökad checklista](./index.md)

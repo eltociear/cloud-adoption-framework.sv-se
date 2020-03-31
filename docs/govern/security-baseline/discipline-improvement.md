@@ -4,16 +4,16 @@ description: Förstå de potentiella aktiviteter som ett företag utför för at
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0d5f2e2c1032c77ceb56b187aa9f2bcee02262eb
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 489f15b3ceda87c57f244c4ed597c4b5f05d11e9
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707398"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80426025"
 ---
 # <a name="security-baseline-discipline-improvement"></a>Förbättringar av säkerhets bas linje disciplin
 

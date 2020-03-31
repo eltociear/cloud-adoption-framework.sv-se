@@ -4,16 +4,16 @@ description: Lär dig mer om resurs namns-och taggnings rekommendationer som syf
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 03/05/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 2ebb04a09c6c14b44e0237c2530144c69014f5b4
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: f3d92caa6d71451975c47c1c596fe2332264388f
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354514"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433938"
 ---
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
 

@@ -4,15 +4,15 @@ description: Lär dig att mäta och optimera dina moln till gångar så att du k
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 5/19/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b0b49d2785de8cee4c08395f6a2893436fd0aa9e
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 92fb627b2585d03828e53788e71d3b16d62f92c9
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092772"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80432299"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>Benchmark-testa och ändra storlek på molntillgångar
 

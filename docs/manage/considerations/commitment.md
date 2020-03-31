@@ -4,15 +4,15 @@ description: Beräkna framtida resultat från klassificeringen och effekten av a
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9a16131436da5543eefd34afd8eafe6bb8a473d5
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: ef06eca77f253bab2d743c7df44286f51f531606
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312377"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80430314"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Affärs engagemang i moln hantering
 

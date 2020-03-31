@@ -4,16 +4,16 @@ description: Lär dig mer om antimönster som kan blockera en växande tänkesä
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 396e183e0e0af791c514e29b755c0b04a791f3a1
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 1586b6322b34e10f989934c9580e81583061d83c
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093805"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80428331"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Organisatoriska antimönster: silor och fiefdoms
 
