@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: 4b596fc83cf3d0b9a951287e052215622f6ee6b2
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 7374a531192ed140c8aa76d0e74e3817e34626db
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171131"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80427426"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Molninnovation i Cloud Adoption Framework
 
@@ -126,7 +126,7 @@ Här är några exempel på rollspecifika utbildningsvägar på Microsoft Learn 
 
 [Skapa serverlösa program](https://docs.microsoft.com/learn/paths/create-serverless-applications): Med Azure Functions kan du skapa händelsestyrda system med beräkning på begäran som kan utlösas av olika externa händelser. Lär dig hur du drar nytta av funktioner för att köra logik på serversidan och bygga serverlösa arkitekturer.
 
-Om du vill utforska fler utbildningsvägar bläddrar du igenom [Learn-katalogen](/learn/browse). Använd filtret **Roller** för att anpassa utbildningsvägarna till din roll.
+Om du vill utforska fler utbildningsvägar bläddrar du igenom [Learn-katalogen](https://docs.microsoft.com/learn/browse). Använd filtret **Roller** för att anpassa utbildningsvägarna till din roll.
 
 ## <a name="next-steps"></a>Nästa steg
 

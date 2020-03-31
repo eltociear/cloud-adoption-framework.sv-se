@@ -4,15 +4,15 @@ description: Strategi för styrning eller efterlevnad
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0526b85e52e203163942050716e5cabd4fc84ff3
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 42eba9c774a063fe915db50b6615a3a59ce261c6
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80355558"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434018"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategi för styrning eller efterlevnad
 
@@ -40,7 +40,7 @@ Konfigurationen av den grundläggande Azure-miljön kan ändras avsevärt vid in
 - **Cloud modernisering:** Använd [Cloud modernisering](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) -lösningen som en omfattande metod för att flytta program, data och infrastruktur till ett företags klart moln, samt för att optimera och modernisera efter moln distribution.
 - **Förnya med molnet:** Engagera kunden genom en innovativ och unik lösning [för CCoE-lösning (Cloud Center of expert)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) som skapar en modern IT-organisation för att möjliggöra rörlighet i stor skala med DevOps samtidigt som kontrollen är klar. Implementerar en smidig metod för att samla in verksamhetsbehov, återanvända distributionspaket med anpassad säkerhet, efterlevnad och tjänsthanteringsprinciper. Azure-plattformen förblir anpassad till driftsrutinerna.
 
-## <a name="assess-process-changes"></a>Utvärdera ändringar i processen
+## <a name="assess-process-changes"></a>Utvärdera processändringar
 
 Under utvärderingen krävs ytterligare beslut för att anpassa lösningen till den nödvändiga styrningsmetoden. Molnstyrningsteamet bör ge alla medlemmar i molnimplementeringsteamet eventuella policyinstruktioner, arkitekturvägledningar eller styrnings-och efterlevnadskrav innan arbetsbelastningen utvärderas.
 
@@ -71,4 +71,4 @@ Under den här processen bör projekt planen omfatta tidsallokeringar för moln 
 Som det sista objektet i den [expanderade check listan](./index.md), gå tillbaka till check listan och utvärdera eventuella ytterligare omfångs krav för migreringen.
 
 > [!div class="nextstepaction"]
-> [Checklista för utökat omfång](./index.md)
+> [Utökad checklista](./index.md)

@@ -4,15 +4,15 @@ description: Använd ramverket för moln införande för Azure för att lära di
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3fe7533ce7bedb03ef466bad65c5a9a7bfc299fc
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 69f9a05aa5ff049f688d789257d80af294c3f135
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171216"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80427703"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>Bygg enighet om affärs värdet för innovation
 

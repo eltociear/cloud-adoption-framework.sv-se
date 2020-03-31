@@ -4,15 +4,15 @@ description: Använd ramverket för moln införande för Azure för att lära di
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: af77abda7d26e032549db0c04f535593fc906789
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: e5211d263e2833b8cef41d3f8b3cc1d709b89d39
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094197"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80432895"
 ---
 # <a name="architect-workloads-prior-to-migration"></a>Beräkna arbetsbelastningar före migrering
 
@@ -38,7 +38,7 @@ De antaganden som beskrivits kan skapa hinder som kan sakta ner framsteg eller o
 
 ## <a name="accelerate-business-value"></a>Accelerera affärs värde
 
-En del scenarion kan kräva en annan arkitektur än den IaaS-strategi med byte av värd som förutsatts. Detta är några exempel:
+En del scenarion kan kräva en annan arkitektur än den IaaS-strategi med byte av värd som förutsatts. Följande är några exempel:
 
 - PaaS-alternativ. PaaS kan minska värdkostnader samt den tid som krävs för att migrera vissa arbetsbelastningar. En lista med tillvägagångssätt som kan dra fördel av en PaaS-konvertering finns i artikeln [utvärdera tillgångar](./evaluate.md).
 - Skriptat införande/DevOps. Om en arbetsbelastning har en befintlig DevOps-installation eller andra former av skriptat införande kan kostnaden för att ändra dessa skript vara lägre än för att migrera tillgången.

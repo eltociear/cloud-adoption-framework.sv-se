@@ -4,15 +4,15 @@ description: Använd ramverket för moln införande för Azure för att förbere
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 56956443bc681cc0c7e00ea13babb55a26280192
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: fe86c196e03e8908d3c9bb409cc3896286729015
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311803"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80429079"
 ---
 # <a name="prepare-for-cultural-complexity-aligning-roles-and-responsibilities"></a>Förbered för kulturell komplexitet: justera roller och ansvarsområden
 

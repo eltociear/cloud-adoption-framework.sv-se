@@ -4,15 +4,15 @@ description: Lär dig att skapa lösningar som driver innovation baserat på kun
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 67ea91e503290c8fee37f3d36770fbbea1b336b4
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: fa93cf71b98292e23b46f851fe422ba217be495d
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356787"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433385"
 ---
 # <a name="build-with-customer-empathy"></a>Skapa med empati för kunderna
 

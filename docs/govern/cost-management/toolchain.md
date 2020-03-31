@@ -4,16 +4,16 @@ description: Se hur Azures inbyggda verktyg kan hjälpa mogna principer och proc
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 70014352d4b7f64f5c73a0fda96ef453f1a77176
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: a0429ed857bce3b364f057af950657fed885cc74
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708792"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434624"
 ---
 # <a name="cost-management-tools-in-azure"></a>Cost Management verktyg i Azure
 

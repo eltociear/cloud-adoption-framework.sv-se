@@ -4,16 +4,16 @@ description: Hjälp till att aktivera en utökad styrningsmodell med viktiga akt
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4bb736dc232ae4c1d1989da5c0b31c19e0c07672
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 7d22bb4b4bae04366c61686862d1ae437185886d
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356952"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433520"
 ---
 <!-- markdownlint-disable MD026 -->
 

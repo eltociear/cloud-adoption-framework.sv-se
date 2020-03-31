@@ -4,16 +4,16 @@ description: Använd den här mallen för att dokumentera och förmedla princip 
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c5d7da3d1dd447063879c786d59840f256c418e1
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: 1378e2f316d607bc27f57c16fb20af98cc9feaf3
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392594"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434519"
 ---
 # <a name="deployment-acceleration-template"></a>Mall för distributions acceleration
 

@@ -4,15 +4,15 @@ description: Kompetens beredskap för moln övervakning
 author: BrianBlanchard
 ms.author: magoedte
 ms.date: 03/23/2020
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fe1dcc215c318ef35c7a1d19af50b1451eb1935d
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 128aa99a978f70525e2279868d2317dec8c965cb
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356236"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433584"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
