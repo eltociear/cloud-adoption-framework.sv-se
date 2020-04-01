@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3c41a207ed16364d4fc91625beeb9883bf6a8d0b
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 4b6ed0a62c3efcdf30e854fcbed6ee468a826e9c
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433358"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527666"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>Vanliga blockerare och utmaningar för innovation
 
@@ -40,7 +40,7 @@ I följande lista visas några av de vanligaste implementerings utmaningarna som
 
 Innan det frekventa införandet av molnet, är det den som är beroende av informations tekniken arbets krävande och tids krävande. Inköps-och etablerings cykler försenar ofta de viktiga första stegen mot eventuella nya lösningar. Kostnaden för DevOps-lösningar och feedback-slingor försenade Teams förmågor för att samar beta i tidiga steg idéstadie och uppfinning. Kostnader som rör utvecklings miljöer och dataplattformar hindrade någon men mycket utbildad professionella utvecklare från att delta i skapandet av nya lösningar.
 
-Molnet har en lösning på många av de här uppfinningarna genom att tillhandahålla automatisk etablering, verktyg för snabb utveckling och distribution, samt möjligheter för professionella utvecklare och medborgarna att samar beta i att skapa snabba paketlösningar. Genom att dra nytta av molnet för innovation kan du dramatiskt minska kund utmaningar och blockerare till uppfinnings sidan i innovations ekvationen.
+Molnet har en lösning på många av de här uppfinningarna genom att tillhandahålla automatisk etablering, verktyg för snabb utveckling och distribution, samt möjligheter för professionella utvecklare och medborgarna att samar beta i att skapa snabba paketlösningar. Att använda molnet för innovation minskar dramatiskt kundernas utmaningar och blockerar till uppfinnings sidan i innovations ekvationen.
 
 ### <a name="invention-challenges-in-a-digital-economy"></a>Uppfinnings utmaningar i en digital ekonomi
 

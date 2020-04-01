@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 95841468b109b4561d0632905c5004d6e4435954
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 01a1253e215b3d5a235c324204e443bb19a8e61b
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433829"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527045"
 ---
 # <a name="balance-competing-priorities"></a>Balansera konkurrerande prioriteringar
 
@@ -36,7 +36,7 @@ Ibland kan tvetydigheten vara scarier (eller mer farlig) än falskt antaganden. 
 
 ## <a name="balance-during-strategy"></a>Balans under strategin
 
-Kärn målet med strategi metodik är att utveckla anpassningar mellan intressenter. När den anpassade strategiska positionen har definierats kommer beteendet att drivas av alla metoder för att säkerställa att de tekniska besluten anpassar sig efter dina affärs resultat. Genom att gynna anpassningen av intressenter skapar du en gemensam uppsättning med konkurrerande prioriteringar: **djup på motivering** **och tid till företags påverkan**.
+Kärn målet med strategi metodik är att utveckla en justering mellan intressenter. När den anpassade strategiska positionen har definierats kommer beteendet att drivas av alla metoder för att säkerställa att de tekniska besluten anpassar sig efter dina affärs resultat. Genom att gynna justering mellan intressenter skapar du en gemensam uppsättning med konkurrerande prioriteringar: **djup på motivering** **och tid till företags påverkan**.
 
 **Konkurrerande prioriteringar:**
 
@@ -45,7 +45,7 @@ Kärn målet med strategi metodik är att utveckla anpassningar mellan intressen
 
 **Minsta omfattning:** Att hitta den här balansen kräver diskussioner mellan intressenter tidigt i processen. Strategi metoden rekommenderar att du begränsar justerings omfånget under den här tidiga ansträngningen. I den föreslagna metoden fokuserar intressenter på att justera runt en uppsättning viktiga motivation, mätbara resultat och en övergripande affärs justering. Vi rekommenderar att intressenter sedan snabbt genomför ett litet antal inledande projekt eller pilot för att driva nödvändiga inlärnings möjligheter.
 
-**Exempel på utökad omfattning:** Om den inledande företags analysen visar en hög risk för att verksamheten påverkas negativt kan intressenterna behöva sakta ned och bättre utvärdera en djupare analys under affärs skäl.
+**Exempel på utökad omfattning:** Om den inledande företags analysen visar en hög risk för att verksamheten påverkas negativt, kan intressenterna behöva sakta ned och bättre utvärdera en djupare analys under affärs justeringen.
 
 ## <a name="balance-during-plan"></a>Saldo under plan
 
@@ -56,13 +56,13 @@ På samma sätt som strategi prioriteringarna, under planeringen måste du göra
 - Det finns ofta ett stort antal antaganden **för den första planeringen** avseende teknisk implementering i molnet. I synnerhet när teamet har kunskaps luckor, påverkas miljön av identifierings luckor, eller så har arbets belastningarna inte några tydligt definierade arkitektur slut tillstånd. Alla dessa antaganden är vanliga i detaljerade moln implementerings planer. Experimentering, pilot och kvalitativ analys krävs för att ta bort dessa antaganden.
 - **Fördröjda tekniska beslut** förutsätter att det senare ett tekniskt beslut kan fattas, desto mer exakta är beslutet. Följande principer för flexibel produkt planering bidrar till att fördröja tekniska beslut, så att de kan ske vid rätt tidpunkt med tillräckligt med information. Den här metoden resulterar dock i en mycket högre grad av tvetydighet i den första planen.
 
-**Minsta omfattning:** Smidiga produkt utvecklings metoder rekommenderas för att köra en åtgärds fråga i hanterbara planer. Plan metoden rekommenderar följande steg för att uppnå saldot. Inventera den fullständiga digitala egendomen med hjälp av automatiserade identifierings verktyg, men Använd stegvisa rationalisering för att planera så långt som de kommande 1-3 månaderna av arbete. Se till att organisationens justering går snabbt. Skapa en färdighets beredskaps plan för det tilldelade teamet. Använd mallen för moln implementerings planer för att snabbt distribuera en första efter släpning.
+**Minsta omfattning:** Smidiga produkt utvecklings metoder rekommenderas för att köra en åtgärds fråga i hanterbara planer. Plan metoden rekommenderar följande steg för att uppnå saldot. Inventera den fullständiga digitala egendomen med hjälp av automatiserade identifierings verktyg, men Använd stegvisa rationalisering för att planera så långt som de kommande 1-3 månaderna av arbete. Se till att organisationens justering går snabbt. Skapa en färdighets beredskaps plan för det tilldelade teamet. Använd mallen Cloud adoption plan för att snabbt distribuera en första efter släpning.
 
 **Exempel på utökad omfattning:** Vid ett tillfälle kan leverans av en moln implementerings plan svara på en tids känslig eller affärs händelse med hög påverkan. När du behöver flytta ett stort antal till gångar under en bestämd tids period, följer stegen ovan ofta en djupare planerings ansträngning. Nyckeln för att lyckas i dessa scenarier är att planera tillräckligt för att komma igång och sedan planera för hela engagemanget. Den här metoden minskar sannolikheten för planering av spärrning av affärs resultat.
 
 ## <a name="balance-during-ready"></a>Saldo under klart
 
-När antagande team förbereds för sina första steg i molnet, finns det ofta konkurrerande prioriteringar mellan tiden för att vidta åtgärder och långsiktiga åtgärder. Teamet kanske är väl lämpade att leverera på den uppgift som är väl hanterad. Detta är nödvändigt i traditionella IT-miljöer, där utvecklingen av en plattform kräver fysiska till gångar och förvärvs cykler. Men när hela IT-plattformen definieras i kod, minskar traditionella utvecklings taktiker (t. ex. omstrukturering) behovet av bra hantering från början.
+När antagande team förbereds för sina första steg i molnet, finns det ofta konkurrerande prioriteringar mellan tiden för att vidta åtgärder och långsiktiga åtgärder. Teamet kanske är väl lämpade att leverera med uppgiften till hands och väl hanterad. Detta är nödvändigt i traditionella IT-miljöer, där utvecklingen av en plattform kräver fysiska till gångar och förvärvs cykler. Men när hela IT-plattformen definieras i kod, minskar traditionella utvecklings taktiker (t. ex. omstrukturering) behovet av bra hantering från början.
 
 **Konkurrerande prioriteringar:**
 
@@ -75,7 +75,7 @@ När antagande team förbereds för sina första steg i molnet, finns det ofta k
 
 ## <a name="balance-during-migrate"></a>Saldo under migrering
 
-Under migreringen är det vanligt att anta att arbets belastningarna kommer att revaras i molnet i den aktuella konfigurationen. Detta konkurrerar direkt med en framåtriktad vy för att bygga om alla arbets belastningar för att bättre utnyttja moln funktionerna. Sadly är två inte ömsesidigt uteslutande och kan vara kostnads fria när de hanteras via en gemensam process.
+Under migreringen är det vanligt att anta att arbets belastningarna kommer att revaras i molnet i den aktuella konfigurationen. Detta konkurrerar direkt med en framåtriktad vy för att bygga om alla arbets belastningar för att bättre dra nytta av moln funktionerna. Sadly är två inte ömsesidigt uteslutande och kan vara kostnads fria när de hanteras via en gemensam process.
 
 **Konkurrerande prioriteringar:**
 
@@ -84,7 +84,7 @@ Under migreringen är det vanligt att anta att arbets belastningarna kommer att 
 
 **Minsta omfattning:** Vid planering i tidigt skedet använder du alternativet Rehost för att planera, med en tydlig förståelse för att det här alternativet är ett första affärs antagande och inte ett tekniskt beslut. I metoderna för migrering anropar antagande teamet detta antagande för varje migrerad arbets belastning. Den här metoden följer stegen i utvärdera, migrera, befordra för varje arbets belastning eller grupp eller arbets belastningar som skapar en migrerings fabrik. Under utvärderings fasen utvärderar antagande teamet tekniska anpassningar och arkitektur för varje arbets belastning. Utvärderings ansträngningen resulterar sällan i en ren hiss och Skift-metod, eftersom många av komponenterna i arkitekturen brukar väljas för omberäkning och modernisering.
 
-**Exempel på utökad omfattning:** För verksamhets kritiska eller hög känslighets arbets belastningar, t. ex. en stordator eller ett mikrotjänstprogram på flera nivåer, kan en djupare bedömning av arbets belastningen krävas under utvärderings fasen. I dessa omarkitekturs situationer rekommenderar vi att kunderna använder Azures arkitektur granskning och Azure Architecture Framework för att förfina arbets belastnings kraven under utvärderingen.
+**Exempel på utökad omfattning:** För verksamhets kritiska eller hög känslighets arbets belastningar, t. ex. en stordator eller ett mikrotjänstprogram på flera nivåer, kan en djupare bedömning av arbets belastningen krävas under utvärderings fasen. I dessa omarkitekturs situationer bör kunderna använda Azure Architecture-granskning och Azure Architecture Framework för att förfina arbets belastnings kraven under utvärderingen.
 
 ## <a name="balance-during-innovate"></a>Saldo under innovation
 
@@ -97,7 +97,7 @@ Sant kundinriktad innovation skapar vanliga motstridiga prioriteringar mellan be
 
 **Minsta omfattning:** Den förnyade metoden visar hur du integrerar strategi och planer genom affärs värdes konsensus. Guiden introducerar sedan molnbaserade verktyg som kan påskynda varje ämnes område av innovation, som tillhör bästa praxis för implementering. Slutligen visar avsnittet process förbättringar olika metoder för att skapa kund empati, samtidigt som det rör sig om planer och strategier i molnets införande resa. Den här metoden fokuserar på att leverera innovation med hjälp av så lite teknik som möjligt.
 
-**Exempel på utökad omfattning:** Ibland kan en innovation vara beroende av verksamhets kritiska arbets belastningar med hög känslighet. När "kunden" är en intern användare kan utvecklings ansträngningen vara både verksamhets kritisk och hög känslighet under det tidigaste antalet iterationer. I dessa scenarier rekommenderar vi att implementerings team utnyttjar Azures arkitektur granskning och Azure Architecture Framework för att utvärdera avancerad arkitektur design tidigt i processen.
+**Exempel på utökad omfattning:** Ibland kan en innovation vara beroende av verksamhets kritiska arbets belastningar med hög känslighet. När "kunden" är en intern användare kan utvecklings ansträngningen vara både verksamhets kritisk och hög känslighet under det tidigaste antalet iterationer. I de här scenarierna bör implementerings team använda Azure Architecture Review och Azure Architecture Framework för att utvärdera avancerad arkitektur design tidigt i processen.
 
 ## <a name="balance-during-govern"></a>Saldo under styrning
 
@@ -118,8 +118,8 @@ IT-affärsmodellen avseende drifts hantering har ständigt ökat under de senast
 
 **Konkurrerande prioriteringar:**
 
-- Breda investeringar: investeringar på samma sätt som att undvika avbrott, snabb återställning och övervakning i miljön är den traditionella vyn av drift hantering. Den här metoden kan vara kostsam och samtidigt som de stödda produkterna tillhandahålls av moln leverantören.
-- Inget Ops/Low Ops: utnyttja molnbaserade drift verktyg för att minimera återkommande och återkommande uppgifter som tidigare levererats av heltids anställda. Genom att minska dessa drifts beroenden i drifts hanterings modellen frigörs dessa anställda till att öka värdet. Den här metoden kan dessutom leda till subpar-åtgärder.
+- **Breda investeringar:** Att investera jämnt, snabb återställning och övervakning i miljön är den traditionella vyn av drift hantering. Den här metoden kan vara kostsam och samtidigt som de stödda produkterna tillhandahålls av moln leverantören.
+- **Inget Ops och lågt Ops:** Använd moln-inbyggda drift verktyg för att minimera återkommande och återkommande uppgifter som tidigare levererats av heltids anställda. Genom att minska dessa drifts beroenden i drifts hanterings modellen frigörs dessa anställda till att öka värdet. Den här metoden kan dessutom leda till subpar-åtgärder.
 
 **Minsta omfattning:** Med hanterings metoden kan du upprätta en moln intern, hanterings bas linje utan Ops. Att bekräfta att ingen Ops-bas linje uppfyller alla affärs behov, arbetar med verksamheten för att definiera åtaganden och bättre anpassa investeringar. Expandera bas linjen för att möta vanliga behov för alla arbets belastningar. Aktivera sedan plattforms team eller speciella arbets belastnings team för att underhålla välhanterade lösningar i en väl hanterad miljö.
 

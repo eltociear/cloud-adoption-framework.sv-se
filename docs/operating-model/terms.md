@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 03064395f85470335fc6cdb20bb0f9d7411ca678
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 03843aa441188bb0bd91d0febfdd5681d6a6670b
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80428839"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80526828"
 ---
 # <a name="operating-model-terminology"></a>Terminologi för drifts modell
 
@@ -35,7 +35,7 @@ Moln införande är "vad vi gör" för att inse affärs värdet. Drifts modellen
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Utnyttja den drifts modell](./index.md) som tillhandahålls av moln införande ramverket för att utveckla drifts förfallo tid.
+[Använd den drifts modell](./index.md) som tillhandahålls av moln införande ramverket för att utveckla drifts förfallo tid.
 
 > [!div class="nextstepaction"]
-> [Utnyttja operativ modellen](./index.md)
+> [Använda operativ modellen](./index.md)

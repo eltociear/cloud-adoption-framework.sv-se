@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 45493245571d5df8d0ad349ba11cb1fe109027e5
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: e693ba20984c46a8eae4497220e75c01d64abcbb
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426071"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527650"
 ---
 # <a name="operational-compliance-in-cloud-management"></a>Operationell kompatibilitet i moln hantering
 
@@ -54,7 +54,7 @@ Alla moln hanterings bas linjer bör innehålla ett sätt att schemalägga, kont
 
 Som en förbättrad bas linje för moln hantering kan vissa arbets belastningar ha nytta av automatiserad reparation. När en arbets belastning ofta stöter på problem som inte kan lösas via kod eller arkitektoniska ändringar kan automatiserad reparation hjälpa till att minska belastningen på moln hantering och öka användarnas tillfredsställelse.
 
-Många skulle att att alla problem som är tillräckligt stora för att automatisera ska lösas genom lösning av teknisk skuld. När en långsiktig lösning är försiktig bör det vara standard alternativet. Ett antal affärs scenarier gör det dock svårt att motivera stora investeringar vid upplösningen av den tekniska skulden. När en sådan lösning inte kan motiveras, men reparation är en gemensam och kostsam börda, är automatiserad reparation nästa bästa lösning.
+Många skulle att att alla problem som är tillräckligt stora för att automatisera ska lösas genom lösning av teknisk skuld. När en långsiktig lösning är försiktig bör det vara standard alternativet. Vissa affärs scenarier gör det dock svårt att motivera stora investeringar vid upplösningen av den tekniska skulden. När en sådan lösning inte kan motiveras, men reparation är en gemensam och kostsam börda, är automatiserad reparation nästa bästa lösning.
 
 ## <a name="next-steps"></a>Nästa steg
 

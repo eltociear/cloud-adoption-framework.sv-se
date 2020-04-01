@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3680af7b55012d0fbfbe0feac632e92b178aa8d2
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 6ed87d6a46dd1a31611c50ed5ce8d3c30c5849aa
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354217"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527211"
 ---
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 
@@ -381,7 +381,7 @@ Virtuella Azure-datorer lagras som sidblobbar i Azure Storage.
 - [Lär dig hur du](https://docs.microsoft.com/azure/storage/blobs/storage-blob-snapshots) skapar en blobögonblicksbild.
 - [Granska ett exempelscenario](https://azure.microsoft.com/blog/microsoft-azure-block-blob-storage-backup) för säkerhetskopiering av bloblagring.
 - [Läs mer](https://docs.microsoft.com/azure/storage/blobs/storage-blob-soft-delete) om mjuk borttagning.
-- [Haveriberedskap och forcerad redundans (förhandsversion) i Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-disaster-recovery-guidance?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)
+- [Haveriberedskap och forcerad redundans (förhandsversion) i Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-disaster-recovery-guidance?toc=/azure/storage/blobs/toc.json)
 
 #### <a name="third-party-backup"></a>Säkerhetskopiering från tredje part
 
@@ -555,4 +555,4 @@ Azure har en lösning för ändringsspårning i Azure Automation:
 Läs andra metodtips:
 
 - [Metodtips](./migrate-best-practices-networking.md) för nätverk efter migrering.
-- [Metodtips](./migrate-best-practices-costs.md) för säkerhet och hantering efter migrering.
+- [Metodtips](./migrate-best-practices-costs.md) för kostnadshantering efter migrering.

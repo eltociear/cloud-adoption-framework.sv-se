@@ -7,12 +7,12 @@ ms.date: 03/03/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2378c3ba3e17a9c1408a07c65129dc853a83d8b2
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 0708c394cca50c64813b7eea04a1239586c825af
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80432841"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527705"
 ---
 # <a name="workload-classification-before-migration"></a>Arbets belastnings klassificering före migrering
 
@@ -24,7 +24,7 @@ I den här artikeln föreslår vi särskilt att du lägger till allvarlighets gr
 
 ## <a name="data-sensitivity"></a>Data känslighet
 
-Som beskrivs i artikeln om [data klassificering](../../../govern/policy-compliance/data-classification.md), mäter data klassificeringen den effekt som en data läcka har på företaget eller kunderna. Styrnings-och säkerhets teamen utnyttjar data känslighet eller data klassificering som en indikator för säkerhets risker. Under utvärderingen bör moln implementerings teamet utvärdera data klassificeringen för varje arbets belastning som är avsedd för migrering och dela denna klassificering med stöd team. Arbets belastningar som hanterar strikta offentliga data kanske inte påverkar support teamen. Men eftersom data flyttas vidare till "hög konfidentiell"-delen av spektrumet, kommer både styrnings-och säkerhets team att ha en fördelad andel som deltar i bedömningen av arbets belastningen.
+Som beskrivs i artikeln om [data klassificering](../../../govern/policy-compliance/data-classification.md), mäter data klassificeringen den effekt som en data läcka har på företaget eller kunderna. Styrnings-och säkerhets teamen använder data känslighet eller data klassificering som en indikator för säkerhets risker. Under utvärderingen bör moln implementerings teamet utvärdera data klassificeringen för varje arbets belastning som är avsedd för migrering och dela denna klassificering med stöd team. Arbets belastningar som hanterar strikta offentliga data kanske inte påverkar support teamen. Men eftersom data flyttas vidare till "hög konfidentiell"-delen av spektrumet, kommer både styrnings-och säkerhets team att ha en fördelad andel som deltar i bedömningen av arbets belastningen.
 
 Arbeta med dina säkerhets-och styrnings grupper så tidigt som möjligt för att definiera följande objekt:
 
@@ -35,7 +35,7 @@ Arbeta med dina säkerhets-och styrnings grupper så tidigt som möjligt för at
 
 ## <a name="mission-criticality"></a>Verksamhets kritiskhet
 
-Som beskrivs i artikeln om [belastnings kritiskan](../../../manage/considerations/criticality.md)är allvarlighets graden för en arbets belastning ett mått på hur betydligt verksamheten påverkas under ett avbrott. Den här data punkten hjälper drift hantering och säkerhets team att utvärdera risker avseende avbrott och överträdelser. Under utvärderingen bör moln implementerings teamet utvärdera uppdrags kritiskaheten för varje arbets belastning som är avsedd för migrering och dela denna klassificering med stöd team. "Låg" eller "ej stödda" arbets belastningar har troligen ingen effekt på stöd teamen. I takt med att arbets belastningar närmar sig klassificeringarna "verksamhets kritiska" eller "enhets kritiska" blir deras operativa beroenden tydligare.
+Som beskrivs i artikeln om [belastnings kritiskan](../../../manage/considerations/criticality.md)är allvarlighets graden för en arbets belastning ett mått på hur mycket verksamheten kommer att påverkas under ett avbrott. Den här data punkten hjälper drift hantering och säkerhets team att utvärdera risker avseende avbrott och överträdelser. Under utvärderingen bör moln implementerings teamet utvärdera uppdrags kritiskaheten för varje arbets belastning som är avsedd för migrering och dela denna klassificering med stöd team. "Låg" eller "ej stödda" arbets belastningar har troligen ingen effekt på stöd teamen. I takt med att arbets belastningar närmar sig klassificeringarna "verksamhets kritiska" eller "enhets kritiska" blir deras operativa beroenden tydligare.
 
 Arbeta med dina säkerhets-och drift team så snart som möjligt för att definiera följande objekt:
 

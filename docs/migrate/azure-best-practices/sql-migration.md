@@ -7,12 +7,12 @@ ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d077492b4be83d7d4d3f7b5485c9e22a9181fbe3
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: f2d2d5a4d4b220f4e638ad6ecdd525f38e7eb498
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433040"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527724"
 ---
 # <a name="sql-server-migration-best-practices-for-azure"></a>Metod tips för SQL Server migrering för Azure
 
@@ -22,4 +22,4 @@ Migrering av hela SQL Server till Azure kan påskynda standardmigreringen som be
 
 ## <a name="migration-best-practices"></a>Metodtips för migrering
 
-Innehålls förteckningen till vänster beskriver ett antal bästa praxis runt Microsoft som kan hjälpa dig att köra SQL Server migrering med hjälp av Azure Database migration guide, Azure Database Migration Service (DMS) eller andra verktyg. Bok märke på den här sidan för att få en snabb referens till den fullständiga listan med bästa praxis.
+Innehålls förteckningen till vänster beskriver metod tips som hjälper dig att köra SQL Server migrering med hjälp av Azure Database migration guide, Azure Database Migration Service (DMS) eller andra verktyg. Bok märke på den här sidan för att få en snabb referens till den fullständiga listan med bästa praxis.

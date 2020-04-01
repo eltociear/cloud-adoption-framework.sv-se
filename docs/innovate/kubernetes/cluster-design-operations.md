@@ -7,12 +7,12 @@ ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 31ea5b2e5906f08de5197906b57cbe32337e80f9
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 594b8ae3ce7949c3289d9a81ac9870889a5dba98
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426850"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527182"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
 
@@ -62,7 +62,7 @@ När du förbereder programmet för produktion bör du implementera en minsta up
 
 ## <a name="optimize-and-scale"></a>Optimera och skala
 
-Hur kan du optimera ditt arbets flöde och förbereda ditt program och ditt team att skala? Utnyttja check listan för optimering och skalning för att förbereda. Du bör kunna besvara dessa frågor:
+Hur kan du optimera ditt arbets flöde och förbereda ditt program och ditt team att skala? Använd check listan för optimering och skalning för att förbereda. Du bör kunna besvara dessa frågor:
 
 > [!div class="checklist"]
 >
@@ -77,5 +77,5 @@ Hur kan du optimera ditt arbets flöde och förbereda ditt program och ditt team
 > | Checklista  | Resurser |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **Skala automatiskt ett kluster så att det uppfyller program kraven.** För att hålla dig uppdaterad om programmets krav kan du behöva justera antalet noder som kör arbets belastningarna automatiskt med hjälp av klustrets automatiska skalning. | [Konfigurera Kubernetes-kluster autoskalning](https://docs.microsoft.com/azure/aks/cluster-autoscaler)    |
-> | **Planera för verksamhets kontinuitet och haveri beredskap.** Planera för distribution i flera regioner, skapa en plan för lagringsmigrering och aktivera geo-replikering för behållar avbildningar. | [Metod tips för distributioner i flera regioner](https://docs.microsoft.com/azure/aks/operator-best-practices-multi-region)  <br/> [Azure Container Registry geo-replikering](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)  |
+> | **Planera för verksamhets kontinuitet och haveri beredskap.** Planera för distribution i flera regioner, skapa en plan för lagringsmigrering och aktivera geo-replikering för behållar avbildningar. | [Metod tips för region distributioner](https://docs.microsoft.com/azure/aks/operator-best-practices-multi-region)  <br/> [Azure Container Registry geo-replikering](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)  |
 > | **Konfigurera övervakning och fel sökning i stor skala.** Konfigurera aviseringar och övervakning för program i Kubernetes. Lär dig mer om standard konfigurationen, hur du integrerar mer avancerade mått och hur du lägger till din egen anpassade övervakning och avisering för att köra ditt program på ett tillförlitligt sätt. | [Komma igång med övervakning och avisering för Kubernetes (video)](https://www.youtube.com/watch?v=W7aN_z-cyUw&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=16) <br/> [Konfigurera aviseringar med hjälp av Azure Monitor för behållare](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview) <br/> [Granska diagnostikloggar för huvud komponenter](https://docs.microsoft.com/azure/aks/view-master-logs) <br/> [Diagnostik för Azure Kubernetes service (AKS)](https://docs.microsoft.com/azure/aks/concepts-diagnostics)    |

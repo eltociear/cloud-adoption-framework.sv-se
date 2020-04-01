@@ -7,18 +7,18 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d40789f1ef65711e7e6347b106e2fc9ce8784190
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 3480d0411e1a16eed18d14859cbb997706ccccb4
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434041"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527630"
 ---
 # <a name="platform-operations-in-cloud-management"></a>Plattforms åtgärder i moln hantering
 
 En moln hanterings bas linje som sträcker sig över [inventering och synlighet](./inventory.md), [operativa krav](./operational-compliance.md)och [skydd och återställning](./protect.md) kan ge en tillräckligt stor moln hanterings nivå för de flesta arbets belastningar i IT-portföljen. Men den bas linjen är sällan tillräckligt för att stödja hela portföljen. Den här artikeln bygger på det vanligaste nästa steget i moln hantering, portfölj åtgärder.
 
-En snabb undersökning av till gångarna i IT-portföljen visar mönster över de arbets belastningar som stöds. Inom dessa arbets belastningar finns det ett antal vanliga plattformar. Beroende på de tidigare tekniska besluten inom företaget kan dessa plattformar variera mycket.
+En snabb undersökning av till gångarna i IT-portföljen visar mönster över de arbets belastningar som stöds. Inom dessa arbets belastningar kommer det att finnas vanliga plattformar. Beroende på de tidigare tekniska besluten inom företaget kan dessa plattformar variera mycket.
 
 För vissa organisationer kommer det att vara mycket beroende av SQL Server, Oracle eller andra data plattformar med öppen källkod. I andra organisationer kan commonalities vara rotad på värd plattformarna för virtuella datorer (VM) eller behållare. Andra kan ha ett gemensamt beroende av program eller ERP-system (Enterprise Resource Planning), till exempel SAP, Oracle eller andra.
 

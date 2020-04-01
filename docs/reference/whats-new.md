@@ -7,12 +7,12 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: a3e316d49acaaee00d5ecd10efac9aa15c2dbd49
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 4ed7d27dc57b957655f4fd2adbfac6f026c57ff5
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353686"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527004"
 ---
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework"></a>Nyheter i Microsoft Cloud adoption Framework
 
@@ -37,7 +37,7 @@ Den första landnings zonen har tagits bort från beredskaps guiden för att fun
 
 - [Vad är en landnings zon?](../ready/landing-zone/index.md): definierar periodens landnings zon
 - [Första landnings zon](../ready/landing-zone/first-landing-zone.md): expanderar jämförelsen av olika landnings zoner
-- [Migrera landnings zon](../ready/landing-zone/migrate-landing-zone.md): flyttad den tidigare zon utkasts artikeln, för att separera definitionen av CAF-skissen från valet av den första landnings zonen, för att tillåta fler alternativ för landnings zoner.
+- [Migrera landnings zon](../ready/landing-zone/migrate-landing-zone.md): flyttade den tidigare landnings zonen utkast artikel, för att separera definitionen av skissen från valet av den första landnings zonen, för att tillåta fler alternativ för landnings zoner.
 - Artikel i [terraform vilplan](../ready/landing-zone/terraform-landing-zone.md) : flyttad från avsnittet "expanderat område" i den färdiga metoden till den nya avsnittet "landnings zon" i klar metodik, för att behandla terraform som en första klass medborgare i landnings zon konversationen.
 - Gruppera grundläggande överväganden för landnings zoner tillsammans i innehålls förteckningen under "grundläggande landnings zoner".
 - De rekommenderade säkerhets metoderna från metoden för migrering till ett nytt avsnitt med landnings zoner "förbättra landnings zonens säkerhet (känsliga data)" för att Visa läsarna till den här vägledningen tidigare i livs cykeln.

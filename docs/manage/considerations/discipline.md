@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ccb7a6e428075a69532238f25fd89e825f2a4b35
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: c57b2326475f9434aee0b98cf69bf85956ce076e
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426332"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527114"
 ---
 # <a name="management-leveling-across-cloud-management-disciplines"></a>Hanterings nivåer i moln hanterings ämnes områden
 
@@ -27,14 +27,14 @@ Eftersom arbets belastningarna i din IT-portfölj varierar är det osannolikt at
 Som start punkt bör du överväga att upprätta de hanterings nivåer som visas i föregående diagram och föreslås i följande lista:
 
 - **Hanterings bas linje:** En moln hanterings bas linje (eller hanterings bas linje) är en definierad uppsättning verktyg, processer och konsekvent prissättning som fungerar som grund för all moln hantering i Azure. Om du vill upprätta en moln hanterings bas linje och bestämma vilka verktyg som ska ingå i bas linje erbjudandet för ditt företag, granskar du listan i avsnittet "Cloud Management-discipliner".
-- **Förbättrad bas linje:** Ett antal arbets belastningar kan kräva förbättringar av bas linjen som inte nödvändigt vis är beroende av en enskild plattform eller arbets belastning. Även om dessa förbättringar inte är kostnads effektiva för varje arbets belastning, bör det finnas gemensamma processer, verktyg och lösningar för alla arbets belastningar som kan motivera kostnaden för det extra hanterings stödet.
+- **Förbättrad bas linje:** Vissa arbets belastningar kan kräva förbättringar av bas linjen som inte nödvändigt vis är beroende av en enskild plattform eller arbets belastning. Även om dessa förbättringar inte är kostnads effektiva för varje arbets belastning, bör det finnas gemensamma processer, verktyg och lösningar för alla arbets belastningar som kan motivera kostnaden för det extra hanterings stödet.
 - **Plattforms-specialisering:** I en viss miljö används vissa vanliga plattformar av olika arbets belastningar. Den här allmänna arkitekturen förändras inte när företag antar molnet. Platform specialisering är en förhöjd hanterings nivå som använder data och arkitektur av ämnes experter för att ge en högre drifts nivå. Exempel på plattforms-specialisering skulle omfatta hanterings funktioner som är speciella för SQL Server, behållare, Active Directory eller andra tjänster som kan hanteras bättre genom konsekventa, upprepnings bara processer, verktyg och arkitekturer.
 - **Specialisering för arbets belastning:** För arbets belastningar som verkligen är verksamhets kritiska kan det vara en kostnads motivering att gå mycket djupare i hanteringen av arbets belastningen. Arbets belastnings specialisering använder telemetri för arbets belastning för att fastställa mer avancerade metoder för daglig hantering. Samma data identifierar ofta automatisering, distribution och design förbättringar som skulle leda till högre stabilitet, tillförlitlighet och återhämtning utöver vad som är möjligt med enbart drifts hantering.
 - **Stöds inte:** Det är lika viktigt att kommunicera vanliga hanterings processer som inte levereras via moln hanterings ämnes områden för arbets belastningar som klassificeras som icke-kompatibla eller inte kritiska.
 
 Organisationer kan också välja att [Hantera funktioner som är relaterade till en eller flera av dessa hanterings nivåer till en tjänst leverantör](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage). Dessa tjänst leverantörer kan använda [Azure-Lighthouse](https://azure.com/lighthouse) för att ge bättre precision och öppenhet.
 
-De återstående artiklarna i serien visar ett antal processer som ofta finns i var och en av dessa ämnes områden.
+Återstående artiklar i den här seriens dispositions processer som ofta finns i var och en av dessa ämnes områden.
 I parallellt visar [Azures hanterings guide](../azure-management-guide/index.md) de verktyg som har stöd för var och en av dessa processer. Om du vill ha hjälp med att skapa en hanterings bas linje börjar du med Azures hanterings guide. När du har upprättat bas linjen kan den här artikel serien och de medföljande metod tipsen hjälpa till att utöka den bas linjen och definiera andra nivåer av hanterings stöd.
 
 ## <a name="cloud-management-disciplines"></a>Moln hanterings ämnes områden

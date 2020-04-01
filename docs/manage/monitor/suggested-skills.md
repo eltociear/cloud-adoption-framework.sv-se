@@ -7,18 +7,18 @@ ms.date: 03/23/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 128aa99a978f70525e2279868d2317dec8c965cb
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 2cfa4ec997dc211ad50eafcb723c58d934c45d10
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433584"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527027"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
 # <a name="skills-readiness-for-cloud-monitoring"></a>Kompetens beredskap för moln övervakning
 
-Under plan fasen av migreringen är målet att utveckla de planer som krävs för att vägleda implementeringen. Planerna måste också innehålla hur du ska använda arbets belastningarna innan de övergår till eller släpps i produktion, och inte efteråt. Affärs intressenter förväntar sig värdefulla tjänster och de förväntar sig dem utan avbrott. IT-personalen inser att de behöver lära sig nya kunskaper och anpassas så att de kan utnyttja de integrerade Azure-tjänsterna för att effektivt kunna övervaka resurser i Azure och hybrid miljöer.
+Under plan fasen av migreringen är målet att utveckla de planer som krävs för att vägleda implementeringen. Planerna måste också innehålla hur du ska använda arbets belastningarna innan de övergår till eller släpps i produktion, och inte efteråt. Affärs intressenter förväntar sig värdefulla tjänster och de förväntar sig dem utan avbrott. IT-personalen inser att de behöver lära sig nya kunskaper och anpassas så att de kan använda integrerade Azure-tjänster på ett säkert sätt för att effektivt övervaka resurser i Azure och hybrid miljöer.
 
 De nödvändiga kunskaperna kan utvecklas snabbare med följande utbildningsvägar:
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: f8399e540b81154ce9de8c5ec1d0512c18d90ed8
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 3053d26f5b2cf3c7d1589f165fb32702b007d49f
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80430044"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527564"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -93,7 +93,7 @@ Svars tiden är ett av de mest kritiska besluten som påverkar aviseringen och e
 
 Det här är några viktiga fotnoter till den här regeln.
 
-**Gäst operativ systemets telemetri** har ett antal sökvägar för att komma in i systemet.
+**Gäst operativ systemets telemetri** har flera sökvägar för att komma in i systemet.
 
 - Det snabbaste sättet att varna för dessa data är att importera det som anpassade mått. Gör detta med hjälp av Azure-diagnostik-tillägget och sedan med en måtta-avisering. Anpassade mått är dock för närvarande en för hands version och är [dyrare än andra alternativ](https://azure.microsoft.com/pricing/details/monitor).
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 8d9712979e01f2d33dd4fda5039e97771040765f
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 088085af7dee93d0a1d69a1d6592b827c7a1c975
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433615"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527170"
 ---
 <!-- cSpell:ignore opsman ITSM -->
 
@@ -63,7 +63,7 @@ Funktionerna i de tjänster som var en del av OMS ändrades inte när OMS skulle
 
 ### <a name="operations-manager"></a>Operations Manager
 
-Operations Manager kräver betydande infrastruktur och underhåll för att stödja en hanterings grupp, vilket är en grundläggande enhet med funktioner. Som minst består en hanterings grupp av en eller flera hanterings servrar, en SQL Server instans som är värd för driften och informationslager för rapportering databasen och agenter. Designen av en hanterings grupp är beroende av ett antal faktorer, till exempel omfattningen av de arbets belastningar som ska övervakas och antalet enheter eller datorer som stöder arbets belastningarna. Om du behöver hög tillgänglighet och plats återhämtning, som ofta är fallet med Enterprise Monitoring Platforms, kan infrastruktur krav och tillhör ande underhåll öka dramatiskt.
+Operations Manager kräver betydande infrastruktur och underhåll för att stödja en hanterings grupp, vilket är en grundläggande enhet med funktioner. Som minst består en hanterings grupp av en eller flera hanterings servrar, en SQL Server instans som är värd för driften och informationslager för rapportering databasen och agenter. Designen av en hanterings grupp är beroende av flera faktorer, till exempel omfattningen av de arbets belastningar som ska övervakas och antalet enheter eller datorer som stöder arbets belastningarna. Om du behöver hög tillgänglighet och plats återhämtning, som ofta är fallet med Enterprise Monitoring Platforms, kan infrastruktur krav och tillhör ande underhåll öka dramatiskt.
 
 ![Diagram över Operations Manager hanterings grupp](./media/monitoring-management-guidance-cloud-and-on-premises/operations-manager-management-group-optimized.svg)
 

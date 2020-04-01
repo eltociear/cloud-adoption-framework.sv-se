@@ -7,12 +7,12 @@ ms.date: 03/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8d0265ff32f7cad82a98fd1dbc1070db40aa6167
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: c7d27fb64e03358876eb8384c09e3add5f5c433e
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426886"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527245"
 ---
 <!-- cSpell:ignore asabbour sabbour kured -->
 
@@ -60,7 +60,7 @@ När du förbereder programmet för produktion bör du implementera en minsta up
 > | **Skydda nätverks trafik inom Pod med nätverks principer.** Använd principen för minsta behörighet för att kontrol lera flödet av nätverks trafiken mellan poddar i klustret. | [Säker trafik mellan Pod med nätverks principer](https://docs.microsoft.com/azure/aks/use-network-policies) |
 > | **Begränsa åtkomsten till API-servern med hjälp av auktoriserade IP-adresser.** Förbättra kluster säkerheten och minimera attack ytan genom att begränsa åtkomsten till API-servern till en begränsad uppsättning IP-adressintervall. | [Säker åtkomst till API-servern](https://docs.microsoft.com/azure/aks/api-server-authorized-ip-ranges) |
 > | **Begränsa utgående trafik för klustret.** Lär dig vilka portar och adresser som ska tillåtas om du begränsar utgående trafik för klustret. Du kan använda Azure-brandväggen eller en brand Väggs enhet från tredje part för att skydda utgående trafik och definiera dessa obligatoriska portar och adresser. | [Styra utgående trafik för klusternoder i AKS](https://docs.microsoft.com/azure/aks/limit-egress-traffic) |
-> | **Skydda trafik med en brand vägg för webbaserade program (WAF).** Utnyttja Azure Application Gateway som en ingångs kontroll för Kubernetes-kluster.  | [Konfigurera Azure Application Gateway som en ingångs kontroll enhet](https://docs.microsoft.com/azure/application-gateway/ingress-controller-overview)    |
+> | **Skydda trafik med en brand vägg för webbaserade program (WAF).** Använd Azure Application Gateway som en ingångs kontroll för Kubernetes-kluster.  | [Konfigurera Azure Application Gateway som en ingångs kontroll enhet](https://docs.microsoft.com/azure/application-gateway/ingress-controller-overview)    |
 > | **Tillämpa säkerhets-och kernel-uppdateringar på arbetsnoder.** Förstå uppdaterings upplevelsen av AKS-noden. För att skydda dina kluster tillämpas säkerhets uppdateringar automatiskt på Linux-noder i AKS. Dessa uppdateringar omfattar säkerhets korrigeringar för operativ system eller kernel-uppdateringar. Vissa av dessa uppdateringar kräver att en nod startas om för att slutföra processen. | [Använd kured för att automatiskt starta om noder för att tillämpa uppdateringar](https://docs.microsoft.com/azure/aks/node-updates-kured) |
 > | **Konfigurera en lösning för att söka efter behållare och kluster.** Skannings behållare flyttas till Azure Container Registry och får djupare insyn i klusternoderna, moln trafiken och säkerhets kontrollerna. | [Azure Container Registry integration med Security Center](https://docs.microsoft.com/azure/security-center/azure-container-registry-integration) <br/> [Integrering med Azure Kubernetes service med Security Center](https://docs.microsoft.com/azure/security-center/azure-kubernetes-service-integration)  |
 

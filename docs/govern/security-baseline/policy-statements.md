@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 34135a7bb0a6fb97895bde3b002426f37c0f53fd
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 47aeccac0f98d21d2740a27ded12696372efaaa0
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80425949"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527513"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Exempel princip satser för säkerhets bas linje
 
@@ -87,7 +87,7 @@ Följande exempel på princip satser riktar sig mot vanliga säkerhets-relaterad
 
 **Princip instruktion:** Trender och potentiella utnyttjanden som kan påverka moln distributioner bör regelbundet granskas av säkerhets teamet för att tillhandahålla uppdateringar av verktyget för säkerhets bas linjer som används i molnet.
 
-**Alternativ för potentiell design:** Upprätta ett regelbundet säkerhets gransknings möte som innehåller relevanta IT-och styrelse grupp medlemmar. Granska befintliga säkerhets data och mått för att skapa luckor i den aktuella policyn och säkerhets bas linje verktyget, och uppdatera principen för att åtgärda eventuella nya risker. Utnyttja [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) och [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) för att få användbara insikter om nya hot som är särskilt för dina distributioner.
+**Alternativ för potentiell design:** Upprätta ett regelbundet säkerhets gransknings möte som innehåller relevanta IT-och styrelse grupp medlemmar. Granska befintliga säkerhets data och mått för att skapa luckor i den aktuella policyn och säkerhets bas linje verktyget, och uppdatera principen för att åtgärda eventuella nya risker. Använd [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) och [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) för att få användbara insikter om nya hot som är speciella för dina distributioner.
 
 ## <a name="next-steps"></a>Nästa steg
 

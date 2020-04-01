@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 594f10968e45477895fcc5dcd1b2a95d16d7c861
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: a7d5dede975dbc4a8571bcc54cbff71fa1588200
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392653"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527298"
 ---
 # <a name="first-landing-zone"></a>Den första landningszonen
 
@@ -37,7 +37,7 @@ D. När en partner tillhandahåller kontinuerliga hanterade tjänster eller som 
 
 ## <a name="choosing-a-first-landing-zone"></a>Välja en första landnings zon
 
-Valet av den första landnings zonen beror på ett antal variabler. Följande rutnät fångar upp några av alternativen för första landnings zoner, tillsammans med variabler som kan driva beslutet.
+Valet av den första landnings zonen beror på flera variabler. Följande rutnät fångar upp några av alternativen för första landnings zoner, tillsammans med variabler som kan driva beslutet.
 
 | Landnings zon                                 | Moln upplevelse  | Skala             | Identifierings tid | Produktions klar | Hybrid             | Känsliga data     | Verksamhets kritisk   | Efterlevnad         |
 |----------------------------------------------|-------------------|-------------------|----------------|------------------|--------------------|--------------------|--------------------|--------------------|

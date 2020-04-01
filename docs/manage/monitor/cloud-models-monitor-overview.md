@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 8c27e37ac357fa4ab86377501da527a43eda017f
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 33daaaf5859e0b761a6b53b1afc67df2ddcd1f65
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80430036"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527081"
 ---
 <!-- cSpell:ignore savision -->
 
@@ -160,7 +160,7 @@ Den här strategin ger insyn i nätverks lagret, utan behov av SNMP. Det kan ock
 
 ### <a name="monitor-with-azure-monitor"></a>Övervaka med Azure Monitor
 
-Även om en migrering till molnet visar flera utmaningar, innehåller den också ett antal affärs möjligheter. Det gör det möjligt för din organisation att migrera från ett eller flera lokala Enterprise Monitoring-verktyg till att inte bara minska kapital utgifter och drifts kostnader, utan även för att dra nytta av fördelarna som en moln övervaknings plattform som Azure Monitor kan leverera i moln skala. Undersök dina övervaknings-och aviserings krav, konfiguration av befintliga övervaknings verktyg och arbets belastningar som övergår till molnet. När du har slutfört din plan konfigurerar du Azure Monitor.
+Även om en migrering till molnet visar flera utmaningar, ger den också möjligheter. Det gör det möjligt för din organisation att migrera från ett eller flera lokala Enterprise Monitoring-verktyg till att inte bara minska kapital utgifter och drifts kostnader, utan även för att dra nytta av fördelarna som en moln övervaknings plattform som Azure Monitor kan leverera i moln skala. Undersök dina övervaknings-och aviserings krav, konfiguration av befintliga övervaknings verktyg och arbets belastningar som övergår till molnet. När du har slutfört din plan konfigurerar du Azure Monitor.
 
 - Övervaka hybrid infrastrukturen och program, från en enkel eller flera nivåer där komponenter finns mellan Azure, andra moln leverantörer och företagets nätverk. Komponenterna kan innehålla en eller flera virtuella datorer, flera virtuella datorer som placerats i en tillgänglighets uppsättning eller en virtuell dators skalnings uppsättning eller ett behållar program som distribueras till Azure Kubernetes service (AKS) som körs på Windows Server-eller Linux-behållare.
 

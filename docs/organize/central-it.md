@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 62c94478e46b30e2f4d905dc09774edaa474da50
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 5a70b89191f53c3475dd0d14f67d2c4dc4d68115
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80428688"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80526802"
 ---
 # <a name="central-it-capabilities"></a>Centrala IT-funktioner
 
@@ -59,7 +59,7 @@ Följande aktiviteter körs vanligt vis regelbundet:
 - Övervaka implementerings planer och framsteg mot den [prioriterade migreringen](../migrate/migration-considerations/assess/release-iteration-backlog.md).
 - Identifiera och prioritera plattforms ändringar som krävs för att stödja efter släpning i migreringen.
 - Agera som mellanhand eller översättnings lager mellan moln implementerings behov och befintliga IT-team.
-- Utnyttja befintliga IT-team för att påskynda plattforms funktionerna och aktivera införande.
+- Dra nytta av befintliga IT-team för att påskynda plattforms funktionerna och aktivera införande.
 
 ### <a name="technical-tasks"></a>Tekniska uppgifter
 

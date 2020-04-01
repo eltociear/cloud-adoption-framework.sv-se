@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 322f08ba65aa513d5d76c772c45bfb6563662ffd
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: c393b00de1d235553dcea544493ef019f46b1e0c
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80430219"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527573"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>Skydda och återställa i moln hantering
 
@@ -62,7 +62,7 @@ Mer information om den här processen finns i [plattforms åtgärds disciplin](.
 
 ### <a name="protect-and-recover-vms"></a>Skydda och återställa virtuella datorer
 
-De flesta arbets belastningar har vissa beroenden på virtuella datorer, vilka är värdar för olika aspekter av lösningen. För att arbets belastningen ska stödja en affärs process efter ett systemfel måste ett antal virtuella datorer återställas snabbt.
+De flesta arbets belastningar har vissa beroenden på virtuella datorer, vilka är värdar för olika aspekter av lösningen. För att arbets belastningen ska stödja en affärs process efter ett systemfel måste vissa virtuella datorer återställas snabbt.
 
 Varje minut på de virtuella datorerna kan leda till förlust av intäkter eller lägre lönsamhet. När den virtuella datorns stillestånds tid har direkt inverkan på verksamhetens räkenskaps prestanda är RTO mycket viktigt. Virtuella datorer kan återställas snabbare med hjälp av replikering till en sekundär plats och automatisk återställning, en modell som kallas snabb och varm återställnings modell. Med det högsta läget för återställning kan virtuella datorer replikeras till en helt funktionell, sekundär plats. Den här dyrare metoden kallas för hög tillgänglighet, eller frekvent frekvent återställnings modell.
 

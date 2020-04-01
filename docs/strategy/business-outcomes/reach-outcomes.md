@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 18357fc22ee7cd482d5799bffcf7454bfaa77afa
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 59810d9bd3e45086597cb9811ce4bba160640246
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80431695"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80526981"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>Exempel på globala räckvidds resultat
 
@@ -30,7 +30,7 @@ Att utöka till en ny marknad kan vara en av de mest värdefulla affärs resulta
 
 ## <a name="data-sovereignty"></a>Data suveränitet
 
-Vid drift på nya marknader införs ytterligare styrnings begränsningar. GDPR är ett exempel på styrnings kriterier som kan orsaka betydande ekonomiska återkurs. Azure tillhandahåller erbjudanden för regelefterlevnad som hjälper kunderna att uppfylla efterlevnaden av efterlevnaden för reglerade branscher och globala marknader. Mer information finns i [Översikt över Microsoft Azure efterlevnad](https://azure.microsoft.com/overview/trusted-cloud/compliance/).
+Vid drift på nya marknader införs ytterligare styrnings begränsningar. GDPR är ett exempel på styrnings kriterier som kan orsaka betydande ekonomiska återkurs. Azure tillhandahåller erbjudanden för regelefterlevnad som hjälper kunderna att uppfylla efterlevnaden av efterlevnaden för reglerade branscher och globala marknader. Mer information finns i [Översikt över Microsoft Azure efterlevnad](https://azure.microsoft.com/overview/trusted-cloud/compliance).
 
 - **Exempel:** En leverantör av USA-baserade verktyg har tilldelats ett avtal för att tillhandahålla verktyg i Kanada. Kanadensisk data suveränitets lagstiftning kräver att kanadensiska data hålls i Kanada. Det här företaget hade arbetat med en moln aktive rad program innovation i flera år. Det innebär att deras program vara kan distribueras via fullständigt skriptbaserade DevOps-processer. Med några mindre ändringar i kodbasen kunde de distribuera en fungerande kopia av koden till ett Azure-datacenter i Kanada, uppfylla data suveränitets efterlevnad och hålla kunden.
 
