@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 1cb25ad399c790a3dfbdd6c55119a50165f36196
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 21afe87618a4c00103fa1d2f9c6321c2ca03da2e
+ms.sourcegitcommit: f068ebc73b56f81f91773a963c5fc8fd2221a148
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426047"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80606576"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>Molnövervakningsguide: Introduktion
 
@@ -31,9 +31,9 @@ IT-teamet föredrar dock ofta att använda verktyg som det redan gjorts betydand
 
 Målet med den här guiden är att vara en detaljerad referens som hjälper företagets IT-chefer, affärsbeslutsfattare, arkitekter och apputvecklare att förstå följande:
 
-* Azures övervakningsplattformar med en översikt över och jämförelse av deras funktioner.
-* Bästa möjliga lösning för övervakning av hybridbaserade, privata och Azure-interna arbetsbelastningar.
-* Rekommenderad övervakningsmetod både för infrastrukturer och program, från slutpunkt till slutpunkt. I metoden ingår distribuerbara lösningar för att migrera sådana vanliga arbetsbelastningar till Azure.
+- Azures övervakningsplattformar med en översikt över och jämförelse av deras funktioner.
+- Bästa möjliga lösning för övervakning av hybridbaserade, privata och Azure-interna arbetsbelastningar.
+- Rekommenderad övervakningsmetod både för infrastrukturer och program, från slutpunkt till slutpunkt. I metoden ingår distribuerbara lösningar för att migrera sådana vanliga arbetsbelastningar till Azure.
 
 Den här guiden är inte en vägledning för att använda eller konfigurera enskilda tjänster och lösningar i Azure, men den refererar till sådana källor när de är tillgängliga eller lämpliga att använda. När du har läst den kommer du att veta hur du framgångsrikt kör en arbetsbelastning enligt rekommenderade metoder och mönster.
 
@@ -47,21 +47,21 @@ Guiden är särskilt användbar för företagsadministratörer, IT-driftteam, an
 
 Den här artikeln ingår i en serie. Följande artiklar är avsedda att läsas tillsammans, i följande ordning:
 
-* Introduktion (den här artikeln)
-* [Övervakningsstrategi för molndistributionsmodeller](./cloud-models-monitor-overview.md)
-* [Samla in rätt data](./data-collection.md)
-* [Aviseringar](./alerting.md)
+- Introduktion (den här artikeln)
+- [Övervakningsstrategi för molndistributionsmodeller](./cloud-models-monitor-overview.md)
+- [Samla in rätt data](./data-collection.md)
+- [Aviseringar](./alerting.md)
 
 ## <a name="products-and-services"></a>Produkter och tjänster
 
 Det finns några program och tjänster som hjälper dig att övervaka och hantera olika resurser i Azure, företagets nätverk eller andra molnleverantörer. De är:
 
-* System Center Operations Manager
-* Azure Monitor, som nu innehåller Log Analytics och Application Insights
-* Azure Policy och Azure Blueprints
-* Azure Automation
-* Azure Logic Apps
-* Azure Event Hubs
+- System Center Operations Manager
+- Azure Monitor, som nu innehåller Log Analytics och Application Insights
+- Azure Policy och Azure Blueprints
+- Azure Automation
+- Azure Logic Apps
+- Azure Event Hubs
 
 Den första versionen av guiden beskriver våra nuvarande övervakningsplattformar: Azure Monitor och System Center Operations Manager. Den beskriver också vår rekommenderade strategi för övervakning av de olika molndistributionsmodellerna. Även den första uppsättningen övervakningsrekommendationer ingår, med bland annat datainsamling och avisering.
 
