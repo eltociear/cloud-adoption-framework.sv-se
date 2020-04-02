@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b9e39f4f0c86239c3c1d249fdb08dbce2c9f4daa
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: a04208a147d2cf9f50b30f8053b49367fa08aabe
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80429427"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527687"
 ---
 # <a name="validate-assessment-assumptions-before-migration"></a>Validera antaganden för utvärderingen före migrering
 
@@ -45,7 +45,7 @@ Utöver det övergripande ansvaret finns det åtgärder som en person eller en g
   - En medlem i molnstrategiteamet ska ha det slutliga ansvaret för den här aktiviteten under ledning av molnimplementeringsteamet.
 - **Inriktning med intressenter.** Teamet riktar in förväntningar och prioriteringar med interna intressenter och identifierar framgångskriterier för migreringen. Hur ser framgång ut efter migrering?
 - **Förfinad rationalisering.** Utvärdera de första antagandena om rationalisering. Bör en annan [rationaliseringsmetod](../../../digital-estate/rationalize.md) användas för att migrera den här speciella arbetsbelastningen?
-- **Moderniseringsbeslut.** Om du inte använder rationaliseringsbeslutet bör olika tillgångar i arbetsbelastningen moderniseras för att utnyttja PaaS-baserade lösningar?
+- **Moderniseringsbeslut.** Oaktat rationaliseringsbeslutet, ska olika resurser i arbetsbelastningen moderniseras för att utnyttja PaaS-baserade lösningar?
 - **Kostnad.** Kostnaden för målarkitekturen har beräknats, och den övergripande budgeten har justerats.
 - **Migreringsstöd.** Teamet har beslutat hur det tekniska arbetet med migreringen ska genomföras, däribland beslut om partner- eller Microsoft-support.
 - **Utvärdering.** Arbetsbelastningen utvärderas för kompatibilitet och beroenden.

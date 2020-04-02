@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: 7374a531192ed140c8aa76d0e74e3817e34626db
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: d23c97ab3d1bc5c25617792d53f147654eb33daa
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80427426"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527605"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Molninnovation i Cloud Adoption Framework
 
@@ -59,7 +59,7 @@ Innan du bestämmer dig för tekniska lösningar, bör du ta reda på hur ny inn
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Guide till Azure-innovation</h3>
-Azure innehåller ett flertal molnverktyg som kan påskynda distributionen av innovativa lösningar. Beroende på vilken hypotes du har, kan du överväga olika kombinationer av verktyg. Vi rekommenderar att du skapar en MVP (minsta livskraftig produkt) med grundläggande verktyg.
+Azure innehåller molnverktyg som snabbar upp distributionen av innovativa lösningar. Beroende på vilken hypotes du har, kan du överväga olika kombinationer av verktyg. Vi rekommenderar att du skapar en MVP (minsta livskraftig produkt) med grundläggande verktyg.
                         </div>
                     </div>
                 </div>

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 layout: LandingPage
-ms.openlocfilehash: 353cf2effa8158634f93299c504bd3c069b5d11b
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: de34df16a5c709ac5cffbdb355f70c60c8a18c25
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093725"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527704"
 ---
 # <a name="manage-organizational-alignment"></a>Hantera organisatorisk anpassning
 
@@ -77,7 +77,7 @@ Förstå de molnfunktioner som krävs för att implementera och driva molnet.
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Etablera grupper</h3>
-Definiera de team som kommer att tillhandahålla olika molnfunktioner. Ett antal alternativ för bästa praxis visas som referens.
+Definiera de team som kommer att tillhandahålla olika molnfunktioner. Flera alternativ för bästa praxis visas som referens.
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@ Definiera de team som kommer att tillhandahålla olika molnfunktioner. Ett antal
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>RACI-matris</h3>
-Det är viktigt med tydligt definierade roller i alla driftsmodeller. Använd RACI-matrisen för att tilldela varje team roller för ansvar, konsultering och informering för de olika funktionerna i molndriftsmodellen.
+Det är viktigt med tydligt definierade roller i alla driftsmodeller. Använd RACI-matrisen för att tilldela varje team ansvars-, konsultations- och informationsroller för olika funktioner i molndriftsmodellen.
                         </div>
                     </div>
                 </div>

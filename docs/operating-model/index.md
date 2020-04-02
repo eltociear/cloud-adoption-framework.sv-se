@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 4f28ec6b7c70f98ccea2fc718f44ebfa450caf52
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 6575848df4a20fd828ed2c07703881a171cbfb69
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80428922"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80526832"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Upprätta en driftsmodell för molnet
 
