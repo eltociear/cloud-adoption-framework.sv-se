@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 42eba9c774a063fe915db50b6615a3a59ce261c6
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 760eee5216ad774e7f55b13257c46aef97008792
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434018"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636386"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategi för styrning eller efterlevnad
 
@@ -68,7 +68,7 @@ Under den här processen bör projekt planen omfatta tidsallokeringar för moln 
 
 ## <a name="next-steps"></a>Nästa steg
 
-Som det sista objektet i den [expanderade check listan](./index.md), gå tillbaka till check listan och utvärdera eventuella ytterligare omfångs krav för migreringen.
+Som det sista objektet i [Check lista för bästa praxis för migrering](./index.md), gå tillbaka till check listan och utvärdera eventuella ytterligare omfångs krav för migreringen.
 
 > [!div class="nextstepaction"]
-> [Utökad checklista](./index.md)
+> [Check lista för bästa praxis för migrering](./index.md)

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 48d8659e757c5cf078b33097a4be467e3c8ba2b9
-ms.sourcegitcommit: f068ebc73b56f81f91773a963c5fc8fd2221a148
+ms.openlocfilehash: 0af59638c43902e835b3224817d8a24e7358b4b2
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80606635"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636385"
 ---
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
 
@@ -227,7 +227,7 @@ De taggar som du fäster på resurser och de taggar som behövs eller är valfri
 
 I följande avsnitt finns några exempel namn för vanliga typer av Azure-resurser i en distribution av företags moln.
 
-<!-- cSpell:disable -->
+<!-- cspell:ignore mktgsharepoint acctlookupsvc vmhadoop vmtest vmsharepoint vmnavigator vmsqlnode stvmstcoreeastus stvmpmcoreeastus stvmstplmeastus stvmsthadoopeastus stnavigatordata stemissionsoutput stdiag stdiagsh ssimpnavigatorprod ssimpemissionsdev dlanavigatorprod dlsnavigatorprod dlaemissionsdev dlsemissionsdev weballow rdpallow sqlallow dnsblocked cloudapp azurewebsites servicebus -->
 
 <!-- markdownlint-disable MD024 MD033 -->
 
@@ -245,10 +245,10 @@ I följande avsnitt finns några exempel namn för vanliga typer av Azure-resurs
 |------------------------------|-----------------|----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | Virtuellt nätverk              | Resursgrupp  | vnet-\<Subscription type\>-\<Region\>-\<\#\#\#\>                     | <ul><li>vnet-shared-eastus2-001 </li><li>vnet-prod-westus-001 </li><li>vnet-client-eastus2-001</li></ul>                      |
 | Undernät                       | Virtuellt nätverk | snet-\<subscription\>-\<subregion\>-\<\#\#\#\>                       | <ul><li>snet-shared-eastus2-001 </li><li>snet-prod-westus-001 </li><li>snet-client-eastus2-001</li></ul>                      |
-| Nätverks gränssnitt (NIC)      | Resursgrupp  | nic-\<\#\#\>-\<vmname\>-\<subscription\>\<\#\#\#\>                   | <ul><li>nic-01-dc1-shared-001 </li><li>nic-02-vmhadoop1-prod-001 </li><li>nic-02-vmtest1-client-001</li></ul>                 |
+| Nätverks gränssnitt (NIC)      | Resursgrupp  | NIC-\<\#\#\>-\<VM-namn\>-\<prenumeration\>\<\#\#\#\>                   | <ul><li>nic-01-dc1-shared-001 </li><li>nic-02-vmhadoop1-prod-001 </li><li>nic-02-vmtest1-client-001</li></ul>                 |
 | Offentlig IP-adress            | Resursgrupp  | pip-\<vm name or app name\>-\<Environment\>-\<subregion\>-\<\#\#\#\> | <ul><li>pip-dc1-shared-eastus2-001 </li><li>pip-hadoop-prod-westus-001</li></ul>                                              |
 | Lastbalanserare                | Resursgrupp  | lb-\<app name or role\>\<Environment\>\<\#\#\#\>                     | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-dev-001</li></ul>                                                        |
-| Nätverkssäkerhetsgrupp (NSG) | Undernät eller NIC   | NSG-\<princip namn eller app-namn\>-\<\#\#\#\>                           | <ul><li>nsg-weballow-001 </li><li>nsg-rdpallow-001 </li><li>nsg-sqlallow-001 </li><li>nsg-dnsbloked-001</li></ul>             |
+| Nätverkssäkerhetsgrupp (NSG) | Undernät eller NIC   | NSG-\<princip namn eller app-namn\>-\<\#\#\#\>                           | <ul><li>nsg-weballow-001 </li><li>nsg-rdpallow-001 </li><li>nsg-sqlallow-001 </li><li>NSG-dnsblocked-001</li></ul>             |
 | Lokal nätverksgateway        | Virtuell gateway | LGW-\<prenumerations typ\>-\<region\>-\<\#\#\#\>                      | <ul><li>LGW-Shared-eastus2-001 </li><li>LGW-Prod-väst-001 </li><li>LGW-client-eastus2-001</li></ul>                         |
 | Virtuell nätverksgateway      | Virtuellt nätverk | vgw-\<prenumerations typ\>-\<region\>-\<\#\#\#\>                      | <ul><li>vgw-Shared-eastus2-001 </li><li>vgw-Prod-väst-001 </li><li>vgw-client-eastus2-001</li></ul>                         |
 | Plats-till-plats-anslutning      | Resursgrupp  | cn-\<local gateway name\>-to-\<virtual gateway name\>                | <ul><li>CN-LGW-Shared-eastus2-001-till-vgw-Shared-eastus2-001 </li><li>CN-LGW-Shared-eastus2-001-till-delad-väst-001</li></ul> |
@@ -260,8 +260,8 @@ I följande avsnitt finns några exempel namn för vanliga typer av Azure-resurs
 
 | Tillgångstyp                  | Omfång          | Format                                                              | Exempel                                                                                                                          |
 |-----------------------------|----------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Virtuell dator             | Resursgrupp | vm\<policy name or appname\>\<\#\#\#\>                              | <ul><li>vmnavigator001 </li><li>vmsharepoint001 </li><li>vmsqlnode001 </li><li>vmhadoop001</li></ul>                              |
-| Lagringskonto för virtuell dator          | Global         | stvm\<performance type\>\<appname or prodname\>\<region\>\<\#\#\#\> | <ul><li>stvmstcoreeastus2001 </li><li>stvmpmcoreeastus2001 </li><li>stvmstplmeastus2001 </li><li>stvmsthadoopeastus2001</li></ul> |
+| Virtuell dator             | Resursgrupp | den virtuella datorns\<princip namn eller app-namn\>\<\#\#\#\>                              | <ul><li>vmnavigator001 </li><li>vmsharepoint001 </li><li>vmsqlnode001 </li><li>vmhadoop001</li></ul>                              |
+| Lagringskonto för virtuell dator          | Global         | stvm\<prestanda typ\>\<App Name eller produkt namn\>\<region\>\<\#\#\#\> | <ul><li>stvmstcoreeastus2001 </li><li>stvmpmcoreeastus2001 </li><li>stvmstplmeastus2001 </li><li>stvmsthadoopeastus2001</li></ul> |
 | Webbapp                     | Global         | app-\<app-namn\>-\<miljö\>-\<\#\#\#\>. [{azurewebsites.net}]   | <ul><li>app-navigator-prod-001.azurewebsites.net </li><li>app-accountlookup-dev-001.azurewebsites.net</li></ul>                   |
 | Funktionsapp                | Global         | FUNC-\<app-namn\>-\<miljö\>-\<\#\#\#\>. [{azurewebsites.net}]  | <ul><li>func-navigator-prod-001.azurewebsites.net </li><li>func-accountlookup-dev-001.azurewebsites.net</li></ul>                 |
 | Molntjänst               | Global         | \<app-namn\>-\<miljö\>-\<\#\#\#\>. [{cloudapp.net}]        | <ul><li>could-navigator-prod-001.azurewebsites.net </li><li>could-accountlookup-dev-001.azurewebsites.net</li></ul>                   |

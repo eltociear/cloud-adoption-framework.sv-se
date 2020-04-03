@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1a9e9082e4ceca7b83a4491c49e0932a3caaa9d7
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 2ee44d3e83dde52e03dbe2dffca7edc51899da0e
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80429648"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636439"
 ---
 # <a name="multiple-datacenters"></a>Flera datacenter
 
@@ -66,7 +66,7 @@ Processer för att skydda och hantera processändringar påverkas inte av denna 
 
 ## <a name="next-steps"></a>Nästa steg
 
-Gå tillbaka till [checklistan för utökat omfång](./index.md) och se till att din migreringsmetod är helt anpassad till kraven.
+Gå tillbaka till [Check listan metod tips för migrering](./index.md) för att säkerställa att din metod för migrering är helt justerad.
 
 > [!div class="nextstepaction"]
-> [Utökad checklista](./index.md)
+> [Check lista för bästa praxis för migrering](./index.md)

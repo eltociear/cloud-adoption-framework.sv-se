@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 01a1253e215b3d5a235c324204e443bb19a8e61b
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.openlocfilehash: adf99d715a5b1a867fd76a40d47fd0d46848f8ad
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527045"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636538"
 ---
 # <a name="balance-competing-priorities"></a>Balansera konkurrerande prioriteringar
 
@@ -97,7 +97,7 @@ Sant kundinriktad innovation skapar vanliga motstridiga prioriteringar mellan be
 
 **Minsta omfattning:** Den förnyade metoden visar hur du integrerar strategi och planer genom affärs värdes konsensus. Guiden introducerar sedan molnbaserade verktyg som kan påskynda varje ämnes område av innovation, som tillhör bästa praxis för implementering. Slutligen visar avsnittet process förbättringar olika metoder för att skapa kund empati, samtidigt som det rör sig om planer och strategier i molnets införande resa. Den här metoden fokuserar på att leverera innovation med hjälp av så lite teknik som möjligt.
 
-**Exempel på utökad omfattning:** Ibland kan en innovation vara beroende av verksamhets kritiska arbets belastningar med hög känslighet. När "kunden" är en intern användare kan utvecklings ansträngningen vara både verksamhets kritisk och hög känslighet under det tidigaste antalet iterationer. I de här scenarierna bör implementerings team använda Azure Architecture Review och Azure Architecture Framework för att utvärdera avancerad arkitektur design tidigt i processen.
+**Exempel på utökad omfattning:** Ibland kan en innovation vara beroende av verksamhets kritiska eller hög känslighets arbets belastningar. När "kunden" är en intern användare kan utvecklings ansträngningen vara både verksamhets kritisk och hög känslighet under det tidigaste antalet iterationer. I de här scenarierna bör implementerings team använda Azure Architecture Review och Azure Architecture Framework för att utvärdera avancerad arkitektur design tidigt i processen.
 
 ## <a name="balance-during-govern"></a>Saldo under styrning
 

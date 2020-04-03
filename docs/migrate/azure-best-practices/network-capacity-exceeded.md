@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5c410527182d7185a052bc99826ea06154fdae5f
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 2d836e6d5397a5b2ff36ab57ee23712cfe40561a
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80429638"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636452"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -79,7 +79,7 @@ Aktiviteterna för att skydda och hantera påverkas troligen inte av denna för�
 
 ## <a name="next-steps"></a>Nästa steg
 
-Gå tillbaka till [checklistan för utökat omfång](./index.md) och se till att din migreringsmetod är helt anpassad till kraven.
+Gå tillbaka till [Check listan metod tips för migrering](./index.md) för att säkerställa att din metod för migrering är helt justerad.
 
 > [!div class="nextstepaction"]
-> [Utökad checklista](./index.md)
+> [Check lista för bästa praxis för migrering](./index.md)
