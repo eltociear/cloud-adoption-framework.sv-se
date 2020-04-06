@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e0cb1779836edce3571a081ae44794aeb8bc06b8
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 4ef888e26089a2262fadeb93ec33ed063bcbf753
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80432991"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636492"
 ---
 # <a name="azure-migration-guide-before-you-start"></a>Azure-migreringsguiden: Innan du börjar
 
@@ -55,7 +55,7 @@ Det förutsätts att en landningszon redan har distribuerats, i enlighet med de 
 - Beroendemappningen för de komponenter som ska migreras är enkel att definiera.
 - Din bransch har minimala regelkrav som är relevanta för den här migreringen.
 
-Om något av dessa villkor inte gäller för din situation bör du i stället överväga [guiden för utökat omfång](../expanded-scope/index.md). Vi rekommenderar även att du begär hjälp från något av våra Microsoft-team eller partner för att genomföra migreringar som kräver guiden för utökat omfång. Kunder som tar hjälp av Microsoft eller certifierade partner lyckas bättre i dessa scenarier. Mer information om hur du begär hjälp finns i den här guiden.
+Om något av dessa villkor inte gäller för din situation bör du i stället överväga [regelverk för migrering till molnet](../azure-best-practices/index.md). Vi rekommenderar även att du begär hjälp från något av våra Microsoft-team eller partner för att genomföra mer komplexa migreringar. Kunder som tar hjälp av Microsoft eller certifierade partner lyckas bättre i dessa scenarier. Mer information om hur du begär hjälp finns i den här guiden.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -63,6 +63,6 @@ Om något av dessa villkor inte gäller för din situation bör du i stället ö
 
 Mer information finns i:
 
-- [Guiden för utökat omfång](../expanded-scope/index.md)
+- [Regelverk för migrering till molnet](../azure-best-practices/index.md)
 
 ::: zone-end

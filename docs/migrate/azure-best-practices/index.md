@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 22f2718775b194196f65672f0cbc1712d0a3a4ac
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: a7affd1d64e80cfdf85504ed62960de78a4a34a5
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433549"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636390"
 ---
 # <a name="best-practices-for-cloud-migration"></a>Regelverk för migrering till molnet
 
 [Azure-migreringsguiden](../azure-migration-guide/index.md) i Cloud Adoption Framework är den rekommenderade startpunkten om du är intresserad av migrering till Azure. Guiden vägleder dig genom ett antal verktyg och grundläggande metoder för att migrera virtuella datorer till molnet. Det här avsnittet av Cloud Adoption Framework beskriver många regelverk som går utöver de grundläggande molnbaserade verktygen.
 
-## <a name="cloud-migration-best-practice-checklist"></a>Checklista för regelverk för migrering till molnet
+## <a name="cloud-migration-best-practices-checklist"></a>Checklista för regelverk för migrering till molnet
 
 I följande checklista visas vanliga komplexitetsområden som kan kräva att migreringens omfång utökas bortom [Azure-migreringsguiden](../azure-migration-guide/index.md).
 
