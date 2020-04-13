@@ -66,7 +66,7 @@ Migreringens skala är nästa viktiga förhandsbeslut. De processer som krävs f
 
 - **Hur många tillgångar som stöder arbetsbelastningarna som ska migreras har jag i dag?** Tillgångar omfattar datastrukturer, program, virtuella datorer och nödvändiga IT-enheter. Vi rekommenderar att du väljer en relativt liten arbetsbelastning för din första migrering.
 - **Av dessa till gångar hur många ska migreras?** Det är vanligt att avsluta en del av tillgångarna under migreringen, på grund av att slutanvändarberoendet inte längre upprätthålls.
-- **Vilka uppskattningar är uppifrån och ned för skalan av de migrerade till gångarna?** Beräkna antalet stödtillgångar, till exempel program, virtuella datorer, datakällor och IT-enheter för arbetsbelastningarna som ingår i migreringen. Se avsnittet om [digital egendom](../../../digital-estate/index.md) i Cloud Adoption Framwork för vägledning om att identifiera relevanta tillgångar.
+- **Vilka uppskattningar är uppifrån och ned för skalan av de migrerade till gångarna?** Beräkna antalet stödtillgångar, till exempel program, virtuella datorer, datakällor och IT-enheter för arbetsbelastningarna som ingår i migreringen. Se avsnittet om [digital egendom](../../../digital-estate/index.md) i Cloud Adoption Framework för vägledning om att identifiera relevanta tillgångar.
 
 ### <a name="effort-timing"></a>Tidsramar för projektet
 
